@@ -9,7 +9,8 @@ export type SpeedIndicatorState = {
 };
 
 export const SPEED_MIN = 0.25;
-export const SPEED_MAX = 3;
+// Matches the highest custom preset the speed menu accepts, so every input can reach it.
+export const SPEED_MAX = 4;
 
 const fraction = (rate: number) =>
   (Math.max(SPEED_MIN, Math.min(SPEED_MAX, rate)) - SPEED_MIN) / (SPEED_MAX - SPEED_MIN);

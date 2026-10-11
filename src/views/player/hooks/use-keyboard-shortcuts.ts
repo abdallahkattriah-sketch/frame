@@ -13,6 +13,7 @@ import { isBigPictureActive } from "@/lib/big-picture";
 import { getLeaveConfirm, openLeaveConfirm } from "@/lib/player/leave-confirm";
 import { isPlayerInteractionLocked } from "@/lib/player/interaction-lock";
 import { round2 } from "../player-utils";
+import { SPEED_MAX, SPEED_MIN } from "@/components/player/speed-indicator";
 import { SFX } from "@/lib/sfx";
 
 export function useKeyboardShortcuts(params: {
@@ -410,7 +411,7 @@ export function useKeyboardShortcuts(params: {
       }
       if (match("playerSpeedDown")) {
         e.preventDefault();
-        const r = Math.max(0.25, +(snap.rate - 0.25).toFixed(2));
+        const r = Math.max(SPEED_MIN, +(snap.rate - 0.25).toFixed(2));
         bridgeRef.current?.setRate(r);
         writePlayerPrefs(metaId, { rate: r });
         onSpeedFeedback?.(r);
@@ -418,7 +419,7 @@ export function useKeyboardShortcuts(params: {
       }
       if (match("playerSpeedUp")) {
         e.preventDefault();
-        const r = Math.min(3, +(snap.rate + 0.25).toFixed(2));
+        const r = Math.min(SPEED_MAX, +(snap.rate + 0.25).toFixed(2));
         bridgeRef.current?.setRate(r);
         writePlayerPrefs(metaId, { rate: r });
         onSpeedFeedback?.(r);
