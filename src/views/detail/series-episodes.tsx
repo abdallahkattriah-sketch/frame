@@ -10,6 +10,7 @@ import { EpisodeWatchedMenu, type WatchedMenuTarget } from "@/components/episode
 import { manualEpisodeKeys, manualWatchedVersion, subscribeManualWatched } from "@/lib/manual-watched";
 import { useHiddenEpisodes } from "@/lib/hidden-episodes";
 import type { Meta } from "@/lib/cinemeta";
+import { absoluteNumberFor, seasonOffsets } from "@/lib/episode-absolute";
 import { getEpisodeProgress, resumeDefaultSeason } from "@/lib/episode-progress";
 import { scrollToDataEp } from "@/lib/episode-scroll";
 import { tmdbSeasonEpisodes, type Episode, type Season } from "@/lib/providers/tmdb";
@@ -160,14 +161,21 @@ export function SeriesEpisodes({
     preferCustomMeta: settings.preferCustomMetaAddon,
   });
   const tvdbStills = useSeriesTvdbStills(imdbId, enrichedBase.length, settings.tvdbSeasonType);
+  const offsets = useMemo(
+    () => seasonOffsets(seasons.map((s) => [s.seasonNumber, s.episodeCount] as const)),
+    [seasons],
+  );
   const enrichedEpisodes = useMemo(() => {
-    if (Object.keys(tvdbStills).length === 0) return enrichedBase;
+    const hasStills = Object.keys(tvdbStills).length > 0;
     return enrichedBase.map((ep) => {
-      if (ep.stillPath || ep.stillUrl) return ep;
+      const absoluteNumber =
+        ep.absoluteNumber ?? absoluteNumberFor(offsets, ep.seasonNumber, ep.episodeNumber);
+      const withAbs = absoluteNumber != null ? { ...ep, absoluteNumber } : ep;
+      if (!hasStills || ep.stillPath || ep.stillUrl) return withAbs;
       const img = tvdbStills[`s${ep.seasonNumber}e${ep.episodeNumber}`] ?? tvdbStills[`abs${ep.episodeNumber}`];
-      return img ? { ...ep, stillUrl: img } : ep;
+      return img ? { ...withAbs, stillUrl: img } : withAbs;
     });
-  }, [enrichedBase, tvdbStills]);
+  }, [enrichedBase, tvdbStills, offsets]);
 
   const hiddenSet = useHiddenEpisodes(meta.id);
   const hideActive = settings.episodeHiding && !showHidden;
@@ -295,6 +303,8 @@ export function SeriesEpisodes({
           { lang },
         ) ?? ep.overview;
       let next = { ...ep, name, overview };
+      const abs = orderActive ? ordering?.absByEpId.get(ep.id) : undefined;
+      if (ep.absoluteNumber == null && abs != null) next = { ...next, absoluteNumber: abs };
       if (ep.imdbRating == null) {
         const r = imdbRatings.get(`${ep.seasonNumber}:${ep.episodeNumber}`);
         if (r != null && r > 0) next = { ...next, imdbRating: r };
@@ -308,6 +318,7 @@ export function SeriesEpisodes({
     orderSeasonEff,
     settings.tvdbSeasonType,
     preferredVideos,
+    ordering,
   ]);
   const visibleOrderedEps = useMemo(
     () =>
@@ -525,7 +536,7 @@ export function SeriesEpisodes({
       {!altActive && loading && <EpisodeGridSkeleton />}
 
       {!altActive && !loading && enrichedEpisodes.length === 0 && (
-        <CinemetaFallback meta={meta} videos={cinemetaVideos} season={active} />
+        <CinemetaFallback meta={meta} videos={cinemetaVideos} season={active} offsets={offsets} />
       )}
 
       {!altActive && !loading && enrichedEpisodes.length > 0 && (

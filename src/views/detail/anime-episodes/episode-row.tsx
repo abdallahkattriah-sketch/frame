@@ -140,7 +140,7 @@ export function AnimeEpisodeRow({
                   ? `S${partDisplaySeason(meta.id, ep.sourceMetaId) ?? ep.imdbSeason ?? ep.seasonNumber ?? 1} · E${ep.number}`
                   : `E${ep.number}`,
                 ep.absoluteNumber && ep.absoluteNumber !== ep.number
-                  ? `Abs E${ep.absoluteNumber}`
+                  ? t("Abs E{n}", { n: ep.absoluteNumber })
                   : null,
                 ep.length ? t("{n} min", { n: ep.length }) : null,
                 formatAirDate(ep.airdate) || null,

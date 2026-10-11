@@ -433,6 +433,26 @@ export async function fetchSeasonList(meta: Meta, opts: { tmdbKey: string }): Pr
   return uniqueAnimeSeasons(await getNonStandardEpisodes(meta));
 }
 
+// Regular-season episode counts, used to derive absolute numbers for providers that don't send them.
+export async function fetchSeasonEpisodeCounts(
+  meta: Meta,
+  opts: { tmdbKey: string },
+): Promise<Array<[number, number]>> {
+  if (meta.type !== "series") return [];
+  if (meta.id.startsWith("tt")) {
+    const counts = new Map<number, number>();
+    for (const e of (await loadCinemetaEpisodes(meta.id, opts.tmdbKey)) ?? []) {
+      counts.set(e.season, (counts.get(e.season) ?? 0) + 1);
+    }
+    return [...counts];
+  }
+  if (meta.id.startsWith("tmdb:tv:") && opts.tmdbKey) {
+    const detail = await tmdbDetails(opts.tmdbKey, meta).catch(() => null);
+    return (detail?.seasons ?? []).map((s) => [s.seasonNumber, s.episodeCount]);
+  }
+  return [];
+}
+
 export async function fetchSeasonEpisodes(
   meta: Meta,
   season: number,

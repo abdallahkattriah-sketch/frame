@@ -1,7 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { Meta } from "@/lib/cinemeta";
+import { absoluteNumberFor, seasonOffsets } from "@/lib/episode-absolute";
 import {
   animeSeriesFromStreamId,
+  fetchSeasonEpisodeCounts,
   fetchSeasonEpisodes,
   fetchSeasonList,
   isAnimeId,
@@ -26,6 +28,7 @@ export function useSeasonBrowser(
   episodes: PlayEpisode[];
   loading: boolean;
   imdbRatings: Map<string, number>;
+  absoluteFor: (ep: PlayEpisode) => number | undefined;
 } {
   const { settings } = useSettings();
   const effMeta = useMemo<Meta>(() => {
@@ -38,6 +41,27 @@ export function useSeasonBrowser(
   const [episodes, setEpisodes] = useState<PlayEpisode[]>([]);
   const [loading, setLoading] = useState(false);
   const [imdbRatings, setImdbRatings] = useState<Map<string, number>>(new Map());
+  const [offsets, setOffsets] = useState<Map<number, number>>(new Map());
+
+  useEffect(() => {
+    if (!open) return;
+    let cancelled = false;
+    setOffsets(new Map());
+    void fetchSeasonEpisodeCounts(effMeta, { tmdbKey: settings.tmdbKey })
+      .then((counts) => {
+        if (!cancelled) setOffsets(seasonOffsets(counts));
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [open, effMeta, settings.tmdbKey]);
+
+  // Display only: PlayEpisode.absoluteNumber feeds anime numbering, so it is never written onto the episode.
+  const absoluteFor = useCallback(
+    (ep: PlayEpisode) => ep.absoluteNumber ?? absoluteNumberFor(offsets, ep.season, ep.episode),
+    [offsets],
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -104,5 +128,5 @@ export function useSeasonBrowser(
     };
   }, [open, effMeta, season, settings.tmdbKey]);
 
-  return { seasons, season, setSeason, episodes, loading, imdbRatings };
+  return { seasons, season, setSeason, episodes, loading, imdbRatings, absoluteFor };
 }

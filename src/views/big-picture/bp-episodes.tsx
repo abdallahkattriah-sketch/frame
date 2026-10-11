@@ -164,6 +164,7 @@ export function BpEpisodeStrip({
               stills={state.stillsOf(ep)}
               backdrop={state.backdrop}
               fact={state.factOf(ep)}
+              absoluteNumber={state.absoluteOf(ep)}
               onPlay={onPlay}
               watched={state.watchedOf(ep)}
               progress={state.progressOf(ep)}

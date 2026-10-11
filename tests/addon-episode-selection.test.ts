@@ -41,6 +41,11 @@ function harness(layout: "list" | "grid" | "strip", videos: NonNullable<Meta["vi
     "@/lib/i18n": { useT: () => (key: string) => key },
     "./episode-download-button": { EpisodeDownloadButton: "EpisodeDownloadButton" },
     "@/lib/episode-progress": { resumeDefaultSeason: (_id: any, stats: any) => stats[0]?.seasonNumber ?? 0 },
+    "@/lib/episode-absolute": {
+      absoluteNumberFor: () => undefined,
+      distinctAbsolute: () => null,
+      seasonOffsets: () => new Map(),
+    },
     "@/components/drag-strip": { DragStrip: "DragStrip" },
     "./episode-grid": { EpisodeGrid: "EpisodeGrid" },
     "./episode-grid-card": { EpisodeGridCard: "EpisodeGridCard" },

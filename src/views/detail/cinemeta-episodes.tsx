@@ -16,6 +16,7 @@ import { useLocalAwareSeriesPlay } from "@/lib/local-library/use-series-play";
 import { useT } from "@/lib/i18n";
 import { EpisodeDownloadButton } from "./episode-download-button";
 import { resumeDefaultSeason } from "@/lib/episode-progress";
+import { absoluteNumberFor, distinctAbsolute, seasonOffsets } from "@/lib/episode-absolute";
 import { DragStrip } from "@/components/drag-strip";
 import { EpisodeGrid } from "./episode-grid";
 import { EpisodeGridCard } from "./episode-grid-card";
@@ -92,6 +93,11 @@ export function CinemetaEpisodes({
     [grouped],
   );
 
+  const offsets = useMemo(
+    () => seasonOffsets(seasonStats.map((s) => [s.seasonNumber, s.episodeCount] as const)),
+    [seasonStats],
+  );
+
   const [active, setActive] = useState<number>(() =>
     resumeDefaultSeason(meta.id, seasonStats, combinedWatched, resumeSeason),
   );
@@ -158,6 +164,7 @@ export function CinemetaEpisodes({
           stills,
           runtime,
           airDate,
+          absoluteNumber: absoluteNumberFor(offsets, season, number),
           overview,
           upcoming: isUpcomingDate(airDate),
           play: (opts) =>
@@ -179,14 +186,7 @@ export function CinemetaEpisodes({
             }),
         };
       }),
-    [
-      activeEps,
-      meta,
-      t,
-      playLocalAware,
-      settings.instantPlay,
-      settings.seasonSourceLock,
-    ],
+    [activeEps, meta, t, playLocalAware, settings.instantPlay, settings.seasonSourceLock, offsets],
   );
 
   if (grouped.length === 0) return null;
@@ -251,6 +251,7 @@ export function CinemetaEpisodes({
                   key={ep.id ?? `${ep.season ?? "x"}-${ep.episode ?? i}`}
                   meta={meta}
                   ep={ep}
+                  absoluteNumber={absoluteNumberFor(offsets, season, epNumber)}
                   flatIndex={ep.season == null ? i + 1 : undefined}
                   watched={watchedAt(season, epNumber)}
                   onContextMenu={openWatchedMenu}
@@ -281,12 +282,14 @@ export function CinemetaEpisodes({
 export function CinemetaEpisodeRow({
   meta,
   ep,
+  absoluteNumber,
   flatIndex,
   watched = false,
   onContextMenu,
 }: {
   meta: Meta;
   ep: CinemetaVideo;
+  absoluteNumber?: number;
   flatIndex?: number;
   watched?: boolean;
   onContextMenu?: (e: React.MouseEvent, season: number, episode: number, watched: boolean) => void;
@@ -298,6 +301,7 @@ export function CinemetaEpisodeRow({
   const epNumber = ep.episode ?? ep.number ?? flatIndex ?? 1;
   const season = ep.season ?? 0;
   const runtime = ep.runtime ?? null;
+  const absolute = distinctAbsolute(absoluteNumber, epNumber);
   const playEpisode = {
     season: ep.season ?? 0,
     episode: epNumber,
@@ -354,6 +358,7 @@ export function CinemetaEpisodeRow({
           <p className="text-[12px] text-ink-subtle">
             {[
               ep.season != null ? `S${ep.season} E${epNumber}` : null,
+              absolute != null ? t("Abs E{n}", { n: absolute }) : null,
               runtime ? t("{n} min", { n: runtime }) : null,
               formatAired(aired),
             ]

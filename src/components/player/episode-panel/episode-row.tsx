@@ -6,6 +6,7 @@ import type { PlayEpisode } from "@/lib/view";
 import { parseKitsuId } from "@/lib/providers/kitsu";
 import { splitFranchiseDisplaySeason } from "@/lib/streams/anime-identity-core";
 import { useSettings } from "@/lib/settings";
+import { distinctAbsolute } from "@/lib/episode-absolute";
 import { EpisodeRatingBadge } from "@/views/detail/episode-rating-badge";
 import { useT } from "@/lib/i18n";
 
@@ -25,6 +26,7 @@ export function EpisodeRow({
   spoiler,
   imdbRating,
   metaId,
+  absoluteNumber,
 }: {
   episode: PlayEpisode;
   expanded: boolean;
@@ -35,24 +37,32 @@ export function EpisodeRow({
   spoiler?: SpoilerMask;
   imdbRating?: number;
   metaId?: string;
+  absoluteNumber?: number;
 }) {
   const t = useT();
   const { settings } = useSettings();
   const imdbVal = imdbRating != null && imdbRating > 0 ? imdbRating : null;
   const tmdbVal = episode.rating != null && episode.rating > 0 ? episode.rating : null;
   const ratingVal = imdbVal ?? tmdbVal;
-  const hasMeta = !!episode.airDate || episode.runtime != null;
   const partSeason =
     splitFranchiseDisplaySeason(parseKitsuId(episode.kitsuStreamId ?? "")) ??
     splitFranchiseDisplaySeason(parseKitsuId(metaId ?? ""));
+  const shownEpisode =
+    partSeason != null ? episode.episode : (episode.imdbEpisode ?? episode.episode);
   const epLabel =
     partSeason != null
-      ? `S${partSeason} · E${String(episode.episode).padStart(2, "0")}`
-      : `S${episode.imdbSeason ?? episode.season} · E${String(episode.imdbEpisode ?? episode.episode).padStart(2, "0")}`;
+      ? `S${partSeason} · E${String(shownEpisode).padStart(2, "0")}`
+      : `S${episode.imdbSeason ?? episode.season} · E${String(shownEpisode).padStart(2, "0")}`;
+  const absolute = distinctAbsolute(absoluteNumber, shownEpisode);
+  const facts = [
+    absolute != null ? t("Abs E{n}", { n: absolute }) : null,
+    episode.airDate ? formatAirDate(episode.airDate) : null,
+  ].filter(Boolean);
   const hasStill = !!episode.still;
   const [imgFailed, setImgFailed] = useState(false);
   return (
     <div
+      data-current-episode={isCurrent ? "" : undefined}
       className={`group overflow-hidden rounded-2xl bg-elevated/60 ring-1 ${
         isCurrent ? "ring-2 ring-accent" : "ring-edge-soft"
       }`}
@@ -97,16 +107,23 @@ export function EpisodeRow({
           )}
         </div>
         <div className="flex min-w-0 flex-1 flex-col justify-between gap-2">
-          <div className="flex items-start justify-between gap-2">
-            <p
-              className={`line-clamp-2 text-[14.5px] font-semibold leading-snug text-ink ${spoiler?.title ? SPOILER_TEXT_CLASS : ""}`}
-            >
-              {episode.name ?? t("Episode {n}", { n: episode.episode })}
-            </p>
-            {isCurrent && (
-              <span className="shrink-0 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.12em] text-accent ring-1 ring-accent/30">
-                {t("Now Playing")}
-              </span>
+          <div className="flex min-w-0 flex-col gap-0.5">
+            <div className="flex items-start justify-between gap-2">
+              <p
+                className={`line-clamp-2 text-[14.5px] font-semibold leading-snug text-ink ${spoiler?.title ? SPOILER_TEXT_CLASS : ""}`}
+              >
+                {episode.name ?? t("Episode {n}", { n: episode.episode })}
+              </p>
+              {isCurrent && (
+                <span className="shrink-0 rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.12em] text-accent ring-1 ring-accent/30">
+                  {t("Now Playing")}
+                </span>
+              )}
+            </div>
+            {facts.length > 0 && (
+              <p className="truncate text-[11.5px] font-medium text-ink-subtle">
+                {facts.join("  ·  ")}
+              </p>
             )}
           </div>
           <div className="flex items-center gap-2">
@@ -146,10 +163,9 @@ export function EpisodeRow({
               expanded ? "opacity-100" : "opacity-0"
             }`}
           >
-            {hasMeta && (
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] font-semibold text-ink-subtle">
-                {episode.airDate && <span>{formatAirDate(episode.airDate)}</span>}
-                {episode.runtime != null && <span>{t("{n} min", { n: episode.runtime })}</span>}
+            {episode.runtime != null && (
+              <div className="text-[12px] font-semibold text-ink-subtle">
+                {t("{n} min", { n: episode.runtime })}
               </div>
             )}
             {episode.overview ? (
