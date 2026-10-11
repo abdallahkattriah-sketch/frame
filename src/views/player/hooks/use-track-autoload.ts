@@ -7,6 +7,7 @@ import { subtitleStreamDescriptor } from "@/lib/subtitles/provider-label";
 import { publishSubtitleSearch } from "@/components/player/subtitle-menu/subtitle-search-store";
 import { publishSubtitleContext } from "@/components/player/subtitle-menu/subtitle-context-store";
 import { readPlayerPrefs, type PerShowPrefs } from "@/lib/player-prefs";
+import { audioLanguageOrder, resolveOriginalLanguage } from "@/lib/player/original-audio";
 import { tmdbImdbId } from "@/lib/providers/tmdb";
 import type { Addon } from "@/lib/addons";
 import type { GeneratedSubtitleGroup } from "@/lib/subtitles/types";
@@ -105,6 +106,39 @@ export function useTrackAutoload(params: {
       cancelled = true;
     };
   }, [src.imdbId, src.imdbIdVerified, src.meta.id, settings.tmdbKey]);
+
+  const [originalAudio, setOriginalAudio] = useState<{ metaId: string; lang: string | null }>({
+    metaId: "",
+    lang: null,
+  });
+  useEffect(() => {
+    if (!settings.preferOriginalAudio) return;
+    let cancelled = false;
+    const meta = {
+      id: src.meta.id,
+      type: src.meta.type,
+      originalLanguage: src.meta.originalLanguage,
+    };
+    resolveOriginalLanguage(meta, src.imdbId, settings.tmdbKey)
+      .catch(() => null)
+      .then((lang) => {
+        if (!cancelled) setOriginalAudio({ metaId: meta.id, lang });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    settings.preferOriginalAudio,
+    settings.tmdbKey,
+    src.meta.id,
+    src.meta.type,
+    src.meta.originalLanguage,
+    src.imdbId,
+  ]);
+  const originalAudioLang =
+    settings.preferOriginalAudio && originalAudio.metaId === src.meta.id
+      ? originalAudio.lang
+      : null;
 
   const [userAddonsState, setUserAddonsState] = useState<{
     authKey: string | null;
@@ -767,6 +801,7 @@ export function useTrackAutoload(params: {
       settings.forcedSubsWhenNativeAudio,
       settings.subtitlesOffByDefault,
       settings.trackBlockWords,
+      originalAudioLang,
     ]);
     const key = `${src.url}|${audioIdSig}|${subIdSig}|${preferenceSig}`;
     if (autoTrackKeyRef.current === key) return;
@@ -791,9 +826,7 @@ export function useTrackAutoload(params: {
     const baseSub = stripJaForNonAnime(
       resolveLangPreference(settings.preferredSubLangs, settings.preferredLanguages),
     );
-    const audioLangs = prefs?.audioLang
-      ? [prefs.audioLang, ...baseAudio.filter((l) => l !== prefs.audioLang)]
-      : baseAudio;
+    const audioLangs = audioLanguageOrder(baseAudio, prefs?.audioLang, originalAudioLang);
     const subLangs = prefs?.subLang
       ? [prefs.subLang, ...baseSub.filter((l) => l !== prefs.subLang)]
       : baseSub;
@@ -871,7 +904,16 @@ export function useTrackAutoload(params: {
         bridgeRef.current?.setRate(wanted);
       }
     }
-  }, [engine, src.url, src.meta.id, snap.audioTracks, snap.subtitleTracks, snap.rate, settings]);
+  }, [
+    engine,
+    src.url,
+    src.meta.id,
+    snap.audioTracks,
+    snap.subtitleTracks,
+    snap.rate,
+    settings,
+    originalAudioLang,
+  ]);
 
   useEffect(() => {
     bridgeRef.current?.setSubDelay(readPlayerPrefs(src.meta.id)?.subDelaySec ?? 0);

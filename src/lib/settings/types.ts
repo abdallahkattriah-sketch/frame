@@ -334,6 +334,7 @@ export type Settings = {
   playerShaders: Record<string, { enabled: boolean; variant?: string; dir?: string }>;
   preferredSubLangs: string[];
   preferredAudioLangs: string[];
+  preferOriginalAudio: boolean;
   subFontSize: number;
   subFontColor: string;
   subBorderColor: string;
