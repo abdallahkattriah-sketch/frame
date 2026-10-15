@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Meta } from "@/lib/cinemeta";
+import { absoluteNumberFor, seasonOffsets } from "@/lib/episode-absolute";
 import { isManuallyWatched, remoteWatchedKeys, subscribeManualWatched } from "@/lib/manual-watched";
 import { episodeFromVideoId, type LibraryItem } from "@/lib/stremio";
 import type { PlayEpisode } from "@/lib/view";
@@ -32,6 +33,7 @@ export type BpEpisodeStripState = {
   backdrop?: string;
   stillsOf: (ep: BpEp) => string[];
   factOf: (ep: BpEp) => BpEpisodeFact | undefined;
+  absoluteOf: (ep: BpEp) => number | undefined;
   watchedOf: (ep: BpEp) => boolean;
   progressOf: (ep: BpEp) => number;
 };
@@ -95,6 +97,7 @@ export function useBpEpisodeStrip({
     return { bySeason: grouped, seasonCounts: counts };
   }, [live.id, live.videos?.length, ids]);
   const seasons = useMemo(() => [...bySeason.keys()].sort((a, b) => a - b), [bySeason]);
+  const offsets = useMemo(() => seasonOffsets(seasonCounts), [seasonCounts]);
   const [season, setSeason] = useState<number | null>(null);
   const [watchedTick, setWatchedTick] = useState(0);
 
@@ -191,6 +194,7 @@ export function useBpEpisodeStrip({
     backdrop: live.background,
     stillsOf: (ep) => art.get(ep.key) ?? NO_STILLS,
     factOf: (ep) => facts.get(`${ep.imdbSeason ?? ep.season}:${ep.imdbEpisode ?? ep.episode}`),
+    absoluteOf: (ep) => ep.absoluteNumber ?? absoluteNumberFor(offsets, ep.group, ep.label),
     watchedOf: (ep) =>
       isManuallyWatched(live.id, ep.season, ep.episode) ||
       remote.has(`${ep.season}:${ep.episode}`),

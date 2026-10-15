@@ -2152,6 +2152,7 @@ export function DetailView({
                 videos={cinemetaFull.videos}
                 stremioWatched={stremioWatched}
                 resumeSeason={lastPlay?.season}
+                scrollRef={scrollRef}
               />
             </FadeInUp>
           )}

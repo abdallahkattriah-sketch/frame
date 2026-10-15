@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import type { Meta } from "@/lib/cinemeta";
+import { absoluteNumberFor } from "@/lib/episode-absolute";
 import { useT } from "@/lib/i18n";
 import { CinemetaEpisodeRow } from "../cinemeta-episodes";
 
@@ -7,10 +8,12 @@ export function CinemetaFallback({
   meta,
   videos,
   season,
+  offsets,
 }: {
   meta: Meta;
   videos: NonNullable<Meta["videos"]> | undefined;
   season: number;
+  offsets?: Map<number, number>;
 }) {
   const t = useT();
   const eps = useMemo(() => {
@@ -26,7 +29,12 @@ export function CinemetaFallback({
   return (
     <div className="flex flex-col gap-1">
       {eps.map((ep) => (
-        <CinemetaEpisodeRow key={ep.id ?? `${ep.season}-${ep.episode}`} meta={meta} ep={ep} />
+        <CinemetaEpisodeRow
+          key={ep.id ?? `${ep.season}-${ep.episode}`}
+          meta={meta}
+          ep={ep}
+          absoluteNumber={offsets ? absoluteNumberFor(offsets, season, ep.episode ?? 0) : undefined}
+        />
       ))}
     </div>
   );

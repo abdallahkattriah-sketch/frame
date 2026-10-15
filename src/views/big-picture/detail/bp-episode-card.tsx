@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Play } from "@/components/icons/play-filled";
+import { distinctAbsolute } from "@/lib/episode-absolute";
 import { pickEpisodeName } from "@/lib/providers/tmdb";
 import { useSettings } from "@/lib/settings";
 import { SFX } from "@/lib/sfx";
@@ -18,6 +19,7 @@ export function BpEpisodeCard({
   stills,
   backdrop,
   fact,
+  absoluteNumber,
   onPlay,
   watched,
   progress,
@@ -27,6 +29,7 @@ export function BpEpisodeCard({
   stills: string[];
   backdrop?: string;
   fact?: BpEpisodeFact;
+  absoluteNumber?: number;
   onPlay: (e: BpEp) => void;
   watched: boolean;
   progress: number;
@@ -45,7 +48,12 @@ export function BpEpisodeCard({
   const aired = bpShortDate(ep.airDate ?? fact?.airDate);
   const name = pickEpisodeName(ep.name, fact?.name);
   const overview = ep.overview || fact?.overview || "";
-  const facts = [aired, runtime ? t("{n} min", { n: runtime }) : ""].filter(Boolean);
+  const absolute = distinctAbsolute(absoluteNumber, ep.label);
+  const facts = [
+    absolute != null ? t("Abs E{n}", { n: absolute }) : "",
+    aired,
+    runtime ? t("{n} min", { n: runtime }) : "",
+  ].filter(Boolean);
 
   return (
     <button

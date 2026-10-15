@@ -63,6 +63,7 @@ export function AnimeEpisodeStrip({
           stills: [ep.thumbnail, ep.thumbnailFallback, meta.background].filter((u): u is string => !!u),
           runtime: ep.length,
           airDate: ep.airdate,
+          absoluteNumber: ep.absoluteNumber,
           overview: ep.synopsis || undefined,
           rating: ep.rating ?? undefined,
           ratingIsImdb: ep.rating != null ? !!ep.ratingIsImdb : false,
@@ -223,9 +224,18 @@ function AnimeEpisodeStripCard({
             {ep.filler && <FillerBadge />}
           </span>
           <span className="text-[11.5px] text-ink-subtle">
-            {showSeason ? `S${ep.imdbSeason ?? ep.seasonNumber ?? 1} · E${ep.number}` : `E${ep.number}`}
-            {ep.length ? ` · ${t("{n} min", { n: ep.length })}` : ""}
-            {upcoming && ep.airdate ? ` · ${formatAirDate(ep.airdate)}` : ""}
+            {[
+              showSeason
+                ? `S${ep.imdbSeason ?? ep.seasonNumber ?? 1} · E${ep.number}`
+                : `E${ep.number}`,
+              ep.absoluteNumber && ep.absoluteNumber !== ep.number
+                ? t("Abs E{n}", { n: ep.absoluteNumber })
+                : null,
+              ep.length ? t("{n} min", { n: ep.length }) : null,
+              formatAirDate(ep.airdate) || null,
+            ]
+              .filter(Boolean)
+              .join(" · ")}
           </span>
         </button>
         <HoverTooltip label={t("Episode details")} align="center" className="shrink-0">

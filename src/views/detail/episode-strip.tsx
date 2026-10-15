@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 import { DragStrip } from "@/components/drag-strip";
 import { Poster } from "@/components/poster";
 import type { Meta } from "@/lib/cinemeta";
+import { formatAirDate } from "@/lib/dates";
+import { distinctAbsolute } from "@/lib/episode-absolute";
 import type { Episode } from "@/lib/providers/tmdb";
 import { useSettings } from "@/lib/settings";
 import { SPOILER_TEXT_CLASS, SPOILER_THUMB_CLASS, type SpoilerMask } from "@/lib/spoilers";
@@ -60,6 +62,7 @@ export function EpisodeStrip({
           stills,
           runtime: ep.runtime,
           airDate: ep.airDate,
+          absoluteNumber: ep.absoluteNumber,
           overview: ep.overview || undefined,
           rating: ep.imdbRating ?? ep.voteAverage ?? undefined,
           ratingIsImdb: ep.imdbRating != null,
@@ -149,6 +152,7 @@ function EpisodeStripCard({
   const { settings } = useSettings();
   const ratingValue = ep.imdbRating ?? ep.voteAverage;
   const ratingIsImdb = ep.imdbRating != null;
+  const absolute = distinctAbsolute(ep.absoluteNumber, ep.episodeNumber);
 
   const [imgIdx, setImgIdx] = useState(0);
   useEffect(() => {
@@ -243,8 +247,14 @@ function EpisodeStripCard({
             {ep.name || t("Episode {n}", { n: ep.episodeNumber })}
           </span>
           <span className="text-[11.5px] text-ink-subtle">
-            S{ep.seasonNumber} E{ep.episodeNumber}
-            {ep.runtime ? ` · ${t("{n} min", { n: ep.runtime })}` : ""}
+            {[
+              `S${ep.seasonNumber} E${ep.episodeNumber}`,
+              absolute != null ? t("Abs E{n}", { n: absolute }) : null,
+              ep.runtime ? t("{n} min", { n: ep.runtime }) : null,
+              formatAirDate(ep.airDate) || null,
+            ]
+              .filter(Boolean)
+              .join(" · ")}
           </span>
         </button>
         <div className="flex shrink-0 items-center gap-0.5">

@@ -8,6 +8,7 @@ import { Poster } from "@/components/poster";
 import type { Meta } from "@/lib/cinemeta";
 import { prefetchSegments } from "@/lib/skip-intro";
 import { formatAirDate } from "@/lib/dates";
+import { distinctAbsolute } from "@/lib/episode-absolute";
 import { useT } from "@/lib/i18n";
 import { useView } from "@/lib/view";
 import { useSettings } from "@/lib/settings";
@@ -114,8 +115,14 @@ export function EpisodeGridCard({
             {g.filler && <FillerBadge />}
           </span>
           <span className="text-[11.5px] text-ink-subtle">
-            {g.seasonLabel ? `${g.seasonLabel} · E${g.number}` : `E${g.number}`}
-            {g.runtime ? ` · ${t("{n} min", { n: g.runtime })}` : ""}
+            {[
+              g.seasonLabel ? `${g.seasonLabel} · E${g.number}` : `E${g.number}`,
+              absoluteLabel(g, t),
+              g.runtime ? t("{n} min", { n: g.runtime }) : null,
+              formatAirDate(g.airDate) || null,
+            ]
+              .filter(Boolean)
+              .join(" · ")}
           </span>
           {settings.showEpisodeDescription && g.overview && (
             <p
@@ -140,6 +147,11 @@ export function EpisodeGridCard({
       )}
     </div>
   );
+}
+
+function absoluteLabel(g: GridEpisode, t: T): string | null {
+  const abs = distinctAbsolute(g.absoluteNumber, g.number);
+  return abs != null ? t("Abs E{n}", { n: abs }) : null;
 }
 
 function StatusTag({
@@ -224,6 +236,7 @@ function EpisodePreview({
         <span className="flex items-center gap-1.5 text-[11.5px] text-ink-subtle">
           <span className="font-semibold text-ink-muted">
             {g.seasonLabel ? `${g.seasonLabel} · E${g.number}` : `E${g.number}`}
+            {absoluteLabel(g, t) ? ` · ${absoluteLabel(g, t)}` : ""}
           </span>
           {g.airDate && (
             <>

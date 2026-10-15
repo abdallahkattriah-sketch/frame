@@ -6,6 +6,7 @@ import { EpisodeRatingBadge } from "./episode-rating-badge";
 import { Poster } from "@/components/poster";
 import type { Meta } from "@/lib/cinemeta";
 import { formatAirDate } from "@/lib/dates";
+import { distinctAbsolute } from "@/lib/episode-absolute";
 import { formatRelativeWatched } from "@/lib/episode-progress";
 import type { Episode } from "@/lib/providers/tmdb";
 import { useSettings } from "@/lib/settings";
@@ -64,6 +65,7 @@ export function EpisodeRow({
   }, [ep.id]);
   const still = candidates[imgIdx];
   const watchedAgo = progress.startedAt > 0 ? formatRelativeWatched(progress.startedAt) : "";
+  const absolute = distinctAbsolute(ep.absoluteNumber, ep.episodeNumber);
   const resolvedImdbId = useMemo(() => {
     const v = cinemetaVideos?.find((x) => x.season === ep.seasonNumber && x.episode === ep.episodeNumber);
     return v?.id ?? undefined;
@@ -148,6 +150,7 @@ export function EpisodeRow({
             <span>
               {[
                 `S${ep.seasonNumber} E${ep.episodeNumber}`,
+                absolute != null ? t("Abs E{n}", { n: absolute }) : null,
                 ep.runtime ? t("{n} min", { n: ep.runtime }) : null,
                 formatAirDate(ep.airDate) || null,
               ]

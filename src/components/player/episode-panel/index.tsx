@@ -77,16 +77,26 @@ export function EpisodePanel({
   const { openPicker, replacePlayerSrc } = usePlayerNavigation();
   const queue = useQueue();
   const debrids = useDebridClients();
-  const { seasons, season, setSeason, episodes, loading, imdbRatings } = useSeasonBrowser(
-    meta,
-    currentEpisode,
-    open,
-  );
+  const { seasons, season, setSeason, episodes, loading, imdbRatings, absoluteFor } =
+    useSeasonBrowser(meta, currentEpisode, open);
   const nextSeason = seasons.find((n) => n > season);
   const listRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     listRef.current?.scrollTo({ top: 0 });
   }, [season]);
+  const scrolledToCurrentRef = useRef(false);
+  useEffect(() => {
+    if (!open) scrolledToCurrentRef.current = false;
+  }, [open]);
+  useEffect(() => {
+    if (!open || scrolledToCurrentRef.current || episodes.length === 0) return;
+    const list = listRef.current;
+    const row = list?.querySelector<HTMLElement>("[data-current-episode]");
+    if (!list || !row) return;
+    scrolledToCurrentRef.current = true;
+    const offset = row.getBoundingClientRect().top - list.getBoundingClientRect().top;
+    list.scrollTop += offset - (list.clientHeight - row.offsetHeight) / 2;
+  }, [open, episodes]);
   const [expandedEp, setExpandedEp] = useState<string | null>(null);
   const [pickingFor, setPickingFor] = useState<PlayEpisode | null>(null);
   const [resolvingFor, setResolvingFor] = useState<PlayEpisode | null>(null);
@@ -398,6 +408,7 @@ export function EpisodePanel({
                               episode={ep}
                               metaId={meta.id}
                               imdbRating={imdbRatings.get(`${ep.season}:${ep.episode}`)}
+                              absoluteNumber={absoluteFor(ep)}
                               expanded={expandedEp === key}
                               onToggle={() => setExpandedEp((cur) => (cur === key ? null : key))}
                               onPlay={() => {

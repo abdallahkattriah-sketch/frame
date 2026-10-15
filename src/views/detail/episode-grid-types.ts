@@ -11,6 +11,7 @@ export type GridEpisode = {
   stills: string[];
   runtime: number | null;
   airDate: string | null;
+  absoluteNumber?: number;
   overview?: string;
   rating?: number;
   ratingIsImdb?: boolean;

@@ -16,12 +16,15 @@ import { useLocalAwareSeriesPlay } from "@/lib/local-library/use-series-play";
 import { useT } from "@/lib/i18n";
 import { EpisodeDownloadButton } from "./episode-download-button";
 import { resumeDefaultSeason } from "@/lib/episode-progress";
+import { absoluteNumberFor, distinctAbsolute, seasonOffsets } from "@/lib/episode-absolute";
 import { DragStrip } from "@/components/drag-strip";
 import { EpisodeGrid } from "./episode-grid";
 import { EpisodeGridCard } from "./episode-grid-card";
 import type { GridEpisode, Progress } from "./episode-grid-types";
 import { EpisodeLayoutToggle } from "./episode-layout-toggle";
 import { isUpcomingDate } from "./helpers";
+import { SeasonStepper } from "./season-stepper";
+import { useEpisodeAutoScroll, type AutoScrollTarget } from "./use-episode-auto-scroll";
 import {
   episodeNumber,
   episodeSeason,
@@ -37,11 +40,13 @@ export function CinemetaEpisodes({
   videos,
   stremioWatched,
   resumeSeason,
+  scrollRef,
 }: {
   meta: Meta;
   videos: NonNullable<Meta["videos"]>;
   stremioWatched?: Set<string>;
   resumeSeason?: number;
+  scrollRef: React.RefObject<HTMLElement | null>;
 }) {
   const t = useT();
   const { settings, update } = useSettings();
@@ -88,6 +93,11 @@ export function CinemetaEpisodes({
     [grouped],
   );
 
+  const offsets = useMemo(
+    () => seasonOffsets(seasonStats.map((s) => [s.seasonNumber, s.episodeCount] as const)),
+    [seasonStats],
+  );
+
   const [active, setActive] = useState<number>(() =>
     resumeDefaultSeason(meta.id, seasonStats, combinedWatched, resumeSeason),
   );
@@ -108,6 +118,26 @@ export function CinemetaEpisodes({
     const st = manualWatchedState(meta.id, season, number);
     return st === true || (st === undefined && (stremioWatched?.has(`${season}:${number}`) ?? false));
   };
+
+  const autoScrollTarget = useMemo<AutoScrollTarget>(() => {
+    const idx = activeEps.findIndex((ep, i) => !watchedAt(episodeSeason(ep), episodeNumber(ep, i)));
+    if (idx < 0) return null;
+    return { episode: episodeNumber(activeEps[idx], idx), first: idx === 0 };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeEps, meta.id, stremioWatched, mwVersion]);
+  const markPicked = useEpisodeAutoScroll({
+    scrollRef,
+    scopeKey: meta.id,
+    seasonKey: String(active),
+    target: autoScrollTarget,
+    ready: activeEps.length > 0,
+  });
+  const selectSeason = (n: number) => {
+    markPicked();
+    userPickedRef.current = true;
+    setActive(n);
+  };
+  const seasonNumbers = grouped.map((g) => g.seasonNumber);
 
   const progressFor = (g: GridEpisode): Progress => ({
     ratio: 0,
@@ -134,6 +164,7 @@ export function CinemetaEpisodes({
           stills,
           runtime,
           airDate,
+          absoluteNumber: absoluteNumberFor(offsets, season, number),
           overview,
           upcoming: isUpcomingDate(airDate),
           play: (opts) =>
@@ -155,14 +186,7 @@ export function CinemetaEpisodes({
             }),
         };
       }),
-    [
-      activeEps,
-      meta,
-      t,
-      playLocalAware,
-      settings.instantPlay,
-      settings.seasonSourceLock,
-    ],
+    [activeEps, meta, t, playLocalAware, settings.instantPlay, settings.seasonSourceLock, offsets],
   );
 
   if (grouped.length === 0) return null;
@@ -173,14 +197,13 @@ export function CinemetaEpisodes({
         <h3 className="text-[22px] font-medium tracking-tight text-ink">{t("Episodes")}</h3>
         <div className="flex items-center gap-3">
           {grouped.length > 1 && (
-            <SeasonDropdown
-              seasons={grouped.map((g) => g.seasonNumber)}
-              active={active}
-              onChange={(n) => {
-                userPickedRef.current = true;
-                setActive(n);
-              }}
-            />
+            <SeasonStepper
+              keys={seasonNumbers.filter((n) => n > 0).map(String)}
+              activeKey={String(active)}
+              onSelect={(k) => selectSeason(Number(k))}
+            >
+              <SeasonDropdown seasons={seasonNumbers} active={active} onChange={selectSeason} />
+            </SeasonStepper>
           )}
           <EpisodeLayoutToggle
             value={settings.episodeLayout}
@@ -228,6 +251,7 @@ export function CinemetaEpisodes({
                   key={ep.id ?? `${ep.season ?? "x"}-${ep.episode ?? i}`}
                   meta={meta}
                   ep={ep}
+                  absoluteNumber={absoluteNumberFor(offsets, season, epNumber)}
                   flatIndex={ep.season == null ? i + 1 : undefined}
                   watched={watchedAt(season, epNumber)}
                   onContextMenu={openWatchedMenu}
@@ -258,12 +282,14 @@ export function CinemetaEpisodes({
 export function CinemetaEpisodeRow({
   meta,
   ep,
+  absoluteNumber,
   flatIndex,
   watched = false,
   onContextMenu,
 }: {
   meta: Meta;
   ep: CinemetaVideo;
+  absoluteNumber?: number;
   flatIndex?: number;
   watched?: boolean;
   onContextMenu?: (e: React.MouseEvent, season: number, episode: number, watched: boolean) => void;
@@ -275,6 +301,7 @@ export function CinemetaEpisodeRow({
   const epNumber = ep.episode ?? ep.number ?? flatIndex ?? 1;
   const season = ep.season ?? 0;
   const runtime = ep.runtime ?? null;
+  const absolute = distinctAbsolute(absoluteNumber, epNumber);
   const playEpisode = {
     season: ep.season ?? 0,
     episode: epNumber,
@@ -286,6 +313,7 @@ export function CinemetaEpisodeRow({
   };
   return (
     <div
+      data-ep={epNumber}
       data-no-card-ring
       onContextMenu={onContextMenu ? (e) => onContextMenu(e, season, epNumber, watched) : undefined}
       className="group flex items-center gap-4 rounded-lg px-4 py-5 transition-colors hover:bg-elevated/30"
@@ -330,6 +358,7 @@ export function CinemetaEpisodeRow({
           <p className="text-[12px] text-ink-subtle">
             {[
               ep.season != null ? `S${ep.season} E${epNumber}` : null,
+              absolute != null ? t("Abs E{n}", { n: absolute }) : null,
               runtime ? t("{n} min", { n: runtime }) : null,
               formatAired(aired),
             ]
