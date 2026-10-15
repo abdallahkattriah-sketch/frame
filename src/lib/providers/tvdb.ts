@@ -1,11 +1,25 @@
 import { lruSet } from "@/lib/cache";
 import { registerCache } from "@/lib/memory-profiler";
 import { safeFetch as tauriFetch } from "@/lib/safe-fetch";
-import { HARBOR_TVDB_BASE } from "@/lib/config/endpoints";
 
 const BASE = "https://api4.thetvdb.com/v4";
-const PROXY_V4 = `${HARBOR_TVDB_BASE}/api/tvdb/v4`;
 const TOKEN_KEY = "harbor.tvdb.token.v1";
+
+let globalKey = "";
+
+export function setTvdbKey(key: string): void {
+  globalKey = key.trim();
+}
+
+export function hasTvdbKey(): boolean {
+  return globalKey !== "";
+}
+
+// Direct TVDB v4 GET with the key from settings; ok=false means the call failed, not that TVDB had nothing.
+export async function tvdbGet<T>(path: string): Promise<{ ok: boolean; data: T | null }> {
+  const data = await getJson<T>(globalKey, path);
+  return { ok: data !== null, data };
+}
 const TOKEN_TTL_MS = 23 * 60 * 60 * 1000;
 
 function tvdbImg(v: unknown): string | undefined {
@@ -133,28 +147,21 @@ const responseInflight = new Map<string, Promise<unknown>>();
 registerCache("tvdb:response", () => responseCache.size);
 
 async function getJson<T>(apiKey: string, path: string): Promise<T | null> {
-  const useProxy = !apiKey;
-  const key = `${useProxy ? "proxy" : apiKey.slice(0, 6)}::${path}`;
+  if (!apiKey) return null;
+  const key = `${apiKey.slice(0, 6)}::${path}`;
   if (responseCache.has(key)) return responseCache.get(key) as T;
   const existing = responseInflight.get(key);
   if (existing) return existing as Promise<T | null>;
   const p = (async (): Promise<T | null> => {
     try {
       for (let attempt = 0; attempt < 2; attempt += 1) {
-        let url: string;
-        let headers: Record<string, string>;
-        if (useProxy) {
-          url = `${PROXY_V4}${path}`;
-          headers = { accept: "application/json" };
-        } else {
-          const token = await getToken(apiKey);
-          if (!token) return null;
-          url = `${BASE}${path}`;
-          headers = { authorization: `Bearer ${token}`, accept: "application/json" };
-        }
+        const token = await getToken(apiKey);
+        if (!token) return null;
+        const url = `${BASE}${path}`;
+        const headers = { authorization: `Bearer ${token}`, accept: "application/json" };
         try {
           const res = await tauriFetch(url, { headers });
-          if (!useProxy && res.status === 401) {
+          if (res.status === 401) {
             cachedToken = null;
             try {
               localStorage.removeItem(TOKEN_KEY);

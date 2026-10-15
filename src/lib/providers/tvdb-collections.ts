@@ -1,8 +1,5 @@
-import { safeFetch } from "@/lib/safe-fetch";
 import type { Meta } from "@/lib/cinemeta";
-import { HARBOR_TVDB_BASE } from "@/lib/config/endpoints";
-
-const V4 = `${HARBOR_TVDB_BASE}/api/tvdb/v4`;
+import { tvdbGet } from "./tvdb";
 
 export type TvdbCollectionHit = {
   id: number;
@@ -38,14 +35,7 @@ function img(v: string | null | undefined): string | null {
 }
 
 async function v4<T>(rel: string): Promise<T | null> {
-  try {
-    const res = await safeFetch(`${V4}${rel}`);
-    if (!res.ok) return null;
-    const j = (await res.json()) as { data?: T | null };
-    return j?.data ?? null;
-  } catch {
-    return null;
-  }
+  return (await tvdbGet<T>(rel)).data;
 }
 
 const searchCache = new Map<string, TvdbCollectionHit[]>();
