@@ -1,8 +1,15 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "identifier": "site.harbor.Harbor",
+  "build": {
+    "beforeBuildCommand": "node flatpak-node/pnpm-cli/bin/pnpm.cjs run build"
+  },
   "bundle": {
     "active": false,
-    "externalBin": []
+    "externalBin": [],
+    "resources": {
+      "resources/capstan/": null,
+      "resources/pokemon-engine/": null
+    }
   }
 }
