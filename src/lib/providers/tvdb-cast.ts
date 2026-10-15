@@ -1,9 +1,6 @@
-import { safeFetch } from "@/lib/safe-fetch";
 import { kitsuToTvdb } from "./anime-mapping";
 import type { CastEntry } from "./tmdb/tmdb-details";
-import { HARBOR_TVDB_BASE } from "@/lib/config/endpoints";
-
-const V4 = `${HARBOR_TVDB_BASE}/api/tvdb/v4`;
+import { hasTvdbKey, tvdbGet } from "./tvdb";
 
 type TvdbCharacter = {
   name?: string | null;
@@ -25,21 +22,8 @@ function img(v: string | null | undefined): string | null {
     : `https://artworks.thetvdb.com${v.startsWith("/") ? "" : "/"}${v}`;
 }
 
-type V4Result<T> = { ok: boolean; data: T | null };
-
-// Collapsing every outcome to null made a transient network blip indistinguishable
-// from "this title genuinely has no cast", and the caller then cached the empty
-// result forever. ok=false means "we do not know", and must never be cached.
-async function v4<T>(rel: string): Promise<V4Result<T>> {
-  try {
-    const res = await safeFetch(`${V4}${rel}`);
-    if (!res.ok) return { ok: false, data: null };
-    const j = (await res.json()) as { data?: T | null };
-    return { ok: true, data: j?.data ?? null };
-  } catch {
-    return { ok: false, data: null };
-  }
-}
+// ok=false means "we do not know" (no key, network error) and must never be cached as "no cast".
+const v4 = tvdbGet;
 
 async function resolveIds(imdb: string): Promise<{ series: number | null; movie: number | null }> {
   const res = await v4<Array<{ series?: { id?: number } | null; movie?: { id?: number } | null }>>(
@@ -81,6 +65,7 @@ export async function fetchTvdbCast(opts: {
   kitsuId?: number | null;
   type: "movie" | "series";
 }): Promise<CastEntry[]> {
+  if (!hasTvdbKey()) return [];
   const key = `${opts.type}:${opts.imdb ?? ""}:${opts.kitsuId ?? ""}`;
   const hit = cache.get(key);
   if (hit) return hit;

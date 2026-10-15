@@ -15,6 +15,7 @@ import { loadBgImage, saveBgImage } from "@/lib/theme-storage";
 import { effectiveTmdbLanguage, setTmdbLanguage } from "@/lib/providers/tmdb/tmdb-client";
 import { setPosterBaseUrl } from "@/lib/providers/rpdb";
 import { setMdblistBatchKey } from "@/lib/providers/mdblist-batch";
+import { setTvdbKey } from "@/lib/providers/tvdb";
 import { setUiLanguage } from "@/lib/i18n";
 import { makeSafeTauriUnlisten } from "@/lib/tauri-unlisten";
 import { STORAGE_KEY } from "./settings/defaults";
@@ -271,6 +272,8 @@ export function SettingsProvider({
   useEffect(() => {
     setMdblistBatchKey(settings.mdblistKey);
   }, [settings.mdblistKey]);
+
+  setTvdbKey(settings.tvdbKey ?? "");
 
   useEffect(() => {
     if (typeof document === "undefined" || !("fonts" in document)) return;
