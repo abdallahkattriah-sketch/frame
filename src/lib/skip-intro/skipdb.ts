@@ -7,6 +7,8 @@ type RawSeg = {
   end_ms?: number | null;
   match?: string;
   confidence?: number;
+  adjusted?: boolean;
+  offset_ms?: number;
 };
 
 type RawResponse = {
@@ -24,12 +26,14 @@ const inflight = new Map<string, Promise<SkipSegment[]>>();
 const FAILURE_COOLDOWN_MS = 10 * 60 * 1000;
 let coolingUntil = 0;
 
-function toSegment(raw: RawSeg | null | undefined, kind: SkipKind): SkipSegment | null {
+export function toSegment(raw: RawSeg | null | undefined, kind: SkipKind): SkipSegment | null {
   if (!raw) return null;
   if (raw.match === "out-of-range") return null;
   if (typeof raw.confidence === "number" && raw.confidence < 0.35) return null;
-  const start = raw.start_ms;
-  const end = raw.end_ms;
+  // SkipDB blames a duration mismatch on the file's start, but WEBRips usually differ at the end.
+  const shift = raw.adjusted === true && typeof raw.offset_ms === "number" ? raw.offset_ms : 0;
+  const start = typeof raw.start_ms === "number" ? raw.start_ms - shift : raw.start_ms;
+  const end = typeof raw.end_ms === "number" ? raw.end_ms - shift : raw.end_ms;
   if (typeof start !== "number" || typeof end !== "number" || end <= start) return null;
   return { kind, startSec: start / 1000, endSec: end / 1000, source: "skipdb" };
 }
