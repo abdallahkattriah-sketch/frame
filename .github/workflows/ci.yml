@@ -27,6 +27,8 @@ jobs:
       - name: Setup Vite+
         uses: voidzero-dev/setup-vp@v1
         with:
+          # Pinned so the formatter CI checks with is the one the tree was formatted with.
+          version: 1.1.0
           node-version: 24
           cache: true
           run-install: |
@@ -135,6 +137,7 @@ jobs:
             libmpv-dev \
             librsvg2-dev \
             libssl-dev \
+            libudev-dev \
             libwebkit2gtk-4.1-dev \
             pkg-config
 
