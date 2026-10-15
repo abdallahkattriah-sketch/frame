@@ -99,6 +99,7 @@ audit-rest.txt
 installer/src-tauri/payload/
 installer/payload-stage/
 !installer/**/*.md
+!docs/SUNSET.md
 # local design references and perf captures, not for distribution
 tools/tv-refs/
 docs/tv-perf/
