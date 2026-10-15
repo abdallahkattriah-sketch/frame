@@ -45,20 +45,18 @@ async function run(key: string, id: number): Promise<TmdbCollection | null> {
     }
   }
   const parts: Meta[] = (raw.parts ?? [])
-    .map(
-      (p: any): Meta => ({
-        id: `tmdb:movie:${p.id}`,
-        type: "movie",
-        name: p.title ?? p.name ?? "",
-        poster: tmdbPosterUrl(p.poster_path),
-        background: tmdbBackdropUrl(p.backdrop_path),
-        description: p.overview,
-        releaseInfo: (p.release_date ?? "").slice(0, 4) || undefined,
-        releaseDate: p.release_date || undefined,
-        imdbRating: p.vote_average > 0 ? Number(p.vote_average).toFixed(1) : undefined,
-        adult: p.adult,
-      }),
-    )
+    .map((p: any): Meta => ({
+      id: `tmdb:movie:${p.id}`,
+      type: "movie",
+      name: p.title ?? p.name ?? "",
+      poster: tmdbPosterUrl(p.poster_path),
+      background: tmdbBackdropUrl(p.backdrop_path),
+      description: p.overview,
+      releaseInfo: (p.release_date ?? "").slice(0, 4) || undefined,
+      releaseDate: p.release_date || undefined,
+      imdbRating: p.vote_average > 0 ? Number(p.vote_average).toFixed(1) : undefined,
+      adult: p.adult,
+    }))
     .sort((a: Meta, b: Meta) => (a.releaseDate ?? "zzz").localeCompare(b.releaseDate ?? "zzz"));
   return {
     id: raw.id,

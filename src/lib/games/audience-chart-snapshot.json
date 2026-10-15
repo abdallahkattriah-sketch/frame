@@ -6,10 +6,7 @@
     "capsule": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar57t1.jpg",
     "hero": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar57t1.jpg",
     "portrait": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coc99o.jpg",
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
+    "platforms": ["PC (Microsoft Windows)", "Mac"],
     "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes. With an ever-expanding roster of champions, frequent updates and a thriving tournament scene, League of Legends offers endless replayability for players of every skill level."
   },
   "1020": {
@@ -77,11 +74,7 @@
     "capsule": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar57tk.jpg",
     "hero": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar57tk.jpg",
     "portrait": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobfk4.jpg",
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
+    "platforms": ["Linux", "PC (Microsoft Windows)", "Mac"],
     "description": "Dota 2 is a multiplayer online battle arena video game and the stand-alone sequel to the Defense of the Ancients (DotA) mod. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own."
   },
   "3212": {
@@ -92,12 +85,7 @@
     "capsule": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar5la.jpg",
     "hero": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar5la.jpg",
     "portrait": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3h3l.jpg",
-    "platforms": [
-      "PlayStation 4",
-      "PC (Microsoft Windows)",
-      "Mac",
-      "Xbox One"
-    ],
+    "platforms": ["PlayStation 4", "PC (Microsoft Windows)", "Mac", "Xbox One"],
     "description": "Unleash your imagination and create a unique world of Sims that's an expression of you! Explore and customize every detail from Sims to homes, and much more with The Sims 4. Life, and Sims, are yours to control. Customize your unique Sims, design their homes & take them on wild adventures through celebdom, romance, holidays and more."
   },
   "7360": {
@@ -184,11 +172,7 @@
     "capsule": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar5iqo.jpg",
     "hero": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar5iqo.jpg",
     "portrait": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocqbp.jpg",
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
+    "platforms": ["Xbox Series X|S", "PC (Microsoft Windows)", "PlayStation 5"],
     "description": "Valorant is a character-based 5v5 tactical shooter set on the global stage. Outwit, outplay, and outshine your competition with tactical abilities, precise gunplay, and adaptive teamwork."
   },
   "135400": {
@@ -224,10 +208,7 @@
     "capsule": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar4kon.jpg",
     "hero": "https://images.igdb.com/igdb/image/upload/t_screenshot_huge/ar4kon.jpg",
     "portrait": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaczd.jpg",
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
+    "platforms": ["Linux", "PC (Microsoft Windows)"],
     "description": "Counter-Strike 2 is a free-to-play multiplayer tactical first-person shooter developed and published by Valve. Released in September 2023, it is the fifth main entry in the Counter-Strike series and serves as a direct replacement for Counter-Strike: Global Offensive on Steam. Two teams, Terrorists and Counter-Terrorists, compete in objective-based rounds across modes such as bomb defusal and hostage rescue. Built on the Source 2 engine, the game introduced volumetric smoke physics, revised weapon handling, and a new sub-tick server architecture. It inherited all cosmetic items from its predecessor and features both a map-specific Competitive mode and a numerically ranked Premier mode."
   },
   "353848": {

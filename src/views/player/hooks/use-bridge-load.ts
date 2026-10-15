@@ -125,8 +125,11 @@ export function useBridgeLoad(params: {
       const startSec =
         isLive || src.startFromZero
           ? 0
-          : (hasExplicitStart ? startMs : !resumePlaybackRef.current || finishedNearEnd ? 0 : startMs) /
-            1000;
+          : (hasExplicitStart
+              ? startMs
+              : !resumePlaybackRef.current || finishedNearEnd
+                ? 0
+                : startMs) / 1000;
       const guestInRoom = inRoomRef.current && !isHostRef.current;
       const eligibleForPrompt =
         isFirstLoad &&

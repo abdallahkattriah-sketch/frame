@@ -15,7 +15,9 @@ export function useAnilistWatched(harborId: string, episodes: KitsuEpisode[]): A
   const [result, setResult] = useState<AnilistWatched>(EMPTY);
   const epSig = useMemo(
     () =>
-      episodes.map((e) => `${e.id}:${e.seasonNumber ?? 1}:${e.number}:${e.airdate ?? ""}`).join("|"),
+      episodes
+        .map((e) => `${e.id}:${e.seasonNumber ?? 1}:${e.number}:${e.airdate ?? ""}`)
+        .join("|"),
     [episodes],
   );
   const episodesRef = useRef(episodes);

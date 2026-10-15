@@ -160,7 +160,10 @@ export async function fetchCommunityCollections(
 }
 
 export const COMMUNITY_COLLECTION_PAGE_SIZE = 24;
-export type CommunityCollectionPage = { collections: CommunityCollection[]; nextCursor: string | null };
+export type CommunityCollectionPage = {
+  collections: CommunityCollection[];
+  nextCursor: string | null;
+};
 
 /** The array-only endpoint remains available to older callers, including Big Picture. */
 export async function fetchCommunityCollectionsPage(
@@ -169,14 +172,21 @@ export async function fetchCommunityCollectionsPage(
 ): Promise<CommunityCollectionPage> {
   const params = new URLSearchParams({ limit: String(COMMUNITY_COLLECTION_PAGE_SIZE) });
   if (cursor) params.set("cursor", cursor);
-  const res = await safeFetch(`${BASE}/collections/community?${params}`, { headers: authHeaders(), signal });
+  const res = await safeFetch(`${BASE}/collections/community?${params}`, {
+    headers: authHeaders(),
+    signal,
+  });
   if (!res.ok) throw new Error(`community collections ${res.status}`);
-  const data = await res.json() as { collections?: unknown; nextCursor?: unknown } | null;
+  const data = (await res.json()) as { collections?: unknown; nextCursor?: unknown } | null;
   if (!Array.isArray(data?.collections)) throw new Error("Invalid community collection page");
-  const nextCursor = typeof data.nextCursor === "string" && data.nextCursor ? data.nextCursor : null;
-  if (nextCursor && nextCursor === cursor) throw new Error("Community collection cursor did not advance");
+  const nextCursor =
+    typeof data.nextCursor === "string" && data.nextCursor ? data.nextCursor : null;
+  if (nextCursor && nextCursor === cursor)
+    throw new Error("Community collection cursor did not advance");
   return {
-    collections: data.collections.map(normalizeCommunityCollection).filter((item): item is CommunityCollection => item !== null),
+    collections: data.collections
+      .map(normalizeCommunityCollection)
+      .filter((item): item is CommunityCollection => item !== null),
     // Old servers return a single larger batch without a cursor. The hub reveals
     // that batch progressively and never requests the same legacy batch twice.
     nextCursor,

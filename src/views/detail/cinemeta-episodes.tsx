@@ -116,7 +116,9 @@ export function CinemetaEpisodes({
 
   const watchedAt = (season: number, number: number): boolean => {
     const st = manualWatchedState(meta.id, season, number);
-    return st === true || (st === undefined && (stremioWatched?.has(`${season}:${number}`) ?? false));
+    return (
+      st === true || (st === undefined && (stremioWatched?.has(`${season}:${number}`) ?? false))
+    );
   };
 
   const autoScrollTarget = useMemo<AutoScrollTarget>(() => {

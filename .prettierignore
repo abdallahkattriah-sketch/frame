@@ -1,0 +1,21 @@
+# Read by vp fmt / oxfmt. Third-party, minified and generated files keep their upstream layout.
+src-tauri/vendor/
+installer/ui/vendor/
+public/flipbook/
+*.min.js
+*.min.css
+flatpak/cargo-sources.json
+flatpak/node-sources.json
+
+# Generated or exported data: Lottie animations and machine-written JSON indexes.
+src/assets/lottie/
+installer/ui/assets/
+src/assets/harbor-lottie.json
+src/assets/sports/circuits.json
+src/data/
+public/anime-hero-art.json
+ol-covers.json
+src/lib/games/retro-logo-index.json
+src/lib/providers/tmdb/brand-index.json
+src/lib/providers/tmdb/brand-index-top.json
+tests/fixtures/

@@ -78,5 +78,7 @@ for (const url of SOURCES) {
     console.error(`[libmpv] ${e instanceof Error ? e.message : e}`);
   }
 }
-console.error("[libmpv] set HARBOR_LIBMPV_URL to a mirror, or drop libmpv-2.dll into src-tauri/libmpv/");
+console.error(
+  "[libmpv] set HARBOR_LIBMPV_URL to a mirror, or drop libmpv-2.dll into src-tauri/libmpv/",
+);
 process.exit(1);

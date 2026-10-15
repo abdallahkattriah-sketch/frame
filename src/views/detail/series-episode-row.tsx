@@ -67,7 +67,9 @@ export function EpisodeRow({
   const watchedAgo = progress.startedAt > 0 ? formatRelativeWatched(progress.startedAt) : "";
   const absolute = distinctAbsolute(ep.absoluteNumber, ep.episodeNumber);
   const resolvedImdbId = useMemo(() => {
-    const v = cinemetaVideos?.find((x) => x.season === ep.seasonNumber && x.episode === ep.episodeNumber);
+    const v = cinemetaVideos?.find(
+      (x) => x.season === ep.seasonNumber && x.episode === ep.episodeNumber,
+    );
     return v?.id ?? undefined;
   }, [cinemetaVideos, ep.seasonNumber, ep.episodeNumber]);
   const playEpisode = {
@@ -94,7 +96,10 @@ export function EpisodeRow({
           playEpisodeLocalAware({
             meta,
             episode: playEpisode,
-            opts: { autoPlay: settings.instantPlay || settings.seasonSourceLock, resume: !progress.watched && progress.ratio > 0.01 },
+            opts: {
+              autoPlay: settings.instantPlay || settings.seasonSourceLock,
+              resume: !progress.watched && progress.ratio > 0.01,
+            },
             imdbId: seriesImdbId,
             videos: cinemetaVideos,
           })

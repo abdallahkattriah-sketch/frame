@@ -21,8 +21,10 @@ export function GamesNavIcon({ hovered = false }: { hovered?: boolean }) {
       aria-hidden="true"
       className={`games-nav-icon${enabled && pressing ? " is-pressing" : ""}`}
       onAnimationEnd={(event) => {
-        if (event.animationName === "games-nav-play"
-          && event.target === event.currentTarget.querySelector("svg")) {
+        if (
+          event.animationName === "games-nav-play" &&
+          event.target === event.currentTarget.querySelector("svg")
+        ) {
           setPressing(false);
         }
       }}

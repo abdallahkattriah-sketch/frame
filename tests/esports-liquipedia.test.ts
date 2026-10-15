@@ -107,7 +107,10 @@ const WORLDS = `==Knockout Stage==
 }}
 `;
 
-function reader(pages: Record<string, string>, log: { url: string; headers: Record<string, string> }[]): LiquipediaReader {
+function reader(
+  pages: Record<string, string>,
+  log: { url: string; headers: Record<string, string> }[],
+): LiquipediaReader {
   return async (url, headers) => {
     log.push({ url, headers });
     const title = new URL(url).searchParams.get("titles") ?? "";
@@ -343,7 +346,10 @@ test("league read sends the required headers and resolves the transclusion", asy
   assert.equal(calls[0].headers["Accept-Encoding"], "gzip");
   assert.equal(calls[0].headers["User-Agent"], calls[0].headers["Api-User-Agent"]);
   assert.match(calls[0].headers["User-Agent"], /^HarborEsports\/1\.0 \(https:\/\/harbor\.site; /);
-  assert.equal(new URL(calls[1].url).searchParams.get("titles"), "The International/2025/prizepool");
+  assert.equal(
+    new URL(calls[1].url).searchParams.get("titles"),
+    "The International/2025/prizepool",
+  );
   assert.equal(league?.prizePoolUsd, 2881791);
   assert.equal(league?.city, "Hamburg");
 });

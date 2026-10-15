@@ -1,6 +1,12 @@
 import { animeCatalogRequest } from "./providers/anime-catalog-client";
 import { effectiveTmdbLanguage, get } from "@/lib/providers/tmdb/tmdb-client";
-import { movieMeta, seriesMeta, type Page, type RawMovie, type RawSeries } from "@/lib/providers/tmdb/tmdb-meta-mappers";
+import {
+  movieMeta,
+  seriesMeta,
+  type Page,
+  type RawMovie,
+  type RawSeries,
+} from "@/lib/providers/tmdb/tmdb-meta-mappers";
 import { MOVIE_GENRES, TV_GENRES } from "@/lib/feed/tags";
 import type { Meta } from "@/lib/cinemeta";
 import type { AddonResultGroup } from "@/lib/search-addons";
@@ -71,7 +77,14 @@ export type AnimeHit = {
 
 export type SearchResults = {
   query: string;
-  topMatch: { kind: "movie" | "series"; meta: Meta; popularity: number; backdrop?: string; overview?: string; voteAverage?: number } | null;
+  topMatch: {
+    kind: "movie" | "series";
+    meta: Meta;
+    popularity: number;
+    backdrop?: string;
+    overview?: string;
+    voteAverage?: number;
+  } | null;
   people: SearchPerson[];
   movies: Meta[];
   series: Meta[];
@@ -142,7 +155,9 @@ async function jikanAnimeSearch(query: string, limit: number): Promise<AnimeHit[
   const q = query.trim();
   if (q.length < 2) return [];
   try {
-    const data = await animeCatalogRequest<JikanAnime[]>(`/anime?q=${encodeURIComponent(q)}&order_by=popularity&sort=asc&limit=${limit}&sfw=true`);
+    const data = await animeCatalogRequest<JikanAnime[]>(
+      `/anime?q=${encodeURIComponent(q)}&order_by=popularity&sort=asc&limit=${limit}&sfw=true`,
+    );
     return (data.data ?? []).map((a) => {
       const year = a.year ?? (a.aired?.from ? Number(a.aired.from.slice(0, 4)) : null);
       const name = a.title_english?.trim() || a.title?.trim() || "Untitled";
@@ -211,9 +226,21 @@ export async function searchAnime(query: string, limit = 8): Promise<AnimeHit[]>
   const q = query.trim();
   if (q.length < 2) return [];
   const [anilist, jikan, kitsu] = await Promise.all([
-    withSearchTimeout(anilistAnimeSearch(q, limit).catch(() => []), 1500, []),
-    withSearchTimeout(jikanAnimeSearch(q, limit).catch(() => []), 1200, []),
-    withSearchTimeout(kitsuAnimeSearch(q, limit).catch(() => []), 3000, []),
+    withSearchTimeout(
+      anilistAnimeSearch(q, limit).catch(() => []),
+      1500,
+      [],
+    ),
+    withSearchTimeout(
+      jikanAnimeSearch(q, limit).catch(() => []),
+      1200,
+      [],
+    ),
+    withSearchTimeout(
+      kitsuAnimeSearch(q, limit).catch(() => []),
+      3000,
+      [],
+    ),
   ]);
   const out: AnimeHit[] = [];
   const seenMal = new Set<number>();
@@ -266,10 +293,42 @@ export async function searchAll(
 ): Promise<SearchResults> {
   const trimmed = query.trim();
   if (!trimmed) {
-    return { query: "", topMatch: null, people: [], movies: [], series: [], liveTv: [], anime: [], manga: [], music: [], ebooks: [], sports: [], characters: [], addonGroups: [], addons: [], intent: null };
+    return {
+      query: "",
+      topMatch: null,
+      people: [],
+      movies: [],
+      series: [],
+      liveTv: [],
+      anime: [],
+      manga: [],
+      music: [],
+      ebooks: [],
+      sports: [],
+      characters: [],
+      addonGroups: [],
+      addons: [],
+      intent: null,
+    };
   }
   if (!key) {
-    return { query: trimmed, topMatch: null, people: [], movies: [], series: [], liveTv: [], anime: [], manga: [], music: [], ebooks: [], sports: [], characters: [], addonGroups: [], addons: [], intent: detectIntent(trimmed) };
+    return {
+      query: trimmed,
+      topMatch: null,
+      people: [],
+      movies: [],
+      series: [],
+      liveTv: [],
+      anime: [],
+      manga: [],
+      music: [],
+      ebooks: [],
+      sports: [],
+      characters: [],
+      addonGroups: [],
+      addons: [],
+      intent: detectIntent(trimmed),
+    };
   }
 
   const data = await get<Page<MultiItem>>(key, "search/multi", {
@@ -352,7 +411,10 @@ export async function searchAll(
       }
     } else if (r.media_type === "person") {
       const known = (r.known_for ?? [])
-        .map((k) => (k as { title?: string; name?: string }).title ?? (k as { name?: string }).name ?? "")
+        .map(
+          (k) =>
+            (k as { title?: string; name?: string }).title ?? (k as { name?: string }).name ?? "",
+        )
         .filter(Boolean)
         .slice(0, 2)
         .join(", ");
@@ -385,7 +447,9 @@ export async function searchAll(
         ? movieMeta(winner as RawMovie, enNameById?.get(winner.id))
         : seriesMeta(winner as RawSeries, enNameById?.get(winner.id)),
       popularity: winner.popularity ?? 0,
-      backdrop: winner.backdrop_path ? `https://image.tmdb.org/t/p/w1280${winner.backdrop_path}` : undefined,
+      backdrop: winner.backdrop_path
+        ? `https://image.tmdb.org/t/p/w1280${winner.backdrop_path}`
+        : undefined,
       overview: winner.overview,
       voteAverage: winner.vote_average,
     };
@@ -457,7 +521,10 @@ async function fuzzyPeopleFallback(
     if (seen.has(r.id) || !nameCloseTo(r.name, query)) continue;
     seen.add(r.id);
     const known = (r.known_for ?? [])
-      .map((k) => (k as { title?: string; name?: string }).title ?? (k as { name?: string }).name ?? "")
+      .map(
+        (k) =>
+          (k as { title?: string; name?: string }).title ?? (k as { name?: string }).name ?? "",
+      )
       .filter(Boolean)
       .slice(0, 2)
       .join(", ");

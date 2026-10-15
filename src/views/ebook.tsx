@@ -2399,7 +2399,9 @@ function EBookInformation({ ebook }: { ebook: EBook }) {
           {
             label: t("Readers"),
             value: `${ebook.readerRating.toFixed(1)} / 5${
-              ebook.readerRatingCount ? ` · ${t("{n} ratings", { n: ebook.readerRatingCount })}` : ""
+              ebook.readerRatingCount
+                ? ` · ${t("{n} ratings", { n: ebook.readerRatingCount })}`
+                : ""
             }`,
           },
         ]

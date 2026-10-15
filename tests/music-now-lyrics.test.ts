@@ -105,7 +105,7 @@ test("the panel covers loading, empty and ready without stranding the user", () 
   assert.match(TSX, /setLyricsState\("loading"\)/);
   assert.match(
     TSX,
-    /t\(\s*lyricsState === "loading" \? "Finding lyrics" : "No lyrics for this track",?\s*\)/,
+    /t\(\s*lyricsState === "loading"\s*\? "Finding lyrics"\s*: "No lyrics for this track",?\s*\)/,
   );
   assert.ok(
     /setTimeout\([\s\S]{0,160}?setLyricsState/.test(TSX),

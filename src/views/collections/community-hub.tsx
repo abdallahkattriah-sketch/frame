@@ -1,4 +1,12 @@
-import { ArrowLeft, BookmarkPlus, Check, GalleryVerticalEnd, Plus, RefreshCw, Users } from "lucide-react";
+import {
+  ArrowLeft,
+  BookmarkPlus,
+  Check,
+  GalleryVerticalEnd,
+  Plus,
+  RefreshCw,
+  Users,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useT } from "@/lib/i18n";
 import { useScrollMemory, useView } from "@/lib/view";
@@ -40,7 +48,9 @@ export function CommunityCollectionsView({ active }: { active: boolean }) {
   const [screen, setScreen] = useState<Screen>({ kind: "grid" });
   const returnFocus = useRef<HTMLElement | null>(null);
   const open = (next: Screen) => {
-    if (screen.kind === "grid") returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    if (screen.kind === "grid")
+      returnFocus.current =
+        document.activeElement instanceof HTMLElement ? document.activeElement : null;
     setScreen(next);
   };
   const back = () => setScreen({ kind: "grid" });
@@ -76,10 +86,7 @@ export function CommunityCollectionsView({ active }: { active: boolean }) {
         />
       )}
       {screen.kind === "community" && (
-        <CommunityDetail
-          collection={screen.collection}
-          onBack={back}
-        />
+        <CommunityDetail collection={screen.collection} onBack={back} />
       )}
     </>
   );
@@ -100,13 +107,25 @@ function HubGrid({
   const collections = useCollections();
   const scrollRef = useRef<HTMLElement>(null);
   useScrollMemory("collections-hub", scrollRef, active);
-  const { collections: community, loading, failed, loaded, hasMore, loadMore, refresh, retry } = useCommunityCollections(active);
+  const {
+    collections: community,
+    loading,
+    failed,
+    loaded,
+    hasMore,
+    loadMore,
+    refresh,
+    retry,
+  } = useCommunityCollections(active);
   const sentinel = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (!active || !hasMore || loading || failed || !sentinel.current) return;
-    const observer = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting)) void loadMore();
-    }, { root: scrollRef.current, rootMargin: "0px 0px 600px 0px" });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) void loadMore();
+      },
+      { root: scrollRef.current, rootMargin: "0px 0px 600px 0px" },
+    );
     observer.observe(sentinel.current);
     return () => observer.disconnect();
   }, [active, hasMore, loading, failed, loadMore, community.length]);
@@ -226,21 +245,40 @@ function HubGrid({
             </div>
           ) : null}
           {failed && (
-            <div role="status" className="flex flex-wrap items-center justify-center gap-3 py-5 text-[14px] text-ink-muted">
+            <div
+              role="status"
+              className="flex flex-wrap items-center justify-center gap-3 py-5 text-[14px] text-ink-muted"
+            >
               <p>{t("collections.feed.error")}</p>
-              <button type="button" onClick={() => void retry()} className="min-h-11 rounded-lg bg-elevated px-5 font-semibold text-ink hover:bg-elevated-hover focus-visible:outline-2 focus-visible:outline-ink">
+              <button
+                type="button"
+                onClick={() => void retry()}
+                className="min-h-11 rounded-lg bg-elevated px-5 font-semibold text-ink hover:bg-elevated-hover focus-visible:outline-2 focus-visible:outline-ink"
+              >
                 {t("Retry")}
               </button>
             </div>
           )}
           {loaded && (hasMore || loading) && !failed && (
-            <div ref={sentinel} className="flex min-h-14 items-center justify-center" aria-live="polite">
+            <div
+              ref={sentinel}
+              className="flex min-h-14 items-center justify-center"
+              aria-live="polite"
+            >
               {loading ? (
-                <span role="status" className="inline-flex items-center gap-2 text-[13px] text-ink-muted">
-                  <RefreshCw size={14} className="animate-spin motion-reduce:animate-none" />{t("Loading...")}
+                <span
+                  role="status"
+                  className="inline-flex items-center gap-2 text-[13px] text-ink-muted"
+                >
+                  <RefreshCw size={14} className="animate-spin motion-reduce:animate-none" />
+                  {t("Loading...")}
                 </span>
               ) : (
-                <button type="button" onClick={() => void loadMore()} className="min-h-11 rounded-lg px-5 text-[13px] text-ink-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-ink">
+                <button
+                  type="button"
+                  onClick={() => void loadMore()}
+                  className="min-h-11 rounded-lg px-5 text-[13px] text-ink-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-ink"
+                >
                   {t("collections.feed.more")}
                 </button>
               )}
@@ -261,9 +299,13 @@ function EmptyCollections({ onCreate }: { onCreate: () => void }) {
         <GalleryVerticalEnd size={24} strokeWidth={1.6} />
       </span>
       <div className="flex flex-col gap-1.5">
-        <h3 className="font-display text-[20px] font-medium text-ink">{t("Make your first collection")}</h3>
+        <h3 className="font-display text-[20px] font-medium text-ink">
+          {t("Make your first collection")}
+        </h3>
         <p className="max-w-sm text-[13px] leading-relaxed text-ink-muted">
-          {t("Give it a cover, a background, and the titles you want to show off. Then share the link.")}
+          {t(
+            "Give it a cover, a background, and the titles you want to show off. Then share the link.",
+          )}
         </p>
       </div>
       <button
@@ -301,7 +343,9 @@ function CommunityEmpty() {
       <span className="flex h-14 w-14 items-center justify-center rounded-full bg-elevated/60 text-ink-subtle ring-1 ring-edge-soft/60">
         <Users size={24} strokeWidth={1.6} />
       </span>
-      <p className="font-display text-[19px] font-medium text-ink">{t("No shared collections yet")}</p>
+      <p className="font-display text-[19px] font-medium text-ink">
+        {t("No shared collections yet")}
+      </p>
       <p className="max-w-md text-[13.5px] leading-relaxed text-ink-muted">
         {t(
           "When people share a collection it shows up here. Build one you love and share it, that is how it starts.",
@@ -339,7 +383,10 @@ function CommunityCard({
             className="absolute inset-0 h-full w-full object-cover"
           />
         )}
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"
+        />
         <span className="absolute start-3.5 top-3 inline-flex items-center rounded-full bg-black/45 px-2.5 py-1 text-[10.5px] font-semibold uppercase tracking-[0.16em] text-white/85 backdrop-blur-md">
           {count === 1 ? t("{n} title", { n: count }) : t("{n} titles", { n: count })}
         </span>
@@ -364,8 +411,7 @@ function SaveCollectionButton({ collection }: { collection: CommunityCollection 
   const saved = collections.some(
     (c) => c.sourceHandle === collection.handle && c.sourceId === collection.id,
   );
-  const isOwn =
-    !!currentHandle && currentHandle.toLowerCase() === collection.handle.toLowerCase();
+  const isOwn = !!currentHandle && currentHandle.toLowerCase() === collection.handle.toLowerCase();
   if (isOwn) return null;
   return (
     <button
@@ -380,11 +426,7 @@ function SaveCollectionButton({ collection }: { collection: CommunityCollection 
           : "bg-ink text-canvas hover:opacity-90"
       }`}
     >
-      {saved ? (
-        <Check size={17} strokeWidth={2.4} />
-      ) : (
-        <BookmarkPlus size={17} strokeWidth={2.2} />
-      )}
+      {saved ? <Check size={17} strokeWidth={2.4} /> : <BookmarkPlus size={17} strokeWidth={2.2} />}
       {saved ? t("Saved to your collections") : t("Save to my collections")}
     </button>
   );

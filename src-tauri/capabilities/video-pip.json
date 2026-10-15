@@ -3,5 +3,11 @@
   "identifier": "video-pip",
   "description": "Native floating video player controls and resize handles.",
   "windows": ["harbor-video-pip"],
-  "permissions": ["core:event:default", "core:window:allow-start-dragging", "core:window:allow-start-resize-dragging", "core:window:allow-is-fullscreen", "core:window:allow-set-fullscreen"]
+  "permissions": [
+    "core:event:default",
+    "core:window:allow-start-dragging",
+    "core:window:allow-start-resize-dragging",
+    "core:window:allow-is-fullscreen",
+    "core:window:allow-set-fullscreen"
+  ]
 }

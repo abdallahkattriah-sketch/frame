@@ -92,7 +92,10 @@ function FavCell({
       }
       className="group flex w-full flex-col gap-2 text-start"
     >
-      <div ref={ref} className="relative aspect-[2/3] w-full overflow-hidden rounded-xl bg-elevated/60">
+      <div
+        ref={ref}
+        className="relative aspect-[2/3] w-full overflow-hidden rounded-xl bg-elevated/60"
+      >
         {!loaded && <span aria-hidden className="harbor-shimmer absolute inset-0" />}
         {near && src && (
           <img
@@ -109,7 +112,9 @@ function FavCell({
       </div>
       <p className="line-clamp-2 text-[13px] font-medium leading-snug text-ink">{m.title}</p>
       {missing && (
-        <p className="text-[11.5px] leading-snug text-ink-subtle">{t("This title would not open")}</p>
+        <p className="text-[11.5px] leading-snug text-ink-subtle">
+          {t("This title would not open")}
+        </p>
       )}
     </button>
   );
@@ -125,7 +130,10 @@ export function MangaLibrary({ scrollRef }: { scrollRef: React.RefObject<HTMLEle
     [],
   );
   const { items } = useMangaFavorites();
-  const favs = useMemo((): MangaSummary[] => [...items.values()].sort((a, b) => b.addedAt - a.addedAt), [items]);
+  const favs = useMemo(
+    (): MangaSummary[] => [...items.values()].sort((a, b) => b.addedAt - a.addedAt),
+    [items],
+  );
   const [active, setActive] = useState<LibrarySection>("favorites");
   const swapRef = useRef<HTMLDivElement | null>(null);
 
@@ -169,8 +177,7 @@ export function MangaLibrary({ scrollRef }: { scrollRef: React.RefObject<HTMLEle
       }
       const scroller = scrollerOf(lists);
       const maxed =
-        scroller != null &&
-        scroller.scrollHeight - scroller.scrollTop - scroller.clientHeight <= 8;
+        scroller != null && scroller.scrollHeight - scroller.scrollTop - scroller.clientHeight <= 8;
       if (maxed && rect.bottom > 160) {
         setActive("lists");
         return;

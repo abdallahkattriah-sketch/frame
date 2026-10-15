@@ -35,7 +35,8 @@
 }
 
 @keyframes games-nav-play {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) rotate(0deg) scale(1);
   }
   14% {
@@ -53,11 +54,13 @@
 }
 
 @keyframes games-nav-press {
-  0%, 100% {
+  0%,
+  100% {
     fill: currentColor;
     transform: translateY(0) scale(1);
   }
-  30%, 50% {
+  30%,
+  50% {
     fill: color-mix(in oklab, currentColor 25%, var(--color-accent));
     transform: translateY(6px) scale(0.86, 0.9);
   }

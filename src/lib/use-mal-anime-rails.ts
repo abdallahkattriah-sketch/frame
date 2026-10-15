@@ -41,7 +41,7 @@ export function useMalAnimeRailsState(): MalRailsState & { retry: () => void } {
   const { isConnected, session } = useMal();
   const [state, setState] = useState<MalRailsState>(IDLE);
   const [attempt, setAttempt] = useState(0);
-  const retry = useCallback(() => setAttempt(value => value + 1), []);
+  const retry = useCallback(() => setAttempt((value) => value + 1), []);
   const owner = useRef<string | undefined>(undefined);
 
   useEffect(() => {
@@ -53,14 +53,18 @@ export function useMalAnimeRailsState(): MalRailsState & { retry: () => void } {
     let cancelled = false;
     const sameOwner = owner.current === session?.userName;
     owner.current = session?.userName;
-    setState(previous => ({ rails: sameOwner ? previous.rails : [], loading: true, error: false }));
+    setState((previous) => ({
+      rails: sameOwner ? previous.rails : [],
+      loading: true,
+      error: false,
+    }));
     (async () => {
       let groups: MalListGroup[];
       try {
         groups = await fetchMalList();
       } catch (e) {
         console.error("Failed to fetch MAL list", e);
-        if (!cancelled) setState(previous => ({ ...previous, loading: false, error: true }));
+        if (!cancelled) setState((previous) => ({ ...previous, loading: false, error: true }));
         return;
       }
       if (cancelled) return;

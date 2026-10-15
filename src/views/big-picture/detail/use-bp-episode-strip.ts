@@ -196,8 +196,7 @@ export function useBpEpisodeStrip({
     factOf: (ep) => facts.get(`${ep.imdbSeason ?? ep.season}:${ep.imdbEpisode ?? ep.episode}`),
     absoluteOf: (ep) => ep.absoluteNumber ?? absoluteNumberFor(offsets, ep.group, ep.label),
     watchedOf: (ep) =>
-      isManuallyWatched(live.id, ep.season, ep.episode) ||
-      remote.has(`${ep.season}:${ep.episode}`),
+      isManuallyWatched(live.id, ep.season, ep.episode) || remote.has(`${ep.season}:${ep.episode}`),
     progressOf: (ep) =>
       resumeAt && resumeAt.season === ep.season && resumeAt.episode === ep.episode
         ? resumeAt.ratio

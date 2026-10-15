@@ -537,8 +537,11 @@ export async function ensureDesktopNotifyPermission(): Promise<boolean> {
 
 /** Read permission for automatic events without prompting the user. */
 export async function hasDesktopNotifyPermission(): Promise<boolean> {
-  return automaticNotificationPermission(isDesktopTauri(), "Notification" in window ? Notification.permission : undefined,
-    () => invoke<boolean | null>("plugin:notification|is_permission_granted"));
+  return automaticNotificationPermission(
+    isDesktopTauri(),
+    "Notification" in window ? Notification.permission : undefined,
+    () => invoke<boolean | null>("plugin:notification|is_permission_granted"),
+  );
 }
 
 function detailDeepLink(item: CalendarItem): string | undefined {

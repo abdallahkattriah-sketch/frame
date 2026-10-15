@@ -1160,18 +1160,30 @@ export function ViewProvider({ children }: { children: ReactNode }) {
   );
 
   const openGames = useCallback(() => {
-    setNavStack(cur => cur.at(-1)?.kind === "games" ? cur : pushFrame(cur, { kind: "games" }));
+    setNavStack((cur) => (cur.at(-1)?.kind === "games" ? cur : pushFrame(cur, { kind: "games" })));
   }, [setNavStack]);
 
-  const openSportsEvent = useCallback((event?: EsportsMatch) => {
-    setNavStack(cur => pushFrame(cur, { kind: "sports", ...(event ? { esportsEvent: event } : {}) }));
-  }, [setNavStack]);
+  const openSportsEvent = useCallback(
+    (event?: EsportsMatch) => {
+      setNavStack((cur) =>
+        pushFrame(cur, { kind: "sports", ...(event ? { esportsEvent: event } : {}) }),
+      );
+    },
+    [setNavStack],
+  );
 
   const openMatchDetail = useCallback(
     (game: SportsGame, eventGames?: SportsGame[]) => {
       setNavStack((cur) => {
         const t = cur[cur.length - 1];
-        if (t.kind === "match-detail" && t.game.id === game.id && t.game.league === game.league && t.game.source === game.source && !!t.eventGames === !!eventGames) return cur;
+        if (
+          t.kind === "match-detail" &&
+          t.game.id === game.id &&
+          t.game.league === game.league &&
+          t.game.source === game.source &&
+          !!t.eventGames === !!eventGames
+        )
+          return cur;
         return pushFrame(cur, { kind: "match-detail", game, eventGames });
       });
     },

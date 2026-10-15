@@ -18,21 +18,21 @@ The app talks to Stremio, addons and most metadata services directly, so the cor
 
 These relied on services hosted at `harbor.site` and its subdomains, which are gone:
 
-| Feature | Dead service |
-|---|---|
-| In-app updates, beta channel, rollback to older builds | `harbor.site/updates/...` |
-| Trakt sign-in and token refresh | `harbor.site/api/trakt/token`, `/api/trakt/device-token` |
-| MAL sign-in | `harbor.site/api/mal/token` |
-| Simkl ratings | `harbor.site/api/simkl/ratings` |
-| Theme store, theme badges, public profiles, shared collections and lists | `harbor.site/themes/api`, `/badges`, `/collection`, `/list` |
-| Anime award badges matched by ID, anime hero art, curated logos, announcements, release notes | static JSON files on `harbor.site` |
-| Award images in Discord Rich Presence | `harbor.site/discord/awards` |
-| Shared ad-skip segments and ad reports | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site` |
-| Bug reports and feedback from Settings | `bugs.harbor.site` |
-| Shared subtitle autosync | `sync.harbor.site` |
-| Public watch-party relay | `pub.harbor.site` |
-| IGDB data in Games, manga source list | `harbor.site/api/igdb`, `/api/manga-sources` |
-| Speech-to-text model download | `harbor.site/models/ggml-tiny.bin` |
+| Feature                                                                                       | Dead service                                                |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| In-app updates, beta channel, rollback to older builds                                        | `harbor.site/updates/...`                                   |
+| Trakt sign-in and token refresh                                                               | `harbor.site/api/trakt/token`, `/api/trakt/device-token`    |
+| MAL sign-in                                                                                   | `harbor.site/api/mal/token`                                 |
+| Simkl ratings                                                                                 | `harbor.site/api/simkl/ratings`                             |
+| Theme store, theme badges, public profiles, shared collections and lists                      | `harbor.site/themes/api`, `/badges`, `/collection`, `/list` |
+| Anime award badges matched by ID, anime hero art, curated logos, announcements, release notes | static JSON files on `harbor.site`                          |
+| Award images in Discord Rich Presence                                                         | `harbor.site/discord/awards`                                |
+| Shared ad-skip segments and ad reports                                                        | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site`  |
+| Bug reports and feedback from Settings                                                        | `bugs.harbor.site`                                          |
+| Shared subtitle autosync                                                                      | `sync.harbor.site`                                          |
+| Public watch-party relay                                                                      | `pub.harbor.site`                                           |
+| IGDB data in Games, manga source list                                                         | `harbor.site/api/igdb`, `/api/manga-sources`                |
+| Speech-to-text model download                                                                 | `harbor.site/models/ggml-tiny.bin`                          |
 
 Trakt can be restored without Harbor's server by registering a Trakt app and doing the token exchange in the client with its own client ID and secret (`traktClientId` / `traktClientSecret` already exist in settings but are unused). MAL works the same way. Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`.
 
@@ -47,15 +47,15 @@ Trakt can be restored without Harbor's server by registering a Trakt app and doi
 
 Before it was made identical to `beta-branch`, `main` was an older 0.9.21 line with about 30 commits that never reached beta. Most were earlier versions of work beta later redid (liquid glass, focus styles, Linux SVP, season picker placement). These look genuinely missing from beta and could be ported from the old history if wanted:
 
-| Commit | Change |
-|---|---|
-| `b8bafdad` | Russian UI translation (`ru.json`) |
-| `169a4f2a` | Safety net so `layout:custom` themes never end up with no navigation |
+| Commit     | Change                                                                |
+| ---------- | --------------------------------------------------------------------- |
+| `b8bafdad` | Russian UI translation (`ru.json`)                                    |
+| `169a4f2a` | Safety net so `layout:custom` themes never end up with no navigation  |
 | `c97e7a8f` | Poster images retry after transient load failures (`poster-retry.ts`) |
-| `2cf18ad3` | macOS crash on audio device hotplug |
-| `15003a6e` | Remember the fullscreen window state |
-| `68f050ea` | Block injection through addon-controlled stream URLs |
-| `a35f59e6` | RTL layout of the PIN entry |
-| `e77dc71d` | Leave Linux updates to the package manager |
+| `2cf18ad3` | macOS crash on audio device hotplug                                   |
+| `15003a6e` | Remember the fullscreen window state                                  |
+| `68f050ea` | Block injection through addon-controlled stream URLs                  |
+| `a35f59e6` | RTL layout of the PIN entry                                           |
+| `e77dc71d` | Leave Linux updates to the package manager                            |
 
 They remain reachable in `main`'s history (first parent of the merge that brought in beta).

@@ -213,7 +213,9 @@ function computeBase(): Base {
       : (browse.largeText ?? browse.details);
     const poster =
       (config.showPoster &&
-        (isManga ? mangaDiscordCover(browse.largeImage, largeText, browse.id) : browse.largeImage)) ||
+        (isManga
+          ? mangaDiscordCover(browse.largeImage, largeText, browse.id)
+          : browse.largeImage)) ||
       HARBOR_LOGO;
     return {
       payload: {
