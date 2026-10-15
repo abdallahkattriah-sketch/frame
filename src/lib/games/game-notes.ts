@@ -66,7 +66,7 @@ export async function saveNotebook(profile: string, game: string, expected: stri
     try { localStorage.setItem(key, saved); } catch { throw Error("games.notes.saveError"); }
     return { data: next, raw: saved };
   };
-  const task = (pending.get(key) ?? Promise.resolve()).catch(() => {}).then(() => typeof navigator !== "undefined" && navigator.locks ? navigator.locks.request(key, commit) : commit());
+  const task = (pending.get(key) ?? Promise.resolve()).catch(() => {}).then(() => typeof navigator !== "undefined" && navigator.locks ? navigator.locks.request(key, async () => commit()) : commit());
   pending.set(key, task);
   try { return await task; } finally { if (pending.get(key) === task) pending.delete(key); }
 }

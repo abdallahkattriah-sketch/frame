@@ -47,6 +47,7 @@ for (const engine of ["mpv", "html5"]) {
         pipMode: false,
         subAssNative: false,
         volumeIndicator: { visible: false },
+        speedIndicator: { visible: false },
         contentAdvisory: { categories: [] },
       });
       const overlay = tree.props.children.find((child) => child?.type === "SubtitleOverlay");
@@ -63,6 +64,7 @@ test("opening the subtitle pop-out hides the duplicate player overlay", () => {
     const tree = module.exports.StageOverlays({
       snap: { subtitleTracks: [{ selected: true }], subText: "Cue" },
       volumeIndicator: { visible: false },
+      speedIndicator: { visible: false },
       contentAdvisory: { categories: [] },
     });
     assert.equal(

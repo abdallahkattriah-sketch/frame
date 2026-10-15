@@ -67,7 +67,7 @@ export function observeLauncherIdentities(scan: LauncherScan): Promise<LauncherS
     return next.scan;
   };
   const result = pending.catch(() => {}).then(() => typeof navigator !== "undefined" && navigator.locks
-    ? navigator.locks.request(launcherIdentityKey, commit) : commit());
+    ? navigator.locks.request(launcherIdentityKey, async () => commit()) : commit());
   pending = result;
   return result;
 }
