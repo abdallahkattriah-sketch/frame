@@ -1138,6 +1138,9 @@ const uiFallback: Record<string, string> = {
     "Ten-foot uses large controls built for a remote across the room. Desktop keeps the same player you use in the normal window, which is quicker with a mouse and keyboard.",
   "Ten-foot": "Ten-foot",
   Desktop: "Desktop",
+  "Prefer original-language audio": "Prefer original-language audio",
+  "Pick the audio track in the title's original language before your list, so a Japanese film plays in Japanese and a Spanish series in Spanish. Uses TMDB to find the language when the title doesn't say.":
+    "Pick the audio track in the title's original language before your list, so a Japanese film plays in Japanese and a Spanish series in Spanish. Uses TMDB to find the language when the title doesn't say.",
 };
 
 export default uiFallback;

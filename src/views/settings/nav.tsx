@@ -2881,6 +2881,21 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
+    label: "Prefer original-language audio",
+    section: "language",
+    tab: "audio",
+    anchorTitle: "Audio languages",
+    keywords: [
+      "original audio",
+      "original language",
+      "no dub",
+      "avoid dubs",
+      "japanese audio",
+      "native audio",
+      "sub not dub",
+    ],
+  },
+  {
     label: "Preferred languages",
     section: "subtitles",
     tab: "sources",

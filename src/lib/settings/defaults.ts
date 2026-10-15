@@ -273,6 +273,7 @@ export const DEFAULT: Settings = {
   playerShaders: {},
   preferredSubLangs: ["English"],
   preferredAudioLangs: ["English", "Japanese"],
+  preferOriginalAudio: false,
   subFontSize: 32,
   subFontColor: "#FFFFFF",
   subBorderColor: "#000000",

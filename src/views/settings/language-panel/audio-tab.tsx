@@ -2,7 +2,7 @@ import { Ban } from "../icons";
 import { useState } from "react";
 import { useSettings } from "@/lib/settings";
 import { useT } from "@/lib/i18n";
-import { Section } from "../shared";
+import { Section, ToggleRow } from "../shared";
 import { SettingRow } from "../kit";
 import { LanguagesPicker } from "../streaming-panel";
 
@@ -19,6 +19,14 @@ export function AudioLanguageTab() {
         <LanguagesPicker
           value={settings.preferredAudioLangs}
           onChange={(langs) => update({ preferredAudioLangs: langs })}
+        />
+        <ToggleRow
+          label={t("Prefer original-language audio")}
+          sub={t(
+            "Pick the audio track in the title's original language before your list, so a Japanese film plays in Japanese and a Spanish series in Spanish. Uses TMDB to find the language when the title doesn't say.",
+          )}
+          value={settings.preferOriginalAudio}
+          onChange={(v) => update({ preferOriginalAudio: v })}
         />
       </Section>
 
