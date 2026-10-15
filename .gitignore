@@ -94,12 +94,9 @@ audit-defects.txt
 audit-routing.txt
 docs/TV-OPEN-BACKLOG.md
 audit-rest.txt
-*.md
 
 installer/src-tauri/payload/
 installer/payload-stage/
-!installer/**/*.md
-!docs/SUNSET.md
 # local design references and perf captures, not for distribution
 tools/tv-refs/
 docs/tv-perf/
@@ -115,7 +112,6 @@ crowdin_credentials.*
 gemini.key
 /.firecrawl
 /work
-!docs/games/*.md
 /docs/games
 
 # Games artwork: 8.6MB of static files referenced by URL, not imported, so ignoring
