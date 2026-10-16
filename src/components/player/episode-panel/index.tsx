@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight, X } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { HarborLoader } from "@/components/harbor-loader";
 import type { Meta } from "@/lib/cinemeta";
@@ -26,6 +26,7 @@ import { playLocalAware } from "@/lib/local-library/playback";
 import { localPlayerSrc } from "@/lib/local-library/player-src";
 import { useT } from "@/lib/i18n";
 import { EpisodeRow } from "./episode-row";
+import { SeasonStepper } from "@/views/detail/season-stepper";
 import { SeasonPicker } from "./season-picker";
 import { StreamsView } from "./streams-view";
 import { useSeasonBrowser } from "./use-season-browser";
@@ -79,7 +80,6 @@ export function EpisodePanel({
   const debrids = useDebridClients();
   const { seasons, season, setSeason, episodes, loading, imdbRatings, absoluteFor } =
     useSeasonBrowser(meta, currentEpisode, open);
-  const nextSeason = seasons.find((n) => n > season);
   const listRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     listRef.current?.scrollTo({ top: 0 });
@@ -358,7 +358,13 @@ export function EpisodePanel({
                   <span />
                 )}
                 {seasons.length > 1 && (
-                  <SeasonPicker seasons={seasons} active={season} onChange={setSeason} />
+                  <SeasonStepper
+                    keys={seasons.filter((n) => n !== 0).map(String)}
+                    activeKey={String(season)}
+                    onSelect={(key) => setSeason(Number(key))}
+                  >
+                    <SeasonPicker seasons={seasons} active={season} onChange={setSeason} />
+                  </SeasonStepper>
                 )}
               </div>
               <div ref={listRef} className="flex-1 overflow-y-auto px-4 pb-8 pt-2">
@@ -430,15 +436,6 @@ export function EpisodePanel({
                           );
                         })}
                       </div>
-                    )}
-                    {!loading && nextSeason !== undefined && (
-                      <button
-                        onClick={() => setSeason(nextSeason)}
-                        className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-2xl bg-elevated px-4 py-3.5 text-[13.5px] font-semibold text-ink ring-1 ring-edge-soft transition-colors hover:bg-raised"
-                      >
-                        {t("Season {n}", { n: nextSeason })}
-                        <ChevronRight size={16} strokeWidth={2.4} />
-                      </button>
                     )}
                   </div>
                 )}
