@@ -1,19 +1,35 @@
-import { TRAKT_API_BASE, TRAKT_CLIENT_ID, TRAKT_DEVICE_TOKEN_PROXY } from "./config";
+import { safeFetch } from "@/lib/safe-fetch";
+import { TRAKT_API_BASE, TRAKT_API_VERSION } from "./config";
+import { sessionClientId, traktClientId, traktClientSecretFor } from "./credentials";
 import { setSession } from "./session";
 import type { DeviceCode, TraktSession, TraktUserMe } from "./types";
 
-const baseHeaders = (): HeadersInit => ({
+export class TraktCredentialsMissingError extends Error {
+  constructor() {
+    super("trakt-client-id-missing");
+    this.name = "TraktCredentialsMissingError";
+  }
+}
+
+const baseHeaders = (clientId: string): HeadersInit => ({
   "Content-Type": "application/json",
+  "trakt-api-version": TRAKT_API_VERSION,
+  "trakt-api-key": clientId,
 });
 
-export async function requestDeviceCode(): Promise<DeviceCode> {
-  const res = await fetch(`${TRAKT_API_BASE}/oauth/device/code`, {
+export type DeviceAuth = DeviceCode & { clientId: string };
+
+export async function requestDeviceCode(): Promise<DeviceAuth> {
+  const clientId = traktClientId();
+  if (!clientId) throw new TraktCredentialsMissingError();
+  const res = await safeFetch(`${TRAKT_API_BASE}/oauth/device/code`, {
     method: "POST",
-    headers: baseHeaders(),
-    body: JSON.stringify({ client_id: TRAKT_CLIENT_ID }),
+    headers: baseHeaders(clientId),
+    body: JSON.stringify({ client_id: clientId }),
   });
   if (!res.ok) {
-    throw new Error(`Trakt device-code request failed: HTTP ${res.status}`);
+    const body = await res.text().catch(() => "");
+    throw new Error(`Trakt device-code request failed: HTTP ${res.status} ${body.slice(0, 160)}`);
   }
   const data = (await res.json()) as {
     device_code: string;
@@ -23,6 +39,7 @@ export async function requestDeviceCode(): Promise<DeviceCode> {
     interval: number;
   };
   return {
+    clientId,
     deviceCode: data.device_code,
     userCode: data.user_code,
     verificationUrl: data.verification_url,
@@ -39,12 +56,15 @@ export type PollResult =
   | { kind: "denied" }
   | { kind: "error"; message: string };
 
-async function pollOnce(deviceCode: string): Promise<PollResult> {
-  const res = await fetch(TRAKT_DEVICE_TOKEN_PROXY, {
+async function pollOnce(device: DeviceAuth): Promise<PollResult> {
+  const secret = traktClientSecretFor(device.clientId);
+  const res = await safeFetch(`${TRAKT_API_BASE}/oauth/device/token`, {
     method: "POST",
-    headers: baseHeaders(),
+    headers: baseHeaders(device.clientId),
     body: JSON.stringify({
-      code: deviceCode,
+      code: device.deviceCode,
+      client_id: device.clientId,
+      ...(secret ? { client_secret: secret } : {}),
     }),
   });
   if (res.status === 200) {
@@ -60,6 +80,7 @@ async function pollOnce(deviceCode: string): Promise<PollResult> {
       createdAt: data.created_at,
       expiresIn: data.expires_in,
       username: null,
+      clientId: device.clientId,
     };
     return { kind: "authorized", session };
   }
@@ -67,6 +88,8 @@ async function pollOnce(deviceCode: string): Promise<PollResult> {
   if (res.status === 429) return { kind: "slow_down" };
   if (res.status === 410) return { kind: "expired" };
   if (res.status === 418) return { kind: "denied" };
+  if (res.status === 401 || res.status === 403)
+    return { kind: "error", message: `HTTP ${res.status}: check the Trakt client ID and secret` };
   return { kind: "error", message: `HTTP ${res.status}` };
 }
 
@@ -75,7 +98,7 @@ export type PollHandle = {
 };
 
 export function pollForToken(
-  device: DeviceCode,
+  device: DeviceAuth,
   onUpdate: (result: PollResult) => void,
 ): PollHandle {
   let cancelled = false;
@@ -90,7 +113,7 @@ export function pollForToken(
         return;
       }
 
-      const result = await pollOnce(device.deviceCode).catch((e: Error): PollResult => ({
+      const result = await pollOnce(device).catch((e: Error): PollResult => ({
         kind: "error",
         message: e.message,
       }));
@@ -117,9 +140,7 @@ export function pollForToken(
 export async function fetchUsername(session: TraktSession): Promise<string | null> {
   const res = await fetch(`${TRAKT_API_BASE}/users/me`, {
     headers: {
-      "Content-Type": "application/json",
-      "trakt-api-version": "2",
-      "trakt-api-key": TRAKT_CLIENT_ID,
+      ...(baseHeaders(sessionClientId(session)) as Record<string, string>),
       Authorization: `Bearer ${session.accessToken}`,
     },
   });

@@ -12,6 +12,7 @@ import {
   completeAuthorization,
   pollForToken,
   requestDeviceCode,
+  TraktCredentialsMissingError,
   type PollHandle,
   type PollResult,
 } from "./device-auth";
@@ -29,6 +30,7 @@ export type ConnectState =
   | { kind: "awaiting"; device: DeviceCode }
   | { kind: "expired" }
   | { kind: "denied" }
+  | { kind: "missing-credentials" }
   | { kind: "error"; message: string }
   | { kind: "success"; session: TraktSession };
 
@@ -94,6 +96,10 @@ export function TraktProvider({ children }: { children: ReactNode }) {
         }
       });
     } catch (e) {
+      if (e instanceof TraktCredentialsMissingError) {
+        setConnectState({ kind: "missing-credentials" });
+        return;
+      }
       setConnectState({
         kind: "error",
         message: e instanceof Error ? e.message : "Failed to start authorization",

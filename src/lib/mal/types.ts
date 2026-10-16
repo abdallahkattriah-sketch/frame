@@ -4,6 +4,7 @@ export type MalSession = {
   createdAt: number;
   expiresAt: number;
   userName: string;
+  clientId?: string;
 };
 
 export type MalListStatus = "watching" | "completed" | "on_hold" | "dropped" | "plan_to_watch";

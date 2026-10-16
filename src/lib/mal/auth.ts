@@ -1,6 +1,19 @@
-import { MAL_AUTHORIZE_URL, MAL_CLIENT_ID, MAL_TOKEN_PROXY } from "./config";
+import { safeFetch } from "@/lib/safe-fetch";
+import { MAL_AUTHORIZE_URL, MAL_TOKEN_URL } from "./config";
+import { extractMalCode, extractMalState } from "./code-input";
+import { malClientId } from "./credentials";
 import { getSession, setSession } from "./session";
 import type { MalSession } from "./types";
+
+// Public client ID of upstream Harbor's MAL app, kept only to refresh sessions it issued.
+const LEGACY_MAL_CLIENT_ID = "879be1ac300dc70611e5c828fec7bc18";
+
+export class MalCredentialsMissingError extends Error {
+  constructor() {
+    super("mal-client-id-missing");
+    this.name = "MalCredentialsMissingError";
+  }
+}
 
 function generateVerifier(): string {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~";
@@ -11,53 +24,38 @@ function generateVerifier(): string {
   return result;
 }
 
-let storedVerifier: string | null = null;
+let pending: { verifier: string; state: string; clientId: string } | null = null;
 
+// MAL only supports the plain PKCE method, so the challenge is the verifier itself.
 export function buildAuthorizeUrl(): string {
-  if (!MAL_CLIENT_ID)
-    throw new Error(
-      "MAL_CLIENT_ID not configured. Set VITE_MAL_CLIENT_ID in your .env or register an app at https://myanimelist.net/apiconfig.",
-    );
+  const clientId = malClientId();
+  if (!clientId) throw new MalCredentialsMissingError();
   const verifier = generateVerifier();
-  storedVerifier = verifier;
+  const state = generateVerifier().slice(0, 16);
+  pending = { verifier, state, clientId };
 
   const params = new URLSearchParams({
     response_type: "code",
-    client_id: MAL_CLIENT_ID,
+    client_id: clientId,
     code_challenge: verifier,
     code_challenge_method: "plain",
+    state,
   });
   return `${MAL_AUTHORIZE_URL}?${params.toString()}`;
 }
 
-export function extractMalCode(input: string): string {
-  const trimmed = input.trim();
-  if (!trimmed) return "";
-  const fromUrl = /[?&#]code=([^&\s#]+)/.exec(trimmed);
-  if (fromUrl) {
-    try {
-      return decodeURIComponent(fromUrl[1]).trim();
-    } catch {
-      return fromUrl[1].trim();
-    }
-  }
-  return trimmed.replace(/^["'\s]+|["'\s]+$/g, "");
-}
-
-async function tauriFetch(input: string, init?: RequestInit): Promise<Response> {
-  if ("__TAURI_INTERNALS__" in window) {
-    const { fetch: tauriFetchFn } = await import("@tauri-apps/plugin-http");
-    return tauriFetchFn(input, init as Record<string, unknown>) as unknown as Response;
-  }
-  return fetch(input, init);
-}
+export { extractMalCode };
 
 export async function completeAuthorization(pastedCode: string): Promise<MalSession> {
   const code = extractMalCode(pastedCode);
   if (!code) throw new Error("Paste the code from MyAnimeList to continue");
-  if (!storedVerifier) throw new Error("Session expired. Start over and authorize again.");
-  const tokenData = await exchangeCode(code, storedVerifier);
-  storedVerifier = null;
+  if (!pending) throw new Error("Session expired. Start over and authorize again.");
+  const state = extractMalState(pastedCode);
+  if (state && state !== pending.state)
+    throw new Error("That code belongs to an older attempt. Use the newest MyAnimeList page.");
+  const { verifier, clientId } = pending;
+  const tokenData = await exchangeCode(code, verifier, clientId);
+  pending = null;
 
   const userName = await fetchUserName(tokenData.access_token);
 
@@ -68,55 +66,62 @@ export async function completeAuthorization(pastedCode: string): Promise<MalSess
     createdAt: now,
     expiresAt: now + tokenData.expires_in * 1000,
     userName,
+    clientId,
   };
   setSession(session);
   return session;
 }
 
+type TokenResponse = { access_token: string; refresh_token: string; expires_in: number };
+
+function postToken(body: URLSearchParams): Promise<Response> {
+  return safeFetch(MAL_TOKEN_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded", Accept: "application/json" },
+    body: body.toString(),
+  });
+}
+
 async function exchangeCode(
   code: string,
   codeVerifier: string,
-): Promise<{ access_token: string; refresh_token: string; expires_in: number }> {
-  const res = await tauriFetch(MAL_TOKEN_PROXY, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
+  clientId: string,
+): Promise<TokenResponse> {
+  const res = await postToken(
+    new URLSearchParams({
+      client_id: clientId,
       grant_type: "authorization_code",
       code,
       code_verifier: codeVerifier,
     }),
-  });
+  );
 
   if (!res.ok) {
     const text = await res.text().catch(() => "");
     throw new Error(`MAL rejected that code (HTTP ${res.status}): ${text.slice(0, 200)}`);
   }
-  const json = await res.json();
-  if (!json.access_token) throw new Error("MAL did not return a token. Try authorizing again.");
-  return json;
+  const json = (await res.json()) as Partial<TokenResponse>;
+  if (!json.access_token || !json.refresh_token || typeof json.expires_in !== "number")
+    throw new Error("MAL did not return a token. Try authorizing again.");
+  return json as TokenResponse;
 }
 
 export async function refreshAccessToken(): Promise<MalSession | null> {
   const current = getSession();
   if (!current?.refreshToken) return null;
   try {
-    const res = await tauriFetch(MAL_TOKEN_PROXY, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+    const res = await postToken(
+      new URLSearchParams({
+        client_id: current.clientId || LEGACY_MAL_CLIENT_ID,
         grant_type: "refresh_token",
         refresh_token: current.refreshToken,
       }),
-    });
+    );
     if (!res.ok) {
       setSession(null);
       return null;
     }
-    const data = (await res.json()) as {
-      access_token: string;
-      refresh_token: string;
-      expires_in: number;
-    };
+    const data = (await res.json()) as TokenResponse;
     const now = Date.now();
     const next: MalSession = {
       accessToken: data.access_token,
@@ -124,6 +129,7 @@ export async function refreshAccessToken(): Promise<MalSession | null> {
       createdAt: now,
       expiresAt: now + data.expires_in * 1000,
       userName: current.userName,
+      ...(current.clientId ? { clientId: current.clientId } : {}),
     };
     setSession(next);
     return next;
@@ -146,10 +152,10 @@ export function ensureRefreshed(): Promise<MalSession | null> {
 }
 
 async function fetchUserName(accessToken: string): Promise<string> {
-  const res = await tauriFetch("https://api.myanimelist.net/v2/users/@me", {
+  const res = await safeFetch("https://api.myanimelist.net/v2/users/@me", {
     headers: { Authorization: `Bearer ${accessToken}` },
   });
   if (!res.ok) return "unknown";
-  const json = await res.json();
+  const json = (await res.json()) as { name?: string };
   return json.name ?? "unknown";
 }

@@ -24,6 +24,8 @@ function sleep(ms) {
 }
 
 async function traktClientId() {
+  const fromEnv = (process.env.VITE_TRAKT_CLIENT_ID ?? "").trim();
+  if (fromEnv) return fromEnv;
   const source = await readFile(CONFIG, "utf8");
   const match = source.match(/TRAKT_CLIENT_ID\s*=\s*"([0-9a-f]{40,})"/);
   if (!match) throw new Error(`no TRAKT_CLIENT_ID in ${CONFIG}`);

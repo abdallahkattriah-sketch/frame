@@ -4297,6 +4297,13 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["trakt login", "device code", "authorize", "link trakt"],
   },
   {
+    label: "Your Trakt app",
+    section: "trackers",
+    tab: "trakt",
+    anchorTitle: "Your Trakt app",
+    keywords: ["client id", "client secret", "api app", "register app", "api key"],
+  },
+  {
     label: "About Trakt",
     section: "trackers",
     tab: "trakt",
@@ -4445,6 +4452,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     label: "MAL Client ID",
     section: "trackers",
     tab: "mal",
+    anchorTitle: "Your MyAnimeList app",
     keywords: ["mal client id", "api key", "myanimelist api", "client id", "register app"],
   },
   {

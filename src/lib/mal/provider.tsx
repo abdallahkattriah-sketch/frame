@@ -8,7 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import { openUrl } from "@/lib/window";
-import { buildAuthorizeUrl, completeAuthorization } from "./auth";
+import { buildAuthorizeUrl, completeAuthorization, MalCredentialsMissingError } from "./auth";
 import { getSession, isAuthenticated, setSession, subscribeSession } from "./session";
 import { validateMalSession } from "./validate";
 import type { MalSession } from "./types";
@@ -16,6 +16,7 @@ export type ConnectState =
   | { kind: "idle" }
   | { kind: "needs-code" }
   | { kind: "verifying" }
+  | { kind: "missing-credentials" }
   | { kind: "error"; message: string }
   | { kind: "success"; session: MalSession };
 
@@ -48,6 +49,10 @@ export function MalProvider({ children }: { children: ReactNode }) {
       setConnectState({ kind: "needs-code" });
       openUrl(url);
     } catch (e) {
+      if (e instanceof MalCredentialsMissingError) {
+        setConnectState({ kind: "missing-credentials" });
+        return;
+      }
       setConnectState({
         kind: "error",
         message: e instanceof Error ? e.message : "MyAnimeList is not configured in this build.",
