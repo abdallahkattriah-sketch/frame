@@ -242,6 +242,8 @@ export async function fetchSubtitlesIntoPlayer(
   const rankedResults = (results: SubResult[]) =>
     results
       .filter((result) => isSafeProviderSubtitleUrl(result.url))
+      // A translation offer is an action, not a file: downloading it would start a translation.
+      .filter((result) => !isGeneratedLangLabel(result.lang))
       .filter((r) => langScore(r.lang ?? "", p.langs) >= 0)
       .sort((a, b) => {
         const language = langScore(b.lang ?? "", p.langs) - langScore(a.lang ?? "", p.langs);

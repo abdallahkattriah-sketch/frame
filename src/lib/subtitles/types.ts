@@ -107,6 +107,8 @@ export type SubtitleLoadMetadata = {
    * and to replace a previous track for the same source instead of duplicating it.
    */
   refreshable?: boolean;
+  /** A translating addon's on-demand offer: only an explicit pick starts it, and it is polled until done. */
+  translation?: boolean;
   timingStatus?: SubtitleTimingStatus;
   timingMeasurementStatus?: "measured" | "unknown";
   matchExplanation?: SubtitleMatchExplanation;

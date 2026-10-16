@@ -1,5 +1,6 @@
 import type { SubResult, SubSearchQuery, SubtitleLoadMetadata } from "./types";
 import { subtitleReleaseLabel } from "./release-label.ts";
+import { isGeneratedLangLabel } from "./language.ts";
 
 function meaningfulRelease(value: string | undefined): string | undefined {
   const trimmed = value?.trim();
@@ -135,6 +136,7 @@ export function subtitleLoadMetadataOf(result: SubResult): SubtitleLoadMetadata 
     originalUrl: result.url,
     refreshable: result.source === "addon",
     subId: result.id,
+    ...(isGeneratedLangLabel(result.lang) ? { translation: true } : {}),
   };
 }
 

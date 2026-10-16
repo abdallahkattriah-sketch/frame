@@ -6,6 +6,8 @@ import * as selection from "../../src/lib/player/subtitle-selection.ts";
 import * as cleanups from "../../src/lib/player/prepared-subtitle-cleanups.ts";
 import * as seeds from "../../src/lib/subtitles/seed-batch.ts";
 import * as failures from "../../src/lib/player/mpv-failure.ts";
+import * as language from "../../src/lib/subtitles/language.ts";
+import * as translationJobs from "../../src/lib/subtitles/translation-jobs.ts";
 import type { PlayerBridge, PlayerSnapshot } from "../../src/lib/player/bridge.ts";
 import type { MpvOptions } from "../../src/lib/player/mpv.ts";
 
@@ -101,7 +103,8 @@ export function mpvBridgeHarness(prefs = { volume: 0.35, muted: false }, options
       clearPendingSub() {},
       wasPendingSub: () => false,
     },
-    "@/lib/subtitles/translation-jobs": { registerTranslationJob() {} },
+    "@/lib/subtitles/translation-jobs": { ...translationJobs, registerTranslationJob() {} },
+    "@/lib/subtitles/language": language,
     "./mpv-failure": failures,
     "@/lib/platform": {
       isWindowsDesktop: () => true,
@@ -163,6 +166,7 @@ export function mpvBridgeHarness(prefs = { volume: 0.35, muted: false }, options
   });
   return {
     bridge,
+    createBridge: (next?: MpvOptions) => module.exports.createMpvBridge(next),
     commands,
     errors,
     emitWindow(name: string) {

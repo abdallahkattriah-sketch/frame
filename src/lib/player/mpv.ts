@@ -4,7 +4,12 @@ import { subtitleTrackDownloadHeaders } from "@/lib/subtitles/provider-auth";
 import { takePreparedSubtitle } from "@/lib/subtitles/prepared-registry";
 import { markLimitReached } from "@/lib/subtitles/limit-signal";
 import { clearPendingSub, markPendingSub } from "@/lib/subtitles/pending-subs";
-import { registerTranslationJob } from "@/lib/subtitles/translation-jobs";
+import {
+  createSubtitleTranslationQueue,
+  registerTranslationJob,
+} from "@/lib/subtitles/translation-jobs";
+import { generatedLangTarget } from "@/lib/subtitles/language";
+import type { PreparedSubtitle } from "@/lib/subtitles/prepare";
 import { mpvFailureSnapshot } from "./mpv-failure";
 import { isLinuxDesktop, isMacDesktop, isWindowsDesktop } from "@/lib/platform";
 import type { MonitorInfo } from "@/lib/monitors";
@@ -20,7 +25,11 @@ import {
 import { SUBTITLE_FPS_TRANSITION_FAILED_EVENT } from "./subtitle-fps";
 import { finishPlaybackTrace, markPlaybackTrace } from "@/lib/perf/playback-trace";
 import { PreparedSubtitleCleanupRegistry } from "./prepared-subtitle-cleanups";
-import { SubtitleSelectionCoordinator } from "./subtitle-selection";
+import {
+  SubtitleSelectionCoordinator,
+  type SubtitleSelectionOrigin,
+  type SubtitleSelectionRequest,
+} from "./subtitle-selection";
 import { PreparedSubtitleSeedBatch } from "@/lib/subtitles/seed-batch";
 import { isSafeProviderSubtitleUrl } from "@/lib/subtitles/provider-url";
 import {
@@ -144,8 +153,12 @@ export type MpvOptions = {
   fullDownload?: boolean;
   separateDisplay?: MonitorInfo | null;
   separateCoverTaskbar?: boolean;
+  cacheDir?: string;
   getEmbedRect?: () => Promise<MpvRect | null> | MpvRect | null;
 };
+
+const mpvCacheDir = (options: MpvOptions | undefined): string | null =>
+  options?.cacheDir?.trim() || null;
 
 function mpvReuseConfigKey(options: MpvOptions | undefined, hdrToSdr: boolean): string {
   return JSON.stringify({
@@ -161,6 +174,7 @@ function mpvReuseConfigKey(options: MpvOptions | undefined, hdrToSdr: boolean): 
     forceYuv420p: options?.forceYuv420p === true,
     extraOptions: options?.extraOptions ?? "",
     fullDownload: options?.fullDownload === true,
+    cacheDir: mpvCacheDir(options),
   });
 }
 
@@ -333,6 +347,68 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
   const urlByExternalFilename = new Map<string, ExternalSubtitleMetadata>();
   const preparedSubtitleCleanups = new PreparedSubtitleCleanupRegistry();
   const clearPreparedSubtitles = () => preparedSubtitleCleanups.clearAll();
+  // A translation is polled until the addon serves the finished file, then added once with its original selection request.
+  type TranslationHandoff = {
+    prepared: PreparedSubtitle;
+    selection: SubtitleSelectionRequest | null;
+  };
+  const translations = createSubtitleTranslationQueue();
+  const translationHandoffs = new Map<string, TranslationHandoff>();
+  let translationEpoch = 0;
+  const stopSubtitleTranslations = () => {
+    translationEpoch += 1;
+    translations.clear();
+    translationHandoffs.clear();
+  };
+  const startSubtitleTranslation = async (
+    request: {
+      url: string;
+      lang?: string;
+      select?: boolean;
+      metadata: SubtitleLoadMetadata;
+      origin: SubtitleSelectionOrigin;
+    },
+    commit: (handoff: TranslationHandoff) => Promise<boolean>,
+  ): Promise<boolean> => {
+    const { url, metadata } = request;
+    // Starting a translation costs the user a quota, so only an explicit, selecting pick may start one.
+    if (request.origin !== "manual" || request.select !== true) return false;
+    if (!/^https?:/i.test(url) || !isSafeProviderSubtitleUrl(url)) return false;
+    const requestMediaRevision = mediaRevision;
+    const requestEpoch = translationEpoch;
+    mainSubtitleSelection.claim(requestMediaRevision, "manual");
+    const selection = mainSubtitleSelection.begin(
+      requestMediaRevision,
+      `__harbor-translated-subtitle-${++subtitleAddSelectionId}__`,
+      snap.subtitleTracks.find((track) => track.selected)?.id ?? null,
+    );
+    const owns = () =>
+      requestEpoch === translationEpoch &&
+      requestMediaRevision === mediaRevision &&
+      mainSubtitleSelection.isCurrent(selection, mediaRevision);
+    await translations.run(url, owns, async () => {
+      const prepared = await prepareSubtitle({
+        url,
+        translation: true,
+        language: generatedLangTarget(request.lang) ?? undefined,
+        format: metadata.format,
+        encoding: metadata.encoding,
+        release: metadata.release,
+        filename: metadata.rawFilename,
+        requestHeaders: subtitleTrackDownloadHeaders(
+          metadata.downloadAuth,
+          url,
+          metadata.providerDerived ?? Boolean(metadata.provider),
+        ),
+      });
+      if (!owns()) {
+        prepared.cleanup();
+        return false;
+      }
+      return commit({ prepared, selection });
+    });
+    return false;
+  };
 
   const addSeedSubtitles = async (subtitles: PlayerSource["subtitles"], expectedLoadId: number) => {
     const orderedSeeds = subtitles ?? [];
@@ -651,6 +727,7 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
       snap = mpvFailureSnapshot(snap, reason);
       mediaRevision += 1;
       invalidateSubtitleSelections();
+      stopSubtitleTranslations();
       clearPreparedSubtitles();
       mpvStarted = false;
       finishPlaybackTrace(activeTraceId, "failed");
@@ -839,7 +916,7 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
     }
   };
 
-  return {
+  const bridge: PlayerBridge = {
     moveEmbeddedSurface: (rect, commit) => moveEmbeddedSurface?.(rect, commit) ?? false,
     attach(h) {
       host = h;
@@ -862,6 +939,7 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
       h.appendChild(placeholder);
     },
     detach() {
+      stopSubtitleTranslations();
       if (host) {
         while (host.firstChild) host.removeChild(host.firstChild);
       }
@@ -896,6 +974,7 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
       expectedMediaPath = src.url;
       mediaRevision += 1;
       invalidateSubtitleSelections();
+      stopSubtitleTranslations();
       svpFilterFailed = false;
       snap.status = "loading";
       snap.errorCode = null;
@@ -989,6 +1068,7 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
             macEdr: opts.macEdr === true,
             isLive: src.isLive === true,
             fullDownload: opts.fullDownload === true,
+            cacheDir: mpvCacheDir(opts),
             startupProfile: nextStartupProfile,
             headers: src.headers ?? null,
             renderer: opts.renderer ?? "gpu-next",
@@ -1058,6 +1138,7 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
     canAutoSelectSubtitle: () => mainSubtitleSelection.canAutoSelect(mediaRevision),
     setSubtitleTrack(id, origin = "manual") {
       if (!mainSubtitleSelection.claim(mediaRevision, origin)) return;
+      translations.clear();
       const requestMediaRevision = mediaRevision;
       mainSubtitleSelection.begin(
         requestMediaRevision,
@@ -1184,18 +1265,36 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
       }
     },
     async addSubtitle(url, lang, title, select, metadata, origin = "manual"): Promise<boolean> {
+      const handoff = translationHandoffs.get(url);
+      translationHandoffs.delete(url);
+      if (metadata?.translation === true && !handoff) {
+        return startSubtitleTranslation({ url, lang, select, metadata, origin }, (next) => {
+          translationHandoffs.set(url, next);
+          return bridge.addSubtitle(
+            url,
+            generatedLangTarget(lang) ?? lang,
+            title,
+            select,
+            metadata,
+          );
+        });
+      }
       const requestMediaRevision = mediaRevision;
       const requestLoadId = mediaLoadId;
-      const wantsSelection = (select ?? true) && mainSubtitleSelection.claim(mediaRevision, origin);
-      const selectionRequest = wantsSelection
-        ? mainSubtitleSelection.begin(
-            mediaRevision,
-            `__harbor-added-subtitle-${++subtitleAddSelectionId}__`,
-            snap.subtitleTracks.find((track) => track.selected)?.id ?? null,
-          )
-        : null;
+      const wantsSelection = handoff
+        ? handoff.selection !== null
+        : (select ?? true) && mainSubtitleSelection.claim(mediaRevision, origin);
+      const selectionRequest = handoff
+        ? handoff.selection
+        : wantsSelection
+          ? mainSubtitleSelection.begin(
+              mediaRevision,
+              `__harbor-added-subtitle-${++subtitleAddSelectionId}__`,
+              snap.subtitleTracks.find((track) => track.selected)?.id ?? null,
+            )
+          : null;
       let mpvUrl = url;
-      const transferredPrepared = takePreparedSubtitle(url);
+      const transferredPrepared = takePreparedSubtitle(url) ?? handoff?.prepared ?? null;
       const providerDerived = metadata?.providerDerived ?? Boolean(metadata?.provider);
       if (!transferredPrepared && providerDerived && !isSafeProviderSubtitleUrl(url)) {
         return false;
@@ -1470,6 +1569,7 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
       stopGeometryTracking = null;
       mediaRevision += 1;
       invalidateSubtitleSelections();
+      stopSubtitleTranslations();
       clearPreparedSubtitles();
       finishPlaybackTrace(activeTraceId, "aborted");
       activeTraceId = null;
@@ -1556,4 +1656,5 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
       listeners.clear();
     },
   };
+  return bridge;
 }

@@ -17,7 +17,7 @@ import { saveSubtitleToDisk } from "@/lib/subtitles/save-to-disk";
 import { markAddedSub, useAddedSubs } from "@/lib/subtitles/added-subs";
 import { wasLimitReached } from "@/lib/subtitles/limit-signal";
 import { wasPendingSub } from "@/lib/subtitles/pending-subs";
-import { useTranslationJob } from "@/lib/subtitles/translation-jobs";
+import { useSubtitleTranslationStatus, useTranslationJob } from "@/lib/subtitles/translation-jobs";
 import type { SubResult } from "@/lib/subtitles/types";
 import { parseRelease } from "@/lib/subtitles/release-match";
 import { providerLabel } from "@/lib/subtitles/provider-label";
@@ -163,7 +163,8 @@ function ResultRow({
   const refreshable = result.source === "addon";
   // Pending translations are tracked by the player loop and added automatically once
   // ready, so their "Translating…" state stays visible instead of flashing briefly.
-  const translating = useTranslationJob(result.url);
+  const translationStatus = useSubtitleTranslationStatus(result.url);
+  const translating = useTranslationJob(result.url) || translationStatus === "pending";
   const [busy, setBusy] = useState(false);
   const [saved, setSaved] = useState(false);
   const [adding, setAdding] = useState(false);
