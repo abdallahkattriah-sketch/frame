@@ -345,7 +345,7 @@ jobs:
           set -euo pipefail
           mkdir upload
           find artifacts -type f \( -name '*-setup.exe' -o -name '*-setup.exe.sig' -o -name '*.dmg' \
-            -o -name '*.app.tar.gz' -o -name '*.app.tar.gz.sig' -o -name '*.deb' -o -name '*.AppImage' \) \
+            -o -name 'Harbor_*.app.tar.gz' -o -name 'Harbor_*.app.tar.gz.sig' -o -name '*.deb' -o -name '*.AppImage' \) \
             -exec cp {} upload/ \;
           cp artifacts/Harbor-flatpak-x86_64/Harbor.flatpak "upload/Harbor_${VERSION}_x86_64.flatpak"
           previous="$(git tag --list 'v*' --sort=-v:refname | grep -vx "v$VERSION" | head -n 1 || true)"
