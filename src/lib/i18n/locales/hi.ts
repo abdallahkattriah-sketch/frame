@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./hi/play-orders";
 import gameRomLibrary from "./hi/game-rom-library";
 import gameNotes from "./hi/game-notes";
@@ -96,6 +97,8 @@ import nytTv from "./hi/nyt-tv";
 import gameAchievements from "./hi/game-achievements";
 
 const hi: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "और संग्रह लोड करें",
   "collections.feed.error": "संग्रह लोड नहीं हो सके। फिर से कोशिश करें।",
   "Show content ratings?": "कॉन्टेंट की रेटिंग दिखाएँ?",

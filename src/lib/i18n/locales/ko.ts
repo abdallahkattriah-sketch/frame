@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./ko/play-orders";
 import gameRomLibrary from "./ko/game-rom-library";
 import gameNotes from "./ko/game-notes";
@@ -101,6 +102,8 @@ import nytTv from "./ko/nyt-tv";
 import gameAchievements from "./ko/game-achievements";
 
 const ko: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "컬렉션 더 불러오기",
   "collections.feed.error": "컬렉션을 불러오지 못했습니다. 다시 시도해 주세요.",
   "Show content ratings?": "콘텐츠 등급을 표시할까요?",

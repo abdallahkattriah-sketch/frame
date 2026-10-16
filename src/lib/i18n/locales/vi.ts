@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./vi/play-orders";
 import gameRomLibrary from "./vi/game-rom-library";
 import gameNotes from "./vi/game-notes";
@@ -121,6 +122,8 @@ import nytTv from "./vi/nyt-tv";
 import gameAchievements from "./vi/game-achievements";
 
 const vi: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "Tải thêm bộ sưu tập",
   "collections.feed.error": "Không tải được bộ sưu tập. Hãy thử lại.",
   "Show content ratings?": "Hiển thị phân loại nội dung?",

@@ -123,6 +123,8 @@ import nytTv from "./ar/nyt-tv";
 import gameAchievements from "./ar/game-achievements";
 
 const ar: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "تحميل المزيد من المجموعات",
   "collections.feed.error": "تعذر تحميل المجموعات. حاول مرة أخرى.",
   "Show content ratings?": "عرض تصنيفات المحتوى؟",
@@ -290,7 +292,6 @@ const ar: Record<string, string> = {
   ...videoCast,
   ...music,
   ...ebookSources,
-  ...uiFallback,
   ...coverage,
   ...settingsFill,
   ...profileFill,

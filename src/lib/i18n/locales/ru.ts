@@ -128,6 +128,8 @@ import nytTv from "./ru/nyt-tv";
 import gameAchievements from "./ru/game-achievements";
 
 const ru: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "Загрузить ещё коллекции",
   "collections.feed.error": "Не удалось загрузить коллекции. Попробуйте снова.",
   "Show content ratings?": "Показывать возрастные рейтинги?",
@@ -299,7 +301,6 @@ const ru: Record<string, string> = {
   ...music,
   ...ebookSources,
   ...coverage,
-  ...uiFallback,
   ...gap,
   ...chrome,
   ...common,

@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./ja/play-orders";
 import gameRomLibrary from "./ja/game-rom-library";
 import gameNotes from "./ja/game-notes";
@@ -120,6 +121,8 @@ import nytTv from "./ja/nyt-tv";
 import gameAchievements from "./ja/game-achievements";
 
 const ja: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "コレクションをさらに読み込む",
   "collections.feed.error": "コレクションを読み込めませんでした。もう一度お試しください。",
   "Show content ratings?": "コンテンツのレーティングを表示しますか？",

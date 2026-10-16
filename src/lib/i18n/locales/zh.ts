@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./zh/play-orders";
 import gameRomLibrary from "./zh/game-rom-library";
 import gameNotes from "./zh/game-notes";
@@ -103,6 +104,8 @@ import nytTv from "./zh/nyt-tv";
 import gameAchievements from "./zh/game-achievements";
 
 const zh: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "加载更多合集",
   "collections.feed.error": "无法加载合集。请重试。",
   "Show content ratings?": "显示内容分级？",

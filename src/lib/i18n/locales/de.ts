@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./de/play-orders";
 import gameRomLibrary from "./de/game-rom-library";
 import gameNotes from "./de/game-notes";
@@ -122,6 +123,8 @@ import nytTv from "./de/nyt-tv";
 import gameAchievements from "./de/game-achievements";
 
 const de: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "Weitere Sammlungen laden",
   "collections.feed.error": "Sammlungen konnten nicht geladen werden. Versuche es erneut.",
   "Show content ratings?": "Inhaltsbewertungen anzeigen?",

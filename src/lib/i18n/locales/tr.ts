@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./tr/play-orders";
 import gameRomLibrary from "./tr/game-rom-library";
 import gameNotes from "./tr/game-notes";
@@ -101,6 +102,8 @@ import nytTv from "./tr/nyt-tv";
 import gameAchievements from "./tr/game-achievements";
 
 const tr: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "Daha fazla koleksiyon yükle",
   "collections.feed.error": "Koleksiyonlar yüklenemedi. Tekrar deneyin.",
   "Show content ratings?": "İçerik derecelendirmeleri gösterilsin mi?",

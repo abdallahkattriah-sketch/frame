@@ -182,6 +182,7 @@ const en: Record<string, string> = {
   "common.previous": "Previous",
   "common.loading": "Loading",
   "common.retry": "Retry",
+  "common.refresh": "Refresh",
   "common.more": "More",
 
   "search.placeholder": "Search movies, shows, people…",

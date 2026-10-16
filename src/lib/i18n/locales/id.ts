@@ -1,3 +1,4 @@
+import uiFallback from "./ui-fallback";
 import playOrders from "./id/play-orders";
 import gameRomLibrary from "./id/game-rom-library";
 import gameNotes from "./id/game-notes";
@@ -102,6 +103,8 @@ import nytTv from "./id/nyt-tv";
 import gameAchievements from "./id/game-achievements";
 
 const id: Record<string, string> = {
+  // English placeholders first, so every translation spread or listed below wins over them.
+  ...uiFallback,
   "collections.feed.more": "Muat koleksi lainnya",
   "collections.feed.error": "Koleksi tidak dapat dimuat. Coba lagi.",
   "Show content ratings?": "Tampilkan rating konten?",
