@@ -1,14 +1,20 @@
-name: tauri-build
+name: Release
 
 on:
   workflow_dispatch:
   push:
-    tags:
-      - "v*"
-      - "V*"
+    branches: [main]
+    paths-ignore:
+      - .github/ISSUE_TEMPLATE/**
+      - docs/**
+      - "**/*.md"
 
 permissions:
   contents: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
 
 env:
   NODE_OPTIONS: --max-old-space-size=6144
@@ -18,8 +24,52 @@ env:
   HARBOR_CAPSTAN_OPTIONAL: "1"
 
 jobs:
+  prepare:
+    name: Pick the release version
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    outputs:
+      version: ${{ steps.bump.outputs.version }}
+      sha: ${{ steps.bump.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Bump the version past the last release tag
+        id: bump
+        shell: bash
+        run: |
+          set -euo pipefail
+          current="$(node -p "require('./package.json').version")"
+          next="$(node scripts/bump-version.mjs --next)"
+          if [ "$next" != "$current" ]; then
+            node scripts/bump-version.mjs "$next"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -am "chore(release): v$next"
+            git push origin HEAD:main
+          fi
+          echo "version=$next" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  flatpak:
+    name: Flatpak
+    needs: prepare
+    uses: ./.github/workflows/flatpak.yml
+    with:
+      ref: ${{ needs.prepare.outputs.sha }}
+
   build:
     name: ${{ matrix.platform.name }} (${{ matrix.platform.target }})
+    needs: prepare
     runs-on: ${{ matrix.platform.runner }}
     timeout-minutes: 120
     continue-on-error: ${{ matrix.platform.target == 'x86_64-apple-darwin' }}
@@ -30,7 +80,7 @@ jobs:
           - name: Windows
             runner: windows-latest
             target: x86_64-pc-windows-msvc
-            bundle: msi
+            bundle: nsis
           - name: macOS-AppleSilicon
             runner: macos-15
             target: aarch64-apple-darwin
@@ -49,7 +99,9 @@ jobs:
             bundle: deb,appimage
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ needs.prepare.outputs.sha }}
 
       - name: Install Linux deps
         if: contains(matrix.platform.runner, 'ubuntu')
@@ -88,15 +140,15 @@ jobs:
             harbor-core
             src-tauri
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: pnpm
 
       - name: Set up Pokémon engine SDK
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: "10.0.401"
 
@@ -120,53 +172,7 @@ jobs:
         run: pnpm run setup:mpv
 
       - name: Fetch external binaries
-        shell: bash
-        run: |
-          mkdir -p src-tauri/binaries
-          cd src-tauri/binaries
-          TARGET="${{ matrix.platform.target }}"
-          EXT=""
-          if [[ "$TARGET" == *"windows"* ]]; then EXT=".exe"; fi
-
-          echo "Downloading yt-dlp..."
-          if [[ "$TARGET" == *"windows"* ]]; then
-            curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe" -o "yt-dlp-${TARGET}${EXT}"
-          elif [[ "$TARGET" == *"apple"* ]]; then
-            curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_macos" -o "yt-dlp-${TARGET}${EXT}"
-          else
-            curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp" -o "yt-dlp-${TARGET}${EXT}"
-          fi
-          chmod +x "yt-dlp-${TARGET}${EXT}" || true
-
-          echo "Fetching ffmpeg and ffprobe..."
-          if [[ "$TARGET" == *"windows"* ]]; then
-            curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip" -o ffmpeg.zip
-            unzip -j ffmpeg.zip "*/bin/ffmpeg.exe" "*/bin/ffprobe.exe"
-            mv ffmpeg.exe "ffmpeg-${TARGET}${EXT}"
-            mv ffprobe.exe "ffprobe-${TARGET}${EXT}"
-          elif [[ "$TARGET" == *"apple"* ]]; then
-            if [[ "$TARGET" == *"aarch64"* ]]; then
-              curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://www.osxexperts.net/ffmpeg6arm.zip" -o ffmpeg.zip
-              curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://www.osxexperts.net/ffprobe6arm.zip" -o ffprobe.zip
-            else
-              curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://www.osxexperts.net/ffmpeg6intel.zip" -o ffmpeg.zip
-              curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://www.osxexperts.net/ffprobe6intel.zip" -o ffprobe.zip
-            fi
-            unzip ffmpeg.zip
-            unzip ffprobe.zip
-            mv ffmpeg "ffmpeg-${TARGET}${EXT}"
-            mv ffprobe "ffprobe-${TARGET}${EXT}"
-            chmod +x "ffmpeg-${TARGET}${EXT}" "ffprobe-${TARGET}${EXT}" || true
-          else
-            if [[ "$TARGET" == *"aarch64"* ]]; then
-              curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linuxarm64-gpl.tar.xz" -o ffmpeg.tar.xz
-            else
-              curl --retry 6 --retry-delay 4 --retry-all-errors -L "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz" -o ffmpeg.tar.xz
-            fi
-            tar -xf ffmpeg.tar.xz --strip-components=2 --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
-            mv ffmpeg "ffmpeg-${TARGET}${EXT}"
-            mv ffprobe "ffprobe-${TARGET}${EXT}"
-          fi
+        run: pnpm run setup:binaries
 
       - name: harbor-core check
         working-directory: harbor-core
@@ -287,7 +293,7 @@ jobs:
 
       - name: Preserve macOS startup diagnostics
         if: always() && contains(matrix.platform.runner, 'macos')
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: startup-${{ matrix.platform.target }}
           path: ${{ runner.temp }}/harbor-macos-startup/*.log
@@ -308,7 +314,7 @@ jobs:
 
       - name: Upload artifacts
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: harbor-${{ matrix.platform.name }}
           path: |
@@ -322,38 +328,37 @@ jobs:
           retention-days: 14
           if-no-files-found: warn
 
-  publish-macos:
-    name: Publish the Apple silicon installer
-    needs: build
-    if: ${{ !cancelled() && startsWith(github.ref, 'refs/tags/') }}
+  publish:
+    name: Publish the release
+    needs: [prepare, build, flatpak]
+    if: ${{ !cancelled() && needs.prepare.result == 'success' && needs.build.result == 'success' && needs.flatpak.result == 'success' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     permissions:
       contents: write
-
     steps:
-      - name: Download the Apple silicon bundle
-        uses: actions/download-artifact@v4
+      - name: Download the installers
+        uses: actions/download-artifact@v8
         with:
-          name: harbor-macOS-AppleSilicon
-          path: macos-bundles
+          path: artifacts
 
-      - name: Attach the Apple silicon installer to the release
+      - name: Create the release
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.ref_name }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+          SHA: ${{ needs.prepare.outputs.sha }}
         run: |
           set -euo pipefail
-          apple_silicon="$(find macos-bundles -type f -name '*_aarch64.dmg' -print -quit)"
-          if [ -z "$apple_silicon" ]; then
-            echo "::error::The Apple silicon leg produced no *_aarch64.dmg, so there is nothing to attach to $TAG."
-            exit 1
-          fi
-          if ! gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            echo "::warning::$TAG has no release, so $(basename "$apple_silicon") was not attached. This job never creates one, because releases are written by hand. Publish the release for $TAG and re-run this job, or attach the dmg from this run's harbor-macOS-AppleSilicon artifact."
-            exit 0
-          fi
-          gh release upload "$TAG" "$apple_silicon" --repo "$GITHUB_REPOSITORY" --clobber
-          echo "::notice::The Intel dmg is built and kept as the harbor-macOS-Intel workflow artifact, deliberately not attached to a release. Its bundled libmpv closure comes from Homebrew, which no longer builds Intel bottles, so the dmg declares macOS 15.0 or newer and would not launch on the Sonoma, Ventura and Monterey Macs that asked for it. To ship it, add its *_x64.dmg to this upload and drop the Intel entry's continue-on-error in the build job."
-          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name'
+          mkdir upload
+          # The Intel dmg needs macOS 15 because Homebrew no longer builds Intel bottles, so it stays a workflow artifact.
+          find artifacts -type f \( -name '*.exe' -o -name '*_aarch64.dmg' -o -name '*.deb' -o -name '*.AppImage' \) \
+            -not -path '*harbor-macOS-Intel*' -exec cp {} upload/ \;
+          cp artifacts/Harbor-flatpak-x86_64/Harbor.flatpak "upload/Harbor_${VERSION}_x86_64.flatpak"
+          ls -la upload
+          gh release create "v$VERSION" upload/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$SHA" \
+            --title "Harbor $VERSION" \
+            --generate-notes \
+            --latest

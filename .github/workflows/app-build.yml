@@ -2,8 +2,7 @@ name: App build
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
+  pull_request:
     paths-ignore:
       - .github/ISSUE_TEMPLATE/**
       - docs/**
@@ -13,7 +12,7 @@ permissions:
   contents: read
 
 env:
-  # tsc -b in build:desktop runs out of the default ~2 GB heap; tauri-build.yml sets the same.
+  # tsc -b in build:desktop runs out of the default ~2 GB heap; the Release workflow sets the same.
   NODE_OPTIONS: --max-old-space-size=6144
   # The extension compat layer is not in this repository, so a runner cannot stage its runtime.
   # This build compiles without it and says so. Drop this line once the layer ships with the
@@ -84,7 +83,7 @@ jobs:
           cache: pnpm
 
       - name: Set up Pokémon engine SDK
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: "10.0.401"
 
