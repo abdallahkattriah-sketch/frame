@@ -1,6 +1,5 @@
-import { safeFetchBytes } from "@/lib/safe-fetch";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
 import { GameRequestPool } from "./request-pool";
+import { hasIgdbCredentials, igdbRequest } from "./igdb-client";
 import {
   completionTimeQuery,
   parseCompletionTimes,
@@ -18,21 +17,16 @@ export async function loadCompletionTimes(
   signal.throwIfAborted();
   const held = cache.get(gameId);
   if (held && Date.now() - held.at < 24 * 60 * 60_000) return held.data;
-  if (Date.now() < unavailableUntil) return null;
+  if (Date.now() < unavailableUntil || !hasIgdbCredentials()) return null;
   return pool.run(async () => {
     if (Date.now() < unavailableUntil) return null;
-    const response = await safeFetchBytes(
-      `${HARBOR_API_BASE}/api/igdb/game_time_to_beats`,
-      {
-        method: "POST",
-        headers: { "content-type": "text/plain" },
-        body,
-        signal: AbortSignal.any([signal, AbortSignal.timeout(10_000)]),
-      },
-      10_000,
-      256 * 1024,
+    const response = await igdbRequest(
+      "game_time_to_beats",
+      body,
+      AbortSignal.any([signal, AbortSignal.timeout(10_000)]),
     );
-    // This route is an explicit deployment dependency. Missing service/data never becomes an estimate.
+    // Rejected credentials never become an estimate; no cooldown, so a corrected key works at once.
+    if (response.status === 401 || response.status === 403) return null;
     if ([404, 501, 503].includes(response.status)) {
       unavailableUntil = Date.now() + 30 * 60_000;
       return null;

@@ -8,6 +8,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, Search, X } from "luc
 import { Dropdown } from "@/components/dropdown";
 import { useT } from "@/lib/i18n";
 import { loadAtlasPage, readAtlasPageSnapshot } from "@/lib/games/atlas";
+import { hasIgdbCredentials } from "@/lib/games/igdb-client";
 import { savedMetadataAt } from "@/lib/games/metadata-records";
 import { GameDataStatus } from "./game-data-status";
 import { useLiveRefresh } from "./use-live-refresh";
@@ -490,7 +491,13 @@ function AtlasPage({
       {current && state.error && (
         <div className="games-state" role="alert">
           <h3>{t("games.atlas.error")}</h3>
-          <p>{t("games.retryNote")}</p>
+          <p>
+            {hasIgdbCredentials()
+              ? t("games.retryNote")
+              : t(
+                  "Add a Twitch client ID and secret in Settings > Library > Games to load the IGDB catalog.",
+                )}
+          </p>
           <button
             className="games-button"
             onClick={() => (state.failedOffset ? void more() : setAttempt((a) => a + 1))}

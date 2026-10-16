@@ -443,6 +443,8 @@ export type Settings = {
   aiSearchKey: string;
   steamSearchShortcut: boolean;
   gameAgeRatingAgency: "ESRB" | "PEGI";
+  igdbClientId: string;
+  igdbClientSecret: string;
   gameArtworkSelection: "first" | "random" | "manual";
   gameArtworkScreenshots: boolean;
   gameArtworkCoverIcon: boolean;

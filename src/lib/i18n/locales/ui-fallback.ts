@@ -2112,6 +2112,18 @@ const uiFallback: Record<string, string> = {
   "A browser tab opened on AniList. Approve Harbor there, then copy the token it shows (or the page address) and paste it below.":
     "A browser tab opened on AniList. Approve Harbor there, then copy the token it shows (or the page address) and paste it below.",
   "Paste the token or page URL from AniList": "Paste the token or page URL from AniList",
+  "IGDB · Twitch client ID": "IGDB · Twitch client ID",
+  "IGDB · Twitch client secret": "IGDB · Twitch client secret",
+  "Twitch client ID": "Twitch client ID",
+  "Twitch client secret": "Twitch client secret",
+  "Game catalogs, details and completion times come from IGDB, which signs in with a Twitch app. Register one for free at":
+    "Game catalogs, details and completion times come from IGDB, which signs in with a Twitch app. Register one for free at",
+  "Use any name, set the OAuth redirect URL to http://localhost, choose the Confidential client type, then copy the client ID and a new secret here.":
+    "Use any name, set the OAuth redirect URL to http://localhost, choose the Confidential client type, then copy the client ID and a new secret here.",
+  "Harbor exchanges the ID and secret for a Twitch app token and keeps it until it expires. Without both, the Games catalog stays empty.":
+    "Harbor exchanges the ID and secret for a Twitch app token and keeps it until it expires. Without both, the Games catalog stays empty.",
+  "Add a Twitch client ID and secret in Settings > Library > Games to load the IGDB catalog.":
+    "Add a Twitch client ID and secret in Settings > Library > Games to load the IGDB catalog.",
 };
 
 export default uiFallback;
