@@ -8,7 +8,10 @@ export const HARBOR_API_BASE = resolveBase(
   "https://harbor.site",
 );
 
-export const HARBOR_RELEASES_URL = "https://github.com/crazyrabbit0/harbor/releases";
+export const HARBOR_REPO_URL = "https://github.com/crazyrabbit0/harbor";
+export const HARBOR_RELEASES_URL = `${HARBOR_REPO_URL}/releases`;
+export const HARBOR_ISSUES_URL = `${HARBOR_REPO_URL}/issues`;
+export const HARBOR_BUG_FORM_URL = `${HARBOR_ISSUES_URL}/new?template=bug_report.yml`;
 
 export const HARBOR_TRAKT_BASE = resolveBase(
   import.meta.env.VITE_HARBOR_TRAKT_BASE,

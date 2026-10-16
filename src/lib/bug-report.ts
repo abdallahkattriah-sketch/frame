@@ -1,9 +1,10 @@
-import { HARBOR_BUGS_BASE } from "@/lib/config/endpoints";
+import { HARBOR_ISSUES_URL } from "@/lib/config/endpoints";
+import { openUrl } from "@/lib/window";
 
 declare const __APP_VERSION__: string;
 
-const ENDPOINT =
-  (import.meta.env.VITE_BUG_REPORT_ENDPOINT as string | undefined) || HARBOR_BUGS_BASE;
+// GitHub answers 500 for issue links around 7 KB, so long fields are trimmed to fit under this.
+const MAX_URL = 6000;
 
 export type Severity = "low" | "normal" | "high" | "critical";
 
@@ -127,99 +128,85 @@ export async function collectDiagnostics(opts: {
   };
 }
 
-export async function submitErrorReport(args: {
+function appVersion(): string {
+  return typeof __APP_VERSION__ === "string" ? __APP_VERSION__ : "dev";
+}
+
+function errorLines(errors: Diagnostics["recentErrors"]): string {
+  return errors.map((e) => `${new Date(e.ts).toISOString()} ${e.src ?? ""} ${e.msg}`).join("\n");
+}
+
+function issueUrl(title: string, body: string, labels: string[]): string {
+  const build = (text: string) =>
+    `${HARBOR_ISSUES_URL}/new?title=${encodeURIComponent(title)}&labels=${encodeURIComponent(labels.join(","))}&body=${encodeURIComponent(text)}`;
+  let text = body;
+  while (build(text).length > MAX_URL && text.length > 200) {
+    text = `${text.slice(0, Math.floor(text.length * 0.8))}\n\n_(trimmed to fit a GitHub link)_`;
+  }
+  return build(text);
+}
+
+// Opens a prefilled GitHub issue; the user reviews it and presses Submit on GitHub.
+export function openErrorReportIssue(args: {
   code: string;
   title: string;
   message: string;
   detail?: string;
-}): Promise<{ id: string }> {
+}): string {
   const ua = typeof navigator !== "undefined" ? navigator.userAgent : "";
-  const winMatch = ua.match(/Windows NT ([\d.]+)/i);
-  const macMatch = ua.match(/Mac OS X ([\d_.]+)/i);
-  let os = "unknown";
-  let osVersion = "";
-  if (winMatch) {
-    os = "Windows";
-    osVersion = winMatch[1] === "10.0" ? "10/11" : winMatch[1];
-  } else if (macMatch) {
-    os = "macOS";
-    osVersion = macMatch[1].replace(/_/g, ".");
-  } else if (/linux/i.test(ua)) {
-    os = "Linux";
-  }
-  const summary = `[${args.code}] ${args.title}: ${args.message}`.slice(0, 240);
-  const fd = new FormData();
-  fd.set("summary", summary);
-  fd.set("severity", "high");
-  fd.set("steps", "");
-  fd.set("expected", "");
-  fd.set("actual", args.message);
-  fd.set("reporter_name", "");
-  fd.set("reporter_github", "");
-  fd.set("reporter_contact", "");
-  fd.set("consent_credit", "0");
-  fd.set("app_version", typeof __APP_VERSION__ === "string" ? __APP_VERSION__ : "dev");
-  fd.set("os", os);
-  fd.set("os_version", osVersion);
-  fd.set("ua", ua);
-  fd.set(
-    "viewport",
-    typeof window !== "undefined" ? `${window.innerWidth}x${window.innerHeight}` : "",
-  );
-  fd.set("locale", typeof navigator !== "undefined" ? navigator.language : "");
-  fd.set(
-    "diagnostics",
-    JSON.stringify({
-      source: "auto-error-report",
-      code: args.code,
-      title: args.title,
-      detail: args.detail || null,
-      path: typeof window !== "undefined" ? window.location.pathname + window.location.hash : "",
-      recentErrors: getRecentErrors().slice(-20),
-    }),
-  );
-  const res = await fetch(`${ENDPOINT}/v1/reports`, { method: "POST", body: fd });
-  if (!res.ok) {
-    const j = await res.json().catch(() => ({ error: `HTTP ${res.status}` }));
-    throw new Error(j.error || `HTTP ${res.status}`);
-  }
-  return (await res.json()) as { id: string };
+  const path = typeof window !== "undefined" ? window.location.pathname + window.location.hash : "";
+  const body = [
+    `**Error:** \`${args.code}\` ${args.title}`,
+    `**Message:** ${args.message}`,
+    `**Harbor:** ${appVersion()}`,
+    `**User agent:** ${ua}`,
+    path ? `**Screen:** \`${path}\`` : "",
+    args.detail ? `\n**Technical detail**\n\n\`\`\`\n${args.detail}\n\`\`\`` : "",
+    `\n**Recent errors**\n\n\`\`\`\n${errorLines(getRecentErrors().slice(-20))}\n\`\`\``,
+    "\n**What were you doing when it happened?**\n\n",
+  ]
+    .filter(Boolean)
+    .join("\n");
+  const url = issueUrl(`[Bug]: [${args.code}] ${args.title}`.slice(0, 200), body, ["bug"]);
+  openUrl(url);
+  return url;
 }
 
-export async function submitBugReport(
-  input: BugReportInput,
-  diag: Diagnostics,
-): Promise<{ id: string }> {
-  const fd = new FormData();
-  fd.set("summary", input.summary);
-  fd.set("severity", input.severity);
-  fd.set("steps", input.steps);
-  fd.set("expected", input.expected);
-  fd.set("actual", input.actual);
-  fd.set("reporter_name", input.reporterName);
-  fd.set("reporter_github", input.reporterGithub);
-  fd.set("reporter_contact", input.reporterContact);
-  fd.set("consent_credit", input.consentCredit ? "1" : "0");
-  fd.set("app_version", diag.appVersion);
-  fd.set("os", diag.os);
-  fd.set("os_version", diag.osVersion);
-  fd.set("ua", diag.ua);
-  fd.set("viewport", diag.viewport);
-  fd.set("locale", diag.locale);
-  fd.set(
-    "diagnostics",
-    JSON.stringify({
-      flags: diag.flags,
-      mpvProbe: diag.mpvProbe,
-      recentErrors: diag.recentErrors,
-    }),
-  );
-  for (const f of input.files) fd.append("files", f, f.name);
-
-  const res = await fetch(`${ENDPOINT}/v1/reports`, { method: "POST", body: fd });
-  if (!res.ok) {
-    const j = await res.json().catch(() => ({ error: `HTTP ${res.status}` }));
-    throw new Error(j.error || `HTTP ${res.status}`);
-  }
-  return (await res.json()) as { id: string };
+export function openBugReportIssue(input: BugReportInput, diag: Diagnostics): string {
+  const section = (heading: string, text: string) => (text ? `### ${heading}\n\n${text}\n` : "");
+  const reporter = [
+    input.reporterName && `**Name:** ${input.reporterName}`,
+    input.reporterGithub && `**GitHub:** @${input.reporterGithub}`,
+    input.reporterContact && `**Contact:** ${input.reporterContact}`,
+    input.consentCredit ? "**Credit:** yes, credit me in the release notes" : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+  const body = [
+    `**Severity:** ${input.severity}`,
+    "",
+    section("Steps to reproduce", input.steps),
+    section("Expected", input.expected),
+    section("What happened", input.actual),
+    input.files.length
+      ? `### Attachments\n\nDrag these files into this issue: ${input.files.map((f) => `\`${f.name}\``).join(", ")}\n`
+      : "",
+    reporter ? `### Reporter\n\n${reporter}\n` : "",
+    "### Diagnostics\n",
+    `- **Harbor:** ${diag.appVersion}`,
+    `- **OS:** ${diag.os} ${diag.osVersion}`.trimEnd(),
+    `- **Viewport:** ${diag.viewport}`,
+    `- **Locale:** ${diag.locale}`,
+    `- **Player engine:** ${diag.flags.playerEngine}, **region:** ${diag.flags.region}`,
+    `- **mpv:** ${diag.mpvProbe ? (diag.mpvProbe.available ? (diag.mpvProbe.version ?? "available") : `unavailable (${diag.mpvProbe.error ?? "unknown"})`) : "n/a"}`,
+    `- **Services:** TMDB ${diag.flags.hasTmdb ? "yes" : "no"}, RPDB ${diag.flags.hasRpdb ? "yes" : "no"}, Trakt ${diag.flags.hasTrakt ? "yes" : "no"}, Stremio ${diag.flags.hasStremio ? "yes" : "no"}, ${diag.flags.debridCount} debrid, ${diag.flags.addonCount ?? "?"} addons, ${diag.flags.iptvCount} IPTV`,
+    diag.recentErrors.length
+      ? `\n<details><summary>Recent errors</summary>\n\n\`\`\`\n${errorLines(diag.recentErrors)}\n\`\`\`\n</details>`
+      : "",
+  ]
+    .filter((line) => line !== "")
+    .join("\n");
+  const url = issueUrl(`[Bug]: ${input.summary}`.slice(0, 200), body, ["bug"]);
+  openUrl(url);
+  return url;
 }

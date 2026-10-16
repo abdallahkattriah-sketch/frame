@@ -22,7 +22,6 @@ use crate::stream_proxy::{AudioCastFormat, AudioCastInput, ProxyState, RegisterA
 use crate::transcode::TranscodeProfile;
 
 const CAST_SERVICE_TYPE: &str = "_googlecast._tcp.local.";
-const HARBOR_RECEIVER_APP_ID: &str = "120F754D";
 const DISCOVERY_TIMEOUT_MS: u64 = 5000;
 
 #[derive(Debug, Clone, Serialize)]
@@ -479,10 +478,6 @@ fn connect_device<'a>(host: &str, port: u16) -> Result<CastDevice<'a>, String> {
     }
 }
 
-fn launch_harbor_receiver<'a>(device: &CastDevice<'a>) -> Result<(String, String), String> {
-    launch_receiver_app(device, HARBOR_RECEIVER_APP_ID)
-}
-
 fn launch_receiver_app<'a>(
     device: &CastDevice<'a>,
     app_id: &str,
@@ -817,12 +812,8 @@ async fn cast_load_chromecast(
             }
         };
         eprintln!("[harbor::cast] connected to {}:{}", host_clone, port);
-        // Google's default receiver supports audio without requiring the video receiver's registration.
-        let launched = if is_audio_content_type(content_type.as_deref()) {
-            launch_receiver_app(&device, "default")
-        } else {
-            launch_harbor_receiver(&device)
-        };
+        // Google's Default Media Receiver plays the MP4, HLS and MPEG-TS streams this sends.
+        let launched = launch_receiver_app(&device, "default");
         let (transport_id, session_id) = match launched {
             Ok(t) => t,
             Err(e) => {

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import snip404 from "@/assets/snip404.svg";
 import { HarborMark } from "@/components/icons/harbor-mark";
-import { submitErrorReport } from "@/lib/bug-report";
+import { openErrorReportIssue } from "@/lib/bug-report";
 import { loadStartupCrashReport, startupCrashToHarborError } from "@/lib/startup-crash";
 import { isStaleTauriListenerError } from "@/lib/tauri-unlisten";
 import { t as translate, useT } from "@/lib/i18n";
@@ -122,21 +122,20 @@ export function ErrorView() {
     setReport({ kind: "idle" });
   }, []);
 
-  const reportBug = useCallback(async () => {
-    if (!error || report.kind === "sending" || report.kind === "sent") return;
-    setReport({ kind: "sending" });
+  const reportBug = useCallback(() => {
+    if (!error) return;
     try {
-      const { id } = await submitErrorReport({
+      const url = openErrorReportIssue({
         code: error.code,
         title: error.title,
         message: error.message,
         detail: error.detail,
       });
-      setReport({ kind: "sent", id });
+      setReport({ kind: "sent", id: url });
     } catch (e) {
       setReport({ kind: "error", message: e instanceof Error ? e.message : String(e) });
     }
-  }, [error, report.kind]);
+  }, [error]);
 
   const reload = useCallback(() => {
     window.location.reload();
@@ -230,7 +229,7 @@ export function ErrorView() {
           <button
             type="button"
             onClick={reportBug}
-            disabled={report.kind === "sending" || report.kind === "sent"}
+            disabled={report.kind === "sending"}
             className={`inline-flex h-11 items-center gap-2 rounded-full border px-5 text-[13.5px] font-medium transition-[background-color,border-color,color] disabled:cursor-default ${
               report.kind === "sent"
                 ? "border-accent/55 bg-accent/15 text-accent"
@@ -247,10 +246,10 @@ export function ErrorView() {
             {report.kind === "sending"
               ? t("Sending…")
               : report.kind === "sent"
-                ? t("Report sent")
+                ? t("Open the issue again")
                 : report.kind === "error"
                   ? t("Try again")
-                  : t("Submit report")}
+                  : t("Report on GitHub")}
           </button>
           <button
             type="button"
@@ -264,13 +263,13 @@ export function ErrorView() {
 
         <p className="text-[11.5px] text-ink-subtle">
           {report.kind === "sent" ? (
-            t("Thanks. Tracked as {id}.", { id: report.id })
+            t("Submit the GitHub issue that opened to send the report.")
           ) : report.kind === "error" ? (
             <span className="text-danger/80">
               {t("Could not send: {message}", { message: report.message })}
             </span>
           ) : (
-            t("Sends the context above straight to the Harbor team. No keys or library data.")
+            t("Opens a prefilled GitHub issue with the context above. No keys or library data.")
           )}
         </p>
       </div>

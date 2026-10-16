@@ -1,11 +1,13 @@
 import { Check, GitPullRequest } from "../icons";
+import { GitHubIcon } from "@/components/github-icon";
 import { useLayoutEffect, useRef } from "react";
+import { HARBOR_REPO_URL } from "@/lib/config/endpoints";
 import { openUrl } from "@/lib/window";
 import { tvFocus } from "@/lib/keyboard-navigation";
 import { useT } from "@/lib/i18n";
 import { ROW_ACTION, ROW_ACTION_PRIMARY } from "../kit";
 
-export function SuccessCard({ id, onAnother }: { id: string; onAnother: () => void }) {
+export function SuccessCard({ url, onAnother }: { url: string; onAnother: () => void }) {
   const t = useT();
   const againRef = useRef<HTMLButtonElement>(null);
 
@@ -22,13 +24,11 @@ export function SuccessCard({ id, onAnother }: { id: string; onAnother: () => vo
         </span>
         <div className="flex min-w-0 flex-col gap-1.5">
           <h2 className="text-[19px] font-semibold leading-[26px] tracking-tight text-ink">
-            {t("Report received")}
+            {t("Your report is ready on GitHub")}
           </h2>
           <p className="max-w-[66ch] text-[15.5px] leading-[22px] text-ink-muted">
-            {t("Tracked as")} <span className="font-mono text-[15.5px] text-ink">{id}</span>.{" "}
             {t(
-              "If you left a {service} username, you'll be tagged in the release notes when this lands.",
-              { service: "GitHub" },
+              "Check it in the browser tab that opened, drag in any attachments, then press Submit new issue to send it.",
             )}
           </p>
         </div>
@@ -37,9 +37,13 @@ export function SuccessCard({ id, onAnother }: { id: string; onAnother: () => vo
         <button ref={againRef} type="button" onClick={onAnother} className={ROW_ACTION_PRIMARY}>
           {t("File another")}
         </button>
+        <button type="button" onClick={() => openUrl(url)} className={ROW_ACTION}>
+          <GitHubIcon size={18} />
+          {t("Open the issue again")}
+        </button>
         <button
           type="button"
-          onClick={() => openUrl("https://github.com/harborstremio/harbor/pulls")}
+          onClick={() => openUrl(`${HARBOR_REPO_URL}/pulls`)}
           className={ROW_ACTION}
         >
           <GitPullRequest size={18} strokeWidth={1.9} />

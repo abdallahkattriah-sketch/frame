@@ -12,7 +12,10 @@ The app talks to Stremio, addons and most metadata services directly, so the cor
 - Anime metadata from Kitsu and AniZip, stream ranking, local files, Plex, Jellyfin and Emby.
 - TVDB (episode orders, episode lists, artwork, stills, cast, collections), as long as a TVDB API key is set in Settings > Library. Every TVDB request goes straight to `api4.thetvdb.com`; without a key these features stay empty.
 - Watch parties through your own Cloudflare relay (Settings > Relay).
-- In-app updates on Windows and macOS, from this fork's GitHub releases. Builds up to 0.9.201 carry upstream's updater key, so they have to be replaced by hand once with a later release. Rolling back to an earlier build and rating a build (as a GitHub issue) work from Settings > Updates.
+- Bug reports from Settings, the crash screen and the menu bar, as prefilled issues on this fork's GitHub (attachments are dragged in on GitHub).
+- The speech-to-text model, downloaded from whisper.cpp's Hugging Face repository.
+- Chromecast video and audio, through Google's Default Media Receiver.
+- In-app updates on Windows, macOS and the Linux AppImage, from this fork's GitHub releases. Builds up to 0.9.201 carry upstream's updater key, so they have to be replaced by hand once with a later release. Rolling back to an earlier build and rating a build (as a GitHub issue) work from Settings > Updates.
 - Award badges on movie and show pages (Wikidata plus lists built into the app), anime award badges matched by title (the built-in Crunchyroll, TAAF, Japan Media Arts, Animation Kobe and r/anime lists), and the Discover "Award winners" row, which is built from the built-in award history plus TMDB when a TMDB key is set.
 
 ## What no longer works
@@ -29,11 +32,9 @@ These relied on services hosted at `harbor.site` and its subdomains, which are g
 | Anime award badges matched by ID, anime hero art, curated logos, announcements, release notes | static JSON files on `harbor.site`                          |
 | Award images in Discord Rich Presence                                                         | `harbor.site/discord/awards`                                |
 | Shared ad-skip segments and ad reports                                                        | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site`  |
-| Bug reports from Settings                                                                     | `bugs.harbor.site`                                          |
 | Shared subtitle autosync                                                                      | `sync.harbor.site`                                          |
 | Public watch-party relay                                                                      | `pub.harbor.site`                                           |
 | IGDB data in Games, manga source list                                                         | `harbor.site/api/igdb`, `/api/manga-sources`                |
-| Speech-to-text model download                                                                 | `harbor.site/models/ggml-tiny.bin`                          |
 
 Trakt can be restored without Harbor's server by registering a Trakt app and doing the token exchange in the client with its own client ID and secret (`traktClientId` / `traktClientSecret` already exist in settings but are unused). MAL works the same way. Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`.
 
@@ -42,7 +43,6 @@ Trakt can be restored without Harbor's server by registering a Trakt app and doi
 - `libmpv-2.dll` (Windows, mpv `v0.41.0-1084-ga1bf4b655`, SHA-256 `0a81c004aae0ee7d512b9a26e38f66281f9591e84e1663215cc3a36a4bde6f6a`) is too large for git (115 MB, and GitHub refuses Git LFS uploads to a public fork), so it lives on this fork's [`libmpv-0a81c004aae0` release](https://github.com/crazyrabbit0/harbor/releases/tag/libmpv-0a81c004aae0). `pnpm run setup:libmpv` downloads it from there into `src-tauri/libmpv/`. If that fails it falls back to [`mpv-dev-x86_64-20260927-git-a1bf4b6559.7z`](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260927/mpv-dev-x86_64-20260927-git-a1bf4b6559.7z) from `shinchiro/mpv-winbuild-cmake`, whose `libmpv-2.dll` is byte-identical (needs `7z` on PATH). That project keeps only about a month of daily releases, so the fork release is the copy to rely on. Other builds of the same mpv commit (the `x86_64-v3` variant, `zhongfly/mpv-winbuild`) are not byte-identical.
 - `mpv.exe`, ffmpeg, yt-dlp and fonts come from their own public projects and are unaffected.
 - `android-extension-compat/tools/deps.sh` still downloads `nanojson-e9d656d.jar` from the deleted repository, so the Android extension layer cannot be provisioned from scratch. Build without it with `HARBOR_CAPSTAN_SRC=<nonexistent dir>` and `HARBOR_CAPSTAN_OPTIONAL=1`.
-- Links in the app to `github.com/harborstremio/harbor` (bug reports, releases, contributor pages) lead to a 404.
 
 ## Upstream's old `main` branch
 
