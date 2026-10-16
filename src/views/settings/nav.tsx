@@ -7723,6 +7723,32 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
+    label: "Roll back to an earlier build",
+    section: "updates",
+    anchorTitle: "Updates",
+    keywords: [
+      "rollback",
+      "downgrade",
+      "previous version",
+      "earlier build",
+      "old installer",
+      "broken update",
+    ],
+  },
+  {
+    label: "How is this build treating you?",
+    section: "updates",
+    anchorTitle: "Updates",
+    keywords: [
+      "rate build",
+      "build feedback",
+      "better or worse",
+      "feedback slider",
+      "send rating",
+      "github issue",
+    ],
+  },
+  {
     label: "Export everything",
     section: "updates",
     anchorTitle: "Backup & restore",

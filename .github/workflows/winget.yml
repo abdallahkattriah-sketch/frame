@@ -20,9 +20,7 @@ concurrency:
 jobs:
   publish:
     name: Publish
-    # Only the upstream repository has the winget-pkgs fork and the WINGET_TOKEN
-    # secret, so forks skip instead of failing on a missing credential.
-    if: github.repository == 'harborstremio/harbor'
+    if: github.repository == 'crazyrabbit0/harbor'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -30,9 +28,16 @@ jobs:
         id: release
         env:
           GH_TOKEN: ${{ github.token }}
+          HAS_WINGET_TOKEN: ${{ secrets.WINGET_TOKEN != '' }}
           TAG: ${{ github.event.release.tag_name || inputs.tag }}
         run: |
           set -euo pipefail
+
+          if [ "$HAS_WINGET_TOKEN" != "true" ]; then
+            echo "::warning::No WINGET_TOKEN secret, so nothing is submitted to WinGet (see AGENTS.md, Releases)."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
 
           # Release tags are not consistently formatted (V0.9.21, v0.9.20,
           # v.0.8.3-beta), so derive the WinGet PackageVersion rather than
@@ -64,9 +69,9 @@ jobs:
         if: steps.release.outputs.found == 'true'
         uses: vedantmgoyal9/winget-releaser@v2
         with:
-          identifier: HarborStremio.Harbor
+          identifier: CrazyRabbit.Harbor
           version: ${{ steps.release.outputs.version }}
           release-tag: ${{ steps.release.outputs.tag }}
           installers-regex: '_x64-setup\.exe$'
-          fork-user: harborstremio
+          fork-user: crazyrabbit0
           token: ${{ secrets.WINGET_TOKEN }}

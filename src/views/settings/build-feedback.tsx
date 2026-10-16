@@ -1,19 +1,15 @@
 import { Angry, Frown, Laugh, Meh, Smile, ThumbsUp } from "./icons";
 import { GitHubIcon } from "@/components/github-icon";
 import { useRef, useState, type ComponentType } from "react";
-import { APP_VERSION, BUILD_LABEL, IS_BETA_BUILD } from "@/lib/build-info";
-import { submitBuildFeedback } from "@/lib/build-feedback-submit";
+import { APP_VERSION, BUILD_LABEL } from "@/lib/build-info";
 import { openUrl } from "@/lib/window";
 import { useT } from "@/lib/i18n";
-import { ROW_DESC, SettingRow } from "./kit";
+import { SettingRow } from "./kit";
 import { stripArrowKeys } from "./shared";
 import { SButton } from "./ui";
 
 const KEY = "harbor.build.rating.v1";
-const REPO_ISSUE = "https://github.com/harborstremio/harbor/issues/new";
-
-const QUAL =
-  "inline-flex h-[22px] shrink-0 items-center rounded-[6px] px-2 text-[13px] font-bold uppercase leading-[17px] tracking-[0.72px]";
+const REPO_ISSUE = "https://github.com/crazyrabbit0/harbor/issues/new";
 
 const SCALE_LABEL =
   "text-[13px] font-bold uppercase leading-[17px] tracking-[0.72px] text-ink-subtle";
@@ -50,6 +46,19 @@ export function BuildFeedback() {
   const [committed, setCommitted] = useState<number | null>(() => readSaved());
   const tiles = useRef<(HTMLButtonElement | null)[]>([]);
 
+  const openIssue = (rating: number) => {
+    const s = STOPS[rating];
+    const title = `Build feedback: ${APP_VERSION} feels ${s.label.toLowerCase()}`;
+    const ask =
+      rating <= 1
+        ? "**What got worse, or what broke?**\n\n\n**Steps to make it happen (if any):**\n\n\n_A screenshot helps a ton._"
+        : "**Anything you'd like to add?**\n\n";
+    const body = `**Build:** ${BUILD_LABEL}\n**Platform:** ${navigator.platform || "unknown"}\n**How it feels:** ${s.label}\n\n${ask}`;
+    void openUrl(
+      `${REPO_ISSUE}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=feedback`,
+    );
+  };
+
   const commit = () => {
     setCommitted(value);
     try {
@@ -57,65 +66,38 @@ export function BuildFeedback() {
     } catch {
       /* private mode */
     }
-    void submitBuildFeedback(value);
-  };
-
-  const openIssue = (rating: number) => {
-    const s = STOPS[rating];
-    const title = `Beta feedback: ${APP_VERSION} feels ${s.label.toLowerCase()}`;
-    const body = `**Build:** ${BUILD_LABEL}${IS_BETA_BUILD ? " (beta)" : ""}
-**Platform:** ${navigator.platform || "unknown"}\n**How it feels:** ${s.label}\n\n**What got worse, or what broke?**\n\n\n**Steps to make it happen (if any):**\n\n\n_A screenshot helps us a ton._`;
-    void openUrl(
-      `${REPO_ISSUE}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=feedback`,
-    );
+    openIssue(value);
   };
 
   if (committed != null) {
     const s = STOPS[committed];
-    const negative = committed <= 1;
     const rated = t("You rated this build {label}.", { label: t(s.label) });
-    const icon = (
-      <span className={s.tone}>
-        <s.Icon size={20} strokeWidth={2} />
-      </span>
-    );
-
-    if (negative) {
-      return (
-        <SettingRow wide icon={icon} label={t(TITLE)} desc={rated}>
-          <div className="flex w-full flex-col items-start gap-3">
-            <p className={`max-w-[66ch] ${ROW_DESC}`}>
-              {t(
-                "Sorry this one is not better. Tell us what went wrong and we will fix it for you.",
-              )}
-            </p>
-            <div className="flex flex-wrap items-center gap-2.5">
-              <SButton variant="primary" onClick={() => openIssue(committed)}>
-                <GitHubIcon size={16} strokeWidth={2.2} />
-                {t("Open a quick issue")}
-              </SButton>
-              <SButton onClick={() => setCommitted(null)}>{t("Change")}</SButton>
-            </div>
-          </div>
-        </SettingRow>
-      );
-    }
-
     return (
       <SettingRow
-        icon={icon}
+        wide
+        icon={
+          <span className={s.tone}>
+            <s.Icon size={20} strokeWidth={2} />
+          </span>
+        }
         label={t(TITLE)}
         desc={
           <>
             <span className="block">{rated}</span>
             <span className="mt-1 flex items-start gap-2">
               <ThumbsUp size={16} strokeWidth={2.2} className="mt-[3px] shrink-0 text-accent" />
-              {t("Thanks! This helps us know the betas are heading the right way.")}
+              {t("Thanks! Submit the GitHub issue that opened to send your rating.")}
             </span>
           </>
         }
       >
-        <SButton onClick={() => setCommitted(null)}>{t("Change")}</SButton>
+        <div className="flex flex-wrap items-center gap-2.5">
+          <SButton onClick={() => openIssue(committed)}>
+            <GitHubIcon size={16} strokeWidth={2.2} />
+            {t("Open the issue again")}
+          </SButton>
+          <SButton onClick={() => setCommitted(null)}>{t("Change")}</SButton>
+        </div>
       </SettingRow>
     );
   }
@@ -129,14 +111,7 @@ export function BuildFeedback() {
           <cur.Icon size={20} strokeWidth={2} />
         </span>
       }
-      label={
-        <span className="inline-flex min-w-0 flex-wrap items-center gap-2">
-          <span className="min-w-0">{t(TITLE)}</span>
-          {IS_BETA_BUILD && (
-            <span className={`${QUAL} bg-accent-soft text-accent`}>{t("Beta")}</span>
-          )}
-        </span>
-      }
+      label={t(TITLE)}
       desc={t("Does Harbor {version} feel better or worse than the version you had before?", {
         version: APP_VERSION,
       })}
@@ -183,7 +158,8 @@ export function BuildFeedback() {
         </div>
 
         <SButton variant="primary" onClick={commit} className="self-start">
-          {t("Send rating")}
+          <GitHubIcon size={16} strokeWidth={2.2} />
+          {t("Send rating on GitHub")}
         </SButton>
       </div>
     </SettingRow>

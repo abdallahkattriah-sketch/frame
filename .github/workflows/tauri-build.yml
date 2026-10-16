@@ -262,6 +262,17 @@ jobs:
           LD_LIBRARY_PATH: ${{ github.workspace }}/src-tauri/resources/capstan/runtime/lib/server:${{ github.workspace }}/src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage/Harbor.AppDir/usr/lib/Harbor/resources/capstan/runtime/lib/server
         run: pnpm tauri:build:linux-system --target ${{ matrix.platform.target }} --bundles deb,appimage --verbose
 
+      - name: Sign the AppImage for the updater
+        if: contains(matrix.platform.runner, 'ubuntu')
+        shell: bash
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ""
+        run: |
+          set -euo pipefail
+          image="$(find "src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage" -maxdepth 1 -name 'Harbor_*.AppImage' -print -quit)"
+          test -n "$image"
+          pnpm tauri signer sign -p "" "$image"
       - name: Verify macOS app dependencies
         if: contains(matrix.platform.runner, 'macos')
         shell: bash
@@ -309,6 +320,7 @@ jobs:
             src-tauri/target/${{ matrix.platform.target }}/release/bundle/**/*.dmg
             src-tauri/target/${{ matrix.platform.target }}/release/bundle/**/*.deb
             src-tauri/target/${{ matrix.platform.target }}/release/bundle/**/*.AppImage
+            src-tauri/target/${{ matrix.platform.target }}/release/bundle/**/*.AppImage.sig
             src-tauri/target/${{ matrix.platform.target }}/release/bundle/**/*.msi
             src-tauri/target/${{ matrix.platform.target }}/release/bundle/**/*.exe
             src-tauri/target/${{ matrix.platform.target }}/release/bundle/**/*.app.tar.gz
@@ -343,15 +355,22 @@ jobs:
           SHA: ${{ needs.prepare.outputs.sha }}
         run: |
           set -euo pipefail
-          mkdir upload
-          find artifacts -type f \( -name '*-setup.exe' -o -name '*-setup.exe.sig' -o -name '*.dmg' \
-            -o -name 'Harbor_*.app.tar.gz' -o -name 'Harbor_*.app.tar.gz.sig' -o -name '*.deb' -o -name '*.AppImage' \) \
-            -exec cp {} upload/ \;
+          mkdir upload sigs
+          find artifacts -type f \( -name '*-setup.exe' -o -name '*.dmg' -o -name 'Harbor_*.app.tar.gz' \
+            -o -name '*.deb' -o -name '*.AppImage' \) -exec cp {} upload/ \;
+          # latest.json carries each signature inline, so the .sig files are read here and never published.
+          find artifacts -type f \( -name '*-setup.exe.sig' -o -name 'Harbor_*.app.tar.gz.sig' -o -name 'Harbor_*.AppImage.sig' \) -exec cp {} sigs/ \;
           cp artifacts/Harbor-flatpak-x86_64/Harbor.flatpak "upload/Harbor_${VERSION}_x86_64.flatpak"
           previous="$(git tag --list 'v*' --sort=-v:refname | grep -vx "v$VERSION" | head -n 1 || true)"
           node scripts/release-notes.mjs "${previous:-$(git rev-list --max-parents=0 HEAD | tail -n 1)}" "$SHA" > notes.md
-          node scripts/updater-manifest.mjs "$VERSION" upload notes.md
+          node scripts/updater-manifest.mjs "$VERSION" upload sigs notes.md
           {
+            echo "## Downloads"
+            echo
+            node scripts/release-assets.mjs "$VERSION" $(ls upload)
+            echo
+            echo "## Changes"
+            echo
             cat notes.md
             echo
             echo "macOS: the dmgs are ad-hoc signed, so run \`xattr -dr com.apple.quarantine /Applications/Harbor.app\` after installing. The Intel dmg needs macOS 15 or newer."

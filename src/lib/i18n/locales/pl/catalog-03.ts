@@ -711,6 +711,8 @@ const catalog03: Record<string, string> = {
   "Couldn't reach Trakt. Try refreshing.": "Nie udało się połączyć z Trakt. Spróbuj odświeżyć.",
   "Couldn't reach harbor.site to load earlier builds. Check your connection and try again.":
     "Nie udało się połączyć z harbor.site, aby wczytać wcześniejsze kompilacje. Sprawdź połączenie i spróbuj ponownie.",
+  "Couldn't reach GitHub to load earlier builds. Check your connection and try again.":
+    "Nie udało się połączyć z GitHub, aby wczytać wcześniejsze kompilacje. Sprawdź połączenie i spróbuj ponownie.",
   "Couldn't reach that pack": "Nie udało się uzyskać dostępu do tego pakietu",
   "Couldn't reach that pack (HTTP {n})": "Nie udało się uzyskać dostępu do tego pakietu (HTTP {n})",
   "Couldn't reach the update server. Try again in a moment.":

@@ -103,6 +103,7 @@ pub struct HandoffProbe {
     install_dir: String,
     payload_version: u64,
     platform_key: String,
+    app_image: bool,
 }
 
 #[derive(Clone, Serialize)]
@@ -156,6 +157,7 @@ pub fn handoff_probe() -> HandoffProbe {
             .unwrap_or_default(),
         payload_version,
         platform_key: platform_key(),
+        app_image: cfg!(target_os = "linux") && std::env::var_os("APPIMAGE").is_some(),
     }
 }
 

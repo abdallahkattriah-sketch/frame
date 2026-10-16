@@ -2048,6 +2048,26 @@ const uiFallback: Record<string, string> = {
   "games.pokemon.noLocations": "Location data is not available for this game yet.",
   "games.pokemon.videos": "Videos",
   "games.pokemon.searchVideos": "Search walkthroughs and tips",
+  "Is a new build giving you trouble? Pick an earlier one below and run its installer over your current copy. Your library, settings, and downloads all stay put.":
+    "Is a new build giving you trouble? Pick an earlier one below and run its installer over your current copy. Your library, settings, and downloads all stay put.",
+  "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.":
+    "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.",
+  "Thanks! Submit the GitHub issue that opened to send your rating.":
+    "Thanks! Submit the GitHub issue that opened to send your rating.",
+  "Open the issue again": "Open the issue again",
+  "Send rating on GitHub": "Send rating on GitHub",
+  "Report on GitHub": "Report on GitHub",
+  "Submit the GitHub issue that opened to send the report.":
+    "Submit the GitHub issue that opened to send the report.",
+  "Opens a prefilled GitHub issue with the context above. No keys or library data.":
+    "Opens a prefilled GitHub issue with the context above. No keys or library data.",
+  "Pick screenshots, a recording, or a player log here, then drag them into the GitHub issue that opens.":
+    "Pick screenshots, a recording, or a player log here, then drag them into the GitHub issue that opens.",
+  "Shown publicly on the GitHub issue. Leave it empty if you would rather not.":
+    "Shown publicly on the GitHub issue. Leave it empty if you would rather not.",
+  "Your report is ready on GitHub": "Your report is ready on GitHub",
+  "Check it in the browser tab that opened, drag in any attachments, then press Submit new issue to send it.":
+    "Check it in the browser tab that opened, drag in any attachments, then press Submit new issue to send it.",
 };
 
 export default uiFallback;

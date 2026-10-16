@@ -1,38 +1,24 @@
 import { History } from "./icons";
-import { IS_BETA_BUILD } from "@/lib/build-info";
+import { HARBOR_RELEASES_URL } from "@/lib/config/endpoints";
 import { useT } from "@/lib/i18n";
-import { useSettings } from "@/lib/settings";
 import { currentVersion, type VersionEntry } from "@/lib/updater/versions";
 import { openUrl } from "@/lib/window";
 import { ROW_DESC, SettingRow } from "./kit";
 import { SButton } from "./ui";
 import { useVersionHistory } from "./rollback-row/use-version-history";
-import { VERSION_BADGE } from "./rollback-row/badge";
 import { VersionItem } from "./rollback-row/version-item";
-
-const RELEASES_URL = "https://github.com/harborstremio/harbor/releases";
 
 export function RollbackRow() {
   const t = useT();
-  const { settings } = useSettings();
-  const { state, reload } = useVersionHistory(settings.betaUpdates);
-
-  if (!settings.betaUpdates) return null;
+  const { state, reload } = useVersionHistory(true);
 
   return (
     <SettingRow
       wide
       icon={<History size={20} strokeWidth={2.1} className="text-ink-muted" />}
-      label={
-        <span className="inline-flex min-w-0 flex-wrap items-center gap-2">
-          <span className="min-w-0">{t("Roll back to an earlier build")}</span>
-          {IS_BETA_BUILD && (
-            <span className={`${VERSION_BADGE} bg-accent-soft text-accent`}>{t("Beta")}</span>
-          )}
-        </span>
-      }
+      label={t("Roll back to an earlier build")}
       desc={t(
-        "On a beta that's giving you trouble? Pick an earlier build below and run its installer over your current copy. Your library, settings, and downloads all stay put.",
+        "Is a new build giving you trouble? Pick an earlier one below and run its installer over your current copy. Your library, settings, and downloads all stay put.",
       )}
     >
       <div className="flex w-full min-w-0 flex-col gap-3">
@@ -48,7 +34,7 @@ export function RollbackRow() {
 
         <p className={`max-w-[70ch] ${ROW_DESC}`}>
           {t(
-            "While beta updates are on, Harbor offers the newest build again on its next check. Turn beta updates off above to stay on an earlier one.",
+            "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.",
           )}
         </p>
       </div>
@@ -102,13 +88,11 @@ function HistoryError({ onRetry }: { onRetry: () => void }) {
   return (
     <div className="flex flex-col items-start gap-3 px-4 py-4">
       <p className={`max-w-[66ch] ${ROW_DESC}`}>
-        {t(
-          "Couldn't reach harbor.site to load earlier builds. Check your connection and try again.",
-        )}
+        {t("Couldn't reach GitHub to load earlier builds. Check your connection and try again.")}
       </p>
       <div className="flex flex-wrap items-center gap-2.5">
         <SButton onClick={onRetry}>{t("Try again")}</SButton>
-        <SButton onClick={() => openUrl(RELEASES_URL)}>{t("Browse all releases")}</SButton>
+        <SButton onClick={() => openUrl(HARBOR_RELEASES_URL)}>{t("Browse all releases")}</SButton>
       </div>
     </div>
   );

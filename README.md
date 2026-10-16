@@ -2,14 +2,14 @@
 <a name="readme-top"></a>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://harbor.site/readme-media/harbor-wordmark-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://harbor.site/readme-media/harbor-wordmark-light.svg">
-  <img src="https://harbor.site/readme-media/harbor-wordmark-light.svg" width="320">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/media/harbor-wordmark-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/media/harbor-wordmark-light.svg">
+  <img src="docs/media/harbor-wordmark-light.svg" width="320">
 </picture>
 
 ### A Stremio Client Built for Adventure!
 
-Offering things like a native player, a stream ranking engine, Wikidata, watch parties, PiP, DVR, Live TV, anime, a theme engine, and much more. Check out our website at www.harbor.site for an immersive experience.
+Offering things like a native player, a stream ranking engine, Wikidata, watch parties, PiP, DVR, Live TV, anime, a theme engine, and much more.
 
 <br/>
 
@@ -18,8 +18,7 @@ Offering things like a native player, a stream ranking engine, Wikidata, watch p
 [![Tauri][badge-tauri]][tauri] &nbsp;
 [![React][badge-react]][react] &nbsp;
 [![Rust core][badge-rust]][rust] &nbsp;
-[![Platforms][badge-platforms]][releases] &nbsp;
-[![Linux packages][badge-linux-packages]][linux-packages]
+[![Platforms][badge-platforms]][releases]
 
 <br/>
 
@@ -28,9 +27,12 @@ Offering things like a native player, a stream ranking engine, Wikidata, watch p
 </div>
 
 <br/>
-<h4 align="center">💬 New: By popular demand, join our community discord for support and help (https://discord.gg/gUGg4YSsg)!</h4>
+
+> [!NOTE]
+> The official Harbor project shut down in October 2026, along with harbor.site and its servers. This fork carries it on: releases, in-app updates and issues live here on GitHub. [docs/SUNSET.md](docs/SUNSET.md) lists which features came back and which needed Harbor's servers.
+
 <p align="center">
-  <img src="https://harbor.site/readme-media/hero.png" width="900">
+  <img src="docs/media/readme/hero.png" width="900">
   <br/>
   <sub>Harbor on launch: a rotating hero, Continue Watching, and full width rails. Works on Cinemeta out of the box; richer with a free TMDB key.</sub>
 </p>
@@ -139,37 +141,27 @@ Eleven themes and seven font pairings, a live theme studio for every token, cust
 <table>
 <tr>
 <td width="50%" align="center">
-<img src="https://harbor.site/readme-media/detail.png" width="100%"><br/>
-<sub><b>Detail page</b> &middot; ratings from IMDb, Rotten Tomatoes, and MAL, award laurels, cast and crew, episodes, and region aware Watch on chips.</sub>
-</td>
-<td width="50%" align="center">
-<img src="https://harbor.site/readme-media/discover.png" width="100%"><br/>
+<img src="docs/media/readme/discover.png" width="100%"><br/>
 <sub><b>Discover</b> &middot; up to 14 rotating daily rails tuned by what you open, play, and save, plus a daily Critics Pick.</sub>
 </td>
-</tr>
-<tr>
 <td width="50%" align="center">
-<img src="https://harbor.site/readme-media/player.png" width="100%"><br/>
-<sub><b>Player</b> &middot; native libmpv, trickplay seek previews, skip intro/outro, and a customizable seek bar.</sub>
-</td>
-<td width="50%" align="center">
-<img src="https://harbor.site/readme-media/live-tv.png" width="100%"><br/>
+<img src="docs/media/readme/live-tv.png" width="100%"><br/>
 <sub><b>Live TV</b> &middot; M3U and Xtream playlists rendered as a real EPG grid guide with favorites and catchup.</sub>
 </td>
 </tr>
 <tr>
 <td width="50%" align="center">
-<img src="https://harbor.site/readme-media/multiview.png" width="100%"><br/>
+<img src="docs/media/readme/multiview.png" width="100%"><br/>
 <sub><b>Multiview</b> &middot; one, two, three, or 2x2 streams at once, with independent audio focus per tile.</sub>
 </td>
 <td width="50%" align="center">
-<img src="https://harbor.site/readme-media/together.jpg" width="100%"><br/>
+<img src="docs/media/readme/together.jpg" width="100%"><br/>
 <sub><b>Together</b> &middot; synced playback, a live chat overlay, on screen cursors, and collaborative drawing.</sub>
 </td>
 </tr>
 <tr>
 <td colspan="2" align="center">
-<img src="https://harbor.site/readme-media/themes.png" width="80%"><br/>
+<img src="docs/media/readme/themes.png" width="80%"><br/>
 <sub><b>Themes</b> &middot; eleven presets and a full visual studio. Colors, fonts, card and button shapes, backgrounds, and the entire nav layout.</sub>
 </td>
 </tr>
@@ -265,7 +257,7 @@ A native libmpv player, with HLS and MPEG-TS engines for live and broadcast sour
 
 Send any playback across the room through a bundled Rust cast server and a web cast receiver.
 
-- **Chromecast** via Harbor's own CAF receiver (HLS, MP4, and unknown formats). (Visit harborstremio/cast-receiver-chrome)
+- **Chromecast** via Google's Default Media Receiver (HLS, MP4, and MPEG-TS; other formats are remuxed first).
 - **DLNA / UPnP** with vendor aware handling for Samsung, Sony, LG, Panasonic, and Hisense.
 - **AirPlay** discovery and playback.
 - **Roku** via the ECP protocol, with guidance for network access and Media Assistant. (Pre and post roku update) Does require Roku tv addons
@@ -375,15 +367,9 @@ Awards laurels surface across detail pages, covering Oscar, Emmy, BAFTA, Golden 
 - **Trickplay scrub previews** decoded on the fly for torrents and local files, so the seek bar shows the exact frame you are hovering.
 
 <p align="left">
-  <img src="https://harbor.site/readme-media/trickplay.jpg" width="720">
+  <img src="docs/media/readme/trickplay.jpg" width="720">
   <br/>
   <sub>Trickplay seek previews, generated live for torrents and local files.</sub>
-</p>
-
-<p align="left">
-  <img src="https://harbor.site/readme-media/richactivity.gif" width="320">
-  <br/>
-  <sub>Discord Rich Presence, cycling live as you browse and watch.</sub>
 </p>
 
 <p align="right"><a href="#readme-top">&#9650; back to top</a></p>
@@ -402,17 +388,14 @@ Harbor is built to keep your data on your machine.
 
 ## Install
 
-Download the latest build for macOS or Windows from the [Releases page][releases], use the [unofficial Linux packages](https://github.com/AdityaHebballe/harbor-linux-builds), or open Harbor in your browser.
+Download the latest build from the [Releases page][releases]: every release has a download table for each OS. Windows, macOS and AppImage installs then update themselves from Settings > Updates.
 
-| Platform    | Format                                                                                                   |
-| ----------- | -------------------------------------------------------------------------------------------------------- |
-| **macOS**   | `.dmg` (macOS 15.0 or newer, Apple silicon)                                                              |
-| **Windows** | `.exe` NSIS installer (current user install), or `winget install HarborStremio.Harbor`                   |
-| **Web**     | Open in any modern browser, nothing to install                                                           |
-| **Linux**   | [Unofficial `.deb`, `.rpm`, and Flatpak packages](https://github.com/AdityaHebballe/harbor-linux-builds) |
-
-> [!NOTE]
-> Linux packages above are community-maintained. Official Harbor Linux packages are coming soon.
+| Platform    | Format                                                                                               |
+| ----------- | ---------------------------------------------------------------------------------------------------- |
+| **Windows** | `_x64-setup.exe` NSIS installer (current user install)                                               |
+| **macOS**   | `_aarch64.dmg` for Apple silicon, `_x64.dmg` for Intel (macOS 15 or newer)                           |
+| **Linux**   | `.deb` (Debian, Ubuntu), `.AppImage` (any distro, runs as one file) and `.flatpak`, x86_64 and arm64 |
+| **Web**     | Open in any modern browser, nothing to install                                                       |
 
 > [!NOTE]
 > **First launch on macOS.** Harbor's macOS builds carry an ad-hoc code signature rather than an Apple Developer ID, so Gatekeeper reports it as coming from an unidentified developer and some antivirus tools flag the download. Drag Harbor to Applications, then either run `xattr -dr com.apple.quarantine /Applications/Harbor.app` in Terminal, or open **System Settings > Privacy & Security** and choose **Open Anyway**. If you would rather not trust a binary, [build from source](#build-from-source).
@@ -576,7 +559,7 @@ Directional, not a set of promises. Priorities shift with feedback.
 - [x] First class anime room with Kitsu and AniZip
 - [x] Theme studio with custom layouts
 - [x] macOS, Windows, and web launch builds
-- [ ] Official Linux packages
+- [x] Linux packages: `.deb`, AppImage and Flatpak
 - [ ] Expanded casting device matrix (AirPlay 2, more Roku and Chromecast targets)
 - [ ] More translations
 - [ ] A growing theme gallery
@@ -615,7 +598,7 @@ Contributions are very welcome, whether that is code, a bug report, a theme, or 
 
 **Filing issues**
 
-- Found a bug? Open an [issue][issues] with steps to reproduce. Harbor also has a built in **Report a Bug** form in Settings that attaches safe diagnostics for you.
+- Found a bug? Open an [issue][issues] with steps to reproduce. Harbor's **Report a Bug** form in Settings prefills one with safe diagnostics for you.
 - Have an idea? Start a [discussion][discussions] or open a feature request issue.
 
 We aim to respond to issues and pull requests promptly. Be kind, be specific, and assume good faith. We are glad you are here.
@@ -654,8 +637,8 @@ Thank you to everyone, named and unnamed, whose open work Harbor builds upon.
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://harbor.site/readme-media/harbor-mark.svg">
-  <img src="https://harbor.site/readme-media/harbor-mark.svg" width="48">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/media/harbor-mark.svg">
+  <img src="docs/media/harbor-mark.svg" width="48">
 </picture>
 <br/><br/>
 <sub>Built with care for the people who love good cinema and an open web. <a href="#readme-top">&#9650; back to top</a></sub>
@@ -663,10 +646,9 @@ Thank you to everyone, named and unnamed, whose open work Harbor builds upon.
 
 <!-- reference links -->
 
-[releases]: https://github.com/harborstremio/harbor/releases
-[linux-packages]: https://github.com/AdityaHebballe/harbor-linux-builds
-[issues]: https://github.com/harborstremio/harbor/issues
-[discussions]: https://github.com/harborstremio/harbor/discussions
+[releases]: https://github.com/crazyrabbit0/harbor/releases
+[issues]: https://github.com/crazyrabbit0/harbor/issues
+[discussions]: https://github.com/crazyrabbit0/harbor/discussions
 [license]: ./LICENSE
 [tauri]: https://v2.tauri.app/
 [react]: https://react.dev/
@@ -674,10 +656,9 @@ Thank you to everyone, named and unnamed, whose open work Harbor builds upon.
 
 <!-- badges -->
 
-[badge-version]: https://img.shields.io/badge/version-0.9.21-D9A441?style=for-the-badge&labelColor=1a1a1a
+[badge-version]: https://img.shields.io/github/v/release/crazyrabbit0/harbor?style=for-the-badge&label=version&color=D9A441&labelColor=1a1a1a
 [badge-license]: https://img.shields.io/badge/license-MIT-D9A441?style=for-the-badge&labelColor=1a1a1a
 [badge-tauri]: https://img.shields.io/badge/Tauri-2-24C8DB?style=for-the-badge&logo=tauri&logoColor=white&labelColor=1a1a1a
 [badge-react]: https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=1a1a1a
 [badge-rust]: https://img.shields.io/badge/core-Rust%20to%20WASM-DEA584?style=for-the-badge&logo=rust&logoColor=white&labelColor=1a1a1a
-[badge-platforms]: https://img.shields.io/badge/macOS%20%C2%B7%20Windows%20%C2%B7%20Web-8a8a8a?style=for-the-badge&labelColor=1a1a1a
-[badge-linux-packages]: https://img.shields.io/badge/Linux-packages-8a8a8a?style=for-the-badge&labelColor=1a1a1a
+[badge-platforms]: https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux%20%C2%B7%20Web-8a8a8a?style=for-the-badge&labelColor=1a1a1a

@@ -271,6 +271,8 @@ const system: Record<string, string> = {
   "Could not send: {error}": "无法发送：{error}",
   "Couldn't reach harbor.site to load earlier builds. Check your connection and try again.":
     "无法连接到 harbor.site 以加载较早版本。请检查网络连接后重试。",
+  "Couldn't reach GitHub to load earlier builds. Check your connection and try again.":
+    "无法连接到 GitHub 以加载较早版本。请检查网络连接后重试。",
   "Default app cache folder": "默认应用缓存文件夹",
   "Export failed: {reason}": "导出失败：{reason}",
   "Exported {ok}, {fail} failed": "已导出 {ok} 个，{fail} 个失败",

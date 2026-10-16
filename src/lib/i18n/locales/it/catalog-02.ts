@@ -1015,6 +1015,8 @@ const catalog02: Record<string, string> = {
   "Couldn't reach Trakt. Try refreshing.": "Impossibile raggiungere Trakt. Prova ad aggiornare.",
   "Couldn't reach harbor.site to load earlier builds. Check your connection and try again.":
     "Impossibile raggiungere harbor.site per caricare le build precedenti. Controlla la connessione e riprova.",
+  "Couldn't reach GitHub to load earlier builds. Check your connection and try again.":
+    "Impossibile raggiungere GitHub per caricare le build precedenti. Controlla la connessione e riprova.",
   "Couldn't reach that pack": "Impossibile raggiungere il pacchetto",
   "Couldn't reach that pack (HTTP {n})": "Impossibile raggiungere il pacchetto (HTTP {n})",
   "Couldn't reach the update server. Try again in a moment.":

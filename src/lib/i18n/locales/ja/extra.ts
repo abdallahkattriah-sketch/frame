@@ -277,6 +277,8 @@ const extra: Record<string, string> = {
     "このリストを読み込めませんでした。URLを確認して、もう一度お試しください。",
   "Couldn't reach harbor.site to load earlier builds. Check your connection and try again.":
     "以前のビルドを読み込むためにharbor.siteへ接続できませんでした。接続を確認して、もう一度お試しください。",
+  "Couldn't reach GitHub to load earlier builds. Check your connection and try again.":
+    "以前のビルドを読み込むためにGitHubへ接続できませんでした。接続を確認して、もう一度お試しください。",
   "Couldn't reach Trakt": "Traktに接続できませんでした",
   "Couldn't reach Trakt. Check your connection and try again.":
     "Traktに接続できませんでした。接続を確認して、もう一度お試しください。",

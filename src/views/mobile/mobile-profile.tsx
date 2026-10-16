@@ -14,7 +14,7 @@ import { useT } from "@/lib/i18n";
 import { MobileWhosWatching } from "./mobile-whos-watching";
 import { useMobileRemote } from "./mobile-remote";
 import { setMobileRemoteStyle, useMobileRemoteStyle, type MobileRemoteStyle } from "./remote-style";
-import { HARBOR_BUGS_BASE } from "@/lib/config/endpoints";
+import { HARBOR_BUG_FORM_URL } from "@/lib/config/endpoints";
 import { openUrl } from "@/lib/window";
 
 export function MobileProfile({ onOpenRemote }: { onOpenRemote: () => void }) {
@@ -76,7 +76,7 @@ export function MobileProfile({ onOpenRemote }: { onOpenRemote: () => void }) {
         <Row
           icon={<HelpCircle size={20} strokeWidth={2} />}
           label={t("Help & feedback")}
-          href={HARBOR_BUGS_BASE}
+          href={HARBOR_BUG_FORM_URL}
         />
         <Divider />
         <Row icon={<FileText size={20} strokeWidth={2} />} label={t("Legal")} onClick={() => {}} />

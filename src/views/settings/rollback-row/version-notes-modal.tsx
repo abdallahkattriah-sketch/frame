@@ -4,15 +4,19 @@ import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent }
 import { RichNote } from "@/components/update/rich-notes";
 import { advanceFocus, captureFocusReturn } from "@/lib/keyboard-navigation";
 import { getDirection, isBackKey } from "@/lib/keyboard-navigation/geometry";
+import { HARBOR_RELEASES_URL } from "@/lib/config/endpoints";
 import { useT } from "@/lib/i18n";
-import { hasRichNote, releaseNote, type ReleaseNote } from "@/lib/updater/release-notes";
+import {
+  hasRichNote,
+  noteFromMarkdown,
+  releaseNote,
+  type ReleaseNote,
+} from "@/lib/updater/release-notes";
 import { installerUrl, type VersionEntry } from "@/lib/updater/versions";
 import { openUrl } from "@/lib/window";
 import { ROW_DESC } from "../kit";
 import { SButton } from "../ui";
 import { VERSION_BADGE } from "./badge";
-
-const RELEASES_URL = "https://github.com/harborstremio/harbor/releases";
 
 export function VersionNotesModal({
   entry,
@@ -50,7 +54,8 @@ export function VersionNotesModal({
 
   useEffect(() => {
     let ok = true;
-    releaseNote(entry.version).then((n) => ok && setRich(n));
+    setRich(noteFromMarkdown(entry.notes));
+    releaseNote(entry.version).then((n) => ok && n && setRich(n));
     return () => {
       ok = false;
     };
@@ -85,12 +90,6 @@ export function VersionNotesModal({
             <h2 className="min-w-0 text-[19px] font-semibold leading-[26px] tabular-nums tracking-tight text-ink">
               {entry.version}
             </h2>
-            {entry.channel === "beta" && (
-              <span className={`${VERSION_BADGE} bg-accent-soft text-accent`}>{t("Beta")}</span>
-            )}
-            {entry.channel === "stable" && (
-              <span className={`${VERSION_BADGE} bg-elevated text-ink-subtle`}>{t("Stable")}</span>
-            )}
           </div>
           {entry.date && <p className={ROW_DESC}>{entry.date}</p>}
         </div>
@@ -126,7 +125,9 @@ export function VersionNotesModal({
       </div>
 
       <div className="flex flex-wrap items-center justify-end gap-2.5 px-6 pb-6 pt-5">
-        <SButton onClick={() => openUrl(RELEASES_URL)}>{t("All releases on GitHub")}</SButton>
+        <SButton onClick={() => openUrl(HARBOR_RELEASES_URL)}>
+          {t("All releases on GitHub")}
+        </SButton>
         {isCurrent ? (
           <span className={`${VERSION_BADGE} bg-accent-soft text-accent`}>
             <Check size={13} strokeWidth={2.8} />

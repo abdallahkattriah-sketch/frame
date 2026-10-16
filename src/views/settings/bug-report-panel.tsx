@@ -8,7 +8,7 @@ import { userAddons } from "@/lib/addons";
 import {
   collectDiagnostics,
   installBugReportErrorCapture,
-  submitBugReport,
+  openBugReportIssue,
   type Diagnostics,
   type Severity,
 } from "@/lib/bug-report";
@@ -112,7 +112,7 @@ export function BugReportPanel() {
     setSubmitting(true);
     setError(null);
     try {
-      const { id } = await submitBugReport(
+      const url = openBugReportIssue(
         {
           summary: summary.trim(),
           severity,
@@ -127,7 +127,7 @@ export function BugReportPanel() {
         },
         diag,
       );
-      setSubmittedId(id);
+      setSubmittedId(url);
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -152,7 +152,7 @@ export function BugReportPanel() {
       : [
           {
             id: "bug-report-submit",
-            label: submitting ? "Sending…" : "Submit bug report",
+            label: submitting ? "Opening GitHub…" : "Open GitHub issue",
             tone: "primary",
             disabled: !canSubmit,
             onSelect: () => void submit(),
@@ -169,7 +169,7 @@ export function BugReportPanel() {
             : "Preparing…",
   );
 
-  if (submittedId) return <SuccessCard id={submittedId} onAnother={reset} />;
+  if (submittedId) return <SuccessCard url={submittedId} onAnother={reset} />;
 
   return (
     <>
@@ -265,7 +265,7 @@ export function BugReportPanel() {
       <Section
         title={t("Attachments")}
         subtitle={t(
-          "Add screenshots, a short recording, or a player log to help explain the problem.",
+          "Pick screenshots, a recording, or a player log here, then drag them into the GitHub issue that opens.",
         )}
       >
         <FileDrop files={files} onChange={setFiles} />
@@ -306,7 +306,7 @@ export function BugReportPanel() {
           <CreditField
             icon={<AtSign size={18} strokeWidth={1.9} />}
             label={t("Contact email or Discord")}
-            desc={t("Used only if we need one more detail to reproduce the bug.")}
+            desc={t("Shown publicly on the GitHub issue. Leave it empty if you would rather not.")}
             value={reporterContact}
             onChange={setReporterContact}
             placeholder={t("Email address or Discord handle")}

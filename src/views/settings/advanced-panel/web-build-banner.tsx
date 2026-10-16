@@ -3,11 +3,8 @@ import { GitHubIcon } from "@/components/github-icon";
 import cornerSvg from "@/assets/corner.svg";
 import { openUrl } from "@/lib/window";
 import { useT } from "@/lib/i18n";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { HARBOR_RELEASES_URL, HARBOR_REPO_URL } from "@/lib/config/endpoints";
 import { ROW_DESC } from "../shared";
-
-const DOWNLOAD_URL = `${HARBOR_API_BASE}/download`;
-const SOURCE_URL = "https://github.com/harborstremio/harbor";
 
 const BANNER_BTN =
   "flex h-11 w-fit items-center gap-2 rounded-[8px] px-4 text-[15px] font-semibold transition-transform hover:scale-[1.02] active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
@@ -50,7 +47,7 @@ export function WebBuildBanner() {
         <div className="mt-1 flex flex-wrap items-center gap-2.5">
           <button
             type="button"
-            onClick={() => openUrl(DOWNLOAD_URL)}
+            onClick={() => openUrl(`${HARBOR_RELEASES_URL}/latest`)}
             className={`${BANNER_BTN} bg-ink text-canvas`}
           >
             <Download size={16} strokeWidth={2.4} />
@@ -58,7 +55,7 @@ export function WebBuildBanner() {
           </button>
           <button
             type="button"
-            onClick={() => openUrl(SOURCE_URL)}
+            onClick={() => openUrl(HARBOR_REPO_URL)}
             className={`${BANNER_BTN} bg-raised text-ink`}
           >
             <GitHubIcon size={16} strokeWidth={2.2} />

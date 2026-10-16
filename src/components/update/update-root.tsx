@@ -8,7 +8,7 @@ import {
   updateAvailable,
   useUpdate,
 } from "@/lib/updater/use-update";
-import { isLinuxDesktop } from "@/lib/platform";
+import { inAppUpdatesSupported, useInAppUpdatesSupported } from "@/lib/updater/in-app-updates";
 import { useT } from "@/lib/i18n";
 import { UpdateCard } from "./update-card";
 
@@ -36,9 +36,9 @@ export function UpdateRoot() {
   const chromeHidden = useChromeHidden();
   const [autoHidden, setAutoHidden] = useState<string | null>(null);
 
+  const supported = useInAppUpdatesSupported();
   useEffect(() => {
-    if (isLinuxDesktop()) return;
-    startUpdateWatcher();
+    void inAppUpdatesSupported().then((ok) => ok && startUpdateWatcher());
   }, []);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export function UpdateRoot() {
     return () => window.clearTimeout(id);
   }, [pillVisible, u.status, u.version]);
 
-  if (isLinuxDesktop()) return null;
+  if (!supported) return null;
   // Explicit returns stay in their settings confirmation, never in an
   // "update available" toast with the ordinary retry/manual-download actions.
   if (u.intent === "return-beta" && u.status !== "error") return null;

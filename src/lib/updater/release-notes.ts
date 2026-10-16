@@ -45,6 +45,22 @@ export async function releaseNote(version: string | null | undefined): Promise<R
   return cache?.[version] ?? null;
 }
 
+// Turns the release changelog ("### Group" headings over "- item" lines) into note sections.
+export function noteFromMarkdown(markdown: string | null | undefined): ReleaseNote | null {
+  const sections: NoteSection[] = [];
+  for (const raw of (markdown ?? "").replace(/\r\n/g, "\n").split("\n")) {
+    const line = raw.trim();
+    const heading = /^#{2,4}\s+(.+)$/.exec(line);
+    if (heading) sections.push({ heading: heading[1], items: [] });
+    else if (/^[-*]\s+/.test(line)) {
+      if (!sections.length) sections.push({ items: [] });
+      sections[sections.length - 1].items.push(line.replace(/^[-*]\s+/, ""));
+    }
+  }
+  const filled = sections.filter((s) => s.items.length > 0);
+  return filled.length ? { sections: filled } : null;
+}
+
 export function hasRichNote(n: ReleaseNote | null | undefined): n is ReleaseNote {
   return !!n && !!(n.media || n.title || (n.sections && n.sections.length > 0));
 }
