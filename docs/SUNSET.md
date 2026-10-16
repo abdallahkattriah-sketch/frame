@@ -1,6 +1,6 @@
 # Running Harbor after the official project shut down
 
-The official Harbor project ended in October 2026. `harbor.site` now serves only a "Harbor is Sunsetting" page (citing legal and personal reasons) and the `harborstremio` GitHub organization, its repository, releases and pull requests return 404. This fork (`crazyrabbit0/harbor`) is maintained on its own from here: `beta-branch` holds the current code and `main` is kept identical to it.
+The official Harbor project ended in October 2026. `harbor.site` now serves only a "Harbor is Sunsetting" page (citing legal and personal reasons) and the `harborstremio` GitHub organization, its repository, releases and pull requests return 404. This fork (`crazyrabbit0/harbor`) is maintained on its own from here: `main` holds the current code (upstream's final `beta-branch` plus this fork's work), and `beta-branch` stays at upstream's last beta commit.
 
 ## What still works
 
@@ -43,9 +43,9 @@ Trakt can be restored without Harbor's server by registering a Trakt app and doi
 - `android-extension-compat/tools/deps.sh` still downloads `nanojson-e9d656d.jar` from the deleted repository, so the Android extension layer cannot be provisioned from scratch. Build without it with `HARBOR_CAPSTAN_SRC=<nonexistent dir>` and `HARBOR_CAPSTAN_OPTIONAL=1`.
 - Links in the app to `github.com/harborstremio/harbor` (bug reports, releases, contributor pages) lead to a 404.
 
-## The old `main` branch
+## Upstream's old `main` branch
 
-Before it was made identical to `beta-branch`, `main` was an older 0.9.21 line with about 30 commits that never reached beta. Most were earlier versions of work beta later redid (liquid glass, focus styles, Linux SVP, season picker placement). These look genuinely missing from beta and could be ported from the old history if wanted:
+Upstream's `main` (kept as the tag `upstream-main`) was an older 0.9.21 line with about 30 commits that never reached beta. Most were earlier versions of work beta later redid (liquid glass, focus styles, Linux SVP, season picker placement). These look genuinely missing from beta and could be ported from the old history if wanted:
 
 | Commit     | Change                                                                |
 | ---------- | --------------------------------------------------------------------- |
@@ -58,4 +58,4 @@ Before it was made identical to `beta-branch`, `main` was an older 0.9.21 line w
 | `a35f59e6` | RTL layout of the PIN entry                                           |
 | `e77dc71d` | Leave Linux updates to the package manager                            |
 
-They remain reachable in `main`'s history (first parent of the merge that brought in beta).
+They remain reachable through the `upstream-main` tag.
