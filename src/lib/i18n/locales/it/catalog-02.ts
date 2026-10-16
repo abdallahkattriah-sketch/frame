@@ -345,6 +345,7 @@ const catalog02: Record<string, string> = {
   "Checking SVP installation...": "Verifica dell'installazione di SVP...",
   "Checking availability": "Verifica della disponibilità",
   "Checking harbor.site for a newer build.": "Ricerca di una build più recente su harbor.site.",
+  "Checking GitHub for a newer build.": "Ricerca di una build più recente su GitHub.",
   "Checking plots, cast, and scenes": "Verifica di trame, cast e scene",
   "Checking sources and audio": "Verifica di sorgenti e audio",
   "Checking the local SVP and VapourSynth installation...":

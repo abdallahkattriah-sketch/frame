@@ -232,6 +232,8 @@ const catalogGI: Record<string, string> = {
     "Harbor नए वर्ज़न के लिए harbor.site की जाँच करता है और उन्हें सीधे इंस्टॉल कर देता है।",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor नए वर्ज़न के लिए harbor.site की जाँच करता है और उन्हें सीधे इंस्टॉल कर देता है। आपके चुने बिना कुछ भी इंस्टॉल नहीं होता और खारिज किया गया अपडेट आपको फिर कभी परेशान नहीं करता।",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Harbor नए वर्ज़न के लिए GitHub की जाँच करता है और उन्हें सीधे इंस्टॉल कर देता है। आपके चुने बिना कुछ भी इंस्टॉल नहीं होता और खारिज किया गया अपडेट आपको फिर कभी परेशान नहीं करता।",
   "Harbor could not find these": "Harbor इन्हें नहीं ढूँढ पाया",
   "Harbor could not open its web server. Try again, or set this up on the TV.":
     "Harbor अपना वेब सर्वर नहीं खोल पाया। फिर से कोशिश करें या इसे TV पर सेट अप करें।",

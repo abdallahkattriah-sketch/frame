@@ -1384,6 +1384,8 @@ const settings: Record<string, string> = {
   "Custom calendar": "Lịch tùy chỉnh",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor kiểm tra phiên bản mới trên harbor.site và cài đặt trực tiếp. Không có gì được cài đặt cho đến khi bạn chọn, và bản cập nhật đã bỏ qua sẽ không nhắc lại.",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Harbor kiểm tra phiên bản mới trên GitHub và cài đặt trực tiếp. Không có gì được cài đặt cho đến khi bạn chọn, và bản cập nhật đã bỏ qua sẽ không nhắc lại.",
   "Library, watch progress, and addon collection sync from this account.":
     "Thư viện, tiến độ xem và bộ sưu tập tiện ích bổ sung được đồng bộ từ tài khoản này.",
   "Export your entire Harbor setup to a single file, then restore it on a new computer or keep it as a backup. Everything is included except your Stremio sign-in.":
@@ -1716,6 +1718,7 @@ const settings: Record<string, string> = {
   "stremio:// links now open in the Stremio app. Harbor will only install when you trigger it from inside Harbor.":
     "Liên kết stremio:// hiện sẽ mở trong ứng dụng Stremio. Harbor chỉ cài đặt khi bạn kích hoạt từ trong Harbor.",
   "Checking harbor.site for a newer build.": "Đang kiểm tra bản dựng mới hơn trên harbor.site.",
+  "Checking GitHub for a newer build.": "Đang kiểm tra bản dựng mới hơn trên GitHub.",
   "Downloading {pct}%": "Đang tải xuống {pct}%",
   "Downloaded. Ready to install and restart.": "Đã tải xuống. Sẵn sàng cài đặt và khởi động lại.",
   "Installing. Harbor will restart.": "Đang cài đặt. Harbor sẽ khởi động lại.",

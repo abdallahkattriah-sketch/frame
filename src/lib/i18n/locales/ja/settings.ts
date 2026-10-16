@@ -1445,6 +1445,8 @@ const settings: Record<string, string> = {
   "Custom calendar": "カスタムカレンダー",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harborはharbor.siteで新しいバージョンを確認し、アプリをそのまま更新します。選択するまで何もインストールされず、一度スキップした更新が再び表示されることもありません。",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "HarborはGitHubで新しいバージョンを確認し、アプリをそのまま更新します。選択するまで何もインストールされず、一度スキップした更新が再び表示されることもありません。",
   "Library, watch progress, and addon collection sync from this account.":
     "ライブラリ、視聴進捗、アドオンコレクションがこのアカウントから同期されます。",
   "Export your entire Harbor setup to a single file, then restore it on a new computer or keep it as a backup. Everything is included except your Stremio sign-in.":
@@ -1801,6 +1803,7 @@ const settings: Record<string, string> = {
   "stremio:// links now open in the Stremio app. Harbor will only install when you trigger it from inside Harbor.":
     "stremio://リンクはStremioアプリで開くようになりました。Harborでインストールされるのは、Harbor内から実行した場合のみです。",
   "Checking harbor.site for a newer build.": "harbor.siteで新しいビルドを確認しています。",
+  "Checking GitHub for a newer build.": "GitHubで新しいビルドを確認しています。",
   "Downloading {pct}%": "ダウンロード中 {pct}%",
   "Downloaded. Ready to install and restart.":
     "ダウンロードが完了しました。インストールして再起動できます。",

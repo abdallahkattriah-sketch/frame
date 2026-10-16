@@ -62,6 +62,7 @@ const catalog03: Record<string, string> = {
   "Checking availability": "Sprawdzanie dostępności",
   "Checking harbor.site for a newer build.":
     "Sprawdzanie dostępności nowszej kompilacji w harbor.site.",
+  "Checking GitHub for a newer build.": "Sprawdzanie dostępności nowszej kompilacji w GitHub.",
   "Checking plots, cast, and scenes": "Sprawdzanie fabuły, obsady i scen",
   "Checking sources and audio": "Sprawdzanie źródeł i dźwięku",
   "Checking the local SVP and VapourSynth installation...":

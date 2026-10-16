@@ -281,6 +281,7 @@ const settings: Record<string, string> = {
   "Check relay": "Vérifier le relais",
   "Checking harbor.site for a newer build.":
     "Recherche d’une version plus récente sur harbor.site.",
+  "Checking GitHub for a newer build.": "Recherche d’une version plus récente sur GitHub.",
   "Checking {n} items…": "Vérification de {n} éléments…",
   "Checking…": "Vérification…",
   "Choose a model": "Choisir un modèle",
@@ -714,6 +715,8 @@ const settings: Record<string, string> = {
     "Harbor recherche les nouvelles versions sur harbor.site et les installe directement.",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor recherche les nouvelles versions sur harbor.site et les installe directement. Rien n’est installé sans votre accord, et une mise à jour ignorée ne vous sera plus proposée.",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Harbor recherche les nouvelles versions sur GitHub et les installe directement. Rien n’est installé sans votre accord, et une mise à jour ignorée ne vous sera plus proposée.",
   "Harbor curated": "Sélection Harbor",
   "Harbor finds intro and credits timing from AniSkip, TheIntroDB, and the file's own chapters, then shows a Skip button at the right moment.":
     "Harbor détermine le minutage du générique de début et de fin à partir d’AniSkip, de TheIntroDB et des chapitres du fichier, puis affiche un bouton Passer au bon moment.",

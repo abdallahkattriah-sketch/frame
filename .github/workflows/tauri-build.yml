@@ -72,7 +72,6 @@ jobs:
     needs: prepare
     runs-on: ${{ matrix.platform.runner }}
     timeout-minutes: 120
-    continue-on-error: ${{ matrix.platform.target == 'x86_64-apple-darwin' }}
     strategy:
       fail-fast: false
       matrix:
@@ -191,11 +190,15 @@ jobs:
         env:
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
         run: |
-          if [ -n "$TAURI_SIGNING_PRIVATE_KEY" ]; then
+          if [ -z "$TAURI_SIGNING_PRIVATE_KEY" ]; then
+            echo "::error::TAURI_SIGNING_PRIVATE_KEY is not set, so the release could not be signed for the in-app updater."
+            exit 1
+          fi
+          # Only the Windows setup.exe needs Tauri's updater signature; the macOS archive is signed after verification.
+          if [ "${{ runner.os }}" = "Windows" ]; then
             echo "config=--config src-tauri/tauri.updater.conf.json" >> "$GITHUB_OUTPUT"
           else
             echo "config=" >> "$GITHUB_OUTPUT"
-            echo "::warning::TAURI_SIGNING_PRIVATE_KEY not set — building installers only, no signed updater artifacts."
           fi
 
       - name: Detect Apple signing identity
@@ -247,7 +250,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
-          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ""
         with:
           tauriScript: pnpm tauri
           args: --target ${{ matrix.platform.target }} ${{ steps.sign.outputs.config }} ${{ steps.macos-libraries.outputs.config }}
@@ -258,33 +261,6 @@ jobs:
           # linuxdeploy resolves the bundled JRE's libnio.so and fails unless it can see libjvm.so in lib/server.
           LD_LIBRARY_PATH: ${{ github.workspace }}/src-tauri/resources/capstan/runtime/lib/server:${{ github.workspace }}/src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage/Harbor.AppDir/usr/lib/Harbor/resources/capstan/runtime/lib/server
         run: pnpm tauri:build:linux-system --target ${{ matrix.platform.target }} --bundles deb,appimage --verbose
-
-      - name: Build verified Windows managed installer
-        if: matrix.platform.target == 'x86_64-pc-windows-msvc'
-        shell: pwsh
-        env:
-          CARGO_BUILD_JOBS: 2
-        run: |
-          $ErrorActionPreference = 'Stop'
-          $releaseVersion = (Get-Content src-tauri/tauri.conf.json -Raw | ConvertFrom-Json).version
-          $releaseRoot = 'src-tauri/target/x86_64-pc-windows-msvc/release'
-          New-Item -ItemType Directory -Force -Path 'src-tauri/target/release' | Out-Null
-          Copy-Item -LiteralPath "$releaseRoot/harbor.exe" -Destination 'src-tauri/target/release/harbor.exe'
-          cargo build --manifest-path installer/src-tauri/Cargo.toml --release --no-default-features --features tauri/custom-protocol --bin harbor-uninstall --locked
-          if ($LASTEXITCODE -ne 0) { throw 'Uninstaller build failed' }
-          node installer/scripts/make-payload.mjs
-          if ($LASTEXITCODE -ne 0) { throw 'Payload creation failed' }
-          node scripts/verify-managed-payload.mjs
-          if ($LASTEXITCODE -ne 0) { throw 'Payload verification failed' }
-          cargo build --manifest-path installer/src-tauri/Cargo.toml --release --features tauri/custom-protocol --bin harbor-setup --locked
-          if ($LASTEXITCODE -ne 0) { throw 'Managed installer build failed' }
-          node scripts/verify-managed-payload.mjs --embedded
-          if ($LASTEXITCODE -ne 0) { throw 'Embedded payload verification failed' }
-          foreach ($releaseExe in @('src-tauri/target/release/harbor.exe', 'installer/src-tauri/target/release/harbor-uninstall.exe', 'installer/src-tauri/target/release/harbor-setup.exe')) {
-            if ((Get-Item -LiteralPath $releaseExe).VersionInfo.FileVersion -ne $releaseVersion) { throw "Wrong version: $releaseExe" }
-          }
-          New-Item -ItemType Directory -Force -Path "$releaseRoot/bundle/managed" | Out-Null
-          Copy-Item -LiteralPath 'installer/src-tauri/target/release/harbor-setup.exe' -Destination "$releaseRoot/bundle/managed/Harbor_${releaseVersion}_x64-installer.exe"
 
       - name: Verify macOS app dependencies
         if: contains(matrix.platform.runner, 'macos')
@@ -307,9 +283,12 @@ jobs:
           path: ${{ runner.temp }}/harbor-macos-startup/*.log
           if-no-files-found: ignore
 
-      - name: Archive verified macOS app for local updater signing
+      - name: Archive and sign the verified macOS app for the updater
         if: contains(matrix.platform.runner, 'macos')
         shell: bash
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ""
         run: |
           set -euo pipefail
           BUNDLE="src-tauri/target/${{ matrix.platform.target }}/release/bundle"
@@ -319,6 +298,7 @@ jobs:
           ARCH="${{ matrix.platform.target }}"
           ARCH="${ARCH%%-*}"
           tar -czf "$BUNDLE/Harbor_${VERSION}_${ARCH}.app.tar.gz" -C "$(dirname "$APP_PATH")" Harbor.app
+          pnpm tauri signer sign -p "" "$BUNDLE/Harbor_${VERSION}_${ARCH}.app.tar.gz"
 
       - name: Upload artifacts
         if: success()
@@ -345,6 +325,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ needs.prepare.outputs.sha }}
+          fetch-depth: 0
+
       - name: Download the installers
         uses: actions/download-artifact@v8
         with:
@@ -359,14 +344,23 @@ jobs:
         run: |
           set -euo pipefail
           mkdir upload
-          # The Intel dmg needs macOS 15 because Homebrew no longer builds Intel bottles, so it stays a workflow artifact.
-          find artifacts -type f \( -name '*.exe' -o -name '*_aarch64.dmg' -o -name '*.deb' -o -name '*.AppImage' \) \
-            -not -path '*harbor-macOS-Intel*' -exec cp {} upload/ \;
+          find artifacts -type f \( -name '*-setup.exe' -o -name '*-setup.exe.sig' -o -name '*.dmg' \
+            -o -name '*.app.tar.gz' -o -name '*.app.tar.gz.sig' -o -name '*.deb' -o -name '*.AppImage' \) \
+            -exec cp {} upload/ \;
           cp artifacts/Harbor-flatpak-x86_64/Harbor.flatpak "upload/Harbor_${VERSION}_x86_64.flatpak"
+          previous="$(git tag --list 'v*' --sort=-v:refname | grep -vx "v$VERSION" | head -n 1 || true)"
+          node scripts/release-notes.mjs "${previous:-$(git rev-list --max-parents=0 HEAD | tail -n 1)}" "$SHA" > notes.md
+          node scripts/updater-manifest.mjs "$VERSION" upload notes.md
+          {
+            cat notes.md
+            echo
+            echo "macOS: the dmgs are ad-hoc signed, so run \`xattr -dr com.apple.quarantine /Applications/Harbor.app\` after installing. The Intel dmg needs macOS 15 or newer."
+            [ -n "$previous" ] && echo && echo "**Full changelog**: https://github.com/$GITHUB_REPOSITORY/compare/$previous...v$VERSION"
+          } > body.md
           ls -la upload
           gh release create "v$VERSION" upload/* \
             --repo "$GITHUB_REPOSITORY" \
             --target "$SHA" \
             --title "Harbor $VERSION" \
-            --generate-notes \
+            --notes-file body.md \
             --latest

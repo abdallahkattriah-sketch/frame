@@ -655,6 +655,8 @@ const catalog04: Record<string, string> = {
     "Harbor가 harbor.site에서 새 버전을 확인하고 현재 위치에 설치합니다.",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor는 harbor.site에서 새 버전을 확인하고 현재 위치에 설치합니다. 사용자가 선택하기 전에는 아무것도 설치되지 않으며, 무시한 업데이트는 다시 알리지 않습니다.",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Harbor는 GitHub에서 새 버전을 확인하고 현재 위치에 설치합니다. 사용자가 선택하기 전에는 아무것도 설치되지 않으며, 무시한 업데이트는 다시 알리지 않습니다.",
   "Harbor could not find these": "Harbor가 다음 항목을 찾지 못했습니다",
   "Harbor could not open its web server. Try again, or set this up on the TV.":
     "Harbor에서 웹 서버를 열 수 없습니다. 다시 시도하거나 TV에서 설정하세요.",

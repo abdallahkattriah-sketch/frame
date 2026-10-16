@@ -679,6 +679,7 @@ const catalog: Record<string, string> = {
   "Checking availability": "Memeriksa ketersediaan",
   "Checking harbor.site for a newer build.":
     "Memeriksa apakah ada build yang lebih baru di harbor.site.",
+  "Checking GitHub for a newer build.": "Memeriksa apakah ada build yang lebih baru di GitHub.",
   "Checking plots, cast, and scenes": "Memeriksa plot, pemeran, dan adegan",
   "Checking sources and audio": "Memeriksa sumber dan audio",
   "Checking the local SVP and VapourSynth installation...":

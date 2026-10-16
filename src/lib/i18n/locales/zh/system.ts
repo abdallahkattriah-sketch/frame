@@ -88,6 +88,8 @@ const system: Record<string, string> = {
   Failed: "失败",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor 会在 harbor.site 上检查新版本并就地安装更新。只有在你选择后才会安装，忽略的更新也不会再次提醒。",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Harbor 会在 GitHub 上检查新版本并就地安装更新。只有在你选择后才会安装，忽略的更新也不会再次提醒。",
   "Export your entire Harbor setup to a single file, then restore it on a new computer or keep it as a backup. Everything is included except your Stremio sign-in.":
     "将完整的 Harbor 配置导出为单个文件，以便在新电脑上恢复或留作备份。除 Stremio 登录信息外，其他内容均会包含。",
   "Server address": "服务器地址",

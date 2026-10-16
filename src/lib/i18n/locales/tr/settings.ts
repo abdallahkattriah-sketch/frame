@@ -463,6 +463,7 @@ const settings: Record<string, string> = {
   "Check your connection and try again.": "Bağlantınızı kontrol edip tekrar deneyin.",
   "Checking harbor.site for a newer build.":
     "Daha yeni bir derleme için harbor.site kontrol ediliyor.",
+  "Checking GitHub for a newer build.": "Daha yeni bir derleme için GitHub kontrol ediliyor.",
   "Checking plots, cast, and scenes": "Konular, oyuncular ve sahneler inceleniyor",
   "Checking sources and audio": "Kaynaklar ve ses kontrol ediliyor",
   "Checking with TMDB…": "TMDB ile kontrol ediliyor…",
@@ -1215,6 +1216,8 @@ const settings: Record<string, string> = {
     "Harbor yeni sürümleri harbor.site üzerinden kontrol eder ve mevcut kurulumun üzerine yükler.",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor, harbor.site üzerinden yeni sürümleri kontrol eder ve mevcut kurulumun üzerine yükler. Siz onaylamadan hiçbir şey yüklenmez ve reddettiğiniz bir güncelleme için bir daha bildirim almazsınız.",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Harbor, GitHub üzerinden yeni sürümleri kontrol eder ve mevcut kurulumun üzerine yükler. Siz onaylamadan hiçbir şey yüklenmez ve reddettiğiniz bir güncelleme için bir daha bildirim almazsınız.",
   "Harbor couldn't analyze the audio for this source. Try again or adjust it manually.":
     "Harbor bu kaynağın sesini analiz edemedi. Tekrar deneyin veya elle ayarlayın.",
   "Harbor couldn't find a reliable timing correction for this subtitle.":

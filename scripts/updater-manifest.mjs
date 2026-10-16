@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+// `node scripts/updater-manifest.mjs <version> <asset-dir> <notes-file>` writes <asset-dir>/latest.json for the Tauri updater.
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+
+const [version, dir, notesFile] = process.argv.slice(2);
+if (!version || !dir || !notesFile) {
+  console.error("usage: node scripts/updater-manifest.mjs <version> <asset-dir> <notes-file>");
+  process.exit(1);
+}
+
+const base = `https://github.com/crazyrabbit0/harbor/releases/download/v${version}`;
+const PLATFORMS = {
+  "windows-x86_64": `Harbor_${version}_x64-setup.exe`,
+  "darwin-aarch64": `Harbor_${version}_aarch64.app.tar.gz`,
+  "darwin-x86_64": `Harbor_${version}_x86_64.app.tar.gz`,
+};
+
+const platforms = {};
+for (const [key, file] of Object.entries(PLATFORMS)) {
+  const sig = join(dir, `${file}.sig`);
+  if (!existsSync(join(dir, file)) || !existsSync(sig)) {
+    console.error(`missing ${file} or its signature`);
+    process.exit(1);
+  }
+  platforms[key] = { url: `${base}/${file}`, signature: readFileSync(sig, "utf8").trim() };
+}
+
+const manifest = {
+  version,
+  notes: readFileSync(notesFile, "utf8").trim(),
+  pub_date: new Date().toISOString(),
+  platforms,
+};
+writeFileSync(join(dir, "latest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+console.log(`latest.json written for ${Object.keys(platforms).join(", ")}`);

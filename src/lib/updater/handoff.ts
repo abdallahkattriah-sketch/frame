@@ -1,5 +1,5 @@
 import { Channel, invoke } from "@tauri-apps/api/core";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { HARBOR_RELEASES_URL } from "@/lib/config/endpoints";
 import { safeFetch } from "@/lib/safe-fetch";
 
 export type HandoffProbe = {
@@ -57,7 +57,7 @@ export async function probeHandoff(): Promise<HandoffProbe | null> {
 export async function readHandoffPlan(init?: RequestInit): Promise<HandoffPlan | null> {
   const probe = await probeHandoff();
   if (!probe?.supported || !probe.managed) return null;
-  const res = await safeFetch(`${HARBOR_API_BASE}/updates/latest.json`, {
+  const res = await safeFetch(`${HARBOR_RELEASES_URL}/latest/download/latest.json`, {
     cache: "no-store",
     ...init,
   });

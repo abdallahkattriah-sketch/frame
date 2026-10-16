@@ -1,10 +1,9 @@
 import { useSyncExternalStore } from "react";
 import { check } from "@tauri-apps/plugin-updater";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { HARBOR_API_BASE, HARBOR_RELEASES_URL } from "@/lib/config/endpoints";
 import { t } from "@/lib/i18n";
 import {
   normalUpdateChannel,
-  readChannelPreference,
   selectedUpdateChannel,
   updateHeaders,
   writeUpdateChannel,
@@ -145,8 +144,6 @@ export function updateAvailable(s: UpdateState): boolean {
   return s.status === "available" || s.status === "downloading" || s.status === "downloaded";
 }
 
-const BETA_HEADERS = { headers: { "x-harbor-channel": "beta" } };
-
 function currentRequest(request: number, channel: UpdateChannel): boolean {
   return request === revision && channel === selectedUpdateChannel();
 }
@@ -216,22 +213,6 @@ export function setUpdateChannel(channel: UpdateChannel): boolean {
 
 export function setExperimentalUpdates(enabled: boolean): boolean {
   return setUpdateChannel(enabled ? "experimental" : normalUpdateChannel());
-}
-
-async function runningPrerelease(): Promise<boolean> {
-  try {
-    const [{ getVersion }, { safeFetch }] = await Promise.all([
-      import("@tauri-apps/api/app"),
-      import("@/lib/safe-fetch"),
-    ]);
-    const res = await safeFetch(`${HARBOR_API_BASE}/updates/latest.json`, { cache: "no-store" });
-    if (!res.ok) return false;
-    const stable = (await res.json()) as { version?: string };
-    if (!stable.version) return false;
-    return cmpVersion(await getVersion(), stable.version) > 0;
-  } catch {
-    return false;
-  }
 }
 
 async function readExperimentalManifest(path = "latest-experimental.json"): Promise<unknown> {
@@ -361,38 +342,10 @@ export async function checkForUpdate(manual = false): Promise<void> {
       });
       return;
     }
-    const wantBeta = selected === "beta";
-    let beta = wantBeta;
-    candidate = (await check(wantBeta ? BETA_HEADERS : undefined)) as UpdateHandle | null;
-    if (!currentRequest(request, selected)) return;
-    if (!candidate && !wantBeta && !readChannelPreference() && (await runningPrerelease())) {
-      if (!currentRequest(request, selected)) return;
-      beta = true;
-      candidate = (await check(BETA_HEADERS)) as UpdateHandle | null;
-    }
-    if (!currentRequest(request, selected)) return;
-    const plan = await readHandoffPlan(beta ? BETA_HEADERS : undefined).catch((e) => {
-      console.warn("installer handoff unavailable, falling back to nsis", e);
-      return null;
-    });
+    candidate = (await check()) as UpdateHandle | null;
     if (!currentRequest(request, selected)) return;
     const update = candidate;
-    set({ channel: beta ? "beta" : "stable" });
-    if (plan) {
-      handle = update;
-      candidate = null;
-      const version = plan.version || update?.version || "";
-      const dismissed = readDismissed();
-      set({
-        status: "available",
-        version,
-        notes: plan.notes ?? update?.body ?? null,
-        handoff: plan,
-        dismissed,
-        panelOpen: manual || dismissed !== version,
-      });
-      return;
-    }
+    set({ channel: selected });
     if (!update) {
       set({ status: "uptodate", version: null, notes: null, handoff: null });
       return;
@@ -710,14 +663,11 @@ export async function openManualDownload(): Promise<void> {
     return;
   }
   const { openUrl } = await import("@/lib/window");
-  let target = HARBOR_API_BASE;
+  let target = HARBOR_RELEASES_URL;
   try {
     const { safeFetch } = await import("@/lib/safe-fetch");
-    const beta =
-      selectedUpdateChannel() === "beta" ||
-      (!readChannelPreference() && (await runningPrerelease()));
     const [res, probe] = await Promise.all([
-      safeFetch(`${HARBOR_API_BASE}/updates/latest.json`, beta ? BETA_HEADERS : undefined),
+      safeFetch(`${HARBOR_RELEASES_URL}/latest/download/latest.json`),
       probeHandoff(),
     ]);
     if (res.ok && probe) {
@@ -742,7 +692,7 @@ export async function openHandoffDownload(): Promise<void> {
   }
   const url = state.handoff?.url;
   const { openUrl } = await import("@/lib/window");
-  openUrl(url || HARBOR_API_BASE);
+  openUrl(url || HARBOR_RELEASES_URL);
 }
 
 function clearPending(): void {
@@ -796,12 +746,10 @@ async function detectFailedHandoff(pending: {
   const experimental = pending.channel === "experimental";
   const plan = experimental
     ? null
-    : await readHandoffPlan(selectedUpdateChannel() === "beta" ? BETA_HEADERS : undefined).catch(
-        (e) => {
-          console.warn("installer handoff unavailable, falling back to nsis", e);
-          return null;
-        },
-      );
+    : await readHandoffPlan().catch((e) => {
+        console.warn("installer handoff unavailable, falling back to nsis", e);
+        return null;
+      });
   set({
     status: "error",
     installFailed: true,

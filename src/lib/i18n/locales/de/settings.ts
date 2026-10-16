@@ -359,6 +359,7 @@ const settings: Record<string, string> = {
   Checking: "Wird geprüft",
   "Checking harbor.site for a newer build.":
     "Auf harbor.site wird nach einer neueren Version gesucht.",
+  "Checking GitHub for a newer build.": "Auf GitHub wird nach einer neueren Version gesucht.",
   "Checking {n} items…": "{n} Elemente werden geprüft…",
   "Checking…": "Wird geprüft…",
   "Choose a model": "Modell auswählen",
@@ -930,6 +931,8 @@ const settings: Record<string, string> = {
     "Harbor sucht auf harbor.site nach neuen Versionen und installiert sie direkt als Aktualisierung.",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor sucht auf harbor.site nach neuen Versionen und installiert sie direkt über die vorhandene Version. Es wird nichts installiert, bevor du dich dafür entscheidest, und ein abgelehntes Update wird dir nie wieder angeboten.",
+  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Harbor sucht auf GitHub nach neuen Versionen und installiert sie direkt über die vorhandene Version. Es wird nichts installiert, bevor du dich dafür entscheidest, und ein abgelehntes Update wird dir nie wieder angeboten.",
   "Harbor curated": "Von Harbor kuratiert",
   "Harbor finds intro and credits timing from AniSkip, TheIntroDB, and the file's own chapters, then shows a Skip button at the right moment.":
     "Harbor ermittelt die Zeitpunkte von Intro und Abspann aus AniSkip, TheIntroDB und den Kapiteln der Datei und zeigt dann im richtigen Moment eine Schaltfläche zum Überspringen an.",

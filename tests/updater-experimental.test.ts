@@ -299,7 +299,10 @@ function harness(
           };
         },
       },
-      "@/lib/config/endpoints": { HARBOR_API_BASE: "https://example.test" },
+      "@/lib/config/endpoints": {
+        HARBOR_API_BASE: "https://example.test",
+        HARBOR_RELEASES_URL: "https://github.com/crazyrabbit0/harbor/releases",
+      },
       "@/lib/i18n": { t: (s: string) => s },
       "./channel": channel,
       "./experimental": experimental,
@@ -402,7 +405,10 @@ test("account requests use native-aware transport and retry with the refreshed t
         return true;
       },
     },
-    "@/lib/config/endpoints": { HARBOR_API_BASE: "https://example.test" },
+    "@/lib/config/endpoints": {
+      HARBOR_API_BASE: "https://example.test",
+      HARBOR_RELEASES_URL: "https://github.com/crazyrabbit0/harbor/releases",
+    },
     "@/lib/safe-fetch": {
       safeFetch: async (url: string, options: { headers: unknown; signal: unknown }) => {
         calls.push({
@@ -517,13 +523,11 @@ test("experimental enrollment, checks, and installation fail closed without badg
   assert.equal(h.updater.useUpdate().channel, "stable");
 });
 
-test("existing stable and beta preferences retain their native request headers", async () => {
+test("stable and beta preferences both check the single release feed without channel headers", async () => {
   for (const beta of [false, true]) {
     const h = harness({ beta });
     await h.updater.checkForUpdate();
-    assert.deepEqual(h.calls.headers, [
-      beta ? { headers: { "x-harbor-channel": "beta" } } : undefined,
-    ]);
+    assert.deepEqual(h.calls.headers, [undefined]);
     assert.equal(h.updater.useUpdate().channel, beta ? "beta" : "stable");
   }
 });
@@ -559,12 +563,12 @@ test("explicit stable exit never invokes the legacy inferred-beta fallback", asy
   assert.equal(h.calls.fetchHeaders.length, 0);
 });
 
-test("legacy prerelease inference still checks beta when no explicit channel exists", async () => {
+test("a prerelease install without a channel preference checks the release feed once", async () => {
   const h = harness();
   h.config.nativeMissing = true;
   h.config.raw = { version: "0.9.20" };
   await h.updater.checkForUpdate();
-  assert.deepEqual(h.calls.headers, [undefined, { headers: { "x-harbor-channel": "beta" } }]);
+  assert.deepEqual(h.calls.headers, [undefined]);
 });
 
 test("background checks keep a verified download ready until install or channel change", async () => {
@@ -742,7 +746,11 @@ test("missing native platform opens the download site instead of another archite
   for (const platform of ["darwin-x86_64", "windows-aarch64", "linux-x86_64"]) {
     const h = harness({ beta: true, platform });
     await h.updater.openManualDownload();
-    assert.deepEqual(h.calls.manualUrls, ["https://example.test"], platform);
+    assert.deepEqual(
+      h.calls.manualUrls,
+      ["https://github.com/crazyrabbit0/harbor/releases"],
+      platform,
+    );
   }
 });
 
@@ -764,7 +772,11 @@ test("unknown device and failed manifest do not choose an installer", async () =
     if (failure === "device") h.config.probeMissing = true;
     else h.config.status = 503;
     await h.updater.openManualDownload();
-    assert.deepEqual(h.calls.manualUrls, ["https://example.test"], failure);
+    assert.deepEqual(
+      h.calls.manualUrls,
+      ["https://github.com/crazyrabbit0/harbor/releases"],
+      failure,
+    );
   }
 });
 

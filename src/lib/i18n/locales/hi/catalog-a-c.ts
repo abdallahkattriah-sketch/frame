@@ -1431,6 +1431,7 @@ const catalogAC: Record<string, string> = {
   "Checking SVP installation...": "SVP इंस्टॉलेशन की जाँच हो रही है...",
   "Checking availability": "उपलब्धता जाँची जा रही है",
   "Checking harbor.site for a newer build.": "नए बिल्ड के लिए harbor.site की जाँच हो रही है।",
+  "Checking GitHub for a newer build.": "नए बिल्ड के लिए GitHub की जाँच हो रही है।",
   "Checking plots, cast, and scenes": "कथानक, कलाकारों और दृश्यों की जाँच हो रही है",
   "Checking sources and audio": "स्रोतों और ऑडियो की जाँच हो रही है",
   "Checking the local SVP and VapourSynth installation...":
