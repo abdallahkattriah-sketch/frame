@@ -31,7 +31,7 @@ const MOOD_ICON: Record<Mood, LucideIcon> = {
 function heroTag(data: StoreData): string | undefined {
   const h = data.hero;
   if (!h) return undefined;
-  if (data.popular[0]?.id === h.id) return translate("#1 this week");
+  if (h.downloads > 0 && data.popular[0]?.id === h.id) return translate("#1 this week");
   const created = Date.parse(h.createdAt);
   if (Number.isFinite(created) && Date.now() - created < 14 * 86_400_000) return translate("New");
   return translate("Staff pick");
@@ -43,14 +43,12 @@ export function StoreDiscover({
   onAuthor,
   onBrowseAll,
   onPickMood,
-  onShare,
 }: {
   data: StoreData;
   onOpen: (t: StoreTheme) => void;
   onAuthor: (author: string) => void;
   onBrowseAll: () => void;
   onPickMood: (mood: Mood) => void;
-  onShare: () => void;
 }) {
   const t = useT();
   return (
@@ -104,7 +102,7 @@ export function StoreDiscover({
 
       <TopAuthors authors={data.authors} onSelect={onAuthor} />
 
-      <StoreFeatureCards onShare={onShare} />
+      <StoreFeatureCards />
     </div>
   );
 }

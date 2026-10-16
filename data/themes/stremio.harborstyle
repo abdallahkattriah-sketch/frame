@@ -1,0 +1,23 @@
+# Harbor Style
+name: Stremio
+blurb: Purple accent, Indigo gradient, Narrow icon rail.
+layout: stremio
+card: stremio
+font: plus-jakarta
+swatch: #0c0b11, #1a173e, #7b5bf5
+bg-image: linear-gradient(41deg, #0c0b11 0%, #1a173e 100%)
+bg-dim: 0
+
+@tokens
+--color-canvas: #0c0b11
+--color-surface: #181434
+--color-elevated: #1f1b3f
+--color-raised: #2a2358
+--color-ink: rgba(255,255,255,0.9)
+--color-ink-muted: rgba(255,255,255,0.6)
+--color-ink-subtle: rgba(255,255,255,0.35)
+--color-edge: rgba(255,255,255,0.14)
+--color-edge-soft: rgba(255,255,255,0.06)
+--color-accent: #7b5bf5
+--color-accent-soft: rgba(123,91,245,0.18)
+--color-danger: #dc2626

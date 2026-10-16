@@ -8,7 +8,6 @@ import { clearUnseenDownloads, getUnseenDownloads, subscribeUnseen } from "@/lib
 import { CommunityStore } from "./community-store/community-store";
 import type { StoreTab } from "./community-store/store-tabs";
 import { MarketSegmented } from "./community-store/market/market-segmented";
-import { MyThemesDashboard } from "./my-themes-dashboard";
 import type { LibraryEntry } from "./library-grid";
 import { BrowserCard } from "./library-browser-card";
 import { MyLibraryFilters, type LibCat } from "./my-library-filters";
@@ -48,7 +47,10 @@ export function LibraryBrowser({
     return () => document.removeEventListener("keydown", onKey);
   }, [onClose]);
 
-  const [tab, setTab] = useState<"library" | "community" | "mine">(initialTab);
+  // "My themes" listed uploads tied to a Harbor account, so it falls back to the library.
+  const [tab, setTab] = useState<"library" | "community">(
+    initialTab === "community" ? "community" : "library",
+  );
   const [betaOpen, setBetaOpen] = useState(false);
   const [libQuery, setLibQuery] = useState("");
   const [libCat, setLibCat] = useState<LibCat>("all");
@@ -100,18 +102,15 @@ export function LibraryBrowser({
           items={[
             { id: "library", label: "My library", badge: unseen > 0 ? unseen : undefined },
             { id: "community", label: "Community" },
-            { id: "mine", label: "My themes" },
           ]}
           active={tab}
-          onSelect={(id) => setTab(id as "library" | "community" | "mine")}
+          onSelect={(id) => setTab(id === "community" ? "community" : "library")}
         />
       </div>
 
       <div className="flex flex-col gap-8">
         {tab === "community" ? (
           <CommunityStore initialTab={initialStoreTab} />
-        ) : tab === "mine" ? (
-          <MyThemesDashboard />
         ) : (
           <>
             <ThemeUpdatesBanner />

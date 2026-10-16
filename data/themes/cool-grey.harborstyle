@@ -1,0 +1,18 @@
+# Harbor Style
+name: Harbor default
+blurb: What ships out of the box.
+swatch: #2c2e36, #3a3d47, #dcdde4
+
+@tokens
+--color-canvas: oklch(0.18 0.004 260)
+--color-surface: oklch(0.22 0.004 260)
+--color-elevated: oklch(0.27 0.004 260)
+--color-raised: oklch(0.32 0.004 260)
+--color-ink: oklch(0.97 0.003 260)
+--color-ink-muted: oklch(0.72 0.003 260)
+--color-ink-subtle: oklch(0.50 0.003 260)
+--color-edge: oklch(0.36 0.004 260 / 0.55)
+--color-edge-soft: oklch(0.36 0.004 260 / 0.25)
+--color-accent: oklch(0.78 0.13 60)
+--color-accent-soft: oklch(0.78 0.13 60 / 0.18)
+--color-danger: oklch(0.55 0.18 25)
