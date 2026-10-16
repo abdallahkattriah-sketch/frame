@@ -155,6 +155,11 @@ jobs:
       - name: Build Pokémon engine and corresponding source bundle
         run: node tools/pokemon-engine/build.mjs --fetch-source "${{ runner.temp }}/harbor-pokemon-source" --output src-tauri/resources/pokemon-engine --artifacts "${{ runner.temp }}/harbor-pokemon-build"
 
+      # .NET loads this LTTng tracing provider only when present; linuxdeploy fails on its missing liblttng-ust.
+      - name: Drop the optional .NET tracing provider (Linux)
+        if: contains(matrix.platform.runner, 'ubuntu')
+        run: rm -f src-tauri/resources/pokemon-engine/libcoreclrtraceptprovider.so
+
       - name: Install JS deps
         run: pnpm install --frozen-lockfile
 
