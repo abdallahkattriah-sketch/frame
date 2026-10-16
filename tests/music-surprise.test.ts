@@ -725,6 +725,8 @@ function playerEntries() {
     },
     rankByExplicitness: (v: unknown) => v,
     explicitnessOf: () => null,
+    peekPinnedSource: () => null,
+    pinSourceFor: () => {},
     adoptRequestedIdentity,
     stopCastOwner: async () => {},
     ensureNativeEvents: async () => {},

@@ -36,8 +36,18 @@ const entry = (id, rank = 10) => ({
   artist: { id: 4, name: "Artist", picture_big: "https://example.com/artist.jpg" },
   album: { id: 55, title: "Album", cover_big: "https://example.com/cover.jpg" },
 });
+const editorial = load("genre-editorial");
 const discovery = (fetch) =>
-  load("discovery", { "@/lib/safe-fetch": { safeFetch: fetch }, "./genre-catalog": genres });
+  load("discovery", {
+    "@/lib/safe-fetch": { safeFetch: fetch },
+    "./genre-catalog": genres,
+    "./genre-editorial": editorial,
+    "./genre-editorial-loader": load("genre-editorial-loader", {
+      "./genre-catalog": genres,
+      "./genre-editorial": editorial,
+    }),
+    "./genre-playlist-pool": load("genre-playlist-pool", { "./genre-catalog": genres }),
+  });
 const response = (data) => ({ ok: true, json: async () => data });
 
 test("genre artist roster follows tagged artists beyond the first page and retries failed pages", async () => {
@@ -88,8 +98,8 @@ test("shared catalog preserves all legacy taste IDs and adds the requested speci
     132, 116, 122, 152, 113, 165, 85, 186, 106, 466, 144, 129, 84, 67, 65, 98, 173, 464, 169, 2, 16,
     153, 75, 71, 81, 95, 197,
   ];
-  assert.equal(genres.MUSIC_GENRES.length, 134);
-  assert.equal(new Set(genres.MUSIC_GENRES.map((g) => g.id)).size, 134);
+  assert.equal(genres.MUSIC_GENRES.length, 159);
+  assert.equal(new Set(genres.MUSIC_GENRES.map((g) => g.id)).size, 159);
   legacy.forEach((id) => assert.equal(genres.musicGenre(id)?.deezerId, id));
   for (const slug of ["nightcore", "jumpstyle", "hardstyle", "funk-carioca", "pagode"])
     assert.ok(genres.MUSIC_GENRES.some((g) => g.slug === slug));
@@ -301,7 +311,7 @@ test("all Explore labels exist in every locale with matching placeholders", () =
       ].map((m) => [m[1], JSON.parse(m[2])]),
     );
   const en = table("en");
-  assert.equal(Object.keys(en).length, 48);
+  assert.equal(Object.keys(en).length, 49);
   for (const lang of [
     "ar",
     "de",
@@ -329,7 +339,7 @@ test("all Explore labels exist in every locale with matching placeholders", () =
       );
   }
 });
-test("every genre has artwork and its own Illustrator-exported vector", () => {
+test("every genre has artwork and its own Illustrator-exported or Harbor-original vector", () => {
   const art = load("genre-artwork").MUSIC_GENRE_ARTWORK;
   const shapes = [];
   for (const genre of genres.MUSIC_GENRES) {
@@ -338,13 +348,13 @@ test("every genre has artwork and its own Illustrator-exported vector", () => {
       new URL(`../src/assets/music-genres/${genre.slug}.svg`, import.meta.url),
       "utf8",
     );
-    assert.match(svg, /Adobe Illustrator/);
+    assert.match(svg, /Adobe Illustrator|<!-- Harbor original/);
     assert.match(svg, /viewBox="0 0 48 48"/);
     assert.match(svg, /currentColor/);
     assert.doesNotMatch(svg, /<text|<font|<script/);
     shapes.push(svg);
   }
-  assert.equal(new Set(shapes).size, 134);
+  assert.equal(new Set(shapes).size, genres.MUSIC_GENRES.length);
 });
 
 const artistEntry = (id) => ({
@@ -469,11 +479,11 @@ test("artist statistics enrich every artist and preserve the browsing order", as
   );
   assert.equal(result.at(-1).fans, 25);
 });
-test("Hip-hop scene browsing exposes ten distinct rap branches using existing genres", () => {
+test("Hip-hop scene browsing exposes thirty-one distinct rap branches using existing genres", () => {
   const api = load("genre-scenes", { "./genre-catalog": genres });
   const branches = api.genreSceneBranches(genres.musicGenre(116));
-  assert.equal(branches.length, 10);
-  assert.equal(new Set(branches.map((g) => g.id)).size, 10);
+  assert.equal(branches.length, 31);
+  assert.equal(new Set(branches.map((g) => g.id)).size, 31);
   for (const slug of ["trap", "uk-drill", "phonk", "french-rap", "brazilian-trap"])
     assert.ok(branches.some((g) => g.slug === slug));
 });

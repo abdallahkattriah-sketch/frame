@@ -63,6 +63,15 @@ function fixture({ preferred = null, candidates = [] } = {}) {
     "./source-consent": { hydrateMusicSourceConsent: async () => {} },
     "./source-version": load("source-version", {}),
     "./queue-source": load("queue-source", {}),
+    "./queue-automation": load("queue-automation", {}),
+    "./explicit-preference": load("explicit-preference", {}),
+    "./pinned-sources": {
+      loadPinnedSources: async () => {},
+      peekPinnedSource: () => null,
+      pinSourceFor: noop,
+      unpinSourceFor: noop,
+    },
+    "@/lib/platform": { isWindowsDesktop: () => false },
     "./transport": {
       resetMusicOrder: noop,
       musicWarmTargets: () => [],

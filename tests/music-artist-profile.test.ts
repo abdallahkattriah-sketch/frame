@@ -33,6 +33,7 @@ function client(fetcher: (url: string) => Promise<unknown>) {
     "@/lib/safe-fetch": {
       safeFetch: async (url: string) => ({ ok: true, json: () => fetcher(url) }),
     },
+    "./artist-genre-cache": { rememberArtistGenres: () => {} },
     "./artist-authority": {
       artistIdentityKey: (name: string) =>
         name.normalize("NFKC").trim().toLowerCase().replace(/[ ]+/g, " "),

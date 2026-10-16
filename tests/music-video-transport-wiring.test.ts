@@ -6,6 +6,7 @@ import test from "node:test";
 import { readFileSync } from "node:fs";
 import ts from "typescript";
 import { dedupeMusicTracks, sameMusicTrack } from "../src/lib/music/track-identity.ts";
+import { musicPlayerDependencies } from "./helpers/music-player-dependencies.ts";
 
 function read(path: string): string {
   return readFileSync(new URL(`../src/${path}`, import.meta.url), "utf8");
@@ -33,7 +34,9 @@ function loadPlayer() {
   const source = ts.transpileModule(read("lib/music/player.ts"), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
   }).outputText;
+  const shared = musicPlayerDependencies();
   const resolve = (name: string): any => {
+    if (Object.hasOwn(shared, name)) return shared[name];
     if (name === "@tauri-apps/api/core")
       return {
         invoke: async (command: string, args: any) => {
@@ -55,7 +58,11 @@ function loadPlayer() {
         withoutLiked: (ids: readonly string[], t: any) => ids.filter((id: string) => id !== t.id),
       };
     if (name === "./source-consent")
-      return { musicSourceAllowed: () => true, requestMusicSourceConsent: () => {} };
+      return {
+        hydrateMusicSourceConsent: async () => {},
+        musicSourceAllowed: () => true,
+        requestMusicSourceConsent: () => {},
+      };
     if (name === "./queue-insert")
       return {
         insertIntoQueue: (q: any[], t: any, at: number) => [...q.slice(0, at), t, ...q.slice(at)],
@@ -79,14 +86,20 @@ function loadPlayer() {
       };
     if (name === "./hidden-recents") return { unhideMusicRecent: () => {} };
     if (name === "./playback-origin")
-      return { getMusicPlaybackOrigin: () => null, restoreMusicPlaybackOrigin: () => {} };
+      return {
+        beginMusicQueue: () => {},
+        getMusicPlaybackOrigin: () => null,
+        restoreMusicPlaybackOrigin: () => {},
+      };
     if (name === "@/lib/cast-ownership") return { stopCastOwner: () => {} };
     if (name === "./track-identity") return { dedupeMusicTracks, sameMusicTrack };
     if (name === "./deck-sync")
       return {
         answerDeckRequests: () => () => {},
         broadcastDeckState: () => {},
+        isDeckWindow: () => false,
         sendDeckAdopted: () => {},
+        sendDeckCommand: () => {},
         serveDeckCommands: () => () => {},
       };
     if (name === "./deck-primary")

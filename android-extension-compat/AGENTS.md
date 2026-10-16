@@ -4,7 +4,7 @@ Notes for agents working in this folder.
 
 ## What it is
 
-- A Kotlin/Java compat layer that runs Android (CloudStream-style) extensions on a desktop JVM. `src-tauri/src/capstan.rs` spawns it as one bridge process (`com.harbor.capstan.bridge.Bridge`) speaking JSON lines over stdin/stdout. Methods include ping, install, providers, search, load, loadLinks and catalogue.
+- A Kotlin/Java compat layer that runs Android (CloudStream-style) extensions on a desktop JVM. `src-tauri/src/capstan.rs` spawns it as one bridge process (`com.harbor.capstan.bridge.Bridge`) speaking JSON lines over stdin/stdout. `docs/BRIDGE.md` documents the frames, every method and the error codes; update it together with `BridgeServer.kt` and `capstan.rs`.
 - Rust finds Java in this order: bundled `resources/capstan/runtime/`, then `HARBOR_JAVA`, then `JAVA_HOME`, then `java` on PATH (`src-tauri/src/capstan/locate.rs`).
 
 ## Build and stage

@@ -5,6 +5,16 @@ import ts from "typescript";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const extensions = [".ts", ".tsx", ".js", ".mjs"];
+const assetExtensions = new Set([
+  ".png",
+  ".jpg",
+  ".jpeg",
+  ".gif",
+  ".webp",
+  ".avif",
+  ".svg",
+  ".css",
+]);
 
 async function existingModuleUrl(basePath) {
   const candidates = [
@@ -38,10 +48,20 @@ export async function resolve(specifier, context, nextResolve) {
     if (url) return { url, shortCircuit: true };
   }
 
+  if (sourcePath && assetExtensions.has(path.extname(sourcePath).toLowerCase())) {
+    return { url: pathToFileURL(sourcePath).href, shortCircuit: true };
+  }
+
   return nextResolve(specifier, context);
 }
 
 export async function load(url, context, nextLoad) {
+  const extension = url.startsWith("file:") ? path.extname(fileURLToPath(url)).toLowerCase() : "";
+  if (assetExtensions.has(extension)) {
+    // Vite turns an asset import into its URL and a stylesheet import into a side effect.
+    const source = extension === ".css" ? "" : `export default ${JSON.stringify(url)};`;
+    return { format: "module", source, shortCircuit: true };
+  }
   if (url.endsWith(".tsx")) {
     const source = await readFile(fileURLToPath(url), "utf8");
     const output = ts.transpileModule(source, {
@@ -54,5 +74,12 @@ export async function load(url, context, nextLoad) {
     return { format: "module", source: output.outputText, shortCircuit: true };
   }
 
-  return nextLoad(url, context);
+  const loaded = await nextLoad(url, context);
+  if (!url.startsWith(pathToFileURL(path.join(root, "src")).href) || loaded.source == null)
+    return loaded;
+  const text = String(loaded.source);
+  // Vite defines import.meta.env for app code; give modules under src/ the same empty build env.
+  if (!text.includes("import.meta.env")) return loaded;
+  const env = '{ MODE: "test", DEV: false, PROD: false, SSR: false, BASE_URL: "/" }';
+  return { ...loaded, source: text.replaceAll("import.meta.env", env) };
 }

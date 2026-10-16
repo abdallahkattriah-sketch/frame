@@ -5,14 +5,49 @@ import { readFileSync } from "node:fs";
 // @ts-expect-error Node test types are outside the browser tsconfig.
 import test from "node:test";
 
-const read = (path: string) => readFileSync(new URL(`../${path}`, import.meta.url), "utf8");
-test("beta 0.9.128 version metadata and offline notes agree", () => {
-  assert.equal(JSON.parse(read("package.json")).version, "0.9.128");
-  assert.equal(JSON.parse(read("src-tauri/tauri.conf.json")).version, "0.9.128");
-  assert.match(read("src-tauri/Cargo.toml"), /version = "0\.9\.128"/);
-  assert.match(read("src-tauri/Cargo.lock"), /name = "harbor"\r?\nversion = "0\.9\.128"/);
-  const notes = JSON.parse(read("src/lib/updater/bundled-release-notes.json")).notes;
-  assert.equal(notes["0.9.128"].title, "Harbor Beta 0.9.128");
-  assert.ok(notes["0.9.127"]);
-  assert.doesNotMatch(JSON.stringify(notes["0.9.128"]), /harborsystem\.online/);
+const read = (path: string) =>
+  readFileSync(new URL(`../${path}`, import.meta.url), "utf8").replace(/\r\n/g, "\n");
+const SEMVER = /^\d+\.\d+\.\d+$/;
+
+// The same files scripts/bump-version.mjs rewrites, read the same way.
+function carriedVersions(): Record<string, string | undefined> {
+  const json = (path: string) => JSON.parse(read(path)).version as string | undefined;
+  const toml = (path: string) => /^version = "([^"]+)"/m.exec(read(path))?.[1];
+  const lock = (path: string, name: string) =>
+    new RegExp(`name = "${name}"\\nversion = "([^"]+)"`).exec(read(path))?.[1];
+  return {
+    "package.json": json("package.json"),
+    "src-tauri/tauri.conf.json": json("src-tauri/tauri.conf.json"),
+    "installer/package.json": json("installer/package.json"),
+    "installer/src-tauri/tauri.conf.json": json("installer/src-tauri/tauri.conf.json"),
+    "src-tauri/Cargo.toml": toml("src-tauri/Cargo.toml"),
+    "installer/src-tauri/Cargo.toml": toml("installer/src-tauri/Cargo.toml"),
+    "src-tauri/Cargo.lock": lock("src-tauri/Cargo.lock", "harbor"),
+    "installer/src-tauri/Cargo.lock": lock("installer/src-tauri/Cargo.lock", "harbor-setup"),
+    "flatpak/site.harbor.Harbor.metainfo.xml": /<release version="([^"]+)" date="[^"]+"\s*\/>/.exec(
+      read("flatpak/site.harbor.Harbor.metainfo.xml"),
+    )?.[1],
+  };
+}
+
+test("every version-carrying file agrees with package.json", () => {
+  const versions = carriedVersions();
+  const expected = versions["package.json"];
+  assert.ok(expected && SEMVER.test(expected), `package.json version ${expected} is not x.y.z`);
+  for (const [path, version] of Object.entries(versions)) {
+    assert.equal(version, expected, `${path} carries ${version}, package.json ${expected}`);
+  }
+});
+
+test("bundled offline release notes stay valid and never point at the retired host", () => {
+  const notes = JSON.parse(read("src/lib/updater/bundled-release-notes.json")).notes as Record<
+    string,
+    { title?: string }
+  >;
+  assert.ok(Object.keys(notes).length > 0);
+  for (const [version, note] of Object.entries(notes)) {
+    assert.match(version, SEMVER);
+    assert.equal(typeof note.title, "string", `${version} has no title`);
+  }
+  assert.doesNotMatch(JSON.stringify(notes), /harborsystem\.online/);
 });

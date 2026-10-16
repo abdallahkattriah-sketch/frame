@@ -102,6 +102,7 @@ test("a caller that can render more than a rail gets more than a rail, and the d
   const many = Array.from({ length: 40 }, (_, index) => ({
     ...video,
     sourceId: `FGBhQbmPw${index.toString().padStart(2, "0")}`,
+    title: `Song ${index}`,
     id: `youtube:${index}`,
   }));
   const api = load(async () => many);
@@ -116,6 +117,7 @@ test("a shared in-flight request still answers each caller at its own size", asy
   const many = Array.from({ length: 30 }, (_, index) => ({
     ...video,
     sourceId: `AAAAAAAAA${index.toString().padStart(2, "0")}`,
+    title: `Song ${index}`,
     id: `youtube:${index}`,
   }));
   const api = load(

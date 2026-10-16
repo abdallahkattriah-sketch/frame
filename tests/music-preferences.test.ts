@@ -6,10 +6,11 @@ import { readMusicPreference, writeMusicPreference } from "../src/lib/music/pref
 import { MusicQueueOrder, queueTrackKey } from "../src/lib/music/queue-order.ts";
 import { dedupeMusicTracks, sameMusicTrack } from "../src/lib/music/track-identity.ts";
 import type { MusicTrack } from "../src/lib/music/types.ts";
+import { musicPlayerDependencies } from "./helpers/music-player-dependencies.ts";
 
 type Preferences = typeof import("../src/lib/music/preferences.ts");
 type Player = typeof import("../src/lib/music/player.ts");
-type Transport = typeof import("../src/components/music/music-queue.tsx");
+type Transport = typeof import("../src/lib/music/transport.ts");
 
 // Exercise the real stores with native and React boundaries stubbed, as in updater tests.
 function load<T>(
@@ -81,6 +82,7 @@ function player(localStorage: unknown) {
   const store = load<Player>(
     "src/lib/music/player.ts",
     {
+      ...musicPlayerDependencies(prefs),
       "@/lib/cast-ownership": { stopCastOwner: async () => {} },
       "@tauri-apps/api/core": {
         invoke: async (command: string, args: any) => {
@@ -107,7 +109,11 @@ function player(localStorage: unknown) {
         likedIdsFor: (t: any) => (t ? [t.id] : []),
         withoutLiked: (ids: readonly string[], t: any) => ids.filter((id: string) => id !== t.id),
       },
-      "./source-consent": { musicSourceAllowed: () => true, requestMusicSourceConsent: () => {} },
+      "./source-consent": {
+        hydrateMusicSourceConsent: async () => {},
+        musicSourceAllowed: () => true,
+        requestMusicSourceConsent: () => {},
+      },
       "./queue-insert": {
         insertIntoQueue: (q: unknown[], t: unknown, at: number) => [
           ...q.slice(0, at),
@@ -124,6 +130,7 @@ function player(localStorage: unknown) {
         writeCheckpointToDb: () => {},
       },
       "./playback-origin": {
+        beginMusicQueue: () => {},
         getMusicPlaybackOrigin: () => null,
         restoreMusicPlaybackOrigin: () => {},
       },
@@ -214,7 +221,10 @@ test("denied reads preserve SQLite data and allow playback with the default volu
   const { store, calls } = player(browser);
   assert.equal(store.getMusicState().volume, 0.82);
   await store.initializeMusic();
-  assert.deepEqual(calls[0], { command: "music_db_init", args: { migration: null } });
+  assert.deepEqual(calls[0], {
+    command: "music_db_init",
+    args: { migration: null, profile: null },
+  });
   assert.deepEqual(store.getMusicState().likedIds, [track.id]);
   assert.deepEqual(store.getMusicState().recents, [track]);
   assert.deepEqual(store.getMusicState().queue, [track]);
@@ -270,9 +280,8 @@ test("shuffle and repeat notify controls and guide queue advancement when storag
   };
   const prefs = preferences(browser);
   const listeners = new Set<() => void>();
-  let advance: Parameters<Player["setMusicAdvance"]>[0];
   const transport = load<Transport>(
-    "src/components/music/music-queue.tsx",
+    "src/lib/music/transport.ts",
     {
       react: {
         useSyncExternalStore: (
@@ -285,29 +294,12 @@ test("shuffle and repeat notify controls and guide queue advancement when storag
           return get();
         },
       },
-      "react/jsx-runtime": {},
-      "react-dom": {},
-      "lucide-react": {},
-      "@/components/poster": {},
-      "./music-service-logo": {},
-      "./music-track-labels": {},
-      "./music-queue.css": {},
-      "@/lib/i18n": {},
-      "@/lib/music/player": {
-        setMusicAdvance: (next: typeof advance) => {
-          advance = next;
-        },
-      },
-      "@/lib/music/queue-order": { MusicQueueOrder, queueTrackKey },
-      "@/lib/music/preferences": prefs,
-      "@/lib/music/sources": { getMusicSourceCandidates: () => Promise.resolve([]) },
-      "@/lib/music/queue-source": {
-        replaceQueueTrack: (queue: unknown) => queue,
-        selectableSources: () => [],
-      },
+      "./queue-order": { MusicQueueOrder, queueTrackKey },
+      "./preferences": prefs,
     },
     {},
   );
+  const advance = transport.musicAdvance;
   assert.deepEqual(transport.useMusicTransport(), { shuffle: false, repeat: "off" });
   let updates = 0;
   listeners.add(() => {
@@ -320,8 +312,8 @@ test("shuffle and repeat notify controls and guide queue advancement when storag
   assert.equal(prefs.readMusicPreference("harbor.music.shuffle.v1"), "1");
   assert.equal(prefs.readMusicPreference("harbor.music.repeat.v1"), "all");
   const next = { ...track, id: "next" };
-  assert.equal(advance!([track, next], 0, true), next);
+  assert.equal(advance([track, next], 0, true), next);
   transport.cycleMusicRepeat();
-  assert.equal(advance!([track, next], 0, true), track);
+  assert.equal(advance([track, next], 0, true), track);
   assert.deepEqual(browser.removed, []);
 });

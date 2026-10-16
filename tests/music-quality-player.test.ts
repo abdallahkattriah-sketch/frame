@@ -5,6 +5,7 @@ import ts from "typescript";
 import { queueTrackKey } from "../src/lib/music/queue-order.ts";
 import { dedupeMusicTracks, sameMusicTrack } from "../src/lib/music/track-identity.ts";
 import type { MusicTrack } from "../src/lib/music/types.ts";
+import { musicPlayerDependencies } from "./helpers/music-player-dependencies.ts";
 
 type Player = typeof import("../src/lib/music/player.ts");
 
@@ -27,6 +28,7 @@ function player() {
   const callbacks = new Map<string, (event: { payload: Record<string, unknown> }) => void>();
   const module = { exports: {} };
   const mocks: Record<string, unknown> = {
+    ...musicPlayerDependencies(),
     "@/lib/cast-ownership": { stopCastOwner: async () => {} },
     "@tauri-apps/api/core": {
       invoke: async (command: string) =>
@@ -50,7 +52,9 @@ function player() {
     "./deck-sync": {
       answerDeckRequests: () => () => {},
       broadcastDeckState: () => {},
+      isDeckWindow: () => false,
       sendDeckAdopted: () => {},
+      sendDeckCommand: () => {},
       serveDeckCommands: () => () => {},
     },
     "./deck-primary": { createDeckAdoption: () => ({ deck: () => 0, adopt: () => false }) },
@@ -59,7 +63,11 @@ function player() {
       likedIdsFor: (t: any) => (t ? [t.id] : []),
       withoutLiked: (ids: readonly string[], t: any) => ids.filter((id: string) => id !== t.id),
     },
-    "./source-consent": { musicSourceAllowed: () => true, requestMusicSourceConsent: () => {} },
+    "./source-consent": {
+      hydrateMusicSourceConsent: async () => {},
+      musicSourceAllowed: () => true,
+      requestMusicSourceConsent: () => {},
+    },
     "./queue-insert": {
       insertIntoQueue: (q: unknown[], t: unknown, at: number) => [
         ...q.slice(0, at),
@@ -76,6 +84,7 @@ function player() {
       writeCheckpointToDb: () => {},
     },
     "./playback-origin": {
+      beginMusicQueue: () => {},
       getMusicPlaybackOrigin: () => null,
       restoreMusicPlaybackOrigin: () => {},
     },

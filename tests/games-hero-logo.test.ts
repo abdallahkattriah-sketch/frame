@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import {
   heroLogoTitleKey,
   indexRetroLogoFiles,
@@ -129,6 +129,9 @@ test("Expanded retro index resolves original Sega and GameCube titles without cr
   assert.deepEqual(retroHeroLogos(index, ["Sonic the Hedgehog 2"], [29], 5), []);
 });
 
+// public/games/ artwork is third-party and untracked (.gitignore), so its bytes are checked only where it is installed.
+const romArtworkInstalled = existsSync(new URL("../public/games/roms/", import.meta.url));
+
 test("ROM hero gaps use distinct exact-game assets, never a collection or remake substitution", () => {
   const expected = new Map([
     [375, "metal-gear-solid.png"],
@@ -146,7 +149,9 @@ test("ROM hero gaps use distinct exact-game assets, never a collection or remake
     const art = romGameArtwork(id);
     assert.equal(art?.logo, `/games/roms/${file}`);
     assert.ok(art?.source.startsWith("https://"));
-    assert.ok(readFileSync(new URL(`../public${art!.logo}`, import.meta.url)).byteLength > 100);
+    assert.match(art!.logo, /^\/games\/roms\/[a-z0-9-]+\.(png|svg)$/);
+    if (romArtworkInstalled)
+      assert.ok(readFileSync(new URL(`../public${art!.logo}`, import.meta.url)).byteLength > 100);
     paths.add(art!.logo);
   }
   assert.equal(paths.size, expected.size);

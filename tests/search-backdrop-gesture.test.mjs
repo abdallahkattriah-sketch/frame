@@ -62,6 +62,8 @@ function harness(t, options = {}) {
   let cursor = 0;
   let pending = [];
   const react = {
+    lazy: () => () => null,
+    Suspense: Symbol("suspense"),
     useRef(initial) {
       const index = cursor++;
       return (hooks[index] ??= { current: initial });
@@ -99,6 +101,8 @@ function harness(t, options = {}) {
     "@/lib/search-context": { useSearch: () => search },
     "@/lib/settings": { useSettings: () => ({ settings, update() {} }) },
     "@/lib/view": { useView: () => ({}) },
+    "@/lib/profiles": { useProfiles: () => ({ activeProfile: null }) },
+    "@/lib/games/steam-store-search": { steamStoreQuery: () => null },
     "@/lib/i18n": { useT: () => (value) => value },
     "@/lib/use-exit-presence": {
       useExitPresence: () => ({ mounted: search.open, closing: false }),

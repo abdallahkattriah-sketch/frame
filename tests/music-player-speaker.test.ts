@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import ts from "typescript";
 import { castOwnershipFixture } from "./helpers/cast-ownership.ts";
+import { musicPlayerDependencies } from "./helpers/music-player-dependencies.ts";
 import { queueTrackKey } from "../src/lib/music/queue-order.ts";
 import { dedupeMusicTracks, sameMusicTrack } from "../src/lib/music/track-identity.ts";
 
@@ -48,6 +49,7 @@ function fixture(respond?: (command: string, args?: any) => unknown, realCasting
     listener();
   };
   const mocks: Record<string, any> = {
+    ...musicPlayerDependencies(),
     "@/lib/cast-ownership": castOwnershipFixture(),
     "@tauri-apps/api/core": {
       invoke: async (command: string, args?: any) => {
@@ -76,7 +78,9 @@ function fixture(respond?: (command: string, args?: any) => unknown, realCasting
     "./deck-sync": {
       answerDeckRequests: () => () => {},
       broadcastDeckState: () => {},
+      isDeckWindow: () => false,
       sendDeckAdopted: () => {},
+      sendDeckCommand: () => {},
       serveDeckCommands: () => () => {},
     },
     "./deck-primary": { createDeckAdoption: () => ({ deck: () => 0, adopt: () => false }) },
@@ -85,7 +89,11 @@ function fixture(respond?: (command: string, args?: any) => unknown, realCasting
       likedIdsFor: (t: any) => (t ? [t.id] : []),
       withoutLiked: (ids: readonly string[], t: any) => ids.filter((id: string) => id !== t.id),
     },
-    "./source-consent": { musicSourceAllowed: () => true, requestMusicSourceConsent: () => {} },
+    "./source-consent": {
+      hydrateMusicSourceConsent: async () => {},
+      musicSourceAllowed: () => true,
+      requestMusicSourceConsent: () => {},
+    },
     "./queue-insert": {
       insertIntoQueue: (q: unknown[], t: unknown, at: number) => [
         ...q.slice(0, at),
@@ -102,6 +110,7 @@ function fixture(respond?: (command: string, args?: any) => unknown, realCasting
       writeCheckpointToDb: () => {},
     },
     "./playback-origin": {
+      beginMusicQueue: () => {},
       getMusicPlaybackOrigin: () => null,
       restoreMusicPlaybackOrigin: () => {},
     },

@@ -82,6 +82,9 @@ test("notice is profile scoped, persists, and survives unavailable storage for t
     else Reflect.deleteProperty(globalThis, "localStorage");
   }
 });
+// public/games/ artwork is third-party and untracked (.gitignore), so files are checked only where it is installed.
+const rewardArtworkInstalled = existsSync(new URL("../public/games/rewards/", import.meta.url));
+
 test("reward links match the exact game and achievement with locally available source artwork", () => {
   assert.equal(achievementRewards(440).length, 27);
   assert.equal(achievementReward(630, "ASW_PARA_HAT")?.receivingAppId, 440);
@@ -92,7 +95,9 @@ test("reward links match the exact game and achievement with locally available s
     const rewards = achievementRewards(appId);
     assert.equal(new Set(rewards.map((reward) => reward.achievementId)).size, rewards.length);
     for (const reward of rewards) {
-      assert.ok(existsSync(new URL("../public" + reward.image, import.meta.url)));
+      assert.match(reward.image, /^\/games\/rewards\/[a-z0-9-]+\.png$/);
+      if (rewardArtworkInstalled)
+        assert.ok(existsSync(new URL("../public" + reward.image, import.meta.url)));
       assert.equal(new URL(reward.source).hostname, "wiki.teamfortress.com");
     }
   }

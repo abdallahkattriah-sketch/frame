@@ -116,7 +116,9 @@ gemini.key
 
 # Games artwork: 8.6MB of static files referenced by URL, not imported, so ignoring
 # them cannot break a build. Source under src/assets/games stays tracked because it is imported.
-/public/games/
+# The EVE system directory is data, not artwork: scripts/build-eve-universe.mjs rebuilds it from CCP's SDE.
+/public/games/*
+!/public/games/eve/
 
 # Built separately from pinned GPL sources; see tools/pokemon-engine/README.md.
 /src-tauri/resources/pokemon-engine/

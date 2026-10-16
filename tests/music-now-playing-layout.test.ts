@@ -48,7 +48,10 @@ test("Up next still derives from the live queue via musicUpcoming", () => {
 });
 
 test("choosing a tab leaves search, so the tab strip is never inert", () => {
-  assert.match(TSX, /onClick=\{\(\) => \{\s*setSearching\(false\);\s*setPanel\(id\);\s*\}\}/);
+  assert.match(TSX, /onClick=\{\(\) => \{\s*closeSearch\(\);\s*setPanel\(id\);\s*\}\}/);
+  const close =
+    /const closeSearch = useCallback\(\(\) => \{[\s\S]*?\}, \[\]\);/.exec(TSX)?.[0] ?? "";
+  assert.match(close, /setSearching\(false\)/, "closing search must end the search state");
   assert.match(TSX, /aria-controls=\{searching \? undefined : `music-now-panel-\$\{id\}`\}/);
 });
 
