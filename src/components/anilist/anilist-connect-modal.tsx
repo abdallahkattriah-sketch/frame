@@ -73,13 +73,13 @@ export function AnilistConnectModal({ onClose }: { onClose: () => void }) {
           <>
             <p className="text-[13px] leading-relaxed text-ink-muted">
               {t(
-                "A browser tab opened on AniList. Approve Harbor there, then copy the text it shows and paste it below.",
+                "A browser tab opened on AniList. Approve Harbor there, then copy the token it shows (or the page address) and paste it below.",
               )}
             </p>
             <textarea
               value={draftCode}
               onChange={(e) => setDraftCode(e.target.value)}
-              placeholder={t("Paste the text from AniList")}
+              placeholder={t("Paste the token or page URL from AniList")}
               autoFocus
               spellCheck={false}
               rows={3}
