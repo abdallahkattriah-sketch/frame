@@ -95,11 +95,15 @@ function ThemeMarketCard({
           ) : (
             <span className="truncate text-ink-muted">{theme.author || t("Anonymous")}</span>
           )}
-          <span className="text-ink-subtle/60">·</span>
-          <span className="inline-flex shrink-0 items-center gap-1 tabular-nums">
-            <Download size={14} strokeWidth={2.2} />
-            {fmtCount(theme.downloads)}
-          </span>
+          {theme.downloads > 0 && (
+            <>
+              <span className="text-ink-subtle/60">·</span>
+              <span className="inline-flex shrink-0 items-center gap-1 tabular-nums">
+                <Download size={14} strokeWidth={2.2} />
+                {fmtCount(theme.downloads)}
+              </span>
+            </>
+          )}
         </span>
       </div>
     </article>

@@ -1,6 +1,6 @@
 import { registerEvictable } from "@/lib/maintenance";
 import { safeFetch } from "@/lib/safe-fetch";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { hasIgdbCredentials, igdbRequest } from "@/lib/games/igdb-client";
 import type { FavoriteMedia, FavoriteSearchResult } from "./favorites-types";
 
 export type GameSource = "igdb" | "steam";
@@ -31,7 +31,6 @@ export type GameSearchOptions = {
 };
 
 const IGDB_API = "https://api.igdb.com/v4/games";
-const IGDB_PROXY = `${HARBOR_API_BASE}/api/igdb/games`;
 const IGDB_IMAGE = "https://images.igdb.com/igdb/image/upload";
 const STEAM_SEARCH = "https://store.steampowered.com/api/storesearch/";
 const STEAM_CDN = "https://cdn.cloudflare.steamstatic.com/steam/apps";
@@ -151,22 +150,28 @@ async function searchIgdb(
 ): Promise<GameSearchResult> {
   const { clientId, token } = opts;
   const direct = Boolean(clientId && token);
+  if (!direct && !hasIgdbCredentials()) {
+    return { kind: "needs-key", message: "Add a Twitch client ID and secret to search IGDB." };
+  }
   if (!direct && Date.now() < igdbDownUntil) {
     return { kind: "needs-key", message: "IGDB is not configured." };
   }
-  const headers: Record<string, string> = { "content-type": "text/plain" };
-  if (clientId && token) {
-    headers["client-id"] = clientId;
-    headers.authorization = `Bearer ${token}`;
-  }
   const { signal, done } = withTimeout(opts.signal);
   try {
-    const res = await safeFetch(direct ? IGDB_API : IGDB_PROXY, {
-      method: "POST",
-      headers,
-      body: igdbBody(query, limit),
-      signal,
-    });
+    const body = igdbBody(query, limit);
+    const res =
+      clientId && token
+        ? await safeFetch(IGDB_API, {
+            method: "POST",
+            headers: {
+              "content-type": "text/plain",
+              "client-id": clientId,
+              authorization: `Bearer ${token}`,
+            },
+            body,
+            signal,
+          })
+        : await igdbRequest("games", body, signal);
     if (res.status === 401 || res.status === 403) {
       if (!direct) igdbDownUntil = Date.now() + IGDB_COOLDOWN_MS;
       return { kind: "needs-key", message: "IGDB rejected the credentials." };

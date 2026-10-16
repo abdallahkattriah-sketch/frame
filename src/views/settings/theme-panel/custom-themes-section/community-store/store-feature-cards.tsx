@@ -1,7 +1,9 @@
-import { ShieldCheck, Upload } from "../../../icons";
+import { ExternalLink, ShieldCheck, Upload } from "../../../icons";
 import { useT } from "@/lib/i18n";
+import { THEME_SUBMIT_URL } from "@/lib/theme-store";
+import { openUrl } from "@/lib/window";
 
-export function StoreFeatureCards({ onShare }: { onShare: () => void }) {
+export function StoreFeatureCards() {
   const t = useT();
   return (
     <div className="grid gap-4 sm:grid-cols-2">
@@ -15,7 +17,7 @@ export function StoreFeatureCards({ onShare }: { onShare: () => void }) {
           </h3>
           <p className="max-w-[66ch] text-[15.5px] leading-[22px] text-ink-muted">
             {t(
-              "Every theme is sandboxed, scanned, and reviewed before it reaches the library, so you can try any look without a second thought.",
+              "Every theme is reviewed before it joins the library and scanned again when you install it, so you can try any look without a second thought.",
             )}
           </p>
         </div>
@@ -30,16 +32,16 @@ export function StoreFeatureCards({ onShare }: { onShare: () => void }) {
           </h3>
           <p className="max-w-[66ch] text-[15.5px] leading-[22px] text-ink-muted">
             {t(
-              "Made a look you love? Share it with the community in a couple of clicks and watch the downloads roll in.",
+              "Made a look you love? Export it as a .harborstyle file and open a pull request to add it to the library.",
             )}
           </p>
         </div>
         <button
           type="button"
-          onClick={onShare}
+          onClick={() => openUrl(THEME_SUBMIT_URL)}
           className="mt-1 inline-flex h-11 w-fit items-center gap-2 rounded-md bg-ink px-5 text-[15.5px] font-semibold text-canvas transition-[opacity,transform] hover:opacity-90 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent motion-reduce:active:scale-100"
         >
-          <Upload size={16} strokeWidth={2.2} /> {t("Share a theme")}
+          <ExternalLink size={16} strokeWidth={2.2} /> {t("Submit a theme")}
         </button>
       </div>
     </div>

@@ -83,10 +83,12 @@ export function MarketHero({
               <span className="tabular-nums">({item.ratingCount})</span>
             </span>
           )}
-          <span className="inline-flex items-center gap-1.5 tabular-nums">
-            <ArrowDownToLine size={16} strokeWidth={2.2} />
-            {t("{count} downloads", { count: fmtCount(item.downloads) })}
-          </span>
+          {item.downloads > 0 && (
+            <span className="inline-flex items-center gap-1.5 tabular-nums">
+              <ArrowDownToLine size={16} strokeWidth={2.2} />
+              {t("{count} downloads", { count: fmtCount(item.downloads) })}
+            </span>
+          )}
           {"swatch" in item && item.authorHandle ? (
             <span>
               {authorPrefix}

@@ -21,23 +21,25 @@ The app talks to Stremio, addons and most metadata services directly, so the cor
 - Chromecast video and audio, through Google's Default Media Receiver.
 - In-app updates on Windows, macOS and the Linux AppImage, from this fork's GitHub releases. Builds up to 0.9.201 carry upstream's updater key, so they have to be replaced by hand once with a later release. Rolling back to an earlier build and rating a build (as a GitHub issue) work from Settings > Updates.
 - Award badges on movie and show pages (Wikidata plus lists built into the app), anime award badges matched by title (the built-in Crunchyroll, TAAF, Japan Media Arts, Animation Kobe and r/anime lists), and the Discover "Award winners" row, which is built from the built-in award history plus TMDB when a TMDB key is set.
+- Static feeds load from this repository's `data/` folder through `raw.githubusercontent.com` (`HARBOR_DATA_BASE` in `src/lib/config/endpoints.ts`), so they work again once `data/` is on `main`: anime award badges matched by Kitsu ID (`anime-awards.json`, built from the bundled award lists and title map), anime hero art (`anime-hero-art.json`, the bundled snapshot), release notes for 0.9.119 to 0.9.128 (`release-notes.json`), and Discord Rich Presence images (the app icon plus award art for the Oscars, Golden Globes, BAFTA, Critics Choice, SAG, Venice, Berlin, Crunchyroll, TAAF, Japan Media Arts and r/anime; Emmy, Cannes and Animation Kobe fall back to the Harbor logo). Feeds whose data could not be recovered ship empty in the shape the app expects and can be filled by pull request: the hosted anime hero, curated logos, announcements, the hosted award-winners and hero pools, the manga source list and the Harbor people rankings.
+- IGDB in Games (catalogs, details, completion times, favorites search), once a Twitch client ID and secret are set in Settings > Library > Games. Requests go straight to `id.twitch.tv` and `api.igdb.com`; without the credentials the Games catalog stays empty and says how to add them.
+- Browsing and installing community themes, from the read-only index in `data/themes/` (seeded with the built-in presets). New themes join it by pull request (`data/themes/README.md`); publishing, ratings, comments, notifications and the "My themes" tab needed Harbor accounts and are hidden.
 
 ## What no longer works
 
 These relied on services hosted at `harbor.site` and its subdomains, which are gone:
 
-| Feature                                                                                       | Dead service                                                |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Beta and experimental channels                                                                | `harbor.site/updates/...`                                   |
-| Theme store, theme badges, public profiles, shared collections and lists                      | `harbor.site/themes/api`, `/badges`, `/collection`, `/list` |
-| Anime award badges matched by ID, anime hero art, curated logos, announcements, release notes | static JSON files on `harbor.site`                          |
-| Award images in Discord Rich Presence                                                         | `harbor.site/discord/awards`                                |
-| Shared ad-skip segments and ad reports                                                        | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site`  |
-| Shared subtitle autosync                                                                      | `sync.harbor.site`                                          |
-| Public watch-party relay                                                                      | `pub.harbor.site`                                           |
-| IGDB data in Games, manga source list                                                         | `harbor.site/api/igdb`, `/api/manga-sources`                |
+| Feature                                                                                               | Dead service                                               |
+| ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Beta and experimental channels                                                                        | `harbor.site/updates/...`                                  |
+| Theme publishing, ratings and comments, profile badges, public profiles, shared collections and lists | `harbor.site/themes/api`, `/collection`, `/list`           |
+| Harbor's own badge packs (Minimal, Abstract, Harbor Light, Harbor Color), removed from the list       | `harbor.site/badges`                                       |
+| Shared ad-skip segments and ad reports                                                                | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site` |
+| Shared subtitle autosync                                                                              | `sync.harbor.site`                                         |
+| Public watch-party relay                                                                              | `pub.harbor.site`                                          |
+| Suggesting a manga source from the app                                                                | `harbor.site/api/manga-sources/suggest`                    |
 
-Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`.
+Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`; `VITE_HARBOR_DATA_BASE` moves the static feeds (for example to a fork or a branch).
 
 ## Building from a fresh clone
 

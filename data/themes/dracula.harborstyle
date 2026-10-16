@@ -1,0 +1,19 @@
+# Harbor Style
+name: Dracula
+blurb: Violet on graphite, bold accents. Easy on the eyes.
+layout: dracula
+swatch: #282a36, #44475a, #bd93f9
+
+@tokens
+--color-canvas: #282a36
+--color-surface: #21222c
+--color-elevated: #44475a
+--color-raised: #565969
+--color-ink: #f8f8f2
+--color-ink-muted: #d6d6d0
+--color-ink-subtle: #6272a4
+--color-edge: #6272a48c
+--color-edge-soft: #6272a440
+--color-accent: #bd93f9
+--color-accent-soft: #bd93f92e
+--color-danger: #ff5555

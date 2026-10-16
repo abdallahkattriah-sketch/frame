@@ -15,6 +15,7 @@ src/assets/sports/circuits.json
 src/data/
 public/anime-hero-art.json
 public/games/
+data/**/*.json
 ol-covers.json
 src/lib/games/retro-logo-index.json
 src/lib/providers/tmdb/brand-index.json

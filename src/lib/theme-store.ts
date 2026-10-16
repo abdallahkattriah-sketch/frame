@@ -8,10 +8,14 @@ import { scanTheme } from "@/lib/theme-scan";
 import { safeFetch } from "@/lib/safe-fetch";
 import { authToken } from "./theme-auth";
 import { getDownloadRecords, recordDownloadedTheme } from "@/lib/theme-updates";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { parseHarborStyle } from "@/lib/harborstyle";
+import { HARBOR_API_BASE, HARBOR_DATA_BASE } from "@/lib/config/endpoints";
 
 const ORIGIN = HARBOR_API_BASE;
 const API = `${ORIGIN}/themes/api`;
+const INDEX_BASE = `${HARBOR_DATA_BASE}/themes`;
+export const THEME_SUBMIT_URL =
+  "https://github.com/crazyrabbit0/harbor/blob/main/data/themes/README.md";
 const UPLOADS_KEY = "harbor.theme-uploads.v1";
 const CLIENT_KEY = "harbor.theme-client-id";
 
@@ -77,12 +81,84 @@ function authHeaders(): Record<string, string> {
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
-export async function browseThemes(sort = "top", q = ""): Promise<StoreTheme[]> {
-  const url = `${API}/themes?sort=${encodeURIComponent(sort)}${q ? `&q=${encodeURIComponent(q)}` : ""}`;
-  const r = await safeFetch(url);
+type IndexEntry = {
+  id: string;
+  name: string;
+  author?: string;
+  blurb?: string;
+  swatch?: string[];
+  layout?: string | null;
+  file: string;
+  cover?: string | null;
+  screenshots?: string[];
+  version?: number;
+  createdAt?: string;
+  updatedAt?: string;
+};
+
+const SAFE_FILE = /^[a-z0-9][a-z0-9._-]*$/i;
+
+function indexAsset(name: string | null | undefined): string | null {
+  if (!name) return null;
+  if (name.startsWith("https://")) return name;
+  return SAFE_FILE.test(name) ? `${INDEX_BASE}/${name}` : null;
+}
+
+function fromIndex(e: IndexEntry): StoreTheme {
+  const rev = e.version ?? 1;
+  return {
+    id: e.id,
+    name: e.name,
+    author: e.author ?? "",
+    authorHandle: null,
+    authorAvatar: null,
+    blurb: e.blurb ?? "",
+    swatch: Array.isArray(e.swatch) ? e.swatch : [],
+    cover: bust(indexAsset(e.cover), rev),
+    screenshots: (e.screenshots ?? [])
+      .map((s) => bust(indexAsset(s), rev))
+      .filter((s): s is string => !!s),
+    layout: e.layout ?? null,
+    downloads: 0,
+    ratingAvg: 0,
+    ratingCount: 0,
+    visibility: "public",
+    status: "approved",
+    share: `https://github.com/crazyrabbit0/harbor/blob/main/data/themes/${e.file}`,
+    createdAt: e.createdAt ?? "",
+    updatedAt: e.updatedAt,
+    versionsCount: rev,
+  };
+}
+
+let indexCache: { at: number; entries: IndexEntry[] } | null = null;
+const INDEX_TTL_MS = 10 * 60_000;
+
+// The theme library is the read-only index in the repo's data/themes folder.
+async function loadIndex(): Promise<IndexEntry[]> {
+  if (indexCache && Date.now() - indexCache.at < INDEX_TTL_MS) return indexCache.entries;
+  const r = await safeFetch(`${INDEX_BASE}/index.json`, { cache: "no-cache" });
   if (!r.ok) throw new Error("Could not reach the theme library.");
-  const d = await r.json();
-  return (d.themes || []).map(normalize);
+  const d = (await r.json()) as { themes?: unknown };
+  const entries = (Array.isArray(d.themes) ? d.themes : []).filter(
+    (e): e is IndexEntry =>
+      !!e &&
+      typeof (e as IndexEntry).id === "string" &&
+      typeof (e as IndexEntry).name === "string" &&
+      typeof (e as IndexEntry).file === "string" &&
+      SAFE_FILE.test((e as IndexEntry).file),
+  );
+  indexCache = { at: Date.now(), entries };
+  return entries;
+}
+
+export async function browseThemes(sort = "top", q = ""): Promise<StoreTheme[]> {
+  const needle = q.trim().toLowerCase();
+  const list = (await loadIndex())
+    .map(fromIndex)
+    .filter((t) => !needle || `${t.name} ${t.author} ${t.blurb}`.toLowerCase().includes(needle));
+  if (sort === "new") list.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  return list;
 }
 
 export async function downloadTheme(
@@ -90,9 +166,12 @@ export async function downloadTheme(
   preview?: string | null,
   versionsCount?: number,
 ): Promise<CustomTheme> {
-  const r = await safeFetch(`${API}/themes/${id}/file?clientId=${encodeURIComponent(clientId())}`);
+  const entry = (await loadIndex()).find((e) => e.id === id);
+  if (!entry) throw new Error("Theme not found.");
+  const r = await safeFetch(`${INDEX_BASE}/${entry.file}`, { cache: "no-cache" });
   if (!r.ok) throw new Error("Download failed.");
-  const parsed = parseThemeJson(await r.text());
+  const text = await r.text();
+  const parsed = entry.file.endsWith(".json") ? parseThemeJson(text) : parseHarborStyle(text);
   if (!parsed.ok) throw new Error(parsed.error);
   const existing = Object.entries(getDownloadRecords()).find(
     ([savedId, rec]) => rec.storeId === id && getCustomThemes().some((t) => t.id === savedId),
@@ -226,9 +305,9 @@ export async function deleteComment(themeId: string, commentId: string): Promise
 }
 
 export async function getTheme(id: string): Promise<StoreTheme> {
-  const r = await safeFetch(`${API}/themes/${id}`);
-  if (!r.ok) throw new Error("Theme not found.");
-  return normalize(await r.json());
+  const entry = (await loadIndex()).find((e) => e.id === id);
+  if (!entry) throw new Error("Theme not found.");
+  return fromIndex(entry);
 }
 
 export type ThemeNotification = {

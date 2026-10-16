@@ -1,0 +1,19 @@
+# Harbor Style
+name: Nord
+blurb: Cool grey-blue. Arctic and crisp.
+layout: nord
+swatch: #2e3440, #434c5e, #88c0d0
+
+@tokens
+--color-canvas: #2e3440
+--color-surface: #353a47
+--color-elevated: #3b4252
+--color-raised: #434c5e
+--color-ink: #eceff4
+--color-ink-muted: #d8dee9
+--color-ink-subtle: #8b95a4
+--color-edge: #4c566a8c
+--color-edge-soft: #4c566a40
+--color-accent: #88c0d0
+--color-accent-soft: #88c0d02e
+--color-danger: #bf616a

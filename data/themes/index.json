@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "cool-grey",
+      "name": "Harbor default",
+      "author": "Harbor",
+      "blurb": "What ships out of the box.",
+      "swatch": [
+        "#2c2e36",
+        "#3a3d47",
+        "#dcdde4"
+      ],
+      "layout": null,
+      "file": "cool-grey.harborstyle",
+      "cover": "cool-grey.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "author": "Harbor",
+      "blurb": "Cool grey-blue. Arctic and crisp.",
+      "swatch": [
+        "#2e3440",
+        "#434c5e",
+        "#88c0d0"
+      ],
+      "layout": "nord",
+      "file": "nord.harborstyle",
+      "cover": "nord.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    },
+    {
+      "id": "stremio",
+      "name": "Stremio",
+      "author": "Harbor",
+      "blurb": "Purple accent, Indigo gradient, Narrow icon rail.",
+      "swatch": [
+        "#0c0b11",
+        "#1a173e",
+        "#7b5bf5"
+      ],
+      "layout": "stremio",
+      "file": "stremio.harborstyle",
+      "cover": "stremio.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    },
+    {
+      "id": "crunch",
+      "name": "Crunchy",
+      "author": "Harbor",
+      "blurb": "Charcoal chrome with a spice-orange accent. Bold and clean.",
+      "swatch": [
+        "#000000",
+        "#272727",
+        "#ff640a"
+      ],
+      "layout": "topdock",
+      "file": "crunch.harborstyle",
+      "cover": "crunch.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    },
+    {
+      "id": "tokyo-night",
+      "name": "Royal",
+      "author": "Harbor",
+      "blurb": "Deep navy with a warm orange accent.",
+      "swatch": [
+        "#0c1118",
+        "#1c2230",
+        "#f08032"
+      ],
+      "layout": "royal",
+      "file": "tokyo-night.harborstyle",
+      "cover": "tokyo-night.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    },
+    {
+      "id": "dracula",
+      "name": "Dracula",
+      "author": "Harbor",
+      "blurb": "Violet on graphite, bold accents. Easy on the eyes.",
+      "swatch": [
+        "#282a36",
+        "#44475a",
+        "#bd93f9"
+      ],
+      "layout": "dracula",
+      "file": "dracula.harborstyle",
+      "cover": "dracula.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "author": "Harbor",
+      "blurb": "Greens, low saturation.",
+      "swatch": [
+        "#1a221d",
+        "#26312a",
+        "#dde7df"
+      ],
+      "layout": "forest",
+      "file": "forest.harborstyle",
+      "cover": "forest.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "author": "Harbor",
+      "blurb": "Pure black. Clean.",
+      "swatch": [
+        "#000000",
+        "#0a0a0a",
+        "#ffffff"
+      ],
+      "layout": "topdock",
+      "file": "noir.harborstyle",
+      "cover": "noir.jpg",
+      "screenshots": [],
+      "version": 1,
+      "createdAt": "2026-10-16"
+    }
+  ]
+}

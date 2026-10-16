@@ -1,15 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { useModalExit } from "@/components/modal-shell";
 import { createPortal } from "react-dom";
-import { ArrowDownToLine, Check, RefreshCw, Share2, Star, X } from "../../../icons";
+import { Check, RefreshCw, Share2, X } from "../../../icons";
 import { useT } from "@/lib/i18n";
 import { isBackKey, isEditable } from "@/lib/keyboard-navigation/geometry";
-import { downloadTheme, rateTheme, type StoreTheme } from "@/lib/theme-store";
+import { downloadTheme, type StoreTheme } from "@/lib/theme-store";
 import { FeaturedBadge } from "@/views/profile/profile-bits";
 import { subscribeOpenProfile } from "@/lib/social/open-profile";
 import { ThemeAuthorButton } from "../theme-author-button";
-import { fmtCount } from "./format";
-import { CommentsSection } from "./comments/comments-section";
 import { Fit } from "./market/fit";
 import { PaletteSeam } from "./market/palette-seam";
 import { MarketCta } from "./market/market-cta";
@@ -19,9 +17,7 @@ import { tokensFromStoreTheme } from "./market/fit-palette";
 export function ThemeDetail({ theme, onClose }: { theme: StoreTheme; onClose: () => void }) {
   const tr = useT();
   const { closing, close } = useModalExit(onClose);
-  const [t, setT] = useState(theme);
-  const [myRating, setMyRating] = useState(0);
-  const [hover, setHover] = useState(0);
+  const t = theme;
   const [copied, setCopied] = useState(false);
   const tokens = useMemo(() => tokensFromStoreTheme(t), [t]);
   const { state, run } = useAcquireState(() =>
@@ -41,15 +37,6 @@ export function ThemeDetail({ theme, onClose }: { theme: StoreTheme; onClose: ()
 
   useEffect(() => subscribeOpenProfile(close), [close]);
 
-  const rate = async (v: number) => {
-    setMyRating(v);
-    try {
-      setT(await rateTheme(t.id, v));
-    } catch {
-      /* ignore */
-    }
-  };
-
   const share = async () => {
     try {
       await navigator.clipboard.writeText(t.share);
@@ -60,7 +47,6 @@ export function ThemeDetail({ theme, onClose }: { theme: StoreTheme; onClose: ()
     }
   };
 
-  const shownStars = hover || myRating || Math.round(t.ratingAvg);
   const authorName = t.author || tr("Anonymous");
   const authorMarker = "\uFFFC";
   const [authorPrefix, authorSuffix = ""] = tr("by {author}", {
@@ -103,17 +89,6 @@ export function ThemeDetail({ theme, onClose }: { theme: StoreTheme; onClose: ()
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pe-8">
                 <FeaturedBadge />
                 <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[15.5px] leading-[22px] font-medium text-ink-subtle">
-                  {t.ratingCount > 0 && (
-                    <span className="inline-flex items-center gap-1">
-                      <Star size={16} className="fill-accent text-accent" />
-                      <span className="tabular-nums text-ink">{t.ratingAvg.toFixed(1)}</span>
-                      <span className="tabular-nums">({t.ratingCount})</span>
-                    </span>
-                  )}
-                  <span className="inline-flex items-center gap-1.5 tabular-nums">
-                    <ArrowDownToLine size={15} strokeWidth={2.2} />
-                    {fmtCount(t.downloads)}
-                  </span>
                   {t.authorHandle ? (
                     <span>
                       {authorPrefix}
@@ -151,33 +126,6 @@ export function ThemeDetail({ theme, onClose }: { theme: StoreTheme; onClose: ()
                   {copied ? tr("Copied") : tr("Share")}
                 </MarketCta>
               </div>
-
-              <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
-                <span className="text-[15.5px] leading-[22px] font-medium text-ink-subtle">
-                  {tr("Rate this theme")}
-                </span>
-                <div
-                  className="flex items-center gap-0.5"
-                  role="group"
-                  aria-label={tr("Rate this theme")}
-                  onMouseLeave={() => setHover(0)}
-                >
-                  {[1, 2, 3, 4, 5].map((n) => (
-                    <button
-                      key={n}
-                      onClick={() => rate(n)}
-                      onMouseEnter={() => setHover(n)}
-                      aria-label={tr("Rate {count} stars", { count: n })}
-                      className="grid h-11 w-11 place-items-center rounded-full transition-transform hover:scale-110 active:scale-95 motion-reduce:transform-none"
-                    >
-                      <Star
-                        size={22}
-                        className={n <= shownStars ? "fill-accent text-accent" : "text-ink-subtle"}
-                      />
-                    </button>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
 
@@ -207,10 +155,6 @@ export function ThemeDetail({ theme, onClose }: { theme: StoreTheme; onClose: ()
                 ))}
               </div>
             )}
-
-            <div className="h-px bg-edge-soft" />
-
-            <CommentsSection themeId={t.id} />
           </div>
         </div>
       </div>

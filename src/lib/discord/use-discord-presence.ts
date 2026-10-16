@@ -18,20 +18,19 @@ import {
   type BrowsePresence,
 } from "./presence";
 import { useActivityHint } from "./activity-hint";
-import { HARBOR_API_BASE, HARBOR_RELAY_BASE } from "@/lib/config/endpoints";
+import { HARBOR_DATA_BASE, HARBOR_RELAY_BASE } from "@/lib/config/endpoints";
 
 const JOIN_BASE = HARBOR_RELAY_BASE;
 
-const AWARD_IMG = `${HARBOR_API_BASE}/discord/awards`;
+// Only awards with art in data/discord/awards are listed; the rest show the Harbor logo.
+const AWARD_IMG = `${HARBOR_DATA_BASE}/discord/awards`;
 const NORMAL_AWARD_IMG: Record<string, string> = {
   oscar: "oscar.png",
-  emmy: "emmy.png",
   golden_globe: "golden-globe.png",
   bafta: "bafta.png",
   critics_choice: "critics-choice.png",
   sag: "sag.png",
-  cannes: "cannestrophy.png",
-  venice: "venice.png",
+  venice: "venice.webp",
   berlin: "berlin.png",
 };
 const ANIME_AWARD_IMG: Record<string, string> = {
@@ -39,7 +38,6 @@ const ANIME_AWARD_IMG: Record<string, string> = {
   taaf: "taaf-icon.png",
   jmaf: "jmaf-icon.png",
   r_anime: "r-anime-icon.png",
-  animation_kobe: "animation-kobe.png",
 };
 
 const STATIC_LABELS: Record<string, BrowsePresence> = {

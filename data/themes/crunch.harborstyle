@@ -1,0 +1,24 @@
+# Harbor Style
+name: Crunchy
+blurb: Charcoal chrome with a spice-orange accent. Bold and clean.
+layout: topdock
+card: crunch
+button: crunch
+font: plus-jakarta
+swatch: #000000, #272727, #ff640a
+bg-image: linear-gradient(180deg, #000 0%, #000 100%)
+bg-dim: 0
+
+@tokens
+--color-canvas: #000000
+--color-surface: #151515
+--color-elevated: #272727
+--color-raised: #414141
+--color-ink: #ffffff
+--color-ink-muted: #bbbbbb
+--color-ink-subtle: #8c8c8c
+--color-edge: rgba(255,255,255,0.10)
+--color-edge-soft: rgba(255,255,255,0.05)
+--color-accent: #ff640a
+--color-accent-soft: rgba(255,100,10,0.18)
+--color-danger: #c13937

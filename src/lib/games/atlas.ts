@@ -1,6 +1,5 @@
-import { safeFetch } from "@/lib/safe-fetch";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
 import { GameRequestPool } from "./request-pool";
+import { igdbRequest } from "./igdb-client";
 import {
   ATLAS_DETAIL_FIELDS,
   ATLAS_PAGE_SIZE,
@@ -61,12 +60,7 @@ export async function queryIgdb(
           signal?.addEventListener("abort", abort, { once: true });
           const timer = setTimeout(() => controller.abort(), 12_000);
           try {
-            const response = await safeFetch(`${HARBOR_API_BASE}/api/igdb/games`, {
-              method: "POST",
-              headers: { "content-type": "text/plain" },
-              body,
-              signal: controller.signal,
-            });
+            const response = await igdbRequest("games", body, controller.signal);
             if (!response.ok) throw new Error(`IGDB ${response.status}`);
             const data = decodeIgdbRows(await response.json());
             if (!data) throw new Error("Invalid IGDB response");

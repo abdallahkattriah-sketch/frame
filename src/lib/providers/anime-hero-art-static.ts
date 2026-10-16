@@ -1,6 +1,6 @@
 import type { Meta } from "@/lib/cinemeta";
 import { safeFetch } from "@/lib/safe-fetch";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { HARBOR_DATA_BASE } from "@/lib/config/endpoints";
 import { readHeroArtCache, writeHeroArtCache } from "./anime-hero-art-cache";
 
 export type StaticHeroArt = {
@@ -15,7 +15,7 @@ export type StaticHeroArt = {
 };
 
 const SEED_URL = "/anime-hero-art.json";
-const REMOTE_URL = `${HARBOR_API_BASE}/anime-hero-art.json`;
+const REMOTE_URL = `${HARBOR_DATA_BASE}/anime-hero-art.json`;
 const REFRESH_MS = 24 * 60 * 60 * 1000;
 const MIN_KEEP_RATIO = 0.9;
 

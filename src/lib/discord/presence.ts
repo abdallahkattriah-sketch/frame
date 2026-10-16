@@ -1,11 +1,11 @@
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { HARBOR_DATA_BASE } from "@/lib/config/endpoints";
 import type { MangaReadingState } from "@/lib/manga-reading-state";
 import { stripColorTag } from "@/lib/manga/title";
 import { mangaDiscordCover, onMangaCoverResolved } from "./manga-cover";
 
 const IS_TAURI = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
 
-const HARBOR_LOGO = `${HARBOR_API_BASE}/discord/harbordiscord.png`;
+const HARBOR_LOGO = `${HARBOR_DATA_BASE}/discord/harbordiscord.png`;
 // Discord strips buttons that link to its own invites: discord.gg makes it
 // reject the whole activity (presence vanishes), discord.com/invite is dropped
 // silently. A community-invite button needs a redirect on a domain we own.

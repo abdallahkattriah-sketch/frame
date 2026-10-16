@@ -361,6 +361,8 @@ export const DEFAULT: Settings = {
   aiSearchKey: "",
   steamSearchShortcut: true,
   gameAgeRatingAgency: "ESRB",
+  igdbClientId: "",
+  igdbClientSecret: "",
   gameArtworkSelection: "first",
   gameArtworkScreenshots: true,
   gameArtworkCoverIcon: false,

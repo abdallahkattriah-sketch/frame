@@ -3,6 +3,7 @@ import { useSettings } from "@/lib/settings";
 import { useT } from "@/lib/i18n";
 import { Section, Segmented, ToggleRow } from "./shared";
 import { SettingRow } from "./kit";
+import { IgdbKeySetting } from "./igdb-key-setting";
 
 export function GameMetadataSetting() {
   const { settings, update } = useSettings(),
@@ -10,6 +11,7 @@ export function GameMetadataSetting() {
   const policy = artworkImportPolicy(settings);
   return (
     <Section title={t("Games")}>
+      <IgdbKeySetting />
       <SettingRow
         label={t("games.details.agePreference")}
         desc={t("games.details.agePreferenceNote")}
