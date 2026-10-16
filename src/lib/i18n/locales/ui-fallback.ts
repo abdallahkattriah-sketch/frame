@@ -1141,6 +1141,14 @@ const uiFallback: Record<string, string> = {
   "Prefer original-language audio": "Prefer original-language audio",
   "Pick the audio track in the title's original language before your list, so a Japanese film plays in Japanese and a Spanish series in Spanish. Uses TMDB to find the language when the title doesn't say.":
     "Pick the audio track in the title's original language before your list, so a Japanese film plays in Japanese and a Spanish series in Spanish. Uses TMDB to find the language when the title doesn't say.",
+  "Is a new build giving you trouble? Pick an earlier one below and run its installer over your current copy. Your library, settings, and downloads all stay put.":
+    "Is a new build giving you trouble? Pick an earlier one below and run its installer over your current copy. Your library, settings, and downloads all stay put.",
+  "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.":
+    "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.",
+  "Thanks! Submit the GitHub issue that opened to send your rating.":
+    "Thanks! Submit the GitHub issue that opened to send your rating.",
+  "Open the issue again": "Open the issue again",
+  "Send rating on GitHub": "Send rating on GitHub",
 };
 
 export default uiFallback;

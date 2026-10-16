@@ -12,7 +12,7 @@ The app talks to Stremio, addons and most metadata services directly, so the cor
 - Anime metadata from Kitsu and AniZip, stream ranking, local files, Plex, Jellyfin and Emby.
 - TVDB (episode orders, episode lists, artwork, stills, cast, collections), as long as a TVDB API key is set in Settings > Library. Every TVDB request goes straight to `api4.thetvdb.com`; without a key these features stay empty.
 - Watch parties through your own Cloudflare relay (Settings > Relay).
-- In-app updates on Windows and macOS, from this fork's GitHub releases. Builds up to 0.9.201 carry upstream's updater key, so they have to be replaced by hand once with a later release.
+- In-app updates on Windows and macOS, from this fork's GitHub releases. Builds up to 0.9.201 carry upstream's updater key, so they have to be replaced by hand once with a later release. Rolling back to an earlier build and rating a build (as a GitHub issue) work from Settings > Updates.
 - Award badges on movie and show pages (Wikidata plus lists built into the app), anime award badges matched by title (the built-in Crunchyroll, TAAF, Japan Media Arts, Animation Kobe and r/anime lists), and the Discover "Award winners" row, which is built from the built-in award history plus TMDB when a TMDB key is set.
 
 ## What no longer works
@@ -21,7 +21,7 @@ These relied on services hosted at `harbor.site` and its subdomains, which are g
 
 | Feature                                                                                       | Dead service                                                |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Beta and experimental channels, rollback to older builds                                      | `harbor.site/updates/...`                                   |
+| Beta and experimental channels                                                                | `harbor.site/updates/...`                                   |
 | Trakt sign-in and token refresh                                                               | `harbor.site/api/trakt/token`, `/api/trakt/device-token`    |
 | MAL sign-in                                                                                   | `harbor.site/api/mal/token`                                 |
 | Simkl ratings                                                                                 | `harbor.site/api/simkl/ratings`                             |
@@ -29,7 +29,7 @@ These relied on services hosted at `harbor.site` and its subdomains, which are g
 | Anime award badges matched by ID, anime hero art, curated logos, announcements, release notes | static JSON files on `harbor.site`                          |
 | Award images in Discord Rich Presence                                                         | `harbor.site/discord/awards`                                |
 | Shared ad-skip segments and ad reports                                                        | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site`  |
-| Bug reports and feedback from Settings                                                        | `bugs.harbor.site`                                          |
+| Bug reports from Settings                                                                     | `bugs.harbor.site`                                          |
 | Shared subtitle autosync                                                                      | `sync.harbor.site`                                          |
 | Public watch-party relay                                                                      | `pub.harbor.site`                                           |
 | IGDB data in Games, manga source list                                                         | `harbor.site/api/igdb`, `/api/manga-sources`                |

@@ -1,11 +1,13 @@
 #!/usr/bin/env node
-// `node scripts/updater-manifest.mjs <version> <asset-dir> <notes-file>` writes <asset-dir>/latest.json for the Tauri updater.
+// `node scripts/updater-manifest.mjs <version> <asset-dir> <sig-dir> <notes-file>` writes <asset-dir>/latest.json.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const [version, dir, notesFile] = process.argv.slice(2);
-if (!version || !dir || !notesFile) {
-  console.error("usage: node scripts/updater-manifest.mjs <version> <asset-dir> <notes-file>");
+const [version, dir, sigDir, notesFile] = process.argv.slice(2);
+if (!version || !dir || !sigDir || !notesFile) {
+  console.error(
+    "usage: node scripts/updater-manifest.mjs <version> <asset-dir> <sig-dir> <notes-file>",
+  );
   process.exit(1);
 }
 
@@ -18,7 +20,7 @@ const PLATFORMS = {
 
 const platforms = {};
 for (const [key, file] of Object.entries(PLATFORMS)) {
-  const sig = join(dir, `${file}.sig`);
+  const sig = join(sigDir, `${file}.sig`);
   if (!existsSync(join(dir, file)) || !existsSync(sig)) {
     console.error(`missing ${file} or its signature`);
     process.exit(1);

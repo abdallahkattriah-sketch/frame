@@ -3,6 +3,8 @@ import { ExperimentalChangelog } from "@/components/update/experimental-changelo
 import { isLinuxDesktop } from "@/lib/platform";
 import { Section } from "./shared";
 import { UpdatesRow } from "./advanced-panel";
+import { RollbackRow } from "./rollback-row";
+import { BuildFeedback } from "./build-feedback";
 import { BackupRow } from "./backup-row";
 import { SettingsRecoverRow } from "./settings-recover-row";
 import { ExperimentalBuildsSection } from "./experimental-builds-section";
@@ -28,6 +30,8 @@ export function UpdatesPanel() {
           )}
         >
           <UpdatesRow />
+          {!experimentalInstalled && <RollbackRow />}
+          <BuildFeedback />
         </Section>
       )}
 

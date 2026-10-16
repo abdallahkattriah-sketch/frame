@@ -19,7 +19,7 @@ import {
   openHandoffDownload,
   useUpdate,
 } from "@/lib/updater/use-update";
-import { releaseNote, type ReleaseNote } from "@/lib/updater/release-notes";
+import { noteFromMarkdown, releaseNote, type ReleaseNote } from "@/lib/updater/release-notes";
 import { useT } from "@/lib/i18n";
 import { RichNote } from "./rich-notes";
 import { experimentalReleaseNote } from "@/lib/updater/experimental-notes";
@@ -42,15 +42,15 @@ export function UpdateCard() {
     if (u.channel === "experimental") {
       setRich(experimentalReleaseNote(u.version));
     } else if (u.version) {
-      setRich(null);
-      releaseNote(u.version).then((n) => ok && setRich(n));
+      setRich(noteFromMarkdown(u.notes));
+      releaseNote(u.version).then((n) => ok && n && setRich(n));
     } else {
       setRich(null);
     }
     return () => {
       ok = false;
     };
-  }, [u.status, u.version, u.channel]);
+  }, [u.status, u.version, u.channel, u.notes]);
 
   const pct = Math.round(u.progress * 100);
   const determinate = u.totalBytes > 0;

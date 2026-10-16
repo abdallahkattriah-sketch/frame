@@ -343,15 +343,22 @@ jobs:
           SHA: ${{ needs.prepare.outputs.sha }}
         run: |
           set -euo pipefail
-          mkdir upload
-          find artifacts -type f \( -name '*-setup.exe' -o -name '*-setup.exe.sig' -o -name '*.dmg' \
-            -o -name 'Harbor_*.app.tar.gz' -o -name 'Harbor_*.app.tar.gz.sig' -o -name '*.deb' -o -name '*.AppImage' \) \
-            -exec cp {} upload/ \;
+          mkdir upload sigs
+          find artifacts -type f \( -name '*-setup.exe' -o -name '*.dmg' -o -name 'Harbor_*.app.tar.gz' \
+            -o -name '*.deb' -o -name '*.AppImage' \) -exec cp {} upload/ \;
+          # latest.json carries each signature inline, so the .sig files are read here and never published.
+          find artifacts -type f \( -name '*-setup.exe.sig' -o -name 'Harbor_*.app.tar.gz.sig' \) -exec cp {} sigs/ \;
           cp artifacts/Harbor-flatpak-x86_64/Harbor.flatpak "upload/Harbor_${VERSION}_x86_64.flatpak"
           previous="$(git tag --list 'v*' --sort=-v:refname | grep -vx "v$VERSION" | head -n 1 || true)"
           node scripts/release-notes.mjs "${previous:-$(git rev-list --max-parents=0 HEAD | tail -n 1)}" "$SHA" > notes.md
-          node scripts/updater-manifest.mjs "$VERSION" upload notes.md
+          node scripts/updater-manifest.mjs "$VERSION" upload sigs notes.md
           {
+            echo "## Downloads"
+            echo
+            node scripts/release-assets.mjs "$VERSION" $(ls upload)
+            echo
+            echo "## Changes"
+            echo
             cat notes.md
             echo
             echo "macOS: the dmgs are ad-hoc signed, so run \`xattr -dr com.apple.quarantine /Applications/Harbor.app\` after installing. The Intel dmg needs macOS 15 or newer."

@@ -255,6 +255,8 @@ const extra: Record<string, string> = {
     "No se pudo cargar esta lista. Revisa la URL e inténtalo de nuevo.",
   "Couldn't reach harbor.site to load earlier builds. Check your connection and try again.":
     "No se pudo acceder a harbor.site para cargar versiones anteriores. Comprueba tu conexión e inténtalo de nuevo.",
+  "Couldn't reach GitHub to load earlier builds. Check your connection and try again.":
+    "No se pudo acceder a GitHub para cargar versiones anteriores. Comprueba tu conexión e inténtalo de nuevo.",
   "Couldn't reach Trakt": "No se pudo acceder a Trakt",
   "Couldn't reach Trakt. Check your connection and try again.":
     "No se pudo acceder a Trakt. Comprueba tu conexión e inténtalo de nuevo.",
