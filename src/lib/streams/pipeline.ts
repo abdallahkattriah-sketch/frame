@@ -328,7 +328,8 @@ export async function runPipeline(
   const [librarySettled, addonSettled] = await Promise.allSettled([
     fetchLibraryStreams(input.debrids, input.query, signal, libraryListsPromise).then((s) => {
       library = s;
-      emitPartialNow();
+      // An empty listing adds nothing to show, and with preset streams it would publish an empty picker.
+      if (s.length > 0) emitPartialNow();
       return s;
     }),
     presets.length > 0

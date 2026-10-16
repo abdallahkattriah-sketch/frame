@@ -80,6 +80,20 @@ export type Meta = {
   }>;
 };
 
+// A configured addon keeps its settings and keys in the transport path; addonBasesForOrigin finds it again by id.
+function persistableOriginBase(base: string): string | undefined {
+  if (base.startsWith("harbor-plugin://")) return base;
+  let url: URL;
+  try {
+    url = new URL(base);
+  } catch {
+    return undefined;
+  }
+  if (url.username || url.password || url.search || url.hash) return undefined;
+  const path = url.pathname.replace(/\/manifest\.json$/, "").replace(/\/+$/, "");
+  return path ? undefined : base;
+}
+
 export function persistableAddonOrigin(origin: unknown): AddonOrigin | undefined {
   if (!origin || typeof origin !== "object") return undefined;
   const value = origin as { id?: unknown; name?: unknown; logo?: unknown; base?: unknown };
@@ -87,7 +101,7 @@ export function persistableAddonOrigin(origin: unknown): AddonOrigin | undefined
   // The base is what a saved row is resolved and played through: an addon's manifest address, or
   // the plugin catalogue it came from. Without it a plugin row saved to the library loses which
   // plugin listed it, and playing it asks every plugin instead of that one.
-  const base = typeof value.base === "string" && value.base ? value.base : undefined;
+  const base = typeof value.base === "string" ? persistableOriginBase(value.base) : undefined;
   return {
     id: value.id,
     name: typeof value.name === "string" && value.name ? value.name : value.id,
