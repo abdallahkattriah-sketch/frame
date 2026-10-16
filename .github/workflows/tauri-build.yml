@@ -250,9 +250,8 @@ jobs:
       - name: Build Linux system packages
         if: contains(matrix.platform.runner, 'ubuntu')
         env:
-          # linuxdeploy's bundled strip cannot read Ubuntu 24.04's .relr.dyn sections, and runners have no FUSE.
-          NO_STRIP: "true"
-          APPIMAGE_EXTRACT_AND_RUN: "1"
+          # linuxdeploy resolves the bundled JRE's libnio.so and fails unless it can see libjvm.so in lib/server.
+          LD_LIBRARY_PATH: ${{ github.workspace }}/src-tauri/resources/capstan/runtime/lib/server:${{ github.workspace }}/src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage/Harbor.AppDir/usr/lib/Harbor/resources/capstan/runtime/lib/server
         run: pnpm tauri:build:linux-system --target ${{ matrix.platform.target }} --bundles deb,appimage --verbose
 
       - name: Build verified Windows managed installer
