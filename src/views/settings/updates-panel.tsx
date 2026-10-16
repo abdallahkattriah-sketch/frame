@@ -1,6 +1,6 @@
 import { useT } from "@/lib/i18n";
 import { ExperimentalChangelog } from "@/components/update/experimental-changelog";
-import { isLinuxDesktop } from "@/lib/platform";
+import { useInAppUpdatesSupported } from "@/lib/updater/in-app-updates";
 import { Section } from "./shared";
 import { UpdatesRow } from "./advanced-panel";
 import { RollbackRow } from "./rollback-row";
@@ -11,11 +11,9 @@ import { ExperimentalBuildsSection } from "./experimental-builds-section";
 import { readBetaReturnContext } from "@/lib/updater/beta-return";
 import { useExperimentalAccess } from "@/lib/updater/experimental-access";
 
-const isTauri = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
-
 export function UpdatesPanel() {
   const t = useT();
-  const supportsInAppUpdates = isTauri && !isLinuxDesktop();
+  const supportsInAppUpdates = useInAppUpdatesSupported();
   const experimentalInstalled = readBetaReturnContext(__APP_VERSION__) !== null;
   const experimentalAccess = useExperimentalAccess();
 

@@ -8,6 +8,7 @@ export type HandoffProbe = {
   installDir: string;
   payloadVersion: number;
   platformKey: string;
+  appImage?: boolean;
 };
 
 export type HandoffPlan = {

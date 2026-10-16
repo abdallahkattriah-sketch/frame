@@ -16,6 +16,8 @@ const PLATFORMS = {
   "windows-x86_64": `Harbor_${version}_x64-setup.exe`,
   "darwin-aarch64": `Harbor_${version}_aarch64.app.tar.gz`,
   "darwin-x86_64": `Harbor_${version}_x86_64.app.tar.gz`,
+  "linux-x86_64": `Harbor_${version}_amd64.AppImage`,
+  "linux-aarch64": `Harbor_${version}_aarch64.AppImage`,
 };
 
 const platforms = {};
