@@ -134,6 +134,7 @@ export default defineConfig(({ mode }) => {
           "www.googleapis.com",
           "www.wikidata.org",
           "api.deepseek.com",
+          "raw.githubusercontent.com",
         ].map((host) => [
           `/api-proxy/${host}`,
           {

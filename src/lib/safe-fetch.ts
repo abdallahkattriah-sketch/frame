@@ -84,6 +84,7 @@ const PROXY_HOSTS = new Set([
   "api.deepseek.com",
   "api.deezer.com",
   "api.igdb.com",
+  "raw.githubusercontent.com",
   "api.steampowered.com",
   "images.igdb.com",
   "store.steampowered.com",
@@ -122,6 +123,7 @@ const DEV_PROXY_HOSTS = new Set([
   "www.googleapis.com",
   "www.wikidata.org",
   "api.deepseek.com",
+  "raw.githubusercontent.com",
 ]);
 
 const PROXY_SUFFIXES = [

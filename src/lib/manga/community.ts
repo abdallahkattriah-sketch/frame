@@ -1,5 +1,5 @@
 import { safeFetch } from "@/lib/safe-fetch";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { HARBOR_DATA_BASE } from "@/lib/config/endpoints";
 
 export type CommunitySource = {
   id: string;
@@ -13,7 +13,7 @@ export type CommunitySource = {
   order?: number;
 };
 
-const ENDPOINT = `${HARBOR_API_BASE}/api/manga-sources`;
+const ENDPOINT = `${HARBOR_DATA_BASE}/manga-sources.json`;
 const CACHE_KEY = "harbor.manga.catalog.v1";
 
 const SEED: CommunitySource[] = [];
@@ -51,7 +51,7 @@ export function subscribeCommunity(cb: () => void): () => void {
 
 export async function refreshCommunityCatalog(): Promise<CommunitySource[]> {
   try {
-    const res = await safeFetch(`${ENDPOINT}/list`);
+    const res = await safeFetch(ENDPOINT);
     if (!res.ok) return communityCatalog();
     const data = await res.json();
     if (Array.isArray(data)) {
@@ -69,20 +69,12 @@ export async function refreshCommunityCatalog(): Promise<CommunitySource[]> {
   }
 }
 
-export async function suggestSource(input: {
+// The list is a read-only file in the repo, so suggestions go through a pull request instead.
+export async function suggestSource(_input: {
   name: string;
   url: string;
   note?: string;
   icon?: string;
 }): Promise<boolean> {
-  try {
-    const res = await safeFetch(`${ENDPOINT}/suggest`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(input),
-    });
-    return res.ok;
-  } catch {
-    return false;
-  }
+  return false;
 }

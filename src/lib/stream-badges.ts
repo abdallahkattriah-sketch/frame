@@ -1,7 +1,6 @@
 import { useSyncExternalStore } from "react";
 import { setItemWithRecovery } from "@/lib/storage-recovery";
 import type { BadgeKind } from "@/components/format-badge";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
 
 const KEY = "harbor.streamBadges.v1";
 
@@ -475,70 +474,8 @@ const ELITE = "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badge
 const NSVG =
   "https://raw.githubusercontent.com/dwivedisankalp97/nuvio-svg-badges/main/dist/v17/svg";
 const NARD = "https://raw.githubusercontent.com/vowl313/NardBadges/refs/heads/main";
-const MINIMAL = `${HARBOR_API_BASE}/badges/minimal`;
-const ABSTRACT = `${HARBOR_API_BASE}/badges/abstract`;
-const HARBORLIGHT = `${HARBOR_API_BASE}/badges/harbor-light`;
-const HARBORCOLOR = `${HARBOR_API_BASE}/badges/harbor-color`;
 
 export const COMMUNITY_PACKS: CommunityPack[] = [
-  {
-    id: "minimal",
-    kind: "nuvio",
-    name: "Minimal",
-    author: "Harbor",
-    description: "Clean minimal icons for common tags",
-    count: "101 badges",
-    previews: [
-      `${MINIMAL}/res-4k.webp`,
-      `${MINIMAL}/aud-atmos.webp`,
-      `${MINIMAL}/vis-hdr10plus.webp`,
-    ],
-    url: `${MINIMAL}.json`,
-  },
-  {
-    id: "abstract",
-    kind: "nuvio",
-    name: "Abstract",
-    author: "Harbor",
-    description: "Sleek abstract icons for common tags",
-    count: "67 badges",
-    previews: [
-      `${ABSTRACT}/4k-ultra-hd.webp`,
-      `${ABSTRACT}/dolby-atmos.webp`,
-      `${ABSTRACT}/hdr10-plus.webp`,
-    ],
-    url: `${ABSTRACT}.json`,
-  },
-  {
-    id: "harbor-light",
-    kind: "nuvio",
-    name: "Harbor Light",
-    author: "Harbor",
-    description:
-      "Premium light set spanning resolutions, audio, HDR, release tiers, torrent groups, quality ranks and languages.",
-    count: "206 badges",
-    previews: [
-      `${HARBORLIGHT}/res-4k.webp`,
-      `${HARBORLIGHT}/aud-atmos.webp`,
-      `${HARBORLIGHT}/vis-dv.webp`,
-    ],
-    url: `${HARBORLIGHT}.json`,
-  },
-  {
-    id: "harbor-color",
-    kind: "nuvio",
-    name: "Harbor Color",
-    author: "Harbor",
-    description:
-      "Full-color edition of the premium set: vivid resolution, audio, HDR, release tier and streaming marks.",
-    count: "206 badges",
-    previews: [
-      `${HARBORCOLOR}/res-4k.webp`,
-      `${HARBORCOLOR}/aud-atmos.webp`,
-      `${HARBORCOLOR}/stream-netflix.webp`,
-    ],
-    url: `${HARBORCOLOR}.json`,
-  },
   {
     id: "nardbadges",
     kind: "nuvio",

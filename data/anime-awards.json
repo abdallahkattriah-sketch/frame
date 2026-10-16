@@ -1,0 +1,6639 @@
+{
+  "updatedAt": "2026-10-16",
+  "entries": [
+    {
+      "title": "∀ Gundam",
+      "ids": {
+        "kitsu": 74
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1999,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "3-gatsu no Lion 2nd Season",
+      "ids": {
+        "kitsu": 13401
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "A Bite of Bone",
+      "ids": {
+        "kitsu": 46195
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2022,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "A Child's Metaphysics'",
+      "ids": {
+        "kitsu": 5296
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2008,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "A Country Between the World",
+      "ids": {
+        "kitsu": 3679
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2006,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "A Letter to Momo",
+      "ids": {
+        "kitsu": 6160
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2011,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "A Silent Voice",
+      "ids": {
+        "kitsu": 10028
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2017,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2017,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2017,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "A Whisker Away",
+      "ids": {
+        "kitsu": 42965
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2021,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "ACCA: 13-ku Kansatsu-ka",
+      "ids": {
+        "kitsu": 12202
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "ACIDMAN",
+      "ids": {
+        "kitsu": 5338
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2004,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "After the Rain",
+      "ids": {
+        "kitsu": 13277
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Aikatsu Friends!",
+      "ids": {
+        "kitsu": 41015
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Aikatsu! 10th STORY: Mirai e no STARWAY (2023)",
+      "ids": {
+        "kitsu": 49722
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Airy Me",
+      "ids": {
+        "kitsu": 8713
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2013,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Akudama Drive",
+      "ids": {
+        "kitsu": 43067
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Angelic Layer",
+      "ids": {
+        "kitsu": 33
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2001,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Animation Runner Kuromi",
+      "ids": {
+        "kitsu": 1617
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2002,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Animation Runner Kuromi 2",
+      "ids": {
+        "kitsu": 1618
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2005,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Anthem of the Heart",
+      "ids": {
+        "kitsu": 10056
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Araburu Kisetsu no Otome-domo yo",
+      "ids": {
+        "kitsu": 42025
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "ARIA The BENEDIZIONE",
+      "ids": {
+        "kitsu": 44171
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Astro Boy",
+      "ids": {
+        "kitsu": 2507
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2004,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Asura",
+      "ids": {
+        "kitsu": 5348
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2012,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Attack on Titan",
+      "ids": {
+        "kitsu": 7442
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_director",
+          "categoryName": "Best Director",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "global_impact",
+          "categoryName": "Global Impact",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2013,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Attack on Titan: The Final Season Part 1",
+      "ids": {
+        "kitsu": 46038
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_score",
+          "categoryName": "Best Score",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_antagonist",
+          "categoryName": "Best Antagonist",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Attack on Titan: The Final Season Part 2",
+      "ids": {
+        "kitsu": 44240
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_score",
+          "categoryName": "Best Score",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_song",
+          "categoryName": "Best Anime Song",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_main_character",
+          "categoryName": "Best Main Character",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Baja's Studio",
+      "ids": {
+        "kitsu": 13883
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_short",
+          "categoryName": "Short of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "BanG Dream! It's MyGO!!!!!",
+      "ids": {
+        "kitsu": 47291
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Beastars",
+      "ids": {
+        "kitsu": 42147
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Believe in It",
+      "ids": {
+        "kitsu": 10374
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1998,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Birthday Boy",
+      "ids": {
+        "kitsu": 4112
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2004,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Blood: The Last Vampire",
+      "ids": {
+        "kitsu": 372
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2000,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Bloom Into You",
+      "ids": {
+        "kitsu": 41240
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Bloomed Words",
+      "ids": {
+        "kitsu": 42721
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2006,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Blue Box",
+      "ids": {
+        "kitsu": 48239
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Blue Submarine No. 6",
+      "ids": {
+        "kitsu": 941
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1999,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Bocchi the Rock!",
+      "ids": {
+        "kitsu": 44196
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Buddy Daddies",
+      "ids": {
+        "kitsu": 46650
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_original_anime",
+          "categoryName": "Best Original Anime",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Cardcaptor Sakura The Movie",
+      "ids": {
+        "kitsu": 338
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1999,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Cardcaptor Sakura The Movie 2: The Sealed Card",
+      "ids": {
+        "kitsu": 339
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2000,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Cardcaptor Sakura: Clear Card",
+      "ids": {
+        "kitsu": 12237
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Cat Soup",
+      "ids": {
+        "kitsu": 556
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2001,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Chainsaw Man",
+      "ids": {
+        "kitsu": 43806
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_new_series",
+          "categoryName": "Best New Series",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Chainsaw Man – The Movie: Reze Arc",
+      "ids": {
+        "kitsu": 48323
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_song",
+          "categoryName": "Best Anime Song",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Chihayafuru 3",
+      "ids": {
+        "kitsu": 40998
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Children of the Sea",
+      "ids": {
+        "kitsu": 41489
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2020,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "CITY THE ANIMATION",
+      "ids": {
+        "kitsu": 49216
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Cocolors",
+      "ids": {
+        "kitsu": 12642
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2018,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Code Geass R2",
+      "ids": {
+        "kitsu": 5801
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2008,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Code Geass: Lelouch of the Rebellion",
+      "ids": {
+        "kitsu": 1415
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2007,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2007,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Colorful",
+      "ids": {
+        "kitsu": 746
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2010,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Combustible",
+      "ids": {
+        "kitsu": 7003
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2012,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Cowboy Bebop",
+      "ids": {
+        "kitsu": 1
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1998,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Crayon Shin-chan: Serious Battle! Robot Dad Strikes Back",
+      "ids": {
+        "kitsu": 8286
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2014,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Crayon Shin-chan: The Storm Called: The Battle of the Warring States",
+      "ids": {
+        "kitsu": 3225
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2002,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "CRYSTAL CLEAR",
+      "ids": {
+        "kitsu": 14011
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_short",
+          "categoryName": "Short of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Cyberpunk: Edgerunners",
+      "ids": {
+        "kitsu": 43248
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_suspense",
+          "categoryName": "Best Suspense",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dandadan",
+      "ids": {
+        "kitsu": 48269
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_song",
+          "categoryName": "Best Anime Song",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Darling in the Franxx",
+      "ids": {
+        "kitsu": 13600
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Daughter",
+      "ids": {
+        "kitsu": 42203
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2020,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Deaimon",
+      "ids": {
+        "kitsu": 44428
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "ids": {
+        "kitsu": 41370
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_boy",
+          "categoryName": "Best Boy",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2020,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba – The Movie: Infinity Castle",
+      "ids": {
+        "kitsu": 49001
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_film",
+          "categoryName": "Film of the Year",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_score",
+          "categoryName": "Best Score",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2026,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba – The Movie: Mugen Train",
+      "ids": {
+        "kitsu": 42586
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_film",
+          "categoryName": "Film of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
+      "ids": {
+        "kitsu": 44081
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_director",
+          "categoryName": "Best Director",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_fantasy",
+          "categoryName": "Best Fantasy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+      "ids": {
+        "kitsu": 47635
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_continuing_series",
+          "categoryName": "Best Continuing Series",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
+      "ids": {
+        "kitsu": 45249
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_score",
+          "categoryName": "Best Score",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+      "ids": {
+        "kitsu": 45866
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_fantasy",
+          "categoryName": "Best Fantasy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_art_direction",
+          "categoryName": "Best Art Direction",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dennō Coil",
+      "ids": {
+        "kitsu": 1959
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2008,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2007,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Detective Conan: Strategy Above the Depths",
+      "ids": {
+        "kitsu": 1351
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2006,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Detroit Metal City",
+      "ids": {
+        "kitsu": 3202
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2009,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Devilman Crybaby",
+      "ids": {
+        "kitsu": 13230
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Diebuster",
+      "ids": {
+        "kitsu": 892
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2007,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2005,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Do It Yourself!!",
+      "ids": {
+        "kitsu": 44237
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Donguri's House",
+      "ids": {
+        "kitsu": 4334
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1997,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Doraemon: Nobita's South Sea Adventure",
+      "ids": {
+        "kitsu": 2427
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1998,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dozens of Norths",
+      "ids": {
+        "kitsu": 46194
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2022,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dr. Stone",
+      "ids": {
+        "kitsu": 42080
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_protagonist",
+          "categoryName": "Best Protagonist",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dragon Ball Super",
+      "ids": {
+        "kitsu": 10879
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_continuing_series",
+          "categoryName": "Best Continuing Series",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dragon Pilot: Hisone and Masotan",
+      "ids": {
+        "kitsu": 14042
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2019,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dragon Quest: Dai no Daibouken (2020)",
+      "ids": {
+        "kitsu": 42900
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_adventure",
+          "categoryName": "Best Adventure",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dungeon Meshi",
+      "ids": {
+        "kitsu": 46320
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V: Houjou no Megami-hen",
+      "ids": {
+        "kitsu": 48216
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_adventure",
+          "categoryName": "Best Adventure",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Eden of the East",
+      "ids": {
+        "kitsu": 4211
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2010,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2009,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Eiga Daisuki Pompo-san",
+      "ids": {
+        "kitsu": 43046
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "ELEMI'",
+      "ids": {
+        "kitsu": 5094
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2009,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Erased",
+      "ids": {
+        "kitsu": 11110
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_antagonist",
+          "categoryName": "Best Antagonist",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Eureka Seven",
+      "ids": {
+        "kitsu": 212
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2006,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Evangelion: 1.0 You Are (Not) Alone",
+      "ids": {
+        "kitsu": 2519
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2008,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2008,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Evangelion: 3.0+1.0 Thrice Upon a Time",
+      "ids": {
+        "kitsu": 3252
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2022,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2022,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Evangelion: 3.33 You Can (Not) Redo",
+      "ids": {
+        "kitsu": 3251
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2013,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Flip Flappers",
+      "ids": {
+        "kitsu": 11997
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_adventure",
+          "categoryName": "Best Adventure",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Flying Witch",
+      "ids": {
+        "kitsu": 11317
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Fortune Favors Lady Nikuko",
+      "ids": {
+        "kitsu": 44395
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2022,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Franz Kafka's A Country Doctor",
+      "ids": {
+        "kitsu": 2938
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2007,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Frieren: Beyond Journey's End",
+      "ids": {
+        "kitsu": 46474
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_director",
+          "categoryName": "Best Director",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_supporting",
+          "categoryName": "Best Supporting",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2025,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_adventure",
+          "categoryName": "Best Adventure",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "From up on Poppy Hill",
+      "ids": {
+        "kitsu": 6000
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2012,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2012,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Frozen",
+      "ids": {
+        "kitsu": 8603
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2015,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Fruits Basket",
+      "ids": {
+        "kitsu": 99
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Fullmetal Alchemist",
+      "ids": {
+        "kitsu": 100
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2004,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Fullmetal Alchemist the Movie: Conqueror of Shamballa",
+      "ids": {
+        "kitsu": 394
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2006,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Fumiko's Confession",
+      "ids": {
+        "kitsu": 5234
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2010,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Futon",
+      "ids": {
+        "kitsu": 10171
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2012,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Gachiakuta",
+      "ids": {
+        "kitsu": 48946
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_new_series",
+          "categoryName": "Best New Series",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Gankutsuou: The Count of Monte Cristo",
+      "ids": {
+        "kitsu": 214
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2005,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2005,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Ghost in the Shell",
+      "ids": {
+        "kitsu": 25
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1996,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Ghost in the Shell 2: Innocence",
+      "ids": {
+        "kitsu": 430
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2005,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2004,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Ghost in the Shell: Stand Alone Complex",
+      "ids": {
+        "kitsu": 429
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2002,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ghost in the Shell: Stand Alone Complex - Solid State Society",
+      "ids": {
+        "kitsu": 1406
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2007,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ghost in the Shell: The New Movie",
+      "ids": {
+        "kitsu": 9721
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2015,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Ginga Tokkyuu Milky☆Subway",
+      "ids": {
+        "kitsu": 49704
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Giovanni's Island",
+      "ids": {
+        "kitsu": 7801
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2014,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Girls' Last Tour",
+      "ids": {
+        "kitsu": 13597
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Glassy Ocean",
+      "ids": {
+        "kitsu": 1082
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1998,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Golden Time",
+      "ids": {
+        "kitsu": 7708
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2013,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Gon, the Little Fox",
+      "ids": {
+        "kitsu": 46950
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2020,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Grand-Ma",
+      "ids": {
+        "kitsu": 14190
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2003,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Grrl Power!",
+      "ids": {
+        "kitsu": 2547
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2004,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Gundam Wing: Endless Waltz",
+      "ids": {
+        "kitsu": 7964
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1997,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Gurren Lagann",
+      "ids": {
+        "kitsu": 1801
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2007,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Haikyu!! To the Top",
+      "ids": {
+        "kitsu": 42059
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_boy",
+          "categoryName": "Best Boy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Haikyuu!! (S2 & S3)",
+      "ids": {
+        "kitsu": 8133
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hakumei no Tsubasa",
+      "ids": {
+        "kitsu": 42869
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_short",
+          "categoryName": "Short of the Year",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_adventure",
+          "categoryName": "Best Adventure",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hanada Shōnen-shi",
+      "ids": {
+        "kitsu": 1804
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2003,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Haré+Guu FINAL",
+      "ids": {
+        "kitsu": 230
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2004,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Harmonia feat. Makoto",
+      "ids": {
+        "kitsu": 42768
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2018,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hatsune Miku",
+      "ids": {
+        "kitsu": 6297
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2008,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Haven't You Heard? I'm Sakamoto",
+      "ids": {
+        "kitsu": 11751
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hetalia: World Series",
+      "ids": {
+        "kitsu": 5351
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2011,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hidamari no Ki",
+      "ids": {
+        "kitsu": 2456
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2000,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hikaru ga Shinda Natsu",
+      "ids": {
+        "kitsu": 48893
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hime-sama, \"Goumon\" no Jikan desu",
+      "ids": {
+        "kitsu": 47656
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Hinamatsuri",
+      "ids": {
+        "kitsu": 14018
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Horimiya",
+      "ids": {
+        "kitsu": 43545
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Horimiya: The Missing Pieces",
+      "ids": {
+        "kitsu": 47234
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Howl's Moving Castle",
+      "ids": {
+        "kitsu": 395
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2005,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "jmaf",
+          "year": 2004,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "HUGtto! Precure",
+      "ids": {
+        "kitsu": 13972
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "In a pig's eye",
+      "ids": {
+        "kitsu": 5975
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2010,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "In the Attic",
+      "ids": {
+        "kitsu": 46379
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2009,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "In This Corner of the World",
+      "ids": {
+        "kitsu": 7234
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2018,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2018,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Infinite Ryvius",
+      "ids": {
+        "kitsu": 548
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2000,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Inuyasha",
+      "ids": {
+        "kitsu": 224
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2002,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Invisible",
+      "ids": {
+        "kitsu": 49937
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2019,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "JoJo's Bizarre Adventure: Golden Wind",
+      "ids": {
+        "kitsu": 41410
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Jujutsu Kaisen",
+      "ids": {
+        "kitsu": 42765
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_director",
+          "categoryName": "Best Director",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_girl",
+          "categoryName": "Best Girl",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_antagonist",
+          "categoryName": "Best Antagonist",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_fight",
+          "categoryName": "Best Fight",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_supporting",
+          "categoryName": "Best Supporting",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2022,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Jujutsu Kaisen 0",
+      "ids": {
+        "kitsu": 44212
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_film",
+          "categoryName": "Film of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Jujutsu Kaisen 2nd Season",
+      "ids": {
+        "kitsu": 45857
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "K-On! The Movie",
+      "ids": {
+        "kitsu": 5810
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2012,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "K-On!!",
+      "ids": {
+        "kitsu": 4240
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2011,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2010,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Kaguya-sama Season 2",
+      "ids": {
+        "kitsu": 42632
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kaguya-sama: Love Is War",
+      "ids": {
+        "kitsu": 41373
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_girl",
+          "categoryName": "Best Girl",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_couple",
+          "categoryName": "Best Couple",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kaguya-sama: Love Is War – Ultra Romantic",
+      "ids": {
+        "kitsu": 43691
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kaiba",
+      "ids": {
+        "kitsu": 3201
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2008,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kaidohryoku REAL",
+      "ids": {
+        "kitsu": 10277
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1998,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kamichu!",
+      "ids": {
+        "kitsu": 7763
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2005,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Karas",
+      "ids": {
+        "kitsu": 356
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2006,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Keep Your Hands Off Eizouken!",
+      "ids": {
+        "kitsu": 42343
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_director",
+          "categoryName": "Best Director",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2021,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2021,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kemono Friends",
+      "ids": {
+        "kitsu": 12707
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2018,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Key the Metal Idol",
+      "ids": {
+        "kitsu": 1307
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1996,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kimi ni Todoke 3RD SEASON",
+      "ids": {
+        "kitsu": 47905
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kimi no Iro",
+      "ids": {
+        "kitsu": 46809
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kimi to, Nami ni Noretara",
+      "ids": {
+        "kitsu": 42031
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kimi wa Houkago Insomnia",
+      "ids": {
+        "kitsu": 45746
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kiznaiver",
+      "ids": {
+        "kitsu": 11437
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kobayashi-san Chi no Maidragon S",
+      "ids": {
+        "kitsu": 44326
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Komaneko",
+      "ids": {
+        "kitsu": 4984
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2003,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Komi Can't Communicate",
+      "ids": {
+        "kitsu": 44551
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "KUDAN",
+      "ids": {
+        "kitsu": 5295
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2008,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Kuroko's Basketball",
+      "ids": {
+        "kitsu": 6595
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2013,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "La Maison en petits cubes",
+      "ids": {
+        "kitsu": 4073
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2008,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Land of the Lustrous",
+      "ids": {
+        "kitsu": 13521
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_cgi",
+          "categoryName": "Best CGI",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Lazarus",
+      "ids": {
+        "kitsu": 47778
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_original_anime",
+          "categoryName": "Best Original Anime",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Legend of the Millennium Dragon",
+      "ids": {
+        "kitsu": 5354
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2011,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Liz and the Blue Bird",
+      "ids": {
+        "kitsu": 13618
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Look Back",
+      "ids": {
+        "kitsu": 48541
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_film",
+          "categoryName": "Film of the Year",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2025,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2025,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Love Live!",
+      "ids": {
+        "kitsu": 11745
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2014,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Love Live! The School Idol Movie",
+      "ids": {
+        "kitsu": 8531
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2016,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2016,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Lupin III: The Woman Called Fujiko Mine",
+      "ids": {
+        "kitsu": 6910
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2012,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Lycoris Recoil",
+      "ids": {
+        "kitsu": 45705
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_original_anime",
+          "categoryName": "Best Original Anime",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Macross Frontier",
+      "ids": {
+        "kitsu": 3113
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2009,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Macross Frontier: Sayonara no Tsubasa",
+      "ids": {
+        "kitsu": 4903
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2011,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Made in Abyss",
+      "ids": {
+        "kitsu": 13273
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_score",
+          "categoryName": "Best Score",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Magical Shopping Arcade Abenobashi",
+      "ids": {
+        "kitsu": 7665
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2002,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mai Mai Miracle",
+      "ids": {
+        "kitsu": 3921
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2010,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Makeine: Too Many Losing Heroines!",
+      "ids": {
+        "kitsu": 48312
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Man on the Chair",
+      "ids": {
+        "kitsu": 43757
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2014,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "March Comes in Like a Lion",
+      "ids": {
+        "kitsu": 11380
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_continuing_series",
+          "categoryName": "Best Continuing Series",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mashle: Magic and Muscles The Divine Visionary Candidate Exam Arc",
+      "ids": {
+        "kitsu": 47671
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mayutoro The Toons",
+      "ids": {
+        "kitsu": 6091
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2005,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Medalist",
+      "ids": {
+        "kitsu": 47454
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Melancholy of Haruhi-chan Suzumiya",
+      "ids": {
+        "kitsu": 3939
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2009,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Millennium Actress",
+      "ids": {
+        "kitsu": 923
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2003,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2003,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Mind Game",
+      "ids": {
+        "kitsu": 775
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2004,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Mini Cartoon ~Knyacki~",
+      "ids": {
+        "kitsu": 49729
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1997,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Miss Kobayashi's Dragon Maid",
+      "ids": {
+        "kitsu": 12243
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mob Psycho 100",
+      "ids": {
+        "kitsu": 11578
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_fight",
+          "categoryName": "Best Fight",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mob Psycho 100 II",
+      "ids": {
+        "kitsu": 41071
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mobile Suit Gundam GQuuuuuuX",
+      "ids": {
+        "kitsu": 49386
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2026,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mobile Suit Gundam Seed",
+      "ids": {
+        "kitsu": 72
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2004,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2003,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Mobile Suit Gundam Unicorn",
+      "ids": {
+        "kitsu": 4525
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2011,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2012,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Monogatari Series: Off & Monster Season",
+      "ids": {
+        "kitsu": 48434
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_score",
+          "categoryName": "Best Soundtrack",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_character",
+          "categoryName": "Character of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mononoke: Karakasa",
+      "ids": {
+        "kitsu": 46188
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Moom",
+      "ids": {
+        "kitsu": 9146
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2017,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mr. Stain on Junk Alley",
+      "ids": {
+        "kitsu": 3070
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2003,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mt. Head",
+      "ids": {
+        "kitsu": 1224
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2002,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Mushoku Tensei: Isekai Ittara Honki Dasu (Part 1 and Part 2)",
+      "ids": {
+        "kitsu": 43907
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_adventure",
+          "categoryName": "Best Adventure",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Muybridge's Strings",
+      "ids": {
+        "kitsu": 6294
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2011,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Hero Academia",
+      "ids": {
+        "kitsu": 11469
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_boy",
+          "categoryName": "Best Boy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_boy",
+          "categoryName": "Best Boy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_girl",
+          "categoryName": "Best Girl",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_protagonist",
+          "categoryName": "Best Protagonist",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_protagonist",
+          "categoryName": "Best Protagonist",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_antagonist",
+          "categoryName": "Best Antagonist",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_antagonist",
+          "categoryName": "Best Antagonist",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_fight",
+          "categoryName": "Best Fight",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Hero Academia: Final Season",
+      "ids": {
+        "kitsu": 49279
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_supporting",
+          "categoryName": "Best Supporting",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Hero Academia: Two Heroes",
+      "ids": {
+        "kitsu": 14084
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_film",
+          "categoryName": "Film of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Home",
+      "ids": {
+        "kitsu": 12714
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2015,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Love",
+      "ids": {
+        "kitsu": 81
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2006,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Milk Cup Cow",
+      "ids": {
+        "kitsu": 45706
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2014,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Neighbors the Yamadas",
+      "ids": {
+        "kitsu": 379
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1999,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "My Next Life as a Villainess: All Routes Lead to Doom!",
+      "ids": {
+        "kitsu": 42277
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_protagonist",
+          "categoryName": "Best Protagonist",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Nasu: A Migratory Bird with Suitcase",
+      "ids": {
+        "kitsu": 2803
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2008,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Negative Space",
+      "ids": {
+        "kitsu": 42775
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2018,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Neon Genesis Evangelion",
+      "ids": {
+        "kitsu": 21
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1997,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 1996,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "New PANTY & STOCKING with GARTERBELT",
+      "ids": {
+        "kitsu": 46227
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_score",
+          "categoryName": "Best Soundtrack",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "New Translation Zeta Gundam: Heirs to the Stars",
+      "ids": {
+        "kitsu": 1772
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2005,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Ninja Kamui",
+      "ids": {
+        "kitsu": 46224
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_original_anime",
+          "categoryName": "Best Original Anime",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ninja to Koroshiya no Futarigurashi",
+      "ids": {
+        "kitsu": 48839
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "NOMAD: Megalo Box 2",
+      "ids": {
+        "kitsu": 42720
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Non Non Biyori: Nonstop",
+      "ids": {
+        "kitsu": 42349
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Non Non Biyori: Vacation",
+      "ids": {
+        "kitsu": 13535
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Nostalgia",
+      "ids": {
+        "kitsu": 47737
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2001,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ochibi-san",
+      "ids": {
+        "kitsu": 48008
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Odd Taxi",
+      "ids": {
+        "kitsu": 43932
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_director",
+          "categoryName": "Best Director",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_protagonist",
+          "categoryName": "Best Protagonist",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2022,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ojarumaru 2",
+      "ids": {
+        "kitsu": 3618
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1999,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Okko's Inn",
+      "ids": {
+        "kitsu": 41406
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2019,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "One Piece",
+      "ids": {
+        "kitsu": 12
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_continuing_series",
+          "categoryName": "Best Continuing Series",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_continuing_series",
+          "categoryName": "Best Continuing Series",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_continuing_series",
+          "categoryName": "Best Continuing Series",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_main_character",
+          "categoryName": "Best Main Character",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "ONE PIECE FAN LETTER",
+      "ids": {
+        "kitsu": 49259
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_short",
+          "categoryName": "Short of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "One Piece Film: Red",
+      "ids": {
+        "kitsu": 45513
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2023,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2023,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ongaku",
+      "ids": {
+        "kitsu": 43234
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2020,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Onii-chan wa Oshimai!",
+      "ids": {
+        "kitsu": 46077
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Oshi no Ko",
+      "ids": {
+        "kitsu": 46170
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_song",
+          "categoryName": "Best Anime Song",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2024,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 1999,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Paprika",
+      "ids": {
+        "kitsu": 1752
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2007,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2007,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Patema Inverted",
+      "ids": {
+        "kitsu": 6742
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2013,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Penguin Highway",
+      "ids": {
+        "kitsu": 41007
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2019,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Phantasy Star Online",
+      "ids": {
+        "kitsu": 11200
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2001,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "PIKA PIKA",
+      "ids": {
+        "kitsu": 10208
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2006,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "PLUTO",
+      "ids": {
+        "kitsu": 13563
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_suspense",
+          "categoryName": "Best Suspense",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Pokémon: Mewtwo Strikes Back",
+      "ids": {
+        "kitsu": 41871
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1998,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Ponyo",
+      "ids": {
+        "kitsu": 2624
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2009,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2009,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Princess Arete",
+      "ids": {
+        "kitsu": 918
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2002,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Princess Mononoke",
+      "ids": {
+        "kitsu": 142
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1997,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        },
+        {
+          "source": "animation_kobe",
+          "year": 1997,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Puella Magi Madoka Magica",
+      "ids": {
+        "kitsu": 5853
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2012,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2011,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2011,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Puella Magi Madoka Magica: Rebellion",
+      "ids": {
+        "kitsu": 6638
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2014,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "RahXephon",
+      "ids": {
+        "kitsu": 143
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2002,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Rakugo Shinjuu",
+      "ids": {
+        "kitsu": 10051
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ranking of Kings",
+      "ids": {
+        "kitsu": 43849
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_boy",
+          "categoryName": "Best Boy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+      "ids": {
+        "kitsu": 41056
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_girl",
+          "categoryName": "Best Girl",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Re:Zero − Starting Life in Another World",
+      "ids": {
+        "kitsu": 11209
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_fantasy",
+          "categoryName": "Best Fantasy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_isekai",
+          "categoryName": "Best Isekai",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_isekai",
+          "categoryName": "Best Isekai",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_girl",
+          "categoryName": "Best Girl",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Revolutionary Girl Utena",
+      "ids": {
+        "kitsu": 403
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1997,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "S.O.S",
+      "ids": {
+        "kitsu": 6589
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2000,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Saiki Kusuo no Ψ-nan",
+      "ids": {
+        "kitsu": 8806
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_short",
+          "categoryName": "Short of the Year",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Sakura Taisen 2 ~Kimi, Shinitamou koto Nakare~",
+      "ids": {
+        "kitsu": 518
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 1998,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Second Life",
+      "ids": {
+        "kitsu": 42149
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2007,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Serial Experiments Lain",
+      "ids": {
+        "kitsu": 306
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1998,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Shenmue",
+      "ids": {
+        "kitsu": 43530
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2000,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Shingeki no Kyojin 3",
+      "ids": {
+        "kitsu": 13569
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Shinigami Bocchan to Kuro Maid",
+      "ids": {
+        "kitsu": 44035
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Shirayuki-hime S2",
+      "ids": {
+        "kitsu": 46909
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2016,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Shirobako",
+      "ids": {
+        "kitsu": 8698
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2016,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2015,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Shoujo☆Kageki Revue Starlight Movie",
+      "ids": {
+        "kitsu": 42681
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ski Jumping Pairs",
+      "ids": {
+        "kitsu": 6271
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2004,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Solo Leveling",
+      "ids": {
+        "kitsu": 46231
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_new_series",
+          "categoryName": "Best New Series",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_score",
+          "categoryName": "Best Score",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "best_main_character",
+          "categoryName": "Best Main Character",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Solo Leveling: Arise from the Shadow",
+      "ids": {
+        "kitsu": 48671
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Sonny Boy",
+      "ids": {
+        "kitsu": 44501
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2022,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_suspense",
+          "categoryName": "Best Suspense",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Sono Bisque Doll wa Koi wo Suru Season 2",
+      "ids": {
+        "kitsu": 46492
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Space Brothers",
+      "ids": {
+        "kitsu": 6729
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2014,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Spirited Away",
+      "ids": {
+        "kitsu": 176
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2002,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "jmaf",
+          "year": 2001,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2001,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Spy × Family",
+      "ids": {
+        "kitsu": 45398
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_new_series",
+          "categoryName": "Best New Series",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "must_protect",
+          "categoryName": "Must Protect Character",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "must_protect",
+          "categoryName": "Must Protect Character",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2025,
+          "categoryKey": "must_protect",
+          "categoryName": "Must Protect Character",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "must_protect",
+          "categoryName": "Must Protect Character",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2023,
+          "categoryKey": "best_supporting",
+          "categoryName": "Best Supporting",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2023,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "SSSS.DYNAZENON",
+      "ids": {
+        "kitsu": 42888
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_action",
+          "categoryName": "Best Action",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Stand by Me Doraemon",
+      "ids": {
+        "kitsu": 8566
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2015,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Summer Days with Coo",
+      "ids": {
+        "kitsu": 2598
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2008,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2007,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Summer Wars",
+      "ids": {
+        "kitsu": 4241
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2010,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2010,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2009,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Suzume",
+      "ids": {
+        "kitsu": 45597
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2024,
+          "categoryKey": "best_film",
+          "categoryName": "Film of the Year",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_adventure",
+          "categoryName": "Best Adventure",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Takopii no Genzai",
+      "ids": {
+        "kitsu": 49392
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2025,
+          "categoryKey": "best_suspense",
+          "categoryName": "Best Suspense",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tamako Love Story",
+      "ids": {
+        "kitsu": 8135
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2014,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "TarePanda",
+      "ids": {
+        "kitsu": 9660
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2000,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tatsuki",
+      "ids": {
+        "kitsu": 50131
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2018,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tengoku Daimakyou",
+      "ids": {
+        "kitsu": 46641
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "That Time I Got Reincarnated as a Slime",
+      "ids": {
+        "kitsu": 41024
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_fantasy",
+          "categoryName": "Best Fantasy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_protagonist",
+          "categoryName": "Best Protagonist",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Adventures of Tintin: The Secret of the Unicorn",
+      "ids": {
+        "kitsu": 4023
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2013,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Ancient Magus' Bride",
+      "ids": {
+        "kitsu": 13228
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Animatrix",
+      "ids": {
+        "kitsu": 1175
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2004,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Apothecary Diaries",
+      "ids": {
+        "kitsu": 47083
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_director",
+          "categoryName": "Best Director",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_main_character",
+          "categoryName": "Best Main Character",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_suspense",
+          "categoryName": "Best Suspense",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_va",
+          "categoryName": "Best VA Performance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Book of the Dead",
+      "ids": {
+        "kitsu": 5008
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2005,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Case of Hana & Alice",
+      "ids": {
+        "kitsu": 9978
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2015,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Cat Returns",
+      "ids": {
+        "kitsu": 552
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2002,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2002,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "The Disappearance of Haruhi Suzumiya",
+      "ids": {
+        "kitsu": 4938
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2010,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "The Eccentric Family",
+      "ids": {
+        "kitsu": 7675
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2013,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The First Slam Dunk",
+      "ids": {
+        "kitsu": 46225
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2024,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2024,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Fragrant Flower Blooms with Dignity",
+      "ids": {
+        "kitsu": 49205
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2026,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Garden of Words",
+      "ids": {
+        "kitsu": 7515
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2013,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "The Girl Who Leapt Through Time",
+      "ids": {
+        "kitsu": 2027
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2007,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "jmaf",
+          "year": 2006,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        },
+        {
+          "source": "animation_kobe",
+          "year": 2006,
+          "categoryKey": "best_film",
+          "categoryName": "Theatrical Film Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "The Great Passage",
+      "ids": {
+        "kitsu": 11939
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2018,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Great Rabbit",
+      "ids": {
+        "kitsu": 10175
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2012,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Life of Budori Gusuko",
+      "ids": {
+        "kitsu": 6912
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2012,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Mark of Emi",
+      "ids": {
+        "kitsu": 45354
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2021,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Melancholy of Haruhi Suzumiya",
+      "ids": {
+        "kitsu": 751
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2006,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "The Night is Short, Walk on Girl",
+      "ids": {
+        "kitsu": 13138
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_film",
+          "categoryName": "Movie of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Old Crocodile",
+      "ids": {
+        "kitsu": 3630
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2005,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Old Man and the Sea",
+      "ids": {
+        "kitsu": 13461
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1999,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "The Promised Neverland",
+      "ids": {
+        "kitsu": 41312
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_fantasy",
+          "categoryName": "Best Fantasy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_antagonist",
+          "categoryName": "Best Antagonist",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Rising of the Shield Hero",
+      "ids": {
+        "kitsu": 13593
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_girl",
+          "categoryName": "Best Girl",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Secret World of Arrietty",
+      "ids": {
+        "kitsu": 5090
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2011,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2011,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Tatami Galaxy",
+      "ids": {
+        "kitsu": 5122
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2010,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "The Wind Rises",
+      "ids": {
+        "kitsu": 7485
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2014,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2014,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Wings of Rean",
+      "ids": {
+        "kitsu": 531
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2006,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "The Wound",
+      "ids": {
+        "kitsu": 50028
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2014,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Time of Eve",
+      "ids": {
+        "kitsu": 7661
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2010,
+          "categoryKey": "best_ova",
+          "categoryName": "Animation of the Year (OVA)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "To Your Eternity",
+      "ids": {
+        "kitsu": 43211
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2022,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Toilet-Bound Hanako-kun",
+      "ids": {
+        "kitsu": 42322
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_character_design",
+          "categoryName": "Best Character Design",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tokyo Godfathers",
+      "ids": {
+        "kitsu": 681
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2004,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2003,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tokyo Magnitude 8.0",
+      "ids": {
+        "kitsu": 4477
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2009,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "TONIKAWA: Over The Moon For You",
+      "ids": {
+        "kitsu": 43034
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_couple",
+          "categoryName": "Best Couple",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Totsukuni no Shoujo",
+      "ids": {
+        "kitsu": 44114
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_short",
+          "categoryName": "Short of the Year",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tower of God",
+      "ids": {
+        "kitsu": 43004
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2021,
+          "categoryKey": "best_score",
+          "categoryName": "Best Score",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tsuki ga Kirei",
+      "ids": {
+        "kitsu": 13234
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_romance",
+          "categoryName": "Best Romance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Tsurune: Tsunagari no Issha",
+      "ids": {
+        "kitsu": 46368
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2023,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "TYO Story",
+      "ids": {
+        "kitsu": 10816
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 1999,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Typhoon Noruda",
+      "ids": {
+        "kitsu": 10869
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2015,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Uchouten Kazoku 2",
+      "ids": {
+        "kitsu": 12551
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2017,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Ukkari Pénélope",
+      "ids": {
+        "kitsu": 5300
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2007,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Vanitas",
+      "ids": {
+        "kitsu": 44241
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_va",
+          "categoryName": "Best VA Performance",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Vinland Saga",
+      "ids": {
+        "kitsu": 41084
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2020,
+          "categoryKey": "best_drama",
+          "categoryName": "Best Drama",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Violet Evergarden",
+      "ids": {
+        "kitsu": 12230
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2019,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Violet Evergarden: The Movie",
+      "ids": {
+        "kitsu": 41450
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2021,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2021,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2021,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Visions of Frank",
+      "ids": {
+        "kitsu": 5537
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2003,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Voices of a Distant Star",
+      "ids": {
+        "kitsu": 231
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2002,
+          "categoryKey": "best_packaged",
+          "categoryName": "Packaged Work Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Weathering with You",
+      "ids": {
+        "kitsu": 42028
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2020,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2020,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Winter Days",
+      "ids": {
+        "kitsu": 2861
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2003,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Wolf Children",
+      "ids": {
+        "kitsu": 6711
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2013,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Animation of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "taaf",
+          "year": 2013,
+          "categoryKey": "best_film",
+          "categoryName": "Animation of the Year (Film)",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2012,
+          "categoryKey": "excellence",
+          "categoryName": "Excellence Prize",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Yama no Susume: Next Summit",
+      "ids": {
+        "kitsu": 44193
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Yama no Susume: Third Season",
+      "ids": {
+        "kitsu": 13583
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2018,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Yawaraka Sensha",
+      "ids": {
+        "kitsu": 9955
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2006,
+          "categoryKey": "best_network",
+          "categoryName": "Network Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Yin",
+      "ids": {
+        "kitsu": 46093
+      },
+      "wins": [
+        {
+          "source": "jmaf",
+          "year": 2018,
+          "categoryKey": "new_face",
+          "categoryName": "New Face Award",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Yo-Kai Watch",
+      "ids": {
+        "kitsu": 8010
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2015,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Yojouhan Time Machine Blues",
+      "ids": {
+        "kitsu": 44974
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2022,
+          "categoryKey": "best_cinematography",
+          "categoryName": "Best Cinematography",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Your Name",
+      "ids": {
+        "kitsu": 11614
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2018,
+          "categoryKey": "best_film",
+          "categoryName": "Film of the Year",
+          "isAOTY": false
+        },
+        {
+          "source": "jmaf",
+          "year": 2017,
+          "categoryKey": "grand_prize",
+          "categoryName": "Grand Prize",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Yuri on Ice",
+      "ids": {
+        "kitsu": 11999
+      },
+      "wins": [
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "anime_of_the_year",
+          "categoryName": "Anime of the Year",
+          "isAOTY": true
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_animation",
+          "categoryName": "Best Animation",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_opening",
+          "categoryName": "Best Opening",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_ending",
+          "categoryName": "Best Ending",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_boy",
+          "categoryName": "Best Boy",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "best_couple",
+          "categoryName": "Best Couple",
+          "isAOTY": false
+        },
+        {
+          "source": "crunchyroll",
+          "year": 2017,
+          "categoryKey": "heartwarming_scene",
+          "categoryName": "Most Heartwarming Scene",
+          "isAOTY": false
+        },
+        {
+          "source": "taaf",
+          "year": 2017,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Yuru Camp△ SEASON 3",
+      "ids": {
+        "kitsu": 49162
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2024,
+          "categoryKey": "best_slice_of_life",
+          "categoryName": "Best Slice of Life",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "YuruYuri",
+      "ids": {
+        "kitsu": 41353
+      },
+      "wins": [
+        {
+          "source": "animation_kobe",
+          "year": 2012,
+          "categoryKey": "best_tv",
+          "categoryName": "Television Award",
+          "isAOTY": true
+        }
+      ]
+    },
+    {
+      "title": "Zoku Owarimonogatari",
+      "ids": {
+        "kitsu": 14129
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2019,
+          "categoryKey": "best_background_art",
+          "categoryName": "Best Background Art",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Zombie Land Saga",
+      "ids": {
+        "kitsu": 41459
+      },
+      "wins": [
+        {
+          "source": "taaf",
+          "year": 2019,
+          "categoryKey": "best_tv",
+          "categoryName": "Animation of the Year (TV)",
+          "isAOTY": false
+        }
+      ]
+    },
+    {
+      "title": "Zombie Land Saga: Revenge",
+      "ids": {
+        "kitsu": 42467
+      },
+      "wins": [
+        {
+          "source": "r_anime",
+          "year": 2021,
+          "categoryKey": "best_comedy",
+          "categoryName": "Best Comedy",
+          "isAOTY": false
+        }
+      ]
+    }
+  ]
+}

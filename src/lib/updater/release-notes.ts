@@ -1,5 +1,5 @@
 import { safeFetch } from "@/lib/safe-fetch";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { HARBOR_DATA_BASE } from "@/lib/config/endpoints";
 import bundled from "./bundled-release-notes.json";
 
 export type NoteMedia = {
@@ -18,7 +18,7 @@ export type ReleaseNote = {
   sections?: NoteSection[];
 };
 
-const URL = `${HARBOR_API_BASE}/release-notes.json`;
+const URL = `${HARBOR_DATA_BASE}/release-notes.json`;
 const bundledNotes: Record<string, ReleaseNote> = bundled.notes;
 
 let cache: Record<string, ReleaseNote> | null = null;
