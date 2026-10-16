@@ -11,6 +11,10 @@ The app talks to Stremio, addons and most metadata services directly, so the cor
 - Subtitles, and skip intro/outro from SkipDB, TheIntroDB, introdb.app, AniSkip and chapter markers.
 - Anime metadata from Kitsu and AniZip, stream ranking, local files, Plex, Jellyfin and Emby.
 - TVDB (episode orders, episode lists, artwork, stills, cast, collections), as long as a TVDB API key is set in Settings > Library. Every TVDB request goes straight to `api4.thetvdb.com`; without a key these features stay empty.
+- Trakt sign-in, scrobbling and token refresh, through a Trakt API app you create (Settings > Trackers > Trakt > Your Trakt app). Harbor calls `api.trakt.tv` directly; the Client ID is required, the Client Secret optional. Builds can carry defaults in `VITE_TRAKT_CLIENT_ID` / `VITE_TRAKT_CLIENT_SECRET`.
+- MyAnimeList sign-in and token refresh, through a MAL API client you register (App Type "other", so no secret). Harbor does OAuth2 PKCE (`plain`) against `myanimelist.net/v1/oauth2/token`, and you paste the redirected address back into Harbor. A build default can come from `VITE_MAL_CLIENT_ID`.
+- AniList sign-in, with no setup: the implicit grant on Harbor's AniList client shows the token on AniList's pin page, and you paste it into Harbor.
+- Simkl community ratings, straight from `api.simkl.com/ratings`.
 - Watch parties through your own Cloudflare relay (Settings > Relay).
 - Bug reports from Settings, the crash screen and the menu bar, as prefilled issues on this fork's GitHub (attachments are dragged in on GitHub).
 - The speech-to-text model, downloaded from whisper.cpp's Hugging Face repository.
@@ -25,9 +29,6 @@ These relied on services hosted at `harbor.site` and its subdomains, which are g
 | Feature                                                                                       | Dead service                                                |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | Beta and experimental channels                                                                | `harbor.site/updates/...`                                   |
-| Trakt sign-in and token refresh                                                               | `harbor.site/api/trakt/token`, `/api/trakt/device-token`    |
-| MAL sign-in                                                                                   | `harbor.site/api/mal/token`                                 |
-| Simkl ratings                                                                                 | `harbor.site/api/simkl/ratings`                             |
 | Theme store, theme badges, public profiles, shared collections and lists                      | `harbor.site/themes/api`, `/badges`, `/collection`, `/list` |
 | Anime award badges matched by ID, anime hero art, curated logos, announcements, release notes | static JSON files on `harbor.site`                          |
 | Award images in Discord Rich Presence                                                         | `harbor.site/discord/awards`                                |
@@ -36,7 +37,7 @@ These relied on services hosted at `harbor.site` and its subdomains, which are g
 | Public watch-party relay                                                                      | `pub.harbor.site`                                           |
 | IGDB data in Games, manga source list                                                         | `harbor.site/api/igdb`, `/api/manga-sources`                |
 
-Trakt can be restored without Harbor's server by registering a Trakt app and doing the token exchange in the client with its own client ID and secret (`traktClientId` / `traktClientSecret` already exist in settings but are unused). MAL works the same way. Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`.
+Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`.
 
 ## Building from a fresh clone
 

@@ -1,4 +1,6 @@
-import { TRAKT_API_BASE, TRAKT_API_VERSION, TRAKT_CLIENT_ID, TRAKT_TOKEN_PROXY } from "./config";
+import { safeFetch } from "@/lib/safe-fetch";
+import { TRAKT_API_BASE, TRAKT_API_VERSION, TRAKT_REDIRECT_URI } from "./config";
+import { sessionClientId, traktApiKey, traktClientSecretFor } from "./credentials";
 import { getSession, setSession } from "./session";
 import type { TraktSession } from "./types";
 
@@ -21,18 +23,30 @@ function baseHeaders(): HeadersInit {
   return {
     "Content-Type": "application/json",
     "trakt-api-version": TRAKT_API_VERSION,
-    "trakt-api-key": TRAKT_CLIENT_ID,
+    "trakt-api-key": traktApiKey(getSession()),
   };
 }
+
+type TokenResponse = {
+  access_token: string;
+  refresh_token: string;
+  created_at: number;
+  expires_in: number;
+};
 
 async function refreshAccessToken(): Promise<TraktSession | null> {
   const current = getSession();
   if (!current) return null;
-  const res = await fetch(TRAKT_TOKEN_PROXY, {
+  const clientId = sessionClientId(current);
+  const secret = traktClientSecretFor(clientId);
+  const res = await safeFetch(`${TRAKT_API_BASE}/oauth/token`, {
     method: "POST",
     headers: baseHeaders(),
     body: JSON.stringify({
       refresh_token: current.refreshToken,
+      client_id: clientId,
+      ...(secret ? { client_secret: secret } : {}),
+      redirect_uri: TRAKT_REDIRECT_URI,
       grant_type: "refresh_token",
     }),
   });
@@ -40,18 +54,14 @@ async function refreshAccessToken(): Promise<TraktSession | null> {
     setSession(null);
     return null;
   }
-  const data = (await res.json()) as {
-    access_token: string;
-    refresh_token: string;
-    created_at: number;
-    expires_in: number;
-  };
+  const data = (await res.json()) as TokenResponse;
   const next: TraktSession = {
     accessToken: data.access_token,
     refreshToken: data.refresh_token,
     createdAt: data.created_at,
     expiresIn: data.expires_in,
     username: current.username,
+    ...(current.clientId ? { clientId: current.clientId } : {}),
   };
   setSession(next);
   return next;

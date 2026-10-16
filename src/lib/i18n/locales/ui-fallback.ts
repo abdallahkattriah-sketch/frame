@@ -2068,6 +2068,50 @@ const uiFallback: Record<string, string> = {
   "Your report is ready on GitHub": "Your report is ready on GitHub",
   "Check it in the browser tab that opened, drag in any attachments, then press Submit new issue to send it.":
     "Check it in the browser tab that opened, drag in any attachments, then press Submit new issue to send it.",
+  "and create a new API app. Trakt asks you to link a verified GitHub account first.":
+    "and create a new API app. Trakt asks you to link a verified GitHub account first.",
+  "Give it any name, and enter this Redirect URI:":
+    "Give it any name, and enter this Redirect URI:",
+  "Save the app, then copy its Client ID below. The Client Secret is optional.":
+    "Save the app, then copy its Client ID below. The Client Secret is optional.",
+  "Add your Trakt Client ID to connect. Without it Harbor cannot sign in to Trakt.":
+    "Add your Trakt Client ID to connect. Without it Harbor cannot sign in to Trakt.",
+  "Trakt Client ID": "Trakt Client ID",
+  "Client ID of your Trakt app": "Client ID of your Trakt app",
+  "Used for sign-in and every Trakt request made on your behalf.":
+    "Used for sign-in and every Trakt request made on your behalf.",
+  "Trakt Client Secret (optional)": "Trakt Client Secret (optional)",
+  "Client Secret of your Trakt app": "Client Secret of your Trakt app",
+  "Trakt does not need it for device sign-in. Fill it in only if Trakt rejects the sign-in without it.":
+    "Trakt does not need it for device sign-in. Fill it in only if Trakt rejects the sign-in without it.",
+  "and click Create ID.": "and click Create ID.",
+  'Set App Type to "other", so MyAnimeList does not issue a client secret.':
+    'Set App Type to "other", so MyAnimeList does not issue a client secret.',
+  "Enter this App Redirect URL:": "Enter this App Redirect URL:",
+  "Fill in the remaining required fields, submit, then copy the Client ID below.":
+    "Fill in the remaining required fields, submit, then copy the Client ID below.",
+  "Add your MAL Client ID to connect. Without it Harbor cannot sign in to MyAnimeList.":
+    "Add your MAL Client ID to connect. Without it Harbor cannot sign in to MyAnimeList.",
+  "Client ID of your MyAnimeList app": "Client ID of your MyAnimeList app",
+  "After you approve Harbor, MyAnimeList sends your browser to that address. The page will not load: copy the full address from the address bar and paste it into Harbor.":
+    "After you approve Harbor, MyAnimeList sends your browser to that address. The page will not load: copy the full address from the address bar and paste it into Harbor.",
+  "Your Trakt app": "Your Trakt app",
+  "Harbor signs in to Trakt with an API app you create on your own Trakt account. It only takes a minute.":
+    "Harbor signs in to Trakt with an API app you create on your own Trakt account. It only takes a minute.",
+  "Your MyAnimeList app": "Your MyAnimeList app",
+  "Harbor signs in to MyAnimeList with an API client you register on your own account. It only takes a minute.":
+    "Harbor signs in to MyAnimeList with an API client you register on your own account. It only takes a minute.",
+  "Trakt app not set up": "Trakt app not set up",
+  'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.':
+    'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.',
+  "A browser tab opened on MyAnimeList. Approve Harbor there. The page it then opens will not load: copy its full address from the address bar and paste it below.":
+    "A browser tab opened on MyAnimeList. Approve Harbor there. The page it then opens will not load: copy its full address from the address bar and paste it below.",
+  "MyAnimeList app not set up": "MyAnimeList app not set up",
+  'Add the Client ID of your own MyAnimeList API client under "Your MyAnimeList app" in these settings, then try again.':
+    'Add the Client ID of your own MyAnimeList API client under "Your MyAnimeList app" in these settings, then try again.',
+  "A browser tab opened on AniList. Approve Harbor there, then copy the token it shows (or the page address) and paste it below.":
+    "A browser tab opened on AniList. Approve Harbor there, then copy the token it shows (or the page address) and paste it below.",
+  "Paste the token or page URL from AniList": "Paste the token or page URL from AniList",
 };
 
 export default uiFallback;

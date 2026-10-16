@@ -16,6 +16,8 @@ import { effectiveTmdbLanguage, setTmdbLanguage } from "@/lib/providers/tmdb/tmd
 import { setPosterBaseUrl } from "@/lib/providers/rpdb";
 import { setMdblistBatchKey } from "@/lib/providers/mdblist-batch";
 import { setTvdbKey } from "@/lib/providers/tvdb";
+import { setTraktCredentials } from "@/lib/trakt/credentials";
+import { setMalClientId } from "@/lib/mal/credentials";
 import { setUiLanguage } from "@/lib/i18n";
 import { makeSafeTauriUnlisten } from "@/lib/tauri-unlisten";
 import { STORAGE_KEY } from "./settings/defaults";
@@ -274,6 +276,8 @@ export function SettingsProvider({
   }, [settings.mdblistKey]);
 
   setTvdbKey(settings.tvdbKey ?? "");
+  setTraktCredentials(settings.traktClientId ?? "", settings.traktClientSecret ?? "");
+  setMalClientId(settings.malClientId ?? "");
 
   useEffect(() => {
     if (typeof document === "undefined" || !("fonts" in document)) return;

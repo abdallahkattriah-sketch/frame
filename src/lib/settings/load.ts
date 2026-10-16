@@ -457,8 +457,14 @@ function parseStoredSettings(raw: string | null): Settings {
         typeof parsed.harborColor === "string" && HEX_RE.test(parsed.harborColor)
           ? parsed.harborColor
           : DEFAULT.harborColor,
-      traktClientId: parsed.traktClientId ?? DEFAULT.traktClientId,
-      traktClientSecret: parsed.traktClientSecret ?? DEFAULT.traktClientSecret,
+      traktClientId:
+        typeof parsed.traktClientId === "string" ? parsed.traktClientId : DEFAULT.traktClientId,
+      traktClientSecret:
+        typeof parsed.traktClientSecret === "string"
+          ? parsed.traktClientSecret
+          : DEFAULT.traktClientSecret,
+      malClientId:
+        typeof parsed.malClientId === "string" ? parsed.malClientId : DEFAULT.malClientId,
       traktAccessToken: parsed.traktAccessToken ?? DEFAULT.traktAccessToken,
       traktRefreshToken: parsed.traktRefreshToken ?? DEFAULT.traktRefreshToken,
       traktExpiresAt: parsed.traktExpiresAt ?? DEFAULT.traktExpiresAt,

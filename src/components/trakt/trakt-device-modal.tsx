@@ -45,6 +45,7 @@ export function TraktDeviceModal({ onClose }: { onClose: () => void }) {
   const retryable =
     connectState.kind === "expired" ||
     connectState.kind === "denied" ||
+    connectState.kind === "missing-credentials" ||
     connectState.kind === "error";
 
   return (
@@ -145,6 +146,15 @@ export function TraktDeviceModal({ onClose }: { onClose: () => void }) {
             title={t("Access denied")}
             message={t(
               "Trakt reported that authorization was denied. Try again if this was unintentional.",
+            )}
+          />
+        )}
+
+        {connectState.kind === "missing-credentials" && (
+          <ErrorBox
+            title={t("Trakt app not set up")}
+            message={t(
+              'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.',
             )}
           />
         )}

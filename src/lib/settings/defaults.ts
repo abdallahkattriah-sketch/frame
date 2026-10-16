@@ -171,6 +171,7 @@ export const DEFAULT: Settings = {
   useMalAvatar: false,
   traktClientId: "",
   traktClientSecret: "",
+  malClientId: "",
   traktAccessToken: null,
   traktRefreshToken: null,
   traktExpiresAt: 0,

@@ -13,6 +13,10 @@ interface ImportMetaEnv {
   readonly VITE_HARBOR_TRAKT_BASE?: string;
   readonly VITE_HARBOR_MAL_BASE?: string;
   readonly VITE_HARBOR_TVDB_BASE?: string;
+  readonly VITE_TRAKT_CLIENT_ID?: string;
+  readonly VITE_TRAKT_CLIENT_SECRET?: string;
+  readonly VITE_MAL_CLIENT_ID?: string;
+  readonly VITE_ANILIST_CLIENT_ID?: string;
 }
 
 interface Window {

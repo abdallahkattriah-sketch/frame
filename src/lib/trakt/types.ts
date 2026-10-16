@@ -4,6 +4,7 @@ export type TraktSession = {
   createdAt: number;
   expiresIn: number;
   username: string | null;
+  clientId?: string;
 };
 
 export type DeviceCode = {

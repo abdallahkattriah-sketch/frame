@@ -73,7 +73,7 @@ export function MalConnectModal({ onClose }: { onClose: () => void }) {
           <>
             <p className="text-[13px] leading-relaxed text-ink-muted">
               {t(
-                "A browser tab opened on MyAnimeList. Approve Harbor there, then copy the code or the page URL and paste it below.",
+                "A browser tab opened on MyAnimeList. Approve Harbor there. The page it then opens will not load: copy its full address from the address bar and paste it below.",
               )}
             </p>
             <textarea
@@ -102,6 +102,19 @@ export function MalConnectModal({ onClose }: { onClose: () => void }) {
               {connectState.session.userName
                 ? t("Connected as {username}", { username: connectState.session.userName })
                 : t("Connected to MyAnimeList")}
+            </span>
+          </div>
+        )}
+
+        {connectState.kind === "missing-credentials" && (
+          <div className="flex flex-col gap-1 rounded-md bg-canvas px-4 py-3.5">
+            <span className="text-[13.5px] font-semibold text-danger">
+              {t("MyAnimeList app not set up")}
+            </span>
+            <span className="text-[12.5px] leading-relaxed text-ink-muted">
+              {t(
+                'Add the Client ID of your own MyAnimeList API client under "Your MyAnimeList app" in these settings, then try again.',
+              )}
             </span>
           </div>
         )}
@@ -139,7 +152,7 @@ export function MalConnectModal({ onClose }: { onClose: () => void }) {
         </div>
       )}
 
-      {connectState.kind === "error" && (
+      {(connectState.kind === "error" || connectState.kind === "missing-credentials") && (
         <div className="flex items-center justify-end gap-2 px-6 pb-6">
           <button
             type="button"

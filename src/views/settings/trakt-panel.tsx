@@ -12,6 +12,7 @@ import traktLogo from "@/assets/trakt.svg";
 import { ModalButton, ROW_ACTION_DANGER, SettingsModal } from "./kit";
 import { TrackerIdentity } from "./tracker-identity";
 import { WatchlistSync } from "./trakt-panel/watchlist-sync";
+import { TraktAppCredentials } from "./trakt-panel/app-credentials";
 
 export function TraktPanel() {
   const t = useT();
@@ -127,6 +128,15 @@ export function TraktPanel() {
           </SettingsModal>
         </Section>
       )}
+
+      <Section
+        title={t("Your Trakt app")}
+        subtitle={t(
+          "Harbor signs in to Trakt with an API app you create on your own Trakt account. It only takes a minute.",
+        )}
+      >
+        <TraktAppCredentials />
+      </Section>
 
       {isConnected && (
         <Section

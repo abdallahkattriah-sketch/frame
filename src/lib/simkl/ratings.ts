@@ -1,42 +1,54 @@
 import { useEffect, useState } from "react";
 import { safeFetch } from "@/lib/safe-fetch";
-import { simklRequest } from "./client";
+import { isSimklBlocked, simklRequest } from "./client";
 import type { SimklIds, SimklTarget } from "./types";
 import { updateCachedRatingByTarget, getCachedRatingByTarget } from "./activities";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
+import { SIMKL_API_BASE, SIMKL_APP_NAME, SIMKL_APP_VERSION, SIMKL_CLIENT_ID } from "./config";
+import { parseSimklRating, simklRatingsUrl } from "./ratings-url";
 
 export { getCachedRatingByTarget };
 
-const RATINGS_PROXY = `${HARBOR_API_BASE}/api/simkl/ratings`;
-const MAX_BATCH = 120;
+const MAX_IN_FLIGHT = 4;
 
 const ratingCache = new Map<string, number | null>();
 const pending = new Map<string, Array<(v: number | null) => void>>();
 let flushTimer: number | null = null;
+let inFlight = 0;
+
+const SIMKL_APP = {
+  base: SIMKL_API_BASE,
+  clientId: SIMKL_CLIENT_ID,
+  appName: SIMKL_APP_NAME,
+  appVersion: SIMKL_APP_VERSION,
+};
+
+function settle(fns: Array<(v: number | null) => void>, val: number | null): void {
+  fns.forEach((fn) => fn(val));
+  inFlight -= 1;
+  if (pending.size > 0) scheduleFlush();
+}
 
 function flush(): void {
   flushTimer = null;
-  const specs = Array.from(pending.keys()).slice(0, MAX_BATCH);
-  if (specs.length === 0) return;
-
-  const resolvers = specs.map((s) => [s, pending.get(s)!] as const);
-  specs.forEach((s) => pending.delete(s));
-  if (pending.size > 0) scheduleFlush();
-
-  const url = `${RATINGS_PROXY}?ids=${encodeURIComponent(specs.join(","))}`;
-  safeFetch(url)
-    .then((r) => (r.ok ? r.json() : null))
-    .then((data: { ratings?: Record<string, { rating?: number } | null> } | null) => {
-      for (const [spec, fns] of resolvers) {
-        const hit = data?.ratings?.[spec];
-        const val = hit && typeof hit.rating === "number" ? hit.rating : null;
+  while (inFlight < MAX_IN_FLIGHT && pending.size > 0) {
+    const spec = pending.keys().next().value as string;
+    const fns = pending.get(spec) ?? [];
+    pending.delete(spec);
+    const url = simklRatingsUrl(spec, SIMKL_APP);
+    if (!url || isSimklBlocked()) {
+      fns.forEach((fn) => fn(null));
+      continue;
+    }
+    inFlight += 1;
+    safeFetch(url)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
+      .then((data: unknown) => {
+        const val = parseSimklRating(data);
         ratingCache.set(spec, val);
-        fns.forEach((fn) => fn(val));
-      }
-    })
-    .catch(() => {
-      for (const [, fns] of resolvers) fns.forEach((fn) => fn(null));
-    });
+        settle(fns, val);
+      })
+      .catch(() => settle(fns, null));
+  }
 }
 
 function scheduleFlush(): void {

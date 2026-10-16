@@ -261,6 +261,7 @@ export type Settings = {
   useMalAvatar: boolean;
   traktClientId: string;
   traktClientSecret: string;
+  malClientId: string;
   traktAccessToken: string | null;
   traktRefreshToken: string | null;
   traktExpiresAt: number;

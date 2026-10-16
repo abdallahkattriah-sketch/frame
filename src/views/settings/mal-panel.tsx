@@ -13,6 +13,7 @@ import { Section, ToggleRow } from "./shared";
 import { ModalButton, ROW_DESC, SettingsModal } from "./kit";
 import { SButton } from "./ui";
 import { SyncIndicatorSetting } from "./sync-indicator-setting";
+import { MalAppCredentials } from "./mal-app-credentials";
 
 export function MalPanel() {
   const t = useT();
@@ -155,6 +156,15 @@ export function MalPanel() {
       )}
 
       {isConnected && <SyncIndicatorSetting />}
+
+      <Section
+        title={t("Your MyAnimeList app")}
+        subtitle={t(
+          "Harbor signs in to MyAnimeList with an API client you register on your own account. It only takes a minute.",
+        )}
+      >
+        <MalAppCredentials />
+      </Section>
 
       {modalOpen && <MalConnectModal onClose={() => setModalOpen(false)} />}
     </>
