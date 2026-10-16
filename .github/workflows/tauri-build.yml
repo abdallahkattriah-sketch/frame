@@ -249,7 +249,11 @@ jobs:
 
       - name: Build Linux system packages
         if: contains(matrix.platform.runner, 'ubuntu')
-        run: pnpm tauri:build:linux-system --target ${{ matrix.platform.target }} --bundles deb,appimage
+        env:
+          # linuxdeploy's bundled strip cannot read Ubuntu 24.04's .relr.dyn sections, and runners have no FUSE.
+          NO_STRIP: "true"
+          APPIMAGE_EXTRACT_AND_RUN: "1"
+        run: pnpm tauri:build:linux-system --target ${{ matrix.platform.target }} --bundles deb,appimage --verbose
 
       - name: Build verified Windows managed installer
         if: matrix.platform.target == 'x86_64-pc-windows-msvc'
