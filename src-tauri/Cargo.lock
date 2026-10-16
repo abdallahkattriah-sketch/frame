@@ -2568,7 +2568,7 @@ dependencies = [
 
 [[package]]
 name = "harbor"
-version = "0.9.200"
+version = "0.9.201"
 dependencies = [
  "anyhow",
  "async-trait",
