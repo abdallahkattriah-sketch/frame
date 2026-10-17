@@ -36,6 +36,14 @@ test("the reload re-asserts the device then forces ao-reload on the current defa
   assert.ok(schedule.indexOf("isWindowsDesktop()") < schedule.indexOf("ao-reload"));
 });
 
+test("with normalization on, the reload re-syncs audio with an exact seek in place", () => {
+  assert.match(
+    schedule,
+    /if \(snap\.audioNormalize\) \{\s*await invoke\("mpv_command", \{ cmd: \["seek", 0, "relative\+exact"\] \}\)/,
+  );
+  assert.ok(schedule.indexOf("ao-reload") < schedule.indexOf('"relative+exact"'));
+});
+
 test("Rust observes audio-device-list so the event reaches the frontend", () => {
   assert.match(mpvRs, /\("audio-device-list", 21, PropertyKind::Node\)/);
 });

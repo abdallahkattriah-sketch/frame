@@ -674,6 +674,10 @@ export function createMpvBridge(mpvOptions?: MpvOptions): PlayerBridge {
         if (prevAid) {
           await invoke("mpv_set_property", { name: "aid", value: prevAid }).catch(() => {});
         }
+        // dynaudnorm's ~15 s lookahead restarts audio that far ahead of video after a reload; an exact seek in place refills it.
+        if (snap.audioNormalize) {
+          await invoke("mpv_command", { cmd: ["seek", 0, "relative+exact"] }).catch(() => {});
+        }
       })();
     }, 300);
   };
