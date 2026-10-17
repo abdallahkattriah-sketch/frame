@@ -1,12 +1,82 @@
 import { lruSet } from "@/lib/cache";
 import { registerEvictable } from "@/lib/maintenance";
-import { HARBOR_API_BASE } from "@/lib/config/endpoints";
 import { safeFetch } from "@/lib/safe-fetch";
 import { fetchCsmAdvisory } from "@/lib/providers/csm";
 
-const BASE = `${HARBOR_API_BASE}/api/imdb`;
+// IMDb's public GraphQL endpoint: keyless, CORS-enabled for the app's origins, and the source imdb.com itself reads.
+const IMDB_GRAPHQL = "https://caching.graphql.imdb.com/";
+const EPISODE_PAGE = 250;
+const MAX_EPISODE_PAGES = 12;
 
 export type ParentalCategory = { category: string; severity: string };
+
+async function imdbQuery<T>(query: string, variables: Record<string, unknown>): Promise<T | null> {
+  const res = await safeFetch(IMDB_GRAPHQL, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-imdb-client-name": "imdb-web-next-localized",
+    },
+    body: JSON.stringify({ query, variables }),
+    signal: AbortSignal.timeout(8000),
+  });
+  if (!res.ok) return null;
+  const j = (await res.json()) as { data?: T };
+  return j.data ?? null;
+}
+
+const TITLE_RATING = `query($id: ID!) { title(id: $id) { ratingsSummary { aggregateRating } } }`;
+
+const EPISODE_RATINGS = `query($id: ID!, $first: Int!, $after: ID) { title(id: $id) { episodes { episodes(first: $first, after: $after) {
+  pageInfo { hasNextPage endCursor }
+  edges { node { series { displayableEpisodeNumber { episodeNumber { text } displayableSeason { text } } } ratingsSummary { aggregateRating } } }
+} } } }`;
+
+const PARENTS_GUIDE = `query($id: ID!) { title(id: $id) { certificate { rating } parentsGuide { categories { category { text } severity { text } } } } }`;
+
+type EpisodeList = {
+  pageInfo?: { hasNextPage?: boolean; endCursor?: string | null };
+  edges?: Array<{
+    node?: {
+      series?: {
+        displayableEpisodeNumber?: {
+          episodeNumber?: { text?: string };
+          displayableSeason?: { text?: string };
+        };
+      };
+      ratingsSummary?: { aggregateRating?: number | null };
+    };
+  }>;
+};
+
+type EpisodePage = { title?: { episodes?: { episodes?: EpisodeList } } };
+
+// Keys are "season:episode", e.g. "1:3"; callers look ratings up that way.
+export async function fetchImdbEpisodeRatings(seriesTt: string): Promise<Map<string, number>> {
+  const map = new Map<string, number>();
+  let after: string | null = null;
+  for (let page = 0; page < MAX_EPISODE_PAGES; page++) {
+    const data: EpisodePage | null = await imdbQuery<EpisodePage>(EPISODE_RATINGS, {
+      id: seriesTt,
+      first: EPISODE_PAGE,
+      after,
+    });
+    const list: EpisodeList | undefined = data?.title?.episodes?.episodes;
+    if (!list) break;
+    for (const edge of list.edges ?? []) {
+      const num = edge.node?.series?.displayableEpisodeNumber;
+      const season = Number(num?.displayableSeason?.text);
+      const episode = Number(num?.episodeNumber?.text);
+      const rating = Number(edge.node?.ratingsSummary?.aggregateRating);
+      if (Number.isInteger(season) && Number.isInteger(episode) && rating > 0) {
+        map.set(`${season}:${episode}`, rating);
+      }
+    }
+    after = list.pageInfo?.hasNextPage ? (list.pageInfo.endCursor ?? null) : null;
+    if (!after) break;
+  }
+  return map;
+}
 
 const titleCache = new Map<string, number | null>();
 const parentalCache = new Map<string, ParentalCategory[]>();
@@ -31,16 +101,9 @@ export async function harborImdbEpisodes(seriesTt: string): Promise<Map<string, 
   const pending = episodeInflight.get(seriesTt);
   if (pending) return pending;
   const p = (async () => {
-    const map = new Map<string, number>();
+    let map = new Map<string, number>();
     try {
-      const res = await fetch(`${BASE}/episodes/${seriesTt}`);
-      if (res.ok) {
-        const j = (await res.json()) as { ratings?: Record<string, number> };
-        for (const [k, raw] of Object.entries(j.ratings ?? {})) {
-          const v = Number(raw);
-          if (Number.isFinite(v) && v > 0) map.set(k, v);
-        }
-      }
+      map = await fetchImdbEpisodeRatings(seriesTt);
     } catch {
       // A temporary outage must not pin missing ratings for the entire session.
     } finally {
@@ -76,15 +139,12 @@ export async function harborImdbTitle(tt: string): Promise<number | null> {
   if (!tt.startsWith("tt")) return null;
   if (titleCache.has(tt)) return titleCache.get(tt) ?? null;
   try {
-    const res = await fetch(`${BASE}/title/${tt}`);
-    if (!res.ok) {
-      titleCache.set(tt, null);
-      return null;
-    }
-    const j = (await res.json()) as { rating?: number | null };
-    const v = Number(j.rating);
+    const data = await imdbQuery<{
+      title?: { ratingsSummary?: { aggregateRating?: number | null } } | null;
+    }>(TITLE_RATING, { id: tt });
+    const v = Number(data?.title?.ratingsSummary?.aggregateRating);
     const out = Number.isFinite(v) && v > 0 ? v : null;
-    titleCache.set(tt, out);
+    lruSet(titleCache, tt, out, 2000);
     return out;
   } catch {
     return null;
@@ -136,25 +196,31 @@ export async function harborImdbParental(rawTt: string): Promise<ParentalCategor
   if (pending) return pending;
   const p = (async () => {
     try {
-      const res = await safeFetch(`${BASE}/parental/${tt}`, {
-        signal: AbortSignal.timeout(3000),
-      });
+      const data = await imdbQuery<{
+        title?: {
+          certificate?: { rating?: string | null } | null;
+          parentsGuide?: {
+            categories?: Array<{
+              category?: { text?: string };
+              severity?: { text?: string };
+            }> | null;
+          } | null;
+        } | null;
+      }>(PARENTS_GUIDE, { id: tt });
+      const certificate = data?.title?.certificate?.rating;
+      if (certificate && certificate !== "Not Rated") mpaRatingCache.set(tt, certificate);
       const out: ParentalCategory[] = [];
-      if (res.ok) {
-        const j = (await res.json()) as { categories?: ParentalCategory[]; mpaRating?: string };
-        if (j.mpaRating) mpaRatingCache.set(tt, j.mpaRating);
-        for (const c of j.categories ?? []) {
-          if (c && typeof c.category === "string" && typeof c.severity === "string") {
-            out.push({ category: c.category, severity: c.severity });
-          }
-        }
+      for (const c of data?.title?.parentsGuide?.categories ?? []) {
+        const category = c.category?.text;
+        const severity = c.severity?.text;
+        if (category && severity && severity !== "None") out.push({ category, severity });
       }
       if (out.length > 0) {
         lruSet(parentalCache, tt, out, 200);
         return out;
       }
     } catch {
-      // Backend unavailable; fall back to Common Sense Media.
+      // IMDb unavailable; fall back to Common Sense Media.
     }
 
     try {

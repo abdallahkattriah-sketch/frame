@@ -10,12 +10,32 @@ import { lruSet } from "../src/lib/cache.ts";
 const minute = 60_000;
 const hour = 60 * minute;
 
+function graphqlEpisodes(ratings: Record<string, unknown>) {
+  const edges = Object.entries(ratings).map(([key, rating]) => {
+    const [season, episode] = key.split(":");
+    return {
+      node: {
+        series: {
+          displayableEpisodeNumber: {
+            episodeNumber: { text: episode },
+            displayableSeason: { text: season },
+          },
+        },
+        ratingsSummary: { aggregateRating: rating },
+      },
+    };
+  });
+  return {
+    data: { title: { episodes: { episodes: { pageInfo: { hasNextPage: false }, edges } } } },
+  };
+}
+
 function fixture() {
   let now = 0;
   let requests = 0;
   let response: () => Promise<unknown> = async () => ({
     ok: true,
-    json: async () => ({ ratings: { "3:1": 7 } }),
+    json: async () => graphqlEpisodes({ "3:1": 7 }),
   });
   const evictors = new Map<string, (aggressive: boolean) => void>();
   const mocks: Record<string, unknown> = {
@@ -24,8 +44,12 @@ function fixture() {
       registerEvictable: (name: string, evict: (aggressive: boolean) => void) =>
         evictors.set(name, evict),
     },
-    "@/lib/config/endpoints": { HARBOR_API_BASE: "https://fixture.invalid" },
-    "@/lib/safe-fetch": {},
+    "@/lib/safe-fetch": {
+      safeFetch: () => {
+        requests++;
+        return response();
+      },
+    },
     "@/lib/providers/csm": {},
   };
   const source = readFileSync(
@@ -36,16 +60,12 @@ function fixture() {
     compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS },
   }).outputText;
   const exports: Record<string, any> = {};
-  new Function("require", "exports", "fetch", "Date", compiled)(
+  new Function("require", "exports", "Date", compiled)(
     (id: string) => {
       assert.ok(Object.hasOwn(mocks, id), `Unexpected dependency: ${id}`);
       return mocks[id];
     },
     exports,
-    () => {
-      requests++;
-      return response();
-    },
     { now: () => now },
   );
   return {
@@ -59,7 +79,7 @@ function fixture() {
       response = next;
     },
     ratings: (ratings: Record<string, unknown>) => {
-      response = async () => ({ ok: true, json: async () => ({ ratings }) });
+      response = async () => ({ ok: true, json: async () => graphqlEpisodes(ratings) });
     },
     evict: (aggressive: boolean) => evictors.get("harbor-imdb-episodes")!(aggressive),
   };
@@ -89,7 +109,7 @@ for (const kind of ["HTTP failure", "network failure", "invalid JSON", "empty su
         ok: kind !== "HTTP failure",
         json: async () => {
           if (kind === "invalid JSON") throw new Error("invalid response");
-          return { ratings: {} };
+          return graphqlEpisodes({});
         },
       };
     });
@@ -119,7 +139,7 @@ test("concurrent refreshes share one request and cache age starts at completion"
   const second = f.get("tt1");
   assert.equal(f.requests(), 2);
   f.advance(minute);
-  finish({ ok: true, json: async () => ({ ratings: { "3:2": 8 } }) });
+  finish({ ok: true, json: async () => graphqlEpisodes({ "3:2": 8 }) });
   const [a, b] = await Promise.all([first, second]);
   assert.equal(a, b);
   assert.equal(a.get("3:2"), 8);

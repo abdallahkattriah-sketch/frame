@@ -129,6 +129,7 @@ export default defineConfig(({ mode }) => {
           "api.trakt.tv",
           "myanimelist.net",
           "api.myanimelist.net",
+          "caching.graphql.imdb.com",
           "openlibrary.org",
           "covers.openlibrary.org",
           "www.googleapis.com",

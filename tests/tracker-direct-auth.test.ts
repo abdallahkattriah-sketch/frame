@@ -74,7 +74,12 @@ test("tracker auth talks to the real services, not harbor.site", () => {
 test("new tracker hosts are proxied for the browser build", () => {
   const safeFetch = read("src/lib/safe-fetch.ts");
   const vite = read("vite.config.ts");
-  for (const host of ["api.trakt.tv", "myanimelist.net", "api.myanimelist.net"]) {
+  for (const host of [
+    "api.trakt.tv",
+    "myanimelist.net",
+    "api.myanimelist.net",
+    "caching.graphql.imdb.com",
+  ]) {
     assert.ok(safeFetch.split(`"${host}"`).length >= 3, `${host} missing from safe-fetch lists`);
     assert.ok(vite.includes(`"${host}"`), `${host} missing from vite proxy`);
   }
