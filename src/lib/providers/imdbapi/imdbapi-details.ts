@@ -1,65 +1,81 @@
 import { safeFetch } from "@/lib/safe-fetch";
 import type { TmdbDetail } from "../tmdb/tmdb-details";
 
-const BASE = "https://api.imdbapi.dev/titles";
+// IMDb's public GraphQL endpoint, the same keyless source as lib/providers/harbor-imdb.ts.
+const IMDB_GRAPHQL = "https://caching.graphql.imdb.com/";
 
-interface ImdbTitleResponse {
-  id: string;
-  type: string;
-  primaryTitle: string;
-  primaryImage?: { url: string };
-  startYear?: number;
-  runtimeSeconds?: number;
-  genres?: string[];
-  rating?: { aggregateRating: number; voteCount: number };
-  plot?: string;
-  directors?: Array<{
-    id: string;
-    displayName: string;
-    primaryImage?: { url: string };
-  }>;
-  writers?: Array<{
-    id: string;
-    displayName: string;
-    primaryImage?: { url: string };
-  }>;
-  stars?: Array<{
-    id: string;
-    displayName: string;
-    primaryImage?: { url: string };
-  }>;
-}
+const TITLE_DETAIL = `query($id: ID!) { title(id: $id) {
+  id titleType { id } titleText { text } originalTitleText { text } releaseYear { year }
+  primaryImage { url } runtime { seconds } genres { genres { text } }
+  ratingsSummary { aggregateRating voteCount } plot { plotText { plainText } }
+  directors: credits(first: 5, filter: { categories: ["director"] }) { edges { node { name { nameText { text } } } } }
+  writers: credits(first: 5, filter: { categories: ["writer"] }) { edges { node { name { nameText { text } } } } }
+  cast: credits(first: 30, filter: { categories: ["actor", "actress"] }) {
+    edges { node { name { nameText { text } primaryImage { url } } ... on Cast { characters { name } } } }
+  }
+} }`;
 
-interface ImdbEpisodeEntry {
-  id: string;
-  title: string;
-  primaryImage?: { url: string };
-  season: string;
-  episodeNumber: number;
-  runtimeSeconds?: number;
-  plot?: string;
-  rating?: { aggregateRating: number; voteCount: number };
-}
+const EPISODE_ID = `query($id: ID!, $season: String!) { title(id: $id) { episodes {
+  episodes(first: 250, filter: { includeSeasons: [$season] }) {
+    edges { node { id series { displayableEpisodeNumber { episodeNumber { text } } } } }
+  }
+} } }`;
 
-interface ImdbCreditsEntry {
-  name: {
-    id: string;
-    displayName: string;
-    primaryImage?: { url: string };
+type NameEdge = { node?: { name?: { nameText?: { text?: string } } } };
+
+type CastEdge = {
+  node?: {
+    name?: { nameText?: { text?: string }; primaryImage?: { url?: string } | null };
+    characters?: Array<{ name?: string }> | null;
   };
-  category: string;
-  characters?: string[];
-}
+};
+
+type ImdbTitle = {
+  id?: string;
+  titleType?: { id?: string } | null;
+  titleText?: { text?: string } | null;
+  originalTitleText?: { text?: string } | null;
+  releaseYear?: { year?: number } | null;
+  primaryImage?: { url?: string } | null;
+  runtime?: { seconds?: number } | null;
+  genres?: { genres?: Array<{ text?: string }> } | null;
+  ratingsSummary?: { aggregateRating?: number | null; voteCount?: number | null } | null;
+  plot?: { plotText?: { plainText?: string } | null } | null;
+  directors?: { edges?: NameEdge[] } | null;
+  writers?: { edges?: NameEdge[] } | null;
+  cast?: { edges?: CastEdge[] } | null;
+};
+
+type EpisodeIds = {
+  title?: {
+    episodes?: {
+      episodes?: {
+        edges?: Array<{
+          node?: {
+            id?: string;
+            series?: { displayableEpisodeNumber?: { episodeNumber?: { text?: string } } };
+          };
+        }>;
+      };
+    };
+  } | null;
+};
 
 const cache = new Map<string, TmdbDetail>();
 
-async function fetchJson<T>(url: string): Promise<T | null> {
+async function imdbQuery<T>(query: string, variables: Record<string, unknown>): Promise<T | null> {
   try {
-    const res = await safeFetch(url, {
-      headers: { Accept: "application/json" },
+    const res = await safeFetch(IMDB_GRAPHQL, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "x-imdb-client-name": "imdb-web-next-localized",
+      },
+      body: JSON.stringify({ query, variables }),
     });
     if (!res.ok) return null;
-    return (await res.json()) as T;
+    const j = (await res.json()) as { data?: T };
+    return j.data ?? null;
   } catch {
     return null;
   }
@@ -71,26 +87,55 @@ function formatRuntime(seconds: number | undefined): string | undefined {
   return `${min} min`;
 }
 
-function toTmdbDetail(title: ImdbTitleResponse, cast: TmdbDetail["cast"]): TmdbDetail {
+function names(edges: NameEdge[] | undefined): Array<{ id: number; name: string }> {
+  const seen = new Set<string>();
+  const out: Array<{ id: number; name: string }> = [];
+  for (const e of edges ?? []) {
+    const name = e.node?.name?.nameText?.text;
+    if (name && !seen.has(name)) {
+      seen.add(name);
+      out.push({ id: 0, name });
+    }
+  }
+  return out;
+}
+
+function toCast(edges: CastEdge[] | undefined): TmdbDetail["cast"] {
+  const out: TmdbDetail["cast"] = [];
+  for (const e of edges ?? []) {
+    const name = e.node?.name?.nameText?.text;
+    if (!name) continue;
+    out.push({
+      id: 0,
+      name,
+      character: e.node?.characters?.[0]?.name ?? "",
+      profilePath: e.node?.name?.primaryImage?.url ?? null,
+      order: out.length,
+    });
+  }
+  return out;
+}
+
+function toTmdbDetail(title: ImdbTitle, id: string): TmdbDetail {
+  const rating = Number(title.ratingsSummary?.aggregateRating);
+  const name = title.titleText?.text ?? "";
   return {
-    kind: title.type === "movie" ? "movie" : "tv",
+    kind: title.titleType?.id === "movie" ? "movie" : "tv",
     id: 0,
-    imdbId: title.id,
-    title: title.primaryTitle ?? "",
-    originalTitle: title.primaryTitle ?? "",
+    imdbId: title.id ?? id,
+    title: name,
+    originalTitle: title.originalTitleText?.text ?? name,
     tagline: "",
-    overview: title.plot ?? "",
+    overview: title.plot?.plotText?.plainText ?? "",
     poster: title.primaryImage?.url ?? undefined,
     backdrop: undefined,
     logo: undefined,
-    year: title.startYear ? String(title.startYear) : undefined,
-    rating: title.rating?.aggregateRating
-      ? Number(title.rating.aggregateRating).toFixed(1)
-      : undefined,
-    voteCount: title.rating?.voteCount ?? 0,
-    runtime: formatRuntime(title.runtimeSeconds),
+    year: title.releaseYear?.year ? String(title.releaseYear.year) : undefined,
+    rating: rating > 0 ? rating.toFixed(1) : undefined,
+    voteCount: title.ratingsSummary?.voteCount ?? 0,
+    runtime: formatRuntime(title.runtime?.seconds),
     status: "Released",
-    genres: title.genres ?? [],
+    genres: (title.genres?.genres ?? []).flatMap((g) => (g.text ? [g.text] : [])),
     originalLanguage: "",
     spokenLanguages: [],
     productionCountries: [],
@@ -104,10 +149,10 @@ function toTmdbDetail(title: ImdbTitleResponse, cast: TmdbDetail["cast"]): TmdbD
     trailerCandidates: [],
     extraVideos: [],
     gallery: { backdrops: [], posters: [], logos: [] },
-    cast,
+    cast: toCast(title.cast?.edges),
     crew: [],
-    directors: (title.directors ?? []).map((d) => ({ id: 0, name: d.displayName })),
-    writers: (title.writers ?? []).map((w) => ({ id: 0, name: w.displayName })),
+    directors: names(title.directors?.edges),
+    writers: names(title.writers?.edges),
     creators: [],
     producers: [],
     composer: [],
@@ -123,16 +168,17 @@ function toTmdbDetail(title: ImdbTitleResponse, cast: TmdbDetail["cast"]): TmdbD
   };
 }
 
-function creditsToCast(credits: ImdbCreditsEntry[]): TmdbDetail["cast"] {
-  return credits
-    .filter((c) => c.category === "actor" || c.category === "actress")
-    .map((c, i) => ({
-      id: 0,
-      name: c.name.displayName,
-      character: c.characters?.[0] ?? "",
-      profilePath: c.name.primaryImage?.url ?? null,
-      order: i,
-    }));
+async function episodeId(
+  seriesId: string,
+  season: number,
+  episode: number,
+): Promise<string | null> {
+  const data = await imdbQuery<EpisodeIds>(EPISODE_ID, { id: seriesId, season: String(season) });
+  const edges = data?.title?.episodes?.episodes?.edges ?? [];
+  const match = edges.find(
+    (e) => Number(e.node?.series?.displayableEpisodeNumber?.episodeNumber?.text) === episode,
+  );
+  return match?.node?.id ?? null;
 }
 
 export async function imdbapiDetails(
@@ -148,31 +194,16 @@ export async function imdbapiDetails(
   const cached = cache.get(cacheKey);
   if (cached) return cached;
 
-  const title = await fetchJson<ImdbTitleResponse>(`${BASE}/${metaId}`);
-  if (!title) return null;
-
   let targetId = metaId;
-
-  if (season !== undefined && episode !== undefined && title.type !== "movie") {
-    const eps = await fetchJson<{ episodes: ImdbEpisodeEntry[] }>(`${BASE}/${metaId}/episodes`);
-    const match = eps?.episodes?.find(
-      (e) => Number(e.season) === season && e.episodeNumber === episode,
-    );
-    if (match) targetId = match.id;
+  if (season !== undefined && episode !== undefined) {
+    targetId = (await episodeId(metaId, season, episode)) ?? metaId;
   }
 
-  const creditsResp = await fetchJson<{ credits: ImdbCreditsEntry[] }>(
-    `${BASE}/${targetId}/credits`,
-  );
-  const cast = creditsResp ? creditsToCast(creditsResp.credits) : [];
+  const data = await imdbQuery<{ title?: ImdbTitle | null }>(TITLE_DETAIL, { id: targetId });
+  const title = data?.title;
+  if (!title?.titleText?.text) return null;
 
-  let detail = title;
-  if (targetId !== metaId) {
-    const epTitle = await fetchJson<ImdbTitleResponse>(`${BASE}/${targetId}`);
-    if (epTitle) detail = epTitle;
-  }
-
-  const result = toTmdbDetail(detail, cast);
+  const result = toTmdbDetail(title, targetId);
   cache.set(cacheKey, result);
   return result;
 }
