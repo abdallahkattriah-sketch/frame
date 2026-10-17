@@ -4,6 +4,11 @@ on:
   release:
     types:
       - released
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: true
   workflow_dispatch:
     inputs:
       tag:

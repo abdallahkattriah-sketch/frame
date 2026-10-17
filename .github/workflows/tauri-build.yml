@@ -383,3 +383,12 @@ jobs:
             --title "Harbor $VERSION" \
             --notes-file body.md \
             --latest
+
+  # A release made with GITHUB_TOKEN fires no release event, so WinGet is called from here.
+  winget:
+    name: WinGet
+    needs: [prepare, publish]
+    uses: ./.github/workflows/winget.yml
+    with:
+      tag: v${{ needs.prepare.outputs.version }}
+    secrets: inherit
