@@ -103,15 +103,6 @@ function BpConnectBody({ onBack }: { onBack?: () => void }) {
               }
               on={!!facts.stremioName}
             />
-            <BpConnectStatus
-              label={t("Harbor account")}
-              value={
-                facts.harborName
-                  ? t("Signed in as {name}", { name: facts.harborName })
-                  : t("Sync, themes and friends")
-              }
-              on={!!facts.harborName}
-            />
           </div>
         </div>
 

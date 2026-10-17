@@ -19,7 +19,7 @@ import {
 import { useState } from "react";
 import cloudflareLogo from "@/assets/cloudflare.webp";
 import { deleteRelay } from "@/lib/together/cf-deploy";
-import { HARBOR_PUBLIC_RELAY, isPublicRelay } from "@/lib/together/relay-version";
+import { isPublicRelay } from "@/lib/together/relay-version";
 import { useSettings } from "@/lib/settings";
 import { useT } from "@/lib/i18n";
 import { downloadText } from "@/lib/download-text";
@@ -98,12 +98,6 @@ function BroadcastGlyph({ status }: { status: RelayStatus }) {
       ))}
     </span>
   );
-}
-
-function PublicRelayMark() {
-  const { passive } = useRelayHealth(HARBOR_PUBLIC_RELAY);
-  const status: RelayStatus = !passive ? "checking" : passive.reachable ? "live" : "down";
-  return <RelayStatusMark kind="public" status={status} passive={passive} />;
 }
 
 function RelayStatusMark({
@@ -362,22 +356,6 @@ export function TogetherRelayPanel({
               )}
             />
           )}
-
-          <SettingRow
-            wide
-            icon={<PublicRelayMark />}
-            label={t("Harbor's public relay")}
-            desc={t("A relay we run. Nothing to set up, and it stays current on its own.")}
-            tip={t("Hit your daily quota? Use Harbor's public relay, or host your own.")}
-          >
-            <button
-              onClick={() => update({ togetherRelayUrl: HARBOR_PUBLIC_RELAY })}
-              className={ROW_ACTION}
-            >
-              <Relay size={16} strokeWidth={1.9} />
-              {t("Use Harbor's public relay")}
-            </button>
-          </SettingRow>
 
           <SettingRow
             icon={<Link2 size={18} strokeWidth={1.9} />}

@@ -29,15 +29,17 @@ The app talks to Stremio, addons and most metadata services directly, so the cor
 
 These relied on services hosted at `harbor.site` and its subdomains, which are gone:
 
-| Feature                                                                                               | Dead service                                               |
-| ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| Beta and experimental channels                                                                        | `harbor.site/updates/...`                                  |
-| Theme publishing, ratings and comments, profile badges, public profiles, shared collections and lists | `harbor.site/themes/api`, `/collection`, `/list`           |
-| Harbor's own badge packs (Minimal, Abstract, Harbor Light, Harbor Color), removed from the list       | `harbor.site/badges`                                       |
-| Shared ad-skip segments and ad reports                                                                | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site` |
-| Shared subtitle autosync                                                                              | `sync.harbor.site`                                         |
-| Public watch-party relay                                                                              | `pub.harbor.site`                                          |
-| Suggesting a manga source from the app                                                                | `harbor.site/api/manga-sources/suggest`                    |
+| Feature                                                                                                                                                                            | Dead service                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Harbor accounts (sign-in, handles, recovery keys) and TV settings sync through them; the account tab, the Big Picture account step and the account offer in phone setup are hidden | `harbor.site/themes/api`, `/sync/v1`                       |
+| Beta and experimental channels                                                                                                                                                     | `harbor.site/updates/...`                                  |
+| Theme publishing, ratings and comments, profile badges, public profiles, shared collections and lists                                                                              | `harbor.site/themes/api`, `/collection`, `/list`           |
+| Community badge and award bundles (the store tab and the badge settings link are hidden), and Harbor's own badge packs                                                             | `harbor.site/themes/api`, `harbor.site/badges`             |
+| Shared ad-skip segments and ad reports (the player's report button is hidden)                                                                                                      | `harbor.site/updates/ad-segments.json`, `bugs.harbor.site` |
+| Shared subtitle autosync                                                                                                                                                           | `sync.harbor.site`                                         |
+| Public watch-party relay (its button is hidden)                                                                                                                                    | `pub.harbor.site`                                          |
+| IMDb ratings and episode ratings from Harbor's proxy                                                                                                                               | `harbor.site/api/imdb`                                     |
+| Suggesting a manga source from the app                                                                                                                                             | `harbor.site/api/manga-sources/suggest`                    |
 
 Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`; `VITE_HARBOR_DATA_BASE` moves the static feeds (for example to a fork or a branch).
 

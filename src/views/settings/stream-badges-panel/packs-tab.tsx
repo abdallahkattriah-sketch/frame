@@ -1,13 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import {
   ChevronDown,
-  ChevronRight,
   ChevronUp,
   Download,
   ExternalLink,
   Link2,
   Package,
-  Store,
   Trash2,
   Upload,
 } from "../icons";
@@ -28,11 +26,10 @@ import { openUrl } from "@/lib/window";
 import { useT } from "@/lib/i18n";
 import { removeStreamBadgePack, useStreamBadgePacks } from "@/lib/community-badge-packs";
 import { tvFocus } from "@/lib/keyboard-navigation";
-import { Section, settingsAnchor, useSettingsActiveContext } from "../shared";
+import { Section, settingsAnchor } from "../shared";
 import { ROW_ACTION_PRIMARY, SettingRow } from "../kit";
 import { SButton, SRow } from "../ui";
 import { usePageActions } from "../page-actions";
-import { requestThemeLibrary } from "@/views/settings/theme-panel/library-open-store";
 import { handoffFocus, ringActive } from "./focus-handoff";
 import { PackCard } from "./pack-card";
 
@@ -261,11 +258,6 @@ export function PacksTab() {
   const t = useT();
   const [browseOpen, setBrowseOpen] = useState(false);
   const [armed, setArmed] = useState(false);
-  const { setActive } = useSettingsActiveContext();
-  const onMarketplace = () => {
-    setActive("theme");
-    requestThemeLibrary({ tab: "community", storeTab: "badges" });
-  };
 
   usePageActions(
     [
@@ -298,15 +290,6 @@ export function PacksTab() {
           "A pack swaps Harbor's built-in badge art, or adds whole new badges of its own.",
         )}
       >
-        <SRow
-          title={t("Browse community badge packs")}
-          description={t("User-made packs from the community store, refreshed every week.")}
-          leading={<Store size={20} strokeWidth={2} />}
-          trailing={
-            <ChevronRight size={18} className="shrink-0 text-ink-subtle rtl:-scale-x-100" />
-          }
-          onClick={onMarketplace}
-        />
         <SRow
           title={t("Curated packs and link import")}
           description={t(

@@ -3,7 +3,7 @@ import { CloudOff } from "../icons";
 import { useT } from "@/lib/i18n";
 import { useProfiles } from "@/lib/profiles";
 import { useSyncStatus } from "@/lib/profile-sync/use-sync-status";
-import { settingsAnchor, useSettingsActiveContext } from "../shared";
+import { settingsAnchor } from "../shared";
 import { SettingRow } from "../kit";
 import { SButton } from "../ui";
 import { pushTvNow, tvSyncReady, tvWiresBlocked, type TvWireName } from "./store";
@@ -59,7 +59,6 @@ export function TvStatusHeader() {
   const t = useT();
   const status = useSyncStatus();
   const { activeProfile, activeId } = useProfiles();
-  const { setActive } = useSettingsActiveContext();
   const [now, setNow] = useState(() => Date.now());
   const blocked = tvWiresBlocked();
   const ready = tvSyncReady();
@@ -76,45 +75,33 @@ export function TvStatusHeader() {
         tone: "warn",
         line: "Cloud sync for TV settings is unavailable in this build. Changes stay saved on this computer.",
       }
-    : status.phase === "off"
+    : status.phase === "off" || status.phase === "signed-out" || status.phase === "no-refresh"
       ? {
           tone: "off",
-          line: "Cloud sync is off. TV settings stay saved on this computer.",
+          line: "Harbor accounts are no longer available, so these settings stay on this computer and don't reach your TV.",
           fix: "account",
         }
-      : status.phase === "signed-out"
+      : !scoped
         ? {
             tone: "warn",
-            line: "Sign in to Harbor to sync these settings through your account.",
-            fix: "account",
+            line: "Choose a profile to sync its TV settings.",
           }
-        : status.phase === "no-refresh"
+        : status.lastError
           ? {
               tone: "warn",
-              line: "Sign in again to resume cloud sync. Your changes are saved on this computer.",
-              fix: "account",
+              line: "Cloud sync couldn't finish. Your changes are saved here; try syncing again.",
             }
-          : !scoped
+          : status.queued > 0
             ? {
-                tone: "warn",
-                line: "Choose a profile to sync its TV settings.",
+                tone: "on",
+                line: `${status.queued} change${status.queued === 1 ? "" : "s"} waiting to sync.`,
               }
-            : status.lastError
-              ? {
-                  tone: "warn",
-                  line: "Cloud sync couldn't finish. Your changes are saved here; try syncing again.",
-                }
-              : status.queued > 0
-                ? {
-                    tone: "on",
-                    line: `${status.queued} change${status.queued === 1 ? "" : "s"} waiting to sync.`,
-                  }
-                : status.lastPushAt > 0
-                  ? { tone: "on", line: `Sent to your account ${ago(status.lastPushAt, now)}.` }
-                  : {
-                      tone: "off",
-                      line: "Changes sync automatically through your Harbor account.",
-                    };
+            : status.lastPushAt > 0
+              ? { tone: "on", line: `Sent to your account ${ago(status.lastPushAt, now)}.` }
+              : {
+                  tone: "off",
+                  line: "Changes sync automatically through your Harbor account.",
+                };
 
   return (
     <div
@@ -137,14 +124,6 @@ export function TvStatusHeader() {
         >
           {status.phase === "pushing" ? t("Syncing…") : t("Sync now")}
         </SButton>
-        {read.fix && (
-          <SButton
-            variant="primary"
-            onClick={() => setActive("account", settingsAnchor("Harbor account"))}
-          >
-            {t("Open Harbor account")}
-          </SButton>
-        )}
       </SettingRow>
     </div>
   );

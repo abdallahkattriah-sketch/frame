@@ -3,7 +3,6 @@ import { DrawCanvas, StrokesLayer, type Stroke } from "@/components/player/draw-
 import { cropTransform } from "./hooks/use-video-fill";
 import { StreamSwitcher } from "@/components/player/stream-switcher";
 import { StreamCheckPill } from "@/components/player/stream-check-pill";
-import { AdReportButton } from "@/components/player/ad-report-button";
 import { XrayOverlay } from "@/components/player/xray/xray-overlay";
 import { BufferingIndicator } from "@/components/player/buffering-indicator";
 import { P2pStatusChip } from "@/components/player/p2p-status-chip";
@@ -335,17 +334,6 @@ export const PlayerOverlayLayers = memo(function PlayerOverlayLayers(p: PlayerOv
         gif={p.gif}
         clip={p.clip}
       />
-
-      {!p.pipMode && !p.drawMode && (
-        <AdReportButton
-          meta={p.src.meta}
-          src={{ ...p.src, streamRef: p.adStreamRef, url: p.adUrl }}
-          visible={p.showChrome}
-          skipSegments={p.skipSegments}
-          durationSec={p.snap.durationSec}
-          hasNextEp={p.hasNextEpDisplay}
-        />
-      )}
 
       {!p.pipMode && !p.drawMode && (
         <XrayOverlay

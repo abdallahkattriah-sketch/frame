@@ -2131,6 +2131,10 @@ const uiFallback: Record<string, string> = {
     "Every theme is reviewed before it joins the library and scanned again when you install it, so you can try any look without a second thought.",
   "Made a look you love? Export it as a .harborstyle file and open a pull request to add it to the library.":
     "Made a look you love? Export it as a .harborstyle file and open a pull request to add it to the library.",
+  "Harbor accounts are no longer available, so these settings stay on this computer and don't reach your TV.":
+    "Harbor accounts are no longer available, so these settings stay on this computer and don't reach your TV.",
+  "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.":
+    "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.",
 };
 
 export default uiFallback;

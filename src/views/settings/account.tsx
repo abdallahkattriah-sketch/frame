@@ -11,11 +11,10 @@ import { StartupDefaults } from "./account/startup-defaults";
 import { SettingsScopeCard } from "./account/settings-scope-card";
 import { StremioCard } from "./account/stremio-card";
 import { SyncedAddonsCard } from "./account/synced-addons-card";
-import { HarborAccountPanel } from "@/views/account/harbor-account-panel";
 
 const isTauri = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
 
-type Tab = "you" | "profiles" | "harbor" | "stremio";
+type Tab = "you" | "profiles" | "stremio";
 
 export function AccountStub() {
   const t = useT();
@@ -23,7 +22,6 @@ export function AccountStub() {
   const tabs = [
     { id: "you" as const, label: t("Your profile") },
     { id: "profiles" as const, label: t("Profiles") },
-    { id: "harbor" as const, label: t("Harbor account") },
     { id: "stremio" as const, label: t("Stremio") },
   ];
 
@@ -32,7 +30,6 @@ export function AccountStub() {
     <div key={tab} className="harbor-cascade flex flex-col gap-10">
       {tab === "you" && <IdentityTab />}
       {tab === "profiles" && <ProfilesTab />}
-      {tab === "harbor" && <HarborAccountPanel />}
       {tab === "stremio" && <StremioTab />}
     </div>
   );

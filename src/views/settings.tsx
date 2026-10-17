@@ -295,7 +295,7 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   tv: {
     label: "TV Settings",
-    sub: "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.",
+    sub: "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.",
   },
   bigPicture: {
     label: "Big Picture",

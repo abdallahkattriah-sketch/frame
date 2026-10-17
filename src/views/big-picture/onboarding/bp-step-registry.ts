@@ -1,7 +1,6 @@
 import type { ComponentType } from "react";
 import type { BpOnboardStepId, BpOnboardStepProps } from "../bp-onboarding-frame";
 import { BpStepDone } from "./steps/bp-step-done";
-import { BpStepHarbor } from "./steps/bp-step-harbor";
 import { BpStepLanguage } from "./steps/bp-step-language";
 import { BpStepLayout } from "./steps/bp-step-layout";
 import { BpStepPhone } from "./steps/bp-step-phone";
@@ -21,7 +20,6 @@ export const BP_ONBOARD_STEP_VIEWS: Record<BpOnboardStepId, ComponentType<BpOnbo
   phone: BpStepPhone,
   tmdb: BpStepTmdb,
   stremio: BpStepStremio,
-  harbor: BpStepHarbor,
   layout: BpStepLayout,
   streaming: BpStepStreaming,
   subtitles: BpStepSubtitles,

@@ -30,13 +30,6 @@ export function BpStepDone() {
         : t("Not signed in to Stremio. Your library stays local."),
     },
     {
-      key: "harbor",
-      on: facts.harborName !== null,
-      text: facts.harborName
-        ? t("Harbor account linked as {name}", { name: facts.harborName })
-        : t("No Harbor account yet"),
-    },
-    {
       key: "subs",
       on: facts.subLangs.length > 0,
       text:

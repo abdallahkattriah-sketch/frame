@@ -12,7 +12,6 @@ export const SECTION_TABS: Partial<Record<SectionId, TabEntry[]>> = {
   account: [
     { id: "you", label: "Your profile", icon: "UserRound" },
     { id: "profiles", label: "Profiles", icon: "Users" },
-    { id: "harbor", label: "Harbor account", icon: "Harbor" },
     { id: "stremio", label: "Stremio", icon: "Play", img: stremioLogo },
   ],
   player: [

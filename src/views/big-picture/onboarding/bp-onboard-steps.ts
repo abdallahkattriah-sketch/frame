@@ -5,7 +5,6 @@ export type BpOnboardStepId =
   | "phone"
   | "tmdb"
   | "stremio"
-  | "harbor"
   | "layout"
   | "streaming"
   | "subtitles"
@@ -76,15 +75,6 @@ export const BP_ONBOARD_STEPS: readonly BpOnboardStep[] = [
     focus: "decision",
     primary: "Continue",
     skip: "Not now",
-  },
-  {
-    id: "harbor",
-    eyebrow: "Harbor account",
-    headline: "Create a Harbor account",
-    body: "Sync your profile, themes, lists and friends. You can do this any time.",
-    focus: "skip",
-    primary: "Continue",
-    skip: "Later",
   },
   {
     id: "layout",
