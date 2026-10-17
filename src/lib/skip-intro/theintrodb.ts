@@ -6,7 +6,7 @@ import { warnProviderFailure } from "./provider-log";
 type RawSpan = { start_ms: number | null; end_ms: number | null };
 
 type RawResponse = {
-  tmdb_id?: number;
+  tvdb_id?: number;
   type?: string;
   intro?: RawSpan[];
   recap?: RawSpan[];
@@ -77,7 +77,7 @@ async function fetchRaw(cacheKey: string): Promise<RawResponse | null> {
   const key = apiKey;
   const p = (async () => {
     const res = await fetch(
-      `https://api.theintrodb.org/v2/media?${cacheKey}`,
+      `https://api.theintrodb.org/v4/media?${cacheKey}`,
       key ? { headers: { [API_KEY_HEADER]: key } } : undefined,
     );
     if (!res.ok) {
