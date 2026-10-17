@@ -39,7 +39,7 @@ test("AniList tokens are read from the pin page text or the redirect URL", () =>
 });
 
 test("MAL codes and state are read from the pasted redirect URL", () => {
-  const pasted = "http://localhost/harbor-mal?code=abc123&state=xyz";
+  const pasted = "http://localhost:47321/harbor-mal?code=abc123&state=xyz";
   assert.equal(extractMalCode(pasted), "abc123");
   assert.equal(extractMalState(pasted), "xyz");
   assert.equal(extractMalCode("abc123"), "abc123");

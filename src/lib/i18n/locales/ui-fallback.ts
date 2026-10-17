@@ -2093,8 +2093,8 @@ const uiFallback: Record<string, string> = {
   "Add your MAL Client ID to connect. Without it Harbor cannot sign in to MyAnimeList.":
     "Add your MAL Client ID to connect. Without it Harbor cannot sign in to MyAnimeList.",
   "Client ID of your MyAnimeList app": "Client ID of your MyAnimeList app",
-  "After you approve Harbor, MyAnimeList sends your browser to that address. The page will not load: copy the full address from the address bar and paste it into Harbor.":
-    "After you approve Harbor, MyAnimeList sends your browser to that address. The page will not load: copy the full address from the address bar and paste it into Harbor.",
+  "After you approve Harbor, MyAnimeList sends your browser to that address and Harbor catches it. If that page does not load, copy its full address from the address bar and paste it into Harbor.":
+    "After you approve Harbor, MyAnimeList sends your browser to that address and Harbor catches it. If that page does not load, copy its full address from the address bar and paste it into Harbor.",
   "Your Trakt app": "Your Trakt app",
   "Harbor signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.":
     "Harbor signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.",
@@ -2104,8 +2104,8 @@ const uiFallback: Record<string, string> = {
   "Trakt app not set up": "Trakt app not set up",
   'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.':
     'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.',
-  "A browser tab opened on MyAnimeList. Approve Harbor there. The page it then opens will not load: copy its full address from the address bar and paste it below.":
-    "A browser tab opened on MyAnimeList. Approve Harbor there. The page it then opens will not load: copy its full address from the address bar and paste it below.",
+  "A browser tab opened on MyAnimeList. Approve Harbor there and Harbor connects on its own. If the next page does not load, copy its full address from the address bar and paste it below.":
+    "A browser tab opened on MyAnimeList. Approve Harbor there and Harbor connects on its own. If the next page does not load, copy its full address from the address bar and paste it below.",
   "MyAnimeList app not set up": "MyAnimeList app not set up",
   'Add the Client ID of your own MyAnimeList API client under "Your MyAnimeList app" in these settings, then try again.':
     'Add the Client ID of your own MyAnimeList API client under "Your MyAnimeList app" in these settings, then try again.',

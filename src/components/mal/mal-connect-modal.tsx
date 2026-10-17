@@ -73,7 +73,7 @@ export function MalConnectModal({ onClose }: { onClose: () => void }) {
           <>
             <p className="text-[13px] leading-relaxed text-ink-muted">
               {t(
-                "A browser tab opened on MyAnimeList. Approve Harbor there. The page it then opens will not load: copy its full address from the address bar and paste it below.",
+                "A browser tab opened on MyAnimeList. Approve Harbor there and Harbor connects on its own. If the next page does not load, copy its full address from the address bar and paste it below.",
               )}
             </p>
             <textarea

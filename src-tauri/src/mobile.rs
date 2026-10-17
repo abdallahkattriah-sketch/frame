@@ -16,7 +16,7 @@
 
 use crate::{
     crash_report, diagnostics, download, ebook_tts, fonts, gamepad, http_fetch, local_lib,
-    media_server, power, proc_mem, settings_store, stream_proxy, streams, stremio_auth,
+    mal_auth, media_server, power, proc_mem, settings_store, stream_proxy, streams, stremio_auth,
     subtitle_credentials, temp_prune, torrent_engine, transcode, web_server,
 };
 
@@ -140,6 +140,7 @@ pub fn run() {
             gamepad::gamepad_set_background_input,
             power::power_inhibit,
             stremio_auth::stremio_auth_start,
+            mal_auth::mal_auth_start,
             transcode::cast_ffmpeg_present,
         ])
         .build(tauri::generate_context!())

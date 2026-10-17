@@ -12,6 +12,18 @@ import { buildAuthorizeUrl, completeAuthorization, MalCredentialsMissingError } 
 import { getSession, isAuthenticated, setSession, subscribeSession } from "./session";
 import { validateMalSession } from "./validate";
 import type { MalSession } from "./types";
+
+function isTauri(): boolean {
+  return typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
+}
+
+// The desktop app catches MAL's redirect on MAL_REDIRECT_URI; pasting the address stays as the fallback.
+async function startRedirectListener(): Promise<void> {
+  if (!isTauri()) return;
+  const { invoke } = await import("@tauri-apps/api/core");
+  await invoke<boolean>("mal_auth_start").catch(() => false);
+}
+
 export type ConnectState =
   | { kind: "idle" }
   | { kind: "needs-code" }
@@ -43,11 +55,38 @@ export function MalProvider({ children }: { children: ReactNode }) {
     void validateMalSession();
   }, [session?.accessToken]);
 
+  const submitCode = useCallback((code: string) => {
+    setConnectState({ kind: "verifying" });
+    completeAuthorization(code)
+      .then((final) => setConnectState({ kind: "success", session: final }))
+      .catch((e: Error) => setConnectState({ kind: "error", message: e.message }));
+  }, []);
+
+  useEffect(() => {
+    if (!isTauri()) return;
+    let unlisten: (() => void) | null = null;
+    let disposed = false;
+    void import("@tauri-apps/api/event").then(({ listen }) =>
+      listen<{ code: string; state: string }>("mal-auth", (e) => {
+        const { code, state } = e.payload ?? { code: "", state: "" };
+        if (code)
+          submitCode(`?code=${encodeURIComponent(code)}&state=${encodeURIComponent(state)}`);
+      }).then((fn) => {
+        if (disposed) fn();
+        else unlisten = fn;
+      }),
+    );
+    return () => {
+      disposed = true;
+      unlisten?.();
+    };
+  }, [submitCode]);
+
   const beginConnect = useCallback(() => {
     try {
       const url = buildAuthorizeUrl();
       setConnectState({ kind: "needs-code" });
-      openUrl(url);
+      void startRedirectListener().then(() => openUrl(url));
     } catch (e) {
       if (e instanceof MalCredentialsMissingError) {
         setConnectState({ kind: "missing-credentials" });
@@ -58,13 +97,6 @@ export function MalProvider({ children }: { children: ReactNode }) {
         message: e instanceof Error ? e.message : "MyAnimeList is not configured in this build.",
       });
     }
-  }, []);
-
-  const submitCode = useCallback((code: string) => {
-    setConnectState({ kind: "verifying" });
-    completeAuthorization(code)
-      .then((final) => setConnectState({ kind: "success", session: final }))
-      .catch((e: Error) => setConnectState({ kind: "error", message: e.message }));
   }, []);
 
   const cancelConnect = useCallback(() => setConnectState({ kind: "idle" }), []);
