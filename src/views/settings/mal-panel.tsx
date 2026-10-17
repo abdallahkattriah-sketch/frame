@@ -160,7 +160,7 @@ export function MalPanel() {
       <Section
         title={t("Your MyAnimeList app")}
         subtitle={t(
-          "Harbor signs in to MyAnimeList with an API client you register on your own account. It only takes a minute.",
+          "Harbor signs in to MyAnimeList with its own client, so you only need to connect. To use an API client of your own instead, follow these steps.",
         )}
       >
         <MalAppCredentials />

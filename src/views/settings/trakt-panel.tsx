@@ -132,7 +132,7 @@ export function TraktPanel() {
       <Section
         title={t("Your Trakt app")}
         subtitle={t(
-          "Harbor signs in to Trakt with an API app you create on your own Trakt account. It only takes a minute.",
+          "Harbor signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.",
         )}
       >
         <TraktAppCredentials />

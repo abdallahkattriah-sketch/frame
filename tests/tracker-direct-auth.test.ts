@@ -4,7 +4,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 // @ts-expect-error Node test types are intentionally outside the browser-only tsconfig.
 import test from "node:test";
-import { LEGACY_TRAKT_CLIENT_ID } from "../src/lib/trakt/config.ts";
+import { HARBOR_TRAKT_CLIENT_ID, LEGACY_TRAKT_CLIENT_ID } from "../src/lib/trakt/config.ts";
+import { HARBOR_MAL_CLIENT_ID } from "../src/lib/mal/config.ts";
 import {
   hasTraktClientId,
   sessionClientId,
@@ -18,9 +19,10 @@ import { hasMalClientId, malClientId, setMalClientId } from "../src/lib/mal/cred
 const read = (p: string) => readFileSync(new URL(`../${p}`, import.meta.url), "utf8");
 const session = { accessToken: "a", refreshToken: "r", createdAt: 1, expiresIn: 1, username: null };
 
-test("Trakt needs a client ID from settings before sign-in", () => {
+test("Trakt signs in with the fork's app unless settings name another", () => {
   setTraktCredentials("", "");
-  assert.equal(hasTraktClientId(), false);
+  assert.equal(traktClientId(), HARBOR_TRAKT_CLIENT_ID);
+  assert.equal(traktClientSecretFor(HARBOR_TRAKT_CLIENT_ID), "");
   setTraktCredentials("  mine  ", " secret ");
   assert.equal(traktClientId(), "mine");
   assert.equal(hasTraktClientId(), true);
@@ -39,12 +41,13 @@ test("existing Trakt sessions keep the API key of the app that issued them", () 
   assert.equal(traktApiKey({ ...session, clientId: "mine" }), "mine");
   assert.equal(traktApiKey(null), "mine");
   setTraktCredentials("", "");
-  assert.equal(traktApiKey(null), LEGACY_TRAKT_CLIENT_ID);
+  assert.equal(traktApiKey(null), HARBOR_TRAKT_CLIENT_ID);
 });
 
-test("MAL needs a client ID from settings before sign-in", () => {
+test("MAL signs in with the fork's client unless settings name another", () => {
   setMalClientId("");
-  assert.equal(hasMalClientId(), false);
+  assert.equal(malClientId(), HARBOR_MAL_CLIENT_ID);
+  assert.equal(hasMalClientId(), true);
   setMalClientId(" abc ");
   assert.equal(malClientId(), "abc");
 });

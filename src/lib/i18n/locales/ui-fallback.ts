@@ -2096,11 +2096,11 @@ const uiFallback: Record<string, string> = {
   "After you approve Harbor, MyAnimeList sends your browser to that address. The page will not load: copy the full address from the address bar and paste it into Harbor.":
     "After you approve Harbor, MyAnimeList sends your browser to that address. The page will not load: copy the full address from the address bar and paste it into Harbor.",
   "Your Trakt app": "Your Trakt app",
-  "Harbor signs in to Trakt with an API app you create on your own Trakt account. It only takes a minute.":
-    "Harbor signs in to Trakt with an API app you create on your own Trakt account. It only takes a minute.",
+  "Harbor signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.":
+    "Harbor signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.",
   "Your MyAnimeList app": "Your MyAnimeList app",
-  "Harbor signs in to MyAnimeList with an API client you register on your own account. It only takes a minute.":
-    "Harbor signs in to MyAnimeList with an API client you register on your own account. It only takes a minute.",
+  "Harbor signs in to MyAnimeList with its own client, so you only need to connect. To use an API client of your own instead, follow these steps.":
+    "Harbor signs in to MyAnimeList with its own client, so you only need to connect. To use an API client of your own instead, follow these steps.",
   "Trakt app not set up": "Trakt app not set up",
   'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.':
     'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.',

@@ -1,7 +1,8 @@
-import { LEGACY_TRAKT_CLIENT_ID } from "./config";
+import { HARBOR_TRAKT_CLIENT_ID, LEGACY_TRAKT_CLIENT_ID } from "./config";
 import type { TraktSession } from "./types";
 
-const BUILD_CLIENT_ID = (import.meta.env?.VITE_TRAKT_CLIENT_ID ?? "").trim();
+const BUILD_CLIENT_ID =
+  (import.meta.env?.VITE_TRAKT_CLIENT_ID ?? "").trim() || HARBOR_TRAKT_CLIENT_ID;
 const BUILD_CLIENT_SECRET = (import.meta.env?.VITE_TRAKT_CLIENT_SECRET ?? "").trim();
 
 let userClientId = "";

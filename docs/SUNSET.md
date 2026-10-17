@@ -11,8 +11,8 @@ The app talks to Stremio, addons and most metadata services directly, so the cor
 - Subtitles, and skip intro/outro from SkipDB, TheIntroDB, introdb.app, AniSkip and chapter markers.
 - Anime metadata from Kitsu and AniZip, stream ranking, local files, Plex, Jellyfin and Emby.
 - TVDB (episode orders, episode lists, artwork, stills, cast, collections), as long as a TVDB API key is set in Settings > Library. Every TVDB request goes straight to `api4.thetvdb.com`; without a key these features stay empty.
-- Trakt sign-in, scrobbling and token refresh, through a Trakt API app you create (Settings > Trackers > Trakt > Your Trakt app). Harbor calls `api.trakt.tv` directly; the Client ID is required, the Client Secret optional. Builds can carry defaults in `VITE_TRAKT_CLIENT_ID` / `VITE_TRAKT_CLIENT_SECRET`.
-- MyAnimeList sign-in and token refresh, through a MAL API client you register (App Type "other", so no secret). Harbor does OAuth2 PKCE (`plain`) against `myanimelist.net/v1/oauth2/token`, and you paste the redirected address back into Harbor. A build default can come from `VITE_MAL_CLIENT_ID`.
+- Trakt sign-in, scrobbling and token refresh, through this fork's Trakt app: just connect. Harbor calls `api.trakt.tv` directly with device sign-in and no client secret. You can use an app of your own instead (Settings > Trackers > Trakt > Your Trakt app), and builds can override the default with `VITE_TRAKT_CLIENT_ID`.
+- MyAnimeList sign-in and token refresh, through this fork's MAL client (App Type "other", so no secret). Harbor does OAuth2 PKCE (`plain`) against `myanimelist.net/v1/oauth2/token`, and you paste the redirected address back into Harbor. You can use a client of your own instead, and builds can override the default with `VITE_MAL_CLIENT_ID`.
 - AniList sign-in, with no setup: the implicit grant on Harbor's AniList client shows the token on AniList's pin page, and you paste it into Harbor.
 - Simkl community ratings, straight from `api.simkl.com/ratings`.
 - Watch parties through your own Cloudflare relay (Settings > Relay).
