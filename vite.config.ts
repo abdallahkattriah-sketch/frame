@@ -57,7 +57,7 @@ export default defineConfig(({ mode }) => {
     clearScreen: false,
     define: {
       __APP_VERSION__: JSON.stringify(pkg.version),
-      __IS_BETA_BUILD__: JSON.stringify(process.env.HARBOR_CHANNEL !== "stable"),
+      __IS_BETA_BUILD__: JSON.stringify(process.env.HARBOR_CHANNEL === "beta"),
       __BUILD_ID__: JSON.stringify(
         process.env.HARBOR_BUILD_ID ||
           (() => {

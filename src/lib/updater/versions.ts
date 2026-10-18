@@ -2,6 +2,8 @@ import { safeFetch } from "@/lib/safe-fetch";
 import { probeHandoff } from "./handoff";
 
 const RELEASES_API = "https://api.github.com/repos/crazyrabbit0/harbor/releases?per_page=30";
+// The API allows 60 unauthenticated requests an hour per IP; the Atom feed has no such limit but lists only 10.
+const RELEASES_FEED = "https://github.com/crazyrabbit0/harbor/releases.atom";
 
 export type VersionEntry = {
   version: string;
@@ -53,21 +55,59 @@ function changesOf(body: string): string | undefined {
   return notes || undefined;
 }
 
+const ENTITIES: Record<string, string> = { lt: "<", gt: ">", quot: '"', apos: "'", amp: "&" };
+
+function unescapeXml(text: string): string {
+  return text.replace(/&(#\d+|lt|gt|quot|apos|amp);/g, (_, e: string) =>
+    e.startsWith("#") ? String.fromCharCode(Number(e.slice(1))) : ENTITIES[e],
+  );
+}
+
+// Turns a feed entry's HTML body back into the markdown shape the API returns.
+function markdownFromHtml(html: string): string {
+  const text = html
+    .replace(/<h2>(.*?)<\/h2>/g, "\n## $1\n")
+    .replace(/<h3>(.*?)<\/h3>/g, "\n### $1\n")
+    .replace(/<li>(.*?)<\/li>\n?/g, "- $1\n")
+    .replace(/<strong>Full changelog<\/strong>/g, "\n**Full changelog**")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\n{3,}/g, "\n\n");
+  return unescapeXml(text);
+}
+
+export function releasesFromFeed(xml: string): GitHubRelease[] {
+  return [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(([, entry]) => {
+    const html = unescapeXml(/<content type="html">([\s\S]*?)<\/content>/.exec(entry)?.[1] ?? "");
+    return {
+      tag_name: /<id>[^<]*\/([^/<]+)<\/id>/.exec(entry)?.[1],
+      published_at: /<updated>([^<]+)<\/updated>/.exec(entry)?.[1],
+      body: markdownFromHtml(html),
+      assets: [...html.matchAll(/href="([^"]+\/releases\/download\/[^"]+)"/g)].map(([, url]) => ({
+        name: url.slice(url.lastIndexOf("/") + 1),
+        browser_download_url: url,
+      })),
+    };
+  });
+}
+
+async function fetchReleases(): Promise<GitHubRelease[]> {
+  const res = await safeFetch(RELEASES_API, {
+    cache: "no-store",
+    headers: { accept: "application/vnd.github+json" },
+  }).catch(() => null);
+  if (res?.ok) {
+    const data = (await res.json()) as unknown;
+    return Array.isArray(data) ? (data as GitHubRelease[]) : [];
+  }
+  const feed = await safeFetch(RELEASES_FEED, { cache: "no-store" });
+  if (!feed.ok) throw new Error(`history ${res?.status ?? "offline"} / feed ${feed.status}`);
+  return releasesFromFeed(await feed.text());
+}
+
 export async function fetchVersionHistory(): Promise<VersionEntry[]> {
-  const [res, probe] = await Promise.all([
-    safeFetch(RELEASES_API, {
-      cache: "no-store",
-      headers: { accept: "application/vnd.github+json" },
-    }),
-    probeHandoff(),
-  ]);
-  if (!res.ok) throw new Error(`history ${res.status}`);
+  const [releases, probe] = await Promise.all([fetchReleases(), probeHandoff()]);
   platformKey = probe?.platformKey ?? null;
-  const data = (await res.json()) as unknown;
-  if (!Array.isArray(data)) return [];
-  return data
-    .map((r) => versionFromRelease(r as GitHubRelease))
-    .filter((v): v is VersionEntry => v !== null);
+  return releases.map(versionFromRelease).filter((v): v is VersionEntry => v !== null);
 }
 
 let platformKey: string | null = null;
