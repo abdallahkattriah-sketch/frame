@@ -18,6 +18,17 @@ Notes for agents working in this folder. Root rules live in `../AGENTS.md`.
 - There is no wrapper module; files import `@tauri-apps/api/core` `invoke`/`listen` directly, and every call needs a non-Tauri guard (`isTauri()` or `"__TAURI_INTERNALS__" in window`), since the same code runs in a browser.
 - mpv state arrives only via `listen("mpv://event")` in `lib/player/mpv.ts` (`property-change`, `end-file`, `file-loaded`, `playback-restart`, synthetic `player-failure`). The UI contract is `PlayerBridge`/`PlayerSnapshot` in `lib/player/bridge.ts`.
 
+## Player and streams
+
+- Engine choice is `pickBridge` (`views/player/player-utils.ts`): `mpv` falls back to `html5` when `probeMpv()` fails, `auto` tries mpv first in Tauri. In the player, hls.js and mpegts.js run only inside the html5 engine (`lib/player/html5/bridge.ts`); Multiview has its own hls/mpegts/native tiles (`views/multiview/multi-player.tsx`). Controls branch on `ctx.engine`, so a new control must say what it does on html5.
+- Play flow: `usePipelineResult` → `runPipeline` (`lib/streams/pipeline.ts`) → `resolveStream`/`resolveViaDebrids` (`resolve.ts`) → `usePickHandler` classifies `p2p`/`direct`/`debrid` → `openPlayer` (`views/play-picker/use-pick-handler.ts`). Autoplay walks candidates in `use-auto-fire.ts`/`use-auto-candidates.ts`.
+- Player behaviour lives in `views/player/hooks/` (~90 hooks); overlays are `views/player/*-layer.tsx` composed by `player-overlay-layers.tsx`. The HUD layout editor is `views/settings/player-layout-panel/`, rendered by `components/player/transport/control-renderer*.tsx`. Big Picture has its own player (`views/big-picture/player/`).
+- The in-player stream switcher always opens in place; never navigate to the full picker from it (`use-stream-switcher.ts`). A start that never plays is abandoned after `NEVER_STARTED_CEILING_MS` (45 s, `use-auto-retry.ts`).
+
+## Feature areas with their own notes
+
+- Big Picture / Android TV: `views/big-picture/AGENTS.md`. Games: `lib/games/AGENTS.md` (+ `src-tauri/src/games/AGENTS.md`); `views/games/` is UI only. Music and DJ deck: `lib/music/AGENTS.md`.
+
 ## Detail page episode lists
 
 - The page scroller is `scrollRef` in `views/detail.tsx`; `useScrollMemory` restores its position on entry when `resumeDetailScroll` is on, so a scroll you add must not fight a restored position.
@@ -36,6 +47,10 @@ Notes for agents working in this folder. Root rules live in `../AGENTS.md`.
 - A new setting touches `lib/settings/types.ts` (type), `lib/settings/defaults.ts` (`DEFAULT`), and usually a sanitizer in `lib/settings/load.ts`. If user-facing, also add a `SETTINGS_OPTIONS` entry in `views/settings/nav.tsx`.
 - `SETTINGS_OPTIONS` is parsed by `scripts/settings-search-entries.mjs` via the TS AST: keep it a static array of string-literal objects (no spreads, no computed values).
 - Settings dialogs must portal and sit above the title bar's z-index 140; `pnpm check:settings` enforces this. Run `check:search` after changing labels or keywords.
+- A new settings page needs a `SectionId` (`views/settings/shared.tsx`), a `lazy()` panel plus `SECTION_PRELOAD` entry in `views/settings.tsx`, a group in `views/settings/groups.ts` (`TOP_GROUPS`), and tabs, if any, in `tab-registry.ts` (`SECTION_TABS`).
+- Row primitives come in three sets (`ui.tsx` `SRow`/`SCard`, `kit.tsx` `SettingRow`/`SettingGroup`, `shared.tsx` `ToggleRow`); match the siblings in the panel you edit. Search jumps land on `SettingGroup`'s `settingsAnchor(label)` id.
+- `check:settings` also fails on overlays without Escape/backdrop/close, a `Settings` key missing from `defaults.ts`, a key written from settings UI but never read elsewhere (`src-tauri/src` counts), ALL-CAPS labels, and unreferenced or duplicate keyframes.
+- Persistence: localStorage `harbor.settings.<profileId>` (or `harbor.settings.shared` when linked, mirrored to `harbor.settings`), then `settings_write` to `settings.json` debounced 600 ms; tracker/server session keys go to `secrets.json` through `lib/secret-store.ts`, scoped `<prefix>.<profileId>`. `file-store.ts` swallows write errors, and `serializeSettings` drops `theme.backgroundImage` (stored separately via `saveBgImage` in `lib/theme-storage.ts`).
 
 ## Input and focus (TV / keyboard / gamepad)
 

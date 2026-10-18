@@ -4,7 +4,8 @@ Notes for agents working in this folder.
 
 ## Commands and windows
 
-- Register every `#[tauri::command]` in BOTH handler lists: `src/lib.rs` (`generate_handler!` around L998) and `src/mobile.rs` (L80). Mobile is a separate macro and does not inherit desktop entries. Gate platform-only entries with `#[cfg(...)]` inside the list.
+- Desktop commands are registered in `src/lib.rs` (`generate_handler!` around L999, ~520 entries). Android has its own builder and list in `src/mobile.rs` (L80, ~64 entries: torrent engine, proxy, web server, settings, fetch bridge); it inherits nothing, so add a command there only if Android needs it. Games, music, mpv, casting and ffmpeg features are desktop-only. Gate platform-only entries with `#[cfg(...)]` inside the list.
+- `run()` in `src/lib.rs` first checks `music::try_run_connector_worker` and the `games::try_run_*_worker`s (L723-726): the same exe doubles as a worker subprocess, so a new worker mode needs a check there, before the Tauri builder.
 - App commands need no capability entry, but plugin APIs do (`capabilities/*.json`), and capabilities match windows by label. A new window label needs adding to a capability's `windows` list; e.g. `harbor-video-pip` is only in `video-pip.json`.
 - Secondary windows load the frontend with a `?harbor-*=1` query that `src/main.tsx` dispatches on.
 
@@ -20,6 +21,12 @@ Notes for agents working in this folder.
 
 - One OS thread (`spawn_event_loop`, `src/mpv.rs`) waits on mpv and emits everything as `mpv://event` (`{event, ...}`); `time-pos` is throttled to 200 ms. Anything slow on that thread delays every playback event, so move it to `spawn_blocking`/`tokio::spawn`.
 - Event payload names are the frontend contract (`src/lib/player/mpv.ts`). Change both sides together.
+- On Windows `mpv.rs` finds its embedded child among the main HWND's children by `class == "mpv"` or an empty class with a title starting "Harbor", so no other child window (e.g. the `ytmusic.rs` embed) may have a title starting "Harbor".
+- `stream_proxy.rs` never forwards `accept-encoding`: reqwest manages compression and rejects a manual header.
+
+## Subsystems with their own notes
+
+- `src/games/AGENTS.md` (game library, emulators, launchers) and `src/music/AGENTS.md` (music engines, Spotify, DJ decks, audio cable).
 
 ## Bundled inputs
 
@@ -34,5 +41,5 @@ Notes for agents working in this folder.
 
 ## Tests
 
-- No integration tests: `tests/` holds only fixtures (pulled in with `include_bytes!`). Tests are inline `#[cfg(test)]` or sibling `*_tests.rs` in `src/games/`.
+- No integration tests: `tests/` holds only fixtures (pulled in with `include_bytes!`). Tests are inline `#[cfg(test)]` or sibling `*_tests.rs` (`src/games/`, `src/music/engine_tests.rs`).
 - Single test: `cargo test --manifest-path src-tauri/Cargo.toml <module::path substring>`, with `TAURI_CONFIG` set as in the root notes if setup wasn't run.
