@@ -58,7 +58,8 @@ def main() -> int:
         parser.error(f"Missing executable: {binary}")
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix="profile-", dir=output) as home:
+    # WebKit's network process can still be writing its cache here after Harbor exits.
+    with tempfile.TemporaryDirectory(prefix="profile-", dir=output, ignore_cleanup_errors=True) as home:
         temp = Path(home) / "tmp"
         temp.mkdir()
         env = {**os.environ, "HOME": home, "CFFIXED_USER_HOME": home, "TMPDIR": str(temp)}
