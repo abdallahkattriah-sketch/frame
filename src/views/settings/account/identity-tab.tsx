@@ -109,10 +109,7 @@ export function IdentityTab() {
 
   return (
     <>
-      <Section
-        title={t("Your profile")}
-        subtitle={t("Your avatar, name, and handle across Harbor.")}
-      >
+      <Section title={t("Your profile")} subtitle={t("Your avatar and name in Harbor.")}>
         <div className="hset-profile-identity flex items-center gap-6 py-3">
           <AvatarRing
             src={effectiveAvatar}

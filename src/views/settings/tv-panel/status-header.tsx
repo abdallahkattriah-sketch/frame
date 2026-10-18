@@ -100,7 +100,7 @@ export function TvStatusHeader() {
               ? { tone: "on", line: `Sent to your account ${ago(status.lastPushAt, now)}.` }
               : {
                   tone: "off",
-                  line: "Changes sync automatically through your Harbor account.",
+                  line: "These settings stay on this computer.",
                 };
 
   return (

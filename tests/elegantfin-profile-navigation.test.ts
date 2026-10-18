@@ -174,14 +174,10 @@ test("viewMyProfile preserves the swallowed fetch-failure contract", async () =>
   assert.equal(attempts, 2);
 });
 
-test("Theme Studio documents the immediate boolean profile API", () => {
-  assert.deepEqual(
-    WINDOW_HARBOR.find((entry) => entry.call === "window.harbor.tryViewMyProfile()"),
-    {
-      call: "window.harbor.tryViewMyProfile()",
-      desc: "Open the signed-in user's own Harbor profile immediately when its handle is loaded. Returns true when navigation starts and false otherwise.",
-    },
-  );
+test("Theme Studio does not document the account-only profile helpers", () => {
+  const calls = WINDOW_HARBOR.map((entry) => entry.call);
+  assert.ok(!calls.includes("window.harbor.viewMyProfile()"));
+  assert.ok(!calls.includes("window.harbor.tryViewMyProfile()"));
 });
 
 type ImmediateApi = { tryViewMyProfile?: () => unknown };

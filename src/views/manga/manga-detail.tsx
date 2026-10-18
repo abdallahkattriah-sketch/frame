@@ -34,8 +34,6 @@ import {
 } from "@/lib/manga/api";
 import { ChapterList } from "./manga-detail/chapter-list";
 import { MangaAddToListButton } from "./manga-detail/add-to-list-button";
-import { RateButton } from "@/components/ratings/rate-button";
-import { ratingTarget } from "@/lib/ratings/types";
 import { coverageOf } from "./anime-coverage";
 import { badgeArtFor, CollectionBadges } from "./collection-badge";
 import { MangaAdaptationCard, MangaRecommendedRail } from "./manga-extras";
@@ -543,15 +541,6 @@ export function MangaDetail({
                     inactiveIcon={<UiIcon name="favorite" className="h-5 w-5" />}
                   />
                 </button>
-                {detail && (
-                  <RateButton
-                    tone="lift"
-                    target={ratingTarget(
-                      { id: mangaId, name: detail.title, poster: detail.cover },
-                      "manga",
-                    )}
-                  />
-                )}
                 <MangaAddToListButton
                   mangaId={mangaId}
                   title={detail?.title ?? ""}

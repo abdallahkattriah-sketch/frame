@@ -169,14 +169,6 @@ export const WINDOW_HARBOR: HarborApi[] = [
     desc: "Open Harbor's real account dropdown (profiles, View my profile, Notifications, Manage profiles, sign in/out). Pass the clicked element and the menu anchors under it; omit it and the menu opens top-right.",
   },
   {
-    call: "window.harbor.viewMyProfile()",
-    desc: "Open the signed-in user's own Harbor profile page.",
-  },
-  {
-    call: "window.harbor.tryViewMyProfile()",
-    desc: "Open the signed-in user's own Harbor profile immediately when its handle is loaded. Returns true when navigation starts and false otherwise.",
-  },
-  {
     call: "window.harbor.unreadCount()",
     desc: "Returns the current unread notification count as a number.",
   },

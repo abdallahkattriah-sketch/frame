@@ -1,5 +1,4 @@
 import { normalizeRoomCode } from "./protocol";
-import { HARBOR_RELAY_BASE } from "@/lib/config/endpoints";
 
 const RELAY_PARAM = "harbor-relay";
 const ROOM_PARAM = "harbor-room";
@@ -9,18 +8,15 @@ export type ParsedInvite = {
   roomCode: string;
 };
 
-export const WEB_JOIN_BASE = HARBOR_RELAY_BASE;
-
-export function buildInviteUrl(relayUrl: string, roomCode: string, origin?: string): string {
-  const local =
-    typeof window !== "undefined" && !("__TAURI_INTERNALS__" in window)
-      ? window.location.origin
-      : WEB_JOIN_BASE;
-  const base = origin ?? local;
+// The desktop app has no web page to open, so its links carry the settings as a query a joiner pastes.
+export function buildInviteUrl(relayUrl: string, roomCode: string): string {
   const params = new URLSearchParams();
   params.set(RELAY_PARAM, relayUrl);
   params.set(ROOM_PARAM, roomCode.toUpperCase());
-  return `${base}/?${params.toString()}`;
+  const query = params.toString();
+  return typeof window !== "undefined" && !("__TAURI_INTERNALS__" in window)
+    ? `${window.location.origin}/?${query}`
+    : `?${query}`;
 }
 
 export function parseInviteFromLocation(): ParsedInvite | null {

@@ -9,7 +9,7 @@ const HARBOR_LOGO = `${HARBOR_DATA_BASE}/discord/harbordiscord.png`;
 // Discord strips buttons that link to its own invites: discord.gg makes it
 // reject the whole activity (presence vanishes), discord.com/invite is dropped
 // silently. A community-invite button needs a redirect on a domain we own.
-const STATIC_BUTTONS = [{ label: "Harbor Website", url: "https://harbor.elfhosted.com/" }];
+const STATIC_BUTTONS = [{ label: "Get Harbor", url: "https://github.com/crazyrabbit0/harbor" }];
 
 type DiscordConfig = {
   enabled: boolean;
@@ -150,24 +150,18 @@ function computeBase(): Base {
     const live = !music.paused && music.durationSec > 0 && remaining > 0;
     const credit = music.album ? `${music.artist} · ${music.album}` : music.artist;
     const state = music.paused ? `Paused · ${music.artist}` : credit;
-    const buttons = music.trackUrl
-      ? [{ label: "Listen in Harbor", url: music.trackUrl }, ...STATIC_BUTTONS]
-      : STATIC_BUTTONS;
     return {
       payload: {
         details: music.title,
-        detailsUrl: music.trackUrl,
         state,
-        stateUrl: music.artistUrl ?? music.trackUrl,
         posterUrl: (config.showPoster && music.artwork) || HARBOR_LOGO,
         largeText: music.album ? `${music.album} by ${music.artist}` : music.artist,
-        largeUrl: music.albumUrl ?? music.trackUrl,
         smallUrl: STATIC_BUTTONS[0].url,
         startTs: live && config.showTimestamp ? nowSec - Math.floor(music.positionSec) : undefined,
         endTs: live && config.showTimestamp ? nowSec + Math.floor(remaining) : undefined,
         activityType: "listening",
         paused: music.paused,
-        buttons,
+        buttons: STATIC_BUTTONS,
       },
       key: `music:${music.title}|${state}|${music.artwork ?? ""}|${live ? "ts" : "nots"}`,
     };
@@ -247,10 +241,7 @@ function compute(): Computed {
     const people = headcount === 1 ? "1 👤" : `${headcount} 👥`;
     payload.details = `Watch Party · ${people}`;
     payload.state = context ?? "In the lobby";
-    payload.buttons =
-      party.joinUrl && config.showPartyJoin
-        ? [{ label: "Join the Watch Party", url: party.joinUrl }, ...STATIC_BUTTONS]
-        : STATIC_BUTTONS;
+    payload.buttons = STATIC_BUTTONS;
     const live = typeof payload.startTs === "number";
     return {
       payload,

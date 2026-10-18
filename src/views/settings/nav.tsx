@@ -7658,21 +7658,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Who pays for the servers",
-    section: "support",
-    anchorTitle: "Who keeps this running",
-    keywords: [
-      "elfhosted",
-      "hosting",
-      "servers",
-      "backend",
-      "who pays",
-      "infrastructure",
-      "sponsor",
-      "running costs",
-    ],
-  },
-  {
     label: "Built on Stremio",
     section: "support",
     anchorTitle: "Built on Stremio",
@@ -7900,13 +7885,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     tab: "privacy",
     anchorTitle: "Discord Rich Presence",
     keywords: ["music on discord", "now playing status", "listening presence", "track on discord"],
-  },
-  {
-    label: "Watch party join button",
-    section: "advanced",
-    tab: "privacy",
-    anchorTitle: "Discord Rich Presence",
-    keywords: ["join button", "watch party invite", "room link", "party join"],
   },
   {
     label: "API budget",

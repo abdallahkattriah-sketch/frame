@@ -95,7 +95,7 @@ function steps(t: (s: string) => string): Step[] {
       ),
       shot: shotApi3,
       note: t(
-        "For Application URL anything works, for example https://harbor.site. TMDB never visits it.",
+        "For Application URL anything works, for example https://github.com. TMDB never visits it.",
       ),
     },
     {

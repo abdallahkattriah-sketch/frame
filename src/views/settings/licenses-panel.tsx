@@ -8,8 +8,6 @@ import { ROW_DESC } from "./kit";
 import { AssetDownloadFeedback, useAssetDownload, type AssetDownload } from "./asset-download";
 import harborWordmark from "@/assets/harbor-wordmark.svg";
 import crowdinLogo from "@/assets/crowdin-mark.png";
-import cloudsmithLogo from "@/assets/cloudsmith.png";
-import elfhostedLogo from "@/assets/elfhosted.svg";
 import stremioAddonsLogo from "@/assets/stremio-addons-net.png";
 import stremioLogo from "@/assets/stremio.png";
 import tmdbLogo from "@/assets/addon-logos/tmdb.png";
@@ -266,19 +264,6 @@ const PARTNERS: Credit[] = [
     url: "https://crowdin.com",
     logo: crowdinLogo,
     fill: true,
-  },
-  {
-    name: "Cloudsmith",
-    blurb: "Hosts Harbor's apt and rpm package repositories, free of charge.",
-    url: "https://cloudsmith.com",
-    logo: cloudsmithLogo,
-    fill: true,
-  },
-  {
-    name: "ElfHosted",
-    blurb: "Runs Harbor's community addon infrastructure and the hosted build.",
-    url: "https://elfhosted.com",
-    logo: elfhostedLogo,
   },
   {
     name: "stremio-addons.net",

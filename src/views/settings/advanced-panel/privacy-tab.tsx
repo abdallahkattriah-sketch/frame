@@ -90,17 +90,9 @@ function DiscordPresenceRow() {
           )}
           <ToggleRow
             label={t("Show what you are listening to")}
-            sub={t(
-              "Share the track, artist and album art while music plays, with a Listen in Harbor button.",
-            )}
+            sub={t("Share the track, artist and album art while music plays.")}
             value={settings.discordMusicPresence}
             onChange={(discordMusicPresence) => update({ discordMusicPresence })}
-          />
-          <ToggleRow
-            label={t("Watch party join button")}
-            sub={t("Add a Join button with your room link while you're in a watch party.")}
-            value={settings.discordShowPartyJoin}
-            onChange={(discordShowPartyJoin) => update({ discordShowPartyJoin })}
           />
           <p className={`max-w-[70ch] ${ROW_DESC}`}>
             {t("Activity from adult addons is never shown on Discord.")}

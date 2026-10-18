@@ -35,7 +35,7 @@ export function InvitePanel({
         <p className="text-[13px] text-ink">{t("Start a room first.")}</p>
         <p className="text-[12px] leading-snug text-ink-muted">
           {t(
-            "Once you're in a room you can copy a link that joins anyone instantly: it sets the relay URL and the room code in one click.",
+            "Once you're in a room you can copy an invite that sets the relay URL and the room code in one go.",
           )}
         </p>
         <button
@@ -79,7 +79,7 @@ export function InvitePanel({
       </button>
       <p className="text-[11.5px] leading-snug text-ink-subtle">
         {t(
-          "Anyone who opens this link gets the relay URL and room code set automatically. Works in the browser too: no install required for the joiner.",
+          "Paste this into the join box in Watch Together to set the relay URL and room code in one go.",
         )}
       </p>
     </div>

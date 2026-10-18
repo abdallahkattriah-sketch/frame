@@ -177,8 +177,6 @@ import { useAnimeAnilistDetails } from "./detail/use-anime-anilist-details";
 import { useAnimeCharacters } from "./detail/use-anime-characters";
 import { TraktComments } from "./detail/trakt-comments";
 import { LetterboxdPanel } from "./detail/letterboxd-panel";
-import { RateButton } from "@/components/ratings/rate-button";
-import { ratingTarget } from "@/lib/ratings/types";
 import { LetterboxdReviews } from "./detail/letterboxd-reviews";
 import { AnilistComments } from "./detail/anilist-comments";
 import { stremioIdToTraktTarget } from "@/lib/trakt/ids";
@@ -1897,18 +1895,6 @@ export function DetailView({
                     harborId={isAnime ? (animeCanonicalId ?? meta.id) : meta.id}
                     title={title || meta.name}
                     type={meta.type === "movie" ? "movie" : "series"}
-                  />
-                )}
-                {!liveContext && (
-                  <RateButton
-                    target={ratingTarget(
-                      {
-                        id: meta.id,
-                        name: title || meta.name,
-                        poster: meta.poster ?? detail?.poster,
-                      },
-                      isAnime ? "anime" : isSeries ? "series" : "movie",
-                    )}
                   />
                 )}
                 {actionStage >= 1 ? (

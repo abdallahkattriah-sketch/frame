@@ -531,7 +531,7 @@ export function ProfileSettings({
                       </Field>
                     </div>
 
-                    <Field label={t("Custom url")} hint="harbor.site/u/">
+                    <Field label={t("Custom url")}>
                       <div className="relative">
                         <input
                           value={form.customUrl}

@@ -2135,6 +2135,22 @@ const uiFallback: Record<string, string> = {
     "Harbor accounts are no longer available, so these settings stay on this computer and don't reach your TV.",
   "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.":
     "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.",
+  "If you were going to send something, send it to Stremio above, or to one of the charities below. They all do more good with it.":
+    "If you were going to send something, send it to Stremio above, or to one of the charities below. They all do more good with it.",
+  "Paste this into the join box in Watch Together to set the relay URL and room code in one go.":
+    "Paste this into the join box in Watch Together to set the relay URL and room code in one go.",
+  "Once you're in a room you can copy an invite that sets the relay URL and the room code in one go.":
+    "Once you're in a room you can copy an invite that sets the relay URL and the room code in one go.",
+  "Share the track, artist and album art while music plays.":
+    "Share the track, artist and album art while music plays.",
+  "Your avatar and name in Harbor.": "Your avatar and name in Harbor.",
+  "Stremio library": "Stremio library",
+  "Progress from your Stremio account and this device. The primary source for almost everyone.":
+    "Progress from your Stremio account and this device. The primary source for almost everyone.",
+  "For Application URL anything works, for example https://github.com. TMDB never visits it.":
+    "For Application URL anything works, for example https://github.com. TMDB never visits it.",
+  "These settings stay on this computer.": "These settings stay on this computer.",
+  "Changes not synced yet": "Changes not synced yet",
 };
 
 export default uiFallback;

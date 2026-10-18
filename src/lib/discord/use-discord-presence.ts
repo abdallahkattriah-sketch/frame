@@ -2,7 +2,6 @@ import { useEffect, useSyncExternalStore } from "react";
 import { useSettings } from "@/lib/settings";
 import { useView, type MetaFilter } from "@/lib/view";
 import { useTogether } from "@/lib/together/provider";
-import { buildInviteUrl } from "@/lib/together/invite";
 import { SERVICES } from "@/lib/providers/streaming";
 import { awardTypeLabel } from "@/lib/providers/wikidata";
 import { awardSourceMeta } from "@/lib/anime-awards";
@@ -18,9 +17,7 @@ import {
   type BrowsePresence,
 } from "./presence";
 import { useActivityHint } from "./activity-hint";
-import { HARBOR_DATA_BASE, HARBOR_RELAY_BASE } from "@/lib/config/endpoints";
-
-const JOIN_BASE = HARBOR_RELAY_BASE;
+import { HARBOR_DATA_BASE } from "@/lib/config/endpoints";
 
 // Only awards with art in data/discord/awards are listed; the rest show the Harbor logo.
 const AWARD_IMG = `${HARBOR_DATA_BASE}/discord/awards`;
@@ -93,7 +90,6 @@ export function useDiscordPresence(): void {
   const hint = useActivityHint();
   const manga = useSyncExternalStore(subscribeMangaReading, getMangaReading, getMangaReading);
   const { snapshot } = useTogether();
-  const relayUrl = settings.togetherRelayUrl;
 
   useEffect(() => {
     configureDiscord({
@@ -196,11 +192,9 @@ export function useDiscordPresence(): void {
       setPartyPresence(null);
       return;
     }
-    const joinUrl = relayUrl ? buildInviteUrl(relayUrl, snapshot.room, JOIN_BASE) : undefined;
     setPartyPresence({
       id: snapshot.room,
       size: Math.max(1, snapshot.participants.length),
-      joinUrl,
     });
-  }, [snapshot.state, snapshot.room, snapshot.participants.length, relayUrl]);
+  }, [snapshot.state, snapshot.room, snapshot.participants.length]);
 }

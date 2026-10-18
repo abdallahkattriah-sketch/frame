@@ -238,8 +238,10 @@ export function HomeTab() {
             )}
           </p>
           <ToggleRow
-            label={t("Harbor library")}
-            sub={t("Your own Harbor account progress. The primary source for almost everyone.")}
+            label={t("Stremio library")}
+            sub={t(
+              "Progress from your Stremio account and this device. The primary source for almost everyone.",
+            )}
             value={settings.cwSources.library}
             onChange={(v) => update({ cwSources: { ...settings.cwSources, library: v } })}
             lockReason={
