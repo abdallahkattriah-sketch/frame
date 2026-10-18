@@ -7658,20 +7658,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Badges for giving",
-    section: "support",
-    anchorTitle: "Badges for giving",
-    keywords: [
-      "charity badge",
-      "donation badge",
-      "supporter badge",
-      "profile badge",
-      "elfhosted badge",
-      "giving badge",
-      "how do i get a badge",
-    ],
-  },
-  {
     label: "Who pays for the servers",
     section: "support",
     anchorTitle: "Who keeps this running",
