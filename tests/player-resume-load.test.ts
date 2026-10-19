@@ -82,6 +82,19 @@ test("resume is passed into the initial load and auto-skip stays gated until con
   assert.equal(h.loads.length, 1);
 });
 
+test("80% of the runtime still resumes; 85% and past is treated as finished and starts over", async () => {
+  for (const [ms, expected] of [
+    [2_880_000, 2880],
+    [3_060_000, undefined],
+  ] as const) {
+    const h = harness();
+    h.resolver(async () => ({ ms, finished: false }));
+    h.render();
+    await flushPromises();
+    assert.equal(h.loads[0].startAtSec, expected, `${ms / 36_000}% of a 60 min episode`);
+  }
+});
+
 test("cancelled resume lookup cannot skip the replacement load, even for the same URL", async () => {
   const h = harness();
   let finish!: (value: any) => void;

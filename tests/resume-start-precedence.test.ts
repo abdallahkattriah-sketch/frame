@@ -67,6 +67,15 @@ test("newer completion restarts while older completion cannot override a rewatch
     assert.equal((await h.run()).finished, localTime < 10000);
   }
 });
+test("80% watched is still unwatched, so it resumes; finished (85%+) restarts", async () => {
+  for (const [offset, finished] of [
+    [1440000, false],
+    [1620000, true],
+  ] as const) {
+    const h = harness({ ms: 300000, t: 5000 }, { state: { timeOffset: offset } });
+    assert.equal((await h.run()).finished, finished, `${offset / 18000}%`);
+  }
+});
 test("a library metadata edit cannot outrank the actual watch timestamp", async () => {
   const h = harness(
     { ms: 300000, t: 20000 },

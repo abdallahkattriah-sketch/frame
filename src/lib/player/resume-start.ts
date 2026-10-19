@@ -2,7 +2,8 @@ import { readResumeEntry, saveResumeBatch } from "@/lib/resume";
 import { privateCwProfileId } from "@/lib/cw-profile";
 import { episodeFromVideoId, libraryGetOne, type LibraryItem } from "@/lib/stremio";
 
-const RESTART_THRESHOLD = 0.8;
+// Same ratio that marks an episode watched (use-resume-autosave), so anything still unwatched resumes.
+const RESTART_THRESHOLD = 0.85;
 const REMOTE_CACHE_TTL_MS = 30_000;
 const MAX_CACHE_KEYS_PER_ACCOUNT = 24;
 

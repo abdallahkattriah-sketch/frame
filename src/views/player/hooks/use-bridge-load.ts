@@ -11,7 +11,8 @@ import { releaseStreamProxy, retainStreamProxy } from "@/lib/stream-proxy";
 import { playerLoadIdentity } from "@/lib/player/load-identity";
 
 const RESUME_PROMPT_MIN_SEC = 30;
-const RESTART_THRESHOLD = 0.8;
+// Same ratio that marks an episode watched (use-resume-autosave), so anything still unwatched resumes.
+const RESTART_THRESHOLD = 0.85;
 
 export function useBridgeLoad(params: {
   bridgeRef: RefObject<PlayerBridge | null>;
