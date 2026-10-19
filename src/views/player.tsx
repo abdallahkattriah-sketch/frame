@@ -81,7 +81,12 @@ import { usePlaybackPresence } from "./player/hooks/use-playback-presence";
 import { usePlayerExit } from "./player/hooks/use-player-exit";
 import { usePendingSeekApply } from "./player/hooks/use-pending-seek-apply";
 import { usePlayerHotkeys } from "./player/hooks/use-player-hotkeys";
-import { clearMediaControls, updateMediaControls } from "@/lib/media-session";
+import {
+  clearMediaControls,
+  updateMediaControls,
+  updateTaskbarProgress,
+  updateVideoTaskbar,
+} from "@/lib/media-session";
 import { usePlayerMedia } from "./player/hooks/use-player-media";
 import { useTrickplay } from "./player/hooks/use-trickplay";
 import { useStreamPill } from "./player/hooks/use-stream-pill";
@@ -1129,6 +1134,32 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
     snap.muted,
   ]);
   useEffect(() => () => clearMediaControls(), []);
+  useEffect(() => {
+    updateVideoTaskbar({
+      playing: snap.status === "playing",
+      muted: snap.muted,
+      hasPrev: hasPrevEpisodeNow,
+      hasNext: hasNextEpisodeNow,
+    });
+  }, [snap.status, snap.muted, hasPrevEpisodeNow, hasNextEpisodeNow]);
+  useEffect(() => () => updateVideoTaskbar(null), []);
+  useEffect(() => {
+    const push = () => {
+      const s = snapRef.current;
+      const pos = getPlaybackPosition();
+      const started =
+        s.status === "playing" || s.status === "paused" || (s.status === "loading" && pos > 0);
+      if (!started) {
+        updateTaskbarProgress(null, null, false);
+        return;
+      }
+      updateTaskbarProgress(pos, s.durationSec, s.status !== "paused");
+    };
+    push();
+    const unsub = subscribePlaybackClock(push);
+    return () => unsub();
+  }, [snap.status, snap.durationSec]);
+  useEffect(() => () => updateTaskbarProgress(null, null, false), []);
 
   const onPrevEpisode = useCallback(() => playPrevRef.current(), [playPrevRef]);
   const onNextEpisode = useCallback(() => playNextRef.current(), [playNextRef]);

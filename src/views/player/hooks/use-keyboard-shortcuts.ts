@@ -135,6 +135,10 @@ export function useKeyboardShortcuts(params: {
   const [holdSpeedActive, setHoldSpeedActive] = useState(false);
   const mediaRef = useRef({
     status: snap.status,
+    muted: snap.muted,
+    volume: snap.volume,
+    seekBackStepSec,
+    seekForwardStepSec,
     playPauseToggle,
     seekStep,
     seekTo,
@@ -145,6 +149,10 @@ export function useKeyboardShortcuts(params: {
   });
   mediaRef.current = {
     status: snap.status,
+    muted: snap.muted,
+    volume: snap.volume,
+    seekBackStepSec,
+    seekForwardStepSec,
     playPauseToggle,
     seekStep,
     seekTo,
@@ -648,19 +656,43 @@ export function useKeyboardShortcuts(params: {
           onVolumeFeedback?.(vol, false);
         }
       });
-      if (dead) {
+      const u5 = await listen<string>("harbor://taskbar-button", (e) => {
+        if (isPlayerInteractionLocked()) return;
+        const m = mediaRef.current;
+        switch (e.payload) {
+          case "toggle":
+            m.playPauseToggle();
+            break;
+          case "back":
+            m.seekStep(-m.seekBackStepSec);
+            break;
+          case "forward":
+            m.seekStep(m.seekForwardStepSec);
+            break;
+          case "previous":
+            if (m.hasPrevEp) m.onPrevEp?.();
+            break;
+          case "next":
+            if (m.hasNextEp) m.onNextEp?.();
+            break;
+          case "mute": {
+            const next = !m.muted;
+            bridgeRef.current?.setMuted(next);
+            writePlayerVolume({ muted: next });
+            onVolumeFeedback?.(m.volume, next);
+            break;
+          }
+        }
+      });
+      const stop = () => {
         u1();
         u2();
         u3();
         u4();
-      } else {
-        cleanup = () => {
-          u1();
-          u2();
-          u3();
-          u4();
-        };
-      }
+        u5();
+      };
+      if (dead) stop();
+      else cleanup = stop;
     });
     return () => {
       dead = true;

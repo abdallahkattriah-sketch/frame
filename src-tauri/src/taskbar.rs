@@ -6,19 +6,30 @@ use tauri::{AppHandle, Emitter, Manager};
 use windows::core::PCWSTR;
 use windows::Win32::Foundation::{HWND, LPARAM, LRESULT, WPARAM};
 use windows::Win32::System::Com::{CoCreateInstance, CLSCTX_ALL};
+use windows::Win32::System::Registry::{
+    RegCloseKey, RegCreateKeyExW, RegGetValueW, RegSetValueExW, HKEY, HKEY_CURRENT_USER, KEY_READ,
+    KEY_WRITE, REG_OPTION_NON_VOLATILE, REG_SZ, RRF_RT_REG_DWORD, RRF_RT_REG_SZ,
+};
 use windows::Win32::UI::Shell::{
-    DefSubclassProc, ITaskbarList3, SetWindowSubclass, TaskbarList, THUMBBUTTON, THUMBBUTTONMASK,
-    THBF_ENABLED, THBN_CLICKED, THB_FLAGS, THB_ICON, THB_TOOLTIP,
+    DefSubclassProc, ITaskbarList3, SetCurrentProcessExplicitAppUserModelID, SetWindowSubclass,
+    TaskbarList, TBPF_NOPROGRESS, TBPF_NORMAL, TBPF_PAUSED, THBF_DISABLED, THBF_ENABLED,
+    THBF_HIDDEN, THBN_CLICKED, THB_FLAGS, THB_ICON, THB_TOOLTIP, THUMBBUTTON, THUMBBUTTONFLAGS,
+    THUMBBUTTONMASK,
 };
 use windows::Win32::UI::WindowsAndMessaging::{
     CreateIconFromResourceEx, DestroyIcon, GetSystemMetrics, PostMessageW, RegisterWindowMessageW,
     SendMessageW, HICON, ICON_BIG, ICON_SMALL, LR_DEFAULTCOLOR, SM_CXICON, SM_CXSMICON, WM_APP,
-    WM_COMMAND, WM_SETICON,
+    WM_COMMAND, WM_SETICON, WM_SETTINGCHANGE,
 };
 
 const SUBCLASS_ID: usize = 0x4842_5442;
 const WM_SYNC: u32 = WM_APP + 0x42;
 const WM_ART: u32 = WM_APP + 0x43;
+const WM_PROGRESS: u32 = WM_APP + 0x44;
+const PROGRESS_SCALE: u64 = 1000;
+const PROGRESS_NONE: u32 = 0;
+const PROGRESS_PLAYING: u32 = 1;
+const PROGRESS_PAUSED: u32 = 2;
 const NEVER_APPLIED: u32 = u32::MAX;
 pub const EVENT: &str = "harbor://taskbar-button";
 
@@ -48,7 +59,15 @@ static BUTTON_CREATED_MSG: AtomicU32 = AtomicU32::new(0);
 static WANT_PLAYING: AtomicBool = AtomicBool::new(false);
 static WANT_LIKED: AtomicBool = AtomicBool::new(false);
 static WANT_MUTED: AtomicBool = AtomicBool::new(false);
+static MUSIC_LOADED: AtomicBool = AtomicBool::new(false);
+static VIDEO_ACTIVE: AtomicBool = AtomicBool::new(false);
+static VIDEO_PLAYING: AtomicBool = AtomicBool::new(false);
+static VIDEO_MUTED: AtomicBool = AtomicBool::new(false);
+static VIDEO_HAS_PREV: AtomicBool = AtomicBool::new(false);
+static VIDEO_HAS_NEXT: AtomicBool = AtomicBool::new(false);
 static APPLIED: AtomicU32 = AtomicU32::new(NEVER_APPLIED);
+static PROGRESS_STATE: AtomicU32 = AtomicU32::new(PROGRESS_NONE);
+static PROGRESS_VALUE: AtomicU32 = AtomicU32::new(0);
 static NEXT_SMALL: AtomicIsize = AtomicIsize::new(-1);
 static NEXT_BIG: AtomicIsize = AtomicIsize::new(-1);
 static OWNED_SMALL: AtomicIsize = AtomicIsize::new(0);
@@ -63,32 +82,81 @@ struct Icons([HICON; 10]);
 unsafe impl Send for Icons {}
 unsafe impl Sync for Icons {}
 static ICONS: OnceLock<Icons> = OnceLock::new();
+static ICONS_LIGHT: OnceLock<Icons> = OnceLock::new();
+static LIGHT_TASKBAR: AtomicBool = AtomicBool::new(false);
+const DARK_GLYPH: u8 = 0x1a;
 
-fn icon(bytes: &'static [u8]) -> HICON {
+fn system_uses_light_theme() -> bool {
+    let key = utf16("Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize");
+    let name = utf16("SystemUsesLightTheme");
+    let mut value = 0u32;
+    let mut size = 4u32;
+    unsafe {
+        RegGetValueW(
+            HKEY_CURRENT_USER,
+            PCWSTR(key.as_ptr()),
+            PCWSTR(name.as_ptr()),
+            RRF_RT_REG_DWORD,
+            None,
+            Some((&mut value as *mut u32).cast()),
+            Some(&mut size),
+        )
+    }
+    .is_ok()
+        && value != 0
+}
+
+// The bundled glyphs are white for a dark taskbar; on a light one they vanish, so recolour them dark.
+fn darken(dib: &mut [u8]) {
+    if dib.len() < 40 || u16::from_le_bytes([dib[14], dib[15]]) != 32 {
+        return;
+    }
+    let header = u32::from_le_bytes([dib[0], dib[1], dib[2], dib[3]]) as usize;
+    let width = i32::from_le_bytes([dib[4], dib[5], dib[6], dib[7]]).unsigned_abs() as usize;
+    let height =
+        (i32::from_le_bytes([dib[8], dib[9], dib[10], dib[11]]).unsigned_abs() / 2) as usize;
+    let end = (header + width * height * 4).min(dib.len());
+    if header >= end {
+        return;
+    }
+    for px in dib[header..end].chunks_exact_mut(4) {
+        px[0] = DARK_GLYPH;
+        px[1] = DARK_GLYPH;
+        px[2] = DARK_GLYPH;
+    }
+}
+
+fn icon(bytes: &'static [u8], dark_glyph: bool) -> HICON {
     if bytes.len() < 22 {
         return HICON::default();
     }
     let offset = u32::from_le_bytes([bytes[18], bytes[19], bytes[20], bytes[21]]) as usize;
     let start = if offset > 0 && offset < bytes.len() { offset } else { 22 };
+    let mut dib = bytes[start..].to_vec();
+    if dark_glyph {
+        darken(&mut dib);
+    }
     unsafe {
-        CreateIconFromResourceEx(&bytes[start..], true, 0x0003_0000, 16, 16, LR_DEFAULTCOLOR)
+        CreateIconFromResourceEx(&dib, true, 0x0003_0000, 16, 16, LR_DEFAULTCOLOR)
             .unwrap_or_default()
     }
 }
 
 fn icons() -> &'static Icons {
-    ICONS.get_or_init(|| {
+    let light = LIGHT_TASKBAR.load(Ordering::Relaxed);
+    let slot = if light { &ICONS_LIGHT } else { &ICONS };
+    slot.get_or_init(|| {
         Icons([
-            icon(ICO_FAV),
-            icon(ICO_BACK),
-            icon(ICO_PREV),
-            icon(ICO_PLAY),
-            icon(ICO_PAUSE),
-            icon(ICO_NEXT),
-            icon(ICO_FWD),
-            icon(ICO_MUTE),
-            icon(ICO_SOUND),
-            icon(ICO_FAV_OFF),
+            icon(ICO_FAV, light),
+            icon(ICO_BACK, light),
+            icon(ICO_PREV, light),
+            icon(ICO_PLAY, light),
+            icon(ICO_PAUSE, light),
+            icon(ICO_NEXT, light),
+            icon(ICO_FWD, light),
+            icon(ICO_MUTE, light),
+            icon(ICO_SOUND, light),
+            icon(ICO_FAV_OFF, light),
         ])
     })
 }
@@ -106,13 +174,25 @@ fn label(text: &str) -> [u16; 260] {
 }
 
 fn button(id: u32, ico: HICON, tip: &str) -> THUMBBUTTON {
+    flagged(id, ico, tip, THBF_ENABLED)
+}
+
+fn flagged(id: u32, ico: HICON, tip: &str, flags: THUMBBUTTONFLAGS) -> THUMBBUTTON {
     THUMBBUTTON {
         dwMask: THUMBBUTTONMASK(THB_ICON.0 | THB_TOOLTIP.0 | THB_FLAGS.0),
         iId: id,
         iBitmap: 0,
         hIcon: ico,
         szTip: label(tip),
-        dwFlags: THBF_ENABLED,
+        dwFlags: flags,
+    }
+}
+
+fn enabled_if(on: bool) -> THUMBBUTTONFLAGS {
+    if on {
+        THBF_ENABLED
+    } else {
+        THBF_DISABLED
     }
 }
 
@@ -141,6 +221,37 @@ fn buttons(playing: bool, liked: bool, muted: bool) -> [THUMBBUTTON; 7] {
     ]
 }
 
+// Buttons can be hidden but never removed once added, so "no media" hides all seven.
+fn hidden_buttons() -> [THUMBBUTTON; 7] {
+    let ico = icons();
+    [
+        ID_FAV, ID_BACK, ID_PREV, ID_TOGGLE, ID_NEXT, ID_FWD, ID_MUTE,
+    ]
+    .map(|id| flagged(id, ico.0[3], "", THBF_HIDDEN))
+}
+
+// The thumbbar keeps all seven slots in video mode: buttons can be hidden but never removed once added.
+fn video_buttons(playing: bool, muted: bool, has_prev: bool, has_next: bool) -> [THUMBBUTTON; 7] {
+    let ico = icons();
+    [
+        flagged(ID_FAV, ico.0[9], "Like", THBF_HIDDEN),
+        button(ID_BACK, ico.0[1], "Seek back"),
+        flagged(ID_PREV, ico.0[2], "Previous episode", enabled_if(has_prev)),
+        button(
+            ID_TOGGLE,
+            if playing { ico.0[4] } else { ico.0[3] },
+            if playing { "Pause" } else { "Play" },
+        ),
+        flagged(ID_NEXT, ico.0[5], "Next episode", enabled_if(has_next)),
+        button(ID_FWD, ico.0[6], "Seek forward"),
+        button(
+            ID_MUTE,
+            if muted { ico.0[7] } else { ico.0[8] },
+            if muted { "Unmute" } else { "Mute" },
+        ),
+    ]
+}
+
 fn apply() {
     let Some(bar) = BAR.get() else {
         return;
@@ -150,15 +261,45 @@ fn apply() {
         return;
     }
     let hwnd = HWND(raw as *mut std::ffi::c_void);
-    let playing = WANT_PLAYING.load(Ordering::Relaxed);
+    let video = VIDEO_ACTIVE.load(Ordering::Relaxed);
+    let (playing, muted) = if video {
+        (
+            VIDEO_PLAYING.load(Ordering::Relaxed),
+            VIDEO_MUTED.load(Ordering::Relaxed),
+        )
+    } else {
+        (
+            WANT_PLAYING.load(Ordering::Relaxed),
+            WANT_MUTED.load(Ordering::Relaxed),
+        )
+    };
     let liked = WANT_LIKED.load(Ordering::Relaxed);
-    let muted = WANT_MUTED.load(Ordering::Relaxed);
-    let stamp = u32::from(playing) | (u32::from(liked) << 1) | (u32::from(muted) << 2);
+    let has_prev = VIDEO_HAS_PREV.load(Ordering::Relaxed);
+    let has_next = VIDEO_HAS_NEXT.load(Ordering::Relaxed);
+    let empty = !video && !MUSIC_LOADED.load(Ordering::Relaxed);
+    let stamp = u32::from(playing)
+        | (u32::from(liked) << 1)
+        | (u32::from(muted) << 2)
+        | (u32::from(video) << 3)
+        | (u32::from(has_prev) << 4)
+        | (u32::from(has_next) << 5)
+        | (u32::from(LIGHT_TASKBAR.load(Ordering::Relaxed)) << 6)
+        | (u32::from(empty) << 7);
     let added = ADDED.load(Ordering::Relaxed);
     if added && APPLIED.load(Ordering::Relaxed) == stamp {
         return;
     }
-    let set = buttons(playing, liked, muted);
+    // Adding a hidden set is skipped: the slots are created the first time there is media to show.
+    if empty && !added {
+        return;
+    }
+    let set = if empty {
+        hidden_buttons()
+    } else if video {
+        video_buttons(playing, muted, has_prev, has_next)
+    } else {
+        buttons(playing, liked, muted)
+    };
     unsafe {
         if added {
             if bar.0.ThumbBarUpdateButtons(hwnd, &set).is_ok() {
@@ -187,11 +328,22 @@ unsafe extern "system" fn subclass_proc(
         apply_art(hwnd);
         return LRESULT(0);
     }
+    if msg == WM_PROGRESS {
+        apply_progress(hwnd);
+        return LRESULT(0);
+    }
+    if msg == WM_SETTINGCHANGE {
+        let light = system_uses_light_theme();
+        if LIGHT_TASKBAR.swap(light, Ordering::Relaxed) != light {
+            apply();
+        }
+    }
     let created = BUTTON_CREATED_MSG.load(Ordering::Relaxed);
     if created != 0 && msg == created {
         ADDED.store(false, Ordering::Relaxed);
         APPLIED.store(NEVER_APPLIED, Ordering::Relaxed);
         apply();
+        apply_progress(hwnd);
     }
     if msg == WM_COMMAND {
         let high = ((wparam.0 >> 16) & 0xffff) as u32;
@@ -217,6 +369,66 @@ unsafe extern "system" fn subclass_proc(
     DefSubclassProc(hwnd, msg, wparam, lparam)
 }
 
+// Matches the installer's shortcut AUMID (the bundle identifier), so installed and portable copies share it.
+const APP_ID: &str = "app.harbor";
+
+/// Names Harbor in Windows' media overlay, which shows "Unknown app" for a process without a registered AUMID.
+pub fn register_app_identity() {
+    let id = utf16(APP_ID);
+    unsafe {
+        let _ = SetCurrentProcessExplicitAppUserModelID(PCWSTR(id.as_ptr()));
+    }
+    let path = utf16(&format!("Software\\Classes\\AppUserModelId\\{APP_ID}"));
+    let name = utf16("DisplayName");
+    let mut size = 0u32;
+    let has_name = unsafe {
+        RegGetValueW(
+            HKEY_CURRENT_USER,
+            PCWSTR(path.as_ptr()),
+            PCWSTR(name.as_ptr()),
+            RRF_RT_REG_SZ,
+            None,
+            None,
+            Some(&mut size),
+        )
+    }
+    .is_ok();
+    if has_name {
+        return;
+    }
+    let mut key = HKEY::default();
+    let created = unsafe {
+        RegCreateKeyExW(
+            HKEY_CURRENT_USER,
+            PCWSTR(path.as_ptr()),
+            None,
+            PCWSTR::null(),
+            REG_OPTION_NON_VOLATILE,
+            KEY_READ | KEY_WRITE,
+            None,
+            &mut key,
+            None,
+        )
+    };
+    if created.is_err() {
+        return;
+    }
+    let set = |value: &str, data: &str| {
+        let value = utf16(value);
+        let bytes: Vec<u8> = utf16(data).iter().flat_map(|u| u.to_le_bytes()).collect();
+        unsafe {
+            let _ = RegSetValueExW(key, PCWSTR(value.as_ptr()), None, REG_SZ, Some(&bytes));
+        }
+    };
+    set("DisplayName", "Harbor");
+    if let Ok(exe) = std::env::current_exe() {
+        set("IconUri", &format!("{},0", exe.display()));
+    }
+    unsafe {
+        let _ = RegCloseKey(key);
+    }
+}
+
 pub fn init(app: &AppHandle) {
     let _ = HANDLE.set(app.clone());
     let Some(window) = app.get_webview_window("main") else {
@@ -226,6 +438,7 @@ pub fn init(app: &AppHandle) {
         return;
     };
     HWND_RAW.store(handle.0 as isize, Ordering::Relaxed);
+    LIGHT_TASKBAR.store(system_uses_light_theme(), Ordering::Relaxed);
     unsafe {
         let name = utf16("TaskbarButtonCreated");
         BUTTON_CREATED_MSG.store(
@@ -245,10 +458,76 @@ pub fn init(app: &AppHandle) {
     }
 }
 
-pub fn update(playing: bool, liked: bool, muted: bool) {
+pub fn update(loaded: bool, playing: bool, liked: bool, muted: bool) {
+    MUSIC_LOADED.store(loaded, Ordering::Relaxed);
     WANT_PLAYING.store(playing, Ordering::Relaxed);
     WANT_LIKED.store(liked, Ordering::Relaxed);
     WANT_MUTED.store(muted, Ordering::Relaxed);
+    sync();
+}
+
+/// While a video plays the thumbbar drives the player; music's state is kept for when it closes.
+pub fn set_video(active: bool, playing: bool, muted: bool, has_prev: bool, has_next: bool) {
+    VIDEO_ACTIVE.store(active, Ordering::Relaxed);
+    VIDEO_PLAYING.store(playing, Ordering::Relaxed);
+    VIDEO_MUTED.store(muted, Ordering::Relaxed);
+    VIDEO_HAS_PREV.store(has_prev, Ordering::Relaxed);
+    VIDEO_HAS_NEXT.store(has_next, Ordering::Relaxed);
+    sync();
+}
+
+fn apply_progress(hwnd: HWND) {
+    let Some(bar) = BAR.get() else {
+        return;
+    };
+    let state = PROGRESS_STATE.load(Ordering::Relaxed);
+    let value = u64::from(PROGRESS_VALUE.load(Ordering::Relaxed)).min(PROGRESS_SCALE);
+    unsafe {
+        if state == PROGRESS_NONE {
+            let _ = bar.0.SetProgressState(hwnd, TBPF_NOPROGRESS);
+            return;
+        }
+        // SetProgressValue switches the bar to normal, so the paused state must be set after it.
+        let _ = bar.0.SetProgressValue(hwnd, value, PROGRESS_SCALE);
+        let flag = if state == PROGRESS_PAUSED {
+            TBPF_PAUSED
+        } else {
+            TBPF_NORMAL
+        };
+        let _ = bar.0.SetProgressState(hwnd, flag);
+    }
+}
+
+/// Shows watch progress on the taskbar button; `fraction` None removes the bar.
+pub fn set_progress(fraction: Option<f64>, playing: bool) {
+    match fraction.filter(|f| f.is_finite()) {
+        Some(f) => {
+            let value = (f.clamp(0.0, 1.0) * PROGRESS_SCALE as f64).round() as u32;
+            PROGRESS_VALUE.store(value, Ordering::Relaxed);
+            let state = if playing {
+                PROGRESS_PLAYING
+            } else {
+                PROGRESS_PAUSED
+            };
+            PROGRESS_STATE.store(state, Ordering::Relaxed);
+        }
+        None => PROGRESS_STATE.store(PROGRESS_NONE, Ordering::Relaxed),
+    }
+    let raw = HWND_RAW.load(Ordering::Relaxed);
+    if raw == 0 {
+        return;
+    }
+    unsafe {
+        let _ = PostMessageW(
+            Some(HWND(raw as *mut std::ffi::c_void)),
+            WM_PROGRESS,
+            WPARAM(0),
+            LPARAM(0),
+        );
+    }
+}
+
+fn sync() {
     let raw = HWND_RAW.load(Ordering::Relaxed);
     if raw == 0 {
         return;
@@ -261,14 +540,6 @@ pub fn update(playing: bool, liked: bool, muted: bool) {
             LPARAM(0),
         );
     }
-}
-
-pub fn set_playing(playing: bool) {
-    update(
-        playing,
-        WANT_LIKED.load(Ordering::Relaxed),
-        WANT_MUTED.load(Ordering::Relaxed),
-    );
 }
 
 fn hicon_from_rgba(rgba: &[u8], size: u32) -> Option<HICON> {

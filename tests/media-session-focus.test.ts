@@ -108,7 +108,7 @@ test("paused Windows sessions withdraw on blur and restore the latest track/seek
   assert.equal(h.mediaKeyGate(), true);
 });
 
-test("playing in the background retains media keys, pausing/minimizing yields them", async () => {
+test("media played in the background keeps the keys when paused there, so the same key resumes it", async () => {
   const h = fixture();
   h.startMediaSessionWindowTracking();
   await settle();
@@ -120,19 +120,33 @@ test("playing in the background retains media keys, pausing/minimizing yields th
   h.advance();
   h.updateMediaControls(false, "Track", "Artist", null, 180, 13);
   await settle();
-  assert.equal(h.calls.at(-1)?.command, "media_controls_clear");
-  assert.equal(h.mediaKeyGate(), false);
+  assert.equal(h.calls.at(-1)?.command, "media_controls_update", "the paused session stays");
+  assert.equal(h.calls.at(-1)?.args?.playing, false);
+  assert.equal(h.mediaKeyGate(), true, "play/pause can resume it from another window");
+  h.advance();
   h.updateMediaControls(true, "Track", "Artist", null, 180, 13);
   await settle();
-  assert.equal(
-    h.calls.at(-1)?.args?.playing,
-    true,
-    "explicit playback can reclaim keys in background",
-  );
-  assert.equal(h.mediaKeyGate(), true);
+  assert.equal(h.calls.at(-1)?.args?.playing, true);
   h.advance();
   h.lock(true);
   assert.equal(h.mediaKeyGate(), false, "the existing player lock still applies");
+});
+
+test("media paused before focus leaves still yields the keys to other apps", async () => {
+  const h = fixture();
+  h.startMediaSessionWindowTracking();
+  await settle();
+  h.updateMediaControls(true, "Track", "Artist", null, 180, 12);
+  h.advance();
+  h.updateMediaControls(false, "Track", "Artist", null, 180, 13);
+  h.focus(false);
+  await settle();
+  assert.equal(h.calls.at(-1)?.command, "media_controls_clear");
+  assert.equal(h.mediaKeyGate(), false);
+  h.focus(true);
+  h.focus(false);
+  await settle();
+  assert.equal(h.mediaKeyGate(), false, "refocusing without playing does not re-arm it");
 });
 
 test("the first paused track loaded while unfocused is remembered without registering it", async () => {

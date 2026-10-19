@@ -18,6 +18,7 @@ import {
 const IS_TAURI = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
 const EVENT = "harbor://taskbar-button";
 const MEDIA_KEY_EVENT = "harbor://media-key";
+const SEEK_EVENT = "harbor://media-seek-absolute";
 const STEP_SECONDS = 30;
 
 let muted = 0;
@@ -25,6 +26,7 @@ let lastPushed = "";
 let lastArt = "";
 
 function run(action: string): void {
+  if (videoOwnsMediaKeys()) return;
   const state = getMusicState();
   if (!state.current) return;
   switch (action) {
@@ -111,12 +113,13 @@ function push(): void {
   pushSession();
   const liked = isMusicLiked(state.likedIds, state.current);
   const silent = state.volume <= 0;
+  const loaded = !!state.current && state.phase !== "idle" && state.phase !== "error";
   setMusicWindowTitle(state.current?.title ?? null, state.current?.artist ?? null);
   pushArtwork(state.current?.artwork ?? null);
-  const key = `${playing ? 1 : 0}|${liked ? 1 : 0}|${silent ? 1 : 0}`;
+  const key = `${loaded ? 1 : 0}|${playing ? 1 : 0}|${liked ? 1 : 0}|${silent ? 1 : 0}`;
   if (key === lastPushed) return;
   lastPushed = key;
-  invoke("media_controls_music_state", { playing, liked, muted: silent }).catch(() => {});
+  invoke("media_controls_music_state", { playing, liked, muted: silent, loaded }).catch(() => {});
 }
 
 function appIconFollowsArtwork(): boolean {
@@ -158,6 +161,7 @@ export function startMusicTaskbarButtons(): () => void {
   let stop: (() => void) | null = null;
   let live = true;
   let stopKeys: (() => void) | null = null;
+  let stopSeek: (() => void) | null = null;
   void listen<string>(EVENT, (event) => run(event.payload))
     .then((unlisten) => {
       if (live) stop = unlisten;
@@ -167,6 +171,17 @@ export function startMusicTaskbarButtons(): () => void {
   void listen<string>(MEDIA_KEY_EVENT, (event) => mediaKey(event.payload))
     .then((unlisten) => {
       if (live) stopKeys = unlisten;
+      else unlisten();
+    })
+    .catch(() => {});
+  void listen<number>(SEEK_EVENT, (event) => {
+    if (videoOwnsMediaKeys() || !getMusicState().current) return;
+    if (typeof event.payload === "number" && Number.isFinite(event.payload)) {
+      seekMusic(Math.max(0, event.payload));
+    }
+  })
+    .then((unlisten) => {
+      if (live) stopSeek = unlisten;
       else unlisten();
     })
     .catch(() => {});
@@ -182,5 +197,7 @@ export function startMusicTaskbarButtons(): () => void {
     stop = null;
     stopKeys?.();
     stopKeys = null;
+    stopSeek?.();
+    stopSeek = null;
   };
 }

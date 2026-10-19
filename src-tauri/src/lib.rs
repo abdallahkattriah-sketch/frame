@@ -738,6 +738,8 @@ pub fn run() {
     mpv_render_linux::configure_linux_graphics();
     #[cfg(windows)]
     win_graphics::configure_windows_graphics();
+    #[cfg(windows)]
+    taskbar::register_app_identity();
     let _ = rustls::crypto::ring::default_provider().install_default();
     trailer::sweep_cache();
     std::thread::spawn(trailer::sweep_ytdlp_extractions);
@@ -1476,6 +1478,8 @@ pub fn run() {
             discord_rp::discord_clear,
             media_controls::media_controls_update,
             media_controls::media_controls_music_state,
+            media_controls::media_controls_video_state,
+            media_controls::media_controls_progress,
             media_controls::media_controls_music_art,
             media_controls::media_controls_seeked,
             media_controls::media_controls_clear,

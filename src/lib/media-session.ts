@@ -13,6 +13,8 @@ let lastPositionAt = 0;
 let lastPlaying = false;
 let windowFocused = typeof document === "undefined" || document.hasFocus();
 let requestedSession: Parameters<typeof updateMediaControls> | null = null;
+// Played since focus left: a background pause keeps the session so the same key can resume it.
+let playedInBackground = false;
 let pendingCommand: Promise<unknown> = Promise.resolve();
 
 // A late update must not re-enable the session after blur/stop withdrew it.
@@ -36,6 +38,7 @@ export function startMediaSessionWindowTracking(): () => void {
   let revision = 0;
   let unlisten: (() => void) | undefined;
   const setFocused = (focused: boolean) => {
+    if (windowFocused && !focused) playedInBackground = requestedSession?.[0] === true;
     windowFocused = focused;
     if (requestedSession) updateMediaControls(...requestedSession);
   };
@@ -63,7 +66,14 @@ export function startMediaSessionWindowTracking(): () => void {
 
 export function mediaKeyGate(): boolean {
   if (isPlayerInteractionLocked()) return false;
-  if (isTauri() && isWindowsDesktop() && !windowFocused && !requestedSession?.[0]) return false;
+  if (
+    isTauri() &&
+    isWindowsDesktop() &&
+    !windowFocused &&
+    !requestedSession?.[0] &&
+    !playedInBackground
+  )
+    return false;
   const now = Date.now();
   if (now - lastActionAt < 350) return false;
   lastActionAt = now;
@@ -81,7 +91,8 @@ export function updateMediaControls(
 ): void {
   if (!isTauri()) return;
   requestedSession = [playing, title, subtitle, artUrl, durationSec, positionSec, volume];
-  if (isWindowsDesktop() && !windowFocused && !playing) {
+  if (playing && !windowFocused) playedInBackground = true;
+  if (isWindowsDesktop() && !windowFocused && !playing && !playedInBackground) {
     withdrawSession();
     return;
   }
@@ -147,8 +158,47 @@ export function notifyMediaSeeked(positionSec: number): void {
   if (lastState) send("media_controls_seeked", { positionSec });
 }
 
+let lastVideoTaskbar = "";
+
+/** Switches the Windows thumbbar to video buttons; pass null when the player closes. */
+export function updateVideoTaskbar(
+  state: { playing: boolean; muted: boolean; hasPrev: boolean; hasNext: boolean } | null,
+): void {
+  if (!isTauri() || !isWindowsDesktop()) return;
+  const args = state
+    ? { active: true, ...state }
+    : { active: false, playing: false, muted: false, hasPrev: false, hasNext: false };
+  const key = JSON.stringify(args);
+  if (key === lastVideoTaskbar) return;
+  lastVideoTaskbar = key;
+  invoke("media_controls_video_state", args).catch(() => {});
+}
+
+let lastProgress = "";
+
+/** Watch progress on the Windows taskbar button; null, or no known duration, removes the bar. */
+export function updateTaskbarProgress(
+  positionSec: number | null,
+  durationSec: number | null,
+  playing: boolean,
+): void {
+  if (!isTauri() || !isWindowsDesktop()) return;
+  const known =
+    positionSec != null &&
+    durationSec != null &&
+    Number.isFinite(positionSec) &&
+    Number.isFinite(durationSec) &&
+    durationSec > 0;
+  const fraction = known ? Math.max(0, Math.min(1, positionSec / durationSec)) : null;
+  const key = fraction == null ? "none" : `${Math.round(fraction * 1000)}|${playing ? 1 : 0}`;
+  if (key === lastProgress) return;
+  lastProgress = key;
+  invoke("media_controls_progress", { fraction, playing }).catch(() => {});
+}
+
 export function clearMediaControls(): void {
   if (!isTauri()) return;
   requestedSession = null;
+  playedInBackground = false;
   withdrawSession();
 }
