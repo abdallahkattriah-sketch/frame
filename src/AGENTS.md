@@ -24,6 +24,7 @@ Notes for agents working in this folder. Root rules live in `../AGENTS.md`.
 - Play flow: `usePipelineResult` → `runPipeline` (`lib/streams/pipeline.ts`) → `resolveStream`/`resolveViaDebrids` (`resolve.ts`) → `usePickHandler` classifies `p2p`/`direct`/`debrid` → `openPlayer` (`views/play-picker/use-pick-handler.ts`). Autoplay walks candidates in `use-auto-fire.ts`/`use-auto-candidates.ts`.
 - Player behaviour lives in `views/player/hooks/` (~90 hooks); overlays are `views/player/*-layer.tsx` composed by `player-overlay-layers.tsx`. The HUD layout editor is `views/settings/player-layout-panel/`, rendered by `components/player/transport/control-renderer*.tsx`. Big Picture has its own player (`views/big-picture/player/`).
 - The in-player stream switcher always opens in place; never navigate to the full picker from it (`use-stream-switcher.ts`). A start that never plays is abandoned after `NEVER_STARTED_CEILING_MS` (45 s, `use-auto-retry.ts`).
+- Opening at saved progress restarts from 0 only at `RESTART_THRESHOLD` (`use-bridge-load.ts` and `lib/player/resume-start.ts`). It must equal `WATCHED_RATIO` (0.85, `use-resume-autosave.ts`): when it was 0.8, an episode left at 80–85% stayed in Continue Watching but restarted, and auto-skip then landed just after the intro.
 
 ## Feature areas with their own notes
 
