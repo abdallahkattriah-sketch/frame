@@ -472,6 +472,17 @@ const playback: Record<string, string> = {
     "Toplam {total} diziden {shown} tanesi gösteriliyor. Kalanları bulmak için arama yapın.",
   "Skip Credits": "Jeneriği Atla",
   "Skip Intro": "Girişi Atla",
+  "Undo skip": "Atlamayı geri al",
+  "Hide Undo skip": "Atlamayı geri al düğmesini gizle",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Atlamayı geri al görünürken, son atlamadan önceki yere geri dön.",
+  "Skip intro / credits": "Girişi / jeneriği atla",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Şu anda oynatılan girişi, özeti, jeneriği veya reklamı atla.",
+  "Auto-skip": "Otomatik atlama",
+  Recaps: "Özetler",
+  Credits: "Jenerik",
+  "Injected ads": "Eklenmiş reklamlar",
   "Skip Recap": "Özeti Atla",
   "Sleep timer": "Uyku zamanlayıcısı",
   Smaller: "Daha küçük",

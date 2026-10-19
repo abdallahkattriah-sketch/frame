@@ -37,6 +37,7 @@ import { AspectMenu } from "./aspect-menu";
 import { Anime4kMenu } from "./anime4k-menu";
 import { ShaderMenu } from "./shader-menu";
 import { HdrToggleStremioBtn } from "./hdr-toggle-btn";
+import { AutoSkipMenu } from "./skip-toggle-btn";
 import { QualityInfo } from "./quality-badge";
 import { RtxHdrToggleStremioBtn } from "./rtx-hdr-toggle-btn";
 import { RtxVsrToggleStremioBtn } from "./rtx-vsr-toggle-btn";
@@ -404,6 +405,9 @@ export function RenderedStremioControl({
     case "hdr-toggle":
       if (ctx.engine === "html5") return null;
       return <HdrToggleStremioBtn />;
+    case "skip-toggle":
+      if (ctx.isLiveChannel) return null;
+      return <AutoSkipMenu onOpenChange={ctx.setAnime4kMenuOpen} />;
     case "rtx-hdr-toggle":
       if (ctx.engine === "html5") return null;
       return <RtxHdrToggleStremioBtn meta={ctx.meta} />;

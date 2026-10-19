@@ -65,6 +65,7 @@ import { AspectMenu } from "./aspect-menu";
 import { Anime4kMenu } from "./anime4k-menu";
 import { ShaderMenu } from "./shader-menu";
 import { HdrToggleBigBtn } from "./hdr-toggle-btn";
+import { AutoSkipMenu } from "./skip-toggle-btn";
 import { RtxHdrToggleBigBtn } from "./rtx-hdr-toggle-btn";
 import { RtxVsrToggleBigBtn } from "./rtx-vsr-toggle-btn";
 import type { Anime4kChoice } from "@/views/player/hooks/use-anime4k";
@@ -544,6 +545,10 @@ export function renderControl(id: PlayerControlId, ctx: ControlContext): ReactNo
     case "hdr-toggle": {
       if (ctx.tight || ctx.engine === "html5") return null;
       return <HdrToggleBigBtn />;
+    }
+    case "skip-toggle": {
+      if (ctx.tight || ctx.isLiveChannel) return null;
+      return <AutoSkipMenu onOpenChange={ctx.setAnime4kMenuOpen} iconUrl={iconUrl} />;
     }
     case "rtx-hdr-toggle": {
       if (ctx.tight || ctx.engine === "html5") return null;

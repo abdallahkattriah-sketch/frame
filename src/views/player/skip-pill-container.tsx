@@ -4,8 +4,15 @@ import { SkipPill } from "@/components/player/skip-pill";
 import { BpSkipPill } from "@/views/big-picture/player/bp-skip-pill";
 import { activeSegment, type SkipSegment } from "@/lib/skip-intro";
 import { useSettings } from "@/lib/settings";
+import { effectiveBinding, eventToBinding, isTypingTarget } from "@/lib/hotkeys";
+import { isPlayerInteractionLocked } from "@/lib/player/interaction-lock";
 import type { SpoilerMask } from "@/lib/spoilers";
 import type { PlayEpisode } from "@/lib/view";
+
+const UNDO_SKIP_MS = 4000;
+
+const segmentKey = (s: SkipSegment) =>
+  `${s.kind}:${Math.round(s.startSec)}:${Math.round(s.endSec)}`;
 
 export function nextEpisodeLead(setting: number, durationSec: number): number {
   if (setting === 0) return 0;
@@ -65,9 +72,19 @@ export function SkipPillContainer({
   }, [realActiveSkip, hasNextEpisode, durationSec, positionSec, skipSegments, leadSec]);
   const remainingSec = Math.max(0, durationSec - positionSec);
 
+  const [undo, setUndo] = useState<{ fromSec: number; key: string } | null>(null);
+  const skipActionRef = useRef<() => void>(() => {});
+  const undoActionRef = useRef<() => void>(() => {});
+  useEffect(() => {
+    if (!undo) return;
+    const id = setTimeout(() => setUndo(null), UNDO_SKIP_MS);
+    return () => clearTimeout(id);
+  }, [undo]);
+
   const autoSkippedRef = useRef<SkipSegment | null>(null);
   useEffect(() => {
     autoSkippedRef.current = null;
+    setUndo(null);
   }, [skipSegments]);
   useEffect(() => {
     if (!allowAutoSkip || positionSec <= 0 || !realActiveSkip) return;
@@ -79,6 +96,7 @@ export function SkipPillContainer({
     if (!wantSkip) return;
     if (autoSkippedRef.current === realActiveSkip) return;
     autoSkippedRef.current = realActiveSkip;
+    setUndo({ fromSec: positionSec, key: segmentKey(realActiveSkip) });
     onSkip(realActiveSkip.endSec);
   }, [
     settings.autoSkipIntro,
@@ -99,10 +117,7 @@ export function SkipPillContainer({
     setDismissedKeys(new Set());
     prevSkipKeyRef.current = null;
   }, [skipSegments]);
-  const buttonKey =
-    realActiveSkip && settings.showSkipButton
-      ? `${realActiveSkip.kind}:${Math.round(realActiveSkip.startSec)}:${Math.round(realActiveSkip.endSec)}`
-      : null;
+  const buttonKey = realActiveSkip && settings.showSkipButton ? segmentKey(realActiveSkip) : null;
   useEffect(() => {
     if (!buttonKey || settings.skipButtonHideSec <= 0) return;
     const id = window.setTimeout(
@@ -138,7 +153,11 @@ export function SkipPillContainer({
     leadSec,
     visible,
     onSkip: () => {
-      if (activeSkip) onSkip(activeSkip.endSec);
+      if (!activeSkip) return;
+      if (activeSkip === displaySkip) {
+        setUndo({ fromSec: positionSec, key: segmentKey(activeSkip) });
+      }
+      onSkip(activeSkip.endSec);
     },
     onNextEpisode,
     onCancelAutoNext,
@@ -148,6 +167,48 @@ export function SkipPillContainer({
         : undefined,
   };
 
-  if (tenFoot) return <BpSkipPill {...shared} />;
-  return <SkipPill engine={engine} {...shared} />;
+  // Undo brings the segment's Skip button back even if it had timed out or been dismissed.
+  const undoSkip = undo
+    ? () => {
+        setAutoHiddenKey((prev) => (prev === undo.key ? null : prev));
+        setDismissedKeys((prev) => {
+          if (!prev.has(undo.key)) return prev;
+          const next = new Set(prev);
+          next.delete(undo.key);
+          return next;
+        });
+        setUndo(null);
+        onSkip(undo.fromSec);
+      }
+    : undefined;
+
+  skipActionRef.current = () => {
+    if (!realActiveSkip) return;
+    setUndo({ fromSec: positionSec, key: segmentKey(realActiveSkip) });
+    onSkip(realActiveSkip.endSec);
+  };
+  undoActionRef.current = () => undoSkip?.();
+  const skipBinding = effectiveBinding("playerSkipSegment", settings.hotkeys ?? {});
+  const undoBinding = effectiveBinding("playerUndoSkip", settings.hotkeys ?? {});
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.repeat || isTypingTarget(e) || isPlayerInteractionLocked()) return;
+      const binding = eventToBinding(e);
+      if (binding === skipBinding) {
+        e.preventDefault();
+        skipActionRef.current();
+      } else if (binding === undoBinding) {
+        e.preventDefault();
+        undoActionRef.current();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [skipBinding, undoBinding]);
+
+  const dismissUndo = undo ? () => setUndo(null) : undefined;
+
+  if (tenFoot) return <BpSkipPill {...shared} onUndo={undoSkip} onDismissUndo={dismissUndo} />;
+  return <SkipPill engine={engine} {...shared} onUndo={undoSkip} onDismissUndo={dismissUndo} />;
 }

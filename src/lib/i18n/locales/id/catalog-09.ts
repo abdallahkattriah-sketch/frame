@@ -493,6 +493,17 @@ const catalog: Record<string, string> = {
   Skip: "Lewati",
   "Skip Credits": "Lewati Kredit",
   "Skip Intro": "Lewati Intro",
+  "Undo skip": "Batalkan lewati",
+  "Hide Undo skip": "Sembunyikan Batalkan lewati",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Kembali ke posisi sebelum lewati terakhir, selama Batalkan lewati masih tampil.",
+  "Skip intro / credits": "Lewati intro / kredit",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Lewati intro, rekap, kredit, atau iklan yang sedang diputar.",
+  "Auto-skip": "Lewati otomatis",
+  Recaps: "Rekap",
+  Credits: "Kredit",
+  "Injected ads": "Iklan sisipan",
   "Skip Recap": "Lewati Rekap",
   "Skip Who's watching and always start as this profile.":
     "Lewati Siapa yang menonton dan selalu mulai sebagai profil ini.",

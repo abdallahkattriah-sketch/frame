@@ -294,6 +294,17 @@ const player: Record<string, string> = {
   "Show {langs} only": "Nur {langs} anzeigen",
   "Skip Credits": "Abspann überspringen",
   "Skip Intro": "Intro überspringen",
+  "Undo skip": "Überspringen rückgängig machen",
+  "Hide Undo skip": "„Überspringen rückgängig machen“ ausblenden",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Zurück zur Stelle vor dem letzten Überspringen, solange „Überspringen rückgängig machen“ angezeigt wird.",
+  "Skip intro / credits": "Intro / Abspann überspringen",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Das gerade laufende Intro, die Rückblende, den Abspann oder die Werbung überspringen.",
+  "Auto-skip": "Automatisch überspringen",
+  Recaps: "Rückblicke",
+  Credits: "Abspann",
+  "Injected ads": "Eingefügte Werbung",
   "Skip Recap": "Rückblick überspringen",
   "Sleep timer": "Sleeptimer",
   Smaller: "Kleiner",

@@ -276,6 +276,17 @@ const player: Record<string, string> = {
     "Mostrar las fuentes ocultas por el filtro de confianza",
   "Skip Credits": "Omitir créditos",
   "Skip Intro": "Omitir introducción",
+  "Undo skip": "Deshacer omisión",
+  "Hide Undo skip": "Ocultar Deshacer omisión",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Vuelve a donde estabas antes de la última omisión, mientras se muestra Deshacer omisión.",
+  "Skip intro / credits": "Omitir introducción / créditos",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Omite la introducción, el resumen, los créditos o el anuncio que se está reproduciendo.",
+  "Auto-skip": "Omitir automáticamente",
+  Recaps: "Resúmenes",
+  Credits: "Créditos",
+  "Injected ads": "Anuncios insertados",
   "Skip Recap": "Omitir resumen",
   "Sleep timer": "Temporizador de suspensión",
   "Something else": "Algo más",

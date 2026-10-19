@@ -37,6 +37,7 @@ export type PlayerControlId =
   | "anime4k-menu"
   | "shader-menu"
   | "hdr-toggle"
+  | "skip-toggle"
   | "rtx-hdr-toggle"
   | "rtx-vsr-toggle"
   | "draw-toggle"
@@ -201,6 +202,7 @@ export const DEFAULT_DEFAULT_CONFIG: PlayerChromeConfig = {
     { id: "rtx-vsr-toggle", slot: "bottom-right", order: 29, hidden: true },
     { id: "shader-menu", slot: "bottom-right", order: 30, hidden: true },
     { id: "speed-menu", slot: "bottom-right", order: 30 },
+    { id: "skip-toggle", slot: "bottom-right", order: 35 },
     { id: "draw-toggle", slot: "bottom-right", order: 40 },
     { id: "screenshot", slot: "bottom-right", order: 45, hidden: true },
     { id: "song-id", slot: "bottom-right", order: 46 },
@@ -241,6 +243,7 @@ export const DEFAULT_STREMIO_CONFIG: PlayerChromeConfig = {
     { id: "rtx-vsr-toggle", slot: "bottom-right", order: 29, hidden: true },
     { id: "shader-menu", slot: "bottom-right", order: 30, hidden: true },
     { id: "draw-toggle", slot: "bottom-right", order: 30 },
+    { id: "skip-toggle", slot: "bottom-right", order: 33 },
     { id: "screenshot", slot: "bottom-right", order: 35, hidden: true },
     { id: "song-id", slot: "bottom-right", order: 36 },
     { id: "cast", slot: "bottom-right", order: 40 },
@@ -295,6 +298,7 @@ export const CONTROL_META: Record<
     defaultSlot: "bottom-right",
   },
   "hdr-toggle": { label: "HDR to SDR toggle", group: "menus", defaultSlot: "bottom-right" },
+  "skip-toggle": { label: "Auto-skip", group: "menus", defaultSlot: "bottom-right" },
   "rtx-hdr-toggle": { label: "RTX Video HDR toggle", group: "menus", defaultSlot: "bottom-right" },
   "rtx-vsr-toggle": {
     label: "RTX Super Resolution toggle",

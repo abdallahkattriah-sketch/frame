@@ -414,6 +414,7 @@ const NOT_IN_LIVE_CONTROLS = new Set<PlayerControlId>([
   "seek-forward",
   "prev-episode",
   "next-episode",
+  "skip-toggle",
 ]);
 
 function controlAppliesToMode(id: PlayerControlId, mode: PlayerMode): boolean {

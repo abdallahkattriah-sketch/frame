@@ -863,6 +863,17 @@ const sweepE: Record<string, string> = {
   "Skip injected ad?": "跳过插入的广告？",
   "Skip injected ads automatically": "自动跳过插入的广告",
   "Skip Intro": "跳过片头",
+  "Undo skip": "撤销跳过",
+  "Hide Undo skip": "隐藏“撤销跳过”",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "在显示“撤销跳过”时，回到上一次跳过之前的位置。",
+  "Skip intro / credits": "跳过片头 / 片尾",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "跳过正在播放的片头、回顾、片尾或广告。",
+  "Auto-skip": "自动跳过",
+  Recaps: "回顾",
+  Credits: "片尾",
+  "Injected ads": "插入的广告",
   "Skip intros": "跳过片头",
   "Skip intros & credits": "跳过片头和片尾",
   "Skip intros and credits": "跳过片头和片尾",

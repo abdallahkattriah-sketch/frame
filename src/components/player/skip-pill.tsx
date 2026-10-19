@@ -1,4 +1,4 @@
-import { ChevronsRight, FastForward, X } from "lucide-react";
+import { ChevronsRight, FastForward, Undo2, X } from "lucide-react";
 import { Play } from "@/components/icons/play-filled";
 import { AdSkipIcon } from "@/components/icons/adskip-icon";
 import { useEffect, useState } from "react";
@@ -24,6 +24,8 @@ export function SkipPill({
   onNextEpisode,
   onCancelAutoNext,
   onDismiss,
+  onUndo,
+  onDismissUndo,
 }: {
   engine: "html5" | "mpv";
   segment: SkipSegment | null;
@@ -38,9 +40,12 @@ export function SkipPill({
   onNextEpisode: () => void;
   onCancelAutoNext?: () => void;
   onDismiss?: () => void;
+  onUndo?: () => void;
+  onDismissUndo?: () => void;
 }) {
   const t = useT();
   const [mounted, setMounted] = useState<SkipSegment | null>(segment);
+  const [undoShown, setUndoShown] = useState(false);
   const [show, setShow] = useState(false);
   const [hovered, setHovered] = useState(false);
   const hasCountdown = countdownSec > 0;
@@ -86,6 +91,26 @@ export function SkipPill({
     return () => window.clearInterval(timer);
   }, [hovered, mounted, onDismiss, shouldCountdown, timeLeft]);
 
+  const hasUndo = !!onUndo;
+  useEffect(() => {
+    if (!hasUndo) {
+      setUndoShown(false);
+      return;
+    }
+    const id = window.requestAnimationFrame(() => setUndoShown(true));
+    return () => window.cancelAnimationFrame(id);
+  }, [hasUndo]);
+
+  if (!mounted && onUndo) {
+    return (
+      <UndoSkipPill
+        isMpv={engine === "mpv"}
+        visible={visible && undoShown}
+        onUndo={onUndo}
+        onDismiss={onDismissUndo}
+      />
+    );
+  }
   if (!mounted) return null;
 
   const isOutroNext = mounted.kind === "outro" && hasNextEp && !!nextEp;
@@ -206,6 +231,87 @@ export function SkipPill({
             onClick={onDismiss}
             aria-label={t("Hide this Skip button")}
             title={t("Hide this Skip button")}
+            className="flex h-full w-full items-center justify-center rounded-full bg-transparent text-white/70 transition-[color,transform] hover:text-white active:scale-[0.97]"
+          >
+            <X size={16} strokeWidth={2.4} />
+          </button>
+        </ThreeLiquidGlassSurface>
+      )}
+    </div>
+  );
+}
+
+function UndoSkipPill({
+  isMpv,
+  visible,
+  onUndo,
+  onDismiss,
+}: {
+  isMpv: boolean;
+  visible: boolean;
+  onUndo: () => void;
+  onDismiss?: () => void;
+}) {
+  const t = useT();
+  return (
+    <div
+      className={`pointer-events-none absolute end-7 z-30 flex items-center gap-2 transition-all duration-200 ease-out ${
+        visible ? "bottom-44 opacity-100 translate-y-0" : "bottom-40 opacity-0 translate-y-2"
+      }`}
+    >
+      <ThreeLiquidGlassSurface
+        radius="9999px"
+        shaderRadius={0.48}
+        intensity={0.3}
+        refractionStrength={0.08}
+        interactive={false}
+        alwaysActive
+        experimentalStyle={{
+          background: isMpv ? "rgba(8,12,18,0.35)" : "transparent",
+          backdropFilter: "blur(18px) saturate(1.25)",
+          WebkitBackdropFilter: "blur(18px) saturate(1.25)",
+        }}
+        style={{
+          boxShadow: "inset 0 1px 0 rgba(255,255,255,0.10), inset 0 -1px 0 rgba(0,0,0,0.05)",
+        }}
+        className="pointer-events-auto relative inline-flex h-[42px] w-fit shrink-0 overflow-hidden"
+        surfaceClassName="border border-white/[0.08]"
+        contentClassName="flex h-full w-full"
+      >
+        <button
+          type="button"
+          onClick={onUndo}
+          className="inline-flex h-full w-full items-center gap-2 rounded-full bg-transparent px-5 pb-[2px] text-[14px] font-semibold text-white transition-transform active:scale-[0.97]"
+        >
+          <Undo2 size={18} strokeWidth={2.2} />
+          {t("Undo skip")}
+        </button>
+      </ThreeLiquidGlassSurface>
+      {onDismiss && (
+        <ThreeLiquidGlassSurface
+          radius="9999px"
+          shaderRadius={0.48}
+          intensity={0.3}
+          refractionStrength={0.08}
+          interactive={false}
+          alwaysActive
+          experimentalStyle={{
+            background: isMpv ? "rgba(8,12,18,0.35)" : "transparent",
+            backdropFilter: "blur(18px) saturate(1.25)",
+            WebkitBackdropFilter: "blur(18px) saturate(1.25)",
+          }}
+          style={{
+            boxShadow: "inset 0 1px 0 rgba(255,255,255,0.10), inset 0 -1px 0 rgba(0,0,0,0.05)",
+          }}
+          className="pointer-events-auto h-9 w-9 shrink-0"
+          surfaceClassName="border border-white/[0.08]"
+          contentClassName="flex h-full w-full"
+        >
+          <button
+            type="button"
+            onClick={onDismiss}
+            aria-label={t("Hide Undo skip")}
+            title={t("Hide Undo skip")}
             className="flex h-full w-full items-center justify-center rounded-full bg-transparent text-white/70 transition-[color,transform] hover:text-white active:scale-[0.97]"
           >
             <X size={16} strokeWidth={2.4} />

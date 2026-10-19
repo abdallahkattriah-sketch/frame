@@ -30,6 +30,8 @@ export type HotkeyId =
   | "playerRtxHdrToggle"
   | "playerRtxVsrToggle"
   | "playerCrop"
+  | "playerSkipSegment"
+  | "playerUndoSkip"
   | "playerPanscanUp"
   | "playerPanscanDown"
   | "playerScreenshot"
@@ -152,6 +154,22 @@ export const HOTKEYS: HotkeyDef[] = [
     label: "Toggle stats overlay",
     description: "Show or hide the playback stats overlay.",
     defaultBinding: "i",
+  },
+  {
+    id: "playerSkipSegment",
+    scope: "Player",
+    group: "Playback",
+    label: "Skip intro / credits",
+    description: "Skip the intro, recap, credits or ad that is playing now.",
+    defaultBinding: "k",
+  },
+  {
+    id: "playerUndoSkip",
+    scope: "Player",
+    group: "Playback",
+    label: "Undo skip",
+    description: "Jump back to where you were before the last skip, while Undo skip is showing.",
+    defaultBinding: "alt+k",
   },
   {
     id: "playerCrop",

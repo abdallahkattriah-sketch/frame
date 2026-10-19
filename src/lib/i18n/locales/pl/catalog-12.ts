@@ -296,6 +296,17 @@ const catalog12: Record<string, string> = {
   Skip: "Pomiń",
   "Skip Credits": "Pomiń napisy końcowe",
   "Skip Intro": "Pomiń czołówkę",
+  "Undo skip": "Cofnij pominięcie",
+  "Hide Undo skip": "Ukryj Cofnij pominięcie",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Wróć do miejsca sprzed ostatniego pominięcia, dopóki widać przycisk Cofnij pominięcie.",
+  "Skip intro / credits": "Pomiń czołówkę / napisy końcowe",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Pomiń odtwarzaną teraz czołówkę, streszczenie, napisy końcowe lub reklamę.",
+  "Auto-skip": "Automatyczne pomijanie",
+  Recaps: "Streszczenia",
+  Credits: "Napisy końcowe",
+  "Injected ads": "Wstawione reklamy",
   "Skip Recap": "Pomiń przypomnienie",
   "Skip Who's watching and always start as this profile.":
     "Pomiń ekran „Kto ogląda?” i zawsze uruchamiaj ten profil.",

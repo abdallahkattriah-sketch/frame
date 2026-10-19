@@ -16,6 +16,17 @@ const player: Record<string, string> = {
   "Back 30 seconds": "30秒戻る",
   "Forward 30 seconds": "30秒進む",
   "Skip Intro": "イントロをスキップ",
+  "Undo skip": "スキップを取り消す",
+  "Hide Undo skip": "「スキップを取り消す」を非表示",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "「スキップを取り消す」が表示されている間、直前のスキップの前の位置に戻ります。",
+  "Skip intro / credits": "イントロ / クレジットをスキップ",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "再生中のイントロ、あらすじ、クレジット、広告をスキップします。",
+  "Auto-skip": "自動スキップ",
+  Recaps: "あらすじ",
+  Credits: "クレジット",
+  "Injected ads": "挿入された広告",
   "Skip Recap": "前回までのあらすじをスキップ",
   "Skip Credits": "クレジットをスキップ",
   "Preparing stream": "ストリームを準備中",

@@ -8,6 +8,12 @@ test("a valid zero-start intro waits for playback and remains skippable after re
   const segment = { kind: "intro", startSec: 0, endSec: 90, source: "chapters" };
   const h = hookHarness("src/views/player/skip-pill-container.tsx", "SkipPillContainer", {
     "react/jsx-runtime": { jsx: (_type: any, props: any) => props },
+    "@/lib/hotkeys": {
+      effectiveBinding: () => "k",
+      eventToBinding: () => "",
+      isTypingTarget: () => false,
+    },
+    "@/lib/player/interaction-lock": { isPlayerInteractionLocked: () => false },
     "@/lib/player/playback-clock": { usePlaybackPosition: () => position },
     "@/components/player/skip-pill": { SkipPill() {} },
     "@/views/big-picture/player/bp-skip-pill": { BpSkipPill() {} },

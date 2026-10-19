@@ -260,6 +260,17 @@ const player: Record<string, string> = {
   "Show {langs} only": "Afficher uniquement en {langs}",
   "Skip Credits": "Passer le générique",
   "Skip Intro": "Passer l’introduction",
+  "Undo skip": "Annuler le saut",
+  "Hide Undo skip": "Masquer « Annuler le saut »",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Revenir là où vous étiez avant le dernier saut, tant qu’« Annuler le saut » est affiché.",
+  "Skip intro / credits": "Passer l’intro / le générique",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Passer l’introduction, le récapitulatif, le générique ou la publicité en cours.",
+  "Auto-skip": "Passage automatique",
+  Recaps: "Récapitulatifs",
+  Credits: "Génériques de fin",
+  "Injected ads": "Publicités insérées",
   "Skip Recap": "Passer le récapitulatif",
   "Sleep timer": "Minuteur de veille",
   "Something else": "Autre chose",

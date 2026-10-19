@@ -592,6 +592,17 @@ const catalog09: Record<string, string> = {
   Skip: "건너뛰기",
   "Skip Credits": "크레딧 건너뛰기",
   "Skip Intro": "오프닝 건너뛰기",
+  "Undo skip": "건너뛰기 취소",
+  "Hide Undo skip": "건너뛰기 취소 숨기기",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "건너뛰기 취소가 표시되는 동안 마지막으로 건너뛰기 전 위치로 돌아갑니다.",
+  "Skip intro / credits": "오프닝 / 엔딩 건너뛰기",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "지금 재생 중인 오프닝, 요약, 엔딩 크레딧 또는 광고를 건너뜁니다.",
+  "Auto-skip": "자동 건너뛰기",
+  Recaps: "요약",
+  Credits: "엔딩 크레딧",
+  "Injected ads": "삽입된 광고",
   "Skip Recap": "이전 내용 건너뛰기",
   "Skip Who's watching and always start as this profile.":
     "프로필 선택 화면을 건너뛰고 항상 이 프로필로 시작합니다.",

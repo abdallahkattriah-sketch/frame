@@ -956,6 +956,17 @@ const catalogSU: Record<string, string> = {
   Skip: "स्किप करें",
   "Skip Credits": "क्रेडिट स्किप करें",
   "Skip Intro": "इंट्रो स्किप करें",
+  "Undo skip": "स्किप पूर्ववत करें",
+  "Hide Undo skip": "“स्किप पूर्ववत करें” छिपाएँ",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "जब तक “स्किप पूर्ववत करें” दिख रहा है, पिछले स्किप से पहले वाली जगह पर वापस जाएँ।",
+  "Skip intro / credits": "इंट्रो / क्रेडिट स्किप करें",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "अभी चल रहा इंट्रो, रीकैप, क्रेडिट या विज्ञापन स्किप करें।",
+  "Auto-skip": "ऑटो-स्किप",
+  Recaps: "रीकैप",
+  Credits: "क्रेडिट",
+  "Injected ads": "डाले गए विज्ञापन",
   "Skip Recap": "रिकैप स्किप करें",
   "Skip Who's watching and always start as this profile.":
     "कौन देख रहा है वाली स्क्रीन स्किप करें और हमेशा इस प्रोफ़ाइल से शुरू करें।",

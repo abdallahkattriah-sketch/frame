@@ -16,6 +16,17 @@ const player: Record<string, string> = {
   "Back 30 seconds": "Voltar 30 segundos",
   "Forward 30 seconds": "Avançar 30 segundos",
   "Skip Intro": "Pular Abertura",
+  "Undo skip": "Desfazer pulo",
+  "Hide Undo skip": "Ocultar Desfazer pulo",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Volta para onde você estava antes do último pulo, enquanto Desfazer pulo estiver visível.",
+  "Skip intro / credits": "Pular abertura / créditos",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Pula a abertura, o resumo, os créditos ou o anúncio que está passando agora.",
+  "Auto-skip": "Pular automaticamente",
+  Recaps: "Resumos",
+  Credits: "Créditos",
+  "Injected ads": "Anúncios inseridos",
   "Skip Recap": "Pular Recapitulação",
   "Skip Credits": "Pular Créditos",
   "Preparing stream": "Preparando stream",

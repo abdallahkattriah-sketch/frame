@@ -34,6 +34,17 @@ const player: Record<string, string> = {
   "Back 30 seconds": "للخلف 30 ثانية",
   "Forward 30 seconds": "للأمام 30 ثانية",
   "Skip Intro": "تخطّي المقدمة",
+  "Undo skip": "تراجع عن التخطّي",
+  "Hide Undo skip": "إخفاء «تراجع عن التخطّي»",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "العودة إلى حيث كنت قبل آخر تخطٍّ، ما دام زر «تراجع عن التخطّي» ظاهرًا.",
+  "Skip intro / credits": "تخطّي المقدمة / الشارة",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "تخطّي المقدمة أو الملخّص أو الشارة أو الإعلان الذي يُعرض الآن.",
+  "Auto-skip": "التخطّي التلقائي",
+  Recaps: "الملخّصات",
+  Credits: "الشارات",
+  "Injected ads": "الإعلانات المُدرجة",
   "Skip Recap": "تخطّي الملخص",
   "Skip Credits": "تخطّي الشارة",
 

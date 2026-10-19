@@ -16,6 +16,17 @@ const player: Record<string, string> = {
   "Back 30 seconds": "Назад на 30 секунд",
   "Forward 30 seconds": "Вперёд на 30 секунд",
   "Skip Intro": "Пропустить заставку",
+  "Undo skip": "Отменить пропуск",
+  "Hide Undo skip": "Скрыть «Отменить пропуск»",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Вернуться к месту до последнего пропуска, пока видна кнопка «Отменить пропуск».",
+  "Skip intro / credits": "Пропустить заставку / титры",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Пропустить идущую сейчас заставку, пересказ, титры или рекламу.",
+  "Auto-skip": "Автопропуск",
+  Recaps: "Пересказы",
+  Credits: "Титры",
+  "Injected ads": "Вставленная реклама",
   "Skip Recap": "Пропустить пересказ",
   "Skip Credits": "Пропустить титры",
   "Preparing stream": "Подготовка потока",

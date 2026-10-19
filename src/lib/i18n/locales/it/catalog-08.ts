@@ -3,6 +3,17 @@ const catalog08: Record<string, string> = {
   Skip: "Salta",
   "Skip Credits": "Salta i titoli di coda",
   "Skip Intro": "Salta la sigla",
+  "Undo skip": "Annulla salto",
+  "Hide Undo skip": "Nascondi Annulla salto",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Torna al punto in cui eri prima dell’ultimo salto, finché è visibile Annulla salto.",
+  "Skip intro / credits": "Salta sigla / titoli di coda",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Salta la sigla, il riassunto, i titoli di coda o la pubblicità in riproduzione.",
+  "Auto-skip": "Salto automatico",
+  Recaps: "Riassunti",
+  Credits: "Titoli di coda",
+  "Injected ads": "Pubblicità inserite",
   "Skip Recap": "Salta il riepilogo",
   "Skip Who's watching and always start as this profile.":
     "Salta «Chi sta guardando?» e avvia sempre con questo profilo.",

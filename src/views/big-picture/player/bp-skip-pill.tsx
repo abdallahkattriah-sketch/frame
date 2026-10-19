@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { ChevronsRight, FastForward, X } from "lucide-react";
+import { ChevronsRight, FastForward, Undo2, X } from "lucide-react";
 import { AdSkipIcon } from "@/components/icons/adskip-icon";
 import { useGamepads } from "@/lib/gamepad/store";
 import { SFX } from "@/lib/sfx";
@@ -54,6 +54,8 @@ export function BpSkipPill({
   onNextEpisode,
   onCancelAutoNext,
   onDismiss,
+  onUndo,
+  onDismissUndo,
 }: {
   segment: SkipSegment | null;
   hasNextEp: boolean;
@@ -67,6 +69,8 @@ export function BpSkipPill({
   onNextEpisode: () => void;
   onCancelAutoNext?: () => void;
   onDismiss?: () => void;
+  onUndo?: () => void;
+  onDismissUndo?: () => void;
 }) {
   const t = useBpT();
   const pads = useGamepads();
@@ -79,7 +83,8 @@ export function BpSkipPill({
   // this mounted for EXIT_MS after the segment clears with show already false,
   // and inertBlocked in bp-focus-core never looks at opacity, so without it the
   // ring can sit on an invisible Skip Intro and the next Enter seeks unseen.
-  const focusable = (shell ? shell.chromeUp : true) && visible && show;
+  const undoOnly = !mounted && Boolean(onUndo);
+  const focusable = (shell ? shell.chromeUp : true) && visible && (show || undoOnly);
   useBpStageRing(rootRef, focusable);
 
   useLayoutEffect(() => ensureBpPlayerSurfaceTokens(), []);
@@ -105,13 +110,14 @@ export function BpSkipPill({
   const fireRef = useRef<() => void>(onSkip);
   fireRef.current = () => {
     SFX.click();
-    if (isOutroNext) onNextEpisode();
+    if (undoOnly) onUndo?.();
+    else if (isOutroNext) onNextEpisode();
     else onSkip();
     // A blind skip lands somewhere the viewer cannot see. The scrub readout is
     // the cheapest way to show them where, without raising the full chrome.
     shell?.peekChrome();
   };
-  const armed = Boolean(mounted) && !asUpNext && visible && show;
+  const armed = (Boolean(mounted) || undoOnly) && !asUpNext && visible && (show || undoOnly);
 
   useEffect(() => {
     if (!armed) return;
@@ -128,6 +134,55 @@ export function BpSkipPill({
     return () => window.removeEventListener("keydown", onKey);
   }, [armed]);
 
+  if (!mounted && onUndo) {
+    return (
+      <div
+        ref={rootRef}
+        data-bp-player-surface="true"
+        style={bpSurfaceVars()}
+        className="pointer-events-none absolute inset-0 z-30"
+      >
+        <div
+          data-bp-skip-pill
+          className={`pointer-events-auto absolute end-[var(--bp-gutter)] flex items-center gap-[clamp(9px,0.9vw,16px)] transition-[opacity,transform] duration-[var(--bp-dur)] ease-[var(--bp-ease)] motion-reduce:transition-none ${
+            visible ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
+          }`}
+          style={{ bottom: BP_STAGE_BOTTOM }}
+        >
+          <button
+            type="button"
+            data-bp-focusable={focusable ? "" : undefined}
+            data-bp-chip
+            onKeyDown={blockSpaceActivate}
+            onClick={() => fireRef.current()}
+            className="group flex shrink-0 items-center gap-[clamp(9px,0.9vw,16px)] rounded-[var(--bp-r-md)] border-2 border-[var(--bp-touch)] bg-[var(--bp-panel-2)] px-[clamp(18px,1.7vw,34px)] text-[clamp(15px,2.05vh,25px)] font-bold text-ink shadow-[0_26px_60px_-22px_rgba(0,0,0,0.9)]"
+            style={{ height: PILL_H }}
+          >
+            <Undo2 size={24} strokeWidth={2.3} />
+            {t("Undo skip")}
+          </button>
+          {onDismissUndo && (
+            <button
+              type="button"
+              data-bp-focusable={focusable ? "" : undefined}
+              data-bp-chip
+              onKeyDown={blockSpaceActivate}
+              onClick={() => {
+                SFX.close();
+                onDismissUndo();
+              }}
+              aria-label={t("Hide Undo skip")}
+              title={t("Hide Undo skip")}
+              className="flex shrink-0 items-center justify-center rounded-[var(--bp-r-md)] border border-[var(--bp-edge-2)] bg-[var(--bp-panel-2)] text-ink-subtle"
+              style={{ width: PILL_H, height: PILL_H }}
+            >
+              <X size={24} strokeWidth={2.6} />
+            </button>
+          )}
+        </div>
+      </div>
+    );
+  }
   if (!mounted) return null;
 
   if (asUpNext && nextEp) {

@@ -16,6 +16,17 @@ const player: Record<string, string> = {
   "Back 30 seconds": "Lùi 30 giây",
   "Forward 30 seconds": "Tới 30 giây",
   "Skip Intro": "Bỏ qua phần mở đầu",
+  "Undo skip": "Hoàn tác bỏ qua",
+  "Hide Undo skip": "Ẩn Hoàn tác bỏ qua",
+  "Jump back to where you were before the last skip, while Undo skip is showing.":
+    "Quay lại vị trí trước lần bỏ qua gần nhất, khi nút Hoàn tác bỏ qua còn hiển thị.",
+  "Skip intro / credits": "Bỏ qua phần mở đầu / phần kết",
+  "Skip the intro, recap, credits or ad that is playing now.":
+    "Bỏ qua phần mở đầu, phần tóm tắt, phần kết hoặc quảng cáo đang phát.",
+  "Auto-skip": "Tự động bỏ qua",
+  Recaps: "Phần tóm tắt",
+  Credits: "Phần kết",
+  "Injected ads": "Quảng cáo chèn vào",
   "Skip Recap": "Bỏ qua phần tóm tắt",
   "Skip Credits": "Bỏ qua phần danh đề",
   "Preparing stream": "Đang chuẩn bị luồng phát",
