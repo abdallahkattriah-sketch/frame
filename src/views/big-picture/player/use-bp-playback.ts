@@ -20,6 +20,7 @@ export type BpPlayback = {
   source: RemoteSourceInfo | null;
   positionSec: number;
   durationSec: number;
+  rate: number;
   bufferedSec: number;
   playing: boolean;
   live: boolean;
@@ -124,6 +125,7 @@ export function useBpPlayback(src: PlayerSrc | null, tick: boolean): BpPlayback 
       source: session.source,
       positionSec: position,
       durationSec: duration,
+      rate: session.rate && session.rate > 0 ? session.rate : 1,
       bufferedSec,
       playing,
       live,

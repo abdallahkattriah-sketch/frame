@@ -147,6 +147,8 @@ export type RemoteSnapshot = {
   source: RemoteSourceInfo | null;
   positionSec: number;
   durationSec: number;
+  /** Host playback speed; absent from hosts that predate it, so read it as 1. */
+  rate?: number;
   playing: boolean;
   volume: number;
   muted: boolean;

@@ -388,6 +388,7 @@ function buildRemoteSnapshotInner(positionSec?: number): RemoteSnapshot {
     playing,
     volume: b.snap.volume,
     muted: b.snap.muted,
+    rate: b.snap.rate,
     target,
     castDevices,
     castDiscovering,

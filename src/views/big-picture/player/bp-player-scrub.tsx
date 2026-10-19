@@ -114,6 +114,7 @@ export function BpPlayerScrub({
   const played = pct(position, duration);
   const buffered = pct(Math.max(playback.bufferedSec, position), duration);
   const remaining = duration > 0 ? Math.max(0, duration - position) : 0;
+  const remainingWallSec = remaining / (playback.rate > 0 ? playback.rate : 1);
 
   return (
     <div
@@ -176,7 +177,7 @@ export function BpPlayerScrub({
             <span className="flex min-w-0 items-baseline gap-[clamp(8px,0.8vw,16px)]">
               <span>{t("{time} left", { time: fmtTime(remaining) })}</span>
               <span className="text-ink-muted">
-                {t("Ends {time}", { time: clockOf(remaining) })}
+                {t("Ends {time}", { time: clockOf(remainingWallSec) })}
               </span>
             </span>
           )
