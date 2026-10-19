@@ -617,6 +617,7 @@ async fn spawn_shadow(url: &str, session: &str, pending: Pending) -> Result<Shad
     let args: Vec<String> = vec![
         format!("--input-ipc-server={}", pipe),
         "--no-config".into(),
+        "--media-controls=no".into(),
         "--no-audio".into(),
         "--no-sub".into(),
         "--vo=null".into(),

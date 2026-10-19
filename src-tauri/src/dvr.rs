@@ -133,6 +133,7 @@ pub async fn dvr_start(
     let mut cmd = Command::new(&mpv_bin);
     cmd.arg("--no-terminal")
         .arg("--quiet")
+        .arg("--media-controls=no")
         .arg("--idle=no")
         .arg("--force-window=no")
         .arg("--vo=null")

@@ -2398,6 +2398,7 @@ pub async fn mpv_clip_save(
     cmd.arg("--no-terminal")
         .arg("--really-quiet")
         .arg("--no-config")
+        .arg("--media-controls=no")
         .arg("--load-scripts=no")
         .arg("--cache=yes")
         .arg("--network-timeout=60")
