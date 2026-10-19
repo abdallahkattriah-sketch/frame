@@ -24,7 +24,7 @@ Notes for agents working in this folder. Root rules live in `../AGENTS.md`.
 - Play flow: `usePipelineResult` → `runPipeline` (`lib/streams/pipeline.ts`) → `resolveStream`/`resolveViaDebrids` (`resolve.ts`) → `usePickHandler` classifies `p2p`/`direct`/`debrid` → `openPlayer` (`views/play-picker/use-pick-handler.ts`). Autoplay walks candidates in `use-auto-fire.ts`/`use-auto-candidates.ts`.
 - Player behaviour lives in `views/player/hooks/` (~90 hooks); overlays are `views/player/*-layer.tsx` composed by `player-overlay-layers.tsx`. The HUD layout editor is `views/settings/player-layout-panel/`, rendered by `components/player/transport/control-renderer*.tsx`. Big Picture has its own player (`views/big-picture/player/`).
 - The in-player stream switcher always opens in place; never navigate to the full picker from it (`use-stream-switcher.ts`). A start that never plays is abandoned after `NEVER_STARTED_CEILING_MS` (45 s, `use-auto-retry.ts`).
-- Opening at saved progress restarts from 0 only at `RESTART_THRESHOLD` (`use-bridge-load.ts` and `lib/player/resume-start.ts`). It must equal `WATCHED_RATIO` (0.85, `use-resume-autosave.ts`): when it was 0.8, an episode left at 80–85% stayed in Continue Watching but restarted, and auto-skip then landed just after the intro.
+- Opening at saved progress restarts from 0 only at `RESTART_THRESHOLD` (`use-bridge-load.ts` and `lib/player/resume-start.ts`). It must equal `WATCHED_RATIO` (0.85, `use-resume-autosave.ts`). With any lower value, an episode left between the two ratios stays in Continue Watching but restarts, and auto-skip then lands it just after the intro.
 
 ## Feature areas with their own notes
 
@@ -59,6 +59,7 @@ Notes for agents working in this folder. Root rules live in `../AGENTS.md`.
 - Activation keys are keyCodes 13/23/32 (Enter, remote Select, Space). Search-like fields take focus only and enter edit mode on activation (`isSearchLikeField`, `enterSearchEditMode`).
 - The gamepad (`lib/gamepad/use-gamepad.ts`) feeds `dispatchTvNav`, so it inherits keyboard behaviour. Big Picture (`views/big-picture/`) has its own focus core (`bp-focus-core.ts`); the shell keyboard nav is disabled while it, the player or the picker is open.
 - Hotkeys: defaults live in `HOTKEYS` (`lib/hotkeys.ts`) and user overrides in `settings.hotkeys`. Resolve through `effectiveBinding` / `findHotkeyMatch`, never hardcoded keys.
+- `eventToBinding` drops Shift on letter keys, so Shift+K reads as `k`. A `shift+<letter>` default never fires and collides with the plain letter; pair a letter with `alt+` or `ctrl+` instead (Skip is `k`, Undo skip `alt+k`). Shift does count on non-letters (`shift+ArrowLeft`, `shift+<`).
 
 ## Strings
 

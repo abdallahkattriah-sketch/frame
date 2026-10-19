@@ -23,8 +23,9 @@ Notes for agents working in this folder.
 - Event payload names are the frontend contract (`src/lib/player/mpv.ts`). Change both sides together.
 - On Windows `mpv.rs` finds its embedded child among the main HWND's children by `class == "mpv"` or an empty class with a title starting "Harbor", so no other child window (e.g. the `ytmusic.rs` embed) may have a title starting "Harbor".
 - `stream_proxy.rs` never forwards `accept-encoding`: reqwest manages compression and rejects a manual header.
-- Every mpv that Harbor starts, whether libmpv (`init.set_property("media-controls", "no")`) or the `mpv.exe` sidecar (`--media-controls=no` in `thumbs.rs`, `multiview.rs`, `dvr.rs` and clip export in `mpv.rs`), must turn mpv's own media controls off. Otherwise each one adds its own card to Windows' media overlay next to Harbor's (the thumbnail helper showed up as a second card titled with the file name).
+- Every mpv that Harbor starts, whether libmpv (`init.set_property("media-controls", "no")`) or the `mpv.exe` sidecar (`--media-controls=no` in `thumbs.rs`, `multiview.rs`, `dvr.rs` and clip export in `mpv.rs`), must turn mpv's own media controls off. An mpv that leaves them on adds a second card to Windows' media overlay next to Harbor's, titled with the file name.
 - Windows' media overlay and the taskbar thumbbar live in `media_controls.rs` and `taskbar.rs`. `taskbar::register_app_identity` sets the AUMID `app.harbor` (the installer's shortcut ID) and writes a `DisplayName` under `HKCU\Software\Classes\AppUserModelId`, so a portable exe is not labelled "Unknown app". Thumbbar buttons can be hidden but never removed once added, so "no media" hides all seven.
+- On Windows 11 the volume and media keys show only the small volume bar; the media card (title, artwork, timeline) appears only in Quick Settings (`Win+A`) and on the lock screen. Test the overlay there, not with the keys. Windows 10 still shows the card above the volume bar.
 
 ## Subsystems with their own notes
 
