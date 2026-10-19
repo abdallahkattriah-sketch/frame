@@ -2,7 +2,9 @@
 import assert from "node:assert/strict";
 // @ts-expect-error Node test types are intentionally outside the browser-only tsconfig.
 import test from "node:test";
-import { dropOutvoted } from "../src/lib/skip-intro/consensus";
+// @ts-expect-error Node test types are intentionally outside the browser-only tsconfig.
+import { readFileSync } from "node:fs";
+import { dropOutvoted, dropSelfContradicting } from "../src/lib/skip-intro/consensus";
 import type { SkipKind, SkipSegment, SkipSource } from "../src/lib/skip-intro/types";
 
 const seg = (source: SkipSource, startSec: number, endSec: number, kind: SkipKind = "intro") =>
@@ -31,6 +33,28 @@ test("an intro backed by a second source survives a lone dissenter", () => {
 test("a lone source and a single disagreeing source both stay for priority to decide", () => {
   const lists = [[seg("skipdb", 20, 50)], [seg("introdb", 0, 30)]];
   assert.deepEqual(kept(lists), ["skipdb", "introdb"]);
+});
+
+test("an intro inside the same source's recap drops both, so the next source's intro wins", () => {
+  // Family Guy S9E2: TheIntroDB has intro 0-30 inside recap 0-52; the real intro is 0:25-0:55.
+  const introdb = [seg("introdb", 0, 52, "recap"), seg("introdb", 0, 30)];
+  const app = [seg("introdb-app", 28, 59)];
+  const merged = dropOutvoted([introdb, app].map(dropSelfContradicting)).flat();
+  assert.deepEqual(
+    merged.map((s) => [s.source, s.kind, s.startSec, s.endSec]),
+    [["introdb-app", "intro", 28, 59]],
+  );
+  assert.match(
+    readFileSync(new URL("../src/lib/skip-intro/index.ts", import.meta.url), "utf8"),
+    /dropOutvoted\(\s*\[[^\]]*\]\.map\(\s*dropSelfContradicting,?\s*\)/,
+    "the segment pipeline runs every source through dropSelfContradicting",
+  );
+});
+
+test("a recap that ends where the intro starts is not a contradiction", () => {
+  const list = [seg("skipdb", 0, 52.2, "recap"), seg("skipdb", 52.3, 82.3), seg("skipdb", 51, 82)];
+  assert.equal(dropSelfContradicting(list.slice(0, 2)).length, 2);
+  assert.equal(dropSelfContradicting([list[0], list[2]]).length, 2, "1.2s of overlap is tolerated");
 });
 
 test("segments of other kinds and ads are never outvoted", () => {
