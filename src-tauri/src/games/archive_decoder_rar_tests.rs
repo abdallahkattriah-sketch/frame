@@ -1,4 +1,4 @@
-use super::super::{cancel, discard, extract, inspect, tests::SERIAL};
+use super::super::{cancel, discard, extract, inspect};
 use super::*;
 use std::{fs, path::PathBuf};
 
@@ -37,7 +37,7 @@ fn unpack(token: String, parent: &Path, name: &str) -> Result<super::super::Arch
 #[test]
 #[ignore = "requires pinned primary-project binary fixtures"]
 fn rar_independent_solid_crc_blake_and_unicode_archives() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let parent = destination();
     for name in [
         "rar3-solid.rar",
@@ -77,7 +77,7 @@ fn rar_independent_solid_crc_blake_and_unicode_archives() {
 #[test]
 #[ignore = "requires pinned primary-project binary fixtures"]
 fn rar_password_headers_files_retry_and_corruption() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let parent = destination();
     for name in [
         "rar3-comment-hpsw.rar",
@@ -134,7 +134,7 @@ fn rar_password_headers_files_retry_and_corruption() {
 #[test]
 #[ignore = "requires pinned primary-project binary fixtures"]
 fn rar_links_and_file_copies_never_publish() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for name in [
         "rar3-symlink-unix.rar",
         "rar5-symlink-unix.rar",
@@ -160,7 +160,7 @@ fn rar_links_and_file_copies_never_publish() {
 #[test]
 #[ignore = "requires pinned primary-project binary fixtures"]
 fn rar_multipart_modern_and_legacy_sets_extract_from_any_selected_part() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let parent = destination();
     for name in [
         "rar3-vols.part1.rar",
@@ -208,7 +208,7 @@ fn copied_volume_set(parent: &Path, prefix: &str, numbers: &[usize]) -> PathBuf 
 #[test]
 #[ignore = "requires pinned primary-project binary fixtures"]
 fn rar_multipart_missing_parts_duplicates_and_replaced_part_never_publish() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let parent = destination();
     for (label, numbers, selected) in [
         ("gap", vec![1, 3], 1),
@@ -278,7 +278,7 @@ fn rar_multipart_missing_parts_duplicates_and_replaced_part_never_publish() {
 #[test]
 #[ignore = "requires pinned primary-project binary fixtures"]
 fn rar_multipart_cancel_before_publication_leaves_original_parts_and_next_job_usable() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let parent = destination();
     let plan = review(&fixture("rar5-vols.part2.rar"), None).unwrap();
     let original = plan.parts.clone();
@@ -306,7 +306,7 @@ fn rar_multipart_cancel_before_publication_leaves_original_parts_and_next_job_us
 #[test]
 #[ignore = "requires pinned primary-project binary fixtures"]
 fn rar_cancel_and_source_replacement_preserve_destination() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let parent = destination();
     let path = fixture("rar5-solid.rar");
     let plan = review(&path, None).unwrap();
@@ -342,7 +342,7 @@ fn rar_cancel_and_source_replacement_preserve_destination() {
 #[test]
 #[ignore = "requires an explicitly supplied, bounded source download"]
 fn rar_actual_source_package() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let path = PathBuf::from(std::env::var_os("HARBOR_RAR_SOURCE").expect("HARBOR_RAR_SOURCE"));
     let parent = PathBuf::from(std::env::var_os("HARBOR_RAR_OUTPUT").expect("HARBOR_RAR_OUTPUT"));
     let report = PathBuf::from(std::env::var_os("HARBOR_RAR_REPORT").expect("HARBOR_RAR_REPORT"));

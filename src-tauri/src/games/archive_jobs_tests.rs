@@ -124,6 +124,7 @@ fn copying_checkpoint(stage: &Path) {
 #[test]
 #[ignore]
 fn disc_recovery_child() {
+    let _engines = crate::games::test_lock::hold();
     let root =
         PathBuf::from(std::env::var_os("HARBOR_DISC_RECOVERY_ROOT").expect("parent fixture root"));
     let checkpoint = std::env::var("HARBOR_DISC_RECOVERY_POINT").unwrap();
@@ -171,6 +172,7 @@ fn disc_recovery_child() {
 
 #[test]
 fn disc_process_termination_retains_ownership_and_never_promotes_unconfirmed_files() {
+    let _engines = crate::games::test_lock::hold();
     for (format, bytes) in [
         (
             "ISO",

@@ -1132,6 +1132,7 @@ mod tests {
     }
     #[tokio::test]
     async fn storage_guard_blocks_competing_files_then_releases_space_on_pause() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let mut manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
@@ -1170,6 +1171,7 @@ mod tests {
     }
     #[tokio::test]
     async fn unknown_length_download_stops_when_other_writes_consume_disk_space() {
+    let _engines = crate::games::test_lock::hold();
         use std::sync::atomic::AtomicU64;
         let f = Fixture::new();
         let s = Server::start();
@@ -1214,6 +1216,7 @@ mod tests {
     }
     #[tokio::test]
     async fn downloads_exact_bytes_and_never_replaces_a_file() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
@@ -1242,6 +1245,7 @@ mod tests {
 
     #[tokio::test]
     async fn dropped_connections_resume_current_validators_and_restart_unvalidated_files() {
+    let _engines = crate::games::test_lock::hold();
         let fixture = Fixture::new();
         let server = Server::start();
         let manager = Transfers::load(fixture.0.join("state"), |_| {}).unwrap();
@@ -1284,6 +1288,7 @@ mod tests {
 
     #[tokio::test]
     async fn temporary_http_failure_recovers_but_access_and_changed_content_do_not_retry() {
+    let _engines = crate::games::test_lock::hold();
         let fixture = Fixture::new();
         let server = Server::start();
         let manager = Transfers::load(fixture.0.join("state"), |_| {}).unwrap();
@@ -1322,6 +1327,7 @@ mod tests {
 
     #[tokio::test]
     async fn pause_cancel_and_restart_do_not_resume_a_waiting_retry() {
+    let _engines = crate::games::test_lock::hold();
         let fixture = Fixture::new();
         let server = Server::start();
         let manager = Transfers::load(fixture.0.join("state"), |_| {}).unwrap();
@@ -1349,6 +1355,7 @@ mod tests {
     }
     #[tokio::test]
     async fn pauses_persists_and_resumes_only_with_a_validated_range() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let root = f.0.join("state");
@@ -1381,6 +1388,7 @@ mod tests {
     }
     #[tokio::test]
     async fn ignored_ranges_restart_without_appending_duplicate_bytes() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
@@ -1402,6 +1410,7 @@ mod tests {
     }
     #[tokio::test]
     async fn checksum_html_and_incomplete_downloads_never_look_complete() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
@@ -1436,6 +1445,7 @@ mod tests {
     }
     #[tokio::test]
     async fn cancel_removes_only_its_partial_and_queue_advances() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
@@ -1472,6 +1482,7 @@ mod tests {
     }
     #[tokio::test]
     async fn unsatisfied_range_restarts_and_completed_publication_recovers() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let root = f.0.join("state");
@@ -1522,6 +1533,7 @@ mod tests {
     }
     #[tokio::test]
     async fn a_destination_created_while_paused_is_preserved() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
@@ -1568,6 +1580,7 @@ mod tests {
     }
     #[test]
     fn queue_order_persists_migrates_and_keeps_profiles_and_running_jobs_separate() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let root = f.0.join("state");
@@ -1633,6 +1646,7 @@ mod tests {
     }
     #[test]
     fn storage_forecast_uses_actual_partials_and_never_exposes_other_profile_files() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let mut manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
@@ -1710,6 +1724,7 @@ mod tests {
     }
     #[test]
     fn failed_queue_save_rolls_back_without_emitting_or_starting() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let root = f.0.join("state");
@@ -1738,6 +1753,7 @@ mod tests {
     }
     #[tokio::test]
     async fn reordered_queue_drives_real_scheduler_and_verified_files() {
+    let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let s = Server::start();
         let emitted = Arc::new(Mutex::new(Vec::new()));
@@ -1790,6 +1806,7 @@ mod tests {
     }
     #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
     async fn direct_and_torrent_managers_share_slots_and_durable_priority() {
+    let _engines = crate::games::test_lock::hold();
         use super::super::p2p::{Torrents, StartTorrent, Status as TorrentStatus};
         let f=Fixture::new(); let server=Server::start();
         let queue_root=f.0.join("shared-queue");
@@ -1840,6 +1857,7 @@ mod tests {
     }
     #[test]
     fn bandwidth_settings_persist_are_profile_scoped_and_roll_back_on_save_failure() {
+    let _engines = crate::games::test_lock::hold();
         let fixture = Fixture::new();
         let root = fixture.0.join("state");
         let manager = Transfers::load(root.clone(), |_| {}).unwrap();
@@ -1874,6 +1892,7 @@ mod tests {
     }
     #[tokio::test]
     async fn concurrent_files_share_one_limit_and_keep_exact_verified_bytes() {
+    let _engines = crate::games::test_lock::hold();
         let fixture = Fixture::new();
         let server = Server::start();
         let manager = Transfers::load(fixture.0.join("state"), |_| {}).unwrap();
@@ -1899,6 +1918,7 @@ mod tests {
     }
     #[tokio::test]
     async fn active_file_limit_can_change_and_pause_without_waiting_for_full_chunk() {
+    let _engines = crate::games::test_lock::hold();
         let fixture = Fixture::new();
         let server = Server::start();
         let manager = Transfers::load(fixture.0.join("state"), |_| {}).unwrap();

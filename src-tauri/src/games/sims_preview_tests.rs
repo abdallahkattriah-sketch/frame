@@ -68,6 +68,7 @@ fn image_of(bytes: &[u8]) -> DynamicImage {
 }
 #[test]
 fn preview_prefers_the_sharp_variant_of_one_item_without_switching_identity_or_frame() {
+    let _engines = crate::games::test_lock::hold();
     let content = package_with(vec![
         thumbnail(0, 0xfeed_0000_0000_0001, png(32, [255, 0, 0, 255])),
         thumbnail(3, 0xfeed_0000_0000_0001, png(512, [0, 255, 0, 255])),
@@ -84,6 +85,7 @@ fn preview_prefers_the_sharp_variant_of_one_item_without_switching_identity_or_f
 }
 #[test]
 fn preview_handles_compressed_and_general_thumbnails_and_ignores_texture_resources() {
+    let _engines = crate::games::test_lock::hold();
     let mut generic = thumbnail(0, 42, png(128, [30, 80, 140, 255]));
     generic.kind = 0x5b282d45;
     generic.compression = 0x5a42;
@@ -100,6 +102,7 @@ fn preview_handles_compressed_and_general_thumbnails_and_ignores_texture_resourc
 }
 #[test]
 fn preview_limits_attempts_and_rejects_oversized_images_without_rejecting_the_mod() {
+    let _engines = crate::games::test_lock::hold();
     let mut resources: Vec<_> = (0..16)
         .map(|n| thumbnail(0, n, b"bad image".to_vec()))
         .collect();
@@ -115,6 +118,7 @@ fn preview_limits_attempts_and_rejects_oversized_images_without_rejecting_the_mo
 }
 #[test]
 fn real_creator_clothing_and_decor_remain_valid_without_fabricating_texture_previews() {
+    let _engines = crate::games::test_lock::hold();
     let clothing = include_bytes!("../../../tests/fixtures/games/sims/JacT-shirtF.package");
     let decor = include_bytes!("../../../tests/fixtures/games/sims/JacAudacityOfBacon.package");
     for (bytes, category, resources) in [

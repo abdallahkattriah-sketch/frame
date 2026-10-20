@@ -1,5 +1,6 @@
 #[tokio::test]
 async fn download_identity_and_write_metrics_survive_transfer_and_restart() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start();
     let events = Arc::new(Mutex::new(Vec::new())); let seen = events.clone();
     let manager = Transfers::load(f.0.join("state"), move |record| seen.lock().unwrap().push(record)).unwrap();
@@ -36,6 +37,7 @@ async fn download_identity_and_write_metrics_survive_transfer_and_restart() {
 
 #[test]
 fn source_provenance_rejects_invalid_input_before_creating_a_transfer() {
+    let _engines = crate::games::test_lock::hold();
     let f=Fixture::new(); let s=Server::start();
     let manager=Transfers::load(f.0.join("state"), |_| {}).unwrap();
     for invalid in ["", "file:///C:/private", "https://user:secret@example.com/file", "https://example.com/\nfile", "https://example.com/\\file", "javascript:alert(1)"] {
@@ -47,6 +49,7 @@ fn source_provenance_rejects_invalid_input_before_creating_a_transfer() {
 
 #[test]
 fn oversized_transfer_metadata_keeps_the_last_readable_store() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start();
     let root = f.0.join("state");
     let manager = Transfers::load(root.clone(), |_| {}).unwrap();

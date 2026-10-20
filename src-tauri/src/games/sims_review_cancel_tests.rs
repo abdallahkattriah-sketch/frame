@@ -7,6 +7,7 @@ use std::sync::{
 
 #[test]
 fn cancellation_interrupts_local_reads_zip_inflation_and_nested_scripts() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let mut large = dbpf(1);
     large.resize(12 * 1024 * 1024, 0);
@@ -43,6 +44,7 @@ fn cancellation_interrupts_local_reads_zip_inflation_and_nested_scripts() {
 
 #[test]
 fn cancellation_stops_a_tray_archive_before_all_entries_are_read() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.0.join("creation.zip");
     fs::write(
@@ -74,6 +76,7 @@ fn cancellation_stops_a_tray_archive_before_all_entries_are_read() {
 
 #[test]
 fn ready_reviews_can_be_discarded_while_another_import_is_parsing() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.0.join("selected.package");
     fs::write(&source, dbpf(1)).unwrap();

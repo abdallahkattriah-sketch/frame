@@ -19,7 +19,7 @@ fn split_fixture(path: &Path, width: usize) -> Vec<PathBuf> {
 
 #[test]
 fn split_sevenzip_restores_any_part_with_solid_blocks_and_both_password_modes() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for (password, header, solid) in [
         (None, false, false),
         (None, false, true),
@@ -63,7 +63,7 @@ fn split_sevenzip_restores_any_part_with_solid_blocks_and_both_password_modes() 
 
 #[test]
 fn split_sevenzip_rejects_missing_duplicate_extra_directory_and_changed_volumes() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for missing in [0, 1, usize::MAX] {
         let f = Fixture::new();
         let path = f.package(None, false, true);
@@ -107,7 +107,7 @@ fn split_sevenzip_rejects_missing_duplicate_extra_directory_and_changed_volumes(
 
 #[test]
 fn split_sevenzip_reader_seeks_across_edges_and_rejects_damaged_start_header() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.package(None, false, true);
     let bytes = fs::read(&path).unwrap();
@@ -144,7 +144,7 @@ fn split_sevenzip_reader_seeks_across_edges_and_rejects_damaged_start_header() {
 
 #[test]
 fn split_sevenzip_cancellation_keeps_parts_and_a_following_job_usable() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.package(None, false, true);
     let parts = split_fixture(&path, 17);
@@ -172,7 +172,7 @@ fn split_sevenzip_cancellation_keeps_parts_and_a_following_job_usable() {
 #[test]
 #[ignore]
 fn official_split_sevenzip_encoder_interoperability() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let tool = std::env::var_os("HARBOR_TEST_7ZIP")
         .expect("Set HARBOR_TEST_7ZIP to the official console executable");
     for (name, options, password) in [

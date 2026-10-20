@@ -22,7 +22,9 @@ fn apply(f: &Fixture, action: Action, incoming: Vec<Payload>) -> State {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn creator_data_folders_survive_update_toggle_version_restore_and_removed_restore() {
+    let _engines = crate::games::test_lock::hold();
     let (f, group, live) = installed();
     let planned = plan(
         f.path(),
@@ -92,7 +94,9 @@ fn creator_data_folders_survive_update_toggle_version_restore_and_removed_restor
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn changed_nested_data_or_unreviewed_nested_mods_block_the_old_plan() {
+    let _engines = crate::games::test_lock::hold();
     let (f, group, live) = installed();
     for add in [false, true] {
         let planned = plan(
@@ -135,6 +139,7 @@ fn changed_nested_data_or_unreviewed_nested_mods_block_the_old_plan() {
 
 #[test]
 fn nested_paths_and_trees_remain_bounded_and_do_not_follow_links() {
+    let _engines = crate::games::test_lock::hold();
     for path in [
         "",
         "/file.json",
@@ -188,6 +193,7 @@ fn nested_paths_and_trees_remain_bounded_and_do_not_follow_links() {
 #[test]
 #[ignore = "Owned worker for nested creator data recovery"]
 fn interruption_worker() {
+    let _engines = crate::games::test_lock::hold();
     let root = std::env::var("HARBOR_NESTED_ROOT").unwrap();
     let group = snapshot(&root).unwrap().0.groups[0].id.clone();
     let planned = plan(&root, Action::Update { id: group }, payload(2), vec![]).unwrap();
@@ -196,7 +202,9 @@ fn interruption_worker() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn interrupted_nested_preparation_and_publication_recover_the_original_data() {
+    let _engines = crate::games::test_lock::hold();
     for phase in [
         "simsPreparationChunk",
         "modsMove1",
@@ -213,7 +221,7 @@ fn interrupted_nested_preparation_and_publication_recover_the_original_data() {
         let mut cmd = std::process::Command::new(std::env::current_exe().unwrap());
         cmd.args([
             "--exact",
-            "sims_store::tests::nested_tests::interruption_worker",
+            worker("interruption_worker").as_str(),
             "--ignored",
             "--nocapture",
         ])
@@ -268,7 +276,9 @@ fn interrupted_nested_preparation_and_publication_recover_the_original_data() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn cancel_during_nested_copy_keeps_live_data_and_removes_empty_stage_parents() {
+    let _engines = crate::games::test_lock::hold();
     let (f, group, live) = installed();
     let data = vec![7; 20 * 1024 * 1024];
     fs::write(live.join(DATA), &data).unwrap();
@@ -301,4 +311,8 @@ fn cancel_during_nested_copy_keeps_live_data_and_removes_empty_stage_parents() {
         .unwrap()
         .next()
         .is_none());
+}
+
+fn worker(name: &str) -> String {
+    format!("{}::{name}", module_path!().split_once("::").unwrap().1)
 }

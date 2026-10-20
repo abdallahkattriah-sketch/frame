@@ -11,7 +11,9 @@ fn source(v: &str) -> CreatorSource {
     }
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn creator_identity_follows_version_recovery_and_clears_on_unattributed_file_updates() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let mut incoming = plan(
         f.path(),
@@ -70,8 +72,10 @@ fn mccc(v: u8) -> Vec<Payload> {
     ]
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn manual_creator_group_is_updated_only_after_explicit_selection_and_restores_unattributed_origin()
 {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let p = plan(
         f.path(),
@@ -121,7 +125,9 @@ fn manual_creator_group_is_updated_only_after_explicit_selection_and_restores_un
     );
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn creator_link_rejects_mixed_groups_partial_scans_unknown_targets_and_existing_loose_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let mut payload = mccc(1);
     payload.push(Payload {
@@ -215,7 +221,9 @@ fn lot_install(f: &Fixture, name: &str, source: CreatorSource) -> State {
     Store::connect(f.path()).unwrap().apply(p).unwrap()
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn required_core_cannot_be_disabled_removed_downgraded_or_silently_modified() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let state = lot_install(&f, "core", lot_source("core-library", "1.43", None));
     let core = state.groups[0].id.clone();
@@ -285,7 +293,9 @@ fn required_core_cannot_be_disabled_removed_downgraded_or_silently_modified() {
     assert!(state.groups.iter().all(|g| !g.enabled));
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn creator_dependency_missing_old_disabled_and_cross_provider_targets_are_rejected() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let state = lot_install(&f, "core", lot_source("core-library", "1.20", None));
     assert!(core_group(&state, "1.27").unwrap().is_none());
@@ -332,7 +342,9 @@ fn creator_dependency_missing_old_disabled_and_cross_provider_targets_are_reject
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn dependency_guards_cover_version_restore_sets_and_guided_isolation() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let state = lot_install(&f, "core", lot_source("core-library", "1.20", None));
     let core = state.groups[0].id.clone();

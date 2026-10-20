@@ -53,6 +53,7 @@ fn storage(free: u64) -> (Arc<Storage>, Arc<AtomicU64>) {
 
 #[test]
 fn physical_allocation_and_resume_share_capacity_with_other_engines() {
+    let _engines = crate::games::test_lock::hold();
     let root = Fixture::new();
     let total = 2 * 1024 * 1024;
     fs::write(root.0.join("game.bin"), vec![7; 128 * 1024]).unwrap();
@@ -81,6 +82,7 @@ fn physical_allocation_and_resume_share_capacity_with_other_engines() {
 
 #[test]
 fn repeated_writes_do_not_count_as_new_capacity_and_stop_rejects_late_writes() {
+    let _engines = crate::games::test_lock::hold();
     let root = Fixture::new();
     let total = 1024 * 1024;
     let (storage, free) = storage(2 * HEADROOM + total);
@@ -121,6 +123,7 @@ fn repeated_writes_do_not_count_as_new_capacity_and_stop_rejects_late_writes() {
 
 #[test]
 fn external_space_loss_is_checked_before_resize_and_retry_reacquires() {
+    let _engines = crate::games::test_lock::hold();
     let root = Fixture::new();
     let total = 1024 * 1024;
     let (storage, free) = storage(2 * HEADROOM + total);
@@ -145,6 +148,7 @@ fn external_space_loss_is_checked_before_resize_and_retry_reacquires() {
 
 #[test]
 fn selected_boundary_extents_and_padding_are_preserved() {
+    let _engines = crate::games::test_lock::hold();
     let files: Vec<_> = [100000, 1, 100000]
         .into_iter()
         .enumerate()
@@ -180,6 +184,7 @@ fn selected_boundary_extents_and_padding_are_preserved() {
 
 #[test]
 fn sparse_logical_length_does_not_count_as_allocated_space() {
+    let _engines = crate::games::test_lock::hold();
     let root = Fixture::new();
     let path = root.0.join("game.bin");
     let mut file = fs::OpenOptions::new()
@@ -251,6 +256,7 @@ fn sparse_logical_length_does_not_count_as_allocated_space() {
 
 #[test]
 fn close_waits_for_inflight_write_before_releasing_claim() {
+    let _engines = crate::games::test_lock::hold();
     let root = Fixture::new();
     let (storage, _) = storage(2 * HEADROOM + 1024);
     let space =
@@ -285,6 +291,7 @@ fn close_waits_for_inflight_write_before_releasing_claim() {
 
 #[test]
 fn unknown_volume_identity_still_checks_reconciled_remaining_bytes() {
+    let _engines = crate::games::test_lock::hold();
     let root = Fixture::new();
     let storage = Storage::with_probe(|_| None);
     let reservation = storage.reserve("unknown-volume", &root.0, 0).unwrap();
@@ -297,6 +304,7 @@ fn unknown_volume_identity_still_checks_reconciled_remaining_bytes() {
 #[test]
 #[ignore = "Opt-in local disk throughput observation; not a cross-machine performance guarantee"]
 fn allocation_accounting_throughput() {
+    let _engines = crate::games::test_lock::hold();
     let root = Fixture::new();
     let total = 32 * 1024 * 1024;
     let buffer = vec![91u8; 16 * 1024];

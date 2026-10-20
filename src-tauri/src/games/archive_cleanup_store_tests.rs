@@ -29,6 +29,7 @@ fn no_boundary(_: &str, _: &Record) {}
 
 #[test]
 fn history_dismissal_retains_recovery_records_and_only_forgets_own_finished_operation() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let (mut store, record) = begin(&f);
     assert_eq!(
@@ -75,6 +76,7 @@ fn history_dismissal_retains_recovery_records_and_only_forgets_own_finished_oper
 
 #[test]
 fn later_file_changes_and_changes_at_the_recycle_boundary_are_kept_for_review() {
+    let _engines = crate::games::test_lock::hold();
     for late in [false, true] {
         let f = Fixture::new(true);
         let (mut store, record) = begin(&f);
@@ -126,6 +128,7 @@ fn later_file_changes_and_changes_at_the_recycle_boundary_are_kept_for_review() 
 
 #[test]
 fn tampered_journal_cannot_select_a_file_outside_its_recorded_parent() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let (mut store, mut record) = begin(&f);
     record.files[0].path = f.root.join("Unrelated.zip").to_string_lossy().into_owned();
@@ -159,6 +162,7 @@ fn fake_bin(path: &Path) -> Result<()> {
 
 #[test]
 fn exact_parts_recycle_once_and_completed_retry_preserves_new_source_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let (mut store, record) = begin(&f);
     let token = "already consumed";
@@ -207,6 +211,7 @@ fn exact_parts_recycle_once_and_completed_retry_preserves_new_source_files() {
 }
 #[test]
 fn tokens_are_profile_and_store_bound_and_failed_journal_write_moves_nothing() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let review = f.review().unwrap();
     let token = review.token.unwrap();
@@ -240,6 +245,7 @@ fn tokens_are_profile_and_store_bound_and_failed_journal_write_moves_nothing() {
 }
 #[test]
 fn replacement_after_review_and_a_new_consumer_are_refused_before_moving() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let (mut store, record) = begin(&f);
     let saved = f.source.with_extension("saved");
@@ -289,6 +295,7 @@ fn replacement_after_review_and_a_new_consumer_are_refused_before_moving() {
 }
 #[test]
 fn recycle_failure_keeps_recoverable_parts_and_restore_preserves_their_current_bytes() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let (mut store, record) = begin(&f);
     assert_eq!(
@@ -331,6 +338,7 @@ fn recycle_failure_keeps_recoverable_parts_and_restore_preserves_their_current_b
 }
 #[test]
 fn restore_never_overwrites_a_replacement_and_foreign_staged_files_prevent_recycle() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let (mut store, record) = begin(&f);
     let inserted = AtomicBool::new(false);
@@ -378,6 +386,7 @@ fn restore_never_overwrites_a_replacement_and_foreign_staged_files_prevent_recyc
 }
 #[test]
 fn cancellation_after_staging_keeps_files_and_an_explicit_resume_can_restore() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let (mut store, record) = begin(&f);
     let event = |_: ArchiveProgress| archives::cancel(PROFILE.into(), record.id.clone());
@@ -415,6 +424,7 @@ fn cancellation_after_staging_keeps_files_and_an_explicit_resume_can_restore() {
 }
 #[test]
 fn lease_prevents_new_direct_admission_and_is_released_without_manager_mutation() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::transfers::{NewTransfer, Transfers};
     let f = Fixture::new(false);
     let path = f.root.join("new.zip");
@@ -439,6 +449,7 @@ impl Drop for OwnedChild {
 #[test]
 #[ignore]
 fn cleanup_recovery_child() {
+    let _engines = crate::games::test_lock::hold();
     let root = PathBuf::from(std::env::var_os("HARBOR_CLEANUP_ROOT").unwrap());
     let id = std::env::var("HARBOR_CLEANUP_ID").unwrap();
     let point = std::env::var("HARBOR_CLEANUP_POINT").unwrap();
@@ -472,7 +483,7 @@ fn kill_at(f: &Fixture, id: &str, point: &str, restore: bool) {
     let mut command = Command::new(std::env::current_exe().unwrap());
     command
         .args([
-            "archive_cleanup_store::tests::cleanup_recovery_child",
+            worker("cleanup_recovery_child").as_str(),
             "--exact",
             "--ignored",
             "--nocapture",
@@ -501,6 +512,7 @@ fn kill_at(f: &Fixture, id: &str, point: &str, restore: bool) {
 }
 #[test]
 fn actual_process_exits_reconcile_staging_and_never_repeat_uncertain_recycling() {
+    let _engines = crate::games::test_lock::hold();
     for point in [
         "holding-folder",
         "part-moved",
@@ -565,6 +577,7 @@ fn actual_process_exits_reconcile_staging_and_never_repeat_uncertain_recycling()
 }
 #[test]
 fn process_exit_during_restore_retains_the_restore_intent() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let (mut store, record) = begin(&f);
     assert!(store
@@ -600,6 +613,7 @@ fn process_exit_during_restore_retains_the_restore_intent() {
 #[test]
 #[ignore = "Recycles and restores only a new UUID-owned holding folder through the actual Windows Recycle Bin"]
 fn actual_windows_recycle_roundtrip_preserves_archive_bytes_and_game_output() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let (mut store, record) = begin(&f);
     let done = store
@@ -637,4 +651,8 @@ fn actual_windows_recycle_roundtrip_preserves_archive_bytes_and_game_output() {
         assert_eq!(found.sha256, file.sha256);
     }
     output(&f);
+}
+
+fn worker(name: &str) -> String {
+    format!("{}::{name}", module_path!().split_once("::").unwrap().1)
 }

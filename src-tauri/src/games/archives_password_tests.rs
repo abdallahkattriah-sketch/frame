@@ -24,7 +24,7 @@ pub(super) fn unlock(path: &Path, password: &str) -> Result<ArchivePlan> {
 
 #[test]
 fn zip_passwords_round_trip_aes_strengths_and_zipcrypto_with_mixed_entries() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     for mode in [Some(AesMode::Aes128), Some(AesMode::Aes192), Some(AesMode::Aes256), None] {
         let f = Fixture::new();
         let password = "Harbor 雨 🔑";
@@ -46,7 +46,7 @@ fn zip_passwords_round_trip_aes_strengths_and_zipcrypto_with_mixed_entries() {
 
 #[test]
 fn missing_or_wrong_password_is_rejected_before_full_archive_hash_and_can_retry() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = encrypted(&f, Some(AesMode::Aes256), false, "correct");
     let hashed = AtomicBool::new(false);
@@ -67,7 +67,7 @@ fn missing_or_wrong_password_is_rejected_before_full_archive_hash_and_can_retry(
 
 #[test]
 fn aes_authentication_failure_never_publishes_partial_output() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = encrypted(&f, Some(AesMode::Aes256), false, "correct");
     let mut bytes = fs::read(&source).unwrap();
@@ -83,7 +83,7 @@ fn aes_authentication_failure_never_publishes_partial_output() {
 
 #[test]
 fn encrypted_extraction_cancel_releases_password_and_keeps_original() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = encrypted(&f, Some(AesMode::Aes256), false, "correct");
     let original = fs::read(&source).unwrap();

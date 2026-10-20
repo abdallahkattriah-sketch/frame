@@ -68,6 +68,7 @@ fn prepared(mode: &str) -> (Fixture, Action) {
 #[test]
 #[ignore = "Owned worker for preparation and recovery crash boundaries"]
 fn interruption_worker() {
+    let _engines = crate::games::test_lock::hold();
     let root = std::env::var("HARBOR_PREPARATION_ROOT").unwrap();
     let action = std::env::var("HARBOR_PREPARATION_ACTION").unwrap();
     if action == "recover" {
@@ -150,7 +151,9 @@ fn interrupt(f: &Fixture, phase: &str, action: &str) {
     child.0.wait().unwrap();
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn killed_preparation_recovers_install_update_restore_and_tray_without_touching_live_content() {
+    let _engines = crate::games::test_lock::hold();
     for mode in ["install", "update", "restore", "tray", "adopt"] {
         for phase in if mode == "adopt" {
             vec!["simsPreparation"]
@@ -192,7 +195,9 @@ fn killed_preparation_recovers_install_update_restore_and_tray_without_touching_
     }
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn committed_preparation_cleanup_does_not_undo_a_completed_import() {
+    let _engines = crate::games::test_lock::hold();
     for mode in ["install", "tray", "adopt"] {
         let (f, action) = prepared(mode);
         interrupt(
@@ -219,7 +224,9 @@ fn committed_preparation_cleanup_does_not_undo_a_completed_import() {
     }
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn recovery_itself_can_restart_after_preserving_partial_files() {
+    let _engines = crate::games::test_lock::hold();
     for phase in ["simsPreparationKept", "simsPreparationClean"] {
         let (f, action) = prepared("install");
         interrupt(
@@ -242,7 +249,9 @@ fn recovery_itself_can_restart_after_preserving_partial_files() {
     }
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn preparation_preserves_changed_and_unknown_files_and_rejects_forged_paths() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let store = Store::connect(f.path()).unwrap();
     let id = uuid::Uuid::new_v4().to_string();
@@ -295,7 +304,9 @@ fn preparation_preserves_changed_and_unknown_files_and_rejects_forged_paths() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn preparation_removes_only_verified_copies_and_leaves_unrecorded_stages_alone() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let store = Store::connect(f.path()).unwrap();
     let legacy = store

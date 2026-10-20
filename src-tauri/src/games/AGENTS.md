@@ -32,3 +32,7 @@ Rust side of the Games room: Steam scan and non-Steam shortcuts, launchers and B
 ## Tests
 
 98 sibling `*_tests.rs` files plus inline `#[cfg(test)]` (e.g. `emulation.rs`, `embedded.rs`, `pokemon_*.rs`). Fixtures: `tests/fixtures/disc/*.iso.gz`, `tests/fixtures/games/sims/*.package`.
+
+- Archives, shared transfer storage, Sims and save jobs admit one operation per process, and the Stardew guard rejects any running process named like SMAPI. A test that drives one of them starts with `let _engines = crate::games::test_lock::hold();` (`test_lock.rs`, survives a panicking holder), or parallel `cargo test` fails it with `*_busy` or `stardew_running`.
+- A test that re-runs the test binary as a crash worker names the child with `module_path!()` (`fn worker(name)` in those files). A literal path missing the `games::` root matches no test, so the child exits 0 at once.
+- The Sims and Stardew stores, their save guards and `launcher_processes::sample` are Windows-only (`*_platform` elsewhere); their tests carry `#[cfg_attr(not(windows), ignore = ...)]`. Tests that need real third-party downloads are `#[ignore = "needs <VAR>"]`: `HARBOR_SIMS_LOT51_FIXTURES`, `HARBOR_TEST_STARDEW_ZIP`, `HARBOR_TEST_SMAPI_DLL`. Run them with `-- --ignored` once the variables point at the files.

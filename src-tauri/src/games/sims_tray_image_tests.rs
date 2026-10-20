@@ -29,6 +29,7 @@ fn with_alpha(jpeg: &[u8], png: &[u8]) -> Vec<u8> {
 }
 #[test]
 fn tray_images_decode_recognized_wrappers_and_preserve_alpha() {
+    let _engines = crate::games::test_lock::hold();
     let jpeg = image_bytes(32, [190, 70, 50], image::ImageFormat::Jpeg);
     let alpha = image_bytes(32, [73, 73, 73], image::ImageFormat::Png);
     let raw = with_alpha(&jpeg, &alpha);
@@ -43,6 +44,7 @@ fn tray_images_decode_recognized_wrappers_and_preserve_alpha() {
 }
 #[test]
 fn tray_legacy_images_accept_opaque_padding_without_weakening_newer_lengths() {
+    let _engines = crate::games::test_lock::hold();
     let raw = with_alpha(
         &image_bytes(32, [190, 70, 50], image::ImageFormat::Jpeg),
         &image_bytes(32, [73, 73, 73], image::ImageFormat::Png),
@@ -66,6 +68,7 @@ fn tray_legacy_images_accept_opaque_padding_without_weakening_newer_lengths() {
 }
 #[test]
 fn tray_images_reject_unknown_wrappers_damage_and_oversized_masks() {
+    let _engines = crate::games::test_lock::hold();
     let jpeg = image_bytes(32, [20, 70, 50], image::ImageFormat::Jpeg);
     let bytes = wrapped(&jpeg);
     for offset in [0, 8, 16, 20] {
@@ -95,7 +98,9 @@ fn preview_image(path: &str, id: &str) -> DynamicImage {
     .unwrap()
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn tray_cover_is_owned_sharp_and_stable_through_remove_restore() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let sources = f.0.join("source");
     fs::create_dir(&sources).unwrap();
@@ -158,6 +163,7 @@ fn tray_cover_is_owned_sharp_and_stable_through_remove_restore() {
 }
 #[test]
 fn tray_real_creator_lot_and_household_covers_decode_and_survive_lifecycle() {
+    let _engines = crate::games::test_lock::hold();
     for (env, category, count) in [
         ("HARBOR_SIMS_TRAY_ARCHIVE", "lot", 7),
         ("HARBOR_SIMS_HOUSEHOLD_ARCHIVE", "household", 4),
@@ -204,6 +210,7 @@ fn tray_real_creator_lot_and_household_covers_decode_and_survive_lifecycle() {
 
 #[test]
 fn tray_review_picture_matches_applied_bytes_after_download_moves() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::super::sims_reviews;
     let Ok(archive) = std::env::var("HARBOR_SIMS_TRAY_ARCHIVE") else {
         return;
@@ -277,6 +284,7 @@ fn household_metadata(id: u64, sims: &[u64]) -> Vec<u8> {
 }
 #[test]
 fn tray_household_portraits_must_match_metadata_sim_ids_and_indices() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.0.join("download");
     fs::create_dir(&source).unwrap();

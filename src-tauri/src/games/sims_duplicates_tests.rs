@@ -53,6 +53,7 @@ impl Drop for Fixture {
 
 #[test]
 fn renamed_copies_are_found_without_treating_names_settings_or_formats_as_matches() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     f.put("clothes/top.package", b"same bytes");
     f.put("renamed.package", b"same bytes");
@@ -107,7 +108,9 @@ fn dbpf() -> Vec<u8> {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn managed_copy_uses_current_hash_and_reviewed_disable_removes_it_from_next_scan() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let b = dbpf();
     let plan = store::plan(
@@ -151,6 +154,7 @@ fn managed_copy_uses_current_hash_and_reviewed_disable_removes_it_from_next_scan
 
 #[test]
 fn unreadable_invalid_paths_and_scan_bounds_are_never_reported_as_complete() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     f.put("a.package", b"same");
     f.put("b.package", b"same");
@@ -179,6 +183,7 @@ fn unreadable_invalid_paths_and_scan_bounds_are_never_reported_as_complete() {
 
 #[test]
 fn cancellation_stops_inventory_and_hashing_and_releases_the_job() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     f.put("a.package", b"same");
     f.put("b.package", b"same");
@@ -213,6 +218,7 @@ fn cancellation_stops_inventory_and_hashing_and_releases_the_job() {
 
 #[test]
 fn content_changed_during_hashing_is_not_used_for_a_match() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     f.put("changed.package", &vec![1; 600_000]);
     let path = f.0.join("Mods/changed.package");

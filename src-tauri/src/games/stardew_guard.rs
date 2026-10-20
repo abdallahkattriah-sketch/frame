@@ -150,6 +150,8 @@ mod tests {
     }
     #[test]
     fn a_real_matching_process_and_exclusive_binary_lock_block_mutation() {
+        // The fake SMAPI process is visible to every Stardew guard in this test run.
+        let _engines = crate::games::test_lock::hold();
         let base = std::env::var_os("HARBOR_TEST_ROOT")
             .map(PathBuf::from)
             .unwrap_or_else(std::env::temp_dir);
@@ -168,7 +170,15 @@ mod tests {
             .is_err());
         drop(guard);
         let mut child = Command::new(root.join("StardewModdingAPI.exe"))
-            .args(["stardew_guard::tests::hold_worker", "--ignored", "--exact"])
+            .args([
+                format!(
+                    "{}::hold_worker",
+                    module_path!().split_once("::").unwrap().1
+                )
+                .as_str(),
+                "--ignored",
+                "--exact",
+            ])
             .stdout(Stdio::null())
             .stderr(Stdio::null())
             .spawn()

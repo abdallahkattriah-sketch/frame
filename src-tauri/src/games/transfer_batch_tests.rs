@@ -15,6 +15,7 @@ fn batch_partials(f: &Fixture) -> usize {
 
 #[tokio::test]
 async fn batch_downloads_keep_names_order_hashes_and_restart_history() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start(); let root = f.0.join("state");
     let manager = Transfers::load(root.clone(), |_| {}).unwrap();
     let mut request=batch_args(&f, &s, &["Garden 日本.part01.rar", "Garden 日本.part02.rar", "Garden 日本.part03.rar"]);
@@ -38,6 +39,7 @@ async fn batch_downloads_keep_names_order_hashes_and_restart_history() {
 
 #[test]
 fn batch_invalid_metadata_and_names_never_create_partial_queues() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start(); let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
     for invalid in ["../escape.zip", "a/b.zip", "a\\b.zip", "con.rar", "x:stream", "a. ", ".", ".harbor-secret", ""] {
         assert!(matches!(manager.add_batch(batch_args(&f,&s,&["ok.zip", invalid])), Err("transfer_batch_names")));
@@ -55,6 +57,7 @@ fn batch_invalid_metadata_and_names_never_create_partial_queues() {
 
 #[test]
 fn batch_existing_file_or_other_profile_destination_keeps_everything_untouched() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start(); let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
     fs::write(f.0.join("two.rar"), b"original").unwrap();
     assert!(matches!(manager.add_batch(batch_args(&f,&s,&["one.rar", "two.rar"])), Err("transfer_exists")));
@@ -69,6 +72,7 @@ fn batch_existing_file_or_other_profile_destination_keeps_everything_untouched()
 
 #[test]
 fn batch_store_failure_rolls_back_records_and_all_created_partials() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start(); let root = f.0.join("state");
     let manager = Transfers::load(root.clone(), |_| {}).unwrap();
     let path=root.join("transfers.json"); if path.is_file(){fs::remove_file(&path).unwrap()} fs::create_dir(&path).unwrap();
@@ -79,6 +83,7 @@ fn batch_store_failure_rolls_back_records_and_all_created_partials() {
 
 #[test]
 fn batch_queue_capacity_is_checked_before_writing_anything() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start(); let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
     let mut existing = queued_fixture(&f,&s,"held.rar","one",1); existing.status=Status::Paused;
     manager.state.lock().unwrap().records = vec![existing; LIMIT-1];
@@ -89,6 +94,7 @@ fn batch_queue_capacity_is_checked_before_writing_anything() {
 
 #[tokio::test]
 async fn batch_integrity_failure_does_not_cancel_sibling_parts() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(); let s = Server::start(); let manager = Transfers::load(f.0.join("state"), |_| {}).unwrap();
     let mut args=batch_args(&f,&s,&["bad.rar","good.rar"]); args.files[0].expected_sha256=Some("a".repeat(64));
     let records=manager.add_batch(args).unwrap();

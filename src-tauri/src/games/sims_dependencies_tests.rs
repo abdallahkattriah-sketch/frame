@@ -33,6 +33,7 @@ fn resolve(
 
 #[test]
 fn pack_conditions_use_three_way_file_and_launch_evidence_without_inventing_availability() {
+    let _engines = crate::games::test_lock::hold();
     let missing = "55".repeat(32);
     let manifest=manifest::from_yaml(&format!("name: Conditional\nrequired_mods:\n- name: With Seasons\n  hashes: [{missing}]\n  ignore_if_pack_unavailable: EP05\n- name: Without Seasons\n  hashes: [{missing}]\n  ignore_if_pack_available: EP05\n"),&||Ok(())).unwrap();
     let mut packs = sims_packs::Report {
@@ -75,6 +76,7 @@ fn pack_conditions_use_three_way_file_and_launch_evidence_without_inventing_avai
 
 #[test]
 fn pack_conditions_accept_historical_aliases_but_reject_bad_codes_and_conflicting_aliases() {
+    let _engines = crate::games::test_lock::hold();
     let make = |extra: &str| {
         manifest::from_yaml(
             &format!(
@@ -113,6 +115,7 @@ fn pack_conditions_accept_historical_aliases_but_reject_bad_codes_and_conflictin
 
 #[test]
 fn dependencies_rescan_selected_installation_and_custom_arguments_in_the_real_native_flow() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let game = f.0.join("Installation");
     let mut pe = vec![0u8; 68];
@@ -217,7 +220,9 @@ const CORE: &str = "16064586554ed25187fcdb293e1df1bbc756523403de1a3ee0f33bf91f34
 const OLD_CORE: &str = "6ff53baf3e380c2e4a290cd8baf30b5bbbca7297b5b962a65737c10870db3ff8";
 
 #[test]
+#[ignore = "needs HARBOR_SIMS_LOT51_FIXTURES"]
 fn dependencies_real_core_content_and_declared_previous_versions_match_without_filename_identity() {
+    let _engines = crate::games::test_lock::hold();
     let core = real_core();
     let (manifests, partial) =
         store::metadata::extract("renamed.ts4script", &core, &|| Ok(())).unwrap();
@@ -260,6 +265,7 @@ fn dependencies_real_core_content_and_declared_previous_versions_match_without_f
 
 #[test]
 fn dependencies_conditions_alternatives_features_and_unknowns_never_use_names_as_identity() {
+    let _engines = crate::games::test_lock::hold();
     let mut catalog = Catalog::new();
     catalog.insert(
         CORE.into(),
@@ -299,6 +305,7 @@ fn dependencies_conditions_alternatives_features_and_unknowns_never_use_names_as
 
 #[test]
 fn dependencies_read_bounds_cancel_and_external_changes_preserve_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let raw = script(
         "Mod",
@@ -371,6 +378,7 @@ fn package_fixture(resources: &[((u32, u32, u64), &[u8], bool)]) -> Vec<u8> {
 #[test]
 fn dependencies_package_fingerprint_uses_sorted_tgi_uncompressed_bytes_and_rejects_ambiguous_keys()
 {
+    let _engines = crate::games::test_lock::hold();
     let keys = [(0x03b33ddf, 5, 0x100000001), (0x03b33ddf, 2, 4)];
     let package = package_fixture(&[(keys[0], b"second", true), (keys[1], b"first", false)]);
     let mut expected = Sha256::new();
@@ -467,7 +475,9 @@ impl Drop for Fixture {
 }
 
 #[test]
+#[ignore = "needs HARBOR_SIMS_LOT51_FIXTURES"]
 fn dependencies_changed_or_unverifiable_manifests_cannot_confirm_absence() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     f.put(
         "dependent.ts4script",
@@ -504,6 +514,7 @@ fn dependencies_changed_or_unverifiable_manifests_cannot_confirm_absence() {
 
 #[test]
 fn dependencies_script_exclusions_and_order_follow_the_manifest_format() {
+    let _engines = crate::games::test_lock::hold();
     let mut archive = zip::ZipWriter::new(Cursor::new(Vec::new()));
     for (name, bytes) in [
         ("z.py", b"last".as_slice()),
@@ -544,6 +555,7 @@ fn dependencies_script_exclusions_and_order_follow_the_manifest_format() {
 
 #[test]
 fn dependencies_merged_package_manifests_resolve_individual_resource_contents() {
+    let _engines = crate::games::test_lock::hold();
     let resource = (0x03b33ddfu32, 1u32, 42u64);
     let content = b"Synthetic library tuning";
     let mut hash = Sha256::new();

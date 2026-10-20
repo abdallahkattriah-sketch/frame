@@ -116,6 +116,7 @@ impl Fixture {
 
 #[test]
 fn successful_extraction_review_is_read_only_and_survives_store_reload() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let before = hash(&f.source);
     let store = hash(&f.root.join("state/jobs.json"));
@@ -145,6 +146,7 @@ fn successful_extraction_review_is_read_only_and_survives_store_reload() {
 }
 #[test]
 fn multipart_review_uses_only_receipted_parts_and_rejects_changed_later_volume() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let review = f.review().unwrap();
     assert_eq!(review.files.len(), 2);
@@ -163,6 +165,7 @@ fn multipart_review_uses_only_receipted_parts_and_rejects_changed_later_volume()
 
 #[test]
 fn an_earlier_volume_changing_while_a_later_one_is_read_invalidates_the_review() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let first = f.root.join("Original.zip.001");
     let edited = std::sync::atomic::AtomicBool::new(false);
@@ -185,6 +188,7 @@ fn an_earlier_volume_changing_while_a_later_one_is_read_invalidates_the_review()
 }
 #[test]
 fn failed_legacy_malformed_and_output_contained_receipts_are_refused() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     for kind in 0..8 {
         f.change(|job| {
@@ -219,6 +223,7 @@ fn failed_legacy_malformed_and_output_contained_receipts_are_refused() {
 }
 #[test]
 fn busy_or_shared_sources_skip_hashing_and_do_not_expose_other_profile_details() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(true);
     let reads = AtomicUsize::new(0);
     let review = f
@@ -275,6 +280,7 @@ fn busy_or_shared_sources_skip_hashing_and_do_not_expose_other_profile_details()
 }
 #[test]
 fn consumers_are_rechecked_after_hashing_and_another_extraction_protects_its_sources() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let reads = AtomicUsize::new(0);
     let review = f
@@ -310,6 +316,7 @@ fn consumers_are_rechecked_after_hashing_and_another_extraction_protects_its_sou
 }
 #[test]
 fn cancellation_profile_isolation_and_removed_job_leave_originals_untouched() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let operation = uuid::Uuid::new_v4().to_string();
     assert_eq!(
@@ -349,6 +356,7 @@ fn cancellation_profile_isolation_and_removed_job_leave_originals_untouched() {
 }
 #[test]
 fn changed_job_revision_and_missing_output_invalidate_review() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     assert_eq!(
         f.manager
@@ -372,6 +380,7 @@ fn changed_job_revision_and_missing_output_invalidate_review() {
 }
 #[test]
 fn real_download_managers_protect_paused_and_foreign_records() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new(false);
     let root = f.root.join("direct");
     fs::create_dir(&root).unwrap();
@@ -400,6 +409,7 @@ fn real_download_managers_protect_paused_and_foreign_records() {
 
 #[test]
 fn pending_policy_blocks_its_family_until_explicitly_disabled() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::download_preparation::{
         Choice, Engine, Preparations, Status as PreparationStatus, Target,
     };

@@ -79,7 +79,9 @@ impl Drop for Fixture {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn sims_saves_review_restore_and_undo_preserve_mods_and_tray() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let c = context(f.path()).unwrap();
     assert!(list(f.path(), f.args().profile, c.vault.clone())
@@ -133,7 +135,9 @@ fn sims_saves_review_restore_and_undo_preserve_mods_and_tray() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn sims_saves_reject_wrong_source_nested_vault_and_changed_patch() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let mut a = f.args();
     a.source = f.0.join("Tray").to_string_lossy().into_owned();
@@ -156,7 +160,9 @@ fn sims_saves_reject_wrong_source_nested_vault_and_changed_patch() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn save_guards_are_retained_and_rechecked_after_copy_before_publication() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let first = snapshot(f.path(), f.args(), |_| {}).unwrap();
     let blocked = Arc::new(AtomicBool::new(false));
@@ -219,6 +225,7 @@ fn save_guards_are_retained_and_rechecked_after_copy_before_publication() {
 #[test]
 #[ignore = "Owned subprocess worker for interruption integration tests"]
 fn interruption_worker() {
+    let _engines = crate::games::test_lock::hold();
     let root = std::env::var("HARBOR_SAVE_INTERRUPT_ROOT").expect("owned test fixture");
     let operation = uuid::Uuid::new_v4().to_string();
     if std::env::var("HARBOR_SAVE_INTERRUPT_PHASE").unwrap() == "recoveryMoved" {
@@ -299,7 +306,9 @@ fn interrupt(f: &Fixture, id: &str, phase: &str) {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn killed_restore_process_is_recoverable_at_each_rename_boundary() {
+    let _engines = crate::games::test_lock::hold();
     for phase in ["journal", "oldMoved", "newMoved", "recoveryMoved"] {
         let f = Fixture::new();
         let first = snapshot(f.path(), f.args(), |_| {}).unwrap();
@@ -360,7 +369,9 @@ fn killed_restore_process_is_recoverable_at_each_rename_boundary() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn interrupted_restore_does_not_replace_later_saves_and_rejects_wrong_profile() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let first = snapshot(f.path(), f.args(), |_| {}).unwrap();
     fs::write(f.0.join("saves/Slot_00000002.save"), b"second household").unwrap();
@@ -396,7 +407,9 @@ fn interrupted_restore_does_not_replace_later_saves_and_rejects_wrong_profile() 
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn recovery_record_paths_and_external_changes_are_not_trusted() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let first = snapshot(f.path(), f.args(), |_| {}).unwrap();
     fs::write(f.0.join("saves/Slot_00000002.save"), b"second household").unwrap();

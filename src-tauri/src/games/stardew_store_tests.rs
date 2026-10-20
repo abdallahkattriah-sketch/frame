@@ -71,7 +71,9 @@ fn install(store: &Store, version: &str) -> State {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn full_local_lifecycle_preserves_latest_settings_and_generated_data() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let store = f.store();
     let initial = install(&store, "1.0.0");
@@ -123,7 +125,9 @@ fn full_local_lifecycle_preserves_latest_settings_and_generated_data() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn preview_is_bound_to_files_and_state_and_does_not_overwrite_unmanaged_mods() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let store = f.store();
     let plan = store.prepare(package("1.0.0"), &|| Ok(())).unwrap();
@@ -166,7 +170,9 @@ fn preview_is_bound_to_files_and_state_and_does_not_overwrite_unmanaged_mods() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn update_refuses_new_release_files_colliding_with_generated_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let store = f.store();
     install(&store, "1.0.0");
@@ -180,7 +186,9 @@ fn update_refuses_new_release_files_colliding_with_generated_files() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn failures_before_commit_restore_previous_files_and_keep_prepared_data() {
+    let _engines = crate::games::test_lock::hold();
     for at in ["staging", "moved"] {
         let f = Fixture::new();
         let store = f.store();
@@ -221,7 +229,9 @@ fn failures_before_commit_restore_previous_files_and_keep_prepared_data() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn cancellation_before_publication_changes_no_live_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let store = f.store();
     let old = install(&store, "1.0.0");
@@ -253,6 +263,7 @@ fn cancellation_before_publication_changes_no_live_files() {
 
 #[test]
 fn creator_zip_uses_the_same_native_transaction() {
+    let _engines = crate::games::test_lock::hold();
     let Some(path) = std::env::var_os("HARBOR_TEST_STARDEW_ZIP") else {
         return;
     };
@@ -303,7 +314,9 @@ fn crash_worker() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn actual_process_termination_recovers_both_folder_boundaries_and_committed_state() {
+    let _engines = crate::games::test_lock::hold();
     for at in ["staging", "moved1", "moved2", "committed"] {
         let f = Fixture::new();
         {
@@ -313,7 +326,7 @@ fn actual_process_termination_recovers_both_folder_boundaries_and_committed_stat
         fs::write(f.0.join("Mods/Farm/config.json"), b"survives process death").unwrap();
         let mut child = Command::new(std::env::current_exe().unwrap())
             .args([
-                "stardew_store::tests::crash_worker",
+                worker("crash_worker").as_str(),
                 "--ignored",
                 "--exact",
                 "--nocapture",
@@ -350,7 +363,9 @@ fn actual_process_termination_recovers_both_folder_boundaries_and_committed_stat
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn required_framework_cannot_be_disabled_removed_or_downgraded() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let store = f.store();
     install(&store, "2.0.0");
@@ -375,14 +390,16 @@ fn required_framework_cannot_be_disabled_removed_or_downgraded() {
     assert!(!store.pending().unwrap());
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn interrupted_recovery_does_not_overwrite_later_edits() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     {
         let store = f.store();
         install(&store, "1.0.0");
     }
     let mut child = Command::new(std::env::current_exe().unwrap())
-        .args(["stardew_store::tests::crash_worker", "--ignored", "--exact"])
+        .args([worker("crash_worker").as_str(), "--ignored", "--exact"])
         .env("HARBOR_STARDEW_CRASH_ROOT", &f.0)
         .env("HARBOR_STARDEW_CRASH_AT", "moved1")
         .stdout(Stdio::null())
@@ -406,4 +423,8 @@ fn interrupted_recovery_does_not_overwrite_later_edits() {
     assert_eq!(store.recover().unwrap_err(), "stardew_changed");
     assert_eq!(fs::read(&edited).unwrap(), b"edited after crash");
     assert!(store.pending().unwrap());
+}
+
+fn worker(name: &str) -> String {
+    format!("{}::{name}", module_path!().split_once("::").unwrap().1)
 }

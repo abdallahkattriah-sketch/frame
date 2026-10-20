@@ -28,6 +28,7 @@ fn settled(manager:&Archives,id:&str)->ArchiveJob{
 
 #[test]
 fn one_durable_job_checks_extracts_and_deduplicates_before_and_after_restart(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let manager=fixture.manager();let request=fixture.request();
     let original=hash(&fixture.source);
     let first=manager.prepare(request.clone()).unwrap();let duplicate=manager.prepare(request.clone()).unwrap();assert_eq!(first.id,duplicate.id);
@@ -41,6 +42,7 @@ fn one_durable_job_checks_extracts_and_deduplicates_before_and_after_restart(){
 
 #[test]
 fn automatic_inspection_preserves_an_open_manual_review(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let manager=fixture.manager();
     let reviewed=archives::inspect("prepare".into(),fixture.source.to_string_lossy().into(),uuid::Uuid::new_v4().to_string(),None,|_|{}).unwrap();
     let job=manager.prepare(fixture.request()).unwrap();assert_eq!(settled(&manager,&job.id).status,Status::Complete);
@@ -50,6 +52,7 @@ fn automatic_inspection_preserves_an_open_manual_review(){
 
 #[test]
 fn changed_download_digest_fails_without_output_or_source_mutation(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let manager=fixture.manager();let mut request=fixture.request();let before=hash(&fixture.source);
     request.expected_sha256=Some("0".repeat(64));let job=manager.prepare(request).unwrap();let failed=settled(&manager,&job.id);
     assert_eq!(failed.status,Status::Failed);assert_eq!(failed.error.as_deref(),Some("archive_changed"));assert!(!Path::new(&failed.destination).exists());assert_eq!(hash(&fixture.source),before);
@@ -57,6 +60,7 @@ fn changed_download_digest_fails_without_output_or_source_mutation(){
 
 #[test]
 fn cancellation_before_inspection_is_owned_by_the_native_job(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let request=fixture.request();let canceled=Arc::new(AtomicBool::new(false));let observed=canceled.clone();
     let manager=Archives::load(fixture.root.join("state"),move|job|{
         if job.status==Status::Running&&!observed.swap(true,Ordering::SeqCst){archives::cancel(job.profile,job.id);}
@@ -66,6 +70,7 @@ fn cancellation_before_inspection_is_owned_by_the_native_job(){
 
 #[test]
 fn destination_race_never_replaces_existing_files(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let installed=Arc::new(AtomicBool::new(false));let raced=installed.clone();
     let manager=Archives::load(fixture.root.join("state"),move|job|{
         if job.status==Status::Running&&!raced.swap(true,Ordering::SeqCst){fs::create_dir(&job.destination).unwrap();fs::write(Path::new(&job.destination).join("keep.txt"),b"existing user file").unwrap();}
@@ -75,6 +80,7 @@ fn destination_race_never_replaces_existing_files(){
 
 #[test]
 fn store_failure_releases_engine_without_accepting_or_extracting(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let manager=fixture.manager();fs::create_dir(fixture.root.join("state/jobs.json")).unwrap();
     let request=fixture.request();assert!(manager.prepare(request.clone()).is_err());assert!(manager.list("prepare").unwrap().is_empty());assert!(!fixture.root.join("Unpacked").exists());
     fs::remove_dir(fixture.root.join("state/jobs.json")).unwrap();let job=manager.prepare(request).unwrap();assert_eq!(settled(&manager,&job.id).status,Status::Complete);
@@ -82,6 +88,7 @@ fn store_failure_releases_engine_without_accepting_or_extracting(){
 
 #[test]
 fn selected_multipart_volume_digest_is_checked_against_that_volume(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let manager=fixture.manager();let bytes=fs::read(&fixture.source).unwrap();
     for (index,chunk) in bytes.chunks((bytes.len()/3).max(1)).enumerate(){fs::write(fixture.root.join(format!("package.zip.{:03}",index+1)),chunk).unwrap();}
     let selected=fixture.root.join("package.zip.002");let mut request=fixture.request();request.source=selected.to_string_lossy().into();request.origin_source=Some(request.source.clone());request.expected_sha256=Some(hash(&selected));
@@ -92,6 +99,7 @@ fn selected_multipart_volume_digest_is_checked_against_that_volume(){
 
 #[test]
 fn changed_later_volume_is_rejected_even_when_the_selected_part_and_zip_remain_valid(){
+    let _engines = crate::games::test_lock::hold();
     let fixture=Fixture::new();let manager=fixture.manager();
     let mut zip=zip::ZipWriter::new(File::create(&fixture.source).unwrap());zip.set_comment("original comment");
     zip.start_file("data.bin",zip::write::SimpleFileOptions::default()).unwrap();zip.write_all(&fixture.payload).unwrap();zip.finish().unwrap();

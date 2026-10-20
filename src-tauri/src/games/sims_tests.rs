@@ -84,6 +84,7 @@ fn archive(items: &[(&str, Vec<u8>)]) -> Vec<u8> {
 }
 #[test]
 fn packages_validate_real_indexes_and_wrong_game_is_rejected() {
+    let _engines = crate::games::test_lock::hold();
     let bytes = dbpf(1);
     let info = package::inspect(&bytes, true).unwrap();
     assert_eq!(info.category, "gameplay");
@@ -98,6 +99,7 @@ fn packages_validate_real_indexes_and_wrong_game_is_rejected() {
 }
 #[test]
 fn embedded_thumbnails_are_decoded_with_bounded_dimensions() {
+    let _engines = crate::games::test_lock::hold();
     use image::{DynamicImage, ImageBuffer, Rgba};
     let image =
         DynamicImage::ImageRgba8(ImageBuffer::from_pixel(32, 32, Rgba([140, 90, 210, 255])));
@@ -123,6 +125,7 @@ fn embedded_thumbnails_are_decoded_with_bounded_dimensions() {
 }
 #[test]
 fn scripts_are_kept_as_archives_and_their_members_are_checked() {
+    let _engines = crate::games::test_lock::hold();
     let bytes = archive(&[("mymod/main.pyc", vec![1, 2, 3])]);
     package::validate_script(&bytes).unwrap();
     assert!(package::validate_script(&archive(&[("run.exe", vec![1])])).is_err());
@@ -148,6 +151,7 @@ fn scripts_are_kept_as_archives_and_their_members_are_checked() {
 }
 #[test]
 fn imports_do_not_flatten_mixed_folders_or_install_executables() {
+    let _engines = crate::games::test_lock::hold();
     let v = package::unpack_zip(&archive(&[
         ("Mod/test.package", dbpf(1)),
         ("readme.txt", b"help".to_vec()),
@@ -176,6 +180,7 @@ fn imports_do_not_flatten_mixed_folders_or_install_executables() {
 }
 #[test]
 fn options_are_read_only_and_missing_or_ambiguous_flags_stay_unknown() {
+    let _engines = crate::games::test_lock::hold();
     assert_eq!(
         files::options("[options]\nmodsdisabled=1\nscriptmodsenabled=0"),
         (Some(false), Some(false))
@@ -188,6 +193,7 @@ fn options_are_read_only_and_missing_or_ambiguous_flags_stay_unknown() {
 }
 #[test]
 fn inventory_does_not_create_a_store_or_parse_every_payload() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let nested = fixture.0.join("Mods").join("one").join("two");
     fs::create_dir_all(&nested).unwrap();
@@ -207,6 +213,7 @@ fn inventory_does_not_create_a_store_or_parse_every_payload() {
 #[test]
 #[cfg(windows)]
 fn install_disable_enable_remove_and_restore_use_real_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     fs::write(f.0.join("Mods").join("untouched.package"), dbpf(9)).unwrap();
     let state = f.install();
@@ -264,6 +271,7 @@ fn install_disable_enable_remove_and_restore_use_real_files() {
 #[test]
 #[cfg(windows)]
 fn update_and_version_rollback_preserve_current_creator_settings() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let initial = f.install();
     let group = &initial.groups[0];
@@ -309,6 +317,7 @@ fn update_and_version_rollback_preserve_current_creator_settings() {
 #[test]
 #[cfg(windows)]
 fn external_changes_and_stale_reviews_never_overwrite_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let state = f.install();
     let id = state.groups[0].id.clone();
@@ -345,6 +354,7 @@ fn external_changes_and_stale_reviews_never_overwrite_files() {
 #[test]
 #[cfg(windows)]
 fn recovery_handles_each_interruption_boundary_and_is_repeatable_after_rollback() {
+    let _engines = crate::games::test_lock::hold();
     for boundary in 0..=2 {
         let f = Fixture::new();
         let state = f.install();
@@ -402,6 +412,7 @@ fn recovery_handles_each_interruption_boundary_and_is_repeatable_after_rollback(
 #[test]
 #[cfg(windows)]
 fn invalid_recovery_records_never_move_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let state = f.install();
     let g = &state.groups[0];
@@ -432,6 +443,7 @@ fn invalid_recovery_records_never_move_files() {
 #[test]
 #[cfg(windows)]
 fn duplicate_existing_mod_is_rejected_before_and_after_review() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let p = plan(
         f.path(),
@@ -466,6 +478,7 @@ fn duplicate_existing_mod_is_rejected_before_and_after_review() {
 #[test]
 #[cfg(windows)]
 fn review_tokens_are_profile_bound_and_discarded_without_writes() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::sims_reviews as reviews;
     let f = Fixture::new();
     let source = f.0.join("import.package");
@@ -496,6 +509,7 @@ fn review_tokens_are_profile_bound_and_discarded_without_writes() {
 #[test]
 #[cfg(windows)]
 fn restore_reviews_actual_backup_and_detects_changed_settings() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let first = f.install();
     let id = first.groups[0].id.clone();
@@ -548,6 +562,7 @@ fn restore_reviews_actual_backup_and_detects_changed_settings() {
 #[test]
 #[cfg(windows)]
 fn real_creator_archive_install_update_and_restore() {
+    let _engines = crate::games::test_lock::hold();
     // Opt-in fixture supplied from the creator; no download or execution in tests.
     let Some(source) = std::env::var_os("HARBOR_SIMS_CREATOR_ARCHIVE") else {
         return;
@@ -618,6 +633,7 @@ fn real_creator_archive_install_update_and_restore() {
 #[test]
 #[cfg(windows)]
 fn windows_lock_excludes_another_manager_and_linked_mods_are_never_followed() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Store::connect(f.path()).unwrap();
     assert!(Store::connect(f.path()).is_err());
@@ -700,7 +716,9 @@ fn switch_action(set: &sets::ModSet) -> Action {
     }
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn named_sets_persist_per_profile_without_changing_mods_and_reject_stale_edits() {
+    let _engines = crate::games::test_lock::hold();
     let empty = Fixture::new();
     assert!(sets::list("sets-proof", empty.path()).unwrap().is_empty());
     assert!(
@@ -745,7 +763,9 @@ fn named_sets_persist_per_profile_without_changing_mods_and_reject_stale_edits()
     assert!(sets::list("", f.path()).is_err());
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn named_set_switches_as_one_batch_preserving_settings_and_later_imports() {
+    let _engines = crate::games::test_lock::hold();
     let (f, _, set) = set_fixture();
     let extra = plan(
         f.path(),
@@ -810,7 +830,9 @@ fn named_set_switches_as_one_batch_preserving_settings_and_later_imports() {
     );
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn set_review_rejects_removed_members_duplicates_external_edits_and_changed_selection() {
+    let _engines = crate::games::test_lock::hold();
     let (f, state, set) = set_fixture();
     let action = switch_action(&set);
     let before = sets::plan("sets-proof", f.path(), action.clone()).unwrap();
@@ -901,7 +923,9 @@ fn set_review_rejects_removed_members_duplicates_external_edits_and_changed_sele
     );
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn mod_set_checkpoint_copies_exact_saves_and_failure_or_cancel_never_switches_mods() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::{saves, sims_reviews, sims_saves};
     let (f, before, set) = set_fixture();
     let backup = f.0.join("external-backups");
@@ -977,6 +1001,7 @@ fn mod_set_checkpoint_copies_exact_saves_and_failure_or_cancel_never_switches_mo
 #[test]
 #[ignore = "Owned subprocess worker for mod-set interruption tests"]
 fn mod_set_interruption_worker() {
+    let _engines = crate::games::test_lock::hold();
     let root = std::env::var("HARBOR_MOD_SET_ROOT").unwrap();
     if std::env::var("HARBOR_MOD_SET_RECOVER").ok().as_deref() == Some("1") {
         Store::connect(&root).unwrap().recover().unwrap();
@@ -1043,7 +1068,9 @@ fn interrupt_set(f: &Fixture, id: &str, phase: &str, recover: bool) {
     child.0.wait().unwrap();
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn terminated_mod_set_switch_and_recovery_return_the_exact_previous_setup() {
+    let _engines = crate::games::test_lock::hold();
     for phase in [
         "modsJournal",
         "modsMove1",
@@ -1109,6 +1136,7 @@ mod creator_tests;
 
 #[test]
 fn actual_lot51_core_archive_with_manifest_imports_unchanged_when_fixture_is_supplied() {
+    let _engines = crate::games::test_lock::hold();
     let Some(root) = std::env::var_os("HARBOR_SIMS_LOT51_FIXTURES") else {
         return;
     };

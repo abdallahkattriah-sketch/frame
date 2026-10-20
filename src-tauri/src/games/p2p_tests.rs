@@ -34,6 +34,7 @@ fn request(profile: &str, plan: &TorrentPlan, root: &Path, name: &str) -> StartT
 }
 #[test]
 fn rejects_unsafe_metadata_before_any_output() {
+    let _engines = crate::games::test_lock::hold();
     for name in [
         "../escape",
         "C:\\escape",
@@ -76,6 +77,7 @@ fn rejects_unsafe_metadata_before_any_output() {
 
 #[test]
 fn long_magnets_preserve_tracker_hints_without_remote_file_selection() {
+    let _engines = crate::games::test_lock::hold();
     let mut source = format!("magnet:?xt=urn:btih:{}&xt=urn:btmh:1220{}&so=0-18446744073709551615", "a".repeat(40), "b".repeat(64));
     for index in 0..436 { source.push_str(&format!("&tr.{}=udp%3A%2F%2Ftracker{}.example%3A6969%2Fannounce", index + 1, index)); }
     assert!(source.len() > 8192);
@@ -94,6 +96,7 @@ fn long_magnets_preserve_tracker_hints_without_remote_file_selection() {
 
 #[test]
 fn shared_piece_space_and_store_failures_are_reported_truthfully() {
+    let _engines = crate::games::test_lock::hold();
     let files: Vec<_> = [100000, 1, 100000]
         .iter()
         .enumerate()
@@ -159,6 +162,7 @@ fn shared_piece_space_and_store_failures_are_reported_truthfully() {
 }
 #[tokio::test]
 async fn review_is_profile_bound_expiring_and_never_downloads() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let manager = Torrents::new(root.join("state"), Arc::new(|_| {})).unwrap();
     let source = root.join("local.torrent");
@@ -207,6 +211,7 @@ async fn review_is_profile_bound_expiring_and_never_downloads() {
 }
 #[tokio::test]
 async fn queue_pause_remove_preserves_files_and_restart_is_offline() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let state = root.join("state");
     let manager = Torrents::new(state.clone(), Arc::new(|_| {})).unwrap();
@@ -245,6 +250,7 @@ async fn queue_pause_remove_preserves_files_and_restart_is_offline() {
 }
 #[tokio::test]
 async fn changed_metadata_and_destination_fail_without_replacing_files() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let manager = Torrents::new(root.join("state"), Arc::new(|_| {})).unwrap();
     let held = manager.slots.clone().acquire_many_owned(2).await.unwrap();
@@ -315,6 +321,7 @@ async fn changed_metadata_and_destination_fail_without_replacing_files() {
 }
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn real_local_peers_verify_selected_files_pause_resume_and_stop_sharing() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let source = root.join("source");
     fs::create_dir(&source).unwrap();
@@ -468,6 +475,7 @@ async fn real_local_peers_verify_selected_files_pause_resume_and_stop_sharing() 
 
 #[tokio::test]
 async fn queued_torrent_rechecks_space_before_engine_creates_files_and_can_resume() {
+    let _engines = crate::games::test_lock::hold();
     use std::sync::atomic::AtomicU64;
     let root = root();
     let mut manager = Torrents::new(root.join("state"), Arc::new(|_| {})).unwrap();
@@ -519,6 +527,7 @@ async fn queued_torrent_rechecks_space_before_engine_creates_files_and_can_resum
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn real_http_and_torrent_payloads_share_live_bandwidth_and_keep_exact_bytes() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::transfers::{NewTransfer, Status as DirectStatus, Transfers};
     use tokio::io::{AsyncReadExt, AsyncWriteExt};
     let root = root();
@@ -631,6 +640,7 @@ async fn real_http_and_torrent_payloads_share_live_bandwidth_and_keep_exact_byte
 
 #[tokio::test]
 async fn torrent_admission_accounts_for_active_direct_and_extraction_claims() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let mut manager = Torrents::new(root.join("state"), Arc::new(|_| {})).unwrap();
     let storage = Storage::with_probe(|_| Some(transfer_storage::Volume { id: "shared-volume".into(), mount: "test".into(), available: 2 * transfer_storage::HEADROOM + 32768 }));

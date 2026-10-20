@@ -62,6 +62,7 @@ fn policies(
 // renderer shutdown can accidentally make the recovery proof pass.
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn acquisition_exit_child() {
+    let _engines = crate::games::test_lock::hold();
     let Some(root) = std::env::var_os("HARBOR_PREPARATION_EXIT_ROOT") else {
         return;
     };
@@ -186,6 +187,7 @@ async fn acquisition_exit_child() {
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn six_real_process_exit_boundaries_recover_one_operation_without_renderer() {
+    let _engines = crate::games::test_lock::hold();
     let (bytes, original) = archive();
     for engine in ["direct", "torrent"] {
         for phase in ["accepted", "adopted", "acknowledged"] {
@@ -194,7 +196,7 @@ async fn six_real_process_exit_boundaries_recover_one_operation_without_renderer
             let mut child = Command::new(std::env::current_exe().unwrap())
                 .args([
                     "--exact",
-                    "p2p::preparation_tests::intake::acquisition_exit_child",
+                    worker("acquisition_exit_child").as_str(),
                     "--nocapture",
                 ])
                 .env("HARBOR_PREPARATION_EXIT_ROOT", &root)
@@ -266,6 +268,7 @@ async fn six_real_process_exit_boundaries_recover_one_operation_without_renderer
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn intake_failures_preserve_permission_and_replay_preserves_user_changes() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let (bytes, _) = archive();
     let server = Http::start(vec![bytes.clone()]).await;
@@ -338,6 +341,7 @@ async fn intake_failures_preserve_permission_and_replay_preserves_user_changes()
 
 #[tokio::test]
 async fn invalid_opt_in_rejects_the_entire_acquisition_before_files_are_created() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let (bytes, _) = archive();
     let direct = Transfers::load(root.join("http"), |_| {}).unwrap();
@@ -436,6 +440,7 @@ async fn invalid_opt_in_rejects_the_entire_acquisition_before_files_are_created(
 
 #[tokio::test]
 async fn acquisition_store_failure_keeps_the_opt_in_and_queue_all_or_nothing() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let (bytes, _) = archive();
     let direct = Transfers::load(root.join("http"), |_| {}).unwrap();
@@ -500,6 +505,7 @@ async fn acquisition_store_failure_keeps_the_opt_in_and_queue_all_or_nothing() {
 
 #[tokio::test]
 async fn known_unselected_archive_volumes_are_rejected_before_acquisition() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let direct = Transfers::load(root.join("http"), |_| {}).unwrap();
     let batch: NewBatch = serde_json::from_value(
@@ -556,4 +562,8 @@ async fn known_unselected_archive_volumes_are_rejected_before_acquisition() {
     assert!(torrent.list("alice").unwrap().is_empty());
     assert!(!root.join("Downloaded").exists());
     assert!(torrent.plans.lock().unwrap().contains_key(&plan.token));
+}
+
+fn worker(name: &str) -> String {
+    format!("{}::{name}", module_path!().split_once("::").unwrap().1)
 }

@@ -1,4 +1,4 @@
-use super::super::{cancel, extract, inspect, start, tests::SERIAL, ArchivePlan};
+use super::super::{cancel, extract, inspect, start, ArchivePlan};
 use super::*;
 use flate2::read::GzDecoder;
 use sha2::{Digest, Sha256};
@@ -60,7 +60,7 @@ macro_rules! image {
 
 #[test]
 fn descriptor_like_payload_is_not_mistaken_for_udf() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let path = fixture.image(image!("descriptor-noise"));
     let plan = review(&path).unwrap();
@@ -71,7 +71,7 @@ fn descriptor_like_payload_is_not_mistaken_for_udf() {
 
 #[test]
 fn iso_joliet_rockridge_and_udf_publish_exact_payloads_and_empty_directories() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     for (image, name, file, empty) in [
         (image!("plain"), "plain", "DATA/PAYLOAD.BIN", "EMPTY"),
         (
@@ -122,7 +122,7 @@ fn iso_joliet_rockridge_and_udf_publish_exact_payloads_and_empty_directories() {
 
 #[test]
 fn udf_namespace_is_complete_and_corrupt_udf_never_downgrades_to_iso() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.image(image!("udf-extra"));
     let plan = review(&path).unwrap();
@@ -148,7 +148,7 @@ fn udf_namespace_is_complete_and_corrupt_udf_never_downgrades_to_iso() {
 
 #[test]
 fn disc_paths_collisions_links_and_udf_special_types_are_rejected() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     for (data, expected) in [
         (image!("unsafe"), "archive_path"),
@@ -169,7 +169,7 @@ fn disc_paths_collisions_links_and_udf_special_types_are_rejected() {
 
 #[test]
 fn disc_cancel_cleans_stage_and_replaced_source_never_publishes() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     for data in [image!("plain"), image!("udf_bridge")] {
         let f = Fixture::new();
         let path = f.image(data);
@@ -208,7 +208,7 @@ fn disc_cancel_cleans_stage_and_replaced_source_never_publishes() {
 
 #[test]
 fn truncated_disc_extents_cannot_publish_partial_output() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     for data in [image!("plain"), image!("udf_bridge")] {
         let f = Fixture::new();
         let path = f.image(data);
@@ -235,7 +235,7 @@ fn truncated_disc_extents_cannot_publish_partial_output() {
 #[test]
 #[ignore = "requires qualified sparse >4 GiB corpus; hashes worker stream without output allocation"]
 fn iso_and_udf_above_four_gib_stream_exactly_through_worker() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let root = PathBuf::from(
         std::env::var_os("HARBOR_DISC_LARGE_FIXTURES").expect("large disc fixture root"),
     );

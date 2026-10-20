@@ -164,4 +164,10 @@ jobs:
         if: steps.native-changes.outputs.changed == 'true'
         env:
           TAURI_CONFIG: '{"bundle":{"externalBin":[],"resources":[]}}'
-        run: cargo test --manifest-path src-tauri/Cargo.toml
+          # Games fixtures write only under these disposable roots.
+          HARBOR_GAME_TEST_ROOT: ${{ runner.temp }}/harbor-game-tests
+          HARBOR_BATTLENET_TEST_ROOT: ${{ runner.temp }}/harbor-game-tests
+          HARBOR_TEST_ROOT: ${{ runner.temp }}/harbor-game-tests
+        run: |
+          mkdir -p "$HARBOR_GAME_TEST_ROOT"
+          cargo test --manifest-path src-tauri/Cargo.toml

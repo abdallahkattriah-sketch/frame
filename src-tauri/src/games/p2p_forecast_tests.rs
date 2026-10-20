@@ -59,6 +59,7 @@ const TEST_TIME: Duration = Duration::from_secs(10);
 
 #[test]
 fn full_metadata_budget_rotates_without_starving_later_torrents() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let manager = f.manager();
     let first = f.record(&manager, "one", 32768);
@@ -106,6 +107,7 @@ fn full_metadata_budget_rotates_without_starving_later_torrents() {
 
 #[test]
 fn oversized_metadata_stays_unknown_and_does_not_block_later_records() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let manager = f.manager();
     let invalid = f.record(&manager, "one", 32768);
@@ -134,6 +136,7 @@ fn oversized_metadata_stays_unknown_and_does_not_block_later_records() {
 
 #[test]
 fn selected_boundary_files_count_but_virtual_padding_does_not() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let manager = f.manager();
     let mut r = f.record(&manager, "one", 32768);
@@ -189,6 +192,7 @@ fn selected_boundary_files_count_but_virtual_padding_does_not() {
 
 #[test]
 fn paused_forecast_uses_physical_allocation_instead_of_reported_received_bytes() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let manager = f.manager();
     let total = 256 * 1024;
@@ -219,6 +223,7 @@ fn paused_forecast_uses_physical_allocation_instead_of_reported_received_bytes()
 
 #[test]
 fn active_claim_is_not_reinspected_or_double_counted() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let mut manager = f.manager();
     let storage = Storage::with_probe(|_| {
@@ -257,6 +262,7 @@ fn active_claim_is_not_reinspected_or_double_counted() {
 
 #[test]
 fn inspection_budget_is_global_and_legacy_rotation_does_not_starve_the_next_record() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let manager = f.manager();
     for _ in 0..9 {
@@ -291,6 +297,7 @@ fn inspection_budget_is_global_and_legacy_rotation_does_not_starve_the_next_reco
 
 #[test]
 fn missing_or_changed_metadata_stays_unknown_until_a_successful_review() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let manager = f.manager();
     let r = f.record(&manager, "one", 32768);
@@ -322,6 +329,7 @@ fn missing_or_changed_metadata_stays_unknown_until_a_successful_review() {
 
 #[test]
 fn replaced_marker_never_grants_allocation_credit() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let manager = f.manager();
     let r = f.record(&manager, "one", 32768);

@@ -30,7 +30,9 @@ fn selection(f: &Fixture, sources: Vec<String>) -> Result<Plan> {
     )
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn adoption_review_cancel_then_full_managed_lifecycle_preserves_settings_and_unrelated_files() {
+    let _engines = crate::games::test_lock::hold();
     let (f, sources) = prepared();
     let review = sims_reviews::review(
         "adopt-proof".into(),
@@ -122,7 +124,9 @@ fn plan_for(f: &Fixture, action: Action, incoming: Vec<Payload>) -> Plan {
     plan(f.path(), action, incoming, vec![]).unwrap()
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn adoption_rejects_changed_duplicate_outside_mixed_managed_and_root_config_selections() {
+    let _engines = crate::games::test_lock::hold();
     let (f, sources) = prepared();
     let p = selection(&f, sources.clone()).unwrap();
     fs::write(&sources[1], "settings changed during review").unwrap();
@@ -181,6 +185,7 @@ fn adoption_rejects_changed_duplicate_outside_mixed_managed_and_root_config_sele
 #[test]
 #[ignore = "Owned subprocess worker for selected-file adoption interruption"]
 fn adoption_interruption_worker() {
+    let _engines = crate::games::test_lock::hold();
     let root = std::env::var("HARBOR_ADOPT_ROOT").unwrap();
     if std::env::var("HARBOR_ADOPT_RECOVER").ok().as_deref() == Some("1") {
         Store::connect(&root).unwrap().recover().unwrap();
@@ -252,7 +257,9 @@ fn interrupt(f: &Fixture, phase: &str, recover: bool) {
     child.0.wait().unwrap();
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn terminated_adoption_and_rollback_restore_every_original_file_without_duplicates() {
+    let _engines = crate::games::test_lock::hold();
     for phase in [
         "adoptJournal",
         "adoptMove1",
@@ -293,7 +300,9 @@ fn terminated_adoption_and_rollback_restore_every_original_file_without_duplicat
     }
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn adoption_recovery_retains_later_external_files_and_rejects_forged_origins() {
+    let _engines = crate::games::test_lock::hold();
     let (f, sources) = prepared();
     interrupt(&f, "adoptPublished", false);
     let store = Store::connect(f.path()).unwrap();

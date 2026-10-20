@@ -84,6 +84,7 @@ use super::super::archive_jobs::ArchiveJob;
 
 #[test]
 fn durable_choice_waits_for_completion_then_native_worker_runs_without_a_view() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let manager = fixture.manager();
     let choice = manager.configure(fixture.request()).unwrap();
@@ -112,6 +113,7 @@ fn durable_choice_waits_for_completion_then_native_worker_runs_without_a_view() 
 }
 #[test]
 fn existing_extraction_queues_preparation_without_failed_state() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     fixture.ready.store(true, Ordering::SeqCst);
     let manager = fixture.manager();
@@ -129,6 +131,7 @@ fn existing_extraction_queues_preparation_without_failed_state() {
 }
 #[test]
 fn interrupted_dispatch_reconciles_existing_job_before_resolving_source() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let manager = fixture.manager();
     let choice = manager.configure(fixture.request()).unwrap();
@@ -171,6 +174,7 @@ fn interrupted_dispatch_reconciles_existing_job_before_resolving_source() {
 }
 #[test]
 fn disabled_or_replaced_choices_cannot_dispatch_and_profiles_stay_separate() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let manager = fixture.manager();
     let request = fixture.request();
@@ -190,6 +194,7 @@ fn disabled_or_replaced_choices_cannot_dispatch_and_profiles_stay_separate() {
 }
 #[test]
 fn failed_policy_write_and_changed_download_identity_never_extract() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let manager = fixture.manager();
     let store = fixture.root.join("policies/choices.json");
@@ -209,6 +214,7 @@ fn failed_policy_write_and_changed_download_identity_never_extract() {
 }
 #[test]
 fn unfinished_or_unselected_neighbor_volume_is_refused_before_extraction() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let bytes = fs::read(&fixture.source).unwrap();
     let chunks = bytes.chunks((bytes.len() / 3).max(1));
@@ -243,6 +249,7 @@ fn unfinished_or_unselected_neighbor_volume_is_refused_before_extraction() {
 }
 #[test]
 fn supported_archive_families_do_not_match_installers_or_other_games() {
+    let _engines = crate::games::test_lock::hold();
     assert!(archives::split_archive("Game.zip.001"));
     for name in [
         "Game.zip",
@@ -273,6 +280,7 @@ fn supported_archive_families_do_not_match_installers_or_other_games() {
 
 #[test]
 fn full_history_never_replaces_existing_permission_when_only_a_member_is_missing() {
+    let _engines = crate::games::test_lock::hold();
     let fixture = Fixture::new();
     let request = fixture.request();
     let retired = Arc::new(Mutex::new(String::new()));

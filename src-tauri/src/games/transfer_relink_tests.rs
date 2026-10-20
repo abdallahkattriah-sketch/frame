@@ -32,6 +32,7 @@ fn fresh_link(record: &Transfer, s: &Server, route: &str) -> Relink {
 }
 #[tokio::test]
 async fn relink_checks_saved_prefix_before_tail_and_preserves_transfer_identity() {
+    let _engines = crate::games::test_lock::hold();
     for saved in [0, 65537, 4 * 1024 * 1024] {
         let f = Fixture::new();
         let s = Server::start();
@@ -56,6 +57,7 @@ async fn relink_checks_saved_prefix_before_tail_and_preserves_transfer_identity(
 }
 #[tokio::test]
 async fn relink_rejects_a_different_prefix_even_when_the_hosts_reuse_an_etag() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, part) = relink_fixture(&f, &s, 131073);
@@ -72,6 +74,7 @@ async fn relink_rejects_a_different_prefix_even_when_the_hosts_reuse_an_etag() {
 }
 #[test]
 fn relink_rejects_wrong_file_profile_source_stale_state_and_receipt_without_mutation() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, part) = relink_fixture(&f, &s, 65537);
@@ -98,6 +101,7 @@ fn relink_rejects_wrong_file_profile_source_stale_state_and_receipt_without_muta
 }
 #[tokio::test]
 async fn relink_pause_reload_rechecks_the_entire_prefix_before_resuming() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, part) = relink_fixture(&f, &s, 262145);
@@ -126,6 +130,7 @@ async fn relink_pause_reload_rechecks_the_entire_prefix_before_resuming() {
 }
 #[tokio::test]
 async fn relink_interrupted_prefix_retries_from_zero_without_discarding_partial() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, _) = relink_fixture(&f, &s, 3 * 1024 * 1024);
@@ -140,6 +145,7 @@ async fn relink_interrupted_prefix_retries_from_zero_without_discarding_partial(
 }
 #[tokio::test]
 async fn relink_html_error_preserves_partial_and_the_pending_identity_check() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, part) = relink_fixture(&f, &s, 65537);
@@ -152,6 +158,7 @@ async fn relink_html_error_preserves_partial_and_the_pending_identity_check() {
 
 #[tokio::test]
 async fn relink_verified_prefix_allows_a_range_retry_on_the_replacement_url() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, _) = relink_fixture(&f, &s, 65537);
@@ -169,6 +176,7 @@ async fn relink_verified_prefix_allows_a_range_retry_on_the_replacement_url() {
 }
 #[test]
 fn relink_active_record_and_failed_store_write_preserve_the_original_request() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, part) = relink_fixture(&f, &s, 65537);
@@ -203,6 +211,7 @@ fn relink_active_record_and_failed_store_write_preserve_the_original_request() {
 }
 #[tokio::test]
 async fn relink_unknown_length_verifies_existing_bytes_and_completes_with_exact_hash() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, mut old, _) = relink_fixture(&f, &s, 65537);
@@ -223,6 +232,7 @@ async fn relink_unknown_length_verifies_existing_bytes_and_completes_with_exact_
 
 #[tokio::test]
 async fn relink_browser_receipt_is_bound_and_persists_without_an_external_request() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let s = Server::start();
     let (manager, old, part) = relink_fixture(&f, &s, 65537);

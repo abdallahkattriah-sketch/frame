@@ -75,7 +75,7 @@ fn crash_worker(fixture: &Fixture, bootstrap: bool) -> SetupJob {
     let mut worker = std::process::Command::new(std::env::current_exe().unwrap())
         .args([
             "--exact",
-            "setup::resume::tests::snapshot_worker",
+            worker("snapshot_worker").as_str(),
             "--ignored",
             "--nocapture",
         ])
@@ -343,4 +343,8 @@ fn restored_handles_require_exact_identity_and_keep_checker_failure_evidence() {
     let mut restored = progress::Monitor::restore(&checker, &executable, &fixture.0).unwrap();
     assert_eq!(restored.verification_result(), Some("setup_verification"));
     assert_eq!(restored.checkpoint(None).verification, checker.verification);
+}
+
+fn worker(name: &str) -> String {
+    format!("{}::{name}", module_path!().split_once("::").unwrap().1)
 }

@@ -3,6 +3,7 @@ use std::cell::RefCell;
 
 #[test]
 fn apply_cancellation_is_scoped_and_closes_atomically_before_publication() {
+    let _engines = crate::games::test_lock::hold();
     let id = uuid::Uuid::new_v4().to_string();
     let events = RefCell::new(vec![]);
     let emit = |p| events.borrow_mut().push(p);
@@ -31,6 +32,7 @@ fn apply_cancellation_is_scoped_and_closes_atomically_before_publication() {
 
 #[test]
 fn cancel_during_a_large_staging_file_removes_only_its_unpublished_bytes() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let id = uuid::Uuid::new_v4().to_string();
     let data = vec![7u8; 20 * 1024 * 1024];
@@ -52,7 +54,9 @@ fn cancel_during_a_large_staging_file_removes_only_its_unpublished_bytes() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn canceled_install_update_and_restore_keep_previous_mods_settings_and_records() {
+    let _engines = crate::games::test_lock::hold();
     for action in ["install", "update", "restore"] {
         let f = Fixture::new();
         let plan = if action == "install" {
@@ -125,7 +129,9 @@ fn canceled_install_update_and_restore_keep_previous_mods_settings_and_records()
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn tray_cancel_cleans_partly_prepared_creation_and_keeps_other_library_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     fs::create_dir(f.0.join("Tray")).unwrap();
     fs::write(f.0.join("Tray/existing.trayitem"), b"existing library").unwrap();
@@ -176,7 +182,9 @@ fn tray_cancel_cleans_partly_prepared_creation_and_keeps_other_library_files() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn update_progress_counts_preserved_settings_and_native_events_end_after_success() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::super::sims_reviews;
     let f = Fixture::new();
     let first = f.install();
@@ -221,7 +229,9 @@ fn update_progress_counts_preserved_settings_and_native_events_end_after_success
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn unified_cancel_stops_save_checkpoint_before_mod_set_publication() {
+    let _engines = crate::games::test_lock::hold();
     use super::super::super::sims_reviews;
     let (f, before, set) = set_fixture();
     let vault = Fixture::new();

@@ -2,6 +2,7 @@ use super::*;
 
 #[tokio::test(flavor="multi_thread",worker_threads=4)]
 async fn cleanup_review_tracks_actual_seed_start_and_explicit_stop(){
+    let _engines = crate::games::test_lock::hold();
     use super::super::super::archive_cleanup::Blocker;
     let (_,manager,row,_,payload)=completed().await;
     let extraction=uuid::Uuid::new_v4().to_string();
@@ -24,17 +25,17 @@ fn root() -> PathBuf {
 fn policy() -> SeedPolicy { SeedPolicy { ratio_milli: 1000, seconds: 60, upload_bps: 64*1024 } }
 async fn completed() -> (PathBuf, Arc<Torrents>, TorrentRecord, Vec<u8>, Vec<u8>) {
     let payload: Vec<u8> = (0..256*1024+97).map(|i| ((i*31+i/13)%251) as u8).collect();
-    let (root,manager,row,meta)=completed_files(&[("game.bin", &payload)], "game.bin").await;
+    let (root,manager,row,meta)=completed_files(&[("game.bin", &payload)], |files| files[0].index).await;
     (root,manager,row,meta,payload)
 }
-async fn completed_files(entries: &[(&str, &[u8])], selected_name: &str) -> (PathBuf, Arc<Torrents>, TorrentRecord, Vec<u8>) {
+async fn completed_files(entries: &[(&str, &[u8])], select: impl Fn(&[TorrentFile]) -> usize) -> (PathBuf, Arc<Torrents>, TorrentRecord, Vec<u8>) {
     let root = root(); let source = root.join("original"); fs::create_dir(&source).unwrap();
     for (name,bytes) in entries { fs::write(source.join(name), bytes).unwrap(); }
     let meta = librqbit::create_torrent(&source, librqbit::CreateTorrentOptions { piece_length: Some(32*1024), ..Default::default() }).await.unwrap().as_bytes().unwrap().to_vec();
     let manager = Torrents::new(root.join("state"), Arc::new(|_|{})).unwrap();
     let held = manager.slots.clone().acquire_many_owned(2).await.unwrap();
     let plan = manager.prepare("one", meta.clone(), vec![]).unwrap();
-    let selected=plan.files.iter().find(|file| file.path==selected_name).unwrap().index;
+    let selected=select(&plan.files);
     let row = manager.start(StartTorrent { profile: "one".into(), token: plan.token, parent: root.to_string_lossy().into_owned(), name: "download".into(), game: None, selected: vec![selected], download_bps: 0, upload_bps: 64*1024 }).await.unwrap();
     manager.action("one".into(), row.id.clone(), "pause".into()).await.unwrap(); drop(held);
     for (name,bytes) in entries { fs::write(Path::new(&row.destination).join(name), bytes).unwrap(); }
@@ -52,6 +53,7 @@ async fn settled(manager: &Torrents) -> TorrentRecord {
 
 #[test]
 fn seed_limits_validate_and_stop_at_the_first_bound_without_overflow() {
+    let _engines = crate::games::test_lock::hold();
     let mut value = policy(); value.validate().unwrap();
     assert!(!value.reached(1024, 1023, 59)); assert!(value.reached(1024, 1024, 0)); assert!(value.reached(1024, 0, 60));
     assert!(!value.reached(u64::MAX, 1024, 0));
@@ -62,6 +64,7 @@ fn seed_limits_validate_and_stop_at_the_first_bound_without_overflow() {
 
 #[tokio::test(flavor="multi_thread", worker_threads=4)]
 async fn real_peer_receives_exact_verified_bytes_then_ratio_stops_and_completion_date_stays() {
+    let _engines = crate::games::test_lock::hold();
     let (root, manager, row, meta, payload) = completed().await;
     let completion = row.completed_at;
     manager.seed("one".into(), row.id.clone(), policy()).await.unwrap();
@@ -88,6 +91,7 @@ async fn real_peer_receives_exact_verified_bytes_then_ratio_stops_and_completion
 
 #[tokio::test(flavor="multi_thread", worker_threads=4)]
 async fn time_stop_pause_resume_and_restart_preserve_consent_and_counters() {
+    let _engines = crate::games::test_lock::hold();
     let (root, manager, row, _, payload)=completed().await;
     let mut limits=policy(); limits.seconds=2;
     manager.seed("one".into(),row.id.clone(),limits).await.unwrap();
@@ -108,6 +112,7 @@ async fn time_stop_pause_resume_and_restart_preserve_consent_and_counters() {
 
 #[tokio::test(flavor="multi_thread", worker_threads=4)]
 async fn wrong_profile_failed_persistence_and_changed_files_never_start_sharing_or_repair_bytes() {
+    let _engines = crate::games::test_lock::hold();
     let (root, manager, row, _, mut payload)=completed().await;
     assert!(manager.seed("other".into(),row.id.clone(),policy()).await.is_err());
     let stored=root.join("state/transfers.json"); let preserved=root.join("state/saved.json"); fs::rename(&stored,&preserved).unwrap(); fs::create_dir(&stored).unwrap();
@@ -125,6 +130,7 @@ async fn wrong_profile_failed_persistence_and_changed_files_never_start_sharing_
 
 #[tokio::test]
 async fn legacy_second_timestamps_migrate_once_and_completion_remains_independent() {
+    let _engines = crate::games::test_lock::hold();
     let (root,manager,mut row,_,_)=completed().await;
     row.created_at=1_700_000_000;row.updated_at=1_700_000_100;row.completed_at=None;
     manager.persist(&[row.clone()]).unwrap();
@@ -139,10 +145,12 @@ async fn legacy_second_timestamps_migrate_once_and_completion_remains_independen
 
 #[tokio::test(flavor="multi_thread", worker_threads=4)]
 async fn selected_file_shares_boundary_pieces_but_never_advertises_unselected_pieces() {
+    let _engines = crate::games::test_lock::hold();
     use tokio::io::{AsyncReadExt, AsyncWriteExt};
     let first=vec![13;96*1024+37]; let middle=vec![29;37*1024+5]; let last=vec![71;70*1024];
     let entries=[("a.bin",first.as_slice()),("b.bin",middle.as_slice()),("c.bin",last.as_slice())];
-    let (root,manager,row,meta)=completed_files(&entries,"b.bin").await;
+    // The directory walk sets the torrent's file order, so select whichever file it put in the middle.
+    let (root,manager,row,meta)=completed_files(&entries,|files| files[1].index).await;
     let (metadata,items,_)=files::metadata(&meta).unwrap();
     let mut offset=0; let mut wanted=Vec::new();
     for item in &items {
@@ -180,7 +188,9 @@ async fn selected_file_shares_boundary_pieces_but_never_advertises_unselected_pi
     let peer=Session::new_with_opts(destination.clone(),SessionOptions {disable_dht:true,disable_dht_persistence:true,..Default::default()}).await.unwrap();
     let handle=peer.add_torrent(AddTorrent::from_bytes(meta),Some(AddTorrentOptions {output_folder:Some(destination.to_string_lossy().into_owned()),only_files:Some(row.selected.clone()),initial_peers:Some(vec![format!("127.0.0.1:{port}").parse().unwrap()]),disable_trackers:true,..Default::default()})).await.unwrap().into_handle().unwrap();
     tokio::time::timeout(Duration::from_secs(25),async {loop {if handle.stats().finished {break;} tokio::time::sleep(Duration::from_millis(50)).await;}}).await.unwrap();
-    assert_eq!(fs::read(destination.join("b.bin")).unwrap(),middle);
+    let chosen=&items.iter().find(|item| row.selected.contains(&item.index)).unwrap().path;
+    let expected=entries.iter().find(|(name,_)| name==chosen).unwrap().1;
+    assert_eq!(fs::read(destination.join(chosen)).unwrap(),expected);
     manager.action("one".into(),row.id.clone(),"pause".into()).await.unwrap();
     let uploaded=manager.list("one").unwrap()[0].sharing.as_ref().unwrap().uploaded_bytes;
     assert!(uploaded>0);

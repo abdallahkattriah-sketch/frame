@@ -4,7 +4,6 @@ use zip::write::SimpleFileOptions;
 mod passwords;
 #[path = "archives_split_zip_tests.rs"]
 mod split_zip;
-pub(super) static SERIAL: Mutex<()> = Mutex::new(());
 struct Fixture(PathBuf);
 impl Fixture {
     fn new() -> Self {
@@ -64,7 +63,7 @@ fn run(f: &Fixture, plan: &ArchivePlan, name: &str) -> Result<ArchiveReceipt> {
 }
 #[test]
 fn extraction_space_preview_respects_shared_claims_and_retains_a_blocked_plan() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.archive(&[("file.bin", &[1; 100])]);
     let original = fs::read(&source).unwrap();
@@ -125,7 +124,7 @@ fn extraction_space_preview_respects_shared_claims_and_retains_a_blocked_plan() 
 }
 #[test]
 fn extraction_reservation_blocks_a_competing_download_then_releases() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.archive(&[("file.bin", &[2; 100])]);
     let plan = review(&source).unwrap();
@@ -162,7 +161,7 @@ fn extraction_reservation_blocks_a_competing_download_then_releases() {
 #[test]
 fn external_disk_use_stops_extraction_cleans_stage_and_allows_reviewed_retry() {
     use std::sync::atomic::AtomicU64;
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let bytes = vec![3; 9 * 1024 * 1024];
     let source = f.archive(&[("large.bin", &bytes)]);
@@ -216,7 +215,7 @@ fn external_disk_use_stops_extraction_cleans_stage_and_allows_reviewed_retry() {
 }
 #[test]
 fn unavailable_archive_capacity_stays_unknown_and_preview_is_read_only() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.archive(&[("file.bin", &[4; 10])]);
     let plan = review(&source).unwrap();
@@ -241,7 +240,7 @@ fn unavailable_archive_capacity_stays_unknown_and_preview_is_read_only() {
 }
 #[test]
 fn preserves_unicode_empty_directories_and_original_archive() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.archive(&[
         ("Game/readme.txt", b"Original"),
@@ -265,7 +264,7 @@ fn preserves_unicode_empty_directories_and_original_archive() {
 }
 #[test]
 fn rejects_traversal_windows_devices_and_case_or_prefix_collisions() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     for name in [
         "../outside.txt",
@@ -290,7 +289,7 @@ fn rejects_traversal_windows_devices_and_case_or_prefix_collisions() {
 }
 #[test]
 fn refuses_changed_source_existing_folder_and_wrong_profile() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.archive(&[("game.bin", b"one")]);
     let plan = review(&path).unwrap();
@@ -317,7 +316,7 @@ fn refuses_changed_source_existing_folder_and_wrong_profile() {
 }
 #[test]
 fn cancellation_and_destination_race_remove_only_the_owned_stage() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.archive(&[("large.bin", &vec![42; 2 * 1024 * 1024])]);
     let plan = review(&path).unwrap();
@@ -361,7 +360,7 @@ fn cancellation_and_destination_race_remove_only_the_owned_stage() {
 }
 #[test]
 fn corrupt_payloads_and_unbounded_central_directory_are_not_published() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.archive(&[("game.bin", b"hello")]);
     let mut bytes = fs::read(&path).unwrap();
@@ -380,7 +379,7 @@ fn corrupt_payloads_and_unbounded_central_directory_are_not_published() {
 }
 #[test]
 fn rejects_symlink_entries_and_expired_tokens() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.0.join("links.zip");
     let mut zip = zip::ZipWriter::new(File::create(&path).unwrap());
@@ -438,7 +437,7 @@ fn tar_fixture(f: &Fixture, gzip: bool, kind: tar::EntryType, name: &str) -> Pat
 }
 #[test]
 fn tar_and_gzip_share_review_and_transactional_extraction() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     for gzip in [false, true] {
         let f = Fixture::new();
         let source = tar_fixture(&f, gzip, tar::EntryType::Regular, "./Game/bin/play");
@@ -464,7 +463,7 @@ fn tar_and_gzip_share_review_and_transactional_extraction() {
 }
 #[test]
 fn tar_rejects_traversal_links_and_corrupt_compression() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     assert_eq!(
         review(&tar_fixture(
@@ -489,7 +488,7 @@ fn tar_rejects_traversal_links_and_corrupt_compression() {
 }
 #[test]
 fn tar_revalidates_reviewed_content_and_does_not_publish_on_cancel() {
-    let _guard = SERIAL.lock().unwrap();
+    let _guard = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = tar_fixture(&f, true, tar::EntryType::Regular, "play");
     let plan = review(&source).unwrap();

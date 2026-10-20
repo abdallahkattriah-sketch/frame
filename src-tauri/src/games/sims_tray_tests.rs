@@ -1,6 +1,7 @@
 use super::*;
 #[test]
 fn creator_archive_uses_tray_destinations_and_preserves_origin_through_remove_restore() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let Ok(fixture) = std::env::var("HARBOR_TEST_MTS_HOUSEHOLD") else {
         return;
@@ -45,6 +46,7 @@ fn creator_archive_uses_tray_destinations_and_preserves_origin_through_remove_re
 }
 #[test]
 fn downloaded_creation_validation_keeps_cancel_and_legacy_records() {
+    let _engines = crate::games::test_lock::hold();
     let (f, paths) = prepared();
     let plan = import(&f, paths.clone());
     let mut old = serde_json::to_value(&plan.tray.as_ref().unwrap().item).unwrap();
@@ -102,7 +104,9 @@ fn run(f: &Fixture, action: Action) {
     Store::connect(f.path()).unwrap().apply(p).unwrap();
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn tray_review_import_remove_restore_preserve_bundled_cc_and_unrelated_library_files() {
+    let _engines = crate::games::test_lock::hold();
     let (f, paths) = prepared();
     let p = import(&f, paths.clone());
     assert_eq!(p.reviewed_files().len(), 4);
@@ -140,7 +144,9 @@ fn tray_review_import_remove_restore_preserve_bundled_cc_and_unrelated_library_f
     assert_eq!(snapshot(f.path()).unwrap().0.groups, vec![cc]);
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn tray_rejects_incomplete_sets_duplicate_destinations_and_external_edits() {
+    let _engines = crate::games::test_lock::hold();
     let (f, paths) = prepared();
     assert_eq!(
         tray::plan(
@@ -205,6 +211,7 @@ fn tray_rejects_incomplete_sets_duplicate_destinations_and_external_edits() {
 }
 #[test]
 fn tray_creator_zip_groups_all_seven_real_lot_files() {
+    let _engines = crate::games::test_lock::hold();
     let Ok(archive) = std::env::var("HARBOR_SIMS_TRAY_ARCHIVE") else {
         return;
     };
@@ -233,6 +240,7 @@ fn tray_creator_zip_groups_all_seven_real_lot_files() {
 }
 #[test]
 fn tray_set_identification_keeps_rooms_households_and_export_ids_distinct() {
+    let _engines = crate::games::test_lock::hold();
     let names = |exts: &[&str]| {
         exts.iter()
             .enumerate()
@@ -266,6 +274,7 @@ fn tray_set_identification_keeps_rooms_households_and_export_ids_distinct() {
 #[test]
 #[ignore = "Owned worker for Tray publication/recovery boundaries"]
 fn interruption_worker() {
+    let _engines = crate::games::test_lock::hold();
     let root = std::env::var("HARBOR_TRAY_ROOT").unwrap();
     let action = std::env::var("HARBOR_TRAY_ACTION").unwrap();
     if action == "recover" {
@@ -330,7 +339,9 @@ fn interrupt(f: &Fixture, phase: &str, action: &str) {
     child.0.wait().unwrap();
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn killed_tray_import_removal_restore_and_rollback_recover_exact_library_and_cc_states() {
+    let _engines = crate::games::test_lock::hold();
     for mode in ["import", "remove", "restore"] {
         for phase in [
             "trayJournal",
@@ -387,6 +398,7 @@ fn killed_tray_import_removal_restore_and_rollback_recover_exact_library_and_cc_
 
 #[test]
 fn tray_archives_reject_path_escapes_flattened_collisions_and_executable_payloads() {
+    let _engines = crate::games::test_lock::hold();
     let (f, paths) = prepared();
     let valid: Vec<_> = paths
         .iter()
@@ -429,7 +441,9 @@ fn tray_archives_reject_path_escapes_flattened_collisions_and_executable_payload
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn tray_recovery_preserves_later_edits_and_rejects_ambiguous_or_forged_journals() {
+    let _engines = crate::games::test_lock::hold();
     for mode in ["external-file", "two-journals", "forged-action"] {
         let (f, _) = prepared();
         let before = snapshot(f.path()).unwrap().0;

@@ -48,7 +48,9 @@ fn view(state: &State) -> trouble::View {
     trouble::view(state, "1.120.123.1020").unwrap().unwrap()
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn guided_test_persists_narrows_from_observations_and_restores_the_initial_enabled_selection() {
+    let _engines = crate::games::test_lock::hold();
     let (f, before, selected) = fixture();
     let culprit = selected[2].clone();
     let mut state = apply(&f, start(selected.clone()));
@@ -131,7 +133,9 @@ fn guided_test_persists_narrows_from_observations_and_restores_the_initial_enabl
     );
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn stale_answers_patch_changes_and_external_packages_block_steps_but_patch_change_allows_restore() {
+    let _engines = crate::games::test_lock::hold();
     let (f, before, selected) = fixture();
     let state = apply(&f, start(selected.clone()));
     let v = view(&state);
@@ -191,7 +195,9 @@ fn stale_answers_patch_changes_and_external_packages_block_steps_but_patch_chang
     );
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn starting_review_cancels_without_changes_and_creates_a_real_save_checkpoint_only_on_apply() {
+    let _engines = crate::games::test_lock::hold();
     let (f, before, selected) = fixture();
     let mut action = start(selected);
     if let Action::StartTest { backup_folder, .. } = &mut action {
@@ -222,6 +228,7 @@ fn starting_review_cancels_without_changes_and_creates_a_real_save_checkpoint_on
 #[test]
 #[ignore = "Owned worker for guided-test journal boundaries"]
 fn interruption_worker() {
+    let _engines = crate::games::test_lock::hold();
     let root = std::env::var("HARBOR_TEST_ROOT").unwrap();
     let store = Store::connect(&root).unwrap();
     if std::env::var("HARBOR_TEST_RECOVER").ok().as_deref() == Some("1") {
@@ -279,7 +286,9 @@ fn interrupt(f: &Fixture, action: &Action, phase: &str, recover: bool) {
     child.0.wait().unwrap();
 }
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn killed_test_start_answer_finish_and_rollback_restore_both_session_and_file_state() {
+    let _engines = crate::games::test_lock::hold();
     for step in ["start", "answer", "finish", "rollback"] {
         let (f, initial, selected) = fixture();
         let (before, action) = if step == "start" {

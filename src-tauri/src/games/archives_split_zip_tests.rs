@@ -19,7 +19,7 @@ fn volumes(path: &Path, width: usize) -> Vec<PathBuf> {
 
 #[test]
 fn split_zip_reads_across_tiny_volumes_from_any_selection_and_retains_receipts() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let data = vec![71; 4096];
     let source = f.archive(&[("data/世界.bin", &data), ("empty/", b"")]);
@@ -40,7 +40,7 @@ fn split_zip_reads_across_tiny_volumes_from_any_selection_and_retains_receipts()
 
 #[test]
 fn split_zip_passwords_keep_aes_and_zipcrypto_validation_and_never_store_secrets() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for mode in [Some(zip::AesMode::Aes128), Some(zip::AesMode::Aes256), None] {
         let f = Fixture::new();
         let password = "fixture 雨 secret";
@@ -69,7 +69,7 @@ fn split_zip_passwords_keep_aes_and_zipcrypto_validation_and_never_store_secrets
 
 #[test]
 fn split_zip_missing_duplicate_extra_and_replaced_parts_never_publish() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for missing in [0, 1, usize::MAX] {
         let f = Fixture::new();
         let source = f.archive(&[("game.bin", &[77; 4096])]);
@@ -106,7 +106,7 @@ fn split_zip_missing_duplicate_extra_and_replaced_parts_never_publish() {
 
 #[test]
 fn split_zip_rejects_concatenated_archives_unsafe_paths_and_disk_relative_layouts() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.archive(&[("game.bin", b"content")]);
     let bytes = fs::read(&source).unwrap();
@@ -133,7 +133,7 @@ fn split_zip_rejects_concatenated_archives_unsafe_paths_and_disk_relative_layout
 
 #[test]
 fn split_zip_cancel_keeps_source_and_allows_a_new_review() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.archive(&[("game.bin", &[42; 4096])]);
     let parts = volumes(&source, 17);
@@ -160,7 +160,7 @@ fn split_zip_cancel_keeps_source_and_allows_a_new_review() {
 
 #[test]
 fn split_zip_zip64_and_comments_preserve_directory_boundaries() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for sentinels in [false, true] {
         let f = Fixture::new();
         let source = f.0.join("Game 雨.zip");
@@ -190,7 +190,7 @@ fn split_zip_zip64_and_comments_preserve_directory_boundaries() {
 
 #[test]
 fn split_zip_empty_volumes_and_corrupt_payload_never_publish() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.archive(&[("game.bin", b"content")]);
     let parts = volumes(&source, 17);
@@ -222,7 +222,7 @@ fn split_zip_empty_volumes_and_corrupt_payload_never_publish() {
 #[test]
 #[ignore]
 fn official_numbered_zip_encoder_interoperability() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let tool = std::env::var_os("HARBOR_TEST_7ZIP")
         .expect("Set HARBOR_TEST_7ZIP to the official full 7-Zip console executable");
     for (name, options, password) in [

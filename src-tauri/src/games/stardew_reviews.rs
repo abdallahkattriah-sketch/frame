@@ -285,7 +285,9 @@ mod tests {
         }
     }
     #[test]
+    #[ignore = "needs HARBOR_TEST_SMAPI_DLL and HARBOR_TEST_STARDEW_ZIP"]
     fn reviews_are_profile_bound_single_use_and_keep_held_bytes() {
+        let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let profile = op();
         let r = prepare(&profile, f.path(), &op(), import(), &|_| {}).unwrap();
@@ -335,7 +337,9 @@ mod tests {
         assert!(workspace(f.path()).unwrap().groups[0].enabled);
     }
     #[test]
+    #[ignore = "needs HARBOR_TEST_SMAPI_DLL and HARBOR_TEST_STARDEW_ZIP"]
     fn expired_or_canceled_reviews_never_publish_and_reading_creates_no_store() {
+        let _engines = crate::games::test_lock::hold();
         let f = Fixture::new();
         let profile = op();
         assert!(workspace(f.path()).unwrap().groups.is_empty());

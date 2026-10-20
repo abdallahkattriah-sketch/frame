@@ -95,6 +95,7 @@ impl Drop for Http {
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn canceling_a_selected_http_part_disables_automatic_unpacking() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let (bytes, _) = archive();
     let server = Http::start(vec![bytes.clone(), bytes.clone()]).await;
@@ -161,6 +162,7 @@ async fn canceling_a_selected_http_part_disables_automatic_unpacking() {
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn actual_http_multipart_completion_dispatches_once_and_survives_reload() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let (bytes, original) = archive();
     let parts = vec![
@@ -248,6 +250,7 @@ async fn actual_http_multipart_completion_dispatches_once_and_survives_reload() 
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn direct_members_are_explicit_profile_bound_and_archive_bound() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let (bytes, _) = archive();
     let server = Http::start(vec![bytes.clone(), bytes.clone()]).await;
@@ -313,6 +316,7 @@ async fn direct_members_are_explicit_profile_bound_and_archive_bound() {
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 4)]
 async fn actual_torrent_selection_dispatches_after_verified_tcp_download() {
+    let _engines = crate::games::test_lock::hold();
     let root = root();
     let source = root.join("seed");
     fs::create_dir(&source).unwrap();

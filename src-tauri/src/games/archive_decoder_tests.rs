@@ -1,4 +1,4 @@
-use super::super::{cancel, extract, inspect, tests::SERIAL};
+use super::super::{cancel, extract, inspect};
 use super::*;
 use sevenz_rust2::{
     encoder_options::AesEncoderOptions, ArchiveEntry as SevenEntry, ArchiveWriter,
@@ -95,7 +95,7 @@ fn run(f: &Fixture, token: String, destination: &str) -> Result<super::super::Ar
 
 #[test]
 fn solid_and_separate_sevenzip_round_trip_with_unicode_empty_folders_and_passwords() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for solid in [false, true] {
         for (password, header) in [
             (None, false),
@@ -138,7 +138,7 @@ fn solid_and_separate_sevenzip_round_trip_with_unicode_empty_folders_and_passwor
 
 #[test]
 fn wrong_password_corruption_and_cancel_never_publish_output_and_allow_retry() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.package(Some("correct"), true, true);
     let wrong_header = review(&path, Some("wrong")).err();
@@ -191,7 +191,7 @@ fn wrong_password_corruption_and_cancel_never_publish_output_and_allow_retry() {
 
 #[test]
 fn unsafe_paths_collisions_and_links_are_rejected_before_destination_creation() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for names in [
         vec!["../escape"],
         vec!["C:/escape"],
@@ -228,7 +228,7 @@ fn unsafe_paths_collisions_and_links_are_rejected_before_destination_creation() 
 
 #[test]
 fn hostile_header_allocation_is_contained_and_next_archive_still_works() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     // Valid signature/checksums, but a files-info count requesting billions of entries.
     // This exercises the decoder's actual header allocation inside its OS memory limit.
@@ -286,7 +286,7 @@ fn decoder_protocol_rejects_oversized_and_unknown_frames_before_allocating() {
 
 #[test]
 fn additional_standard_compression_methods_preserve_exact_contents() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     for method in [
         EncoderMethod::COPY,
         EncoderMethod::LZMA,
@@ -314,7 +314,7 @@ fn additional_standard_compression_methods_preserve_exact_contents() {
 
 #[test]
 fn cancellation_during_worker_wait_reaps_it_without_waiting_for_decode() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let f = Fixture::new();
     let path = f.package(Some("correct"), true, true);
     let operation = id();
@@ -332,7 +332,7 @@ fn cancellation_during_worker_wait_reaps_it_without_waiting_for_decode() {
 #[test]
 #[ignore]
 fn official_sevenzip_encoder_interoperability() {
-    let _serial = SERIAL.lock().unwrap();
+    let _serial = crate::games::test_lock::hold();
     let tool = std::env::var_os("HARBOR_TEST_7ZIP")
         .expect("Set HARBOR_TEST_7ZIP to the official console executable");
     let cases: Vec<(&str, Vec<&str>, Option<&str>)> = vec![

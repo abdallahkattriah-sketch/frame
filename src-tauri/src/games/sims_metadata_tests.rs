@@ -40,6 +40,7 @@ fn package_xml(contents: &[&[u8]]) -> Vec<u8> {
 
 #[test]
 fn yaml_preserves_versions_text_and_conditional_requirements_without_trusting_links() {
+    let _engines = crate::games::test_lock::hold();
     let text = "name: 'A creator: mod'\nversion: 1.40\ndescription: |\n  First line.\n  Second line.\ncreators: [Alice, Bob]\nurl: https://example.com/mod\nrequired_mods:\n- name: Shared library\n  version: 2.0\n  required_features: [Weather]\n  requirement_identifier: alternative\n  url: javascript:alert(1)\n";
     let info = manifest::from_yaml(text, &|| Ok(())).unwrap();
     assert_eq!(info.name, "A creator: mod");
@@ -74,6 +75,7 @@ fn yaml_preserves_versions_text_and_conditional_requirements_without_trusting_li
 
 #[test]
 fn yaml_rejects_aliases_duplicate_keys_tags_multiple_documents_and_limits() {
+    let _engines = crate::games::test_lock::hold();
     for value in [
         "name: First\nname: Second",
         "name: &x Mod\ndescription: *x",
@@ -104,6 +106,7 @@ fn yaml_rejects_aliases_duplicate_keys_tags_multiple_documents_and_limits() {
 
 #[test]
 fn package_xml_preserves_merged_manifests_entities_and_qualified_requirements() {
+    let _engines = crate::games::test_lock::hold();
     let other = XML.replace("Garden &amp; Weather", "Another mod");
     let bytes = package_xml(&[
         XML.as_bytes(),
@@ -123,6 +126,7 @@ fn package_xml_preserves_merged_manifests_entities_and_qualified_requirements() 
 
 #[test]
 fn malformed_xml_and_bounded_snippets_do_not_make_valid_packages_unusable() {
+    let _engines = crate::games::test_lock::hold();
     assert!(manifest::from_xml(
         &format!("<!DOCTYPE I [<!ENTITY ext SYSTEM 'file:///secret'>]>{XML}"),
         &|| Ok(())
@@ -195,7 +199,9 @@ impl Drop for Fixture {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn metadata_reads_loose_enabled_and_disabled_files_without_writing_or_claiming_source() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let bytes = package_xml(&[XML.as_bytes()]);
     fs::write(f.0.join("Mods/loose.package"), &bytes).unwrap();
@@ -273,6 +279,7 @@ fn metadata_reads_loose_enabled_and_disabled_files_without_writing_or_claiming_s
 
 #[test]
 fn actual_core_library_manifest_has_original_creator_name_and_version() {
+    let _engines = crate::games::test_lock::hold();
     let Some(base) = std::env::var_os("HARBOR_SIMS_LOT51_FIXTURES") else {
         return;
     };
@@ -312,7 +319,9 @@ fn actual_core_library_manifest_has_original_creator_name_and_version() {
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn import_metadata_describes_held_bytes_before_apply_and_update_cancel_keeps_installed_files() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.0.join("incoming.package");
     let original = package_xml(&[XML.as_bytes()]);
@@ -360,7 +369,9 @@ fn import_metadata_describes_held_bytes_before_apply_and_update_cancel_keeps_ins
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn invalid_optional_metadata_does_not_block_a_supported_package_review_or_apply() {
+    let _engines = crate::games::test_lock::hold();
     let f = Fixture::new();
     let source = f.0.join("supported.package");
     let bytes = package_xml(&[b"<I c=\"ModFileManifest\" i=\"snippet\" m=\"llamalogic.snippets.modfilemanifest\"><T n=\"name\">Unclosed"]);
@@ -391,7 +402,9 @@ fn invalid_optional_metadata_does_not_block_a_supported_package_review_or_apply(
 }
 
 #[test]
+#[cfg_attr(not(windows), ignore = "Windows-only guard")]
 fn metadata_reports_bound_total_manifests_and_keep_cancellation_effective() {
+    let _engines = crate::games::test_lock::hold();
     let texts: Vec<_> = (0..16).map(|_| XML.as_bytes()).collect();
     let bytes = package_xml(&texts);
     let payload: Vec<_> = (0..3)
