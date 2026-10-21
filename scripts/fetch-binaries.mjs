@@ -12,10 +12,10 @@
  *   `pnpm run setup`) before building.
  *
  * ----------------------------------------------------------------------------
- * SOURCES - PLEASE VERIFY THESE URLS. They are "latest/rolling" upstream builds,
- * so they are intentionally NOT checksum pinned (unlike fetch-libmpv/fetch-fonts,
- * which pin a fixed asset). They also could NOT be test-downloaded in the
- * environment that wrote this script. VERIFY EACH ONE AT RUNTIME.
+ * SOURCES. yt-dlp and the Linux ffmpeg are "latest/rolling" upstream builds and
+ * are NOT checksum pinned. Windows ffmpeg/ffprobe are pinned to one gyan.dev
+ * release (FFMPEG_WIN below), mirrored on crazyrabbit0/harbor-deps; repin with
+ * `node scripts/fetch-binaries.mjs --latest`.
  * ----------------------------------------------------------------------------
  *
  * yt-dlp  (single self-contained binary, no archive)
@@ -30,21 +30,24 @@
  *   linux  aarch64: github.com/BtbN/FFmpeg-Builds latest ffmpeg-master-latest-linuxarm64-gpl.tar.xz
  *                   (was johnvansickle.com, which 415-blocks CI/automated GETs. BtbN is a
  *                    static standalone build hosted on GitHub releases, same as yt-dlp above.)
- *   macOS  (both) : ffmpeg.martin-riedl.de latest release ffmpeg.zip / ffprobe.zip
- *                   (static builds, native arm64 and amd64)
- *   windows x86_64: gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
- *                   (alt: github.com/BtbN/FFmpeg-Builds latest win64-gpl zip)
+ *   macOS  (both) : Homebrew's ffmpeg (installed with mpv). This copy only links on the
+ *                   build machine; macos-bundle-libmpv.py prepare replaces it with one
+ *                   relinked against the bundled Frameworks.
+ *   windows x86_64: gyan.dev ffmpeg-<version>-essentials_build.zip, pinned by SHA-256:
+ *                   harbor-deps mirror, then GyanD/codexffmpeg, then gyan.dev packages/
  *
  * Extraction tools (documented external dependency):
  *   .tar.xz -> `tar -xJf`  (linux; GNU tar + xz-utils)
  *   .zip    -> macOS: `unzip`   windows: PowerShell Expand-Archive   (both built in)
  *
  * Env overrides (mirrors / air-gapped): HARBOR_YTDLP_URL, HARBOR_FFMPEG_URL,
- * HARBOR_FFPROBE_URL replace the resolved URL for the current platform. Or just
+ * HARBOR_FFPROBE_URL replace the resolved URL for the current platform (on Windows
+ * the zip must still match the pin; macOS ignores them and uses Homebrew). Or just
  * drop the finished binary into src-tauri/binaries/<name>-<triple>[.exe] by hand.
  */
 
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import {
   chmodSync,
   copyFileSync,
@@ -52,6 +55,7 @@ import {
   mkdirSync,
   mkdtempSync,
   readdirSync,
+  readFileSync,
   rmSync,
   statSync,
   writeFileSync,
@@ -60,7 +64,8 @@ import { tmpdir } from "node:os";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const script = fileURLToPath(import.meta.url);
+const root = join(dirname(script), "..");
 const binDir = join(root, "src-tauri", "binaries");
 
 function targetTriple() {
@@ -76,8 +81,16 @@ const mb = (p) => (statSync(p).size / 1048576).toFixed(0);
 
 const YTDLP = "https://github.com/yt-dlp/yt-dlp/releases/latest/download";
 const BTBN = "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest";
-const RIEDL = "https://ffmpeg.martin-riedl.de/redirect/latest/macos";
-const GYAN = "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip";
+const FFMPEG_WIN_VERSION = "9.0.2";
+const FFMPEG_WIN_SHA256 = "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba";
+const FFMPEG_WIN_ZIP = `ffmpeg-${FFMPEG_WIN_VERSION}-essentials_build.zip`;
+const FFMPEG_WIN_TAG = `ffmpeg-${FFMPEG_WIN_SHA256.slice(0, 12)}`;
+// Tried in order; all three serve the same zip, which the pinned SHA-256 checks.
+const FFMPEG_WIN_URLS = [
+  `https://github.com/crazyrabbit0/harbor-deps/releases/download/${FFMPEG_WIN_TAG}/${FFMPEG_WIN_ZIP}`,
+  `https://github.com/GyanD/codexffmpeg/releases/download/${FFMPEG_WIN_VERSION}/${FFMPEG_WIN_ZIP}`,
+  `https://www.gyan.dev/ffmpeg/builds/packages/${FFMPEG_WIN_ZIP}`,
+];
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
@@ -100,17 +113,9 @@ const SOURCES = {
       url: `${BTBN}/ffmpeg-master-latest-linuxarm64-gpl.tar.xz`,
       member: "ffmpeg",
     },
-    "x86_64-apple-darwin": {
-      kind: "zip",
-      url: `${RIEDL}/amd64/release/ffmpeg.zip`,
-      member: "ffmpeg",
-    },
-    "aarch64-apple-darwin": {
-      kind: "zip",
-      url: `${RIEDL}/arm64/release/ffmpeg.zip`,
-      member: "ffmpeg",
-    },
-    "x86_64-pc-windows-msvc": { kind: "zip", url: GYAN, member: "ffmpeg.exe" },
+    "x86_64-apple-darwin": { kind: "brew", formula: "ffmpeg" },
+    "aarch64-apple-darwin": { kind: "brew", formula: "ffmpeg" },
+    "x86_64-pc-windows-msvc": { kind: "pinned-zip", member: "ffmpeg.exe" },
   },
   ffprobe: {
     "x86_64-unknown-linux-gnu": {
@@ -123,17 +128,9 @@ const SOURCES = {
       url: `${BTBN}/ffmpeg-master-latest-linuxarm64-gpl.tar.xz`,
       member: "ffprobe",
     },
-    "x86_64-apple-darwin": {
-      kind: "zip",
-      url: `${RIEDL}/amd64/release/ffprobe.zip`,
-      member: "ffprobe",
-    },
-    "aarch64-apple-darwin": {
-      kind: "zip",
-      url: `${RIEDL}/arm64/release/ffprobe.zip`,
-      member: "ffprobe",
-    },
-    "x86_64-pc-windows-msvc": { kind: "zip", url: GYAN, member: "ffprobe.exe" },
+    "x86_64-apple-darwin": { kind: "brew", formula: "ffmpeg" },
+    "aarch64-apple-darwin": { kind: "brew", formula: "ffmpeg" },
+    "x86_64-pc-windows-msvc": { kind: "pinned-zip", member: "ffprobe.exe" },
   },
 };
 
@@ -217,6 +214,84 @@ function extractMember(buf, kind, member, dest) {
   }
 }
 
+const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
+
+let pinnedZip;
+function fetchPinnedZip(override) {
+  pinnedZip ??= (async () => {
+    for (const url of override ? [override] : FFMPEG_WIN_URLS) {
+      try {
+        const buf = await download(url);
+        const got = sha256(buf);
+        if (got !== FFMPEG_WIN_SHA256)
+          throw new Error(`checksum mismatch (expected ${FFMPEG_WIN_SHA256}, got ${got})`);
+        return buf;
+      } catch (err) {
+        console.error(`[binaries] ${url}: ${err.message}`);
+      }
+    }
+    throw new Error(`no source served ${FFMPEG_WIN_ZIP} with the pinned SHA-256`);
+  })();
+  return pinnedZip;
+}
+
+function copyFromBrew(formula, name, dest) {
+  let prefix;
+  try {
+    prefix = execFileSync("brew", ["--prefix", formula], { encoding: "utf8" }).trim();
+  } catch {
+    throw new Error(`Homebrew ${formula} is not available; run \`brew install ${formula}\``);
+  }
+  const binary = join(prefix, "bin", name);
+  if (!existsSync(binary)) throw new Error(`${binary} not found; run \`brew install ${formula}\``);
+  copyFileSync(binary, dest);
+}
+
+// Repins the Windows ffmpeg/ffprobe to gyan.dev's newest release; the zip still has to be uploaded to harbor-deps.
+async function pinLatest() {
+  const token = process.env.GITHUB_TOKEN;
+  const res = await fetch("https://api.github.com/repos/GyanD/codexffmpeg/releases/latest", {
+    headers: {
+      accept: "application/vnd.github+json",
+      ...(token ? { authorization: `Bearer ${token}` } : {}),
+    },
+  });
+  if (!res.ok) throw new Error(`release lookup failed (${res.status} ${res.statusText})`);
+  const release = await res.json();
+  const version = release.tag_name;
+  const zip = `ffmpeg-${version}-essentials_build.zip`;
+  const asset = release.assets.find((a) => a.name === zip);
+  if (!asset) throw new Error(`no ${zip} in GyanD/codexffmpeg ${version}`);
+  const buf = await download(asset.browser_download_url);
+  const sha = sha256(buf);
+  const source = readFileSync(script, "utf8");
+  const pinned = source
+    .replace(/^const FFMPEG_WIN_VERSION = "[^"]+";/m, `const FFMPEG_WIN_VERSION = "${version}";`)
+    .replace(/^const FFMPEG_WIN_SHA256 = "[0-9a-f]{64}";/m, `const FFMPEG_WIN_SHA256 = "${sha}";`);
+  if (pinned.includes(FFMPEG_WIN_SHA256) && sha !== FFMPEG_WIN_SHA256)
+    throw new Error("could not rewrite the pin");
+  writeFileSync(script, pinned);
+  const archive = join(tmpdir(), zip);
+  writeFileSync(archive, buf);
+  console.log(`[binaries] pinned ${zip} (SHA-256 ${sha})`);
+  console.log(
+    `[binaries] publish it: gh release create ffmpeg-${sha.slice(0, 12)} "${archive}" --repo crazyrabbit0/harbor-deps --title "ffmpeg ${version} (gyan.dev essentials)"`,
+  );
+  console.log(
+    "[binaries] then delete src-tauri/binaries/ffmpeg-*.exe and ffprobe-*.exe and re-run",
+  );
+}
+
+if (process.argv.includes("--latest")) {
+  try {
+    await pinLatest();
+    process.exit(0);
+  } catch (err) {
+    console.error(`[binaries] ${err.message}`);
+    process.exit(1);
+  }
+}
+
 function hint(name) {
   const lines = [
     `[binaries] fix: set ${ENVVAR[name]} to a mirror URL, or drop a working`,
@@ -226,7 +301,7 @@ function hint(name) {
     lines.push("[binaries]      source: github.com/yt-dlp/yt-dlp/releases/latest");
   else
     lines.push(
-      "[binaries]      static builds: BtbN (linux), ffmpeg.martin-riedl.de (macOS), gyan.dev or BtbN (windows)",
+      "[binaries]      sources: BtbN (linux), Homebrew ffmpeg (macOS), pinned gyan.dev zip (windows)",
     );
   return lines.join("\n");
 }
@@ -247,11 +322,15 @@ for (const name of ["yt-dlp", "ffmpeg", "ffprobe"]) {
     ok = false;
     continue;
   }
-  const url = OVERRIDE[name] ?? spec.url;
   try {
-    const buf = await download(url);
-    if (spec.kind === "raw") writeFileSync(dest, buf);
-    else extractMember(buf, spec.kind, spec.member, dest);
+    if (spec.kind === "brew") copyFromBrew(spec.formula, name, dest);
+    else if (spec.kind === "pinned-zip")
+      extractMember(await fetchPinnedZip(OVERRIDE[name]), "zip", spec.member, dest);
+    else {
+      const buf = await download(OVERRIDE[name] ?? spec.url);
+      if (spec.kind === "raw") writeFileSync(dest, buf);
+      else extractMember(buf, spec.kind, spec.member, dest);
+    }
     if (process.platform !== "win32") chmodSync(dest, 0o755);
     console.log(`[binaries] wrote ${name}-${triple}${EXE} (${mb(dest)} MB)`);
   } catch (err) {

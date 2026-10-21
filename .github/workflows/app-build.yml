@@ -61,7 +61,7 @@ jobs:
 
       - name: Install macOS build dependencies
         if: matrix.platform.name == 'macOS'
-        run: brew install mpv pkg-config
+        run: brew install mpv ffmpeg pkg-config
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable

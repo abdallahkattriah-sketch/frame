@@ -27,8 +27,8 @@ for (const name of ["ffmpeg", "ffprobe"]) {
   if (!existsSync(src) || statSync(src).size === 0) {
     console.error(`[ffmpeg] missing ${src}`);
     console.error(`[ffmpeg] Drop a STATIC ${name}${ext} into src-tauri/binaries/ then re-run.`);
-    console.error(`[ffmpeg]   Windows: github.com/BtbN/FFmpeg-Builds (gpl, static).`);
-    console.error(`[ffmpeg]   macOS arm64: osxexperts.net (static, NOT brew/dynamic).`);
+    console.error(`[ffmpeg]   Windows: gyan.dev essentials build (static).`);
+    console.error(`[ffmpeg]   macOS: Homebrew ffmpeg; macos-bundle-libmpv.py prepare relinks it.`);
     ok = false;
     continue;
   }

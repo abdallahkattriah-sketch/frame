@@ -43,12 +43,13 @@ FFmpeg  (ffmpeg, ffprobe)
   Source:    https://ffmpeg.org/download.html
              git: https://git.ffmpeg.org/ffmpeg.git
   Binary provenance (pre-built binaries distributed with Harbor):
-             Windows:  BtbN FFmpeg-Builds (win64-gpl)
+             Windows:  gyan.dev release essentials build
+                       https://www.gyan.dev/ffmpeg/builds/
+             macOS:    Homebrew ffmpeg bottle (dynamic; its libav* libraries
+                       ship in the app's Frameworks folder)
+                       https://formulae.brew.sh/formula/ffmpeg
+             Linux:    BtbN FFmpeg-Builds (linux64-gpl / linuxarm64-gpl)
                        https://github.com/BtbN/FFmpeg-Builds
-             macOS:    OSXExperts static build
-                       https://osxexperts.net/
-             Linux:    John Van Sickle static build
-                       https://johnvansickle.com/ffmpeg/
   Note:      GPL component. Corresponding Source offered below.
 
 --------------------------------------------------------------------------------
@@ -176,9 +177,9 @@ The unmodified upstream sources for these components are additionally available
 at the Source URLs listed in Section A above, and the specific pre-built
 binaries shipped with Harbor were obtained from:
 
-    FFmpeg (Windows):        https://github.com/BtbN/FFmpeg-Builds
-    FFmpeg (macOS):          https://osxexperts.net/
-    FFmpeg (Linux):          https://johnvansickle.com/ffmpeg/
+    FFmpeg (Windows):        https://www.gyan.dev/ffmpeg/builds/
+    FFmpeg (macOS):          https://formulae.brew.sh/formula/ffmpeg
+    FFmpeg (Linux):          https://github.com/BtbN/FFmpeg-Builds
     mpv / libmpv (Windows):  https://github.com/shinchiro/mpv-winbuild-cmake
 
 Harbor's own source code (MIT) is available at:
