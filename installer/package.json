@@ -1,6 +1,6 @@
 {
   "name": "harbor-setup",
-  "version": "0.9.218",
+  "version": "0.9.219",
   "private": true,
   "type": "module",
   "scripts": {
