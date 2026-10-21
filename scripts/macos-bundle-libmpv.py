@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Bundle Homebrew libmpv, the thumbnail mpv CLI and their macOS dependencies.
+"""Bundle Homebrew libmpv, the mpv, ffmpeg and ffprobe CLIs and their macOS dependencies.
 
 The prepare command runs before `tauri build`. It recursively collects the
-dynamic libraries reachable from libmpv and the mpv CLI, rewrites their install
-names to use the application Frameworks directory, stages the CLI as a sidecar,
+dynamic libraries reachable from libmpv and the CLIs, rewrites their install
+names to use the application Frameworks directory, stages the CLIs as sidecars,
 and writes a small Tauri overlay config
 whose minimumSystemVersion is raised to the highest minos in that closure. A
 closure that raises it past HIGHEST_ALLOWED_MINIMUM_MAJOR fails the build
@@ -57,6 +57,12 @@ from macos_macho import (
 
 
 HIGHEST_ALLOWED_MINIMUM_MAJOR = 15
+# Sidecar executables staged from Homebrew: name -> (label in errors, arguments that prove it loads).
+HELPERS = {
+    "mpv": ("thumbnail mpv", ("--no-config", "--version")),
+    "ffmpeg": ("ffmpeg", ("-hide_banner", "-version")),
+    "ffprobe": ("ffprobe", ("-hide_banner", "-version")),
+}
 
 
 def declared_minimum(root: Path) -> tuple[int, int, int]:
@@ -111,12 +117,19 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def find_mpv() -> Path:
-    prefix = Path(run("pkg-config", "--variable=prefix", "mpv").strip())
-    binary = prefix / "bin" / "mpv"
-    if not binary.is_file():
-        raise RuntimeError(f"The thumbnail mpv executable was not found at {binary}")
-    return binary.resolve()
+def find_helpers() -> dict[str, Path]:
+    # ffmpeg/ffprobe come from the same Homebrew ffmpeg whose libav* libraries libmpv links.
+    prefixes = {
+        "mpv": Path(run("pkg-config", "--variable=prefix", "mpv").strip()),
+        "ffmpeg": Path(run("pkg-config", "--variable=prefix", "libavformat").strip()),
+    }
+    found: dict[str, Path] = {}
+    for name, (label, _) in HELPERS.items():
+        binary = prefixes["mpv" if name == "mpv" else "ffmpeg"] / "bin" / name
+        if not binary.is_file():
+            raise RuntimeError(f"The {label} executable was not found at {binary}")
+        found[name] = binary.resolve()
+    return found
 
 
 def collect(
@@ -181,11 +194,9 @@ def collect(
     return collected
 
 
-def stage_mpv(source: Path, target: Path, libraries: dict[Path, Path], triple: str) -> None:
+def stage_helper(name: str, source: Path, target: Path, libraries: dict[Path, Path], triple: str) -> None:
     architecture = {"aarch64-apple-darwin": "arm64", "x86_64-apple-darwin": "x86_64"}[triple]
     run("lipo", str(source), "-verify_arch", architecture)
-    for library in libraries.values():
-        run("lipo", str(library), "-verify_arch", architecture)
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, target)
     target.chmod(target.stat().st_mode | 0o700)
@@ -196,7 +207,7 @@ def stage_mpv(source: Path, target: Path, libraries: dict[Path, Path], triple: s
         dependency = resolve_load(load, source, source, prefixes)
         replacement = libraries.get(dependency)
         if replacement is None:
-            raise RuntimeError(f"mpv requires an unbundled dependency: {dependency}")
+            raise RuntimeError(f"{name} requires an unbundled dependency: {dependency}")
         run(
             "install_name_tool", "-change", load, f"@rpath/{replacement.name}",
             str(target), capture=False,
@@ -297,11 +308,17 @@ def prepare(args: argparse.Namespace) -> None:
         shutil.rmtree(destination)
     destination.mkdir(parents=True)
     source = find_libmpv()
-    mpv = find_mpv()
-    collected = collect(source, destination, [mpv])
-    staged_mpv = root / "src-tauri" / "binaries" / f"mpv-{args.target}"
-    stage_mpv(mpv, staged_mpv, collected, args.target)
-    minimum, raised_by = bundle_minimum(root, [*collected.values(), staged_mpv])
+    helpers = find_helpers()
+    collected = collect(source, destination, helpers.values())
+    architecture = {"aarch64-apple-darwin": "arm64", "x86_64-apple-darwin": "x86_64"}[args.target]
+    for library in collected.values():
+        run("lipo", str(library), "-verify_arch", architecture)
+    staged = []
+    for name, binary in helpers.items():
+        target = root / "src-tauri" / "binaries" / f"{name}-{args.target}"
+        stage_helper(name, binary, target, collected, args.target)
+        staged.append(target)
+    minimum, raised_by = bundle_minimum(root, [*collected.values(), *staged])
     verify_supported_minimum(minimum, raised_by or "the collected library closure")
     base = json.loads((root / "src-tauri" / "tauri.conf.json").read_text(encoding="utf-8"))
     write_config(
@@ -310,7 +327,7 @@ def prepare(args: argparse.Namespace) -> None:
     )
     print(
         f"[macos-bundle] collected {len(collected)} dynamic libraries from {source.resolve()} "
-        f"into {destination}; staged thumbnail helper {staged_mpv}"
+        f"into {destination}; staged {', '.join(path.name for path in staged)}"
     )
     if raised_by:
         print(f"[macos-bundle] {raised_by} raises minimumSystemVersion to {version_text(minimum)}")
@@ -324,15 +341,17 @@ def finalize(args: argparse.Namespace) -> None:
     binary = release_binary(root, args.target)
     architecture = {"aarch64-apple-darwin": "arm64", "x86_64-apple-darwin": "x86_64"}[args.target]
     run("lipo", str(binary), "-verify_arch", architecture)
-    mpv = root / "src-tauri" / "binaries" / f"mpv-{args.target}"
-    if not mpv.is_file():
-        raise RuntimeError(f"The staged thumbnail mpv executable is missing: {mpv}")
+    staged = []
+    for name, (label, _) in HELPERS.items():
+        helper = root / "src-tauri" / "binaries" / f"{name}-{args.target}"
+        if not helper.is_file():
+            raise RuntimeError(f"The staged {label} executable is missing: {helper}")
+        staged.append(helper)
     rewrite_executable(binary, frameworks_dir)
     normalize_rpaths(binary)
-    advertised, _ = bundle_minimum(root, [*frameworks_dir.glob("*.dylib"), mpv])
+    advertised, _ = bundle_minimum(root, [*frameworks_dir.glob("*.dylib"), *staged])
     verify_supported_minimum(advertised, "the staged library closure")
-    verify_closure(binary, frameworks_dir, advertised, [mpv])
-    verify_macho(mpv, frameworks_dir)
+    verify_closure(binary, frameworks_dir, advertised, staged)
     print(f"[macos-bundle] finalized {binary} for macOS {version_text(advertised)} or newer")
 
 
@@ -346,9 +365,10 @@ def verify_app(args: argparse.Namespace) -> None:
         raise RuntimeError(f"Frameworks directory is missing from {app}")
     if not any(frameworks_dir.glob("libmpv*.dylib")):
         raise RuntimeError(f"libmpv is missing from {frameworks_dir}")
-    mpv = executable.parent / "mpv"
-    if not mpv.is_file():
-        raise RuntimeError(f"The thumbnail mpv executable is missing from {mpv.parent}")
+    helpers = {name: executable.parent / name for name in HELPERS}
+    for name, helper in helpers.items():
+        if not helper.is_file():
+            raise RuntimeError(f"The {HELPERS[name][0]} executable is missing from {helper.parent}")
     shipped = sidecars(executable)
     advertised = advertised_minimum(app)
     verify_supported_minimum(advertised, f"the {app.name} Info.plist")
@@ -356,15 +376,15 @@ def verify_app(args: argparse.Namespace) -> None:
     architecture = {"aarch64-apple-darwin": "arm64", "x86_64-apple-darwin": "x86_64"}[args.target]
     for binary in [executable, *libraries, *shipped]:
         run("lipo", str(binary), "-verify_arch", architecture)
-    verify_macho(mpv, frameworks_dir)
-    for binary in [executable, mpv]:
+    for binary in [executable, *helpers.values()]:
         searched = [
             expand_special(value, binary, binary).resolve() for value in rpaths(binary)
         ]
         if frameworks_dir.resolve() not in searched:
             raise RuntimeError(f"{binary} carries no LC_RPATH that reaches {frameworks_dir}")
     run("codesign", "--verify", "--deep", "--strict", str(app), capture=False)
-    run(str(mpv), "--no-config", "--version")
+    for name, helper in helpers.items():
+        run(str(helper), *HELPERS[name][1])
     summary = (
         f"{len(libraries)} bundled libraries, {len(shipped)} sidecar executables, "
         f"macOS {version_text(advertised)} or newer"

@@ -45,12 +45,15 @@ class MacMpvBundleTests(unittest.TestCase):
         self.frameworks = self.root / "staged-frameworks"
         self.config = self.root / "overlay.json"
         self.calls = []
-        self.launch_failure = False
+        self.launch_failure = ""
         self.library = write_binary(self.prefix / "lib/libmpv.2.dylib")
         self.extra = write_binary(self.prefix / "lib/libcli-only.dylib", loads=["@loader_path/libnested.dylib"])
         self.nested = write_binary(self.prefix / "lib/libnested.dylib")
         self.mpv = write_binary(self.prefix / "bin/mpv", loads=["@loader_path/../lib/libmpv.2.dylib", "@loader_path/../lib/libcli-only.dylib"],
                                 rpaths=[str(self.prefix / "lib")], minos="14.0")
+        self.libav = write_binary(self.prefix / "lib/libavdevice.dylib", loads=["@loader_path/libnested.dylib"])
+        self.ffmpeg = write_binary(self.prefix / "bin/ffmpeg", loads=["@loader_path/../lib/libavdevice.dylib"])
+        self.ffprobe = write_binary(self.prefix / "bin/ffprobe", loads=["@loader_path/../lib/libnested.dylib"])
         config = self.root / "src-tauri/tauri.conf.json"
         config.parent.mkdir(parents=True)
         config.write_text(json.dumps({"bundle": {"macOS": {"minimumSystemVersion": "12.0"},
@@ -102,10 +105,12 @@ class MacMpvBundleTests(unittest.TestCase):
             return ""
         if command == "codesign":
             return ""
-        if Path(command).name == "mpv" and values == ["--no-config", "--version"]:
-            if self.launch_failure:
+        if (Path(command).name, values) in (("mpv", ["--no-config", "--version"]),
+                                            ("ffmpeg", ["-hide_banner", "-version"]),
+                                            ("ffprobe", ["-hide_banner", "-version"])):
+            if self.launch_failure == Path(command).name:
                 raise subprocess.CalledProcessError(1, args)
-            return "mpv fixture"
+            return "fixture"
         self.fail(f"unexpected native command {args}")
 
     def prepare(self, target=TRIPLE):
@@ -121,6 +126,8 @@ class MacMpvBundleTests(unittest.TestCase):
                                   rpaths=["@executable_path/../Frameworks"])
         mpv = executable.parent / "mpv"
         shutil.copy2(staged, mpv)
+        for name in ("ffmpeg", "ffprobe"):
+            shutil.copy2(staged.parent / f"{name}-{TRIPLE}", executable.parent / name)
         import plistlib
         (app / "Contents/Info.plist").write_bytes(plistlib.dumps({"LSMinimumSystemVersion": "14.0"}))
         return app, mpv
@@ -129,7 +136,11 @@ class MacMpvBundleTests(unittest.TestCase):
         before = self.mpv.read_bytes()
         staged = self.prepare()
         self.assertEqual({path.name for path in self.frameworks.iterdir()},
-                         {"libmpv.2.dylib", "libcli-only.dylib", "libnested.dylib"})
+                         {"libmpv.2.dylib", "libcli-only.dylib", "libnested.dylib", "libavdevice.dylib"})
+        for name, loads in (("ffmpeg", ["@rpath/libavdevice.dylib"]), ("ffprobe", ["@rpath/libnested.dylib"])):
+            helper = staged.parent / f"{name}-{TRIPLE}"
+            self.assertEqual(read_binary(helper)["loads"], loads)
+            self.assertEqual(read_binary(helper)["rpaths"], ["@executable_path/../Frameworks"])
         self.assertEqual(read_binary(staged)["loads"], ["@rpath/libmpv.2.dylib", "@rpath/libcli-only.dylib"])
         self.assertEqual(read_binary(staged)["rpaths"], ["@executable_path/../Frameworks"])
         self.assertEqual(read_binary(self.frameworks / "libcli-only.dylib")["loads"], ["@rpath/libnested.dylib"])
@@ -147,8 +158,18 @@ class MacMpvBundleTests(unittest.TestCase):
             self.prepare()
         self.assertFalse(self.config.exists())
 
+    def test_missing_ffmpeg_tools_fail_preparation(self):
+        for path in (self.ffmpeg, self.ffprobe):
+            with self.subTest(path=path):
+                original = path.read_bytes()
+                path.unlink()
+                with self.assertRaisesRegex(RuntimeError, f"The {path.name} executable was not found"):
+                    self.prepare()
+                path.write_bytes(original)
+        self.assertFalse(self.config.exists())
+
     def test_intel_build_stages_the_intel_helper_under_its_own_target(self):
-        for path in (self.mpv, self.library, self.extra, self.nested):
+        for path in (self.mpv, self.library, self.extra, self.nested, self.libav, self.ffmpeg, self.ffprobe):
             write_binary(path, **{**read_binary(path), "arch": "x86_64"})
         staged = self.prepare("x86_64-apple-darwin")
         self.assertEqual(staged.name, "mpv-x86_64-apple-darwin")
@@ -196,12 +217,19 @@ class MacMpvBundleTests(unittest.TestCase):
         bundle.verify_app(argparse.Namespace(app=app, target=TRIPLE))
         self.assertIn(("codesign", "--verify", "--deep", "--strict", str(app)), self.calls)
         self.assertIn((str(mpv), "--no-config", "--version"), self.calls)
+        for name in ("ffmpeg", "ffprobe"):
+            self.assertIn((str(mpv.parent / name), "-hide_banner", "-version"), self.calls)
 
     def test_verification_rejects_missing_cli(self):
-        app, mpv = self.app()
-        mpv.unlink()
-        with self.assertRaisesRegex(RuntimeError, "thumbnail mpv executable is missing"):
-            bundle.verify_app(argparse.Namespace(app=app, target=TRIPLE))
+        for name, message in (("mpv", "thumbnail mpv executable is missing"),
+                              ("ffmpeg", "ffmpeg executable is missing"),
+                              ("ffprobe", "ffprobe executable is missing")):
+            with self.subTest(name=name):
+                app, mpv = self.app()
+                (mpv.parent / name).unlink()
+                with self.assertRaisesRegex(RuntimeError, message):
+                    bundle.verify_app(argparse.Namespace(app=app, target=TRIPLE))
+                shutil.rmtree(app)
 
     def test_verification_rejects_cli_homebrew_load_or_wrong_rpath(self):
         for change, message in (({"loads": ["/opt/homebrew/lib/libmpv.2.dylib"]}, "machine-local"),
@@ -217,9 +245,11 @@ class MacMpvBundleTests(unittest.TestCase):
 
     def test_unloadable_cli_fails_the_bundle_check(self):
         app, _ = self.app()
-        self.launch_failure = True
-        with self.assertRaises(subprocess.CalledProcessError):
-            bundle.verify_app(argparse.Namespace(app=app, target=TRIPLE))
+        for name in ("mpv", "ffmpeg", "ffprobe"):
+            with self.subTest(name=name):
+                self.launch_failure = name
+                with self.assertRaises(subprocess.CalledProcessError):
+                    bundle.verify_app(argparse.Namespace(app=app, target=TRIPLE))
 
     def test_release_selection_never_uses_another_target(self):
         other = write_binary(self.root / "src-tauri/target/x86_64-apple-darwin/release/harbor")
