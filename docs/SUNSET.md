@@ -41,6 +41,22 @@ These relied on services hosted at `harbor.site` and its subdomains, which are g
 | Public watch-party relay (its button is hidden), web invite links and the Discord join and "Listen in Harbor" buttons                                                              | `pub.harbor.site`, `app.harbor.site`                       |
 | Suggesting a manga source from the app                                                                                                                                             | `harbor.site/api/manga-sources/suggest`                    |
 
+### Bringing features back without a server
+
+The "repo as a backend" pattern of [Orion Store](https://rookieenough.github.io/Orion-Docs/) fits some of these: static JSON on GitHub Pages or raw GitHub for reads, and for writes a pre-filled GitHub issue (posted from the user's own account) that a scheduled GitHub Action folds into a static file. Anonymous writes need a Cloudflare Worker holding the bot token; a signing secret shipped inside the app is public, so only the Worker's per-IP limits protect it.
+
+| Feature                                                                   | Fit     | How                                                                                                                                                                                       |
+| ------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Discord "Listen in Harbor" and watch-party Join buttons, web invite links | Good    | A static GitHub Pages page that forwards `?relay=…&room=…` to the `harbor://` deep link and offers the download when Harbor isn't installed; Discord buttons need its `https` URL         |
+| Player ad report                                                          | Good    | A pre-filled GitHub issue, like build feedback                                                                                                                                            |
+| Theme publishing                                                          | Good    | "Submit theme" opens a pre-filled issue and an Action turns it into a `data/themes` pull request; a URL cannot attach the `.harborstyle`, so it goes in the body (65 KB limit) or by hand |
+| Theme ratings and comments                                                | Partial | Issues gathered into `data/themes/ratings.json`, comments as one Discussion per theme; both need a GitHub account unless a Worker accepts them anonymously                                |
+| Chromecast custom receiver                                                | Partial | The receiver is a static page GitHub Pages can host; registering it costs Google's one-time $5 Cast developer fee                                                                         |
+| Community badges and award bundles                                        | Partial | The catalogue can be static `data/`; who earned what lived in Harbor accounts                                                                                                             |
+| Title ratings                                                             | No      | Personal data on a public repo; keep them local or send them to Trakt or Simkl                                                                                                            |
+| Harbor accounts, profile and TV sync, theme notifications and "My themes" | No      | Need sign-in and private storage                                                                                                                                                          |
+| Public watch-party relay                                                  | No      | Needs a live WebSocket server (a Cloudflare Worker with Durable Objects on the project's own account); users can still deploy their own relay                                             |
+
 Every Harbor service base URL can also be pointed elsewhere at build time through `VITE_HARBOR_API_BASE` and the other variables in `src/lib/config/endpoints.ts`; `VITE_HARBOR_DATA_BASE` moves the static feeds (for example to a fork or a branch).
 
 ## Building from a fresh clone
