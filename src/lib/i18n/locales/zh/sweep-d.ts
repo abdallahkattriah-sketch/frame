@@ -984,6 +984,7 @@ const sweepD: Record<string, string> = {
     "在此处以 JSON 格式粘贴抓取配置，或使用上方模板开始配置。",
   "Pattern (e.g. \\bremux\\b)": "模式（例如 \\bremux\\b）",
   Paused: "已暂停",
+  Resumed: "已继续",
   "Pausing after {n} more": "再播放 {n} 集后暂停",
   "Pausing in {time}": "将在 {time} 后暂停",
   "Pausing when this one ends": "当前内容播放完后暂停",

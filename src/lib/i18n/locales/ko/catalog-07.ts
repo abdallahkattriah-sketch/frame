@@ -391,6 +391,7 @@ const catalog07: Record<string, string> = {
   "Pause when unfocused": "포커스 해제 시 일시 정지",
   "Pause · Space": "일시 정지 · Space",
   Paused: "일시 정지됨",
+  Resumed: "재개됨",
   "Paused on Simkl": "Simkl에서 일시 정지됨",
   "Paused on Trakt": "Trakt에서 일시 정지됨",
   "Pausing after {n} more": "{n}개 더 재생한 후 일시 정지",

@@ -138,6 +138,47 @@ const catalog04: Record<string, string> = {
   "Cycle subtitles": "Przełączaj napisy",
   "Cycle subtitles (alt)": "Przełączaj napisy (alternatywnie)",
   "Cycle the backdrop": "Zmieniaj tło cyklicznie",
+  "Cycle subtitles backward": "Przełączaj napisy wstecz",
+  Developer: "Deweloper",
+  "Open search": "Otwórz wyszukiwanie",
+  "Open or close the search overlay.": "Otwiera lub zamyka wyszukiwanie.",
+  "Next room": "Następna sekcja",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Przechodzi do następnej sekcji paska bocznego. Wyłączone, gdy otwarty jest odtwarzacz.",
+  "Previous room": "Poprzednia sekcja",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Przechodzi do poprzedniej sekcji paska bocznego. Wyłączone, gdy otwarty jest odtwarzacz.",
+  "Go to room 1-9": "Przejdź do sekcji 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Przytrzymaj ten modyfikator i naciśnij 1-9, aby otworzyć tę sekcję paska bocznego. Aby zmienić, naciśnij dowolną cyfrę z wybranym modyfikatorem lub Delete, aby wyłączyć. Wyłączone, gdy otwarty jest odtwarzacz.",
+  "Toggle window fullscreen": "Przełącz pełny ekran okna",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Rozciąga okno Harbor na cały ekran lub je przywraca.",
+  "Toggle memory monitor": "Przełącz monitor pamięci",
+  "Show or hide the memory and cache monitor.":
+    "Pokazuje lub ukrywa monitor pamięci i pamięci podręcznej.",
+  "Show test error page": "Pokaż testową stronę błędu",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Otwiera stronę błędu Harbor z przykładowym błędem, aby sprawdzić jej wygląd.",
+  "Jump through video 0-9": "Skok w filmie 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Naciśnij 0-9, aby przejść do tej dziesiątej części filmu (0 to początek, 5 środek). Aby zmienić, naciśnij dowolną cyfrę z wybranym modyfikatorem lub Delete, aby wyłączyć.",
+  "Write a chat message": "Napisz wiadomość na czacie",
+  "Open the watch-party chat box (in a Together room).":
+    "Otwiera pole czatu wspólnego oglądania (w pokoju Together).",
+  "Enter or exit fullscreen while reading.": "Włącza lub wyłącza pełny ekran podczas czytania.",
+  "Press {key}": "Naciśnij {key}",
+  "Press a modifier + digit…": "Naciśnij modyfikator + cyfrę…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Kliknij skrót, aby go zmienić. Naciśnij Esc podczas przechwytywania, aby anulować. Shift jest rozróżniany, więc K i Shift+K mogą robić różne rzeczy.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Przełącza ścieżki napisów w odwrotnej kolejności.",
+  "Set loop start (A)": "Ustaw początek pętli (A)",
+  "Mark where the A-B loop starts.": "Zaznacza, gdzie zaczyna się pętla A-B.",
+  "Set loop end (B)": "Ustaw koniec pętli (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Zaznacza, gdzie kończy się pętla A-B; potem odtwarzanie powtarza się między znacznikami.",
+  "Clear the A-B loop and play on normally.": "Usuwa pętlę A-B i odtwarza dalej normalnie.",
   "Cycle the backdrop on show pages": "Zmieniaj cyklicznie tło na stronach programów",
   "Cycle through available subtitle tracks.": "Przełączaj między dostępnymi ścieżkami napisów.",
   Czech: "czeski",

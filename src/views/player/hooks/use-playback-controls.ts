@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, type RefObject } from "react";
 import type { CastDeviceInfo } from "@/lib/cast";
-import type { PlayerBridge, PlayerSnapshot } from "@/lib/player/bridge";
+import type { PlayerBridge, PlayerSnapshot, TrackInfo } from "@/lib/player/bridge";
 import { getPlaybackPosition } from "@/lib/player/playback-clock";
 import { writePlayerPrefs } from "@/lib/player-prefs";
 import {
@@ -155,24 +155,22 @@ export function usePlaybackControls(params: {
     [bridgeRef, metaId, mediaKey, subtitleStreamKey],
   );
 
-  const cycleSubtitles = () => {
+  // Returns the track now selected, null for off, or undefined when there was nothing to cycle.
+  const cycleSubtitles = (direction: 1 | -1 = 1): TrackInfo | null | undefined => {
     const subs = snapRef.current.subtitleTracks;
+    if (subs.length === 0) return undefined;
+    // Off is the stop after the last track, so -1 stands for it and both directions wrap through it.
     const idx = subs.findIndex((t) => t.selected);
-    const off = idx === -1;
-    if (subs.length === 0) return;
-    if (off) {
-      bridgeRef.current?.setSubtitleTrack(subs[0].id);
-      rememberSubChoice(subs[0]);
-      return;
-    }
-    const next = idx + 1;
-    if (next >= subs.length) {
+    const stops = subs.length + 1;
+    const next = ((idx + 1 + direction + stops) % stops) - 1;
+    if (next === -1) {
       bridgeRef.current?.setSubtitleTrack(null);
       rememberSubChoice(null);
-    } else {
-      bridgeRef.current?.setSubtitleTrack(subs[next].id);
-      rememberSubChoice(subs[next]);
+      return null;
     }
+    bridgeRef.current?.setSubtitleTrack(subs[next].id);
+    rememberSubChoice(subs[next]);
+    return subs[next];
   };
 
   const playPauseToggle = () => {

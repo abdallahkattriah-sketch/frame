@@ -302,6 +302,7 @@ const catalog06: Record<string, string> = {
   "Pause when unfocused": "Metti in pausa quando non è in primo piano",
   "Pause · Space": "Pausa · Spazio",
   Paused: "In pausa",
+  Resumed: "Ripreso",
   "Paused on Simkl": "In pausa su Simkl",
   "Pausing after {n} more": "Pausa dopo altri {n}",
   "Pausing in {time}": "Pausa tra {time}",

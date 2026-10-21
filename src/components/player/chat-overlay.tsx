@@ -6,6 +6,13 @@ import type { ChatMessage } from "@/lib/together/provider";
 import type { Participant } from "@/lib/together/protocol";
 import { useSelfIdentity } from "@/lib/together/use-self-identity";
 import { useT } from "@/lib/i18n";
+import {
+  effectiveBinding,
+  eventToBinding,
+  formatBindingForDisplay,
+  isTypingTarget,
+} from "@/lib/hotkeys";
+import { useSettings } from "@/lib/settings";
 
 const RECENT_WINDOW_MS = 7000;
 const COMPOSE_TIMEOUT_MS = 4500;
@@ -36,6 +43,8 @@ export function ChatOverlay({
   hidden?: boolean;
 }) {
   const t = useT();
+  const { settings } = useSettings();
+  const composeKey = effectiveBinding("playerChatCompose", settings.hotkeys ?? {});
   const selfIdentity = useSelfIdentity();
   const [composing, setComposing] = useState(false);
   const [draft, setDraft] = useState("");
@@ -50,11 +59,7 @@ export function ChatOverlay({
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (
-        (e.key ?? "").toLowerCase() === "t" &&
-        !composing &&
-        document.activeElement?.tagName !== "INPUT"
-      ) {
+      if (composeKey && eventToBinding(e) === composeKey && !composing && !isTypingTarget(e)) {
         e.preventDefault();
         setComposing(true);
         setTimeout(() => inputRef.current?.focus(), 30);
@@ -66,7 +71,7 @@ export function ChatOverlay({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [composing]);
+  }, [composing, composeKey]);
 
   useEffect(() => {
     if (!composing) return;
@@ -160,7 +165,7 @@ export function ChatOverlay({
           className="pointer-events-auto mt-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-white/12 bg-black/45 px-3 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.18em] text-white/65 backdrop-blur-md transition-colors hover:bg-black/65 hover:text-white"
         >
           <MessageCircle size={11} strokeWidth={2.4} />
-          {t("Press T")}
+          {composeKey ? t("Press {key}", { key: formatBindingForDisplay(composeKey) }) : t("Chat")}
         </button>
       )}
     </div>

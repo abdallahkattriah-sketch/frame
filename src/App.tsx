@@ -1087,7 +1087,6 @@ function Shell({ onReady }: { onReady?: () => void }) {
         effectiveBinding("globalUiScaleReset", overrides) === binding ||
         (!uiScaleResetCustom && isDefaultUiScaleReset(e));
       if (!matchesUp && !matchesDown && !matchesReset) return;
-      if (player && matchesReset) return;
       e.preventDefault();
       e.stopPropagation();
       if (e.repeat) return;
@@ -1140,7 +1139,7 @@ function Shell({ onReady }: { onReady?: () => void }) {
       window.removeEventListener("wheel", onPinchWheel);
       unbindWheel();
     };
-  }, [player, settings.hotkeys, update]);
+  }, [settings.hotkeys, update]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -1160,14 +1159,14 @@ function Shell({ onReady }: { onReady?: () => void }) {
     const onKey = (e: KeyboardEvent) => {
       if (!shouldHandleGlobalKeyboardEvent(e)) return;
       if (e.repeat) return;
-      if (e.key === "F11") {
+      if (findHotkeyMatch(e, settings.hotkeys ?? {}, "Global") === "globalWindowFullscreen") {
         e.preventDefault();
         void toggleWindowFullscreen();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [settings.hotkeys]);
 
   useEffect(() => {
     if (typeof window === "undefined" || !("__TAURI_INTERNALS__" in window)) return;

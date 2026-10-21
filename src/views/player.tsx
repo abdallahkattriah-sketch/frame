@@ -94,6 +94,8 @@ import { useStubDetection } from "./player/hooks/use-stub-detection";
 import { useBridgeLoad } from "./player/hooks/use-bridge-load";
 import { useSportsDockSurface } from "./player/hooks/use-sports-dock-surface";
 import { useVideoFill } from "./player/hooks/use-video-fill";
+import { usePlayerOsd } from "./player/hooks/use-player-osd";
+import type { ActionFeedback } from "@/components/player/action-indicator";
 import { useLivePictureEq } from "./player/hooks/use-live-picture-eq";
 import { useAnime4k } from "./player/hooks/use-anime4k";
 import { useHdrStage } from "./player/hooks/use-hdr-stage";
@@ -444,7 +446,6 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
   const ab = useAbLoop({
     bridgeRef,
     durationSec: snap.durationSec,
-    enabled: quickToolsEnabled,
     resetKey: src.url,
   });
   const sleep = useSleepTimer({
@@ -822,6 +823,8 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
     visible: false,
     rate: snap.rate,
   });
+  const osd = usePlayerOsd();
+  const hideOsd = osd.hide;
   const volumeHudEnabled = settings.playerVolumeHud;
   const speedHudEnabled = settings.playerSpeedHud;
   const showVolumeFeedback = useCallback(
@@ -835,13 +838,14 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
         speedIndicatorTimerRef.current = null;
       }
       setSpeedIndicator((current) => (current.visible ? { ...current, visible: false } : current));
+      hideOsd();
       setVolumeIndicator({ visible: true, volume, muted });
       volumeIndicatorTimerRef.current = window.setTimeout(() => {
         setVolumeIndicator((current) => ({ ...current, visible: false }));
         volumeIndicatorTimerRef.current = null;
       }, 1200);
     },
-    [volumeHudEnabled],
+    [volumeHudEnabled, hideOsd],
   );
   const showSpeedFeedback = useCallback(
     (rate: number) => {
@@ -854,14 +858,48 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
         volumeIndicatorTimerRef.current = null;
       }
       setVolumeIndicator((current) => (current.visible ? { ...current, visible: false } : current));
+      hideOsd();
       setSpeedIndicator({ visible: true, rate });
       speedIndicatorTimerRef.current = window.setTimeout(() => {
         setSpeedIndicator((current) => ({ ...current, visible: false }));
         speedIndicatorTimerRef.current = null;
       }, 1200);
     },
-    [speedHudEnabled],
+    [speedHudEnabled, hideOsd],
   );
+  const osdFlash = osd.flash;
+  const showActionFeedback = useCallback(
+    (feedback: ActionFeedback) => {
+      if (volumeIndicatorTimerRef.current != null) {
+        window.clearTimeout(volumeIndicatorTimerRef.current);
+        volumeIndicatorTimerRef.current = null;
+      }
+      if (speedIndicatorTimerRef.current != null) {
+        window.clearTimeout(speedIndicatorTimerRef.current);
+        speedIndicatorTimerRef.current = null;
+      }
+      setVolumeIndicator((current) => (current.visible ? { ...current, visible: false } : current));
+      setSpeedIndicator((current) => (current.visible ? { ...current, visible: false } : current));
+      osdFlash(feedback);
+    },
+    [osdFlash],
+  );
+  // The Anime4K badge already reports the mode, so the HUD only confirms a change when it is off.
+  const flashAnime4k = (on: boolean) => {
+    if (settings.playerAnime4kIndicator) return;
+    showActionFeedback({ icon: "upscale", title: "Anime4K", value: on ? t("On") : t("Off") });
+  };
+  // Ctrl+=, Ctrl+- and Ctrl+0 are handled app-wide; the player confirms the new scale.
+  const uiScaleSeen = useRef(settings.uiScale);
+  useEffect(() => {
+    if (uiScaleSeen.current === settings.uiScale) return;
+    uiScaleSeen.current = settings.uiScale;
+    showActionFeedback({
+      icon: "zoom",
+      title: t("Interface scale"),
+      value: `${Math.round(settings.uiScale * 100)}%`,
+    });
+  }, [settings.uiScale, showActionFeedback, t]);
   useEffect(() => {
     return () => {
       if (volumeIndicatorTimerRef.current != null) {
@@ -873,7 +911,7 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
     };
   }, []);
 
-  const videoFill = useVideoFill(bridgeRef, src.url, playing);
+  const videoFill = useVideoFill(bridgeRef, src.url, playing, showActionFeedback);
   useLivePictureEq(bridgeRef, src.url);
   const anime4k = useAnime4k(bridgeRef, src.url, src, snap.videoWidth, bridgeReady);
   const [mouseHoldSpeedActive, setMouseHoldSpeedActive] = useState(false);
@@ -1064,7 +1102,9 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
         showSyncToast("error", t("Anime4K isn't set up yet. Turn it on in Settings under Anime."));
         return;
       }
-      anime4k.setMode(anime4k.mode === "off" ? "auto" : "off");
+      const turningOn = anime4k.mode === "off";
+      anime4k.setMode(turningOn ? "auto" : "off");
+      flashAnime4k(turningOn);
     },
     onAnime4kOn: () => {
       if (!anime4k.available) {
@@ -1072,9 +1112,11 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
         return;
       }
       anime4k.setMode("auto");
+      flashAnime4k(true);
     },
     onAnime4kOff: () => {
       anime4k.setMode("off");
+      flashAnime4k(false);
     },
     onReloadSource: reloadSource,
     onRestartServer: restartStreamServer,
@@ -1083,6 +1125,8 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
     videoFill,
     onVolumeFeedback: showVolumeFeedback,
     onSpeedFeedback: showSpeedFeedback,
+    onOsd: showActionFeedback,
+    ab,
   });
 
   useEffect(() => {
@@ -1412,7 +1456,7 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
     volumeHudPosition: settings.playerVolumeHudPosition,
     speedIndicator,
     speedHudPosition: settings.playerSpeedHudPosition,
-    videoFillPill: videoFill.pill,
+    actionIndicator: osd.state,
     cropMode: videoFill.mode,
     onCropMode: videoFill.setMode,
     anime4kMode: anime4k.mode,

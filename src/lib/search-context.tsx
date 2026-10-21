@@ -38,6 +38,7 @@ import { anilistCharacterSearch, type CharacterHit } from "@/lib/anilist/charact
 import { gatherCatalogAddons, type Addon } from "@/lib/addons";
 import { useAuth } from "@/lib/auth";
 import { useSettings } from "@/lib/settings";
+import { effectiveBinding, eventToBinding } from "@/lib/hotkeys";
 import { usePlaylists } from "@/lib/iptv/playlists-store";
 import { isMagnetInput, isDirectVideoUrl } from "@/lib/torrent/magnet";
 import { useView, type Frame } from "@/lib/view";
@@ -491,10 +492,10 @@ export function SearchProvider({ children }: { children: ReactNode }) {
     authKey,
   ]);
 
+  const overlayKey = effectiveBinding("globalSearchOverlay", settings.hotkeys ?? {});
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      const k = (e.key ?? "").toLowerCase();
-      if ((e.metaKey || e.ctrlKey) && k === "k") {
+      if (overlayKey && eventToBinding(e) === overlayKey) {
         e.preventDefault();
         setOpen((o) => !o);
         return;
@@ -506,7 +507,7 @@ export function SearchProvider({ children }: { children: ReactNode }) {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open]);
+  }, [open, overlayKey]);
 
   const setQuery = useCallback((q: string) => setQueryState(q), []);
 

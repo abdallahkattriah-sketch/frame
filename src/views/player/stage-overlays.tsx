@@ -13,6 +13,7 @@ import {
   type VolumeIndicatorState,
 } from "@/components/player/volume-indicator";
 import { SpeedIndicator, type SpeedIndicatorState } from "@/components/player/speed-indicator";
+import { ActionIndicator, type ActionIndicatorState } from "@/components/player/action-indicator";
 import type { PlayerSnapshot } from "@/lib/player/bridge";
 import type { ParentalCategory } from "@/lib/providers/harbor-imdb";
 import {
@@ -36,7 +37,7 @@ export const StageOverlays = memo(function StageOverlays({
   volumeHudPosition,
   speedIndicator,
   speedHudPosition,
-  videoFillPill,
+  actionIndicator,
   subDropToast,
   contentAdvisory,
   contentAdvisoryPosition,
@@ -56,7 +57,7 @@ export const StageOverlays = memo(function StageOverlays({
   volumeHudPosition: VolumeHudPosition;
   speedIndicator: SpeedIndicatorState;
   speedHudPosition: VolumeHudPosition;
-  videoFillPill: string | null;
+  actionIndicator: ActionIndicatorState;
   subDropToast: string | null;
   contentAdvisory: {
     categories: ParentalCategory[];
@@ -73,9 +74,11 @@ export const StageOverlays = memo(function StageOverlays({
   const captionsPopout = useCaptionsPopoutOpen();
   const showVolumeIndicator = volumeIndicator.visible;
   const showSpeedIndicator = speedIndicator.visible && !holdSpeedActive;
+  const showActionIndicator = actionIndicator.visible && !holdSpeedActive;
+  // Any HUD card in the top slot hides the badges that share it.
   const topVolumeShowing =
     (showVolumeIndicator && volumeHudPosition === "top") ||
-    (showSpeedIndicator && speedHudPosition === "top");
+    ((showSpeedIndicator || showActionIndicator) && speedHudPosition === "top");
   const primarySubtitleVisible =
     !subAssNative && snap.subtitleTracks.some((track) => track.selected);
   return (
@@ -120,10 +123,11 @@ export const StageOverlays = memo(function StageOverlays({
           position={speedHudPosition}
         />
       )}
-      {videoFillPill && !holdSpeedActive && !pipMode && !topVolumeShowing && (
-        <div className="pointer-events-none absolute left-1/2 top-8 z-30 -translate-x-1/2 rounded-full bg-canvas/85 px-3.5 py-1.5 text-[13px] font-semibold text-ink backdrop-blur-md">
-          {videoFillPill}
-        </div>
+      {!holdSpeedActive && !pipMode && (
+        <ActionIndicator
+          state={{ ...actionIndicator, visible: showActionIndicator }}
+          position={speedHudPosition}
+        />
       )}
       {subDropToast && !pipMode && (
         <div className="pointer-events-none absolute bottom-28 left-1/2 z-30 -translate-x-1/2 rounded-full bg-canvas/90 px-4 py-2 text-[13px] font-medium text-ink backdrop-blur-md">

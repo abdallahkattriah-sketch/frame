@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState, type RefObject } from "react";
+import { useEffect, useRef, type RefObject } from "react";
 import type { PlayerBridge } from "@/lib/player/bridge";
 import { t } from "@/lib/i18n";
 import { useSettings } from "@/lib/settings";
+import type { ActionFeedback } from "@/components/player/action-indicator";
 
 type CropMode = {
   id: string;
@@ -52,19 +53,12 @@ export function useVideoFill(
   bridgeRef: RefObject<PlayerBridge | null>,
   srcKey: string,
   loaded: boolean,
+  flash: (feedback: ActionFeedback) => void,
 ) {
   const { settings, update } = useSettings();
-  const [pill, setPill] = useState<string | null>(null);
   const index = useRef(modeIndex(settings.cropMode));
   const zoom = useRef(0);
-  const timer = useRef<number | null>(null);
   const appliedSrc = useRef<string | null>(null);
-
-  const flash = (text: string) => {
-    setPill(text);
-    if (timer.current) window.clearTimeout(timer.current);
-    timer.current = window.setTimeout(() => setPill(null), 1200);
-  };
 
   const apply = (i: number, zoomLevel: number, showPill: boolean) => {
     const mode = MODES[i];
@@ -77,9 +71,13 @@ export function useVideoFill(
     }
     if (!showPill) return;
     if (mode.id === "zoom" && zoomLevel !== 0) {
-      flash(t("Zoom {pct}%", { pct: Math.round(Math.pow(2, zoomLevel) * 100) }));
+      flash({
+        icon: "zoom",
+        title: t("Zoom"),
+        value: `${Math.round(Math.pow(2, zoomLevel) * 100)}%`,
+      });
     } else {
-      flash(t(mode.label));
+      flash({ icon: "aspect", title: t("Aspect ratio"), value: t(mode.label) });
     }
   };
 
@@ -97,13 +95,6 @@ export function useVideoFill(
     apply(index.current, zoom.current, false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loaded, srcKey]);
-
-  useEffect(
-    () => () => {
-      if (timer.current) window.clearTimeout(timer.current);
-    },
-    [],
-  );
 
   const cycle = () => {
     const next = (index.current + 1) % MODES.length;
@@ -133,5 +124,5 @@ export function useVideoFill(
     update({ cropMode: MODES[i].id });
   };
 
-  return { cycle, step, setMode, mode: settings.cropMode, zoom: zoom.current, pill };
+  return { cycle, step, setMode, mode: settings.cropMode, zoom: zoom.current };
 }

@@ -570,6 +570,47 @@ const settings: Record<string, string> = {
   "Cycle subtitles": "Untertitel wechseln",
   "Cycle subtitles (alt)": "Untertitel durchschalten (alternativ)",
   "Cycle through available subtitle tracks.": "Verfügbare Untertitelspuren durchschalten.",
+  "Cycle subtitles backward": "Untertitel rückwärts durchschalten",
+  Developer: "Entwickler",
+  "Open search": "Suche öffnen",
+  "Open or close the search overlay.": "Öffnet oder schließt die Suche.",
+  "Next room": "Nächster Bereich",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Wechselt zum nächsten Bereich in der Seitenleiste. Im Player aus.",
+  "Previous room": "Vorheriger Bereich",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Wechselt zum vorherigen Bereich in der Seitenleiste. Im Player aus.",
+  "Go to room 1-9": "Zu Bereich 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Halte diese Taste und drücke 1-9, um diesen Bereich der Seitenleiste zu öffnen. Zum Ändern drücke eine Ziffer mit der gewünschten Zusatztaste oder Entf zum Ausschalten. Im Player aus.",
+  "Toggle window fullscreen": "Fenster-Vollbild umschalten",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Lässt Harbors Fenster den Bildschirm füllen oder stellt es wieder her.",
+  "Toggle memory monitor": "Speichermonitor umschalten",
+  "Show or hide the memory and cache monitor.":
+    "Zeigt oder verbirgt den Speicher- und Cache-Monitor.",
+  "Show test error page": "Test-Fehlerseite anzeigen",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Öffnet Harbors Fehlerseite mit einem Beispielfehler, um ihr Aussehen zu prüfen.",
+  "Jump through video 0-9": "Im Video springen 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Drücke 0-9, um zu diesem Zehntel des Videos zu springen (0 ist der Anfang, 5 die Mitte). Zum Ändern drücke eine Ziffer mit der gewünschten Zusatztaste oder Entf zum Ausschalten.",
+  "Write a chat message": "Chatnachricht schreiben",
+  "Open the watch-party chat box (in a Together room).":
+    "Öffnet das Chatfeld der Watch-Party (in einem Together-Raum).",
+  "Enter or exit fullscreen while reading.": "Vollbild beim Lesen ein- oder ausschalten.",
+  "Press {key}": "{key} drücken",
+  "Press a modifier + digit…": "Zusatztaste + Ziffer drücken…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Klicke auf eine Belegung, um sie zu ändern. Drücke Esc während der Aufnahme zum Abbrechen. Umschalt zählt mit, K und Umschalt+K können also Unterschiedliches tun.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Untertitelspuren in umgekehrter Reihenfolge durchschalten.",
+  "Set loop start (A)": "Schleifenstart setzen (A)",
+  "Mark where the A-B loop starts.": "Markiert, wo die A-B-Schleife beginnt.",
+  "Set loop end (B)": "Schleifenende setzen (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Markiert, wo die A-B-Schleife endet; danach wird zwischen beiden Marken wiederholt.",
+  "Clear the A-B loop and play on normally.": "A-B-Schleife löschen und normal weiterspielen.",
   DHT: "DHT",
   DVD: "DVD",
   "DVR / record": "DVR / Aufnehmen",

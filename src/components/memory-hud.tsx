@@ -9,10 +9,14 @@ import {
   type Sample,
 } from "@/lib/memory-profiler";
 import { getNativeMem, getRamTier } from "@/lib/native-memory";
+import { effectiveBinding, eventToBinding } from "@/lib/hotkeys";
+import { useSettings } from "@/lib/settings";
 
 const STORAGE_KEY = "harbor.memoryHud.open";
 
 export function MemoryHud() {
+  const { settings } = useSettings();
+  const monitorKey = effectiveBinding("globalMemoryMonitor", settings.hotkeys ?? {});
   const [open, setOpen] = useState(() => {
     try {
       return localStorage.getItem(STORAGE_KEY) === "1";
@@ -42,14 +46,14 @@ export function MemoryHud() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.ctrlKey && e.shiftKey && e.code === "KeyM") {
+      if (monitorKey && eventToBinding(e) === monitorKey) {
         e.preventDefault();
         setOpen((v) => !v);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [monitorKey]);
 
   if (!open) return null;
 

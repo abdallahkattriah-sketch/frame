@@ -39,7 +39,12 @@ test("open settings follows Global priority and effective binding rules", () => 
   const altP = keyboardEvent("p", { altKey: true });
 
   assert.equal(findHotkeyMatch(ctrlS, {}, "Global"), "globalSettingsOpen");
-  assert.equal(findHotkeyMatch(ctrlShiftS, {}, "Global"), "globalSettingsOpen");
+  // Shift is part of a letter binding, so Ctrl+Shift+S stays free for its own action.
+  assert.equal(findHotkeyMatch(ctrlShiftS, {}, "Global"), null);
+  assert.equal(
+    findHotkeyMatch(ctrlShiftS, { globalSettingsOpen: "ctrl+shift+s" }, "Global"),
+    "globalSettingsOpen",
+  );
   assert.equal(findHotkeyMatch(metaS, {}, "Global"), null);
   assert.equal(
     findHotkeyMatch(ctrlS, { globalSearchFocus: "ctrl+s" }, "Global"),

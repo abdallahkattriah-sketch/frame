@@ -2,6 +2,8 @@ import { Play } from "@/components/icons/play-filled";
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Maximize, Minimize, Pause, RotateCcw, Volume1, Volume2, VolumeX } from "lucide-react";
 import { useT } from "@/lib/i18n";
+import { effectiveBinding, eventToBinding } from "@/lib/hotkeys";
+import { useSettings } from "@/lib/settings";
 import "./game-detail-media.css";
 
 const VOLUME_KEY = "harbor.games.trailer-volume.v1";
@@ -63,6 +65,7 @@ export function GameTrailer({
   onPlaybackChange?: (playing: boolean) => void;
 }) {
   const t = useT(),
+    { settings } = useSettings(),
     root = useRef<HTMLDivElement>(null),
     video = useRef<HTMLVideoElement>(null),
     volumeArea = useRef<HTMLDivElement>(null);
@@ -348,7 +351,10 @@ export function GameTrailer({
       onFocusCapture={reveal}
       onKeyDown={(event) => {
         if ((event.target as HTMLElement).matches("input,button")) return;
-        if (event.key === " " || event.key.toLowerCase() === "k") {
+        if (
+          eventToBinding(event.nativeEvent) ===
+          effectiveBinding("playerPlayPause", settings.hotkeys ?? {})
+        ) {
           event.preventDefault();
           event.stopPropagation();
           togglePlayback();

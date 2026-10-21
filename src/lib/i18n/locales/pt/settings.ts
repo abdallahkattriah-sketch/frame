@@ -1316,6 +1316,47 @@ const settings: Record<string, string> = {
   "Cycle subtitles": "Alternar legendas",
   "Cycle through available subtitle tracks.": "Percorrer as faixas de legenda disponíveis.",
   "Cycle subtitles (alt)": "Alternar legendas (alt)",
+  "Cycle subtitles backward": "Alternar legendas para trás",
+  Developer: "Desenvolvedor",
+  "Open search": "Abrir pesquisa",
+  "Open or close the search overlay.": "Abre ou fecha a pesquisa.",
+  "Next room": "Próxima seção",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Vai para a próxima seção da barra lateral. Desativado com o player aberto.",
+  "Previous room": "Seção anterior",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Vai para a seção anterior da barra lateral. Desativado com o player aberto.",
+  "Go to room 1-9": "Ir para a seção 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Segure este modificador e pressione 1-9 para abrir essa seção da barra lateral. Para mudar, pressione qualquer dígito com o modificador desejado, ou Delete para desativar. Desativado com o player aberto.",
+  "Toggle window fullscreen": "Alternar tela cheia da janela",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Faz a janela do Harbor ocupar a tela, ou a restaura.",
+  "Toggle memory monitor": "Alternar monitor de memória",
+  "Show or hide the memory and cache monitor.": "Mostra ou oculta o monitor de memória e cache.",
+  "Show test error page": "Mostrar página de erro de teste",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Abre a página de erro do Harbor com um erro de exemplo para ver como ela fica.",
+  "Jump through video 0-9": "Pular pelo vídeo 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Pressione 0-9 para ir a esse décimo do vídeo (0 é o início, 5 o meio). Para mudar, pressione qualquer dígito com o modificador desejado, ou Delete para desativar.",
+  "Write a chat message": "Escrever mensagem no chat",
+  "Open the watch-party chat box (in a Together room).":
+    "Abre a caixa de chat da sessão em grupo (em uma sala Together).",
+  "Enter or exit fullscreen while reading.": "Entra ou sai da tela cheia durante a leitura.",
+  "Press {key}": "Pressione {key}",
+  "Press a modifier + digit…": "Pressione um modificador + dígito…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Clique em um atalho para alterá-lo. Pressione Esc durante a captura para cancelar. Shift conta, então K e Shift+K podem fazer coisas diferentes.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Percorre as faixas de legendas em ordem inversa.",
+  "Set loop start (A)": "Definir início do loop (A)",
+  "Mark where the A-B loop starts.": "Marca onde o loop A-B começa.",
+  "Set loop end (B)": "Definir fim do loop (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Marca onde o loop A-B termina; depois a reprodução se repete entre as duas marcas.",
+  "Clear the A-B loop and play on normally.":
+    "Limpa o loop A-B e continua a reprodução normalmente.",
   "A second binding for the same action so muscle memory survives.":
     "Um segundo atalho para a mesma ação, para preservar a memória muscular.",
   "Subtitle delay −0.1s": "Atraso de legenda −0.1s",

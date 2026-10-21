@@ -19,7 +19,7 @@ function harness(
     "SkipPillContainer",
     {
       "@/lib/hotkeys": {
-        effectiveBinding: (id: string) => (id === "playerUndoSkip" ? "alt+k" : "k"),
+        effectiveBinding: (id: string) => (id === "playerUndoSkip" ? "shift+k" : "k"),
         eventToBinding: (e: any) => e.key,
         isTypingTarget: () => false,
       },
@@ -89,13 +89,13 @@ test("the skip hotkey skips the active segment and offers Undo", () => {
     );
   press("j");
   assert.deepEqual(seeks, [], "other keys do nothing");
-  press("alt+k");
+  press("shift+k");
   assert.deepEqual(seeks, [], "undo does nothing before a skip");
   press("k");
   assert.deepEqual(seeks, [90]);
   position.at = 90;
   assert.equal(typeof h.render(args).onUndo, "function");
-  press("alt+k");
+  press("shift+k");
   assert.deepEqual(seeks, [90, 30], "the undo hotkey jumps back");
   position.at = 30;
   assert.equal(h.render(args).onUndo, undefined, "the undo hotkey is single-use");

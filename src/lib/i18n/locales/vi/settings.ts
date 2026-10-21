@@ -1237,6 +1237,45 @@ const settings: Record<string, string> = {
   "Cycle subtitles": "Chuyển phụ đề",
   "Cycle through available subtitle tracks.": "Chuyển qua các bản phụ đề có sẵn.",
   "Cycle subtitles (alt)": "Chuyển phụ đề (phím thay thế)",
+  "Cycle subtitles backward": "Chuyển phụ đề ngược lại",
+  Developer: "Nhà phát triển",
+  "Open search": "Mở tìm kiếm",
+  "Open or close the search overlay.": "Mở hoặc đóng ô tìm kiếm.",
+  "Next room": "Mục tiếp theo",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Chuyển sang mục tiếp theo trên thanh bên. Tắt khi trình phát đang mở.",
+  "Previous room": "Mục trước",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Chuyển sang mục trước trên thanh bên. Tắt khi trình phát đang mở.",
+  "Go to room 1-9": "Đến mục 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Giữ phím bổ trợ này và nhấn 1-9 để mở mục đó trên thanh bên. Để thay đổi, nhấn một chữ số bất kỳ cùng phím bổ trợ bạn muốn, hoặc Delete để tắt. Tắt khi trình phát đang mở.",
+  "Toggle window fullscreen": "Bật/tắt toàn màn hình cửa sổ",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Cho cửa sổ Harbor phủ kín màn hình hoặc khôi phục lại.",
+  "Toggle memory monitor": "Bật/tắt theo dõi bộ nhớ",
+  "Show or hide the memory and cache monitor.": "Hiện hoặc ẩn bảng theo dõi bộ nhớ và bộ nhớ đệm.",
+  "Show test error page": "Hiện trang lỗi thử nghiệm",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Mở trang lỗi của Harbor với một lỗi mẫu để kiểm tra giao diện.",
+  "Jump through video 0-9": "Nhảy trong video 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Nhấn 0-9 để nhảy đến phần mười đó của video (0 là đầu, 5 là giữa). Để thay đổi, nhấn một chữ số bất kỳ cùng phím bổ trợ bạn muốn, hoặc Delete để tắt.",
+  "Write a chat message": "Viết tin nhắn trò chuyện",
+  "Open the watch-party chat box (in a Together room).":
+    "Mở ô trò chuyện của buổi xem chung (trong phòng Together).",
+  "Enter or exit fullscreen while reading.": "Bật hoặc tắt toàn màn hình khi đọc.",
+  "Press {key}": "Nhấn {key}",
+  "Press a modifier + digit…": "Nhấn phím bổ trợ + chữ số…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Nhấp vào phím tắt bất kỳ để đổi. Nhấn Esc trong khi ghi để hủy. Shift được tính, nên K và Shift+K có thể làm việc khác nhau.",
+  "Cycle through subtitle tracks in reverse order.": "Chuyển qua các phụ đề theo thứ tự ngược.",
+  "Set loop start (A)": "Đặt điểm bắt đầu lặp (A)",
+  "Mark where the A-B loop starts.": "Đánh dấu nơi vòng lặp A-B bắt đầu.",
+  "Set loop end (B)": "Đặt điểm kết thúc lặp (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Đánh dấu nơi vòng lặp A-B kết thúc; sau đó phát lặp giữa hai điểm.",
+  "Clear the A-B loop and play on normally.": "Xóa vòng lặp A-B và phát tiếp bình thường.",
   "A second binding for the same action so muscle memory survives.":
     "Một phím tắt thứ hai cho cùng thao tác để giữ thói quen thao tác.",
   "Subtitle delay −0.1s": "Độ trễ phụ đề −0.1 giây",

@@ -346,6 +346,7 @@ const misc: Record<string, string> = {
   "Paste this code into Harbor to open the collection.":
     "Collez ce code dans Harbor pour ouvrir la collection.",
   Paused: "En pause",
+  Resumed: "Reprise",
   "Paused on Simkl": "En pause sur Simkl",
   "Paused on Trakt": "En pause sur Trakt",
   "Pens currently in demand": "Stylos actuellement recherchés",

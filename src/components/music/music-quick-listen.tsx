@@ -14,6 +14,8 @@ import {
 import { ModalShell } from "@/components/modal-shell";
 import { HoverTooltip } from "@/components/hover-tooltip";
 import { useT } from "@/lib/i18n";
+import { effectiveBinding, eventToBinding } from "@/lib/hotkeys";
+import { useSettings } from "@/lib/settings";
 import { beginSnippetSession } from "@/lib/music/snippet-session";
 import { loadSnippetGenres, SNIPPET_SECONDS } from "@/lib/music/snippets";
 import { useSnippetFeed } from "@/lib/music/use-snippet-feed";
@@ -39,6 +41,9 @@ type PreviewState = "loading" | "playing" | "paused" | "ended";
 
 export function MusicQuickListen({ seeds, onClose }: { seeds: MusicTrack[]; onClose: () => void }) {
   const t = useT();
+  const { settings } = useSettings();
+  const hotkeysRef = useRef(settings.hotkeys ?? {});
+  hotkeysRef.current = settings.hotkeys ?? {};
   const titleId = useId();
   const root = useRef<HTMLDivElement>(null);
   const artFrame = useRef<HTMLDivElement>(null);
@@ -327,7 +332,7 @@ export function MusicQuickListen({ seeds, onClose }: { seeds: MusicTrack[]; onCl
         event.preventDefault();
         event.stopPropagation();
         step(-1);
-      } else if (event.key.toLowerCase() === "m") {
+      } else if (eventToBinding(event) === effectiveBinding("playerMute", hotkeysRef.current)) {
         event.preventDefault();
         setMuted((value) => !value);
       } else if (event.key === "Tab") {

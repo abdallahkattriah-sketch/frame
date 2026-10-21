@@ -522,6 +522,7 @@ const misc: Record<string, string> = {
   Actions: "Действия",
   Playing: "Воспроизводится",
   Paused: "На паузе",
+  Resumed: "Возобновлено",
   Windowed: "В окне",
   Inactive: "Неактивно",
   Idle: "Ожидание",

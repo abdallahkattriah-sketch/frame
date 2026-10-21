@@ -14,10 +14,9 @@ export type AbLoopState = {
 export function useAbLoop(params: {
   bridgeRef: RefObject<PlayerBridge | null>;
   durationSec: number;
-  enabled: boolean;
   resetKey: string;
 }): AbLoopState {
-  const { bridgeRef, durationSec, enabled, resetKey } = params;
+  const { bridgeRef, durationSec, resetKey } = params;
   const [a, setAState] = useState<number | null>(null);
   const [b, setBState] = useState<number | null>(null);
   const positionRef = useRef(getPlaybackPosition());
@@ -66,37 +65,6 @@ export function useAbLoop(params: {
     setAState(null);
     setBState(null);
   }, []);
-
-  useEffect(() => {
-    if (!enabled) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.repeat) return;
-      if (e.ctrlKey || e.metaKey || e.altKey) return;
-      const target = e.target as HTMLElement | null;
-      if (
-        target &&
-        (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)
-      )
-        return;
-      if (e.key === "I") {
-        e.preventDefault();
-        setA();
-        return;
-      }
-      if (e.key === "O") {
-        e.preventDefault();
-        setB();
-        return;
-      }
-      if (e.key === "L") {
-        e.preventDefault();
-        clear();
-        return;
-      }
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [enabled, setA, setB, clear]);
 
   void durationSec;
 

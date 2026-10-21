@@ -18,6 +18,10 @@ export type HotkeyId =
   | "playerPip"
   | "playerSubtitleCycle"
   | "playerSubtitleCycleAlt"
+  | "playerSubtitleCycleBack"
+  | "playerLoopStart"
+  | "playerLoopEnd"
+  | "playerLoopClear"
   | "playerNextEpisode"
   | "playerPrevEpisode"
   | "playerPrevChannel"
@@ -54,6 +58,16 @@ export type HotkeyId =
   | "globalUiScaleReset"
   | "globalSearchFocus"
   | "globalSettingsOpen"
+  | "globalSearchOverlay"
+  | "globalRoomNext"
+  | "globalRoomPrev"
+  | "globalRoomDigits"
+  | "globalWindowFullscreen"
+  | "globalMemoryMonitor"
+  | "globalTestError"
+  | "playerJumpDigits"
+  | "playerChatCompose"
+  | "mangaFullscreen"
   | "mangaMatch";
 
 export type HotkeyDef = {
@@ -81,6 +95,63 @@ export const HOTKEYS: HotkeyDef[] = [
     label: "Open settings",
     description: "Open Harbor's settings outside playback.",
     defaultBinding: "ctrl+s",
+  },
+  {
+    id: "globalSearchOverlay",
+    scope: "Global",
+    group: "Navigation",
+    label: "Open search",
+    description: "Open or close the search overlay.",
+    defaultBinding: "ctrl+k",
+  },
+  {
+    id: "globalRoomNext",
+    scope: "Global",
+    group: "Navigation",
+    label: "Next room",
+    description: "Go to the next room in the sidebar. Off while the player is open.",
+    defaultBinding: "ctrl+Tab",
+  },
+  {
+    id: "globalRoomPrev",
+    scope: "Global",
+    group: "Navigation",
+    label: "Previous room",
+    description: "Go to the previous room in the sidebar. Off while the player is open.",
+    defaultBinding: "ctrl+shift+Tab",
+  },
+  {
+    id: "globalRoomDigits",
+    scope: "Global",
+    group: "Navigation",
+    label: "Go to room 1-9",
+    description:
+      "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.",
+    defaultBinding: "ctrl",
+  },
+  {
+    id: "globalWindowFullscreen",
+    scope: "Global",
+    group: "Interface",
+    label: "Toggle window fullscreen",
+    description: "Make Harbor's window fill the screen, or restore it.",
+    defaultBinding: "F11",
+  },
+  {
+    id: "globalMemoryMonitor",
+    scope: "Global",
+    group: "Developer",
+    label: "Toggle memory monitor",
+    description: "Show or hide the memory and cache monitor.",
+    defaultBinding: "ctrl+shift+m",
+  },
+  {
+    id: "globalTestError",
+    scope: "Global",
+    group: "Developer",
+    label: "Show test error page",
+    description: "Open Harbor's error page with a sample error, to check how it looks.",
+    defaultBinding: "ctrl+shift+e",
   },
   {
     id: "globalUiScaleUp",
@@ -169,7 +240,7 @@ export const HOTKEYS: HotkeyDef[] = [
     group: "Playback",
     label: "Undo skip",
     description: "Jump back to where you were before the last skip, while Undo skip is showing.",
-    defaultBinding: "alt+k",
+    defaultBinding: "shift+k",
   },
   {
     id: "playerCrop",
@@ -235,7 +306,7 @@ export const HOTKEYS: HotkeyDef[] = [
     group: "Playback",
     label: "Anime4K on",
     description: "Turn Anime4K upscaling on. Only active when shaders are available.",
-    defaultBinding: "ctrl+1",
+    defaultBinding: "alt+a",
   },
   {
     id: "playerAnime4kOff",
@@ -243,7 +314,7 @@ export const HOTKEYS: HotkeyDef[] = [
     group: "Playback",
     label: "Anime4K off",
     description: "Turn Anime4K upscaling off.",
-    defaultBinding: "ctrl+0",
+    defaultBinding: "shift+a",
   },
   {
     id: "playerRtxHdrToggle",
@@ -344,6 +415,39 @@ export const HOTKEYS: HotkeyDef[] = [
     description: "Seek to the last half second.",
     defaultBinding: "End",
   },
+  {
+    id: "playerJumpDigits",
+    scope: "Player",
+    group: "Seeking",
+    label: "Jump through video 0-9",
+    description:
+      "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.",
+    defaultBinding: "none",
+  },
+  {
+    id: "playerLoopStart",
+    scope: "Player",
+    group: "Seeking",
+    label: "Set loop start (A)",
+    description: "Mark where the A-B loop starts.",
+    defaultBinding: "shift+i",
+  },
+  {
+    id: "playerLoopEnd",
+    scope: "Player",
+    group: "Seeking",
+    label: "Set loop end (B)",
+    description: "Mark where the A-B loop ends; playback then repeats between the two marks.",
+    defaultBinding: "shift+o",
+  },
+  {
+    id: "playerLoopClear",
+    scope: "Player",
+    group: "Seeking",
+    label: "Clear A-B loop",
+    description: "Clear the A-B loop and play on normally.",
+    defaultBinding: "shift+l",
+  },
 
   {
     id: "playerVolumeUp",
@@ -384,7 +488,15 @@ export const HOTKEYS: HotkeyDef[] = [
     group: "Tracks",
     label: "Cycle subtitles (alt)",
     description: "A second binding for the same action so muscle memory survives.",
-    defaultBinding: "c",
+    defaultBinding: "",
+  },
+  {
+    id: "playerSubtitleCycleBack",
+    scope: "Player",
+    group: "Tracks",
+    label: "Cycle subtitles backward",
+    description: "Cycle through subtitle tracks in reverse order.",
+    defaultBinding: "shift+s",
   },
   {
     id: "playerSubDelayDown",
@@ -418,6 +530,14 @@ export const HOTKEYS: HotkeyDef[] = [
     label: "Previous episode",
     description: "Skip to the previous episode if available.",
     defaultBinding: "b",
+  },
+  {
+    id: "playerChatCompose",
+    scope: "Player",
+    group: "Navigation",
+    label: "Write a chat message",
+    description: "Open the watch-party chat box (in a Together room).",
+    defaultBinding: "t",
   },
   {
     id: "playerPrevChannel",
@@ -505,6 +625,14 @@ export const HOTKEYS: HotkeyDef[] = [
   },
 
   {
+    id: "mangaFullscreen",
+    scope: "Manga",
+    group: "Reader",
+    label: "Toggle fullscreen",
+    description: "Enter or exit fullscreen while reading.",
+    defaultBinding: "f",
+  },
+  {
     id: "mangaMatch",
     scope: "Manga",
     group: "Reader",
@@ -519,16 +647,74 @@ export const HOTKEY_MAP: Record<HotkeyId, HotkeyDef> = Object.fromEntries(
 ) as Record<HotkeyId, HotkeyDef>;
 
 export function eventToBinding(e: KeyboardEvent): string {
+  return bindingFor(e.key, e);
+}
+
+type Modifiers = Pick<KeyboardEvent, "ctrlKey" | "shiftKey" | "altKey" | "metaKey">;
+
+function bindingFor(eventKey: string, e: Modifiers): string {
   const mods: string[] = [];
-  let key = e.key;
+  let key = eventKey;
+  // Letters are stored lowercase, so Caps Lock never changes a binding and Shift+K is its own key.
   const isLetter = key.length === 1 && /[a-zA-Z]/.test(key);
   if (e.ctrlKey) mods.push("ctrl");
-  if (e.shiftKey && !isLetter) mods.push("shift");
+  if (e.shiftKey) mods.push("shift");
   if (e.altKey) mods.push("alt");
   if (e.metaKey) mods.push("meta");
   if (key === " ") key = "Space";
   if (isLetter) key = key.toLowerCase();
   return mods.length === 0 ? key : mods.join("+") + "+" + key;
+}
+
+// Digit groups store only their modifier ("none", "ctrl", "ctrl+shift" or "off"); the digit comes from the key press.
+const DIGIT_GROUPS = new Set<HotkeyId>(["playerJumpDigits", "globalRoomDigits"]);
+export const DIGIT_GROUP_OFF = "off";
+const NO_MODIFIER = "none";
+
+export function digitGroup(id: HotkeyId): boolean {
+  return DIGIT_GROUPS.has(id);
+}
+
+/** The modifier a capture key press picks for a digit group, or null while only a modifier is held. */
+export function digitModifier(e: KeyboardEvent): string | null {
+  if (/^[0-9]$/.test(e.key) || /^Digit[0-9]$/.test(e.code)) {
+    const binding = bindingFor("0", e);
+    return binding === "0" ? NO_MODIFIER : binding.slice(0, -2);
+  }
+  if (e.key === "Delete" || e.key === "Backspace") return DIGIT_GROUP_OFF;
+  return null;
+}
+
+/** The digit 0-9 a press triggers for a digit group bound to `modifier`, or null. */
+export function digitFromEvent(e: KeyboardEvent, modifier: string): number | null {
+  if (!modifier || modifier === DIGIT_GROUP_OFF) return null;
+  const match = /^Digit([0-9])$/.exec(e.code ?? "") ?? /^([0-9])$/.exec(e.key);
+  if (!match) return null;
+  const binding = bindingFor(match[1], e);
+  const wanted = modifier === NO_MODIFIER ? match[1] : `${modifier}+${match[1]}`;
+  return binding === wanted ? Number(match[1]) : null;
+}
+
+/** Global keys stay live inside the player, so the two scopes share one key space. */
+export function sharesKeys(a: HotkeyScope, b: HotkeyScope): boolean {
+  return a === b || (a !== "Manga" && b !== "Manga");
+}
+
+function expand(id: HotkeyId, binding: string): string[] {
+  if (!binding || binding === DIGIT_GROUP_OFF) return [];
+  if (!digitGroup(id)) return [binding];
+  const digits = id === "globalRoomDigits" ? "123456789" : "0123456789";
+  return [...digits].map((d) => (binding === NO_MODIFIER ? d : `${binding}+${d}`));
+}
+
+export function bindingsOverlap(
+  a: HotkeyId,
+  aBinding: string,
+  b: HotkeyId,
+  bBinding: string,
+): boolean {
+  const left = expand(a, aBinding);
+  return expand(b, bBinding).some((key) => left.includes(key));
 }
 
 export function isModifierOnly(e: KeyboardEvent): boolean {
@@ -554,10 +740,51 @@ export function matchesBinding(e: KeyboardEvent, binding: string): boolean {
   return eventToBinding(e) === binding;
 }
 
+/** Overrides for windows that run without SettingsProvider (PiP, video PiP); read from the settings mirror on each press. */
+export function storedHotkeyOverrides(): Record<string, string> {
+  try {
+    const parsed = JSON.parse(localStorage.getItem("harbor.settings") ?? "{}") as {
+      hotkeys?: unknown;
+    };
+    const hotkeys = parsed.hotkeys;
+    return hotkeys && typeof hotkeys === "object" ? (hotkeys as Record<string, string>) : {};
+  } catch {
+    return {};
+  }
+}
+
+/** The player hotkey a press matches, for players outside the main view that reuse its keys. */
+export function matchPlayerKey(
+  e: KeyboardEvent,
+  overrides: Record<string, string>,
+  ids: readonly HotkeyId[],
+): HotkeyId | null {
+  const binding = eventToBinding(e);
+  return ids.find((id) => effectiveBinding(id, overrides) === binding) ?? null;
+}
+
 export function effectiveBinding(id: HotkeyId, overrides: Record<string, string>): string {
   const ov = overrides[id];
   if (typeof ov === "string" && ov.length > 0) return ov;
-  return HOTKEY_MAP[id].defaultBinding;
+  const def = HOTKEY_MAP[id];
+  // Digit groups run last in the player, so one digit taken by another action never disables the rest.
+  if (digitGroup(id)) return def.defaultBinding;
+  // A key the user picked for another action wins over a default, so new defaults never steal it.
+  const claimed = Object.entries(overrides).some(
+    ([other, binding]) =>
+      other !== id &&
+      other in HOTKEY_MAP &&
+      sharesKeys(HOTKEY_MAP[other as HotkeyId].scope, def.scope) &&
+      bindingsOverlap(id, def.defaultBinding, other as HotkeyId, binding),
+  );
+  return claimed ? "" : def.defaultBinding;
+}
+
+export function formatHotkeyBinding(id: HotkeyId, binding: string): string {
+  if (!digitGroup(id)) return formatBindingForDisplay(binding);
+  if (!binding || binding === DIGIT_GROUP_OFF) return "";
+  const range = id === "globalRoomDigits" ? "1-9" : "0-9";
+  return binding === NO_MODIFIER ? range : `${formatBindingForDisplay(binding)} + ${range}`;
 }
 
 export function formatBindingForDisplay(binding: string): string {

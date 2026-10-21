@@ -170,6 +170,7 @@ const catalog: Record<string, string> = {
   "Pause when unfocused": "Jeda saat tidak difokuskan",
   "Pause · Space": "Jeda · Space",
   Paused: "Dijeda",
+  Resumed: "Dilanjutkan",
   "Paused on": "Dijeda di",
   "Paused on Simkl": "Dijeda di Simkl",
   "Paused on Trakt": "Dijeda di Trakt",

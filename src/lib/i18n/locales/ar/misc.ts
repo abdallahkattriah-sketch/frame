@@ -555,6 +555,7 @@ const misc: Record<string, string> = {
   Actions: "إجراءات",
   Playing: "قيد التشغيل",
   Paused: "مُوقف",
+  Resumed: "استُؤنف",
   Windowed: "شاشة عادية",
   Inactive: "غير نشط",
   Idle: "خامل",

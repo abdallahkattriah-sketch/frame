@@ -6,6 +6,7 @@ import { getCurrentWindow } from "@tauri-apps/api/window";
 import { useFloatingMedia, VideoPipSettings } from "./video-pip-settings";
 import { floatingSeek } from "@/lib/player/floating-controls";
 import { useT } from "@/lib/i18n";
+import { matchPlayerKey, storedHotkeyOverrides, type HotkeyId } from "@/lib/hotkeys";
 import "./video-pip.css";
 
 type MpvEvent = { event: string; name?: string; data?: unknown };
@@ -32,6 +33,15 @@ function clock(seconds: number): string {
   return `${h > 0 ? `${h}:` : ""}${mm}:${String(s).padStart(2, "0")}`;
 }
 
+const VIDEO_PIP_KEYS: readonly HotkeyId[] = [
+  "playerPlayPause",
+  "playerSeekBack10",
+  "playerSeekForward10",
+  "playerVolumeUp",
+  "playerVolumeDown",
+  "playerMute",
+  "playerFullscreen",
+];
 export function VideoPipApp() {
   const t = useT();
   const [position, setPosition] = useState(0);
@@ -207,24 +217,25 @@ export function VideoPipApp() {
         return;
       }
       if ((event.target as HTMLElement)?.closest("input,select,button")) return;
-      if (event.key === " " || event.key === "k") {
+      const action = matchPlayerKey(event, storedHotkeyOverrides(), VIDEO_PIP_KEYS);
+      if (action === "playerPlayPause") {
         event.preventDefault();
         toggle();
-      } else if (event.key === "ArrowLeft") {
+      } else if (action === "playerSeekBack10") {
         event.preventDefault();
         seek(Math.max(0, position - 5));
-      } else if (event.key === "ArrowRight") {
+      } else if (action === "playerSeekForward10") {
         event.preventDefault();
         seek(Math.min(duration || position + 5, position + 5));
-      } else if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+      } else if (action === "playerVolumeUp" || action === "playerVolumeDown") {
         event.preventDefault();
         void media.property(
           "volume",
-          Math.max(0, Math.min(100, media.volume + (event.key === "ArrowUp" ? 5 : -5))),
+          Math.max(0, Math.min(100, media.volume + (action === "playerVolumeUp" ? 5 : -5))),
         );
-      } else if (event.key.toLowerCase() === "m") {
+      } else if (action === "playerMute") {
         void media.property("mute", !media.muted);
-      } else if (event.key.toLowerCase() === "f") {
+      } else if (action === "playerFullscreen") {
         void toggleFullscreen();
       }
       wake();

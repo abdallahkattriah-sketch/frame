@@ -3,6 +3,8 @@ import { Camera, FolderOpen, Repeat, X } from "lucide-react";
 import type { AbLoopState } from "@/views/player/hooks/use-ab-loop";
 import type { FrameGrabToast } from "@/views/player/hooks/use-frame-grab";
 import { useT } from "@/lib/i18n";
+import { effectiveBinding, formatBindingForDisplay } from "@/lib/hotkeys";
+import { useSettings } from "@/lib/settings";
 
 function formatTime(sec: number): string {
   const s = Math.max(0, Math.floor(sec));
@@ -38,6 +40,11 @@ export function QuickTools({
 
 function AbLoopChip({ ab, visible }: { ab: AbLoopState; visible: boolean }) {
   const t = useT();
+  const { settings } = useSettings();
+  const nextKey = effectiveBinding(
+    ab.a == null ? "playerLoopStart" : "playerLoopEnd",
+    settings.hotkeys ?? {},
+  );
   return (
     <div
       className={`pointer-events-none absolute start-7 top-24 z-30 transition-all duration-200 ease-out ${
@@ -51,9 +58,9 @@ function AbLoopChip({ ab, visible }: { ab: AbLoopState; visible: boolean }) {
           <span className="mx-1 text-white/40">→</span>
           {ab.b != null ? formatTime(ab.b) : "—"}
         </span>
-        {!ab.active && (
+        {!ab.active && nextKey && (
           <span className="rounded-full bg-white/10 px-1.5 py-0.5 text-[10px] uppercase tracking-[0.14em] text-white/70">
-            {ab.a == null ? "⇧ I" : "⇧ O"}
+            {formatBindingForDisplay(nextKey)}
           </span>
         )}
         <button

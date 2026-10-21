@@ -34,8 +34,8 @@ test("each column writes the setting its own shortcut reads", () => {
   assert.match(btn, /update\(\{ seekForwardStepSec: s \}\)/);
   assert.match(btn, /update\(\{ seekBackStepShortSec: s \}\)/);
   assert.match(btn, /update\(\{ seekForwardStepShortSec: s \}\)/);
-  assert.match(keys, /seekStep\(-seekBackStepShortSec\)/);
-  assert.match(keys, /seekStep\(seekForwardStepShortSec\)/);
+  assert.match(keys, /seekBy\(-seekBackStepShortSec\)/);
+  assert.match(keys, /seekBy\(seekForwardStepShortSec\)/);
 });
 
 test("both columns offer the same sanitized option set", () => {

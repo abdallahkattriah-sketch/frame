@@ -1315,6 +1315,48 @@ const settings: Record<string, string> = {
   "Cycle subtitles": "Переключить субтитры",
   "Cycle through available subtitle tracks.": "Переключение между доступными дорожками субтитров.",
   "Cycle subtitles (alt)": "Переключить субтитры (альт.)",
+  "Cycle subtitles backward": "Переключать субтитры назад",
+  Developer: "Разработчик",
+  "Open search": "Открыть поиск",
+  "Open or close the search overlay.": "Открывает или закрывает поиск.",
+  "Next room": "Следующий раздел",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Переход к следующему разделу боковой панели. Не работает в плеере.",
+  "Previous room": "Предыдущий раздел",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Переход к предыдущему разделу боковой панели. Не работает в плеере.",
+  "Go to room 1-9": "Перейти к разделу 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Удерживайте этот модификатор и нажмите 1-9, чтобы открыть этот раздел боковой панели. Чтобы изменить, нажмите любую цифру с нужным модификатором или Delete, чтобы отключить. Не работает в плеере.",
+  "Toggle window fullscreen": "Полноэкранный режим окна",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Растягивает окно Harbor на весь экран или возвращает его.",
+  "Toggle memory monitor": "Монитор памяти",
+  "Show or hide the memory and cache monitor.": "Показывает или скрывает монитор памяти и кэша.",
+  "Show test error page": "Тестовая страница ошибки",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Открывает страницу ошибки Harbor с примером ошибки, чтобы проверить её вид.",
+  "Jump through video 0-9": "Переход по видео 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Нажмите 0-9, чтобы перейти к этой десятой части видео (0 — начало, 5 — середина). Чтобы изменить, нажмите любую цифру с нужным модификатором или Delete, чтобы отключить.",
+  "Write a chat message": "Написать в чат",
+  "Open the watch-party chat box (in a Together room).":
+    "Открывает поле чата совместного просмотра (в комнате Together).",
+  "Enter or exit fullscreen while reading.":
+    "Включает или выключает полноэкранный режим при чтении.",
+  "Press {key}": "Нажмите {key}",
+  "Press a modifier + digit…": "Нажмите модификатор + цифру…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Нажмите на сочетание, чтобы изменить его. Нажмите Esc во время записи для отмены. Shift учитывается, поэтому K и Shift+K могут делать разное.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Переключает дорожки субтитров в обратном порядке.",
+  "Set loop start (A)": "Начало повтора (A)",
+  "Mark where the A-B loop starts.": "Отмечает, где начинается повтор A-B.",
+  "Set loop end (B)": "Конец повтора (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Отмечает, где заканчивается повтор A-B; затем воспроизведение повторяется между метками.",
+  "Clear the A-B loop and play on normally.":
+    "Сбрасывает повтор A-B и продолжает обычное воспроизведение.",
   "A second binding for the same action so muscle memory survives.":
     "Вторая привязка для того же действия, чтобы сохранить мышечную память.",
   "Subtitle delay −0.1s": "Задержка субтитров −0.1s",

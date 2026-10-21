@@ -753,6 +753,48 @@ const settings: Record<string, string> = {
     "En-boy oranı ve kırpma modları arasında geçiş yapın: Sığdır, Doldur, Yakınlaştır, 16:9, 4:3, Orijinal.",
   "Cycle subtitles": "Altyazılar arasında geçiş yap",
   "Cycle subtitles (alt)": "Altyazılar arasında geçiş yap (alternatif)",
+  "Cycle subtitles backward": "Altyazıları geriye doğru değiştir",
+  Developer: "Geliştirici",
+  "Open search": "Aramayı aç",
+  "Open or close the search overlay.": "Aramayı açar veya kapatır.",
+  "Next room": "Sonraki bölüm",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Kenar çubuğundaki sonraki bölüme geçer. Oynatıcı açıkken kapalıdır.",
+  "Previous room": "Önceki bölüm",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Kenar çubuğundaki önceki bölüme geçer. Oynatıcı açıkken kapalıdır.",
+  "Go to room 1-9": "1-9. bölüme git",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Bu değiştirici tuşu basılı tutup 1-9’a basarak kenar çubuğundaki o bölümü açın. Değiştirmek için istediğiniz değiştiriciyle herhangi bir rakama basın ya da kapatmak için Delete’e basın. Oynatıcı açıkken kapalıdır.",
+  "Toggle window fullscreen": "Pencere tam ekranını aç/kapat",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Harbor penceresinin ekranı kaplamasını sağlar veya eski haline getirir.",
+  "Toggle memory monitor": "Bellek izleyicisini aç/kapat",
+  "Show or hide the memory and cache monitor.":
+    "Bellek ve önbellek izleyicisini gösterir veya gizler.",
+  "Show test error page": "Test hata sayfasını göster",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Görünümünü kontrol etmek için Harbor’ın hata sayfasını örnek bir hatayla açar.",
+  "Jump through video 0-9": "Videoda atla 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Videonun o onda birine atlamak için 0-9’a basın (0 başlangıç, 5 orta). Değiştirmek için istediğiniz değiştiriciyle herhangi bir rakama basın ya da kapatmak için Delete’e basın.",
+  "Write a chat message": "Sohbet mesajı yaz",
+  "Open the watch-party chat box (in a Together room).":
+    "Birlikte izleme sohbet kutusunu açar (Together odasında).",
+  "Enter or exit fullscreen while reading.": "Okurken tam ekrana girer veya çıkar.",
+  "Press {key}": "{key} tuşuna basın",
+  "Press a modifier + digit…": "Değiştirici + rakam tuşuna basın…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Değiştirmek için herhangi bir kısayola tıklayın. Kayıt sırasında iptal etmek için Esc’ye basın. Shift dikkate alınır, yani K ile Shift+K farklı işler yapabilir.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Altyazı parçaları arasında ters sırayla geçiş yapar.",
+  "Set loop start (A)": "Döngü başlangıcını ayarla (A)",
+  "Mark where the A-B loop starts.": "A-B döngüsünün başladığı yeri işaretler.",
+  "Set loop end (B)": "Döngü sonunu ayarla (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "A-B döngüsünün bittiği yeri işaretler; ardından oynatma iki işaret arasında tekrarlanır.",
+  "Clear the A-B loop and play on normally.":
+    "A-B döngüsünü temizler ve normal şekilde oynatmaya devam eder.",
   "Cycle through available subtitle tracks.":
     "Kullanılabilir altyazı parçaları arasında geçiş yapın.",
   "DVR / record": "DVR / kayıt",

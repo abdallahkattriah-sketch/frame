@@ -127,6 +127,7 @@ const catalogPR: Record<string, string> = {
   "Pause when unfocused": "फ़ोकस हटने पर पॉज़ करें",
   "Pause · Space": "पॉज़ करें · Space",
   Paused: "पॉज़ किया गया",
+  Resumed: "फिर से शुरू",
   "Paused on": "यहाँ रुका है",
   "Paused on Simkl": "Simkl पर पॉज़ किया गया",
   "Paused on Trakt": "Trakt पर पॉज़ किया गया",

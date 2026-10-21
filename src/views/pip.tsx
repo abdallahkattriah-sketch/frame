@@ -3,6 +3,7 @@ import { listen, type UnlistenFn } from "@tauri-apps/api/event";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { SkipBackIcon, SkipIcon } from "@/components/icons/harbor-glyphs";
 import { useT } from "@/lib/i18n";
+import { matchPlayerKey, storedHotkeyOverrides, type HotkeyId } from "@/lib/hotkeys";
 import { broadcastFromPipSession } from "@/lib/sports/broadcast-pip";
 import { EmbeddedBroadcastPip } from "./sports/embedded-broadcast-player";
 
@@ -25,6 +26,12 @@ type PipSession = {
 
 const STATE_PUBLISH_INTERVAL_MS = 1500;
 
+const PIP_KEYS: readonly HotkeyId[] = [
+  "playerPlayPause",
+  "playerSeekBack10",
+  "playerSeekForward10",
+  "playerMute",
+];
 export function PipApp() {
   const t = useT();
   useEffect(() => {
@@ -216,20 +223,21 @@ export function PipApp() {
       }
       const v = videoRef.current;
       if (!v) return;
-      if (e.code === "Space") {
+      const action = matchPlayerKey(e, storedHotkeyOverrides(), PIP_KEYS);
+      if (action === "playerPlayPause") {
         e.preventDefault();
         if (v.paused) v.play().catch(() => {});
         else v.pause();
-      } else if (e.key === "ArrowLeft") {
+      } else if (action === "playerSeekBack10") {
         e.preventDefault();
         v.currentTime = Math.max(0, v.currentTime - 5);
-      } else if (e.key === "ArrowRight") {
+      } else if (action === "playerSeekForward10") {
         e.preventDefault();
         v.currentTime = Math.min(
           Number.isFinite(v.duration) ? v.duration - 0.25 : v.currentTime + 5,
           v.currentTime + 5,
         );
-      } else if (e.key === "m" || e.key === "M") {
+      } else if (action === "playerMute") {
         v.muted = !v.muted;
       }
     };

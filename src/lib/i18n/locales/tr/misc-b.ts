@@ -1000,6 +1000,7 @@ const miscB: Record<string, string> = {
   "Pause download": "İndirmeyi duraklat",
   "Pause narration": "Seslendirmeyi duraklat",
   Paused: "Duraklatıldı",
+  Resumed: "Devam ediyor",
   "Paused on Simkl": "Simkl'de duraklatıldı",
   "Paused on Trakt": "Trakt'ta duraklatıldı",
   "Pay a one-time fee to reserve it": "Ayırtmak için tek seferlik ücret ödersiniz",

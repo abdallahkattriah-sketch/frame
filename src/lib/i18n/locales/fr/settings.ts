@@ -443,6 +443,47 @@ const settings: Record<string, string> = {
   "Cycle subtitles": "Changer de sous-titres",
   "Cycle subtitles (alt)": "Changer de sous-titres (autre raccourci)",
   "Cycle through available subtitle tracks.": "Parcourir les pistes de sous-titres disponibles.",
+  "Cycle subtitles backward": "Parcourir les sous-titres à rebours",
+  Developer: "Développeur",
+  "Open search": "Ouvrir la recherche",
+  "Open or close the search overlay.": "Ouvre ou ferme la recherche.",
+  "Next room": "Section suivante",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Passe à la section suivante de la barre latérale. Désactivé pendant la lecture.",
+  "Previous room": "Section précédente",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Passe à la section précédente de la barre latérale. Désactivé pendant la lecture.",
+  "Go to room 1-9": "Aller à la section 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Maintenez ce modificateur et appuyez sur 1-9 pour ouvrir cette section de la barre latérale. Pour le changer, appuyez sur un chiffre avec le modificateur voulu, ou sur Suppr pour le désactiver. Désactivé pendant la lecture.",
+  "Toggle window fullscreen": "Basculer la fenêtre en plein écran",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Fait remplir l’écran à la fenêtre de Harbor, ou la restaure.",
+  "Toggle memory monitor": "Afficher le moniteur de mémoire",
+  "Show or hide the memory and cache monitor.":
+    "Affiche ou masque le moniteur de mémoire et de cache.",
+  "Show test error page": "Afficher une page d’erreur de test",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Ouvre la page d’erreur de Harbor avec une erreur d’exemple pour vérifier son apparence.",
+  "Jump through video 0-9": "Naviguer dans la vidéo 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Appuyez sur 0-9 pour aller à ce dixième de la vidéo (0 est le début, 5 le milieu). Pour le changer, appuyez sur un chiffre avec le modificateur voulu, ou sur Suppr pour le désactiver.",
+  "Write a chat message": "Écrire un message dans le chat",
+  "Open the watch-party chat box (in a Together room).":
+    "Ouvre la zone de chat de la séance partagée (dans un salon Together).",
+  "Enter or exit fullscreen while reading.": "Active ou quitte le plein écran pendant la lecture.",
+  "Press {key}": "Appuyez sur {key}",
+  "Press a modifier + digit…": "Appuyez sur un modificateur + un chiffre…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Cliquez sur un raccourci pour le modifier. Appuyez sur Échap pendant la saisie pour annuler. Maj compte, donc K et Maj+K peuvent faire des choses différentes.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Parcourt les pistes de sous-titres dans l’ordre inverse.",
+  "Set loop start (A)": "Définir le début de la boucle (A)",
+  "Mark where the A-B loop starts.": "Marque le début de la boucle A-B.",
+  "Set loop end (B)": "Définir la fin de la boucle (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Marque la fin de la boucle A-B ; la lecture se répète ensuite entre les deux repères.",
+  "Clear the A-B loop and play on normally.": "Efface la boucle A-B et reprend la lecture normale.",
   "Daily call counter for OMDb rating lookups. Reset if it stops returning fresh scores.":
     "Compteur quotidien d’appels pour la récupération des notes OMDb. Réinitialisez-le s’il ne renvoie plus de notes actualisées.",
   "Debrid services": "Services de débridage",

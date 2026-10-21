@@ -293,6 +293,7 @@ const misc: Record<string, string> = {
   Actions: "Thao tác",
   Playing: "Đang phát",
   Paused: "Đã tạm dừng",
+  Resumed: "Đã tiếp tục",
   Windowed: "Chế độ cửa sổ",
   Inactive: "Không hoạt động",
   Idle: "Chờ",

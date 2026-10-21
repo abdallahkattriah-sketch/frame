@@ -1,5 +1,6 @@
 import type { PlayerSnapshot } from "../bridge";
 import { t } from "@/lib/i18n";
+import { matchPlayerKey, storedHotkeyOverrides } from "@/lib/hotkeys";
 
 export function mountCustomPip(
   pipWin: Window,
@@ -152,14 +153,19 @@ export function mountCustomPip(
   );
 
   pipWin.addEventListener("keydown", (e) => {
-    if (e.key === " " || e.code === "Space") {
+    const action = matchPlayerKey(e, storedHotkeyOverrides(), [
+      "playerPlayPause",
+      "playerSeekBack10",
+      "playerSeekForward10",
+    ]);
+    if (action === "playerPlayPause") {
       e.preventDefault();
       if (video.paused) video.play().catch(() => {});
       else video.pause();
-    } else if (e.key === "ArrowLeft") {
+    } else if (action === "playerSeekBack10") {
       e.preventDefault();
       video.currentTime = Math.max(0, video.currentTime - 5);
-    } else if (e.key === "ArrowRight") {
+    } else if (action === "playerSeekForward10") {
       e.preventDefault();
       if (Number.isFinite(video.duration)) {
         video.currentTime = Math.min(video.duration - 0.25, video.currentTime + 5);

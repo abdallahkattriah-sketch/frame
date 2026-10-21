@@ -2286,6 +2286,45 @@ const catalogAC: Record<string, string> = {
   "Cycle subtitles": "सबटाइटल बदलें",
   "Cycle subtitles (alt)": "सबटाइटल बदलें (वैकल्पिक)",
   "Cycle the backdrop": "बैकड्रॉप बदलें",
+  "Cycle subtitles backward": "सबटाइटल पीछे की ओर बदलें",
+  Developer: "डेवलपर",
+  "Open search": "खोज खोलें",
+  "Open or close the search overlay.": "खोज खोलें या बंद करें।",
+  "Next room": "अगला सेक्शन",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "साइडबार के अगले सेक्शन पर जाएँ। प्लेयर खुला होने पर बंद।",
+  "Previous room": "पिछला सेक्शन",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "साइडबार के पिछले सेक्शन पर जाएँ। प्लेयर खुला होने पर बंद।",
+  "Go to room 1-9": "सेक्शन 1-9 पर जाएँ",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "यह मॉडिफ़ायर दबाए रखकर 1-9 दबाएँ, ताकि साइडबार का वह सेक्शन खुले। बदलने के लिए, अपने चुने मॉडिफ़ायर के साथ कोई अंक दबाएँ, या बंद करने के लिए Delete दबाएँ। प्लेयर खुला होने पर बंद।",
+  "Toggle window fullscreen": "विंडो फ़ुलस्क्रीन टॉगल करें",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Harbor की विंडो को पूरी स्क्रीन पर करें, या वापस लाएँ।",
+  "Toggle memory monitor": "मेमोरी मॉनिटर टॉगल करें",
+  "Show or hide the memory and cache monitor.": "मेमोरी और कैश मॉनिटर दिखाएँ या छिपाएँ।",
+  "Show test error page": "परीक्षण त्रुटि पेज दिखाएँ",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Harbor का त्रुटि पेज एक नमूना त्रुटि के साथ खोलें, ताकि उसका रूप जाँच सकें।",
+  "Jump through video 0-9": "वीडियो में जाएँ 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "वीडियो के उस दसवें हिस्से पर जाने के लिए 0-9 दबाएँ (0 शुरुआत है, 5 बीच)। बदलने के लिए, अपने चुने मॉडिफ़ायर के साथ कोई अंक दबाएँ, या बंद करने के लिए Delete दबाएँ।",
+  "Write a chat message": "चैट संदेश लिखें",
+  "Open the watch-party chat box (in a Together room).":
+    "वॉच-पार्टी का चैट बॉक्स खोलें (Together रूम में)।",
+  "Enter or exit fullscreen while reading.": "पढ़ते समय फ़ुलस्क्रीन चालू या बंद करें।",
+  "Press {key}": "{key} दबाएँ",
+  "Press a modifier + digit…": "मॉडिफ़ायर + अंक दबाएँ…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "किसी भी शॉर्टकट को बदलने के लिए उस पर क्लिक करें। कैप्चर के दौरान रद्द करने के लिए Esc दबाएँ। Shift गिना जाता है, इसलिए K और Shift+K अलग काम कर सकते हैं।",
+  "Cycle through subtitle tracks in reverse order.": "सबटाइटल ट्रैक उल्टे क्रम में बदलें।",
+  "Set loop start (A)": "लूप की शुरुआत सेट करें (A)",
+  "Mark where the A-B loop starts.": "A-B लूप कहाँ से शुरू हो, यह चिह्नित करें।",
+  "Set loop end (B)": "लूप का अंत सेट करें (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "A-B लूप कहाँ खत्म हो, यह चिह्नित करें; फिर प्लेबैक दोनों चिह्नों के बीच दोहराया जाता है।",
+  "Clear the A-B loop and play on normally.": "A-B लूप हटाएँ और सामान्य रूप से चलाते रहें।",
   "Cycle the backdrop on show pages": "शो पेजों पर बैकड्रॉप बदलें",
   "Cycle through available subtitle tracks.": "उपलब्ध सबटाइटल ट्रैक बदलें।",
   Czech: "चेक",

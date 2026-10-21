@@ -280,6 +280,45 @@ const catalog03: Record<string, string> = {
   "Cycle subtitles": "자막 순환",
   "Cycle subtitles (alt)": "자막 순환(대체)",
   "Cycle the backdrop": "배경 이미지 전환",
+  "Cycle subtitles backward": "자막 역순 전환",
+  Developer: "개발자",
+  "Open search": "검색 열기",
+  "Open or close the search overlay.": "검색 창을 열거나 닫습니다.",
+  "Next room": "다음 메뉴",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "사이드바의 다음 메뉴로 이동합니다. 플레이어가 열려 있으면 꺼집니다.",
+  "Previous room": "이전 메뉴",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "사이드바의 이전 메뉴로 이동합니다. 플레이어가 열려 있으면 꺼집니다.",
+  "Go to room 1-9": "메뉴 1-9로 이동",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "이 보조 키를 누른 채 1-9를 누르면 해당 사이드바 메뉴가 열립니다. 바꾸려면 원하는 보조 키와 아무 숫자를 누르고, 끄려면 Delete를 누르세요. 플레이어가 열려 있으면 꺼집니다.",
+  "Toggle window fullscreen": "창 전체 화면 전환",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Harbor 창을 화면 가득 채우거나 원래대로 되돌립니다.",
+  "Toggle memory monitor": "메모리 모니터 전환",
+  "Show or hide the memory and cache monitor.": "메모리 및 캐시 모니터를 표시하거나 숨깁니다.",
+  "Show test error page": "테스트 오류 페이지 표시",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "예시 오류로 Harbor 오류 페이지를 열어 모양을 확인합니다.",
+  "Jump through video 0-9": "영상 이동 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "0-9를 누르면 영상의 해당 10분의 1 지점으로 이동합니다(0은 처음, 5는 중간). 바꾸려면 원하는 보조 키와 아무 숫자를 누르고, 끄려면 Delete를 누르세요.",
+  "Write a chat message": "채팅 메시지 쓰기",
+  "Open the watch-party chat box (in a Together room).":
+    "함께 보기 채팅 상자를 엽니다(Together 방에서).",
+  "Enter or exit fullscreen while reading.": "읽는 중 전체 화면을 켜거나 끕니다.",
+  "Press {key}": "{key} 누르기",
+  "Press a modifier + digit…": "보조 키 + 숫자를 누르세요…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "단축키를 클릭해 변경하세요. 입력 중 Esc를 누르면 취소됩니다. Shift도 구분하므로 K와 Shift+K에 서로 다른 기능을 지정할 수 있습니다.",
+  "Cycle through subtitle tracks in reverse order.": "자막 트랙을 역순으로 전환합니다.",
+  "Set loop start (A)": "반복 시작 지정 (A)",
+  "Mark where the A-B loop starts.": "A-B 반복이 시작될 위치를 지정합니다.",
+  "Set loop end (B)": "반복 끝 지정 (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "A-B 반복이 끝날 위치를 지정합니다. 이후 두 지점 사이를 반복 재생합니다.",
+  "Clear the A-B loop and play on normally.": "A-B 반복을 해제하고 평소대로 재생합니다.",
   "Cycle the backdrop on show pages": "작품 페이지에서 배경 이미지 전환",
   "Cycle through available subtitle tracks.": "사용 가능한 자막 트랙을 순환합니다.",
   Czech: "체코어",

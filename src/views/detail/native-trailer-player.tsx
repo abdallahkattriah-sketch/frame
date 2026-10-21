@@ -1,11 +1,23 @@
 import { Pause, Play } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useT } from "@/lib/i18n";
+import { matchPlayerKey, type HotkeyId } from "@/lib/hotkeys";
+import { useSettings } from "@/lib/settings";
 import { Tooltip } from "./tooltip";
 import { PiPButton, Scrubber, SpeedPill, VolumeControl, formatTime } from "./trailer-controls";
 
 const PLAYBACK_SPEEDS = [1, 1.25, 1.5, 2] as const;
 const CHROME_HIDE_MS = 2400;
+
+const TRAILER_KEYS: readonly HotkeyId[] = [
+  "playerPlayPause",
+  "playerSeekBack10",
+  "playerSeekForward10",
+  "playerVolumeUp",
+  "playerVolumeDown",
+  "playerMute",
+  "playerPip",
+];
 
 export function NativeTrailerPlayer({
   src,
@@ -15,6 +27,8 @@ export function NativeTrailerPlayer({
   videoRef: React.RefObject<HTMLVideoElement | null>;
 }) {
   const t = useT();
+  const { settings } = useSettings();
+  const hotkeys = settings.hotkeys ?? {};
   const ref = videoRef;
   const [playing, setPlaying] = useState(false);
   const [time, setTime] = useState(0);
@@ -168,40 +182,38 @@ export function NativeTrailerPlayer({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
-      switch (e.key) {
-        case " ":
+      switch (matchPlayerKey(e, hotkeys, TRAILER_KEYS)) {
+        case "playerPlayPause":
           e.preventDefault();
           toggle();
           wake();
           break;
-        case "ArrowLeft":
+        case "playerSeekBack10":
           e.preventDefault();
           seekBy(-10);
           wake();
           break;
-        case "ArrowRight":
+        case "playerSeekForward10":
           e.preventDefault();
           seekBy(10);
           wake();
           break;
-        case "ArrowUp":
+        case "playerVolumeUp":
           e.preventDefault();
           applyVolume(volume + 0.05);
           wake();
           break;
-        case "ArrowDown":
+        case "playerVolumeDown":
           e.preventDefault();
           applyVolume(volume - 0.05);
           wake();
           break;
-        case "m":
-        case "M":
+        case "playerMute":
           e.preventDefault();
           toggleMute();
           wake();
           break;
-        case "p":
-        case "P":
+        case "playerPip":
           e.preventDefault();
           togglePiP();
           wake();
@@ -210,7 +222,7 @@ export function NativeTrailerPlayer({
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [toggle, seekBy, applyVolume, toggleMute, togglePiP, volume, wake]);
+  }, [toggle, seekBy, applyVolume, toggleMute, togglePiP, volume, wake, hotkeys]);
 
   const remaining = Math.max(0, duration - time);
   const timeText = showRemaining ? `−${formatTime(remaining)}` : formatTime(time);

@@ -1,3 +1,4 @@
+import type { ActionIndicatorState } from "@/components/player/action-indicator";
 import { memo, type ComponentProps, type RefObject } from "react";
 import { DrawCanvas, StrokesLayer, type Stroke } from "@/components/player/draw-canvas";
 import { cropTransform } from "./hooks/use-video-fill";
@@ -57,7 +58,7 @@ export type PlayerOverlayLayersProps = {
   volumeHudPosition: VolumeHudPosition;
   speedIndicator: SpeedIndicatorState;
   speedHudPosition: VolumeHudPosition;
-  videoFillPill: string | null;
+  actionIndicator: ActionIndicatorState;
   subDropToast: string | null;
   pipMode: boolean;
   drawMode: boolean;
@@ -232,7 +233,7 @@ export const PlayerOverlayLayers = memo(function PlayerOverlayLayers(p: PlayerOv
         volumeHudPosition={p.volumeHudPosition}
         speedIndicator={p.speedIndicator}
         speedHudPosition={p.speedHudPosition}
-        videoFillPill={p.videoFillPill}
+        actionIndicator={p.actionIndicator}
         subDropToast={p.subDropToast}
         contentAdvisory={p.contentAdvisory}
         contentAdvisoryPosition={contentAdvisoryPosition}

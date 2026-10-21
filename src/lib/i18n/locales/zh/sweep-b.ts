@@ -786,6 +786,44 @@ const sweepB: Record<string, string> = {
   "Cycle subtitles": "切换字幕",
   "Cycle subtitles (alt)": "切换字幕（备用）",
   "Cycle the backdrop": "轮换背景图",
+  "Cycle subtitles backward": "反向切换字幕",
+  Developer: "开发者",
+  "Open search": "打开搜索",
+  "Open or close the search overlay.": "打开或关闭搜索。",
+  "Next room": "下一个分区",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "转到侧边栏的下一个分区。播放器打开时不可用。",
+  "Previous room": "上一个分区",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "转到侧边栏的上一个分区。播放器打开时不可用。",
+  "Go to room 1-9": "转到分区 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "按住此修饰键并按 1-9 可打开侧边栏中的对应分区。修改时，按住想用的修饰键再按任意数字，或按 Delete 关闭。播放器打开时不可用。",
+  "Toggle window fullscreen": "切换窗口全屏",
+  "Make Harbor's window fill the screen, or restore it.": "让 Harbor 窗口铺满屏幕，或恢复原状。",
+  "Toggle memory monitor": "切换内存监视器",
+  "Show or hide the memory and cache monitor.": "显示或隐藏内存和缓存监视器。",
+  "Show test error page": "显示测试错误页",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "用示例错误打开 Harbor 的错误页，查看其外观。",
+  "Jump through video 0-9": "视频跳转 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "按 0-9 跳到视频的对应十分之一处（0 为开头，5 为中间）。修改时，按住想用的修饰键再按任意数字，或按 Delete 关闭。",
+  "Write a chat message": "写聊天消息",
+  "Open the watch-party chat box (in a Together room).":
+    "打开一起看的聊天框（在 Together 房间中）。",
+  "Enter or exit fullscreen while reading.": "阅读时进入或退出全屏。",
+  "Press {key}": "按 {key}",
+  "Press a modifier + digit…": "请按修饰键 + 数字…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "点击任意快捷键即可更改。录入时按 Esc 取消。Shift 也会区分，因此 K 和 Shift+K 可以执行不同操作。",
+  "Cycle through subtitle tracks in reverse order.": "按相反顺序切换字幕轨道。",
+  "Set loop start (A)": "设置循环起点 (A)",
+  "Mark where the A-B loop starts.": "标记 A-B 循环的起点。",
+  "Set loop end (B)": "设置循环终点 (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "标记 A-B 循环的终点，之后在两点之间重复播放。",
+  "Clear the A-B loop and play on normally.": "清除 A-B 循环并正常继续播放。",
   Czech: "捷克语",
   "D-pad": "D-pad（十字键）",
   "D-pad up / down": "D-pad 上/下",

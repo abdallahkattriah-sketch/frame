@@ -119,6 +119,7 @@ export function MangaReader({
   const pid = activeId ?? "default";
   const { settings } = useSettings();
   const matchBinding = effectiveBinding("mangaMatch", settings.hotkeys);
+  const fullscreenBinding = effectiveBinding("mangaFullscreen", settings.hotkeys);
 
   const titleKey = manga.title ? normalizeMatchTitle(manga.title) : "";
   const hasStoredDecision = useCallback(
@@ -523,7 +524,7 @@ export function MangaReader({
         e.preventDefault();
         if (rtl && (paged || horizontal)) nextPage();
         else prevPage();
-      } else if (e.key === "f") {
+      } else if (matchesBinding(e, fullscreenBinding)) {
         toggleFullscreen();
       } else if (matchesBinding(e, matchBinding)) {
         e.preventDefault();

@@ -4,10 +4,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   HOTKEYS,
   HOTKEY_MAP,
+  bindingsOverlap,
+  digitGroup,
+  digitModifier,
   effectiveBinding,
   eventToBinding,
-  formatBindingForDisplay,
+  formatHotkeyBinding,
   isModifierOnly,
+  sharesKeys,
   type HotkeyDef,
   type HotkeyId,
   type HotkeyScope,
@@ -84,12 +88,13 @@ export function HotkeysPanel() {
       }
       if (DPAD_KEYCODES.has(e.keyCode)) return;
       if (isModifierOnly(e)) return;
-      const binding = eventToBinding(e);
+      const binding = digitGroup(capturing) ? digitModifier(e) : eventToBinding(e);
+      if (binding == null) return;
       const dupe = HOTKEYS.find(
         (h) =>
           h.id !== capturing &&
-          h.scope === HOTKEY_MAP[capturing].scope &&
-          effectiveBinding(h.id, overrides) === binding,
+          sharesKeys(h.scope, HOTKEY_MAP[capturing].scope) &&
+          bindingsOverlap(capturing, binding, h.id, effectiveBinding(h.id, overrides)),
       );
       if (dupe) {
         setConflict({ target: capturing, existing: dupe.id, binding });
@@ -158,7 +163,7 @@ export function HotkeysPanel() {
         <>
           <p className={`max-w-[70ch] ${ROW_DESC}`}>
             {t(
-              "Click any binding to rebind it. Press Esc while capturing to cancel. Letters ignore Shift (so K and Shift+K trigger the same action).",
+              "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.",
             )}
           </p>
 
@@ -196,7 +201,7 @@ export function HotkeysPanel() {
                         conflict={
                           conflict?.target === def.id
                             ? t("{key} is used for {action}. Press another key or cancel.", {
-                                key: formatBindingForDisplay(conflict.binding),
+                                key: formatHotkeyBinding(conflict.target, conflict.binding),
                                 action: t(HOTKEY_MAP[conflict.existing].label),
                               })
                             : undefined
@@ -428,10 +433,14 @@ function HotkeyRow({
         {isCapturing ? (
           <>
             <Keyboard size={18} strokeWidth={2.2} />
-            {t("Press a key…")}
+            {digitGroup(def.id) ? t("Press a modifier + digit…") : t("Press a key…")}
           </>
+        ) : formatHotkeyBinding(def.id, binding) ? (
+          formatHotkeyBinding(def.id, binding)
+        ) : digitGroup(def.id) ? (
+          t("Off")
         ) : (
-          formatBindingForDisplay(binding)
+          t("Not set")
         )}
       </button>
     </SettingRow>

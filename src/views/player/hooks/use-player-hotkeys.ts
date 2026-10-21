@@ -1,5 +1,15 @@
-import { useState, type Dispatch, type RefObject, type SetStateAction } from "react";
-import type { PlayerBridge, PlayerSnapshot } from "@/lib/player/bridge";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type Dispatch,
+  type RefObject,
+  type SetStateAction,
+} from "react";
+import { useT } from "@/lib/i18n";
+import type { ActionFeedback } from "@/components/player/action-indicator";
+import type { PlayerBridge, PlayerSnapshot, TrackInfo } from "@/lib/player/bridge";
 import { useClipRecorder } from "./use-clip-recorder";
 import { useFrameGrab } from "./use-frame-grab";
 import { useGifRecorder } from "./use-gif-recorder";
@@ -7,6 +17,7 @@ import { useKeyboardShortcuts } from "./use-keyboard-shortcuts";
 import { useLiveChannelOverlay } from "./use-live-channel-overlay";
 import { useSleepTimer } from "./use-sleep-timer";
 import { useVideoFill, ZOOM_STEP } from "./use-video-fill";
+import type { AbLoopState } from "./use-ab-loop";
 
 export function usePlayerHotkeys(params: {
   bridgeRef: RefObject<PlayerBridge | null>;
@@ -23,7 +34,7 @@ export function usePlayerHotkeys(params: {
   toggleFullscreen: () => void;
   togglePip: () => void;
   fullscreen: boolean;
-  cycleSubtitles: () => void;
+  cycleSubtitles: (direction: 1 | -1) => TrackInfo | null | undefined;
   playNext: () => void;
   playPrev: () => void;
   hasNextEpisode: boolean;
@@ -45,6 +56,8 @@ export function usePlayerHotkeys(params: {
   onRestartServer?: () => void;
   onVolumeFeedback?: (volume: number, muted: boolean) => void;
   onSpeedFeedback?: (rate: number) => void;
+  onOsd?: (feedback: ActionFeedback) => void;
+  ab?: AbLoopState;
 }) {
   const {
     bridgeRef,
@@ -83,9 +96,22 @@ export function usePlayerHotkeys(params: {
     onRestartServer,
     onVolumeFeedback,
     onSpeedFeedback,
+    onOsd,
+    ab,
   } = params;
 
-  const [showStats, setShowStats] = useState(false);
+  const t = useT();
+  const [showStats, setShowStatsState] = useState(false);
+  const statsToggled = useRef(false);
+  const setShowStats = useCallback((updater: (prev: boolean) => boolean) => {
+    statsToggled.current = true;
+    setShowStatsState(updater);
+  }, []);
+  useEffect(() => {
+    if (!statsToggled.current) return;
+    statsToggled.current = false;
+    onOsd?.({ icon: "stats", title: t("Stats"), value: showStats ? t("On") : t("Off") });
+  }, [showStats, onOsd, t]);
   const { holdSpeedActive, subtitleOffsetSec } = useKeyboardShortcuts({
     bridgeRef,
     snap,
@@ -115,8 +141,15 @@ export function usePlayerHotkeys(params: {
     toggleDvr: () => {
       if (liveOverlay.isLive) toggleDvr();
     },
-    toggleSleep: () =>
-      sleep.mode.kind === "off" ? sleep.set({ kind: "end_episode" }) : sleep.cancel(),
+    toggleSleep: () => {
+      if (sleep.mode.kind === "off") {
+        sleep.set({ kind: "end_episode" });
+        onOsd?.({ icon: "sleep", title: t("Sleep timer"), value: t("End ep") });
+      } else {
+        sleep.cancel();
+        onOsd?.({ icon: "sleep", title: t("Sleep timer"), value: t("Off") });
+      }
+    },
     onScreenshot: quickToolsEnabled ? () => frameGrab.trigger() : undefined,
     onGifRecord: quickToolsEnabled ? () => gif.toggle() : undefined,
     onClipRecord: quickToolsEnabled ? () => clip.openChooser() : undefined,
@@ -132,6 +165,10 @@ export function usePlayerHotkeys(params: {
     onFrameStep: (dir) => bridgeRef.current?.frameStep?.(dir),
     onVolumeFeedback,
     onSpeedFeedback,
+    onOsd,
+    onLoopStart: quickToolsEnabled ? ab?.setA : undefined,
+    onLoopEnd: quickToolsEnabled ? ab?.setB : undefined,
+    onLoopClear: quickToolsEnabled ? ab?.clear : undefined,
   });
 
   return { holdSpeedActive, showStats, subtitleOffsetSec };

@@ -1183,6 +1183,48 @@ const catalog02: Record<string, string> = {
   "Cycle subtitles": "Cambia sottotitoli",
   "Cycle subtitles (alt)": "Cambia sottotitoli (alternativo)",
   "Cycle the backdrop": "Cambia sfondo",
+  "Cycle subtitles backward": "Cambia sottotitoli all’indietro",
+  Developer: "Sviluppatore",
+  "Open search": "Apri ricerca",
+  "Open or close the search overlay.": "Apre o chiude la ricerca.",
+  "Next room": "Sezione successiva",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Passa alla sezione successiva della barra laterale. Disattivo con il player aperto.",
+  "Previous room": "Sezione precedente",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Passa alla sezione precedente della barra laterale. Disattivo con il player aperto.",
+  "Go to room 1-9": "Vai alla sezione 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Tieni premuto questo modificatore e premi 1-9 per aprire quella sezione della barra laterale. Per cambiarlo, premi una cifra con il modificatore desiderato, o Canc per disattivarlo. Disattivo con il player aperto.",
+  "Toggle window fullscreen": "Attiva/disattiva schermo intero della finestra",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Fa riempire lo schermo alla finestra di Harbor, o la ripristina.",
+  "Toggle memory monitor": "Mostra/nascondi monitor memoria",
+  "Show or hide the memory and cache monitor.": "Mostra o nasconde il monitor di memoria e cache.",
+  "Show test error page": "Mostra pagina di errore di prova",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Apre la pagina di errore di Harbor con un errore di esempio per vederne l’aspetto.",
+  "Jump through video 0-9": "Salta nel video 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Premi 0-9 per saltare a quel decimo del video (0 è l’inizio, 5 la metà). Per cambiarlo, premi una cifra con il modificatore desiderato, o Canc per disattivarlo.",
+  "Write a chat message": "Scrivi un messaggio in chat",
+  "Open the watch-party chat box (in a Together room).":
+    "Apre la chat della visione di gruppo (in una stanza Together).",
+  "Enter or exit fullscreen while reading.":
+    "Entra o esci dallo schermo intero durante la lettura.",
+  "Press {key}": "Premi {key}",
+  "Press a modifier + digit…": "Premi un modificatore + cifra…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Fai clic su una scorciatoia per cambiarla. Premi Esc durante l’acquisizione per annullare. Maiusc conta, quindi K e Maiusc+K possono fare cose diverse.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Scorre le tracce dei sottotitoli in ordine inverso.",
+  "Set loop start (A)": "Imposta inizio loop (A)",
+  "Mark where the A-B loop starts.": "Segna dove inizia il loop A-B.",
+  "Set loop end (B)": "Imposta fine loop (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Segna dove finisce il loop A-B; poi la riproduzione si ripete tra i due segni.",
+  "Clear the A-B loop and play on normally.":
+    "Cancella il loop A-B e continua la riproduzione normalmente.",
   "Cycle the backdrop on show pages": "Cambia lo sfondo nelle pagine delle serie",
   "Cycle through available subtitle tracks.": "Scorri le tracce dei sottotitoli disponibili.",
   Czech: "Ceco",

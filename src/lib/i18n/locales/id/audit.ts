@@ -299,6 +299,48 @@ const audit: Record<string, string> = {
     "Beralih di antara mode rasio aspek dan pangkasan: Pas, Isi, Zoom, 16:9, 4:3, Asli.",
   "Cycle subtitles (alt)": "Ganti subtitle (alt)",
   "Cycle through available subtitle tracks.": "Beralih di antara trek subtitle yang tersedia.",
+  "Cycle subtitles backward": "Ganti subtitel mundur",
+  Developer: "Pengembang",
+  "Open search": "Buka pencarian",
+  "Open or close the search overlay.": "Buka atau tutup pencarian.",
+  "Next room": "Bagian berikutnya",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "Pindah ke bagian berikutnya di bilah samping. Nonaktif saat pemutar terbuka.",
+  "Previous room": "Bagian sebelumnya",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "Pindah ke bagian sebelumnya di bilah samping. Nonaktif saat pemutar terbuka.",
+  "Go to room 1-9": "Ke bagian 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "Tahan pengubah ini dan tekan 1-9 untuk membuka bagian bilah samping tersebut. Untuk mengubahnya, tekan angka apa saja dengan pengubah yang diinginkan, atau Delete untuk mematikannya. Nonaktif saat pemutar terbuka.",
+  "Toggle window fullscreen": "Alihkan layar penuh jendela",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Membuat jendela Harbor memenuhi layar, atau memulihkannya.",
+  "Toggle memory monitor": "Alihkan monitor memori",
+  "Show or hide the memory and cache monitor.":
+    "Tampilkan atau sembunyikan monitor memori dan cache.",
+  "Show test error page": "Tampilkan halaman galat uji",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "Buka halaman galat Harbor dengan galat contoh untuk melihat tampilannya.",
+  "Jump through video 0-9": "Lompat dalam video 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "Tekan 0-9 untuk melompat ke sepersepuluh video tersebut (0 adalah awal, 5 tengah). Untuk mengubahnya, tekan angka apa saja dengan pengubah yang diinginkan, atau Delete untuk mematikannya.",
+  "Write a chat message": "Tulis pesan obrolan",
+  "Open the watch-party chat box (in a Together room).":
+    "Buka kotak obrolan nonton bareng (di ruang Together).",
+  "Enter or exit fullscreen while reading.": "Masuk atau keluar layar penuh saat membaca.",
+  "Press {key}": "Tekan {key}",
+  "Press a modifier + digit…": "Tekan pengubah + angka…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "Klik pintasan mana pun untuk mengubahnya. Tekan Esc saat merekam untuk membatalkan. Shift ikut dihitung, jadi K dan Shift+K bisa melakukan hal berbeda.",
+  "Cycle through subtitle tracks in reverse order.":
+    "Berpindah antar trek subtitel dalam urutan terbalik.",
+  "Set loop start (A)": "Atur awal loop (A)",
+  "Mark where the A-B loop starts.": "Tandai titik awal loop A-B.",
+  "Set loop end (B)": "Atur akhir loop (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "Tandai titik akhir loop A-B; pemutaran lalu berulang di antara kedua tanda.",
+  "Clear the A-B loop and play on normally.":
+    "Hapus loop A-B dan lanjutkan pemutaran seperti biasa.",
   "Debridge is the part that finds you a working file. A TorBox and a Usenet account come with it, so you do not need to buy a debrid service separately. Already have Real-Debrid or AllDebrid? Plug it in instead.":
     "Debridge adalah bagian yang mencarikan file yang dapat diputar. Akun TorBox dan Usenet sudah disertakan, jadi Anda tidak perlu membeli layanan debrid secara terpisah. Sudah punya Real-Debrid atau AllDebrid? Hubungkan saja sebagai gantinya.",
   "Default location": "Lokasi bawaan",

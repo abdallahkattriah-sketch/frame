@@ -1826,6 +1826,46 @@ const settings: Record<string, string> = {
   "Cycle subtitles": "تبديل الترجمات",
   "Cycle through available subtitle tracks.": "التبديل بين مسارات الترجمة المتاحة.",
   "Cycle subtitles (alt)": "تبديل الترجمات (بديل)",
+  "Cycle subtitles backward": "تبديل الترجمات للخلف",
+  Developer: "المطوّر",
+  "Open search": "فتح البحث",
+  "Open or close the search overlay.": "فتح نافذة البحث أو إغلاقها.",
+  "Next room": "القسم التالي",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "الانتقال إلى القسم التالي في الشريط الجانبي. معطّل أثناء فتح المشغّل.",
+  "Previous room": "القسم السابق",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "الانتقال إلى القسم السابق في الشريط الجانبي. معطّل أثناء فتح المشغّل.",
+  "Go to room 1-9": "الانتقال إلى القسم 1-9",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "اضغط مع هذا المفتاح المساعد على 1-9 لفتح ذلك القسم في الشريط الجانبي. عند تغييره، اضغط أي رقم مع المفتاح المساعد الذي تريده، أو Delete لإيقافه. معطّل أثناء فتح المشغّل.",
+  "Toggle window fullscreen": "تبديل ملء الشاشة للنافذة",
+  "Make Harbor's window fill the screen, or restore it.":
+    "جعل نافذة Harbor تملأ الشاشة، أو إعادتها.",
+  "Toggle memory monitor": "تبديل مراقب الذاكرة",
+  "Show or hide the memory and cache monitor.":
+    "إظهار مراقب الذاكرة وذاكرة التخزين المؤقت أو إخفاؤه.",
+  "Show test error page": "عرض صفحة خطأ تجريبية",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "فتح صفحة الخطأ في Harbor مع خطأ تجريبي للتحقق من شكلها.",
+  "Jump through video 0-9": "التنقل في الفيديو 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "اضغط 0-9 للانتقال إلى ذلك العُشر من الفيديو (0 هو البداية و5 المنتصف). عند تغييره، اضغط أي رقم مع المفتاح المساعد الذي تريده، أو Delete لإيقافه.",
+  "Write a chat message": "كتابة رسالة دردشة",
+  "Open the watch-party chat box (in a Together room).":
+    "فتح مربع دردشة جلسة المشاهدة الجماعية (في غرفة Together).",
+  "Enter or exit fullscreen while reading.": "الدخول إلى ملء الشاشة أو الخروج منه أثناء القراءة.",
+  "Press {key}": "اضغط {key}",
+  "Press a modifier + digit…": "اضغط مفتاحًا مساعدًا + رقمًا…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "انقر على أي اختصار لتغييره. اضغط Esc أثناء الالتقاط للإلغاء. مفتاح Shift يُحتسب، لذا يمكن أن يؤدي K وShift+K وظيفتين مختلفتين.",
+  "Cycle through subtitle tracks in reverse order.": "التنقل بين مسارات الترجمة بترتيب عكسي.",
+  "Set loop start (A)": "تعيين بداية الحلقة (A)",
+  "Mark where the A-B loop starts.": "تحديد بداية حلقة A-B.",
+  "Set loop end (B)": "تعيين نهاية الحلقة (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "تحديد نهاية حلقة A-B؛ بعدها يتكرر التشغيل بين العلامتين.",
+  "Clear the A-B loop and play on normally.": "مسح حلقة A-B ومتابعة التشغيل بشكل عادي.",
   "A second binding for the same action so muscle memory survives.":
     "اختصار ثانٍ لنفس الإجراء لتسهيل الاستخدام.",
   "Subtitle delay −0.1s": "تأخير الترجمة −0.1 ثانية",

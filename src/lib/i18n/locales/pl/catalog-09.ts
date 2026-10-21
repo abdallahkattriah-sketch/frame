@@ -421,6 +421,7 @@ const catalog09: Record<string, string> = {
   "Pause when unfocused": "Wstrzymuj po utracie fokusu",
   "Pause · Space": "Wstrzymaj · Spacja",
   Paused: "Wstrzymano",
+  Resumed: "Wznowiono",
   "Paused on": "Wstrzymano na",
   "Paused on Simkl": "Wstrzymano w Simkl",
   "Paused on Trakt": "Wstrzymano w Trakt",

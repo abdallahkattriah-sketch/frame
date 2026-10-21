@@ -523,6 +523,7 @@ const misc: Record<string, string> = {
   Actions: "アクション",
   Playing: "再生中",
   Paused: "一時停止中",
+  Resumed: "再開",
   Windowed: "ウィンドウ表示",
   Inactive: "非アクティブ",
   Idle: "待機中",

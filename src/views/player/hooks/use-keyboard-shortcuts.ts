@@ -1,8 +1,14 @@
 import { useEffect, useRef, useState, type RefObject } from "react";
-import type { PlayerBridge, PlayerSnapshot } from "@/lib/player/bridge";
+import type { PlayerBridge, PlayerSnapshot, TrackInfo } from "@/lib/player/bridge";
 import { writePlayerPrefs } from "@/lib/player-prefs";
 import { writePlayerVolume } from "@/lib/player-volume";
-import { effectiveBinding, eventToBinding, isTypingTarget, type HotkeyId } from "@/lib/hotkeys";
+import {
+  digitFromEvent,
+  effectiveBinding,
+  eventToBinding,
+  isTypingTarget,
+  type HotkeyId,
+} from "@/lib/hotkeys";
 import { isWindowsDesktop } from "@/lib/platform";
 import { isRtxHdrBlocked, isRtxVsrBlocked } from "@/lib/player/rtx-video-policy";
 import { mediaKeyGate } from "@/lib/media-session";
@@ -15,6 +21,10 @@ import { isPlayerInteractionLocked } from "@/lib/player/interaction-lock";
 import { round2 } from "../player-utils";
 import { SPEED_MAX, SPEED_MIN } from "@/components/player/speed-indicator";
 import { SFX } from "@/lib/sfx";
+import type { ActionFeedback } from "@/components/player/action-indicator";
+import { useT } from "@/lib/i18n";
+import { fmtTime } from "@/components/player/transport/transport-utils";
+import { subtitleTrackLanguageLabel } from "@/lib/subtitles/track-label";
 
 export function useKeyboardShortcuts(params: {
   bridgeRef: RefObject<PlayerBridge | null>;
@@ -30,7 +40,7 @@ export function useKeyboardShortcuts(params: {
   toggleFullscreen: () => void;
   togglePip?: () => void;
   fullscreen: boolean;
-  cycleSubtitles: () => void;
+  cycleSubtitles: (direction: 1 | -1) => TrackInfo | null | undefined;
   setShowStats: (updater: (prev: boolean) => boolean) => void;
   metaId: string;
   svpActive: boolean;
@@ -57,6 +67,10 @@ export function useKeyboardShortcuts(params: {
   onRestartServer?: () => void;
   onVolumeFeedback?: (volume: number, muted: boolean) => void;
   onSpeedFeedback?: (rate: number) => void;
+  onOsd?: (feedback: ActionFeedback) => void;
+  onLoopStart?: () => void;
+  onLoopEnd?: () => void;
+  onLoopClear?: () => void;
 }) {
   const {
     bridgeRef,
@@ -98,7 +112,12 @@ export function useKeyboardShortcuts(params: {
     onRestartServer,
     onVolumeFeedback,
     onSpeedFeedback,
+    onOsd,
+    onLoopStart,
+    onLoopEnd,
+    onLoopClear,
   } = params;
+  const t = useT();
   const { settings, update } = useSettings();
   const overrides = settings.hotkeys ?? {};
   const seekBackStepSec = settings.seekBackStepSec;
@@ -125,6 +144,17 @@ export function useKeyboardShortcuts(params: {
     },
     [],
   );
+
+  const togglePlayRef = useRef(() => {});
+  togglePlayRef.current = () => {
+    const pausing = mediaRef.current.status === "playing";
+    playPauseToggle();
+    onOsd?.({
+      icon: pausing ? "pause" : "play",
+      title: t("Playback"),
+      value: pausing ? t("Paused") : t("Resumed"),
+    });
+  };
 
   const holdRef = useRef<{
     key: string | null;
@@ -179,20 +209,33 @@ export function useKeyboardShortcuts(params: {
 
       const binding = eventToBinding(e);
       const match = (id: HotkeyId): boolean => effectiveBinding(id, overrides) === binding;
+      const seekBy = (delta: number) => {
+        seekStep(delta);
+        const n = Math.abs(delta);
+        onOsd?.({
+          icon: delta < 0 ? "rewind" : "forward",
+          title: t("Seek"),
+          value: `${delta < 0 ? "−" : "+"}${n}s`,
+        });
+      };
+      const jumpTo = (sec: number, icon: "jump" | "start" | "end" = "jump") => {
+        seekTo(sec);
+        onOsd?.({ icon, title: t("Position"), value: fmtTime(sec) });
+      };
 
       if (e.key === "MediaPlayPause") {
         e.preventDefault();
-        if (mediaKeyGate()) playPauseToggle();
+        if (mediaKeyGate()) togglePlayRef.current();
         return;
       }
       if (e.key === "MediaPlay") {
         e.preventDefault();
-        if (mediaRef.current.status !== "playing" && mediaKeyGate()) playPauseToggle();
+        if (mediaRef.current.status !== "playing" && mediaKeyGate()) togglePlayRef.current();
         return;
       }
       if (e.key === "MediaPause" || e.key === "MediaStop") {
         e.preventDefault();
-        if (mediaRef.current.status === "playing" && mediaKeyGate()) playPauseToggle();
+        if (mediaRef.current.status === "playing" && mediaKeyGate()) togglePlayRef.current();
         return;
       }
       if (e.key === "MediaTrackNext" && hasNextEp && onNextEp) {
@@ -258,42 +301,44 @@ export function useKeyboardShortcuts(params: {
       }
       if (match("playerSeekBack10")) {
         e.preventDefault();
-        seekStep(-seekBackStepSec);
+        seekBy(-seekBackStepSec);
         return;
       }
       if (match("playerSeekForward10")) {
         e.preventDefault();
-        seekStep(seekForwardStepSec);
+        seekBy(seekForwardStepSec);
         return;
       }
       if (match("playerSeekBackShort")) {
         e.preventDefault();
-        seekStep(-seekBackStepShortSec);
+        seekBy(-seekBackStepShortSec);
         return;
       }
       if (match("playerSeekForwardShort")) {
         e.preventDefault();
-        seekStep(seekForwardStepShortSec);
+        seekBy(seekForwardStepShortSec);
         return;
       }
       if (match("playerSeekBack30")) {
         e.preventDefault();
-        seekStep(-30);
+        seekBy(-30);
         return;
       }
       if (match("playerSeekForward30")) {
         e.preventDefault();
-        seekStep(30);
+        seekBy(30);
         return;
       }
       if (match("playerFrameForward") && onFrameStep) {
         e.preventDefault();
         onFrameStep(1);
+        onOsd?.({ icon: "frame-forward", title: t("Next frame"), value: "" });
         return;
       }
       if (match("playerFrameBack") && onFrameStep) {
         e.preventDefault();
         onFrameStep(-1);
+        onOsd?.({ icon: "frame-back", title: t("Previous frame"), value: "" });
         return;
       }
       if (match("playerVolumeUp")) {
@@ -366,6 +411,11 @@ export function useKeyboardShortcuts(params: {
         if (!isWindowsDesktop() || isRtxHdrBlocked(settings.playerHdrToSdr, svpActive)) return;
         if (bridgeRef.current?.capabilities().engine !== "mpv") return;
         update({ playerRtxHdr: !settings.playerRtxHdr });
+        onOsd?.({
+          icon: "video",
+          title: t("RTX Video HDR"),
+          value: settings.playerRtxHdr ? t("Off") : t("On"),
+        });
         return;
       }
       if (match("playerRtxVsrToggle")) {
@@ -374,6 +424,11 @@ export function useKeyboardShortcuts(params: {
         if (!isWindowsDesktop() || isRtxVsrBlocked(svpActive)) return;
         if (bridgeRef.current?.capabilities().engine !== "mpv") return;
         update({ playerRtxVsr: !settings.playerRtxVsr });
+        onOsd?.({
+          icon: "video",
+          title: t("RTX Video Super Resolution"),
+          value: settings.playerRtxVsr ? t("Off") : t("On"),
+        });
         return;
       }
       if (match("playerPanscanUp") && onPanscanUp) {
@@ -391,9 +446,21 @@ export function useKeyboardShortcuts(params: {
         onPrevChannel();
         return;
       }
-      if (match("playerSubtitleCycle") || match("playerSubtitleCycleAlt")) {
+      const cycleForward = match("playerSubtitleCycle") || match("playerSubtitleCycleAlt");
+      if (cycleForward || match("playerSubtitleCycleBack")) {
         e.preventDefault();
-        cycleSubtitles();
+        const track = cycleSubtitles(cycleForward ? 1 : -1);
+        if (track !== undefined) {
+          onOsd?.(
+            track
+              ? {
+                  icon: "subtitles",
+                  title: t("Subtitles"),
+                  value: t(subtitleTrackLanguageLabel(track)),
+                }
+              : { icon: "subtitles-off", title: t("Subtitles"), value: t("Off") },
+          );
+        }
         return;
       }
       if (match("playerNextEpisode") && hasNextEp && onNextEp) {
@@ -406,14 +473,29 @@ export function useKeyboardShortcuts(params: {
         onPrevEp();
         return;
       }
+      if (match("playerLoopStart") && onLoopStart) {
+        e.preventDefault();
+        if (!e.repeat) onLoopStart();
+        return;
+      }
+      if (match("playerLoopEnd") && onLoopEnd) {
+        e.preventDefault();
+        if (!e.repeat) onLoopEnd();
+        return;
+      }
+      if (match("playerLoopClear") && onLoopClear) {
+        e.preventDefault();
+        if (!e.repeat) onLoopClear();
+        return;
+      }
       if (match("playerStart")) {
         e.preventDefault();
-        seekTo(0);
+        jumpTo(0, "start");
         return;
       }
       if (match("playerEnd")) {
         e.preventDefault();
-        if (snap.durationSec > 0) seekTo(snap.durationSec - 0.5);
+        if (snap.durationSec > 0) jumpTo(snap.durationSec - 0.5, "end");
         return;
       }
       if (match("playerStats")) {
@@ -510,20 +592,12 @@ export function useKeyboardShortcuts(params: {
         onRestartServer();
         return;
       }
-      if (!e.ctrlKey && !e.metaKey && !e.altKey) {
-        if (e.key === "0") {
-          e.preventDefault();
-          seekTo(0);
-          return;
-        }
-        const digit = parseInt(e.key, 10);
-        if (!Number.isNaN(digit) && digit >= 1 && digit <= 9) {
-          e.preventDefault();
-          if (snap.durationSec > 0) {
-            seekTo((snap.durationSec * digit) / 10);
-          }
-          return;
-        }
+      const digit = digitFromEvent(e, effectiveBinding("playerJumpDigits", overrides));
+      if (digit != null) {
+        e.preventDefault();
+        if (digit === 0) jumpTo(0, "start");
+        else if (snap.durationSec > 0) jumpTo((snap.durationSec * digit) / 10);
+        return;
       }
     };
     const releaseHold = () => {
@@ -549,7 +623,8 @@ export function useKeyboardShortcuts(params: {
         return;
       }
       if (h.key == null || e.key !== h.key) return;
-      if (releaseHold() === "tap") playPauseToggle();
+      if (releaseHold() !== "tap") return;
+      togglePlayRef.current();
     };
     const onBlur = () => {
       if (holdRef.current.key != null) releaseHold();
@@ -599,6 +674,11 @@ export function useKeyboardShortcuts(params: {
     onFrameStep,
     onVolumeFeedback,
     onSpeedFeedback,
+    onOsd,
+    onLoopStart,
+    onLoopEnd,
+    onLoopClear,
+    t,
     settings.playerEscExitsFullscreen,
     settings.playerConfirmLeave,
     settings.playerVolumeSfx,
@@ -620,14 +700,14 @@ export function useKeyboardShortcuts(params: {
         const playing = m.status === "playing";
         switch (e.payload) {
           case "playpause":
-            if (mediaKeyGate()) m.playPauseToggle();
+            if (mediaKeyGate()) togglePlayRef.current();
             break;
           case "play":
-            if (!playing && mediaKeyGate()) m.playPauseToggle();
+            if (!playing && mediaKeyGate()) togglePlayRef.current();
             break;
           case "pause":
           case "stop":
-            if (playing && mediaKeyGate()) m.playPauseToggle();
+            if (playing && mediaKeyGate()) togglePlayRef.current();
             break;
           case "next":
             if (m.hasNextEp && m.onNextEp && mediaKeyGate()) m.onNextEp();
@@ -661,7 +741,7 @@ export function useKeyboardShortcuts(params: {
         const m = mediaRef.current;
         switch (e.payload) {
           case "toggle":
-            m.playPauseToggle();
+            togglePlayRef.current();
             break;
           case "back":
             m.seekStep(-m.seekBackStepSec);

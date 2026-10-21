@@ -1299,6 +1299,46 @@ const settings: Record<string, string> = {
   "Cycle subtitles": "字幕を切り替え",
   "Cycle through available subtitle tracks.": "利用可能な字幕トラックを順に切り替えます。",
   "Cycle subtitles (alt)": "字幕を切り替え（別キー）",
+  "Cycle subtitles backward": "字幕を逆順に切り替え",
+  Developer: "開発者",
+  "Open search": "検索を開く",
+  "Open or close the search overlay.": "検索を開閉します。",
+  "Next room": "次のルーム",
+  "Go to the next room in the sidebar. Off while the player is open.":
+    "サイドバーの次のルームに移動します。プレーヤー表示中は無効です。",
+  "Previous room": "前のルーム",
+  "Go to the previous room in the sidebar. Off while the player is open.":
+    "サイドバーの前のルームに移動します。プレーヤー表示中は無効です。",
+  "Go to room 1-9": "ルーム 1-9 に移動",
+  "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
+    "この修飾キーを押しながら 1-9 を押すと、サイドバーのそのルームを開きます。変更するときは、使いたい修飾キーと任意の数字を押すか、Delete でオフにします。プレーヤー表示中は無効です。",
+  "Toggle window fullscreen": "ウィンドウの全画面表示を切り替え",
+  "Make Harbor's window fill the screen, or restore it.":
+    "Harbor のウィンドウを全画面にするか、元に戻します。",
+  "Toggle memory monitor": "メモリモニターを切り替え",
+  "Show or hide the memory and cache monitor.":
+    "メモリとキャッシュのモニターを表示または非表示にします。",
+  "Show test error page": "テスト用エラーページを表示",
+  "Open Harbor's error page with a sample error, to check how it looks.":
+    "サンプルのエラーで Harbor のエラーページを開き、表示を確認します。",
+  "Jump through video 0-9": "動画内ジャンプ 0-9",
+  "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
+    "0-9 を押すと、動画のその 10 分の 1 の位置に移動します（0 は先頭、5 は中間）。変更するときは、使いたい修飾キーと任意の数字を押すか、Delete でオフにします。",
+  "Write a chat message": "チャットメッセージを書く",
+  "Open the watch-party chat box (in a Together room).":
+    "ウォッチパーティーのチャット欄を開きます（Together ルーム内）。",
+  "Enter or exit fullscreen while reading.": "読書中に全画面表示を切り替えます。",
+  "Press {key}": "{key} を押す",
+  "Press a modifier + digit…": "修飾キー + 数字を押してください…",
+  "Click any binding to rebind it. Press Esc while capturing to cancel. Shift counts, so K and Shift+K can do different things.":
+    "ショートカットをクリックして変更します。入力中に Esc を押すとキャンセルします。Shift も区別されるため、K と Shift+K に別々の操作を割り当てられます。",
+  "Cycle through subtitle tracks in reverse order.": "字幕トラックを逆の順番で切り替えます。",
+  "Set loop start (A)": "ループ開始を設定 (A)",
+  "Mark where the A-B loop starts.": "A-B ループの開始位置を指定します。",
+  "Set loop end (B)": "ループ終了を設定 (B)",
+  "Mark where the A-B loop ends; playback then repeats between the two marks.":
+    "A-B ループの終了位置を指定します。以後、2 点間を繰り返し再生します。",
+  "Clear the A-B loop and play on normally.": "A-B ループを解除して通常どおり再生します。",
   "A second binding for the same action so muscle memory survives.":
     "使い慣れた操作を維持できるよう、同じ操作に2つ目のキーを割り当てます。",
   "Subtitle delay −0.1s": "字幕の遅延 −0.1秒",
