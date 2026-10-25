@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from "react";
 import type { Meta } from "@/lib/cinemeta";
 import type { HomeRow } from "@/views/home/home-types";
 import { buildAnimeHomeRows } from "@/views/home/home-rows";
-import { buildArabicHomeRows } from "@/lib/arabic/home-rows";
 import { buildRussianHomeRows } from "@/lib/russian/home-rows";
 import { buildTraktHomeRows } from "@/lib/trakt/home-rails";
 import { useTrakt } from "@/lib/trakt/provider";
@@ -62,13 +61,6 @@ export function useBpExtraRows(): BpExtraRows {
   const animeRows = useAsyncRows(
     settings.hideContent.anime || classic ? null : () => buildAnimeHomeRows(),
     [settings.hideContent.anime, classic],
-  );
-
-  const arabicRows = useAsyncRows(
-    uiLang !== "ar" || classic || !settings.tmdbKey
-      ? null
-      : () => buildArabicHomeRows(settings.tmdbKey),
-    [uiLang, classic, settings.tmdbKey, settings.tmdbLanguage],
   );
 
   const russianRows = useAsyncRows(
@@ -172,20 +164,13 @@ export function useBpExtraRows(): BpExtraRows {
 
   return useMemo(
     () => ({
-      before: [
-        ...listHomeRows,
-        ...collectionHomeRows,
-        ...pinnedRows,
-        ...arabicRows,
-        ...russianRows,
-      ],
+      before: [...listHomeRows, ...collectionHomeRows, ...pinnedRows, ...russianRows],
       after: [...personalRows, ...traktRows, ...simklRows, ...letterboxdRows, ...animeRows],
     }),
     [
       listHomeRows,
       collectionHomeRows,
       pinnedRows,
-      arabicRows,
       russianRows,
       personalRows,
       traktRows,

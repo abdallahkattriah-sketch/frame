@@ -10,31 +10,6 @@ export type LocaleProfile = {
   greetingKey: "arabic" | null;
 };
 
-const ARAB_REGIONS = new Set([
-  "SA",
-  "AE",
-  "EG",
-  "QA",
-  "KW",
-  "BH",
-  "OM",
-  "JO",
-  "LB",
-  "IQ",
-  "SY",
-  "YE",
-  "LY",
-  "TN",
-  "DZ",
-  "MA",
-  "SD",
-  "PS",
-  "MR",
-  "SO",
-  "DJ",
-  "KM",
-]);
-
 const LATAM_REGIONS = new Set([
   "MX",
   "AR",
@@ -90,17 +65,6 @@ const EN: LocaleProfile = {
 
 export function localeForRegion(region: string): LocaleProfile {
   const r = (region || "").toUpperCase();
-  if (ARAB_REGIONS.has(r)) {
-    return {
-      uiLanguage: "ar",
-      tmdbLanguage: `ar-${r}`,
-      contentLanguage: "ar",
-      subtitleLanguage: "Arabic",
-      audioLanguage: "Arabic",
-      rtl: true,
-      greetingKey: "arabic",
-    };
-  }
   if (LATAM_REGIONS.has(r)) {
     return {
       uiLanguage: "es",

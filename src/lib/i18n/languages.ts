@@ -26,9 +26,11 @@ export type LanguageOption = {
 
 export const DEFAULT_LANGUAGE: UiLanguage = "en";
 
+// Frame offers no Arabic interface. "ar" stays in UiLanguage so its catalog and
+// older saved settings still type-check, but it is not listed here, so
+// normalizeLanguage turns a saved "ar" into English.
 export const LANGUAGES: LanguageOption[] = [
   { code: "en", label: "English", nativeLabel: "English", greeting: "Hello", rtl: false },
-  { code: "ar", label: "Arabic", nativeLabel: "العربية", greeting: "مرحبا", rtl: true },
   {
     code: "zh",
     label: "Chinese (Simplified)",

@@ -18,9 +18,10 @@ const KEYPADS = [
 
 const BP_KEYPADS = ["src/views/big-picture/bp-who-is-watching-pin.tsx"];
 
-test("Arabic really does flip the document, so PIN order is at risk", () => {
+// Frame offers no right-to-left language today, but the store still flips the
+// document for one, so the keypads keep their own direction.
+test("a right-to-left language would flip the document, so PIN order is at risk", () => {
   assert.match(read("src/lib/i18n/store.ts"), /root\.dir = isRtl\(lang\) \? "rtl" : "ltr";/);
-  assert.match(read("src/lib/i18n/languages.ts"), /code: "ar",[^\n]*rtl: true/);
 });
 
 test("every numeric keypad stays left to right", () => {

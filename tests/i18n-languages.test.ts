@@ -6,7 +6,6 @@ import { uiCatalogLoaded } from "../src/lib/i18n/translate.ts";
 
 const EXPECTED: UiLanguage[] = [
   "en",
-  "ar",
   "zh",
   "fr",
   "de",
@@ -23,7 +22,7 @@ const EXPECTED: UiLanguage[] = [
   "vi",
 ];
 
-test("the display language registry exposes English and fifteen translations", () => {
+test("the display language registry exposes English and fourteen translations", () => {
   assert.deepEqual(
     LANGUAGES.map(({ code }) => code),
     EXPECTED,
@@ -31,7 +30,7 @@ test("the display language registry exposes English and fifteen translations", (
   assert.equal(new Set(EXPECTED).size, EXPECTED.length);
   assert.deepEqual(
     LANGUAGES.filter(({ rtl }) => rtl).map(({ code }) => code),
-    ["ar"],
+    [],
   );
 });
 
@@ -41,6 +40,9 @@ test("stored language values normalize against the complete registry", () => {
   assert.equal(normalizeLanguage("pt-BR"), "pt");
   assert.equal(normalizeLanguage("zh_CN"), "zh");
   assert.equal(normalizeLanguage("unknown"), "en");
+  // Frame dropped the Arabic interface, so a saved "ar" falls back to English.
+  assert.equal(normalizeLanguage("ar"), "en");
+  assert.equal(normalizeLanguage("ar-EG"), "en");
   assert.equal(normalizeLanguage(null), "en");
 });
 

@@ -22,12 +22,18 @@ test("unambiguous regions select their translated Harbor interface", () => {
   }
 });
 
-test("existing Arabic, Spanish, Portuguese and Russian region behavior remains intact", () => {
-  assert.equal(localeForRegion("AE").uiLanguage, "ar");
+test("existing Spanish, Portuguese and Russian region behavior remains intact", () => {
   assert.equal(localeForRegion("MX").uiLanguage, "es");
   assert.equal(localeForRegion("ES").uiLanguage, "es");
   assert.equal(localeForRegion("BR").uiLanguage, "pt");
   assert.equal(localeForRegion("RU").uiLanguage, "ru");
+});
+
+test("Arabic-speaking regions stay on English, since Frame has no Arabic interface", () => {
+  for (const region of ["EG", "AE", "SA", "MA"]) {
+    assert.equal(localeForRegion(region).uiLanguage, "en", region);
+    assert.equal(localeForRegion(region).rtl, false, region);
+  }
 });
 
 test("multilingual regions stay on English instead of guessing", () => {

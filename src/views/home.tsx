@@ -37,7 +37,6 @@ import { setTop10Metas } from "@/lib/top10-set";
 import { fetchHeroFeed } from "@/lib/feed/hero-pool";
 import { hasTmdbProviderAddon, loadAddonRows, userAddons, type AddonRow } from "@/lib/addons";
 import { isAnimeRow } from "@/views/anime";
-import { buildArabicHomeRows } from "@/lib/arabic/home-rows";
 import { buildRussianHomeRows } from "@/lib/russian/home-rows";
 import { useAuth } from "@/lib/auth";
 import { anyProfileSharesStremioWith, useProfiles } from "@/lib/profiles";
@@ -136,7 +135,6 @@ export function Home({
   const [isAddSourceModalOpen, setAddSourceModalOpen] = useState(false);
   const [rows, setRows] = useState<HomeRow[]>([]);
   const [animeRows, setAnimeRows] = useState<HomeRow[]>([]);
-  const [arabicRows, setArabicRows] = useState<HomeRow[]>([]);
   const [russianRows, setRussianRows] = useState<HomeRow[]>([]);
   const [traktRows, setTraktRows] = useState<HomeRow[]>([]);
   const [simklRows, setSimklRows] = useState<HomeRow[]>([]);
@@ -344,22 +342,6 @@ export function Home({
       cancelled = true;
     };
   }, [settings.hideContent.anime, settings.homeMode]);
-
-  useEffect(() => {
-    if (uiLang !== "ar" || settings.homeMode === "classic" || !settings.tmdbKey) {
-      setArabicRows([]);
-      return;
-    }
-    let cancelled = false;
-    buildArabicHomeRows(settings.tmdbKey)
-      .then((rs) => {
-        if (!cancelled) setArabicRows(rs);
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, [uiLang, settings.homeMode, settings.tmdbKey, settings.tmdbLanguage]);
 
   useEffect(() => {
     if (uiLang !== "ru" || settings.homeMode === "classic" || !settings.tmdbKey) {
@@ -1001,7 +983,6 @@ export function Home({
       ...listHomeRows,
       ...collectionHomeRows,
       ...pinnedRows,
-      ...arabicRows,
       ...russianRows,
       ...personalRows,
       ...traktRows,
@@ -1014,7 +995,6 @@ export function Home({
       listHomeRows,
       collectionHomeRows,
       pinnedRows,
-      arabicRows,
       russianRows,
       personalRows,
       traktRows,
@@ -1342,7 +1322,6 @@ export function Home({
           traktRows.length === 0 &&
           simklRows.length === 0 &&
           animeRows.length === 0 &&
-          arabicRows.length === 0 &&
           russianRows.length === 0 ? (
             Array.from({ length: 4 }).map((_, i) => <RowSkeleton key={`skel-${i}`} />)
           ) : (
