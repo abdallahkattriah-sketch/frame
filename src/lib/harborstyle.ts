@@ -5,9 +5,10 @@ const BLOCK_NAMES = new Set(["tokens", "css", "html", "js"]);
 
 type ParseResult = { ok: true; theme: CustomTheme } | { ok: false; error: string };
 
+/** Frame's `.framestyle` and Harbor's `.harborstyle` share one format. */
 export function isHarborStyleName(name: string): boolean {
-  const lower = name.toLowerCase();
-  return lower.endsWith(".harborstyle") || lower.endsWith(".harborstyle.txt");
+  const lower = name.toLowerCase().replace(/\.txt$/, "");
+  return lower.endsWith(".framestyle") || lower.endsWith(".harborstyle");
 }
 
 export function parseHarborStyle(text: string): ParseResult {
@@ -142,7 +143,7 @@ function joinBlock(arr: string[]): string {
 }
 
 export function serializeHarborStyle(theme: ThemePreset | CustomTheme): string {
-  const lines: string[] = ["# Harbor Style", `name: ${theme.name}`];
+  const lines: string[] = ["# Frame Style", `name: ${theme.name}`];
   if (theme.blurb) lines.push(`blurb: ${theme.blurb}`);
   if (theme.layout) lines.push(`layout: ${theme.layout}`);
   if (theme.cardStyle) lines.push(`card: ${theme.cardStyle}`);
@@ -180,7 +181,7 @@ export function serializeHarborStyle(theme: ThemePreset | CustomTheme): string {
 }
 
 export function harborStyleStarter(): string {
-  return `# Harbor Style
+  return `# Frame Style
 name: My Theme
 blurb: A short tagline shown in the picker.
 layout: sidebar

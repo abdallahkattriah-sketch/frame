@@ -2,6 +2,7 @@ import { kawaiiCss } from "./theme-kawaii";
 import auroraPreview from "@/assets/theme-previews/aurora.png";
 import crunchPreview from "@/assets/theme-previews/crunchy.png";
 import draculaPreview from "@/assets/theme-previews/dracula.png";
+import frameDefaultBg from "@/assets/themes/frame-default-bg.png";
 import forestPreview from "@/assets/theme-previews/forest.png";
 import harborPreview from "@/assets/theme-previews/harbor.png";
 import kawaiiPreview from "@/assets/theme-previews/kawaii.jpg";
@@ -24,6 +25,7 @@ function escapeGeneratedHtml(value: string): string {
 }
 
 export type ThemePresetId =
+  | "frame"
   | "cool-grey"
   | "nord"
   | "stremio"
@@ -122,6 +124,33 @@ export type FontPair = {
 };
 
 export const THEME_PRESETS: Record<ThemePresetId, ThemePreset> = {
+  // Frame's out-of-the-box look, taken from Default.framestyle.
+  frame: {
+    id: "frame",
+    name: "Default",
+    blurb: "Violet on graphite, bold accents. Easy on the eyes.",
+    swatch: ["#0c1217", "#151f27", "#f3ae69"],
+    tokens: {
+      "--color-canvas": "#0c1217",
+      "--color-surface": "#151f27",
+      "--color-elevated": "#22323d",
+      "--color-raised": "#30434f",
+      "--color-ink": "#e0e7eb",
+      "--color-ink-muted": "#a9bac5",
+      "--color-ink-subtle": "#8498a8",
+      "--color-edge": "#2939438c",
+      "--color-edge-soft": "#29394340",
+      "--color-accent": "#f3ae69",
+      "--color-accent-soft": "#f3ae692e",
+      "--color-danger": "#e06c75",
+    },
+    background: { image: frameDefaultBg, dim: 0.35 },
+    layout: "dracula",
+    cardStyle: "flat",
+    buttonStyle: "flat",
+    bokeh: true,
+    fontPair: "general-sans",
+  },
   "cool-grey": {
     id: "cool-grey",
     name: "Harbor default",
@@ -1879,10 +1908,10 @@ export const DEFAULT_CUSTOM_COLORS: CustomColors = {
 };
 
 export const DEFAULT_THEME: ThemeSettings = {
-  preset: "cool-grey",
+  preset: "frame",
   backgroundImage: null,
-  backgroundDim: 0.65,
-  fontPair: "sentient-switzer",
+  backgroundDim: 0.35,
+  fontPair: "general-sans",
   customColors: null,
 };
 
@@ -1940,7 +1969,7 @@ function resolveTokens(theme: ThemeSettings): Record<string, string> {
     const found = getThemeById(theme.preset);
     if (found) return found.tokens;
   }
-  return THEME_PRESETS["cool-grey"].tokens;
+  return THEME_PRESETS.frame.tokens;
 }
 
 export function isLightColor(value: string | undefined): boolean {

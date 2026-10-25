@@ -195,7 +195,7 @@ export function CustomThemesSection({
     const input = document.createElement("input");
     input.type = "file";
     input.accept =
-      ".harborstyle,.json,.txt,.harbortheme.json,.yaml,.yml,.ini,.xml,application/json,text/plain";
+      ".framestyle,.harborstyle,.json,.txt,.harbortheme.json,.yaml,.yml,.ini,.xml,application/json,text/plain";
     input.onchange = () => {
       const f = input.files?.[0];
       if (f) importFile(f);
@@ -208,15 +208,11 @@ export function CustomThemesSection({
   const remove = (id: string) => {
     const wasActive = settings.theme.preset === id;
     const image = wasActive
-      ? nextBackgroundImage(
-          settings.theme.backgroundImage,
-          getThemeById(id),
-          getThemeById("cool-grey"),
-        )
+      ? nextBackgroundImage(settings.theme.backgroundImage, getThemeById(id), getThemeById("frame"))
       : null;
     removeCustomTheme(id);
     if (wasActive) {
-      update({ theme: { ...settings.theme, preset: "cool-grey", backgroundImage: image } });
+      update({ theme: { ...settings.theme, preset: "frame", backgroundImage: image } });
     }
   };
 
@@ -231,7 +227,7 @@ export function CustomThemesSection({
     if (!preset) return;
     const text = serializeHarborStyle(preset);
     const safeName = preset.name.replace(/[^a-z0-9-_]+/gi, "-").toLowerCase() || "theme";
-    await downloadText(`${safeName}.harborstyle`, text, ["harborstyle"]);
+    await downloadText(`${safeName}.framestyle`, text, ["framestyle"]);
   };
 
   if (studioOpen) {

@@ -11335,9 +11335,7 @@ export function SettingsNav({
     playerLayout: null,
     controllers: settings.controllerSupportEnabled ? "on" : null,
     theme:
-      settings.theme.preset === "cool-grey" && settings.theme.fontPair === "sentient-switzer"
-        ? null
-        : "•",
+      settings.theme.preset === "frame" && settings.theme.fontPair === "general-sans" ? null : "•",
     badges: null,
     awardIcons: null,
     webhooks: webhookActive ? "live" : null,

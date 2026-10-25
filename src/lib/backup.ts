@@ -15,8 +15,18 @@ import { localLibraryReady, readLocalLibrary, restoreLocalLibrary } from "@/lib/
 
 declare const __APP_VERSION__: string;
 
+// The container keeps Harbor's format id, so `.framex` and legacy `.harbx`
+// files are the same JSON and either one restores on Frame or Harbor.
 const FORMAT = "harbor-backup";
 const VERSION = 1;
+
+export const BACKUP_EXTENSION = "framex";
+/** Extensions the restore picker accepts: Frame's own and Harbor's. */
+export const BACKUP_IMPORT_EXTENSIONS = ["framex", "harbx"] as const;
+
+export function backupFileName(date: Date = new Date()): string {
+  return `frame-backup-${date.toISOString().slice(0, 10)}.${BACKUP_EXTENSION}`;
+}
 
 export type BackupSectionKey =
   | "theme"
@@ -341,8 +351,7 @@ export async function buildBackup(selected?: BackupSectionKey[]): Promise<Backup
 export async function downloadBackup(selected?: BackupSectionKey[]): Promise<boolean> {
   const backup = await buildBackup(selected);
   const text = JSON.stringify(backup, null, 2);
-  const stamp = new Date().toISOString().slice(0, 10);
-  return downloadText(`harbor-backup-${stamp}.harbx`, text, ["harbx"], "Harbor backup");
+  return downloadText(backupFileName(), text, [BACKUP_EXTENSION], "Frame backup");
 }
 
 export type BackupValidationError =

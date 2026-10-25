@@ -132,7 +132,7 @@ function ThemeTab() {
           onClearCustom={() =>
             setTheme({
               customColors: null,
-              preset: theme.preset === "custom" ? "cool-grey" : theme.preset,
+              preset: theme.preset === "custom" ? "frame" : theme.preset,
             })
           }
         />

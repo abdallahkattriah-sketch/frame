@@ -296,7 +296,7 @@ export function ThemeStudio({ seed, onClose }: { seed?: ThemePreset; onClose: ()
     if (!canSave) return;
     const text = serializeHarborStyle(buildTheme());
     const slug = trimmedName.toLowerCase().replace(/[^a-z0-9]+/g, "-") || "theme";
-    await downloadText(`${slug}.harborstyle`, text, ["harborstyle"]);
+    await downloadText(`${slug}.framestyle`, text, ["framestyle"]);
   };
 
   return createPortal(
