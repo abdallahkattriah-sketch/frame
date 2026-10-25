@@ -1,21 +1,12 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useT } from "@/lib/i18n";
 import { useView } from "@/lib/view";
 import { useSettings } from "@/lib/settings";
 import { useSectionBack } from "@/lib/section-back";
 import { openExternalUrlStrict } from "@/lib/window";
-import { SPOOKTOBER_PLAYLISTS } from "@/lib/spooktober-navigation";
-import type { SpooktoberPlaylistRequest } from "@/lib/spooktober-navigation";
 import { SpooktoberLoadingScene } from "./spooktober-loading";
-import {
-  SpooktoberMusicProvider,
-  SpooktoberPlaylist,
-  useSpooktoberMusicPlayback,
-} from "./spooktober-playlist";
-import { spooktoberSongToTrack, spooktoberVideoToTrack } from "./spooktober-music";
-import { SpooktoberPlaylistIndicator } from "./spooktober-playlist-indicator";
 import nativeTheme from "../../../scripts/spooktober-native/theme.css?raw";
-import playingMarkStyles from "@/components/music/music-now-playing-mark.css?raw";
+import frameTheme from "./spooktober-frame.css?raw";
 import "./spooktober-view.css";
 
 const NATIVE_ENTRY = "/spooktober/native-entry.js?v=20261003-anime-mask-mal";
@@ -37,49 +28,27 @@ type NativeModule = {
 type SpooktoberViewProps = {
   active: boolean;
   onBack: () => void;
-  playlistRequest?: SpooktoberPlaylistRequest | null;
   entryToken?: number;
 };
 const text = (item: Item, key: string) =>
   typeof item[key] === "string" ? (item[key] as string) : "";
 
-export function SpooktoberView(props: SpooktoberViewProps) {
-  return (
-    <SpooktoberMusicProvider active={props.active}>
-      <SpooktoberContent {...props} />
-    </SpooktoberMusicProvider>
-  );
-}
-
-function SpooktoberContent({ active, onBack, playlistRequest, entryToken }: SpooktoberViewProps) {
+export function SpooktoberView({ active, onBack, entryToken }: SpooktoberViewProps) {
   const t = useT();
   const { openMeta } = useView();
   const { settings } = useSettings();
-  const { play, playVideo } = useSpooktoberMusicPlayback();
   const host = useRef<HTMLDivElement>(null);
-  const playlistReturnFocus = useRef<HTMLElement | null>(null);
   const runtime = useRef<Runtime | null>(null);
-  const [playlist, setPlaylist] = useState<string | null>(playlistRequest?.id ?? null);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [linkFailed, setLinkFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
-  const isVisible = active && !playlist;
+  const isVisible = active;
   const visibility = useRef(isVisible);
   visibility.current = isVisible;
-  useEffect(() => {
-    if (playlistRequest) setPlaylist(playlistRequest.id);
-  }, [playlistRequest]);
-  const back = useCallback(() => {
-    if (playlist) {
-      const origin = playlistReturnFocus.current;
-      setPlaylist(null);
-      requestAnimationFrame(() =>
-        (origin?.isConnected ? origin : host.current)?.focus({ preventScroll: true }),
-      );
-    } else if (!runtime.current?.back()) onBack();
-  }, [playlist, onBack]);
-  useSectionBack(back, active && !playlist);
+  useSectionBack(() => {
+    if (!runtime.current?.back()) onBack();
+  }, active);
 
   const onIntent = useRef<(message: Intent) => void>(() => {});
   onIntent.current = (message) => {
@@ -90,12 +59,6 @@ function SpooktoberContent({ active, onBack, playlistRequest, entryToken }: Spoo
     }
     if (message.intent === "reload") {
       setAttempt((value) => value + 1);
-      return;
-    }
-    if (message.intent === "playlist" && message.id && SPOOKTOBER_PLAYLISTS.has(message.id)) {
-      const focused = host.current?.shadowRoot?.activeElement;
-      playlistReturnFocus.current = focused instanceof HTMLElement ? focused : null;
-      setPlaylist(message.id);
       return;
     }
     if (
@@ -124,27 +87,6 @@ function SpooktoberContent({ active, onBack, playlistRequest, entryToken }: Spoo
           ? item.genres.filter((value): value is string => typeof value === "string")
           : undefined,
       });
-    } else if (message.intent === "video" && /^[\w-]{11}$/.test(text(item, "id"))) {
-      playVideo(
-        spooktoberVideoToTrack({
-          id: text(item, "id"),
-          title,
-          artist: text(item, "artist"),
-          image: text(item, "image"),
-        }),
-      );
-    } else if (message.intent === "track" && text(item, "id") && text(item, "creator")) {
-      play(
-        spooktoberSongToTrack({
-          id: text(item, "id"),
-          title,
-          creator: text(item, "creator"),
-          album: text(item, "album"),
-          poster: text(item, "poster"),
-          duration: Number(item.duration) || 0,
-          explicit: item.explicit === true,
-        }),
-      );
     }
   };
 
@@ -195,34 +137,22 @@ function SpooktoberContent({ active, onBack, playlistRequest, entryToken }: Spoo
     if (!ready || !root) return;
     const style = document.createElement("style");
     style.dataset.harborTheme = "";
-    style.textContent = playingMarkStyles + nativeTheme;
+    style.textContent = nativeTheme + frameTheme;
     root.append(style);
     return () => style.remove();
-  }, [ready, nativeTheme, playingMarkStyles]);
+  }, [ready, nativeTheme, frameTheme]);
 
   return (
     <div className="spooktober-native-view">
       <div
         ref={host}
         className="spooktober-world harbor-scroll"
-        hidden={!!playlist}
         tabIndex={-1}
         aria-label="Spooktober"
         data-local-keyboard
         data-show-imdb={settings.showImdbBadge}
       />
-      {ready && host.current?.shadowRoot && (
-        <SpooktoberPlaylistIndicator root={host.current.shadowRoot} active={isVisible} />
-      )}
-      {playlist && (
-        <SpooktoberPlaylist
-          playlistId={playlist}
-          onBack={back}
-          active={active}
-          focusTrackId={playlistRequest?.id === playlist ? playlistRequest.trackId : undefined}
-        />
-      )}
-      {!playlist && (!ready || failed) && (
+      {(!ready || failed) && (
         <div
           className="spooktober-runtime-status"
           role="status"

@@ -1,0 +1,9 @@
+/* Frame has no music player, so the page's songs, playlists and music videos
+   are hidden rather than left as buttons that do nothing. */
+#section-music,
+#music-world,
+.playlist-world,
+.music-card,
+.format-link[href="#music-world"] {
+  display: none !important;
+}

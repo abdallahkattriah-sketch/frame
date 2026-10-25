@@ -1,12 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useState } from "react";
 import { Home } from "@/views/home";
 import { isSpooktoberSeason, nextSpooktoberDateCheck } from "@/lib/spooktober-season";
-import { useView } from "@/lib/view";
-import {
-  SPOOKTOBER_PLAYLIST_EVENT,
-  takeSpooktoberPlaylistRequest,
-  type SpooktoberPlaylistRequest,
-} from "@/lib/spooktober-navigation";
 import { SpooktoberInvitation } from "./spooktober-entry";
 import { SpooktoberLoadingScene } from "./spooktober-loading";
 import { useOnboarding } from "@/lib/onboarding";
@@ -22,16 +16,13 @@ export function SpooktoberHome({
   active?: boolean;
   onReady?: () => void;
 }) {
-  const { setView } = useView();
   const { isDismissed, dismiss } = useOnboarding();
   const [available, setAvailable] = useState(isSpooktoberSeason);
   const [screen, setScreen] = useState<"home" | "festival">("home");
   const [festivalOpened, setFestivalOpened] = useState(false);
   const [entryToken, setEntryToken] = useState(0);
-  const [playlistRequest, setPlaylistRequest] = useState<SpooktoberPlaylistRequest | null>(null);
   const close = useCallback(() => {
     setScreen("home");
-    setPlaylistRequest(null);
     requestAnimationFrame(() =>
       document
         .querySelector<HTMLButtonElement>("[data-spooktober-invitation]")
@@ -44,19 +35,6 @@ export function SpooktoberHome({
     setEntryToken((value) => value + 1);
     setScreen("festival");
   };
-  useEffect(() => {
-    const receive = () => {
-      const request = takeSpooktoberPlaylistRequest();
-      if (!request) return;
-      setPlaylistRequest(request);
-      setFestivalOpened(true);
-      setScreen("festival");
-      setView("home");
-    };
-    window.addEventListener(SPOOKTOBER_PLAYLIST_EVENT, receive);
-    receive();
-    return () => window.removeEventListener(SPOOKTOBER_PLAYLIST_EVENT, receive);
-  }, [setView]);
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout>;
     const check = () => {
@@ -113,7 +91,6 @@ export function SpooktoberHome({
             <Festival
               active={active && screen === "festival"}
               onBack={close}
-              playlistRequest={playlistRequest}
               entryToken={entryToken}
             />
           </Suspense>
