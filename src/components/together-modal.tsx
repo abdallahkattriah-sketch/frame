@@ -14,8 +14,6 @@ import { ChatPanel } from "./together-modal/chat-panel";
 import { GuestPickToggle } from "./together-modal/guest-pick-toggle";
 import { InvitePanel } from "./together-modal/invite-panel";
 import { ReturnToVideo } from "./together-modal/return-to-video";
-import { ListenTogetherCta } from "./together-modal/listen-together-cta";
-import { useListenTogether } from "@/lib/listen-together/provider";
 import { TogetherRelayBanner } from "./together-relay-banner";
 import { ThreeLiquidGlassSurface } from "@/components/ThreeLiquidGlassSurface";
 
@@ -143,7 +141,6 @@ export function TogetherPopover({
     [snapshot.participants],
   );
 
-  const listen = useListenTogether();
   const roomMedia = snapshot.syncState;
   const canReturn = inSession && !!roomMedia?.mediaId && topKind !== "player";
   const surfaceShape = modal
@@ -332,18 +329,6 @@ export function TogetherPopover({
               <p className="px-1 text-[10.5px] text-ink-subtle">{t("or paste an invite link")}</p>
             </div>
 
-            {listen.relayReady && !listen.watchingBlocks && (
-              <ListenTogetherCta
-                room={listen.room}
-                listeners={listen.listeners}
-                nowPlaying={listen.nowPlaying}
-                artwork={listen.nowPlaying?.artwork ?? null}
-                busy={listen.busy}
-                onStart={listen.start}
-                onOpen={() => setView("default")}
-              />
-            )}
-
             {errored && snapshot.lastError && (
               <div className="flex flex-col gap-2 rounded-lg bg-danger/15 px-3 py-2.5">
                 <p className="text-[12px] leading-snug text-danger">{snapshot.lastError}</p>
@@ -361,18 +346,6 @@ export function TogetherPopover({
         {view === "default" && enabled && inSession && (
           <>
             {canReturn && roomMedia && <ReturnToVideo media={roomMedia} onReturn={returnToVideo} />}
-
-            {listen.relayReady && !listen.watchingBlocks && (
-              <ListenTogetherCta
-                room={listen.room}
-                listeners={listen.listeners}
-                nowPlaying={listen.nowPlaying}
-                artwork={listen.nowPlaying?.artwork ?? null}
-                busy={listen.busy}
-                onStart={listen.start}
-                onOpen={() => setView("default")}
-              />
-            )}
 
             <div className="flex items-center justify-between rounded-lg bg-canvas/50 px-3.5 py-2.5">
               <div className="flex flex-col">

@@ -102,7 +102,6 @@ function harness(t, options = {}) {
     "@/lib/settings": { useSettings: () => ({ settings, update() {} }) },
     "@/lib/view": { useView: () => ({}) },
     "@/lib/profiles": { useProfiles: () => ({ activeProfile: null }) },
-    "@/lib/games/steam-store-search": { steamStoreQuery: () => null },
     "@/lib/i18n": { useT: () => (value) => value },
     "@/lib/use-exit-presence": {
       useExitPresence: () => ({ mounted: search.open, closing: false }),

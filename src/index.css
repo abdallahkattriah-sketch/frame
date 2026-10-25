@@ -3305,12 +3305,6 @@ html[data-theme-layout="minui"] .harbor-together-pill {
     stroke-dashoffset: 0;
   }
 }
-@keyframes harbor-view-in {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-}
 
 @keyframes harbor-detail-fade {
   from {

@@ -1,5 +1,4 @@
 import { ArrowUpRight, Music } from "@/views/settings/icons";
-import { SongIdSave } from "./song-id-save";
 import { useT } from "@/lib/i18n";
 import type { SongIdToastMsg } from "@/lib/song-id";
 
@@ -91,7 +90,6 @@ export function SongIdCard({
               {t("Open on YouTube")}
               <ArrowUpRight size={compact ? 13 : 15} strokeWidth={2.4} />
             </span>
-            {message.song && <SongIdSave song={message.song} compact={compact} />}
           </span>
         )}
       </div>

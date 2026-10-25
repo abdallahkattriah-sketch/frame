@@ -6,7 +6,6 @@ import { NavHiddenTray, NavEditableItem, NavEditClose, useNavDrag } from "@/chro
 import { useNavEditMode } from "@/chrome/nav-edit-mode";
 import { Search } from "@/components/icons/search-icon";
 import { HarborMark } from "@/components/icons/harbor-mark";
-import { NotificationCenter } from "@/components/notification-center/notification-center";
 import { ParentalPinModal } from "@/components/parental-pin-modal";
 import { TogetherButton } from "@/chrome/topbar";
 import { AccountMenu } from "@/chrome/account-menu/account-menu";
@@ -132,7 +131,6 @@ export function RoyalTopbar() {
 
           <div className="flex shrink-0 items-center gap-1.5">
             <SearchPill onOpen={() => setSearchOpen(true)} />
-            <NotificationCenter />
             {view !== "live" && <TogetherButton variant="ghost" />}
             {bigPicture.offer && (
               <button

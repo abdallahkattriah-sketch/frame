@@ -2,16 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { AccountMenuFloating } from "@/chrome/account-menu/account-menu-floating";
 import { StatusPicker } from "@/chrome/sidebar/status-control";
-import { NotificationCenter } from "@/components/notification-center/notification-center";
 import { useAuth } from "@/lib/auth";
-import { useActiveKid, useProfiles } from "@/lib/profiles";
+import { useProfiles } from "@/lib/profiles";
 import { useSettings } from "@/lib/settings";
 import {
   anchorFromElement,
   openAccountMenu,
   type AccountMenuAnchor,
 } from "@/lib/social/account-menu-open";
-import { openNotificationCenter } from "@/lib/social/notification-open";
 import {
   currentStatus,
   setStatus,
@@ -19,9 +17,7 @@ import {
   type PresenceStatus,
 } from "@/lib/social/presence";
 import { getUnreadCount, subscribeUnread } from "@/lib/social/unread-bridge";
-import { activeLayout } from "@/lib/theme";
 import { useBigPictureEntry } from "@/chrome/use-big-picture-entry";
-import { useThemePreview } from "@/lib/theme-preview";
 
 const SCAN_MS = 1200;
 const STATUS_EVENT = "harbor:open-status-picker";
@@ -151,8 +147,6 @@ function StatusPickerFloating() {
 
 export function ThemeChromeBridge() {
   const { settings } = useSettings();
-  const kid = useActiveKid();
-  const preview = useThemePreview();
   const { activeProfile } = useProfiles();
   const { user } = useAuth();
   const harborAvatar = settings.harborAvatar?.startsWith("/kids/avatars/")
@@ -188,10 +182,11 @@ export function ThemeChromeBridge() {
         return;
       }
       const bell = t.closest("[data-harbor-notifications]");
+      // Frame has no notification center. A custom layout's bell is swallowed so the
+      // click does not fall through to whatever sits underneath it.
       if (bell) {
         e.preventDefault();
         e.stopPropagation();
-        openNotificationCenter();
         return;
       }
       const account = t.closest("[data-harbor-account]");
@@ -237,12 +232,8 @@ export function ThemeChromeBridge() {
     };
   }, []);
 
-  const layout = kid ? "sidebar" : preview ? preview.layout : activeLayout(settings.theme);
-  const custom = layout === "custom";
-
   return (
     <>
-      {custom ? <NotificationCenter trigger={false} /> : null}
       <AccountMenuFloating />
       <StatusPickerFloating />
     </>

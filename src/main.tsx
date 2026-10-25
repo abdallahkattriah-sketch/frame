@@ -7,10 +7,8 @@ import { getUiLanguage } from "@/lib/i18n/store";
 import { ensureUiLocale } from "@/lib/i18n/load-locale";
 import { applyOsDataset } from "@/lib/platform";
 import { loadSecrets } from "@/lib/secret-store";
-import { initializeMusic } from "@/lib/music/player";
 import { initSubtitleCache } from "@/lib/subtitles/subtitle-cache";
 import { CaptionsApp } from "@/views/captions-app";
-import { DjDeckApp } from "@/views/dj-deck-app";
 import { ModalOverlayApp } from "@/views/modal-overlay-app";
 import { HdrOverlayApp } from "@/views/hdr-overlay-app";
 import { hdrOverlayEmitAction } from "@/lib/hdr-overlay";
@@ -63,14 +61,6 @@ function detectModalOverlay(): boolean {
   return false;
 }
 
-function detectDjDeck(): boolean {
-  if (new URLSearchParams(window.location.search).get("harbor-dj") === "1") return true;
-  try {
-    if (getCurrentWindow().label === "harbor-dj") return true;
-  } catch {}
-  return false;
-}
-
 function detectCaptions(): boolean {
   if (new URLSearchParams(window.location.search).get("harbor-captions") === "1") return true;
   try {
@@ -94,17 +84,6 @@ const isVideoPip = detectVideoPip();
 const isModal = detectModalOverlay();
 const isHdrOverlay = detectHdrOverlay();
 const isCaptions = detectCaptions();
-const isDjDeck = detectDjDeck();
-if (isDjDeck) {
-  void initializeMusic().catch(() => {});
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" || (event.ctrlKey && event.key.toLowerCase() === "w")) {
-      void import("@tauri-apps/api/window")
-        .then(({ getCurrentWindow }) => getCurrentWindow().close())
-        .catch(() => {});
-    }
-  });
-}
 const isRemote = detectRemoteMode();
 applyOsDataset();
 if (isRemote) {
@@ -203,7 +182,6 @@ async function mount() {
     !isCaptions &&
     !isPip &&
     !isVideoPip &&
-    !isDjDeck &&
     !isRemote
   ) {
     returnPreferencesReady = completeBetaReturnPreferences(__APP_VERSION__);
@@ -212,19 +190,13 @@ async function mount() {
     loadSecrets(),
     hydrateCustomThemes().catch(() => {}),
     ensureUiLocale(getUiLanguage()),
-    !isHdrOverlay && !isModal && !isCaptions && !isPip && !isVideoPip && !isDjDeck
-      ? initializeMusic()
-      : Promise.resolve(),
   ]);
-  if (!isHdrOverlay && !isModal && !isCaptions && !isDjDeck) void initSubtitleCache();
-  if (!isHdrOverlay && !isModal && !isCaptions && !isPip && !isVideoPip && !isDjDeck)
-    startTaskbarProgress();
+  if (!isHdrOverlay && !isModal && !isCaptions) void initSubtitleCache();
+  if (!isHdrOverlay && !isModal && !isCaptions && !isPip && !isVideoPip) startTaskbarProgress();
   createRoot(document.getElementById("root")!).render(
     <StrictMode>
       {isHdrOverlay ? (
         <HdrOverlayApp />
-      ) : isDjDeck ? (
-        <DjDeckApp />
       ) : isCaptions ? (
         <CaptionsApp />
       ) : isModal ? (
@@ -236,7 +208,7 @@ async function mount() {
       ) : (
         <MainRoot />
       )}
-      {(isModal || isPip || isVideoPip || isCaptions || isDjDeck) && <StartupReady />}
+      {(isModal || isPip || isVideoPip || isCaptions) && <StartupReady />}
     </StrictMode>,
   );
 }

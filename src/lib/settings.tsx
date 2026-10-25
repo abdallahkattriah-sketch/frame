@@ -18,7 +18,6 @@ import { setMdblistBatchKey } from "@/lib/providers/mdblist-batch";
 import { setTvdbKey } from "@/lib/providers/tvdb";
 import { setTraktCredentials } from "@/lib/trakt/credentials";
 import { setMalClientId } from "@/lib/mal/credentials";
-import { setIgdbCredentials } from "@/lib/games/igdb-client";
 import { setUiLanguage } from "@/lib/i18n";
 import { makeSafeTauriUnlisten } from "@/lib/tauri-unlisten";
 import { STORAGE_KEY } from "./settings/defaults";
@@ -279,7 +278,6 @@ export function SettingsProvider({
   setTvdbKey(settings.tvdbKey ?? "");
   setTraktCredentials(settings.traktClientId ?? "", settings.traktClientSecret ?? "");
   setMalClientId(settings.malClientId ?? "");
-  setIgdbCredentials(settings.igdbClientId ?? "", settings.igdbClientSecret ?? "");
 
   useEffect(() => {
     if (typeof document === "undefined" || !("fonts" in document)) return;

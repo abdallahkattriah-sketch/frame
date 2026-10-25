@@ -13,8 +13,8 @@ test("only Harbor's public relay host counts as the public relay", () => {
   assert.equal(isPublicRelay(""), false);
 });
 
-test("Watch Together and Listen Together never dial the public relay", () => {
-  for (const file of ["together/provider.tsx", "listen-together/provider.tsx"]) {
+test("Watch Together never dials the public relay", () => {
+  for (const file of ["together/provider.tsx"]) {
     const src = readFileSync(new URL(`../src/lib/${file}`, import.meta.url), "utf8");
     assert.match(
       src,

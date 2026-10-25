@@ -20,7 +20,6 @@ export function ExplorePane({
   onOpenTitle,
   onOpenDetail,
   onOpenPersonDetail,
-  onOpenMusic,
 }: {
   frame: ExploreFrame;
   depth: number;
@@ -30,7 +29,6 @@ export function ExplorePane({
   onOpenTitle: (m: Meta) => void;
   onOpenDetail: (m: Meta) => void;
   onOpenPersonDetail: (id: number) => void;
-  onOpenMusic?: (query: string) => void;
 }) {
   const t = useT();
   const [backdrop, setBackdrop] = useState<string | null>(
@@ -82,7 +80,6 @@ export function ExplorePane({
           name={frame.name}
           tmdbKey={tmdbKey || null}
           onOpenTitle={onOpenTitle}
-          onOpenMusic={onOpenMusic}
         />
       ) : frame.kind === "collection" ? (
         <CollectionPane

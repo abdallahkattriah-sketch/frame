@@ -1,16 +1,10 @@
 import { makeSafeTauriUnlisten } from "@/lib/tauri-unlisten";
 import { focusWindow } from "@/lib/window";
-import {
-  isMusicDeepLink,
-  parseMusicDeepLink,
-  takeMusicBounce,
-  type MusicDeepLink,
-} from "@/lib/music/deep-link";
+import { isMusicDeepLink } from "@/lib/music/deep-link";
 
 const EVENT = "harbor:deeplink-install";
 const OPEN_EVENT = "harbor:deeplink-open";
 const OPEN_LIST_EVENT = "harbor:deeplink-open-list";
-const OPEN_MUSIC_EVENT = "harbor:deeplink-open-music";
 const PROFILE_EDIT_EVENT = "harbor:deeplink-profile-edit";
 
 type DeepLinkDetail = { rawUrl: string };
@@ -18,7 +12,6 @@ type DeepLinkOpen = { type: string; id: string; videoId?: string };
 type DeepLinkOpenDetail = { open: DeepLinkOpen };
 export type DeepLinkList = { handle: string; listId: string };
 type DeepLinkListDetail = { list: DeepLinkList };
-type DeepLinkMusicDetail = { music: MusicDeepLink };
 
 let pendingUrl: string | null = null;
 
@@ -76,26 +69,10 @@ export function onDeepLinkOpenList(handler: (list: DeepLinkList) => void): () =>
   return () => window.removeEventListener(OPEN_LIST_EVENT, listener);
 }
 
-export function emitDeepLinkOpenMusic(music: MusicDeepLink): void {
-  window.dispatchEvent(
-    new CustomEvent<DeepLinkMusicDetail>(OPEN_MUSIC_EVENT, { detail: { music } }),
-  );
-}
-
-export function onDeepLinkOpenMusic(handler: (music: MusicDeepLink) => void): () => void {
-  const listener = (e: Event) => {
-    const ev = e as CustomEvent<DeepLinkMusicDetail>;
-    if (ev.detail?.music) handler(ev.detail.music);
-  };
-  window.addEventListener(OPEN_MUSIC_EVENT, listener);
-  return () => window.removeEventListener(OPEN_MUSIC_EVENT, listener);
-}
-
+// Frame has no Music page. A Harbor music link is consumed here so it is never
+// mistaken for an addon install.
 function routeMusic(url: string): boolean {
-  const music = parseMusicDeepLink(url);
-  if (!music) return false;
-  emitDeepLinkOpenMusic(music);
-  return true;
+  return isMusicDeepLink(url);
 }
 
 export function emitOpenProfileEdit(): void {
@@ -209,11 +186,7 @@ function saveLaunchSeen(map: Record<string, number>): void {
 export async function startDeepLinkBridge(): Promise<() => void> {
   const isTauri =
     typeof window !== "undefined" && ("__TAURI__" in window || "__TAURI_INTERNALS__" in window);
-  if (!isTauri) {
-    const bounce = takeMusicBounce();
-    if (bounce) window.location.replace(bounce);
-    return () => {};
-  }
+  if (!isTauri) return () => {};
   try {
     const mod = await import("@tauri-apps/plugin-deep-link");
     const handle = (urls: string[]) => {

@@ -1,7 +1,6 @@
 import { fillStyle, SliderReset } from "@/components/slider";
 import { DEFAULT } from "@/lib/settings/defaults";
 import { Dropdown } from "@/components/dropdown";
-import { GamesIcon } from "@/components/icons/games-icon";
 import {
   Droplet,
   Hourglass,
@@ -178,8 +177,6 @@ export function AmbienceSection() {
   );
 }
 
-const GAMES_SETTINGS_VISIBLE = true;
-
 export function DisplaySection() {
   const t = useT();
   const { settings, update } = useSettings();
@@ -194,26 +191,6 @@ export function DisplaySection() {
     : 25;
   return (
     <>
-      {GAMES_SETTINGS_VISIBLE && (
-        <Section title={t("Games")}>
-          <SettingGroup>
-            <ToggleRow
-              label={t("games.dock.settingTitle")}
-              sub={t("games.dock.settingNote")}
-              value={settings.showQuickGameLibrary}
-              onChange={(value) => update({ showQuickGameLibrary: value })}
-              leading={<GamesIcon size={18} />}
-            />
-            <ToggleRow
-              label={t("games.home.libraryFirstTitle")}
-              sub={t("games.home.libraryFirstNote")}
-              value={settings.gamesOpenInLibrary}
-              onChange={(value) => update({ gamesOpenInLibrary: value })}
-              leading={<GamesIcon size={18} />}
-            />
-          </SettingGroup>
-        </Section>
-      )}
       <PosterCardSection />
       <Section
         title={t("Title text")}

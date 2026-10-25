@@ -18,7 +18,6 @@ import { ParentalPinModal } from "@/components/parental-pin-modal";
 import { close, minimize, toggleMaximize, useMaximized } from "@/lib/window";
 import { OverflowNav, type NavEntry } from "@/chrome/nav-overflow";
 import { useAvailableNavItems, applyNavCustomization, type NavItem } from "@/chrome/nav-items";
-import { NotificationCenter } from "@/components/notification-center/notification-center";
 import { AccountMenu } from "@/chrome/account-menu/account-menu";
 import { useBigPictureEntry } from "@/chrome/use-big-picture-entry";
 
@@ -123,7 +122,6 @@ export function CinematicOverlay() {
 
           <div className="ms-2 flex shrink-0 items-center gap-1">
             <RecordingPill />
-            <NotificationCenter />
             {view !== "live" && <TogetherButton variant="ghost" connectStyle="tab" />}
             {bigPicture.offer && (
               <IconBtn onClick={bigPicture.open} label={bigPicture.label} active={false}>

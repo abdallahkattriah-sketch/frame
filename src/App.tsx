@@ -87,7 +87,6 @@ import { SearchOverlay } from "@/components/search/search-overlay";
 import { SearchHotkey } from "@/components/search/search-hotkey";
 import { LinkOutInterstitial } from "@/components/link-out-interstitial";
 import { TogetherProvider, useTogether } from "@/lib/together/provider";
-import { ListenTogetherProvider } from "@/lib/listen-together/provider";
 import { DvrProvider } from "@/lib/dvr/provider";
 import { FavoritesProvider } from "@/lib/iptv/favorites";
 import { MediaFavoritesProvider } from "@/lib/media-favorites";
@@ -338,84 +337,82 @@ export function App({ onReady }: { onReady?: () => void }) {
                         <OnboardingProvider>
                           <TogetherProvider>
                             <ViewProvider>
-                              <ListenTogetherProvider>
-                                <SearchProvider>
-                                  <DvrProvider>
-                                    <FavoritesProvider>
-                                      <MediaFavoritesProvider>
-                                        <CharacterFavoritesProvider>
-                                          <MangaFavoritesProvider>
-                                            <LocalWatchlistProvider>
-                                              <ContextMenuProvider>
-                                                <TopRankModalProvider>
-                                                  <HarborErrorBoundary>
-                                                    <ProfileIdentitySync />
-                                                    <HarborAvatarSync />
-                                                    <HarborNameSync />
-                                                    <SettingsProfileBridge />
-                                                    <TrackerProfileBridge />
-                                                    <MiddleClickScroll />
-                                                    <ThemeBackdrop />
-                                                    <WatchlistSync />
-                                                    {isMobileWeb() || isRemoteRoute() ? (
-                                                      <>
-                                                        <Suspense fallback={null}>
-                                                          <MobileShell />
-                                                        </Suspense>
-                                                        <RevealOnMount onReady={onReady} />
-                                                      </>
-                                                    ) : (
-                                                      <Shell onReady={onReady} />
-                                                    )}
-                                                    {!isMobileWeb() && !isRemoteRoute() && (
+                              <SearchProvider>
+                                <DvrProvider>
+                                  <FavoritesProvider>
+                                    <MediaFavoritesProvider>
+                                      <CharacterFavoritesProvider>
+                                        <MangaFavoritesProvider>
+                                          <LocalWatchlistProvider>
+                                            <ContextMenuProvider>
+                                              <TopRankModalProvider>
+                                                <HarborErrorBoundary>
+                                                  <ProfileIdentitySync />
+                                                  <HarborAvatarSync />
+                                                  <HarborNameSync />
+                                                  <SettingsProfileBridge />
+                                                  <TrackerProfileBridge />
+                                                  <MiddleClickScroll />
+                                                  <ThemeBackdrop />
+                                                  <WatchlistSync />
+                                                  {isMobileWeb() || isRemoteRoute() ? (
+                                                    <>
                                                       <Suspense fallback={null}>
-                                                        <OnboardingModal />
+                                                        <MobileShell />
                                                       </Suspense>
-                                                    )}
-                                                    <TogetherInviteToast />
-                                                    <TogetherFloater />
-                                                    <TogetherHostLeavingPrompt />
-                                                    <TogetherSummonToast />
-                                                    <TogetherParticipantLeftToast />
-                                                    <ListToastHost />
-                                                    <DiagnosticsConsentHost />
-                                                    <TogetherLocationPublisher />
-                                                    <AutoDownloadRunner />
-                                                    <RemindersRunner />
-                                                    <RemoteHostMount />
-                                                    <RemoteOpenBridge />
-                                                    <GamepadRunner />
-                                                    <ControllerConnectedToast />
-                                                    <ContextMenu />
-                                                    <AnnouncementGlobal />
-                                                    <WatchLocalModal />
-                                                    <LocalEpisodesModal />
-                                                    <LocalVersionsModal />
-                                                    <HoverPreview />
-                                                    <CustomHoverCssMount />
-                                                    <TopRankModal />
-                                                    <CurfewGuard />
-                                                    <SearchOverlay />
-                                                    <SearchHotkey />
-                                                    <LinkOutInterstitial />
-                                                    <EmbedViewportRoot />
-                                                    <InstallerViewportRoot />
-                                                    <UpdateRoot />
-                                                    <VoyageRoot />
-                                                    <ScreensaverRoot />
-                                                  </HarborErrorBoundary>
-                                                  <ErrorView />
-                                                  <DevErrorTrigger />
-                                                </TopRankModalProvider>
-                                              </ContextMenuProvider>
-                                            </LocalWatchlistProvider>
-                                          </MangaFavoritesProvider>
-                                        </CharacterFavoritesProvider>
-                                      </MediaFavoritesProvider>
-                                    </FavoritesProvider>
-                                  </DvrProvider>
-                                </SearchProvider>
-                              </ListenTogetherProvider>
+                                                      <RevealOnMount onReady={onReady} />
+                                                    </>
+                                                  ) : (
+                                                    <Shell onReady={onReady} />
+                                                  )}
+                                                  {!isMobileWeb() && !isRemoteRoute() && (
+                                                    <Suspense fallback={null}>
+                                                      <OnboardingModal />
+                                                    </Suspense>
+                                                  )}
+                                                  <TogetherInviteToast />
+                                                  <TogetherFloater />
+                                                  <TogetherHostLeavingPrompt />
+                                                  <TogetherSummonToast />
+                                                  <TogetherParticipantLeftToast />
+                                                  <ListToastHost />
+                                                  <DiagnosticsConsentHost />
+                                                  <TogetherLocationPublisher />
+                                                  <AutoDownloadRunner />
+                                                  <RemindersRunner />
+                                                  <RemoteHostMount />
+                                                  <RemoteOpenBridge />
+                                                  <GamepadRunner />
+                                                  <ControllerConnectedToast />
+                                                  <ContextMenu />
+                                                  <AnnouncementGlobal />
+                                                  <WatchLocalModal />
+                                                  <LocalEpisodesModal />
+                                                  <LocalVersionsModal />
+                                                  <HoverPreview />
+                                                  <CustomHoverCssMount />
+                                                  <TopRankModal />
+                                                  <CurfewGuard />
+                                                  <SearchOverlay />
+                                                  <SearchHotkey />
+                                                  <LinkOutInterstitial />
+                                                  <EmbedViewportRoot />
+                                                  <InstallerViewportRoot />
+                                                  <UpdateRoot />
+                                                  <VoyageRoot />
+                                                  <ScreensaverRoot />
+                                                </HarborErrorBoundary>
+                                                <ErrorView />
+                                                <DevErrorTrigger />
+                                              </TopRankModalProvider>
+                                            </ContextMenuProvider>
+                                          </LocalWatchlistProvider>
+                                        </MangaFavoritesProvider>
+                                      </CharacterFavoritesProvider>
+                                    </MediaFavoritesProvider>
+                                  </FavoritesProvider>
+                                </DvrProvider>
+                              </SearchProvider>
                             </ViewProvider>
                           </TogetherProvider>
                         </OnboardingProvider>

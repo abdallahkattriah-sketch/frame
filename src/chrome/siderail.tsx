@@ -3,7 +3,6 @@ import { useContextMenu } from "@/lib/context-menu";
 import { useState } from "react";
 import { Search } from "lucide-react";
 import { HarborMark } from "@/components/icons/harbor-mark";
-import { NotificationCenter } from "@/components/notification-center/notification-center";
 import { AccountMenu } from "@/chrome/account-menu/account-menu";
 import { CollapseToggle } from "@/chrome/sidebar/collapse-toggle";
 import { SidebarBigPictureEntry } from "@/chrome/sidebar/big-picture-entry";
@@ -198,7 +197,6 @@ export function SideRail() {
               <Search size={15} strokeWidth={1.8} />
             </button>
             {!collapsed && <RecordingPill />}
-            {!collapsed && <NotificationCenter />}
             {!collapsed && view !== "live" && (
               <TogetherButton variant="ghost" popoverPlacement="above-left" />
             )}
