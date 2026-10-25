@@ -30,10 +30,27 @@ const navWithPlugins = load("src/chrome/nav-items.tsx", {
 });
 const cfg = () => ({ order: [], hidden: [], renamed: {} });
 
-test("customization retains Music and the Sports availability gate", () => {
-  assert.ok(nav.NAV_ITEMS.some((item) => item.id === "music"));
-  assert.ok(nav.NAV_ITEMS.some((item) => item.id === "sports"));
-  assert.ok(!nav.useAvailableNavItems().some((item) => item.id === "sports"));
+test("Frame's sidebar has Radar and Following and none of the removed sections", () => {
+  for (const id of ["radar", "following", "movies", "shows", "library"]) {
+    assert.ok(
+      nav.NAV_ITEMS.some((item) => item.id === id),
+      id,
+    );
+  }
+  for (const id of [
+    "music",
+    "manga",
+    "ebook",
+    "games",
+    "anime",
+    "calendar",
+    "kids",
+    "live",
+    "sports",
+    "vod",
+  ]) {
+    assert.ok(!nav.NAV_ITEMS.some((item) => item.id === id), id);
+  }
 });
 test("the Plugins tab appears only once a plugin can stand up rows of its own", () => {
   assert.ok(nav.NAV_ITEMS.some((item) => item.id === "plugins"));
@@ -41,17 +58,17 @@ test("the Plugins tab appears only once a plugin can stand up rows of its own", 
   assert.ok(navWithPlugins.useAvailableNavItems().some((item) => item.id === "plugins"));
 });
 test("hide and restore do not discard order or renamed labels", () => {
-  const original = { order: ["music", "home"], hidden: [], renamed: { music: "My music" } };
-  const hidden = nav.toggleNavHidden(original, "music");
-  assert.ok(!nav.applyNavCustomization(nav.NAV_ITEMS, hidden).some((item) => item.id === "music"));
-  const restored = nav.toggleNavHidden(hidden, "music");
+  const original = { order: ["movies", "home"], hidden: [], renamed: { movies: "My movies" } };
+  const hidden = nav.toggleNavHidden(original, "movies");
+  assert.ok(!nav.applyNavCustomization(nav.NAV_ITEMS, hidden).some((item) => item.id === "movies"));
+  const restored = nav.toggleNavHidden(hidden, "movies");
   assert.deepEqual(restored, original);
-  assert.equal(nav.applyNavCustomization(nav.NAV_ITEMS, restored)[0].label, "My music");
+  assert.equal(nav.applyNavCustomization(nav.NAV_ITEMS, restored)[0].label, "My movies");
 });
 test("move preserves hidden and renamed items and only changes order", () => {
-  const original = { ...cfg(), hidden: ["manga"], renamed: { music: "My music" } };
-  const moved = nav.moveNavItem(original, "music", "home", "before");
-  assert.equal(moved.order[0], "music");
+  const original = { ...cfg(), hidden: ["shows"], renamed: { movies: "My movies" } };
+  const moved = nav.moveNavItem(original, "movies", "home", "before");
+  assert.equal(moved.order[0], "movies");
   assert.deepEqual(moved.hidden, original.hidden);
   assert.deepEqual(moved.renamed, original.renamed);
   assert.equal(new Set(moved.order).size, nav.NAV_ITEMS.length);
