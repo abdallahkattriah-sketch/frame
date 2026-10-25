@@ -2,12 +2,7 @@ import { AppWindow, Frame, Move, PanelTop, PanelTopDashed } from "./icons";
 import { useEffect, useState, type ReactNode, useRef } from "react";
 import { getCustomThemes, subscribeCustomThemes } from "@/lib/custom-themes";
 import { useSettings } from "@/lib/settings";
-import {
-  FEATURED_CUSTOM_THEMES,
-  getThemeById,
-  THEME_PRESETS,
-  type ThemeSettings,
-} from "@/lib/theme";
+import { getThemeById, type ThemeSettings } from "@/lib/theme";
 import { nextBackgroundImage } from "@/lib/theme-background";
 import { useT } from "@/lib/i18n";
 import { ROW_DESC, Section, Segmented, ToggleRow } from "./shared";
@@ -22,8 +17,6 @@ import {
   subscribeThemeLibraryRequest,
   useThemeLibraryOpen,
 } from "./theme-panel/library-open-store";
-import { MarketCta } from "./theme-panel/custom-themes-section/community-store/market/market-cta";
-import type { IconThumb } from "./theme-panel/custom-themes-section/community-store/market/icon-fan";
 import { AmbienceSection, DisplaySection } from "./theme-panel/display-section";
 import { FontGrid } from "./theme-panel/font-grid";
 import { StartupArtworkSettings } from "./theme-panel/startup-artwork";
@@ -102,8 +95,6 @@ function ThemeTab() {
 
   return (
     <>
-      <ThemeCommunityCta />
-
       <Section title={t("Theme")} bare>
         <p className={`mb-3 max-w-[70ch] ${ROW_DESC}`}>
           {t("Pick a look. Every color and surface updates instantly.")}
@@ -220,24 +211,6 @@ function WindowTab() {
         </Section>
       )}
     </>
-  );
-}
-
-const COMMUNITY_PREVIEW: IconThumb[] = [...FEATURED_CUSTOM_THEMES, ...Object.values(THEME_PRESETS)]
-  .filter((tp) => tp.previewImage)
-  .slice(0, 5)
-  .map((tp) => ({ src: tp.previewImage, alt: tp.name }));
-
-function ThemeCommunityCta() {
-  const t = useT();
-  return (
-    <MarketCta
-      variant="browse"
-      label={t("Browse community themes")}
-      sublabel={t("Fresh looks shared by the Harbor community")}
-      preview={COMMUNITY_PREVIEW}
-      onClick={() => requestThemeLibrary({ tab: "community" })}
-    />
   );
 }
 

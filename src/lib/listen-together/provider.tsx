@@ -17,6 +17,7 @@ import { generateListenRoomCode, isListenRoomCode, normalizeListenRoomCode } fro
 import { listenTrackFromState, type ListenTrackRef } from "./track-state";
 import { listenListenerCount } from "./session";
 import { useListenSession } from "./use-listen-session";
+import { isPublicRelay } from "@/lib/together/relay-version";
 
 const LISTEN_NAME_KEY = "harbor.together.name";
 const LISTEN_CLIENT_KEY = "harbor.listen-together.clientId";
@@ -98,7 +99,8 @@ export function ListenTogetherProvider({ children }: { children: ReactNode }) {
   const { settings } = useSettings();
   const { player } = useView();
   const identity = useSelfIdentity();
-  const relayUrl = settings.togetherRelayUrl;
+  // Same rule as Watch Together: a saved URL for Harbor's dead public relay is ignored.
+  const relayUrl = isPublicRelay(settings.togetherRelayUrl) ? "" : settings.togetherRelayUrl;
 
   const clientId = useRef(loadListenClientId()).current;
   const clientRef = useRef<TogetherClient | null>(null);

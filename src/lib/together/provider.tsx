@@ -154,7 +154,9 @@ async function resolveShareableAvatar(a: string | null): Promise<string | null> 
 export function TogetherProvider({ children }: { children: ReactNode }) {
   const { settings, update } = useSettings();
   const { avatar: effectiveAvatar, color: effectiveColor } = useSelfIdentity();
-  const relayUrl = settings.togetherRelayUrl;
+  // Harbor's public relay is gone. A saved URL for it stays in settings but is
+  // treated as no relay, so Watch Together never dials the dead host.
+  const relayUrl = isPublicRelay(settings.togetherRelayUrl) ? "" : settings.togetherRelayUrl;
 
   const clientIdRef = useRef<string>(loadOrInitClientId());
   const [displayName, setDisplayNameState] = useState<string>(loadOrInitName());
@@ -463,10 +465,7 @@ export function TogetherProvider({ children }: { children: ReactNode }) {
   const hostSource = useMemo(() => deriveHostSource(snapshot), [snapshot]);
   const roomGuestPick = deriveRoomGuestPick(snapshot, clientIdRef.current, lastInviteRef.current);
   const lastInviteProto = lastInviteRef.current?.proto ?? 0;
-  const isRelayOutdated =
-    snapshot.state === "joined" &&
-    !isPublicRelay(relayUrl ?? "") &&
-    relayOutdated(snapshot.relayVersion);
+  const isRelayOutdated = snapshot.state === "joined" && relayOutdated(snapshot.relayVersion);
 
   const value: TogetherValue = useMemo(
     () => ({
