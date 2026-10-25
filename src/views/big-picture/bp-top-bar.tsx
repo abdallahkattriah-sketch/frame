@@ -1,21 +1,13 @@
 import { NavGlyph } from "@/components/icons/nav-glyph";
-import { AnimeIcon } from "@/components/icons/anime-icon";
 import { HomeIcon } from "@/components/icons/home-icon";
 import { LibraryIcon } from "@/components/icons/library-icon";
 import { MoviesIcon } from "@/components/icons/movies-icon";
 import { SettingsIcon } from "@/components/icons/settings-icon";
 import { TvIcon } from "@/components/icons/tv-icon";
-import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useGamepads } from "@/lib/gamepad/store";
 import { useParental, type HiddenTabs, type LockableTab } from "@/lib/parental";
-import { useSettings } from "@/lib/settings";
-import {
-  getSportsConsentServerSnapshot,
-  getSportsConsentSnapshot,
-  subscribeSportsConsent,
-} from "@/lib/sports/consent";
 import { BpStatus } from "./bp-status";
-import { BpProfileMenu } from "./bp-profile-menu";
 import { useBpT } from "./bp-i18n";
 import { HarborMark } from "@/components/icons/harbor-mark";
 import { useHarborLogo } from "@/lib/harbor-logo";
@@ -34,7 +26,6 @@ type BpTab = {
   kind: BigPictureTabKind;
   label: string;
   icon: (active: boolean) => React.ReactNode;
-  hiddenByAnime?: boolean;
   parentalKey?: LockableTab;
 };
 
@@ -45,33 +36,12 @@ const TABS: BpTab[] = [
     label: "Discover",
     icon: () => <NavGlyph name="explore" className="h-[26px] w-[26px] p-[2px]" />,
   },
-  {
-    kind: "anime",
-    label: "Anime",
-    icon: (a) => <AnimeIcon active={a} />,
-    hiddenByAnime: true,
-    parentalKey: "anime",
-  },
   { kind: "shows", label: "Shows", icon: (a) => <TvIcon active={a} />, parentalKey: "shows" },
   {
     kind: "movies",
     label: "Movies",
     icon: (a) => <MoviesIcon active={a} />,
     parentalKey: "movies",
-  },
-  // Deliberately not gated on hasLive. A TV-only viewer has never seen the
-  // desktop app, so hiding the tab until a playlist exists hid the only route to
-  // adding one. Live TV owns its own setup screen when there is nothing yet.
-  {
-    kind: "live",
-    label: "Live TV",
-    icon: () => <NavGlyph name="livetv" className="h-[26px] w-[26px] p-[2px]" />,
-  },
-  {
-    kind: "sports",
-    label: "Sports",
-    icon: () => <NavGlyph name="sports" className="h-[26px] w-[26px] p-[2px]" />,
-    parentalKey: "sports",
   },
   {
     kind: "search",
@@ -84,8 +54,8 @@ const TABS: BpTab[] = [
     icon: (a) => <LibraryIcon active={a} />,
     parentalKey: "library",
   },
-  // Ungated for the same reason as Live TV: it needs a TMDB key, and hiding it
-  // until there is one hid the only place that explains how to add one.
+  // Ungated: it needs a TMDB key, and hiding it until there is one hid the
+  // only place that explains how to add one.
   {
     kind: "collections",
     label: "Collections",
@@ -95,8 +65,6 @@ const TABS: BpTab[] = [
 ];
 
 export type BpTabGate = {
-  animeHidden: boolean;
-  sportsDeclined: boolean;
   locked: boolean;
   hiddenTabs: HiddenTabs;
 };
@@ -104,25 +72,12 @@ export type BpTabGate = {
 // The tab strip and the shoulder cycle both read this, so a tab can never be
 // hidden from one and reachable through the other.
 export function useBpTabGate(): BpTabGate {
-  const { settings } = useSettings();
   const { locked, hiddenTabs } = useParental();
-  const animeHidden = Boolean(settings.hideContent.anime);
-  const consent = useSyncExternalStore(
-    subscribeSportsConsent,
-    getSportsConsentSnapshot,
-    getSportsConsentServerSnapshot,
-  );
-  const sportsDeclined = consent.status === "declined";
-  return useMemo(
-    () => ({ animeHidden, sportsDeclined, locked, hiddenTabs }),
-    [animeHidden, sportsDeclined, locked, hiddenTabs],
-  );
+  return useMemo(() => ({ locked, hiddenTabs }), [locked, hiddenTabs]);
 }
 
 function visibleTabs(gate: BpTabGate): BpTab[] {
   return TABS.filter((tab) => {
-    if (tab.hiddenByAnime && gate.animeHidden) return false;
-    if (tab.kind === "sports" && gate.sportsDeclined) return false;
     if (gate.locked && tab.parentalKey && gate.hiddenTabs[tab.parentalKey]) return false;
     return true;
   });
@@ -363,7 +318,6 @@ export function BpTopBar({ active }: { active: BigPictureTabKind }) {
               aria-hidden
               className="h-[clamp(20px,2.4vh,30px)] w-px shrink-0 bg-[var(--bp-edge-2)]"
             />
-            <BpProfileMenu onHint={onHint} />
             {cog && (
               <BpTabButton
                 tab={cog}

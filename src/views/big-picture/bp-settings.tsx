@@ -1,17 +1,10 @@
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
-import { exitBigPicture, goBigPictureTab } from "@/lib/big-picture";
-import {
-  getSportsConsentServerSnapshot,
-  getSportsConsentSnapshot,
-  resetSportsConsent,
-  subscribeSportsConsent,
-} from "@/lib/sports/consent";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { exitBigPicture } from "@/lib/big-picture";
 import { SFX } from "@/lib/sfx";
 import { useBpT } from "./bp-i18n";
 import { pushBpBack } from "./bp-back";
 import { setBpFocus } from "./use-bp-focus";
 import { BpConnect } from "./bp-connect";
-import { BpLiveSetup } from "./bp-live-setup";
 import { useBpOnboardFacts } from "./onboarding/use-bp-onboard-facts";
 import {
   bpConnectedNames,
@@ -54,15 +47,10 @@ export function BpSettings() {
   const activeRef = useRef(0);
   activeRef.current = active;
 
-  const consent = useSyncExternalStore(
-    subscribeSportsConsent,
-    getSportsConsentSnapshot,
-    getSportsConsentServerSnapshot,
-  );
   const connected = bpConnectedNames(facts);
   const categories = bpSettingsCategories(settings, t, overscan, connected);
   const cat: BpCatId = categories[active]?.id ?? "picture";
-  const controls = bpSettingsControls(cat, settings, t, overscan, consent.status !== "declined");
+  const controls = bpSettingsControls(cat, settings, t, overscan);
 
   useEffect(
     () =>
@@ -108,22 +96,13 @@ export function BpSettings() {
     exitBigPicture();
   }, []);
 
-  const reviewSportsNotice = useCallback(() => {
-    resetSportsConsent();
-    goBigPictureTab("sports");
-  }, []);
-
   if (pane !== "root") {
     return (
       // Back belongs to the pane, not to this page. Owning it here put it in a
       // different rail parent than the pane's indexed rows, so Down out of it
       // fell to spatial nav instead of stepping the rail.
       <div data-bp-scroll-y className={SUB_PAGE}>
-        {pane === "connect" ? (
-          <BpConnect onBack={() => setPane("root")} />
-        ) : (
-          <BpLiveSetup onDone={() => setPane("root")} onBack={() => setPane("root")} />
-        )}
+        <BpConnect onBack={() => setPane("root")} />
       </div>
     );
   }
@@ -191,13 +170,9 @@ export function BpSettings() {
                     index={index}
                     label={control.label}
                     detail={
-                      control.pane === "connect"
-                        ? connected.length > 0
-                          ? t("Connected: {list}", { list: connected.join(", ") })
-                          : control.detail
-                        : settings.iptvPlaylists.length > 0
-                          ? t("{count} added", { count: settings.iptvPlaylists.length })
-                          : control.detail
+                      connected.length > 0
+                        ? t("Connected: {list}", { list: connected.join(", ") })
+                        : control.detail
                     }
                     autofocus={i === 0}
                     onPress={() => setPane(control.pane)}
@@ -210,8 +185,7 @@ export function BpSettings() {
                   index={index}
                   label={control.label}
                   autofocus={i === 0}
-                  flush={control.id === "sportsNotice"}
-                  onPress={control.id === "sportsNotice" ? reviewSportsNotice : leave}
+                  onPress={leave}
                 />
               );
             })}

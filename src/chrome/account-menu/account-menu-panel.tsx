@@ -1,4 +1,4 @@
-import { Bell, Lock, LogIn, LogOut, Settings as SettingsIcon, UserRound } from "lucide-react";
+import { Lock, LogIn, LogOut, Settings as SettingsIcon } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { ProfileAvatar } from "./account-menu-parts";
 import type { AccountMenuController } from "./use-account-menu";
@@ -22,18 +22,7 @@ export function AccountMenuPanel({
   settingsActive?: boolean;
 }) {
   const t = useT();
-  const {
-    user,
-    signOut,
-    profiles,
-    activeProfile,
-    author,
-    requestSwitch,
-    viewMyProfile,
-    openNotifications,
-    setMenuOpen,
-    setAuthOpen,
-  } = ctrl;
+  const { user, signOut, profiles, activeProfile, requestSwitch, setMenuOpen, setAuthOpen } = ctrl;
   // Frame has one profile, so the menu offers nothing to switch to.
   const otherProfiles: typeof profiles = [];
   const kid = !!activeProfile?.kid;
@@ -90,18 +79,6 @@ export function AccountMenuPanel({
 
       {!kid && (
         <div className="flex flex-col">
-          {author && (
-            <button onClick={viewMyProfile} className={ITEM}>
-              <UserRound size={14} strokeWidth={2.2} />
-              {t("View my profile")}
-            </button>
-          )}
-          {author && (
-            <button onClick={openNotifications} className={ITEM}>
-              <Bell size={14} strokeWidth={2.2} />
-              {t("Notifications")}
-            </button>
-          )}
           {showSettings && onOpenSettings && (
             <button
               onClick={() => {

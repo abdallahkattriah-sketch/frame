@@ -175,12 +175,8 @@ import { MangaAwardCorner } from "./manga/collection-badge";
 import { CharacterCard } from "./detail/character-card";
 import { useAnimeAnilistDetails } from "./detail/use-anime-anilist-details";
 import { useAnimeCharacters } from "./detail/use-anime-characters";
-import { TraktComments } from "./detail/trakt-comments";
 import { LetterboxdPanel } from "./detail/letterboxd-panel";
 import { LetterboxdReviews } from "./detail/letterboxd-reviews";
-import { AnilistComments } from "./detail/anilist-comments";
-import { stremioIdToTraktTarget } from "@/lib/trakt/ids";
-import type { IdResolution } from "@/lib/trakt/ids";
 import { searchAnime } from "@/lib/search";
 import { useTraktRelated } from "@/lib/providers/trakt-related";
 
@@ -1202,24 +1198,6 @@ export function DetailView({
   // provider offered none.
   const providerEpisodeList = addonNative && (capstanMeta?.meta.videos?.length ?? 0) > 0;
   const tmdbEpisodeList = !providerEpisodeList && !!detail && detail.seasons.length > 0;
-  const traktResolution = useMemo((): IdResolution => {
-    if (isAnime) return { ok: false, reason: "anime" };
-    const imdbId = detail?.imdbId ?? (meta.id.startsWith("tt") ? meta.id : null);
-    const tmdbId = detail?.id;
-    if (isSeries && (imdbId || (tmdbId && detail?.kind === "tv"))) {
-      const ids: Record<string, string | number> = {};
-      if (imdbId) ids.imdb = imdbId;
-      if (tmdbId) ids.tmdb = tmdbId;
-      return { ok: true, target: { kind: "show", ids } } as IdResolution;
-    }
-    if (!isSeries && (imdbId || tmdbId)) {
-      const ids: Record<string, string | number> = {};
-      if (imdbId) ids.imdb = imdbId;
-      if (tmdbId) ids.tmdb = tmdbId;
-      return { ok: true, target: { kind: "movie", ids } } as IdResolution;
-    }
-    return stremioIdToTraktTarget(meta.id);
-  }, [meta.id, isSeries, isAnime, detail?.imdbId, detail?.id, detail?.kind]);
   const playMeta: Meta = {
     ...meta,
     name: title,
@@ -2430,22 +2408,6 @@ export function DetailView({
               label: t("Statistics"),
               minHeight: 200,
               node: <AnimeStatsDonut slices={anilistExtra.statusDistribution} />,
-            });
-          }
-          if (!isAnime && settings.showTraktComments === true) {
-            railSections.push({
-              key: "traktComments",
-              label: t("Comments"),
-              minHeight: 120,
-              node: <TraktComments resolution={traktResolution} />,
-            });
-          }
-          if (isAnime && settings.showAnilistComments === true) {
-            railSections.push({
-              key: "anilistComments",
-              label: t("AniList Comments"),
-              minHeight: 120,
-              node: <AnilistComments harborId={animeCanonicalId ?? meta.id} />,
             });
           }
           if (!isAnime) {

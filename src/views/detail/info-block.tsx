@@ -11,33 +11,10 @@ import { AdaptationRow } from "./adaptation-row";
 import { CriticismRow } from "./criticism-row";
 import { productionRows } from "./production-rows";
 import { useProductionFacts } from "./use-production-facts";
-import { SoundtrackRow } from "./soundtrack-row";
-
-const ANIME_ROW_BY_GENRE: Record<string, string> = {
-  Action: "genre-action",
-  Adventure: "genre-action",
-  Romance: "genre-romance",
-  "Slice of Life": "genre-slice",
-  Mecha: "genre-mecha",
-  Fantasy: "genre-fantasy",
-  "Science Fiction": "genre-scifi",
-  "Sci-Fi": "genre-scifi",
-  "Sci-Fi & Fantasy": "genre-fantasy",
-  Psychological: "genre-psych",
-  Thriller: "genre-psych",
-  Horror: "genre-horror",
-  Supernatural: "genre-horror",
-};
-
-function focusAnimeRow(key: string) {
-  window.dispatchEvent(
-    new CustomEvent("harbor:anime-focus-row", { detail: { anchor: `row:${key}` } }),
-  );
-}
 
 export function InfoBlock({ detail, isAnime = false }: { detail: TmdbDetail; isAnime?: boolean }) {
   const t = useT();
-  const { openFilter, setView } = useView();
+  const { openFilter } = useView();
   const adaptation = useAdaptationFamily(isAnime ? undefined : (detail.imdbId ?? undefined));
   const soundtrack = useFilmSoundtrack(detail.imdbId ?? undefined);
   const production = useProductionFacts(
@@ -100,18 +77,6 @@ export function InfoBlock({ detail, isAnime = false }: { detail: TmdbDetail; isA
   }));
   const genreChips = detail.genres
     .map((name) => {
-      if (isAnime) {
-        const anchor = ANIME_ROW_BY_GENRE[name];
-        return {
-          label: name,
-          onClick: () => {
-            setView("anime");
-            if (anchor) {
-              window.setTimeout(() => focusAnimeRow(anchor), 60);
-            }
-          },
-        };
-      }
       const id = (mediaType === "movie" ? MOVIE_GENRES : TV_GENRES)[name];
       if (id == null) return null;
       return {
@@ -154,9 +119,7 @@ export function InfoBlock({ detail, isAnime = false }: { detail: TmdbDetail; isA
     adaptation
       ? { label: t("Based on"), kind: "node", node: <AdaptationRow family={adaptation} /> }
       : null,
-    soundtrack
-      ? { label: t("Soundtrack"), kind: "node", node: <SoundtrackRow album={soundtrack} /> }
-      : null,
+    soundtrack ? { label: t("Soundtrack"), kind: "text", value: soundtrack.title } : null,
     genreChips.length > 0 ? { label: t("Genres"), kind: "chips", chips: genreChips } : null,
     fmtMoney(detail.budget) != null
       ? { label: t("Budget"), kind: "text", value: fmtMoney(detail.budget)! }

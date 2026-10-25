@@ -983,8 +983,7 @@ export function ViewProvider({ children }: { children: ReactNode }) {
       if (top.kind !== "meta") return s;
       const m = top.meta;
       let root: Frame;
-      if (m.type === "series" || m.type === "tv") root = { kind: "shows" };
-      else if (m.type === "anime") root = { kind: "anime" };
+      if (m.type === "series" || m.type === "tv" || m.type === "anime") root = { kind: "shows" };
       else root = { kind: "movies" };
       return [root, { kind: "meta", meta: m }];
     });

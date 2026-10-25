@@ -11,13 +11,7 @@ import {
 import { MOVIE_GENRES } from "@/lib/feed/tags";
 import { metaLooksAnime } from "@/lib/anime-detect";
 import { useParental } from "@/lib/parental";
-import {
-  searchAll,
-  searchAnime,
-  searchCinemeta,
-  searchLiveTvChannels,
-  type SearchResults,
-} from "@/lib/search";
+import { searchAll, searchCinemeta, type SearchResults } from "@/lib/search";
 import {
   searchAddonCatalogs,
   searchAddonGroups,
@@ -27,19 +21,10 @@ import {
 import { searchAddonIndex } from "@/lib/search-addon-index";
 import { createSearchRequestGuard } from "@/lib/search-request-guard";
 import { normalizeSearchQuery } from "@/lib/search-query";
-import { searchManga } from "@/lib/manga/api";
-import type { MangaSummary } from "@/lib/manga/model";
-import { searchEBooks, type EBook } from "@/lib/ebook/api";
-import { searchTyped } from "@/lib/music/catalog";
-import { toMusicHits } from "@/lib/search-music-hits";
-import type { MusicSearchHit } from "@/lib/search";
-import { searchSportsEvents, type SportsEventHit } from "@/lib/sports/search-events";
-import { anilistCharacterSearch, type CharacterHit } from "@/lib/anilist/character";
 import { gatherCatalogAddons, type Addon } from "@/lib/addons";
 import { useAuth } from "@/lib/auth";
 import { useSettings } from "@/lib/settings";
 import { effectiveBinding, eventToBinding } from "@/lib/hotkeys";
-import { usePlaylists } from "@/lib/iptv/playlists-store";
 import { isMagnetInput, isDirectVideoUrl } from "@/lib/torrent/magnet";
 import { useView, type Frame } from "@/lib/view";
 
@@ -151,13 +136,6 @@ function upsertAddonQuery(list: AddonQuery[], q: AddonQuery): AddonQuery[] {
   return next;
 }
 
-function normShow(s: string): string {
-  return s
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-}
-
 function loadRecent(): string[] {
   try {
     const raw = localStorage.getItem(RECENT_KEY);
@@ -189,7 +167,6 @@ function saveRecent(items: string[]): void {
 
 export function SearchProvider({ children }: { children: ReactNode }) {
   const { settings } = useSettings();
-  const playlists = usePlaylists();
   const { authKey } = useAuth();
   const { hiddenTabs } = useParental();
   const [open, setOpen] = useState(false);
@@ -203,7 +180,6 @@ export function SearchProvider({ children }: { children: ReactNode }) {
   const debounceRef = useRef<number | null>(null);
   const requestGuardRef = useRef(createSearchRequestGuard());
   const tmdbCacheRef = useRef<SearchCache<SearchResults | null>>(new Map());
-  const animeCacheRef = useRef<SearchCache<Awaited<ReturnType<typeof searchAnime>>>>(new Map());
   const cinemetaCacheRef = useRef<SearchCache<Awaited<ReturnType<typeof searchCinemeta>>>>(
     new Map(),
   );
@@ -248,14 +224,9 @@ export function SearchProvider({ children }: { children: ReactNode }) {
     setResults(null);
     setAddonQueries([]);
     setStatus("typing");
-    const animeAllowed = !hiddenTabs.anime && !settings.hideContent.anime;
-    const mangaAllowed = settings.mangaEnabled;
-    const franchiseAllowed = animeAllowed || mangaAllowed;
-    const liveTvAllowed = !hiddenTabs.liveTv && playlists.length > 0;
     debounceRef.current = window.setTimeout(() => {
       if (!requestGuardRef.current.isCurrent(id)) return;
       setStatus("loading");
-      const liveTv = liveTvAllowed ? searchLiveTvChannels(trimmed, playlists) : [];
       const guard = <T,>(p: Promise<T>, fallback: T): Promise<T> =>
         Promise.race([
           p.catch(() => fallback),
@@ -278,26 +249,6 @@ export function SearchProvider({ children }: { children: ReactNode }) {
         ),
         null,
       );
-      const animePromise = animeAllowed
-        ? guard(
-            cachedSearch(animeCacheRef.current, normalizedQuery, SECONDARY_CACHE_TTL_MS, () =>
-              searchAnime(trimmed),
-            ),
-            [],
-          )
-        : Promise.resolve([]);
-      const mangaPromise: Promise<MangaSummary[]> = mangaAllowed
-        ? guard(searchManga(trimmed), [])
-        : Promise.resolve([]);
-      const musicPromise: Promise<MusicSearchHit[]> = guard(
-        searchTyped(trimmed, 10).then(toMusicHits),
-        [],
-      );
-      const ebookPromise: Promise<EBook[]> = guard(searchEBooks(trimmed), []);
-      const sportsPromise: Promise<SportsEventHit[]> = guard(searchSportsEvents(trimmed), []);
-      const charactersPromise: Promise<CharacterHit[]> = franchiseAllowed
-        ? guard(anilistCharacterSearch(trimmed), [])
-        : Promise.resolve([]);
       const addonPromise = guard(
         addonsP.then((a) => searchAddonCatalogs(a, trimmed)),
         { movies: [], series: [] },
@@ -338,12 +289,6 @@ export function SearchProvider({ children }: { children: ReactNode }) {
       );
       let tmdbResult: SearchResults | null = null;
       const acc = {
-        anime: [] as Awaited<typeof animePromise>,
-        manga: [] as MangaSummary[],
-        music: [] as MusicSearchHit[],
-        ebooks: [] as EBook[],
-        sports: [] as SportsEventHit[],
-        characters: [] as CharacterHit[],
         addon: { movies: [], series: [] } as Awaited<typeof addonPromise>,
         cine: { movies: [], series: [] } as Awaited<typeof cinemetaPromise>,
         groups: [] as Awaited<typeof addonGroupsPromise>,
@@ -367,20 +312,13 @@ export function SearchProvider({ children }: { children: ReactNode }) {
           addons: [],
           intent: null,
         };
-        const animeTitleSet = new Set(acc.anime.map((a) => normShow(a.name)));
-        const notAnimeDupe = (m: { name?: string }) =>
-          animeTitleSet.size === 0 || !animeTitleSet.has(normShow(m.name ?? ""));
         const dropAnime = <T extends { id: string }>(list: T[]): T[] =>
           settings.hideContent.anime ? list.filter((m) => !metaLooksAnime(m)) : list;
         const mergedMovies = dropAnime(
-          dedupeByTitle(
-            mergeMetas(mergeMetas(base.movies, acc.addon.movies), acc.cine.movies),
-          ).filter(notAnimeDupe),
+          dedupeByTitle(mergeMetas(mergeMetas(base.movies, acc.addon.movies), acc.cine.movies)),
         );
         const mergedSeries = dropAnime(
-          dedupeByTitle(
-            mergeMetas(mergeMetas(base.series, acc.addon.series), acc.cine.series),
-          ).filter(notAnimeDupe),
+          dedupeByTitle(mergeMetas(mergeMetas(base.series, acc.addon.series), acc.cine.series)),
         );
         const shown = new Set<string>([...mergedMovies, ...mergedSeries].map((m) => m.id));
         const dedupedGroups = acc.groups
@@ -395,49 +333,21 @@ export function SearchProvider({ children }: { children: ReactNode }) {
               : topMatch,
           movies: mergedMovies,
           series: mergedSeries,
-          liveTv,
-          anime: acc.anime,
-          manga: acc.manga,
-          music: acc.music,
-          ebooks: acc.ebooks,
-          sports: acc.sports,
-          characters: acc.characters,
+          // Anime, manga, music, eBook, sports, character and Live TV results are
+          // not part of Frame. The fields stay so the result shape is unchanged.
+          liveTv: [],
+          anime: [],
+          manga: [],
+          music: [],
+          ebooks: [],
+          sports: [],
+          characters: [],
           addonGroups: dedupedGroups,
           addons: searchAddonIndex(trimmed),
         });
       };
       void tmdbPromise.then((r) => {
         tmdbResult = r;
-        publish();
-      });
-      void animePromise.then((a) => {
-        acc.anime = a;
-        publish();
-      });
-      void mangaPromise.then((m) => {
-        acc.manga = m;
-        publish();
-      });
-      void musicPromise.then((m) => {
-        acc.music = m;
-        publish();
-      });
-      void ebookPromise.then((b) => {
-        acc.ebooks = b;
-        publish();
-      });
-      void sportsPromise.then((s) => {
-        acc.sports = s;
-        publish();
-      });
-      void charactersPromise.then((c) => {
-        acc.characters = c
-          .map((ch) => ({
-            ...ch,
-            anime: animeAllowed ? ch.anime : [],
-            manga: mangaAllowed ? ch.manga : [],
-          }))
-          .filter((ch) => ch.anime.length + ch.manga.length > 0);
         publish();
       });
       void addonPromise.then((a) => {
@@ -455,19 +365,13 @@ export function SearchProvider({ children }: { children: ReactNode }) {
         acc.groups = g;
         publish();
       });
-      void Promise.all([
-        tmdbPromise,
-        animePromise,
-        mangaPromise,
-        charactersPromise,
-        addonPromise,
-        cinemetaPromise,
-        addonGroupsPromise,
-      ]).then(() => {
-        if (!requestGuardRef.current.isCurrent(id)) return;
-        publish();
-        setStatus("done");
-      });
+      void Promise.all([tmdbPromise, addonPromise, cinemetaPromise, addonGroupsPromise]).then(
+        () => {
+          if (!requestGuardRef.current.isCurrent(id)) return;
+          publish();
+          setStatus("done");
+        },
+      );
     }, 180);
 
     return () => {
@@ -483,12 +387,9 @@ export function SearchProvider({ children }: { children: ReactNode }) {
     settings.tmdbKey,
     settings.tmdbLanguage,
     settings.translateTitles,
-    playlists,
     excludeGenres,
     hiddenTabs.anime,
     settings.hideContent.anime,
-    hiddenTabs.liveTv,
-    settings.mangaEnabled,
     authKey,
   ]);
 

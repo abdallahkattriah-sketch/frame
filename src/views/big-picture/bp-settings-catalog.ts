@@ -15,7 +15,7 @@ export type BpCatId =
   | "setup"
   | "interface";
 
-export type BpPane = "connect" | "live";
+export type BpPane = "connect";
 
 export type BpT = (key: string, vars?: Record<string, string | number>) => string;
 
@@ -145,7 +145,6 @@ export function bpSettingsControls(
   s: Settings,
   t: BpT,
   overscan: number,
-  sportsShown: boolean,
 ): BpControl[] {
   if (id === "picture") {
     return [
@@ -343,21 +342,6 @@ export function bpSettingsControls(
         detail: t("Nothing connected yet. Scan a code with your phone."),
         pane: "connect",
       },
-      {
-        kind: "push",
-        id: "live",
-        label: t("Live TV playlists"),
-        detail: t("Add an M3U link or Xtream Codes login"),
-        pane: "live",
-      },
-      {
-        kind: "options",
-        id: "sportsTab",
-        label: t("Show Sports"),
-        value: boolValue(sportsShown),
-        options: onOff(t),
-      },
-      { kind: "action", id: "sportsNotice", label: t("Review Sports notice") },
     ];
   }
 

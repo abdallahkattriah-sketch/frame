@@ -1,16 +1,6 @@
 import { useT } from "@/lib/i18n";
 
-export type SearchFilterKey =
-  | "all"
-  | "movies"
-  | "shows"
-  | "people"
-  | "live"
-  | "anime"
-  | "manga"
-  | "music"
-  | "ebooks"
-  | "sports";
+export type SearchFilterKey = "all" | "movies" | "shows" | "people";
 
 export type SearchAddonFilter = `addon:${string}`;
 export type SearchFilter = SearchFilterKey | SearchAddonFilter;
@@ -20,12 +10,6 @@ const ORDER: { key: SearchFilterKey; label: string }[] = [
   { key: "movies", label: "Movies" },
   { key: "shows", label: "Series" },
   { key: "people", label: "People" },
-  { key: "live", label: "Live TV" },
-  { key: "anime", label: "Anime" },
-  { key: "manga", label: "Manga" },
-  { key: "music", label: "Music" },
-  { key: "ebooks", label: "eBooks" },
-  { key: "sports", label: "Sports" },
 ];
 
 export function SearchFilterBar({

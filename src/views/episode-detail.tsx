@@ -21,8 +21,6 @@ import { Synopsis } from "@/views/detail/synopsis";
 import { TitlePlate } from "@/views/detail/title-plate";
 import { Pill } from "@/views/detail/pill";
 import { PlayModeHint } from "@/views/detail/play-mode-hint";
-import { TraktComments } from "@/views/detail/trakt-comments";
-import { stremioIdToTraktTarget } from "@/lib/trakt/ids";
 
 export interface EpisodeDetailViewProps {
   seriesId: string;
@@ -162,20 +160,6 @@ export function EpisodeDetailView({
 
   const seriesRating =
     omdbScores?.imdbRating ?? (imdbId ? seriesMeta?.imdbRating : undefined) ?? undefined;
-
-  const traktResolution = stremioIdToTraktTarget(seriesId, { season, episode });
-
-  // Inject IMDB ID into target if resolution succeeded but only has TMDB ID
-  // (Trakt comments API only accepts IMDB/Trakt/slug IDs, not TMDB)
-  if (traktResolution.ok && traktResolution.target.kind === "episode") {
-    const target = traktResolution.target;
-    if (imdbId && !target.show.ids.imdb) target.show.ids.imdb = imdbId;
-    // Add episode-level ids for comment posting
-    const epIds: { tmdb?: number; imdb?: string } = {};
-    if (episodeData?.id) epIds.tmdb = episodeData.id;
-    if (imdbId) epIds.imdb = imdbId;
-    (target as { ids?: { tmdb?: number; imdb?: string } }).ids = epIds;
-  }
 
   const handlePlay = useCallback(() => {
     if (!seriesMeta || !episodeData) return;
@@ -376,8 +360,6 @@ export function EpisodeDetailView({
             </div>
           </section>
         )}
-
-        {settings.showTraktComments === true && <TraktComments resolution={traktResolution} />}
       </div>
 
       <BackToTop scrollRef={scrollRef} />

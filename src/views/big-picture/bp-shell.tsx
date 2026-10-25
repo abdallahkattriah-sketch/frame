@@ -35,22 +35,18 @@ import { BpHintBar, type BpAction } from "./bp-hint-bar";
 import { BpHome } from "./bp-home";
 import {
   BpAddon,
-  BpAnime,
   BpCollection,
   BpCollectionDetail,
   BpCollections,
   BpDetail,
   BpDiscover,
   BpLibrary,
-  BpLive,
   BpMovies,
   BpPerson,
   BpSearch,
   BpService,
   BpSettings,
   BpShows,
-  BpSports,
-  BpSportsEvent,
   BpRouteFallback,
   BpStreams,
   bpWarmRoutes,
@@ -415,12 +411,7 @@ export function BigPictureShell() {
           {/* The guide is a dense grid read at ten feet. Artwork behind it competes
               with every cell and there is nowhere for it to sit that is not under
               text, so Live TV gets the flat canvas and no ambient at all. */}
-          {route.kind !== "search" &&
-            route.kind !== "live" &&
-            route.kind !== "sports" &&
-            route.kind !== "sports-event" && (
-              <BpAmbient pool={mosaicPool} still={route.kind === "anime"} />
-            )}
+          {route.kind !== "search" && <BpAmbient pool={mosaicPool} />}
           <BpTopBar active={activeTab} />
           <main
             key={routeId}
@@ -442,12 +433,8 @@ export function BigPictureShell() {
           >
             <Suspense fallback={<BpRouteFallback />}>
               {route.kind === "home" && <BpHome onSelect={openDetail} />}
-              {route.kind === "anime" && <BpAnime onSelect={openDetail} />}
               {route.kind === "shows" && <BpShows onSelect={openDetail} />}
               {route.kind === "movies" && <BpMovies onSelect={openDetail} />}
-              {route.kind === "live" && <BpLive />}
-              {route.kind === "sports" && <BpSports />}
-              {route.kind === "sports-event" && <BpSportsEvent game={route.game} />}
               {route.kind === "discover" && <BpDiscover onSelect={openDetail} />}
               {route.kind === "search" && <BpSearch onSelect={openDetail} />}
               {route.kind === "library" && <BpLibrary onSelect={openDetail} />}

@@ -1,6 +1,6 @@
 import { X, Loader2, CornerDownLeft, CalendarRange, Tag } from "lucide-react";
 import { Search } from "@/components/icons/search-icon";
-import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { isTauri } from "@tauri-apps/api/core";
 import { createPortal } from "react-dom";
 import { TvModalClose } from "@/components/tv-modal-close";
@@ -10,17 +10,8 @@ import type { Meta } from "@/lib/cinemeta";
 import { useSearch } from "@/lib/search-context";
 import { useView } from "@/lib/view";
 import { MOVIE_GENRES, TV_GENRES } from "@/lib/feed/tags";
-import { metaLooksAnime } from "@/lib/anime-detect";
-import { AnimeRow } from "./anime-row";
-import { AnimeRelations } from "./anime-relations";
-import { MangaRow } from "./manga-row";
-import { MusicRow } from "./music-row";
-import { EBookRow } from "./ebook-row";
-import { SportsRow } from "./sports-row";
-import { CharacterGroup } from "./character-group";
 import { EmptyState } from "./empty-state";
 import { GuideModal } from "./guide-modal";
-import { LiveTvRow } from "./live-tv-row";
 import { TopMatch } from "./top-match";
 import { CollectionHitsRow } from "./collection-pane";
 import { ExplorePane, type ExploreFrame } from "./explore-pane";
@@ -29,7 +20,6 @@ import { PeopleRow } from "./people-row";
 import { collectionForTitle, useCollectionHits } from "./use-collection-hits";
 import { MetaList } from "./meta-list";
 import { SearchFilterBar, type SearchFilter, type SearchFilterKey } from "./search-filter-bar";
-import { requestMusicSearch } from "@/lib/music/navigation";
 import { AddonHits } from "./addon-hits";
 import { AddonResults } from "./addon-results";
 import { MagnetCard } from "./magnet-card";
@@ -43,11 +33,6 @@ import { useSettings } from "@/lib/settings";
 import { useExitPresence } from "@/lib/use-exit-presence";
 import { useWindowFullscreen } from "@/lib/use-window-fullscreen";
 import { isMagnetInput, isDirectVideoUrl } from "@/lib/torrent/magnet";
-import { useProfiles } from "@/lib/profiles";
-import { steamStoreQuery } from "@/lib/games/steam-store-search";
-const SteamStoreSearch = lazy(() =>
-  import("./steam-store-search").then((module) => ({ default: module.SteamStoreSearch })),
-);
 
 export function SearchOverlay() {
   const {
@@ -65,7 +50,7 @@ export function SearchOverlay() {
   const inputRef = useRef<HTMLInputElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const backdropGesture = useRef<(() => void) | null>(null);
-  const { openFilter, openMeta, openPerson, setView } = useView();
+  const { openFilter, openMeta, openPerson } = useView();
   const [explore, setExplore] = useState<ExploreFrame[]>([]);
   const t = useT();
   const [guideOpen, setGuideOpen] = useState(false);
@@ -73,11 +58,7 @@ export function SearchOverlay() {
   const [aiMode, setAiMode] = useState(false);
   const [aiRunSignal, setAiRunSignal] = useState(0);
   const [mediaFilter, setMediaFilter] = useState<SearchFilter>("all");
-  const { activeProfile } = useProfiles();
   const { settings, update } = useSettings();
-  const storeQuery = activeProfile?.kid
-    ? null
-    : steamStoreQuery(query, settings.steamSearchShortcut);
   useEffect(() => {
     setMediaFilter("all");
   }, [query]);
@@ -91,7 +72,7 @@ export function SearchOverlay() {
 
   const close = () => {
     backdropGesture.current?.();
-    if (query.trim() && (results || storeQuery !== null)) recordRecent(query);
+    if (query.trim() && results) recordRecent(query);
     setOpen(false);
   };
 
@@ -129,8 +110,8 @@ export function SearchOverlay() {
   }, [query]);
 
   useEffect(() => {
-    setAiHold(aiMode || storeQuery !== null);
-  }, [aiMode, storeQuery !== null, setAiHold]);
+    setAiHold(aiMode);
+  }, [aiMode, setAiHold]);
 
   useEffect(() => {
     if (!open) return;
@@ -179,9 +160,7 @@ export function SearchOverlay() {
 
   const trimmedQ = query.trim();
   const collectionsQuery =
-    !trimmedQ || storeQuery !== null || isMagnetInput(trimmedQ) || isDirectVideoUrl(trimmedQ)
-      ? ""
-      : trimmedQ;
+    !trimmedQ || isMagnetInput(trimmedQ) || isDirectVideoUrl(trimmedQ) ? "" : trimmedQ;
   const collectionHits = useCollectionHits(collectionsQuery);
 
   if (!mounted) return null;
@@ -279,12 +258,6 @@ export function SearchOverlay() {
         movies: currentResults.movies.length,
         shows: currentResults.series.length,
         people: currentResults.people.length,
-        live: currentResults.liveTv.length,
-        anime: currentResults.anime.length,
-        manga: currentResults.manga.length,
-        music: currentResults.music.length,
-        ebooks: currentResults.ebooks.length,
-        sports: currentResults.sports.length,
       }
     : {};
   const addonFilter = mediaFilter.startsWith("addon:") ? mediaFilter.slice(6) : null;
@@ -300,12 +273,6 @@ export function SearchOverlay() {
     (group) => !addonFilter || group.id === addonFilter,
   );
   const personMatch = matchPersonForQuery(currentResults?.people, trimmed);
-  const topMatchIsAnime =
-    !personMatch &&
-    !!currentResults?.topMatch &&
-    currentResults.anime.length > 0 &&
-    metaLooksAnime(currentResults.topMatch.meta);
-  const topAnime = topMatchIsAnime && currentResults ? currentResults.anime[0] : null;
   const magnetInput = !!trimmed && isMagnetInput(trimmed);
   const urlInput = !!trimmed && !magnetInput && isDirectVideoUrl(trimmed);
   const directInput = magnetInput || urlInput;
@@ -361,13 +328,6 @@ export function SearchOverlay() {
                     handleModalClose();
                     return;
                   }
-                  if (e.key === "Enter" && storeQuery !== null) {
-                    e.preventDefault();
-                    panelRef.current
-                      ?.querySelector<HTMLAnchorElement>(".steam-store-result-title")
-                      ?.focus();
-                    return;
-                  }
                   if (e.key === "Enter" && e.shiftKey) {
                     if (!query.trim()) return;
                     e.preventDefault();
@@ -395,19 +355,13 @@ export function SearchOverlay() {
                     openMeta(meta);
                   }
                 }}
-                placeholder={
-                  storeQuery !== null
-                    ? t("games.storeSearch.empty")
-                    : aiMode
-                      ? ""
-                      : t("Search movies, shows, people, genres, years...")
-                }
+                placeholder={aiMode ? "" : t("Search movies, shows, people, genres, years...")}
                 className="h-16 w-full bg-transparent text-[20px] text-ink placeholder:text-ink-subtle focus:outline-none sm:text-[22px]"
                 spellCheck={false}
                 autoComplete="off"
                 data-tv-text-auto="true"
               />
-              {aiMode && storeQuery === null && (
+              {aiMode && (
                 <AiExampleHint
                   hidden={query.trim().length > 0}
                   examples={SEARCH_EXAMPLES}
@@ -416,11 +370,11 @@ export function SearchOverlay() {
                 />
               )}
             </div>
-            {status === "loading" && storeQuery === null && (
+            {status === "loading" && (
               <Loader2 size={18} className="shrink-0 animate-spin text-ink-subtle" />
             )}
             <Hint />
-            {storeQuery === null && (settings.aiSearchKey.trim() || settings.aiGroqKey.trim()) && (
+            {(settings.aiSearchKey.trim() || settings.aiGroqKey.trim()) && (
               <AiModeButton
                 active={aiMode}
                 currentModel={settings.aiSearchModel}
@@ -444,17 +398,7 @@ export function SearchOverlay() {
           </div>
 
           <div className="harbor-search-body relative isolate min-h-0 overflow-x-hidden overflow-y-auto px-7 py-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {storeQuery !== null ? (
-              <Suspense fallback={<p role="status">{t("common.loading")}</p>}>
-                <SteamStoreSearch
-                  key={activeProfile?.id ?? "default"}
-                  profile={activeProfile?.id ?? "default"}
-                  query={storeQuery}
-                  active={open && !closing}
-                  onAction={() => recordRecent(query)}
-                />
-              </Suspense>
-            ) : explore.length > 0 ? (
+            {explore.length > 0 ? (
               <ExplorePane
                 key={explore.length}
                 frame={explore[explore.length - 1]}
@@ -467,11 +411,6 @@ export function SearchOverlay() {
                 onOpenPersonDetail={(id) => {
                   commit();
                   openPerson(id);
-                }}
-                onOpenMusic={(q) => {
-                  commit();
-                  requestMusicSearch(q);
-                  setView("music");
                 }}
               />
             ) : (
@@ -580,13 +519,6 @@ export function SearchOverlay() {
                           />
                         )
                       )}
-                      {showKind("anime") && topAnime && (
-                        <AnimeRelations anime={topAnime} onClose={commit} />
-                      )}
-                      <LiveTvRow
-                        items={showKind("live") ? currentResults.liveTv : []}
-                        onClose={commit}
-                      />
                       <AddonHits hits={currentResults.addons} onClose={commit} />
                       <PeopleRow
                         people={
@@ -632,27 +564,6 @@ export function SearchOverlay() {
                           }
                         />
                       )}
-                      <AnimeRow
-                        items={showKind("anime") ? currentResults.anime : []}
-                        onClose={commit}
-                      />
-                      <MangaRow
-                        items={showKind("manga") ? currentResults.manga : []}
-                        onClose={commit}
-                      />
-                      <MusicRow
-                        items={showKind("music") ? currentResults.music : []}
-                        onClose={commit}
-                      />
-                      <EBookRow
-                        items={showKind("ebooks") ? currentResults.ebooks : []}
-                        onClose={commit}
-                      />
-                      <SportsRow
-                        items={showKind("sports") ? currentResults.sports : []}
-                        onClose={commit}
-                      />
-                      <CharacterGroup items={currentResults.characters} onClose={commit} />
                       <AddonResults groups={shownAddonGroups} onClose={commit} />
                     </div>
                   )}

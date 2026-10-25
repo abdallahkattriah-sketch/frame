@@ -502,7 +502,6 @@ function TogetherLocationPublisher() {
         return { kind: "addon-detail" as const, addonId: addonDetailId };
       if (topKind === "home") return { kind: "home" };
       if (topKind === "discover") return { kind: "discover" };
-      if (topKind === "anime") return { kind: "anime" };
       if (topKind === "queue") return { kind: "queue" };
       if (topKind === "addons") return { kind: "addons" };
       if (topKind === "library") return { kind: "home" };

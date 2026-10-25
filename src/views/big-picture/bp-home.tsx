@@ -16,7 +16,6 @@ import { useBpRail } from "./use-bp-rail";
 import { BpRow, bpRowShape, useBpNumerals } from "./bp-row";
 import { BpBandIdentity } from "./bp-section";
 import { BpCollectionsRow } from "./bp-collections-row";
-import { BpLiveRow } from "./bp-live-row";
 import { BpServiceRow } from "./bp-service-row";
 import { BpAddonRow } from "./addons/bp-addon-row";
 import { useBpCatalog } from "./use-bp-catalog";
@@ -78,15 +77,12 @@ export function BpHome({ onSelect }: { onSelect: (m: Meta) => void }) {
   // Continue watching and the catalogs resolve at different moments. Emitting a
   // seed before both have settled hands data-bp-autofocus from one row to
   // another mid-flight, and the settle pass then drags the ring across with it.
-  // Live only ever holds the seed provisionally: BpLiveRow renders nothing
-  // without playlists, so latching it would leave the view with no autofocus at
-  // all and park the ring in the top bar.
   const seedRowRef = useRef<"cw" | "catalog" | null>(null);
   if (seedRowRef.current === null && cwReady && !loading) {
     if (cw.length > 0) seedRowRef.current = "cw";
     else if (rows.length > 0) seedRowRef.current = "catalog";
   }
-  const seedRow: "cw" | "catalog" | "live" = seedRowRef.current ?? "live";
+  const seedRow = seedRowRef.current;
 
   // Continue watching reorders by recency, so a remembered card points at a
   // different title on the way back. Home always opens on the first one, and
@@ -188,25 +184,6 @@ export function BpHome({ onSelect }: { onSelect: (m: Meta) => void }) {
   });
 
   entries.push({ key: "addons", band: "addons", node: <BpAddonRow /> });
-
-  // Pushed unconditionally: BpLiveRow renders nothing without playlists, and the
-  // empty wrapper collapses via empty:hidden, so rail indices stay contiguous
-  // without bp-home having to duplicate the playlist fetch to predict it.
-  entries.push({
-    key: "live",
-    band: "live",
-    node: (
-      <BpLiveRow
-        autofocusFirst={seedRow === "live"}
-        lead={{
-          rowKey: "live",
-          title: t("Guide"),
-          action: t("Live TV"),
-          tab: "live",
-        }}
-      />
-    ),
-  });
 
   head.forEach((row, i) => {
     entries.push({
