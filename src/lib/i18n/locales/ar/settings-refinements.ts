@@ -17,8 +17,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "لا يظهر نشاط إضافات محتوى البالغين مطلقًا على Discord.",
   "Ad skipping": "تخطي الإعلانات",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "أضف TMDB للحصول على مزيد من الكتالوجات والصور. يضيف المزوّدون الآخرون الميزات الموضّحة أدناه. يمكنك استخدام Harbor مع Cinemeta دون إضافة مفتاح.",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "أضف TMDB للحصول على مزيد من الكتالوجات والصور. يضيف المزوّدون الآخرون الميزات الموضّحة أدناه. يمكنك استخدام Frame مع Cinemeta دون إضافة مفتاح.",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "أضف مؤقتًا بجوار التنزيلات لإيقاف التشغيل مؤقتًا بعد مدة أو عدد حلقات تحدده.",
   "Add an API key to use this source.": "أضف مفتاح API لاستخدام هذا المصدر.",
@@ -41,7 +41,7 @@ const settingsRefinements: Record<string, string> = {
     "يضبط الدرجات المتوسطة لتصبح المشاهد الداكنة أوضح.",
   "Adjusts the difference between dark and light areas.":
     "يضبط الفرق بين المناطق الداكنة والفاتحة.",
-  "All hands on deck": "معًا نبني Harbor",
+  "All hands on deck": "معًا نبني Frame",
   "All languages have been added.": "تمت إضافة جميع اللغات.",
   "All subtitle sources use the same preferred language order.":
     "تستخدم جميع مصادر الترجمة ترتيب اللغات المفضّلة نفسه.",
@@ -75,14 +75,14 @@ const settingsRefinements: Record<string, string> = {
     "وازن بين جودة الصورة والأداء. تسري التغييرات على الفيديو التالي الذي تشغّله.",
   "Between episodes": "بين الحلقات",
   "Between episodes on the TV": "بين الحلقات على التلفاز",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "أحضر قائمة الأنمي إلى Harbor وحدّث عدد الحلقات أثناء المشاهدة. سيُحفَظ تقدّمك الحالي.",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "أحضر قائمة الأنمي إلى Frame وحدّث عدد الحلقات أثناء المشاهدة. سيُحفَظ تقدّمك الحالي.",
   "Bringing your Stremio library?": "هل تريد نقل مكتبة Stremio؟",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "تصفّح حسب الأرك في المسلسلات المدعومة، مثل One Piece. يتطلّب مفتاح TMDB.",
   "Browse pages": "تصفح الصفحات",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "تصفّح قوائم الأنمي في Harbor وحدّث تقدّم الحلقات أثناء المشاهدة. سجّل الدخول إلى AniList للربط.",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "تصفّح قوائم الأنمي في Frame وحدّث تقدّم الحلقات أثناء المشاهدة. سجّل الدخول إلى AniList للربط.",
   "Browser details": "تفاصيل المتصفح",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "أنشئ فلترًا باسم، ثم طبّقه في منتقي المصادر لتقتصر قائمة البث على ما تريده.",
@@ -103,8 +103,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "تحقّق من قدرة هذا الجهاز على الاتصال بعنوان الخادم المحفوظ.",
   "Checking SVP installation…": "جارٍ التحقق من تثبيت SVP…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "اختر نسخة Harbor احتياطية وراجع محتوياتها قبل الاستعادة. يبقى تسجيل دخول Stremio على هذا الجهاز.",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "اختر نسخة Frame احتياطية وراجع محتوياتها قبل الاستعادة. يبقى تسجيل دخول Stremio على هذا الجهاز.",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "اختر مظهرًا أو اضبط كل إعداد. يعيد خيار إعادة ضبط الصورة القيم الأصلية.",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -125,14 +125,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "اختر الخدمات التي تريد رؤيتها أثناء التصفح على التلفاز.",
   "Choose the streams you prefer.": "اختر البثوث التي تفضّلها.",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "اختر ما يحدث عند إغلاق Harbor أو تصغيره أو الانتقال إلى تطبيق آخر.",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "اختر متى يطلب Harbor اختيار ملف شخصي. تظهر المطالبات المؤقّتة عند العودة إلى Harbor.",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "اختر متى تبدأ الحلقة التالية ومتى يتحقّق Harbor من استمرار المشاهدة.",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "اختر أين يبحث Harbor عن الترجمة. تظهر نتائج المصادر المفعّلة معًا بعد إزالة التكرارات.",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "اختر ما يحدث عند إغلاق Frame أو تصغيره أو الانتقال إلى تطبيق آخر.",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "اختر متى يطلب Frame اختيار ملف شخصي. تظهر المطالبات المؤقّتة عند العودة إلى Frame.",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "اختر متى تبدأ الحلقة التالية ومتى يتحقّق Frame من استمرار المشاهدة.",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "اختر أين يبحث Frame عن الترجمة. تظهر نتائج المصادر المفعّلة معًا بعد إزالة التكرارات.",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "اختر مكان حفظ الفيديوهات والكتب الإلكترونية وطريقة تنظيم مجلداتها.",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -168,8 +168,8 @@ const settingsRefinements: Record<string, string> = {
     "اربط حساب MyAnimeList لمزامنة تقدّم المشاهدة وتصفّح قائمتك.",
   "Connect {service}": "ربط {service}",
   "Contact & credit": "التواصل ونسب المساهمة",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "تحكّم فيما يظهر على ملفك في Discord أثناء استخدام Harbor.",
+  "Control what appears on your Discord profile while you use Frame.":
+    "تحكّم فيما يظهر على ملفك في Discord أثناء استخدام Frame.",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "يتحكّم في تقليل سطوع المناطق شديدة الإضاءة لتناسب شاشتك. توضّح الرسوم كل منحنى.",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -193,27 +193,27 @@ const settingsRefinements: Record<string, string> = {
     "تعذّر حفظ {name}. حاول مجددًا واختر مجلدًا يمكن الكتابة فيه.",
   "Couldn't copy the address. Select it above and copy it manually.":
     "تعذّر نسخ العنوان. حدّده أعلاه وانسخه يدويًا.",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "تعذّر الاتصال بـ Harbor. تحقّق من اتصالك وحاول مجددًا.",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "تعذّر الاتصال بـ Frame. تحقّق من اتصالك وحاول مجددًا.",
   "Covers everything. The taskbar is hidden.": "يغطّي الشاشة بالكامل ويخفي شريط المهام.",
   "Create a stream filter": "إنشاء مرشّح بث",
-  "Create a theme or share one you've made with the Harbor community.":
-    "أنشئ سمة أو شارك سمة صمّمتها مع مجتمع Harbor.",
+  "Create a theme or share one you've made with the Frame community.":
+    "أنشئ سمة أو شارك سمة صمّمتها مع مجتمع Frame.",
   "Create my account": "إنشاء حسابي",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "أنشئ ملفات شخصية لمستخدمي Harbor. يمكن أن يكون لكل منها مظهر وإعدادات ورمز PIN خاص.",
-  "Create your Harbor account": "إنشاء حساب Harbor",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "أنشئ ملفات شخصية لمستخدمي Frame. يمكن أن يكون لكل منها مظهر وإعدادات ورمز PIN خاص.",
+  "Create your Frame account": "إنشاء حساب Frame",
   "Create your first filter with the stream quality you prefer.":
     "أنشئ أول مرشّح بجودة البث التي تفضّلها.",
   "Custom color": "لون مخصّص",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "خصّص Harbor باستخدام CSS وJavaScript وHTML الخاصة بك. تُطبَّق التغييرات أثناء الكتابة.",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "خصّص Frame باستخدام CSS وJavaScript وHTML الخاصة بك. تُطبَّق التغييرات أثناء الكتابة.",
   "Default Downloads folder": "مجلد التنزيلات الافتراضي",
   "Delete this rule?": "هل تريد حذف هذه القاعدة؟",
   "Describe the problem in one sentence.": "صِف المشكلة في جملة واحدة.",
   "Describe the result you were after.": "صِف النتيجة التي كنت تتوقّعها.",
-  "Describe what Harbor did instead, including any message on screen.":
-    "صِف ما فعله Harbor بدلًا من ذلك، بما في ذلك أي رسالة ظهرت على الشاشة.",
+  "Describe what Frame did instead, including any message on screen.":
+    "صِف ما فعله Frame بدلًا من ذلك، بما في ذلك أي رسالة ظهرت على الشاشة.",
   "Device compatibility": "توافق الجهاز",
   "Discovery languages": "لغات الاستكشاف",
   "Down the river": "مع مجرى النهر",
@@ -236,8 +236,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "أدخل الأرقام الأربعة لحفظ رمز PIN هذا.",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "أدخل خيار mpv واحدًا في كل سطر، مثل brightness=5. تتجاوز هذه الخيارات إعدادات الفيديو في الصفحات الأخرى. قد تؤثّر الخيارات غير الصحيحة في التشغيل. أعد تشغيل الفيديو لتطبيق التغييرات.",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "كل الأيقونات والرسوم المتحركة المصممة لـ Harbor، ومن صمّمها، وكيفية تنزيلها.",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "كل الأيقونات والرسوم المتحركة المصممة لـ Frame، ومن صمّمها، وكيفية تنزيلها.",
   "Example scores with your settings.": "نماذج تقييمات بإعداداتك.",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "يستبعد مصادر البث ذات عدد موزّعين أقل أو غير معروف. اتركه فارغًا أو أدخل 0 لقبول أي عدد.",
@@ -257,8 +257,8 @@ const settingsRefinements: Record<string, string> = {
     "أكمل إعداد محرك SVP أعلاه قبل تفعيله.",
   "Forget remote streaming server": "نسيان خادم البث البعيد",
   "Forgot password?": "نسيت كلمة المرور؟",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "مظلّلات GPU تعالج الصورة أثناء التشغيل: رفع الدقة بـ Anime4K، وتحويل درجات HDR، ورفع الدقة العصبي، وزيادة الحدة. نزّل ما تريده وسيطبّقه Harbor في محرك mpv.",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "مظلّلات GPU تعالج الصورة أثناء التشغيل: رفع الدقة بـ Anime4K، وتحويل درجات HDR، ورفع الدقة العصبي، وزيادة الحدة. نزّل ما تريده وسيطبّقه Frame في محرك mpv.",
   "Get SVP": "الحصول على SVP",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "تلقَّ تنبيهات الإصدارات في Discord أو Telegram. اربط وجهة، ثم اختر مصادر التنبيهات وقواعدها.",
@@ -272,28 +272,28 @@ const settingsRefinements: Record<string, string> = {
   "Handles cannot start or end with a hyphen.": "لا يمكن أن تبدأ المعرّفات بشرطة أو تنتهي بها.",
   "Handles need at least 3 characters.": "يجب ألا يقل طول المعرّف عن 3 أحرف.",
   "Handles need at least one letter.": "يجب أن تحتوي المعرّفات على حرف واحد على الأقل.",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "يعرض Harbor Discover فيلمي Steamboat Willie وThe General",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "يتحقّق Harbor من الجهاز المستقبِل ويستخدم ffmpeg عندما يحتاج البث إلى تحويل.",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "تعذّر على Harbor تطبيق إعداد P2P. أعد فتح Harbor للمحاولة مجددًا.",
-  "Harbor couldn't check the SVP installation. Try again.":
-    "تعذّر على Harbor التحقّق من تثبيت SVP. حاول مجددًا.",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "يبحث Harbor عن الترجمات بهذا الترتيب. ضع لغتك المفضّلة أولًا.",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "Harbor على أجهزتك الأخرى: تطبيق الويب، والتحكم عبر الهاتف، والتحكم بقارئ المانغا.",
-  "Harbor profile showing watch statistics": "ملف شخصي في Harbor يعرض إحصاءات المشاهدة",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "يستخدم Harbor خادم المجتمع الخاص به. يمكنك توجيهه إلى خادم تديره بنفسك.",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "محرك الند للند المدمج في Harbor، واختباره الذاتي، وأي خادم بث تختاره.",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "ترخيص Harbor، والمشاريع التي يعتمد عليها، والأشخاص والخدمات التي تجعله ممكنًا.",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "خادم Harbor البعيد لا يستجيب على المنفذ {WEB_PORT}. تأكّد من تشغيل الخادم على الكمبيوتر، أو أوقف هذا الإعداد ثم فعّله لإعادة تشغيله.",
-  "Harbor, with a few classics.": "Harbor مع بعض الكلاسيكيات.",
+  "Frame Discover showing Steamboat Willie and The General":
+    "يعرض Frame Discover فيلمي Steamboat Willie وThe General",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "يتحقّق Frame من الجهاز المستقبِل ويستخدم ffmpeg عندما يحتاج البث إلى تحويل.",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "تعذّر على Frame تطبيق إعداد P2P. أعد فتح Frame للمحاولة مجددًا.",
+  "Frame couldn't check the SVP installation. Try again.":
+    "تعذّر على Frame التحقّق من تثبيت SVP. حاول مجددًا.",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "يبحث Frame عن الترجمات بهذا الترتيب. ضع لغتك المفضّلة أولًا.",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "Frame على أجهزتك الأخرى: تطبيق الويب، والتحكم عبر الهاتف، والتحكم بقارئ المانغا.",
+  "Frame profile showing watch statistics": "ملف شخصي في Frame يعرض إحصاءات المشاهدة",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "يستخدم Frame خادم المجتمع الخاص به. يمكنك توجيهه إلى خادم تديره بنفسك.",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "محرك الند للند المدمج في Frame، واختباره الذاتي، وأي خادم بث تختاره.",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "ترخيص Frame، والمشاريع التي يعتمد عليها، والأشخاص والخدمات التي تجعله ممكنًا.",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "خادم Frame البعيد لا يستجيب على المنفذ {WEB_PORT}. تأكّد من تشغيل الخادم على الكمبيوتر، أو أوقف هذا الإعداد ثم فعّله لإعادة تشغيله.",
+  "Frame, with a few classics.": "Frame مع بعض الكلاسيكيات.",
   "Help & about": "المساعدة وحول التطبيق",
   "Hex color": "اللون بالنظام الست عشري",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -301,8 +301,8 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "إخفاء {name} من التنقل",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "يحمّل الخيار العالي صورًا أوضح. اختر المتوازن إذا بدا التصفّح بطيئًا. لا يؤثّر هذا في جودة الفيديو.",
-  "How long Harbor waits for each addon to return results.": "مدة انتظار Harbor لنتائج كل إضافة.",
-  "How much does this affect your use of Harbor?": "إلى أي حد يؤثّر هذا في استخدامك لـ Harbor؟",
+  "How long Frame waits for each addon to return results.": "مدة انتظار Frame لنتائج كل إضافة.",
+  "How much does this affect your use of Frame?": "إلى أي حد يؤثّر هذا في استخدامك لـ Frame؟",
   "How to connect Discord": "كيفية ربط Discord",
   "How to connect Telegram": "كيفية ربط Telegram",
   "How video plays, how it looks, and what happens between episodes.":
@@ -322,18 +322,18 @@ const settingsRefinements: Record<string, string> = {
   "Included with your report: app and device details, enabled-service counts, the player check, and recent error messages.":
     "يتضمّن بلاغك: تفاصيل التطبيق والجهاز، وعدد الخدمات المفعّلة، وفحص المشغّل، ورسائل الخطأ الأخيرة.",
   "Install SVP and check again before enabling it.": "ثبّت SVP وتحقّق مجددًا قبل تفعيله.",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "ثبّت SVP مع مكوّنات VapourSynth، ثم تحقّق مجددًا ليتمكّن Harbor من العثور عليها.",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "ثبّت حزم أيقونات أو ارفع صورتك الخاصة لكل جائزة. يستضيف منشئو الحزم ملفاتها، وهي غير مضمّنة مع Harbor.",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "ثبّت SVP مع مكوّنات VapourSynth، ثم تحقّق مجددًا ليتمكّن Frame من العثور عليها.",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "ثبّت حزم أيقونات أو ارفع صورتك الخاصة لكل جائزة. يستضيف منشئو الحزم ملفاتها، وهي غير مضمّنة مع Frame.",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "ثبّت التحديثات وجرّب النسخ التجريبية واحتفظ بنسخة من إعداداتك.",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "يبدأ الخيار الفوري أفضل بث ترتيبًا مباشرة. يفتح خيار اختيار مصدر قائمة البث كل مرة لتختار الإصدار والجودة والمزوّد بنفسك.",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "تجاوز المقدّمات تلقائيًا فور بدئها. الرجوع إلى مقدّمة يعيد تشغيلها دون تجاوزها مجددًا. يتبع زر التجاوز الإعداد أعلاه.",
-  "Keep Harbor fullscreen when you close the player.":
-    "أبقِ Harbor في وضع ملء الشاشة عند إغلاق المشغّل.",
+  "Keep Frame fullscreen when you close the player.":
+    "أبقِ Frame في وضع ملء الشاشة عند إغلاق المشغّل.",
   "Keep code": "الاحتفاظ بالكود",
   "Keep my shortcuts": "الاحتفاظ باختصاراتي",
   "Keep rule": "الاحتفاظ بالقاعدة",
@@ -354,15 +354,15 @@ const settingsRefinements: Record<string, string> = {
   "Kids avatar {number}": "صورة أطفال رمزية {number}",
   "Language preference order": "ترتيب اللغات المفضّلة",
   "Larger artwork with the song title below it.": "صورة أكبر مع عنوان الأغنية أسفلها.",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "اتركه على تلقائي ما لم تومض واجهة Harbor أو تتقطّع. يتحكّم هذا في نافذة التطبيق، لا في تشغيل الفيديو.",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
-    "اسمح لـ Harbor بالبث عبر P2P من هذا الجهاز عند عدم توفّر رابط debrid. أوقفه لمنع تشغيل P2P محليًا. يظل بإمكان خادم بعيد مهيّأ بثّها.",
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "اتركه على تلقائي ما لم تومض واجهة Frame أو تتقطّع. يتحكّم هذا في نافذة التطبيق، لا في تشغيل الفيديو.",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+    "اسمح لـ Frame بالبث عبر P2P من هذا الجهاز عند عدم توفّر رابط debrid. أوقفه لمنع تشغيل P2P محليًا. يظل بإمكان خادم بعيد مهيّأ بثّها.",
   Licence: "الترخيص",
   "Licenses & attribution": "التراخيص ونسب الأعمال",
   "Lightens or darkens the whole picture.": "يفتح الصورة بأكملها أو يغمّقها.",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "اذكر الخطوات المؤدّية إلى المشكلة، بدءًا من فتح Harbor.",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "اذكر الخطوات المؤدّية إلى المشكلة، بدءًا من فتح Frame.",
   "Load failed. Retry": "تعذّر التحميل. أعد المحاولة",
   "Loading {name}…": "جارٍ تحميل {name}…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -387,8 +387,8 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "رفع أولوية {language}",
   "Move {name} down": "نقل {name} لأسفل",
   "Move {name} up": "نقل {name} لأعلى",
-  "No custom options. Harbor uses your video settings.":
-    "لا توجد خيارات مخصّصة. يستخدم Harbor إعدادات الفيديو لديك.",
+  "No custom options. Frame uses your video settings.":
+    "لا توجد خيارات مخصّصة. يستخدم Frame إعدادات الفيديو لديك.",
   "No default profile": "لا يوجد ملف شخصي افتراضي",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "لم تُحدّد تفضيلات. عدّل هذا الفلتر لاختيار البث الذي تفضّله.",
@@ -403,7 +403,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "مصادر الإشعارات",
   "On your local network": "على شبكتك المحلية",
   "On-screen controls": "عناصر التحكم على الشاشة",
-  "Open Harbor account": "فتح حساب Harbor",
+  "Open Frame account": "فتح حساب Frame",
   "Open Stremio settings": "فتح إعدادات Stremio",
   "Open on YouTube": "فتح على YouTube",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -411,8 +411,8 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "افتح هذا الملف الشخصي عند بدء التشغيل. قد تظهر المطالبات الموقّتة لاحقًا. لا يمكن تعيين ملف شخصي محمي برمز PIN كملف افتراضي.",
   "Open {label} address": "فتح عنوان {label}",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
-    "تأثيرات فيديو اختيارية تُنزّل من مؤلفيها. يطبّق Harbor الشيدرات المفعّلة بالترتيب الموضّح أدناه.",
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
+    "تأثيرات فيديو اختيارية تُنزّل من مؤلفيها. يطبّق Frame الشيدرات المفعّلة بالترتيب الموضّح أدناه.",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "اختياري. اترك بيانات الاتصال إذا كنت تسمح لنا بالمتابعة، واختر إن كنت تريد ذكر اسمك علنًا.",
   "Optional. Used to allow more watch time. Without a PIN, switch profiles when time is up.":
@@ -478,13 +478,13 @@ const settingsRefinements: Record<string, string> = {
   "Right in the middle of the picture, hard to miss.": "في وسط الصورة تمامًا، ليسهل ملاحظته.",
   "Rule name": "اسم القاعدة",
   "SVP interpolation": "استيفاء الإطارات عبر SVP",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "يتولى SVP تنعيم الحركة حاليًا. أوقفه من صفحة SVP لاستخدام تنعيم Harbor بدلًا منه.",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "يتولى SVP تنعيم الحركة حاليًا. أوقفه من صفحة SVP لاستخدام تنعيم Frame بدلًا منه.",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "يغطي المساحة نفسها مع بقائه نافذة، لذا يظل التبديل باستخدام alt-tab فوريًا.",
   "Saturation {s}%, brightness {v}%": "التشبّع {s}%، السطوع {v}%",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
-    "احفظ جودة البث التي تفضّلها. يجب أن يطابق البث كل فئة تحدّدها؛ اترك الفئة فارغة لقبول أي قيمة. إذا لم يوجد تطابق، يستخدم Harbor أفضل مصدر متاح يليه.",
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
+    "احفظ جودة البث التي تفضّلها. يجب أن يطابق البث كل فئة تحدّدها؛ اترك الفئة فارغة لقبول أي قيمة. إذا لم يوجد تطابق، يستخدم Frame أفضل مصدر متاح يليه.",
   "Save {name} as JSON": "حفظ {name} بصيغة JSON",
   "Save {name} as SVG": "حفظ {name} بصيغة SVG",
   "Saved {name}.": "تم حفظ {name}.",
@@ -497,8 +497,8 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "يظهر النص الثانوي هنا",
   "See the resolution, HDR format and audio while you watch.":
     "اعرض الدقة وتنسيق HDR ومعلومات الصوت أثناء المشاهدة.",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
-    "اطّلع على ما يخزّنه Harbor على هذا الكمبيوتر وامسح ذاكرة التخزين المؤقت عندما تحتاج إلى المساحة.",
+  "See what Frame stores on this computer and clear caches when you want the space back.":
+    "اطّلع على ما يخزّنه Frame على هذا الكمبيوتر وامسح ذاكرة التخزين المؤقت عندما تحتاج إلى المساحة.",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "أرسل الصوت إلى سماعات أو سماعات رأس أو جهاز استقبال محدّد. يتبع الخيار الافتراضي للنظام مخرج الصوت في نظامك.",
   "Services that record what you watch. Connect the ones you use and tune what each one sends.":
@@ -508,8 +508,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "إعداد وجهة",
   "Set up rating providers": "إعداد مزوّدي التقييمات",
   "Set up song identification": "إعداد التعرّف على الأغاني",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "اضبط تلفزيونك من هنا. تُحفظ جميع إعدادات هذه الصفحة في حساب Harbor ويتلقاها Big Picture على التلفزيون، فلا تحتاج إلى الكتابة باستخدام جهاز التحكم عن بُعد.",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "اضبط تلفزيونك من هنا. تُحفظ جميع إعدادات هذه الصفحة في حساب Frame ويتلقاها Big Picture على التلفزيون، فلا تحتاج إلى الكتابة باستخدام جهاز التحكم عن بُعد.",
   "Sets the age level for the kids space.": "يحدّد المستوى العمري لمساحة الأطفال.",
   "Setting up SVP…": "جارٍ إعداد SVP…",
   "Share your style": "شارك أسلوبك",
@@ -550,8 +550,8 @@ const settingsRefinements: Record<string, string> = {
     "شارات صغيرة مستديرة بإطار تنزلق إلى أسفل العنوان.",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "سلاسة الحركة ودور SVP فيها. استيفاء الإطارات للأنمي موجود هنا، وأصبحت مؤثرات الصورة في علامة تبويب مستقلة.",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "يجعل حركة الكاميرا أكثر سلاسة باستخدام مشغّل Harbor. يعمل بأفضل صورة عندما يكون معدل تحديث الشاشة أعلى من معدل إطارات الفيديو.",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "يجعل حركة الكاميرا أكثر سلاسة باستخدام مشغّل Frame. يعمل بأفضل صورة عندما يكون معدل تحديث الشاشة أعلى من معدل إطارات الفيديو.",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "يجعل الحركة أكثر سلاسة باستخدام SVP. أعد بدء التشغيل لتطبيق التغيير، وأوقف هذا الخيار إذا تعذر تشغيل الفيديو.",
   "Soften the artwork behind the stream picker.": "خفّف وضوح الصورة خلف قائمة اختيار البث.",
@@ -559,8 +559,8 @@ const settingsRefinements: Record<string, string> = {
     "لا يمكن مزامنة بعض إعدادات التلفزيون في هذا الإصدار. ستبقى تغييراتك محفوظة على هذا الكمبيوتر.",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "تخلّى شخص عن هذا المعرّف مؤخرًا. سيصبح متاحًا بعد 14 يومًا من تخلّيه عنه.",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "هناك سلوك غير متوقع، لكن يمكنك الاستمرار في استخدام Harbor.",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "هناك سلوك غير متوقع، لكن يمكنك الاستمرار في استخدام Frame.",
   "Something looks wrong, but the feature still works.":
     "هناك خلل في المظهر، لكن الميزة ما زالت تعمل.",
   "Something went wrong. Try again.": "حدث خطأ ما. حاول مجددًا.",
@@ -596,8 +596,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "جارٍ اختبار خادم البث البعيد",
   "Text is enlarged in this preview so you can judge the style.":
     "تم تكبير النص في هذه المعاينة لتتمكن من تقييم مظهره.",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "حساب Stremio هذا مرتبط بالفعل بحساب Harbor آخر. ألغِ ربطه من هناك أولًا.",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "حساب Stremio هذا مرتبط بالفعل بحساب Frame آخر. ألغِ ربطه من هناك أولًا.",
   "That Stremio sign-in did not go through. Try again.":
     "لم ينجح تسجيل الدخول إلى Stremio. حاول مجددًا.",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
@@ -629,12 +629,12 @@ const settingsRefinements: Record<string, string> = {
     "الإعدادات القليلة التي يضبطها معظم الناس مرة واحدة.",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "الإعدادات القليلة التي يضبطها معظم الناس مرة واحدة. سجّل الدخول، واختر طريقة عمل زر التشغيل، وحدد المظهر الذي تفضله.",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "لغة قوائم Harbor وأزراره وتسمياته. للصوت والترجمة ومعلومات الأعمال إعدادات لغة مستقلة.",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "لغة قوائم Frame وأزراره وتسمياته. للصوت والترجمة ومعلومات الأعمال إعدادات لغة مستقلة.",
   "The same slow camera pan, with motion smoothing off and on.":
     "حركة الكاميرا الجانبية البطيئة نفسها، مع تعطيل تنعيم الحركة وتفعيله.",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "ستتم إزالة JavaScript المحفوظ. أعد تشغيل Harbor لإزالة آثار البرامج النصية التي سبق تشغيلها.",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "ستتم إزالة JavaScript المحفوظ. أعد تشغيل Frame لإزالة آثار البرامج النصية التي سبق تشغيلها.",
   "The saved {name} will be removed and its changes will stop applying.":
     "ستتم إزالة {name} المحفوظ ولن تُطبّق تغييراته بعد ذلك.",
   "The server responded in {ms} ms.": "استجاب الخادم خلال {ms} مللي ثانية.",
@@ -642,8 +642,8 @@ const settingsRefinements: Record<string, string> = {
     "أكبر ستة إدخالات للإعدادات المحلية، بما فيها التفضيلات وبيانات البحث.",
   "{count} entries": "{count} عنصرًا",
   "The volume pop-up is hidden.": "نافذة مستوى الصوت مخفية.",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
-    "السمة وتخطيط المشغّل والصور وما يعرضه Harbor على البطاقات.",
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
+    "السمة وتخطيط المشغّل والصور وما يعرضه Frame على البطاقات.",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "تم تعليق هذا الحساب. تواصل مع الدعم إذا كنت تعتقد أن ذلك حدث بالخطأ.",
   "This backup contained nothing restorable.":
@@ -651,7 +651,7 @@ const settingsRefinements: Record<string, string> = {
   "This backup has no data in it.": "لا تحتوي هذه النسخة الاحتياطية على بيانات.",
   "This is how your subtitles": "هكذا ستبدو الترجمة",
   "This is how your subtitles will look.": "هكذا ستبدو الترجمة.",
-  "This is not a Harbor backup file.": "هذا ليس ملف نسخة احتياطية من Harbor.",
+  "This is not a Frame backup file.": "هذا ليس ملف نسخة احتياطية من Frame.",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "للبث من هذا الكمبيوتر إلى جهاز آخر، انسخ عنوانه على الشبكة المحلية وأدخله في خادم البث البعيد على ذلك الجهاز.",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -676,8 +676,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "يبقى النص غير المترجم باللغة الإنجليزية. اختر لغة، ثم اختر تطبيق وإعادة التحميل.",
   "Unwatched episodes": "الحلقات غير المشاهدة",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "ارفع صورتك الخاصة أو اختر صورة من كتالوج Harbor.",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "ارفع صورتك الخاصة أو اختر صورة من كتالوج Frame.",
   "Use letters, numbers, and single hyphens only.": "استخدم الأحرف والأرقام والشرطات المنفردة فقط.",
   "Use no saved stream filter": "عدم استخدام فلتر بث محفوظ",
   "Use sharper artwork for large cards. Uses more data and may load more slowly.":
@@ -685,8 +685,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "استخدام {name}",
   "Used only if we need one more detail to reproduce the bug.":
     "تُستخدم فقط إذا احتجنا إلى تفصيل إضافي لإعادة إنتاج الخطأ.",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "يستخدم SVP لتنعيم الحركة داخل مشغّل Harbor. ثبّت SVP مرة واحدة؛ وسيستخدم Harbor محركه ويفتح SVP Manager عند الحاجة.",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "يستخدم SVP لتنعيم الحركة داخل مشغّل Frame. ثبّت SVP مرة واحدة؛ وسيستخدم Frame محركه ويفتح SVP Manager عند الحاجة.",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "يستخدم محرك الحركة في SVP عبر VapourSynth. أعد بدء التشغيل لتطبيق التغيير.",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -697,16 +697,16 @@ const settingsRefinements: Record<string, string> = {
     "يستخدم عارض GPU الأقدم لبطاقات الرسوميات التي تواجه مشاكل مع العارض الحديث.",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "يستخدم المعالج لفك ترميز الفيديو. جرّبه إذا تسبب فك الترميز العتادي في مشاكل بالصورة.",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "يستخدم تثبيت SVP وVapourSynth على Linux لتنعيم الحركة داخل مشغّل Harbor.",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "يستخدم تثبيت SVP وVapourSynth على Linux لتنعيم الحركة داخل مشغّل Frame.",
   "Video quality": "جودة الفيديو",
   "View generated mpv options": "عرض خيارات mpv المُنشأة",
   "Volume pop-up": "نافذة مستوى الصوت",
   "We tag this account on the issue so you see the fix land.":
     "سنشير إلى هذا الحساب في البلاغ لتعرف عندما يتوفر الإصلاح.",
-  "What language Harbor speaks, and how subtitles behave.": "لغة Harbor وطريقة عمل الترجمة.",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "لغة Harbor والمسارات الصوتية التي يفضّلها أولًا.",
+  "What language Frame speaks, and how subtitles behave.": "لغة Frame وطريقة عمل الترجمة.",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "لغة Frame والمسارات الصوتية التي يفضّلها أولًا.",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "مصادر البث وطريقة تصفيتها والبيانات الوصفية المرتبطة بها.",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -719,7 +719,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "سلوك النافذة",
   "You can also turn off Rule is active to pause it without deleting it.":
     "يمكنك أيضًا إيقاف خيار القاعدة نشطة لتعليقها دون حذفها.",
-  "You cannot use Harbor.": "لا يمكنك استخدام Harbor.",
+  "You cannot use Frame.": "لا يمكنك استخدام Frame.",
   "You changed your handle recently. You can change it again after the cooldown.":
     "غيّرت معرّفك مؤخرًا. يمكنك تغييره مجددًا بعد انتهاء فترة الانتظار.",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

@@ -22,7 +22,7 @@ export default {
   "games.warhammerUniverse.free": "Warhammer TV’de ücretsiz",
   "games.warhammerUniverse.subscription": "Warhammer+ aboneliği gerekebilir",
   "games.warhammerUniverse.movieNote":
-    "2010 yapımı animasyon filmi. Oyuncular, fragmanlar ve kaynaklar için Harbor ayrıntılarını aç.",
+    "2010 yapımı animasyon filmi. Oyuncular, fragmanlar ve kaynaklar için Frame ayrıntılarını aç.",
   "games.warhammerUniverse.screenScope":
     "Warhammer TV’nin herkese açık seçkisi. Hammer and Bolter birden fazla evrende geçer; erişim sağlayıcıya bağlıdır.",
   "games.warhammerUniverse.lore": "Evrenin derinliklerinde",

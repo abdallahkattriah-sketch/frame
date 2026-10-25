@@ -40,7 +40,7 @@ export function HomeTab() {
             icon={<LayoutTemplate size={18} strokeWidth={2} />}
             label={t("Featured source")}
             desc={t(
-              "What fills the hero. Trending is a fresh top list from Harbor, refreshed through the day. Classic uses your own Home rows.",
+              "What fills the hero. Trending is a fresh top list from Frame, refreshed through the day. Classic uses your own Home rows.",
             )}
           >
             <Segmented
@@ -234,7 +234,7 @@ export function HomeTab() {
         <SettingGroup label={t("Continue Watching sources")}>
           <p className={`${ROW_DESC} -mt-1 mb-1`}>
             {t(
-              "Choose which services feed your Continue Watching row. Turn on as many as you like and Harbor merges them, keeping the most recent progress for each title. What you watch is still scrobbled to every connected service regardless of what you pick here.",
+              "Choose which services feed your Continue Watching row. Turn on as many as you like and Frame merges them, keeping the most recent progress for each title. What you watch is still scrobbled to every connected service regardless of what you pick here.",
             )}
           </p>
           <ToggleRow
@@ -305,7 +305,7 @@ export function HomeTab() {
       <Section
         title={t("Continue Watching screenshots")}
         subtitle={t(
-          "When you back out of a title, Harbor saves a frame so the Continue Watching card looks like the spot you left. Tune how long they stick around, or wipe them all.",
+          "When you back out of a title, Frame saves a frame so the Continue Watching card looks like the spot you left. Tune how long they stick around, or wipe them all.",
         )}
       >
         <CwSnapshotShowcase />
@@ -347,7 +347,7 @@ function HomeModePicker({
   const options: Array<{ id: "harbor" | "classic"; label: string; sub: string; img: string }> = [
     {
       id: "harbor",
-      label: t("Harbor curated"),
+      label: t("Frame curated"),
       sub: t(
         "Hero carousel, Top 10, Trending, In Theaters, per-service rails. Addon catalogs append underneath, deduped.",
       ),

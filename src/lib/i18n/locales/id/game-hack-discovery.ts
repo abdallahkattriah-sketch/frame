@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Sidik jari file · SHA-256",
   "games.patch.localNote": "Di perangkat kamu · BPS · IPS · UPS · Hingga 256 MB",
   "games.patch.desktop":
-    "Terapkan patch di aplikasi desktop Harbor untuk Windows, macOS, atau Linux. File tetap di perangkat kamu dan gim asli tidak diubah.",
+    "Terapkan patch di aplikasi desktop Frame untuk Windows, macOS, atau Linux. File tetap di perangkat kamu dan gim asli tidak diubah.",
   "games.patch.done": "Siap untuk petualangan baru",
   "games.patch.preserved": "Salinan hasil patch telah disimpan. Gim asli dan patch tidak diubah.",
   "games.patch.patch_source_mismatch":
@@ -38,7 +38,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "File yang dipilih berubah setelah verifikasi. Periksa patch lagi sebelum menyimpan.",
   "games.patch.patch_output_exists":
-    "File sudah ada di lokasi tersebut. Pilih nama lain; Harbor tidak menimpa file yang ada.",
+    "File sudah ada di lokasi tersebut. Pilih nama lain; Frame tidak menimpa file yang ada.",
   "games.patch.patch_read_failed":
     "Salah satu file tidak dapat dibaca. Pastikan file masih tersedia lalu pilih lagi.",
   "games.patch.patch_write_failed":
@@ -76,9 +76,9 @@ export default {
   "games.atlas.sort.newest": "Terbaru",
   "games.atlas.sort.oldest": "Terlama",
   "games.hub.stepPatch":
-    "Pilih game asli dan patch BPS, IPS, atau UPS. Harbor menyimpan salinan terpisah.",
+    "Pilih game asli dan patch BPS, IPS, atau UPS. Frame menyimpan salinan terpisah.",
   "games.patch.description":
-    "Pilih game asli dan patch BPS, IPS, atau UPS. Harbor menyimpan salinan terpisah.",
+    "Pilih game asli dan patch BPS, IPS, atau UPS. Frame menyimpan salinan terpisah.",
   "games.patch.choosePatch": "Pilih patch (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "File ini bukan patch BPS, IPS, atau UPS yang didukung.",
   "games.discovery.viewGame": "Lihat game",

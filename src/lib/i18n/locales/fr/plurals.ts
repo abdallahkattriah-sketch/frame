@@ -1,12 +1,12 @@
 const plurals: Record<string, string> = {
-  "Add {n} titles from your Harbor watchlist to Trakt? Trakt skips any it already has.#few":
-    "Ajouter {n} titres de votre liste de suivi Harbor à Trakt ? Trakt ignore ceux qui y figurent déjà.",
-  "Add {n} titles from your Harbor watchlist to Trakt? Trakt skips any it already has.#one":
-    "Ajouter {n} titre de votre liste de suivi Harbor à Trakt ? Trakt l’ignore s’il y figure déjà.",
-  "Add {n} titles from your Trakt watchlist to Harbor?#few":
-    "Ajouter {n} titres de votre liste de suivi Trakt à Harbor ?",
-  "Add {n} titles from your Trakt watchlist to Harbor?#one":
-    "Ajouter {n} titre de votre liste de suivi Trakt à Harbor ?",
+  "Add {n} titles from your Frame watchlist to Trakt? Trakt skips any it already has.#few":
+    "Ajouter {n} titres de votre liste de suivi Frame à Trakt ? Trakt ignore ceux qui y figurent déjà.",
+  "Add {n} titles from your Frame watchlist to Trakt? Trakt skips any it already has.#one":
+    "Ajouter {n} titre de votre liste de suivi Frame à Trakt ? Trakt l’ignore s’il y figure déjà.",
+  "Add {n} titles from your Trakt watchlist to Frame?#few":
+    "Ajouter {n} titres de votre liste de suivi Trakt à Frame ?",
+  "Add {n} titles from your Trakt watchlist to Frame?#one":
+    "Ajouter {n} titre de votre liste de suivi Trakt à Frame ?",
   "After {n} episodes#few": "Après {n} épisodes",
   "After {n} episodes#one": "Après {n} épisode",
   "All {n} channels loaded#few": "Les {n} chaînes ont toutes été chargées",
@@ -205,10 +205,10 @@ const plurals: Record<string, string> = {
   "{n} titles together#one": "{n} titre en commun",
   "{n} titles#few": "{n} titres",
   "{n} titles#one": "{n} titre",
-  "{n} tracker request blocked this session. Harbor itself sends zero telemetry.#few":
-    "{n} requêtes de traqueurs bloquées pendant cette session. Harbor n’envoie aucune donnée de télémétrie.",
-  "{n} tracker request blocked this session. Harbor itself sends zero telemetry.#one":
-    "{n} requête de traqueur bloquée pendant cette session. Harbor n’envoie aucune donnée de télémétrie.",
+  "{n} tracker request blocked this session. Frame itself sends zero telemetry.#few":
+    "{n} requêtes de traqueurs bloquées pendant cette session. Frame n’envoie aucune donnée de télémétrie.",
+  "{n} tracker request blocked this session. Frame itself sends zero telemetry.#one":
+    "{n} requête de traqueur bloquée pendant cette session. Frame n’envoie aucune donnée de télémétrie.",
   "{n} votes#few": "{n} votes",
   "{n} votes#one": "{n} vote",
   "{n} winner#few": "{n} lauréats",

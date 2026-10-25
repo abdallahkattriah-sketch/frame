@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Zaktualizuj i uruchom ponownie Harbor, aby przeglądać pliki do The Sims 2 i The Sims 3.",
+    "Zaktualizuj i uruchom ponownie Frame, aby przeglądać pliki do The Sims 2 i The Sims 3.",
   "games.sims.creatorNotesTitle": "Linki autora · {count}",
   "games.sims.creatorNotesNote": "Linki z uwag autora. Otwórz stronę, aby przeczytać instrukcje.",
   "games.sims.ccBuildTitle": "Zawartość tej budowli",
@@ -104,7 +104,7 @@ export default {
   "games.sims.mtsCatMisc": "Różne",
   "games.sims.mtsCatTools": "Narzędzia",
   "games.sims.mtsIntro":
-    "Importuj mody lub zawartość niestandardową do Harbor. Wklej stronę pobierania dla The Sims 4 i wybierz plik.",
+    "Importuj mody lub zawartość niestandardową do Frame. Wklej stronę pobierania dla The Sims 4 i wybierz plik.",
   "games.sims.mtsPage": "Strona pobierania",
   "games.sims.mtsLoad": "Znajdź pliki",
   "games.sims.mtsBrowse": "Przeglądaj Mod The Sims",
@@ -174,9 +174,9 @@ export default {
   "games.sims.creatorExisting": "Istniejąca instalacja",
   "games.sims.creatorManage": "Sprawdź istniejące pliki",
   "games.sims.creatorAdoptNote":
-    "Najpierw przejmij zarządzanie tymi plikami w Harbor. Następnie wybierz wydanie autora, aby je zaktualizować.",
+    "Najpierw przejmij zarządzanie tymi plikami w Frame. Następnie wybierz wydanie autora, aby je zaktualizować.",
   "games.sims.creatorLinkNote":
-    "Sprawdź aktualizację tej grupy. Harbor zachowa poprzednie pliki i Twoje ustawienia.",
+    "Sprawdź aktualizację tej grupy. Frame zachowa poprzednie pliki i Twoje ustawienia.",
   "games.sims.creatorTarget":
     "Ta grupa zawiera pliki modów spoza wybranego wydania. Przenieś je do osobnej grupy przed aktualizacją MCCC.",
   "games.sims.creatorExistingError":
@@ -208,7 +208,7 @@ export default {
   "games.sims.trayRemove": "Usuń z biblioteki",
   "games.sims.trayRestore": "Przywróć do biblioteki",
   "games.sims.trayNote":
-    "Importuj pobrane parcele, pokoje lub rodziny. Harbor przechowuje ich powiązane pliki razem w folderze Tray.",
+    "Importuj pobrane parcele, pokoje lub rodziny. Frame przechowuje ich powiązane pliki razem w folderze Tray.",
   "games.sims.trayReviewNote":
     "Pliki Tray trafiają bezpośrednio do folderu biblioteki. Dołączona zawartość zmodyfikowana tworzy osobną grupę modów.",
   "games.sims.trayRemoveNote":
@@ -270,12 +270,12 @@ export default {
 
   "games.sims.adopt": "Zarządzaj istniejącymi modami",
   "games.sims.adoptNote":
-    "Zamknij The Sims 4. Wybierz jeden mod lub powiązane CC wraz z ustawieniami z tego samego folderu. Wymienione pliki trafią do jednej grupy Harbor; pozostałe zostaną na miejscu.",
+    "Zamknij The Sims 4. Wybierz jeden mod lub powiązane CC wraz z ustawieniami z tego samego folderu. Wymienione pliki trafią do jednej grupy Frame; pozostałe zostaną na miejscu.",
   "games.sims.adoptFrom": "Obecny folder",
   "games.sims.adoptTo": "Przenieś do",
   "games.sims.adoptFolder": "Wybierz powiązane pliki z jednego folderu wewnątrz Mods.",
   "games.sims.adoptManaged":
-    "Wybierz pliki spoza folderów zarządzanych przez Harbor i pozostaw Resource.cfg na miejscu.",
+    "Wybierz pliki spoza folderów zarządzanych przez Frame i pozostaw Resource.cfg na miejscu.",
   "games.sims.adoptScan":
     "Nie udało się przeskanować części folderów modów. Rozwiąż ten problem przed zarządzaniem tymi plikami.",
 
@@ -307,7 +307,7 @@ export default {
     "Nie udało się sprawdzić niektórych folderów modów. Rozwiąż to przed zmianą zestawu.",
   "games.sims.savesLabelHint": "Przed nowymi modami",
   "games.sims.savesRunning":
-    "Zamknij The Sims 4 przed tworzeniem lub przywracaniem kopii zapisów. Harbor musi potwierdzić, że gra jest wyłączona.",
+    "Zamknij The Sims 4 przed tworzeniem lub przywracaniem kopii zapisów. Frame musi potwierdzić, że gra jest wyłączona.",
   "games.sims.savesIntro":
     "Zrób kopię zapisów przed zmianą modów. Najpierw zamknij The Sims 4. Kopia nie obejmuje modów ani rodzin z folderu Tray.",
   "games.sims.title": "Twoje mody i zawartość niestandardowa",
@@ -330,7 +330,7 @@ export default {
   "games.sims.recovery":
     "Zmiana została przerwana. Przywróć poprzednią konfigurację, zanim wprowadzisz kolejną.",
   "games.sims.success": "Pliki modów zostały zaktualizowane.",
-  "games.sims.applying": "Stosowanie zmian. Nie zamykaj Harbor…",
+  "games.sims.applying": "Stosowanie zmian. Nie zamykaj Frame…",
   "games.sims.checking": "Sprawdzanie plików…",
   "games.sims.skipped": "Pominięte dokumenty i obrazy · {count}",
   "games.sims.preview": "Podgląd zawarty w pakiecie",
@@ -369,7 +369,7 @@ export default {
   "games.sims.emptyManaged": "Zaimportuj pobrany mod, aby nim tutaj zarządzać.",
   "games.sims.emptyBackups": "Poprzednie wersje pojawią się po aktualizacji lub usunięciu moda.",
   "games.sims.emptyFiles": "Nie znaleziono obsługiwanych plików w Mods.",
-  "games.sims.desktop": "Zarządzanie modami wymaga aktualnej aplikacji Harbor na Windows.",
+  "games.sims.desktop": "Zarządzanie modami wymaga aktualnej aplikacji Frame na Windows.",
   "games.sims.folderError":
     "Wybierz rzeczywisty folder danych The Sims 4, bez skrótów i dowiązań. Musi zawierać Mods, saves, GameVersion.txt i Options.ini.",
   "games.sims.readError":
@@ -379,7 +379,7 @@ export default {
   "games.sims.layoutError":
     "Archiwum zawiera osobne foldery modów lub powielone nazwy. Importuj każdy mod oddzielnie, aby zachować jego pliki razem.",
   "games.sims.running":
-    "Zamknij The Sims 4 przed zmianą plików modów. Harbor musi móc potwierdzić zamknięcie gry.",
+    "Zamknij The Sims 4 przed zmianą plików modów. Frame musi móc potwierdzić zamknięcie gry.",
   "games.sims.duplicate":
     "Mod o tej samej nazwie pliku już istnieje w innym folderze Mods. Usuń konflikt przed importem lub włączeniem grupy.",
   "games.sims.recordError":

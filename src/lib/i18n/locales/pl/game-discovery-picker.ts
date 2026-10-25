@@ -50,7 +50,7 @@ export default {
   "games.pick.noHistory": "Brak aktywności. Wybierz ulubione lub połącz Steam w ustawieniach gier.",
   "games.pick.manualOnly": "Propozycje będą oparte tylko na ulubionych i wybranych filtrach.",
   "games.pick.addedNote":
-    "„Ostatnio dodane” oznacza pierwsze wykrycie w Harbor po początkowym imporcie, a nie datę zakupu.",
+    "„Ostatnio dodane” oznacza pierwsze wykrycie w Frame po początkowym imporcie, a nie datę zakupu.",
   "games.pick.because": "Bo lubisz {name}",
   "games.pick.matches": "Pasuje do Twojego wyboru",
   "games.pick.steamCatalog": "Katalog Steam",

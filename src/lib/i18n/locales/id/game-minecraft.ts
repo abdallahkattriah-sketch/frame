@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "Cari di CurseForge",
   "games.minecraft.discovery.downloads": "Unduhan",
   "games.minecraft.discovery.curseForgeBlocked":
-    "CurseForge belum mengizinkan Harbor memuat katalog ini. Coba lagi atau buka sumbernya.",
+    "CurseForge belum mengizinkan Frame memuat katalog ini. Coba lagi atau buka sumbernya.",
   "games.minecraft.discovery.unavailable": "Direktori ini gagal dimuat. Coba lagi.",
   "games.minecraft.discovery.openSource": "Buka situs sumber",
   "games.minecraft.discovery.loadMore": "Muat lagi",
   "games.minecraft.discovery.servers": "Server",
   "games.minecraft.discovery.serverNote":
-    "Direktori independen. Harbor tidak berafiliasi dengan situs atau server ini. Angka dilaporkan oleh masing-masing direktori.",
+    "Direktori independen. Frame tidak berafiliasi dengan situs atau server ini. Angka dilaporkan oleh masing-masing direktori.",
   "games.minecraft.discovery.searchServers": "Cari server yang dimuat",
   "games.minecraft.discovery.directory": "Direktori",
   "games.minecraft.discovery.mode": "Mode permainan",
@@ -43,7 +43,7 @@ export default {
   "games.minecraft.lifecycle.exportNote":
     "Buat berkas .mrpack portabel berisi mod dan konfigurasi.",
   "games.minecraft.lifecycle.privateNote":
-    "Data akun Harbor, berkas runtime, dan log tidak disertakan. Periksa konfigurasi mod sebelum berbagi.",
+    "Data akun Frame, berkas runtime, dan log tidak disertakan. Periksa konfigurasi mod sebelum berbagi.",
   "games.minecraft.lifecycle.included": "Berkas disertakan",
   "games.minecraft.lifecycle.referenced": "Referensi unduhan",
   "games.minecraft.lifecycle.referenceNote":
@@ -97,7 +97,7 @@ export default {
   "games.minecraft.update.chooseFile": "Pilih file .mrpack",
   "games.minecraft.update.restoreVersion": "Pulihkan {version}",
   "games.minecraft.update.reviewNote":
-    "Tinjau setiap perubahan sebelum menerapkannya. Harbor menyimpan salinan terpisah dari instans sebelumnya.",
+    "Tinjau setiap perubahan sebelum menerapkannya. Frame menyimpan salinan terpisah dari instans sebelumnya.",
   "games.minecraft.update.changeVersion": "Ganti versi",
   "games.minecraft.update.download": "Unduhan",
   "games.minecraft.update.recoveryCopy": "Salinan pemulihan",
@@ -194,7 +194,7 @@ export default {
     "Tutup instans Minecraft yang berjalan sebelum memulai yang lain.",
   "games.minecraft.java.title": "Java untuk instans ini",
   "games.minecraft.java.note": "Versi Minecraft ini memerlukan Java {version}.",
-  "games.minecraft.java.managed": "Instal dengan Harbor",
+  "games.minecraft.java.managed": "Instal dengan Frame",
   "games.minecraft.java.installed": "Gunakan Java terpasang",
   "games.minecraft.java.manage": "Kelola Java",
 
@@ -213,7 +213,7 @@ export default {
   "games.minecraft.java.invalidError": "Instalasi Java ini tidak dapat diverifikasi.",
   "games.minecraft.java.metadataError":
     "Unduhan Java yang kompatibel tidak dapat diverifikasi. Coba lagi.",
-  "games.minecraft.java.managedNote": "Harbor menyimpan versi ini di pustaka Minecraft Anda.",
+  "games.minecraft.java.managedNote": "Frame menyimpan versi ini di pustaka Minecraft Anda.",
   "games.minecraft.runtime.setup": "Siapkan game",
   "games.minecraft.runtime.note":
     "Instal berkas game resmi untuk instans ini. Dunia dan mod Anda tetap tersimpan.",
@@ -235,7 +235,7 @@ export default {
   "games.minecraft.runtime.metadataError":
     "Berkas game ini tidak dapat diverifikasi. Coba lagi nanti.",
   "games.minecraft.runtime.legacyError":
-    "Versi ini menggunakan format pemasangan atau peluncuran yang belum didukung Harbor.",
+    "Versi ini menggunakan format pemasangan atau peluncuran yang belum didukung Frame.",
   "games.minecraft.runtime.loaderError": "Format pemasangan loader ini belum didukung.",
   "games.minecraft.runtime.platformError": "Penyiapan game belum didukung pada sistem ini.",
   "games.minecraft.runtime.versionError": "Versi Minecraft ini tidak ditemukan di katalog resmi.",
@@ -245,7 +245,7 @@ export default {
   "games.minecraft.instances.import": "Impor paket",
   "games.minecraft.instances.create": "Buat instans",
   "games.minecraft.instances.desktop":
-    "Buka Harbor desktop untuk membuat dan mengelola instans lokal.",
+    "Buka Frame desktop untuk membuat dan mengelola instans lokal.",
   "games.minecraft.instances.search": "Cari instans Anda",
   "games.minecraft.instances.storage": "Folder penyimpanan",
   "games.minecraft.instances.chooseFolder": "Pilih folder penyimpanan",
@@ -281,7 +281,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Memuat versi Minecraft…",
   "games.minecraft.instances.added": "Ditambahkan ke instans Anda",
   "games.minecraft.instances.storageNote":
-    "Pilih lokasi penyimpanan instans Minecraft. Setiap profil Harbor memiliki folder sendiri di sini.",
+    "Pilih lokasi penyimpanan instans Minecraft. Setiap profil Frame memiliki folder sendiri di sini.",
   "games.minecraft.instances.isolated": "Dipasang ke instans baru yang terpisah.",
   "games.minecraft.instances.cancelling": "Membatalkan…",
   "games.minecraft.instances.install": "Pasang berkas paket",
@@ -294,7 +294,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "Menerapkan konfigurasi paket…",
   "games.minecraft.instances.phase.done": "Berkas terpasang",
   "games.minecraft.instances.folderError":
-    "Pilih folder lokal yang dapat diakses untuk profil Harbor ini.",
+    "Pilih folder lokal yang dapat diakses untuk profil Frame ini.",
   "games.minecraft.instances.writeError":
     "Tidak dapat menulis instans. Periksa izin folder dan ruang kosong.",
   "games.minecraft.instances.readError":
@@ -309,7 +309,7 @@ export default {
   "games.minecraft.instances.loaderError":
     "Paket ini menggunakan pemuat game yang tidak dikenali atau bertentangan.",
   "games.minecraft.instances.sourceError":
-    "Paket ini membutuhkan sumber unduhan yang tidak didukung Harbor.",
+    "Paket ini membutuhkan sumber unduhan yang tidak didukung Frame.",
   "games.minecraft.instances.limitError":
     "Paket atau pustaka ini melebihi batas ukuran yang didukung.",
   "games.minecraft.instances.busyError":
@@ -363,9 +363,9 @@ export default {
   "games.minecraft.account.title": "Akun Minecraft kamu",
   "games.minecraft.account.intro":
     "Hubungkan Microsoft untuk melihat skin dan jubah Minecraft serta menerapkan kreasimu.",
-  "games.minecraft.account.desktop": "Buka Harbor desktop untuk menghubungkan akun Minecraft.",
+  "games.minecraft.account.desktop": "Buka Frame desktop untuk menghubungkan akun Minecraft.",
   "games.minecraft.account.setup":
-    "Login Microsoft belum dikonfigurasi pada versi Harbor ini. Kamu tetap bisa mengedit skin secara lokal.",
+    "Login Microsoft belum dikonfigurasi pada versi Frame ini. Kamu tetap bisa mengedit skin secara lokal.",
   "games.minecraft.account.codeNote": "Masukkan kode ini di halaman masuk Microsoft.",
   "games.minecraft.account.copy": "Salin kode",
   "games.minecraft.account.openMicrosoft": "Lanjutkan di Microsoft",
@@ -395,7 +395,7 @@ export default {
   "games.minecraft.account.skinError":
     "Skin atau jubah ini tidak dapat diterapkan. Segarkan akun dan coba lagi.",
   "games.minecraft.account.storeError":
-    "Harbor tidak dapat menyimpan akun dengan aman di perangkat ini.",
+    "Frame tidak dapat menyimpan akun dengan aman di perangkat ini.",
   "games.minecraft.account.error": "Permintaan akun gagal. Coba lagi.",
   "games.minecraft.studio": "Studio skin",
   "games.minecraft.skinTitle": "Jadikan milikmu.",
@@ -429,7 +429,7 @@ export default {
   "games.minecraft.editHint":
     "Tombol panah berpindah piksel. Enter mewarnai. Ctrl / ⌘ Z mengurungkan.",
   "games.minecraft.library": "Skin kamu",
-  "games.minecraft.localNote": "Disimpan di perangkat ini untuk profil Harbor ini.",
+  "games.minecraft.localNote": "Disimpan di perangkat ini untuk profil Frame ini.",
   "games.minecraft.new": "Skin baru",
   "games.minecraft.empty": "Impor skin atau mulai mewarnai. Perubahan tersimpan otomatis.",
   "games.minecraft.delete": "Hapus {name}",

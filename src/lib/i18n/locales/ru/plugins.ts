@@ -3,11 +3,11 @@ const plugins: Record<string, string> = {
   Repositories: "Репозитории",
   "Installed plugins": "Установленные плагины",
   "Plugin repositories": "Репозитории плагинов",
-  "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.":
-    "Плагины работают в настольном приложении. Откройте Harbor на компьютере, чтобы добавить их и управлять ими.",
+  "Plugins run in the desktop app. Open Frame on your computer to add and manage them.":
+    "Плагины работают в настольном приложении. Откройте Frame на компьютере, чтобы добавить их и управлять ими.",
   "Use plugins": "Использовать плагины",
-  "Plugins are small scripts that look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "Плагины: небольшие скрипты, которые ищут потоки на сайтах, неизвестных Harbor. Всё здесь установили вы сами из выбранных вами репозиториев.",
+  "Plugins are small scripts that look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "Плагины: небольшие скрипты, которые ищут потоки на сайтах, неизвестных Frame. Всё здесь установили вы сами из выбранных вами репозиториев.",
   "Ask every enabled plugin for streams when you press Play. Turn this off to pause them all without removing anything.":
     "Спрашивать потоки у каждого включённого плагина при нажатии «Воспроизвести». Выключите, чтобы приостановить все плагины, ничего не удаляя.",
   "Group by repository": "Группировать по репозиторию",
@@ -40,7 +40,7 @@ const plugins: Record<string, string> = {
     "Приостановлен после {n} сбоев. Включите снова, чтобы повторить попытку.",
   "Paused after {n} failures. Turn it back on to try again.#one":
     "Приостановлен после {n} сбоя. Включите снова, чтобы повторить попытку.",
-  "Needs Harbor {version} or newer.": "Требуется Harbor {version} или новее.",
+  "Needs Frame {version} or newer.": "Требуется Frame {version} или новее.",
   "This file is not a stream plugin.": "Этот файл не является плагином потоков.",
   "Turned off by its repository.": "Отключён репозиторием.",
   "Plugin files changed on disk. Reinstall it from its repository.":
@@ -92,15 +92,15 @@ const plugins: Record<string, string> = {
   "Removed {name}.": "{name} удалён.",
   "Updated {name} to v{version}.": "{name} обновлён до v{version}.",
   "Reverted {name} to v{version}.": "{name} возвращён к v{version}.",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
-    "Вставьте ссылку на манифест репозитория, которому доверяете. Harbor читает собственные репозитории плагинов и репозитории скриптов провайдеров как есть и ничего не устанавливает, пока вы не решите.",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
+    "Вставьте ссылку на манифест репозитория, которому доверяете. Frame читает собственные репозитории плагинов и репозитории скриптов провайдеров как есть и ничего не устанавливает, пока вы не решите.",
   "Repository link": "Ссылка на репозиторий",
-  "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.":
-    "Подойдёт любая ссылка GitHub, raw или обычная. Harbor добавит /manifest.json, если его нет. Вставьте несколько, чтобы добавить все.",
+  "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.":
+    "Подойдёт любая ссылка GitHub, raw или обычная. Frame добавит /manifest.json, если его нет. Вставьте несколько, чтобы добавить все.",
   "Only https links are accepted.": "Принимаются только ссылки https.",
   "That link did not answer.": "Эта ссылка не ответила.",
-  "This does not look like a plugin repository. Harbor expects { name, plugins } or a provider-script manifest with scrapers.":
-    "Это не похоже на репозиторий плагинов. Harbor ожидает { name, plugins } или манифест скриптов провайдеров со scrapers.",
+  "This does not look like a plugin repository. Frame expects { name, plugins } or a provider-script manifest with scrapers.":
+    "Это не похоже на репозиторий плагинов. Frame ожидает { name, plugins } или манифест скриптов провайдеров со scrapers.",
   "This is a manga repository. Add it from the Manga page.":
     "Это репозиторий манги. Добавьте его на странице «Манга».",
   "Already added.": "Уже добавлен.",
@@ -132,8 +132,8 @@ const plugins: Record<string, string> = {
   "Checksum did not match the manifest.": "Контрольная сумма не совпадает с манифестом.",
   "Checking for updates": "Проверка обновлений",
   "Check repositories daily": "Проверять репозитории ежедневно",
-  "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.":
-    "Раз в день искать новые версии и показывать здесь кнопку «Обновить». Harbor никогда не устанавливает обновления сам.",
+  "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.":
+    "Раз в день искать новые версии и показывать здесь кнопку «Обновить». Frame никогда не устанавливает обновления сам.",
   "Settings this plugin asked for. Stored on this computer only.":
     "Настройки, которые запросил этот плагин. Хранятся только на этом компьютере.",
   "This plugin's settings form failed to load: {error}":
@@ -141,8 +141,8 @@ const plugins: Record<string, string> = {
   "{n} of {m} answered, {k} failed": "Ответили: {n} из {m}, сбой: {k}",
   "Install all": "Установить все",
   "Installing {done} of {total}": "Установка {done} из {total}",
-  "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.":
-    "Небольшие скрипты, которые находят потоки, мангу и книги на сайтах, неизвестных Harbor, установленные из выбранных вами репозиториев.",
+  "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.":
+    "Небольшие скрипты, которые находят потоки, мангу и книги на сайтах, неизвестных Frame, установленные из выбранных вами репозиториев.",
   "Remove all": "Удалить все",
 };
 

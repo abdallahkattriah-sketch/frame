@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "Harbor restarted during setup. Review the installed game files to finish.",
+    "Frame restarted during setup. Review the installed game files to finish.",
   "games.setup.state.starting": "Starting installer",
   "games.setup.state.waiting": "Waiting for installer",
   "games.setup.startingNote": "Opening the installer…",
@@ -37,8 +37,7 @@ export default {
   "games.setup.state.verificationUnknown": "Check results",
   "games.setup.viewProgress": "View installation",
   "games.setup.showInstaller": "Show installer",
-  "games.setup.setup_window":
-    "The installer window is unavailable. Harbor is still tracking setup.",
+  "games.setup.setup_window": "The installer window is unavailable. Frame is still tracking setup.",
   "games.setup.elapsed": "Elapsed",
   "games.setup.io": "Installer I/O",
   "games.setup.ioNote":
@@ -74,7 +73,7 @@ export default {
   "games.setup.state.running": "Installer running",
   "games.setup.state.finished": "Installer closed — choose your game file",
   "games.setup.state.failed": "Installer did not finish successfully",
-  "games.setup.state.interrupted": "Check setup — Harbor closed while it was running",
+  "games.setup.state.interrupted": "Check setup — Frame closed while it was running",
   "games.setup.state.external": "Installer opened in another window",
   "games.setup.exitCode": "Exit code: {code}",
   "games.setup.unavailable":
@@ -99,9 +98,9 @@ export default {
   "games.setup.destination": "Install to",
   "games.setup.chooseDestination": "Choose install folder",
   "games.setup.managedNote":
-    "Harbor will install here, find the game file, and add it to your library.",
+    "Frame will install here, find the game file, and add it to your library.",
   "games.setup.managedRunning":
-    "Installing your game. You can close this window; Harbor will keep track.",
+    "Installing your game. You can close this window; Frame will keep track.",
   "games.setup.detected": "Game file found automatically",
   "games.setup.chooseDetected": "Choose which game file to add.",
   "games.setup.activity": "{size} in {count} files",
@@ -117,7 +116,7 @@ export default {
   "games.setup.setup_engine":
     "This installer needs its own setup window. Use Run installer to continue.",
   "games.setup.setup_candidates":
-    "Setup finished, but Harbor couldn't read the installed files. Scan the install folder again.",
+    "Setup finished, but Frame couldn't read the installed files. Scan the install folder again.",
   "games.setup.state.installing": "Installing",
   "games.setup.externalAction": "Run installer",
   "games.setup.files": "Downloaded files",

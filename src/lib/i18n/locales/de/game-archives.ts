@@ -11,9 +11,9 @@ export default {
     "Der Ordner mit den Archiven liegt im Papierkorb. Bei Bedarf dort wiederherstellen.",
   "games.cleanup.restoredNote": "Die Archivteile liegen wieder im ursprünglichen Ordner.",
   "games.cleanup.uncertainNote":
-    "Harbor konnte das Ergebnis nicht bestätigen. Prüfe den ursprünglichen Ordner und den Papierkorb, bevor du fortfährst.",
+    "Frame konnte das Ergebnis nicht bestätigen. Prüfe den ursprünglichen Ordner und den Papierkorb, bevor du fortfährst.",
   "games.cleanup.recoveryNote":
-    "Einige Teile liegen möglicherweise im Zwischenordner von Harbor. Bereinigung fortsetzen oder Dateien ohne Überschreiben wiederherstellen.",
+    "Einige Teile liegen möglicherweise im Zwischenordner von Frame. Bereinigung fortsetzen oder Dateien ohne Überschreiben wiederherstellen.",
   "games.cleanup.working": "Archivdateien werden geprüft",
   "games.cleanup.restore": "Zurückgehaltene Dateien wiederherstellen",
   "games.cleanup.resume": "Bereinigung fortsetzen",
@@ -80,7 +80,7 @@ export default {
     "Verknüpfungen konnten nicht aktualisiert werden. Versuche es erneut.",
 
   "games.archive.archive_decoder":
-    "Harbor konnte dieses Archiv innerhalb seiner Grenzen nicht entpacken. Versuche ein anderes Entpackprogramm.",
+    "Frame konnte dieses Archiv innerhalb seiner Grenzen nicht entpacken. Versuche ein anderes Entpackprogramm.",
   "games.archive.archive_password_or_checksum":
     "Das Passwort ist möglicherweise falsch oder das Archiv beschädigt. Prüfe das Passwort oder lade das Archiv erneut herunter.",
   "games.archive.password": "Archivpasswort",
@@ -93,7 +93,7 @@ export default {
   "games.archive.eyebrow": "Vom Download in deine Bibliothek",
   "games.archive.title": "Spieldateien entpacken",
   "games.archive.intro":
-    "Prüfe ein ZIP / 7z / RAR / TAR / TAR.GZ / ISO-Archiv und wähle, wohin die Dateien entpackt werden sollen. Harbor erstellt einen neuen Ordner und behält das Originalarchiv.",
+    "Prüfe ein ZIP / 7z / RAR / TAR / TAR.GZ / ISO-Archiv und wähle, wohin die Dateien entpackt werden sollen. Frame erstellt einen neuen Ordner und behält das Originalarchiv.",
   "games.archive.source": "Archiv",
   "games.archive.chooseSource": "Archiv auswählen",
   "games.archive.chooseParent": "Zielordner auswählen",
@@ -123,7 +123,7 @@ export default {
   "games.archive.openFolder": "Ordner anzeigen",
   "games.archive.localLibrary": "Lokale Spiele",
   "games.archive.archive_profile":
-    "Dieses Harbor-Profil konnte nicht ermittelt werden. Öffne Spiele erneut und versuche es noch einmal.",
+    "Dieses Frame-Profil konnte nicht ermittelt werden. Öffne Spiele erneut und versuche es noch einmal.",
   "games.archive.archive_busy":
     "Ein anderer Archivvorgang läuft bereits. Beende ihn oder brich ihn zuerst ab.",
   "games.archive.archive_canceled":
@@ -133,16 +133,16 @@ export default {
   "games.archive.archive_links":
     "Dieses Archiv enthält Verknüpfungen oder spezielle Dateien. Folge stattdessen der Installationsanleitung des Projekts.",
   "games.archive.archive_limit":
-    "Dieses Archiv überschreitet die aktuellen Entpacklimits von Harbor.",
+    "Dieses Archiv überschreitet die aktuellen Entpacklimits von Frame.",
   "games.archive.archive_changed":
     "Das Archiv wurde nach deiner Prüfung geändert. Prüfe es vor dem Entpacken erneut.",
   "games.archive.archive_path":
-    "Das Archiv enthält einen Pfad, den Harbor nicht sicher entpacken kann. Keine Spieldateien wurden ersetzt.",
+    "Das Archiv enthält einen Pfad, den Frame nicht sicher entpacken kann. Keine Spieldateien wurden ersetzt.",
   "games.archive.archive_format":
     "Dies ist kein unterstütztes ZIP / 7z / RAR / TAR / TAR.GZ / ISO-Archiv oder sein Verzeichnis ist beschädigt.",
   "games.archive.archive_encrypted": "Gib das Passwort dieses Archivs ein, um fortzufahren.",
   "games.archive.archive_compression":
-    "Dieses ZIP / 7z / RAR / TAR / TAR.GZ / ISO verwendet eine Komprimierungsmethode, die Harbor noch nicht unterstützt.",
+    "Dieses ZIP / 7z / RAR / TAR / TAR.GZ / ISO verwendet eine Komprimierungsmethode, die Frame noch nicht unterstützt.",
   "games.archive.archive_collision":
     "Einige Archiveinträge würden sich gegenseitig überschreiben. Es wurde nichts entpackt.",
   "games.archive.archive_destination":
@@ -163,11 +163,11 @@ export default {
   "games.archive.space.checking": "Speicherplatz am Ziel wird geprüft…",
   "games.archive.space.free": "{size} verfügbar",
   "games.archive.space.required": "{size} zum Entpacken",
-  "games.archive.space.reserved": "{size} durch andere Harbor-Vorgänge reserviert",
+  "games.archive.space.reserved": "{size} durch andere Frame-Vorgänge reserviert",
   "games.archive.space.after": "{size} nach dem Entpacken verfügbar",
   "games.archive.space.shortfall": "{size} zusätzlicher Speicherplatz nötig",
   "games.archive.space.unknown":
-    "Der freie Speicherplatz konnte nicht ermittelt werden. Harbor prüft ihn beim Start des Entpackens erneut.",
+    "Der freie Speicherplatz konnte nicht ermittelt werden. Frame prüft ihn beim Start des Entpackens erneut.",
   "games.archive.space.error": "Speicherplatz am Ziel konnte nicht geprüft werden.",
   "games.archive.space.refresh": "Speicherplatz erneut prüfen",
   "games.archive.space.note":
@@ -187,15 +187,15 @@ export default {
   "games.archive.retry": "Prüfen und erneut versuchen",
   "games.archive.showPartial": "Unvollständige Dateien anzeigen",
   "games.archive.partialNote":
-    "Harbor hat den unvollständigen Ordner behalten. Prüfe ihn vor dem Löschen; ein neuer Versuch beginnt das Entpacken von vorn.",
+    "Frame hat den unvollständigen Ordner behalten. Prüfe ihn vor dem Löschen; ein neuer Versuch beginnt das Entpacken von vorn.",
   "games.archive.progressFiles": "{count} von {total} Dateien",
   "games.archive.archive_store":
-    "Harbor konnte den Entpackfortschritt nicht speichern. Deine Dateien wurden zur Prüfung behalten.",
+    "Frame konnte den Entpackfortschritt nicht speichern. Deine Dateien wurden zur Prüfung behalten.",
   "games.archive.archive_start": "Das Entpacken konnte nicht gestartet werden. Versuche es erneut.",
   "games.archive.archive_history":
     "Der Entpackverlauf ist voll. Entferne einen alten Eintrag, um fortzufahren; seine Dateien bleiben erhalten.",
   "games.archive.archive_interrupted":
-    "Harbor wurde geschlossen, bevor das Entpacken abgeschlossen war. Prüfe den gespeicherten Pfad und versuche es erneut.",
+    "Frame wurde geschlossen, bevor das Entpacken abgeschlossen war. Prüfe den gespeicherten Pfad und versuche es erneut.",
   "games.archive.archive_parts":
     "Diese Teile bilden kein gemeinsames Archiv. Prüfe, ob alle zum selben Download gehören.",
   "games.archive.archive_tool":
@@ -205,9 +205,9 @@ export default {
   "games.archive.continueSetup": "Spiel einrichten",
   "games.archive.dismissRecord": "Eintrag entfernen · Dateien behalten",
   "games.archive.archive_multipart":
-    "Dieses geteilte Archivformat wird noch nicht unterstützt. Entpacke es mit einem Archivprogramm und öffne den entpackten Ordner in Harbor.",
+    "Dieses geteilte Archivformat wird noch nicht unterstützt. Entpacke es mit einem Archivprogramm und öffne den entpackten Ordner in Frame.",
   "games.archive.partsCount": "{count} Archivteile",
-  "games.archive.partsNote": "Lass alle Teile im selben Ordner. Harbor entpackt sie gemeinsam.",
+  "games.archive.partsNote": "Lass alle Teile im selben Ordner. Frame entpackt sie gemeinsam.",
   "games.archive.partsMore": "Weitere Teile anzeigen",
   "games.archive.setHash": "SHA-256 des Archivs",
   "games.archive.archive_missing_part":

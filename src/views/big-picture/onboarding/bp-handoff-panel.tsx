@@ -81,14 +81,12 @@ export function handoffNote(
   switch (phase) {
     case "noAddress":
       return t(
-        "Harbor cannot find this TV's network address, so the phone hand-off is unavailable here.",
+        "Frame cannot find this TV's network address, so the phone hand-off is unavailable here.",
       );
     case "servingOff":
-      return t(
-        "This opens Harbor to devices on your Wi-Fi. You can turn it off again in Settings.",
-      );
+      return t("This opens Frame to devices on your Wi-Fi. You can turn it off again in Settings.");
     case "serveFailed":
-      return t("Harbor could not open its web server. Try again, or set this up on the TV.");
+      return t("Frame could not open its web server. Try again, or set this up on the TV.");
     case "stalled":
       return t(
         "Nothing has connected yet. Your phone may be on a guest network, or this TV may be on a different network from your phone.",

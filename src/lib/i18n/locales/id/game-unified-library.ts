@@ -3,7 +3,7 @@ export default {
     "Akun Battle.net telah berubah. Masuk kembali untuk mengganti impor profil ini.",
   "games.battlenet.connect": "Masuk",
   "games.battlenet.intro":
-    "Masuk ke Battle.net untuk mengimpor game Anda. Koneksi ini milik profil Harbor Anda saat ini.",
+    "Masuk ke Battle.net untuk mengimpor game Anda. Koneksi ini milik profil Frame Anda saat ini.",
   "games.battlenet.installed": "Tampilkan game terpasang",
   "games.battlenet.uninstalled": "Tampilkan game akun yang belum terpasang",
   "games.battlenet.partial":
@@ -14,7 +14,7 @@ export default {
   "games.battlenet.timeout": "Battle.net tidak merespons tepat waktu. Coba lagi.",
   "games.battlenet.busy": "Tindakan akun Battle.net sedang berjalan.",
   "games.battlenet.update":
-    "Mulai ulang aplikasi desktop Harbor yang telah diperbarui untuk menghubungkan Battle.net.",
+    "Mulai ulang aplikasi desktop Frame yang telah diperbarui untuk menghubungkan Battle.net.",
   "games.battlenet.error":
     "Battle.net tidak dapat diperbarui. Pustaka terakhir yang diimpor tetap tersimpan.",
   "games.battlenet.disconnect": "Putuskan Battle.net",
@@ -27,7 +27,7 @@ export default {
   "games.launcherSession.unconfirmed": "Memeriksa status game",
   "games.launcherSession.notStarted": "Game tidak dimulai",
   "games.launcherSession.error":
-    "Aktivitas game tidak dapat dicatat. Buka kembali Harbor untuk mencoba lagi.",
+    "Aktivitas game tidak dapat dicatat. Buka kembali Frame untuk mencoba lagi.",
 
   "games.steamImport.importedTitle": "Game yang diimpor",
   "games.steamImport.excluded": "Diabaikan oleh pengaturan impor",
@@ -39,7 +39,7 @@ export default {
   "games.steamImport.ignoreSaved": "ID yang diabaikan disimpan.",
   "games.steamImport.title": "Impor game Steam",
   "games.steamImport.note":
-    "Simpan catatan game dalam profil Harbor ini. Kepemilikan dan pemasangan diperiksa terpisah.",
+    "Simpan catatan game dalam profil Frame ini. Kepemilikan dan pemasangan diperiksa terpisah.",
   "games.steamImport.input": "ID aplikasi Steam atau URL toko",
   "games.steamImport.profile": "Pilih profil Depressurizer",
   "games.steamImport.count": "{selected} dipilih · {total} entri",
@@ -81,7 +81,7 @@ export default {
   "games.libraryStatus.onHold": "Ditunda",
   "games.libraryStatus.stopped": "Berhenti dimainkan",
   "games.libraryStatus.note":
-    "Pilihan untuk salinan ini disimpan di profil Harbor ini. Waktu bermain dan pencapaian tidak akan mengubahnya.",
+    "Pilihan untuk salinan ini disimpan di profil Frame ini. Waktu bermain dan pencapaian tidak akan mengubahnya.",
 
   "games.unified.playtime": "Waktu bermain",
   "games.unified.playtime.all": "Semua waktu bermain",
@@ -93,11 +93,11 @@ export default {
   "games.unified.playtime.most": "Waktu tercatat paling banyak",
   "games.unified.playtime.steam": "{time} di Steam",
   "games.unified.playtime.zeroSteam": "Belum ada waktu bermain tercatat di Steam",
-  "games.unified.playtime.zeroHarbor": "Belum ada waktu bermain tercatat di Harbor",
+  "games.unified.playtime.zeroHarbor": "Belum ada waktu bermain tercatat di Frame",
   "games.unified.playtime.unknownHint":
     "Waktu bermain akun Steam tidak tersedia, atau sumber ini tidak melaporkan waktu bermain.",
   "games.unified.playtime.note":
-    "Menggunakan total Steam dan waktu yang tercatat di Harbor, termasuk koreksi Anda. Waktu yang tidak tersedia dipisahkan.",
+    "Menggunakan total Steam dan waktu yang tercatat di Frame, termasuk koreksi Anda. Waktu yang tidak tersedia dipisahkan.",
   "games.unified.note": "Koleksi Steam, gim PC, dan ROM yang kamu impor dalam satu tampilan.",
   "games.unified.allSources": "Semua sumber",
   "games.unified.availability": "Ketersediaan",

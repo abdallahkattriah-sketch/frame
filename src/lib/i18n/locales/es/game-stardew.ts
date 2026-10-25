@@ -23,7 +23,7 @@ export default {
   "games.stardew.refresh": "Actualizar mods",
 
   "games.stardew.import": "Importar ZIP de mod",
-  "games.stardew.manage": "Gestionado con Harbor",
+  "games.stardew.manage": "Gestionado con Frame",
   "games.stardew.manageNote":
     "Importa un mod de SMAPI descargado para gestionarlo aquí. Para actualizarlo, importa su ZIP más reciente.",
   "games.stardew.previous": "Versiones anteriores",
@@ -42,7 +42,7 @@ export default {
   "games.stardew.dependentsError":
     "Un mod activado necesita esta versión. Desactívalo primero o elige una versión compatible.",
   "games.stardew.unmanagedError":
-    "Este mod ya existe fuera de los registros de Harbor. Aparta la copia existente antes de importarlo.",
+    "Este mod ya existe fuera de los registros de Frame. Aparta la copia existente antes de importarlo.",
   "games.stardew.archiveError":
     "Elige un ZIP con una carpeta de mod lista para usar, de hasta 32 MB (128 MB extraídos). Las descargas de código fuente no son mods instalables.",
   "games.stardew.moreFiles": "{count} archivos más",

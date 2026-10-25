@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "Поиск в CurseForge",
   "games.minecraft.discovery.downloads": "Загрузки",
   "games.minecraft.discovery.curseForgeBlocked":
-    "CurseForge сейчас не разрешает Harbor загрузить этот каталог. Повторите попытку или откройте источник.",
+    "CurseForge сейчас не разрешает Frame загрузить этот каталог. Повторите попытку или откройте источник.",
   "games.minecraft.discovery.unavailable": "Не удалось загрузить каталог. Повторите попытку.",
   "games.minecraft.discovery.openSource": "Открыть сайт источника",
   "games.minecraft.discovery.loadMore": "Загрузить ещё",
   "games.minecraft.discovery.servers": "Серверы",
   "games.minecraft.discovery.serverNote":
-    "Независимые каталоги. Harbor не связан с этими сайтами и серверами. Числа предоставлены каждым каталогом.",
+    "Независимые каталоги. Frame не связан с этими сайтами и серверами. Числа предоставлены каждым каталогом.",
   "games.minecraft.discovery.searchServers": "Поиск среди загруженных серверов",
   "games.minecraft.discovery.directory": "Каталог",
   "games.minecraft.discovery.mode": "Режим игры",
@@ -42,7 +42,7 @@ export default {
   "games.minecraft.lifecycle.settings": "Включить управление и список серверов",
   "games.minecraft.lifecycle.exportNote": "Создай переносимый файл .mrpack с модами и настройками.",
   "games.minecraft.lifecycle.privateNote":
-    "Данные аккаунта Harbor, файлы запуска и журналы исключены. Проверь настройки модов перед публикацией.",
+    "Данные аккаунта Frame, файлы запуска и журналы исключены. Проверь настройки модов перед публикацией.",
   "games.minecraft.lifecycle.included": "Включённые файлы",
   "games.minecraft.lifecycle.referenced": "Ссылки на загрузку",
   "games.minecraft.lifecycle.referenceNote":
@@ -96,7 +96,7 @@ export default {
   "games.minecraft.update.chooseFile": "Выбрать файл .mrpack",
   "games.minecraft.update.restoreVersion": "Восстановить {version}",
   "games.minecraft.update.reviewNote":
-    "Просмотрите все изменения перед применением. Harbor сохраняет отдельную копию предыдущего экземпляра.",
+    "Просмотрите все изменения перед применением. Frame сохраняет отдельную копию предыдущего экземпляра.",
   "games.minecraft.update.changeVersion": "Сменить версию",
   "games.minecraft.update.download": "Загрузка",
   "games.minecraft.update.recoveryCopy": "Копия для восстановления",
@@ -195,7 +195,7 @@ export default {
     "Закройте запущенный экземпляр Minecraft перед запуском другого.",
   "games.minecraft.java.title": "Java для этого экземпляра",
   "games.minecraft.java.note": "Этой версии Minecraft нужна Java {version}.",
-  "games.minecraft.java.managed": "Установить через Harbor",
+  "games.minecraft.java.managed": "Установить через Frame",
   "games.minecraft.java.installed": "Использовать установленную Java",
   "games.minecraft.java.manage": "Управление Java",
 
@@ -214,7 +214,7 @@ export default {
   "games.minecraft.java.invalidError": "Не удалось проверить эту установку Java.",
   "games.minecraft.java.metadataError":
     "Не удалось проверить совместимую загрузку Java. Повторите попытку.",
-  "games.minecraft.java.managedNote": "Harbor хранит эту версию в вашей библиотеке Minecraft.",
+  "games.minecraft.java.managedNote": "Frame хранит эту версию в вашей библиотеке Minecraft.",
   "games.minecraft.runtime.setup": "Настроить игру",
   "games.minecraft.runtime.note":
     "Установите официальные файлы игры для этого экземпляра. Ваши миры и моды останутся на месте.",
@@ -236,7 +236,7 @@ export default {
   "games.minecraft.runtime.metadataError":
     "Не удалось проверить файлы игры. Повторите попытку позже.",
   "games.minecraft.runtime.legacyError":
-    "Эта версия использует формат установки или запуска, который Harbor пока не поддерживает.",
+    "Эта версия использует формат установки или запуска, который Frame пока не поддерживает.",
   "games.minecraft.runtime.loaderError":
     "Формат установки этого загрузчика пока не поддерживается.",
   "games.minecraft.runtime.platformError": "Настройка игры пока не поддерживается в этой системе.",
@@ -247,7 +247,7 @@ export default {
   "games.minecraft.instances.import": "Импортировать сборку",
   "games.minecraft.instances.create": "Создать сборку",
   "games.minecraft.instances.desktop":
-    "Откройте настольный Harbor, чтобы создавать локальные сборки и управлять ими.",
+    "Откройте настольный Frame, чтобы создавать локальные сборки и управлять ими.",
   "games.minecraft.instances.search": "Поиск своих сборок",
   "games.minecraft.instances.storage": "Папка хранения",
   "games.minecraft.instances.chooseFolder": "Выбрать папку",
@@ -283,7 +283,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Загрузка версий Minecraft…",
   "games.minecraft.instances.added": "Добавлено в ваши сборки",
   "games.minecraft.instances.storageNote":
-    "Выберите место для сборок Minecraft. У каждого профиля Harbor здесь будет своя папка.",
+    "Выберите место для сборок Minecraft. У каждого профиля Frame здесь будет своя папка.",
   "games.minecraft.instances.isolated": "Установка в новую отдельную сборку.",
   "games.minecraft.instances.cancelling": "Отмена…",
   "games.minecraft.instances.install": "Установить файлы модпака",
@@ -296,7 +296,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "Применение конфигурации…",
   "games.minecraft.instances.phase.done": "Файлы установлены",
   "games.minecraft.instances.folderError":
-    "Выберите доступную локальную папку для этого профиля Harbor.",
+    "Выберите доступную локальную папку для этого профиля Frame.",
   "games.minecraft.instances.writeError":
     "Не удалось записать сборку. Проверьте права на папку и свободное место.",
   "games.minecraft.instances.readError":
@@ -312,7 +312,7 @@ export default {
   "games.minecraft.instances.loaderError":
     "Модпак использует неизвестный или конфликтующий загрузчик.",
   "games.minecraft.instances.sourceError":
-    "Модпаку нужен источник загрузки, который Harbor не поддерживает.",
+    "Модпаку нужен источник загрузки, который Frame не поддерживает.",
   "games.minecraft.instances.limitError": "Модпак или библиотека превышает допустимый размер.",
   "games.minecraft.instances.busyError":
     "Другая операция со сборкой ещё выполняется. Дождитесь её завершения или отмените.",
@@ -366,9 +366,9 @@ export default {
   "games.minecraft.account.intro":
     "Подключите Microsoft, чтобы видеть скин и плащи Minecraft и применять свои работы.",
   "games.minecraft.account.desktop":
-    "Откройте Harbor для компьютера, чтобы подключить аккаунт Minecraft.",
+    "Откройте Frame для компьютера, чтобы подключить аккаунт Minecraft.",
   "games.minecraft.account.setup":
-    "В этой сборке Harbor вход через Microsoft ещё не настроен. Скины можно редактировать локально.",
+    "В этой сборке Frame вход через Microsoft ещё не настроен. Скины можно редактировать локально.",
   "games.minecraft.account.codeNote": "Введите этот код на странице входа Microsoft.",
   "games.minecraft.account.copy": "Копировать код",
   "games.minecraft.account.openMicrosoft": "Продолжить в Microsoft",
@@ -398,7 +398,7 @@ export default {
   "games.minecraft.account.skinError":
     "Не удалось применить скин или плащ. Обновите аккаунт и повторите попытку.",
   "games.minecraft.account.storeError":
-    "Harbor не удалось безопасно сохранить аккаунт на устройстве.",
+    "Frame не удалось безопасно сохранить аккаунт на устройстве.",
   "games.minecraft.account.error": "Запрос аккаунта не выполнен. Попробуйте снова.",
   "games.minecraft.studio": "Мастерская скинов",
   "games.minecraft.skinTitle": "Ваш собственный стиль.",
@@ -431,7 +431,7 @@ export default {
   "games.minecraft.previewHint": "Перетаскивайте для вращения · Прокручивайте для масштаба",
   "games.minecraft.editHint": "Стрелки перемещают по пикселям. Enter рисует. Ctrl / ⌘ Z отменяет.",
   "games.minecraft.library": "Ваши скины",
-  "games.minecraft.localNote": "Сохранены на этом устройстве для этого профиля Harbor.",
+  "games.minecraft.localNote": "Сохранены на этом устройстве для этого профиля Frame.",
   "games.minecraft.new": "Новый скин",
   "games.minecraft.empty":
     "Импортируйте скин или начните рисовать. Изменения сохраняются автоматически.",

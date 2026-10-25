@@ -34,11 +34,10 @@ export default {
   "games.achievementManager.error.rejected": "رفض Steam التحديث. حدّث للتحقق من الحالة الحالية.",
   "games.achievementManager.error.uncertain":
     "لم يؤكد Steam النتيجة. حدّث للتحقق قبل إجراء تغييرات أخرى.",
-  "games.achievementManager.error.platform":
-    "تتوفر إدارة الإنجازات حاليًا في Harbor على Windows x64.",
+  "games.achievementManager.error.platform": "تتوفر إدارة الإنجازات حاليًا في Frame على Windows x64.",
   "games.achievementManager.error.invalid": "اختر ما يصل إلى 2,000 تغيير في المرة الواحدة.",
   "games.achievementManager.error.stale": "تغيرت هذه الإنجازات في Steam. حدّث قبل التعديل.",
-  "games.achievementManager.error.protected": "تدير اللعبة هذا الإنجاز. لا يستطيع Harbor تعديله.",
+  "games.achievementManager.error.protected": "تدير اللعبة هذا الإنجاز. لا يستطيع Frame تعديله.",
   "games.achievementManager.error.expired": "انتهت صلاحية هذه المراجعة. حدّث قبل تطبيق التغييرات.",
   "games.achievementManager.error.busy": "هناك طلب آخر لإنجازات Steam قيد التنفيذ.",
   "games.details.achievementSearch": "البحث عن إنجاز",
@@ -54,12 +53,12 @@ export default {
   "games.achievementManager.consentBody":
     "افتح الإنجازات أو أعد قفلها في حساب Steam المسجّل دخوله. تبقى اختياراتك مسودة حتى تطبّق التغييرات.",
   "games.achievementManager.consentRules":
-    "يستخدم Harbor واجهة إنجازات Steam دون حقن كود في الألعاب. تظل قواعد كل لعبة وشروط مكافآتها سارية.",
+    "يستخدم Frame واجهة إنجازات Steam دون حقن كود في الألعاب. تظل قواعد كل لعبة وشروط مكافآتها سارية.",
   "games.achievementManager.consentSam": "مستوحى من أسلوب إدارة الإنجازات في SAM",
-  "games.achievementManager.consentOnce": "يظهر مرة واحدة لملف Harbor هذا.",
+  "games.achievementManager.consentOnce": "يظهر مرة واحدة لملف Frame هذا.",
   "games.achievementManager.consentAccept": "فهمت",
   "games.achievementManager.desktopOnly":
-    "استخدم Harbor على Windows مع تشغيل Steam لتغيير الإنجازات.",
+    "استخدم Frame على Windows مع تشغيل Steam لتغيير الإنجازات.",
   "games.achievementManager.all": "الكل",
   "games.achievementManager.filter": "تصفية الإنجازات",
   "games.achievementManager.rewards": "مكافآت العناصر",
@@ -115,7 +114,7 @@ export default {
   "games.achievementManager.pickTitle": "اختر لعبة",
   "games.achievementManager.pickSearch": "ابحث في ألعابك",
   "games.achievementManager.pickNote":
-    "يمكن لـ Harbor تعديل إنجازات اللعبة بعد تخزينها مؤقتًا في Steam على هذا الكمبيوتر.",
+    "يمكن لـ Frame تعديل إنجازات اللعبة بعد تخزينها مؤقتًا في Steam على هذا الكمبيوتر.",
   "games.achievementManager.pickInstalled": "مثبّتة",
   "games.achievementManager.pickEmpty": "لا توجد ألعاب تطابق بحثك.",
   "games.achievementManager.pickUnavailable":

@@ -61,8 +61,8 @@ const catalog02: Record<string, string> = {
   "Both Sides of the Law": "Da entrambi i lati della legge",
   "Both devices need to be on the same Wi-Fi network, and some guest networks block devices from seeing each other.":
     "Entrambi i dispositivi devono essere connessi alla stessa rete Wi-Fi e alcune reti per ospiti impediscono ai dispositivi di rilevarsi a vicenda.",
-  "Both go in the boxes above. Harbor builds the URL for you.":
-    "Inseriscili entrambi nei campi qui sopra. Harbor creerà l'URL per te.",
+  "Both go in the boxes above. Frame builds the URL for you.":
+    "Inseriscili entrambi nei campi qui sopra. Frame creerà l'URL per te.",
   Bottom: "In basso",
   "Bottom bar": "Barra inferiore",
   "Bottom center": "In basso al centro",
@@ -91,10 +91,10 @@ const catalog02: Record<string, string> = {
   "Bring in your Stremio library": "Importa la tua raccolta Stremio",
   "Bring in your library": "Importa la tua raccolta",
   "Bring the Tissues": "Fazzoletti alla mano",
-  "Bring trusted source packages aboard through Harbor’s isolated extension worker.":
-    "Porta a bordo pacchetti di fonti affidabili tramite il worker isolato per le estensioni di Harbor.",
-  "Bring your Letterboxd watchlist, diary, liked films and lists into Harbor via the Stremboxd bridge.":
-    "Importa in Harbor la lista di visione, il diario, i film che ti piacciono e le liste di Letterboxd tramite il bridge Stremboxd.",
+  "Bring trusted source packages aboard through Frame’s isolated extension worker.":
+    "Porta a bordo pacchetti di fonti affidabili tramite il worker isolato per le estensioni di Frame.",
+  "Bring your Letterboxd watchlist, diary, liked films and lists into Frame via the Stremboxd bridge.":
+    "Importa in Frame la lista di visione, il diario, i film che ti piacciono e le liste di Letterboxd tramite il bridge Stremboxd.",
   "Bring your lists with you": "Porta con te le tue liste",
   "Bring your own": "Usa i tuoi",
   "Bring your own avatars into the library.": "Importa i tuoi avatar nella raccolta.",
@@ -175,7 +175,7 @@ const catalog02: Record<string, string> = {
   "Built for desktop resolutions": "Progettato per risoluzioni desktop",
   "Built from IMDb's public datasets. Career ratings volume.":
     "Basato sui dataset pubblici di IMDb. Volume delle valutazioni nel corso della carriera.",
-  "Built into Harbor": "Integrato in Harbor",
+  "Built into Frame": "Integrato in Frame",
   "Built on Stremio": "Basato su Stremio",
   "Built-in peer-to-peer streaming, served from your own machine.":
     "Streaming peer-to-peer integrato, trasmesso dal tuo computer.",
@@ -183,8 +183,8 @@ const catalog02: Record<string, string> = {
     "Il caricamento in blocco non è ancora disponibile; viene inviata una valutazione al secondo.",
   "Bullet Ballet": "Bullet Ballet",
   "Bumpers (LB / RB)": "Pulsanti dorsali (LB / RB)",
-  "Bundled with Harbor. Plays anything you throw at it.":
-    "Incluso in Harbor. Riproduce qualsiasi contenuto.",
+  "Bundled with Frame. Plays anything you throw at it.":
+    "Incluso in Frame. Riproduce qualsiasi contenuto.",
   "Burn in subtitles": "Incorpora i sottotitoli",
   Button: "Pulsante",
   "Button map": "Mappatura dei pulsanti",
@@ -215,8 +215,8 @@ const catalog02: Record<string, string> = {
   "Cached only ({n})": "Solo in cache ({n})",
   Caches: "Cache",
   Calendar: "Calendario",
-  "Call these from onclick handlers or your theme JS. They are stable and safe: each one drives the real Harbor feature, so your chrome never goes stale when Harbor adds menu items.":
-    "Richiama queste funzioni dai gestori onclick o dal JS del tuo tema. Sono stabili e sicure: ognuna controlla una vera funzione di Harbor, così la tua interfaccia non diventa mai obsoleta quando Harbor aggiunge voci di menu.",
+  "Call these from onclick handlers or your theme JS. They are stable and safe: each one drives the real Frame feature, so your chrome never goes stale when Frame adds menu items.":
+    "Richiama queste funzioni dai gestori onclick o dal JS del tuo tema. Sono stabili e sicure: ognuna controlla una vera funzione di Frame, così la tua interfaccia non diventa mai obsoleta quando Frame aggiunge voci di menu.",
   "Cam-quality picture with audio plugged into the projector or a separate recorder. Sound is clean, but the image is still a theater capture. Better than CAM, far below a real release.":
     "Ripresa di qualità CAM con audio acquisito dal proiettore o da un registratore separato. Il suono è pulito, ma l'immagine è comunque ripresa in sala. Meglio di CAM, molto peggio di una vera versione.",
   "Camcorder rip": "Rip da videocamera",
@@ -241,8 +241,8 @@ const catalog02: Record<string, string> = {
   Cannes: "Cannes",
   "Canvas height": "Altezza del canvas",
   "Canvas unavailable.": "Canvas non disponibile.",
-  "Cap how much disk the cache can use. When it goes over, Harbor deletes the oldest files first. Enforced on launch and as streams close.":
-    "Limita lo spazio su disco utilizzabile dalla cache. Quando supera il limite, Harbor elimina prima i file meno recenti. Il limite viene applicato all'avvio e alla chiusura degli stream.",
+  "Cap how much disk the cache can use. When it goes over, Frame deletes the oldest files first. Enforced on launch and as streams close.":
+    "Limita lo spazio su disco utilizzabile dalla cache. Quando supera il limite, Frame elimina prima i file meno recenti. Il limite viene applicato all'avvio e alla chiusura degli stream.",
   "Caps file size. Unknown sizes still pass.":
     "Limita le dimensioni dei file. Quelli di dimensioni sconosciute vengono comunque accettati.",
   "Captions in your language": "Sottotitoli nella tua lingua",
@@ -293,15 +293,15 @@ const catalog02: Record<string, string> = {
   "Change the look": "Cambia aspetto",
   "Change the order addons are tried in": "Cambia l'ordine in cui vengono provati gli Add-on",
   "Change your handle?": "Vuoi cambiare il tuo nome utente?",
-  "Changes not saved to your Harbor account yet":
-    "Modifiche non ancora salvate nel tuo account Harbor",
-  "Changes you make below will be saved on this computer, but they will not reach your TV. This is a fault in Harbor, not something you did.":
-    "Le modifiche apportate qui sotto verranno salvate su questo computer, ma non arriveranno alla TV. È un problema di Harbor, non dipende da te.",
+  "Changes not saved to your Frame account yet":
+    "Modifiche non ancora salvate nel tuo account Frame",
+  "Changes you make below will be saved on this computer, but they will not reach your TV. This is a fault in Frame, not something you did.":
+    "Le modifiche apportate qui sotto verranno salvate su questo computer, ma non arriveranno alla TV. È un problema di Frame, non dipende da te.",
   "Change…": "Cambia…",
   "Changing the location restarts the engine. Clearing removes all cached stream files right away; anything you reopen will re-fetch.":
     "Cambiando la posizione, il motore si riavvia. Lo svuotamento elimina subito tutti i file degli stream nella cache; quelli che riapri verranno scaricati di nuovo.",
-  "Changing the metadata language reloads Harbor so the new language takes effect. Apply when you're done with the options above.":
-    "Cambiando la lingua dei metadati, Harbor si ricarica per applicarla. Applica le modifiche quando hai finito con le opzioni qui sopra.",
+  "Changing the metadata language reloads Frame so the new language takes effect. Apply when you're done with the options above.":
+    "Cambiando la lingua dei metadati, Frame si ricarica per applicarla. Applica le modifiche quando hai finito con le opzioni qui sopra.",
   Channel: "Canale",
   "Channel categories": "Categorie dei canali",
   "Channel is taking a while": "Il canale sta impiegando più del previsto",
@@ -399,23 +399,23 @@ const catalog02: Record<string, string> = {
   "Choose lists": "Scegli le liste",
   "Choose manga download folder": "Scegli la cartella di download dei manga",
   "Choose manga folder": "Scegli la cartella dei manga",
-  "Choose one season package. Harbor will match and download every available episode from it.":
-    "Scegli il pacchetto di una stagione. Harbor abbinerà e scaricherà tutti gli episodi disponibili al suo interno.",
+  "Choose one season package. Frame will match and download every available episode from it.":
+    "Scegli il pacchetto di una stagione. Frame abbinerà e scaricherà tutti gli episodi disponibili al suo interno.",
   "Choose source": "Scegli sorgente",
   "Choose subtitles": "Scegli i sottotitoli",
   "Choose subtitles before playback": "Scegli i sottotitoli prima della riproduzione",
   "Choose the frame rate the subtitle was authored for.":
     "Scegli la frequenza dei fotogrammi per cui è stato creato il sottotitolo.",
-  "Choose up to 5 movies or shows you already like. Harbor uses them to tune your featured picks and recommendations. Totally optional.":
-    "Scegli fino a 5 film o serie che ti piacciono già. Harbor li usa per personalizzare i contenuti in primo piano e i consigli. È del tutto facoltativo.",
+  "Choose up to 5 movies or shows you already like. Frame uses them to tune your featured picks and recommendations. Totally optional.":
+    "Scegli fino a 5 film o serie che ti piacciono già. Frame li usa per personalizzare i contenuti in primo piano e i consigli. È del tutto facoltativo.",
   "Choose what happens when you hit Play on a title. Manual gives you full control over quality and source.":
     "Scegli cosa succede quando premi Riproduci su un titolo. La modalità manuale ti dà il pieno controllo su qualità e sorgente.",
   "Choose what shows, what stays hidden, and what sits up top.":
     "Scegli cosa mostrare, cosa nascondere e cosa mettere in alto.",
   "Choose where subtitle timing feedback appears and how large it is.":
     "Scegli dove visualizzare il feedback sulla sincronizzazione dei sottotitoli e quanto deve essere grande.",
-  "Choose where you can grab Harbor to drag it around your screen.":
-    "Scegli da dove trascinare Harbor per spostarlo sullo schermo.",
+  "Choose where you can grab Frame to drag it around your screen.":
+    "Scegli da dove trascinare Frame per spostarlo sullo schermo.",
   "Choose which Simkl rails appear on your home screen.":
     "Scegli quali sezioni di Simkl mostrare nella schermata Home.",
   "Choose which badges appear by your name, and their order":
@@ -438,8 +438,8 @@ const catalog02: Record<string, string> = {
   Circle: "Cerchio",
   Claim: "Rivendica",
   "Claim a handle": "Rivendica un nome utente",
-  "Claim one so people can find you across Harbor.":
-    "Rivendicane uno, così le persone potranno trovarti su Harbor.",
+  "Claim one so people can find you across Frame.":
+    "Rivendicane uno, così le persone potranno trovarti su Frame.",
   "Claim your @handle": "Rivendica il tuo @handle",
   "Claim your handle": "Rivendica il tuo nome utente",
   "Class names and data attributes that won't change between releases. Safe to target from your CSS.":
@@ -448,7 +448,7 @@ const catalog02: Record<string, string> = {
   "Classic Hollywood": "Hollywood classica",
   "Classic Mystery": "Giallo classico",
   "Classic Stremio": "Stremio classico",
-  "Classic. Was Harbor's original pair.": "Classico. Era l'abbinamento originale di Harbor.",
+  "Classic. Was Frame's original pair.": "Classico. Era l'abbinamento originale di Frame.",
   "Clean modern. Sans across the board.": "Moderno e pulito. Caratteri sans serif ovunque.",
   "Clean releases for this title are still scarce. Confirm the filename and size before playing.":
     "Le release di buona qualità per questo titolo sono ancora poche. Controlla il nome e le dimensioni del file prima della riproduzione.",
@@ -483,10 +483,10 @@ const catalog02: Record<string, string> = {
   Cleared: "Cancellato",
   Clearing: "Cancellazione",
   "Clearing…": "Cancellazione…",
-  "Clears the URL from Harbor. The Worker keeps running on Cloudflare.":
-    "Rimuove l'URL da Harbor. Il Worker continua a funzionare su Cloudflare.",
-  "Clears the saved URL so you can point Harbor at another relay.":
-    "Rimuove l'URL salvato per consentirti di collegare Harbor a un altro relay.",
+  "Clears the URL from Frame. The Worker keeps running on Cloudflare.":
+    "Rimuove l'URL da Frame. Il Worker continua a funzionare su Cloudflare.",
+  "Clears the saved URL so you can point Frame at another relay.":
+    "Rimuove l'URL salvato per consentirti di collegare Frame a un altro relay.",
   Click: "Fai clic",
   "Click Activate in the email": "Fai clic su Attiva nell'email",
   "Click a line": "Fai clic su una riga",
@@ -500,8 +500,8 @@ const catalog02: Record<string, string> = {
     "Fai clic su un singolo slot per scegliere un file, seleziona più PNG contemporaneamente oppure trascina un intero file .zip. I file con un nome riconosciuto vengono inseriti automaticamente negli slot corrispondenti; gli altri puoi sistemarli a mano.",
   "Click any source to swap in place": "Fai clic su una sorgente per sostituirla direttamente",
   "Click anywhere to skip": "Fai clic ovunque per saltare",
-  "Click below to open {name}'s setup page in Harbor's built-in browser. Pick your options. When you click Install on their page, Harbor catches the link automatically and updates the addon.":
-    "Fai clic qui sotto per aprire la pagina di configurazione di {name} nel browser integrato di Harbor. Scegli le opzioni. Quando fai clic su Installa nella pagina, Harbor intercetta automaticamente il link e aggiorna l'Add-on.",
+  "Click below to open {name}'s setup page in Frame's built-in browser. Pick your options. When you click Install on their page, Frame catches the link automatically and updates the addon.":
+    "Fai clic qui sotto per aprire la pagina di configurazione di {name} nel browser integrato di Frame. Scegli le opzioni. Quando fai clic su Installa nella pagina, Frame intercetta automaticamente il link e aggiorna l'Add-on.",
   "Click below to open {name}'s setup page. Pick your options, then copy the install link it gives you and paste it below to update the addon.":
     "Fai clic qui sotto per aprire la pagina di configurazione di {name}. Scegli le opzioni, quindi copia il link di installazione fornito e incollalo qui sotto per aggiornare l'Add-on.",
   "Click the button below to open Cloudflare's Workers page.":
@@ -513,8 +513,8 @@ const catalog02: Record<string, string> = {
   "Click to choose a different file": "Fai clic per scegliere un altro file",
   "Click to copy": "Fai clic per copiare",
   "Click to cycle 100 / 75 / 50 / 25 / 0.": "Fai clic per passare tra 100 / 75 / 50 / 25 / 0.",
-  "Click to open {name}'s setup page in Harbor's built-in browser. Pick your options. When you click Install on their page, Harbor catches the link automatically and updates the addon.":
-    "Fai clic per aprire la pagina di configurazione di {name} nel browser integrato di Harbor. Scegli le opzioni. Quando fai clic su Installa nella pagina, Harbor intercetta automaticamente il link e aggiorna l'Add-on.",
+  "Click to open {name}'s setup page in Frame's built-in browser. Pick your options. When you click Install on their page, Frame catches the link automatically and updates the addon.":
+    "Fai clic per aprire la pagina di configurazione di {name} nel browser integrato di Frame. Scegli le opzioni. Quando fai clic su Installa nella pagina, Frame intercetta automaticamente il link e aggiorna l'Add-on.",
   "Click to open {name}'s setup page. Pick your options, then copy the install link it gives you and paste it below to update the addon.":
     "Fai clic per aprire la pagina di configurazione di {name}. Scegli le opzioni, quindi copia il link di installazione fornito e incollalo qui sotto per aggiornare l'Add-on.",
   "Click to turn off": "Fai clic per disattivare",
@@ -534,7 +534,7 @@ const catalog02: Record<string, string> = {
   "Clock size": "Dimensioni dell'orologio",
   "Clock style": "Stile dell'orologio",
   Close: "Chiudi",
-  "Close Harbor?": "Chiudere Harbor?",
+  "Close Frame?": "Chiudere Frame?",
   "Close Manga selection": "Chiudi la selezione manga",
   "Close chapters": "Chiudi i capitoli",
   "Close eBook menu": "Chiudi il menu eBook",
@@ -556,16 +556,16 @@ const catalog02: Record<string, string> = {
   "Close trailer": "Chiudi il trailer",
   "Close zoom controls": "Chiudi i controlli dello zoom",
   "Close · Esc": "Chiudi · Esc",
-  "Closing the window tucks Harbor into the tray instead of quitting, so it reopens instantly. Right-click the tray icon for quick controls, or pick Quit to exit fully.":
-    "Quando chiudi la finestra, Harbor viene ridotto nell'area di notifica anziché terminare, così si riapre all'istante. Fai clic con il pulsante destro sull'icona nell'area di notifica per accedere ai comandi rapidi oppure scegli Esci per chiuderlo del tutto.",
+  "Closing the window tucks Frame into the tray instead of quitting, so it reopens instantly. Right-click the tray icon for quick controls, or pick Quit to exit fully.":
+    "Quando chiudi la finestra, Frame viene ridotto nell'area di notifica anziché terminare, così si riapre all'istante. Fai clic con il pulsante destro sull'icona nell'area di notifica per accedere ai comandi rapidi oppure scegli Esci per chiuderlo del tutto.",
   Cloudflare: "Cloudflare",
   "Cloudflare Workers free tier:": "Piano gratuito di Cloudflare Workers:",
   "Cloudflare asks you to pick a name (this becomes {code}). Type any name (your first name works). Then click {b1}.":
     "Cloudflare ti chiede di scegliere un nome, che diventerà {code}. Inserisci un nome qualsiasi, va bene anche il tuo nome. Poi fai clic su {b1}.",
-  "Cloudflare shows API tokens only once. Save a copy now or you'll lose the ability to stop or redeploy this relay from Harbor.":
-    "Cloudflare mostra i token API una sola volta. Salva subito una copia, altrimenti non potrai più arrestare o ridistribuire questo relay da Harbor.",
-  "Cloudflare token form filled with name 'Harbor Relay' and one permission row set to Account / Workers Scripts / Edit":
-    'Modulo del token Cloudflare compilato con il nome "Harbor Relay" e una riga di autorizzazione impostata su Account / Workers Scripts / Edit',
+  "Cloudflare shows API tokens only once. Save a copy now or you'll lose the ability to stop or redeploy this relay from Frame.":
+    "Cloudflare mostra i token API una sola volta. Salva subito una copia, altrimenti non potrai più arrestare o ridistribuire questo relay da Frame.",
+  "Cloudflare token form filled with name 'Frame Relay' and one permission row set to Account / Workers Scripts / Edit":
+    'Modulo del token Cloudflare compilato con il nome "Frame Relay" e una riga di autorizzazione impostata su Account / Workers Scripts / Edit',
   Code: "Codice",
   "Code expired": "Codice scaduto",
   "Code expires in {left}": "Il codice scade tra {left}",
@@ -580,15 +580,15 @@ const catalog02: Record<string, string> = {
   Color: "Colore",
   "Color & HDR": "Colore e HDR",
   "Color & HDR tone-mapping": "Mappatura tonale di colore e HDR",
-  "Color presets, custom backgrounds, and the font pair Harbor renders in.":
-    "Preset di colore, sfondi personalizzati e coppia di font usata da Harbor.",
+  "Color presets, custom backgrounds, and the font pair Frame renders in.":
+    "Preset di colore, sfondi personalizzati e coppia di font usata da Frame.",
   "Color tokens": "Token di colore",
   Colors: "Colori",
   "Colors, posters, fonts and wallpaper.": "Colori, locandine, font e sfondo.",
   Combo: "Combinazione",
   "Come back here and hit {b1}. The Hello World can stay where it is. It's free and harmless.":
     "Torna qui e premi {b1}. Hello World può rimanere dov'è. È gratuito e innocuo.",
-  "Come back to Harbor and try casting again.": "Torna su Harbor e prova di nuovo a trasmettere.",
+  "Come back to Frame and try casting again.": "Torna su Frame e prova di nuovo a trasmettere.",
   "Come back tomorrow, or clear what you skipped in Settings.":
     "Torna domani oppure rimuovi nelle Impostazioni gli elementi che hai saltato.",
   Comedy: "Commedia",
@@ -606,11 +606,11 @@ const catalog02: Record<string, string> = {
     "I commenti restano sfocati finché non li riveli, anche se non sono contrassegnati come spoiler.",
   "Comments are hidden": "I commenti sono nascosti",
   "Hosted elsewhere": "Ospitato altrove",
-  "A third party runs these plans. Harbor is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
-    "Questi piani sono gestiti da terzi. Harbor non è affiliato e non riceve nulla da un’iscrizione. Prezzi e condizioni aggiornati sono sul loro sito.",
+  "A third party runs these plans. Frame is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
+    "Questi piani sono gestiti da terzi. Frame non è affiliato e non riceve nulla da un’iscrizione. Prezzi e condizioni aggiornati sono sul loro sito.",
   "{name} can run on a hosted instance": "{name} può girare su un’istanza ospitata",
-  "A third party operates this. Harbor is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
-    "È gestito da terzi. Harbor non è affiliato, non lo rivende e non riceve nulla se ti iscrivi. Prezzo e contenuti sono sul loro sito.",
+  "A third party operates this. Frame is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
+    "È gestito da terzi. Frame non è affiliato, non lo rivende e non riceve nulla se ti iscrivi. Prezzo e contenuti sono sul loro sito.",
   "Show comments": "Mostra i commenti",
   "Hide comments": "Nascondi i commenti",
   "Comments may take a moment to appear on Trakt":
@@ -671,13 +671,13 @@ const catalog02: Record<string, string> = {
   Connect: "Collega",
   "Connect / Verify": "Collega / Verifica",
   "Connect AniList": "Collega AniList",
-  "Connect AniList in Harbor on your computer to see your lists here.":
-    "Collega AniList in Harbor sul computer per vedere qui le tue liste.",
-  "Connect Discord or Telegram and Harbor posts a message when something you follow is about to drop. Hit Test to send yourself a sample first.":
-    "Collega Discord o Telegram e Harbor pubblicherà un messaggio quando sta per uscire qualcosa che segui. Prima premi Test per inviarti un messaggio di prova.",
+  "Connect AniList in Frame on your computer to see your lists here.":
+    "Collega AniList in Frame sul computer per vedere qui le tue liste.",
+  "Connect Discord or Telegram and Frame posts a message when something you follow is about to drop. Hit Test to send yourself a sample first.":
+    "Collega Discord o Telegram e Frame pubblicherà un messaggio quando sta per uscire qualcosa che segui. Prima premi Test per inviarti un messaggio di prova.",
   "Connect MyAnimeList": "Collega MyAnimeList",
-  "Connect MyAnimeList in Harbor on your computer to see your lists here.":
-    "Collega MyAnimeList in Harbor sul computer per vedere qui le tue liste.",
+  "Connect MyAnimeList in Frame on your computer to see your lists here.":
+    "Collega MyAnimeList in Frame sul computer per vedere qui le tue liste.",
   "Connect Simkl": "Collega Simkl",
   "Connect TMDB": "Collega TMDB",
   "Connect Trakt": "Collega Trakt",
@@ -696,8 +696,8 @@ const catalog02: Record<string, string> = {
   "Connect a source": "Collega una fonte",
   "Connect any IPTV provider. Channels are sorted by category, EPG is pulled automatically when your provider supplies it, and playback runs through native libmpv.":
     "Collega qualsiasi provider IPTV. I canali vengono ordinati per categoria, i dati EPG vengono recuperati automaticamente se forniti dal provider e la riproduzione avviene tramite libmpv nativo.",
-  "Connect books you own, trusted reading sources, and metadata services. Harbor keeps the shelf coherent while every source stays under your control.":
-    "Collega i libri che possiedi, fonti di lettura affidabili e servizi di metadati. Harbor mantiene lo scaffale coerente, mentre ogni fonte resta sotto il tuo controllo.",
+  "Connect books you own, trusted reading sources, and metadata services. Frame keeps the shelf coherent while every source stays under your control.":
+    "Collega i libri che possiedi, fonti di lettura affidabili e servizi di metadati. Frame mantiene lo scaffale coerente, mentre ogni fonte resta sotto il tuo controllo.",
   "Connect to your computer to manage your library.":
     "Collegati al computer per gestire la tua raccolta.",
   "Connect your AniList account": "Collega il tuo account AniList",
@@ -761,8 +761,8 @@ const catalog02: Record<string, string> = {
     "Prima Continua a guardare, poi i cataloghi dei tuoi Add-on nell'ordine di installazione.",
   "Continue Watching screenshots": "Screenshot di Continua a guardare",
   "Continue Watching suggestions cache": "Cache dei suggerimenti di Continua a guardare",
-  "Continue Watching, then your addon catalogs in install order. No hero, no Harbor rails.":
-    "Continua a guardare, poi i cataloghi dei tuoi Add-on nell'ordine di installazione. Nessun contenuto in evidenza, nessun carosello Harbor.",
+  "Continue Watching, then your addon catalogs in install order. No hero, no Frame rails.":
+    "Continua a guardare, poi i cataloghi dei tuoi Add-on nell'ordine di installazione. Nessun contenuto in evidenza, nessun carosello Frame.",
   "Continue Watching, then your installed addons. Every catalog renders as its own row, install order, no dedup, no hero.":
     "Continua a guardare, poi i tuoi Add-on installati. Ogni catalogo appare in una riga separata, nell'ordine di installazione, senza deduplicazione né contenuti in evidenza.",
   "Continue from last watched": "Riprendi dall'ultimo contenuto guardato",
@@ -792,8 +792,8 @@ const catalog02: Record<string, string> = {
   "Controller support": "Supporto per controller",
   Controllers: "Controller",
   "Controllers / gamepad": "Controller / gamepad",
-  "Controllers Harbor can see right now. Connect one over USB or Bluetooth and it shows up here.":
-    "I controller che Harbor rileva in questo momento. Collegane uno tramite USB o Bluetooth e apparirà qui.",
+  "Controllers Frame can see right now. Connect one over USB or Bluetooth and it shows up here.":
+    "I controller che Frame rileva in questo momento. Collegane uno tramite USB o Bluetooth e apparirà qui.",
   Controls: "Comandi",
   "Controls & devices": "Comandi e dispositivi",
   "Convert your currency": "Convertire il denaro in un'altra valuta",
@@ -829,8 +829,8 @@ const catalog02: Record<string, string> = {
     'Copia il valore indicato come "API Key (v3 auth)".',
   "Copy theme": "Copia tema",
   "Copy your API Key": "Copia la tua API Key",
-  "Copy your Harbor watchlist over to Trakt, or pull your Trakt watchlist into Harbor. Safe to run again, Trakt skips anything it already has.":
-    "Copia la tua Lista di Harbor su Trakt oppure importa la Lista di Trakt in Harbor. Puoi ripetere l'operazione in sicurezza: Trakt ignora gli elementi già presenti.",
+  "Copy your Frame watchlist over to Trakt, or pull your Trakt watchlist into Frame. Safe to run again, Trakt skips anything it already has.":
+    "Copia la tua Lista di Frame su Trakt oppure importa la Lista di Trakt in Frame. Puoi ripetere l'operazione in sicurezza: Trakt ignora gli elementi già presenti.",
   "Copy {label} handle": "Copia l'handle di {label}",
   "Copy {text}": "Copia {text}",
   "Copy-paste starters for common customizations.":
@@ -875,8 +875,8 @@ const catalog02: Record<string, string> = {
   "Could not post.": "Impossibile pubblicare.",
   "Could not process image.": "Impossibile elaborare l'immagine.",
   "Could not queue these episodes.": "Impossibile aggiungere questi episodi alla coda.",
-  "Could not reach Harbor. Check your phone's connection and try again.":
-    "Impossibile raggiungere Harbor. Controlla la connessione del telefono e riprova.",
+  "Could not reach Frame. Check your phone's connection and try again.":
+    "Impossibile raggiungere Frame. Controlla la connessione del telefono e riprova.",
   "Could not reach Simkl.": "Impossibile raggiungere Simkl.",
   "Could not reach Stremio. Check your phone's connection and try again.":
     "Impossibile raggiungere Stremio. Controlla la connessione del telefono e riprova.",
@@ -991,10 +991,10 @@ const catalog02: Record<string, string> = {
     "Impossibile raggiungere AniList. Controlla la connessione e riapri Big Picture.",
   "Couldn't reach AniList. Try refreshing.":
     "Impossibile raggiungere AniList. Prova ad aggiornare.",
-  "Couldn't reach Harbor, check your connection":
-    "Impossibile raggiungere Harbor. Controlla la connessione",
-  "Couldn't reach Harbor. Showing this device only.":
-    "Impossibile raggiungere Harbor. Vengono mostrati solo i contenuti di questo dispositivo.",
+  "Couldn't reach Frame, check your connection":
+    "Impossibile raggiungere Frame. Controlla la connessione",
+  "Couldn't reach Frame. Showing this device only.":
+    "Impossibile raggiungere Frame. Vengono mostrati solo i contenuti di questo dispositivo.",
   "Couldn't reach Letterboxd. Try refreshing.":
     "Impossibile raggiungere Letterboxd. Prova ad aggiornare.",
   "Couldn't reach MyAnimeList. Check the connection and reopen Big Picture.":
@@ -1059,9 +1059,9 @@ const catalog02: Record<string, string> = {
   "Cozy Autumn Nights": "Accoglienti serate autunnali",
   Create: "Crea",
   "Create Custom Token": "Crea token personalizzato",
-  "Create Harbor account": "Crea un account Harbor",
+  "Create Frame account": "Crea un account Frame",
   "Create Token": "Crea token",
-  "Create a Harbor account": "Crea un account Harbor",
+  "Create a Frame account": "Crea un account Frame",
   "Create a folder by movie or series name": "Crea una cartella con il nome del Film o della Serie",
   "Create a free account to publish. No email required.":
     "Crea un account gratuito per pubblicare. Non serve un indirizzo email.",
@@ -1197,13 +1197,13 @@ const catalog02: Record<string, string> = {
   "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
     "Tieni premuto questo modificatore e premi 1-9 per aprire quella sezione della barra laterale. Per cambiarlo, premi una cifra con il modificatore desiderato, o Canc per disattivarlo. Disattivo con il player aperto.",
   "Toggle window fullscreen": "Attiva/disattiva schermo intero della finestra",
-  "Make Harbor's window fill the screen, or restore it.":
-    "Fa riempire lo schermo alla finestra di Harbor, o la ripristina.",
+  "Make Frame's window fill the screen, or restore it.":
+    "Fa riempire lo schermo alla finestra di Frame, o la ripristina.",
   "Toggle memory monitor": "Mostra/nascondi monitor memoria",
   "Show or hide the memory and cache monitor.": "Mostra o nasconde il monitor di memoria e cache.",
   "Show test error page": "Mostra pagina di errore di prova",
-  "Open Harbor's error page with a sample error, to check how it looks.":
-    "Apre la pagina di errore di Harbor con un errore di esempio per vederne l’aspetto.",
+  "Open Frame's error page with a sample error, to check how it looks.":
+    "Apre la pagina di errore di Frame con un errore di esempio per vederne l’aspetto.",
   "Jump through video 0-9": "Salta nel video 0-9",
   "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
     "Premi 0-9 per saltare a quel decimo del video (0 è l’inizio, 5 la metà). Per cambiarlo, premi una cifra con il modificatore desiderato, o Canc per disattivarlo.",

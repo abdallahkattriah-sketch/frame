@@ -14,7 +14,7 @@ export default {
   "games.sources.batch.failedFile": "{file} तैयार नहीं हो सकी।",
 
   "games.sources.batch.restart":
-    "चुनी गई फ़ाइलें एक साथ डाउनलोड करने के लिए अपडेट के बाद Harbor फिर से शुरू करें।",
+    "चुनी गई फ़ाइलें एक साथ डाउनलोड करने के लिए अपडेट के बाद Frame फिर से शुरू करें।",
 
   "games.torrent.start": "फ़ाइलें डाउनलोड करें",
 
@@ -23,7 +23,7 @@ export default {
   "games.sources.verification.action": "स्रोत सत्यापित करें",
 
   "games.sources.verification.waiting":
-    "स्रोत की विंडो में सत्यापन पूरा करें। उसके बाद Harbor उसका कैटलॉग जाँचेगा।",
+    "स्रोत की विंडो में सत्यापन पूरा करें। उसके बाद Frame उसका कैटलॉग जाँचेगा।",
 
   "games.sources.source_verify_busy":
     "किसी अन्य स्रोत का सत्यापन चल रहा है। पहले उसे पूरा करें या उसकी विंडो बंद करें।",
@@ -33,35 +33,35 @@ export default {
   "games.sources.source_verify_timeout": "सत्यापन का समय समाप्त हो गया। तैयार होने पर फिर कोशिश करें।",
 
   "games.sources.source_verify_unavailable":
-    "इस स्रोत को सत्यापित करने के लिए Harbor अपडेट करके दोबारा शुरू करें।",
+    "इस स्रोत को सत्यापित करने के लिए Frame अपडेट करके दोबारा शुरू करें।",
 
   "games.sources.browser.direct": "सीधा डाउनलोड",
 
   "games.sources.site.title": "कोई साइट खोलें",
   "games.sources.site.note":
-    "किसी भी साइट का डाउनलोड पेज पेस्ट करें। Harbor उसे अपनी विंडो में खोलता है, आप वहाँ फ़ाइल चुनते हैं, और वह Harbor में डाउनलोड हो जाती है।",
+    "किसी भी साइट का डाउनलोड पेज पेस्ट करें। Frame उसे अपनी विंडो में खोलता है, आप वहाँ फ़ाइल चुनते हैं, और वह Frame में डाउनलोड हो जाती है।",
   "games.sources.site.url": "पेज लिंक",
   "games.sources.site.open": "साइट खोलें",
   "games.sources.site.invalid": "यह एक सार्वजनिक https लिंक होना चाहिए।",
   "games.sources.browser.intro":
-    "Debrid खाते की ज़रूरत नहीं है। {host} पर फ़ाइल चुनें, फिर Harbor में उसे सहेजने की जगह चुनें।",
+    "Debrid खाते की ज़रूरत नहीं है। {host} पर फ़ाइल चुनें, फिर Frame में उसे सहेजने की जगह चुनें।",
   "games.sources.browser.fallback":
-    "अगर डाउनलोड अपने आप शुरू न हो, तो {host} पेज पर दिखाया गया वैकल्पिक लिंक इस्तेमाल करें। Harbor फिर भी फ़ाइल पकड़ लेगा।",
+    "अगर डाउनलोड अपने आप शुरू न हो, तो {host} पेज पर दिखाया गया वैकल्पिक लिंक इस्तेमाल करें। Frame फिर भी फ़ाइल पकड़ लेगा।",
 
   "games.sources.browser.choose": "{host} पर फ़ाइल चुनें",
 
-  "games.sources.browser.waiting": "{host} विंडो में फ़ाइल चुनें। Harbor उसे सहेजने की जगह पूछेगा।",
+  "games.sources.browser.waiting": "{host} विंडो में फ़ाइल चुनें। Frame उसे सहेजने की जगह पूछेगा।",
 
-  "games.sources.browser.selected": "Harbor में डाउनलोड के लिए तैयार",
+  "games.sources.browser.selected": "Frame में डाउनलोड के लिए तैयार",
 
   "games.sources.browser.another": "दूसरी फ़ाइल चुनें",
 
   "games.sources.browser.failed":
-    "{host} यह फ़ाइल Harbor को नहीं दे सका। दोबारा कोशिश करें या इसे {host} पर खोलें।",
+    "{host} यह फ़ाइल Frame को नहीं दे सका। दोबारा कोशिश करें या इसे {host} पर खोलें।",
 
   "games.sources.browser.timeout": "फ़ाइल चुनने का समय समाप्त हो गया। फ़ाइल चुनने के लिए {host} फिर से खोलें।",
 
-  "games.sources.browser.restart": "{host} से सीधे डाउनलोड करने के लिए अपडेट के बाद Harbor को फिर शुरू करें।",
+  "games.sources.browser.restart": "{host} से सीधे डाउनलोड करने के लिए अपडेट के बाद Frame को फिर शुरू करें।",
 
   "games.sources.retrySavedCatalog": "सहेजा गया कैटलॉग फिर से पढ़ें",
 
@@ -113,7 +113,7 @@ export default {
   "games.sources.platform.other": "{platform} संस्करण · {host} पर नेटिव नहीं",
 
   "games.sources.platform.otherNote":
-    "अपने ऑपरेटिंग सिस्टम का संस्करण चुनें। Harbor इस पैकेज को इस डिवाइस पर सीधे इंस्टॉल या चला नहीं सकता।",
+    "अपने ऑपरेटिंग सिस्टम का संस्करण चुनें। Frame इस पैकेज को इस डिवाइस पर सीधे इंस्टॉल या चला नहीं सकता।",
 
   "games.sources.platform.unknown": "प्लेटफ़ॉर्म निर्दिष्ट नहीं",
 
@@ -121,7 +121,7 @@ export default {
     "स्रोत ने पैकेज का ऑपरेटिंग सिस्टम नहीं बताया है। डाउनलोड से पहले प्रकाशक से जाँचें।",
 
   "games.sources.platform.browseNote":
-    "स्थानीय गेम फ़ाइलें डाउनलोड और प्रबंधित करने के लिए Harbor डेस्कटॉप इस्तेमाल करें।",
+    "स्थानीय गेम फ़ाइलें डाउनलोड और प्रबंधित करने के लिए Frame डेस्कटॉप इस्तेमाल करें।",
 
   "games.sources.platform.browse": "{platform} संस्करण",
 
@@ -131,9 +131,9 @@ export default {
 
   "games.sources.art.torrent": "टॉरेंट डाउनलोड",
 
-  "games.sources.art.engine": "Harbor टॉरेंट इंजन",
+  "games.sources.art.engine": "Frame टॉरेंट इंजन",
 
-  "games.sources.art.reviewTorrent": "Harbor में डाउनलोड करें",
+  "games.sources.art.reviewTorrent": "Frame में डाउनलोड करें",
 
   "games.sources.ad.note": "इस फ़ाइल को AllDebrid से तैयार करें, फिर चुनें कि इसे कहाँ सहेजना है।",
 
@@ -182,7 +182,7 @@ export default {
 
   "games.sources.discovery.change": "लिंक बदलें",
 
-  "games.sources.discovery.harbor": "Harbor कैटलॉग",
+  "games.sources.discovery.harbor": "Frame कैटलॉग",
 
   "games.sources.discovery.community": "Hydra के अनुकूल कैटलॉग",
 
@@ -192,7 +192,7 @@ export default {
     "केवल कैटलॉग की प्रविष्टियाँ सहेजी जाती हैं। फ़ाइलें आपके चुनने पर डाउनलोड होती हैं।",
 
   "games.sources.source_no_catalog":
-    "यह वेबसाइट ऐसा कैटलॉग लिंक प्रकाशित नहीं करती जिसे Harbor पढ़ सके। इसके JSON कैटलॉग का लिंक पेस्ट करें।",
+    "यह वेबसाइट ऐसा कैटलॉग लिंक प्रकाशित नहीं करती जिसे Frame पढ़ सके। इसके JSON कैटलॉग का लिंक पेस्ट करें।",
 
   "games.sources.source_url": "वेबसाइट का पता, HTTP(S) कैटलॉग URL या Hydra इंस्टॉल लिंक दर्ज करें।",
 
@@ -247,7 +247,7 @@ export default {
 
   "games.sources.links.account": "सेवा ने कनेक्शन अस्वीकार किया। स्रोत सेटिंग में उसकी कुंजी जाँचें।",
 
-  "games.sources.links.rate": "सेवा ने Harbor को प्रतीक्षा करने को कहा है। थोड़ी देर बाद फिर कोशिश करें।",
+  "games.sources.links.rate": "सेवा ने Frame को प्रतीक्षा करने को कहा है। थोड़ी देर बाद फिर कोशिश करें।",
 
   "games.sources.links.limit": "सेवा ने एक साथ देखने के लिए बहुत अधिक फ़ाइलें लौटाईं।",
 
@@ -259,7 +259,7 @@ export default {
 
   "games.sources.links.destination": "गंतव्य चुनें",
 
-  "games.sources.links.desktop": "फ़ाइलें डाउनलोड करने के लिए Harbor डेस्कटॉप खोलें।",
+  "games.sources.links.desktop": "फ़ाइलें डाउनलोड करने के लिए Frame डेस्कटॉप खोलें।",
 
   "games.sources.web.web": "वेब डाउनलोड",
 
@@ -287,7 +287,7 @@ export default {
 
   "games.sources.web.again": "दूसरा काम शुरू करें",
 
-  "games.sources.web.storage": "Harbor यह काम सहेज नहीं सका। इसे अपने आप दोबारा नहीं भेजा जाएगा।",
+  "games.sources.web.storage": "Frame यह काम सहेज नहीं सका। इसे अपने आप दोबारा नहीं भेजा जाएगा।",
 
   "games.sources.web.preparing": "TorBox में तैयारी जारी",
 
@@ -374,7 +374,7 @@ export default {
 
   "games.sources.pm.select": "यह ट्रांसफ़र उपयोग करें",
 
-  "games.sources.pm.review": "अपना भेजा हुआ ट्रांसफ़र चुनें। Harbor उसके स्रोत का मिलान अपने आप नहीं कर सकता।",
+  "games.sources.pm.review": "अपना भेजा हुआ ट्रांसफ़र चुनें। Frame उसके स्रोत का मिलान अपने आप नहीं कर सकता।",
 
   "games.sources.pm.retry": "ट्रांसफ़र फिर आज़माएँ",
 

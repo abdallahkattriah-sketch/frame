@@ -37,7 +37,7 @@ export default {
   "games.valorant.metaScope":
     "بيانات OP.GG التنافسية للتحديث المحدد. نسبة الاختيار هي حصة مرات ظهور العميل. تمثل النتائج عينة المصدر وليس جميع اللاعبين.",
   "games.valorant.referenceScope":
-    "صور اللعبة ومراجعها عبر Valorant-API. قد تتأخر التحديثات عن اللعبة. Harbor غير معتمد من Riot Games.",
+    "صور اللعبة ومراجعها عبر Valorant-API. قد تتأخر التحديثات عن اللعبة. Frame غير معتمد من Riot Games.",
   "games.valorant.samples": "{count} ظهور",
   "games.valorant.smallSample": "عينة صغيرة",
   "games.valorant.abilities": "القدرات",

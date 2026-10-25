@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "Search CurseForge",
   "games.minecraft.discovery.downloads": "Downloads",
   "games.minecraft.discovery.curseForgeBlocked":
-    "CurseForge isn’t allowing Harbor to load this catalog right now. Try again or open the source.",
+    "CurseForge isn’t allowing Frame to load this catalog right now. Try again or open the source.",
   "games.minecraft.discovery.unavailable": "This directory couldn’t load. Try again.",
   "games.minecraft.discovery.openSource": "Open source website",
   "games.minecraft.discovery.loadMore": "Load more",
   "games.minecraft.discovery.servers": "Servers",
   "games.minecraft.discovery.serverNote":
-    "Independent directories. Harbor is not affiliated with these sites or servers. Counts are reported by each directory.",
+    "Independent directories. Frame is not affiliated with these sites or servers. Counts are reported by each directory.",
   "games.minecraft.discovery.searchServers": "Search loaded servers",
   "games.minecraft.discovery.directory": "Directory",
   "games.minecraft.discovery.mode": "Game mode",
@@ -43,7 +43,7 @@ export default {
   "games.minecraft.lifecycle.exportNote":
     "Create a portable .mrpack with your mods and configuration.",
   "games.minecraft.lifecycle.privateNote":
-    "Harbor account data, runtime files and logs are excluded. Check mod configuration before sharing.",
+    "Frame account data, runtime files and logs are excluded. Check mod configuration before sharing.",
   "games.minecraft.lifecycle.included": "Included files",
   "games.minecraft.lifecycle.referenced": "Download references",
   "games.minecraft.lifecycle.referenceNote":
@@ -98,7 +98,7 @@ export default {
   "games.minecraft.update.chooseFile": "Choose .mrpack file",
   "games.minecraft.update.restoreVersion": "Restore {version}",
   "games.minecraft.update.reviewNote":
-    "Review every file change before applying. Harbor keeps a separate copy of the previous instance.",
+    "Review every file change before applying. Frame keeps a separate copy of the previous instance.",
   "games.minecraft.update.changeVersion": "Change version",
   "games.minecraft.update.download": "Download",
   "games.minecraft.update.recoveryCopy": "Recovery copy",
@@ -198,7 +198,7 @@ export default {
     "Close a running Minecraft instance before starting another.",
   "games.minecraft.java.title": "Java for this instance",
   "games.minecraft.java.note": "This Minecraft version needs Java {version}.",
-  "games.minecraft.java.managed": "Install with Harbor",
+  "games.minecraft.java.managed": "Install with Frame",
   "games.minecraft.java.installed": "Use installed Java",
   "games.minecraft.java.manage": "Manage Java",
 
@@ -217,7 +217,7 @@ export default {
   "games.minecraft.java.invalidError": "Couldn’t verify this Java installation.",
   "games.minecraft.java.metadataError":
     "A compatible Java download couldn’t be verified. Try again.",
-  "games.minecraft.java.managedNote": "Harbor keeps this version with your Minecraft library.",
+  "games.minecraft.java.managedNote": "Frame keeps this version with your Minecraft library.",
   "games.minecraft.runtime.setup": "Game setup",
   "games.minecraft.runtime.note":
     "Install the official game files for this instance. Your worlds and mods stay in place.",
@@ -239,7 +239,7 @@ export default {
   "games.minecraft.runtime.metadataError":
     "These game files couldn’t be verified. Try again later.",
   "games.minecraft.runtime.legacyError":
-    "This version uses a setup or launch format Harbor does not support yet.",
+    "This version uses a setup or launch format Frame does not support yet.",
   "games.minecraft.runtime.loaderError": "This loader’s game setup format is not supported yet.",
   "games.minecraft.runtime.platformError": "Game setup isn’t supported on this system yet.",
   "games.minecraft.runtime.versionError":
@@ -249,7 +249,7 @@ export default {
   "games.minecraft.instances.note": "Separate worlds, mods and settings for every setup.",
   "games.minecraft.instances.import": "Import pack",
   "games.minecraft.instances.create": "Create instance",
-  "games.minecraft.instances.desktop": "Open Harbor desktop to create and manage local instances.",
+  "games.minecraft.instances.desktop": "Open Frame desktop to create and manage local instances.",
   "games.minecraft.instances.search": "Search your instances",
   "games.minecraft.instances.storage": "Storage folder",
   "games.minecraft.instances.chooseFolder": "Choose storage folder",
@@ -285,7 +285,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Loading Minecraft versions…",
   "games.minecraft.instances.added": "Added to your instances",
   "games.minecraft.instances.storageNote":
-    "Choose where to keep Minecraft instances. Each Harbor profile has its own folder here.",
+    "Choose where to keep Minecraft instances. Each Frame profile has its own folder here.",
   "games.minecraft.instances.isolated": "Installs into a new, separate instance.",
   "games.minecraft.instances.cancelling": "Cancelling…",
   "games.minecraft.instances.install": "Install pack files",
@@ -298,7 +298,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "Applying pack configuration…",
   "games.minecraft.instances.phase.done": "Files installed",
   "games.minecraft.instances.folderError":
-    "Choose an accessible local folder for this Harbor profile.",
+    "Choose an accessible local folder for this Frame profile.",
   "games.minecraft.instances.writeError":
     "Couldn’t write the instance. Check the folder’s permissions and available space.",
   "games.minecraft.instances.readError":
@@ -314,7 +314,7 @@ export default {
   "games.minecraft.instances.loaderError":
     "This pack uses an unrecognized or conflicting game loader.",
   "games.minecraft.instances.sourceError":
-    "This pack requires a download source Harbor doesn’t support.",
+    "This pack requires a download source Frame doesn’t support.",
   "games.minecraft.instances.limitError": "This pack or library exceeds the supported size limit.",
   "games.minecraft.instances.busyError":
     "Another pack operation is still running. Wait for it to finish or cancel it.",
@@ -368,9 +368,9 @@ export default {
   "games.minecraft.account.title": "Your Minecraft account",
   "games.minecraft.account.intro":
     "Connect Microsoft to see your Minecraft skin and capes, and apply your creations.",
-  "games.minecraft.account.desktop": "Open Harbor desktop to connect your Minecraft account.",
+  "games.minecraft.account.desktop": "Open Frame desktop to connect your Minecraft account.",
   "games.minecraft.account.setup":
-    "Microsoft sign-in isn’t configured for this Harbor build yet. You can still edit skins locally.",
+    "Microsoft sign-in isn’t configured for this Frame build yet. You can still edit skins locally.",
   "games.minecraft.account.codeNote": "Enter this code on Microsoft’s sign-in page.",
   "games.minecraft.account.copy": "Copy code",
   "games.minecraft.account.openMicrosoft": "Continue at Microsoft",
@@ -398,7 +398,7 @@ export default {
     "Microsoft or Xbox account settings prevent sign-in. Review the account’s age, family, or region settings.",
   "games.minecraft.account.skinError":
     "This skin or cape couldn’t be applied. Refresh the account and try again.",
-  "games.minecraft.account.storeError": "Harbor couldn’t save the account securely on this device.",
+  "games.minecraft.account.storeError": "Frame couldn’t save the account securely on this device.",
   "games.minecraft.account.error": "The account request failed. Please try again.",
   "games.minecraft.studio": "Skin studio",
   "games.minecraft.skinTitle": "Make it yours.",
@@ -431,7 +431,7 @@ export default {
   "games.minecraft.previewHint": "Drag to rotate · Scroll to zoom",
   "games.minecraft.editHint": "Arrow keys move between pixels. Enter paints. Ctrl / ⌘ Z undoes.",
   "games.minecraft.library": "Your skins",
-  "games.minecraft.localNote": "Saved on this device, for this Harbor profile.",
+  "games.minecraft.localNote": "Saved on this device, for this Frame profile.",
   "games.minecraft.new": "New skin",
   "games.minecraft.empty": "Import a skin or start painting. Your edits save here automatically.",
   "games.minecraft.delete": "Delete {name}",

@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "Đã cài: {version}",
   "games.mods.current": "Đã cài",
   "games.mods.versionNote":
-    "Chọn phiên bản tương thích. Harbor kiểm tra thay đổi và giữ lại phiên bản trước trên máy. Đóng Minecraft trước khi áp dụng.",
+    "Chọn phiên bản tương thích. Frame kiểm tra thay đổi và giữ lại phiên bản trước trên máy. Đóng Minecraft trước khi áp dụng.",
   "games.mods.applyChanges": "Áp dụng thay đổi",
   "games.mods.reviewChanges": "Xem lại thay đổi",
   "games.mods.previousVersion": "Bản trước: {version}",

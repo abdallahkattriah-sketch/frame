@@ -3,11 +3,11 @@ const plugins: Record<string, string> = {
   Repositories: "リポジトリ",
   "Installed plugins": "インストール済みのプラグイン",
   "Plugin repositories": "プラグインリポジトリ",
-  "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.":
-    "プラグインはデスクトップアプリで動作します。追加や管理はパソコンでHarborを開いて行ってください。",
+  "Plugins run in the desktop app. Open Frame on your computer to add and manage them.":
+    "プラグインはデスクトップアプリで動作します。追加や管理はパソコンでFrameを開いて行ってください。",
   "Use plugins": "プラグインを使う",
-  "Plugins are small scripts that look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "プラグインは、Harborが知らないサイトでストリームを探す小さなスクリプトです。ここにあるものはすべて、あなたが選んだリポジトリから自分でインストールしたものです。",
+  "Plugins are small scripts that look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "プラグインは、Frameが知らないサイトでストリームを探す小さなスクリプトです。ここにあるものはすべて、あなたが選んだリポジトリから自分でインストールしたものです。",
   "Ask every enabled plugin for streams when you press Play. Turn this off to pause them all without removing anything.":
     "再生を押したときに、有効なすべてのプラグインにストリームを問い合わせます。オフにすると、何も削除せずにすべてを一時停止します。",
   "Group by repository": "リポジトリごとにまとめる",
@@ -34,7 +34,7 @@ const plugins: Record<string, string> = {
   "v{version} available": "v{version}が利用可能",
   "Paused after {n} failures. Turn it back on to try again.":
     "{n}回失敗したため一時停止しました。再試行するには、もう一度オンにしてください。",
-  "Needs Harbor {version} or newer.": "Harbor {version}以降が必要です。",
+  "Needs Frame {version} or newer.": "Frame {version}以降が必要です。",
   "This file is not a stream plugin.": "このファイルはストリームプラグインではありません。",
   "Turned off by its repository.": "リポジトリによって無効化されています。",
   "Plugin files changed on disk. Reinstall it from its repository.":
@@ -75,15 +75,15 @@ const plugins: Record<string, string> = {
   "Removed {name}.": "{name}を削除しました。",
   "Updated {name} to v{version}.": "{name}をv{version}に更新しました。",
   "Reverted {name} to v{version}.": "{name}をv{version}に戻しました。",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
-    "信頼できるリポジトリのマニフェストリンクを貼り付けてください。HarborはHarbor向けのプラグインリポジトリもプロバイダースクリプトのリポジトリもそのまま読み取り、あなたが選ぶまで何もインストールしません。",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
+    "信頼できるリポジトリのマニフェストリンクを貼り付けてください。FrameはFrame向けのプラグインリポジトリもプロバイダースクリプトのリポジトリもそのまま読み取り、あなたが選ぶまで何もインストールしません。",
   "Repository link": "リポジトリのリンク",
-  "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.":
-    "GitHubのリンクならrawでなくても使えます。/manifest.jsonがなければHarborが補います。複数貼り付けるとまとめて追加できます。",
+  "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.":
+    "GitHubのリンクならrawでなくても使えます。/manifest.jsonがなければFrameが補います。複数貼り付けるとまとめて追加できます。",
   "Only https links are accepted.": "httpsのリンクのみ使用できます。",
   "That link did not answer.": "そのリンクは応答しませんでした。",
-  "This does not look like a plugin repository. Harbor expects { name, plugins } or a provider-script manifest with scrapers.":
-    "プラグインリポジトリではないようです。Harborは{ name, plugins }か、scrapersを含むプロバイダースクリプトのマニフェストを想定しています。",
+  "This does not look like a plugin repository. Frame expects { name, plugins } or a provider-script manifest with scrapers.":
+    "プラグインリポジトリではないようです。Frameは{ name, plugins }か、scrapersを含むプロバイダースクリプトのマニフェストを想定しています。",
   "This is a manga repository. Add it from the Manga page.":
     "これはマンガのリポジトリです。マンガページから追加してください。",
   "Already added.": "すでに追加されています。",
@@ -109,8 +109,8 @@ const plugins: Record<string, string> = {
   "Checksum did not match the manifest.": "チェックサムがマニフェストと一致しませんでした。",
   "Checking for updates": "更新の確認",
   "Check repositories daily": "リポジトリを毎日確認する",
-  "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.":
-    "1日1回、新しいバージョンを探してここに更新ボタンを表示します。Harborが勝手に更新をインストールすることはありません。",
+  "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.":
+    "1日1回、新しいバージョンを探してここに更新ボタンを表示します。Frameが勝手に更新をインストールすることはありません。",
   "Settings this plugin asked for. Stored on this computer only.":
     "このプラグインが求めた設定です。このパソコンにのみ保存されます。",
   "This plugin's settings form failed to load: {error}":
@@ -118,8 +118,8 @@ const plugins: Record<string, string> = {
   "{n} of {m} answered, {k} failed": "{m}件中{n}件が応答、{k}件が失敗",
   "Install all": "すべてインストール",
   "Installing {done} of {total}": "{total}件中{done}件をインストール中",
-  "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.":
-    "Harborが知らないサイトでストリーム、マンガ、本を探す小さなスクリプトです。あなたが選んだリポジトリからインストールします。",
+  "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.":
+    "Frameが知らないサイトでストリーム、マンガ、本を探す小さなスクリプトです。あなたが選んだリポジトリからインストールします。",
   "Remove all": "すべて削除",
 };
 

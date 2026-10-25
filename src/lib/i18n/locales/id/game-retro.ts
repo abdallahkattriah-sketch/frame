@@ -19,7 +19,7 @@ export default {
   "games.retro.controls": "Kontrol",
   "games.retro.saveExit": "Simpan & keluar",
   "games.retro.popout": "Jendela terpisah",
-  "games.retro.dock": "Kembali ke Harbor",
+  "games.retro.dock": "Kembali ke Frame",
   "games.retro.mute": "Bisukan",
   "games.retro.unmute": "Aktifkan suara",
   "games.retro.volume": "Volume",
@@ -28,7 +28,7 @@ export default {
   "games.retro.smooth": "Halus",
   "games.retro.fullscreen": "Layar penuh",
   "games.retro.exitFullscreen": "Keluar dari layar penuh",
-  "games.retro.playInside": "Main di Harbor",
+  "games.retro.playInside": "Main di Frame",
   "games.retro.setup":
     "Pasang pemutar {system} sekali, lalu main di sini. Gim tetap di perangkat ini.",
   "games.retro.install": "Pasang dan main · {size} MB",

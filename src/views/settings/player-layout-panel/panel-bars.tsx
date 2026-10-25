@@ -72,7 +72,7 @@ export function ThemeTabs({ value, onChange }: { value: ThemeId; onChange: (v: T
       desc={
         value === "stremio"
           ? t("Familiar Stremio button order.")
-          : t("Harbor's native player chrome.")
+          : t("Frame's native player chrome.")
       }
       tip={t(
         "Each style keeps its own arrangement, icons and profiles, so switching back and forth never loses work.",

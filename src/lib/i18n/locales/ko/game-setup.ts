@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "설치 중 Harbor가 다시 시작되었습니다. 설치된 게임 파일을 확인하여 마무리하세요.",
+    "설치 중 Frame가 다시 시작되었습니다. 설치된 게임 파일을 확인하여 마무리하세요.",
   "games.setup.state.starting": "설치 프로그램 시작 중",
   "games.setup.state.waiting": "설치 프로그램 대기 중",
   "games.setup.startingNote": "설치 프로그램을 여는 중…",
@@ -38,7 +38,7 @@ export default {
   "games.setup.viewProgress": "설치 상태 보기",
   "games.setup.showInstaller": "설치 프로그램 표시",
   "games.setup.setup_window":
-    "설치 프로그램 창을 사용할 수 없습니다. Harbor는 계속 설치를 추적하고 있습니다.",
+    "설치 프로그램 창을 사용할 수 없습니다. Frame는 계속 설치를 추적하고 있습니다.",
   "games.setup.elapsed": "경과 시간",
   "games.setup.io": "설치 프로그램 I/O",
   "games.setup.ioNote":
@@ -74,7 +74,7 @@ export default {
   "games.setup.state.running": "설치 프로그램 실행 중",
   "games.setup.state.finished": "설치 프로그램 종료됨 — 게임 파일을 선택하세요",
   "games.setup.state.failed": "설치 프로그램이 정상적으로 완료되지 않았습니다",
-  "games.setup.state.interrupted": "설치를 확인하세요 — 실행 중에 Harbor가 종료되었습니다",
+  "games.setup.state.interrupted": "설치를 확인하세요 — 실행 중에 Frame가 종료되었습니다",
   "games.setup.state.external": "설치 프로그램이 다른 창에서 열렸습니다",
   "games.setup.exitCode": "종료 코드: {code}",
   "games.setup.unavailable":
@@ -99,9 +99,9 @@ export default {
   "games.setup.destination": "설치 위치",
   "games.setup.chooseDestination": "설치 폴더 선택",
   "games.setup.managedNote":
-    "Harbor가 여기에 게임을 설치하고 게임 파일을 찾아 라이브러리에 추가합니다.",
+    "Frame가 여기에 게임을 설치하고 게임 파일을 찾아 라이브러리에 추가합니다.",
   "games.setup.managedRunning":
-    "게임을 설치하고 있습니다. 이 창을 닫아도 Harbor가 계속 진행 상황을 확인합니다.",
+    "게임을 설치하고 있습니다. 이 창을 닫아도 Frame가 계속 진행 상황을 확인합니다.",
   "games.setup.detected": "게임 파일을 자동으로 찾았습니다",
   "games.setup.chooseDetected": "추가할 게임 파일을 선택하세요.",
   "games.setup.activity": "파일 {count}개, {size}",
@@ -116,7 +116,7 @@ export default {
   "games.setup.setup_engine":
     "이 설치 프로그램은 별도 창에서 실행해야 합니다. 계속하려면 '설치 프로그램 실행'을 선택하세요.",
   "games.setup.setup_candidates":
-    "설치가 끝났지만 Harbor가 설치된 파일을 읽지 못했습니다. 설치 폴더를 다시 검색하세요.",
+    "설치가 끝났지만 Frame가 설치된 파일을 읽지 못했습니다. 설치 폴더를 다시 검색하세요.",
   "games.setup.state.installing": "설치 중",
   "games.setup.externalAction": "설치 프로그램 실행",
   "games.setup.files": "다운로드된 파일",

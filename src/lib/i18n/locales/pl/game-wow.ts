@@ -10,22 +10,22 @@ export default {
   "games.wow.manager.errorIdentity":
     "Zainstalowane foldery nie pasują do pakietu autora. Przeskanuj ponownie i sprawdź źródło dodatku.",
   "games.wow.manager.importInstalled": "Importuj zainstalowane dodatki",
-  "games.wow.manager.import": "Zarządzaj przez Harbor",
+  "games.wow.manager.import": "Zarządzaj przez Frame",
   "games.wow.manager.importScope":
     "Zainstalowane dodatki z identyfikatorem WoWInterface. Pozostałe zostają na liście zainstalowanych.",
   "games.wow.manager.importNote":
-    "Zachowaj zainstalowane pliki. Harbor sprawdza pakiet autora i zapisuje poprzednią wersję przed przyszłą aktualizacją lub usunięciem.",
+    "Zachowaj zainstalowane pliki. Frame sprawdza pakiet autora i zapisuje poprzednią wersję przed przyszłą aktualizacją lub usunięciem.",
   "games.wow.manager.keepVersion": "Zachowaj zainstalowaną wersję {version}",
   "games.wow.manager.keep": "Zachowaj",
-  "games.wow.manager.importSuccess": "Ten dodatek jest teraz zarządzany przez Harbor.",
+  "games.wow.manager.importSuccess": "Ten dodatek jest teraz zarządzany przez Frame.",
 
   "games.wow.manager.browse": "Znajdź dodatki",
-  "games.wow.manager.managed": "Zarządzane przez Harbor",
+  "games.wow.manager.managed": "Zarządzane przez Frame",
   "games.wow.manager.backups": "Kopie zapasowe",
   "games.wow.manager.catalogNote":
     "Przeglądaj WoWInterface. Zgodność z zainstalowanym WoW jest sprawdzana przed wprowadzeniem zmian.",
   "games.wow.manager.managedNote":
-    "Tutaj zmienisz tylko dodatki zainstalowane przez Harbor. Pozostałe są nadal na liście zainstalowanych.",
+    "Tutaj zmienisz tylko dodatki zainstalowane przez Frame. Pozostałe są nadal na liście zainstalowanych.",
   "games.wow.manager.category": "Kategoria",
   "games.wow.manager.allCategories": "Wszystkie kategorie",
   "games.wow.manager.popular": "Pobrania miesięczne",
@@ -38,7 +38,7 @@ export default {
   "games.wow.manager.categoriesError":
     "Kategorie są niedostępne. Nadal możesz wyszukiwać wszystkie dodatki.",
   "games.wow.manager.partial": "Brakuje części danych dostawcy. Wyniki mogą być niepełne.",
-  "games.wow.manager.emptyManaged": "Brak dodatków zarządzanych przez Harbor.",
+  "games.wow.manager.emptyManaged": "Brak dodatków zarządzanych przez Frame.",
   "games.wow.manager.emptyBackups": "Nie zapisano wcześniejszych wersji.",
   "games.wow.manager.reviewNote":
     "Najpierw sprawdź pakiet i zmiany folderów. Zamknij WoW przed sprawdzeniem lub zastosowaniem zmian.",
@@ -60,13 +60,13 @@ export default {
   "games.wow.manager.errorCompatibility":
     "Pakiet nie pasuje do zainstalowanej edycji lub wersji WoW.",
   "games.wow.manager.errorUnmanaged":
-    "Te foldery zainstalowano poza Harbor. Nie można ich tutaj nadpisać.",
+    "Te foldery zainstalowano poza Frame. Nie można ich tutaj nadpisać.",
   "games.wow.manager.errorChanged": "Pliki się zmieniły lub wymagają uwagi. Przeskanuj ponownie.",
   "games.wow.manager.errorDependency":
     "Brakuje wymaganych zależności lub inny dodatek potrzebuje tych plików.",
   "games.wow.manager.errorExpired": "Przegląd wygasł. Sprawdź zmiany ponownie.",
   "games.wow.manager.errorDesktop":
-    "Zarządzanie dodatkami wymaga aktualnej aplikacji Harbor na Windows.",
+    "Zarządzanie dodatkami wymaga aktualnej aplikacji Frame na Windows.",
 
   "games.wow.addons.screenshots": "Zrzuty ekranu autora",
   "games.wow.addons.screenshotsUnavailable": "Nie udało się wczytać zrzutów ekranu autora.",

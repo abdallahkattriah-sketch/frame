@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Dấu vân tay các tệp · SHA-256",
   "games.patch.localNote": "Trên thiết bị của bạn · BPS · IPS · UPS · Tối đa 256 MB",
   "games.patch.desktop":
-    "Áp dụng bản vá trong ứng dụng Harbor trên Windows, macOS hoặc Linux. Tệp vẫn nằm trên thiết bị và trò chơi gốc được giữ nguyên.",
+    "Áp dụng bản vá trong ứng dụng Frame trên Windows, macOS hoặc Linux. Tệp vẫn nằm trên thiết bị và trò chơi gốc được giữ nguyên.",
   "games.patch.done": "Sẵn sàng cho cuộc phiêu lưu mới",
   "games.patch.preserved": "Đã lưu bản sao được vá. Trò chơi gốc và bản vá không thay đổi.",
   "games.patch.patch_source_mismatch":
@@ -38,7 +38,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Một tệp đã chọn bị thay đổi sau khi xác minh. Hãy kiểm tra lại bản vá trước khi lưu.",
   "games.patch.patch_output_exists":
-    "Đã có tệp ở vị trí này. Hãy chọn tên khác; Harbor không ghi đè tệp hiện có.",
+    "Đã có tệp ở vị trí này. Hãy chọn tên khác; Frame không ghi đè tệp hiện có.",
   "games.patch.patch_read_failed":
     "Không thể đọc một tệp đã chọn. Hãy kiểm tra xem tệp còn dùng được không rồi chọn lại.",
   "games.patch.patch_write_failed":
@@ -75,9 +75,9 @@ export default {
   "games.atlas.sort.newest": "Mới nhất",
   "games.atlas.sort.oldest": "Cũ nhất",
   "games.hub.stepPatch":
-    "Chọn trò chơi gốc và bản vá BPS, IPS hoặc UPS. Harbor lưu một bản sao riêng.",
+    "Chọn trò chơi gốc và bản vá BPS, IPS hoặc UPS. Frame lưu một bản sao riêng.",
   "games.patch.description":
-    "Chọn trò chơi gốc và bản vá BPS, IPS hoặc UPS. Harbor lưu một bản sao riêng.",
+    "Chọn trò chơi gốc và bản vá BPS, IPS hoặc UPS. Frame lưu một bản sao riêng.",
   "games.patch.choosePatch": "Chọn bản vá (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Tệp này không phải bản vá BPS, IPS hoặc UPS được hỗ trợ.",
   "games.discovery.viewGame": "Xem trò chơi",

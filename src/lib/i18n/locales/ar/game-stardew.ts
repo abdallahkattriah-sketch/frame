@@ -19,7 +19,7 @@ export default {
   "games.stardew.refresh": "تحديث التعديلات",
 
   "games.stardew.import": "استيراد ملف ZIP للإضافة",
-  "games.stardew.manage": "تُدار عبر Harbor",
+  "games.stardew.manage": "تُدار عبر Frame",
   "games.stardew.manageNote":
     "استورد إضافة SMAPI محمّلة لإدارتها هنا. لتحديثها، استورد ملف ZIP الأحدث لها.",
   "games.stardew.previous": "الإصدارات السابقة",
@@ -38,7 +38,7 @@ export default {
   "games.stardew.dependentsError":
     "تتطلب إضافة مفعّلة هذا الإصدار. عطّلها أولاً أو اختر إصداراً متوافقاً.",
   "games.stardew.unmanagedError":
-    "هذه الإضافة موجودة بالفعل خارج سجلات Harbor. انقل النسخة الموجودة جانباً قبل الاستيراد.",
+    "هذه الإضافة موجودة بالفعل خارج سجلات Frame. انقل النسخة الموجودة جانباً قبل الاستيراد.",
   "games.stardew.archiveError":
     "اختر ZIP يحتوي على مجلد إضافة جاهزة واحد، حتى 32 ميغابايت (128 ميغابايت بعد الاستخراج). ملفات الشفرة المصدرية ليست إضافات قابلة للتثبيت.",
   "games.stardew.moreFiles": "{count} ملفات أخرى",

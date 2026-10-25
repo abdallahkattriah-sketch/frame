@@ -115,7 +115,7 @@ export function RoyalTopbar() {
                 className="hidden text-[18px] font-medium uppercase leading-none tracking-[0.14em] text-ink lg:inline"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                Harbor
+                Frame
               </span>
             </button>
 

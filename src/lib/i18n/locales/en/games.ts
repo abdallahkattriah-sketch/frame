@@ -7,7 +7,7 @@ export default {
   "games.media.exploreNote": "Films and series from the worlds you play.",
   "games.torrent.share.title": "Share torrent",
   "games.torrent.share.note":
-    "Share verified files with peers. Stops at either limit or when Harbor closes. Stop sharing before changing the files.",
+    "Share verified files with peers. Stops at either limit or when Frame closes. Stop sharing before changing the files.",
   "games.torrent.share.upload": "Upload limit (KB/s)",
   "games.torrent.share.ratio": "Share ratio (1–10)",
   "games.torrent.share.minutes": "Time limit (minutes)",
@@ -34,13 +34,12 @@ export default {
     "On Linux, configure Wine or Proton in your local library. Compatibility, including anti-cheat, depends on the game. For Steam games, use Steam's compatibility settings.",
   "games.sources.platform.other": "{platform} build · not native on {host}",
   "games.sources.platform.otherNote":
-    "Choose a build for your operating system. Harbor cannot install or run this package natively on this device.",
+    "Choose a build for your operating system. Frame cannot install or run this package natively on this device.",
   "games.sources.platform.unknown": "Platform not specified",
   "games.sources.platform.unknownNote":
     "This source does not identify the package's operating system. Check the publisher or source before downloading.",
   "games.sources.platform.browse": "{platform} build",
-  "games.sources.platform.browseNote":
-    "Use Harbor desktop to download and manage local game files.",
+  "games.sources.platform.browseNote": "Use Frame desktop to download and manage local game files.",
   "games.selection.start": "Select",
   "games.selection.partial":
     "Updated {count} of {total} games. The remaining games are still selected; try again.",
@@ -225,7 +224,7 @@ export default {
   "games.media.series": "Television",
   "games.media.book": "Book",
   "games.media.error": "The story connections couldn't load. Try them again.",
-  "games.media.open": "Open {name} in Harbor",
+  "games.media.open": "Open {name} in Frame",
   "games.media.external": "Open {name} on its catalog site",
   "games.media.evidence": "View this connection on Wikidata",
   "games.media.relation.source": "The game's source material",
@@ -273,7 +272,7 @@ export default {
   "games.sources.search": "Search this catalog",
   "games.sources.add": "Add source",
   "games.sources.url": "Catalog link",
-  "games.sources.formatNote": "Accepts Harbor catalogs and community download-source JSON links.",
+  "games.sources.formatNote": "Accepts Frame catalogs and community download-source JSON links.",
   "games.sources.checking": "Reading catalog…",
   "games.sources.review": "Review source",
   "games.sources.more": "Show more ({count} remaining)",
@@ -306,7 +305,7 @@ export default {
   "games.download.add": "Add download",
   "games.download.desktopTitle": "Make room for what's next",
   "games.download.desktopNote":
-    "Download and manage game files in Harbor for Windows, macOS or Linux.",
+    "Download and manage game files in Frame for Windows, macOS or Linux.",
   "games.download.filter.all": "All transfers",
   "games.download.filter.active": "In progress",
   "games.download.filter.complete": "Downloaded",
@@ -335,7 +334,7 @@ export default {
   "games.download.checksum": "Check against a publisher checksum",
   "games.download.hashPlaceholder": "64-character SHA-256",
   "games.download.hashNote":
-    "If the publisher provides a SHA-256 checksum, paste it here. Harbor will compare the completed file before marking it downloaded.",
+    "If the publisher provides a SHA-256 checksum, paste it here. Frame will compare the completed file before marking it downloaded.",
   "games.download.chooseDestination": "Choose destination",
   "games.download.failed": "This download couldn't be started. Please try again.",
   "games.download.state.queued": "Queued",
@@ -350,7 +349,7 @@ export default {
   "games.download.storage.estimate":
     "Some existing files haven't been checked. The space needed may be lower.",
   "games.download.storage.unknown": "Files with unknown size: {count}",
-  "games.download.storage.other": "{size} reserved by other Harbor work",
+  "games.download.storage.other": "{size} reserved by other Frame work",
   "games.download.storage.shortfall": "{size} more space needed",
   "games.download.state.retrying": "Retrying connection",
   "games.download.state.downloading": "Downloading",
@@ -369,7 +368,7 @@ export default {
   "games.download.transfer_write":
     "The file couldn't be written. Check available storage and folder permissions.",
   "games.download.transfer_exists":
-    "A file already exists at this destination. Harbor hasn't replaced it.",
+    "A file already exists at this destination. Frame hasn't replaced it.",
   "games.download.transfer_publish":
     "The finished file couldn't be moved into place. Keep the drive connected and retry.",
   "games.download.transfer_range_restart":
@@ -399,7 +398,7 @@ export default {
   "games.download.transfer_state": "The download is changing state. Please try again in a moment.",
   "games.download.transfer_stopped": "The transfer stopped.",
   "games.download.transfer_interrupted":
-    "Harbor closed during this transfer. Resume when you're ready.",
+    "Frame closed during this transfer. Resume when you're ready.",
   "games.download.transfer_timeout": "The source stopped responding. Resume to try again.",
   "games.download.transfer_changed":
     "The source file changed while paused. Use a fresh download link.",
@@ -409,7 +408,7 @@ export default {
   "games.match.title": "Find artwork & details",
   "games.match.search": "Search this platform",
   "games.match.note":
-    "Choose the edition that matches your file. Harbor keeps the original file and filename.",
+    "Choose the edition that matches your file. Frame keeps the original file and filename.",
   "games.match.empty": "Try the game title without region or revision labels.",
   "games.match.remove": "Remove match",
   "games.match.source": "Artwork & details from IGDB",
@@ -435,14 +434,14 @@ export default {
   "games.emulation.hideSetup": "Hide setup",
   "games.emulation.desktopTitle": "Your collection belongs here",
   "games.emulation.desktopNote":
-    "Use Harbor on Windows, macOS or Linux to connect your game folders and installed emulators. Discovery and your saved games are available here too.",
+    "Use Frame on Windows, macOS or Linux to connect your game folders and installed emulators. Discovery and your saved games are available here too.",
   "games.emulation.gameCount": "{count} games in your library",
   "games.emulation.addFolder": "Add game folder",
   "games.emulation.importing": "Reading your games…",
   "games.emulation.recent": "Last played here",
   "games.emulation.empty": "Make room for your favorites",
   "games.emulation.emptyNote":
-    "Add a folder of your games. Harbor also checks subfolders. Supported files: {formats}.",
+    "Add a folder of your games. Frame also checks subfolders. Supported files: {formats}.",
   "games.emulation.unavailableGame": "Files unavailable · Check the folder",
   "games.emulation.discs": "{count} discs",
   "games.emulation.running": "Running",
@@ -456,7 +455,7 @@ export default {
   "games.emulation.skipped": "{count} items couldn't be read.",
   "games.emulation.removeFolder": "Disconnect {name}",
   "games.emulation.removeNote":
-    "Disconnecting a folder only removes it from Harbor. Your files stay where they are.",
+    "Disconnecting a folder only removes it from Frame. Your files stay where they are.",
   "games.emulation.choosePlayer": "A player for this platform",
   "games.emulation.setupNote":
     "Connect an emulator you already use. Its controls, saves and settings remain managed by that emulator.",
@@ -482,7 +481,7 @@ export default {
   "games.emulation.emulation_missing_file":
     "A selected file is missing. Reconnect the drive or choose its new location.",
   "games.emulation.emulation_read_failed":
-    "Harbor couldn't read a selected file. Check its location and permissions.",
+    "Frame couldn't read a selected file. Check its location and permissions.",
   "games.emulation.emulation_bad_manifest":
     "This disc playlist has missing, invalid or unsupported file references. Check that its discs are inside the connected game folder.",
   "games.emulation.emulation_system": "This platform doesn't have a local player profile yet.",
@@ -501,7 +500,7 @@ export default {
   "games.emulation.emulation_game_type":
     "This game isn't a supported file inside its connected folder. Rescan or choose the matching platform.",
   "games.emulation.emulation_busy": "Another launch is being prepared. Try again in a moment.",
-  "games.emulation.emulation_already_running": "This game is already running through Harbor.",
+  "games.emulation.emulation_already_running": "This game is already running through Frame.",
   "games.emulation.emulation_launch_failed":
     "The emulator couldn't be started. Check that it still opens normally and choose its application again.",
   "games.emulation.emulation_exited_early":
@@ -515,7 +514,7 @@ export default {
   "games.patch.eyebrow": "Make something new",
   "games.patch.title": "Your game. A new adventure.",
   "games.patch.description":
-    "Choose a base game and a BPS or IPS patch. Harbor prepares a new copy and keeps your original untouched.",
+    "Choose a base game and a BPS or IPS patch. Frame prepares a new copy and keeps your original untouched.",
   "games.patch.havePatch": "Already have a patch and its base game?",
   "games.patch.gameFile": "Base game",
   "games.patch.patchFile": "Patch file",
@@ -536,7 +535,7 @@ export default {
   "games.patch.fingerprints": "File fingerprints · SHA-256",
   "games.patch.localNote": "On your device · BPS · IPS · UPS · Up to 256 MB",
   "games.patch.desktop":
-    "Apply patches in the Harbor desktop app on Windows, macOS or Linux. Your files stay on your device, and the original game is preserved.",
+    "Apply patches in the Frame desktop app on Windows, macOS or Linux. Your files stay on your device, and the original game is preserved.",
   "games.patch.done": "Ready for a new adventure",
   "games.patch.preserved": "Your patched copy is saved. The original game and patch are unchanged.",
   "games.patch.patch_source_mismatch":
@@ -550,7 +549,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "A selected file changed after verification. Check the patch again before saving.",
   "games.patch.patch_output_exists":
-    "A file already exists there. Choose another filename; Harbor won't replace an existing file.",
+    "A file already exists there. Choose another filename; Frame won't replace an existing file.",
   "games.patch.patch_read_failed":
     "One of the selected files couldn't be read. Check that it's still available and choose it again.",
   "games.patch.patch_write_failed":
@@ -673,9 +672,9 @@ export default {
   "games.library.yourSpace": "Your games, together",
   "games.library.note": "Games found on this device · Steam",
   "games.library.search": "Search your library",
-  "games.library.desktopTitle": "Your library lives in Harbor.",
+  "games.library.desktopTitle": "Your library lives in Frame.",
   "games.library.desktopNote":
-    "Open Harbor on your computer to find your installed Steam games and launch them from one place.",
+    "Open Frame on your computer to find your installed Steam games and launch them from one place.",
   "games.library.findInstalls": "Find installed games",
   "games.library.launchSteam": "Play through Steam",
   "games.library.scanning": "Finding your Steam games…",
@@ -686,7 +685,7 @@ export default {
   "games.library.noSteam": "Steam hasn't been found yet",
   "games.library.noSteamNote": "Install Steam and add a game, then rescan your library.",
   "games.library.empty": "Your next session starts here",
-  "games.library.emptyNote": "Install a game through Steam, then rescan to bring it into Harbor.",
+  "games.library.emptyNote": "Install a game through Steam, then rescan to bring it into Frame.",
   "games.library.recentPick": "Back to your world",
   "games.library.installed": "Ready to play",
   "games.library.updating": "Install incomplete",
@@ -765,7 +764,7 @@ export default {
   "games.languages": "Languages",
   "games.metadataSource":
     "Game information and artwork provided by Steam and the game's publisher.",
-  "games.harborSelects": "Harbor selects",
+  "games.harborSelects": "Frame selects",
   "games.featuredSelection": "Featured selection",
   "games.startSomething": "Featured games",
   "games.featuredNote": "Choose a game to explore.",
@@ -775,9 +774,9 @@ export default {
   "games.pathsToPlay": "Follow your curiosity",
   "games.whatPullsYouIn": "Explore collections",
   "games.collectionNote": "Explore by the way you like to play.",
-  "games.harborCollection": "A Harbor collection",
+  "games.harborCollection": "A Frame collection",
   "games.collectionGames": "In this collection",
-  "games.curatedNote": "Curated by Harbor · Details from Steam",
+  "games.curatedNote": "Curated by Frame · Details from Steam",
   "games.collectionLoadError":
     "Some games couldn't be loaded. Try again to complete this collection.",
   "games.collection.worlds.eyebrow": "The call of the unknown",
@@ -817,7 +816,7 @@ export default {
   "games.custom.add": "Add a game",
   "games.custom.desktopTitle": "Bring your installed games together",
   "games.custom.desktopNote":
-    "Use the Harbor desktop app to add games from your computer and launch them here.",
+    "Use the Frame desktop app to add games from your computer and launch them here.",
   "games.custom.visibility": "Game visibility",
   "games.custom.visible": "In your library",
   "games.custom.hidden": "Hidden games",
@@ -854,7 +853,7 @@ export default {
   "games.custom.compatibility": "Launch with",
   "games.custom.native": "Direct launch",
   "games.custom.compatNote":
-    "Choose an installed compatibility application and a separate folder for this game's Windows settings and saves. Harbor uses these choices only when you press Play.",
+    "Choose an installed compatibility application and a separate folder for this game's Windows settings and saves. Frame uses these choices only when you press Play.",
   "games.custom.advanced": "Launch options",
   "games.custom.arguments": "Arguments",
   "games.custom.argumentsNote":
@@ -868,13 +867,13 @@ export default {
   "games.custom.artwork": "Choose cover image",
   "games.custom.resetArt": "Use catalog artwork",
   "games.custom.lastLaunch": "Last launched",
-  "games.custom.measuredTime": "Measured in Harbor",
+  "games.custom.measuredTime": "Measured in Frame",
   "games.custom.minutes": "{count} min",
   "games.custom.historyNote":
-    "Counts completed processes launched while Harbor is open. A separate launcher may close before its game, so this can differ from the game's own playtime.",
+    "Counts completed processes launched while Frame is open. A separate launcher may close before its game, so this can differ from the game's own playtime.",
   "games.custom.remove": "Remove from library",
   "games.custom.removeNote":
-    "Remove {name} and its launch history from Harbor? The game, artwork files, compatibility folder, and save backups stay on your computer.",
+    "Remove {name} and its launch history from Frame? The game, artwork files, compatibility folder, and save backups stay on your computer.",
   "games.custom.saveNote": "Saving settings doesn't launch the game. Press Play when you're ready.",
   "games.custom.saveChanges": "Save changes",
   "games.custom.addLibrary": "Add to library",
@@ -905,9 +904,9 @@ export default {
   "games.custom.launch_config":
     "These launch settings couldn't be read. Your game files are untouched.",
   "games.custom.launch_store":
-    "Harbor couldn't read this local library. Existing entries have been kept.",
+    "Frame couldn't read this local library. Existing entries have been kept.",
   "games.custom.launch_store_write":
-    "Harbor couldn't save this library change. The previous entry has been kept.",
+    "Frame couldn't save this library change. The previous entry has been kept.",
   "games.custom.launch_removed": "This game was removed from the library in another window.",
   "games.custom.launch_limit":
     "This local library reached its storage limit. It supports up to 1,000 games and 1,000 recent sessions.",
@@ -984,16 +983,16 @@ export default {
   "games.account.synced": "Last synced {date}",
   "games.account.cached": "Saved library from {date} · reconnect to update",
   "games.account.intro":
-    "Connect your Steam profile with a personal Web API key. Harbor can then read your library and achievements while Steam continues to handle your games and account.",
+    "Connect your Steam profile with a personal Web API key. Frame can then read your library and achievements while Steam continues to handle your games and account.",
   "games.account.profile": "Steam profile link or SteamID64",
   "games.account.key": "Personal Steam Web API key",
   "games.account.getKey": "Get your key on Steam",
   "games.account.remember": "Remember on this device",
   "games.account.privacy":
-    "Your key goes directly to Steam over an encrypted connection. Harbor only reads account information. It never asks for your Steam password.",
+    "Your key goes directly to Steam over an encrypted connection. Frame only reads account information. It never asks for your Steam password.",
   "games.account.visibilityNote":
     "Steam's profile and game-details privacy settings determine which information is available. A private library won't be shown as an empty one.",
-  "games.account.localOnly": "This connection belongs to the current Harbor profile.",
+  "games.account.localOnly": "This connection belongs to the current Frame profile.",
   "games.account.connecting": "Connecting…",
   "games.account.disconnect": "Disconnect",
   "games.account.disconnectNote":
@@ -1037,11 +1036,11 @@ export default {
   "games.account.revealSecrets": "Reveal secret achievements",
   "games.account.hideSecrets": "Hide secret achievements",
   "games.account.steam_account_profile":
-    "This Harbor profile couldn't be identified. Reopen Games and try again.",
+    "This Frame profile couldn't be identified. Reopen Games and try again.",
   "games.account.steam_account_store":
     "The saved Steam connection couldn't be read or updated. Existing account data has been kept.",
   "games.account.steam_account_limit":
-    "Steam returned more account data than Harbor can safely load at once.",
+    "Steam returned more account data than Frame can safely load at once.",
   "games.account.steam_account_id":
     "Enter a SteamID64 or a full steamcommunity.com profile link for an existing account.",
   "games.account.steam_account_key":
@@ -1051,7 +1050,7 @@ export default {
   "games.account.steam_account_rate":
     "Steam is receiving too many requests. Wait a moment before trying again.",
   "games.account.steam_account_response":
-    "Steam returned account data Harbor couldn't read. The previous snapshot has been kept.",
+    "Steam returned account data Frame couldn't read. The previous snapshot has been kept.",
   "games.account.steam_account_busy": "A Steam account request is already running.",
   "games.account.steam_account_disconnected": "Reconnect this Steam account to refresh its data.",
   "games.account.steam_achievements_private":
@@ -1090,7 +1089,7 @@ export default {
   "games.torrent.uploadLimit": "Upload limit",
   "games.torrent.unlimited": "No limit",
   "games.torrent.sharingNote":
-    "BitTorrent shares pieces while downloading. Harbor stops sharing when your selected files are complete. Two torrents can run at once; the rest wait in order.",
+    "BitTorrent shares pieces while downloading. Frame stops sharing when your selected files are complete. Two torrents can run at once; the rest wait in order.",
   "games.torrent.identity": "Torrent identity",
   "games.torrent.private": "This private torrent uses its own trackers.",
   "games.torrent.selection": "{count} selected · {size}",
@@ -1101,7 +1100,7 @@ export default {
   "games.torrent.bandwidth": "Speed limits",
   "games.torrent.bandwidthValue": "Download: {down} · Upload: {up}",
   "games.torrent.keepNote":
-    "Removing this transfer keeps its downloaded files. Unfinished transfers stay paused after restarting Harbor.",
+    "Removing this transfer keeps its downloaded files. Unfinished transfers stay paused after restarting Frame.",
   "games.torrent.remove": "Remove transfer · keep files",
   "games.torrent.state.queued": "In line",
   "games.torrent.state.checking": "Checking pieces",
@@ -1115,12 +1114,12 @@ export default {
     "This torrent has an unsafe or conflicting filename. No files were downloaded.",
   "games.torrent.torrent_read":
     "The torrent file couldn't be read. Choose it again and check its permissions.",
-  "games.torrent.torrent_limit": "This torrent or transfer list exceeds Harbor's current limits.",
+  "games.torrent.torrent_limit": "This torrent or transfer list exceeds Frame's current limits.",
   "games.torrent.torrent_metadata":
     "The torrent metadata is incomplete, damaged, or has changed. Review the source again.",
   "games.torrent.torrent_selection": "Select at least one non-empty file to download.",
   "games.torrent.torrent_store":
-    "Harbor couldn't save the transfer state. Check available space and permissions.",
+    "Frame couldn't save the transfer state. Check available space and permissions.",
   "games.torrent.torrent_destination":
     "The destination is unavailable or its files have changed. Check the folder before resuming.",
   "games.torrent.torrent_bandwidth":
@@ -1160,7 +1159,7 @@ export default {
   "games.mods.setupNote":
     "Choose the mods folder of an existing Minecraft Java instance. Its Minecraft version and installed loader must match these selections. Close the game before changing mods.",
   "games.mods.desktopNote":
-    "Browse here; use Harbor for desktop to connect a Minecraft mods folder and install compatible files.",
+    "Browse here; use Frame for desktop to connect a Minecraft mods folder and install compatible files.",
   "games.mods.view": "Mod view",
   "games.mods.browse": "Find mods",
   "games.mods.installed": "Your setup",
@@ -1181,14 +1180,14 @@ export default {
   "games.mods.removeConfirm": "Remove this managed file?",
   "games.mods.noneInstalled": "Your next change starts here",
   "games.mods.managedNote":
-    "Mods installed through Harbor appear here. Existing mods and game settings stay in place.",
+    "Mods installed through Frame appear here. Existing mods and game settings stay in place.",
   "games.mods.projectPage": "Project page",
   "games.mods.ready": "Your setup is ready",
   "games.mods.readyNote":
-    "The files and their declared mod dependencies are checked and installed. Use your Minecraft launcher with a compatible Fabric Loader and Java runtime; Harbor doesn't verify those runtime versions.",
+    "The files and their declared mod dependencies are checked and installed. Use your Minecraft launcher with a compatible Fabric Loader and Java runtime; Frame doesn't verify those runtime versions.",
   "games.mods.reviewTitle": "Files to add",
   "games.mods.verifiedNote":
-    "Each file is checked against its published SHA-512 hash. Harbor keeps a record so you can disable or remove it later.",
+    "Each file is checked against its published SHA-512 hash. Frame keeps a record so you can disable or remove it later.",
   "games.mods.optionalNote":
     "{count} optional dependencies are listed by these projects. They are not added automatically.",
   "games.mods.version": "Compatible version",
@@ -1197,14 +1196,14 @@ export default {
   "games.mods.alreadyInstalled":
     "This project is already managed in Your setup. Remove its existing version before installing another.",
   "games.mods.reviewNote":
-    "Review checks the published release, required projects, and destination. After downloading, Harbor also checks the JARs' own dependency rules before installing any files. Your launcher manages Fabric Loader and Java requirements.",
+    "Review checks the published release, required projects, and destination. After downloading, Frame also checks the JARs' own dependency rules before installing any files. Your launcher manages Fabric Loader and Java requirements.",
   "games.mods.resolving": "Checking compatibility and dependencies…",
   "games.mods.installing": "Downloading and checking files…",
   "games.mods.footer": "Files from Modrinth. No game or installer opens automatically.",
   "games.mods.review": "Review installation",
   "games.mods.install": "Add to this setup",
   "games.mods.error.profile":
-    "This mods folder belongs to another Harbor profile. Choose a different folder.",
+    "This mods folder belongs to another Frame profile. Choose a different folder.",
   "games.mods.error.request": "That mod request is not valid. Choose the project again.",
   "games.mods.error.environment":
     "This folder uses a different Minecraft version or loader. Select its matching workspace, or choose another folder.",
@@ -1220,13 +1219,13 @@ export default {
   "games.mods.error.folder":
     "Choose an accessible mods folder directly, without a linked folder or shortcut.",
   "games.mods.error.record":
-    "Harbor couldn't read this folder's mod record. Existing files are kept; choose another workspace or restore its record.",
+    "Frame couldn't read this folder's mod record. Existing files are kept; choose another workspace or restore its record.",
   "games.mods.error.write":
     "The mod files couldn't be updated. Check that the game is closed and the folder is writable, then reload the workspace.",
   "games.mods.error.changed":
-    "A managed file or workspace changed outside Harbor. Your files are kept. Restore the recorded file before changing this mod.",
+    "A managed file or workspace changed outside Frame. Your files are kept. Restore the recorded file before changing this mod.",
   "games.mods.error.exists":
-    "A file with this name already exists. Harbor won't replace an existing mod. Choose a separate instance or resolve the duplicate first.",
+    "A file with this name already exists. Frame won't replace an existing mod. Choose a separate instance or resolve the duplicate first.",
   "games.mods.error.missing": "This mod is no longer in the workspace. Reload Your setup.",
   "games.mods.error.required":
     "Another enabled mod requires this one. Disable the dependent mod first.",
@@ -1255,12 +1254,12 @@ export default {
   "games.mods.error.embedded_dependency":
     "A JAR requires a mod missing from this folder or download. No files were installed. Check the project's dependency instructions and add the required mod first.",
   "games.mods.error.embedded_metadata":
-    "Harbor couldn't verify the Fabric declarations in a JAR. No files were changed. Use the project's installation instructions instead.",
+    "Frame couldn't verify the Fabric declarations in a JAR. No files were changed. Use the project's installation instructions instead.",
   "games.cloud.kicker": "Your connected services",
   "games.cloud.title": "Cloud files",
   "games.cloud.provider": "Cloud service",
   "games.cloud.connected": "Connected",
-  "games.cloud.connect": "Bring your files into Harbor",
+  "games.cloud.connect": "Bring your files into Frame",
   "games.cloud.connectNote":
     "Connect {name} in Sources settings to browse the files in your account.",
   "games.cloud.openSettings": "Open source settings",
@@ -1296,11 +1295,11 @@ export default {
   "games.cloud.cloud_provider": "This cloud service isn't supported here yet.",
   "games.cloud.cloud_network": "The service couldn't be reached. Try again in a moment.",
   "games.cloud.cloud_rate_limit":
-    "This service asked Harbor to slow down. Wait a moment before trying again.",
+    "This service asked Frame to slow down. Wait a moment before trying again.",
   "games.cloud.cloud_missing":
     "This item is no longer available. Refresh the folder to see its current files.",
   "games.cloud.cloud_limit":
-    "This folder is larger than Harbor can read at once. Open a smaller folder at the source.",
+    "This folder is larger than Frame can read at once. Open a smaller folder at the source.",
   "games.cloud.cloud_metadata":
     "The service returned incomplete file details. Refresh before trying again.",
   "games.cloud.cloud_service":
@@ -1326,9 +1325,9 @@ export default {
   "games.libraryPersonal.hideNote":
     "Find it again in Hidden. Its files and saves stay where they are.",
   "games.libraryPersonal.localNote":
-    "Saved for this Harbor profile. Steam and your game files stay unchanged.",
+    "Saved for this Frame profile. Steam and your game files stay unchanged.",
   "games.libraryPersonal.library_prefs_read":
-    "Harbor couldn't read your library preferences. The existing data has been kept.",
+    "Frame couldn't read your library preferences. The existing data has been kept.",
   "games.libraryPersonal.library_prefs_write":
     "These library preferences couldn't be saved. Try again.",
   "games.libraryPersonal.library_prefs_limit":

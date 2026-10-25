@@ -260,14 +260,14 @@ function LicenseRow({
 const PARTNERS: Credit[] = [
   {
     name: "Crowdin",
-    blurb: "Provides the localisation platform Harbor is translated on, free of charge.",
+    blurb: "Provides the localisation platform Frame is translated on, free of charge.",
     url: "https://crowdin.com",
     logo: crowdinLogo,
     fill: true,
   },
   {
     name: "stremio-addons.net",
-    blurb: "Provides the community addon directory used by Harbor's Addons page.",
+    blurb: "Provides the community addon directory used by Frame's Addons page.",
     url: "https://stremio-addons.net",
     logo: stremioAddonsLogo,
     fill: true,
@@ -546,7 +546,7 @@ const ADDONS: Credit[] = [
   {
     name: "Stremio",
     blurb:
-      "The open addon protocol Harbor implements. Harbor is an independent client for that protocol.",
+      "The open addon protocol Frame implements. Frame is an independent client for that protocol.",
     url: "https://www.stremio.com",
     logo: stremioLogo,
   },
@@ -585,13 +585,13 @@ const MANGA: Credit[] = [
   },
   {
     name: "Suwayomi",
-    blurb: "The manga source server Harbor connects to.",
+    blurb: "The manga source server Frame connects to.",
     url: "https://github.com/Suwayomi",
     logo: suwayomiLogo,
   },
   {
     name: "Mangayomi",
-    blurb: "Source extensions Harbor can read.",
+    blurb: "Source extensions Frame can read.",
     url: "https://github.com/kodjodevf/mangayomi",
     logo: mangayomiLogo,
   },
@@ -645,7 +645,7 @@ const NOTIFY: Credit[] = [
   },
   {
     name: "Cloudflare",
-    blurb: "Edge delivery for the services Harbor connects to.",
+    blurb: "Edge delivery for the services Frame connects to.",
     url: "https://www.cloudflare.com",
     logo: cloudflareLogo,
   },
@@ -685,14 +685,14 @@ const LICENSES: LicenseDoc[] = [
   },
   {
     id: "harbor",
-    title: "Harbor, MIT License",
-    used: "The licence Harbor itself is released under.",
-    file: "Harbor",
+    title: "Frame, MIT License",
+    used: "The licence Frame itself is released under.",
+    file: "Frame",
   },
   {
     id: "mit",
     title: "MIT License",
-    used: "Used by the majority of Harbor's bundled components, including React and Tauri.",
+    used: "Used by the majority of Frame's bundled components, including React and Tauri.",
     file: "MIT",
   },
   {
@@ -770,17 +770,17 @@ export function LicensesPanel() {
     <>
       <div className="hset-attr-hero">
         <span className="hset-attr-wordmark">
-          <img src={harborWordmark} alt="Harbor" draggable={false} />
+          <img src={harborWordmark} alt="Frame" draggable={false} />
           <span className="hset-attr-version">{APP_VERSION}</span>
         </span>
         <p className="hset-attr-license">
-          {t("Harbor is free and open source software, released under the MIT License.")}
+          {t("Frame is free and open source software, released under the MIT License.")}
         </p>
       </div>
 
       <Section
         title={t("Acknowledgements")}
-        subtitle={t("These organisations provide their services to Harbor at no cost.")}
+        subtitle={t("These organisations provide their services to Frame at no cost.")}
       >
         <div className="hset-brandgrid">
           {PARTNERS.map((c) => (
@@ -791,12 +791,12 @@ export function LicensesPanel() {
 
       <Group
         title="Metadata and artwork"
-        subtitle="Sources of the information and imagery shown in Harbor."
+        subtitle="Sources of the information and imagery shown in Frame."
         items={METADATA}
       />
       <Group
         title="Trackers and lists"
-        subtitle="Services that can record viewing activity. Harbor is not affiliated with any of them."
+        subtitle="Services that can record viewing activity. Frame is not affiliated with any of them."
         items={TRACKERS}
       />
       <Group
@@ -809,17 +809,13 @@ export function LicensesPanel() {
         subtitle="Sources of chapter and segment timing data."
         items={SKIPPING}
       />
-      <Group
-        title="Debrid"
-        subtitle="Services Harbor can resolve streams through."
-        items={DEBRID}
-      />
+      <Group title="Debrid" subtitle="Services Frame can resolve streams through." items={DEBRID} />
       <Group
         title="Media servers"
-        subtitle="Personal media servers Harbor can play from."
+        subtitle="Personal media servers Frame can play from."
         items={SERVERS}
       />
-      <Group title="Casting" subtitle="Protocols and devices Harbor can cast to." items={CASTING} />
+      <Group title="Casting" subtitle="Protocols and devices Frame can cast to." items={CASTING} />
       <Group
         title="Addons and usenet"
         subtitle="Sources of the streams themselves."
@@ -839,7 +835,7 @@ export function LicensesPanel() {
 
       <Section
         title={t("Built on")}
-        subtitle={t("The principal open source components Harbor is built from.")}
+        subtitle={t("The principal open source components Frame is built from.")}
       >
         <div className="hset-osslist">
           {DEPS.map((d) => (
@@ -851,7 +847,7 @@ export function LicensesPanel() {
       <Section
         title={t("Licence texts")}
         subtitle={t(
-          "The full text of every licence covering software distributed with Harbor. Select any entry to save a copy.",
+          "The full text of every licence covering software distributed with Frame. Select any entry to save a copy.",
         )}
       >
         {LICENSES.map((doc) => (
@@ -867,12 +863,12 @@ export function LicensesPanel() {
       <Section title={t("Independence")}>
         <p className={"max-w-[74ch] " + ROW_DESC}>
           {t(
-            "Harbor is an independent client. It is not affiliated with, endorsed by, or sponsored by Stremio, or by any company, addon author, or trademark holder referenced in this application. All trademarks are the property of their respective owners.",
+            "Frame is an independent client. It is not affiliated with, endorsed by, or sponsored by Stremio, or by any company, addon author, or trademark holder referenced in this application. All trademarks are the property of their respective owners.",
           )}
         </p>
         <p className="hset-attr-fineprint mt-3">
           {t(
-            "Harbor hosts no media and indexes no media. The sources and addons available to you are the ones you choose to configure, and their use is subject to the laws of your jurisdiction and the terms of the services concerned.",
+            "Frame hosts no media and indexes no media. The sources and addons available to you are the ones you choose to configure, and their use is subject to the laws of your jurisdiction and the terms of the services concerned.",
           )}
         </p>
       </Section>

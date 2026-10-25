@@ -15,7 +15,7 @@ export function AudioLanguageTab() {
       <Section
         title={t("Audio languages")}
         subtitle={t(
-          "When a release ships multiple audio tracks, Harbor selects the first match from this list.",
+          "When a release ships multiple audio tracks, Frame selects the first match from this list.",
         )}
       >
         <LanguagesPicker

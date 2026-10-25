@@ -272,7 +272,7 @@ export default {
   "games.gw2.guide": "금고 가이드",
   "games.gw2.checked": "확인: {date}",
   "games.gw2.scope":
-    "이 Harbor 프로필에 저장됩니다. 각 선택은 상품 하나로 계산됩니다. 잔액, 구매 제한, 확장팩 이용 가능 여부는 확인하지 않습니다. 이용 조건을 확인하고 게임에서 구매하세요.",
+    "이 Frame 프로필에 저장됩니다. 각 선택은 상품 하나로 계산됩니다. 잔액, 구매 제한, 확장팩 이용 가능 여부는 확인하지 않습니다. 이용 조건을 확인하고 게임에서 구매하세요.",
   "games.gw2.total": "계획한 총액",
   "games.gw2.currency": "Astral Acclaim",
   "games.gw2.selected": "{count}개 상품 선택됨",

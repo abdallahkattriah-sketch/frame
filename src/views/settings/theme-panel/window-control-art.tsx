@@ -50,7 +50,7 @@ export function TitleBarArt() {
         className={`flex min-w-0 flex-1 items-center gap-2 px-2 text-[12px] text-ink ${mac ? "justify-center pe-16" : ""}`}
       >
         {!mac && <HarborMark className="h-4 w-4 shrink-0" />}
-        Harbor
+        Frame
       </span>
       {!mac && <WindowCaptionPreview native />}
     </div>

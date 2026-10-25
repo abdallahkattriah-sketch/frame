@@ -10,22 +10,22 @@ export default {
   "games.wow.manager.errorIdentity":
     "Các thư mục đã cài không khớp với gói của tác giả. Quét lại và kiểm tra nguồn addon.",
   "games.wow.manager.importInstalled": "Nhập addon đã cài",
-  "games.wow.manager.import": "Quản lý bằng Harbor",
+  "games.wow.manager.import": "Quản lý bằng Frame",
   "games.wow.manager.importScope":
     "Addon đã cài có danh tính WoWInterface. Các addon khác vẫn ở danh sách đã cài.",
   "games.wow.manager.importNote":
-    "Giữ nguyên các tệp đã cài. Harbor kiểm tra gói của tác giả và lưu phiên bản trước khi cập nhật hoặc gỡ bỏ sau này.",
+    "Giữ nguyên các tệp đã cài. Frame kiểm tra gói của tác giả và lưu phiên bản trước khi cập nhật hoặc gỡ bỏ sau này.",
   "games.wow.manager.keepVersion": "Giữ phiên bản đã cài {version}",
   "games.wow.manager.keep": "Giữ nguyên",
-  "games.wow.manager.importSuccess": "Addon này hiện do Harbor quản lý.",
+  "games.wow.manager.importSuccess": "Addon này hiện do Frame quản lý.",
 
   "games.wow.manager.browse": "Tìm addon",
-  "games.wow.manager.managed": "Harbor quản lý",
+  "games.wow.manager.managed": "Frame quản lý",
   "games.wow.manager.backups": "Bản sao lưu",
   "games.wow.manager.catalogNote":
     "Duyệt WoWInterface. Khả năng tương thích với WoW đã cài sẽ được kiểm tra trước khi áp dụng.",
   "games.wow.manager.managedNote":
-    "Chỉ addon cài qua Harbor mới có thể thay đổi tại đây. Các addon khác vẫn ở danh sách đã cài.",
+    "Chỉ addon cài qua Frame mới có thể thay đổi tại đây. Các addon khác vẫn ở danh sách đã cài.",
   "games.wow.manager.category": "Danh mục",
   "games.wow.manager.allCategories": "Mọi danh mục",
   "games.wow.manager.popular": "Lượt tải hàng tháng",
@@ -36,7 +36,7 @@ export default {
   "games.wow.manager.catalogError": "Không thể tải danh mục. Kết quả trước đó có thể đã cũ.",
   "games.wow.manager.categoriesError": "Không có danh mục. Bạn vẫn có thể tìm trong tất cả addon.",
   "games.wow.manager.partial": "Thiếu một số dữ liệu từ nhà cung cấp. Kết quả có thể chưa đầy đủ.",
-  "games.wow.manager.emptyManaged": "Chưa có addon nào do Harbor quản lý.",
+  "games.wow.manager.emptyManaged": "Chưa có addon nào do Frame quản lý.",
   "games.wow.manager.emptyBackups": "Chưa lưu phiên bản trước nào.",
   "games.wow.manager.reviewNote":
     "Xem lại gói và các thay đổi thư mục trước. Đóng WoW trước khi kiểm tra hoặc áp dụng.",
@@ -58,12 +58,12 @@ export default {
   "games.wow.manager.errorCompatibility":
     "Gói này không phù hợp với phiên bản hoặc bản WoW đã cài.",
   "games.wow.manager.errorUnmanaged":
-    "Các thư mục này được cài ngoài Harbor và không thể ghi đè tại đây.",
+    "Các thư mục này được cài ngoài Frame và không thể ghi đè tại đây.",
   "games.wow.manager.errorChanged": "Tệp đã thay đổi hoặc cần kiểm tra. Quét lại trước khi thử.",
   "games.wow.manager.errorDependency":
     "Thiếu thành phần phụ thuộc hoặc addon khác cần các tệp này.",
   "games.wow.manager.errorExpired": "Bản xem lại đã hết hạn. Hãy kiểm tra lại các thay đổi.",
-  "games.wow.manager.errorDesktop": "Quản lý addon yêu cầu ứng dụng Harbor hiện tại trên Windows.",
+  "games.wow.manager.errorDesktop": "Quản lý addon yêu cầu ứng dụng Frame hiện tại trên Windows.",
 
   "games.wow.addons.screenshots": "Ảnh chụp màn hình của tác giả",
   "games.wow.addons.screenshotsUnavailable": "Không thể tải ảnh chụp màn hình của tác giả.",

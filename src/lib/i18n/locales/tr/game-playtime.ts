@@ -1,7 +1,7 @@
 export default {
   "games.playtime.title": "Oynama süresi",
   "games.playtime.total": "Toplam süreniz",
-  "games.playtime.tracked": "Harbor tarafından kaydedilen",
+  "games.playtime.tracked": "Frame tarafından kaydedilen",
   "games.playtime.adjusted": "Sizin ayarladığınız",
   "games.playtime.changed": "Ayarlandı: {date}",
   "games.playtime.edit": "Oynama süresini ayarla",
@@ -10,9 +10,9 @@ export default {
   "games.playtime.duration": "{hours} sa {minutes} dk",
   "games.playtime.card": "Oynama süresi: {time}",
   "games.playtime.note":
-    "Başka bir yerde oynadığınız süreyi ekleyin veya toplamınızı düzeltin. Harbor, kaydettiği oturumları korur ve sonraki oturumları bu toplama ekler.",
+    "Başka bir yerde oynadığınız süreyi ekleyin veya toplamınızı düzeltin. Frame, kaydettiği oturumları korur ve sonraki oturumları bu toplama ekler.",
   "games.playtime.localNote":
-    "Harbor profilinizdeki bu yerel kopya için geçerlidir. Steam ve diğer hesaplar değişmez.",
+    "Frame profilinizdeki bu yerel kopya için geçerlidir. Steam ve diğer hesaplar değişmez.",
   "games.playtime.running": "Oynama süresini ayarlamadan önce bu oyunu kapatın.",
   "games.playtime.save": "Oynama süresini kaydet",
   "games.playtime.finishEdit":
@@ -20,7 +20,7 @@ export default {
   "games.playtime.reset": "Kaydedilen süreyi kullan",
   "games.playtime.invalid": "0 ile 999.999 arasında tam saat ve 0 ile 59 arasında dakika girin.",
   "games.playtime.saved": "Oynama süresi kaydedildi.",
-  "games.playtime.resetDone": "Harbor tarafından kaydedilen süre kullanılıyor.",
+  "games.playtime.resetDone": "Frame tarafından kaydedilen süre kullanılıyor.",
   "games.custom.launch_playtime":
     "Bu oynama süresi kaydedilemedi. Saat ve dakikayı kontrol edip tekrar deneyin.",
 } satisfies Record<string, string>;

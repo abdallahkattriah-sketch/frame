@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Completa il recupero prima di creare o ripristinare backup di questa cartella.",
   "games.backups.save_recovery_scope":
-    "Apri questo ripristino dal profilo Harbor e dal gioco che lo hanno creato.",
+    "Apri questo ripristino dal profilo Frame e dal gioco che lo hanno creato.",
   "games.backups.result.keptCurrent": "I salvataggi attuali non sono cambiati",
   "games.backups.resultNote.keptCurrent":
     "Il recupero è terminato senza sostituire i salvataggi presenti in questa cartella.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Conserva un momento a cui tornare. Scegli la cartella dei salvataggi di questo gioco e una cartella separata per i backup. Chiudi il gioco prima di creare un backup o ripristinare.",
   "games.backups.desktop":
-    "I backup dei salvataggi sono disponibili nell'app desktop di Harbor. Usano le cartelle che scegli sul computer.",
+    "I backup dei salvataggi sono disponibili nell'app desktop di Frame. Usano le cartelle che scegli sul computer.",
   "games.backups.folder.source": "Salvataggi del gioco",
   "games.backups.folder.vault": "Cartella dei backup",
   "games.backups.choose.source": "Scegli la cartella dei salvataggi del gioco",
@@ -53,9 +53,9 @@ export default {
     "La cartella dei salvataggi attuale corrisponde già a questa istantanea.",
   "games.backups.restore": "Ripristina istantanea",
   "games.backups.recoveryNote":
-    "Harbor conserva un'istantanea di recupero e la cartella originale prima di sostituire i salvataggi.",
+    "Frame conserva un'istantanea di recupero e la cartella originale prima di sostituire i salvataggi.",
   "games.backups.localNote":
-    "Conservati nella cartella scelta, separatamente per ogni profilo Harbor.",
+    "Conservati nella cartella scelta, separatamente per ogni profilo Frame.",
   "games.backups.openRecovery": "Mostra cartella originale",
   "games.backups.reviewUndo": "Esamina l'annullamento",
   "games.backups.result.restored": "La tua istantanea è stata ripristinata",
@@ -65,11 +65,11 @@ export default {
   "games.backups.resultNote.restored":
     "La cartella dei salvataggi ora corrisponde a questa istantanea. Le copie di recupero restano disponibili per tornare allo stato precedente.",
   "games.backups.resultNote.rolledBack":
-    "Il ripristino non è stato completato, quindi Harbor ha rimesso al suo posto la cartella dei salvataggi originale. Anche l'istantanea di recupero è disponibile sotto.",
+    "Il ripristino non è stato completato, quindi Frame ha rimesso al suo posto la cartella dei salvataggi originale. Anche l'istantanea di recupero è disponibile sotto.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor non è riuscito a rimettere al suo posto la cartella originale dopo il ripristino fallito. Tieni il gioco chiuso. I file originali sono conservati nella cartella indicata sotto e nell'istantanea di recupero.",
+    "Frame non è riuscito a rimettere al suo posto la cartella originale dopo il ripristino fallito. Tieni il gioco chiuso. I file originali sono conservati nella cartella indicata sotto e nell'istantanea di recupero.",
   "games.backups.resultNote.notRestored":
-    "Harbor non è riuscito a collocare l'istantanea nella cartella scelta. Il backup è ancora disponibile.",
+    "Frame non è riuscito a collocare l'istantanea nella cartella scelta. Il backup è ancora disponibile.",
   "games.backups.phase.scanning": "Lettura dei salvataggi…",
   "games.backups.phase.copying": "Copia dei file di salvataggio…",
   "games.backups.phase.verifying": "Verifica dell'istantanea…",
@@ -83,9 +83,9 @@ export default {
   "games.backups.save_record":
     "Un record di backup non può essere letto in modo sicuro. I file sono stati conservati. Controlla la cartella di backup scelta.",
   "games.backups.save_read":
-    "Harbor non è riuscito a leggere questi salvataggi. Verifica che la cartella sia disponibile e il gioco chiuso.",
+    "Frame non è riuscito a leggere questi salvataggi. Verifica che la cartella sia disponibile e il gioco chiuso.",
   "games.backups.save_write":
-    "Harbor non è riuscito a completare la scrittura dei salvataggi. Verifica che la cartella sia scrivibile e il gioco chiuso.",
+    "Frame non è riuscito a completare la scrittura dei salvataggi. Verifica che la cartella sia scrivibile e il gioco chiuso.",
   "games.backups.save_name":
     "Un nome di file non può essere conservato. Usa una cartella con nomi di file supportati.",
   "games.backups.save_changed":
@@ -106,9 +106,9 @@ export default {
   "games.backups.save_space":
     "Lo spazio libero non basta per conservare una copia completa. Scegli un'altra cartella o libera spazio.",
   "games.backups.save_config":
-    "Harbor non è riuscito a leggere le cartelle scelte in precedenza. Selezionale di nuovo; i backup esistenti restano intatti.",
+    "Frame non è riuscito a leggere le cartelle scelte in precedenza. Selezionale di nuovo; i backup esistenti restano intatti.",
   "games.backups.save_config_write":
-    "Harbor non è riuscito a memorizzare queste cartelle. Le scelte e i backup esistenti sono invariati.",
+    "Frame non è riuscito a memorizzare queste cartelle. Le scelte e i backup esistenti sono invariati.",
   "games.backups.failed":
     "Questa operazione sui salvataggi non è stata completata. I file di backup sono stati conservati. Controlla le cartelle e riprova.",
   "games.backups.compare.title": "Confronto dei file",

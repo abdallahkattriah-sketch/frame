@@ -118,18 +118,18 @@ const music: Record<string, string> = {
     "Envoyez ce que vous écoutez vers un micro virtuel pour que vos amis en appel l'entendent. Vous continuez de l'entendre sur vos enceintes.",
   "music.broadcast.title": "Diffuser vers le chat vocal",
   "music.cable.mac.installNeeded":
-    "Harbor peut installer son propre micro virtuel. macOS demandera votre mot de passe administrateur, puis Core Audio redémarrera.",
+    "Frame peut installer son propre micro virtuel. macOS demandera votre mot de passe administrateur, puis Core Audio redémarrera.",
   "music.cable.mac.installMissing":
-    "Cette version de Harbor ne contient pas le pilote du micro virtuel.",
+    "Cette version de Frame ne contient pas le pilote du micro virtuel.",
   "music.cable.mac.installCancelled": "Installation annulée.",
   "music.cable.mac.installFailed": "Impossible d'installer le micro virtuel.",
   "music.cable.mac.restartNeeded":
     "Le micro virtuel est installé, mais Core Audio ne l'a pas encore détecté. Redémarrez le Mac pour terminer.",
   "music.cable.mac.updateAvailable":
-    "Cette version de Harbor contient un micro virtuel plus récent. Installez-le pour que le câble continue de fonctionner.",
-  "music.cable.title": "Micro virtuel Harbor",
+    "Cette version de Frame contient un micro virtuel plus récent. Installez-le pour que le câble continue de fonctionner.",
+  "music.cable.title": "Micro virtuel Frame",
   "music.cable.blurb":
-    "Harbor met le micro virtuel en place tout seul. Rien à télécharger, rien à installer.",
+    "Frame met le micro virtuel en place tout seul. Rien à télécharger, rien à installer.",
   "music.cable.create": "Créer le micro virtuel",
   "music.cable.remove": "Supprimer le micro virtuel",
   "music.cable.spec": "{rate}, {depth}",
@@ -149,18 +149,18 @@ const music: Record<string, string> = {
   "music.cable.depth.int32": "32 bits",
   "music.cable.depth.int24": "24 bits",
   "music.cable.depth.int16": "16 bits",
-  "music.cable.unknownSpec": "Harbor n'arrive pas à lire le format négocié",
+  "music.cable.unknownSpec": "Frame n'arrive pas à lire le format négocié",
   "music.cable.noServer": "Aucun serveur audio ne tourne",
-  "music.cable.driverNeeded": "Harbor ne sait pas encore créer de micro virtuel sur ce système",
+  "music.cable.driverNeeded": "Frame ne sait pas encore créer de micro virtuel sur ce système",
   "music.cable.pipewireFailed": "PipeWire n'a pas démarré le loopback",
   "music.cable.createFailed": "Le micro virtuel n'a pas pu être créé",
   "music.cable.installNeeded":
-    "Harbor a besoin de votre autorisation pour installer le micro virtuel",
-  "music.cable.installMissing": "Cette version de Harbor ne fournit pas de micro virtuel",
+    "Frame a besoin de votre autorisation pour installer le micro virtuel",
+  "music.cable.installMissing": "Cette version de Frame ne fournit pas de micro virtuel",
   "music.cable.restartNeeded":
     "Le système audio doit redémarrer pour que le micro virtuel apparaisse",
   "music.cable.updateAvailable":
-    "Ce Harbor apporte un micro virtuel plus récent. Recréez-le pour le mettre à jour.",
+    "Ce Frame apporte un micro virtuel plus récent. Recréez-le pour le mettre à jour.",
   "dj.crossfade": "Crossfader",
   "dj.b.broadcasting": "Porte la diffusion",
   "dj.b.eject": "Éjecter",
@@ -279,7 +279,7 @@ const music: Record<string, string> = {
   "music.library.localEmpty": "Ajoutez un dossier de musique pour parcourir votre collection ici.",
   "music.library.noMatches": "Aucun résultat dans votre collection locale.",
   "music.legal.summary":
-    "Harbor est un client musical indépendant. Utilisez des fichiers et services auxquels vous êtes autorisé à accéder. Les fiches du catalogue n'accordent aucun droit d'écoute ni de redistribution.",
+    "Frame est un client musical indépendant. Utilisez des fichiers et services auxquels vous êtes autorisé à accéder. Les fiches du catalogue n'accordent aucun droit d'écoute ni de redistribution.",
   "music.legal.title": "Sources musicales, confidentialité et conditions",
   "music.legal.services":
     "Les services tiers fixent leurs propres conditions de compte, d'abonnement et de région. Les noms, images et logos identifient leurs propriétaires et n'impliquent aucune approbation. Connecter un service ne contourne pas ses restrictions.",
@@ -290,7 +290,7 @@ const music: Record<string, string> = {
   "music.home.discover": "Découvrez une musique qui reste",
   "music.home.title": "Votre musique. Et tout un monde à explorer.",
   "music.home.body":
-    "Apportez votre collection, trouvez votre prochain coup de cœur et continuez à écouter partout dans Harbor.",
+    "Apportez votre collection, trouvez votre prochain coup de cœur et continuez à écouter partout dans Frame.",
   "music.home.exploreRelease": "Explorer cette sortie",
   "music.home.addFolder": "Ajouter un dossier de musique",
   "music.home.yourFiles": "Vos fichiers au premier plan",
@@ -357,13 +357,13 @@ const music: Record<string, string> = {
   "music.source.none": "Aucune source correspondante n’est disponible actuellement.",
   "music.consent.title": "Avant d'activer YouTube ou SoundCloud",
   "music.consent.hosting":
-    "Harbor n'héberge aucune musique. C'est un code open source, écrit par des contributeurs du monde entier, qui ouvre des pages publiques des services que vous choisissez d'activer. Ni Harbor ni ses contributeurs ne stockent, n'envoient ni ne diffusent de contenu.",
+    "Frame n'héberge aucune musique. C'est un code open source, écrit par des contributeurs du monde entier, qui ouvre des pages publiques des services que vous choisissez d'activer. Ni Frame ni ses contributeurs ne stockent, n'envoient ni ne diffusent de contenu.",
   "music.consent.terms":
-    "YouTube et SoundCloud sont des services indépendants avec leurs propres conditions d'utilisation. Activer l'un d'eux ici signifie que vous acceptez de respecter ses conditions et de cesser de l'utiliser si vous ne les acceptez plus. Harbor n'est ni affilié ni approuvé ni lié à ces services.",
+    "YouTube et SoundCloud sont des services indépendants avec leurs propres conditions d'utilisation. Activer l'un d'eux ici signifie que vous acceptez de respecter ses conditions et de cesser de l'utiliser si vous ne les acceptez plus. Frame n'est ni affilié ni approuvé ni lié à ces services.",
   "music.consent.responsibility":
-    "Vous êtes responsable de l'usage que vous faites de ces sources et du respect de la loi de votre pays. Les contributeurs de Harbor n'assument aucune responsabilité pour ce que vous choisissez de lire, télécharger ou partager.",
+    "Vous êtes responsable de l'usage que vous faites de ces sources et du respect de la loi de votre pays. Les contributeurs de Frame n'assument aucune responsabilité pour ce que vous choisissez de lire, télécharger ou partager.",
   "music.consent.rights":
-    "Respectez les personnes qui ont créé cette musique. N'utilisez pas Harbor pour redistribuer, vendre ou publier des œuvres dont vous ne détenez pas les droits. Si vous êtes ayant droit, adressez-vous au service qui héberge le contenu.",
+    "Respectez les personnes qui ont créé cette musique. N'utilisez pas Frame pour redistribuer, vendre ou publier des œuvres dont vous ne détenez pas les droits. Si vous êtes ayant droit, adressez-vous au service qui héberge le contenu.",
   "music.consent.readTerms": "Lire les conditions de {service}",
   "music.consent.enable": "Activez les sources que vous souhaitez utiliser",
   "music.consent.scroll": "Lisez jusqu'au bout pour continuer",
@@ -375,7 +375,7 @@ const music: Record<string, string> = {
   "music.artist.inPlaylists": "Playlists avec {name}",
   "music.audio.preferredSource": "Source préférée",
   "music.audio.preferredSourceHint":
-    "Harbor lit d'abord ici, puis bascule vers n'importe quelle source qui fonctionne.",
+    "Frame lit d'abord ici, puis bascule vers n'importe quelle source qui fonctionne.",
   "music.spotify.connect": "Spotify Premium",
   "music.spotify.connectDetail":
     "Connectez-vous une fois pour une lecture native et sans publicité.",
@@ -425,7 +425,7 @@ const music: Record<string, string> = {
   "music.lastfm.finish": "Terminer la connexion",
   "music.lastfm.authorize": "Autoriser Last.fm",
   "music.lastfm.browserPrompt":
-    "Approuvez Harbor dans le navigateur, puis terminez la connexion ici.",
+    "Approuvez Frame dans le navigateur, puis terminez la connexion ici.",
   "music.rail.spotlight": "Titres à l'affiche",
   "music.rail.spotlightSubtitle": "Des titres phares issus de toutes vos sources",
   "music.rail.artists": "Artistes en rotation",
@@ -454,7 +454,7 @@ const music: Record<string, string> = {
   "music.spotifySetup.createBody":
     "Utilisez un compte Spotify Premium pour créer une application dans le tableau de bord développeur.",
   "music.spotifySetup.dashboard": "Ouvrir le tableau de bord Spotify",
-  "music.spotifySetup.redirectTitle": "Ajouter l’URI de redirection de Harbor",
+  "music.spotifySetup.redirectTitle": "Ajouter l’URI de redirection de Frame",
   "music.spotifySetup.redirectBody":
     "Dans les paramètres de votre application, ajoutez exactement cette URI de redirection, puis enregistrez.",
   "music.spotifySetup.redirectLabel": "URI de redirection",
@@ -510,16 +510,16 @@ const music: Record<string, string> = {
   "music.row.charts": "Classements",
   "music.connect.shelfTitle": "Connectez {name} pour remplir cette étagère",
   "music.connect.shelfBody":
-    "Harbor ne devine pas une ligne qu'il ne peut pas appuyer sur de vraies données.",
+    "Frame ne devine pas une ligne qu'il ne peut pas appuyer sur de vraies données.",
   "music.connect.title": "Connecter {name}",
   "music.connect.connected": "Connecté en tant que {account}",
   "music.connect.browserHandoff":
-    "Autorisez Harbor dans le navigateur, puis terminez la connexion ici.",
+    "Autorisez Frame dans le navigateur, puis terminez la connexion ici.",
   "music.connect.scanningFolder": "Lecture du dossier. Une grande bibliothèque prend du temps.",
   "music.connect.scanned": "{count} fichiers analysés",
   "music.connect.connecting": "Connexion",
   "music.connect.chooseFolder": "Choisir un dossier",
-  "music.connections.subtitle": "Tout ce depuis quoi Harbor peut lire de la musique",
+  "music.connections.subtitle": "Tout ce depuis quoi Frame peut lire de la musique",
   "music.connections.capability.search": "Recherche",
   "music.connections.empty": "Cette version ne signale aucune source de musique.",
   "music.row.stationBadge": "Radio",
@@ -528,7 +528,7 @@ const music: Record<string, string> = {
   "music.transport.repeatAll": "Tout répéter",
   "music.transport.repeat": "Répéter",
   "music.footer.connections": "Connexions",
-  "music.footer.harbor": "Harbor",
+  "music.footer.harbor": "Frame",
   "music.footer.setup": "Configuration",
   "music.hero.resumeAt": "{artist} sur {source}, en pause à {time}",
   "music.hero.pausedAt": "En pause à {time}",
@@ -548,7 +548,7 @@ const music: Record<string, string> = {
     "Connectez Last.fm et cette étagère se construira à partir des tags que vous scrobblez vraiment.",
   "music.connect.serverName": "un serveur multimédia ou un dossier",
   "music.connect.serverBody":
-    "Pointez Harbor vers un dossier, Plex, Jellyfin, Navidrome ou Subsonic et cette étagère se remplira d'albums que vous possédez déjà.",
+    "Pointez Frame vers un dossier, Plex, Jellyfin, Navidrome ou Subsonic et cette étagère se remplira d'albums que vous possédez déjà.",
   "music.row.recents": "Reprenez où vous en étiez",
   "music.row.fresh": "Du neuf chez les artistes que vous écoutez",
   "music.row.freshSubtitle": "Les sorties récentes des artistes de votre historique d’écoute",

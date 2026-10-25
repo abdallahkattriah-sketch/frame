@@ -22,7 +22,7 @@ export function PlayerPreviewFrame({
       <div className="hset-player-preview-screen" aria-hidden inert>
         {windowed && (
           <div className="hset-player-preview-titlebar">
-            <span>Harbor</span>
+            <span>Frame</span>
             <span>− &nbsp; □ &nbsp; ×</span>
           </div>
         )}

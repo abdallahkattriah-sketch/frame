@@ -454,7 +454,7 @@ export function CompanionProfilesProvider({ children }: { children: ReactNode })
   }, []);
   const value = useMemo<ProfilesValue>(() => {
     const mainWindowOnly = (): never => {
-      throw new Error("Profile changes must be made in the main Harbor window");
+      throw new Error("Profile changes must be made in the main Frame window");
     };
     return {
       ...state,

@@ -11,9 +11,9 @@ export default {
     "A pasta com os arquivos está na lixeira. Restaure-a de lá se precisar.",
   "games.cleanup.restoredNote": "As partes do arquivo voltaram à pasta original.",
   "games.cleanup.uncertainNote":
-    "O Harbor não conseguiu confirmar o resultado. Confira a pasta original e a lixeira antes de continuar.",
+    "O Frame não conseguiu confirmar o resultado. Confira a pasta original e a lixeira antes de continuar.",
   "games.cleanup.recoveryNote":
-    "Algumas partes podem estar na pasta temporária do Harbor. Continue a limpeza ou restaure-as sem substituir arquivos existentes.",
+    "Algumas partes podem estar na pasta temporária do Frame. Continue a limpeza ou restaure-as sem substituir arquivos existentes.",
   "games.cleanup.working": "Verificando arquivos",
   "games.cleanup.restore": "Restaurar arquivos preservados",
   "games.cleanup.resume": "Continuar limpeza",
@@ -76,7 +76,7 @@ export default {
   "games.setupShortcuts.error": "Não foi possível atualizar os atalhos. Tente novamente.",
 
   "games.archive.archive_decoder":
-    "O Harbor não conseguiu decodificar este arquivo dentro dos seus limites. Tente outra ferramenta de extração.",
+    "O Frame não conseguiu decodificar este arquivo dentro dos seus limites. Tente outra ferramenta de extração.",
   "games.archive.archive_password_or_checksum":
     "A senha pode estar incorreta ou o arquivo pode estar danificado. Confira a senha ou baixe o arquivo novamente.",
   "games.archive.password": "Senha do arquivo",
@@ -88,7 +88,7 @@ export default {
   "games.archive.eyebrow": "Do download à sua biblioteca",
   "games.archive.title": "Extrair arquivos do jogo",
   "games.archive.intro":
-    "Revise um arquivo ZIP / 7z / RAR / TAR / TAR.GZ / ISO e escolha onde colocar seu conteúdo. O Harbor cria uma pasta nova e mantém o arquivo original.",
+    "Revise um arquivo ZIP / 7z / RAR / TAR / TAR.GZ / ISO e escolha onde colocar seu conteúdo. O Frame cria uma pasta nova e mantém o arquivo original.",
   "games.archive.source": "Arquivo compactado",
   "games.archive.chooseSource": "Escolher arquivo compactado",
   "games.archive.chooseParent": "Escolher uma pasta de destino",
@@ -118,7 +118,7 @@ export default {
   "games.archive.openFolder": "Mostrar pasta",
   "games.archive.localLibrary": "Jogos locais",
   "games.archive.archive_profile":
-    "Não foi possível identificar este perfil do Harbor. Abra Jogos novamente e tente outra vez.",
+    "Não foi possível identificar este perfil do Frame. Abra Jogos novamente e tente outra vez.",
   "games.archive.archive_busy":
     "Outra operação com arquivos compactados está em andamento. Conclua ou cancele primeiro.",
   "games.archive.archive_canceled": "Extração cancelada. O arquivo original continua disponível.",
@@ -126,16 +126,16 @@ export default {
     "Não foi possível ler o arquivo compactado. Verifique se ele ainda está disponível e tente novamente.",
   "games.archive.archive_links":
     "Este arquivo contém links ou arquivos especiais. Siga as instruções de instalação do projeto.",
-  "games.archive.archive_limit": "Este arquivo excede os limites de extração atuais do Harbor.",
+  "games.archive.archive_limit": "Este arquivo excede os limites de extração atuais do Frame.",
   "games.archive.archive_changed":
     "O arquivo mudou após a revisão. Revise novamente antes de extrair.",
   "games.archive.archive_path":
-    "O arquivo contém um caminho que o Harbor não pode extrair com segurança. Nenhum arquivo do jogo foi substituído.",
+    "O arquivo contém um caminho que o Frame não pode extrair com segurança. Nenhum arquivo do jogo foi substituído.",
   "games.archive.archive_format":
     "Este não é um arquivo ZIP / 7z / RAR / TAR / TAR.GZ / ISO compatível ou seu diretório está danificado.",
   "games.archive.archive_encrypted": "Digite a senha deste arquivo para continuar.",
   "games.archive.archive_compression":
-    "Este ZIP / 7z / RAR / TAR / TAR.GZ / ISO usa um método de compressão que o Harbor ainda não suporta.",
+    "Este ZIP / 7z / RAR / TAR / TAR.GZ / ISO usa um método de compressão que o Frame ainda não suporta.",
   "games.archive.archive_collision":
     "Algumas entradas do arquivo sobrescreveriam umas às outras. Nada foi extraído.",
   "games.archive.archive_destination":
@@ -155,11 +155,11 @@ export default {
   "games.archive.space.checking": "Verificando espaço no destino…",
   "games.archive.space.free": "{size} disponíveis",
   "games.archive.space.required": "{size} para extrair",
-  "games.archive.space.reserved": "{size} reservados por outras operações do Harbor",
+  "games.archive.space.reserved": "{size} reservados por outras operações do Frame",
   "games.archive.space.after": "{size} disponíveis após a extração",
   "games.archive.space.shortfall": "Precisa de mais {size} de espaço",
   "games.archive.space.unknown":
-    "Não foi possível ler o espaço livre. O Harbor verificará novamente quando a extração começar.",
+    "Não foi possível ler o espaço livre. O Frame verificará novamente quando a extração começar.",
   "games.archive.space.error": "Não foi possível verificar o espaço no destino.",
   "games.archive.space.refresh": "Verificar espaço novamente",
   "games.archive.space.note":
@@ -178,15 +178,15 @@ export default {
   "games.archive.retry": "Revisar e tentar novamente",
   "games.archive.showPartial": "Mostrar arquivos parciais",
   "games.archive.partialNote":
-    "O Harbor manteve a pasta parcial. Revise-a antes de removê-la; tentar novamente inicia uma nova extração.",
+    "O Frame manteve a pasta parcial. Revise-a antes de removê-la; tentar novamente inicia uma nova extração.",
   "games.archive.progressFiles": "{count} de {total} arquivos",
   "games.archive.archive_store":
-    "O Harbor não conseguiu salvar o progresso da extração. Seus arquivos foram mantidos para revisão.",
+    "O Frame não conseguiu salvar o progresso da extração. Seus arquivos foram mantidos para revisão.",
   "games.archive.archive_start": "Não foi possível iniciar a extração. Tente novamente.",
   "games.archive.archive_history":
     "O histórico de extrações está cheio. Remova um registro antigo para continuar; os arquivos serão mantidos.",
   "games.archive.archive_interrupted":
-    "O Harbor foi fechado antes do fim da extração. Confira o local salvo e tente novamente.",
+    "O Frame foi fechado antes do fim da extração. Confira o local salvo e tente novamente.",
   "games.archive.archive_parts":
     "Estas partes não formam um único arquivo. Confira se todas pertencem ao mesmo download.",
   "games.archive.archive_tool":
@@ -195,9 +195,9 @@ export default {
   "games.archive.continueSetup": "Preparar jogo",
   "games.archive.dismissRecord": "Remover registro · manter arquivos",
   "games.archive.archive_multipart":
-    "Este formato de arquivo dividido ainda não é compatível. Extraia-o com um aplicativo de arquivos e abra a pasta extraída no Harbor.",
+    "Este formato de arquivo dividido ainda não é compatível. Extraia-o com um aplicativo de arquivos e abra a pasta extraída no Frame.",
   "games.archive.partsCount": "{count} partes do arquivo",
-  "games.archive.partsNote": "Mantenha todas as partes na mesma pasta. O Harbor as extrai juntas.",
+  "games.archive.partsNote": "Mantenha todas as partes na mesma pasta. O Frame as extrai juntas.",
   "games.archive.partsMore": "Mostrar mais partes",
   "games.archive.setHash": "SHA-256 do conjunto",
   "games.archive.archive_missing_part":

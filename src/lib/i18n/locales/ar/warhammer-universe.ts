@@ -20,7 +20,7 @@ export default {
   "games.warhammerUniverse.free": "مجانًا على Warhammer TV",
   "games.warhammerUniverse.subscription": "قد يتطلب اشتراك Warhammer+",
   "games.warhammerUniverse.movieNote":
-    "فيلم الرسوم المتحركة لعام 2010. افتح تفاصيل Harbor للممثلين والإعلانات والمصادر.",
+    "فيلم الرسوم المتحركة لعام 2010. افتح تفاصيل Frame للممثلين والإعلانات والمصادر.",
   "games.warhammerUniverse.screenScope":
     "مختارات Warhammer TV العامة. يمتد Hammer and Bolter عبر عدة عوالم؛ يحدد المزود إمكانية المشاهدة.",
   "games.warhammerUniverse.lore": "في أعماق الحكاية",

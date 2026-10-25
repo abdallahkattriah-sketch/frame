@@ -1,7 +1,7 @@
 export default {
   "games.playtime.title": "Waktu bermain",
   "games.playtime.total": "Total waktumu",
-  "games.playtime.tracked": "Dicatat oleh Harbor",
+  "games.playtime.tracked": "Dicatat oleh Frame",
   "games.playtime.adjusted": "Disesuaikan olehmu",
   "games.playtime.changed": "Disesuaikan pada {date}",
   "games.playtime.edit": "Sesuaikan waktu bermain",
@@ -10,9 +10,9 @@ export default {
   "games.playtime.duration": "{hours} jam {minutes} mnt",
   "games.playtime.card": "Dimainkan selama {time}",
   "games.playtime.note":
-    "Tambahkan waktu bermain di tempat lain atau koreksi total waktumu. Harbor mempertahankan sesi yang tercatat dan menambahkan sesi berikutnya ke total ini.",
+    "Tambahkan waktu bermain di tempat lain atau koreksi total waktumu. Frame mempertahankan sesi yang tercatat dan menambahkan sesi berikutnya ke total ini.",
   "games.playtime.localNote":
-    "Berlaku untuk salinan lokal ini di profil Harbor kamu. Steam dan akun lain tidak berubah.",
+    "Berlaku untuk salinan lokal ini di profil Frame kamu. Steam dan akun lain tidak berubah.",
   "games.playtime.running": "Tutup game ini sebelum menyesuaikan waktu bermainnya.",
   "games.playtime.save": "Simpan waktu bermain",
   "games.playtime.finishEdit":
@@ -21,7 +21,7 @@ export default {
   "games.playtime.invalid":
     "Masukkan jumlah jam bulat dari 0 hingga 999.999 dan menit dari 0 hingga 59.",
   "games.playtime.saved": "Waktu bermain disimpan.",
-  "games.playtime.resetDone": "Menggunakan waktu yang dicatat oleh Harbor.",
+  "games.playtime.resetDone": "Menggunakan waktu yang dicatat oleh Frame.",
   "games.custom.launch_playtime":
     "Waktu bermain ini tidak dapat disimpan. Periksa jam dan menitnya, lalu coba lagi.",
 } satisfies Record<string, string>;

@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "Harbor đã khởi động lại trong quá trình cài đặt. Hãy kiểm tra các tệp trò chơi đã cài đặt để hoàn tất.",
+    "Frame đã khởi động lại trong quá trình cài đặt. Hãy kiểm tra các tệp trò chơi đã cài đặt để hoàn tất.",
   "games.setup.state.starting": "Đang khởi động trình cài đặt",
   "games.setup.state.waiting": "Đang chờ trình cài đặt",
   "games.setup.startingNote": "Đang mở trình cài đặt…",
@@ -37,7 +37,7 @@ export default {
   "games.setup.viewProgress": "Xem quá trình cài đặt",
   "games.setup.showInstaller": "Hiện trình cài đặt",
   "games.setup.setup_window":
-    "Không thể mở cửa sổ trình cài đặt. Harbor vẫn đang theo dõi quá trình.",
+    "Không thể mở cửa sổ trình cài đặt. Frame vẫn đang theo dõi quá trình.",
   "games.setup.elapsed": "Đã qua",
   "games.setup.io": "I/O trình cài đặt",
   "games.setup.ioNote":
@@ -74,7 +74,7 @@ export default {
   "games.setup.state.finished": "Trình cài đặt đã đóng — hãy chọn tệp trò chơi",
   "games.setup.state.failed": "Trình cài đặt không hoàn tất thành công",
   "games.setup.state.interrupted":
-    "Kiểm tra việc cài đặt — Harbor đã đóng khi trình cài đặt đang chạy",
+    "Kiểm tra việc cài đặt — Frame đã đóng khi trình cài đặt đang chạy",
   "games.setup.state.external": "Trình cài đặt đã mở trong cửa sổ khác",
   "games.setup.exitCode": "Mã thoát: {code}",
   "games.setup.unavailable":
@@ -100,9 +100,9 @@ export default {
   "games.setup.destination": "Cài đặt vào",
   "games.setup.chooseDestination": "Chọn thư mục cài đặt",
   "games.setup.managedNote":
-    "Harbor sẽ cài đặt trò chơi tại đây, tìm tệp trò chơi và thêm vào thư viện của bạn.",
+    "Frame sẽ cài đặt trò chơi tại đây, tìm tệp trò chơi và thêm vào thư viện của bạn.",
   "games.setup.managedRunning":
-    "Đang cài đặt trò chơi. Bạn có thể đóng cửa sổ này; Harbor sẽ tiếp tục theo dõi tiến trình.",
+    "Đang cài đặt trò chơi. Bạn có thể đóng cửa sổ này; Frame sẽ tiếp tục theo dõi tiến trình.",
   "games.setup.detected": "Đã tự động tìm thấy tệp trò chơi",
   "games.setup.chooseDetected": "Chọn tệp trò chơi bạn muốn thêm.",
   "games.setup.activity": "{size} trong {count} tệp",
@@ -118,7 +118,7 @@ export default {
   "games.setup.setup_engine":
     "Trình cài đặt này cần chạy trong cửa sổ riêng. Chọn Chạy trình cài đặt để tiếp tục.",
   "games.setup.setup_candidates":
-    "Cài đặt đã kết thúc nhưng Harbor không đọc được các tệp đã cài đặt. Hãy quét lại thư mục cài đặt.",
+    "Cài đặt đã kết thúc nhưng Frame không đọc được các tệp đã cài đặt. Hãy quét lại thư mục cài đặt.",
   "games.setup.state.installing": "Đang cài đặt",
   "games.setup.externalAction": "Chạy trình cài đặt",
   "games.setup.files": "Tệp đã tải xuống",

@@ -39,12 +39,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam chưa xác nhận kết quả. Làm mới để kiểm tra trước khi thay đổi thêm.",
   "games.achievementManager.error.platform":
-    "Quản lý thành tích hiện có trong Harbor trên Windows x64.",
+    "Quản lý thành tích hiện có trong Frame trên Windows x64.",
   "games.achievementManager.error.invalid": "Chọn tối đa 2.000 thay đổi mỗi lần.",
   "games.achievementManager.error.stale":
     "Các thành tích này đã thay đổi trên Steam. Làm mới trước khi chỉnh sửa.",
   "games.achievementManager.error.protected":
-    "Trò chơi quản lý thành tích này. Harbor không thể chỉnh sửa.",
+    "Trò chơi quản lý thành tích này. Frame không thể chỉnh sửa.",
   "games.achievementManager.error.expired":
     "Lượt xem lại này đã hết hạn. Làm mới trước khi áp dụng thay đổi.",
   "games.achievementManager.error.busy": "Một yêu cầu thành tích Steam khác đang được xử lý.",
@@ -61,12 +61,12 @@ export default {
   "games.achievementManager.consentBody":
     "Mở khóa hoặc khóa lại thành tựu trên tài khoản Steam đang đăng nhập. Lựa chọn vẫn là bản nháp cho đến khi bạn áp dụng thay đổi.",
   "games.achievementManager.consentRules":
-    "Harbor dùng giao diện thành tựu của Steam mà không chèn mã vào trò chơi. Quy tắc và điều kiện nhận thưởng của từng trò chơi vẫn áp dụng.",
+    "Frame dùng giao diện thành tựu của Steam mà không chèn mã vào trò chơi. Quy tắc và điều kiện nhận thưởng của từng trò chơi vẫn áp dụng.",
   "games.achievementManager.consentSam": "Lấy cảm hứng từ cách quản lý thành tựu của SAM",
-  "games.achievementManager.consentOnce": "Chỉ hiển thị một lần cho hồ sơ Harbor này.",
+  "games.achievementManager.consentOnce": "Chỉ hiển thị một lần cho hồ sơ Frame này.",
   "games.achievementManager.consentAccept": "Tôi hiểu",
   "games.achievementManager.desktopOnly":
-    "Dùng Harbor trên Windows khi Steam đang chạy để thay đổi thành tựu.",
+    "Dùng Frame trên Windows khi Steam đang chạy để thay đổi thành tựu.",
   "games.achievementManager.all": "Tất cả",
   "games.achievementManager.filter": "Lọc thành tựu",
   "games.achievementManager.rewards": "Phần thưởng vật phẩm",
@@ -123,7 +123,7 @@ export default {
   "games.achievementManager.pickTitle": "Chọn trò chơi",
   "games.achievementManager.pickSearch": "Tìm trò chơi của bạn",
   "games.achievementManager.pickNote":
-    "Harbor có thể chỉnh sửa thành tích khi Steam đã lưu chúng vào bộ nhớ đệm trên máy tính này.",
+    "Frame có thể chỉnh sửa thành tích khi Steam đã lưu chúng vào bộ nhớ đệm trên máy tính này.",
   "games.achievementManager.pickInstalled": "Đã cài đặt",
   "games.achievementManager.pickEmpty": "Không có trò chơi nào khớp với tìm kiếm.",
   "games.achievementManager.pickUnavailable":

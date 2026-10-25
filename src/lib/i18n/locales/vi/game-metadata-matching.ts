@@ -23,6 +23,6 @@ export default {
   "games.match.use": "Dùng trò chơi này",
   "games.match.remove": "Xóa liên kết",
   "games.match.source": "Hình ảnh và thông tin từ IGDB",
-  "games.match.note": "Chọn phiên bản khớp với tệp. Harbor giữ nguyên tệp gốc và tên tệp.",
+  "games.match.note": "Chọn phiên bản khớp với tệp. Frame giữ nguyên tệp gốc và tên tệp.",
   "games.match.empty": "Thử tên trò chơi không kèm nhãn khu vực hoặc bản sửa đổi.",
 };

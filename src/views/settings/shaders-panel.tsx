@@ -61,7 +61,7 @@ export function ShadersPanel() {
       <Section
         title={t("Desktop only")}
         subtitle={t(
-          "Picture shaders run on the bundled mpv engine in the Harbor desktop app. They have no effect in the browser.",
+          "Picture shaders run on the bundled mpv engine in the Frame desktop app. They have no effect in the browser.",
         )}
       >
         <div className="flex items-start gap-2.5 rounded-[10px] bg-elevated px-4 py-3">
@@ -122,7 +122,7 @@ export function ShadersPanel() {
         <Section
           title={t("More picture shaders")}
           subtitle={t(
-            "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.",
+            "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.",
           )}
         >
           {STAGE_SEQUENCE.map((stage) => {

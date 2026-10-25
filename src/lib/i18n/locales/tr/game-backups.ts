@@ -7,7 +7,7 @@ export default {
     "Bir geri yükleme yarıda kaldı. Tamamlamak için kayıt yedeklerini aç.",
   "games.backups.save_recovery":
     "Bu klasörü yedeklemeden veya geri yüklemeden önce kurtarmayı tamamla.",
-  "games.backups.save_recovery_scope": "Bu işlemi başlatıldığı Harbor profilinden ve oyundan aç.",
+  "games.backups.save_recovery_scope": "Bu işlemi başlatıldığı Frame profilinden ve oyundan aç.",
   "games.backups.result.keptCurrent": "Mevcut kayıtların değişmedi",
   "games.backups.resultNote.keptCurrent":
     "Bu klasördeki mevcut kayıtlar değiştirilmeden kurtarma tamamlandı.",
@@ -15,7 +15,7 @@ export default {
   "games.backups.intro":
     "Geri dönebileceğin bir anı sakla. Bu oyunun kayıt klasörünü ve yedekler için ayrı bir klasör seç. Yedeklemeden veya geri yüklemeden önce oyunu kapat.",
   "games.backups.desktop":
-    "Kayıt yedekleri Harbor masaüstü uygulamasında kullanılabilir. Bilgisayarında seçtiğin klasörleri kullanırlar.",
+    "Kayıt yedekleri Frame masaüstü uygulamasında kullanılabilir. Bilgisayarında seçtiğin klasörleri kullanırlar.",
   "games.backups.folder.source": "Oyun kayıtları",
   "games.backups.folder.vault": "Yedek klasörü",
   "games.backups.choose.source": "Oyunun kayıt klasörünü seç",
@@ -50,8 +50,8 @@ export default {
   "games.backups.identical": "Mevcut kayıt klasörü zaten bu anlık kopyayla eşleşiyor.",
   "games.backups.restore": "Anlık kopyayı geri yükle",
   "games.backups.recoveryNote":
-    "Harbor, kayıtları değiştirmeden önce bir kurtarma kopyası ve özgün klasörü saklar.",
-  "games.backups.localNote": "Seçtiğin klasörde, her Harbor profili için ayrı tutulur.",
+    "Frame, kayıtları değiştirmeden önce bir kurtarma kopyası ve özgün klasörü saklar.",
+  "games.backups.localNote": "Seçtiğin klasörde, her Frame profili için ayrı tutulur.",
   "games.backups.openRecovery": "Özgün klasörü göster",
   "games.backups.reviewUndo": "Geri almayı incele",
   "games.backups.result.restored": "Anlık kopyan geri yüklendi",
@@ -61,11 +61,11 @@ export default {
   "games.backups.resultNote.restored":
     "Kayıt klasörün artık bu anlık kopyayla eşleşiyor. Önceki duruma dönmek istersen kurtarma kopyaları kullanılabilir.",
   "games.backups.resultNote.rolledBack":
-    "Geri yükleme tamamlanamadığından Harbor özgün kayıt klasörünü yerine koydu. Kurtarma kopyası da aşağıda kullanılabilir.",
+    "Geri yükleme tamamlanamadığından Frame özgün kayıt klasörünü yerine koydu. Kurtarma kopyası da aşağıda kullanılabilir.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor, geri yükleme başarısız olduktan sonra özgün klasörü yerine koyamadı. Oyunu kapalı tut. Özgün dosyaların aşağıdaki klasörde ve kurtarma kopyasında saklanıyor.",
+    "Frame, geri yükleme başarısız olduktan sonra özgün klasörü yerine koyamadı. Oyunu kapalı tut. Özgün dosyaların aşağıdaki klasörde ve kurtarma kopyasında saklanıyor.",
   "games.backups.resultNote.notRestored":
-    "Harbor anlık kopyayı seçilen klasöre yerleştiremedi. Yedek hâlâ kullanılabilir.",
+    "Frame anlık kopyayı seçilen klasöre yerleştiremedi. Yedek hâlâ kullanılabilir.",
   "games.backups.phase.scanning": "Kayıtların okunuyor…",
   "games.backups.phase.copying": "Kayıt dosyaları kopyalanıyor…",
   "games.backups.phase.verifying": "Anlık kopya denetleniyor…",
@@ -79,9 +79,9 @@ export default {
   "games.backups.save_record":
     "Bir yedek kaydı güvenli biçimde okunamadı. Dosyaları korundu. Seçilen yedek klasörünü denetle.",
   "games.backups.save_read":
-    "Harbor bu kayıtları okuyamadı. Klasörün kullanılabilir ve oyunun kapalı olduğunu denetle.",
+    "Frame bu kayıtları okuyamadı. Klasörün kullanılabilir ve oyunun kapalı olduğunu denetle.",
   "games.backups.save_write":
-    "Harbor bu kayıtları yazmayı tamamlayamadı. Klasörün yazılabilir ve oyunun kapalı olduğunu denetle.",
+    "Frame bu kayıtları yazmayı tamamlayamadı. Klasörün yazılabilir ve oyunun kapalı olduğunu denetle.",
   "games.backups.save_name":
     "Bir dosya adı korunamadı. Desteklenen dosya adları içeren bir klasör kullan.",
   "games.backups.save_changed":
@@ -102,9 +102,9 @@ export default {
   "games.backups.save_space":
     "Tam bir kopyayı saklamak için yeterli boş alan yok. Başka bir klasör seç veya yer aç.",
   "games.backups.save_config":
-    "Harbor kayıtlı klasör seçimlerini okuyamadı. Yeniden seç; mevcut yedeklere dokunulmadı.",
+    "Frame kayıtlı klasör seçimlerini okuyamadı. Yeniden seç; mevcut yedeklere dokunulmadı.",
   "games.backups.save_config_write":
-    "Harbor bu klasörleri hatırlayamadı. Önceki seçimlerin ve yedeklerin değişmedi.",
+    "Frame bu klasörleri hatırlayamadı. Önceki seçimlerin ve yedeklerin değişmedi.",
   "games.backups.failed":
     "Bu kayıt işlemi tamamlanamadı. Yedek dosyaların korundu. Klasörleri denetleyip tekrar dene.",
   "games.backups.compare.title": "Dosya karşılaştırması",

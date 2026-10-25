@@ -11,13 +11,13 @@ if (!version || !dir || !sigDir || !notesFile) {
   process.exit(1);
 }
 
-const base = `https://github.com/crazyrabbit0/harbor/releases/download/v${version}`;
+const base = `https://github.com/abdallahkattriah-sketch/frame/releases/download/v${version}`;
 const PLATFORMS = {
-  "windows-x86_64": `Harbor_${version}_x64-setup.exe`,
-  "darwin-aarch64": `Harbor_${version}_aarch64.app.tar.gz`,
-  "darwin-x86_64": `Harbor_${version}_x86_64.app.tar.gz`,
-  "linux-x86_64": `Harbor_${version}_amd64.AppImage`,
-  "linux-aarch64": `Harbor_${version}_aarch64.AppImage`,
+  "windows-x86_64": `Frame_${version}_x64-setup.exe`,
+  "darwin-aarch64": `Frame_${version}_aarch64.app.tar.gz`,
+  "darwin-x86_64": `Frame_${version}_x86_64.app.tar.gz`,
+  "linux-x86_64": `Frame_${version}_amd64.AppImage`,
+  "linux-aarch64": `Frame_${version}_aarch64.AppImage`,
 };
 
 const platforms = {};

@@ -282,8 +282,8 @@ export function TogetherRelayPanel({
         apiToken: settings.togetherCfToken,
       },
       notes: [
-        "Keep this file safe and offline. Cloudflare shows API tokens only once at creation. Without this token, Harbor cannot stop, redeploy, or update this relay through its UI.",
-        "To restore: open Settings -> Harbor Relay, paste the relayUrl, and re-enter the API token if you plan to manage from Harbor.",
+        "Keep this file safe and offline. Cloudflare shows API tokens only once at creation. Without this token, Frame cannot stop, redeploy, or update this relay through its UI.",
+        "To restore: open Settings -> Frame Relay, paste the relayUrl, and re-enter the API token if you plan to manage from Frame.",
         "You can always delete the underlying Worker manually at dash.cloudflare.com -> Workers & Pages, even without this file.",
       ],
     };
@@ -291,7 +291,7 @@ export function TogetherRelayPanel({
       `harbor-relay-backup-${new Date().toISOString().slice(0, 10)}.json`,
       JSON.stringify(payload, null, 2),
       ["json"],
-      "Harbor relay backup",
+      "Frame relay backup",
     );
   };
 
@@ -336,7 +336,7 @@ export function TogetherRelayPanel({
               icon={<Power size={18} strokeWidth={1.9} />}
               label={t("Deploy a relay")}
               desc={t(
-                "Harbor creates a Cloudflare Worker on your own free account and saves the URL.",
+                "Frame creates a Cloudflare Worker on your own free account and saves the URL.",
               )}
               tip={t(
                 "Runs on Cloudflare's free Workers tier. Takes about two minutes, and you can stop it from here later.",
@@ -428,7 +428,7 @@ export function TogetherRelayPanel({
                   passive.needsUpdate
                     ? isPubRelay
                       ? t(
-                          "Running version {version}. Harbor's public relay updates itself, so there is nothing for you to do.",
+                          "Running version {version}. Frame's public relay updates itself, so there is nothing for you to do.",
                           { version: relayVersion },
                         )
                       : t(
@@ -508,7 +508,7 @@ export function TogetherRelayPanel({
                 label={t("Backup credentials")}
                 desc={t("Saves the relay URL and your Cloudflare token to a file.")}
                 tip={t(
-                  "Cloudflare shows API tokens only once. Save a copy now or you'll lose the ability to stop or redeploy this relay from Harbor.",
+                  "Cloudflare shows API tokens only once. Save a copy now or you'll lose the ability to stop or redeploy this relay from Frame.",
                 )}
               >
                 <button onClick={exportBackup} className={ROW_ACTION}>
@@ -520,7 +520,7 @@ export function TogetherRelayPanel({
               <SettingRow
                 icon={<Link2 size={18} strokeWidth={1.9} />}
                 label={t("Forget URL")}
-                desc={t("Clears the URL from Harbor. The Worker keeps running on Cloudflare.")}
+                desc={t("Clears the URL from Frame. The Worker keeps running on Cloudflare.")}
               >
                 <button onClick={() => update({ togetherRelayUrl: "" })} className={ROW_ACTION}>
                   {t("Forget")}
@@ -552,7 +552,7 @@ export function TogetherRelayPanel({
               <SettingRow
                 icon={<Link2 size={18} strokeWidth={1.9} />}
                 label={t("Use a different URL")}
-                desc={t("Clears the saved URL so you can point Harbor at another relay.")}
+                desc={t("Clears the saved URL so you can point Frame at another relay.")}
               >
                 <button onClick={() => update({ togetherRelayUrl: "" })} className={ROW_ACTION}>
                   {t("Change")}

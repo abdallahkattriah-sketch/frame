@@ -3,7 +3,7 @@ export default {
   "games.links.sort": "Bağlantıları sırala",
   "games.links.note": "URL’ye göre A–Z sıralayın. Adlar ve hedefler aynı kalır.",
   "games.links.available":
-    "Harbor’da zaten bulunan bağlantıları kullanır. Yeni bulunan bağlantılar kayıtlı sıranın sonuna eklenir.",
+    "Frame’da zaten bulunan bağlantıları kullanır. Yeni bulunan bağlantılar kayıtlı sıranın sonuna eklenir.",
   "games.links.original": "Özgün sırayı geri yükle",
   "games.links.applied": "{count} oyunun bağlantıları güncellendi.",
   "games.links.changes": "{count} oyun değişecek.",

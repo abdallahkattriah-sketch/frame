@@ -3,7 +3,7 @@ export default {
     "Battle.netのアカウントが変わりました。このプロフィールのインポート内容を置き換えるには、再度サインインしてください。",
   "games.battlenet.connect": "サインイン",
   "games.battlenet.intro":
-    "Battle.netにサインインしてゲームをインポートします。この接続は現在のHarborプロフィールに保存されます。",
+    "Battle.netにサインインしてゲームをインポートします。この接続は現在のFrameプロフィールに保存されます。",
   "games.battlenet.installed": "インストール済みのゲームを表示",
   "games.battlenet.uninstalled": "アカウント内の未インストールのゲームを表示",
   "games.battlenet.partial":
@@ -14,7 +14,7 @@ export default {
   "games.battlenet.timeout": "Battle.netからの応答がタイムアウトしました。再試行してください。",
   "games.battlenet.busy": "Battle.netアカウントの操作がすでに実行中です。",
   "games.battlenet.update":
-    "Battle.netに接続するには、更新済みのHarborデスクトップアプリを再起動してください。",
+    "Battle.netに接続するには、更新済みのFrameデスクトップアプリを再起動してください。",
   "games.battlenet.error":
     "Battle.netを更新できませんでした。最後にインポートしたライブラリは保持されています。",
   "games.battlenet.disconnect": "Battle.netの接続を解除",
@@ -27,7 +27,7 @@ export default {
   "games.launcherSession.unconfirmed": "ゲームの状態を確認中",
   "games.launcherSession.notStarted": "ゲームが起動しませんでした",
   "games.launcherSession.error":
-    "ゲームのプレイ状況を記録できませんでした。Harbor を開き直して再試行してください。",
+    "ゲームのプレイ状況を記録できませんでした。Frame を開き直して再試行してください。",
 
   "games.steamImport.importedTitle": "インポートしたゲーム",
   "games.steamImport.excluded": "インポート設定により除外",
@@ -39,7 +39,7 @@ export default {
   "games.steamImport.ignoreSaved": "除外するIDを保存しました。",
   "games.steamImport.title": "Steamゲームをインポート",
   "games.steamImport.note":
-    "このHarborプロフィールにゲームの記録を保存します。所有権とインストール状況は別途確認されます。",
+    "このFrameプロフィールにゲームの記録を保存します。所有権とインストール状況は別途確認されます。",
   "games.steamImport.input": "SteamアプリIDまたはストアURL",
   "games.steamImport.profile": "Depressurizerプロフィールを選択",
   "games.steamImport.count": "{selected}件選択 · 全{total}件",
@@ -81,7 +81,7 @@ export default {
   "games.libraryStatus.onHold": "保留中",
   "games.libraryStatus.stopped": "プレイを中断",
   "games.libraryStatus.note":
-    "このコピーに対する選択は、このHarborプロフィールに保存されます。プレイ時間や実績によって自動変更されることはありません。",
+    "このコピーに対する選択は、このFrameプロフィールに保存されます。プレイ時間や実績によって自動変更されることはありません。",
 
   "games.unified.playtime": "プレイ時間",
   "games.unified.playtime.all": "すべてのプレイ時間",
@@ -93,11 +93,11 @@ export default {
   "games.unified.playtime.most": "記録時間が長い順",
   "games.unified.playtime.steam": "Steamで{time}",
   "games.unified.playtime.zeroSteam": "Steamにプレイ時間の記録はありません",
-  "games.unified.playtime.zeroHarbor": "Harborにプレイ時間の記録はありません",
+  "games.unified.playtime.zeroHarbor": "Frameにプレイ時間の記録はありません",
   "games.unified.playtime.unknownHint":
     "Steamアカウントのプレイ時間を取得できないか、このソースはプレイ時間を提供していません。",
   "games.unified.playtime.note":
-    "Steamの合計時間と、修正内容を含むHarborの記録時間を使用します。取得できない時間は区別されます。",
+    "Steamの合計時間と、修正内容を含むFrameの記録時間を使用します。取得できない時間は区別されます。",
   "games.unified.note": "Steamライブラリ、PCゲーム、インポートしたROMをまとめて表示します。",
   "games.unified.allSources": "すべての入手元",
   "games.unified.availability": "利用状況",

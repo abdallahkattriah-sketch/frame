@@ -3,11 +3,11 @@ const plugins: Record<string, string> = {
   Repositories: "Depolar",
   "Installed plugins": "Yüklü uzantılar",
   "Plugin repositories": "Uzantı depoları",
-  "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.":
-    "Uzantılar masaüstü uygulamasında çalışır. Eklemek ve yönetmek için bilgisayarınızda Harbor'ı açın.",
+  "Plugins run in the desktop app. Open Frame on your computer to add and manage them.":
+    "Uzantılar masaüstü uygulamasında çalışır. Eklemek ve yönetmek için bilgisayarınızda Frame'ı açın.",
   "Use plugins": "Uzantıları kullan",
-  "Plugins are small scripts that look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "Uzantılar, Harbor'ın bilmediği sitelerde yayın arayan küçük betiklerdir. Buradaki her şeyi seçtiğiniz depolardan kendiniz yüklediniz.",
+  "Plugins are small scripts that look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "Uzantılar, Frame'ın bilmediği sitelerde yayın arayan küçük betiklerdir. Buradaki her şeyi seçtiğiniz depolardan kendiniz yüklediniz.",
   "Ask every enabled plugin for streams when you press Play. Turn this off to pause them all without removing anything.":
     "Oynat'a bastığınızda etkin her uzantıdan yayın ister. Kapatırsanız hiçbir şey kaldırılmadan tümü duraklatılır.",
   "Group by repository": "Depoya göre grupla",
@@ -34,7 +34,7 @@ const plugins: Record<string, string> = {
   "v{version} available": "v{version} mevcut",
   "Paused after {n} failures. Turn it back on to try again.":
     "{n} hatadan sonra duraklatıldı. Yeniden denemek için tekrar açın.",
-  "Needs Harbor {version} or newer.": "Harbor {version} veya daha yenisi gerekir.",
+  "Needs Frame {version} or newer.": "Frame {version} veya daha yenisi gerekir.",
   "This file is not a stream plugin.": "Bu dosya bir yayın uzantısı değil.",
   "Turned off by its repository.": "Deposu tarafından kapatıldı.",
   "Plugin files changed on disk. Reinstall it from its repository.":
@@ -76,15 +76,15 @@ const plugins: Record<string, string> = {
   "Removed {name}.": "{name} kaldırıldı.",
   "Updated {name} to v{version}.": "{name}, v{version} sürümüne güncellendi.",
   "Reverted {name} to v{version}.": "{name}, v{version} sürümüne geri alındı.",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
-    "Güvendiğiniz bir deponun manifest bağlantısını yapıştırın. Harbor kendi uzantı depolarını ve sağlayıcı betiği depolarını olduğu gibi okur ve siz seçmeden hiçbir şey yüklemez.",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
+    "Güvendiğiniz bir deponun manifest bağlantısını yapıştırın. Frame kendi uzantı depolarını ve sağlayıcı betiği depolarını olduğu gibi okur ve siz seçmeden hiçbir şey yüklemez.",
   "Repository link": "Depo bağlantısı",
-  "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.":
-    "Raw olsun olmasın her GitHub bağlantısı çalışır. Eksikse Harbor /manifest.json ekler. Tümünü eklemek için birkaçını birden yapıştırın.",
+  "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.":
+    "Raw olsun olmasın her GitHub bağlantısı çalışır. Eksikse Frame /manifest.json ekler. Tümünü eklemek için birkaçını birden yapıştırın.",
   "Only https links are accepted.": "Yalnızca https bağlantıları kabul edilir.",
   "That link did not answer.": "Bu bağlantı yanıt vermedi.",
-  "This does not look like a plugin repository. Harbor expects { name, plugins } or a provider-script manifest with scrapers.":
-    "Bu bir uzantı deposuna benzemiyor. Harbor { name, plugins } ya da scrapers içeren bir sağlayıcı betiği manifest'i bekler.",
+  "This does not look like a plugin repository. Frame expects { name, plugins } or a provider-script manifest with scrapers.":
+    "Bu bir uzantı deposuna benzemiyor. Frame { name, plugins } ya da scrapers içeren bir sağlayıcı betiği manifest'i bekler.",
   "This is a manga repository. Add it from the Manga page.":
     "Bu bir manga deposu. Manga sayfasından ekleyin.",
   "Already added.": "Zaten eklendi.",
@@ -109,8 +109,8 @@ const plugins: Record<string, string> = {
   "Checksum did not match the manifest.": "Sağlama toplamı manifest ile eşleşmedi.",
   "Checking for updates": "Güncellemeleri denetleme",
   "Check repositories daily": "Depoları her gün denetle",
-  "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.":
-    "Günde bir kez daha yeni sürümleri arar ve burada bir Güncelle düğmesi gösterir. Harbor hiçbir güncellemeyi kendiliğinden yüklemez.",
+  "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.":
+    "Günde bir kez daha yeni sürümleri arar ve burada bir Güncelle düğmesi gösterir. Frame hiçbir güncellemeyi kendiliğinden yüklemez.",
   "Settings this plugin asked for. Stored on this computer only.":
     "Bu uzantının istediği ayarlar. Yalnızca bu bilgisayarda saklanır.",
   "This plugin's settings form failed to load: {error}":
@@ -118,8 +118,8 @@ const plugins: Record<string, string> = {
   "{n} of {m} answered, {k} failed": "{m} kaynaktan {n} tanesi yanıt verdi, {k} tanesi başarısız",
   "Install all": "Tümünü yükle",
   "Installing {done} of {total}": "{total} içinden {done} yükleniyor",
-  "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.":
-    "Harbor'ın bilmediği sitelerde yayın, manga ve kitap bulan, seçtiğiniz depolardan yüklenen küçük betikler.",
+  "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.":
+    "Frame'ın bilmediği sitelerde yayın, manga ve kitap bulan, seçtiğiniz depolardan yüklenen küçük betikler.",
   "Remove all": "Tümünü kaldır",
 };
 

@@ -113,7 +113,7 @@ export function SeekBarPanel() {
         <SettingRow
           wide
           label={t("Bar color")}
-          desc={t("The filled part of the timeline. Default follows your Harbor accent.")}
+          desc={t("The filled part of the timeline. Default follows your Frame accent.")}
         >
           <div className="flex w-full flex-wrap items-center gap-2.5">
             {PRESET_COLORS.map((c) => {

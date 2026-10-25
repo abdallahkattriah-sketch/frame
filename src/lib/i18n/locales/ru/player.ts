@@ -47,8 +47,8 @@ const player: Record<string, string> = {
   "Reloading the stream…": "Перезагрузка потока…",
   "Couldn't reload the stream. Try picking another source.":
     "Не удалось перезагрузить поток. Попробуйте выбрать другой источник.",
-  "Harbor's streaming server only runs in the desktop app.":
-    "Стриминг-сервер Harbor работает только в десктопном приложении.",
+  "Frame's streaming server only runs in the desktop app.":
+    "Стриминг-сервер Frame работает только в десктопном приложении.",
   "Restarting the streaming server…": "Перезапуск стриминг-сервера…",
   "Couldn't restart the streaming server.": "Не удалось перезапустить стриминг-сервер.",
   "The streaming server didn't come back up.": "Стриминг-сервер так и не заработал.",
@@ -392,8 +392,8 @@ const player: Record<string, string> = {
   default: "по умолчанию",
   "loading more…": "загрузка ещё…",
   min: "мин",
-  "mpv is required for recording. Install mpv and restart Harbor.":
-    "Для записи требуется mpv. Установите mpv и перезапустите Harbor.",
+  "mpv is required for recording. Install mpv and restart Frame.":
+    "Для записи требуется mpv. Установите mpv и перезапустите Frame.",
   "to close": "чтобы закрыть",
   "unsaved changes": "несохранённые изменения",
   "{count} dl": "{count} загр.",

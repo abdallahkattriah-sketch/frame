@@ -38,7 +38,7 @@ export default {
   "games.valorant.metaScope":
     "選択したパッチのOP.GGコンペティティブデータです。選択率はエージェントの使用数に占める割合です。提供元の標本を示しており、全プレイヤーの結果ではありません。",
   "games.valorant.referenceScope":
-    "ゲーム画像と参考情報はValorant-API経由です。更新がゲームより遅れる場合があります。HarborはRiot Games公認ではありません。",
+    "ゲーム画像と参考情報はValorant-API経由です。更新がゲームより遅れる場合があります。FrameはRiot Games公認ではありません。",
   "games.valorant.samples": "使用数：{count}",
   "games.valorant.smallSample": "標本数が少ない",
   "games.valorant.abilities": "アビリティー",

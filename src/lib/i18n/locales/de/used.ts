@@ -82,13 +82,13 @@ const used: Record<string, string> = {
     "Poster in der Nähe sanft vergrößern, während du dich durch eine Posterreihe bewegst.",
   "German Cinema": "Deutsches Kino",
   "German Films": "Deutsche Filme",
-  "Harbor Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
-    "Harbor Rank bewertet eine ganze Karriere, nicht nur einen einzelnen Erfolg. Vier Faktoren bestimmen den Rang: wie gut die Werke im Durchschnitt sind, wie viele davon breite Anerkennung fanden, welche bedeutenden Auszeichnungen sie erhielten und wie oft die Person eine tragende Hauptrolle übernahm. Jeder Bereich wird gewichtet und zur Gesamtwertung addiert, die anschließend an Umfang und Aktualität des Gesamtwerks angepasst wird. Jede Zahl, die in die Wertung einfließt, wird auf der Karte angezeigt, sodass du jederzeit nachvollziehen kannst, wie sie zustande kommt.",
-  "Harbor could not find these": "Harbor konnte diese nicht finden",
-  "Harbor loads the native svpflow filter through VapourSynth and starts SVP Manager when available. Restart playback to apply.":
-    "Harbor lädt den nativen svpflow-Filter über VapourSynth und startet, falls verfügbar, SVP Manager. Starte die Wiedergabe neu, um die Änderung anzuwenden.",
-  "Harbor's own menus and labels. Subtitle languages come later, and you can change both in Settings.":
-    "Harbors eigene Menüs und Beschriftungen. Untertitelsprachen folgen später, und du kannst beides in den Einstellungen ändern.",
+  "Frame Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
+    "Frame Rank bewertet eine ganze Karriere, nicht nur einen einzelnen Erfolg. Vier Faktoren bestimmen den Rang: wie gut die Werke im Durchschnitt sind, wie viele davon breite Anerkennung fanden, welche bedeutenden Auszeichnungen sie erhielten und wie oft die Person eine tragende Hauptrolle übernahm. Jeder Bereich wird gewichtet und zur Gesamtwertung addiert, die anschließend an Umfang und Aktualität des Gesamtwerks angepasst wird. Jede Zahl, die in die Wertung einfließt, wird auf der Karte angezeigt, sodass du jederzeit nachvollziehen kannst, wie sie zustande kommt.",
+  "Frame could not find these": "Frame konnte diese nicht finden",
+  "Frame loads the native svpflow filter through VapourSynth and starts SVP Manager when available. Restart playback to apply.":
+    "Frame lädt den nativen svpflow-Filter über VapourSynth und startet, falls verfügbar, SVP Manager. Starte die Wiedergabe neu, um die Änderung anzuwenden.",
+  "Frame's own menus and labels. Subtitle languages come later, and you can change both in Settings.":
+    "Frames eigene Menüs und Beschriftungen. Untertitelsprachen folgen später, und du kannst beides in den Einstellungen ändern.",
   "Hide breakdown": "Aufschlüsselung ausblenden",
   "Hide card": "Karte ausblenden",
   "Hide curated packs": "Kuratierte Pakete ausblenden",
@@ -97,11 +97,11 @@ const used: Record<string, string> = {
   "High is sized to your screen and looks identical to full res on far less memory. Balanced saves the most. Maximum keeps original resolution.":
     "„Hoch“ wird an deinen Bildschirm angepasst und sieht bei deutlich geringerem Speicherbedarf genauso aus wie die volle Auflösung. „Ausgewogen“ spart am meisten. „Maximum“ behält die Originalauflösung bei.",
   "Hover a band to inspect a pillar": "Mit der Maus über ein Band fahren, um eine Säule zu prüfen",
-  "How Harbor Rank works": "So funktioniert der Harbor-Rang",
+  "How Frame Rank works": "So funktioniert der Frame-Rang",
   "How cards look across Home, Discover, and your library. The preview updates live.":
     "So sehen Karten auf der Startseite, unter Entdecken und in deiner Mediathek aus. Die Vorschau wird live aktualisiert.",
-  "How long Harbor waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
-    "So lange wartet Harbor bei jedem Add-on auf Streams. Aggregatoren, die viele Quellen durchsuchen, können 45 s oder länger benötigen. Ergebnisse erscheinen, sobald das jeweilige Add-on antwortet, daher verzögert eine längere Wartezeit niemals die schnellen Add-ons.",
+  "How long Frame waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
+    "So lange wartet Frame bei jedem Add-on auf Streams. Aggregatoren, die viele Quellen durchsuchen, können 45 s oder länger benötigen. Ergebnisse erscheinen, sobald das jeweilige Add-on antwortet, daher verzögert eine längere Wartezeit niemals die schnellen Add-ons.",
   "How the four pillars are weighted": "Gewichtung der vier Säulen",
   "How this is ranked": "So entsteht diese Rangliste",
   "IMDb Top": "IMDb-Topliste",
@@ -118,8 +118,8 @@ const used: Record<string, string> = {
   Insert: "Einfügen",
   "Install more shaders in Settings, Shaders to switch between them here.":
     "Installiere unter Einstellungen > Shader weitere Shader, um hier zwischen ihnen zu wechseln.",
-  "Installed and detected. Harbor found the native svpflow plugins and VapourSynth script library.":
-    "Installiert und erkannt. Harbor hat die nativen svpflow-Plugins und die VapourSynth-Skriptbibliothek gefunden.",
+  "Installed and detected. Frame found the native svpflow plugins and VapourSynth script library.":
+    "Installiert und erkannt. Frame hat die nativen svpflow-Plugins und die VapourSynth-Skriptbibliothek gefunden.",
   "Installed packs": "Installierte Pakete",
   "Installed shaders": "Installierte Shader",
   "Invited by {name}": "Von {name} eingeladen",
@@ -129,18 +129,18 @@ const used: Record<string, string> = {
   "Japanese Films": "Japanische Filme",
   "Korean Films": "Koreanische Filme",
   "Last source tried": "Zuletzt ausprobierte Quelle",
-  "Leftover installers from past updates, cached trailers, and casting scratch files. Harbor clears old ones on launch, keeping only the most recent installer.":
-    "Übrig gebliebene Installationsprogramme früherer Updates, zwischengespeicherte Trailer und temporäre Dateien für die Übertragung auf andere Geräte. Harbor löscht beim Start alte Dateien und behält nur das neueste Installationsprogramm.",
+  "Leftover installers from past updates, cached trailers, and casting scratch files. Frame clears old ones on launch, keeping only the most recent installer.":
+    "Übrig gebliebene Installationsprogramme früherer Updates, zwischengespeicherte Trailer und temporäre Dateien für die Übertragung auf andere Geräte. Frame löscht beim Start alte Dateien und behält nur das neueste Installationsprogramm.",
   "Local storage is full, these ratings live on your account only.":
     "Der lokale Speicher ist voll. Diese Bewertungen werden nur in deinem Konto gespeichert.",
-  "Manga cannot be matched to a Harbor title yet, so {n} were left out.":
-    "Manga können noch keinem Harbor-Titel zugeordnet werden, daher wurden {n} ausgelassen.",
+  "Manga cannot be matched to a Frame title yet, so {n} were left out.":
+    "Manga können noch keinem Frame-Titel zugeordnet werden, daher wurden {n} ausgelassen.",
   "Mark all read": "Alle als gelesen markieren",
   Minecraft: "Minecraft",
   "Modern Russian Series": "Moderne russische Serien",
   "Mute all profile songs": "Alle Profilsongs stummschalten",
-  "Native 48/60fps motion through your Linux SVP and VapourSynth installation, rendered inside Harbor's embedded player.":
-    "Native Bewegungsdarstellung mit 48/60 fps über deine SVP- und VapourSynth-Installation unter Linux, gerendert im eingebetteten Player von Harbor.",
+  "Native 48/60fps motion through your Linux SVP and VapourSynth installation, rendered inside Frame's embedded player.":
+    "Native Bewegungsdarstellung mit 48/60 fps über deine SVP- und VapourSynth-Installation unter Linux, gerendert im eingebetteten Player von Frame.",
   "New Year Classics": "Neujahrsklassiker",
   "New this week": "Diese Woche neu",
   "New to the chart": "Neu in den Charts",
@@ -194,16 +194,16 @@ const used: Record<string, string> = {
   "Russian Films": "Russische Filme",
   "Russian Movies": "Russische Filme",
   SCORE: "PUNKTZAHL",
-  "SVP is not supported by this Harbor package.":
-    "SVP wird von diesem Harbor-Paket nicht unterstützt.",
+  "SVP is not supported by this Frame package.":
+    "SVP wird von diesem Frame-Paket nicht unterstützt.",
   "Search movies, shows, anime, manga": "Filme, Serien, Anime und Manga suchen",
   Shaders: "Shader",
   "Show card": "Karte anzeigen",
   "Showing last synced ranking": "Zuletzt synchronisierte Rangliste wird angezeigt",
   "Shows a small green dot on the player's subtitle button while a subtitle track is active. Turn it off if you would rather keep the controls clean.":
     "Zeigt einen kleinen grünen Punkt auf der Untertitel-Schaltfläche des Players, solange eine Untertitelspur aktiv ist. Deaktiviere dies, wenn du die Bedienelemente lieber schlicht halten möchtest.",
-  "Sign in to your Harbor account first. Imported ratings are saved to your profile.":
-    "Melde dich zuerst bei deinem Harbor-Konto an. Importierte Bewertungen werden in deinem Profil gespeichert.",
+  "Sign in to your Frame account first. Imported ratings are saved to your profile.":
+    "Melde dich zuerst bei deinem Frame-Konto an. Importierte Bewertungen werden in deinem Profil gespeichert.",
   "Skip ad": "Werbung überspringen",
   "Skipped, not rated or not supported": "Übersprungen, nicht bewertet oder nicht unterstützt",
   "Something went wrong reaching the ranking feed.":
@@ -258,7 +258,7 @@ const used: Record<string, string> = {
   "You were mentioned": "Du wurdest erwähnt",
   "Your Lists": "Deine Listen",
   "Your MAL Lists": "Deine MAL-Listen",
-  "Your handle across Harbor.": "Dein Benutzername in Harbor.",
+  "Your handle across Frame.": "Dein Benutzername in Frame.",
   "acclaimed titles": "gefeierte Titel",
   "and {count} more": "und {count} weitere",
   "and {n} more": "und {n} weitere",

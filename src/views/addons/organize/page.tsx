@@ -207,7 +207,7 @@ export function OrganizeAddonsPage({
                     "Stremio didn't confirm the move. Your collection may be unchanged. Reload to see the current state.",
                   )
                 : t(
-                    "Moved, but Harbor couldn't confirm the result. Reload to see the current state.",
+                    "Moved, but Frame couldn't confirm the result. Reload to see the current state.",
                   ),
           reload: true,
         });
@@ -438,7 +438,7 @@ export function OrganizeAddonsPage({
                       <SectionCard
                         title={t("On this device only")}
                         sub={t(
-                          "These live in Harbor on this computer and never touch your account.",
+                          "These live in Frame on this computer and never touch your account.",
                         )}
                         count={workingDevice.length}
                         action={
@@ -528,7 +528,7 @@ export function OrganizeAddonsPage({
                     </li>
                     <li>
                       {t(
-                        "Harbor double-checks with Stremio after saving, so a half-written order can't slip through.",
+                        "Frame double-checks with Stremio after saving, so a half-written order can't slip through.",
                       )}
                     </li>
                   </ul>

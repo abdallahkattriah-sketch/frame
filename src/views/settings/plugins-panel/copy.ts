@@ -9,7 +9,7 @@ const RUNTIME_GONE = /java runtime|HARBOR_JAVA|extension runtime is missing|exte
 
 function runtimeMissingText(t: T): string {
   return t(
-    "Harbor could not start the runtime that Android extensions need. Reinstall Harbor, or install Java 17 or newer, then try again.",
+    "Frame could not start the runtime that Android extensions need. Reinstall Frame, or install Java 17 or newer, then try again.",
   );
 }
 
@@ -26,7 +26,7 @@ export function errorText(t: T, e: unknown): string {
     case "not-a-repo":
     case "ebook-repo":
       return t(
-        "This does not look like a plugin repository. Harbor reads its own plugin manifests, provider-script manifests and Android extension repositories.",
+        "This does not look like a plugin repository. Frame reads its own plugin manifests, provider-script manifests and Android extension repositories.",
       );
     case "manga-repo":
       return t("This is a manga repository. Add it from the Manga page.");
@@ -85,7 +85,7 @@ export function stateCopy(t: T, p: PluginView): StateCopy {
         desc: null,
         warn: null,
         lock: (p.error ?? "").startsWith("min:")
-          ? t("Needs Harbor {version} or newer.", { version: (p.error ?? "").slice(4) })
+          ? t("Needs Frame {version} or newer.", { version: (p.error ?? "").slice(4) })
           : t("This file is not a stream plugin."),
       };
     case "repo-disabled":

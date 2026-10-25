@@ -58,14 +58,13 @@ const coverage: Record<string, string> = {
   "Checking availability": "جارٍ التحقق من التوفر",
   Chime: "رنين",
   Choose: "اختيار",
-  "Choose one season package. Harbor will match and download every available episode from it.":
-    "اختر حزمة موسم واحدة. سيطابق Harbor وينزّل كل حلقة متاحة منها.",
+  "Choose one season package. Frame will match and download every available episode from it.":
+    "اختر حزمة موسم واحدة. سيطابق Frame وينزّل كل حلقة متاحة منها.",
   "Choose where subtitle timing feedback appears and how large it is.":
     "اختر مكان ظهور مؤشر توقيت الترجمة وحجمه.",
   "Choose who can see the friends on your profile": "اختر من يمكنه رؤية الأصدقاء في ملفك الشخصي",
   Cinematography: "التصوير السينمائي",
-  "Claim one so people can find you across Harbor.":
-    "احجز واحدًا ليتمكن الآخرون من إيجادك في Harbor.",
+  "Claim one so people can find you across Frame.": "احجز واحدًا ليتمكن الآخرون من إيجادك في Frame.",
   Collapse: "طي",
   "Community collections are coming soon": "مجموعات المجتمع قادمة قريبًا",
   Completed: "مكتمل",
@@ -141,20 +140,20 @@ const coverage: Record<string, string> = {
   Guide: "الدليل",
   HI: "HI",
   Handle: "المعرّف",
-  "Harbor found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
-    "وجد Harbor مصادر للحلقات، لكن لا شيء منها حزمة قابلة للتنزيل لـ {season}. جرّب إضافة أخرى أو حدّث المصادر.",
+  "Frame found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
+    "وجد Frame مصادر للحلقات، لكن لا شيء منها حزمة قابلة للتنزيل لـ {season}. جرّب إضافة أخرى أو حدّث المصادر.",
   "Hide replies": "إخفاء الردود",
   Highlights: "أبرز اللحظات",
   Horizontal: "أفقي",
   Host: "المضيف",
-  "How people find you across Harbor.": "كيف يجدك الآخرون في Harbor.",
+  "How people find you across Frame.": "كيف يجدك الآخرون في Frame.",
   ID: "المعرّف",
   Imported: "مُستورد",
   "In this collection": "في هذه المجموعة",
   Information: "معلومات",
   Interrupted: "متوقف",
   Invert: "عكس",
-  "Join Harbor": "انضم إلى Harbor",
+  "Join Frame": "انضم إلى Frame",
   Keep: "إبقاء",
   Language: "اللغة",
   Latest: "الأحدث",
@@ -204,10 +203,10 @@ const coverage: Record<string, string> = {
   Ongoing: "مستمر",
   Online: "متصل",
   "Only me": "أنا فقط",
-  "Open Harbor on desktop to verify ownership in your browser.":
-    "افتح Harbor على سطح المكتب للتحقق من الملكية في متصفحك.",
-  "Opens Stremio in your browser. Works with email, Facebook, and Apple. Harbor never sees your password.":
-    "يفتح Stremio في متصفحك. يعمل بالبريد وفيسبوك وآبل. لا يرى Harbor كلمة مرورك أبدًا.",
+  "Open Frame on desktop to verify ownership in your browser.":
+    "افتح Frame على سطح المكتب للتحقق من الملكية في متصفحك.",
+  "Opens Stremio in your browser. Works with email, Facebook, and Apple. Frame never sees your password.":
+    "يفتح Stremio في متصفحك. يعمل بالبريد وفيسبوك وآبل. لا يرى Frame كلمة مرورك أبدًا.",
   "Ownership verified": "تم التحقق من الملكية",
   "Page background": "خلفية الصفحة",
   Paid: "مدفوع",
@@ -235,8 +234,8 @@ const coverage: Record<string, string> = {
   Pulse: "نبض",
   Queue: "قائمة الانتظار",
   Queued: "في قائمة الانتظار",
-  "Queued {queued} of {total} episodes. Harbor could not match every episode in this package.":
-    "تمت إضافة {queued} من {total} حلقة إلى قائمة الانتظار. لم يستطع Harbor مطابقة كل حلقة في هذه الحزمة.",
+  "Queued {queued} of {total} episodes. Frame could not match every episode in this package.":
+    "تمت إضافة {queued} من {total} حلقة إلى قائمة الانتظار. لم يستطع Frame مطابقة كل حلقة في هذه الحزمة.",
   Quiet: "هادئ",
   REC: "REC",
   Ratings: "التقييمات",
@@ -287,8 +286,8 @@ const coverage: Record<string, string> = {
   Seasons: "المواسم",
   Servers: "الخوادم",
   Share: "مشاركة",
-  "Shared collections from across Harbor will show up here soon.":
-    "ستظهر هنا قريبًا المجموعات المشتركة من كل أنحاء Harbor.",
+  "Shared collections from across Frame will show up here soon.":
+    "ستظهر هنا قريبًا المجموعات المشتركة من كل أنحاء Frame.",
   "Show 1 reply": "عرض رد واحد",
   "Show More info button": 'عرض زر "مزيد من المعلومات"',
   "Show a Minecraft card on your profile. Leave the username blank to hide it.":
@@ -304,11 +303,11 @@ const coverage: Record<string, string> = {
   Shown: "ظاهر",
   "Shown on the card and at the top of the page.": "يظهر على البطاقة وأعلى الصفحة.",
   Shows: "المسلسلات",
-  "Sign in to Harbor to check availability.": "سجّل الدخول إلى Harbor للتحقق من التوفر.",
+  "Sign in to Frame to check availability.": "سجّل الدخول إلى Frame للتحقق من التوفر.",
   "Sign in to pick up where you left off.": "سجّل الدخول لتكمل من حيث توقفت.",
   "Sign in to upload a custom image.": "سجّل الدخول لرفع صورة مخصصة.",
   "Signed in as {username}": "مسجّل الدخول باسم {username}",
-  "Signed in to your Harbor account": "مسجّل الدخول إلى حساب Harbor الخاص بك",
+  "Signed in to your Frame account": "مسجّل الدخول إلى حساب Frame الخاص بك",
   Silent: "صامت",
   Size: "الحجم",
   Socials: "الشبكات الاجتماعية",
@@ -456,14 +455,14 @@ const coverage: Record<string, string> = {
   "· {n} noms": "· {n} ترشيحات",
   "Big Picture": "وضع الشاشة الكبيرة",
   "Leave Big Picture": "مغادرة وضع الشاشة الكبيرة",
-  "A full screen, couch friendly Harbor for TVs, handhelds and big monitors.":
-    "واجهة Harbor بملء الشاشة مصممة للمشاهدة من الأريكة: التلفزيونات والأجهزة المحمولة والشاشات الكبيرة.",
+  "A full screen, couch friendly Frame for TVs, handhelds and big monitors.":
+    "واجهة Frame بملء الشاشة مصممة للمشاهدة من الأريكة: التلفزيونات والأجهزة المحمولة والشاشات الكبيرة.",
   "Show the Big Picture button": "إظهار زر وضع الشاشة الكبيرة",
-  "Adds a Big Picture button to Harbor's navigation. Turn this off to keep it out of the way.":
-    "يضيف زر وضع الشاشة الكبيرة إلى شريط التنقل في Harbor. أوقفه لإبقائه بعيدًا عن الطريق.",
+  "Adds a Big Picture button to Frame's navigation. Turn this off to keep it out of the way.":
+    "يضيف زر وضع الشاشة الكبيرة إلى شريط التنقل في Frame. أوقفه لإبقائه بعيدًا عن الطريق.",
   "Open in Big Picture": "الفتح في وضع الشاشة الكبيرة",
-  "Launch straight into Big Picture when Harbor starts. Press Esc at any time to leave.":
-    "يبدأ Harbor مباشرة في وضع الشاشة الكبيرة عند التشغيل. اضغط Esc في أي وقت للخروج.",
+  "Launch straight into Big Picture when Frame starts. Press Esc at any time to leave.":
+    "يبدأ Frame مباشرة في وضع الشاشة الكبيرة عند التشغيل. اضغط Esc في أي وقت للخروج.",
   "Almost done": "أوشك على الانتهاء",
   "Jump back in": "تابع ما بدأته",
   "Couldn't load this title.": "تعذر تحميل هذا العنوان.",
@@ -474,8 +473,8 @@ const coverage: Record<string, string> = {
   "Box office": "إيرادات الشباك",
   Length: "المدة",
   "Couldn't load your catalogs": "تعذر تحميل الكتالوجات",
-  "Harbor couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
-    "تعذر على Harbor الوصول إلى خوادم الكتالوج. تحقق من الاتصال وأعد فتح وضع الشاشة الكبيرة.",
+  "Frame couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
+    "تعذر على Frame الوصول إلى خوادم الكتالوج. تحقق من الاتصال وأعد فتح وضع الشاشة الكبيرة.",
   Letters: "حروف",
   Symbols: "رموز",
   Space: "مسافة",
@@ -484,7 +483,7 @@ const coverage: Record<string, string> = {
   "Nothing saved yet. Add a title from any details page.":
     "لا يوجد شيء محفوظ بعد. أضف عنوانًا من أي صفحة تفاصيل.",
   "Your watchlist is empty.": "قائمة المشاهدة فارغة.",
-  "Search Harbor": "البحث في Harbor",
+  "Search Frame": "البحث في Frame",
   "{n} results": "{n} نتيجة",
   "Looking...": "جارٍ البحث...",
   "Start typing to search movies and series.": "ابدأ الكتابة للبحث عن الأفلام والمسلسلات.",
@@ -496,10 +495,10 @@ const coverage: Record<string, string> = {
   "Drifting poster wall behind the interface. Turn off on low power devices.":
     "جدار ملصقات متحرك خلف الواجهة. أوقفه على الأجهزة منخفضة الأداء.",
   "Controller navigation": "التنقل بذراع التحكم",
-  "Use a gamepad or remote to move around Harbor":
-    "استخدم ذراع تحكم أو جهاز تحكم عن بعد للتنقل في Harbor",
-  "Launch straight into Big Picture when Harbor starts":
-    "البدء مباشرة في وضع الشاشة الكبيرة عند تشغيل Harbor",
+  "Use a gamepad or remote to move around Frame":
+    "استخدم ذراع تحكم أو جهاز تحكم عن بعد للتنقل في Frame",
+  "Launch straight into Big Picture when Frame starts":
+    "البدء مباشرة في وضع الشاشة الكبيرة عند تشغيل Frame",
   "Quick panel": "اللوحة السريعة",
   "No trailer available for {name}": "لا يوجد مقطع دعائي لـ {name}",
   "Loading trailer...": "جارٍ تحميل المقطع الدعائي...",
@@ -541,10 +540,10 @@ const coverage: Record<string, string> = {
   "Moved subtitles 0.25 seconds later.": "تم تأخير الترجمة 0.25 ثانية.",
   "Moved subtitles 0.25 seconds earlier.": "تم تقديم الترجمة 0.25 ثانية.",
   Synced: "متزامنة",
-  "When a subtitle runs early or late, Harbor measures the speech and corrects the timing on its own.":
-    "عندما تظهر الترجمة مبكرًا أو متأخرًا، يقيس Harbor الكلام ويصحح التوقيت تلقائيًا.",
-  "Downloaded subtitles can arrive after playback starts. Harbor switches from a temporary track when a stronger release match becomes available.":
-    "قد تصل الترجمات المحمّلة بعد بدء التشغيل. يستبدل Harbor المسار المؤقت عند توفر تطابق أقوى مع الإصدار.",
+  "When a subtitle runs early or late, Frame measures the speech and corrects the timing on its own.":
+    "عندما تظهر الترجمة مبكرًا أو متأخرًا، يقيس Frame الكلام ويصحح التوقيت تلقائيًا.",
+  "Downloaded subtitles can arrive after playback starts. Frame switches from a temporary track when a stronger release match becomes available.":
+    "قد تصل الترجمات المحمّلة بعد بدء التشغيل. يستبدل Frame المسار المؤقت عند توفر تطابق أقوى مع الإصدار.",
   "Only embedded subtitles are available right now.": "لا تتوفر الآن سوى الترجمات المضمّنة.",
   "Search all sources again": "إعادة البحث في كل المصادر",
   "Aligned here": "تمت المحاذاة هنا",
@@ -572,10 +571,10 @@ const coverage: Record<string, string> = {
     "لم يُعثر على أي مصدر لأي من هذه الحلقات. جرّب التحديث أو إضافة أخرى.",
   "Queued {queued} of {total} episodes.": "أُضيفت {queued} من أصل {total} حلقة إلى القائمة.",
   "Could not queue these episodes.": "تعذّرت إضافة هذه الحلقات إلى القائمة.",
-  "Harbor found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
-    "عثر Harbor على مصادر لحلقات {season}، لكن لا توجد بينها حزمة واحدة قابلة للتنزيل. لا يزال بإمكانه جلب الحلقات واحدة تلو الأخرى.",
-  "None of your addons returned a downloadable package for {season}. Harbor can still fetch the episodes one at a time, or you can refresh the sources.":
-    "لم تُرجع أي من إضافاتك حزمة قابلة للتنزيل لـ {season}. لا يزال بإمكان Harbor جلب الحلقات واحدة تلو الأخرى، أو يمكنك تحديث المصادر.",
+  "Frame found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
+    "عثر Frame على مصادر لحلقات {season}، لكن لا توجد بينها حزمة واحدة قابلة للتنزيل. لا يزال بإمكانه جلب الحلقات واحدة تلو الأخرى.",
+  "None of your addons returned a downloadable package for {season}. Frame can still fetch the episodes one at a time, or you can refresh the sources.":
+    "لم تُرجع أي من إضافاتك حزمة قابلة للتنزيل لـ {season}. لا يزال بإمكان Frame جلب الحلقات واحدة تلو الأخرى، أو يمكنك تحديث المصادر.",
   "Download episode by episode": "التنزيل حلقة تلو الأخرى",
   "Test mode: your controller only moves this diagram. Press Esc to stop.":
     "وضع الاختبار: ذراع التحكم يحرّك هذا المخطط فقط. اضغط Esc للإيقاف.",
@@ -585,11 +584,11 @@ const coverage: Record<string, string> = {
   Pointer: "مؤشر",
   Dot: "نقطة",
   "Controller cursor": "مؤشر ذراع التحكم",
-  "The pointer your right stick moves around Harbor. Pick a shape or use your own image.":
-    "المؤشر الذي تحرّكه بعصا التحكم اليمنى داخل Harbor. اختر شكلًا أو استخدم صورتك الخاصة.",
+  "The pointer your right stick moves around Frame. Pick a shape or use your own image.":
+    "المؤشر الذي تحرّكه بعصا التحكم اليمنى داخل Frame. اختر شكلًا أو استخدم صورتك الخاصة.",
   "Your own image": "صورتك الخاصة",
-  "PNG, WEBP, SVG or GIF. Harbor shrinks it to 128px so it stays small on disk.":
-    "PNG أو WEBP أو SVG أو GIF. يصغّرها Harbor إلى 128 بكسل لتبقى صغيرة على القرص.",
+  "PNG, WEBP, SVG or GIF. Frame shrinks it to 128px so it stays small on disk.":
+    "PNG أو WEBP أو SVG أو GIF. يصغّرها Frame إلى 128 بكسل لتبقى صغيرة على القرص.",
   "Remove image": "إزالة الصورة",
   "That image could not be used. Try a smaller PNG or WEBP.":
     "تعذّر استخدام تلك الصورة. جرّب ملف PNG أو WEBP أصغر.",
@@ -598,28 +597,28 @@ const coverage: Record<string, string> = {
     "كبّره لتلفاز في آخر الغرفة، وصغّره لشاشة مكتب.",
   "{n} px": "{n} بكسل",
   "Actual size on screen": "الحجم الفعلي على الشاشة",
-  "Harbor's full video engine. Plays anything you throw at it.":
-    "محرك الفيديو الكامل في Harbor. يشغّل كل ما تعطيه إياه.",
-  "libmpv did not load, so playback falls back to HTML5 and formats like MKV may refuse to play. On Linux, install your distribution's libmpv package, then restart Harbor.":
-    "لم تُحمّل libmpv، لذا يعود التشغيل إلى HTML5 وقد ترفض صيغ مثل MKV العمل. على لينكس، ثبّت حزمة libmpv الخاصة بتوزيعتك ثم أعد تشغيل Harbor.",
+  "Frame's full video engine. Plays anything you throw at it.":
+    "محرك الفيديو الكامل في Frame. يشغّل كل ما تعطيه إياه.",
+  "libmpv did not load, so playback falls back to HTML5 and formats like MKV may refuse to play. On Linux, install your distribution's libmpv package, then restart Frame.":
+    "لم تُحمّل libmpv، لذا يعود التشغيل إلى HTML5 وقد ترفض صيغ مثل MKV العمل. على لينكس، ثبّت حزمة libmpv الخاصة بتوزيعتك ثم أعد تشغيل Frame.",
   "{n} hours": "{n} ساعة",
   "{n} GB": "{n} غيغابايت",
-  "Another program already holds this port, usually a Stremio server that is running on this machine. Harbor tried its spare ports too. Stop that server, or leave it running and point Harbor at it in Remote streaming server below.":
-    "برنامج آخر يشغل هذا المنفذ بالفعل، وغالبًا ما يكون خادم Stremio يعمل على هذا الجهاز. جرّب Harbor منافذه الاحتياطية أيضًا. أوقف ذلك الخادم، أو اتركه يعمل ووجّه Harbor إليه من خادم البث البعيد أدناه.",
+  "Another program already holds this port, usually a Stremio server that is running on this machine. Frame tried its spare ports too. Stop that server, or leave it running and point Frame at it in Remote streaming server below.":
+    "برنامج آخر يشغل هذا المنفذ بالفعل، وغالبًا ما يكون خادم Stremio يعمل على هذا الجهاز. جرّب Frame منافذه الاحتياطية أيضًا. أوقف ذلك الخادم، أو اتركه يعمل ووجّه Frame إليه من خادم البث البعيد أدناه.",
   "Open here": "افتح هنا",
   "Scan with your phone camera, or type the address above.":
     "امسح بكاميرا هاتفك، أو اكتب العنوان أعلاه.",
   "No Wi-Fi address yet. Other devices cannot reach this computer.":
     "لا يوجد عنوان Wi-Fi بعد. لا تستطيع الأجهزة الأخرى الوصول إلى هذا الحاسوب.",
-  "Harbor in a browser": "Harbor في المتصفح",
+  "Frame in a browser": "Frame في المتصفح",
   "This exact install, served as a web app. Open it on a phone, laptop or TV browser and it streams through this computer.":
     "هذا التثبيت نفسه، مقدَّمًا كتطبيق ويب. افتحه على هاتف أو حاسوب محمول أو متصفح تلفاز وسيبثّ عبر هذا الحاسوب.",
   "Play, pause, seek, volume and casting from the couch.":
     "التشغيل والإيقاف والتقديم ومستوى الصوت والبث من على الأريكة.",
   "Turn pages, zoom and switch modes while you read on the big screen.":
     "اقلب الصفحات وكبّر الصورة وبدّل الأوضاع وأنت تقرأ على الشاشة الكبيرة.",
-  "One switch serves Harbor on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.":
-    "مفتاح واحد يقدّم Harbor على شبكتك. امسح رمزًا أدناه بهاتفك، أو افتح عنوانًا على أي جهاز على شبكة Wi-Fi نفسها.",
+  "One switch serves Frame on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.":
+    "مفتاح واحد يقدّم Frame على شبكتك. امسح رمزًا أدناه بهاتفك، أو افتح عنوانًا على أي جهاز على شبكة Wi-Fi نفسها.",
   "Powers everything on this page: the web app, the phone remote, and the manga reader remote.":
     "يشغّل كل شيء في هذه الصفحة: تطبيق الويب، وريموت الهاتف، وريموت قارئ المانغا.",
   "Flip the switch above and the addresses and scan codes appear here.":
@@ -643,8 +642,8 @@ const coverage: Record<string, string> = {
   "Bestseller lists in the eBook section.": "قوائم الكتب الأكثر مبيعًا في قسم الكتب الإلكترونية.",
   "New York Times · bestseller lists": "New York Times · قوائم الكتب الأكثر مبيعًا",
   "NYT Books API key": "مفتاح API لخدمة NYT Books",
-  "Choose whether Harbor prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
-    "اختر ما إذا كان Harbor يفضّل المصادر المباشرة وdebrid أو تورنت الند للند أو يعرض كليهما.",
+  "Choose whether Frame prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
+    "اختر ما إذا كان Frame يفضّل المصادر المباشرة وdebrid أو تورنت الند للند أو يعرض كليهما.",
 };
 
 export default coverage;

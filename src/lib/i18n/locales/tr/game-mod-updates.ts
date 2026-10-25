@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "Yüklü: {version}",
   "games.mods.current": "Yüklü",
   "games.mods.versionNote":
-    "Uyumlu bir sürüm seçin. Harbor değişiklikleri denetler ve önceki sürümü yerel olarak saklar. Uygulamadan önce Minecraft’ı kapatın.",
+    "Uyumlu bir sürüm seçin. Frame değişiklikleri denetler ve önceki sürümü yerel olarak saklar. Uygulamadan önce Minecraft’ı kapatın.",
   "games.mods.applyChanges": "Değişiklikleri uygula",
   "games.mods.reviewChanges": "Değişiklikleri incele",
   "games.mods.previousVersion": "Önceki: {version}",

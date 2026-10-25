@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Etkinlik",
   "games.shortcuts.activity.title": "Kısayol etkinliği",
   "games.shortcuts.activity.note":
-    "Bu Harbor profilindeki son taramalar ve başlatmalar. En fazla 300 kayıt.",
+    "Bu Frame profilindeki son taramalar ve başlatmalar. En fazla 300 kayıt.",
   "games.shortcuts.activity.remember": "Oturumlar arasında sakla",
   "games.shortcuts.activity.detailed": "Tarama ayrıntılarını ekle",
   "games.shortcuts.activity.storageError":
@@ -54,7 +54,7 @@ export default {
   "games.shortcuts.storeError": "Bu ayarlar kaydedilemedi.",
   "games.shortcuts.shortcut_location": "Steam klasörünü veya içindeki userdata klasörünü seç.",
   "games.shortcuts.shortcut_account":
-    "Bu kısayolun hesabıyla Steam’i açıp yenile. Harbor aynı Steam kurulumunu kullanmalı.",
+    "Bu kısayolun hesabıyla Steam’i açıp yenile. Frame aynı Steam kurulumunu kullanmalı.",
   "games.shortcuts.shortcut_missing": "Bu kısayol artık yok. Kütüphaneyi yenile.",
   "games.shortcuts.shortcut_executable":
     "Çalıştırılabilir dosya eksik veya mutlak dosya yolu desteklenmiyor.",

@@ -159,7 +159,7 @@ const pl: Record<string, string> = {
   "games.download.storage.estimate":
     "Niektóre istniejące pliki nie zostały jeszcze sprawdzone. Potrzebne miejsce może być mniejsze.",
   "games.download.storage.unknown": "Nieznany rozmiar: {count} plików",
-  "games.download.storage.other": "Zarezerwowane przez inne operacje Harbor: {size}",
+  "games.download.storage.other": "Zarezerwowane przez inne operacje Frame: {size}",
   "games.download.storage.shortfall": "Potrzeba jeszcze {size} miejsca",
   "games.download.state.retrying": "Ponawianie połączenia",
   "games.download.queueOrder": "Miejsce w kolejce: {position}",
@@ -350,7 +350,7 @@ const pl: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "Udostępnij torrent",
   "games.torrent.share.note":
-    "Udostępniaj sprawdzone pliki innym uczestnikom. Zatrzyma się po osiągnięciu limitu lub zamknięciu Harbor. Zatrzymaj udostępnianie przed zmianą plików.",
+    "Udostępniaj sprawdzone pliki innym uczestnikom. Zatrzyma się po osiągnięciu limitu lub zamknięciu Frame. Zatrzymaj udostępnianie przed zmianą plików.",
   "games.torrent.share.upload": "Limit wysyłania (KB/s)",
   "games.torrent.share.ratio": "Współczynnik (1–10)",
   "games.torrent.share.minutes": "Limit czasu (minuty)",

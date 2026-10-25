@@ -10,22 +10,22 @@ export default {
   "games.wow.manager.errorIdentity":
     "インストール済みフォルダが作者のパッケージと一致しません。再スキャンし、アドオンの入手元を確認してください。",
   "games.wow.manager.importInstalled": "インストール済みアドオンを取り込む",
-  "games.wow.manager.import": "Harborで管理する",
+  "games.wow.manager.import": "Frameで管理する",
   "games.wow.manager.importScope":
     "WoWInterfaceの識別情報があるアドオンです。他のアドオンはインストール済み一覧に残ります。",
   "games.wow.manager.importNote":
-    "インストール済みファイルを維持します。Harborは作者のパッケージを確認し、今後の更新や削除前に以前のバージョンを保存します。",
+    "インストール済みファイルを維持します。Frameは作者のパッケージを確認し、今後の更新や削除前に以前のバージョンを保存します。",
   "games.wow.manager.keepVersion": "インストール済みバージョン{version}を維持",
   "games.wow.manager.keep": "維持",
-  "games.wow.manager.importSuccess": "このアドオンはHarborで管理されるようになりました。",
+  "games.wow.manager.importSuccess": "このアドオンはFrameで管理されるようになりました。",
 
   "games.wow.manager.browse": "アドオンを探す",
-  "games.wow.manager.managed": "Harborで管理",
+  "games.wow.manager.managed": "Frameで管理",
   "games.wow.manager.backups": "バックアップ",
   "games.wow.manager.catalogNote":
     "WoWInterfaceを検索。変更を適用する前に、インストール済みWoWとの互換性を確認します。",
   "games.wow.manager.managedNote":
-    "ここで変更できるのはHarborから導入したアドオンです。他のアドオンはインストール済み一覧に残ります。",
+    "ここで変更できるのはFrameから導入したアドオンです。他のアドオンはインストール済み一覧に残ります。",
   "games.wow.manager.category": "カテゴリ",
   "games.wow.manager.allCategories": "すべてのカテゴリ",
   "games.wow.manager.popular": "月間ダウンロード数",
@@ -38,7 +38,7 @@ export default {
   "games.wow.manager.categoriesError": "カテゴリを取得できません。全アドオンの検索は利用できます。",
   "games.wow.manager.partial":
     "一部の提供元データを取得できませんでした。結果が不完全な可能性があります。",
-  "games.wow.manager.emptyManaged": "Harborで管理するアドオンはまだありません。",
+  "games.wow.manager.emptyManaged": "Frameで管理するアドオンはまだありません。",
   "games.wow.manager.emptyBackups": "以前のバージョンはまだ保存されていません。",
   "games.wow.manager.reviewNote":
     "まずパッケージとフォルダの変更を確認してください。確認・適用前にWoWを終了してください。",
@@ -60,14 +60,14 @@ export default {
   "games.wow.manager.errorCompatibility":
     "このパッケージはインストール済みWoWのエディションまたはバージョンに対応していません。",
   "games.wow.manager.errorUnmanaged":
-    "これらのフォルダはHarbor外で導入されているため、ここでは上書きできません。",
+    "これらのフォルダはFrame外で導入されているため、ここでは上書きできません。",
   "games.wow.manager.errorChanged":
     "ファイルが変更されたか、確認が必要です。再スキャンしてください。",
   "games.wow.manager.errorDependency":
     "必須の依存アドオンがないか、別のアドオンがこれらのファイルを必要としています。",
   "games.wow.manager.errorExpired": "確認の有効期限が切れました。変更を再確認してください。",
   "games.wow.manager.errorDesktop":
-    "アドオン管理には最新のWindows版Harborデスクトップアプリが必要です。",
+    "アドオン管理には最新のWindows版Frameデスクトップアプリが必要です。",
 
   "games.wow.addons.screenshots": "作者のスクリーンショット",
   "games.wow.addons.screenshotsUnavailable": "作者のスクリーンショットを読み込めませんでした。",

@@ -42,12 +42,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam no ha confirmado el resultado. Actualiza antes de hacer más cambios.",
   "games.achievementManager.error.platform":
-    "La gestión de logros está disponible actualmente en Harbor para Windows x64.",
+    "La gestión de logros está disponible actualmente en Frame para Windows x64.",
   "games.achievementManager.error.invalid": "Selecciona hasta 2.000 cambios a la vez.",
   "games.achievementManager.error.stale":
     "Estos logros cambiaron en Steam. Actualiza antes de editar.",
   "games.achievementManager.error.protected":
-    "El juego gestiona este logro. Harbor no puede editarlo.",
+    "El juego gestiona este logro. Frame no puede editarlo.",
   "games.achievementManager.error.expired":
     "Esta revisión caducó. Actualiza antes de aplicar los cambios.",
   "games.achievementManager.error.busy": "Hay otra solicitud de logros de Steam en curso.",
@@ -64,12 +64,12 @@ export default {
   "games.achievementManager.consentBody":
     "Desbloquea o vuelve a bloquear logros de tu cuenta de Steam conectada. La selección sigue siendo un borrador hasta que apliques los cambios.",
   "games.achievementManager.consentRules":
-    "Harbor usa la interfaz de logros de Steam sin inyectar código en los juegos. Siguen vigentes las reglas y los requisitos de recompensas de cada juego.",
+    "Frame usa la interfaz de logros de Steam sin inyectar código en los juegos. Siguen vigentes las reglas y los requisitos de recompensas de cada juego.",
   "games.achievementManager.consentSam": "Inspirado en la gestión de logros de SAM",
-  "games.achievementManager.consentOnce": "Se muestra una vez por perfil de Harbor.",
+  "games.achievementManager.consentOnce": "Se muestra una vez por perfil de Frame.",
   "games.achievementManager.consentAccept": "Entendido",
   "games.achievementManager.desktopOnly":
-    "Usa Harbor en Windows con Steam abierto para cambiar logros.",
+    "Usa Frame en Windows con Steam abierto para cambiar logros.",
   "games.achievementManager.all": "Todos",
   "games.achievementManager.filter": "Filtrar logros",
   "games.achievementManager.rewards": "Objetos de recompensa",
@@ -127,7 +127,7 @@ export default {
   "games.achievementManager.pickTitle": "Elige un juego",
   "games.achievementManager.pickSearch": "Buscar en tus juegos",
   "games.achievementManager.pickNote":
-    "Harbor puede editar un juego cuando Steam haya guardado sus logros en la caché de este equipo.",
+    "Frame puede editar un juego cuando Steam haya guardado sus logros en la caché de este equipo.",
   "games.achievementManager.pickInstalled": "Instalado",
   "games.achievementManager.pickEmpty": "Ningún juego coincide con tu búsqueda.",
   "games.achievementManager.pickUnavailable":

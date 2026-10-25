@@ -259,7 +259,7 @@ jobs:
         if: contains(matrix.platform.runner, 'ubuntu')
         env:
           # linuxdeploy resolves the bundled JRE's libnio.so and fails unless it can see libjvm.so in lib/server.
-          LD_LIBRARY_PATH: ${{ github.workspace }}/src-tauri/resources/capstan/runtime/lib/server:${{ github.workspace }}/src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage/Harbor.AppDir/usr/lib/Harbor/resources/capstan/runtime/lib/server
+          LD_LIBRARY_PATH: ${{ github.workspace }}/src-tauri/resources/capstan/runtime/lib/server:${{ github.workspace }}/src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage/Frame.AppDir/usr/lib/Frame/resources/capstan/runtime/lib/server
         run: pnpm tauri:build:linux-system --target ${{ matrix.platform.target }} --bundles deb,appimage --verbose
 
       - name: Sign the AppImage for the updater
@@ -270,16 +270,16 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ""
         run: |
           set -euo pipefail
-          image="$(find "src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage" -maxdepth 1 -name 'Harbor_*.AppImage' -print -quit)"
+          image="$(find "src-tauri/target/${{ matrix.platform.target }}/release/bundle/appimage" -maxdepth 1 -name 'Frame_*.AppImage' -print -quit)"
           test -n "$image"
           pnpm tauri signer sign -p "" "$image"
       - name: Verify macOS app dependencies
         if: contains(matrix.platform.runner, 'macos')
         shell: bash
         run: |
-          APP_PATH="$(find "src-tauri/target/${{ matrix.platform.target }}/release/bundle" -type d -name 'Harbor.app' -print -quit)"
+          APP_PATH="$(find "src-tauri/target/${{ matrix.platform.target }}/release/bundle" -type d -name 'Frame.app' -print -quit)"
           if [ -z "$APP_PATH" ]; then
-            echo "Harbor.app was not produced" >&2
+            echo "Frame.app was not produced" >&2
             exit 1
           fi
           python3 scripts/macos-bundle-libmpv.py verify-app --app "$APP_PATH" --target "${{ matrix.platform.target }}"
@@ -303,13 +303,13 @@ jobs:
         run: |
           set -euo pipefail
           BUNDLE="src-tauri/target/${{ matrix.platform.target }}/release/bundle"
-          APP_PATH="$(find "$BUNDLE" -type d -name 'Harbor.app' -print -quit)"
+          APP_PATH="$(find "$BUNDLE" -type d -name 'Frame.app' -print -quit)"
           test -n "$APP_PATH"
           VERSION="$(node -p "JSON.parse(require('fs').readFileSync('src-tauri/tauri.conf.json')).version")"
           ARCH="${{ matrix.platform.target }}"
           ARCH="${ARCH%%-*}"
-          tar -czf "$BUNDLE/Harbor_${VERSION}_${ARCH}.app.tar.gz" -C "$(dirname "$APP_PATH")" Harbor.app
-          pnpm tauri signer sign -p "" "$BUNDLE/Harbor_${VERSION}_${ARCH}.app.tar.gz"
+          tar -czf "$BUNDLE/Frame_${VERSION}_${ARCH}.app.tar.gz" -C "$(dirname "$APP_PATH")" Frame.app
+          pnpm tauri signer sign -p "" "$BUNDLE/Frame_${VERSION}_${ARCH}.app.tar.gz"
 
       - name: Upload artifacts
         if: success()
@@ -356,11 +356,11 @@ jobs:
         run: |
           set -euo pipefail
           mkdir upload sigs
-          find artifacts -type f \( -name '*-setup.exe' -o -name '*.dmg' -o -name 'Harbor_*.app.tar.gz' \
+          find artifacts -type f \( -name '*-setup.exe' -o -name '*.dmg' -o -name 'Frame_*.app.tar.gz' \
             -o -name '*.deb' -o -name '*.AppImage' \) -exec cp {} upload/ \;
           # latest.json carries each signature inline, so the .sig files are read here and never published.
-          find artifacts -type f \( -name '*-setup.exe.sig' -o -name 'Harbor_*.app.tar.gz.sig' -o -name 'Harbor_*.AppImage.sig' \) -exec cp {} sigs/ \;
-          cp artifacts/Harbor-flatpak-x86_64/Harbor.flatpak "upload/Harbor_${VERSION}_x86_64.flatpak"
+          find artifacts -type f \( -name '*-setup.exe.sig' -o -name 'Frame_*.app.tar.gz.sig' -o -name 'Frame_*.AppImage.sig' \) -exec cp {} sigs/ \;
+          cp artifacts/Harbor-flatpak-x86_64/Harbor.flatpak "upload/Frame_${VERSION}_x86_64.flatpak"
           previous="$(git tag --list 'v*' --sort=-v:refname | grep -vx "v$VERSION" | head -n 1 || true)"
           node scripts/release-notes.mjs "${previous:-$(git rev-list --max-parents=0 HEAD | tail -n 1)}" "$SHA" > notes.md
           node scripts/updater-manifest.mjs "$VERSION" upload sigs notes.md
@@ -373,14 +373,14 @@ jobs:
             echo
             cat notes.md
             echo
-            echo "macOS: the dmgs are ad-hoc signed, so run \`xattr -dr com.apple.quarantine /Applications/Harbor.app\` after installing. The Intel dmg needs macOS 15 or newer."
+            echo "macOS: the dmgs are ad-hoc signed, so run \`xattr -dr com.apple.quarantine /Applications/Frame.app\` after installing. The Intel dmg needs macOS 15 or newer."
             [ -n "$previous" ] && echo && echo "**Full changelog**: https://github.com/$GITHUB_REPOSITORY/compare/$previous...v$VERSION"
           } > body.md
           ls -la upload
           gh release create "v$VERSION" upload/* \
             --repo "$GITHUB_REPOSITORY" \
             --target "$SHA" \
-            --title "Harbor $VERSION" \
+            --title "Frame $VERSION" \
             --notes-file body.md \
             --latest
 

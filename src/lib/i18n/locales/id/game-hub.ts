@@ -23,15 +23,15 @@ const gameHub: Record<string, string> = {
   "games.hub.communityMade": "Buatan komunitas",
   "games.hub.title": "ROM hack",
   "games.hub.note":
-    "Petualangan baru, klasik yang diolah ulang. Temukan hack, simpan, lalu mainkan salinan yang sudah dipatch di Harbor.",
+    "Petualangan baru, klasik yang diolah ulang. Temukan hack, simpan, lalu mainkan salinan yang sudah dipatch di Frame.",
   "games.hub.hacksFor": "Hack untuk {name}",
   "games.hub.baseNote": "Temukan karya komunitas yang dibuat dari game ini.",
   "games.hub.how": "Cara memainkan ROM hack",
   "games.hub.stepFind": "Buka hack untuk menemukan situs proyek dan game asli yang diperlukan.",
   "games.hub.stepPatch":
-    "Pilih ROM asli dan patch BPS atau IPS. Harbor memeriksa keduanya dan menyimpan salinan terpisah.",
+    "Pilih ROM asli dan patch BPS atau IPS. Frame memeriksa keduanya dan menyimpan salinan terpisah.",
   "games.hub.stepPlay":
-    "Tambahkan salinan ke pustaka. Mainkan sistem yang didukung di Harbor atau gunakan emulator yang telah diatur.",
+    "Tambahkan salinan ke pustaka. Mainkan sistem yang didukung di Frame atau gunakan emulator yang telah diatur.",
   "games.hub.byOriginal": "Hack menurut game asli",
   "games.hub.allHacks": "Jelajahi semua hack",
   "games.hub.baseUnlisted": "Game asli tidak dicantumkan",

@@ -4,15 +4,15 @@ const uiFallback: Record<string, string> = {
   "Which monitor Big Picture opens on at startup.":
     "Which monitor Big Picture opens on at startup.",
   "Separate window display": "Separate window display",
-  "Which monitor the separate mpv window opens on. Harbor's own window stays where it is.":
-    "Which monitor the separate mpv window opens on. Harbor's own window stays where it is.",
+  "Which monitor the separate mpv window opens on. Frame's own window stays where it is.":
+    "Which monitor the separate mpv window opens on. Frame's own window stays where it is.",
   "Cover the taskbar": "Cover the taskbar",
   "Span the whole screen including the taskbar. Turn off to keep the taskbar visible on that monitor.":
     "Span the whole screen including the taskbar. Turn off to keep the taskbar visible on that monitor.",
   "True HDR, separate window is selected. That mode always plays in its own window, so mpv cannot be embedded. Choose a different HDR mode to change this.":
     "True HDR, separate window is selected. That mode always plays in its own window, so mpv cannot be embedded. Choose a different HDR mode to change this.",
-  "Follow Harbor": "Follow Harbor",
-  "Open on the same monitor as Harbor": "Open on the same monitor as Harbor",
+  "Follow Frame": "Follow Frame",
+  "Open on the same monitor as Frame": "Open on the same monitor as Frame",
   "Open on {name}": "Open on {name}",
   Primary: "Primary",
   "A source couldn't be reached": "A source couldn't be reached",
@@ -42,12 +42,12 @@ const uiFallback: Record<string, string> = {
   "Could not sync your display name. Check your connection and try again.":
     "Could not sync your display name. Check your connection and try again.",
   "Syncing display name…": "Syncing display name…",
-  "Display name saved to your Harbor account.": "Display name saved to your Harbor account.",
+  "Display name saved to your Frame account.": "Display name saved to your Frame account.",
   "Show ignore title button": "Show ignore title button",
   "Display a button on the content advisory card to permanently ignore the title.":
     "Display a button on the content advisory card to permanently ignore the title.",
-  "These are compiled Android extensions (.cs3). Harbor runs script plugins only, so they cannot be installed here.":
-    "These are compiled Android extensions (.cs3). Harbor runs script plugins only, so they cannot be installed here.",
+  "These are compiled Android extensions (.cs3). Frame runs script plugins only, so they cannot be installed here.":
+    "These are compiled Android extensions (.cs3). Frame runs script plugins only, so they cannot be installed here.",
   "This is a Stremio addon manifest. Add it from the Addons page instead.":
     "This is a Stremio addon manifest. Add it from the Addons page instead.",
   "Skipped: {reason}": "Skipped: {reason}",
@@ -88,8 +88,8 @@ const uiFallback: Record<string, string> = {
   "A short note about this list": "A short note about this list",
   "Return to beta": "Return to beta",
   "Experimental {version} · Build {buildId}": "Experimental {version} · Build {buildId}",
-  "Couldn't verify your Harbor account access. Check your connection and try again.":
-    "Couldn't verify your Harbor account access. Check your connection and try again.",
+  "Couldn't verify your Frame account access. Check your connection and try again.":
+    "Couldn't verify your Frame account access. Check your connection and try again.",
   "No verified experimental build is available for this device yet.":
     "No verified experimental build is available for this device yet.",
   "No tested return to beta is available for this build.":
@@ -104,8 +104,8 @@ const uiFallback: Record<string, string> = {
     "Couldn't save the recovery backup. Free some storage and try again.",
   "Return to beta did not finish. Your recovery files have been kept. Try again from Experimental builds.":
     "Return to beta did not finish. Your recovery files have been kept. Try again from Experimental builds.",
-  "Harbor Setup did not finish updating Harbor. Check for updates to try again.":
-    "Harbor Setup did not finish updating Harbor. Check for updates to try again.",
+  "Frame Setup did not finish updating Frame. Check for updates to try again.":
+    "Frame Setup did not finish updating Frame. Check for updates to try again.",
   "Couldn't save the update channel. Free some storage and try again.":
     "Couldn't save the update channel. Free some storage and try again.",
   "Leave experimental builds before changing your normal update channel.":
@@ -123,8 +123,8 @@ const uiFallback: Record<string, string> = {
   "Beta version": "Beta version",
   "Choose a tested beta": "Choose a tested beta",
   "Beta {version}": "Beta {version}",
-  "Harbor saves a local recovery backup before installing. It can contain account details. Old backups are not restored automatically, and recovery files use extra disk space.":
-    "Harbor saves a local recovery backup before installing. It can contain account details. Old backups are not restored automatically, and recovery files use extra disk space.",
+  "Frame saves a local recovery backup before installing. It can contain account details. Old backups are not restored automatically, and recovery files use extra disk space.":
+    "Frame saves a local recovery backup before installing. It can contain account details. Old backups are not restored automatically, and recovery files use extra disk space.",
   "Install beta {version} and restart? This replaces the experimental app, not your current settings.":
     "Install beta {version} and restart? This replaces the experimental app, not your current settings.",
   "Install beta {version} and restart": "Install beta {version} and restart",
@@ -135,18 +135,18 @@ const uiFallback: Record<string, string> = {
   "Checking the selected beta…": "Checking the selected beta…",
   "Experimental builds": "Experimental builds",
   "Return to a regular build": "Return to a regular build",
-  "Experimental access requires a Harbor account with a Tester, Moderator, Admin, or Dev badge.":
-    "Experimental access requires a Harbor account with a Tester, Moderator, Admin, or Dev badge.",
+  "Experimental access requires a Frame account with a Tester, Moderator, Admin, or Dev badge.":
+    "Experimental access requires a Frame account with a Tester, Moderator, Admin, or Dev badge.",
   "Checking experimental builds…": "Checking experimental builds…",
   "Experimental updates are enabled on this device.":
     "Experimental updates are enabled on this device.",
   "Experimental updates are off.": "Experimental updates are off.",
   "Test upcoming changes": "Test upcoming changes",
-  "Available to Harbor accounts with a Tester, Moderator, Admin, or Dev badge.":
-    "Available to Harbor accounts with a Tester, Moderator, Admin, or Dev badge.",
-  "These builds may crash or change your settings. Back up Harbor before installing. Downloads and installation still require your approval.":
-    "These builds may crash or change your settings. Back up Harbor before installing. Downloads and installation still require your approval.",
-  "Installed: Harbor {version}": "Installed: Harbor {version}",
+  "Available to Frame accounts with a Tester, Moderator, Admin, or Dev badge.":
+    "Available to Frame accounts with a Tester, Moderator, Admin, or Dev badge.",
+  "These builds may crash or change your settings. Back up Frame before installing. Downloads and installation still require your approval.":
+    "These builds may crash or change your settings. Back up Frame before installing. Downloads and installation still require your approval.",
+  "Installed: Frame {version}": "Installed: Frame {version}",
   "Update channel: {channel}": "Update channel: {channel}",
   "Experimental installation currently requires a managed Windows installation with a tested return to beta.":
     "Experimental installation currently requires a managed Windows installation with a tested return to beta.",
@@ -169,13 +169,13 @@ const uiFallback: Record<string, string> = {
   "Everything from {name}": "Everything from {name}",
   "Filter, sort and search the full catalogue": "Filter, sort and search the full catalogue",
   Launch: "Launch",
-  "Start Harbor in the couch-friendly Big Picture layout whenever the app opens.":
-    "Start Harbor in the couch-friendly Big Picture layout whenever the app opens.",
+  "Start Frame in the couch-friendly Big Picture layout whenever the app opens.":
+    "Start Frame in the couch-friendly Big Picture layout whenever the app opens.",
   "Animate backdrop art on Big Picture screens.": "Animate backdrop art on Big Picture screens.",
   "Press Esc to stop.": "Press Esc to stop.",
-  "Harbor and the installer": "Harbor and the installer",
-  "The Big Picture opener and the boat that builds itself while Harbor installs.":
-    "The Big Picture opener and the boat that builds itself while Harbor installs.",
+  "Frame and the installer": "Frame and the installer",
+  "The Big Picture opener and the boat that builds itself while Frame installs.":
+    "The Big Picture opener and the boat that builds itself while Frame installs.",
   "The General": "The General",
   "Anime upscalers": "Anime upscalers",
   "Screensaver style": "Screensaver style",
@@ -185,17 +185,17 @@ const uiFallback: Record<string, string> = {
   "Desktop notifications": "Desktop notifications",
   "Get a system notification on this device when something you follow drops.":
     "Get a system notification on this device when something you follow drops.",
-  "Notifications are blocked for Harbor. Enable them in your system settings, then turn this back on.":
-    "Notifications are blocked for Harbor. Enable them in your system settings, then turn this back on.",
+  "Notifications are blocked for Frame. Enable them in your system settings, then turn this back on.":
+    "Notifications are blocked for Frame. Enable them in your system settings, then turn this back on.",
   "Add a Discord or Telegram destination, or turn on Desktop notifications, first. Rules need somewhere to send their alerts.":
     "Add a Discord or Telegram destination, or turn on Desktop notifications, first. Rules need somewhere to send their alerts.",
   "Show a system notification on this device.": "Show a system notification on this device.",
   "Turn on Desktop notifications on the Destinations tab first.":
     "Turn on Desktop notifications on the Destinations tab first.",
-  "Harbor test message ({service}). If you can read this, it's wired up.":
-    "Harbor test message ({service}). If you can read this, it's wired up.",
-  "Connect Discord or Telegram, or turn on desktop notifications, and Harbor alerts you when something you follow is about to drop. Hit Send test to send yourself a sample first.":
-    "Connect Discord or Telegram, or turn on desktop notifications, and Harbor alerts you when something you follow is about to drop. Hit Send test to send yourself a sample first.",
+  "Frame test message ({service}). If you can read this, it's wired up.":
+    "Frame test message ({service}). If you can read this, it's wired up.",
+  "Connect Discord or Telegram, or turn on desktop notifications, and Frame alerts you when something you follow is about to drop. Hit Send test to send yourself a sample first.":
+    "Connect Discord or Telegram, or turn on desktop notifications, and Frame alerts you when something you follow is about to drop. Hit Send test to send yourself a sample first.",
   "Manga sync": "Manga sync",
   "{title} · Chapter {chapter}": "{title} · Chapter {chapter}",
   "Reorder extensions": "Reorder extensions",
@@ -249,10 +249,10 @@ const uiFallback: Record<string, string> = {
   "A list by {owner}.": "A list by {owner}.",
   "A pack file lists your images with names and sets. Point items at files next to the JSON, at http links, or inline them as data URIs. Hover a set you imported and press Export to write one out.":
     "A pack file lists your images with names and sets. Point items at files next to the JSON, at http links, or inline them as data URIs. Hover a set you imported and press Export to write one out.",
-  "A pack swaps Harbor's built-in badge art, or adds whole new badges of its own.":
-    "A pack swaps Harbor's built-in badge art, or adds whole new badges of its own.",
-  "A regular expression Harbor tests against each stream title. Every stream that matches gets this badge.":
-    "A regular expression Harbor tests against each stream title. Every stream that matches gets this badge.",
+  "A pack swaps Frame's built-in badge art, or adds whole new badges of its own.":
+    "A pack swaps Frame's built-in badge art, or adds whole new badges of its own.",
+  "A regular expression Frame tests against each stream title. Every stream that matches gets this badge.":
+    "A regular expression Frame tests against each stream title. Every stream that matches gets this badge.",
   "A rule watches for one kind of release and pings the channels you pick. Each rule fires on its own.":
     "A rule watches for one kind of release and pings the channels you pick. Each rule fires on its own.",
   "A short hand-picked list, plus a box for pasting any badges.json link you were sent.":
@@ -286,9 +286,9 @@ const uiFallback: Record<string, string> = {
   "Aggregator addons": "Aggregator addons",
   "All listed rules": "All listed rules",
   "All selected": "All selected",
-  "Linking your Discord account also joins you to Harbor's Discord server, so the bot can send your Backup keys privately.":
-    "Linking your Discord account also joins you to Harbor's Discord server, so the bot can send your Backup keys privately.",
-  "Also joins Harbor's Discord server.": "Also joins Harbor's Discord server.",
+  "Linking your Discord account also joins you to Frame's Discord server, so the bot can send your Backup keys privately.":
+    "Linking your Discord account also joins you to Frame's Discord server, so the bot can send your Backup keys privately.",
+  "Also joins Frame's Discord server.": "Also joins Frame's Discord server.",
   "Always use for {league}": "Always use for {league}",
   "An accent line down the side, with each line revealed as it arrives.":
     "An accent line down the side, with each line revealed as it arrives.",
@@ -297,25 +297,25 @@ const uiFallback: Record<string, string> = {
     "Another shortcut in this list now uses the same key. Change one of them.",
   "Any badges.json address works: a raw gist, Pastebin, or a file in a repo. Broken JSON gets repaired automatically.":
     "Any badges.json address works: a raw gist, Pastebin, or a file in a repo. Broken JSON gets repaired automatically.",
-  "Anything TMDB has not translated stays in English. Picking a new language reloads Harbor.":
-    "Anything TMDB has not translated stays in English. Picking a new language reloads Harbor.",
+  "Anything TMDB has not translated stays in English. Picking a new language reloads Frame.":
+    "Anything TMDB has not translated stays in English. Picking a new language reloads Frame.",
   "Appears in the release notes. Use whatever name you want credit under.":
     "Appears in the release notes. Use whatever name you want credit under.",
   "Apply and reload": "Apply and reload",
   "Attach a channel": "Attach a channel",
   "Attach a stream": "Attach a stream",
-  "Auto uses mpv when Harbor can reach it and falls back to the built in player. Pick one yourself if playback misbehaves.":
-    "Auto uses mpv when Harbor can reach it and falls back to the built in player. Pick one yourself if playback misbehaves.",
+  "Auto uses mpv when Frame can reach it and falls back to the built in player. Pick one yourself if playback misbehaves.":
+    "Auto uses mpv when Frame can reach it and falls back to the built in player. Pick one yourself if playback misbehaves.",
   Automatic: "Automatic",
   Avatar: "Avatar",
-  "Badge art packs you installed from the community store. Remove one to put its badges back to Harbor's default.":
-    "Badge art packs you installed from the community store. Remove one to put its badges back to Harbor's default.",
+  "Badge art packs you installed from the community store. Remove one to put its badges back to Frame's default.":
+    "Badge art packs you installed from the community store. Remove one to put its badges back to Frame's default.",
   "Badges you have changed": "Badges you have changed",
   Bench: "Bench",
   "Both shows direct, debrid, and peer-to-peer results together. Direct/debrid keeps torrents out of the way unless nothing else is available. P2P puts torrents first.":
     "Both shows direct, debrid, and peer-to-peer results together. Direct/debrid keeps torrents out of the way unless nothing else is available. P2P puts torrents first.",
-  "Bring your Letterboxd watchlist, diary, liked films and lists into Harbor through the Stremboxd bridge.":
-    "Bring your Letterboxd watchlist, diary, liked films and lists into Harbor through the Stremboxd bridge.",
+  "Bring your Letterboxd watchlist, diary, liked films and lists into Frame through the Stremboxd bridge.":
+    "Bring your Letterboxd watchlist, diary, liked films and lists into Frame through the Stremboxd bridge.",
   "Browse community badge packs": "Browse community badge packs",
   "Build a pack in one of these tools, export the JSON, host it as a gist, then paste the raw link below.":
     "Build a pack in one of these tools, export the JSON, host it as a gist, then paste the raw link below.",
@@ -330,16 +330,16 @@ const uiFallback: Record<string, string> = {
   "Came on": "Came on",
   "Caps how many score chips a poster shows. Extras drop off the end of the chip. You have {n} turned on.":
     "Caps how many score chips a poster shows. Extras drop off the end of the chip. You have {n} turned on.",
-  "Caps what Harbor asks {name} to send. Original streams the file exactly as it is stored.":
-    "Caps what Harbor asks {name} to send. Original streams the file exactly as it is stored.",
+  "Caps what Frame asks {name} to send. Original streams the file exactly as it is stored.":
+    "Caps what Frame asks {name} to send. Original streams the file exactly as it is stored.",
   Carousel: "Carousel",
   "Centered along the top edge, clear of the subtitles.":
     "Centered along the top edge, clear of the subtitles.",
   "Change the ratio while watching": "Change the ratio while watching",
   "Change the shortcut for {name}": "Change the shortcut for {name}",
   "Change your picture": "Change your picture",
-  "Changing the metadata language reloads Harbor so the new language takes effect. Apply when you're done with the options above.":
-    "Changing the metadata language reloads Harbor so the new language takes effect. Apply when you're done with the options above.",
+  "Changing the metadata language reloads Frame so the new language takes effect. Apply when you're done with the options above.":
+    "Changing the metadata language reloads Frame so the new language takes effect. Apply when you're done with the options above.",
   "Charity Navigator": "Charity Navigator",
   "Checks the username against Stremboxd and turns on the catalogs it finds.":
     "Checks the username against Stremboxd and turns on the catalogs it finds.",
@@ -348,10 +348,10 @@ const uiFallback: Record<string, string> = {
   "Choose source": "Choose source",
   "Choose whether Play asks you, prefers this device, prefers online sources, or goes straight to one of your home servers.":
     "Choose whether Play asks you, prefers this device, prefers online sources, or goes straight to one of your home servers.",
-  "Choose whether your operating system draws the title bar, or Harbor draws its own.":
-    "Choose whether your operating system draws the title bar, or Harbor draws its own.",
-  "Choose which services feed your Continue Watching row. Turn on as many as you like and Harbor merges them, keeping the most recent progress for each title. What you watch is still scrobbled to every connected service regardless of what you pick here.":
-    "Choose which services feed your Continue Watching row. Turn on as many as you like and Harbor merges them, keeping the most recent progress for each title. What you watch is still scrobbled to every connected service regardless of what you pick here.",
+  "Choose whether your operating system draws the title bar, or Frame draws its own.":
+    "Choose whether your operating system draws the title bar, or Frame draws its own.",
+  "Choose which services feed your Continue Watching row. Turn on as many as you like and Frame merges them, keeping the most recent progress for each title. What you watch is still scrobbled to every connected service regardless of what you pick here.":
+    "Choose which services feed your Continue Watching row. Turn on as many as you like and Frame merges them, keeping the most recent progress for each title. What you watch is still scrobbled to every connected service regardless of what you pick here.",
   "Choose your username": "Choose your username",
   "Clear home team": "Clear home team",
   "Clearing these is always safe. Nothing you downloaded on purpose is removed.":
@@ -364,8 +364,8 @@ const uiFallback: Record<string, string> = {
   "Comments and reviews posted by other Trakt members.":
     "Comments and reviews posted by other Trakt members.",
   Compatibility: "Compatibility",
-  "Connect Discord or Telegram and Harbor posts a message when something you follow is about to drop. Hit Send test to send yourself a sample first.":
-    "Connect Discord or Telegram and Harbor posts a message when something you follow is about to drop. Hit Send test to send yourself a sample first.",
+  "Connect Discord or Telegram and Frame posts a message when something you follow is about to drop. Hit Send test to send yourself a sample first.":
+    "Connect Discord or Telegram and Frame posts a message when something you follow is about to drop. Hit Send test to send yourself a sample first.",
   "Connect Jellyfin, Emby, and Plex libraries on this device. Credentials stay in native secret storage. Each server keeps its own refresh schedule, and cached titles stay available while a server is offline.":
     "Connect Jellyfin, Emby, and Plex libraries on this device. Credentials stay in native secret storage. Each server keeps its own refresh schedule, and cached titles stay available while a server is offline.",
   "Connected. {n} catalogs are available.": "Connected. {n} catalogs are available.",
@@ -379,8 +379,8 @@ const uiFallback: Record<string, string> = {
   "Copies your badge art and rules to the clipboard as JSON, ready to paste into a gist and share.":
     "Copies your badge art and rules to the clipboard as JSON, ready to paste into a gist and share.",
   "Copy JSON": "Copy JSON",
-  "Copy your Harbor watchlist over to Trakt, or pull your Trakt watchlist into Harbor.":
-    "Copy your Harbor watchlist over to Trakt, or pull your Trakt watchlist into Harbor.",
+  "Copy your Frame watchlist over to Trakt, or pull your Trakt watchlist into Frame.":
+    "Copy your Frame watchlist over to Trakt, or pull your Trakt watchlist into Frame.",
   "Could not reach that page.": "Could not reach that page.",
   "Could not reach the extension list. Check your server connection and try again.":
     "Could not reach the extension list. Check your server connection and try again.",
@@ -400,8 +400,8 @@ const uiFallback: Record<string, string> = {
   "Deep shadows keep their steps, so dark scenes stay readable.":
     "Deep shadows keep their steps, so dark scenes stay readable.",
   "Describe the result you were after.": "Describe the result you were after.",
-  "Describe what Harbor did instead, including any message on screen.":
-    "Describe what Harbor did instead, including any message on screen.",
+  "Describe what Frame did instead, including any message on screen.":
+    "Describe what Frame did instead, including any message on screen.",
   "Didn't get it? Send another code": "Didn't get it? Send another code",
   "Direct media link": "Direct media link",
   Direct3D: "Direct3D",
@@ -434,8 +434,8 @@ const uiFallback: Record<string, string> = {
   Estimated: "Estimated",
   "Every change on this page shows up here first. The art you pick below rides on rows exactly like this one.":
     "Every change on this page shows up here first. The art you pick below rides on rows exactly like this one.",
-  "Every format badge Harbor can show on streams. Pick one to swap its art, hide it, or put it back. Changes apply everywhere badges appear.":
-    "Every format badge Harbor can show on streams. Pick one to swap its art, hide it, or put it back. Changes apply everywhere badges appear.",
+  "Every format badge Frame can show on streams. Pick one to swap its art, hide it, or put it back. Changes apply everywhere badges appear.":
+    "Every format badge Frame can show on streams. Pick one to swap its art, hide it, or put it back. Changes apply everywhere badges appear.",
   "Every saved frame goes. Press again to confirm, or wait to cancel.":
     "Every saved frame goes. Press again to confirm, or wait to cancel.",
   "Every source above follows one language order, and it lives on the Languages page.":
@@ -451,8 +451,8 @@ const uiFallback: Record<string, string> = {
   "Export failed: {error}": "Export failed: {error}",
   "Export log": "Export log",
   "Export pack": "Export pack",
-  "Export your Harbor setup to a single file — pick exactly what goes in. Restore brings back only what the file contains. Your Stremio sign-in is always left out.":
-    "Export your Harbor setup to a single file — pick exactly what goes in. Restore brings back only what the file contains. Your Stremio sign-in is always left out.",
+  "Export your Frame setup to a single file — pick exactly what goes in. Restore brings back only what the file contains. Your Stremio sign-in is always left out.":
+    "Export your Frame setup to a single file — pick exactly what goes in. Restore brings back only what the file contains. Your Stremio sign-in is always left out.",
   "Export your setup": "Export your setup",
   "Export {n} sections": "Export {n} sections",
   "Exporting…": "Exporting…",
@@ -481,10 +481,10 @@ const uiFallback: Record<string, string> = {
     "Frosts the still image on each unwatched episode in the list.",
   "Full mode is active, so diary, friends activity and your ratings all work.":
     "Full mode is active, so diary, friends activity and your ratings all work.",
-  "Full mode signs in with your Letterboxd password so your diary, friends activity and personal ratings work too. The password goes only to Stremboxd to fetch a token, and Harbor never stores it.":
-    "Full mode signs in with your Letterboxd password so your diary, friends activity and personal ratings work too. The password goes only to Stremboxd to fetch a token, and Harbor never stores it.",
-  "Full pack format reference: docs/avatar-packs.md in the Harbor repository.":
-    "Full pack format reference: docs/avatar-packs.md in the Harbor repository.",
+  "Full mode signs in with your Letterboxd password so your diary, friends activity and personal ratings work too. The password goes only to Stremboxd to fetch a token, and Frame never stores it.":
+    "Full mode signs in with your Letterboxd password so your diary, friends activity and personal ratings work too. The password goes only to Stremboxd to fetch a token, and Frame never stores it.",
+  "Full pack format reference: docs/avatar-packs.md in the Frame repository.":
+    "Full pack format reference: docs/avatar-packs.md in the Frame repository.",
   "Full time": "Full time",
   GB: "GB",
   GD: "GD",
@@ -495,49 +495,49 @@ const uiFallback: Record<string, string> = {
   Graphics: "Graphics",
   "Groups Refresh beside Back at the start of the picker header. Off keeps it at the far end, across from Back.":
     "Groups Refresh beside Back at the start of the picker header. Off keeps it at the far end, across from Back.",
-  "Harbor did not draw its own icons. Two people did, and they are worth hiring.":
-    "Harbor did not draw its own icons. Two people did, and they are worth hiring.",
-  "Harbor hosts no media and indexes no media. The sources and addons available to you are the ones you choose to configure, and their use is subject to the laws of your jurisdiction and the terms of the services concerned.":
-    "Harbor hosts no media and indexes no media. The sources and addons available to you are the ones you choose to configure, and their use is subject to the laws of your jurisdiction and the terms of the services concerned.",
-  "Harbor is an independent client. It is not affiliated with, endorsed by, or sponsored by Stremio, or by any company, addon author, or trademark holder referenced in this application. All trademarks are the property of their respective owners.":
-    "Harbor is an independent client. It is not affiliated with, endorsed by, or sponsored by Stremio, or by any company, addon author, or trademark holder referenced in this application. All trademarks are the property of their respective owners.",
-  "Harbor is authorized on this device and syncing with Simkl.":
-    "Harbor is authorized on this device and syncing with Simkl.",
-  "Harbor is free and open source software, released under the MIT License.":
-    "Harbor is free and open source software, released under the MIT License.",
-  "Harbor is signed in to your MyAnimeList account.":
-    "Harbor is signed in to your MyAnimeList account.",
-  "Harbor is using {used} of the {quota} this computer allows.":
-    "Harbor is using {used} of the {quota} this computer allows.",
-  "Harbor library": "Harbor library",
-  "Harbor opens 4 parallel requests to speed.cloudflare.com, discards the first 1.2 seconds so TCP slow-start does not tank the result, then measures until it has 150 MB or 8 seconds of steady transfer.":
-    "Harbor opens 4 parallel requests to speed.cloudflare.com, discards the first 1.2 seconds so TCP slow-start does not tank the result, then measures until it has 150 MB or 8 seconds of steady transfer.",
-  "Harbor opens only the address you paste here and lists the media it finds in that page's own source. It does not search anywhere else.":
-    "Harbor opens only the address you paste here and lists the media it finds in that page's own source. It does not search anywhere else.",
-  "Harbor picks the best stream it can find and starts playing straight away.":
-    "Harbor picks the best stream it can find and starts playing straight away.",
-  "Harbor picks the size your connection can keep up with.":
-    "Harbor picks the size your connection can keep up with.",
-  "Harbor puts streams, audio tracks and subtitles in these languages first. Leave it empty to accept anything.":
-    "Harbor puts streams, audio tracks and subtitles in these languages first. Leave it empty to accept anything.",
-  "Harbor reads your display and lands between the two.":
-    "Harbor reads your display and lands between the two.",
-  "Harbor scales the prompt to the episode length, so a short episode does not ask this early. The bar shows the last three minutes.":
-    "Harbor scales the prompt to the episode length, so a short episode does not ask this early. The bar shows the last three minutes.",
-  "Harbor scrobbles your playback to Trakt and keeps your watchlist in sync.":
-    "Harbor scrobbles your playback to Trakt and keeps your watchlist in sync.",
-  "Harbor shows the full list of streams every time so you choose one yourself.":
-    "Harbor shows the full list of streams every time so you choose one yourself.",
-  "Harbor shows you a short code to type in at trakt.tv. Scrobbling and watchlist sync begin the moment you approve it.":
-    "Harbor shows you a short code to type in at trakt.tv. Scrobbling and watchlist sync begin the moment you approve it.",
-  "Harbor signs out and stops syncing. Your lists on Simkl are left exactly as they are.":
-    "Harbor signs out and stops syncing. Your lists on Simkl are left exactly as they are.",
-  "Harbor signs out and stops updating your progress. Your list on MyAnimeList is left as it is.":
-    "Harbor signs out and stops updating your progress. Your list on MyAnimeList is left as it is.",
-  "Harbor tries HTTP, HTTPS, reverse proxies, and the provider's default port. Credentials are stored separately.":
-    "Harbor tries HTTP, HTTPS, reverse proxies, and the provider's default port. Credentials are stored separately.",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harbor uses its own community server. You can point it at a server you run yourself.",
+  "Frame did not draw its own icons. Two people did, and they are worth hiring.":
+    "Frame did not draw its own icons. Two people did, and they are worth hiring.",
+  "Frame hosts no media and indexes no media. The sources and addons available to you are the ones you choose to configure, and their use is subject to the laws of your jurisdiction and the terms of the services concerned.":
+    "Frame hosts no media and indexes no media. The sources and addons available to you are the ones you choose to configure, and their use is subject to the laws of your jurisdiction and the terms of the services concerned.",
+  "Frame is an independent client. It is not affiliated with, endorsed by, or sponsored by Stremio, or by any company, addon author, or trademark holder referenced in this application. All trademarks are the property of their respective owners.":
+    "Frame is an independent client. It is not affiliated with, endorsed by, or sponsored by Stremio, or by any company, addon author, or trademark holder referenced in this application. All trademarks are the property of their respective owners.",
+  "Frame is authorized on this device and syncing with Simkl.":
+    "Frame is authorized on this device and syncing with Simkl.",
+  "Frame is free and open source software, released under the MIT License.":
+    "Frame is free and open source software, released under the MIT License.",
+  "Frame is signed in to your MyAnimeList account.":
+    "Frame is signed in to your MyAnimeList account.",
+  "Frame is using {used} of the {quota} this computer allows.":
+    "Frame is using {used} of the {quota} this computer allows.",
+  "Frame library": "Frame library",
+  "Frame opens 4 parallel requests to speed.cloudflare.com, discards the first 1.2 seconds so TCP slow-start does not tank the result, then measures until it has 150 MB or 8 seconds of steady transfer.":
+    "Frame opens 4 parallel requests to speed.cloudflare.com, discards the first 1.2 seconds so TCP slow-start does not tank the result, then measures until it has 150 MB or 8 seconds of steady transfer.",
+  "Frame opens only the address you paste here and lists the media it finds in that page's own source. It does not search anywhere else.":
+    "Frame opens only the address you paste here and lists the media it finds in that page's own source. It does not search anywhere else.",
+  "Frame picks the best stream it can find and starts playing straight away.":
+    "Frame picks the best stream it can find and starts playing straight away.",
+  "Frame picks the size your connection can keep up with.":
+    "Frame picks the size your connection can keep up with.",
+  "Frame puts streams, audio tracks and subtitles in these languages first. Leave it empty to accept anything.":
+    "Frame puts streams, audio tracks and subtitles in these languages first. Leave it empty to accept anything.",
+  "Frame reads your display and lands between the two.":
+    "Frame reads your display and lands between the two.",
+  "Frame scales the prompt to the episode length, so a short episode does not ask this early. The bar shows the last three minutes.":
+    "Frame scales the prompt to the episode length, so a short episode does not ask this early. The bar shows the last three minutes.",
+  "Frame scrobbles your playback to Trakt and keeps your watchlist in sync.":
+    "Frame scrobbles your playback to Trakt and keeps your watchlist in sync.",
+  "Frame shows the full list of streams every time so you choose one yourself.":
+    "Frame shows the full list of streams every time so you choose one yourself.",
+  "Frame shows you a short code to type in at trakt.tv. Scrobbling and watchlist sync begin the moment you approve it.":
+    "Frame shows you a short code to type in at trakt.tv. Scrobbling and watchlist sync begin the moment you approve it.",
+  "Frame signs out and stops syncing. Your lists on Simkl are left exactly as they are.":
+    "Frame signs out and stops syncing. Your lists on Simkl are left exactly as they are.",
+  "Frame signs out and stops updating your progress. Your list on MyAnimeList is left as it is.":
+    "Frame signs out and stops updating your progress. Your list on MyAnimeList is left as it is.",
+  "Frame tries HTTP, HTTPS, reverse proxies, and the provider's default port. Credentials are stored separately.":
+    "Frame tries HTTP, HTTPS, reverse proxies, and the provider's default port. Credentials are stored separately.",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frame uses its own community server. You can point it at a server you run yourself.",
   "Head to head": "Head to head",
   "Heads-up time": "Heads-up time",
   "Hide email address": "Hide email address",
@@ -546,34 +546,34 @@ const uiFallback: Record<string, string> = {
     "Hides the episode name, which often gives the twist away on its own.",
   "Hides the synopsis text under each unwatched episode.":
     "Hides the synopsis text under each unwatched episode.",
-  "Hold Ctrl or Cmd and scroll to resize Harbor's interface smoothly. This one cannot be changed.":
-    "Hold Ctrl or Cmd and scroll to resize Harbor's interface smoothly. This one cannot be changed.",
+  "Hold Ctrl or Cmd and scroll to resize Frame's interface smoothly. This one cannot be changed.":
+    "Hold Ctrl or Cmd and scroll to resize Frame's interface smoothly. This one cannot be changed.",
   "Home team": "Home team",
-  "How Harbor draws its own interface. Leave this on Automatic unless the app itself stutters, flickers or tears while scrolling, which some G-SYNC and high refresh rate setups do. Switching backends usually settles it. This does not affect video playback.":
-    "How Harbor draws its own interface. Leave this on Automatic unless the app itself stutters, flickers or tears while scrolling, which some G-SYNC and high refresh rate setups do. Switching backends usually settles it. This does not affect video playback.",
+  "How Frame draws its own interface. Leave this on Automatic unless the app itself stutters, flickers or tears while scrolling, which some G-SYNC and high refresh rate setups do. Switching backends usually settles it. This does not affect video playback.":
+    "How Frame draws its own interface. Leave this on Automatic unless the app itself stutters, flickers or tears while scrolling, which some G-SYNC and high refresh rate setups do. Switching backends usually settles it. This does not affect video playback.",
   "How big the handle sits on the timeline while you scrub.":
     "How big the handle sits on the timeline while you scrub.",
   "How dark the gradient behind the featured title on Home is. 100% is the classic look.":
     "How dark the gradient behind the featured title on Home is. 100% is the classic look.",
-  "How far ahead of the start time Harbor pings you. It scans your playlist EPG every 30 minutes.":
-    "How far ahead of the start time Harbor pings you. It scans your playlist EPG every 30 minutes.",
+  "How far ahead of the start time Frame pings you. It scans your playlist EPG every 30 minutes.":
+    "How far ahead of the start time Frame pings you. It scans your playlist EPG every 30 minutes.",
   "How heavy the stroke around each letter is.": "How heavy the stroke around each letter is.",
   "How large every poster card is drawn across Home and search.":
     "How large every poster card is drawn across Home and search.",
   "How large subtitles are drawn on the video, at any window size.":
     "How large subtitles are drawn on the video, at any window size.",
-  "How long Harbor fills the buffer before the picture appears.":
-    "How long Harbor fills the buffer before the picture appears.",
+  "How long Frame fills the buffer before the picture appears.":
+    "How long Frame fills the buffer before the picture appears.",
   "How long a poster takes to grow and settle as the pointer passes it.":
     "How long a poster takes to grow and settle as the pointer passes it.",
-  "How many episodes auto-play back to back before Harbor pauses to ask.":
-    "How many episodes auto-play back to back before Harbor pauses to ask.",
-  "How much of the video Harbor downloads in front of where you are watching.":
-    "How much of the video Harbor downloads in front of where you are watching.",
-  "How often Harbor re-reads the library index from {name}. Manual only refreshes when you press Sync now.":
-    "How often Harbor re-reads the library index from {name}. Manual only refreshes when you press Sync now.",
-  "How quickly the Harbor cursor moves with the right stick.":
-    "How quickly the Harbor cursor moves with the right stick.",
+  "How many episodes auto-play back to back before Frame pauses to ask.":
+    "How many episodes auto-play back to back before Frame pauses to ask.",
+  "How much of the video Frame downloads in front of where you are watching.":
+    "How much of the video Frame downloads in front of where you are watching.",
+  "How often Frame re-reads the library index from {name}. Manual only refreshes when you press Sync now.":
+    "How often Frame re-reads the library index from {name}. Manual only refreshes when you press Sync now.",
+  "How quickly the Frame cursor moves with the right stick.":
+    "How quickly the Frame cursor moves with the right stick.",
   "How rounded the corners of every poster card are.":
     "How rounded the corners of every poster card are.",
   "How solid the panel behind the text looks over the video.":
@@ -622,7 +622,7 @@ const uiFallback: Record<string, string> = {
   Lineups: "Lineups",
   "Link Discord": "Link Discord",
   "Linked as {username}": "Linked as {username}",
-  "Linked to your Harbor account.": "Linked to your Harbor account.",
+  "Linked to your Frame account.": "Linked to your Frame account.",
   "Live TV, {scope}, {minutes} min lead": "Live TV, {scope}, {minutes} min lead",
   "Live now": "Live now",
   "Live preview is on. Save keeps what you've picked as your Custom theme. Reset reverts the editor to the saved palette.":
@@ -637,8 +637,8 @@ const uiFallback: Record<string, string> = {
     "Low end lifted, for weight on speakers that do not have it.",
   "Low end pulled back, kinder to small speakers and to the neighbours.":
     "Low end pulled back, kinder to small speakers and to the neighbours.",
-  "Low is cosmetic. Normal is annoying. High means a feature is broken. Critical means Harbor is unusable.":
-    "Low is cosmetic. Normal is annoying. High means a feature is broken. Critical means Harbor is unusable.",
+  "Low is cosmetic. Normal is annoying. High means a feature is broken. Critical means Frame is unusable.":
+    "Low is cosmetic. Normal is annoying. High means a feature is broken. Critical means Frame is unusable.",
   "Manage this rule": "Manage this rule",
   "Match details are not available yet.": "Match details are not available yet.",
   "Match preview": "Match preview",
@@ -702,11 +702,11 @@ const uiFallback: Record<string, string> = {
     "On shows titles in your metadata language (English by default). Off keeps titles in English.",
   "On the pad, hold {button} to stop.": "On the pad, hold {button} to stop.",
   "On the pitch": "On the pitch",
-  "One account covers football and hockey. The free plan allows 100 requests a day and Harbor paces itself to stay inside it.":
-    "One account covers football and hockey. The free plan allows 100 requests a day and Harbor paces itself to stay inside it.",
+  "One account covers football and hockey. The free plan allows 100 requests a day and Frame paces itself to stay inside it.":
+    "One account covers football and hockey. The free plan allows 100 requests a day and Frame paces itself to stay inside it.",
   "Only the card gets wider. The text stays the same size, so bigger cards mean bigger artwork and fewer of them on screen.":
     "Only the card gets wider. The text stays the same size, so bigger cards mean bigger artwork and fewer of them on screen.",
-  "Open Harbor on desktop to link Discord.": "Open Harbor on desktop to link Discord.",
+  "Open Frame on desktop to link Discord.": "Open Frame on desktop to link Discord.",
   "Open anilist.co": "Open anilist.co",
   "Open myanimelist.net": "Open myanimelist.net",
   "Open simkl.com": "Open simkl.com",
@@ -716,8 +716,8 @@ const uiFallback: Record<string, string> = {
     "Opens Stremio's donation page in your browser.",
   "Opens anilist.co in your browser, where you can read what AniList does and make a free account.":
     "Opens anilist.co in your browser, where you can read what AniList does and make a free account.",
-  "Opens stremboxd.com, the community bridge that reads Letterboxd on Harbor's behalf.":
-    "Opens stremboxd.com, the community bridge that reads Letterboxd on Harbor's behalf.",
+  "Opens stremboxd.com, the community bridge that reads Letterboxd on Frame's behalf.":
+    "Opens stremboxd.com, the community bridge that reads Letterboxd on Frame's behalf.",
   "Opens three editors for CSS, JavaScript, and an HTML overlay. Changes apply as you type.":
     "Opens three editors for CSS, JavaScript, and an HTML overlay. Changes apply as you type.",
   "Opens trakt.tv in your browser, where you can read what Trakt does and make a free account.":
@@ -731,8 +731,8 @@ const uiFallback: Record<string, string> = {
   "Page metadata": "Page metadata",
   "Page source": "Page source",
   Pages: "Pages",
-  "Paste a link to a png, webp, or svg. Harbor will use it for this badge everywhere streams show format chips.":
-    "Paste a link to a png, webp, or svg. Harbor will use it for this badge everywhere streams show format chips.",
+  "Paste a link to a png, webp, or svg. Frame will use it for this badge everywhere streams show format chips.":
+    "Paste a link to a png, webp, or svg. Frame will use it for this badge everywhere streams show format chips.",
   "Paste a stream": "Paste a stream",
   "Paste from clipboard": "Paste from clipboard",
   "Paste the address of any public Letterboxd list to add it as its own row.":
@@ -744,8 +744,8 @@ const uiFallback: Record<string, string> = {
     "Pick a badges.json that is already saved on this computer.",
   "Pick as many as you like. With none picked, every genre counts.":
     "Pick as many as you like. With none picked, every genre counts.",
-  "Pick the cap your connection can sustain. Streams that need more than this rank lower, so Harbor stops offering you files you cannot actually play.":
-    "Pick the cap your connection can sustain. Streams that need more than this rank lower, so Harbor stops offering you files you cannot actually play.",
+  "Pick the cap your connection can sustain. Streams that need more than this rank lower, so Frame stops offering you files you cannot actually play.":
+    "Pick the cap your connection can sustain. Streams that need more than this rank lower, so Frame stops offering you files you cannot actually play.",
   "Pick the clubs you follow and their next fixture and last result stay pinned here.":
     "Pick the clubs you follow and their next fixture and last result stay pinned here.",
   "Pick the countries of origin you follow. With none picked, every country counts.":
@@ -756,8 +756,8 @@ const uiFallback: Record<string, string> = {
     "Pick what to save, then everything you choose lands in one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.",
   "Pick which corner of the poster the bookmark sits in.":
     "Pick which corner of the poster the bookmark sits in.",
-  "Pick which languages Harbor looks for first, and which ones it falls back to.":
-    "Pick which languages Harbor looks for first, and which ones it falls back to.",
+  "Pick which languages Frame looks for first, and which ones it falls back to.":
+    "Pick which languages Frame looks for first, and which ones it falls back to.",
   "Pick who this rule watches. With nobody picked, everyone you track counts.":
     "Pick who this rule watches. With nobody picked, everyone you track counts.",
   Picked: "Picked",
@@ -768,8 +768,8 @@ const uiFallback: Record<string, string> = {
     "Play starts the best-ranked stream straight away.",
   "Player config": "Player config",
   "Player screen lock": "Player screen lock",
-  "Point Harbor at a hosted pack link, upload your own images, or import a .zip. Harbor stores the link, so the artwork stays with whoever made it.":
-    "Point Harbor at a hosted pack link, upload your own images, or import a .zip. Harbor stores the link, so the artwork stays with whoever made it.",
+  "Point Frame at a hosted pack link, upload your own images, or import a .zip. Frame stores the link, so the artwork stays with whoever made it.":
+    "Point Frame at a hosted pack link, upload your own images, or import a .zip. Frame stores the link, so the artwork stays with whoever made it.",
   "Post the alert to the Discord channel set up on the Destinations tab.":
     "Post the alert to the Discord channel set up on the Destinations tab.",
   "Prefer these sources": "Prefer these sources",
@@ -779,8 +779,8 @@ const uiFallback: Record<string, string> = {
     "Probes the server's settings endpoint from this device and reports what came back.",
   "Public mode reads your account with nothing but your username. You get your watchlist, liked films, popular this week and the Top 250, and no password is needed.":
     "Public mode reads your account with nothing but your username. You get your watchlist, liked films, popular this week and the Top 250, and no password is needed.",
-  "Pull every title on your Trakt watchlist into Harbor. Anything already saved is left alone.":
-    "Pull every title on your Trakt watchlist into Harbor. Anything already saved is left alone.",
+  "Pull every title on your Trakt watchlist into Frame. Anything already saved is left alone.":
+    "Pull every title on your Trakt watchlist into Frame. Anything already saved is left alone.",
   "Pulls what you have part-watched on Simkl into the row, marked with the Simkl logo. Requires a connected Simkl account.":
     "Pulls what you have part-watched on Simkl into the row, marked with the Simkl logo. Requires a connected Simkl account.",
   "Pulls what you have part-watched on Trakt into the row, marked with the Trakt logo. Requires a connected Trakt account.":
@@ -808,8 +808,8 @@ const uiFallback: Record<string, string> = {
   "Remove this stream": "Remove this stream",
   Renderer: "Renderer",
   "Rendering backend": "Rendering backend",
-  "Renders mpv inline so playback lives in Harbor itself. Turn off to open it in a separate window instead.":
-    "Renders mpv inline so playback lives in Harbor itself. Turn off to open it in a separate window instead.",
+  "Renders mpv inline so playback lives in Frame itself. Turn off to open it in a separate window instead.":
+    "Renders mpv inline so playback lives in Frame itself. Turn off to open it in a separate window instead.",
   "Renders subtitles in a heavier weight. Turn off to use your font's normal weight.":
     "Renders subtitles in a heavier weight. Turn off to use your font's normal weight.",
   "Replace selected data?": "Replace selected data?",
@@ -823,13 +823,13 @@ const uiFallback: Record<string, string> = {
   Role: "Role",
   "Rule is active": "Rule is active",
   "Rule name": "Rule name",
-  "Rulesets bring a full badge set with their own matching. Art remaps only swap the pictures on Harbor's built-in badges. Anything shared as a badges.json link imports here too.":
-    "Rulesets bring a full badge set with their own matching. Art remaps only swap the pictures on Harbor's built-in badges. Anything shared as a badges.json link imports here too.",
+  "Rulesets bring a full badge set with their own matching. Art remaps only swap the pictures on Frame's built-in badges. Anything shared as a badges.json link imports here too.":
+    "Rulesets bring a full badge set with their own matching. Art remaps only swap the pictures on Frame's built-in badges. Anything shared as a badges.json link imports here too.",
   "Run your own relay": "Run your own relay",
   "Running version {version} of the Watch Together protocol.":
     "Running version {version} of the Watch Together protocol.",
-  "Running version {version}. Harbor's public relay updates itself, so there is nothing for you to do.":
-    "Running version {version}. Harbor's public relay updates itself, so there is nothing for you to do.",
+  "Running version {version}. Frame's public relay updates itself, so there is nothing for you to do.":
+    "Running version {version}. Frame's public relay updates itself, so there is nothing for you to do.",
   "Running version {version}. Redeploy to pick up the latest Watch Together fixes. The in-app banner clears once the new version is live.":
     "Running version {version}. Redeploy to pick up the latest Watch Together fixes. The in-app banner clears once the new version is live.",
   "Runs a short download test against Cloudflare and shows the result here, so you can pick a cap that matches your real line.":
@@ -845,25 +845,25 @@ const uiFallback: Record<string, string> = {
   "Save the rule": "Save the rule",
   "Saved to Downloads as harbor-mpv-log.txt. Attach it above.":
     "Saved to Downloads as harbor-mpv-log.txt. Attach it above.",
-  "Saved {when} from Harbor {app}. Your Stremio sign-in stays as is.":
-    "Saved {when} from Harbor {app}. Your Stremio sign-in stays as is.",
+  "Saved {when} from Frame {app}. Your Stremio sign-in stays as is.":
+    "Saved {when} from Frame {app}. Your Stremio sign-in stays as is.",
   "Saved.": "Saved.",
   "Search channels": "Search channels",
   "Search rules": "Search rules",
   "Search teams": "Search teams",
   "Search your channels": "Search your channels",
-  "Searching works without a key. Adding one lets Harbor line subtitles up with the audio on its own.":
-    "Searching works without a key. Adding one lets Harbor line subtitles up with the audio on its own.",
+  "Searching works without a key. Adding one lets Frame line subtitles up with the audio on its own.":
+    "Searching works without a key. Adding one lets Frame line subtitles up with the audio on its own.",
   "See which fixes are already in review before you start on one.":
     "See which fixes are already in review before you start on one.",
   "Seek dot": "Seek dot",
   "Send code": "Send code",
-  "Send every title in your Harbor watchlist up to Trakt. Safe to run again, Trakt skips anything it already has.":
-    "Send every title in your Harbor watchlist up to Trakt. Safe to run again, Trakt skips anything it already has.",
+  "Send every title in your Frame watchlist up to Trakt. Safe to run again, Trakt skips anything it already has.":
+    "Send every title in your Frame watchlist up to Trakt. Safe to run again, Trakt skips anything it already has.",
   "Send the alert through the Telegram bot set up on the Destinations tab.":
     "Send the alert through the Telegram bot set up on the Destinations tab.",
-  "Sent once to Stremboxd to obtain a sign-in token. Harbor never keeps it.":
-    "Sent once to Stremboxd to obtain a sign-in token. Harbor never keeps it.",
+  "Sent once to Stremboxd to obtain a sign-in token. Frame never keeps it.":
+    "Sent once to Stremboxd to obtain a sign-in token. Frame never keeps it.",
   "Set as home team": "Set as home team",
   "Shader files": "Shader files",
   "Shadow strength": "Shadow strength",
@@ -888,12 +888,12 @@ const uiFallback: Record<string, string> = {
     "Shows everything the addon sends in the Stremio picker layout instead of trimming it to a few lines. That matters for AIOStreams and other custom formats. Off gives shorter, tidier rows.",
   "Sidebar icons play a short animation when you hover them. Turn this off to keep them as plain static icons.":
     "Sidebar icons play a short animation when you hover them. Turn this off to keep them as plain static icons.",
-  "Sign in at anilist.co and authorize Harbor. Your anime lists show up on the Anime page as soon as you are back.":
-    "Sign in at anilist.co and authorize Harbor. Your anime lists show up on the Anime page as soon as you are back.",
-  "Sign in once with MyAnimeList. Harbor then updates your episode count as you watch, and never lowers a count you already have.":
-    "Sign in once with MyAnimeList. Harbor then updates your episode count as you watch, and never lowers a count you already have.",
-  "Sign in once with a short device code. Harbor then marks what you finish as watched and keeps your plan-to-watch list in step.":
-    "Sign in once with a short device code. Harbor then marks what you finish as watched and keeps your plan-to-watch list in step.",
+  "Sign in at anilist.co and authorize Frame. Your anime lists show up on the Anime page as soon as you are back.":
+    "Sign in at anilist.co and authorize Frame. Your anime lists show up on the Anime page as soon as you are back.",
+  "Sign in once with MyAnimeList. Frame then updates your episode count as you watch, and never lowers a count you already have.":
+    "Sign in once with MyAnimeList. Frame then updates your episode count as you watch, and never lowers a count you already have.",
+  "Sign in once with a short device code. Frame then marks what you finish as watched and keeps your plan-to-watch list in step.":
+    "Sign in once with a short device code. Frame then marks what you finish as watched and keeps your plan-to-watch list in step.",
   "Sign in to sync your library, add-ons and watch history with Stremio.":
     "Sign in to sync your library, add-ons and watch history with Stremio.",
   "Sign in with Discord": "Sign in with Discord",
@@ -938,7 +938,7 @@ const uiFallback: Record<string, string> = {
   T: "T",
   "TMDB, Fanart, TVDB, OMDb and RPDB supply posters, artwork and ratings. Adding your own free keys makes artwork load faster and more completely.":
     "TMDB, Fanart, TVDB, OMDb and RPDB supply posters, artwork and ratings. Adding your own free keys makes artwork load faster and more completely.",
-  "Takes effect the next time Harbor starts.": "Takes effect the next time Harbor starts.",
+  "Takes effect the next time Frame starts.": "Takes effect the next time Frame starts.",
   "Test a stream title": "Test a stream title",
   "That pack could not be imported.": "That pack could not be imported.",
   "That page answered {status} and sent nothing back.":
@@ -961,26 +961,26 @@ const uiFallback: Record<string, string> = {
   "The chrome abiyyu drew for the player: transport, subtitles, shaders, and the rest.":
     "The chrome abiyyu drew for the player: transport, subtitles, shaders, and the rest.",
   "The color of the panel behind the text.": "The color of the panel behind the text.",
-  "The controller button glyphs elsewhere in Harbor are not ours. They come from Kenney's Input Prompts, released into the public domain under CC0.":
-    "The controller button glyphs elsewhere in Harbor are not ours. They come from Kenney's Input Prompts, released into the public domain under CC0.",
+  "The controller button glyphs elsewhere in Frame are not ours. They come from Kenney's Input Prompts, released into the public domain under CC0.":
+    "The controller button glyphs elsewhere in Frame are not ours. They come from Kenney's Input Prompts, released into the public domain under CC0.",
   "The darkest steps flatten together, which is how an LCD really behaves.":
     "The darkest steps flatten together, which is how an LCD really behaves.",
   "The entries taking the most room right now. Most of them are caches that rebuild themselves, so this list changes as you browse.":
     "The entries taking the most room right now. Most of them are caches that rebuild themselves, so this list changes as you browse.",
   "The fill color of the subtitle letters themselves.":
     "The fill color of the subtitle letters themselves.",
-  "The filled part of the timeline. Default follows your Harbor accent.":
-    "The filled part of the timeline. Default follows your Harbor accent.",
-  "The full text of every licence covering software distributed with Harbor. Select any entry to save a copy.":
-    "The full text of every licence covering software distributed with Harbor. Select any entry to save a copy.",
+  "The filled part of the timeline. Default follows your Frame accent.":
+    "The filled part of the timeline. Default follows your Frame accent.",
+  "The full text of every licence covering software distributed with Frame. Select any entry to save a copy.":
+    "The full text of every licence covering software distributed with Frame. Select any entry to save a copy.",
   "The handle in your profile address, letterboxd.com/your-name.":
     "The handle in your profile address, letterboxd.com/your-name.",
   "The most memory the head start is allowed to take while a video plays.":
     "The most memory the head start is allowed to take while a video plays.",
-  "The principal open source components Harbor is built from.":
-    "The principal open source components Harbor is built from.",
-  "The release Harbor watches for. Everything else on this page narrows it down.":
-    "The release Harbor watches for. Everything else on this page narrows it down.",
+  "The principal open source components Frame is built from.":
+    "The principal open source components Frame is built from.",
+  "The release Frame watches for. Everything else on this page narrows it down.":
+    "The release Frame watches for. Everything else on this page narrows it down.",
   "The shadow is what keeps the title and buttons readable. Drop it too far and the text starts fighting the artwork.":
     "The shadow is what keeps the title and buttons readable. Drop it too far and the text starts fighting the artwork.",
   "The sidebar set. Click any one to save the SVG.":
@@ -988,24 +988,24 @@ const uiFallback: Record<string, string> = {
   "The small on-screen readout that appears while you nudge subtitle timing with Z and X during playback. Automatic syncing lives in the Sync tab.":
     "The small on-screen readout that appears while you nudge subtitle timing with Z and X during playback. Automatic syncing lives in the Sync tab.",
   "The stroke or halo drawn behind the letters.": "The stroke or halo drawn behind the letters.",
-  "The text Harbor prints on the badge, for example REMUX.":
-    "The text Harbor prints on the badge, for example REMUX.",
+  "The text Frame prints on the badge, for example REMUX.":
+    "The text Frame prints on the badge, for example REMUX.",
   "The typeface subtitles are drawn in. Add your own TTF, OTF or WOFF file if none of these suit.":
     "The typeface subtitles are drawn in. Add your own TTF, OTF or WOFF file if none of these suit.",
   "The volume bar stops at 100 percent. No boost is available.":
     "The volume bar stops at 100 percent. No boost is available.",
   "Theme and appearance": "Theme and appearance",
   "Then notify": "Then notify",
-  "These are Harbor's own, drawn for Harbor. Take them for a theme, a fork, a mockup, a personal project. Keep the credit on the artists and do not sell the set on its own.":
-    "These are Harbor's own, drawn for Harbor. Take them for a theme, a fork, a mockup, a personal project. Keep the credit on the artists and do not sell the set on its own.",
-  "These organisations provide their services to Harbor at no cost.":
-    "These organisations provide their services to Harbor at no cost.",
+  "These are Frame's own, drawn for Frame. Take them for a theme, a fork, a mockup, a personal project. Keep the credit on the artists and do not sell the set on its own.":
+    "These are Frame's own, drawn for Frame. Take them for a theme, a fork, a mockup, a personal project. Keep the credit on the artists and do not sell the set on its own.",
+  "These organisations provide their services to Frame at no cost.":
+    "These organisations provide their services to Frame at no cost.",
   "These rows are switched on but hidden from your home page. Choose Show to bring one back.":
     "These rows are switched on but hidden from your home page. Choose Show to bring one back.",
   "This badge is hidden everywhere streams show format chips.":
     "This badge is hidden everywhere streams show format chips.",
-  "This badge uses art you picked instead of Harbor's default.":
-    "This badge uses art you picked instead of Harbor's default.",
+  "This badge uses art you picked instead of Frame's default.":
+    "This badge uses art you picked instead of Frame's default.",
   "This cannot be undone. You would need to deploy a new relay.":
     "This cannot be undone. You would need to deploy a new relay.",
   "This deletes those entries from your library. Playing them again re-adds them.":
@@ -1027,12 +1027,12 @@ const uiFallback: Record<string, string> = {
     "Turn this off and the report ships with no name attached.",
   "Turn this off to keep the rule but stop it sending anything for now.":
     "Turn this off to keep the rule but stop it sending anything for now.",
-  "Turn this on and Harbor watches just the Live TV channels you starred. Off means every channel in your playlists.":
-    "Turn this on and Harbor watches just the Live TV channels you starred. Off means every channel in your playlists.",
+  "Turn this on and Frame watches just the Live TV channels you starred. Off means every channel in your playlists.":
+    "Turn this on and Frame watches just the Live TV channels you starred. Off means every channel in your playlists.",
   "Turning this on adds your Letterboxd catalogs to the home page and a Letterboxd panel to every film page.":
     "Turning this on adds your Letterboxd catalogs to the home page and a Letterboxd panel to every film page.",
-  "Type any release name here to see what Harbor would badge it with.":
-    "Type any release name here to see what Harbor would badge it with.",
+  "Type any release name here to see what Frame would badge it with.":
+    "Type any release name here to see what Frame would badge it with.",
   "Unavailable while Continue Watching is kept private to each profile, because Simkl progress is shared across every profile on this account.":
     "Unavailable while Continue Watching is kept private to each profile, because Simkl progress is shared across every profile on this account.",
   "Unavailable while Continue Watching is kept private to each profile, because Trakt progress is shared across every profile on this account.":
@@ -1043,8 +1043,8 @@ const uiFallback: Record<string, string> = {
   "Unpin this competition": "Unpin this competition",
   "Up to 3840 × 2160 when the source has it. Takes a beat longer to start.":
     "Up to 3840 × 2160 when the source has it. Takes a beat longer to start.",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "Upload a picture of your own, or pick one from the Harbor catalog.",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "Upload a picture of your own, or pick one from the Frame catalog.",
   "Uploads stay on this computer. Keep the file under 250 KB.":
     "Uploads stay on this computer. Keep the file under 250 KB.",
   "Use color to distinguish severity, or keep every advisory monochrome.":
@@ -1071,8 +1071,8 @@ const uiFallback: Record<string, string> = {
   "What should the backup include?": "What should the backup include?",
   "What the sidebar icons do when you land on them.":
     "What the sidebar icons do when you land on them.",
-  "What this rule is called in your list. Leave it empty and Harbor names it after the trigger.":
-    "What this rule is called in your list. Leave it empty and Harbor names it after the trigger.",
+  "What this rule is called in your list. Leave it empty and Frame names it after the trigger.":
+    "What this rule is called in your list. Leave it empty and Frame names it after the trigger.",
   "When a movie or episode starts, briefly show its Common Sense Media parental guide (violence, nudity, profanity, substances) with severity. Fades on its own.":
     "When a movie or episode starts, briefly show its Common Sense Media parental guide (violence, nudity, profanity, substances) with severity. Fades on its own.",
   "Where Play looks first": "Where Play looks first",
@@ -1087,15 +1087,15 @@ const uiFallback: Record<string, string> = {
   "Writes the last playback session to your Downloads folder so you can attach it above.":
     "Writes the last playback session to your Downloads folder so you can attach it above.",
   "Yellow cards": "Yellow cards",
-  "You have no automations yet. Create one and Harbor will message you the moment something matches.":
-    "You have no automations yet. Create one and Harbor will message you the moment something matches.",
+  "You have no automations yet. Create one and Frame will message you the moment something matches.":
+    "You have no automations yet. Create one and Frame will message you the moment something matches.",
   "You have not added any favourites yet": "You have not added any favourites yet",
   "Your AniList account": "Your AniList account",
   "Your MyAnimeList account": "Your MyAnimeList account",
   "Your Simkl account": "Your Simkl account",
   "Your Trakt account": "Your Trakt account",
-  "Your own Harbor account progress. The primary source for almost everyone.":
-    "Your own Harbor account progress. The primary source for almost everyone.",
+  "Your own Frame account progress. The primary source for almost everyone.":
+    "Your own Frame account progress. The primary source for almost everyone.",
   "Your pick for this competition": "Your pick for this competition",
   "Your preferences, layout state, and small lookup caches. Clearing caches shrinks this.":
     "Your preferences, layout state, and small lookup caches. Clearing caches shrinks this.",
@@ -1118,8 +1118,8 @@ const uiFallback: Record<string, string> = {
     "{count} installed. Their results are merged in with everything else.",
   "{ms} ms": "{ms} ms",
   "{m} of {n} on": "{m} of {n} on",
-  "{n} badges use art you picked instead of Harbor's default.":
-    "{n} badges use art you picked instead of Harbor's default.",
+  "{n} badges use art you picked instead of Frame's default.":
+    "{n} badges use art you picked instead of Frame's default.",
   "{n} badges, by {name}": "{n} badges, by {name}",
   "{n} films.": "{n} films.",
   "{n} followed": "{n} followed",
@@ -1130,9 +1130,9 @@ const uiFallback: Record<string, string> = {
   "{n} seconds": "{n} seconds",
   "{n}x card width": "{n}x card width",
   "{trigger}. Sends to {channels}.": "{trigger}. Sends to {channels}.",
-  "Harbor on Discord": "Harbor on Discord",
-  "Release notes, help from other people using Harbor, and somewhere to send bugs.":
-    "Release notes, help from other people using Harbor, and somewhere to send bugs.",
+  "Frame on Discord": "Frame on Discord",
+  "Release notes, help from other people using Frame, and somewhere to send bugs.":
+    "Release notes, help from other people using Frame, and somewhere to send bugs.",
   "Player controls in Big Picture": "Player controls in Big Picture",
   "Ten-foot uses large controls built for a remote across the room. Desktop keeps the same player you use in the normal window, which is quicker with a mouse and keyboard.":
     "Ten-foot uses large controls built for a remote across the room. Desktop keeps the same player you use in the normal window, which is quicker with a mouse and keyboard.",
@@ -1149,14 +1149,14 @@ const uiFallback: Record<string, string> = {
   "music.billboard.rank": "#{rank} on the Billboard Hot 100",
   "music.spotifyDevices.title": "Play on",
   "music.spotifyDevices.body":
-    "Harbor plays Spotify through its own output. Pick another device to hear it there instead.",
+    "Frame plays Spotify through its own output. Pick another device to hear it there instead.",
   "music.spotifyDevices.refresh": "Refresh",
-  "music.spotifyDevices.harbor": "Harbor",
+  "music.spotifyDevices.harbor": "Frame",
   "music.spotifyDevices.empty":
     "No other Spotify devices are awake. Open Spotify on a phone, speaker or desktop and refresh.",
   "music.lastfm.viewProfile": "View profile",
   "music.lastfm.keyHelp":
-    "Last.fm asks every app to identify itself. Create a free API account, then paste the key and shared secret it shows you. Harbor keeps both on this device.",
+    "Last.fm asks every app to identify itself. Create a free API account, then paste the key and shared secret it shows you. Frame keeps both on this device.",
   "music.lastfm.getKey": "Get an API key",
   "music.lastfm.createAccount": "Create a Last.fm account",
   "Pick a preset above, or add a filter to start shaping the sound.":
@@ -1337,7 +1337,7 @@ const uiFallback: Record<string, string> = {
   "games.custom.add": "Add a game",
   "games.custom.desktopTitle": "Bring your installed games together",
   "games.custom.desktopNote":
-    "Use the Harbor desktop app to add games from your computer and launch them here.",
+    "Use the Frame desktop app to add games from your computer and launch them here.",
   "games.custom.visibility": "Game visibility",
   "games.custom.visible": "In your library",
   "games.custom.hidden": "Hidden games",
@@ -1352,7 +1352,7 @@ const uiFallback: Record<string, string> = {
   "games.custom.compatibility": "Launch with",
   "games.custom.native": "Direct launch",
   "games.custom.compatNote":
-    "Choose an installed compatibility application and a separate folder for this game's Windows settings and saves. Harbor uses these choices only when you press Play.",
+    "Choose an installed compatibility application and a separate folder for this game's Windows settings and saves. Frame uses these choices only when you press Play.",
   "games.custom.advanced": "Launch options",
   "games.custom.arguments": "Arguments",
   "games.custom.argumentsNote":
@@ -1360,9 +1360,9 @@ const uiFallback: Record<string, string> = {
   "games.custom.detailsTitle": "Artwork and game details",
   "games.custom.lastLaunch": "Last launched",
   "games.custom.historyNote":
-    "Counts completed processes launched while Harbor is open. A separate launcher may close before its game, so this can differ from the game's own playtime.",
+    "Counts completed processes launched while Frame is open. A separate launcher may close before its game, so this can differ from the game's own playtime.",
   "games.custom.removeNote":
-    "Remove {name} and its launch history from Harbor? The game, artwork files, compatibility folder, and save backups stay on your computer.",
+    "Remove {name} and its launch history from Frame? The game, artwork files, compatibility folder, and save backups stay on your computer.",
   "games.custom.remove": "Remove from library",
   "games.details.scan": "Check installed games",
   "games.details.support": "Controls & compatibility",
@@ -1410,7 +1410,7 @@ const uiFallback: Record<string, string> = {
   "games.download.add": "Add download",
   "games.download.desktopTitle": "Make room for what's next",
   "games.download.desktopNote":
-    "Download and manage game files in Harbor for Windows, macOS or Linux.",
+    "Download and manage game files in Frame for Windows, macOS or Linux.",
   "games.download.verified": "Checksum matches",
   "games.download.pauseShort": "Pause download",
   "games.download.pause": "Pause {name}",
@@ -1427,12 +1427,12 @@ const uiFallback: Record<string, string> = {
   "games.download.checksum": "Check against a publisher checksum",
   "games.download.hashPlaceholder": "64-character SHA-256",
   "games.download.hashNote":
-    "If the publisher provides a SHA-256 checksum, paste it here. Harbor will compare the completed file before marking it downloaded.",
+    "If the publisher provides a SHA-256 checksum, paste it here. Frame will compare the completed file before marking it downloaded.",
   "games.emulation.platform": "For {name}",
   "games.emulation.setup": "Player setup",
   "games.emulation.desktopTitle": "Your collection belongs here",
   "games.emulation.desktopNote":
-    "Use Harbor on Windows, macOS or Linux to connect your game folders and installed emulators. Discovery and your saved games are available here too.",
+    "Use Frame on Windows, macOS or Linux to connect your game folders and installed emulators. Discovery and your saved games are available here too.",
   "games.emulation.emulator": "Emulator",
   "games.emulation.application": "Application",
   "games.emulation.noApp": "Choose the installed application",
@@ -1458,11 +1458,11 @@ const uiFallback: Record<string, string> = {
   "games.emulation.skipped": "{count} items couldn't be read.",
   "games.emulation.removeFolder": "Disconnect {name}",
   "games.emulation.removeNote":
-    "Disconnecting a folder only removes it from Harbor. Your files stay where they are.",
+    "Disconnecting a folder only removes it from Frame. Your files stay where they are.",
   "games.discovery.esportsTitle": "On the competitive stage",
-  "games.discovery.esportsEntry": "Follow tournaments, teams and live broadcasts in Harbor Sports.",
+  "games.discovery.esportsEntry": "Follow tournaments, teams and live broadcasts in Frame Sports.",
   "games.discovery.openSports": "Open Sports",
-  "games.discovery.esportsNote": "Live matches and the next events to watch in Harbor Sports.",
+  "games.discovery.esportsNote": "Live matches and the next events to watch in Frame Sports.",
   "games.discovery.bestOf": "Best of {count}",
   "games.discovery.viewEvent": "View event",
   "games.discovery.esportsCoverage": "{ready} of {total} match feeds available",
@@ -1529,12 +1529,12 @@ const uiFallback: Record<string, string> = {
   "games.libraryPersonal.hideNote":
     "Find it again in Hidden. Its files and saves stay where they are.",
   "games.libraryPersonal.localNote":
-    "Saved for this Harbor profile. Steam and your game files stay unchanged.",
+    "Saved for this Frame profile. Steam and your game files stay unchanged.",
   "games.mods.nav": "Mods",
   "games.library.yourSpace": "Your games, together",
-  "games.library.desktopTitle": "Your library lives in Harbor.",
+  "games.library.desktopTitle": "Your library lives in Frame.",
   "games.library.desktopNote":
-    "Open Harbor on your computer to find your installed Steam games and launch them from one place.",
+    "Open Frame on your computer to find your installed Steam games and launch them from one place.",
   "games.library.findInstalls": "Find installed games",
   "games.library.launchSteam": "Play through Steam",
   "games.library.scanning": "Finding your Steam games…",
@@ -1578,7 +1578,7 @@ const uiFallback: Record<string, string> = {
   "games.mods.projectPage": "Project page",
   "games.mods.ready": "Your setup is ready",
   "games.mods.verifiedNote":
-    "Each file is checked against its published SHA-512 hash. Harbor keeps a record so you can disable or remove it later.",
+    "Each file is checked against its published SHA-512 hash. Frame keeps a record so you can disable or remove it later.",
   "games.mods.optionalNote":
     "{count} optional dependencies are listed by these projects. They are not added automatically.",
   "games.mods.version": "Compatible version",
@@ -1680,7 +1680,7 @@ const uiFallback: Record<string, string> = {
   "games.account.connect": "Connect Steam",
   "games.account.refresh": "Refresh Steam account",
   "games.account.intro":
-    "Connect your Steam profile with a personal Web API key. Harbor can then read your library and achievements while Steam continues to handle your games and account.",
+    "Connect your Steam profile with a personal Web API key. Frame can then read your library and achievements while Steam continues to handle your games and account.",
   "games.account.disconnect": "Disconnect",
   "games.account.disconnectNote":
     "Remove this profile's saved Steam connection and account snapshot? Installed games, local games, collections and save backups stay here.",
@@ -1690,10 +1690,10 @@ const uiFallback: Record<string, string> = {
   "games.account.getKey": "Get your key on Steam",
   "games.account.remember": "Remember on this device",
   "games.account.privacy":
-    "Your key goes directly to Steam over an encrypted connection. Harbor only reads account information. It never asks for your Steam password.",
+    "Your key goes directly to Steam over an encrypted connection. Frame only reads account information. It never asks for your Steam password.",
   "games.account.visibilityNote":
     "Steam's profile and game-details privacy settings determine which information is available. A private library won't be shown as an empty one.",
-  "games.account.localOnly": "This connection belongs to the current Harbor profile.",
+  "games.account.localOnly": "This connection belongs to the current Frame profile.",
   "games.account.privateTitle": "Your game list is private",
   "games.account.privateNote":
     "Steam didn't make this account's game list available. Check your game-details privacy settings, then refresh here. Installed games are still available in On this device.",
@@ -1759,7 +1759,7 @@ const uiFallback: Record<string, string> = {
   "games.torrent.unlimited": "No limit",
   "games.torrent.uploadLimit": "Upload limit",
   "games.torrent.sharingNote":
-    "BitTorrent shares pieces while downloading. Harbor stops sharing when your selected files are complete. Two torrents can run at once; the rest wait in order.",
+    "BitTorrent shares pieces while downloading. Frame stops sharing when your selected files are complete. Two torrents can run at once; the rest wait in order.",
   "games.torrent.identity": "Torrent identity",
   "games.torrent.private": "This private torrent uses its own trackers.",
   "games.torrent.selection": "{count} selected · {size}",
@@ -1772,7 +1772,7 @@ const uiFallback: Record<string, string> = {
   "games.torrent.bandwidth": "Speed limits",
   "games.torrent.bandwidthValue": "Download: {down} · Upload: {up}",
   "games.torrent.keepNote":
-    "Removing this transfer keeps its downloaded files. Unfinished transfers stay paused after restarting Harbor.",
+    "Removing this transfer keeps its downloaded files. Unfinished transfers stay paused after restarting Frame.",
   "games.torrent.remove": "Remove transfer · keep files",
   "games.player.unmute": "Turn sound on",
   "games.player.buffering": "Loading trailer",
@@ -1832,10 +1832,10 @@ const uiFallback: Record<string, string> = {
   "music.newRelease.action": "Listen now",
   "music.xxl.title": "XXL Freshman Class",
   "music.xxl.subtitle": "Every class since 2007, pulled live from Wikipedia",
-  "Harbor could not reach your music sources while searching for {query}.":
-    "Harbor could not reach your music sources while searching for {query}.",
-  "No connected music source has {query}. Harbor also searched {alternatives} and found nothing.":
-    "No connected music source has {query}. Harbor also searched {alternatives} and found nothing.",
+  "Frame could not reach your music sources while searching for {query}.":
+    "Frame could not reach your music sources while searching for {query}.",
+  "No connected music source has {query}. Frame also searched {alternatives} and found nothing.":
+    "No connected music source has {query}. Frame also searched {alternatives} and found nothing.",
   "No connected music source has {query}.": "No connected music source has {query}.",
   "No source has {query}. Showing results for {fallback}.":
     "No source has {query}. Showing results for {fallback}.",
@@ -1877,22 +1877,22 @@ const uiFallback: Record<string, string> = {
   Selected: "Selected",
   "Picture in picture": "Picture in picture",
   "Picture in picture style": "Picture in picture style",
-  "Resize shrinks the Harbor window itself, so the app goes with it. Detached moves the video into its own floating window and hands Harbor back to you, so you can keep browsing while it plays.":
-    "Resize shrinks the Harbor window itself, so the app goes with it. Detached moves the video into its own floating window and hands Harbor back to you, so you can keep browsing while it plays.",
+  "Resize shrinks the Frame window itself, so the app goes with it. Detached moves the video into its own floating window and hands Frame back to you, so you can keep browsing while it plays.":
+    "Resize shrinks the Frame window itself, so the app goes with it. Detached moves the video into its own floating window and hands Frame back to you, so you can keep browsing while it plays.",
   Resize: "Resize",
   Detached: "Detached",
-  "Harbor could not start the runtime that Android extensions need. Reinstall Harbor, or install Java 17 or newer, then try again.":
-    "Harbor could not start the runtime that Android extensions need. Reinstall Harbor, or install Java 17 or newer, then try again.",
-  "This does not look like a plugin repository. Harbor reads its own plugin manifests, provider-script manifests and Android extension repositories.":
-    "This does not look like a plugin repository. Harbor reads its own plugin manifests, provider-script manifests and Android extension repositories.",
+  "Frame could not start the runtime that Android extensions need. Reinstall Frame, or install Java 17 or newer, then try again.":
+    "Frame could not start the runtime that Android extensions need. Reinstall Frame, or install Java 17 or newer, then try again.",
+  "This does not look like a plugin repository. Frame reads its own plugin manifests, provider-script manifests and Android extension repositories.":
+    "This does not look like a plugin repository. Frame reads its own plugin manifests, provider-script manifests and Android extension repositories.",
   "That is an app link, not a web address. Open the repository in a browser and paste the https link to its JSON file.":
     "That is an app link, not a web address. Open the repository in a browser and paste the https link to its JSON file.",
   "This kind of extension can only be installed in the desktop app.":
     "This kind of extension can only be installed in the desktop app.",
   "Could not install: {error}": "Could not install: {error}",
   "Stopped after {n} failures.": "Stopped after {n} failures.",
-  "Plugins look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "Plugins look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.",
+  "Plugins look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "Plugins look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.",
   "Pause or resume every plugin at once, without removing anything. The switch below decides where they are asked.":
     "Pause or resume every plugin at once, without removing anything. The switch below decides where they are asked.",
   "Use plugins outside the Plugins page": "Use plugins outside the Plugins page",
@@ -1901,17 +1901,17 @@ const uiFallback: Record<string, string> = {
   "Let auto-download and the next-episode prefetch ask plugins too. Off keeps plugins out of background work.":
     "Let auto-download and the next-episode prefetch ask plugins too. Off keeps plugins out of background work.",
   "Show languages on plugin posters": "Show languages on plugin posters",
-  "Some plugins name a listing after everything it carries, so its languages are in the title. Harbor reads them back out and badges the poster. Shown only when the plugin provides it.":
-    "Some plugins name a listing after everything it carries, so its languages are in the title. Harbor reads them back out and badges the poster. Shown only when the plugin provides it.",
+  "Some plugins name a listing after everything it carries, so its languages are in the title. Frame reads them back out and badges the poster. Shown only when the plugin provides it.":
+    "Some plugins name a listing after everything it carries, so its languages are in the title. Frame reads them back out and badges the poster. Shown only when the plugin provides it.",
   "Show quality on plugin posters": "Show quality on plugin posters",
   "Badge the resolutions a plugin's listing names, best first, and count the rest. Shown only when the plugin provides it.":
     "Badge the resolutions a plugin's listing names, best first, and count the rest. Shown only when the plugin provides it.",
   "Refresh all": "Refresh all",
-  "Runs every plugin Harbor stood down. One that answers comes back; the others stay paused.":
-    "Runs every plugin Harbor stood down. One that answers comes back; the others stay paused.",
+  "Runs every plugin Frame stood down. One that answers comes back; the others stay paused.":
+    "Runs every plugin Frame stood down. One that answers comes back; the others stay paused.",
   Android: "Android",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories, provider-script repositories and Android extension repositories as they are, and installs nothing until you choose to.":
-    "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories, provider-script repositories and Android extension repositories as they are, and installs nothing until you choose to.",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories, provider-script repositories and Android extension repositories as they are, and installs nothing until you choose to.":
+    "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories, provider-script repositories and Android extension repositories as they are, and installs nothing until you choose to.",
   "Reopen playing broadcasts after changing this setting.":
     "Reopen playing broadcasts after changing this setting.",
   "{n} entries": "{n} entries",
@@ -1922,8 +1922,8 @@ const uiFallback: Record<string, string> = {
   Halloween: "Halloween",
   "Use the album art as the app icon while music plays":
     "Use the album art as the app icon while music plays",
-  "The taskbar button becomes the cover of the track you are listening to, and goes back to your Harbor icon when music stops. The thumbnail preview always shows the cover either way.":
-    "The taskbar button becomes the cover of the track you are listening to, and goes back to your Harbor icon when music stops. The thumbnail preview always shows the cover either way.",
+  "The taskbar button becomes the cover of the track you are listening to, and goes back to your Frame icon when music stops. The thumbnail preview always shows the cover either way.":
+    "The taskbar button becomes the cover of the track you are listening to, and goes back to your Frame icon when music stops. The thumbnail preview always shows the cover either way.",
   "Prize pool": "Prize pool",
   "Match list only; bracket structure is not available for this title.":
     "Match list only; bracket structure is not available for this title.",
@@ -1936,7 +1936,7 @@ const uiFallback: Record<string, string> = {
   "games.pokemon.openSave": "Open game save",
   "games.pokemon.importPokemon": "Import Pokémon file",
   "games.pokemon.exportPokemon": "Export Pokémon",
-  "games.pokemon.engineMissing": "The Pokémon engine is not installed in this Harbor build yet.",
+  "games.pokemon.engineMissing": "The Pokémon engine is not installed in this Frame build yet.",
   "games.pokemon.bankError": "That action could not be completed.",
   "games.pokemon.error.generic":
     "The action failed. Your selected game save has not been overwritten.",
@@ -2050,8 +2050,8 @@ const uiFallback: Record<string, string> = {
   "games.pokemon.searchVideos": "Search walkthroughs and tips",
   "Is a new build giving you trouble? Pick an earlier one below and run its installer over your current copy. Your library, settings, and downloads all stay put.":
     "Is a new build giving you trouble? Pick an earlier one below and run its installer over your current copy. Your library, settings, and downloads all stay put.",
-  "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.":
-    "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.",
+  "Frame offers the newest build again on its next check. Dismiss that update to stay on the earlier one.":
+    "Frame offers the newest build again on its next check. Dismiss that update to stay on the earlier one.",
   "Thanks! Submit the GitHub issue that opened to send your rating.":
     "Thanks! Submit the GitHub issue that opened to send your rating.",
   "Open the issue again": "Open the issue again",
@@ -2074,8 +2074,8 @@ const uiFallback: Record<string, string> = {
     "Give it any name, and enter this Redirect URI:",
   "Save the app, then copy its Client ID below. The Client Secret is optional.":
     "Save the app, then copy its Client ID below. The Client Secret is optional.",
-  "Add your Trakt Client ID to connect. Without it Harbor cannot sign in to Trakt.":
-    "Add your Trakt Client ID to connect. Without it Harbor cannot sign in to Trakt.",
+  "Add your Trakt Client ID to connect. Without it Frame cannot sign in to Trakt.":
+    "Add your Trakt Client ID to connect. Without it Frame cannot sign in to Trakt.",
   "Trakt Client ID": "Trakt Client ID",
   "Client ID of your Trakt app": "Client ID of your Trakt app",
   "Used for sign-in and every Trakt request made on your behalf.":
@@ -2090,27 +2090,27 @@ const uiFallback: Record<string, string> = {
   "Enter this App Redirect URL:": "Enter this App Redirect URL:",
   "Fill in the remaining required fields, submit, then copy the Client ID below.":
     "Fill in the remaining required fields, submit, then copy the Client ID below.",
-  "Add your MAL Client ID to connect. Without it Harbor cannot sign in to MyAnimeList.":
-    "Add your MAL Client ID to connect. Without it Harbor cannot sign in to MyAnimeList.",
+  "Add your MAL Client ID to connect. Without it Frame cannot sign in to MyAnimeList.":
+    "Add your MAL Client ID to connect. Without it Frame cannot sign in to MyAnimeList.",
   "Client ID of your MyAnimeList app": "Client ID of your MyAnimeList app",
-  "After you approve Harbor, MyAnimeList sends your browser to that address and Harbor catches it. If that page does not load, copy its full address from the address bar and paste it into Harbor.":
-    "After you approve Harbor, MyAnimeList sends your browser to that address and Harbor catches it. If that page does not load, copy its full address from the address bar and paste it into Harbor.",
+  "After you approve Frame, MyAnimeList sends your browser to that address and Frame catches it. If that page does not load, copy its full address from the address bar and paste it into Frame.":
+    "After you approve Frame, MyAnimeList sends your browser to that address and Frame catches it. If that page does not load, copy its full address from the address bar and paste it into Frame.",
   "Your Trakt app": "Your Trakt app",
-  "Harbor signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.":
-    "Harbor signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.",
+  "Frame signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.":
+    "Frame signs in to Trakt with its own app, so you only need to connect. To use an API app of your own instead, follow these steps.",
   "Your MyAnimeList app": "Your MyAnimeList app",
-  "Harbor signs in to MyAnimeList with its own client, so you only need to connect. To use an API client of your own instead, follow these steps.":
-    "Harbor signs in to MyAnimeList with its own client, so you only need to connect. To use an API client of your own instead, follow these steps.",
+  "Frame signs in to MyAnimeList with its own client, so you only need to connect. To use an API client of your own instead, follow these steps.":
+    "Frame signs in to MyAnimeList with its own client, so you only need to connect. To use an API client of your own instead, follow these steps.",
   "Trakt app not set up": "Trakt app not set up",
   'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.':
     'Add the Client ID of your own Trakt API app under "Your Trakt app" in these settings, then try again.',
-  "A browser tab opened on MyAnimeList. Approve Harbor there and Harbor connects on its own. If the next page does not load, copy its full address from the address bar and paste it below.":
-    "A browser tab opened on MyAnimeList. Approve Harbor there and Harbor connects on its own. If the next page does not load, copy its full address from the address bar and paste it below.",
+  "A browser tab opened on MyAnimeList. Approve Frame there and Frame connects on its own. If the next page does not load, copy its full address from the address bar and paste it below.":
+    "A browser tab opened on MyAnimeList. Approve Frame there and Frame connects on its own. If the next page does not load, copy its full address from the address bar and paste it below.",
   "MyAnimeList app not set up": "MyAnimeList app not set up",
   'Add the Client ID of your own MyAnimeList API client under "Your MyAnimeList app" in these settings, then try again.':
     'Add the Client ID of your own MyAnimeList API client under "Your MyAnimeList app" in these settings, then try again.',
-  "A browser tab opened on AniList. Approve Harbor there, then copy the token it shows (or the page address) and paste it below.":
-    "A browser tab opened on AniList. Approve Harbor there, then copy the token it shows (or the page address) and paste it below.",
+  "A browser tab opened on AniList. Approve Frame there, then copy the token it shows (or the page address) and paste it below.":
+    "A browser tab opened on AniList. Approve Frame there, then copy the token it shows (or the page address) and paste it below.",
   "Paste the token or page URL from AniList": "Paste the token or page URL from AniList",
   "IGDB · Twitch client ID": "IGDB · Twitch client ID",
   "IGDB · Twitch client secret": "IGDB · Twitch client secret",
@@ -2120,8 +2120,8 @@ const uiFallback: Record<string, string> = {
     "Game catalogs, details and completion times come from IGDB, which signs in with a Twitch app. Register one for free at",
   "Use any name, set the OAuth redirect URL to http://localhost, choose the Confidential client type, then copy the client ID and a new secret here.":
     "Use any name, set the OAuth redirect URL to http://localhost, choose the Confidential client type, then copy the client ID and a new secret here.",
-  "Harbor exchanges the ID and secret for a Twitch app token and keeps it until it expires. Without both, the Games catalog stays empty.":
-    "Harbor exchanges the ID and secret for a Twitch app token and keeps it until it expires. Without both, the Games catalog stays empty.",
+  "Frame exchanges the ID and secret for a Twitch app token and keeps it until it expires. Without both, the Games catalog stays empty.":
+    "Frame exchanges the ID and secret for a Twitch app token and keeps it until it expires. Without both, the Games catalog stays empty.",
   "Add a Twitch client ID and secret in Settings > Library > Games to load the IGDB catalog.":
     "Add a Twitch client ID and secret in Settings > Library > Games to load the IGDB catalog.",
   "Submit a theme": "Submit a theme",
@@ -2131,10 +2131,10 @@ const uiFallback: Record<string, string> = {
     "Every theme is reviewed before it joins the library and scanned again when you install it, so you can try any look without a second thought.",
   "Made a look you love? Export it as a .harborstyle file and open a pull request to add it to the library.":
     "Made a look you love? Export it as a .harborstyle file and open a pull request to add it to the library.",
-  "Harbor accounts are no longer available, so these settings stay on this computer and don't reach your TV.":
-    "Harbor accounts are no longer available, so these settings stay on this computer and don't reach your TV.",
-  "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.":
-    "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.",
+  "Frame accounts are no longer available, so these settings stay on this computer and don't reach your TV.":
+    "Frame accounts are no longer available, so these settings stay on this computer and don't reach your TV.",
+  "Find the Frames on your network and choose how Big Picture looks and plays on your TV.":
+    "Find the Frames on your network and choose how Big Picture looks and plays on your TV.",
   "If you were going to send something, send it to Stremio above, or to one of the charities below. They all do more good with it.":
     "If you were going to send something, send it to Stremio above, or to one of the charities below. They all do more good with it.",
   "Paste this into the join box in Watch Together to set the relay URL and room code in one go.":
@@ -2143,7 +2143,7 @@ const uiFallback: Record<string, string> = {
     "Once you're in a room you can copy an invite that sets the relay URL and the room code in one go.",
   "Share the track, artist and album art while music plays.":
     "Share the track, artist and album art while music plays.",
-  "Your avatar and name in Harbor.": "Your avatar and name in Harbor.",
+  "Your avatar and name in Frame.": "Your avatar and name in Frame.",
   "Stremio library": "Stremio library",
   "Progress from your Stremio account and this device. The primary source for almost everyone.":
     "Progress from your Stremio account and this device. The primary source for almost everyone.",

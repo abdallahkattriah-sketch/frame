@@ -15,7 +15,7 @@ export default {
   "games.sources.batch.failedFile": "{file} hazırlanamadı.",
 
   "games.sources.batch.restart":
-    "Seçili dosyaları birlikte indirmek için güncellemeden sonra Harbor'ı yeniden başlatın.",
+    "Seçili dosyaları birlikte indirmek için güncellemeden sonra Frame'ı yeniden başlatın.",
 
   "games.torrent.start": "Dosyaları indir",
 
@@ -24,7 +24,7 @@ export default {
   "games.sources.verification.action": "Kaynağı doğrula",
 
   "games.sources.verification.waiting":
-    "Kaynak penceresinde doğrulamayı tamamlayın. Harbor ardından kataloğu kontrol edecek.",
+    "Kaynak penceresinde doğrulamayı tamamlayın. Frame ardından kataloğu kontrol edecek.",
 
   "games.sources.source_verify_busy":
     "Başka bir kaynak doğrulanıyor. Önce işlemi tamamlayın veya o pencereyi kapatın.",
@@ -36,38 +36,38 @@ export default {
     "Doğrulama zaman aşımına uğradı. Hazır olduğunuzda tekrar deneyin.",
 
   "games.sources.source_verify_unavailable":
-    "Bu kaynağı doğrulamak için Harbor’ı güncelleyip yeniden başlatın.",
+    "Bu kaynağı doğrulamak için Frame’ı güncelleyip yeniden başlatın.",
 
   "games.sources.browser.direct": "Doğrudan indir",
 
   "games.sources.site.title": "Bir site aç",
   "games.sources.site.note":
-    "Herhangi bir sitedeki indirme sayfasını yapıştırın. Harbor onu kendi penceresinde açar, dosyayı orada seçersiniz ve Harbor'a iner.",
+    "Herhangi bir sitedeki indirme sayfasını yapıştırın. Frame onu kendi penceresinde açar, dosyayı orada seçersiniz ve Frame'a iner.",
   "games.sources.site.url": "Sayfa bağlantısı",
   "games.sources.site.open": "Siteyi aç",
   "games.sources.site.invalid": "Herkese açık bir https bağlantısı olmalı.",
   "games.sources.browser.intro":
-    "Debrid hesabı gerekmez. {host}’da bir dosya seçin, ardından Harbor’da kaydedileceği yeri belirleyin.",
+    "Debrid hesabı gerekmez. {host}’da bir dosya seçin, ardından Frame’da kaydedileceği yeri belirleyin.",
   "games.sources.browser.fallback":
-    "İndirme kendiliğinden başlamazsa {host} sayfasındaki yedek bağlantıyı kullanın. Harbor dosyayı yine de yakalar.",
+    "İndirme kendiliğinden başlamazsa {host} sayfasındaki yedek bağlantıyı kullanın. Frame dosyayı yine de yakalar.",
 
   "games.sources.browser.choose": "{host}’da dosya seç",
 
   "games.sources.browser.waiting":
-    "{host} penceresinde dosyayı seçin. Harbor nereye kaydedileceğini soracak.",
+    "{host} penceresinde dosyayı seçin. Frame nereye kaydedileceğini soracak.",
 
-  "games.sources.browser.selected": "Harbor’da indirmeye hazır",
+  "games.sources.browser.selected": "Frame’da indirmeye hazır",
 
   "games.sources.browser.another": "Başka dosya seç",
 
   "games.sources.browser.failed":
-    "{host} bu dosyayı Harbor’a aktaramadı. Tekrar deneyin veya {host}’da açın.",
+    "{host} bu dosyayı Frame’a aktaramadı. Tekrar deneyin veya {host}’da açın.",
 
   "games.sources.browser.timeout":
     "Dosya seçimi zaman aşımına uğradı. Dosya seçmek için {host}’ı yeniden açın.",
 
   "games.sources.browser.restart":
-    "{host}’dan doğrudan indirmek için güncellemeden sonra Harbor’ı yeniden başlatın.",
+    "{host}’dan doğrudan indirmek için güncellemeden sonra Frame’ı yeniden başlatın.",
 
   "games.sources.retrySavedCatalog": "Kayıtlı kataloğu yeniden dene",
 
@@ -121,7 +121,7 @@ export default {
   "games.sources.platform.other": "{platform} sürümü · {host} üzerinde yerel çalışmaz",
 
   "games.sources.platform.otherNote":
-    "İşletim sisteminize uygun sürümü seçin. Harbor bu paketi bu cihazda yerel olarak kuramaz veya çalıştıramaz.",
+    "İşletim sisteminize uygun sürümü seçin. Frame bu paketi bu cihazda yerel olarak kuramaz veya çalıştıramaz.",
 
   "games.sources.platform.unknown": "Platform belirtilmemiş",
 
@@ -129,7 +129,7 @@ export default {
     "Kaynak, paketin işletim sistemini belirtmiyor. İndirmeden önce yayıncının bilgilerini kontrol edin.",
 
   "games.sources.platform.browseNote":
-    "Yerel oyun dosyalarını indirmek ve yönetmek için Harbor masaüstünü kullanın.",
+    "Yerel oyun dosyalarını indirmek ve yönetmek için Frame masaüstünü kullanın.",
 
   "games.sources.platform.browse": "{platform} sürümü",
 
@@ -139,9 +139,9 @@ export default {
 
   "games.sources.art.torrent": "Torrent indirme",
 
-  "games.sources.art.engine": "Harbor torrent motoru",
+  "games.sources.art.engine": "Frame torrent motoru",
 
-  "games.sources.art.reviewTorrent": "Harbor’da indir",
+  "games.sources.art.reviewTorrent": "Frame’da indir",
 
   "games.sources.ad.note": "Bu dosyayı AllDebrid ile hazırla, ardından nereye kaydedileceğini seç.",
 
@@ -193,7 +193,7 @@ export default {
 
   "games.sources.discovery.change": "Bağlantıyı değiştir",
 
-  "games.sources.discovery.harbor": "Harbor kataloğu",
+  "games.sources.discovery.harbor": "Frame kataloğu",
 
   "games.sources.discovery.community": "Hydra uyumlu katalog",
 
@@ -203,7 +203,7 @@ export default {
     "Yalnızca katalog kayıtları kaydedilir. Dosyalar siz seçtiğinizde indirilir.",
 
   "games.sources.source_no_catalog":
-    "Bu web sitesi Harbor’ın okuyabileceği bir katalog bağlantısı yayımlamıyor. Bunun yerine JSON kataloğunun bağlantısını yapıştırın.",
+    "Bu web sitesi Frame’ın okuyabileceği bir katalog bağlantısı yayımlamıyor. Bunun yerine JSON kataloğunun bağlantısını yapıştırın.",
 
   "games.sources.source_url":
     "Bir web sitesi adresi, HTTP(S) katalog URL’si veya Hydra kurulum bağlantısı girin.",
@@ -262,7 +262,7 @@ export default {
   "games.sources.links.account":
     "Hizmet bağlantıyı reddetti. Kaynaklar ayarlarından anahtarını kontrol edin.",
 
-  "games.sources.links.rate": "Hizmet Harbor’dan beklemesini istedi. Biraz sonra tekrar deneyin.",
+  "games.sources.links.rate": "Hizmet Frame’dan beklemesini istedi. Biraz sonra tekrar deneyin.",
 
   "games.sources.links.limit": "Hizmet bir kerede incelenemeyecek kadar fazla dosya döndürdü.",
 
@@ -276,7 +276,7 @@ export default {
 
   "games.sources.links.destination": "Hedef seç",
 
-  "games.sources.links.desktop": "Dosya indirmek için Harbor masaüstü uygulamasını açın.",
+  "games.sources.links.desktop": "Dosya indirmek için Frame masaüstü uygulamasını açın.",
 
   "games.sources.web.web": "Web indirmeleri",
 
@@ -306,8 +306,7 @@ export default {
 
   "games.sources.web.again": "Başka bir iş başlat",
 
-  "games.sources.web.storage":
-    "Harbor bu işi kaydedemedi. Otomatik olarak yeniden gönderilmeyecek.",
+  "games.sources.web.storage": "Frame bu işi kaydedemedi. Otomatik olarak yeniden gönderilmeyecek.",
 
   "games.sources.web.preparing": "TorBox’ta hazırlanıyor",
 
@@ -398,7 +397,7 @@ export default {
 
   "games.sources.pm.select": "Bu aktarımı kullan",
 
-  "games.sources.pm.review": "Gönderdiğin aktarımı seç. Harbor kaynağı otomatik eşleştiremez.",
+  "games.sources.pm.review": "Gönderdiğin aktarımı seç. Frame kaynağı otomatik eşleştiremez.",
 
   "games.sources.pm.retry": "Aktarımı yeniden dene",
 

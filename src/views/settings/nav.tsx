@@ -466,7 +466,7 @@ const NAV_GROUPS: Array<{ heading: string | null; items: NavItem[] }> = [
     items: [
       {
         id: "relay",
-        label: "Harbor Relay",
+        label: "Frame Relay",
         Icon: IconRelay,
         keywords: ["together", "watch party", "p2p", "host", "share"],
       },
@@ -949,7 +949,7 @@ const NAV_GROUPS: Array<{ heading: string | null; items: NavItem[] }> = [
       },
       {
         id: "support",
-        label: "Support Harbor",
+        label: "Support Frame",
         Icon: IconSupport,
         keywords: [
           "donate",
@@ -1207,10 +1207,10 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Harbors on your network",
+    label: "Frames on your network",
     section: "tv",
     tab: "devices",
-    anchorTitle: "Harbors on your network",
+    anchorTitle: "Frames on your network",
     keywords: [
       "devices",
       "instances",
@@ -2164,9 +2164,9 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Harbor on other devices (web app)",
+    label: "Frame on other devices (web app)",
     section: "remotes",
-    anchorTitle: "Harbor on other devices",
+    anchorTitle: "Frame on other devices",
     keywords: [
       "harbor in browser",
       "web ui",
@@ -2900,7 +2900,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   {
     label: "Watch Together relay",
     section: "relay",
-    anchorTitle: "Harbor Relay",
+    anchorTitle: "Frame Relay",
     keywords: [
       "friends",
       "with friends",
@@ -3128,7 +3128,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   },
 
   {
-    label: "Harbor identity (avatar / color)",
+    label: "Frame identity (avatar / color)",
     section: "account",
     tab: "you",
     anchorTitle: "Your profile",
@@ -3278,7 +3278,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["theme", "appearance", "recolor", "fonts", "poster size", "wallpaper", "customize"],
   },
   {
-    label: "Harbor identity",
+    label: "Frame identity",
     section: "account",
     tab: "you",
     anchorTitle: "Your profile",
@@ -4124,9 +4124,9 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["logout", "disconnect", "sign out letterboxd", "unlink", "full mode"],
   },
   {
-    label: "Harbor Relay",
+    label: "Frame Relay",
     section: "relay",
-    anchorTitle: "Harbor Relay",
+    anchorTitle: "Frame Relay",
     keywords: [
       "relay",
       "watch together",
@@ -4158,13 +4158,13 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   {
     label: "Enter an existing relay URL:",
     section: "relay",
-    anchorTitle: "Harbor Relay",
+    anchorTitle: "Frame Relay",
     keywords: ["relay url", "wss", "workers.dev", "custom relay", "paste url", "save"],
   },
   {
     label: "Test relay connection",
     section: "relay",
-    anchorTitle: "Harbor Relay",
+    anchorTitle: "Frame Relay",
     keywords: ["test connection", "run test", "ping", "health", "reachable", "verify relay"],
   },
   {
@@ -4206,7 +4206,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   {
     label: "Documentation: run your own relay",
     section: "relay",
-    anchorTitle: "Harbor Relay",
+    anchorTitle: "Frame Relay",
     keywords: ["docs", "documentation", "guide", "run your own", "instructions"],
   },
   {
@@ -4626,7 +4626,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Harbor in your browser",
+    label: "Frame in your browser",
     section: "p2p",
     tab: "server",
     anchorTitle: "Your streaming server address",
@@ -5011,7 +5011,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     label: "Contribute on GitHub",
     section: "language",
     tab: "discovery",
-    anchorTitle: "Help translate Harbor",
+    anchorTitle: "Help translate Frame",
     keywords: ["github", "translate harbor", "contribute", "open source", "help translate", "i18n"],
   },
   {
@@ -5197,7 +5197,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Embed mpv inside Harbor window",
+    label: "Embed mpv inside Frame window",
     section: "player",
     tab: "engine",
     anchorTitle: "Engine",
@@ -6969,9 +6969,9 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["send bug report", "file bug", "submit issue", "report problem"],
   },
   {
-    label: "Donating to Harbor",
+    label: "Donating to Frame",
     section: "support",
-    anchorTitle: "Donating to Harbor",
+    anchorTitle: "Donating to Frame",
     keywords: [
       "donate",
       "donation",
@@ -7259,7 +7259,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["version", "build info", "bug email", "app version", "desktop or web"],
   },
   {
-    label: "Get Harbor for desktop",
+    label: "Get Frame for desktop",
     section: "advanced",
     tab: "about",
     keywords: ["download desktop app", "desktop version", "web limitations", "install harbor"],
@@ -7304,7 +7304,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Home style (Harbor curated / Classic Stremio)",
+    label: "Home style (Frame curated / Classic Stremio)",
     section: "library",
     tab: "home",
     anchorTitle: "Home layout",
@@ -7680,7 +7680,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   {
     label: "Relay version status",
     section: "relay",
-    anchorTitle: "Harbor Relay",
+    anchorTitle: "Frame Relay",
     keywords: [
       "relay version",
       "outdated",
@@ -7693,7 +7693,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   {
     label: "Download relay documentation",
     section: "relay",
-    anchorTitle: "Harbor Relay",
+    anchorTitle: "Frame Relay",
     keywords: ["download docs", "export documentation", "pdf", "txt", "json", "save docs", "print"],
   },
   {
@@ -9011,7 +9011,7 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["big picture button", "tv mode button", "hide big picture", "ten foot"],
   },
   {
-    label: "Keep controlling Harbor in the background",
+    label: "Keep controlling Frame in the background",
     section: "controllers",
     tab: "setup",
     anchorTitle: "Controller support",
@@ -9094,9 +9094,9 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["scroll trailer", "trailer on scroll", "autoplay trailer", "hero trailer"],
   },
   {
-    label: "Serve Harbor on your network",
+    label: "Serve Frame on your network",
     section: "remotes",
-    anchorTitle: "Harbor on other devices",
+    anchorTitle: "Frame on other devices",
     keywords: [
       "lan",
       "network",

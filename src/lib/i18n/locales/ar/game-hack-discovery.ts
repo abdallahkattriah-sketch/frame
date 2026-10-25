@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "بصمات الملفات · SHA-256",
   "games.patch.localNote": "على جهازك · BPS · IPS · UPS · حتى 256 ميغابايت",
   "games.patch.desktop":
-    "طبّق التعديلات في تطبيق Harbor لسطح المكتب على Windows أو macOS أو Linux. تبقى ملفاتك على جهازك وتُحفظ اللعبة الأصلية دون تغيير.",
+    "طبّق التعديلات في تطبيق Frame لسطح المكتب على Windows أو macOS أو Linux. تبقى ملفاتك على جهازك وتُحفظ اللعبة الأصلية دون تغيير.",
   "games.patch.done": "جاهز لمغامرة جديدة",
   "games.patch.preserved": "تم حفظ نسختك المعدّلة. لم تتغير اللعبة الأصلية أو ملف التعديل.",
   "games.patch.patch_source_mismatch":
@@ -38,7 +38,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "تغيّر أحد الملفات المختارة بعد التحقق. افحص التعديل مجددًا قبل الحفظ.",
   "games.patch.patch_output_exists":
-    "يوجد ملف بهذا الاسم في هذا الموقع. اختر اسمًا آخر؛ لن يستبدل Harbor الملفات الموجودة.",
+    "يوجد ملف بهذا الاسم في هذا الموقع. اختر اسمًا آخر؛ لن يستبدل Frame الملفات الموجودة.",
   "games.patch.patch_read_failed":
     "تعذّرت قراءة أحد الملفات المختارة. تأكد من أنه ما زال متاحًا ثم اختره مجددًا.",
   "games.patch.patch_write_failed":
@@ -72,9 +72,9 @@ export default {
   "games.atlas.sort.newest": "الأحدث",
   "games.atlas.sort.oldest": "الأقدم",
   "games.hub.stepPatch":
-    "اختر لعبتك الأصلية وتعديلًا بصيغة BPS أو IPS أو UPS. يحفظ Harbor نسخة منفصلة.",
+    "اختر لعبتك الأصلية وتعديلًا بصيغة BPS أو IPS أو UPS. يحفظ Frame نسخة منفصلة.",
   "games.patch.description":
-    "اختر لعبتك الأصلية وتعديلًا بصيغة BPS أو IPS أو UPS. يحفظ Harbor نسخة منفصلة.",
+    "اختر لعبتك الأصلية وتعديلًا بصيغة BPS أو IPS أو UPS. يحفظ Frame نسخة منفصلة.",
   "games.patch.choosePatch": "اختر تعديلًا (BPS، IPS، UPS)",
   "games.patch.patch_unsupported": "هذا الملف ليس تعديلًا مدعومًا بصيغة BPS أو IPS أو UPS.",
   "games.discovery.viewGame": "عرض اللعبة",

@@ -5,7 +5,7 @@ export default {
   "games.backups.recoverPending": "저장 폴더 복구",
   "games.backups.recoveryPrompt": "복원이 중단되었습니다. 저장 백업을 열어 복구하세요.",
   "games.backups.save_recovery": "이 저장 폴더를 백업하거나 복원하기 전에 복구를 완료하세요.",
-  "games.backups.save_recovery_scope": "복원을 시작한 Harbor 프로필과 게임에서 여세요.",
+  "games.backups.save_recovery_scope": "복원을 시작한 Frame 프로필과 게임에서 여세요.",
   "games.backups.result.keptCurrent": "현재 저장 데이터는 변경되지 않았습니다",
   "games.backups.resultNote.keptCurrent":
     "이 폴더의 현재 저장 데이터를 교체하지 않고 복구를 마쳤습니다.",
@@ -13,7 +13,7 @@ export default {
   "games.backups.intro":
     "돌아갈 수 있는 시점을 남겨 두세요. 이 게임의 저장 폴더와 별도의 백업 폴더를 선택하세요. 백업하거나 복원하기 전에 게임을 종료하세요.",
   "games.backups.desktop":
-    "저장 데이터 백업은 Harbor 데스크톱 앱에서 사용할 수 있습니다. 컴퓨터에서 선택한 폴더를 사용합니다.",
+    "저장 데이터 백업은 Frame 데스크톱 앱에서 사용할 수 있습니다. 컴퓨터에서 선택한 폴더를 사용합니다.",
   "games.backups.folder.source": "게임 저장 데이터",
   "games.backups.folder.vault": "백업 폴더",
   "games.backups.choose.source": "게임 저장 폴더 선택",
@@ -48,8 +48,8 @@ export default {
   "games.backups.identical": "현재 저장 폴더가 이미 이 스냅샷과 일치합니다.",
   "games.backups.restore": "스냅샷 복원",
   "games.backups.recoveryNote":
-    "Harbor는 저장 데이터를 교체하기 전에 복구용 스냅샷과 원본 폴더를 보관합니다.",
-  "games.backups.localNote": "선택한 폴더에 Harbor 프로필별로 따로 보관됩니다.",
+    "Frame는 저장 데이터를 교체하기 전에 복구용 스냅샷과 원본 폴더를 보관합니다.",
+  "games.backups.localNote": "선택한 폴더에 Frame 프로필별로 따로 보관됩니다.",
   "games.backups.openRecovery": "원본 폴더 표시",
   "games.backups.reviewUndo": "실행 취소 검토",
   "games.backups.result.restored": "스냅샷이 복원되었습니다",
@@ -59,11 +59,11 @@ export default {
   "games.backups.resultNote.restored":
     "저장 폴더가 이제 이 스냅샷과 일치합니다. 이전 상태로 돌아가고 싶을 때 사용할 수 있도록 복구용 사본이 유지됩니다.",
   "games.backups.resultNote.rolledBack":
-    "복원을 완료할 수 없어 Harbor가 원래 저장 폴더를 되돌렸습니다. 복구용 스냅샷도 아래에서 사용할 수 있습니다.",
+    "복원을 완료할 수 없어 Frame가 원래 저장 폴더를 되돌렸습니다. 복구용 스냅샷도 아래에서 사용할 수 있습니다.",
   "games.backups.resultNote.recoveryNeeded":
-    "복원 실패 후 Harbor가 원본 폴더를 되돌리지 못했습니다. 게임을 실행하지 마세요. 원본 파일은 아래 폴더와 복구용 스냅샷에 보관되어 있습니다.",
+    "복원 실패 후 Frame가 원본 폴더를 되돌리지 못했습니다. 게임을 실행하지 마세요. 원본 파일은 아래 폴더와 복구용 스냅샷에 보관되어 있습니다.",
   "games.backups.resultNote.notRestored":
-    "Harbor가 선택한 폴더에 스냅샷을 배치하지 못했습니다. 백업은 계속 사용할 수 있습니다.",
+    "Frame가 선택한 폴더에 스냅샷을 배치하지 못했습니다. 백업은 계속 사용할 수 있습니다.",
   "games.backups.phase.scanning": "저장 데이터 읽는 중…",
   "games.backups.phase.copying": "저장 파일 복사 중…",
   "games.backups.phase.verifying": "스냅샷 확인 중…",
@@ -77,9 +77,9 @@ export default {
   "games.backups.save_record":
     "백업 기록을 안전하게 읽을 수 없습니다. 파일은 보존되었습니다. 선택한 백업 폴더를 확인하세요.",
   "games.backups.save_read":
-    "Harbor가 이 저장 데이터를 읽지 못했습니다. 폴더를 사용할 수 있고 게임이 종료되었는지 확인하세요.",
+    "Frame가 이 저장 데이터를 읽지 못했습니다. 폴더를 사용할 수 있고 게임이 종료되었는지 확인하세요.",
   "games.backups.save_write":
-    "Harbor가 저장 데이터 쓰기를 완료하지 못했습니다. 폴더에 쓰기 권한이 있고 게임이 종료되었는지 확인하세요.",
+    "Frame가 저장 데이터 쓰기를 완료하지 못했습니다. 폴더에 쓰기 권한이 있고 게임이 종료되었는지 확인하세요.",
   "games.backups.save_name":
     "파일 이름을 보존하지 못했습니다. 지원되는 파일 이름이 있는 폴더를 사용하세요.",
   "games.backups.save_changed":
@@ -99,9 +99,9 @@ export default {
   "games.backups.save_space":
     "전체 사본을 보관할 공간이 부족합니다. 다른 폴더를 선택하거나 공간을 확보하세요.",
   "games.backups.save_config":
-    "Harbor가 저장된 폴더 선택을 읽지 못했습니다. 다시 선택하세요. 기존 백업은 변경되지 않았습니다.",
+    "Frame가 저장된 폴더 선택을 읽지 못했습니다. 다시 선택하세요. 기존 백업은 변경되지 않았습니다.",
   "games.backups.save_config_write":
-    "Harbor가 이 폴더 선택을 저장하지 못했습니다. 이전 선택과 기존 백업은 변경되지 않았습니다.",
+    "Frame가 이 폴더 선택을 저장하지 못했습니다. 이전 선택과 기존 백업은 변경되지 않았습니다.",
   "games.backups.failed":
     "저장 데이터 작업을 완료하지 못했습니다. 백업 파일은 보존되었습니다. 폴더를 확인하고 다시 시도하세요.",
   "games.backups.compare.title": "파일 비교",

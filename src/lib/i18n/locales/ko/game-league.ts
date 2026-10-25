@@ -81,7 +81,7 @@ export default {
     "각 빌드는 별도의 표본입니다. 완성된 아이템 빌드는 구매할 만큼 오래 지속된 게임에 편향되므로 해당 승률은 챔피언 전체 승률이 아닙니다. 상성 표본은 작을 수 있습니다. 팀과 상대에 맞게 조정하세요. 영상은 이전 패치일 수 있습니다.",
   "games.league.patchDifference": "빌드 통계: {patch}. 아이템 및 스킬 자료: {assets}.",
   "games.league.attribution":
-    "Harbor is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "Frame is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
   "games.league.tierList": "티어 목록",
   "games.league.tierScope": "솔로/듀오 랭크 · 에메랄드 이상 · 전 세계",
   "games.league.patchFilter": "패치 선택",

@@ -5,7 +5,7 @@ const PROPS = [
   {
     icon: AtSign,
     title: "Claim your @handle",
-    body: "A name people can find you by across Harbor.",
+    body: "A name people can find you by across Frame.",
   },
   {
     icon: RefreshCw,

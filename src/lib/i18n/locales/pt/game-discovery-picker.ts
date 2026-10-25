@@ -51,7 +51,7 @@ export default {
     "Ainda não há atividade. Escolha favoritos ou conecte o Steam nas configurações de Jogos.",
   "games.pick.manualOnly": "Só seus favoritos e filtros escolhidos orientarão estas sugestões.",
   "games.pick.addedNote":
-    "“Adicionado recentemente” significa visto no Harbor após a importação inicial, não a data de compra.",
+    "“Adicionado recentemente” significa visto no Frame após a importação inicial, não a data de compra.",
   "games.pick.because": "Porque você gosta de {name}",
   "games.pick.matches": "Combina com suas escolhas",
   "games.pick.steamCatalog": "Catálogo Steam",

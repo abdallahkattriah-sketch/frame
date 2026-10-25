@@ -4,7 +4,7 @@ const miscB: Record<string, string> = {
   Hebrew: "İbranice",
   "Help & feedback": "Yardım ve geri bildirim",
   "Help & support": "Yardım ve destek",
-  "Help translate Harbor": "Harbor çevirisine yardım edin",
+  "Help translate Frame": "Frame çevirisine yardım edin",
   "Here for the late-night sci-fi": "Geç saatlerde bilim kurgu izlemek için buradayım",
   Hero: "Kahraman",
   "Hero trailer preview": "Öne çıkan fragman önizlemesi",
@@ -54,8 +54,8 @@ const miscB: Record<string, string> = {
   "Highly rated by the community": "Topluluktan yüksek puan alanlar",
   Hindi: "Hintçe",
   History: "Tarih",
-  "Hold Ctrl or Cmd and scroll to resize Harbor's interface smoothly.":
-    "Harbor arayüzünü akıcı biçimde yeniden boyutlandırmak için Ctrl veya Cmd tuşunu basılı tutup kaydırın.",
+  "Hold Ctrl or Cmd and scroll to resize Frame's interface smoothly.":
+    "Frame arayüzünü akıcı biçimde yeniden boyutlandırmak için Ctrl veya Cmd tuşunu basılı tutup kaydırın.",
   "Hold for more options": "Daha fazla seçenek için basılı tutun",
   "Holding the funds before settling": "Ödeme tamamlanmadan önce tutarı bloke ediyor",
   "Holdup Matey!": "Dur bakalım tayfa!",
@@ -73,7 +73,7 @@ const miscB: Record<string, string> = {
   "Hover a band to inspect a pillar": "Bir ölçütü incelemek için bandın üzerine gelin",
   "Hover style": "Üzerine gelme stili",
   "Hover the row": "Satırın üzerine gelin",
-  "How Harbor Rank works": "Harbor Rank nasıl çalışır?",
+  "How Frame Rank works": "Frame Rank nasıl çalışır?",
   "How Play works": "Oynatma nasıl çalışır?",
   "How Watch Together and the window buttons are drawn.":
     "Birlikte İzle ve pencere düğmelerinin nasıl görüneceği.",
@@ -85,10 +85,10 @@ const miscB: Record<string, string> = {
   "How keys behave during playback.": "Oynatma sırasında tuşların nasıl çalışacağını belirler.",
   "How large a backdrop image the TV fetches. It does not change video quality. Balanced is the safe choice on older hardware.":
     "TV'nin ne boyutta bir arka plan görseli getireceği. Video kalitesini değiştirmez. Eski donanımlarda Dengeli güvenli seçimdir.",
-  "How long Harbor waits before drifting off.":
-    "Harbor'ın boşta kalma moduna geçmeden önce ne kadar bekleyeceği.",
-  "How long Harbor waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
-    "Harbor'ın her eklentinin yayınları döndürmesini ne kadar bekleyeceğini belirler. Birçok kaynakta arama yapan toplayıcılar 45 saniye veya daha uzun süreye ihtiyaç duyabilir. Sonuçlar her eklenti yanıt verdikçe görünür, dolayısıyla daha uzun bekleme süresi hızlı olanları asla geciktirmez.",
+  "How long Frame waits before drifting off.":
+    "Frame'ın boşta kalma moduna geçmeden önce ne kadar bekleyeceği.",
+  "How long Frame waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
+    "Frame'ın her eklentinin yayınları döndürmesini ne kadar bekleyeceğini belirler. Birçok kaynakta arama yapan toplayıcılar 45 saniye veya daha uzun süreye ihtiyaç duyabilir. Sonuçlar her eklenti yanıt verdikçe görünür, dolayısıyla daha uzun bekleme süresi hızlı olanları asla geciktirmez.",
   "How long a saved frame sticks around before the oldest roll off.":
     "En eski kayıtlı kareler silinmeden önce karelerin ne kadar süre tutulacağı.",
   "How long files stay": "Dosyaların tutulma süresi",
@@ -103,8 +103,8 @@ const miscB: Record<string, string> = {
     "Birden fazla profiliniz olduğunda profil ekranının ne sıklıkta görüneceğini belirler.",
   "How posters appear as they load. Blur up looks smoothest; Fade is lighter on older or low-power devices; Instant turns it off.":
     "Posterlerin yüklenirken nasıl görüneceğini belirler. Bulanıklığı azaltma en akıcı görünümü sunar; Solma, eski veya düşük güçlü cihazlarda daha az kaynak kullanır; Anında ise efekti kapatır.",
-  "How quickly the Harbor cursor moves with the right stick.":
-    "Harbor imlecinin sağ çubukla ne kadar hızlı hareket edeceğini belirler.",
+  "How quickly the Frame cursor moves with the right stick.":
+    "Frame imlecinin sağ çubukla ne kadar hızlı hareket edeceğini belirler.",
   "How sharp trailers play, and when they start on their own.":
     "Fragmanların hangi netlikte oynatılacağı ve ne zaman otomatik başlayacağı.",
   "How should the home screen read?": "Ana ekran nasıl görünmeli?",
@@ -215,8 +215,8 @@ const miscB: Record<string, string> = {
   "Install pack": "Paketi yükle",
   Installed: "Yüklü",
   "Installed addons": "Yüklü eklentiler",
-  "Installed and detected. Harbor found the native svpflow plugins and VapourSynth script library.":
-    "Yüklendi ve algılandı. Harbor, yerel svpflow eklentilerini ve VapourSynth betik kitaplığını buldu.",
+  "Installed and detected. Frame found the native svpflow plugins and VapourSynth script library.":
+    "Yüklendi ve algılandı. Frame, yerel svpflow eklentilerini ve VapourSynth betik kitaplığını buldu.",
   "Installed packs": "Yüklü paketler",
   "Installed shaders": "Yüklü gölgelendiriciler",
   "Installed sources": "Yüklü kaynaklar",
@@ -292,8 +292,8 @@ const miscB: Record<string, string> = {
   "Keep setting up": "Kuruluma devam et",
   "Keep the key I have": "Mevcut anahtarımı koru",
   "Keep watching": "İzlemeye devam et",
-  "Keeps HDR inside Harbor with the controls floating above the video. Subtitles render on the video. If the control bar does not appear, press Esc or use separate window.":
-    "HDR'yi Harbor içinde tutar ve denetimleri videonun üzerinde gösterir. Altyazılar videonun üzerine işlenir. Denetim çubuğu görünmezse Esc tuşuna basın veya ayrı pencereyi kullanın.",
+  "Keeps HDR inside Frame with the controls floating above the video. Subtitles render on the video. If the control bar does not appear, press Esc or use separate window.":
+    "HDR'yi Frame içinde tutar ve denetimleri videonun üzerinde gösterir. Altyazılar videonun üzerine işlenir. Denetim çubuğu görünmezse Esc tuşuna basın veya ayrı pencereyi kullanın.",
   "Keeps fetching the full torrent in the background, even when paused, so you can pre-buffer big remuxes and scrub a finished file with no re-downloading. Uses more bandwidth and disk; cleaned up when you switch or close like normal.":
     "Duraklatıldığında bile torrentin tamamını arka planda indirmeye devam eder. Böylece büyük remux dosyalarını önceden arabelleğe alabilir ve tamamlanmış bir dosyada yeniden indirmeden ileri geri sarabilirsiniz. Daha fazla bant genişliği ve disk alanı kullanır; kaynak değiştirdiğinizde veya uygulamayı kapattığınızda normal şekilde temizlenir.",
   "Kept. Your TV gets your account when you continue.":
@@ -339,13 +339,13 @@ const miscB: Record<string, string> = {
   "Leave setup?": "Kurulumdan çıkılsın mı?",
   "Leave the show?": "Yayından ayrılmak istiyor musunuz?",
   "Leave the video": "Videodan ayrıl",
-  "Leave this blank to use Harbor's own community server, or enter the address of a server you run yourself.":
-    "Harbor'ın kendi topluluk sunucusunu kullanmak için burayı boş bırakın veya kendi çalıştırdığınız sunucunun adresini girin.",
+  "Leave this blank to use Frame's own community server, or enter the address of a server you run yourself.":
+    "Frame'ın kendi topluluk sunucusunu kullanmak için burayı boş bırakın veya kendi çalıştırdığınız sunucunun adresini girin.",
   "Leave what you're watching?": "İzlediğiniz içerikten çıkmak istiyor musunuz?",
   Left: "Sol",
   "Left edge": "Sol kenar",
-  "Leftover installers from past updates, cached trailers, and casting scratch files. Harbor clears old ones on launch, keeping only the most recent installer.":
-    "Geçmiş güncellemelerden kalan yükleyiciler, önbelleğe alınmış fragmanlar ve cihazlara yayın aktarmak için kullanılan geçici dosyalar. Harbor, başlatıldığında eski dosyaları temizler ve yalnızca en yeni yükleyiciyi saklar.",
+  "Leftover installers from past updates, cached trailers, and casting scratch files. Frame clears old ones on launch, keeping only the most recent installer.":
+    "Geçmiş güncellemelerden kalan yükleyiciler, önbelleğe alınmış fragmanlar ve cihazlara yayın aktarmak için kullanılan geçici dosyalar. Frame, başlatıldığında eski dosyaları temizler ve yalnızca en yeni yükleyiciyi saklar.",
   "Legally enforce it": "Hukuken uygulanmasını sağlamak",
   Less: "Daha az",
   "Let the TV keep its own theme": "TV kendi temasını korusun",
@@ -371,12 +371,12 @@ const miscB: Record<string, string> = {
   "Link Discord": "Discord'u bağla",
   "Link a title": "Bir yapımı bağla",
   "Linked as {username}": "{username} olarak bağlandı",
-  "Linked to your Harbor account.": "Harbor hesabınıza bağlandı.",
+  "Linked to your Frame account.": "Frame hesabınıza bağlandı.",
   "List view": "Liste görünümü",
   "Listed collections will appear in community browse when that rolls out.":
     "Toplulukta göz atma özelliği kullanıma sunulduğunda listelenen koleksiyonlar bu bölümde görünür.",
   Listen: "Dinle",
-  "Listening for Harbors": "Harbor cihazları aranıyor",
+  "Listening for Frames": "Frame cihazları aranıyor",
   "Live TV can't be synced in a watch party, so playing {name} will leave your party. Everyone else can keep watching together.":
     "Canlı TV, Birlikte İzle oturumunda senkronize edilemez. Bu nedenle {name} yayınını oynatırsan oturumdan ayrılacaksın. Diğer herkes birlikte izlemeye devam edebilir.",
   "Live TV source": "Canlı TV kaynağı",
@@ -387,8 +387,8 @@ const miscB: Record<string, string> = {
   "Live preview": "Canlı önizleme",
   "Live preview is on. Done and Save both keep what you've picked as your Custom theme. Reset reverts the editor to the saved palette.":
     "Canlı önizleme açık. Bitti ve Kaydet seçeneklerinin ikisi de seçtiklerinizi Özel temanız olarak korur. Sıfırla, düzenleyiciyi kayıtlı renk paletine döndürür.",
-  "Live state of Harbor's own P2P engine on this machine.":
-    "Harbor'ın bu makinedeki kendi P2P motorunun anlık durumu.",
+  "Live state of Frame's own P2P engine on this machine.":
+    "Frame'ın bu makinedeki kendi P2P motorunun anlık durumu.",
   "Live web": "Canlı web",
   "Ln {line}, Col {col}": "Sat {line}, Süt {col}",
   "Load effect": "Yükleme efekti",
@@ -461,8 +461,8 @@ const miscB: Record<string, string> = {
     "Çok sevdiğiniz bir görünüm mü oluşturdunuz? Birkaç tıklamayla toplulukla paylaşın ve indirme sayısının yükselişini izleyin.",
   "Main subtitle line": "Ana altyazı satırı",
   Maintenance: "Bakım",
-  "Make Harbor's interface larger.": "Harbor arayüzünü büyütün.",
-  "Make Harbor's interface smaller.": "Harbor arayüzünü küçültün.",
+  "Make Frame's interface larger.": "Frame arayüzünü büyütün.",
+  "Make Frame's interface smaller.": "Frame arayüzünü küçültün.",
   "Make an award pack": "Ödül paketi oluştur",
   "Make decisions on their behalf": "Onun adına karar vermek",
   "Make everything bigger and easier to read: sidebar, menus, popups, every page.":
@@ -470,14 +470,14 @@ const miscB: Record<string, string> = {
   "Make sure the Roku is powered on and on the same Wi-Fi as your computer.":
     "Roku'nun açık ve bilgisayarınızla aynı Wi-Fi ağına bağlı olduğundan emin olun.",
   "Manage eBook sources": "eKitap kaynaklarını yönet",
-  "Manage every place Harbor can read from, whether it lives on disk or across the web.":
-    "İster diskte ister web'de olsun, Harbor'ın okuyabildiği tüm kaynakları yönetin.",
+  "Manage every place Frame can read from, whether it lives on disk or across the web.":
+    "İster diskte ister web'de olsun, Frame'ın okuyabildiği tüm kaynakları yönetin.",
   "Manage members and posts": "Üyeleri ve gönderileri yönet",
   Manager: "Yönetici",
   Managers: "Yöneticiler",
   "Manga adaptation": "Manga uyarlaması",
-  "Manga cannot be matched to a Harbor title yet, so {n} were left out.":
-    "Mangalar henüz bir Harbor içeriğiyle eşleştirilemediğinden {n} tanesi dışarıda bırakıldı.",
+  "Manga cannot be matched to a Frame title yet, so {n} were left out.":
+    "Mangalar henüz bir Frame içeriğiyle eşleştirilemediğinden {n} tanesi dışarıda bırakıldı.",
   "Manual offset": "Elle zaman kaydırma",
   "Maps HDR down to SDR with bt.2446a. Works on any display. Pick this if HDR looks washed-out or grey.":
     "HDR'yi bt.2446a ile SDR'ye dönüştürür. Tüm ekranlarda çalışır. HDR soluk veya gri görünüyorsa bunu seçin.",
@@ -497,7 +497,7 @@ const miscB: Record<string, string> = {
   Marquee: "Kayan yazı",
   "Match this computer": "Bu bilgisayarla aynı yap",
   "Match with TMDB": "TMDB ile eşleştir",
-  "Matching titles to Harbor": "Yapımlar Harbor ile eşleştiriliyor",
+  "Matching titles to Frame": "Yapımlar Frame ile eşleştiriliyor",
   Max: "Maks.",
   "Max badges per card": "Kart başına en fazla rozet",
   "Max {n} GB": "Maks. {n} GB",
@@ -584,14 +584,14 @@ const miscB: Record<string, string> = {
     "NVIDIA Image Scaling. Tüm GPU'larda iyi çalışan, FSR'ye alternatif, hafif bir uzamsal ölçek yükseltici ve keskinleştirici.",
   "NVIDIA NIS": "NVIDIA NIS",
   "NVIDIA NIS upscaler": "NVIDIA NIS ölçek yükseltici",
-  "Name each file after its award ID. Harbor resizes them and skips anything it cannot match.":
-    "Her dosyayı ödül kimliğine göre adlandırın. Harbor bunları yeniden boyutlandırır ve eşleştiremediklerini atlar.",
+  "Name each file after its award ID. Frame resizes them and skips anything it cannot match.":
+    "Her dosyayı ödül kimliğine göre adlandırın. Frame bunları yeniden boyutlandırır ve eşleştiremediklerini atlar.",
   "Name it, tick the resolutions, sources, codecs and audio you want, and leave the rest blank.":
     "Adını belirleyin; istediğiniz çözünürlükleri, kaynakları, kodekleri ve ses seçeneklerini işaretleyip kalanını boş bırakın.",
   "Name your theme": "Temanızı adlandırın",
   "Names behind the biggest productions": "En büyük yapımların arkasındaki isimler",
-  "Native 48/60fps motion through your Linux SVP and VapourSynth installation, rendered inside Harbor's embedded player.":
-    "Linux SVP ve VapourSynth kurulumunuz aracılığıyla doğal 48/60 fps akıcılık Harbor'ın yerleşik oynatıcısında işlenir.",
+  "Native 48/60fps motion through your Linux SVP and VapourSynth installation, rendered inside Frame's embedded player.":
+    "Linux SVP ve VapourSynth kurulumunuz aracılığıyla doğal 48/60 fps akıcılık Frame'ın yerleşik oynatıcısında işlenir.",
   "Native/Japanese": "Orijinal/Japonca",
   "Navigation items": "Gezinme öğeleri",
   "Nebula Award Winners": "Nebula Ödülü Kazananları",
@@ -643,7 +643,7 @@ const miscB: Record<string, string> = {
   "No .nfo files detected. TMDB matching is recommended.":
     ".nfo dosyası algılanmadı. TMDB eşleştirmesi önerilir.",
   "No .nfo files here": "Burada .nfo dosyası yok",
-  "No Harbor account yet": "Henüz Harbor hesabınız yok",
+  "No Frame account yet": "Henüz Frame hesabınız yok",
   "No Label": "Etiket Yok",
   "No adaptations found.": "Uyarlama bulunamadı.",
   "No art": "Görsel yok",
@@ -687,9 +687,9 @@ const miscB: Record<string, string> = {
   "No notes were published for this build.": "Bu derleme için sürüm notu yayımlanmadı.",
   "No notifications yet. Publish a theme and watch it climb.":
     "Henüz bildirim yok. Bir tema yayınlayın ve yükselişini izleyin.",
-  "No other Harbor answered": "Başka bir Harbor yanıt vermedi",
-  "No other Harbor answered on this network. One shows up here a moment after it starts.":
-    "Bu ağdaki başka bir Harbor yanıt vermedi. Bir Harbor başlatıldıktan kısa süre sonra burada görünür.",
+  "No other Frame answered": "Başka bir Frame yanıt vermedi",
+  "No other Frame answered on this network. One shows up here a moment after it starts.":
+    "Bu ağdaki başka bir Frame yanıt vermedi. Bir Frame başlatıldıktan kısa süre sonra burada görünür.",
   "No people match these filters": "Bu filtrelerle eşleşen kimse yok",
   "No playable streams turned up, and no debrid is configured. Real-Debrid, TorBox, AllDebrid, Premiumize, or Debrid-Link will unlock raw torrent results. Some addons bake debrid in (Sootio, Comet/ElfHosted, MediaFusion/ElfHosted) and play without your own keys.":
     "Oynatılabilir yayın bulunamadı ve yapılandırılmış bir debrid hizmeti yok. Real-Debrid, TorBox, AllDebrid, Premiumize veya Debrid-Link, ham torrent sonuçlarını kullanılabilir hâle getirir. Bazı eklentilerde debrid yerleşik olarak bulunur (Sootio, Comet/ElfHosted, MediaFusion/ElfHosted) ve kendi anahtarlarınız olmadan oynatma sağlar.",
@@ -751,8 +751,8 @@ const miscB: Record<string, string> = {
   Note: "Not",
   "Notes & highlights": "Notlar ve vurgular",
   "Notes and highlights": "Notlar ve vurgular",
-  "Nothing else answered. A Harbor shows up here a moment after it starts on this network.":
-    "Başka hiçbir cihaz yanıt vermedi. Bu ağda bir Harbor başlatıldıktan kısa süre sonra burada görünür.",
+  "Nothing else answered. A Frame shows up here a moment after it starts on this network.":
+    "Başka hiçbir cihaz yanıt vermedi. Bu ağda bir Frame başlatıldıktan kısa süre sonra burada görünür.",
   "Nothing found.": "Hiçbir şey bulunamadı.",
   "Nothing has connected yet. Your phone may be on a guest network, or this TV may be on a different network from your phone.":
     "Henüz hiçbir cihaz bağlanmadı. Telefonunuz konuk ağında olabilir veya bu TV telefonunuzdan farklı bir ağda olabilir.",
@@ -768,8 +768,8 @@ const miscB: Record<string, string> = {
     "Bu filtreyle eşleşen bir şey yok. Başka bir kategori deneyin veya Ayarlar'dan bölgenizi değiştirin.",
   "Nothing on your TV changes until you confirm you have saved this.":
     "Bunu kaydettiğinizi onaylayana kadar TV'nizde hiçbir şey değişmez.",
-  "Nothing selected. Harbor will not load a subtitle on its own.":
-    "Hiçbir şey seçilmedi. Harbor kendiliğinden altyazı yüklemez.",
+  "Nothing selected. Frame will not load a subtitle on its own.":
+    "Hiçbir şey seçilmedi. Frame kendiliğinden altyazı yüklemez.",
   "Nothing sent yet. Change something and it goes up on its own.":
     "Henüz hiçbir şey gönderilmedi. Bir şeyi değiştirdiğinizde kendiliğinden yüklenir.",
   "Nothing to preview yet.": "Henüz önizlenecek bir şey yok.",
@@ -782,11 +782,11 @@ const miscB: Record<string, string> = {
   "Nothing was imported": "Hiçbir şey içe aktarılmadı",
   "Nothing was saved.": "Hiçbir şey kaydedilmedi.",
   "Nothing watched yet. Press play on something.": "Henüz hiçbir şey izlenmedi. Bir şeyi oynatın.",
-  "Nothing you have already set is lost. Harbor picks this back up where you left it.":
-    "Önceden yaptığınız hiçbir ayar kaybolmaz. Harbor kaldığınız yerden devam eder.",
+  "Nothing you have already set is lost. Frame picks this back up where you left it.":
+    "Önceden yaptığınız hiçbir ayar kaybolmaz. Frame kaldığınız yerden devam eder.",
   Notification: "Bildirim",
   "Now Playing card": "Şu An Oynatılıyor kartı",
-  "Now on Harbor": "Şimdi Harbor'da",
+  "Now on Frame": "Şimdi Frame'da",
   "Nudge the daily Home rows toward your region and languages so local releases surface instead of the same worldwide list. Turn it off to see the unweighted picks.":
     "Dünya genelindeki aynı liste yerine yerel yapımların öne çıkması için günlük Ana Sayfa satırlarını bölgenize ve dillerinize göre uyarlayın. Ağırlıklandırılmamış önerileri görmek için kapatın.",
   "Nvidia only": "Yalnızca Nvidia",
@@ -815,23 +815,23 @@ const miscB: Record<string, string> = {
     "Açık olduğunda başlıklar üst veri dilinizde gösterilir (varsayılan olarak İngilizce). Kapalı olduğunda başlıklar İngilizce kalır.",
   "On the card": "Kartta",
   "On the taskbar": "Görev çubuğunda",
-  "On the web, Harbor can only reach addons that allow browser access (Torrentio, TorBox, Cinemeta). For unreleased titles, no source typically exists yet.":
-    "Web'de Harbor yalnızca tarayıcı erişimine izin veren eklentilere (Torrentio, TorBox, Cinemeta) ulaşabilir. Henüz yayımlanmamış içerikler için genellikle kaynak bulunmaz.",
+  "On the web, Frame can only reach addons that allow browser access (Torrentio, TorBox, Cinemeta). For unreleased titles, no source typically exists yet.":
+    "Web'de Frame yalnızca tarayıcı erişimine izin veren eklentilere (Torrentio, TorBox, Cinemeta) ulaşabilir. Henüz yayımlanmamış içerikler için genellikle kaynak bulunmaz.",
   "On themoviedb.org, open Settings.": "themoviedb.org'da Ayarlar'ı açın.",
   "On this page": "Bu sayfada",
   "On your Roku remote, press Home.": "Roku kumandanızda Ana Sayfa düğmesine basın.",
   "On your Roku, open Streaming Channels from the home screen.":
     "Roku'nuzun ana ekranından Yayın Kanalları'nı açın.",
   "Onboarding & hints": "İlk kurulum ve ipuçları",
-  "One @name that finds you across Harbor.":
-    "Harbor genelinde sizi bulmalarını sağlayan tek bir @ad.",
-  "One Harbor, every screen.": "Tek Harbor, her ekran.",
+  "One @name that finds you across Frame.":
+    "Frame genelinde sizi bulmalarını sağlayan tek bir @ad.",
+  "One Frame, every screen.": "Tek Frame, her ekran.",
   "One line for the picker (optional)": "Seçici için tek satır (isteğe bağlı)",
   "One line shown under the name.": "Adın altında gösterilen tek satırlık metin.",
   "One release": "Tek sürüm",
   "One-tap looks": "Tek dokunuşla görünüm",
-  "One-time setup downloads the shader pack (about 1 MB) into Harbor. No files to hunt down.":
-    "Tek seferlik kurulumla gölgelendirici paketi (yaklaşık 1 MB) Harbor'a indirilir. Dosya aramanıza gerek kalmaz.",
+  "One-time setup downloads the shader pack (about 1 MB) into Frame. No files to hunt down.":
+    "Tek seferlik kurulumla gölgelendirici paketi (yaklaşık 1 MB) Frame'a indirilir. Dosya aramanıza gerek kalmaz.",
   "Only 1 source after filtering": "Filtrelemeden sonra yalnızca 1 kaynak kaldı",
   "Only 2 sources after filtering": "Filtrelemeden sonra yalnızca 2 kaynak kaldı",
   "Only on anime": "Yalnızca animelerde",
@@ -852,7 +852,7 @@ const miscB: Record<string, string> = {
   "Open Account": "Hesabı Aç",
   "Open AniList again": "AniList'i yeniden aç",
   "Open AniList profile": "AniList profilini aç",
-  "Open Harbor on desktop to link Discord.": "Discord'u bağlamak için Harbor'ı masaüstünde açın.",
+  "Open Frame on desktop to link Discord.": "Discord'u bağlamak için Frame'ı masaüstünde açın.",
   "Open MAL profile": "MAL profilini aç",
   "Open MyAnimeList again": "MyAnimeList'i yeniden aç",
   "Open Settings, then System, then Advanced system settings.":
@@ -861,8 +861,8 @@ const miscB: Record<string, string> = {
   "Open TheTVDB": "TheTVDB'yi aç",
   "Open Trakt profile": "Trakt profilini aç",
   "Open a folder": "Klasör aç",
-  "Open a manga on Harbor to control the reader from here.":
-    "Okuyucuyu buradan kontrol etmek için Harbor'da bir manga açın.",
+  "Open a manga on Frame to control the reader from here.":
+    "Okuyucuyu buradan kontrol etmek için Frame'da bir manga açın.",
   "Open a quick issue": "Hızlıca sorun bildir",
   "Open a terminal and run: brew install ffmpeg":
     "Bir terminal açıp şu komutu çalıştırın: brew install ffmpeg",
@@ -914,8 +914,8 @@ const miscB: Record<string, string> = {
   "Opens your API settings page": "API ayarları sayfanızı açar",
   "Optional. Add one to turn on automatic subtitle sync.":
     "İsteğe bağlı. Otomatik altyazı eşitlemeyi açmak için bir tane ekleyin.",
-  "Options for the Library → Local tab: folders you scan from your own drive. When you export metadata, Harbor writes a Kodi-style .nfo and downloads artwork next to each file at the sizes below.":
-    "Kütüphane → Yerel sekmesinin seçenekleri: kendi sürücünüzden taradığınız klasörler. Meta verileri dışa aktardığınızda Harbor, Kodi tarzı bir .nfo dosyası oluşturur ve aşağıdaki boyutlarda görselleri her dosyanın yanına indirir.",
+  "Options for the Library → Local tab: folders you scan from your own drive. When you export metadata, Frame writes a Kodi-style .nfo and downloads artwork next to each file at the sizes below.":
+    "Kütüphane → Yerel sekmesinin seçenekleri: kendi sürücünüzden taradığınız klasörler. Meta verileri dışa aktardığınızda Frame, Kodi tarzı bir .nfo dosyası oluşturur ve aşağıdaki boyutlarda görselleri her dosyanın yanına indirir.",
   "Or browse curated packs and import a link":
     "Veya seçki paketlerine göz atıp bir bağlantıyı içe aktarın",
   "Or set a series to auto-download": "Ya da bir diziyi otomatik indirilecek şekilde ayarlayın",
@@ -950,8 +950,8 @@ const miscB: Record<string, string> = {
   PREVIEW: "ÖNİZLEME",
   Packaged: "Paketlenmiş",
   Packs: "Paketler",
-  "Packs stay hosted by their maker. Harbor keeps the link, not the artwork.":
-    "Paketler, oluşturucuları tarafından barındırılmaya devam eder. Harbor görselleri değil, bağlantıyı saklar.",
+  "Packs stay hosted by their maker. Frame keeps the link, not the artwork.":
+    "Paketler, oluşturucuları tarafından barındırılmaya devam eder. Frame görselleri değil, bağlantıyı saklar.",
   "Page background color": "Sayfa arka plan rengi",
   "Page background image": "Sayfa arka plan görüntüsü",
   "Page base.": "Sayfa tabanı.",
@@ -959,9 +959,9 @@ const miscB: Record<string, string> = {
   "Paid. Bakes scores into the poster image itself.":
     "Ücretli. Puanları doğrudan poster görseline işler.",
   Pair: "Eşleştir",
-  "Pair once from here and this Harbor will take commands.":
-    "Buradan bir kez eşleştirdiğinizde bu Harbor komutları kabul eder.",
-  "Pair with this Harbor": "Bu Harbor ile eşleştir",
+  "Pair once from here and this Frame will take commands.":
+    "Buradan bir kez eşleştirdiğinizde bu Frame komutları kabul eder.",
+  "Pair with this Frame": "Bu Frame ile eşleştir",
   Paired: "Eşleştirildi",
   "Paired with {name}": "{name} ile eşleştirildi",
   Palette: "Palet",
@@ -992,8 +992,8 @@ const miscB: Record<string, string> = {
   "Paste the manifest URL, or click Install on the addon's configuration page above.":
     "Manifest URL'sini yapıştırın veya yukarıdaki eklenti yapılandırma sayfasında Yükle'ye tıklayın.",
   "Paste the text from AniList": "AniList'teki metni yapıştırın",
-  "Paste this code into Harbor to open the collection.":
-    "Koleksiyonu açmak için bu kodu Harbor'a yapıştırın.",
+  "Paste this code into Frame to open the collection.":
+    "Koleksiyonu açmak için bu kodu Frame'a yapıştırın.",
   "Paste your OpenSubtitles API key": "OpenSubtitles API anahtarınızı yapıştırın",
   "Paste your key": "Anahtarınızı yapıştırın",
   "Paste your v3 API key": "v3 API anahtarınızı yapıştırın",
@@ -1029,8 +1029,8 @@ const miscB: Record<string, string> = {
   "Pick OLED for perfect-black panels to unlock shadow detail in tonemapped HDR.":
     "Ton eşlemeli HDR'de gölge ayrıntılarını ortaya çıkarmak için kusursuz siyah sunan panellerde OLED'i seçin.",
   "Pick a World": "Bir Dünya seçin",
-  "Pick a display and body pairing, or upload your own font to use across Harbor.":
-    "Başlık ve gövde yazı tipi eşleşmesi seçin veya Harbor genelinde kullanmak üzere kendi yazı tipinizi yükleyin.",
+  "Pick a display and body pairing, or upload your own font to use across Frame.":
+    "Başlık ve gövde yazı tipi eşleşmesi seçin veya Frame genelinde kullanmak üzere kendi yazı tipinizi yükleyin.",
   "Pick a drive with room to spare. Files already cached stay where they are.":
     "Yeterli boş alanı olan bir sürücü seçin. Önbelleğe alınmış dosyalar bulundukları yerde kalır.",
   "Pick a home layout": "Ana sayfa düzenini seçin",
@@ -1042,8 +1042,8 @@ const miscB: Record<string, string> = {
   "Pick a position, name it, then choose your menu items.":
     "Bir konum seçip adlandırın, ardından menü öğelerinizi belirleyin.",
   "Pick a source": "Bir kaynak seçin",
-  "Pick a source once and Harbor keeps playing the rest of that season from the same release, no re-picking. Works best with a debrid season pack. Skipped for anime.":
-    "Bir kez kaynak seçtiğinizde Harbor sezonun kalanını yeniden seçim yaptırmadan aynı sürümden oynatır. En iyi sonucu bir debrid sezon paketiyle verir. Animelerde uygulanmaz.",
+  "Pick a source once and Frame keeps playing the rest of that season from the same release, no re-picking. Works best with a debrid season pack. Skipped for anime.":
+    "Bir kez kaynak seçtiğinizde Frame sezonun kalanını yeniden seçim yaptırmadan aynı sürümden oynatır. En iyi sonucu bir debrid sezon paketiyle verir. Animelerde uygulanmaz.",
   "Pick a source to swap in place. Playback keeps running.":
     "Yerine geçecek bir kaynak seçin. Oynatma devam eder.",
   "Pick a style to turn interface sounds on.": "Arayüz seslerini açmak için bir stil seçin.",
@@ -1063,13 +1063,13 @@ const miscB: Record<string, string> = {
   "Pick up exactly where you left off.": "Tam olarak kaldığınız yerden devam edin.",
   "Pick up partly-watched episodes and movies at your saved spot. Anything watched past 80% always restarts. Turn this off to always start from the beginning, handy if you rewatch shows.":
     "Kısmen izlenmiş bölümlere ve filmlere kaldığınız yerden devam edin. %80'den fazlası izlenen içerikler her zaman baştan başlar. Dizileri yeniden izliyorsanız her zaman baştan başlatmak için bunu kapatın.",
-  "Pick up to five. It shapes what Harbor surfaces first.":
-    "En fazla beş tane seçin. Harbor'ın önce neleri öne çıkaracağını belirler.",
+  "Pick up to five. It shapes what Frame surfaces first.":
+    "En fazla beş tane seçin. Frame'ın önce neleri öne çıkaracağını belirler.",
   "Pick what to save, then everything you choose lands in one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.":
     "Neleri kaydedeceğinizi seçin; seçtiğiniz her şey tek bir dosyaya eklenir: tema, ana sayfa düzeni, ayarlar, eklentiler, profiller, izleme listesi, oynatıcı düzenleri, izleme ilerlemesi ve daha fazlası. Stremio oturumunuz özellikle dahil edilmez.",
   "Pick what you actually use": "Kullandığınız hizmetleri seçin",
-  "Pick which audio and subtitle languages Harbor reaches for first.":
-    "Harbor'ın öncelikle kullanacağı ses ve altyazı dillerini seçin.",
+  "Pick which audio and subtitle languages Frame reaches for first.":
+    "Frame'ın öncelikle kullanacağı ses ve altyazı dillerini seçin.",
   "Pick which score anime cards show. IMDb falls back to MAL when a title has no IMDb rating yet.":
     "Anime kartlarında gösterilecek puanı seçin. Bir içeriğin henüz IMDb puanı yoksa IMDb yerine MAL puanı gösterilir.",
   "Pick your language": "Dilinizi seçin",
@@ -1119,8 +1119,8 @@ const miscB: Record<string, string> = {
   Playing: "Oynatılıyor",
   "Playing now": "Şimdi oynatılıyor",
   "Playlist address": "Çalma listesi adresi",
-  "Plays + ratings sync from Harbor to Trakt.tv.":
-    "Oynatmalar ve puanlar Harbor'dan Trakt.tv'ye eşitlenir.",
+  "Plays + ratings sync from Frame to Trakt.tv.":
+    "Oynatmalar ve puanlar Frame'dan Trakt.tv'ye eşitlenir.",
   "Plays HDR in its own window so Windows shows real HDR and the SDR brightness slider stops dimming it. The most reliable way to get true HDR.":
     "HDR'yi ayrı bir pencerede oynatır. Böylece Windows gerçek HDR'yi gösterir ve SDR parlaklık kaydırıcısı görüntüyü karartmaz. Gerçek HDR elde etmenin en güvenilir yoludur.",
   "Plays a muted trailer in the backdrop when you open a title. Click the speaker to unmute. Falls back to the image when no trailer is available.":
@@ -1171,8 +1171,8 @@ const miscB: Record<string, string> = {
   "Preparing book…": "Kitap hazırlanıyor…",
   Preset: "Ön ayar",
   Presets: "Ön ayarlar",
-  "Press Play and Harbor picks the source itself instead of opening the list.":
-    "Oynat'a bastığınızda Harbor listeyi açmak yerine kaynağı kendisi seçer.",
+  "Press Play and Frame picks the source itself instead of opening the list.":
+    "Oynat'a bastığınızda Frame listeyi açmak yerine kaynağı kendisi seçer.",
   "Press the star on any channel to keep it at the top of the guide.":
     "Herhangi bir kanalı rehberin en üstünde tutmak için yıldızına basın.",
   Prev: "Önceki",
@@ -1270,7 +1270,7 @@ const miscB: Record<string, string> = {
   "Ratings count from {movie}+ votes, {tv}+ for TV":
     "Puanlar {movie}+ oya, TV için {tv}+ oya dayanır",
   "Re-download": "Yeniden indir",
-  "Re-sync from your Harbor profile picture": "Harbor'daki profil fotoğrafınızdan yeniden eşitle",
+  "Re-sync from your Frame profile picture": "Frame'daki profil fotoğrafınızdan yeniden eşitle",
   "Reaching your TV": "TV'nize bağlanılıyor",
   Read: "Oku",
   "Read EPUB, text, Markdown, and HTML books already on this device.":
@@ -1347,12 +1347,12 @@ const miscB: Record<string, string> = {
   "Remember my choice": "Seçimimi hatırla",
   "Remember your place on show pages": "Dizi sayfalarında kaldığınız yeri hatırla",
   Remote: "Kumanda",
-  "Remote control is off on that Harbor, so it cannot be driven from here.":
-    "O Harbor'da uzaktan kumanda kapalı olduğundan buradan kontrol edilemez.",
-  "Remote control is off, so other Harbors can see this one but cannot drive it.":
-    "Uzaktan kumanda kapalı olduğundan diğer Harbor cihazları bunu görebilir ancak kontrol edemez.",
-  "Remote control is on, so other Harbors on this network can drive this one.":
-    "Uzaktan kumanda açık olduğundan bu ağdaki diğer Harbor cihazları bunu kontrol edebilir.",
+  "Remote control is off on that Frame, so it cannot be driven from here.":
+    "O Frame'da uzaktan kumanda kapalı olduğundan buradan kontrol edilemez.",
+  "Remote control is off, so other Frames can see this one but cannot drive it.":
+    "Uzaktan kumanda kapalı olduğundan diğer Frame cihazları bunu görebilir ancak kontrol edemez.",
+  "Remote control is on, so other Frames on this network can drive this one.":
+    "Uzaktan kumanda açık olduğundan bu ağdaki diğer Frame cihazları bunu kontrol edebilir.",
   "Remote off": "Uzaktan kumanda kapalı",
   "Remote style": "Kumanda stili",
   Remotes: "Uzaktan kumandalar",
@@ -1422,15 +1422,15 @@ const miscB: Record<string, string> = {
     "Açmadan göz atmak için imleci bir posterin üzerinde bekletin. Varsayılan olarak kapalıdır.",
   "Rest the cursor on a poster to peek at the rating, story, and quick actions without opening it.":
     "Puanı, hikâyeyi ve hızlı işlemleri açmadan görmek için imleci bir posterin üzerinde bekletin.",
-  "Restart Harbor after the install completes.":
-    "Yükleme tamamlandıktan sonra Harbor'ı yeniden başlatın.",
+  "Restart Frame after the install completes.":
+    "Yükleme tamamlandıktan sonra Frame'ı yeniden başlatın.",
   "Restart game": "Oyunu yeniden başlat",
   "Restart to update": "Güncellemek için yeniden başlat",
   Restarting: "Yeniden başlatılıyor",
   Restore: "Geri yükle",
   "Restore + upscale. The best all-rounder for most anime.":
     "İyileştirme + üst ölçekleme. Çoğu anime için en iyi genel seçenek.",
-  "Restore Harbor's interface scale to 100%.": "Harbor'ın arayüz ölçeğini %100'e döndürür.",
+  "Restore Frame's interface scale to 100%.": "Frame'ın arayüz ölçeğini %100'e döndürür.",
   "Restore window position after fullscreen": "Tam ekrandan sonra pencere konumunu geri yükle",
   "Result order (ranking / addon order)": "Sonuç sırası (sıralama / eklenti sırası)",
   'Results for "{query}"': '"{query}" için sonuçlar',
@@ -1512,7 +1512,7 @@ const miscB: Record<string, string> = {
   "SVP engine": "SVP motoru",
   "SVP is already handling frame interpolation. Turn off SVP below to use this instead. Running both delays the audio.":
     "Kare enterpolasyonunu zaten SVP yapıyor. Bunun yerine bu özelliği kullanmak için aşağıdan SVP'yi kapatın. İkisini birlikte çalıştırmak sesi geciktirir.",
-  "SVP is not supported by this Harbor package.": "Bu Harbor paketi SVP'yi desteklemiyor.",
+  "SVP is not supported by this Frame package.": "Bu Frame paketi SVP'yi desteklemiyor.",
   "SVP's files are here, but its VapourSynth engine won't load.":
     "SVP dosyaları burada ancak VapourSynth motoru yüklenemiyor.",
   SYSTEM: "SİSTEM",
@@ -1557,15 +1557,15 @@ const miscB: Record<string, string> = {
   "Saved on that device. You can close this page, or use this phone as a remote.":
     "O cihaza kaydedildi. Bu sayfayı kapatabilir veya bu telefonu uzaktan kumanda olarak kullanabilirsiniz.",
   "Saved on this device": "Bu cihaza kaydedildi",
-  "Saved on this device. Another Harbor install starts fresh.":
-    "Bu cihaza kaydedildi. Başka bir Harbor kurulumu sıfırdan başlar.",
+  "Saved on this device. Another Frame install starts fresh.":
+    "Bu cihaza kaydedildi. Başka bir Frame kurulumu sıfırdan başlar.",
   "Saved stream filters": "Kaydedilen yayın filtreleri",
   "Saved to Downloads as harbor-mpv-log.txt": "İndirilenler'e harbor-mpv-log.txt olarak kaydedildi",
   "Saved to this passage": "Bu pasaja kaydedildi",
   "Saved {n} entries to {path}. Send us that file.":
     "{n} kayıt {path} konumuna kaydedildi. Bu dosyayı bize gönderin.",
-  "Saved {when} from Harbor {app}. Your Stremio sign-in stays as is.":
-    "{when} tarihinde Harbor {app} uygulamasından kaydedildi. Stremio oturumunuz değişmeden kalır.",
+  "Saved {when} from Frame {app}. Your Stremio sign-in stays as is.":
+    "{when} tarihinde Frame {app} uygulamasından kaydedildi. Stremio oturumunuz değişmeden kalır.",
   "Saves a .txt of your watched anime + series entries so we can see the exact shape and finish the fix. Just titles, ids, and episode numbers.":
     "Sorunun tam yapısını görüp düzeltmeyi tamamlayabilmemiz için izlediğiniz anime ve dizi kayıtlarını bir .txt dosyasına kaydeder. Yalnızca başlıklar, kimlikler ve bölüm numaraları kaydedilir.",
   "Saves the relay URL and your Cloudflare token to a file.":
@@ -1579,8 +1579,8 @@ const miscB: Record<string, string> = {
   "Scales the whole interface live as you drag.":
     "Siz sürüklerken tüm arayüzü anlık olarak ölçeklendirir.",
   "Scan for corruption": "Bozulma taraması yap",
-  "Scan this with your phone camera to open the Harbor remote, then type straight into the search box.":
-    "Harbor uzaktan kumandasını açmak için bunu telefonunuzun kamerasıyla tarayın, ardından doğrudan arama kutusuna yazın.",
+  "Scan this with your phone camera to open the Frame remote, then type straight into the search box.":
+    "Frame uzaktan kumandasını açmak için bunu telefonunuzun kamerasıyla tarayın, ardından doğrudan arama kutusuna yazın.",
   "Scanning your library…": "Kitaplığınız taranıyor…",
   "Scanning…": "Taranıyor…",
   "Sci-fi, fantasy & horror": "Bilim kurgu, fantastik ve korku",
@@ -1613,8 +1613,8 @@ const miscB: Record<string, string> = {
   "Search wider": "Daha kapsamlı ara",
   "Search your library": "Kütüphanenizde ara",
   "Search {language}": "{language} dilinde ara",
-  "Searching works without a key. A key lets Harbor line subtitles up with the audio automatically.":
-    "Anahtar olmadan da arama yapabilirsiniz. Anahtar, Harbor'ın altyazıları sesle otomatik olarak eşlemesini sağlar.",
+  "Searching works without a key. A key lets Frame line subtitles up with the audio automatically.":
+    "Anahtar olmadan da arama yapabilirsiniz. Anahtar, Frame'ın altyazıları sesle otomatik olarak eşlemesini sağlar.",
   "Second line": "İkinci satır",
   Secondary: "İkincil",
   "Secondary copy sits here.": "İkincil metin burada yer alır.",

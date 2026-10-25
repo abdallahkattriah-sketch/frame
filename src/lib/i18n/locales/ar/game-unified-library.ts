@@ -3,7 +3,7 @@ export default {
     "تغيّر حساب Battle.net. سجّل الدخول مجددًا لاستبدال الألعاب المستوردة لهذا الملف الشخصي.",
   "games.battlenet.connect": "تسجيل الدخول",
   "games.battlenet.intro":
-    "سجّل الدخول إلى Battle.net لاستيراد ألعابك. يرتبط هذا الاتصال بملفك الشخصي الحالي في Harbor.",
+    "سجّل الدخول إلى Battle.net لاستيراد ألعابك. يرتبط هذا الاتصال بملفك الشخصي الحالي في Frame.",
   "games.battlenet.installed": "عرض الألعاب المثبتة",
   "games.battlenet.uninstalled": "عرض ألعاب الحساب غير المثبتة",
   "games.battlenet.partial": "تعذّر تحديث بعض بيانات الحساب. لا تزال الألعاب المستوردة سابقًا معروضة.",
@@ -12,7 +12,7 @@ export default {
     "انتهت جلسة Battle.net. سجّل الدخول مجددًا؛ لا تزال ألعابك المستوردة محفوظة.",
   "games.battlenet.timeout": "لم يستجب Battle.net في الوقت المحدد. حاول مجددًا.",
   "games.battlenet.busy": "هناك إجراء لحساب Battle.net قيد التنفيذ بالفعل.",
-  "games.battlenet.update": "أعد تشغيل تطبيق Harbor المحدّث على سطح المكتب لربط Battle.net.",
+  "games.battlenet.update": "أعد تشغيل تطبيق Frame المحدّث على سطح المكتب لربط Battle.net.",
   "games.battlenet.error": "تعذّر تحديث Battle.net. لا تزال آخر مكتبة مستوردة محفوظة.",
   "games.battlenet.disconnect": "فصل Battle.net",
   "games.battlenet.removeNote":
@@ -23,7 +23,7 @@ export default {
   "games.launcherSession.waiting": "بانتظار اللعبة",
   "games.launcherSession.unconfirmed": "جارٍ التحقق من حالة اللعبة",
   "games.launcherSession.notStarted": "لم تبدأ اللعبة",
-  "games.launcherSession.error": "تعذّر تسجيل نشاط اللعبة. أعد فتح Harbor للمحاولة مجددًا.",
+  "games.launcherSession.error": "تعذّر تسجيل نشاط اللعبة. أعد فتح Frame للمحاولة مجددًا.",
 
   "games.steamImport.importedTitle": "الألعاب المستوردة",
   "games.steamImport.excluded": "تجاهلته إعدادات الاستيراد",
@@ -35,7 +35,7 @@ export default {
   "games.steamImport.ignoreSaved": "حُفظت المعرّفات المتجاهلة.",
   "games.steamImport.title": "استيراد ألعاب Steam",
   "games.steamImport.note":
-    "احتفظ بسجلات الألعاب في ملف Harbor هذا. يُفحص امتلاك الألعاب وتثبيتها بشكل منفصل.",
+    "احتفظ بسجلات الألعاب في ملف Frame هذا. يُفحص امتلاك الألعاب وتثبيتها بشكل منفصل.",
   "games.steamImport.input": "معرّفات تطبيقات Steam أو روابط المتجر",
   "games.steamImport.profile": "اختيار ملف Depressurizer",
   "games.steamImport.count": "تم تحديد {selected} · {total} إدخالات",
@@ -75,7 +75,7 @@ export default {
   "games.libraryStatus.onHold": "مؤجلة",
   "games.libraryStatus.stopped": "توقفت عن اللعب",
   "games.libraryStatus.note":
-    "اختيارك لهذه النسخة يُحفظ في ملف Harbor هذا. لا يتغير تلقائيًا بسبب وقت اللعب أو الإنجازات.",
+    "اختيارك لهذه النسخة يُحفظ في ملف Frame هذا. لا يتغير تلقائيًا بسبب وقت اللعب أو الإنجازات.",
 
   "games.unified.playtime": "وقت اللعب",
   "games.unified.playtime.all": "أي وقت لعب",
@@ -87,11 +87,11 @@ export default {
   "games.unified.playtime.most": "أكثر وقت مسجّل",
   "games.unified.playtime.steam": "{time} على Steam",
   "games.unified.playtime.zeroSteam": "لا يوجد وقت لعب مسجّل على Steam",
-  "games.unified.playtime.zeroHarbor": "لا يوجد وقت لعب مسجّل في Harbor",
+  "games.unified.playtime.zeroHarbor": "لا يوجد وقت لعب مسجّل في Frame",
   "games.unified.playtime.unknownHint":
     "وقت اللعب لحساب Steam غير متاح، أو أن هذا المصدر لا يوفّر وقت اللعب.",
   "games.unified.playtime.note":
-    "تُستخدم إجماليات Steam والوقت المسجّل في Harbor، بما في ذلك تصحيحاتك. يُفصل وقت اللعب غير المتاح عن القيم المسجّلة.",
+    "تُستخدم إجماليات Steam والوقت المسجّل في Frame، بما في ذلك تصحيحاتك. يُفصل وقت اللعب غير المتاح عن القيم المسجّلة.",
   "games.unified.note": "مكتبتك على Steam وألعاب الكمبيوتر وملفات ROM المستوردة في عرض واحد.",
   "games.unified.allSources": "كل المصادر",
   "games.unified.availability": "التوفر",

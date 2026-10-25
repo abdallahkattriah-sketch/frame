@@ -22,7 +22,7 @@ export default {
   "games.warhammerUniverse.free": "Miễn phí trên Warhammer TV",
   "games.warhammerUniverse.subscription": "Có thể cần đăng ký Warhammer+",
   "games.warhammerUniverse.movieNote":
-    "Phim hoạt hình năm 2010. Mở chi tiết Harbor để xem diễn viên, trailer và nguồn.",
+    "Phim hoạt hình năm 2010. Mở chi tiết Frame để xem diễn viên, trailer và nguồn.",
   "games.warhammerUniverse.screenScope":
     "Tuyển tập công khai của Warhammer TV. Hammer and Bolter trải qua nhiều thế giới; nhà cung cấp quyết định khả năng xem.",
   "games.warhammerUniverse.lore": "Khám phá cốt truyện",

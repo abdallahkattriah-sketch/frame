@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "Harbor перезапустился во время установки. Проверьте установленные файлы игры, чтобы завершить настройку.",
+    "Frame перезапустился во время установки. Проверьте установленные файлы игры, чтобы завершить настройку.",
   "games.setup.state.starting": "Запуск установщика",
   "games.setup.state.waiting": "Ожидание установщика",
   "games.setup.startingNote": "Открытие установщика…",
@@ -37,7 +37,7 @@ export default {
   "games.setup.viewProgress": "Ход установки",
   "games.setup.showInstaller": "Показать установщик",
   "games.setup.setup_window":
-    "Окно установщика недоступно. Harbor продолжает отслеживать установку.",
+    "Окно установщика недоступно. Frame продолжает отслеживать установку.",
   "games.setup.elapsed": "Прошло",
   "games.setup.io": "Ввод-вывод установщика",
   "games.setup.ioNote":
@@ -73,7 +73,7 @@ export default {
   "games.setup.state.running": "Установщик запущен",
   "games.setup.state.finished": "Установщик закрыт — выберите файл игры",
   "games.setup.state.failed": "Установщик завершился с ошибкой",
-  "games.setup.state.interrupted": "Проверьте установку — Harbor был закрыт во время её выполнения",
+  "games.setup.state.interrupted": "Проверьте установку — Frame был закрыт во время её выполнения",
   "games.setup.state.external": "Установщик открыт в другом окне",
   "games.setup.exitCode": "Код завершения: {code}",
   "games.setup.unavailable":
@@ -102,9 +102,9 @@ export default {
   "games.setup.destination": "Установить в",
   "games.setup.chooseDestination": "Выбрать папку установки",
   "games.setup.managedNote":
-    "Harbor установит игру сюда, найдёт файл игры и добавит его в вашу библиотеку.",
+    "Frame установит игру сюда, найдёт файл игры и добавит его в вашу библиотеку.",
   "games.setup.managedRunning":
-    "Игра устанавливается. Можно закрыть это окно — Harbor продолжит отслеживать процесс.",
+    "Игра устанавливается. Можно закрыть это окно — Frame продолжит отслеживать процесс.",
   "games.setup.detected": "Файл игры найден автоматически",
   "games.setup.chooseDetected": "Выберите файл игры для добавления.",
   "games.setup.activity": "{size}, файлов: {count}",
@@ -119,7 +119,7 @@ export default {
   "games.setup.setup_engine":
     "Этому установщику нужно отдельное окно. Нажмите «Запустить установщик», чтобы продолжить.",
   "games.setup.setup_candidates":
-    "Установка завершена, но Harbor не смог прочитать установленные файлы. Просканируйте папку установки ещё раз.",
+    "Установка завершена, но Frame не смог прочитать установленные файлы. Просканируйте папку установки ещё раз.",
   "games.setup.state.installing": "Установка",
   "games.setup.externalAction": "Запустить установщик",
   "games.setup.files": "Загруженные файлы",

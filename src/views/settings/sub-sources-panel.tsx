@@ -130,14 +130,14 @@ export function SubSourcesPanel() {
       <Section
         title={t("Subtitle sources")}
         subtitle={t(
-          "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.",
+          "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.",
         )}
       >
-        <SettingGroup label={t("Built into Harbor")}>
+        <SettingGroup label={t("Built into Frame")}>
           <ToggleRow
             label={t("OpenSubtitles")}
             sub={t(
-              "Harbor's built-in OpenSubtitles search, on by default. If you install an OpenSubtitles addon, this steps aside automatically so your results are never duplicated.",
+              "Frame's built-in OpenSubtitles search, on by default. If you install an OpenSubtitles addon, this steps aside automatically so your results are never duplicated.",
             )}
             value={osOn}
             onChange={(v) => setProv("opensubtitles", v)}
@@ -154,7 +154,7 @@ export function SubSourcesPanel() {
                 help={
                   <>
                     {t(
-                      "Searching works without a key. Adding one lets Harbor line subtitles up with the audio on its own.",
+                      "Searching works without a key. Adding one lets Frame line subtitles up with the audio on its own.",
                     )}{" "}
                     <ExtLink href="https://www.opensubtitles.com/consumers">
                       {t("Get a free key at opensubtitles.com")}
@@ -265,7 +265,7 @@ export function SubSourcesPanel() {
           leading={<Languages size={20} strokeWidth={2} />}
           title={t("Subtitle language order")}
           description={t(
-            "Pick which languages Harbor looks for first, and which ones it falls back to.",
+            "Pick which languages Frame looks for first, and which ones it falls back to.",
           )}
           trailing={<NavChevron />}
           onClick={() => setActive("subtitles", settingsAnchor("Subtitle languages"))}

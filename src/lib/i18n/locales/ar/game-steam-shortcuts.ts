@@ -6,7 +6,7 @@ export default {
 
   "games.shortcuts.activity.open": "النشاط",
   "games.shortcuts.activity.title": "نشاط الاختصارات",
-  "games.shortcuts.activity.note": "عمليات الفحص والتشغيل الأخيرة لملف Harbor هذا. حتى 300 سجل.",
+  "games.shortcuts.activity.note": "عمليات الفحص والتشغيل الأخيرة لملف Frame هذا. حتى 300 سجل.",
   "games.shortcuts.activity.remember": "الاحتفاظ بين الجلسات",
   "games.shortcuts.activity.detailed": "تضمين تفاصيل الفحص",
   "games.shortcuts.activity.storageError":
@@ -53,7 +53,7 @@ export default {
   "games.shortcuts.storeError": "تعذر حفظ هذه الإعدادات.",
   "games.shortcuts.shortcut_location": "اختر مجلد Steam أو مجلد userdata الموجود فيه.",
   "games.shortcuts.shortcut_account":
-    "افتح Steam بحساب هذا الاختصار ثم حدّث. يجب أن يستخدم Harbor تثبيت Steam نفسه.",
+    "افتح Steam بحساب هذا الاختصار ثم حدّث. يجب أن يستخدم Frame تثبيت Steam نفسه.",
   "games.shortcuts.shortcut_missing": "لم يعد هذا الاختصار موجودًا. حدّث المكتبة.",
   "games.shortcuts.shortcut_executable": "الملف التنفيذي للاختصار مفقود أو مساره المطلق غير مدعوم.",
   "games.shortcuts.shortcut_launch": "تعذر على Steam فتح هذا الاختصار. حاول مجددًا.",

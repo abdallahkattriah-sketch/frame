@@ -51,7 +51,7 @@ export default {
   "games.pick.manualOnly":
     "Solo tus favoritos y filtros elegidos determinarán las recomendaciones.",
   "games.pick.addedNote":
-    "«Añadido recientemente» significa detectado en Harbor tras la primera importación, no la fecha de compra.",
+    "«Añadido recientemente» significa detectado en Frame tras la primera importación, no la fecha de compra.",
   "games.pick.because": "Porque te gusta {name}",
   "games.pick.matches": "Coincide con tus preferencias",
   "games.pick.steamCatalog": "Catálogo de Steam",

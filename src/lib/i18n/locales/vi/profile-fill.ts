@@ -26,9 +26,9 @@ const profileFill: Record<string, string> = {
   "Tap a star to change, then save": "Nhấn vào một ngôi sao để thay đổi, rồi lưu",
   "Add a review": "Thêm bài đánh giá",
   "Edit your review": "Chỉnh sửa bài đánh giá",
-  "Ratings need a Harbor account": "Cần có tài khoản Harbor để đánh giá",
-  "Your Harbor account is separate from your Stremio sign in. Create one free or sign in from Settings.":
-    "Tài khoản Harbor tách biệt với tài khoản đăng nhập Stremio. Hãy tạo miễn phí hoặc đăng nhập trong Cài đặt.",
+  "Ratings need a Frame account": "Cần có tài khoản Frame để đánh giá",
+  "Your Frame account is separate from your Stremio sign in. Create one free or sign in from Settings.":
+    "Tài khoản Frame tách biệt với tài khoản đăng nhập Stremio. Hãy tạo miễn phí hoặc đăng nhập trong Cài đặt.",
   "Open account settings": "Mở cài đặt tài khoản",
   "Save rating": "Lưu điểm đánh giá",
   "Rate this": "Đánh giá",
@@ -48,10 +48,10 @@ const profileFill: Record<string, string> = {
     "Bạn đang đánh giá quá nhanh, hãy thử lại sau giây lát",
   "Could not save your rating": "Không thể lưu điểm đánh giá",
   "Could not remove your rating": "Không thể xóa điểm đánh giá",
-  "Couldn't reach Harbor, check your connection":
-    "Không thể kết nối với Harbor, hãy kiểm tra kết nối",
-  "Harbor is having trouble, try again in a moment":
-    "Harbor đang gặp sự cố, hãy thử lại sau giây lát",
+  "Couldn't reach Frame, check your connection":
+    "Không thể kết nối với Frame, hãy kiểm tra kết nối",
+  "Frame is having trouble, try again in a moment":
+    "Frame đang gặp sự cố, hãy thử lại sau giây lát",
   "Move or hide your cards": "Di chuyển hoặc ẩn các thẻ",
   "Watch time": "Thời gian xem",
   Lists: "Danh sách",
@@ -98,10 +98,10 @@ const profileFill: Record<string, string> = {
     "Tìm theo tên định danh hoặc tên để thêm người vào nhóm này.",
   "Unlike list": "Bỏ thích danh sách",
   "Like list": "Thích danh sách",
-  "Harbor list": "Danh sách Harbor",
+  "Frame list": "Danh sách Frame",
   "Share list": "Chia sẻ danh sách",
   "List link": "Liên kết danh sách",
-  "{title} on Harbor": "{title} trên Harbor",
+  "{title} on Frame": "{title} trên Frame",
   "No location": "Không có vị trí",
   "Could not save. Try again.": "Không thể lưu. Hãy thử lại.",
   "Featured lists": "Danh sách nổi bật",
@@ -190,7 +190,7 @@ const profileFill: Record<string, string> = {
   "{count} aboard": "{count} người tham gia",
   "Share profile": "Chia sẻ hồ sơ",
   "Profile link": "Liên kết hồ sơ",
-  "{name} on Harbor": "{name} trên Harbor",
+  "{name} on Frame": "{name} trên Frame",
   "Removing...": "Đang xóa...",
   "Remove friend": "Xóa bạn bè",
   "Accepting...": "Đang chấp nhận...",
@@ -209,8 +209,8 @@ const profileFill: Record<string, string> = {
   "Change banner": "Đổi ảnh bìa",
   "Add banner": "Thêm ảnh bìa",
   "Could not load this profile": "Không thể tải hồ sơ này",
-  "Something went wrong reaching Harbor. Check your connection and try again.":
-    "Đã xảy ra lỗi khi kết nối với Harbor. Hãy kiểm tra kết nối và thử lại.",
+  "Something went wrong reaching Frame. Check your connection and try again.":
+    "Đã xảy ra lỗi khi kết nối với Frame. Hãy kiểm tra kết nối và thử lại.",
   "No such captain": "Không có thuyền trưởng này",
   "We could not find anyone at @{handle}. The handle may have changed or the profile was removed.":
     "Không tìm thấy ai tại @{handle}. Tên định danh có thể đã thay đổi hoặc hồ sơ đã bị xóa.",

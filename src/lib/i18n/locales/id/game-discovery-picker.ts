@@ -51,7 +51,7 @@ export default {
     "Belum ada aktivitas. Pilih favorit atau hubungkan Steam di pengaturan Game.",
   "games.pick.manualOnly": "Hanya favorit dan filter pilihanmu yang menentukan rekomendasi ini.",
   "games.pick.addedNote":
-    "“Baru ditambahkan” berarti pertama kali terlihat di Harbor setelah impor awal, bukan tanggal pembelian.",
+    "“Baru ditambahkan” berarti pertama kali terlihat di Frame setelah impor awal, bukan tanggal pembelian.",
   "games.pick.because": "Karena kamu suka {name}",
   "games.pick.matches": "Sesuai pilihanmu",
   "games.pick.steamCatalog": "Katalog Steam",

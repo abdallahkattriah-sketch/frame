@@ -17,26 +17,26 @@ const catalog: Record<string, string> = {
   "Set to where the video is right now": "Atur ke posisi video saat ini",
   "Set up": "Siapkan",
   "Set up Anime4K": "Siapkan Anime4K",
-  "Set up Harbor": "Siapkan Harbor",
+  "Set up Frame": "Siapkan Frame",
   "Set up Live TV": "Siapkan TV Langsung",
   "Set up a Cloudflare relay for Watch Together": "Siapkan relay Cloudflare untuk Nonton Bersama",
   "Set up a debrid": "Siapkan debrid",
   "Set up a source": "Siapkan sumber",
-  "Set up at least one readable eBook source to begin. Metadata can describe a book, but a folder, extension, or custom source is what lets Harbor open it.":
-    "Siapkan setidaknya satu sumber eBook yang dapat dibaca untuk memulai. Metadata dapat mendeskripsikan buku, tetapi folder, ekstensi, atau sumber khususlah yang memungkinkan Harbor membukanya.",
+  "Set up at least one readable eBook source to begin. Metadata can describe a book, but a folder, extension, or custom source is what lets Frame open it.":
+    "Siapkan setidaknya satu sumber eBook yang dapat dibaca untuk memulai. Metadata dapat mendeskripsikan buku, tetapi folder, ekstensi, atau sumber khususlah yang memungkinkan Frame membukanya.",
   "Set up eBooks": "Siapkan eBook",
   "Set up my TV from this computer": "Siapkan TV saya dari komputer ini",
   "Set up your own Cloudflare Worker rather than borrowing this one.":
     "Siapkan Cloudflare Worker Anda sendiri daripada meminjam yang ini.",
-  "Set your MyAnimeList profile picture as your Harbor avatar.":
-    "Jadikan foto profil MyAnimeList Anda sebagai avatar Harbor.",
+  "Set your MyAnimeList profile picture as your Frame avatar.":
+    "Jadikan foto profil MyAnimeList Anda sebagai avatar Frame.",
   "Set your status": "Atur status Anda",
   "Set. If the subtitles drift later on, play ahead and Sync from here again at a later line to fix the drift.":
     "Atur. Jika subtitle melenceng nanti, putar lebih jauh lalu lakukan Sinkronkan dari sini lagi pada baris berikutnya untuk memperbaikinya.",
-  "Sets streaming availability and the Now Playing release window. Pick a country and Harbor offers to match the interface, metadata, subtitle, and audio languages to it.":
-    "Mengatur ketersediaan streaming dan rentang waktu rilis Sedang Diputar. Pilih negara dan Harbor akan menawarkan untuk menyesuaikan bahasa antarmuka, metadata, subtitle, dan audio dengannya.",
-  "Sets the language of Harbor's own interface: menus, buttons, and labels. Arabic switches the layout to right to left. This is separate from subtitle and metadata languages below.":
-    "Mengatur bahasa antarmuka Harbor sendiri: menu, tombol, dan label. Bahasa Arab mengubah tata letak menjadi kanan ke kiri. Ini terpisah dari bahasa subtitle dan metadata di bawah.",
+  "Sets streaming availability and the Now Playing release window. Pick a country and Frame offers to match the interface, metadata, subtitle, and audio languages to it.":
+    "Mengatur ketersediaan streaming dan rentang waktu rilis Sedang Diputar. Pilih negara dan Frame akan menawarkan untuk menyesuaikan bahasa antarmuka, metadata, subtitle, dan audio dengannya.",
+  "Sets the language of Frame's own interface: menus, buttons, and labels. Arabic switches the layout to right to left. This is separate from subtitle and metadata languages below.":
+    "Mengatur bahasa antarmuka Frame sendiri: menu, tombol, dan label. Bahasa Arab mengubah tata letak menjadi kanan ke kiri. Ini terpisah dari bahasa subtitle dan metadata di bawah.",
   "Setting up Multiview": "Menyiapkan Multiview",
   "Setting up an addon": "Menyiapkan addon",
   "Setting up the hand-off…": "Menyiapkan pengalihan…",
@@ -46,8 +46,8 @@ const catalog: Record<string, string> = {
     "Pengaturan untuk profil ini (bersama atau terpisah)",
   "Settings storage": "Penyimpanan pengaturan",
   "Settings storage breakdown": "Rincian penyimpanan pengaturan",
-  "Settings, Harbor Relay, then": "Pengaturan, Relay Harbor, lalu",
-  "Settings, Harbor Relay, then {kbd}.": "Pengaturan, Relay Harbor, lalu {kbd}.",
+  "Settings, Frame Relay, then": "Pengaturan, Relay Frame, lalu",
+  "Settings, Frame Relay, then {kbd}.": "Pengaturan, Relay Frame, lalu {kbd}.",
   "Settings, lists and progress follow you between machines.":
     "Pengaturan, daftar, dan progres mengikuti Anda di berbagai perangkat.",
   "Settle the estate's affairs": "Selesaikan urusan warisan",
@@ -65,8 +65,8 @@ const catalog: Record<string, string> = {
   "Shaders (Anime4K + installed)": "Shader (Anime4K + terinstal)",
   "Shaders installed": "Shader terinstal",
   Shadow: "Bayangan",
-  "Shape the metadata and reading language Harbor uses without changing your original files.":
-    "Sesuaikan metadata dan bahasa bacaan yang digunakan Harbor tanpa mengubah file asli Anda.",
+  "Shape the metadata and reading language Frame uses without changing your original files.":
+    "Sesuaikan metadata dan bahasa bacaan yang digunakan Frame tanpa mengubah file asli Anda.",
   "Shape the sound without touching your system EQ. Applies on the mpv engine; the HTML5 engine plays audio untouched.":
     "Sesuaikan suara tanpa menyentuh EQ sistem Anda. Berlaku pada mesin mpv; mesin HTML5 memutar audio tanpa perubahan.",
   "Shape your anime feed.": "Sesuaikan feed anime Anda.",
@@ -91,8 +91,8 @@ const catalog: Record<string, string> = {
   "Share with {name}": "Bagikan dengan {name}",
   "Share your thoughts (optional)": "Bagikan pendapat Anda (opsional)",
   Shared: "Dibagikan",
-  "Shared collections from across Harbor will show up here soon.":
-    "Koleksi bersama dari seluruh Harbor akan segera muncul di sini.",
+  "Shared collections from across Frame will show up here soon.":
+    "Koleksi bersama dari seluruh Frame akan segera muncul di sini.",
   "Shared to the community": "Dibagikan ke komunitas",
   "Shared transition curves. Use anywhere you transition.":
     "Kurva transisi bersama. Gunakan di mana pun Anda menerapkan transisi.",
@@ -125,16 +125,16 @@ const catalog: Record<string, string> = {
     "Majukan waktu subtitle (Shift untuk langkah kecil).",
   "Shift subtitle timing later (Shift for fine steps).":
     "Geser waktu subtitle lebih lambat (Shift untuk langkah kecil).",
-  "Ships with Harbor. Always available.": "Disertakan bersama Harbor. Selalu tersedia.",
+  "Ships with Frame. Always available.": "Disertakan bersama Frame. Selalu tersedia.",
   Short: "Pendek",
   "Short of the Year": "Film Pendek Terbaik Tahun Ini",
   "Short seek (Shift + arrows)": "Lompatan pendek (Shift + tombol panah)",
   "Short seek back": "Lompat mundur sebentar",
   "Short seek forward": "Lompat maju sebentar",
-  "Short version: don't. Harbor takes no donations and no cut of anything on this page.":
-    "Singkatnya: jangan. Harbor tidak menerima donasi maupun bagian apa pun dari apa pun di halaman ini.",
-  "Short version: don't. Harbor takes no donations.":
-    "Singkatnya: jangan. Harbor tidak menerima donasi.",
+  "Short version: don't. Frame takes no donations and no cut of anything on this page.":
+    "Singkatnya: jangan. Frame tidak menerima donasi maupun bagian apa pun dari apa pun di halaman ini.",
+  "Short version: don't. Frame takes no donations.":
+    "Singkatnya: jangan. Frame tidak menerima donasi.",
   "Short {word} {n} seconds": "{word} singkat {n} detik",
   Shortcuts: "Pintasan",
   Shots: "Tembakan",
@@ -167,8 +167,8 @@ const catalog: Record<string, string> = {
   "Show a Minecraft card on your profile. Leave the username blank to hide it.":
     "Tampilkan kartu Minecraft di profil Anda. Kosongkan nama pengguna untuk menyembunyikannya.",
   "Show a Minecraft card with your username": "Tampilkan kartu Minecraft dengan nama pengguna Anda",
-  "Show a Skip Intro / Skip Credits button when Harbor detects one. Turn this off to never show it. You can also tap the X on the button to dismiss a wrong one for the rest of the episode.":
-    "Tampilkan tombol Lewati Intro / Lewati Kredit saat Harbor mendeteksinya. Nonaktifkan ini agar tombol tidak pernah ditampilkan. Anda juga dapat mengetuk X pada tombol untuk menutup deteksi yang salah hingga episode selesai.",
+  "Show a Skip Intro / Skip Credits button when Frame detects one. Turn this off to never show it. You can also tap the X on the button to dismiss a wrong one for the rest of the episode.":
+    "Tampilkan tombol Lewati Intro / Lewati Kredit saat Frame mendeteksinya. Nonaktifkan ini agar tombol tidak pernah ditampilkan. Anda juga dapat mengetuk X pada tombol untuk menutup deteksi yang salah hingga episode selesai.",
   "Show a Skip button when a known injected ad plays, and a small report button on new releases so you can mark ads for review.":
     "Tampilkan tombol Lewati saat iklan sisipan yang dikenali diputar, serta tombol laporkan kecil pada rilisan baru agar Anda dapat menandai iklan untuk ditinjau.",
   "Show a bookmark on saved titles": "Tampilkan penanda pada judul yang disimpan",
@@ -252,8 +252,8 @@ const catalog: Record<string, string> = {
     "Pamerkan. [b]tebal[/b], [color=gold]warna[/color], [youtube]tautan[/youtube], [img]https://...[/img] dan lainnya.",
   "Show on Discord": "Tampilkan di Discord",
   "Show what you are listening to": "Tampilkan yang sedang Anda dengarkan",
-  "Share the track, artist and album art while music plays, with a Listen in Harbor button.":
-    "Bagikan judul lagu, artis, dan sampul album saat musik diputar, lengkap dengan tombol «Listen in Harbor».",
+  "Share the track, artist and album art while music plays, with a Listen in Frame button.":
+    "Bagikan judul lagu, artis, dan sampul album saat musik diputar, lengkap dengan tombol «Listen in Frame».",
   "Show on home": "Tampilkan di beranda",
   "Show or hide the playback stats overlay.":
     "Tampilkan atau sembunyikan overlay statistik pemutaran.",
@@ -318,18 +318,18 @@ const catalog: Record<string, string> = {
     "Tampilkan apa yang sebenarnya sedang Anda tonton, di bawah judul dalam pemutar.",
   "Show while browsing": "Tampilkan saat menjelajah",
   "Show while paused": "Tampilkan saat dijeda",
-  "Show your AniList lists as rails on the Anime page, keep your watch progress in sync as you finish episodes, and use your AniList avatar as your Harbor photo. Free at anilist.co.":
-    "Tampilkan daftar AniList Anda sebagai baris horizontal di halaman Anime, terus sinkronkan progres tontonan Anda saat menyelesaikan episode, dan gunakan avatar AniList sebagai foto Harbor Anda. Gratis di anilist.co.",
-  "Show your AniList profile picture as your Harbor avatar.":
-    "Tampilkan foto profil AniList Anda sebagai avatar Harbor.",
-  "Show your Harbor profile picture on the community":
-    "Tampilkan foto profil Harbor Anda di komunitas",
+  "Show your AniList lists as rails on the Anime page, keep your watch progress in sync as you finish episodes, and use your AniList avatar as your Frame photo. Free at anilist.co.":
+    "Tampilkan daftar AniList Anda sebagai baris horizontal di halaman Anime, terus sinkronkan progres tontonan Anda saat menyelesaikan episode, dan gunakan avatar AniList sebagai foto Frame Anda. Gratis di anilist.co.",
+  "Show your AniList profile picture as your Frame avatar.":
+    "Tampilkan foto profil AniList Anda sebagai avatar Frame.",
+  "Show your Frame profile picture on the community":
+    "Tampilkan foto profil Frame Anda di komunitas",
   "Show your Letterboxd card": "Tampilkan kartu Letterboxd Anda",
   "Show your Simkl card": "Tampilkan kartu Simkl Anda",
   "Show your favourite games, books and music on your profile":
     "Tampilkan game, buku, dan musik favorit Anda di profil",
-  "Show your operating system's own title bar with its minimize, maximize, and close buttons. They stay reachable everywhere, including while a video is playing. Turn this off to use Harbor's built-in window buttons.":
-    "Tampilkan bilah judul bawaan sistem operasi Anda beserta tombol perkecil, perbesar, dan tutup. Tombol tersebut tetap dapat diakses di mana saja, termasuk saat video diputar. Nonaktifkan ini untuk menggunakan tombol jendela bawaan Harbor.",
+  "Show your operating system's own title bar with its minimize, maximize, and close buttons. They stay reachable everywhere, including while a video is playing. Turn this off to use Frame's built-in window buttons.":
+    "Tampilkan bilah judul bawaan sistem operasi Anda beserta tombol perkecil, perbesar, dan tutup. Tombol tersebut tetap dapat diakses di mana saja, termasuk saat video diputar. Nonaktifkan ini untuk menggunakan tombol jendela bawaan Frame.",
   "Show {count} more": "Tampilkan {count} lainnya",
   "Show {count} replies": "Tampilkan {count} balasan",
   "Show {label}": "Tampilkan {label}",
@@ -401,11 +401,11 @@ const catalog: Record<string, string> = {
   "Sign in from the sidebar after saving. Library and addons stay separate.":
     "Masuk dari bilah samping setelah menyimpan. Perpustakaan dan addon tetap terpisah.",
   "Sign in to": "Masuk ke",
-  "Sign in to Harbor": "Masuk ke Harbor",
-  "Sign in to Harbor to check availability.": "Masuk ke Harbor untuk memeriksa ketersediaan.",
+  "Sign in to Frame": "Masuk ke Frame",
+  "Sign in to Frame to check availability.": "Masuk ke Frame untuk memeriksa ketersediaan.",
   "Sign in to Stremio": "Masuk ke Stremio",
-  "Sign in to Stremio first so Harbor knows which watchlist to sync.":
-    "Masuk ke Stremio terlebih dahulu agar Harbor tahu daftar tontonan mana yang akan disinkronkan.",
+  "Sign in to Stremio first so Frame knows which watchlist to sync.":
+    "Masuk ke Stremio terlebih dahulu agar Frame tahu daftar tontonan mana yang akan disinkronkan.",
   "Sign in to Stremio first.": "Masuk ke Stremio terlebih dahulu.",
   "Sign in to Stremio first. The repair scans only the active profile's library.":
     "Masuk ke Stremio terlebih dahulu. Perbaikan hanya memindai perpustakaan profil yang aktif.",
@@ -427,8 +427,8 @@ const catalog: Record<string, string> = {
   "Sign in to filter by your library": "Masuk untuk memfilter berdasarkan perpustakaan Anda",
   "Sign in to get a shareable link.": "Masuk untuk mendapatkan tautan yang dapat dibagikan.",
   "Sign in to leave a comment": "Masuk untuk meninggalkan komentar",
-  "Sign in to mirror your Continue Watching, watchlist, and any addons you've already curated. Optional; Harbor works fully signed-out.":
-    "Masuk untuk mencerminkan Lanjutkan Menonton, daftar tontonan, dan addon yang telah Anda kurasi. Opsional; Harbor tetap berfungsi penuh tanpa masuk.",
+  "Sign in to mirror your Continue Watching, watchlist, and any addons you've already curated. Optional; Frame works fully signed-out.":
+    "Masuk untuk mencerminkan Lanjutkan Menonton, daftar tontonan, dan addon yang telah Anda kurasi. Opsional; Frame tetap berfungsi penuh tanpa masuk.",
   "Sign in to pick up where you left off.":
     "Masuk untuk melanjutkan dari bagian terakhir yang Anda tonton.",
   "Sign in to rate": "Masuk untuk memberi rating",
@@ -438,8 +438,8 @@ const catalog: Record<string, string> = {
   "Sign in to sync your library, watch progress, and addons.":
     "Masuk untuk menyinkronkan perpustakaan, progres menonton, dan addon Anda.",
   "Sign in to upload a custom image.": "Masuk untuk mengunggah gambar khusus.",
-  "Sign in to your Harbor account first. Imported ratings are saved to your profile.":
-    "Masuk ke akun Harbor Anda terlebih dahulu. Rating yang diimpor disimpan ke profil Anda.",
+  "Sign in to your Frame account first. Imported ratings are saved to your profile.":
+    "Masuk ke akun Frame Anda terlebih dahulu. Rating yang diimpor disimpan ke profil Anda.",
   "Sign in with": "Masuk dengan",
   "Sign in with Discord": "Masuk dengan Discord",
   "Sign in with Stremio": "Masuk dengan Stremio",
@@ -448,15 +448,15 @@ const catalog: Record<string, string> = {
   "Sign in with email": "Masuk dengan email",
   "Sign in, or make an account": "Masuk, atau buat akun",
   "Sign out": "Keluar",
-  "Sign out of Harbor account": "Keluar dari akun Harbor",
+  "Sign out of Frame account": "Keluar dari akun Frame",
   "Sign-in failed": "Gagal masuk",
   "Sign-in failed.": "Gagal masuk.",
   "Signed in as {name}": "Masuk sebagai {name}",
   "Signed in as {username}": "Masuk sebagai {username}",
-  "Signed in to your Harbor account": "Berhasil masuk ke akun Harbor Anda",
+  "Signed in to your Frame account": "Berhasil masuk ke akun Frame Anda",
   "Signed in. Your library is on the TV.": "Berhasil masuk. Perpustakaan Anda kini ada di TV.",
-  "Signing in to your Harbor account. Your profiles will appear in a moment.":
-    "Sedang masuk ke akun Harbor Anda. Profil Anda akan segera muncul.",
+  "Signing in to your Frame account. Your profiles will appear in a moment.":
+    "Sedang masuk ke akun Frame Anda. Profil Anda akan segera muncul.",
   "Signing in...": "Sedang masuk...",
   "Signing in…": "Sedang masuk…",
   "Signing the TV in to Stremio, Trakt, AniList and the metadata keys. Scan the code with your phone from the TV itself.":
@@ -511,8 +511,8 @@ const catalog: Record<string, string> = {
     "Lewati Siapa yang menonton dan selalu mulai sebagai profil ini. Profil yang dikunci dengan PIN tidak dapat dijadikan default.",
   "Skip ad": "Lewati iklan",
   "Skip for now": "Lewati untuk saat ini",
-  "Skip if you'd rather just use Cinemeta. Harbor still works, you'll just see fewer rails.":
-    "Lewati jika Anda lebih suka hanya menggunakan Cinemeta. Harbor tetap berfungsi, tetapi Anda hanya akan melihat lebih sedikit rel.",
+  "Skip if you'd rather just use Cinemeta. Frame still works, you'll just see fewer rails.":
+    "Lewati jika Anda lebih suka hanya menggunakan Cinemeta. Frame tetap berfungsi, tetapi Anda hanya akan melihat lebih sedikit rel.",
   "Skip injected ad": "Lewati iklan yang disisipkan",
   "Skip injected ad?": "Lewati iklan yang disisipkan?",
   "Skip injected ads automatically": "Lewati iklan yang disisipkan secara otomatis",
@@ -520,18 +520,18 @@ const catalog: Record<string, string> = {
   "Skip intros & credits": "Lewati intro & kredit",
   "Skip intros and credits": "Lewati intro dan kredit",
   "Skip setup": "Lewati penyiapan",
-  "Skip the 'stream over peer-to-peer?' prompt and start uncached torrents immediately. Harbor remembers your choice after the first confirmation anyway.":
-    "Lewati pertanyaan 'stream lewat peer-to-peer?' dan langsung mulai torrent yang belum di-cache. Harbor tetap mengingat pilihan Anda setelah konfirmasi pertama.",
+  "Skip the 'stream over peer-to-peer?' prompt and start uncached torrents immediately. Frame remembers your choice after the first confirmation anyway.":
+    "Lewati pertanyaan 'stream lewat peer-to-peer?' dan langsung mulai torrent yang belum di-cache. Frame tetap mengingat pilihan Anda setelah konfirmasi pertama.",
   "Skip the launch": "Lewati peluncuran",
   "Skip these tracks": "Lewati trek ini",
-  "Skip this and Harbor runs on Cinemeta. You just see fewer rows.":
-    "Lewati ini dan Harbor akan berjalan dengan Cinemeta. Anda hanya akan melihat lebih sedikit baris.",
-  "Skip this and Harbor still works. Your library just stays local.":
-    "Lewati ini dan Harbor tetap berfungsi. Perpustakaan Anda hanya akan tetap lokal.",
+  "Skip this and Frame runs on Cinemeta. You just see fewer rows.":
+    "Lewati ini dan Frame akan berjalan dengan Cinemeta. Anda hanya akan melihat lebih sedikit baris.",
+  "Skip this and Frame still works. Your library just stays local.":
+    "Lewati ini dan Frame tetap berfungsi. Perpustakaan Anda hanya akan tetap lokal.",
   "Skip to the next episode if available.": "Lewati ke episode berikutnya jika tersedia.",
   "Skip to the previous episode if available.": "Lewati ke episode sebelumnya jika tersedia.",
   "Skip, I can do this later": "Lewati, saya bisa melakukannya nanti",
-  "Skip, let Harbor choose": "Lewati, biarkan Harbor memilih",
+  "Skip, let Frame choose": "Lewati, biarkan Frame memilih",
   "Skipped, not rated or not supported": "Dilewati, belum dinilai, atau tidak didukung",
   "Sleep at end": "Tidur di akhir",
   "Sleep at end of episode": "Tidur di akhir episode",
@@ -571,8 +571,8 @@ const catalog: Record<string, string> = {
   "Smart resync with speech recognition": "Sinkronisasi ulang cerdas dengan pengenalan ucapan",
   "Smooth motion": "Gerakan mulus",
   "Smooth motion (interpolation) & SVP": "Gerakan mulus (interpolasi) & SVP",
-  "Smooth motion runs on the bundled mpv engine in the Harbor desktop app. It has no effect in the browser.":
-    "Gerakan mulus berjalan di mesin mpv bawaan dalam aplikasi desktop Harbor. Fitur ini tidak berpengaruh di browser.",
+  "Smooth motion runs on the bundled mpv engine in the Frame desktop app. It has no effect in the browser.":
+    "Gerakan mulus berjalan di mesin mpv bawaan dalam aplikasi desktop Frame. Fitur ini tidak berpengaruh di browser.",
   "Smooth on weak PCs": "Mulus di PC berspesifikasi rendah",
   "Smooth scrolling": "Pengguliran mulus",
   "Smoothing off": "Penghalusan nonaktif",
@@ -607,8 +607,8 @@ const catalog: Record<string, string> = {
   "Something unexpected went wrong. Nothing may have been written. Retry to re-check.":
     "Terjadi masalah tak terduga. Mungkin tidak ada yang tersimpan. Coba lagi untuk memeriksa ulang.",
   "Something went wrong on the way there.": "Terjadi masalah dalam perjalanan ke sana.",
-  "Something went wrong reaching Harbor. Check your connection and try again.":
-    "Terjadi masalah saat menghubungi Harbor. Periksa koneksi Anda dan coba lagi.",
+  "Something went wrong reaching Frame. Check your connection and try again.":
+    "Terjadi masalah saat menghubungi Frame. Periksa koneksi Anda dan coba lagi.",
   "Something went wrong reaching the ranking feed.":
     "Terjadi masalah saat menghubungi feed peringkat.",
   "Something went wrong.": "Terjadi masalah.",
@@ -620,8 +620,8 @@ const catalog: Record<string, string> = {
   Soon: "Segera",
   "Sorry this one is not better. Tell us what went wrong and we will fix it for you.":
     "Maaf hasilnya belum lebih baik. Beri tahu kami apa yang salah dan kami akan memperbaikinya untuk Anda.",
-  "Sorry, Harbor crashed the last time it was running. You can review the details and choose whether to send a report.":
-    "Maaf, Harbor mengalami crash saat terakhir dijalankan. Anda dapat meninjau detailnya dan memilih apakah akan mengirim laporan.",
+  "Sorry, Frame crashed the last time it was running. You can review the details and choose whether to send a report.":
+    "Maaf, Frame mengalami crash saat terakhir dijalankan. Anda dapat meninjau detailnya dan memilih apakah akan mengirim laporan.",
   Sort: "Urutkan",
   "Sort by": "Urutkan berdasarkan",
   "Sort by source": "Urutkan berdasarkan sumber",
@@ -652,8 +652,8 @@ const catalog: Record<string, string> = {
     "Sumber: {code}. Sekitar 200 baris JavaScript, tanpa dependensi. Baca sebelum menerapkannya jika Anda ingin tahu apa yang dijalankan.",
   Sources: "Sumber",
   "Sources & library": "Sumber & perpustakaan",
-  "Sources Harbor flagged as broken. Clear to give them another chance.":
-    "Sumber yang ditandai Harbor sebagai rusak. Bersihkan agar sumber tersebut dapat dicoba lagi.",
+  "Sources Frame flagged as broken. Clear to give them another chance.":
+    "Sumber yang ditandai Frame sebagai rusak. Bersihkan agar sumber tersebut dapat dicoba lagi.",
   "Sources are not cached for this title. Open the picker page to refresh.":
     "Sumber belum di-cache untuk judul ini. Buka halaman pemilih untuk memperbarui.",
   "Sources by addon": "Sumber berdasarkan addon",
@@ -816,8 +816,8 @@ const catalog: Record<string, string> = {
   "Stop drawing": "Berhenti menggambar",
   "Stop feeding the hero carousel (back to automatic)":
     "Berhenti memasukkan ke karusel utama (kembali otomatis)",
-  "Stop playback when you minimize Harbor or send it to the tray.":
-    "Hentikan pemutaran saat Anda meminimalkan Harbor atau mengirimkannya ke baki sistem.",
+  "Stop playback when you minimize Frame or send it to the tray.":
+    "Hentikan pemutaran saat Anda meminimalkan Frame atau mengirimkannya ke baki sistem.",
   "Stop playback whenever another window takes focus.":
     "Hentikan pemutaran setiap kali jendela lain mendapat fokus.",
   "Stop recording": "Hentikan perekaman",
@@ -834,8 +834,8 @@ const catalog: Record<string, string> = {
   "Stops the TV playing to an empty room all night.":
     "Mencegah TV terus memutar di ruangan kosong sepanjang malam.",
   Storage: "Penyimpanan",
-  "Storage is full. Clear Harbor cache storage, then try saving again.":
-    "Penyimpanan penuh. Bersihkan penyimpanan cache Harbor, lalu coba simpan lagi.",
+  "Storage is full. Clear Frame cache storage, then try saving again.":
+    "Penyimpanan penuh. Bersihkan penyimpanan cache Frame, lalu coba simpan lagi.",
   "Storage location": "Lokasi penyimpanan",
   "Storage overview": "Ringkasan penyimpanan",
   "Store each title in its own folder with its EPUB or PDF":
@@ -871,10 +871,10 @@ const catalog: Record<string, string> = {
     "Stream akan mulai diputar dalam beberapa detik.",
   "Stream switcher": "Pengalih stream",
   "Stream this via peer-to-peer?": "Stream ini melalui peer-to-peer?",
-  "Stream torrents straight from Harbor's built-in engine when you have no debrid set up, or a torrent isn't cached. This connects to peers over your own connection. Turn off to only ever play debrid and direct links.":
-    "Stream torrent langsung dari mesin bawaan Harbor saat debrid belum disiapkan atau torrent tidak tersedia di cache. Ini terhubung ke peer melalui koneksi Anda sendiri. Nonaktifkan agar hanya memutar tautan debrid dan langsung.",
-  "Stream torrents through Harbor's own Rust peer-to-peer engine instead of the bundled Stremio Server. Falls back automatically if it can't connect. Status and a self-test live in the Local engine card below.":
-    "Stream torrent melalui mesin peer-to-peer Rust milik Harbor, bukan Stremio Server bawaan. Otomatis beralih jika tidak dapat terhubung. Status dan uji mandiri tersedia di kartu Mesin lokal di bawah.",
+  "Stream torrents straight from Frame's built-in engine when you have no debrid set up, or a torrent isn't cached. This connects to peers over your own connection. Turn off to only ever play debrid and direct links.":
+    "Stream torrent langsung dari mesin bawaan Frame saat debrid belum disiapkan atau torrent tidak tersedia di cache. Ini terhubung ke peer melalui koneksi Anda sendiri. Nonaktifkan agar hanya memutar tautan debrid dan langsung.",
+  "Stream torrents through Frame's own Rust peer-to-peer engine instead of the bundled Stremio Server. Falls back automatically if it can't connect. Status and a self-test live in the Local engine card below.":
+    "Stream torrent melalui mesin peer-to-peer Rust milik Frame, bukan Stremio Server bawaan. Otomatis beralih jika tidak dapat terhubung. Status dan uji mandiri tersedia di kartu Mesin lokal di bawah.",
   "Streamer release rule": "Aturan rilis streamer",
   Streamers: "Streamer",
   Streaming: "Streaming",
@@ -896,11 +896,11 @@ const catalog: Record<string, string> = {
     "Stream di atas {cap} Mbps akan mendapat peringkat lebih rendah, meski tersedia di cache.",
   Stremio: "Stremio",
   "Stremio ID": "ID Stremio",
-  "Stremio Supporters get a special badge on their Harbor profile.":
-    "Pendukung Stremio mendapatkan lencana khusus di profil Harbor mereka.",
+  "Stremio Supporters get a special badge on their Frame profile.":
+    "Pendukung Stremio mendapatkan lencana khusus di profil Frame mereka.",
   "Stremio account": "Akun Stremio",
   "Stremio account (email / sign out)": "Akun Stremio (email / keluar)",
-  "Stremio addon, packaged into Harbor's catalog.": "Addon Stremio, dikemas dalam katalog Harbor.",
+  "Stremio addon, packaged into Frame's catalog.": "Addon Stremio, dikemas dalam katalog Frame.",
   "Stremio cards": "Kartu Stremio",
   "Stremio did not accept that email and password.":
     "Stremio tidak menerima email dan kata sandi tersebut.",

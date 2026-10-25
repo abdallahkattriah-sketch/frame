@@ -22,12 +22,12 @@ export default {
     "Could not check for saves. Try refreshing or choose a save file.",
   "games.pokemon.noDetectedSaves":
     "No save found yet. Save inside the game first, or choose a save file from your emulator.",
-  "games.pokemon.saveOrigin.harbor": "Saved in Harbor",
+  "games.pokemon.saveOrigin.harbor": "Saved in Frame",
   "games.pokemon.saveOrigin.adjacent": "Alongside your ROM",
   "games.pokemon.error.pokemon_hack_export":
     "Bank export for this ROM hack is not ready: its extra Pokémon data cannot yet be preserved. You can still inspect and edit this save.",
   "games.pokemon.error.pokemon_save_running":
-    "Close this game in Harbor before saving your edits. Your preview is still here.",
+    "Close this game in Frame before saving your edits. Your preview is still here.",
   "games.pokemon.title": "Your Pokémon adventure",
   "games.pokemon.intro": "Find your next route. Build your team. Keep your Pokémon with you.",
   "games.pokemon.browse": "Explore this Pokémon game",
@@ -92,7 +92,7 @@ export default {
     "Open a save, work with your team and preview every change before saving.",
   "games.pokemon.openSave": "Open game save",
   "games.pokemon.importPokemon": "Import Pokémon file",
-  "games.pokemon.engineMissing": "The Pokémon engine is not installed in this Harbor build yet.",
+  "games.pokemon.engineMissing": "The Pokémon engine is not installed in this Frame build yet.",
   "games.pokemon.bankError": "That action could not be completed.",
   "games.pokemon.bankBrowse": "Browse your Pokémon",
   "games.pokemon.gameSave": "Game save",
@@ -152,7 +152,7 @@ export default {
   "games.pokemon.error.pokemon_read": "The selected file could not be read.",
   "games.pokemon.error.pokemon_file": "Choose a supported save or Pokémon file.",
   "games.pokemon.error.pokemon_save_changed":
-    "The game save changed outside Harbor. Reopen it before continuing.",
+    "The game save changed outside Frame. Reopen it before continuing.",
   "games.pokemon.error.pokemon_review_changed":
     "This review is out of date. Preview the changes again.",
   "games.pokemon.error.pokemon_write":

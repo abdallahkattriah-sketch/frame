@@ -3,11 +3,11 @@ const plugins: Record<string, string> = {
   Repositories: "Repositórios",
   "Installed plugins": "Plugins instalados",
   "Plugin repositories": "Repositórios de plugins",
-  "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.":
-    "Os plugins funcionam no app para desktop. Abra o Harbor no seu computador para adicioná-los e gerenciá-los.",
+  "Plugins run in the desktop app. Open Frame on your computer to add and manage them.":
+    "Os plugins funcionam no app para desktop. Abra o Frame no seu computador para adicioná-los e gerenciá-los.",
   "Use plugins": "Usar plugins",
-  "Plugins are small scripts that look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "Plugins são pequenos scripts que procuram streams em sites que o Harbor não conhece. Tudo aqui foi instalado por você, a partir de repositórios que você escolheu.",
+  "Plugins are small scripts that look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "Plugins são pequenos scripts que procuram streams em sites que o Frame não conhece. Tudo aqui foi instalado por você, a partir de repositórios que você escolheu.",
   "Ask every enabled plugin for streams when you press Play. Turn this off to pause them all without removing anything.":
     "Pede streams a cada plugin ativado quando você aperta Reproduzir. Desative para pausar todos sem remover nada.",
   "Group by repository": "Agrupar por repositório",
@@ -38,7 +38,7 @@ const plugins: Record<string, string> = {
     "Pausado após {n} falhas. Ative de novo para tentar outra vez.",
   "Paused after {n} failures. Turn it back on to try again.#one":
     "Pausado após {n} falha. Ative de novo para tentar outra vez.",
-  "Needs Harbor {version} or newer.": "Precisa do Harbor {version} ou mais recente.",
+  "Needs Frame {version} or newer.": "Precisa do Frame {version} ou mais recente.",
   "This file is not a stream plugin.": "Este arquivo não é um plugin de streams.",
   "Turned off by its repository.": "Desativado pelo seu repositório.",
   "Plugin files changed on disk. Reinstall it from its repository.":
@@ -85,15 +85,15 @@ const plugins: Record<string, string> = {
   "Removed {name}.": "{name} removido.",
   "Updated {name} to v{version}.": "{name} atualizado para v{version}.",
   "Reverted {name} to v{version}.": "{name} revertido para v{version}.",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
-    "Cole o link do manifesto de um repositório em que você confia. O Harbor lê seus próprios repositórios de plugins e repositórios de scripts de provedor como eles são, e não instala nada até você decidir.",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
+    "Cole o link do manifesto de um repositório em que você confia. O Frame lê seus próprios repositórios de plugins e repositórios de scripts de provedor como eles são, e não instala nada até você decidir.",
   "Repository link": "Link do repositório",
-  "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.":
-    "Qualquer link do GitHub funciona, raw ou não. O Harbor adiciona /manifest.json quando falta. Cole vários para adicionar todos.",
+  "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.":
+    "Qualquer link do GitHub funciona, raw ou não. O Frame adiciona /manifest.json quando falta. Cole vários para adicionar todos.",
   "Only https links are accepted.": "Só links https são aceitos.",
   "That link did not answer.": "Esse link não respondeu.",
-  "This does not look like a plugin repository. Harbor expects { name, plugins } or a provider-script manifest with scrapers.":
-    "Isto não parece um repositório de plugins. O Harbor espera { name, plugins } ou um manifesto de scripts de provedor com scrapers.",
+  "This does not look like a plugin repository. Frame expects { name, plugins } or a provider-script manifest with scrapers.":
+    "Isto não parece um repositório de plugins. O Frame espera { name, plugins } ou um manifesto de scripts de provedor com scrapers.",
   "This is a manga repository. Add it from the Manga page.":
     "Este é um repositório de mangá. Adicione-o pela página de Mangá.",
   "Already added.": "Já adicionado.",
@@ -122,8 +122,8 @@ const plugins: Record<string, string> = {
   "Checksum did not match the manifest.": "A soma de verificação não bate com o manifesto.",
   "Checking for updates": "Verificar atualizações",
   "Check repositories daily": "Verificar repositórios diariamente",
-  "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.":
-    "Uma vez por dia, procura versões mais novas e mostra aqui um botão Atualizar. O Harbor nunca instala uma atualização sozinho.",
+  "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.":
+    "Uma vez por dia, procura versões mais novas e mostra aqui um botão Atualizar. O Frame nunca instala uma atualização sozinho.",
   "Settings this plugin asked for. Stored on this computer only.":
     "Configurações que este plugin pediu. Guardadas só neste computador.",
   "This plugin's settings form failed to load: {error}":
@@ -131,8 +131,8 @@ const plugins: Record<string, string> = {
   "{n} of {m} answered, {k} failed": "{n} de {m} responderam, {k} falharam",
   "Install all": "Instalar tudo",
   "Installing {done} of {total}": "Instalando {done} de {total}",
-  "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.":
-    "Pequenos scripts que encontram streams, mangás e livros em sites que o Harbor não conhece, instalados de repositórios que você escolhe.",
+  "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.":
+    "Pequenos scripts que encontram streams, mangás e livros em sites que o Frame não conhece, instalados de repositórios que você escolhe.",
   "Remove all": "Remover tudo",
 };
 

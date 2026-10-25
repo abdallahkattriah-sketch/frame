@@ -84,7 +84,7 @@ export default {
   "games.league.patchDifference":
     "Statistiche della build: {patch}; dati di oggetti e abilità: {assets}.",
   "games.league.attribution":
-    "Harbor is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "Frame is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
   "games.league.tierList": "Classifica",
   "games.league.tierScope": "Classificata solo/duo · Smeraldo+ · Globale",
   "games.league.patchFilter": "Scegli patch",

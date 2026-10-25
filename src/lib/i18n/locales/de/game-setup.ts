@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "Harbor wurde während der Installation neu gestartet. Prüfe zum Abschluss die installierten Spieldateien.",
+    "Frame wurde während der Installation neu gestartet. Prüfe zum Abschluss die installierten Spieldateien.",
   "games.setup.state.starting": "Installer wird gestartet",
   "games.setup.state.waiting": "Warten auf den Installer",
   "games.setup.startingNote": "Installer wird geöffnet…",
@@ -39,7 +39,7 @@ export default {
   "games.setup.viewProgress": "Installation anzeigen",
   "games.setup.showInstaller": "Installationsfenster anzeigen",
   "games.setup.setup_window":
-    "Das Installationsfenster ist nicht verfügbar. Harbor verfolgt die Installation weiter.",
+    "Das Installationsfenster ist nicht verfügbar. Frame verfolgt die Installation weiter.",
   "games.setup.elapsed": "Vergangen",
   "games.setup.io": "Installer-E/A",
   "games.setup.ioNote":
@@ -75,7 +75,7 @@ export default {
   "games.setup.state.running": "Installation läuft",
   "games.setup.state.finished": "Installationsprogramm geschlossen — wähle deine Spieldatei",
   "games.setup.state.failed": "Die Installation wurde nicht erfolgreich abgeschlossen",
-  "games.setup.state.interrupted": "Installation prüfen — Harbor wurde währenddessen geschlossen",
+  "games.setup.state.interrupted": "Installation prüfen — Frame wurde währenddessen geschlossen",
   "games.setup.state.external": "Installationsprogramm in einem anderen Fenster geöffnet",
   "games.setup.exitCode": "Exitcode: {code}",
   "games.setup.unavailable":
@@ -108,9 +108,9 @@ export default {
   "games.setup.destination": "Installieren in",
   "games.setup.chooseDestination": "Installationsordner wählen",
   "games.setup.managedNote":
-    "Harbor installiert das Spiel hier, findet die Spieldatei und fügt sie deiner Bibliothek hinzu.",
+    "Frame installiert das Spiel hier, findet die Spieldatei und fügt sie deiner Bibliothek hinzu.",
   "games.setup.managedRunning":
-    "Dein Spiel wird installiert. Du kannst dieses Fenster schließen; Harbor verfolgt den Fortschritt weiter.",
+    "Dein Spiel wird installiert. Du kannst dieses Fenster schließen; Frame verfolgt den Fortschritt weiter.",
   "games.setup.detected": "Spieldatei automatisch gefunden",
   "games.setup.chooseDetected": "Wähle die Spieldatei aus, die du hinzufügen möchtest.",
   "games.setup.activity": "{size} in {count} Dateien",
@@ -126,7 +126,7 @@ export default {
   "games.setup.setup_engine":
     "Dieses Installationsprogramm benötigt ein eigenes Fenster. Wähle „Installer starten“, um fortzufahren.",
   "games.setup.setup_candidates":
-    "Die Installation ist beendet, aber Harbor konnte die installierten Dateien nicht lesen. Durchsuche den Installationsordner erneut.",
+    "Die Installation ist beendet, aber Frame konnte die installierten Dateien nicht lesen. Durchsuche den Installationsordner erneut.",
   "games.setup.state.installing": "Wird installiert",
   "games.setup.externalAction": "Installer starten",
   "games.setup.files": "Heruntergeladene Dateien",

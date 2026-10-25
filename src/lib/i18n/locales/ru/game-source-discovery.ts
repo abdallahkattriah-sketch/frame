@@ -14,7 +14,7 @@ export default {
   "games.sources.batch.failedFile": "Не удалось подготовить {file}.",
 
   "games.sources.batch.restart":
-    "Перезапустите Harbor после обновления, чтобы скачивать выбранные файлы вместе.",
+    "Перезапустите Frame после обновления, чтобы скачивать выбранные файлы вместе.",
 
   "games.torrent.start": "Скачать файлы",
 
@@ -23,7 +23,7 @@ export default {
   "games.sources.verification.action": "Проверить источник",
 
   "games.sources.verification.waiting":
-    "Завершите проверку в окне источника. Затем Harbor проверит его каталог.",
+    "Завершите проверку в окне источника. Затем Frame проверит его каталог.",
 
   "games.sources.source_verify_busy":
     "Уже проверяется другой источник. Сначала завершите проверку или закройте его окно.",
@@ -35,38 +35,38 @@ export default {
     "Время проверки истекло. Повторите попытку, когда будете готовы.",
 
   "games.sources.source_verify_unavailable":
-    "Обновите и перезапустите Harbor, чтобы проверить этот источник.",
+    "Обновите и перезапустите Frame, чтобы проверить этот источник.",
 
   "games.sources.browser.direct": "Прямая загрузка",
 
   "games.sources.site.title": "Открыть сайт",
   "games.sources.site.note":
-    "Вставьте страницу загрузки с любого сайта. Harbor откроет её в отдельном окне, вы выберете там файл, и он загрузится в Harbor.",
+    "Вставьте страницу загрузки с любого сайта. Frame откроет её в отдельном окне, вы выберете там файл, и он загрузится в Frame.",
   "games.sources.site.url": "Ссылка на страницу",
   "games.sources.site.open": "Открыть сайт",
   "games.sources.site.invalid": "Нужна публичная https-ссылка.",
   "games.sources.browser.intro":
-    "Аккаунт debrid не нужен. Выберите файл на {host}, затем укажите папку сохранения в Harbor.",
+    "Аккаунт debrid не нужен. Выберите файл на {host}, затем укажите папку сохранения в Frame.",
   "games.sources.browser.fallback":
-    "Если загрузка не началась сама, воспользуйтесь запасной ссылкой, которую {host} показывает на странице. Harbor всё равно подхватит файл.",
+    "Если загрузка не началась сама, воспользуйтесь запасной ссылкой, которую {host} показывает на странице. Frame всё равно подхватит файл.",
 
   "games.sources.browser.choose": "Выбрать файл на {host}",
 
   "games.sources.browser.waiting":
-    "Выберите файл в окне {host}. Harbor спросит, куда его сохранить.",
+    "Выберите файл в окне {host}. Frame спросит, куда его сохранить.",
 
-  "games.sources.browser.selected": "Готово к загрузке в Harbor",
+  "games.sources.browser.selected": "Готово к загрузке в Frame",
 
   "games.sources.browser.another": "Выбрать другой файл",
 
   "games.sources.browser.failed":
-    "{host} не удалось передать файл в Harbor. Повторите попытку или откройте его на {host}.",
+    "{host} не удалось передать файл в Frame. Повторите попытку или откройте его на {host}.",
 
   "games.sources.browser.timeout":
     "Время выбора файла истекло. Снова откройте {host}, чтобы выбрать файл.",
 
   "games.sources.browser.restart":
-    "Перезапустите Harbor после обновления, чтобы загружать напрямую с {host}.",
+    "Перезапустите Frame после обновления, чтобы загружать напрямую с {host}.",
 
   "games.sources.retrySavedCatalog": "Повторить чтение сохранённого каталога",
 
@@ -121,7 +121,7 @@ export default {
   "games.sources.platform.other": "Версия {platform} · не нативная для {host}",
 
   "games.sources.platform.otherNote":
-    "Выберите версию для вашей ОС. Harbor не может установить или запустить этот пакет на данном устройстве без средств совместимости.",
+    "Выберите версию для вашей ОС. Frame не может установить или запустить этот пакет на данном устройстве без средств совместимости.",
 
   "games.sources.platform.unknown": "Платформа не указана",
 
@@ -129,7 +129,7 @@ export default {
     "Источник не указал ОС пакета. Перед загрузкой проверьте информацию издателя.",
 
   "games.sources.platform.browseNote":
-    "Используйте Harbor для компьютера, чтобы загружать файлы локальных игр и управлять ими.",
+    "Используйте Frame для компьютера, чтобы загружать файлы локальных игр и управлять ими.",
 
   "games.sources.platform.browse": "Версия для {platform}",
 
@@ -139,9 +139,9 @@ export default {
 
   "games.sources.art.torrent": "Загрузка торрента",
 
-  "games.sources.art.engine": "Торрент-движок Harbor",
+  "games.sources.art.engine": "Торрент-движок Frame",
 
-  "games.sources.art.reviewTorrent": "Скачать в Harbor",
+  "games.sources.art.reviewTorrent": "Скачать в Frame",
 
   "games.sources.ad.note": "Подготовьте файл через AllDebrid, затем выберите место сохранения.",
 
@@ -194,7 +194,7 @@ export default {
 
   "games.sources.discovery.change": "Изменить ссылку",
 
-  "games.sources.discovery.harbor": "Каталог Harbor",
+  "games.sources.discovery.harbor": "Каталог Frame",
 
   "games.sources.discovery.community": "Каталог, совместимый с Hydra",
 
@@ -204,7 +204,7 @@ export default {
     "Сохраняются только записи каталога. Файлы скачиваются после вашего выбора.",
 
   "games.sources.source_no_catalog":
-    "На этом сайте нет ссылки на каталог, который может прочитать Harbor. Вставьте ссылку на его каталог JSON.",
+    "На этом сайте нет ссылки на каталог, который может прочитать Frame. Вставьте ссылку на его каталог JSON.",
 
   "games.sources.source_url":
     "Введите адрес сайта, HTTP(S)-ссылку на каталог или ссылку установки Hydra.",
@@ -263,7 +263,7 @@ export default {
   "games.sources.links.account":
     "Сервис отклонил подключение. Проверьте ключ в настройках источников.",
 
-  "games.sources.links.rate": "Сервис попросил Harbor подождать. Повторите попытку чуть позже.",
+  "games.sources.links.rate": "Сервис попросил Frame подождать. Повторите попытку чуть позже.",
 
   "games.sources.links.limit": "Сервис вернул слишком много файлов для одновременного просмотра.",
 
@@ -277,7 +277,7 @@ export default {
 
   "games.sources.links.destination": "Выбрать место сохранения",
 
-  "games.sources.links.desktop": "Откройте Harbor на компьютере, чтобы загрузить файлы.",
+  "games.sources.links.desktop": "Откройте Frame на компьютере, чтобы загрузить файлы.",
 
   "games.sources.web.web": "Веб-загрузки",
 
@@ -307,7 +307,7 @@ export default {
   "games.sources.web.again": "Создать ещё одно задание",
 
   "games.sources.web.storage":
-    "Harbor не смог сохранить задание. Оно не будет отправлено повторно автоматически.",
+    "Frame не смог сохранить задание. Оно не будет отправлено повторно автоматически.",
 
   "games.sources.web.preparing": "Подготовка в TorBox",
 
@@ -398,7 +398,7 @@ export default {
   "games.sources.pm.select": "Использовать эту передачу",
 
   "games.sources.pm.review":
-    "Выберите отправленную передачу. Harbor не может автоматически определить её источник.",
+    "Выберите отправленную передачу. Frame не может автоматически определить её источник.",
 
   "games.sources.pm.retry": "Повторить передачу",
 

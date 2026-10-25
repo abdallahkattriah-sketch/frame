@@ -17,8 +17,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "成人向けアドオンの利用状況がDiscordに表示されることはありません。",
   "Ad skipping": "広告のスキップ",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "TMDBを追加すると、カタログやアートワークが増えます。他のプロバイダーでは下記の機能を追加できます。キーを追加しなくても、CinemetaでHarborを利用できます。",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "TMDBを追加すると、カタログやアートワークが増えます。他のプロバイダーでは下記の機能を追加できます。キーを追加しなくても、CinemetaでFrameを利用できます。",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "ダウンロードの横にタイマーを追加します。指定時間またはエピソード数の後に再生を一時停止します。",
   "Add an API key to use this source.": "このソースを使うにはAPIキーを追加してください。",
@@ -74,14 +74,14 @@ const settingsRefinements: Record<string, string> = {
     "画質とパフォーマンスのバランスを調整します。変更は次に再生する動画に適用されます。",
   "Between episodes": "エピソードの合間",
   "Between episodes on the TV": "テレビでのエピソードの合間",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "アニメのリストをHarborに取り込み、視聴に合わせて話数を更新します。これまでの進捗は保持されます。",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "アニメのリストをFrameに取り込み、視聴に合わせて話数を更新します。これまでの進捗は保持されます。",
   "Bringing your Stremio library?": "Stremioのライブラリを取り込みますか？",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "ONE PIECEなどの対応作品をストーリー編ごとに閲覧できます。TMDBキーが必要です。",
   "Browse pages": "ページを表示",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "Harborでアニメのリストを閲覧し、視聴に合わせて進捗を更新します。接続するにはAniListにサインインしてください。",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "Frameでアニメのリストを閲覧し、視聴に合わせて進捗を更新します。接続するにはAniListにサインインしてください。",
   "Browser details": "ブラウザーの詳細",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "名前付きフィルターを作成し、ソース選択画面で適用すると、多数のストリームから希望するものだけに絞り込めます。",
@@ -104,8 +104,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "このデバイスから保存済みのサーバーアドレスに接続できるか確認します。",
   "Checking SVP installation…": "SVPのインストールを確認中…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "Harborのバックアップを選び、内容を確認してから復元します。Stremioのサインイン情報はこのデバイスに残ります。",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "Frameのバックアップを選び、内容を確認してから復元します。Stremioのサインイン情報はこのデバイスに残ります。",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "プリセットを選ぶか、各設定を調整してください。「画面をリセット」で元の値に戻せます。",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -127,14 +127,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "テレビで閲覧するときに表示するサービスを選んでください。",
   "Choose the streams you prefer.": "希望するストリームを選んでください。",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "Harborを閉じる、最小化する、別のアプリに切り替えるときの動作を選んでください。",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "Harborでプロフィールの選択を求めるタイミングを選びます。時間に基づく確認は、Harborに戻ったときに表示されます。",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "次のエピソードを開始するタイミングと、視聴を続けているかHarborが確認するタイミングを選びます。",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "Harborが字幕を検索する場所を選びます。有効なソースの結果をまとめ、重複を除いて表示します。",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "Frameを閉じる、最小化する、別のアプリに切り替えるときの動作を選んでください。",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "Frameでプロフィールの選択を求めるタイミングを選びます。時間に基づく確認は、Frameに戻ったときに表示されます。",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "次のエピソードを開始するタイミングと、視聴を続けているかFrameが確認するタイミングを選びます。",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "Frameが字幕を検索する場所を選びます。有効なソースの結果をまとめ、重複を除いて表示します。",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "動画と電子書籍の保存先、およびフォルダーの整理方法を選びます。",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -171,8 +171,8 @@ const settingsRefinements: Record<string, string> = {
     "MyAnimeList アカウントに接続して視聴状況を同期し、リストを閲覧します。",
   "Connect {service}": "{service}に接続",
   "Contact & credit": "連絡先とクレジット",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "Harbor の使用中に Discord のプロフィールに表示する内容を設定します。",
+  "Control what appears on your Discord profile while you use Frame.":
+    "Frame の使用中に Discord のプロフィールに表示する内容を設定します。",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "ディスプレイに合わせて明るい部分を抑える方法を設定します。各曲線を図で確認できます。",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -199,27 +199,27 @@ const settingsRefinements: Record<string, string> = {
     "{name}を保存できませんでした。書き込み可能なフォルダーを選んで再試行してください。",
   "Couldn't copy the address. Select it above and copy it manually.":
     "アドレスをコピーできませんでした。上のアドレスを選択して手動でコピーしてください。",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "Harborに接続できませんでした。接続を確認して、もう一度お試しください。",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "Frameに接続できませんでした。接続を確認して、もう一度お試しください。",
   "Covers everything. The taskbar is hidden.": "画面全体を覆い、タスクバーを非表示にします。",
   "Create a stream filter": "ストリームフィルターを作成",
-  "Create a theme or share one you've made with the Harbor community.":
-    "テーマを作成したり、自作のテーマをHarborコミュニティで共有したりできます。",
+  "Create a theme or share one you've made with the Frame community.":
+    "テーマを作成したり、自作のテーマをFrameコミュニティで共有したりできます。",
   "Create my account": "アカウントを作成",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "Harbor を使う人ごとにプロフィールを作成します。外観、設定、PIN を個別に設定できます。",
-  "Create your Harbor account": "Harbor アカウントを作成",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "Frame を使う人ごとにプロフィールを作成します。外観、設定、PIN を個別に設定できます。",
+  "Create your Frame account": "Frame アカウントを作成",
   "Create your first filter with the stream quality you prefer.":
     "好みのストリーム画質で最初のフィルターを作成します。",
   "Custom color": "カスタムカラー",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "独自の CSS、JavaScript、HTML で Harbor をカスタマイズします。入力すると変更が反映されます。",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "独自の CSS、JavaScript、HTML で Frame をカスタマイズします。入力すると変更が反映されます。",
   "Default Downloads folder": "既定のダウンロードフォルダー",
   "Delete this rule?": "このルールを削除しますか？",
   "Describe the problem in one sentence.": "問題を一文で説明してください。",
   "Describe the result you were after.": "期待していた結果を説明してください。",
-  "Describe what Harbor did instead, including any message on screen.":
-    "Harbor で実際に起きたことを、画面のメッセージも含めて説明してください。",
+  "Describe what Frame did instead, including any message on screen.":
+    "Frame で実際に起きたことを、画面のメッセージも含めて説明してください。",
   "Device compatibility": "デバイスの互換性",
   "Discovery languages": "作品探索の言語",
   "Down the river": "川を下って",
@@ -243,8 +243,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "この PIN を保存するには4桁すべて入力してください。",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "brightness=5 のように、1行に1つの mpv オプションを入力してください。他のページの動画設定より優先されます。不正なオプションは再生に影響する場合があります。変更を適用するには再生をやり直してください。",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "Harbor のために描かれたアイコンやアニメーション、その作者、保存方法をご紹介します。",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "Frame のために描かれたアイコンやアニメーション、その作者、保存方法をご紹介します。",
   "Example scores with your settings.": "現在の設定を使ったスコアの例です。",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "シーダー数が少ない、または不明なストリームを除外します。制限しない場合は空欄または0にしてください。",
@@ -264,8 +264,8 @@ const settingsRefinements: Record<string, string> = {
     "有効にする前に、上の SVP エンジンの設定を完了してください。",
   "Forget remote streaming server": "保存したリモート配信サーバーを削除",
   "Forgot password?": "パスワードを忘れた場合",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "再生中の映像を加工する GPU シェーダーです。Anime4K による拡大、HDR トーンマッピング、ニューラルアップスケーラー、シャープ化などを選んでダウンロードすると、Harbor が mpv エンジンで適用します。",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "再生中の映像を加工する GPU シェーダーです。Anime4K による拡大、HDR トーンマッピング、ニューラルアップスケーラー、シャープ化などを選んでダウンロードすると、Frame が mpv エンジンで適用します。",
   "Get SVP": "SVP を入手",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "Discord や Telegram でリリース通知を受け取れます。送信先を接続してから、通知のソースとルールを選んでください。",
@@ -281,28 +281,28 @@ const settingsRefinements: Record<string, string> = {
     "ハンドルネームの先頭と末尾にはハイフンを使えません。",
   "Handles need at least 3 characters.": "ハンドルネームは3文字以上必要です。",
   "Handles need at least one letter.": "ハンドルネームには少なくとも1文字の英字が必要です。",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "Steamboat Willie と The General を表示した Harbor の作品探索画面",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "Harbor は受信デバイスを確認し、ストリームの変換が必要な場合に ffmpeg を使用します。",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "P2P設定を適用できませんでした。Harbor を開き直して再試行してください。",
-  "Harbor couldn't check the SVP installation. Try again.":
+  "Frame Discover showing Steamboat Willie and The General":
+    "Steamboat Willie と The General を表示した Frame の作品探索画面",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "Frame は受信デバイスを確認し、ストリームの変換が必要な場合に ffmpeg を使用します。",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "P2P設定を適用できませんでした。Frame を開き直して再試行してください。",
+  "Frame couldn't check the SVP installation. Try again.":
     "SVP のインストールを確認できませんでした。再試行してください。",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "Harbor はこの順序で字幕を探します。優先する言語を先頭にしてください。",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "他のデバイスでも Harbor を利用できます。Web アプリ、スマートフォンのリモコン、漫画リーダーのリモコンがあります。",
-  "Harbor profile showing watch statistics": "視聴統計を表示したHarborプロフィール",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harborは独自のコミュニティサーバーを使用します。自分で運用するサーバーに変更することもできます。",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "Harbor 内蔵の P2P エンジン、その自己診断、接続先の配信サーバーを設定します。",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "Harbor のライセンス、基盤となるプロジェクト、支えている人々とサービスを紹介します。",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "Harbor のリモートサーバーがポート {WEB_PORT} で応答していません。デスクトップサーバーの動作を確認するか、この設定をオフにしてからオンにし、再起動してください。",
-  "Harbor, with a few classics.": "名作をいくつか添えた Harbor。",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "Frame はこの順序で字幕を探します。優先する言語を先頭にしてください。",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "他のデバイスでも Frame を利用できます。Web アプリ、スマートフォンのリモコン、漫画リーダーのリモコンがあります。",
+  "Frame profile showing watch statistics": "視聴統計を表示したFrameプロフィール",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frameは独自のコミュニティサーバーを使用します。自分で運用するサーバーに変更することもできます。",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "Frame 内蔵の P2P エンジン、その自己診断、接続先の配信サーバーを設定します。",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "Frame のライセンス、基盤となるプロジェクト、支えている人々とサービスを紹介します。",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "Frame のリモートサーバーがポート {WEB_PORT} で応答していません。デスクトップサーバーの動作を確認するか、この設定をオフにしてからオンにし、再起動してください。",
+  "Frame, with a few classics.": "名作をいくつか添えた Frame。",
   "Help & about": "ヘルプと情報",
   "Hex color": "16進数カラー",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -310,9 +310,9 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "ナビゲーションから{name}を非表示",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "高設定では鮮明な画像を読み込みます。閲覧が遅い場合はバランスを選んでください。動画の画質には影響しません。",
-  "How long Harbor waits for each addon to return results.":
-    "各アドオンの結果を Harbor が待つ時間です。",
-  "How much does this affect your use of Harbor?": "Harbor の利用にどの程度影響していますか？",
+  "How long Frame waits for each addon to return results.":
+    "各アドオンの結果を Frame が待つ時間です。",
+  "How much does this affect your use of Frame?": "Frame の利用にどの程度影響していますか？",
   "How to connect Discord": "Discord の接続方法",
   "How to connect Telegram": "Telegram の接続方法",
   "How video plays, how it looks, and what happens between episodes.":
@@ -333,18 +333,18 @@ const settingsRefinements: Record<string, string> = {
     "レポートにはアプリとデバイスの情報、有効なサービス数、プレーヤーの診断結果、最近のエラーメッセージが含まれます。",
   "Install SVP and check again before enabling it.":
     "有効にする前に SVP をインストールし、再確認してください。",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "SVP と VapourSynth コンポーネントをインストールし、Harbor が検出できるよう再確認してください。",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "アイコンパックをインストールするか、賞ごとに独自の画像をアップロードできます。パックは制作者が配信しており、Harbor には同梱されていません。",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "SVP と VapourSynth コンポーネントをインストールし、Frame が検出できるよう再確認してください。",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "アイコンパックをインストールするか、賞ごとに独自の画像をアップロードできます。パックは制作者が配信しており、Frame には同梱されていません。",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "更新のインストール、ベータ版の試用、設定のバックアップを行います。",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "即時再生では最上位のストリームをすぐ再生します。ソース選択では毎回一覧を開き、リリース、画質、プロバイダーを自分で選べます。",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "オープニングが始まると自動でスキップします。イントロに巻き戻した場合は再度スキップせず再生します。スキップボタンは上の設定に従います。",
-  "Keep Harbor fullscreen when you close the player.":
-    "プレーヤーを閉じても Harbor を全画面のままにします。",
+  "Keep Frame fullscreen when you close the player.":
+    "プレーヤーを閉じても Frame を全画面のままにします。",
   "Keep code": "コードを残す",
   "Keep my shortcuts": "自分のショートカットを残す",
   "Keep rule": "ルールを残す",
@@ -365,15 +365,15 @@ const settingsRefinements: Record<string, string> = {
   "Kids avatar {number}": "キッズアバター {number}",
   "Language preference order": "言語の優先順位",
   "Larger artwork with the song title below it.": "大きなアートワークの下に曲名を表示します。",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "Harbor の画面がちらつく、またはカクつく場合を除き、自動のままにしてください。動画再生ではなくアプリのウィンドウを制御します。",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "Frame の画面がちらつく、またはカクつく場合を除き、自動のままにしてください。動画再生ではなくアプリのウィンドウを制御します。",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
     "debrid リンクが利用できない場合、このデバイスからのP2P再生を許可します。オフにするとローカルでのP2P再生を防ぎます。設定済みのリモートサーバーでは引き続き再生できます。",
   Licence: "ライセンス",
   "Licenses & attribution": "ライセンスとクレジット",
   "Lightens or darkens the whole picture.": "映像全体を明るく、または暗くします。",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "Harbor を開いた時点から、問題が起きるまでの手順を記載してください。",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "Frame を開いた時点から、問題が起きるまでの手順を記載してください。",
   "Load failed. Retry": "読み込み失敗。再試行",
   "Loading {name}…": "{name}を読み込み中…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -399,8 +399,8 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "{language}の優先順位を上げる",
   "Move {name} down": "{name}を下に移動",
   "Move {name} up": "{name}を上に移動",
-  "No custom options. Harbor uses your video settings.":
-    "カスタムオプションはありません。Harbor は動画設定を使用します。",
+  "No custom options. Frame uses your video settings.":
+    "カスタムオプションはありません。Frame は動画設定を使用します。",
   "No default profile": "既定のプロフィールなし",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "設定が選ばれていません。このフィルターを編集して好みのストリームを選んでください。",
@@ -415,7 +415,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "通知ソース",
   "On your local network": "ローカルネットワーク上",
   "On-screen controls": "画面上の操作",
-  "Open Harbor account": "Harbor アカウントを開く",
+  "Open Frame account": "Frame アカウントを開く",
   "Open Stremio settings": "Stremio の設定を開く",
   "Open on YouTube": "YouTube で開く",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -423,7 +423,7 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "起動時にこのプロフィールを開きます。その後も時間による確認は表示される場合があります。PIN 付きのプロフィールは既定にできません。",
   "Open {label} address": "{label}のアドレスを開く",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
     "作者からダウンロードする追加の映像効果です。有効なシェーダーを下の順序で適用します。",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "任意です。追加の連絡が可能な場合は連絡先を入力し、公開クレジットを希望するか選んでください。",
@@ -492,12 +492,12 @@ const settingsRefinements: Record<string, string> = {
   "Right in the middle of the picture, hard to miss.": "見逃しにくい画面の中央に表示します。",
   "Rule name": "ルール名",
   "SVP interpolation": "SVP 補間",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "SVP が動きを滑らかにしています。Harbor の機能を使うには、SVP ページでオフにしてください。",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "SVP が動きを滑らかにしています。Frame の機能を使うには、SVP ページでオフにしてください。",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "同じ広さで表示しつつウィンドウとして動作するため、alt-tabですぐに切り替えられます。",
   "Saturation {s}%, brightness {v}%": "彩度 {s}%、明度 {v}%",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
     "好みのストリーム画質を保存します。設定したすべての項目に一致する必要があります。制限しない項目は空欄にしてください。一致しない場合は、利用可能な次善のソースを使用します。",
   "Save {name} as JSON": "{name}を JSON で保存",
   "Save {name} as SVG": "{name}を SVG で保存",
@@ -511,7 +511,7 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "補足のテキストはここに表示",
   "See the resolution, HDR format and audio while you watch.":
     "視聴中に解像度、HDR 形式、音声を確認できます。",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
+  "See what Frame stores on this computer and clear caches when you want the space back.":
     "このコンピューターに保存されているデータを確認し、容量を空けたいときにキャッシュを消去できます。",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "特定のスピーカー、ヘッドフォン、レシーバーに音声を出力します。システム既定は OS の音声出力に従います。",
@@ -522,8 +522,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "送信先を設定",
   "Set up rating providers": "評価プロバイダーを設定",
   "Set up song identification": "曲の識別を設定",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "ここからテレビを設定できます。このページの設定はすべて Harbor アカウントに保存され、テレビの Big Picture に反映されるので、リモコンで入力する必要はありません。",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "ここからテレビを設定できます。このページの設定はすべて Frame アカウントに保存され、テレビの Big Picture に反映されるので、リモコンで入力する必要はありません。",
   "Sets the age level for the kids space.": "キッズスペースの対象年齢を設定します。",
   "Setting up SVP…": "SVP を設定中…",
   "Share your style": "あなたのスタイルを共有",
@@ -565,8 +565,8 @@ const settingsRefinements: Record<string, string> = {
     "枠線のある小さな丸角ラベルが、タイトルの下にスライドして表示されます。",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "滑らかな動きと SVP の設定です。アニメのフレーム補間はここにあり、映像シェーダーは専用タブに移動しました。",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "Harbor のプレーヤーでカメラの動きを滑らかにします。画面のリフレッシュレートが動画のフレームレートより高い場合に効果的です。",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "Frame のプレーヤーでカメラの動きを滑らかにします。画面のリフレッシュレートが動画のフレームレートより高い場合に効果的です。",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "SVP で動きを滑らかにします。適用するには再生をやり直してください。動画が再生できない場合はオフにしてください。",
   "Soften the artwork behind the stream picker.": "ソース選択画面の背景画像をぼかします。",
@@ -574,8 +574,8 @@ const settingsRefinements: Record<string, string> = {
     "このビルドでは一部のテレビ設定を同期できません。変更はこのコンピューターに保存されています。",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "そのハンドルネームは最近手放されました。手放してから14日後に利用可能になります。",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "予期しない動作がありますが、Harbor は引き続き利用できます。",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "予期しない動作がありますが、Frame は引き続き利用できます。",
   "Something looks wrong, but the feature still works.":
     "見た目に問題がありますが、機能は動作します。",
   "Something went wrong. Try again.": "問題が発生しました。もう一度お試しください。",
@@ -611,8 +611,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "リモート配信サーバーをテスト中",
   "Text is enlarged in this preview so you can judge the style.":
     "スタイルを確認しやすいように、このプレビューでは文字を大きく表示しています。",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "そのStremioアカウントは別のHarborアカウントに連携済みです。まずそちらで連携を解除してください。",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "そのStremioアカウントは別のFrameアカウントに連携済みです。まずそちらで連携を解除してください。",
   "That Stremio sign-in did not go through. Try again.":
     "Stremioへのログインに失敗しました。もう一度お試しください。",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
@@ -646,12 +646,12 @@ const settingsRefinements: Record<string, string> = {
   "The handful of settings most people set once.": "多くの人が最初に一度だけ設定する項目です。",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "多くの人が最初に一度だけ設定する項目です。サインインして再生方法と外観を選びましょう。",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "Harbor のメニュー、ボタン、ラベルの言語です。音声、字幕、作品情報にはそれぞれ別の言語設定があります。",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "Frame のメニュー、ボタン、ラベルの言語です。音声、字幕、作品情報にはそれぞれ別の言語設定があります。",
   "The same slow camera pan, with motion smoothing off and on.":
     "同じゆっくりとしたカメラのパンを、モーションスムージングのオフとオンで比較できます。",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "保存した JavaScript を削除します。実行済みスクリプトの影響をなくすには Harbor を再起動してください。",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "保存した JavaScript を削除します。実行済みスクリプトの影響をなくすには Frame を再起動してください。",
   "The saved {name} will be removed and its changes will stop applying.":
     "保存した{name}を削除し、その変更の適用を停止します。",
   "The server responded in {ms} ms.": "サーバーは {ms} ミリ秒で応答しました。",
@@ -659,7 +659,7 @@ const settingsRefinements: Record<string, string> = {
     "設定や検索データを含む、容量の大きいローカル設定6項目です。",
   "{count} entries": "{count} 件",
   "The volume pop-up is hidden.": "音量のポップアップは非表示です。",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
     "テーマ、プレーヤーのレイアウト、画像、カードの表示内容を設定します。",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "このアカウントは利用停止になっています。誤りだと思われる場合はサポートにお問い合わせください。",
@@ -668,7 +668,7 @@ const settingsRefinements: Record<string, string> = {
   "This backup has no data in it.": "このバックアップにはデータがありません。",
   "This is how your subtitles": "テレビでは字幕が",
   "This is how your subtitles will look.": "字幕はこのように表示されます。",
-  "This is not a Harbor backup file.": "これは Harbor のバックアップファイルではありません。",
+  "This is not a Frame backup file.": "これは Frame のバックアップファイルではありません。",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "このコンピューターから別のデバイスに配信するには、ローカルネットワークのアドレスをコピーし、そのデバイスのリモート配信サーバーに入力してください。",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -694,8 +694,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "未翻訳のテキストは英語のまま表示されます。言語を選び、「適用して再読み込み」を選択してください。",
   "Unwatched episodes": "未視聴エピソード",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "自分の画像をアップロードするか、Harbor のカタログから選んでください。",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "自分の画像をアップロードするか、Frame のカタログから選んでください。",
   "Use letters, numbers, and single hyphens only.":
     "英数字と連続しないハイフンのみを使ってください。",
   "Use no saved stream filter": "保存済みのストリームフィルターを使わない",
@@ -704,8 +704,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "{name}を使用",
   "Used only if we need one more detail to reproduce the bug.":
     "不具合の再現に追加情報が必要な場合にのみ使用します。",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "SVP で Harbor のプレーヤー内の動きを滑らかにします。一度インストールすれば、Harbor がそのエンジンを使用し、必要に応じて SVP Manager を開きます。",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "SVP で Frame のプレーヤー内の動きを滑らかにします。一度インストールすれば、Frame がそのエンジンを使用し、必要に応じて SVP Manager を開きます。",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "VapourSynth 経由で SVP のモーションエンジンを使用します。適用するには再生をやり直してください。",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -716,16 +716,16 @@ const settingsRefinements: Record<string, string> = {
     "新しいレンダラーで問題が起きるグラフィックスカード向けに、従来の GPU レンダラーを使用します。",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "CPU で動画をデコードします。ハードウェアデコードで映像に問題が起きる場合に試してください。",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "Linux にインストールした SVP と VapourSynth で、Harbor のプレーヤー内の動きを滑らかにします。",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "Linux にインストールした SVP と VapourSynth で、Frame のプレーヤー内の動きを滑らかにします。",
   "Video quality": "動画の画質",
   "View generated mpv options": "生成された mpv オプションを表示",
   "Volume pop-up": "音量ポップアップ",
   "We tag this account on the issue so you see the fix land.":
     "修正の完了がわかるよう、Issue でこのアカウントをメンションします。",
-  "What language Harbor speaks, and how subtitles behave.": "Harbor の表示言語と字幕の動作です。",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "Harbor の表示言語と優先する音声トラックです。",
+  "What language Frame speaks, and how subtitles behave.": "Frame の表示言語と字幕の動作です。",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "Frame の表示言語と優先する音声トラックです。",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "ストリームの入手元、絞り込み方法、関連するメタデータです。",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -738,7 +738,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "ウィンドウの動作",
   "You can also turn off Rule is active to pause it without deleting it.":
     "「ルールを有効にする」をオフにすると、削除せずに一時停止できます。",
-  "You cannot use Harbor.": "Harbor を利用できません。",
+  "You cannot use Frame.": "Frame を利用できません。",
   "You changed your handle recently. You can change it again after the cooldown.":
     "最近ハンドルネームを変更しました。待機期間が終わると、もう一度変更できます。",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

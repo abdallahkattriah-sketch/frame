@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Selesaikan pemulihan sebelum mencadangkan atau memulihkan folder ini.",
   "games.backups.save_recovery_scope":
-    "Buka pemulihan ini dari profil Harbor dan game yang memulainya.",
+    "Buka pemulihan ini dari profil Frame dan game yang memulainya.",
   "games.backups.result.keptCurrent": "Simpanan saat ini tidak berubah",
   "games.backups.resultNote.keptCurrent":
     "Pemulihan selesai tanpa mengganti simpanan yang ada di folder ini.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Simpan momen yang bisa kamu kunjungi kembali. Pilih folder simpanan game ini dan folder terpisah untuk cadangan. Tutup game sebelum mencadangkan atau memulihkan.",
   "games.backups.desktop":
-    "Cadangan simpanan tersedia di aplikasi desktop Harbor. Fitur ini memakai folder yang kamu pilih di komputer.",
+    "Cadangan simpanan tersedia di aplikasi desktop Frame. Fitur ini memakai folder yang kamu pilih di komputer.",
   "games.backups.folder.source": "Simpanan game",
   "games.backups.folder.vault": "Folder cadangan",
   "games.backups.choose.source": "Pilih folder simpanan game",
@@ -51,8 +51,8 @@ export default {
   "games.backups.identical": "Folder simpanan saat ini sudah sama dengan snapshot ini.",
   "games.backups.restore": "Pulihkan snapshot",
   "games.backups.recoveryNote":
-    "Harbor menyimpan snapshot pemulihan dan folder asli sebelum mengganti simpanan.",
-  "games.backups.localNote": "Disimpan di folder pilihanmu, terpisah untuk setiap profil Harbor.",
+    "Frame menyimpan snapshot pemulihan dan folder asli sebelum mengganti simpanan.",
+  "games.backups.localNote": "Disimpan di folder pilihanmu, terpisah untuk setiap profil Frame.",
   "games.backups.openRecovery": "Tampilkan folder asli",
   "games.backups.reviewUndo": "Tinjau pengembalian",
   "games.backups.result.restored": "Snapshot kamu telah dipulihkan",
@@ -62,11 +62,11 @@ export default {
   "games.backups.resultNote.restored":
     "Folder simpananmu kini sama dengan snapshot ini. Salinan pemulihan tetap tersedia jika kamu ingin kembali ke keadaan sebelumnya.",
   "games.backups.resultNote.rolledBack":
-    "Pemulihan tidak dapat diselesaikan, jadi Harbor mengembalikan folder simpanan asli. Snapshot pemulihan juga tersedia di bawah.",
+    "Pemulihan tidak dapat diselesaikan, jadi Frame mengembalikan folder simpanan asli. Snapshot pemulihan juga tersedia di bawah.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor tidak dapat mengembalikan folder asli setelah pemulihan gagal. Biarkan game tertutup. File aslimu tersimpan di folder di bawah dan di snapshot pemulihan.",
+    "Frame tidak dapat mengembalikan folder asli setelah pemulihan gagal. Biarkan game tertutup. File aslimu tersimpan di folder di bawah dan di snapshot pemulihan.",
   "games.backups.resultNote.notRestored":
-    "Harbor tidak dapat menempatkan snapshot di folder pilihan. Cadangannya masih tersedia.",
+    "Frame tidak dapat menempatkan snapshot di folder pilihan. Cadangannya masih tersedia.",
   "games.backups.phase.scanning": "Membaca simpananmu…",
   "games.backups.phase.copying": "Menyalin file simpanan…",
   "games.backups.phase.verifying": "Memeriksa snapshot…",
@@ -80,9 +80,9 @@ export default {
   "games.backups.save_record":
     "Catatan cadangan tidak dapat dibaca dengan aman. File-nya tetap disimpan. Periksa folder cadangan yang dipilih.",
   "games.backups.save_read":
-    "Harbor tidak dapat membaca simpanan ini. Pastikan folder tersedia dan game sudah ditutup.",
+    "Frame tidak dapat membaca simpanan ini. Pastikan folder tersedia dan game sudah ditutup.",
   "games.backups.save_write":
-    "Harbor tidak dapat menyelesaikan penulisan simpanan ini. Pastikan folder dapat ditulisi dan game sudah ditutup.",
+    "Frame tidak dapat menyelesaikan penulisan simpanan ini. Pastikan folder dapat ditulisi dan game sudah ditutup.",
   "games.backups.save_name":
     "Sebuah nama file tidak dapat dipertahankan. Gunakan folder dengan nama file yang didukung.",
   "games.backups.save_changed":
@@ -103,9 +103,9 @@ export default {
   "games.backups.save_space":
     "Ruang kosong tidak cukup untuk menyimpan salinan lengkap. Pilih folder lain atau kosongkan ruang.",
   "games.backups.save_config":
-    "Harbor tidak dapat membaca pilihan folder yang tersimpan. Pilih lagi; cadangan yang ada tidak berubah.",
+    "Frame tidak dapat membaca pilihan folder yang tersimpan. Pilih lagi; cadangan yang ada tidak berubah.",
   "games.backups.save_config_write":
-    "Harbor tidak dapat mengingat folder ini. Pilihan sebelumnya dan cadangan yang ada tidak berubah.",
+    "Frame tidak dapat mengingat folder ini. Pilihan sebelumnya dan cadangan yang ada tidak berubah.",
   "games.backups.failed":
     "Operasi simpanan ini tidak dapat diselesaikan. File cadanganmu tetap disimpan. Periksa folder lalu coba lagi.",
   "games.backups.compare.title": "Perbandingan file",

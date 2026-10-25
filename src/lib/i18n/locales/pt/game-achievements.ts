@@ -40,12 +40,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "O Steam ainda não confirmou o resultado. Atualize antes de fazer mais alterações.",
   "games.achievementManager.error.platform":
-    "O gerenciamento de conquistas está disponível no Harbor para Windows x64.",
+    "O gerenciamento de conquistas está disponível no Frame para Windows x64.",
   "games.achievementManager.error.invalid": "Selecione até 2.000 alterações por vez.",
   "games.achievementManager.error.stale":
     "Estas conquistas mudaram no Steam. Atualize antes de editar.",
   "games.achievementManager.error.protected":
-    "O jogo gerencia esta conquista. O Harbor não pode editá-la.",
+    "O jogo gerencia esta conquista. O Frame não pode editá-la.",
   "games.achievementManager.error.expired":
     "Esta revisão expirou. Atualize antes de aplicar as alterações.",
   "games.achievementManager.error.busy":
@@ -63,12 +63,12 @@ export default {
   "games.achievementManager.consentBody":
     "Desbloqueie ou bloqueie novamente conquistas da sua conta Steam conectada. As seleções ficam como rascunho até você aplicar as alterações.",
   "games.achievementManager.consentRules":
-    "O Harbor usa a interface de conquistas do Steam sem injetar código nos jogos. As regras e os requisitos de recompensas de cada jogo continuam valendo.",
+    "O Frame usa a interface de conquistas do Steam sem injetar código nos jogos. As regras e os requisitos de recompensas de cada jogo continuam valendo.",
   "games.achievementManager.consentSam": "Inspirado no fluxo de conquistas do SAM",
-  "games.achievementManager.consentOnce": "Exibido uma vez para este perfil do Harbor.",
+  "games.achievementManager.consentOnce": "Exibido uma vez para este perfil do Frame.",
   "games.achievementManager.consentAccept": "Entendi",
   "games.achievementManager.desktopOnly":
-    "Use o Harbor no Windows com o Steam aberto para alterar conquistas.",
+    "Use o Frame no Windows com o Steam aberto para alterar conquistas.",
   "games.achievementManager.all": "Todas",
   "games.achievementManager.filter": "Filtrar conquistas",
   "games.achievementManager.rewards": "Itens de recompensa",
@@ -126,7 +126,7 @@ export default {
   "games.achievementManager.pickTitle": "Escolha um jogo",
   "games.achievementManager.pickSearch": "Buscar nos seus jogos",
   "games.achievementManager.pickNote":
-    "O Harbor pode editar as conquistas de um jogo depois que o Steam as salvar no cache deste computador.",
+    "O Frame pode editar as conquistas de um jogo depois que o Steam as salvar no cache deste computador.",
   "games.achievementManager.pickInstalled": "Instalado",
   "games.achievementManager.pickEmpty": "Nenhum jogo corresponde à sua busca.",
   "games.achievementManager.pickUnavailable":

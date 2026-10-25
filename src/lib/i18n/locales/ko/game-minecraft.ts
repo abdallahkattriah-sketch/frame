@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "CurseForge 검색",
   "games.minecraft.discovery.downloads": "다운로드",
   "games.minecraft.discovery.curseForgeBlocked":
-    "현재 CurseForge에서 Harbor의 카탈로그 로드를 허용하지 않습니다. 다시 시도하거나 원본 사이트를 여세요.",
+    "현재 CurseForge에서 Frame의 카탈로그 로드를 허용하지 않습니다. 다시 시도하거나 원본 사이트를 여세요.",
   "games.minecraft.discovery.unavailable": "목록을 불러오지 못했습니다. 다시 시도하세요.",
   "games.minecraft.discovery.openSource": "원본 사이트 열기",
   "games.minecraft.discovery.loadMore": "더 불러오기",
   "games.minecraft.discovery.servers": "서버",
   "games.minecraft.discovery.serverNote":
-    "독립적인 서버 목록입니다. Harbor는 해당 사이트나 서버와 제휴 관계가 없습니다. 수치는 각 사이트에서 제공합니다.",
+    "독립적인 서버 목록입니다. Frame는 해당 사이트나 서버와 제휴 관계가 없습니다. 수치는 각 사이트에서 제공합니다.",
   "games.minecraft.discovery.searchServers": "불러온 서버 검색",
   "games.minecraft.discovery.directory": "목록 사이트",
   "games.minecraft.discovery.mode": "게임 모드",
@@ -42,7 +42,7 @@ export default {
   "games.minecraft.lifecycle.settings": "조작 설정과 서버 목록 포함",
   "games.minecraft.lifecycle.exportNote": "모드와 설정이 담긴 휴대용 .mrpack 파일을 만듭니다.",
   "games.minecraft.lifecycle.privateNote":
-    "Harbor 계정 데이터, 실행 파일, 로그는 제외됩니다. 공유하기 전에 모드 설정을 확인하세요.",
+    "Frame 계정 데이터, 실행 파일, 로그는 제외됩니다. 공유하기 전에 모드 설정을 확인하세요.",
   "games.minecraft.lifecycle.included": "포함된 파일",
   "games.minecraft.lifecycle.referenced": "다운로드 참조",
   "games.minecraft.lifecycle.referenceNote":
@@ -96,7 +96,7 @@ export default {
   "games.minecraft.update.chooseFile": ".mrpack 파일 선택",
   "games.minecraft.update.restoreVersion": "{version} 복원",
   "games.minecraft.update.reviewNote":
-    "적용 전에 모든 파일 변경을 검토하세요. Harbor는 이전 인스턴스의 독립된 복사본을 보관합니다.",
+    "적용 전에 모든 파일 변경을 검토하세요. Frame는 이전 인스턴스의 독립된 복사본을 보관합니다.",
   "games.minecraft.update.changeVersion": "버전 변경",
   "games.minecraft.update.download": "다운로드",
   "games.minecraft.update.recoveryCopy": "복구용 복사본",
@@ -193,7 +193,7 @@ export default {
     "다른 인스턴스를 시작하기 전에 실행 중인 Minecraft 인스턴스를 닫으세요.",
   "games.minecraft.java.title": "이 인스턴스의 Java",
   "games.minecraft.java.note": "이 Minecraft 버전에는 Java {version}이 필요합니다.",
-  "games.minecraft.java.managed": "Harbor로 설치",
+  "games.minecraft.java.managed": "Frame로 설치",
   "games.minecraft.java.installed": "설치된 Java 사용",
   "games.minecraft.java.manage": "Java 관리",
 
@@ -212,7 +212,7 @@ export default {
   "games.minecraft.java.invalidError": "이 Java 설치를 확인할 수 없습니다.",
   "games.minecraft.java.metadataError":
     "호환되는 Java 다운로드를 검증할 수 없습니다. 다시 시도하세요.",
-  "games.minecraft.java.managedNote": "Harbor는 이 버전을 Minecraft 라이브러리에 보관합니다.",
+  "games.minecraft.java.managedNote": "Frame는 이 버전을 Minecraft 라이브러리에 보관합니다.",
   "games.minecraft.runtime.setup": "게임 설정",
   "games.minecraft.runtime.note":
     "이 인스턴스의 공식 게임 파일을 설치합니다. 월드와 모드는 그대로 유지됩니다.",
@@ -234,7 +234,7 @@ export default {
   "games.minecraft.runtime.metadataError":
     "게임 파일을 검증하지 못했습니다. 나중에 다시 시도하세요.",
   "games.minecraft.runtime.legacyError":
-    "이 버전은 Harbor가 아직 지원하지 않는 설치 또는 실행 형식을 사용합니다.",
+    "이 버전은 Frame가 아직 지원하지 않는 설치 또는 실행 형식을 사용합니다.",
   "games.minecraft.runtime.loaderError": "이 로더의 설치 형식은 아직 지원되지 않습니다.",
   "games.minecraft.runtime.platformError": "이 시스템에서는 게임 설정을 아직 지원하지 않습니다.",
   "games.minecraft.runtime.versionError": "공식 카탈로그에서 이 Minecraft 버전을 찾지 못했습니다.",
@@ -243,8 +243,7 @@ export default {
   "games.minecraft.instances.note": "구성마다 월드, 모드, 설정을 따로 관리하세요.",
   "games.minecraft.instances.import": "팩 가져오기",
   "games.minecraft.instances.create": "인스턴스 만들기",
-  "games.minecraft.instances.desktop":
-    "로컬 인스턴스를 만들고 관리하려면 Harbor 데스크톱을 여세요.",
+  "games.minecraft.instances.desktop": "로컬 인스턴스를 만들고 관리하려면 Frame 데스크톱을 여세요.",
   "games.minecraft.instances.search": "내 인스턴스 검색",
   "games.minecraft.instances.storage": "저장 폴더",
   "games.minecraft.instances.chooseFolder": "저장 폴더 선택",
@@ -280,7 +279,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Minecraft 버전 불러오는 중…",
   "games.minecraft.instances.added": "내 인스턴스에 추가됨",
   "games.minecraft.instances.storageNote":
-    "Minecraft 인스턴스를 저장할 위치를 선택하세요. Harbor 프로필마다 별도 폴더가 생성됩니다.",
+    "Minecraft 인스턴스를 저장할 위치를 선택하세요. Frame 프로필마다 별도 폴더가 생성됩니다.",
   "games.minecraft.instances.isolated": "새로운 별도 인스턴스에 설치합니다.",
   "games.minecraft.instances.cancelling": "취소 중…",
   "games.minecraft.instances.install": "팩 파일 설치",
@@ -293,7 +292,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "팩 설정 적용 중…",
   "games.minecraft.instances.phase.done": "파일 설치 완료",
   "games.minecraft.instances.folderError":
-    "이 Harbor 프로필에서 접근할 수 있는 로컬 폴더를 선택하세요.",
+    "이 Frame 프로필에서 접근할 수 있는 로컬 폴더를 선택하세요.",
   "games.minecraft.instances.writeError":
     "인스턴스를 기록하지 못했습니다. 폴더 권한과 여유 공간을 확인하세요.",
   "games.minecraft.instances.readError":
@@ -308,7 +307,7 @@ export default {
   "games.minecraft.instances.formatError": "지원되는 올바른 .mrpack 압축 파일이 아닙니다.",
   "games.minecraft.instances.loaderError": "팩에서 알 수 없거나 충돌하는 게임 로더를 사용합니다.",
   "games.minecraft.instances.sourceError":
-    "Harbor에서 지원하지 않는 다운로드 소스가 필요한 팩입니다.",
+    "Frame에서 지원하지 않는 다운로드 소스가 필요한 팩입니다.",
   "games.minecraft.instances.limitError": "팩 또는 라이브러리가 지원되는 크기 제한을 초과합니다.",
   "games.minecraft.instances.busyError":
     "다른 팩 작업이 진행 중입니다. 완료될 때까지 기다리거나 취소하세요.",
@@ -361,9 +360,9 @@ export default {
   "games.minecraft.account.title": "내 Minecraft 계정",
   "games.minecraft.account.intro":
     "Microsoft를 연결하여 Minecraft 스킨과 망토를 확인하고 만든 스킨을 적용하세요.",
-  "games.minecraft.account.desktop": "Minecraft 계정을 연결하려면 Harbor 데스크톱을 여세요.",
+  "games.minecraft.account.desktop": "Minecraft 계정을 연결하려면 Frame 데스크톱을 여세요.",
   "games.minecraft.account.setup":
-    "이 Harbor 빌드에는 Microsoft 로그인이 아직 설정되지 않았습니다. 스킨은 로컬에서 편집할 수 있습니다.",
+    "이 Frame 빌드에는 Microsoft 로그인이 아직 설정되지 않았습니다. 스킨은 로컬에서 편집할 수 있습니다.",
   "games.minecraft.account.codeNote": "Microsoft 로그인 페이지에 이 코드를 입력하세요.",
   "games.minecraft.account.copy": "코드 복사",
   "games.minecraft.account.openMicrosoft": "Microsoft에서 계속",
@@ -391,7 +390,7 @@ export default {
     "Microsoft 또는 Xbox 설정 때문에 로그인할 수 없습니다. 나이, 가족 또는 지역 설정을 확인하세요.",
   "games.minecraft.account.skinError":
     "스킨이나 망토를 적용할 수 없습니다. 계정을 새로고침하고 다시 시도하세요.",
-  "games.minecraft.account.storeError": "Harbor가 이 기기에 계정을 안전하게 저장하지 못했습니다.",
+  "games.minecraft.account.storeError": "Frame가 이 기기에 계정을 안전하게 저장하지 못했습니다.",
   "games.minecraft.account.error": "계정 요청에 실패했습니다. 다시 시도하세요.",
   "games.minecraft.studio": "스킨 스튜디오",
   "games.minecraft.skinTitle": "나만의 모습으로.",
@@ -424,7 +423,7 @@ export default {
   "games.minecraft.previewHint": "드래그하여 회전 · 스크롤하여 확대",
   "games.minecraft.editHint": "방향키로 픽셀 이동, Enter로 그리기, Ctrl / ⌘ Z로 실행 취소.",
   "games.minecraft.library": "내 스킨",
-  "games.minecraft.localNote": "이 Harbor 프로필용으로 이 기기에 저장됩니다.",
+  "games.minecraft.localNote": "이 Frame 프로필용으로 이 기기에 저장됩니다.",
   "games.minecraft.new": "새 스킨",
   "games.minecraft.empty": "스킨을 가져오거나 그리기를 시작하세요. 변경 사항은 자동 저장됩니다.",
   "games.minecraft.delete": "{name} 삭제",

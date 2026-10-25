@@ -167,7 +167,7 @@ export function ErrorView() {
           )
         : error.code === "NativePanic"
           ? t(
-              "Sorry, Harbor crashed the last time it was running. You can review the details and choose whether to send a report.",
+              "Sorry, Frame crashed the last time it was running. You can review the details and choose whether to send a report.",
             )
           : error.message;
 

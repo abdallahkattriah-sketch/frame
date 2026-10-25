@@ -255,7 +255,7 @@ export function SearchSection(
         addons: addons ?? [],
         preferredLangs: settings.preferredSubLangs ?? [],
         extra: {
-          userAgent: "Harbor",
+          userAgent: "Frame",
           netAllowed: true,
           subdlApiKey: settings.subdlApiKey || null,
           subsourceApiKey: settings.subsourceApiKey || null,

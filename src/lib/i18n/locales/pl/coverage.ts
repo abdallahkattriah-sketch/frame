@@ -49,7 +49,7 @@ const coverage: Record<string, string> = {
   "chrome.parentalOn": "Kontrola rodzicielska włączona",
   "chrome.lockedRequiresPin": "{label} (zablokowane, wymaga kodu PIN)",
   "chrome.lockedShort": "{label} · zablokowane",
-  "chrome.harborHome": "Strona główna Harbor",
+  "chrome.harborHome": "Strona główna Frame",
   "chrome.sectionLibrary": "Biblioteka",
   "profile.whoWatching": "Kto ogląda?",
   "profile.editThis": "Edytuj ten profil",
@@ -60,7 +60,7 @@ const coverage: Record<string, string> = {
   "profile.primary": "Główny",
   "profile.signedIn": "Zalogowano do Stremio",
   "profile.fallback": "Profil",
-  "welcome.title": "Witamy w Harbor",
+  "welcome.title": "Witamy w Frame",
   "welcome.subtitle":
     "Interfejs jest teraz w języku arabskim. W każdej chwili możesz zmienić język w Ustawieniach.",
   "welcome.dismiss": "Rozpocznij",
@@ -97,11 +97,11 @@ const coverage: Record<string, string> = {
   "Reveal comments": "Pokaż komentarze",
   "Comments are hidden": "Komentarze są ukryte",
   "Hosted elsewhere": "Hostowane gdzie indziej",
-  "A third party runs these plans. Harbor is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
-    "Te plany prowadzi podmiot zewnętrzny. Harbor nie jest z nim powiązany i nic nie otrzymuje za rejestrację. Aktualne ceny i warunki są na ich stronie.",
+  "A third party runs these plans. Frame is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
+    "Te plany prowadzi podmiot zewnętrzny. Frame nie jest z nim powiązany i nic nie otrzymuje za rejestrację. Aktualne ceny i warunki są na ich stronie.",
   "{name} can run on a hosted instance": "{name} może działać na hostowanej instancji",
-  "A third party operates this. Harbor is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
-    "Prowadzi to podmiot zewnętrzny. Harbor nie jest z nim powiązany, nie odsprzedaje usługi i nic nie otrzymuje, jeśli się zapiszesz. Cena i zakres są na ich stronie.",
+  "A third party operates this. Frame is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
+    "Prowadzi to podmiot zewnętrzny. Frame nie jest z nim powiązany, nie odsprzedaje usługi i nic nie otrzymuje, jeśli się zapiszesz. Cena i zakres są na ich stronie.",
   "Show comments": "Pokaż komentarze",
   "Hide comments": "Ukryj komentarze",
   "You haven't commented yet": "Nie masz jeszcze żadnych komentarzy",
@@ -173,8 +173,8 @@ const coverage: Record<string, string> = {
   "Focus GIF URL": "URL animacji GIF po zaznaczeniu",
   "Addon not installed": "Dodatek nie jest zainstalowany",
   "This section depends on the addon": "Ta sekcja wymaga dodatku",
-  "You must install this addon in your Stremio account first so Harbor can fetch its works.":
-    "Najpierw zainstaluj ten dodatek na swoim koncie Stremio, aby Harbor mógł pobrać jego materiały.",
+  "You must install this addon in your Stremio account first so Frame can fetch its works.":
+    "Najpierw zainstaluj ten dodatek na swoim koncie Stremio, aby Frame mógł pobrać jego materiały.",
   "Missing TMDB Key": "Brak klucza TMDB",
   "This section relies on TMDB discovery features.":
     "Ta sekcja korzysta z funkcji odkrywania TMDB.",
@@ -184,13 +184,13 @@ const coverage: Record<string, string> = {
   "Loading...": "Wczytywanie...",
   "Top People": "Najpopularniejsi twórcy",
   "Ranking source": "Źródło rankingu",
-  "How Harbor Rank works": "Jak działa Harbor Rank",
-  "Harbor Rank": "Harbor Rank",
+  "How Frame Rank works": "Jak działa Frame Rank",
+  "Frame Rank": "Frame Rank",
   Trending: "Na czasie",
   "Top on TMDB": "Najlepsi w TMDB",
   "Top on IMDb": "Najlepsi w IMDb",
   Consensus: "Konsensus",
-  Harbor: "Harbor",
+  Frame: "Frame",
   TMDB: "TMDB",
   IMDb: "IMDb",
   "Our all-time ranking of a body of work, fully explained.":
@@ -268,16 +268,16 @@ const coverage: Record<string, string> = {
   "update.downloading": "Pobieranie aktualizacji",
   "update.failed": "Aktualizacja nie powiodła się",
   "update.available": "Dostępna jest aktualizacja",
-  "update.harborVersion": "Harbor {version}",
+  "update.harborVersion": "Frame {version}",
   "update.downloadComplete": "Pobieranie zakończone",
   "update.fetching": "Pobieranie najnowszej wersji",
   "update.errorServer": "Wystąpił błąd podczas łączenia z serwerem aktualizacji.",
   "update.later": "Później",
   "update.download": "Pobierz",
   "update.installRestart": "Zainstaluj i uruchom ponownie",
-  "update.restartAuto": "Harbor uruchomi się ponownie automatycznie.",
+  "update.restartAuto": "Frame uruchomi się ponownie automatycznie.",
   "update.tryAgain": "Spróbuj ponownie",
-  "update.keepUsing": "Korzystaj z Harbor podczas pobierania",
+  "update.keepUsing": "Korzystaj z Frame podczas pobierania",
   "update.of": "{downloaded} z {total}",
   "mpv.conf": "mpv.conf",
   "14s": "14 s",
@@ -285,11 +285,11 @@ const coverage: Record<string, string> = {
   "6-digit code": "6-cyfrowy kod",
   "Addons ({n})": "Dodatki ({n})",
   "All selected": "Wybrano wszystkie",
-  "Linking your Discord account also joins you to Harbor's Discord server, so the bot can send your Backup keys privately.":
-    "Linking your Discord account also joins you to Harbor's Discord server, so the bot can send your Backup keys privately.",
+  "Linking your Discord account also joins you to Frame's Discord server, so the bot can send your Backup keys privately.":
+    "Linking your Discord account also joins you to Frame's Discord server, so the bot can send your Backup keys privately.",
   "Apply and reload": "Zastosuj i wczytaj ponownie",
-  "Changing the metadata language reloads Harbor so the new language takes effect. Apply when you're done with the options above.":
-    "Zmiana języka metadanych powoduje ponowne wczytanie Harbor, aby nowy język zaczął obowiązywać. Po skonfigurowaniu powyższych opcji wybierz Zastosuj.",
+  "Changing the metadata language reloads Frame so the new language takes effect. Apply when you're done with the options above.":
+    "Zmiana języka metadanych powoduje ponowne wczytanie Frame, aby nowy język zaczął obowiązywać. Po skonfigurowaniu powyższych opcji wybierz Zastosuj.",
   "Choose source": "Wybierz źródło",
   "Choose your username": "Wybierz nazwę użytkownika",
   Colored: "Kolorowa",
@@ -309,14 +309,14 @@ const coverage: Record<string, string> = {
   "Enter your code": "Wprowadź kod",
   "Everything you pick is saved into one file. Restoring it later only touches what is in the file. Your Stremio sign-in is always left out.":
     "Wszystkie wybrane elementy są zapisywane w jednym pliku. Późniejsze przywracanie obejmie tylko jego zawartość. Dane logowania do Stremio nigdy nie są w nim zapisywane.",
-  "Export your Harbor setup to a single file — pick exactly what goes in. Restore brings back only what the file contains. Your Stremio sign-in is always left out.":
-    "Wyeksportuj konfigurację Harbor do jednego pliku, wybierając dokładnie, co ma się w nim znaleźć. Przywracanie odtworzy tylko zawartość pliku. Dane logowania do Stremio są zawsze pomijane.",
+  "Export your Frame setup to a single file — pick exactly what goes in. Restore brings back only what the file contains. Your Stremio sign-in is always left out.":
+    "Wyeksportuj konfigurację Frame do jednego pliku, wybierając dokładnie, co ma się w nim znaleźć. Przywracanie odtworzy tylko zawartość pliku. Dane logowania do Stremio są zawsze pomijane.",
   "Export your setup": "Eksportuj konfigurację",
   "Export {n} sections": "Eksportuj {n} sekcji",
   "Favorites ({n})": "Ulubione ({n})",
   "Finish creating my account": "Dokończ tworzenie konta",
-  "How quickly the Harbor cursor moves with the right stick.":
-    "Szybkość poruszania się kursora Harbor za pomocą prawego drążka.",
+  "How quickly the Frame cursor moves with the right stick.":
+    "Szybkość poruszania się kursora Frame za pomocą prawego drążka.",
   "If this account has Discord linked, we'll DM you a code to reset your password without the recovery key.":
     "Jeśli z tym kontem połączono Discord, wyślemy Ci w wiadomości prywatnej kod do zresetowania hasła bez klucza odzyskiwania.",
   "Import data from {name}": "Importuj dane z {name}",
@@ -325,23 +325,23 @@ const coverage: Record<string, string> = {
   "Latest chapters": "Najnowsze rozdziały",
   "Link Discord": "Połącz z Discordem",
   "Linked as {username}": "Połączono jako {username}",
-  "Linked to your Harbor account.": "Połączono z twoim kontem Harbor.",
+  "Linked to your Frame account.": "Połączono z twoim kontem Frame.",
   "Loads a backup file and restores exactly what it contains, without touching the rest of your setup. Your Stremio sign-in on this device stays as is.":
     "Wczytuje plik kopii zapasowej i przywraca dokładnie jego zawartość, nie zmieniając pozostałej konfiguracji. Logowanie do Stremio na tym urządzeniu pozostaje bez zmian.",
   "Monochrome (White)": "Monochromatyczne (białe)",
   "New releases": "Nowości",
   "On shows titles in your metadata language (English by default). Off keeps titles in English.":
     "Po włączeniu tytuły są wyświetlane w języku metadanych (domyślnie po angielsku). Po wyłączeniu pozostają w języku angielskim.",
-  "Open Harbor on desktop to link Discord.":
-    "Otwórz Harbor na komputerze, aby połączyć go z Discordem.",
+  "Open Frame on desktop to link Discord.":
+    "Otwórz Frame na komputerze, aby połączyć go z Discordem.",
   "Pick what to save, then everything you choose lands in one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.":
     "Wybierz, co zapisać, a wszystkie wybrane dane trafią do jednego pliku: motyw, układ strony głównej, ustawienia, dodatki, profile, lista do obejrzenia, układy odtwarzacza, postęp oglądania i inne. Dane logowania do Stremio są celowo pomijane.",
   "Player screen lock": "Blokada ekranu odtwarzacza",
   "Recover via Discord": "Odzyskaj przez Discord",
   "Recover via a code sent to Discord": "Odzyskaj za pomocą kodu wysłanego na Discordzie",
   "Replace selected data?": "Zastąpić wybrane dane?",
-  "Saved {when} from Harbor {app}. Your Stremio sign-in stays as is.":
-    "Zapisano {when} z Harbor {app}. Logowanie do Stremio pozostaje bez zmian.",
+  "Saved {when} from Frame {app}. Your Stremio sign-in stays as is.":
+    "Zapisano {when} z Frame {app}. Logowanie do Stremio pozostaje bez zmian.",
   "Send code": "Wyślij kod",
   "Show a lock control in the player that blocks mouse, keyboard, remote, and media-key input until you unlock it.":
     "Pokaż w odtwarzaczu przycisk blokady, który uniemożliwia korzystanie z myszy, klawiatury, pilota i klawiszy multimedialnych do czasu odblokowania.",
@@ -527,19 +527,19 @@ const coverage: Record<string, string> = {
   Turkish: "turecki",
   Vietnamese: "wietnamski",
   "Right to left": "Od prawej do lewej",
-  "Finish updating Harbor": "Dokończ aktualizację Harbor",
+  "Finish updating Frame": "Dokończ aktualizację Frame",
   "Download and run the installer to finish updating. If it keeps failing, run it as administrator once.":
     "Pobierz i uruchom instalator, aby dokończyć aktualizację. Jeśli błąd będzie się powtarzał, uruchom go raz jako administrator.",
   "Restart to update": "Uruchom ponownie, aby zaktualizować",
   "Update ready": "Aktualizacja gotowa",
-  "Harbor {version} downloaded but did not install on its own.":
-    "Harbor {version} został pobrany, ale nie zainstalował się automatycznie.",
+  "Frame {version} downloaded but did not install on its own.":
+    "Frame {version} został pobrany, ale nie zainstalował się automatycznie.",
   "Big Picture": "Big Picture",
   Dismiss: "Zamknij",
   "Download installer": "Pobierz instalator",
   "Install and reopen": "Zainstaluj i otwórz ponownie",
-  "Harbor is closing. Harbor Setup will finish and reopen it.":
-    "Harbor jest zamykany. Harbor Setup dokończy instalację i otworzy go ponownie.",
+  "Frame is closing. Frame Setup will finish and reopen it.":
+    "Frame jest zamykany. Frame Setup dokończy instalację i otworzy go ponownie.",
   "Most Popular": "Najpopularniejsze",
   "What everyone is reading": "Co czytają wszyscy",
   "Critically Acclaimed": "Docenione przez krytyków",
@@ -608,7 +608,7 @@ const coverage: Record<string, string> = {
   File: "Plik",
   Settings: "Ustawienia",
   Reload: "Wczytaj ponownie",
-  "Quit Harbor": "Zakończ Harbor",
+  "Quit Frame": "Zakończ Frame",
   View: "Widok",
   "Toggle Fullscreen": "Przełącz tryb pełnoekranowy",
   "Zoom In": "Powiększ",
@@ -650,7 +650,7 @@ const coverage: Record<string, string> = {
   "Playback pauses when the timer runs out. Works for movies too: one movie counts as one episode.":
     "Odtwarzanie zostanie wstrzymane po upływie czasu. Działa też w przypadku filmów: jeden film liczy się jako jeden odcinek.",
   Live: "Na żywo",
-  "Close Harbor?": "Zamknąć Harbor?",
+  "Close Frame?": "Zamknąć Frame?",
   "Ask a grown-up before you close.": "Przed zamknięciem zapytaj osobę dorosłą.",
   Stay: "Zostań",
   Close: "Zamknij",
@@ -799,22 +799,22 @@ const coverage: Record<string, string> = {
   "A local folder": "Folder lokalny",
   "Advanced: build a plugin": "Dla zaawansowanych: utwórz wtyczkę",
   "Also Known As": "Znany także jako",
-  "Back in Harbor: Manga > Set up a source > Your server, and paste your server address (for example {localUrl}, or your LAN IP if it runs on another machine, e.g. {lanUrl}).":
-    "Wróć do Harbor: Manga > Skonfiguruj źródło > Twój serwer i wklej adres swojego serwera (na przykład {localUrl} albo adres IP w sieci LAN, jeśli działa na innym komputerze, np. {lanUrl}).",
+  "Back in Frame: Manga > Set up a source > Your server, and paste your server address (for example {localUrl}, or your LAN IP if it runs on another machine, e.g. {lanUrl}).":
+    "Wróć do Frame: Manga > Skonfiguruj źródło > Twój serwer i wklej adres swojego serwera (na przykład {localUrl} albo adres IP w sieci LAN, jeśli działa na innym komputerze, np. {lanUrl}).",
   "Controller preview": "Podgląd kontrolera",
   "Couldn't save that font. It may be invalid, or storage is full.":
     "Nie udało się zapisać tej czcionki. Może być nieprawidłowa albo pamięć jest pełna.",
   "Download and run Suwayomi Server:": "Pobierz i uruchom Suwayomi Server:",
-  "Every source you enable in Suwayomi then shows up in Harbor. Suwayomi keeps its extensions updated when a site changes, so they keep working.":
-    "Każde źródło włączone w Suwayomi pojawi się następnie w Harbor. Suwayomi aktualizuje rozszerzenia po zmianach w witrynach, dzięki czemu nadal działają.",
+  "Every source you enable in Suwayomi then shows up in Frame. Suwayomi keeps its extensions updated when a site changes, so they keep working.":
+    "Każde źródło włączone w Suwayomi pojawi się następnie w Frame. Suwayomi aktualizuje rozszerzenia po zmianach w witrynach, dzięki czemu nadal działają.",
   "Everything else, through your own server (Suwayomi)":
     "Wszystkie pozostałe źródła przez własny serwer (Suwayomi)",
   "Expand {title} image": "Powiększ obraz {title}",
-  "Getting manga sources into Harbor": "Dodawanie źródeł mangi do Harbor",
-  "Harbor also has an experimental plugin runtime. If you want to write a source plugin, see {path} in the Harbor repository. Only install plugins from repositories you trust.":
-    "Harbor ma również eksperymentalne środowisko uruchomieniowe wtyczek. Jeśli chcesz napisać wtyczkę źródła, zobacz {path} w repozytorium Harbor. Instaluj wtyczki tylko z zaufanych repozytoriów.",
-  "Harbor ships no manga and no scrapers. It is a reader. You bring the sources, and what those sources contain belongs to whoever runs them, not to Harbor. There are two ways to add sources.":
-    "Harbor nie zawiera mang ani mechanizmów pozyskiwania treści. Jest czytnikiem. To Ty dodajesz źródła, a ich zawartość należy do podmiotów, które nimi zarządzają, nie do Harbor. Źródła można dodać na dwa sposoby.",
+  "Getting manga sources into Frame": "Dodawanie źródeł mangi do Frame",
+  "Frame also has an experimental plugin runtime. If you want to write a source plugin, see {path} in the Frame repository. Only install plugins from repositories you trust.":
+    "Frame ma również eksperymentalne środowisko uruchomieniowe wtyczek. Jeśli chcesz napisać wtyczkę źródła, zobacz {path} w repozytorium Frame. Instaluj wtyczki tylko z zaufanych repozytoriów.",
+  "Frame ships no manga and no scrapers. It is a reader. You bring the sources, and what those sources contain belongs to whoever runs them, not to Frame. There are two ways to add sources.":
+    "Frame nie zawiera mang ani mechanizmów pozyskiwania treści. Jest czytnikiem. To Ty dodajesz źródła, a ich zawartość należy do podmiotów, które nimi zarządzają, nie do Frame. Źródła można dodać na dwa sposoby.",
   "Import failed": "Import nie powiódł się",
   "It serves a web UI at {url}": "Udostępnia interfejs internetowy pod adresem {url}",
   "Manga > Set up a source > Local folder, and choose a folder of manga you already own (CBZ files or folders of images).":
@@ -855,8 +855,8 @@ const coverage: Record<string, string> = {
   heard: "usłyszane",
   of: "z",
   orig: "oryg.",
-  "Open the signed-in user's own Harbor profile immediately when its handle is loaded. Returns true when navigation starts and false otherwise.":
-    "Natychmiast otwiera własny profil Harbor zalogowanego użytkownika po wczytaniu jego identyfikatora. Zwraca true po rozpoczęciu nawigacji, a w przeciwnym razie false.",
+  "Open the signed-in user's own Frame profile immediately when its handle is loaded. Returns true when navigation starts and false otherwise.":
+    "Natychmiast otwiera własny profil Frame zalogowanego użytkownika po wczytaniu jego identyfikatora. Zwraca true po rozpoczęciu nawigacji, a w przeciwnym razie false.",
   "AI search failed.": "Wyszukiwanie AI nie powiodło się.",
   "Add a debrid provider in Settings first.":
     "Najpierw dodaj dostawcę usługi debrid w Ustawieniach.",
@@ -869,9 +869,9 @@ const coverage: Record<string, string> = {
     "Nie udało się przygotować tego źródła P2P. Może nie mieć osiągalnych peerów. Spróbuj ponownie lub wybierz inne źródło.",
   "Direct torrent streaming is turned off. Turn it on in Settings > P2P & servers to stream torrents without a debrid.":
     "Bezpośrednie strumieniowanie torrentów jest wyłączone. Włącz je w Ustawieniach > P2P i serwery, aby strumieniować torrenty bez usługi debrid.",
-  "Harbor could not open your browser.": "Harbor nie mógł otworzyć przeglądarki.",
-  "Harbor's peer-to-peer engine is warming up. This clears on its own in a few seconds, then Play works.":
-    "Silnik peer-to-peer Harbor jest uruchamiany. Ten komunikat zniknie sam po kilku sekundach, po czym przycisk Odtwórz zacznie działać.",
+  "Frame could not open your browser.": "Frame nie mógł otworzyć przeglądarki.",
+  "Frame's peer-to-peer engine is warming up. This clears on its own in a few seconds, then Play works.":
+    "Silnik peer-to-peer Frame jest uruchamiany. Ten komunikat zniknie sam po kilku sekundach, po czym przycisk Odtwórz zacznie działać.",
   Minus: "Minus",
   "None of your debrid services could deliver a working file. Pick another stream.":
     "Żadna z Twoich usług debrid nie mogła dostarczyć działającego pliku. Wybierz inny strumień.",
@@ -899,8 +899,8 @@ const coverage: Record<string, string> = {
     "To nieprzetworzony plik NZB. Najpierw musi zostać pobrany przez SABnzbd lub NZBGet, a dopiero potem odtworzony.",
   "This source isn't ready on your debrid yet. Try it again in a moment or pick another.":
     "To źródło nie jest jeszcze gotowe w Twojej usłudze debrid. Spróbuj ponownie za chwilę lub wybierz inne.",
-  "This source only opens in an external browser, not in Harbor's player.":
-    "To źródło otwiera się tylko w zewnętrznej przeglądarce, a nie w odtwarzaczu Harbor.",
+  "This source only opens in an external browser, not in Frame's player.":
+    "To źródło otwiera się tylko w zewnętrznej przeglądarce, a nie w odtwarzaczu Frame.",
   "This stream has no playable source.": "Ten strumień nie ma źródła, które można odtworzyć.",
   "This stream isn't cached on your debrid yet. Try a different one from the list.":
     "Tego strumienia nie ma jeszcze w pamięci podręcznej Twojej usługi debrid. Wybierz inny z listy.",
@@ -915,16 +915,16 @@ const coverage: Record<string, string> = {
     "Twój klucz usługi debrid został odrzucony. Sprawdź go w Ustawieniach.",
   "Your debrid served a placeholder/error video instead of the real file. Pick another stream.":
     "Twoja usługa debrid zwróciła zastępczy film lub komunikat błędu zamiast właściwego pliku. Wybierz inny strumień.",
-  "Your debrid service doesn't support queueing torrents from Harbor yet.":
-    "Twoja usługa debrid nie obsługuje jeszcze kolejkowania torrentów z Harbor.",
+  "Your debrid service doesn't support queueing torrents from Frame yet.":
+    "Twoja usługa debrid nie obsługuje jeszcze kolejkowania torrentów z Frame.",
   "Your debrid subscription has expired.": "Twoja subskrypcja usługi debrid wygasła.",
   "Your debrid took too long to respond. Hit Play again, or try another stream.":
     "Twoja usługa debrid zbyt długo nie odpowiadała. Ponownie wybierz Odtwórz lub wypróbuj inny strumień.",
   "Your {name} subscription looks expired.": "Wygląda na to, że Twoja subskrypcja {name} wygasła.",
   "{name} is over its traffic or fair-use limit right now.":
     "Usługa {name} osiągnęła obecnie limit transferu lub limit uczciwego użytkowania.",
-  "{name} is rate-limiting Harbor right now.":
-    "Usługa {name} ogranicza obecnie częstotliwość żądań Harbor.",
+  "{name} is rate-limiting Frame right now.":
+    "Usługa {name} ogranicza obecnie częstotliwość żądań Frame.",
   "{name} is temporarily unavailable (server error).":
     "Usługa {name} jest tymczasowo niedostępna (błąd serwera).",
   "{name} rejected your API key.": "Usługa {name} odrzuciła Twój klucz API.",
@@ -957,8 +957,8 @@ const coverage: Record<string, string> = {
   "Connect Jellyfin, Emby, or Plex in Streaming sources.":
     "Połącz Jellyfin, Emby lub Plex w sekcji Źródła strumieniowe.",
   "Connect and sync": "Połącz i synchronizuj",
-  "Connect books you own, reading sources, and metadata services. Harbor keeps the shelf coherent while every source stays under your control.":
-    "Połącz posiadane książki, źródła czytelnicze i usługi metadanych. Harbor zachowuje spójność półki, a wszystkie źródła pozostają pod Twoją kontrolą.",
+  "Connect books you own, reading sources, and metadata services. Frame keeps the shelf coherent while every source stays under your control.":
+    "Połącz posiadane książki, źródła czytelnicze i usługi metadanych. Frame zachowuje spójność półki, a wszystkie źródła pozostają pod Twoją kontrolą.",
   "Connect home server": "Połącz serwer domowy",
   "Connect now": "Połącz teraz",
   "Connect server": "Połącz serwer",
@@ -970,18 +970,18 @@ const coverage: Record<string, string> = {
   Disable: "Wyłącz",
   "Download media": "Pobierz multimedia",
   "Download selected ({n})": "Pobierz wybrane ({n})",
-  "Edge voices need the Harbor desktop app. Reading with the device voice.":
-    "Głosy Edge wymagają aplikacji Harbor na komputer. Odczytywanie głosem urządzenia.",
+  "Edge voices need the Frame desktop app. Reading with the device voice.":
+    "Głosy Edge wymagają aplikacji Frame na komputer. Odczytywanie głosem urządzenia.",
   "Edit home server": "Edytuj serwer domowy",
   Enrichment: "Wzbogacanie",
   "Every…": "Co…",
   "Featured book": "Polecana książka",
-  "Harbor does not host any books. Open a folder on this device, install a source extension, or connect your own server. Metadata can describe a book, but a source is what lets Harbor open it.":
-    "Harbor nie przechowuje żadnych książek. Otwórz folder na tym urządzeniu, zainstaluj rozszerzenie źródła lub połącz własny serwer. Metadane mogą opisywać książkę, ale dopiero źródło pozwala Harbor ją otworzyć.",
-  "Harbor opens Plex in your browser. Your Plex password is never entered in Harbor.":
-    "Harbor otworzy Plex w przeglądarce. Hasło do Plex nigdy nie jest wpisywane w Harbor.",
-  "Harbor tries HTTP, HTTPS, reverse proxies, and the provider’s default port. Credentials are stored separately.":
-    "Harbor próbuje połączeń HTTP, HTTPS, odwrotnych serwerów proxy i domyślnego portu dostawcy. Dane logowania są przechowywane oddzielnie.",
+  "Frame does not host any books. Open a folder on this device, install a source extension, or connect your own server. Metadata can describe a book, but a source is what lets Frame open it.":
+    "Frame nie przechowuje żadnych książek. Otwórz folder na tym urządzeniu, zainstaluj rozszerzenie źródła lub połącz własny serwer. Metadane mogą opisywać książkę, ale dopiero źródło pozwala Frame ją otworzyć.",
+  "Frame opens Plex in your browser. Your Plex password is never entered in Frame.":
+    "Frame otworzy Plex w przeglądarce. Hasło do Plex nigdy nie jest wpisywane w Frame.",
+  "Frame tries HTTP, HTTPS, reverse proxies, and the provider’s default port. Credentials are stored separately.":
+    "Frame próbuje połączeń HTTP, HTTPS, odwrotnych serwerów proxy i domyślnego portu dostawcy. Dane logowania są przechowywane oddzielnie.",
   "Home server": "Serwer domowy",
   "Home server quality": "Jakość z serwera domowego",
   "Home servers": "Serwery domowe",
@@ -1007,7 +1007,7 @@ const coverage: Record<string, string> = {
   "Prefer this device": "Preferuj to urządzenie",
   "Preferred home server": "Preferowany serwer domowy",
   "Preparing narration audio": "Przygotowywanie dźwięku narracji",
-  "Read eBooks in Harbor": "Czytaj e-booki w Harbor",
+  "Read eBooks in Frame": "Czytaj e-booki w Frame",
   "Refresh interval in days": "Częstotliwość odświeżania w dniach",
   "Refresh policy": "Zasady odświeżania",
   "Remove folder?": "Usunąć folder?",
@@ -1054,14 +1054,14 @@ const coverage: Record<string, string> = {
   "Direct/debrid only": "Tylko bezpośrednie/debrid",
   "Match subtitles across languages (experimental)":
     "Dopasuj napisy między językami (eksperymentalne)",
-  "When the audio and subtitle use different languages, Harbor compares a release-matched subtitle in the audio language. It only offers a fix unless every safety check is measured.":
-    "Gdy dźwięk i napisy używają różnych języków, Harbor porównuje napisy dopasowane do wydania w języku ścieżki dźwiękowej. Dopóki wszystkie kontrole bezpieczeństwa nie zostaną zmierzone, proponuje jedynie poprawkę.",
+  "When the audio and subtitle use different languages, Frame compares a release-matched subtitle in the audio language. It only offers a fix unless every safety check is measured.":
+    "Gdy dźwięk i napisy używają różnych języków, Frame porównuje napisy dopasowane do wydania w języku ścieżki dźwiękowej. Dopóki wszystkie kontrole bezpieczeństwa nie zostaną zmierzone, proponuje jedynie poprawkę.",
   "New York Times": "New York Times",
   "Bestseller lists in the eBook section.": "Listy bestsellerów w sekcji eBooków.",
   "New York Times · bestseller lists": "New York Times · listy bestsellerów",
   "NYT Books API key": "Klucz API NYT Books",
-  "Choose whether Harbor prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
-    "Wybierz, czy Harbor ma preferować źródła bezpośrednie i debrid, torrenty peer-to-peer, czy wyświetlać oba typy.",
+  "Choose whether Frame prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
+    "Wybierz, czy Frame ma preferować źródła bezpośrednie i debrid, torrenty peer-to-peer, czy wyświetlać oba typy.",
 };
 
 export default coverage;

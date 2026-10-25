@@ -12,26 +12,26 @@ export default {
   "games.manage.restore": "Показать в боковой панели",
   "games.manage.uninstall": "Удалить игру…",
   "games.manage.uninstallOptions": "Способы удаления…",
-  "games.manage.remove": "Убрать из Harbor…",
+  "games.manage.remove": "Убрать из Frame…",
   "games.manage.manage": "Управление",
   "games.manage.failed":
     "Не удалось выполнить действие. Проверьте доступность игры и лаунчера и повторите попытку.",
-  "games.manage.removed": "Убрано из Harbor",
+  "games.manage.removed": "Убрано из Frame",
   "games.manage.sent": "Продолжить в {source}",
   "games.manage.removeTitle": "Убрать запись из библиотеки?",
   "games.manage.uninstallTitle": "Удалить эту игру?",
   "games.manage.optionsTitle": "Удаление через {source}",
   "games.manage.removedNote": "Запись удалена из библиотеки. Файлы игры остались на компьютере.",
   "games.manage.sentNote":
-    "Открыт {source}. Завершите действие там; Harbor обновит состояние установки после возвращения.",
+    "Открыт {source}. Завершите действие там; Frame обновит состояние установки после возвращения.",
   "games.manage.removeNote":
-    "Удаляет {name} и историю игры в Harbor из этого профиля. Сама игра и её файлы останутся.",
+    "Удаляет {name} и историю игры в Frame из этого профиля. Сама игра и её файлы останутся.",
   "games.manage.steamNote":
     "Steam выполнит удаление {name}. Может потребоваться подтверждение в Steam. Сначала скопируйте локальные сохранения и моды, которые хотите оставить.",
   "games.manage.launcherNote":
-    "Откройте {source}, выберите {name}, затем управление или удаление. Удалением занимается лаунчер; Harbor не удаляет папку игры.",
+    "Откройте {source}, выберите {name}, затем управление или удаление. Удалением занимается лаунчер; Frame не удаляет папку игры.",
   "games.manage.windowsNote":
-    "Найдите {name} в установленных приложениях Windows и выберите удаление. Для портативных игр следуйте их инструкциям. Harbor не удалит папку.",
+    "Найдите {name} в установленных приложениях Windows и выберите удаление. Для портативных игр следуйте их инструкциям. Frame не удалит папку.",
   "games.manage.opening": "Открытие…",
   "games.manage.confirmUninstall": "Перейти в Steam",
   "games.manage.openSource": "Открыть {source}",

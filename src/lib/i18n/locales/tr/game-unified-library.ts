@@ -3,7 +3,7 @@ export default {
     "Battle.net hesabı değişti. Bu profilin içe aktarımlarını değiştirmek için tekrar giriş yapın.",
   "games.battlenet.connect": "Giriş yap",
   "games.battlenet.intro":
-    "Oyunlarınızı içe aktarmak için Battle.net’e giriş yapın. Bu bağlantı mevcut Harbor profilinize aittir.",
+    "Oyunlarınızı içe aktarmak için Battle.net’e giriş yapın. Bu bağlantı mevcut Frame profilinize aittir.",
   "games.battlenet.installed": "Yüklü oyunları göster",
   "games.battlenet.uninstalled": "Hesaptaki yüklü olmayan oyunları göster",
   "games.battlenet.partial":
@@ -14,7 +14,7 @@ export default {
   "games.battlenet.timeout": "Battle.net zamanında yanıt vermedi. Tekrar deneyin.",
   "games.battlenet.busy": "Bir Battle.net hesap işlemi zaten devam ediyor.",
   "games.battlenet.update":
-    "Battle.net’i bağlamak için güncellenen Harbor masaüstü uygulamasını yeniden başlatın.",
+    "Battle.net’i bağlamak için güncellenen Frame masaüstü uygulamasını yeniden başlatın.",
   "games.battlenet.error": "Battle.net güncellenemedi. Son içe aktarılan kitaplığınız korunuyor.",
   "games.battlenet.disconnect": "Battle.net bağlantısını kes",
   "games.battlenet.removeNote":
@@ -26,7 +26,7 @@ export default {
   "games.launcherSession.unconfirmed": "Oyun durumu kontrol ediliyor",
   "games.launcherSession.notStarted": "Oyun başlamadı",
   "games.launcherSession.error":
-    "Oyun etkinliği kaydedilemedi. Tekrar denemek için Harbor’ı yeniden açın.",
+    "Oyun etkinliği kaydedilemedi. Tekrar denemek için Frame’ı yeniden açın.",
 
   "games.steamImport.importedTitle": "İçe aktarılan oyunlar",
   "games.steamImport.excluded": "İçe aktarma ayarlarınız nedeniyle atlandı",
@@ -38,7 +38,7 @@ export default {
   "games.steamImport.ignoreSaved": "Yok sayılan kimlikler kaydedildi.",
   "games.steamImport.title": "Steam oyunlarını içe aktar",
   "games.steamImport.note":
-    "Oyun kayıtlarını bu Harbor profilinde saklayın. Sahiplik ve kurulum ayrı kontrol edilir.",
+    "Oyun kayıtlarını bu Frame profilinde saklayın. Sahiplik ve kurulum ayrı kontrol edilir.",
   "games.steamImport.input": "Steam uygulama kimlikleri veya mağaza URL’leri",
   "games.steamImport.profile": "Depressurizer profili seç",
   "games.steamImport.count": "{selected} seçili · {total} kayıt",
@@ -80,7 +80,7 @@ export default {
   "games.libraryStatus.onHold": "Ara verildi",
   "games.libraryStatus.stopped": "Bırakıldı",
   "games.libraryStatus.note":
-    "Bu kopya için seçiminiz bu Harbor profiline kaydedilir. Oynama süresi ve başarımlar bu seçimi değiştirmez.",
+    "Bu kopya için seçiminiz bu Frame profiline kaydedilir. Oynama süresi ve başarımlar bu seçimi değiştirmez.",
 
   "games.unified.playtime": "Oynama süresi",
   "games.unified.playtime.all": "Tüm oynama süreleri",
@@ -92,11 +92,11 @@ export default {
   "games.unified.playtime.most": "En çok kayıtlı süre",
   "games.unified.playtime.steam": "Steam’de {time}",
   "games.unified.playtime.zeroSteam": "Steam’de kayıtlı oynama süresi yok",
-  "games.unified.playtime.zeroHarbor": "Harbor’da kayıtlı oynama süresi yok",
+  "games.unified.playtime.zeroHarbor": "Frame’da kayıtlı oynama süresi yok",
   "games.unified.playtime.unknownHint":
     "Steam hesabının oynama süresi mevcut değil veya bu kaynak oynama süresi bildirmiyor.",
   "games.unified.playtime.note":
-    "Steam toplamları ve düzeltmeleriniz dahil Harbor’da kaydedilen süre kullanılır. Mevcut olmayan süreler ayrı tutulur.",
+    "Steam toplamları ve düzeltmeleriniz dahil Frame’da kaydedilen süre kullanılır. Mevcut olmayan süreler ayrı tutulur.",
   "games.unified.note": "Steam kütüphanen, PC oyunların ve içe aktardığın ROM’lar tek görünümde.",
   "games.unified.allSources": "Tüm kaynaklar",
   "games.unified.availability": "Kullanılabilirlik",

@@ -4,12 +4,11 @@ export default {
   "games.searchUi.aiPlaceholder": "ゲームの特徴や雰囲気、遊びたい内容を説明…",
   "games.searchUi.guide": "タイトルで検索し、フィルターで結果を絞り込めます。",
   "games.searchUi.aiGuide":
-    "探している内容を説明してください。HarborがAIの提案をSteamカタログと照合します。",
+    "探している内容を説明してください。FrameがAIの提案をSteamカタログと照合します。",
   "games.searchUi.web": "ウェブ情報",
   "games.searchUi.settings": "AI設定",
   "games.searchUi.setup": "AIプロバイダーを接続",
-  "games.searchUi.setupNote":
-    "Harborで使用中のOpenRouterまたはGroqのアカウントとモデルを使います。",
+  "games.searchUi.setupNote": "Frameで使用中のOpenRouterまたはGroqのアカウントとモデルを使います。",
   "games.searchUi.aiHint":
     "準備ができたらEnterを押してください。選択したフィルターはAIの結果にも適用されます。",
   "games.searchUi.thinking": "ゲームを探してSteamで確認中…",

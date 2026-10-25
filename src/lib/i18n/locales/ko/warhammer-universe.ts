@@ -20,7 +20,7 @@ export default {
   "games.warhammerUniverse.free": "Warhammer TV에서 무료",
   "games.warhammerUniverse.subscription": "Warhammer+ 구독이 필요할 수 있음",
   "games.warhammerUniverse.movieNote":
-    "2010년 애니메이션 영화. Harbor 상세에서 출연진, 예고편과 제공 소스를 확인하세요.",
+    "2010년 애니메이션 영화. Frame 상세에서 출연진, 예고편과 제공 소스를 확인하세요.",
   "games.warhammerUniverse.screenScope":
     "Warhammer TV 공개 선별 목록입니다. Hammer and Bolter는 여러 세계를 다루며 시청 가능 여부는 제공자가 결정합니다.",
   "games.warhammerUniverse.lore": "세계관 속으로",

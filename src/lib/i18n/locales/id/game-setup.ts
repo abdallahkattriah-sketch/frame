@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "Harbor dimulai ulang saat pemasangan. Tinjau berkas game yang terpasang untuk menyelesaikan.",
+    "Frame dimulai ulang saat pemasangan. Tinjau berkas game yang terpasang untuk menyelesaikan.",
   "games.setup.state.starting": "Memulai penginstal",
   "games.setup.state.waiting": "Menunggu penginstal",
   "games.setup.startingNote": "Membuka penginstal…",
@@ -37,7 +37,7 @@ export default {
   "games.setup.state.verificationUnknown": "Tinjau hasil",
   "games.setup.viewProgress": "Lihat pemasangan",
   "games.setup.showInstaller": "Tampilkan pemasang",
-  "games.setup.setup_window": "Jendela pemasang tidak tersedia. Harbor masih memantau pemasangan.",
+  "games.setup.setup_window": "Jendela pemasang tidak tersedia. Frame masih memantau pemasangan.",
   "games.setup.elapsed": "Waktu berlalu",
   "games.setup.io": "I/O pemasang",
   "games.setup.ioNote":
@@ -73,7 +73,7 @@ export default {
   "games.setup.state.running": "Penginstal sedang berjalan",
   "games.setup.state.finished": "Penginstal ditutup — pilih file gamemu",
   "games.setup.state.failed": "Penginstal tidak selesai dengan baik",
-  "games.setup.state.interrupted": "Periksa penyiapan — Harbor ditutup saat penginstal berjalan",
+  "games.setup.state.interrupted": "Periksa penyiapan — Frame ditutup saat penginstal berjalan",
   "games.setup.state.external": "Penginstal terbuka di jendela lain",
   "games.setup.exitCode": "Kode keluar: {code}",
   "games.setup.unavailable":
@@ -99,9 +99,9 @@ export default {
   "games.setup.destination": "Instal ke",
   "games.setup.chooseDestination": "Pilih folder instalasi",
   "games.setup.managedNote":
-    "Harbor akan menginstal game di sini, menemukan berkas game, dan menambahkannya ke pustaka Anda.",
+    "Frame akan menginstal game di sini, menemukan berkas game, dan menambahkannya ke pustaka Anda.",
   "games.setup.managedRunning":
-    "Menginstal game Anda. Anda dapat menutup jendela ini; Harbor akan terus memantau prosesnya.",
+    "Menginstal game Anda. Anda dapat menutup jendela ini; Frame akan terus memantau prosesnya.",
   "games.setup.detected": "Berkas game ditemukan secara otomatis",
   "games.setup.chooseDetected": "Pilih berkas game yang ingin ditambahkan.",
   "games.setup.activity": "{size} dalam {count} berkas",
@@ -117,7 +117,7 @@ export default {
   "games.setup.setup_engine":
     "Penginstal ini memerlukan jendelanya sendiri. Pilih Jalankan penginstal untuk melanjutkan.",
   "games.setup.setup_candidates":
-    "Instalasi selesai, tetapi Harbor tidak dapat membaca berkas yang terinstal. Pindai folder instalasi lagi.",
+    "Instalasi selesai, tetapi Frame tidak dapat membaca berkas yang terinstal. Pindai folder instalasi lagi.",
   "games.setup.state.installing": "Menginstal",
   "games.setup.externalAction": "Jalankan penginstal",
   "games.setup.files": "Berkas yang diunduh",

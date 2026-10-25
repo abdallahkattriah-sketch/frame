@@ -82,7 +82,7 @@ export default {
   "games.league.patchDifference":
     "Thống kê trang bị từ {patch}; dữ liệu trang bị và kỹ năng từ {assets}.",
   "games.league.attribution":
-    "Harbor is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "Frame is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
   "games.league.tierList": "Bảng xếp hạng",
   "games.league.tierScope": "Xếp hạng đơn/đôi · Lục Bảo+ · Toàn cầu",
   "games.league.patchFilter": "Chọn bản cập nhật",

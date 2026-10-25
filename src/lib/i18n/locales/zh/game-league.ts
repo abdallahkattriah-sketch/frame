@@ -80,7 +80,7 @@ export default {
     "每套出装都有独立样本。完整出装偏向持续到足以购买装备的对局，其胜率不是英雄的整体胜率。克制对局的样本可能较少。请根据队友和对手调整选择。视频可能来自旧版本。",
   "games.league.patchDifference": "出装统计来自{patch}；装备和技能资料来自{assets}。",
   "games.league.attribution":
-    "Harbor is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "Frame is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
   "games.league.tierList": "强度榜",
   "games.league.tierScope": "单双排 · 翡翠及以上 · 全球",
   "games.league.patchFilter": "选择版本",

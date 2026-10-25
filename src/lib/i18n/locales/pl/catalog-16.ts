@@ -4,12 +4,12 @@ const catalog16: Record<string, string> = {
   "more events": "więcej wydarzeń",
   movies: "filmy",
   mpv: "mpv",
-  "mpv is required for recording. Install mpv and restart Harbor.":
-    "Do nagrywania wymagany jest mpv. Zainstaluj mpv i uruchom ponownie Harbor.",
+  "mpv is required for recording. Install mpv and restart Frame.":
+    "Do nagrywania wymagany jest mpv. Zainstaluj mpv i uruchom ponownie Frame.",
   "mpv on the desktop app, HTML5 in the browser. The right engine without thinking about it.":
     "mpv w aplikacji komputerowej, HTML5 w przeglądarce. Zawsze właściwy silnik, bez zastanawiania się.",
   "n/a": "nie dot.",
-  "name it Harbor, hit": "nazwij go Harbor i kliknij",
+  "name it Frame, hit": "nazwij go Frame i kliknij",
   "natural-harmonia-gropius/hdr-toys": "natural-harmonia-gropius/hdr-toys",
   new: "nowość",
   "next airs in {count}d": "następny odcinek za {count} dni",
@@ -152,8 +152,8 @@ const catalog16: Record<string, string> = {
   "wants to connect": "chce nawiązać kontakt",
   "warming up…": "rozgrzewanie…",
   watched: "obejrzano",
-  "will be removed from Harbor. Anything you've set to use it will fall back to Inter.":
-    "zostanie usuniętych z Harbor. Wszystkie elementy, dla których je ustawiono, zaczną używać czcionki Inter.",
+  "will be removed from Frame. Anything you've set to use it will fall back to Inter.":
+    "zostanie usuniętych z Frame. Wszystkie elementy, dla których je ustawiono, zaczną używać czcionki Inter.",
   "window.harbor API": "API window.harbor",
   "with a WebSocket upgrade: opens a Watch Together room. State is held in a Durable Object, no persistence beyond the active session.":
     "z przejściem na WebSocket: otwiera pokój Wspólnego oglądania. Stan jest przechowywany w Durable Object i nie jest zachowywany po zakończeniu aktywnej sesji.",
@@ -249,8 +249,8 @@ const catalog16: Record<string, string> = {
   "{count} slot reskinned": "Zmieniono wygląd {count} miejsca",
   "{count} slots reskinned": "Zmieniono wygląd {count} miejsc",
   "{count} sources": "{count} źródeł",
-  "{count} tracker request blocked this session. Harbor itself sends zero telemetry.":
-    "W tej sesji zablokowano {count} żądań trackera. Sam Harbor nie wysyła żadnych danych telemetrycznych.",
+  "{count} tracker request blocked this session. Frame itself sends zero telemetry.":
+    "W tej sesji zablokowano {count} żądań trackera. Sam Frame nie wysyła żadnych danych telemetrycznych.",
   "{count} views": "{count} wyświetleń",
   "{count} vols": "{count} tomów",
   "{count} volume": "{count} tomów",
@@ -269,14 +269,14 @@ const catalog16: Record<string, string> = {
   "{count}w": "{count} tyg.",
   "{count}w ago": "{count} tyg. temu",
   "{count}y ago": "{count} lat temu",
-  "{deviceLabel} can't decode this stream natively ({reasons}). Harbor uses ffmpeg to convert it into a format your TV understands.":
-    "{deviceLabel} nie może natywnie zdekodować tego strumienia ({reasons}). Harbor używa ffmpeg, aby przekonwertować go na format obsługiwany przez telewizor.",
+  "{deviceLabel} can't decode this stream natively ({reasons}). Frame uses ffmpeg to convert it into a format your TV understands.":
+    "{deviceLabel} nie może natywnie zdekodować tego strumienia ({reasons}). Frame używa ffmpeg, aby przekonwertować go na format obsługiwany przez telewizor.",
   "{deviceLabel} can't play this stream ({reasons}) and none of the {count} available alternatives match its capabilities.":
     "{deviceLabel} nie może odtworzyć tego strumienia ({reasons}), a żaden z {count} dostępnych wariantów nie odpowiada możliwościom urządzenia.",
   '{deviceLabel} can\'t play this stream ({reasons}). Click "Pick another" first to load alternatives, then try casting again.':
     "{deviceLabel} nie może odtworzyć tego strumienia ({reasons}). Najpierw kliknij „Wybierz inne”, aby wczytać alternatywy, a następnie spróbuj ponownie przesłać strumień.",
-  "{deviceName} is an audio-only device. Harbor can't transcode video to audio yet, so this device can only stream audio files. Pick a TV, Chromecast, or display-equipped device to stream video.":
-    "{deviceName} jest urządzeniem obsługującym tylko dźwięk. Harbor nie potrafi jeszcze transkodować obrazu na dźwięk, dlatego to urządzenie może strumieniować wyłącznie pliki audio. Aby strumieniować wideo, wybierz telewizor, Chromecast lub urządzenie z wyświetlaczem.",
+  "{deviceName} is an audio-only device. Frame can't transcode video to audio yet, so this device can only stream audio files. Pick a TV, Chromecast, or display-equipped device to stream video.":
+    "{deviceName} jest urządzeniem obsługującym tylko dźwięk. Frame nie potrafi jeszcze transkodować obrazu na dźwięk, dlatego to urządzenie może strumieniować wyłącznie pliki audio. Aby strumieniować wideo, wybierz telewizor, Chromecast lub urządzenie z wyświetlaczem.",
   "{done} of {total}": "{done} z {total}",
   "{done} of {total} films picked.": "Wybrano {done} z {total} filmów.",
   "{done} of {total} picked": "Wybrano {done} z {total}",
@@ -284,8 +284,8 @@ const catalog16: Record<string, string> = {
   "{done} of {total} watched so far.": "Obejrzano dotąd {done} z {total}.",
   "{d}d ago": "{d} dni temu",
   "{facet} filter: {value}": "Filtr {facet}: {value}",
-  "{file} is empty. Start typing to restyle Harbor.":
-    "Plik {file} jest pusty. Zacznij pisać, aby zmienić wygląd Harbor.",
+  "{file} is empty. Start typing to restyle Frame.":
+    "Plik {file} jest pusty. Zacznij pisać, aby zmienić wygląd Frame.",
   "{first} and {second}": "{first} i {second}",
   "{format} added to Downloads": "Dodano {format} do pobranych",
   "{genreA} + {genreB}": "{genreA} + {genreB}",
@@ -335,12 +335,12 @@ const catalog16: Record<string, string> = {
   "{name} is over 100 MB.": "Plik {name} przekracza 100 MB.",
   "{name} is taken": "Nazwa {name} jest zajęta",
   "{name} left the video": "{name} opuszcza film",
-  "{name} on Harbor": "{name} w Harbor",
+  "{name} on Frame": "{name} w Frame",
   "{name} reached {count} five-star ratings": "{name} ma już {count} pięciogwiazdkowych ocen",
   "{name} started watching": "{name} rozpoczął oglądanie",
   "{name} wants you here": "{name} zaprasza tutaj",
-  "{name} will be removed from Harbor. Anything you've set to use it will fall back to Inter.":
-    "{name} zostanie usunięty z Harbor. Wszystkie elementy, dla których go wybrano, powrócą do czcionki Inter.",
+  "{name} will be removed from Frame. Anything you've set to use it will fall back to Inter.":
+    "{name} zostanie usunięty z Frame. Wszystkie elementy, dla których go wybrano, powrócą do czcionki Inter.",
   "{name} · since {year}": "{name} · od {year}",
   "{name}'s ratings": "Oceny użytkownika {name}",
   "{name}'s {sub}": "{sub} użytkownika {name}",
@@ -351,7 +351,7 @@ const catalog16: Record<string, string> = {
   "{n} / {max} lists": "{n} / {max} list",
   "{n} / {max} titles": "{n} / {max} tytułów",
   "{n} GB": "{n} GB",
-  "{n} Harbor icons": "{n} ikon Harbor",
+  "{n} Frame icons": "{n} ikon Frame",
   "{n} LIVE": "{n} NA ŻYWO",
   "{n} addon loading": "Ładowanie {n} dodatku",
   "{n} addons loading": "Wczytywanie {n} dodatków",
@@ -407,7 +407,7 @@ const catalog16: Record<string, string> = {
   "{n} on": "Włączonych: {n}",
   "{n} on Trakt": "{n} pozycji w Trakt",
   "{n} options active": "{n} aktywnych opcji",
-  "{n} other Harbors": "{n} innych Harborów",
+  "{n} other Frames": "{n} innych Frameów",
   "{n} picks, refreshed daily": "{n} propozycji, odświeżanych codziennie",
   "{n} px": "{n} pikseli",
   "{n} ratings were saved before you stopped.": "Przed zatrzymaniem zapisano {n} ocen.",
@@ -429,8 +429,8 @@ const catalog16: Record<string, string> = {
   "{n} streaming services on": "{n} włączonych usług streamingowych",
   "{n} titles together": "{n} wspólnych tytułów",
   "{n} titles you like": "{n} lubianych tytułów",
-  "{n} tracker requests blocked this session. Harbor itself sends zero telemetry.":
-    "W tej sesji zablokowano {n} żądań elementów śledzących. Sam Harbor nie wysyła żadnych danych telemetrycznych.",
+  "{n} tracker requests blocked this session. Frame itself sends zero telemetry.":
+    "W tej sesji zablokowano {n} żądań elementów śledzących. Sam Frame nie wysyła żadnych danych telemetrycznych.",
   "{n} tracks": "{n} ścieżek",
   "{n} uncached hidden": "Ukryto {n} niebuforowanych pozycji",
   "{n} versions": "{n} wersji",
@@ -485,12 +485,12 @@ const catalog16: Record<string, string> = {
   "{title} cover": "Okładka „{title}”",
   "{title} image viewer": "Przeglądarka obrazów: {title}",
   "{title} internal cover": "Wewnętrzna okładka „{title}”",
-  "{title} on Harbor": "{title} w Harbor",
+  "{title} on Frame": "{title} w Frame",
   "{title} overview": "Opis: {title}",
   "{title} poster": "Plakat {title}",
   "{title} trailer": "Zwiastun: {title}",
   "{title} will not come back in the Discovery Queue.": "{title} nie wróci do kolejki odkrywania.",
-  "{title} won't load inside Harbor.": "{title} nie wczyta się w Harbor.",
+  "{title} won't load inside Frame.": "{title} nie wczyta się w Frame.",
   "{title} · Episode {episode}": "{title} · Odcinek {episode}",
   "{total} found across 1 source": "Znaleziono {total} w 1 źródle",
   "{total} found across {n} sources": "Znaleziono {total} w {n} źródłach",
@@ -518,8 +518,8 @@ const catalog16: Record<string, string> = {
   "التنس (WTA)": "Tenis (WTA)",
   "بطولة PGA": "Mistrzostwa PGA",
   "دوري MLS": "Liga MLS",
-  "“Cached” just means your addon thinks that file is already saved on your debrid, ready to play instantly. That flag isn’t always right: sometimes the file isn’t actually there yet. When that happens the source won’t start, or it plays a short broken clip. It’s not a Harbor problem: pick another source, or give it a minute to finish caching and try again.":
-    "„W pamięci podręcznej” oznacza tylko, że dodatek uważa ten plik za już zapisany w usłudze debrid i gotowy do natychmiastowego odtworzenia. Ta informacja nie zawsze jest prawidłowa: czasami pliku jeszcze tam nie ma. Wtedy źródło się nie uruchomi albo odtworzy krótki, uszkodzony fragment. To nie jest problem z Harbor: wybierz inne źródło lub poczekaj minutę na zakończenie zapisywania w pamięci podręcznej i spróbuj ponownie.",
+  "“Cached” just means your addon thinks that file is already saved on your debrid, ready to play instantly. That flag isn’t always right: sometimes the file isn’t actually there yet. When that happens the source won’t start, or it plays a short broken clip. It’s not a Frame problem: pick another source, or give it a minute to finish caching and try again.":
+    "„W pamięci podręcznej” oznacza tylko, że dodatek uważa ten plik za już zapisany w usłudze debrid i gotowy do natychmiastowego odtworzenia. Ta informacja nie zawsze jest prawidłowa: czasami pliku jeszcze tam nie ma. Wtedy źródło się nie uruchomi albo odtworzy krótki, uszkodzony fragment. To nie jest problem z Frame: wybierz inne źródło lub poczekaj minutę na zakończenie zapisywania w pamięci podręcznej i spróbuj ponownie.",
   "← folder or .cbz / .zip": "← folder lub plik .cbz / .zip",
   "← name it like the manga": "← nazwij jak mangę",
   "−15s": "−15 s",

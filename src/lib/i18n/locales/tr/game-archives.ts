@@ -11,9 +11,9 @@ export default {
     "Arşivlerin tutulduğu klasör geri dönüşüm kutusunda. Gerekirse oradan geri yükleyin.",
   "games.cleanup.restoredNote": "Arşiv parçaları özgün klasörlerine geri döndü.",
   "games.cleanup.uncertainNote":
-    "Harbor sonucu doğrulayamadı. Devam etmeden önce özgün klasörü ve geri dönüşüm kutusunu kontrol edin.",
+    "Frame sonucu doğrulayamadı. Devam etmeden önce özgün klasörü ve geri dönüşüm kutusunu kontrol edin.",
   "games.cleanup.recoveryNote":
-    "Bazı parçalar Harbor’ın geçici klasöründe olabilir. Temizliğe devam edin veya mevcut dosyaları değiştirmeden geri yükleyin.",
+    "Bazı parçalar Frame’ın geçici klasöründe olabilir. Temizliğe devam edin veya mevcut dosyaları değiştirmeden geri yükleyin.",
   "games.cleanup.working": "Arşiv dosyaları denetleniyor",
   "games.cleanup.restore": "Tutulan dosyaları geri yükle",
   "games.cleanup.resume": "Temizliğe devam et",
@@ -77,7 +77,7 @@ export default {
   "games.setupShortcuts.error": "Kısayollar güncellenemedi. Yeniden deneyin.",
 
   "games.archive.archive_decoder":
-    "Harbor bu arşivi sınırları dahilinde açamadı. Başka bir arşiv çıkarma aracı deneyin.",
+    "Frame bu arşivi sınırları dahilinde açamadı. Başka bir arşiv çıkarma aracı deneyin.",
   "games.archive.archive_password_or_checksum":
     "Parola yanlış veya arşiv hasarlı olabilir. Parolayı kontrol edin ya da arşivi yeniden indirin.",
   "games.archive.password": "Arşiv parolası",
@@ -90,7 +90,7 @@ export default {
   "games.archive.eyebrow": "İndirmeden kütüphanene",
   "games.archive.title": "Oyun dosyalarını çıkar",
   "games.archive.intro":
-    "Bir ZIP / 7z / RAR / TAR / TAR.GZ / ISO arşivini incele ve dosyaların nereye çıkarılacağını seç. Harbor yeni bir klasör oluşturur ve özgün arşivi korur.",
+    "Bir ZIP / 7z / RAR / TAR / TAR.GZ / ISO arşivini incele ve dosyaların nereye çıkarılacağını seç. Frame yeni bir klasör oluşturur ve özgün arşivi korur.",
   "games.archive.source": "Arşiv",
   "games.archive.chooseSource": "Arşiv seç",
   "games.archive.chooseParent": "Hedef klasör seç",
@@ -120,23 +120,23 @@ export default {
   "games.archive.openFolder": "Klasörü göster",
   "games.archive.localLibrary": "Yerel oyunlar",
   "games.archive.archive_profile":
-    "Bu Harbor profili belirlenemedi. Oyunlar bölümünü yeniden açıp tekrar dene.",
+    "Bu Frame profili belirlenemedi. Oyunlar bölümünü yeniden açıp tekrar dene.",
   "games.archive.archive_busy": "Başka bir arşiv işlemi sürüyor. Önce bitir veya iptal et.",
   "games.archive.archive_canceled": "Çıkarma iptal edildi. Özgün arşiv hâlâ duruyor.",
   "games.archive.archive_read":
     "Arşiv okunamadı. Dosyanın hâlâ kullanılabilir olduğunu denetle ve tekrar dene.",
   "games.archive.archive_links":
     "Bu arşiv bağlantılar veya özel dosyalar içeriyor. Bunun yerine projenin kurulum yönergelerini kullan.",
-  "games.archive.archive_limit": "Bu arşiv Harbor'ın mevcut çıkarma sınırlarını aşıyor.",
+  "games.archive.archive_limit": "Bu arşiv Frame'ın mevcut çıkarma sınırlarını aşıyor.",
   "games.archive.archive_changed":
     "Arşiv incelemeden sonra değişti. Çıkarmadan önce yeniden incele.",
   "games.archive.archive_path":
-    "Arşiv, Harbor'ın güvenle çıkaramayacağı bir yol içeriyor. Oyun dosyaları değiştirilmedi.",
+    "Arşiv, Frame'ın güvenle çıkaramayacağı bir yol içeriyor. Oyun dosyaları değiştirilmedi.",
   "games.archive.archive_format":
     "Bu desteklenen bir ZIP / 7z / RAR / TAR / TAR.GZ / ISO arşivi değil veya arşiv dizini hasarlı.",
   "games.archive.archive_encrypted": "Devam etmek için bu arşivin parolasını girin.",
   "games.archive.archive_compression":
-    "Bu ZIP / 7z / RAR / TAR / TAR.GZ / ISO, Harbor'ın henüz desteklemediği bir sıkıştırma yöntemi kullanıyor.",
+    "Bu ZIP / 7z / RAR / TAR / TAR.GZ / ISO, Frame'ın henüz desteklemediği bir sıkıştırma yöntemi kullanıyor.",
   "games.archive.archive_collision":
     "Bazı arşiv öğeleri birbirinin üzerine yazılacaktı. Hiçbir şey çıkarılmadı.",
   "games.archive.archive_destination":
@@ -156,11 +156,11 @@ export default {
   "games.archive.space.checking": "Hedefteki alan denetleniyor…",
   "games.archive.space.free": "{size} kullanılabilir",
   "games.archive.space.required": "Çıkarmak için {size}",
-  "games.archive.space.reserved": "Diğer Harbor işlemleri için {size} ayrıldı",
+  "games.archive.space.reserved": "Diğer Frame işlemleri için {size} ayrıldı",
   "games.archive.space.after": "Çıkarma sonrasında {size} kullanılabilir",
   "games.archive.space.shortfall": "{size} daha fazla alan gerekiyor",
   "games.archive.space.unknown":
-    "Boş alan okunamadı. Harbor çıkarma başladığında yeniden denetleyecek.",
+    "Boş alan okunamadı. Frame çıkarma başladığında yeniden denetleyecek.",
   "games.archive.space.error": "Hedefteki alan denetlenemedi.",
   "games.archive.space.refresh": "Alanı yeniden denetle",
   "games.archive.space.note":
@@ -179,15 +179,15 @@ export default {
   "games.archive.retry": "İncele ve yeniden dene",
   "games.archive.showPartial": "Kısmi dosyaları göster",
   "games.archive.partialNote":
-    "Harbor kısmi klasörü sakladı. Silmeden önce inceleyin; yeniden denemek yeni bir çıkarma işlemi başlatır.",
+    "Frame kısmi klasörü sakladı. Silmeden önce inceleyin; yeniden denemek yeni bir çıkarma işlemi başlatır.",
   "games.archive.progressFiles": "{total} dosyadan {count} tanesi",
   "games.archive.archive_store":
-    "Harbor çıkarma ilerlemesini kaydedemedi. Dosyalarınız incelenmek üzere saklandı.",
+    "Frame çıkarma ilerlemesini kaydedemedi. Dosyalarınız incelenmek üzere saklandı.",
   "games.archive.archive_start": "Çıkarma işlemi başlatılamadı. Yeniden deneyin.",
   "games.archive.archive_history":
     "Çıkarma geçmişi dolu. Devam etmek için eski bir kaydı kaldırın; dosyaları kalacaktır.",
   "games.archive.archive_interrupted":
-    "Harbor çıkarma tamamlanmadan kapandı. Kaydedilen konumu inceleyip yeniden deneyin.",
+    "Frame çıkarma tamamlanmadan kapandı. Kaydedilen konumu inceleyip yeniden deneyin.",
   "games.archive.archive_parts":
     "Bu parçalar tek bir arşiv oluşturmuyor. Tüm parçaların aynı indirmeye ait olduğunu kontrol edin.",
   "games.archive.archive_tool": "Bu sürümde ek arşiv biçimi desteği yok.",
@@ -196,9 +196,9 @@ export default {
   "games.archive.continueSetup": "Oyunu kur",
   "games.archive.dismissRecord": "Kaydı kaldır · dosyaları tut",
   "games.archive.archive_multipart":
-    "Bu bölünmüş arşiv biçimi henüz desteklenmiyor. Bir arşiv uygulamasıyla çıkarın, ardından çıkarılan klasörü Harbor’da açın.",
+    "Bu bölünmüş arşiv biçimi henüz desteklenmiyor. Bir arşiv uygulamasıyla çıkarın, ardından çıkarılan klasörü Frame’da açın.",
   "games.archive.partsCount": "{count} arşiv parçası",
-  "games.archive.partsNote": "Tüm parçaları aynı klasörde tutun. Harbor bunları birlikte çıkarır.",
+  "games.archive.partsNote": "Tüm parçaları aynı klasörde tutun. Frame bunları birlikte çıkarır.",
   "games.archive.partsMore": "Daha fazla parça göster",
   "games.archive.setHash": "Arşiv kümesi SHA-256",
   "games.archive.archive_missing_part":

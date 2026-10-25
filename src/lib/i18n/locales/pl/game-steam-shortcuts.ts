@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Aktywność",
   "games.shortcuts.activity.title": "Aktywność skrótów",
   "games.shortcuts.activity.note":
-    "Ostatnie skanowania i uruchomienia dla tego profilu Harbor. Do 300 wpisów.",
+    "Ostatnie skanowania i uruchomienia dla tego profilu Frame. Do 300 wpisów.",
   "games.shortcuts.activity.remember": "Zachowuj między sesjami",
   "games.shortcuts.activity.detailed": "Uwzględniaj szczegóły skanowania",
   "games.shortcuts.activity.storageError":
@@ -55,7 +55,7 @@ export default {
   "games.shortcuts.storeError": "Nie można zapisać ustawień.",
   "games.shortcuts.shortcut_location": "Wybierz folder Steam lub jego folder userdata.",
   "games.shortcuts.shortcut_account":
-    "Otwórz Steam na koncie tego skrótu i odśwież. Harbor musi używać tej samej instalacji Steam.",
+    "Otwórz Steam na koncie tego skrótu i odśwież. Frame musi używać tej samej instalacji Steam.",
   "games.shortcuts.shortcut_missing": "Ten skrót już nie istnieje. Odśwież bibliotekę.",
   "games.shortcuts.shortcut_executable":
     "Brakuje pliku wykonywalnego lub jego ścieżka bezwzględna nie jest obsługiwana.",

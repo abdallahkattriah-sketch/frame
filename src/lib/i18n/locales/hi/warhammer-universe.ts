@@ -20,7 +20,7 @@ export default {
   "games.warhammerUniverse.free": "Warhammer TV पर मुफ़्त",
   "games.warhammerUniverse.subscription": "Warhammer+ सदस्यता की ज़रूरत हो सकती है",
   "games.warhammerUniverse.movieNote":
-    "2010 की एनिमेटेड फ़िल्म। कलाकार, ट्रेलर और स्रोतों के लिए Harbor विवरण खोलें।",
+    "2010 की एनिमेटेड फ़िल्म। कलाकार, ट्रेलर और स्रोतों के लिए Frame विवरण खोलें।",
   "games.warhammerUniverse.screenScope":
     "Warhammer TV का सार्वजनिक चयन। Hammer and Bolter कई दुनियाओं में है; उपलब्धता प्रदाता तय करता है।",
   "games.warhammerUniverse.lore": "कथाजगत के भीतर",

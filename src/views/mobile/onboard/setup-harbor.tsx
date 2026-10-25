@@ -78,7 +78,7 @@ export function SetupHarbor({
         setPassword("");
         const s = readSession();
         if (!s) {
-          setError(t("Harbor signed you up but returned no session. Try signing in instead."));
+          setError(t("Frame signed you up but returned no session. Try signing in instead."));
           return;
         }
         onRecovery(recoveryCode, s);
@@ -88,14 +88,14 @@ export function SetupHarbor({
       setPassword("");
       const s = readSession();
       if (!s) {
-        setError(t("Harbor accepted that but returned no session. Try again."));
+        setError(t("Frame accepted that but returned no session. Try again."));
         return;
       }
       onDeliver(s);
     } catch (e) {
       setError(
         reachFailed(e)
-          ? t("Could not reach Harbor. Check your phone's connection and try again.")
+          ? t("Could not reach Frame. Check your phone's connection and try again.")
           : ((e as { message?: string })?.message ?? t("That did not work. Check your details.")),
       );
     } finally {
@@ -124,7 +124,7 @@ export function SetupHarbor({
     <SetupShell {...chrome} action={action}>
       <SetupSlipway step="harbor" built={chrome.built} won={confirmed} />
       <SetupHeading
-        title={confirmed ? t("You are aboard.") : t("Your Harbor account")}
+        title={confirmed ? t("You are aboard.") : t("Your Frame account")}
         body={
           confirmed
             ? undefined
@@ -133,7 +133,7 @@ export function SetupHarbor({
       />
 
       {confirmed ? (
-        <SetupOk>{t("Your Harbor account is signed in on the TV.")}</SetupOk>
+        <SetupOk>{t("Your Frame account is signed in on the TV.")}</SetupOk>
       ) : (
         <SetupForm onSubmit={submit}>
           <div className="flex gap-2" role="tablist">

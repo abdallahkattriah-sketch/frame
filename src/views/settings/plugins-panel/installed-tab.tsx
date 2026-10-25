@@ -77,7 +77,7 @@ export function InstalledTab({ onAddRepository }: { onAddRepository: () => void 
       <Section
         title={t("Use plugins")}
         subtitle={t(
-          "Plugins look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.",
+          "Plugins look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.",
         )}
         newId="plugins:use-plugins"
       >
@@ -118,7 +118,7 @@ export function InstalledTab({ onAddRepository }: { onAddRepository: () => void 
         <ToggleRow
           label={t("Show languages on plugin posters")}
           sub={t(
-            "Some plugins name a listing after everything it carries, so its languages are in the title. Harbor reads them back out and badges the poster. Shown only when the plugin provides it.",
+            "Some plugins name a listing after everything it carries, so its languages are in the title. Frame reads them back out and badges the poster. Shown only when the plugin provides it.",
           )}
           value={settings.pluginsPosterLanguages}
           onChange={(v) => update({ pluginsPosterLanguages: v })}
@@ -155,7 +155,7 @@ export function InstalledTab({ onAddRepository }: { onAddRepository: () => void 
             icon={<RefreshCw size={18} strokeWidth={2} />}
             label={t("Refresh all")}
             desc={t(
-              "Runs every plugin Harbor stood down. One that answers comes back; the others stay paused.",
+              "Runs every plugin Frame stood down. One that answers comes back; the others stay paused.",
             )}
           >
             <SButton disabled={refreshing} onClick={() => void refreshAll()}>

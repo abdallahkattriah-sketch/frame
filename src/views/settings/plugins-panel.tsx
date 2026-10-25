@@ -36,7 +36,7 @@ export function PluginsPanel() {
           <Info size={18} strokeWidth={2.2} className="mt-[2px] shrink-0 text-ink-subtle" />
           <p className="max-w-[66ch] text-[15.5px] leading-[22px] text-ink-muted">
             {t(
-              "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.",
+              "Plugins run in the desktop app. Open Frame on your computer to add and manage them.",
             )}
           </p>
         </div>

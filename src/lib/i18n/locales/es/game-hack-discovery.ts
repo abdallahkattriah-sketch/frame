@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Huellas de los archivos · SHA-256",
   "games.patch.localNote": "En tu dispositivo · BPS · IPS · UPS · Hasta 256 MB",
   "games.patch.desktop":
-    "Aplica parches en la app de escritorio de Harbor para Windows, macOS o Linux. Tus archivos permanecen en tu dispositivo y el juego original se conserva.",
+    "Aplica parches en la app de escritorio de Frame para Windows, macOS o Linux. Tus archivos permanecen en tu dispositivo y el juego original se conserva.",
   "games.patch.done": "Todo listo para una nueva aventura",
   "games.patch.preserved":
     "Tu copia modificada está guardada. El juego original y el parche no han cambiado.",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Un archivo seleccionado cambió después de la verificación. Vuelve a comprobar el parche antes de guardar.",
   "games.patch.patch_output_exists":
-    "Ya existe un archivo en esa ubicación. Elige otro nombre; Harbor no reemplaza archivos existentes.",
+    "Ya existe un archivo en esa ubicación. Elige otro nombre; Frame no reemplaza archivos existentes.",
   "games.patch.patch_read_failed":
     "No se pudo leer uno de los archivos. Comprueba que siga disponible y selecciónalo de nuevo.",
   "games.patch.patch_write_failed":
@@ -77,9 +77,9 @@ export default {
   "games.atlas.sort.newest": "Más recientes",
   "games.atlas.sort.oldest": "Más antiguos",
   "games.hub.stepPatch":
-    "Elige tu juego original y un parche BPS, IPS o UPS. Harbor guarda una copia aparte.",
+    "Elige tu juego original y un parche BPS, IPS o UPS. Frame guarda una copia aparte.",
   "games.patch.description":
-    "Elige tu juego original y un parche BPS, IPS o UPS. Harbor guarda una copia aparte.",
+    "Elige tu juego original y un parche BPS, IPS o UPS. Frame guarda una copia aparte.",
   "games.patch.choosePatch": "Elegir parche (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Este archivo no es un parche BPS, IPS o UPS compatible.",
   "games.discovery.viewGame": "Ver juego",

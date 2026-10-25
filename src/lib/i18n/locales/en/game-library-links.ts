@@ -3,7 +3,7 @@ export default {
   "games.links.sort": "Sort links",
   "games.links.note": "Sort by URL, A–Z. Names and destinations stay the same.",
   "games.links.available":
-    "Uses links already available in Harbor. Newly discovered links appear after your saved order.",
+    "Uses links already available in Frame. Newly discovered links appear after your saved order.",
   "games.links.original": "Restore original order",
   "games.links.applied": "Updated links for {count} games.",
   "games.links.changes": "{count} games will change.",

@@ -276,7 +276,7 @@ export default {
   "games.gw2.guide": "Hướng dẫn kho báu",
   "games.gw2.checked": "Đã kiểm tra: {date}",
   "games.gw2.scope":
-    "Được lưu trong hồ sơ Harbor này. Mỗi lựa chọn tính một ưu đãi; số dư, giới hạn mua và quyền truy cập bản mở rộng không được kiểm tra. Xác nhận tình trạng có sẵn rồi mua trong trò chơi.",
+    "Được lưu trong hồ sơ Frame này. Mỗi lựa chọn tính một ưu đãi; số dư, giới hạn mua và quyền truy cập bản mở rộng không được kiểm tra. Xác nhận tình trạng có sẵn rồi mua trong trò chơi.",
   "games.gw2.total": "Tổng dự kiến",
   "games.gw2.currency": "Astral Acclaim",
   "games.gw2.selected": "Đã chọn {count} ưu đãi",

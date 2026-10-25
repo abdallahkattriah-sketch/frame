@@ -2,16 +2,16 @@ const controllers: Record<string, string> = {
   Controllers: "Controles",
   "Controllers / gamepad": "Controles / gamepad",
   "Controller support": "Suporte a controle",
-  "Use a game controller to browse Harbor and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.":
-    "Use um controle de videogame para navegar no Harbor e controlar a reprodução. Funciona com Xbox, PlayStation e a maioria dos controles USB ou Bluetooth.",
-  "Use a game controller to browse Harbor and control playback. Tune the sticks and see the button map.":
-    "Use um controle de videogame para navegar no Harbor e controlar a reprodução. Ajuste os analógicos e veja o mapa de botões.",
+  "Use a game controller to browse Frame and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.":
+    "Use um controle de videogame para navegar no Frame e controlar a reprodução. Funciona com Xbox, PlayStation e a maioria dos controles USB ou Bluetooth.",
+  "Use a game controller to browse Frame and control playback. Tune the sticks and see the button map.":
+    "Use um controle de videogame para navegar no Frame e controlar a reprodução. Ajuste os analógicos e veja o mapa de botões.",
   "Enable controller": "Ativar controle",
-  "When on, a connected controller moves focus around Harbor and drives the player. Turn it off to ignore all controllers.":
-    "Quando ativado, um controle conectado move o foco pelo Harbor e comanda o player. Desative para ignorar todos os controles.",
+  "When on, a connected controller moves focus around Frame and drives the player. Turn it off to ignore all controllers.":
+    "Quando ativado, um controle conectado move o foco pelo Frame e comanda o player. Desative para ignorar todos os controles.",
   "Connected controllers": "Controles conectados",
-  "Controllers Harbor can see right now. Connect one over USB or Bluetooth and it shows up here.":
-    "Controles que o Harbor detecta agora. Conecte um por USB ou Bluetooth e ele aparece aqui.",
+  "Controllers Frame can see right now. Connect one over USB or Bluetooth and it shows up here.":
+    "Controles que o Frame detecta agora. Conecte um por USB ou Bluetooth e ele aparece aqui.",
   "No controllers detected. Connect one over USB or Bluetooth.":
     "Nenhum controle detectado. Conecte um por USB ou Bluetooth.",
   Connected: "Conectado",
@@ -42,8 +42,8 @@ const controllers: Record<string, string> = {
   "Fine-tune how far you push the stick before it registers and how quickly held directions repeat.":
     "Ajuste com precisão o quanto você empurra o analógico antes de registrar e a rapidez com que direções pressionadas se repetem.",
   Deadzone: "Zona morta",
-  "How far you push the stick before Harbor reacts. Raise it if the focus drifts on its own.":
-    "O quanto você empurra o analógico antes de o Harbor reagir. Aumente se o foco se mover sozinho.",
+  "How far you push the stick before Frame reacts. Raise it if the focus drifts on its own.":
+    "O quanto você empurra o analógico antes de o Frame reagir. Aumente se o foco se mover sozinho.",
   "Repeat speed": "Velocidade de repetição",
   "How fast a held direction keeps moving the focus.":
     "A rapidez com que uma direção pressionada continua movendo o foco.",

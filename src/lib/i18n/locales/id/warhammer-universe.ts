@@ -20,7 +20,7 @@ export default {
   "games.warhammerUniverse.free": "Gratis di Warhammer TV",
   "games.warhammerUniverse.subscription": "Mungkin perlu langganan Warhammer+",
   "games.warhammerUniverse.movieNote":
-    "Film animasi tahun 2010. Buka detail Harbor untuk pemeran, trailer, dan sumber.",
+    "Film animasi tahun 2010. Buka detail Frame untuk pemeran, trailer, dan sumber.",
   "games.warhammerUniverse.screenScope":
     "Pilihan publik Warhammer TV. Hammer and Bolter mencakup beberapa dunia; ketersediaan ditentukan penyedia.",
   "games.warhammerUniverse.lore": "Mendalami cerita",

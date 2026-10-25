@@ -56,8 +56,8 @@ const live: Record<string, string> = {
   "Recording · {pct}% · {remaining} · click to manage":
     "Gravando · {pct}% · {remaining} · clique para gerenciar",
   "Saved as .ts (works in mpv, VLC, ffmpeg)": "Salvo como .ts (funciona no mpv, VLC, ffmpeg)",
-  "mpv is required for recording. Install mpv and restart Harbor.":
-    "o mpv é necessário para gravação. Instale o mpv e reinicie o Harbor.",
+  "mpv is required for recording. Install mpv and restart Frame.":
+    "o mpv é necessário para gravação. Instale o mpv e reinicie o Frame.",
   "Loading more channels ({n1} of {n2})": "Carregando mais canais ({n1} de {n2})",
   "Showing first {n1} of {n2} channels. Use search or a category to narrow down.":
     "Mostrando os primeiros {n1} de {n2} canais. Use a busca ou uma categoria para refinar.",
@@ -118,8 +118,8 @@ const live: Record<string, string> = {
   "The URL is valid but the playlist is empty. The provider may be in maintenance, or the URL is misconfigured.":
     "A URL é válida, mas a playlist está vazia. O provedor pode estar em manutenção, ou a URL está mal configurada.",
   "Playlist is too large": "A playlist é muito grande",
-  "Harbor caps playlists at 80 MB to stay responsive. Most providers offer a filtered URL with fewer channels.":
-    "O Harbor limita playlists a 80 MB para manter a fluidez. A maioria dos provedores oferece uma URL filtrada com menos canais.",
+  "Frame caps playlists at 80 MB to stay responsive. Most providers offer a filtered URL with fewer channels.":
+    "O Frame limita playlists a 80 MB para manter a fluidez. A maioria dos provedores oferece uma URL filtrada com menos canais.",
   "Could not load this playlist": "Não foi possível carregar esta playlist",
   "No channels match": "Nenhum canal corresponde",
   "Reset filters": "Redefinir filtros",

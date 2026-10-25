@@ -11,8 +11,8 @@ const lists: Record<string, string> = {
   "Keep typing, or paste the full list URL.": "Продолжайте вводить или вставьте полный URL списка.",
   "Paste a Trakt, MDBList, TMDB, Letterboxd, IMDb, or MAL list URL":
     "Вставьте URL списка Trakt, MDBList, TMDB, Letterboxd, IMDb или MAL",
-  "Paste a public list from Trakt, MDBList, TMDB, Letterboxd, IMDb, or MyAnimeList. Harbor pulls the titles in and keeps the artwork sharp.":
-    "Вставьте публичный список из Trakt, MDBList, TMDB, Letterboxd, IMDb или MyAnimeList. Harbor загрузит названия и подтянет чёткие обложки.",
+  "Paste a public list from Trakt, MDBList, TMDB, Letterboxd, IMDb, or MyAnimeList. Frame pulls the titles in and keeps the artwork sharp.":
+    "Вставьте публичный список из Trakt, MDBList, TMDB, Letterboxd, IMDb или MyAnimeList. Frame загрузит названия и подтянет чёткие обложки.",
   "Every collection": "Все коллекции",
   "Every saga in one place. Search anything: if it exists, it's here.":
     "Все саги в одном месте. Ищите что угодно: если оно существует, оно здесь.",

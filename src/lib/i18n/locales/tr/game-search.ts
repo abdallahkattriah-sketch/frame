@@ -4,12 +4,12 @@ export default {
   "games.searchUi.aiPlaceholder": "Bir oyunu, atmosferi veya oynamak istediğini anlat…",
   "games.searchUi.guide": "Ada göre ara, ardından filtrelerle sonuçları daralt.",
   "games.searchUi.aiGuide":
-    "Ne aradığını anlat. Harbor, yapay zekâ önerilerini Steam kataloğunda doğrular.",
+    "Ne aradığını anlat. Frame, yapay zekâ önerilerini Steam kataloğunda doğrular.",
   "games.searchUi.web": "Web bağlamı",
   "games.searchUi.settings": "Yapay zekâ ayarları",
   "games.searchUi.setup": "Yapay zekâ sağlayıcını bağla",
   "games.searchUi.setupNote":
-    "Harbor’da kullandığın OpenRouter veya Groq hesabını ve modelini kullan.",
+    "Frame’da kullandığın OpenRouter veya Groq hesabını ve modelini kullan.",
   "games.searchUi.aiHint":
     "Hazır olduğunda Enter’a bas. Filtrelerin yapay zekâ sonuçlarına da uygulanır.",
   "games.searchUi.thinking": "Oyunlar aranıyor ve Steam kontrol ediliyor…",

@@ -19,7 +19,7 @@ export default {
   "games.retro.controls": "Управление",
   "games.retro.saveExit": "Сохранить и выйти",
   "games.retro.popout": "Отдельное окно",
-  "games.retro.dock": "Вернуться в Harbor",
+  "games.retro.dock": "Вернуться в Frame",
   "games.retro.mute": "Выключить звук",
   "games.retro.unmute": "Включить звук",
   "games.retro.volume": "Громкость",
@@ -28,7 +28,7 @@ export default {
   "games.retro.smooth": "Сглаживание",
   "games.retro.fullscreen": "Полный экран",
   "games.retro.exitFullscreen": "Выйти из полного экрана",
-  "games.retro.playInside": "Играть в Harbor",
+  "games.retro.playInside": "Играть в Frame",
   "games.retro.setup":
     "Установите плеер {system} один раз и играйте здесь. Игра останется на этом устройстве.",
   "games.retro.install": "Установить и играть · {size} МБ",

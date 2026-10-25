@@ -8,13 +8,13 @@ export default {
   "games.download.relink.review": "Dosyayı incele",
   "games.download.relink.saved": "Kaydedilen: {size}",
   "games.download.relink.note":
-    "Harbor, yeni veri eklemeden önce karşılaştırmak için kaydedilen bölümü yeniden indirecek.",
+    "Frame, yeni veri eklemeden önce karşılaştırmak için kaydedilen bölümü yeniden indirecek.",
   "games.download.relink.apply": "Bağlantıyı güncelle ve sürdür",
   "games.download.relink.working": "Bağlantı güncelleniyor…",
   "games.download.relink.checking": "Kaydedilen veriler denetleniyor",
   "games.download.relink.single": "Bu indirme bağlantısını değiştirmek için bir dosya seçin.",
   "games.download.relink.native":
-    "Bu bağlantıyı güncellemek için Harbor’ı en son sürümle yeniden başlatın.",
+    "Bu bağlantıyı güncellemek için Frame’ı en son sürümle yeniden başlatın.",
   "games.download.transfer_relink_mismatch":
     "İndirmeyi sürdürmek için aynı ada ve boyuta sahip aynı dosyayı seçin.",
   "games.download.center.content.patch": "Oyun güncellemesi",

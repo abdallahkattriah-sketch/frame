@@ -29,7 +29,7 @@ export default {
     "エミュレーターのセーブを開いて手持ちを編集するか、個別のポケモンをコレクションに取り込めます。",
   "games.pokemon.guideSourceNote": "元の攻略サイトで読むか、接続できる場合はここで開けます。",
   "games.pokemon.readGuide": "Bulbapediaで読む",
-  "games.pokemon.readInside": "Harborで読む",
+  "games.pokemon.readInside": "Frameで読む",
   "games.pokemon.closeReader": "リーダーを閉じる",
   "games.pokemon.downloadImage": "{name}の画像をダウンロード",
   "games.pokemon.imageSaved": "{name}の画像を保存しました",
@@ -40,7 +40,7 @@ export default {
   "games.pokemon.saveStep1": "ゲームを開き、ゲーム内のメニューでセーブします。",
   "games.pokemon.saveStep2":
     "ゲームを閉じ、バッテリーセーブ（.sav、.srm、.dsv）を探すか書き出します。",
-  "games.pokemon.saveStep3": "上の「セーブを開く」からHarborで編集します。",
+  "games.pokemon.saveStep3": "上の「セーブを開く」からFrameで編集します。",
   "games.pokemon.findSave": "セーブはどこにありますか？",
   "games.pokemon.saveLocations":
     "ROMと同じ場所か、エミュレーターのセーブフォルダーを確認してください。ステートセーブしかない場合は、それをエミュレーターで読み込み、ゲーム内のメニューからセーブします。",

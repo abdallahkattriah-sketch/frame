@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Hoàn tất khôi phục bị gián đoạn trước khi sao lưu hoặc khôi phục thư mục này.",
   "games.backups.save_recovery_scope":
-    "Mở lần khôi phục này từ hồ sơ Harbor và trò chơi đã bắt đầu nó.",
+    "Mở lần khôi phục này từ hồ sơ Frame và trò chơi đã bắt đầu nó.",
   "games.backups.result.keptCurrent": "Dữ liệu lưu hiện tại không thay đổi",
   "games.backups.resultNote.keptCurrent":
     "Đã hoàn tất khôi phục mà không thay thế dữ liệu lưu hiện có trong thư mục này.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Lưu lại một thời điểm để có thể quay lại. Chọn thư mục lưu của trò chơi này và một thư mục riêng cho bản sao lưu. Đóng trò chơi trước khi sao lưu hoặc khôi phục.",
   "games.backups.desktop":
-    "Tính năng sao lưu có trong ứng dụng Harbor trên máy tính. Tính năng này dùng các thư mục bạn chọn trên máy.",
+    "Tính năng sao lưu có trong ứng dụng Frame trên máy tính. Tính năng này dùng các thư mục bạn chọn trên máy.",
   "games.backups.folder.source": "Dữ liệu lưu trò chơi",
   "games.backups.folder.vault": "Thư mục sao lưu",
   "games.backups.choose.source": "Chọn thư mục lưu của trò chơi",
@@ -51,8 +51,8 @@ export default {
   "games.backups.identical": "Thư mục lưu hiện tại đã khớp với bản lưu này.",
   "games.backups.restore": "Khôi phục bản lưu",
   "games.backups.recoveryNote":
-    "Harbor giữ một bản lưu phục hồi và thư mục gốc trước khi thay thế dữ liệu lưu.",
-  "games.backups.localNote": "Được giữ trong thư mục đã chọn, riêng cho từng hồ sơ Harbor.",
+    "Frame giữ một bản lưu phục hồi và thư mục gốc trước khi thay thế dữ liệu lưu.",
+  "games.backups.localNote": "Được giữ trong thư mục đã chọn, riêng cho từng hồ sơ Frame.",
   "games.backups.openRecovery": "Mở thư mục gốc",
   "games.backups.reviewUndo": "Xem xét hoàn tác",
   "games.backups.result.restored": "Bản lưu của bạn đã được khôi phục",
@@ -62,11 +62,11 @@ export default {
   "games.backups.resultNote.restored":
     "Thư mục lưu của bạn hiện khớp với bản lưu này. Các bản phục hồi vẫn có sẵn nếu bạn muốn quay lại trạng thái trước đó.",
   "games.backups.resultNote.rolledBack":
-    "Khôi phục không hoàn tất nên Harbor đã đặt lại thư mục lưu gốc. Bản lưu phục hồi cũng có sẵn bên dưới.",
+    "Khôi phục không hoàn tất nên Frame đã đặt lại thư mục lưu gốc. Bản lưu phục hồi cũng có sẵn bên dưới.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor không thể đặt lại thư mục gốc sau khi khôi phục thất bại. Giữ trò chơi đóng. Các tệp gốc vẫn được giữ trong thư mục bên dưới và bản lưu phục hồi.",
+    "Frame không thể đặt lại thư mục gốc sau khi khôi phục thất bại. Giữ trò chơi đóng. Các tệp gốc vẫn được giữ trong thư mục bên dưới và bản lưu phục hồi.",
   "games.backups.resultNote.notRestored":
-    "Harbor không thể đặt bản lưu vào thư mục đã chọn. Bản sao lưu vẫn có sẵn.",
+    "Frame không thể đặt bản lưu vào thư mục đã chọn. Bản sao lưu vẫn có sẵn.",
   "games.backups.phase.scanning": "Đang đọc dữ liệu lưu…",
   "games.backups.phase.copying": "Đang sao chép tệp lưu…",
   "games.backups.phase.verifying": "Đang kiểm tra bản lưu…",
@@ -80,9 +80,9 @@ export default {
   "games.backups.save_record":
     "Không thể đọc an toàn một bản ghi sao lưu. Các tệp vẫn được giữ lại. Kiểm tra thư mục sao lưu đã chọn.",
   "games.backups.save_read":
-    "Harbor không thể đọc dữ liệu lưu này. Kiểm tra xem thư mục có khả dụng và trò chơi đã đóng chưa.",
+    "Frame không thể đọc dữ liệu lưu này. Kiểm tra xem thư mục có khả dụng và trò chơi đã đóng chưa.",
   "games.backups.save_write":
-    "Harbor không thể ghi xong dữ liệu lưu này. Kiểm tra quyền ghi vào thư mục và đảm bảo trò chơi đã đóng.",
+    "Frame không thể ghi xong dữ liệu lưu này. Kiểm tra quyền ghi vào thư mục và đảm bảo trò chơi đã đóng.",
   "games.backups.save_name":
     "Không thể giữ nguyên tên một tệp. Dùng thư mục có tên tệp được hỗ trợ.",
   "games.backups.save_changed":
@@ -102,9 +102,9 @@ export default {
   "games.backups.save_space":
     "Không đủ dung lượng trống để giữ một bản sao đầy đủ. Chọn thư mục khác hoặc giải phóng dung lượng.",
   "games.backups.save_config":
-    "Harbor không thể đọc các thư mục bạn đã chọn trước đó. Chọn lại; các bản sao lưu hiện có vẫn nguyên vẹn.",
+    "Frame không thể đọc các thư mục bạn đã chọn trước đó. Chọn lại; các bản sao lưu hiện có vẫn nguyên vẹn.",
   "games.backups.save_config_write":
-    "Harbor không thể ghi nhớ các thư mục này. Lựa chọn trước đó và các bản sao lưu không thay đổi.",
+    "Frame không thể ghi nhớ các thư mục này. Lựa chọn trước đó và các bản sao lưu không thay đổi.",
   "games.backups.failed":
     "Không thể hoàn tất thao tác dữ liệu lưu này. Các tệp sao lưu vẫn được giữ. Kiểm tra thư mục rồi thử lại.",
   "games.backups.compare.title": "So sánh tệp",

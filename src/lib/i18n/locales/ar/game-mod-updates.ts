@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "المثبّت: {version}",
   "games.mods.current": "مثبّت",
   "games.mods.versionNote":
-    "اختر إصدارًا متوافقًا. يراجع Harbor التغييرات ويحتفظ بالإصدار السابق محليًا. أغلق Minecraft قبل تطبيق التغييرات.",
+    "اختر إصدارًا متوافقًا. يراجع Frame التغييرات ويحتفظ بالإصدار السابق محليًا. أغلق Minecraft قبل تطبيق التغييرات.",
   "games.mods.applyChanges": "تطبيق التغييرات",
   "games.mods.reviewChanges": "مراجعة التغييرات",
   "games.mods.previousVersion": "السابق: {version}",

@@ -4,12 +4,12 @@ export default {
   "games.searchUi.aiPlaceholder": "Descreva um jogo, um clima ou o que gostaria de jogar…",
   "games.searchUi.guide": "Pesquise pelo título e refine os resultados com filtros.",
   "games.searchUi.aiGuide":
-    "Descreva o que procura. O Harbor verifica as sugestões da IA no catálogo Steam.",
+    "Descreva o que procura. O Frame verifica as sugestões da IA no catálogo Steam.",
   "games.searchUi.web": "Contexto da web",
   "games.searchUi.settings": "Configurações de IA",
   "games.searchUi.setup": "Conecte seu provedor de IA",
   "games.searchUi.setupNote":
-    "Use a mesma conta OpenRouter ou Groq e o mesmo modelo que já usa no Harbor.",
+    "Use a mesma conta OpenRouter ou Groq e o mesmo modelo que já usa no Frame.",
   "games.searchUi.aiHint":
     "Pressione Enter quando quiser. Seus filtros também se aplicam aos resultados da IA.",
   "games.searchUi.thinking": "Buscando jogos e verificando no Steam…",

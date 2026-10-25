@@ -278,7 +278,7 @@ export default {
   "games.gw2.guide": "Kasa rehberi",
   "games.gw2.checked": "Kontrol: {date}",
   "games.gw2.scope":
-    "Bu Harbor profiline kaydedilir. Her seçim bir teklifi hesaplar; bakiyeniz, satın alma sınırları ve genişleme erişimi kontrol edilmez. Kullanılabilirliği doğrulayıp oyun içinde satın alın.",
+    "Bu Frame profiline kaydedilir. Her seçim bir teklifi hesaplar; bakiyeniz, satın alma sınırları ve genişleme erişimi kontrol edilmez. Kullanılabilirliği doğrulayıp oyun içinde satın alın.",
   "games.gw2.total": "Planlanan toplam",
   "games.gw2.currency": "Astral Acclaim",
   "games.gw2.selected": "{count} teklif seçildi",

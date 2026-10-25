@@ -39,7 +39,7 @@ export default {
   "games.valorant.metaScope":
     "Dati competitivi OP.GG per la patch selezionata. La percentuale di scelta indica la quota delle presenze degli agenti. I risultati descrivono il campione della fonte, non tutti i giocatori.",
   "games.valorant.referenceScope":
-    "Immagini e riferimenti tramite Valorant-API. Gli aggiornamenti possono arrivare in ritardo. Harbor non è approvato da Riot Games.",
+    "Immagini e riferimenti tramite Valorant-API. Gli aggiornamenti possono arrivare in ritardo. Frame non è approvato da Riot Games.",
   "games.valorant.samples": "{count} presenze",
   "games.valorant.smallSample": "Campione ridotto",
   "games.valorant.abilities": "Abilità",

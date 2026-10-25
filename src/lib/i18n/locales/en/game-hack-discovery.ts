@@ -25,9 +25,9 @@ export default {
   "games.atlas.sort.newest": "Newest",
   "games.atlas.sort.oldest": "Oldest",
   "games.hub.stepPatch":
-    "Choose your original game and a BPS, IPS or UPS patch. Harbor saves a separate copy.",
+    "Choose your original game and a BPS, IPS or UPS patch. Frame saves a separate copy.",
   "games.patch.description":
-    "Choose your original game and a BPS, IPS or UPS patch. Harbor saves a separate copy.",
+    "Choose your original game and a BPS, IPS or UPS patch. Frame saves a separate copy.",
   "games.patch.choosePatch": "Choose a patch (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "This file is not a supported BPS, IPS or UPS patch.",
   "games.discovery.viewGame": "View game",

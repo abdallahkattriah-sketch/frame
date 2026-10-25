@@ -314,7 +314,7 @@ function InstallerViewport({
         {blocked && (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 bg-canvas px-6 text-center">
             <p className="text-[14px] font-semibold text-ink">
-              {t("{title} won't load inside Harbor.", { title })}
+              {t("{title} won't load inside Frame.", { title })}
             </p>
             <p className="max-w-[44ch] text-[12.5px] text-ink-muted">
               {t(

@@ -39,12 +39,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam hasn't confirmed the result. Refresh to check before making more changes.",
   "games.achievementManager.error.platform":
-    "Achievement management currently supports Harbor on Windows x64.",
+    "Achievement management currently supports Frame on Windows x64.",
   "games.achievementManager.error.invalid": "Select up to 2,000 individual changes at a time.",
   "games.achievementManager.error.stale":
     "These achievements changed in Steam. Refresh before editing.",
   "games.achievementManager.error.protected":
-    "The game manages this achievement. Harbor can't edit it.",
+    "The game manages this achievement. Frame can't edit it.",
   "games.achievementManager.error.expired": "This review expired. Refresh before applying changes.",
   "games.achievementManager.error.busy": "Another Steam achievement request is in progress.",
   "games.achievementManager.commit": "Commit changes",
@@ -52,12 +52,12 @@ export default {
   "games.achievementManager.consentBody":
     "Unlock or relock achievements on your signed-in Steam account. Your selections stay as a draft until you commit the changes.",
   "games.achievementManager.consentRules":
-    "Harbor uses Steam's achievement interface without injecting into games. Each game's rules and reward requirements still apply.",
+    "Frame uses Steam's achievement interface without injecting into games. Each game's rules and reward requirements still apply.",
   "games.achievementManager.consentSam": "Inspired by SAM's achievement workflow",
-  "games.achievementManager.consentOnce": "Shown once for this Harbor profile.",
+  "games.achievementManager.consentOnce": "Shown once for this Frame profile.",
   "games.achievementManager.consentAccept": "I understand",
   "games.achievementManager.desktopOnly":
-    "Use Harbor on Windows with Steam running to change achievements.",
+    "Use Frame on Windows with Steam running to change achievements.",
   "games.achievementManager.all": "All",
   "games.achievementManager.filter": "Achievement filter",
   "games.achievementManager.rewards": "Item rewards",
@@ -94,7 +94,7 @@ export default {
   "games.achievementManager.pickTitle": "Choose a game",
   "games.achievementManager.pickSearch": "Search your games",
   "games.achievementManager.pickNote":
-    "Harbor can edit a game once Steam has cached its achievements on this computer.",
+    "Frame can edit a game once Steam has cached its achievements on this computer.",
   "games.achievementManager.pickInstalled": "Installed",
   "games.achievementManager.pickEmpty": "No games matched your search.",
   "games.achievementManager.pickUnavailable":

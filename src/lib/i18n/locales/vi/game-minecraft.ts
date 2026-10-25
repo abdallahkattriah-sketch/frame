@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "Tìm trên CurseForge",
   "games.minecraft.discovery.downloads": "Lượt tải",
   "games.minecraft.discovery.curseForgeBlocked":
-    "CurseForge hiện không cho phép Harbor tải danh mục này. Hãy thử lại hoặc mở nguồn.",
+    "CurseForge hiện không cho phép Frame tải danh mục này. Hãy thử lại hoặc mở nguồn.",
   "games.minecraft.discovery.unavailable": "Không thể tải danh bạ này. Hãy thử lại.",
   "games.minecraft.discovery.openSource": "Mở trang nguồn",
   "games.minecraft.discovery.loadMore": "Tải thêm",
   "games.minecraft.discovery.servers": "Máy chủ",
   "games.minecraft.discovery.serverNote":
-    "Danh bạ độc lập. Harbor không liên kết với các trang hay máy chủ này. Số liệu do từng danh bạ cung cấp.",
+    "Danh bạ độc lập. Frame không liên kết với các trang hay máy chủ này. Số liệu do từng danh bạ cung cấp.",
   "games.minecraft.discovery.searchServers": "Tìm trong máy chủ đã tải",
   "games.minecraft.discovery.directory": "Danh bạ",
   "games.minecraft.discovery.mode": "Chế độ chơi",
@@ -42,7 +42,7 @@ export default {
   "games.minecraft.lifecycle.settings": "Bao gồm điều khiển và danh sách máy chủ",
   "games.minecraft.lifecycle.exportNote": "Tạo tệp .mrpack di động chứa mod và cấu hình của bạn.",
   "games.minecraft.lifecycle.privateNote":
-    "Không bao gồm dữ liệu tài khoản Harbor, tệp chạy và nhật ký. Kiểm tra cấu hình mod trước khi chia sẻ.",
+    "Không bao gồm dữ liệu tài khoản Frame, tệp chạy và nhật ký. Kiểm tra cấu hình mod trước khi chia sẻ.",
   "games.minecraft.lifecycle.included": "Tệp đi kèm",
   "games.minecraft.lifecycle.referenced": "Tham chiếu tải xuống",
   "games.minecraft.lifecycle.referenceNote":
@@ -96,7 +96,7 @@ export default {
   "games.minecraft.update.chooseFile": "Chọn tệp .mrpack",
   "games.minecraft.update.restoreVersion": "Khôi phục {version}",
   "games.minecraft.update.reviewNote":
-    "Xem từng thay đổi trước khi áp dụng. Harbor giữ một bản sao độc lập của bản cài đặt trước.",
+    "Xem từng thay đổi trước khi áp dụng. Frame giữ một bản sao độc lập của bản cài đặt trước.",
   "games.minecraft.update.changeVersion": "Đổi phiên bản",
   "games.minecraft.update.download": "Tải xuống",
   "games.minecraft.update.recoveryCopy": "Bản sao khôi phục",
@@ -194,7 +194,7 @@ export default {
     "Đóng một phiên bản Minecraft đang chạy trước khi khởi chạy phiên bản khác.",
   "games.minecraft.java.title": "Java cho phiên bản riêng này",
   "games.minecraft.java.note": "Phiên bản Minecraft này cần Java {version}.",
-  "games.minecraft.java.managed": "Cài bằng Harbor",
+  "games.minecraft.java.managed": "Cài bằng Frame",
   "games.minecraft.java.installed": "Dùng Java đã cài",
   "games.minecraft.java.manage": "Quản lý Java",
 
@@ -212,7 +212,7 @@ export default {
   "games.minecraft.java.versionError": "Chọn Java {version} phù hợp với hệ thống.",
   "games.minecraft.java.invalidError": "Không thể xác minh bản cài Java này.",
   "games.minecraft.java.metadataError": "Không thể xác minh bản tải Java tương thích. Hãy thử lại.",
-  "games.minecraft.java.managedNote": "Harbor lưu phiên bản này trong thư viện Minecraft của bạn.",
+  "games.minecraft.java.managedNote": "Frame lưu phiên bản này trong thư viện Minecraft của bạn.",
   "games.minecraft.runtime.setup": "Thiết lập trò chơi",
   "games.minecraft.runtime.note":
     "Cài các tệp trò chơi chính thức cho phiên bản riêng này. Thế giới và mod của bạn được giữ nguyên.",
@@ -233,7 +233,7 @@ export default {
   "games.minecraft.runtime.verify": "Xác minh tệp",
   "games.minecraft.runtime.metadataError": "Không thể xác minh các tệp này. Hãy thử lại sau.",
   "games.minecraft.runtime.legacyError":
-    "Phiên bản này dùng định dạng cài đặt hoặc khởi chạy mà Harbor chưa hỗ trợ.",
+    "Phiên bản này dùng định dạng cài đặt hoặc khởi chạy mà Frame chưa hỗ trợ.",
   "games.minecraft.runtime.loaderError": "Định dạng cài đặt của trình nạp này chưa được hỗ trợ.",
   "games.minecraft.runtime.platformError": "Chưa hỗ trợ thiết lập trò chơi trên hệ thống này.",
   "games.minecraft.runtime.versionError":
@@ -244,7 +244,7 @@ export default {
   "games.minecraft.instances.import": "Nhập gói",
   "games.minecraft.instances.create": "Tạo bản cài",
   "games.minecraft.instances.desktop":
-    "Mở Harbor trên máy tính để tạo và quản lý các bản cài cục bộ.",
+    "Mở Frame trên máy tính để tạo và quản lý các bản cài cục bộ.",
   "games.minecraft.instances.search": "Tìm bản cài của bạn",
   "games.minecraft.instances.storage": "Thư mục lưu trữ",
   "games.minecraft.instances.chooseFolder": "Chọn thư mục lưu trữ",
@@ -280,7 +280,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Đang tải các phiên bản Minecraft…",
   "games.minecraft.instances.added": "Đã thêm vào bản cài của bạn",
   "games.minecraft.instances.storageNote":
-    "Chọn nơi lưu các bản cài Minecraft. Mỗi hồ sơ Harbor có thư mục riêng tại đây.",
+    "Chọn nơi lưu các bản cài Minecraft. Mỗi hồ sơ Frame có thư mục riêng tại đây.",
   "games.minecraft.instances.isolated": "Cài vào một bản cài mới, riêng biệt.",
   "games.minecraft.instances.cancelling": "Đang hủy…",
   "games.minecraft.instances.install": "Cài tệp gói",
@@ -293,7 +293,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "Đang áp dụng cấu hình gói…",
   "games.minecraft.instances.phase.done": "Đã cài tệp",
   "games.minecraft.instances.folderError":
-    "Chọn thư mục cục bộ có thể truy cập cho hồ sơ Harbor này.",
+    "Chọn thư mục cục bộ có thể truy cập cho hồ sơ Frame này.",
   "games.minecraft.instances.writeError":
     "Không ghi được bản cài. Kiểm tra quyền thư mục và dung lượng trống.",
   "games.minecraft.instances.readError":
@@ -308,7 +308,7 @@ export default {
   "games.minecraft.instances.formatError": "Đây không phải tệp .mrpack hợp lệ được hỗ trợ.",
   "games.minecraft.instances.loaderError":
     "Gói này dùng trình tải trò chơi không xác định hoặc xung đột.",
-  "games.minecraft.instances.sourceError": "Gói này cần nguồn tải xuống mà Harbor không hỗ trợ.",
+  "games.minecraft.instances.sourceError": "Gói này cần nguồn tải xuống mà Frame không hỗ trợ.",
   "games.minecraft.instances.limitError": "Gói hoặc thư viện vượt quá giới hạn dung lượng hỗ trợ.",
   "games.minecraft.instances.busyError":
     "Một thao tác gói khác vẫn đang chạy. Đợi hoàn tất hoặc hủy thao tác đó.",
@@ -361,9 +361,9 @@ export default {
   "games.minecraft.account.title": "Tài khoản Minecraft của bạn",
   "games.minecraft.account.intro":
     "Kết nối Microsoft để xem skin và áo choàng Minecraft, rồi áp dụng thiết kế của bạn.",
-  "games.minecraft.account.desktop": "Mở Harbor trên máy tính để kết nối tài khoản Minecraft.",
+  "games.minecraft.account.desktop": "Mở Frame trên máy tính để kết nối tài khoản Minecraft.",
   "games.minecraft.account.setup":
-    "Bản Harbor này chưa được cấu hình đăng nhập Microsoft. Bạn vẫn có thể chỉnh sửa skin cục bộ.",
+    "Bản Frame này chưa được cấu hình đăng nhập Microsoft. Bạn vẫn có thể chỉnh sửa skin cục bộ.",
   "games.minecraft.account.codeNote": "Nhập mã này trên trang đăng nhập Microsoft.",
   "games.minecraft.account.copy": "Sao chép mã",
   "games.minecraft.account.openMicrosoft": "Tiếp tục tại Microsoft",
@@ -392,7 +392,7 @@ export default {
     "Cài đặt Microsoft hoặc Xbox ngăn đăng nhập. Kiểm tra tuổi, gia đình hoặc khu vực của tài khoản.",
   "games.minecraft.account.skinError":
     "Không thể áp dụng skin hoặc áo choàng này. Làm mới tài khoản rồi thử lại.",
-  "games.minecraft.account.storeError": "Harbor không thể lưu tài khoản an toàn trên thiết bị này.",
+  "games.minecraft.account.storeError": "Frame không thể lưu tài khoản an toàn trên thiết bị này.",
   "games.minecraft.account.error": "Yêu cầu tài khoản thất bại. Hãy thử lại.",
   "games.minecraft.studio": "Xưởng skin",
   "games.minecraft.skinTitle": "Tạo phong cách riêng.",
@@ -426,7 +426,7 @@ export default {
   "games.minecraft.editHint":
     "Phím mũi tên di chuyển điểm ảnh. Enter để tô. Ctrl / ⌘ Z để hoàn tác.",
   "games.minecraft.library": "Skin của bạn",
-  "games.minecraft.localNote": "Lưu trên thiết bị này cho hồ sơ Harbor hiện tại.",
+  "games.minecraft.localNote": "Lưu trên thiết bị này cho hồ sơ Frame hiện tại.",
   "games.minecraft.new": "Skin mới",
   "games.minecraft.empty": "Nhập skin hoặc bắt đầu tô. Các chỉnh sửa được lưu tự động.",
   "games.minecraft.delete": "Xóa {name}",

@@ -42,12 +42,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam non ha confermato il risultato. Aggiorna prima di apportare altre modifiche.",
   "games.achievementManager.error.platform":
-    "La gestione degli obiettivi è attualmente disponibile in Harbor per Windows x64.",
+    "La gestione degli obiettivi è attualmente disponibile in Frame per Windows x64.",
   "games.achievementManager.error.invalid": "Seleziona fino a 2.000 modifiche alla volta.",
   "games.achievementManager.error.stale":
     "Questi obiettivi sono cambiati su Steam. Aggiorna prima di modificare.",
   "games.achievementManager.error.protected":
-    "Questo obiettivo è gestito dal gioco. Harbor non può modificarlo.",
+    "Questo obiettivo è gestito dal gioco. Frame non può modificarlo.",
   "games.achievementManager.error.expired":
     "Questa revisione è scaduta. Aggiorna prima di applicare le modifiche.",
   "games.achievementManager.error.busy": "È in corso un’altra richiesta di obiettivi Steam.",
@@ -64,12 +64,12 @@ export default {
   "games.achievementManager.consentBody":
     "Sblocca o blocca di nuovo gli obiettivi dell’account Steam connesso. Le selezioni restano una bozza finché non applichi le modifiche.",
   "games.achievementManager.consentRules":
-    "Harbor usa l’interfaccia degli obiettivi di Steam senza iniettare codice nei giochi. Restano valide le regole e i requisiti delle ricompense di ogni gioco.",
+    "Frame usa l’interfaccia degli obiettivi di Steam senza iniettare codice nei giochi. Restano valide le regole e i requisiti delle ricompense di ogni gioco.",
   "games.achievementManager.consentSam": "Ispirato alla gestione degli obiettivi di SAM",
-  "games.achievementManager.consentOnce": "Mostrato una volta per questo profilo Harbor.",
+  "games.achievementManager.consentOnce": "Mostrato una volta per questo profilo Frame.",
   "games.achievementManager.consentAccept": "Ho capito",
   "games.achievementManager.desktopOnly":
-    "Usa Harbor su Windows con Steam aperto per modificare gli obiettivi.",
+    "Usa Frame su Windows con Steam aperto per modificare gli obiettivi.",
   "games.achievementManager.all": "Tutti",
   "games.achievementManager.filter": "Filtra obiettivi",
   "games.achievementManager.rewards": "Oggetti premio",
@@ -127,7 +127,7 @@ export default {
   "games.achievementManager.pickTitle": "Scegli un gioco",
   "games.achievementManager.pickSearch": "Cerca nei tuoi giochi",
   "games.achievementManager.pickNote":
-    "Harbor può modificare gli obiettivi di un gioco dopo che Steam li ha memorizzati nella cache del computer.",
+    "Frame può modificare gli obiettivi di un gioco dopo che Steam li ha memorizzati nella cache del computer.",
   "games.achievementManager.pickInstalled": "Installato",
   "games.achievementManager.pickEmpty": "Nessun gioco corrisponde alla ricerca.",
   "games.achievementManager.pickUnavailable":

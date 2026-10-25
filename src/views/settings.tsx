@@ -176,7 +176,7 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   plugins: {
     label: "Plugins",
-    sub: "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.",
+    sub: "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.",
   },
   trakt: {
     label: "Trakt",
@@ -196,17 +196,17 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   letterboxd: {
     label: "Letterboxd",
-    sub: "Bring your Letterboxd watchlist, diary, liked films and lists into Harbor via the Stremboxd bridge.",
+    sub: "Bring your Letterboxd watchlist, diary, liked films and lists into Frame via the Stremboxd bridge.",
   },
   relay: {
-    label: "Harbor Relay",
+    label: "Frame Relay",
     sub: IS_WEB
-      ? "Watch Together rooms are routed through Harbor's hosted relay."
+      ? "Watch Together rooms are routed through Frame's hosted relay."
       : "A Cloudflare Worker on your own account that hosts your Watch Together rooms.",
   },
   streaming: {
     label: "Streaming sources",
-    sub: "How Harbor finds and resolves playable streams. Debrid keys and addon installs live here.",
+    sub: "How Frame finds and resolves playable streams. Debrid keys and addon installs live here.",
   },
   streamFilters: {
     label: "Stream filters",
@@ -214,11 +214,11 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   p2p: {
     label: "P2P & servers",
-    sub: "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.",
+    sub: "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.",
   },
   language: {
     label: "Languages",
-    sub: "What language Harbor speaks, and which audio tracks it reaches for first.",
+    sub: "What language Frame speaks, and which audio tracks it reaches for first.",
   },
   subtitles: {
     label: "Subtitles",
@@ -238,7 +238,7 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   shaders: {
     label: "Shaders",
-    sub: "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.",
+    sub: "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.",
   },
   playerLayout: {
     label: "Player layout",
@@ -246,15 +246,15 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   hotkeys: {
     label: "Hotkeys",
-    sub: "Every shortcut Harbor responds to. Click a binding to rebind it.",
+    sub: "Every shortcut Frame responds to. Click a binding to rebind it.",
   },
   controllers: {
     label: "Controllers",
-    sub: "Use a game controller to browse Harbor and control playback. Tune the sticks and see the button map.",
+    sub: "Use a game controller to browse Frame and control playback. Tune the sticks and see the button map.",
   },
   theme: {
     label: "Theme & appearance",
-    sub: "Color presets, custom backgrounds, and the font pair Harbor renders in.",
+    sub: "Color presets, custom backgrounds, and the font pair Frame renders in.",
   },
   badges: {
     label: "Stream badges",
@@ -262,7 +262,7 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   awardIcons: {
     label: "Award icons",
-    sub: "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.",
+    sub: "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.",
   },
   webhooks: {
     label: "Webhooks",
@@ -270,35 +270,35 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   },
   bug: {
     label: "Report a bug",
-    sub: "Send a bug report straight to the Harbor team. Screenshots and screen recordings welcome.",
+    sub: "Send a bug report straight to the Frame team. Screenshots and screen recordings welcome.",
   },
   support: {
-    label: "Support Harbor",
-    sub: "Who keeps the lights on, what Harbor is built on, and where to put money if you want to.",
+    label: "Support Frame",
+    sub: "Who keeps the lights on, what Frame is built on, and where to put money if you want to.",
   },
   licenses: {
     label: "Licenses & attribution",
-    sub: "Harbor's licence, the projects it is built on, and the people and services that make it possible.",
+    sub: "Frame's licence, the projects it is built on, and the people and services that make it possible.",
   },
   icons: {
     label: "Icons & animation",
-    sub: "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.",
+    sub: "Every icon and animation drawn for Frame, who drew them, and how to take one with you.",
   },
   remotes: {
     label: "Remotes",
-    sub: "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.",
+    sub: "Frame on your other devices: the web app, the phone remote, and the manga reader remote.",
   },
   tv: {
     label: "TV Settings",
-    sub: "Find the Harbors on your network and choose how Big Picture looks and plays on your TV.",
+    sub: "Find the Frames on your network and choose how Big Picture looks and plays on your TV.",
   },
   bigPicture: {
     label: "Big Picture",
-    sub: "A full screen, couch friendly Harbor for TVs, handhelds and big monitors. How it launches, the top-bar button, the interface sounds, and how it fills your screen.",
+    sub: "A full screen, couch friendly Frame for TVs, handhelds and big monitors. How it launches, the top-bar button, the interface sounds, and how it fills your screen.",
   },
   storage: {
     label: "Storage",
-    sub: "See what Harbor stores on this computer and clear caches when you want the space back.",
+    sub: "See what Frame stores on this computer and clear caches when you want the space back.",
   },
   trackers: {
     label: "Trackers",

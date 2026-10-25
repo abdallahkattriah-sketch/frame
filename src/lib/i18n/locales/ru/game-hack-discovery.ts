@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Отпечатки файлов · SHA-256",
   "games.patch.localNote": "На вашем устройстве · BPS · IPS · UPS · До 256 МБ",
   "games.patch.desktop":
-    "Применяйте патчи в приложении Harbor для Windows, macOS или Linux. Файлы остаются на вашем устройстве, а оригинальная игра сохраняется без изменений.",
+    "Применяйте патчи в приложении Frame для Windows, macOS или Linux. Файлы остаются на вашем устройстве, а оригинальная игра сохраняется без изменений.",
   "games.patch.done": "Всё готово к новому приключению",
   "games.patch.preserved": "Копия с патчем сохранена. Оригинальная игра и патч не изменены.",
   "games.patch.patch_source_mismatch":
@@ -38,7 +38,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Выбранный файл изменился после проверки. Проверьте патч повторно перед сохранением.",
   "games.patch.patch_output_exists":
-    "Файл с таким именем уже существует. Выберите другое имя: Harbor не перезаписывает существующие файлы.",
+    "Файл с таким именем уже существует. Выберите другое имя: Frame не перезаписывает существующие файлы.",
   "games.patch.patch_read_failed":
     "Не удалось прочитать один из файлов. Убедитесь, что он доступен, и выберите его снова.",
   "games.patch.patch_write_failed":
@@ -77,9 +77,9 @@ export default {
   "games.atlas.sort.newest": "Сначала новые",
   "games.atlas.sort.oldest": "Сначала старые",
   "games.hub.stepPatch":
-    "Выберите оригинальную игру и патч BPS, IPS или UPS. Harbor сохранит отдельную копию.",
+    "Выберите оригинальную игру и патч BPS, IPS или UPS. Frame сохранит отдельную копию.",
   "games.patch.description":
-    "Выберите оригинальную игру и патч BPS, IPS или UPS. Harbor сохранит отдельную копию.",
+    "Выберите оригинальную игру и патч BPS, IPS или UPS. Frame сохранит отдельную копию.",
   "games.patch.choosePatch": "Выбрать патч (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Этот файл не является поддерживаемым патчем BPS, IPS или UPS.",
   "games.discovery.viewGame": "Посмотреть игру",

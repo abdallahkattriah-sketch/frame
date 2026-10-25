@@ -44,8 +44,8 @@ export default {
   "games.discovery.gameType.9": "Remaster",
   "games.discovery.gameType.11": "Port",
   "games.discovery.esportsTitle": "On the competitive stage",
-  "games.discovery.esportsNote": "Live matches and the next events to watch in Harbor Sports.",
-  "games.discovery.esportsEntry": "Follow tournaments, teams and live broadcasts in Harbor Sports.",
+  "games.discovery.esportsNote": "Live matches and the next events to watch in Frame Sports.",
+  "games.discovery.esportsEntry": "Follow tournaments, teams and live broadcasts in Frame Sports.",
   "games.discovery.openSports": "Open Sports",
   "games.discovery.viewEvent": "View event",
   "games.discovery.bestOf": "Best of {count}",
@@ -87,7 +87,7 @@ export default {
     "Collect a set to craft a sale badge, emoticon and profile background.",
   "games.steamStatus.connection": "Steam isn't responding reliably",
   "games.steamStatus.connectionNote":
-    "Harbor's Steam requests are failing. Some live data may be unavailable.",
+    "Frame's Steam requests are failing. Some live data may be unavailable.",
   "games.steamStatus.tuesday": "Tuesday Steam maintenance",
   "games.steamStatus.tuesdayNote":
     "Steam usually runs maintenance on Tuesdays, so the store and friends list can drop out for a few minutes.",
@@ -97,7 +97,7 @@ export default {
   "games.bundles.terms":
     "Title matched with Humble's live bundle listing. Check the included edition, tier and region before buying.",
   "games.bundles.unavailable": "Humble bundle availability couldn't be fully checked.",
-  "games.retro.playInside": "Play in Harbor",
+  "games.retro.playInside": "Play in Frame",
   "games.retro.setup":
     "Add the {system} player once, then play here. Your game stays on this device.",
   "games.retro.install": "Install & play · {size} MB",
@@ -118,7 +118,7 @@ export default {
   "games.retro.saving": "Saving progress…",
   "games.retro.exitWithoutSave": "Exit without saving",
   "games.retro.popout": "Pop out",
-  "games.retro.dock": "Return to Harbor",
+  "games.retro.dock": "Return to Frame",
   "games.retro.moving": "Moving your game…",
   "games.retro.moveFailed": "Couldn't move the player. Your position is saved; try Resume.",
   "games.retro.controlsHint": "Choose a binding, then press a key or controller button.",

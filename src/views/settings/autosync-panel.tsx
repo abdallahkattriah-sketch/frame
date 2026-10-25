@@ -55,7 +55,7 @@ export function AutoSyncPanel() {
   const serverDesc = urlSaved
     ? t("Saved.")
     : storedUrl ||
-      t("Harbor uses its own community server. You can point it at a server you run yourself.");
+      t("Frame uses its own community server. You can point it at a server you run yourself.");
 
   return (
     <div className="hset-form-page">
@@ -68,7 +68,7 @@ export function AutoSyncPanel() {
         <ToggleRow
           label={t("Auto-sync subtitles")}
           sub={t(
-            "When a subtitle runs early or late, Harbor measures the speech and corrects the timing on its own. Off by default.",
+            "When a subtitle runs early or late, Frame measures the speech and corrects the timing on its own. Off by default.",
           )}
           value={master}
           onChange={(v) => update({ subtitleAutoSync: v })}
@@ -96,7 +96,7 @@ export function AutoSyncPanel() {
               <ToggleRow
                 label={t("Smart resync with speech recognition")}
                 sub={t(
-                  "For the hardest files and the Try again button, Harbor transcribes a little speech on your device and lines the subtitle up to the actual words. Needs a build with the asr-whisper feature and downloads a small model the first time you use it.",
+                  "For the hardest files and the Try again button, Frame transcribes a little speech on your device and lines the subtitle up to the actual words. Needs a build with the asr-whisper feature and downloads a small model the first time you use it.",
                 )}
                 value={settings.subtitleAutoSyncAsr}
                 onChange={(v) => update({ subtitleAutoSyncAsr: v })}
@@ -104,7 +104,7 @@ export function AutoSyncPanel() {
               <ToggleRow
                 label={t("Match subtitles across languages (experimental)")}
                 sub={t(
-                  "When the audio and subtitle use different languages, Harbor compares a release-matched subtitle in the audio language. It only offers a fix unless every safety check is measured.",
+                  "When the audio and subtitle use different languages, Frame compares a release-matched subtitle in the audio language. It only offers a fix unless every safety check is measured.",
                 )}
                 value={settings.subtitleAutoSyncPivot}
                 onChange={(v) => update({ subtitleAutoSyncPivot: v })}
@@ -138,7 +138,7 @@ export function AutoSyncPanel() {
           label={t("Community sync server")}
           desc={serverDesc}
           tip={t(
-            "Leave blank to use Harbor's own community server. Enter a URL to point at your own server instead. Private mode below stops all contact either way.",
+            "Leave blank to use Frame's own community server. Enter a URL to point at your own server instead. Private mode below stops all contact either way.",
           )}
         >
           <button type="button" onClick={openServer} className={ROW_ACTION}>
@@ -159,7 +159,7 @@ export function AutoSyncPanel() {
           onClose={() => setServerOpen(false)}
           title={t("Community sync server")}
           sub={t(
-            "Leave this blank to use Harbor's own community server, or enter the address of a server you run yourself.",
+            "Leave this blank to use Frame's own community server, or enter the address of a server you run yourself.",
           )}
           actions={
             <>

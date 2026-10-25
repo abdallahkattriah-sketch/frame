@@ -10,22 +10,22 @@ export default {
   "games.wow.manager.errorIdentity":
     "Установленные папки не соответствуют пакету автора. Повторите сканирование и проверьте источник аддона.",
   "games.wow.manager.importInstalled": "Импортировать установленные аддоны",
-  "games.wow.manager.import": "Управлять через Harbor",
+  "games.wow.manager.import": "Управлять через Frame",
   "games.wow.manager.importScope":
     "Установленные аддоны с идентификатором WoWInterface. Остальные остаются в списке установленных.",
   "games.wow.manager.importNote":
-    "Сохраните установленные файлы. Harbor проверит пакет автора и сохранит предыдущую версию перед будущим обновлением или удалением.",
+    "Сохраните установленные файлы. Frame проверит пакет автора и сохранит предыдущую версию перед будущим обновлением или удалением.",
   "games.wow.manager.keepVersion": "Сохранить установленную версию {version}",
   "games.wow.manager.keep": "Сохранить",
-  "games.wow.manager.importSuccess": "Этот аддон теперь управляется через Harbor.",
+  "games.wow.manager.importSuccess": "Этот аддон теперь управляется через Frame.",
 
   "games.wow.manager.browse": "Найти аддоны",
-  "games.wow.manager.managed": "Управление через Harbor",
+  "games.wow.manager.managed": "Управление через Frame",
   "games.wow.manager.backups": "Резервные копии",
   "games.wow.manager.catalogNote":
     "Каталог WoWInterface. Перед применением проверяется совместимость с установленным WoW.",
   "games.wow.manager.managedNote":
-    "Здесь можно менять только аддоны, установленные через Harbor. Остальные остаются в списке установленных.",
+    "Здесь можно менять только аддоны, установленные через Frame. Остальные остаются в списке установленных.",
   "games.wow.manager.category": "Категория",
   "games.wow.manager.allCategories": "Все категории",
   "games.wow.manager.popular": "Загрузки за месяц",
@@ -38,7 +38,7 @@ export default {
   "games.wow.manager.categoriesError": "Категории недоступны. Поиск по всем аддонам работает.",
   "games.wow.manager.partial":
     "Часть данных поставщика недоступна. Результаты могут быть неполными.",
-  "games.wow.manager.emptyManaged": "Пока нет аддонов под управлением Harbor.",
+  "games.wow.manager.emptyManaged": "Пока нет аддонов под управлением Frame.",
   "games.wow.manager.emptyBackups": "Предыдущие версии пока не сохранены.",
   "games.wow.manager.reviewNote":
     "Сначала проверьте пакет и изменения папок. Закройте WoW перед проверкой или применением.",
@@ -60,14 +60,14 @@ export default {
   "games.wow.manager.errorCompatibility":
     "Пакет не подходит к установленной редакции или версии WoW.",
   "games.wow.manager.errorUnmanaged":
-    "Эти папки установлены вне Harbor. Их нельзя перезаписать здесь.",
+    "Эти папки установлены вне Frame. Их нельзя перезаписать здесь.",
   "games.wow.manager.errorChanged":
     "Файлы изменились или требуют внимания. Выполните повторное сканирование.",
   "games.wow.manager.errorDependency":
     "Отсутствуют обязательные зависимости или эти файлы нужны другому аддону.",
   "games.wow.manager.errorExpired": "Срок проверки истёк. Проверьте изменения снова.",
   "games.wow.manager.errorDesktop":
-    "Для управления аддонами нужна актуальная настольная версия Harbor для Windows.",
+    "Для управления аддонами нужна актуальная настольная версия Frame для Windows.",
 
   "games.wow.addons.screenshots": "Скриншоты автора",
   "games.wow.addons.screenshotsUnavailable": "Не удалось загрузить скриншоты автора.",

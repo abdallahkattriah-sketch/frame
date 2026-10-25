@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "已安装：{version}",
   "games.mods.current": "已安装",
   "games.mods.versionNote":
-    "选择兼容的版本。Harbor 会检查更改并在本地保留上一版本。应用更改前请关闭 Minecraft。",
+    "选择兼容的版本。Frame 会检查更改并在本地保留上一版本。应用更改前请关闭 Minecraft。",
   "games.mods.applyChanges": "应用更改",
   "games.mods.reviewChanges": "检查更改",
   "games.mods.previousVersion": "上一版本：{version}",

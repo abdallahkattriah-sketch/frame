@@ -33,8 +33,8 @@ const addons: Record<string, string> = {
     "Reconfigure este addon e aplique o link atualizado",
   "Sign in to sync your addons across devices":
     "Entre para sincronizar seus addons entre dispositivos",
-  "Anything you install in Harbor pushes back to your Stremio account so it shows up on mobile too. Sign in via the avatar in the bottom-left of the sidebar.":
-    "Tudo que você instala no Harbor é enviado de volta para sua conta Stremio, para aparecer no celular também. Entre pelo avatar no canto inferior esquerdo da barra lateral.",
+  "Anything you install in Frame pushes back to your Stremio account so it shows up on mobile too. Sign in via the avatar in the bottom-left of the sidebar.":
+    "Tudo que você instala no Frame é enviado de volta para sua conta Stremio, para aparecer no celular também. Entre pelo avatar no canto inferior esquerdo da barra lateral.",
   "Common picks for a fresh setup.": "Escolhas comuns para uma configuração nova.",
   "Browse by category": "Navegar por categoria",
   "Six places to start. Tap one and we'll filter the catalog for you.":
@@ -55,8 +55,8 @@ const addons: Record<string, string> = {
   "Configure on the addon's setup page": "Configurar na página de configuração do addon",
   "Click to open {name}'s setup page. Pick your options, then copy the install link it gives you and paste it below to update the addon.":
     "Clique para abrir a página de configuração do {name}. Escolha suas opções, depois copie o link de instalação fornecido e cole abaixo para atualizar o addon.",
-  "Click to open {name}'s setup page in Harbor's built-in browser. Pick your options. When you click Install on their page, Harbor catches the link automatically and updates the addon.":
-    "Clique para abrir a página de configuração do {name} no navegador integrado do Harbor. Escolha suas opções. Quando você clicar em Instalar na página deles, o Harbor captura o link automaticamente e atualiza o addon.",
+  "Click to open {name}'s setup page in Frame's built-in browser. Pick your options. When you click Install on their page, Frame catches the link automatically and updates the addon.":
+    "Clique para abrir a página de configuração do {name} no navegador integrado do Frame. Escolha suas opções. Quando você clicar em Instalar na página deles, o Frame captura o link automaticamente e atualiza o addon.",
   "Open setup page": "Abrir página de configuração",
   'Heads-up: a few addons (like AIOStatus) don\'t pre-fill from the URL. If the form loads blank, paste the existing manifest URL into their "Import from URL" field to restore your settings.':
     'Aviso: alguns addons (como o AIOStatus) não preenchem automaticamente a partir da URL. Se o formulário carregar em branco, cole a URL do manifesto existente no campo "Import from URL" deles para restaurar suas configurações.',
@@ -98,8 +98,8 @@ const addons: Record<string, string> = {
     "URLs podem conter chaves ou tokens de debrid; revele quando precisar copiar",
   "Hidden by default. Manifest paths often carry API keys (debrid tokens, OMDB keys, etc.) you don't want over a shoulder.":
     "Oculto por padrão. Os caminhos do manifesto costumam carregar chaves de API (tokens debrid, chaves OMDB, etc.) que você não quer que sejam vistas por cima do ombro.",
-  "Stremio addon, packaged into Harbor's catalog.":
-    "Addon do Stremio, incorporado ao catálogo do Harbor.",
+  "Stremio addon, packaged into Frame's catalog.":
+    "Addon do Stremio, incorporado ao catálogo do Frame.",
   "Version and capabilities come straight from the addon's manifest. Ratings and categories come from the":
     "A versão e os recursos vêm diretamente do manifesto do addon. As avaliações e categorias vêm do",
   "community API. Star, browse, and contribute on their site.":
@@ -112,8 +112,8 @@ const addons: Record<string, string> = {
   "View more": "Ver mais",
   "You've reached the end · {n} addons": "Você chegou ao fim · {n} addons",
   "No velocity data yet": "Nenhum dado de velocidade ainda",
-  "Trending tracks star growth across your Harbor visits. Open the addons page again tomorrow and the top risers will appear here.":
-    "O Em Alta acompanha o crescimento de popularidade nas suas visitas ao Harbor. Abra a página de addons novamente amanhã e os que mais subiram aparecerão aqui.",
+  "Trending tracks star growth across your Frame visits. Open the addons page again tomorrow and the top risers will appear here.":
+    "O Em Alta acompanha o crescimento de popularidade nas suas visitas ao Frame. Abra a página de addons novamente amanhã e os que mais subiram aparecerão aqui.",
   "Organize addons": "Organizar addons",
   "Back to addons": "Voltar aos addons",
   "This order drives your catalog rows and the default stream order. A stream priority set in Settings overrides it for streams.":
@@ -134,8 +134,8 @@ const addons: Record<string, string> = {
     "Esta ordem sincroniza com todos os apps Stremio conectados a esta conta.",
   "No addons are synced to this account yet.": "Nenhum addon sincronizado com esta conta ainda.",
   "On this device only": "Somente neste dispositivo",
-  "These live in Harbor on this computer and never touch your account.":
-    "Isso fica salvo no Harbor deste computador e nunca toca na sua conta.",
+  "These live in Frame on this computer and never touch your account.":
+    "Isso fica salvo no Frame deste computador e nunca toca na sua conta.",
   "On this device": "Neste dispositivo",
   "Sign in to Stremio to organize the addons synced to your account.":
     "Entre no Stremio para organizar os addons sincronizados com sua conta.",
@@ -148,8 +148,8 @@ const addons: Record<string, string> = {
     "Nada muda até você pressionar Salvar. Sair desta página descarta as edições.",
   "The Backups button at the top keeps your last five orders. One click restores any of them.":
     "O botão Backups no topo guarda suas últimas cinco ordens. Um clique restaura qualquer uma delas.",
-  "Harbor double-checks with Stremio after saving, so a half-written order can't slip through.":
-    "O Harbor confere novamente com o Stremio após salvar, para que uma ordem incompleta não passe despercebida.",
+  "Frame double-checks with Stremio after saving, so a half-written order can't slip through.":
+    "O Frame confere novamente com o Stremio após salvar, para que uma ordem incompleta não passe despercebida.",
   "{n} addon": "{n} addon",
   "{n} addons": "{n} addons",
   "Drag to reorder": "Arraste para reordenar",
@@ -162,12 +162,12 @@ const addons: Record<string, string> = {
     "Sua coleção de addons mudou em outro dispositivo. Nada foi gravado.",
   "Stremio didn't confirm the save. Your collection may be unchanged. Retry will re-check before writing again.":
     "O Stremio não confirmou o salvamento. Sua coleção pode não ter sido alterada. Tentar novamente verificará antes de gravar de novo.",
-  "Saved, but Harbor couldn't confirm the new order. Retry to re-check.":
-    "Salvo, mas o Harbor não conseguiu confirmar a nova ordem. Tente novamente para verificar.",
+  "Saved, but Frame couldn't confirm the new order. Retry to re-check.":
+    "Salvo, mas o Frame não conseguiu confirmar a nova ordem. Tente novamente para verificar.",
   "Stremio reports a different order than was saved.":
     "O Stremio reporta uma ordem diferente da que foi salva.",
-  "A safety copy of your addon order. One is saved automatically before Harbor writes any change, and you can save one yourself any time. The five most recent are kept.":
-    "Uma cópia de segurança da sua ordem de complementos. Uma é salva automaticamente antes que o Harbor grave qualquer alteração, e você também pode salvar uma a qualquer momento. As cinco mais recentes são mantidas.",
+  "A safety copy of your addon order. One is saved automatically before Frame writes any change, and you can save one yourself any time. The five most recent are kept.":
+    "Uma cópia de segurança da sua ordem de complementos. Uma é salva automaticamente antes que o Frame grave qualquer alteração, e você também pode salvar uma a qualquer momento. As cinco mais recentes são mantidas.",
   "Back up current order": "Fazer backup da ordem atual",
   "No backups yet. Press the button above to save your first one.":
     "Nenhum backup ainda. Pressione o botão acima para salvar o primeiro.",
@@ -185,8 +185,8 @@ const addons: Record<string, string> = {
     "Instalar por URL: cole qualquer link de manifesto ou stremio://",
   "Click below to open {name}'s setup page. Pick your options, then copy the install link it gives you and paste it below to update the addon.":
     "Clique abaixo para abrir a página de configuração de {name}. Escolha suas opções, copie o link de instalação fornecido e cole abaixo para atualizar o addon.",
-  "Click below to open {name}'s setup page in Harbor's built-in browser. Pick your options. When you click Install on their page, Harbor catches the link automatically and updates the addon.":
-    "Clique abaixo para abrir a página de configuração de {name} no navegador integrado do Harbor. Escolha suas opções. Ao clicar em Instalar na página deles, o Harbor captura o link automaticamente e atualiza o addon.",
+  "Click below to open {name}'s setup page in Frame's built-in browser. Pick your options. When you click Install on their page, Frame catches the link automatically and updates the addon.":
+    "Clique abaixo para abrir a página de configuração de {name} no navegador integrado do Frame. Escolha suas opções. Ao clicar em Instalar na página deles, o Frame captura o link automaticamente e atualiza o addon.",
   "Essential addons": "Complementos essenciais",
   "Start here. The ones almost everyone has.": "Comece por aqui. Os que quase todo mundo tem.",
   "Best for debrid": "Melhor para debrid",

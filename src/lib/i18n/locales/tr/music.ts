@@ -115,17 +115,17 @@ const music: Record<string, string> = {
     "Çalanı sanal bir mikrofona gönderin, böylece aramadaki arkadaşlarınız da duysun. Siz hoparlörünüzden duymaya devam edersiniz.",
   "music.broadcast.title": "Sesli sohbete yayınla",
   "music.cable.mac.installNeeded":
-    "Harbor kendi sanal mikrofonunu kurabilir. macOS yönetici parolanızı ister, ardından Core Audio yeniden başlar.",
-  "music.cable.mac.installMissing": "Harbor'ın bu sürümünde sanal mikrofon sürücüsü yok.",
+    "Frame kendi sanal mikrofonunu kurabilir. macOS yönetici parolanızı ister, ardından Core Audio yeniden başlar.",
+  "music.cable.mac.installMissing": "Frame'ın bu sürümünde sanal mikrofon sürücüsü yok.",
   "music.cable.mac.installCancelled": "Kurulum iptal edildi.",
   "music.cable.mac.installFailed": "Sanal mikrofon kurulamadı.",
   "music.cable.mac.restartNeeded":
     "Sanal mikrofon kurulu ama Core Audio henüz görmedi. Tamamlamak için Mac'i yeniden başlatın.",
   "music.cable.mac.updateAvailable":
-    "Harbor'ın bu sürümünde daha yeni bir sanal mikrofon var. Kablonun çalışmaya devam etmesi için kurun.",
-  "music.cable.title": "Harbor sanal mikrofonu",
+    "Frame'ın bu sürümünde daha yeni bir sanal mikrofon var. Kablonun çalışmaya devam etmesi için kurun.",
+  "music.cable.title": "Frame sanal mikrofonu",
   "music.cable.blurb":
-    "Harbor sanal mikrofonu kendisi kurar. İndirilecek ya da yüklenecek bir şey yok.",
+    "Frame sanal mikrofonu kendisi kurar. İndirilecek ya da yüklenecek bir şey yok.",
   "music.cable.create": "Sanal mikrofon oluştur",
   "music.cable.remove": "Sanal mikrofonu kaldır",
   "music.cable.spec": "{rate}, {depth}",
@@ -145,17 +145,17 @@ const music: Record<string, string> = {
   "music.cable.depth.int32": "32 bit",
   "music.cable.depth.int24": "24 bit",
   "music.cable.depth.int16": "16 bit",
-  "music.cable.unknownSpec": "Harbor anlaşılan biçimi okuyamıyor",
+  "music.cable.unknownSpec": "Frame anlaşılan biçimi okuyamıyor",
   "music.cable.noServer": "Çalışan bir ses sunucusu yok",
-  "music.cable.driverNeeded": "Harbor bu sistemde henüz sanal mikrofon kuramıyor",
+  "music.cable.driverNeeded": "Frame bu sistemde henüz sanal mikrofon kuramıyor",
   "music.cable.pipewireFailed": "PipeWire geri döngüyü başlatmadı",
   "music.cable.createFailed": "Sanal mikrofon oluşturulamadı",
-  "music.cable.installNeeded": "Sanal mikrofonu yüklemek için Harbor iznini istiyor",
-  "music.cable.installMissing": "Harbor'ın bu sürümü sanal mikrofon içermiyor",
+  "music.cable.installNeeded": "Sanal mikrofonu yüklemek için Frame iznini istiyor",
+  "music.cable.installMissing": "Frame'ın bu sürümü sanal mikrofon içermiyor",
   "music.cable.restartNeeded":
     "Sanal mikrofonun görünmesi için ses sisteminin yeniden başlaması gerekiyor",
   "music.cable.updateAvailable":
-    "Bu Harbor daha yeni bir sanal mikrofon getiriyor. Güncellemek için yeniden oluştur.",
+    "Bu Frame daha yeni bir sanal mikrofon getiriyor. Güncellemek için yeniden oluştur.",
   "dj.crossfade": "Crossfader",
   "dj.b.broadcasting": "Yayını taşıyor",
   "dj.b.eject": "Çıkar",
@@ -274,7 +274,7 @@ const music: Record<string, string> = {
   "music.library.localEmpty": "Koleksiyonunuza burada göz atmak için bir müzik klasörü ekleyin.",
   "music.library.noMatches": "Yerel koleksiyonunuzda eşleşme yok.",
   "music.legal.summary":
-    "Harbor bağımsız bir müzik istemcisidir. Yalnızca erişim izniniz olan dosya ve hizmetleri kullanın. Katalog listeleri dinleme veya yeniden dağıtım hakkı vermez.",
+    "Frame bağımsız bir müzik istemcisidir. Yalnızca erişim izniniz olan dosya ve hizmetleri kullanın. Katalog listeleri dinleme veya yeniden dağıtım hakkı vermez.",
   "music.legal.title": "Müzik kaynakları, gizlilik ve koşullar",
   "music.legal.services":
     "Üçüncü taraf hizmetler kendi hesap, abonelik ve bölge gereksinimlerini belirler. Adlar, görseller ve logolar sahiplerini tanımlar; onay verdikleri anlamına gelmez. Bir hizmeti bağlamak kısıtlamalarını aşmaz.",
@@ -285,7 +285,7 @@ const music: Record<string, string> = {
   "music.home.discover": "Saklamaya değer müzikler keşfedin",
   "music.home.title": "Müziğiniz. Ötesinde bir dünya.",
   "music.home.body":
-    "Koleksiyonunuzu getirin, yeni favoriler bulun ve Harbor içinde her yerde dinlemeye devam edin.",
+    "Koleksiyonunuzu getirin, yeni favoriler bulun ve Frame içinde her yerde dinlemeye devam edin.",
   "music.home.exploreRelease": "Yayını keşfet",
   "music.home.addFolder": "Müzik klasörü ekle",
   "music.home.yourFiles": "Dosyalarınız ön planda",
@@ -352,13 +352,13 @@ const music: Record<string, string> = {
   "music.source.none": "Şu anda eşleşen bir kaynak yok.",
   "music.consent.title": "YouTube veya SoundCloud'u açmadan önce",
   "music.consent.hosting":
-    "Harbor müzik barındırmaz. Dünyanın her yerinden katkıda bulunanların yazdığı açık kaynak bir koddur ve yalnızca açmayı seçtiğiniz servislerin herkese açık sayfalarını açar. Harbor da ona katkıda bulunanlar da hiçbir içeriği saklamaz, yüklemez veya sunmaz.",
+    "Frame müzik barındırmaz. Dünyanın her yerinden katkıda bulunanların yazdığı açık kaynak bir koddur ve yalnızca açmayı seçtiğiniz servislerin herkese açık sayfalarını açar. Frame da ona katkıda bulunanlar da hiçbir içeriği saklamaz, yüklemez veya sunmaz.",
   "music.consent.terms":
-    "YouTube ve SoundCloud, kendi hizmet koşulları olan bağımsız servislerdir. Burada birini açmanız, o servisin koşullarına uymayı ve artık kabul etmiyorsanız kullanmayı bırakmayı kabul ettiğiniz anlamına gelir. Harbor bu servislerle bağlantılı değildir ve onlar tarafından desteklenmez.",
+    "YouTube ve SoundCloud, kendi hizmet koşulları olan bağımsız servislerdir. Burada birini açmanız, o servisin koşullarına uymayı ve artık kabul etmiyorsanız kullanmayı bırakmayı kabul ettiğiniz anlamına gelir. Frame bu servislerle bağlantılı değildir ve onlar tarafından desteklenmez.",
   "music.consent.responsibility":
-    "Bu kaynakları nasıl kullandığınızdan ve bulunduğunuz yerdeki yasalara uymaktan siz sorumlusunuz. Harbor'a katkıda bulunanlar, çaldığınız, indirdiğiniz veya paylaştığınız şeyler için hiçbir sorumluluk kabul etmez.",
+    "Bu kaynakları nasıl kullandığınızdan ve bulunduğunuz yerdeki yasalara uymaktan siz sorumlusunuz. Frame'a katkıda bulunanlar, çaldığınız, indirdiğiniz veya paylaştığınız şeyler için hiçbir sorumluluk kabul etmez.",
   "music.consent.rights":
-    "Bu müziği yapanlara saygı gösterin. Haklarına sahip olmadığınız eserleri yeniden dağıtmak, satmak veya yayımlamak için Harbor'u kullanmayın. Hak sahibiyseniz, içeriği barındıran servise başvurun.",
+    "Bu müziği yapanlara saygı gösterin. Haklarına sahip olmadığınız eserleri yeniden dağıtmak, satmak veya yayımlamak için Frame'u kullanmayın. Hak sahibiyseniz, içeriği barındıran servise başvurun.",
   "music.consent.readTerms": "{service} koşullarını okuyun",
   "music.consent.enable": "Kullanmak istediğiniz kaynakları açın",
   "music.consent.scroll": "Devam etmek için sonuna kadar okuyun",
@@ -370,7 +370,7 @@ const music: Record<string, string> = {
   "music.artist.inPlaylists": "{name} içeren listeler",
   "music.audio.preferredSource": "Tercih edilen kaynak",
   "music.audio.preferredSourceHint":
-    "Harbor önce buradan çalar, sonra çalışan herhangi bir kaynağa geçer.",
+    "Frame önce buradan çalar, sonra çalışan herhangi bir kaynağa geçer.",
   "music.spotify.connect": "Spotify Premium",
   "music.spotify.connectDetail": "Yerel ve reklamsız oynatma için bir kez bağlanın.",
   "music.spotify.connectAction": "Bağlan",
@@ -419,7 +419,7 @@ const music: Record<string, string> = {
   "music.lastfm.finish": "Bağlantıyı tamamla",
   "music.lastfm.authorize": "Last.fm'e yetki ver",
   "music.lastfm.browserPrompt":
-    "Tarayıcıda Harbor'a onay verin, ardından bağlantıyı burada tamamlayın.",
+    "Tarayıcıda Frame'a onay verin, ardından bağlantıyı burada tamamlayın.",
   "music.rail.spotlight": "Öne çıkan parçalar",
   "music.rail.spotlightSubtitle": "Tüm kaynaklarından öne çıkan parçalar",
   "music.rail.artists": "Sık dinlediğin sanatçılar",
@@ -448,7 +448,7 @@ const music: Record<string, string> = {
   "music.spotifySetup.createBody":
     "Geliştirici panelinde uygulama oluşturmak için Spotify Premium hesabı kullanın.",
   "music.spotifySetup.dashboard": "Spotify panelini aç",
-  "music.spotifySetup.redirectTitle": "Harbor yönlendirme URI’sini ekleyin",
+  "music.spotifySetup.redirectTitle": "Frame yönlendirme URI’sini ekleyin",
   "music.spotifySetup.redirectBody":
     "Uygulama ayarlarında bu yönlendirme URI’sini aynen ekleyip kaydedin.",
   "music.spotifySetup.redirectLabel": "Yönlendirme URI’si",
@@ -502,16 +502,16 @@ const music: Record<string, string> = {
   "music.playlist.new": "Yeni çalma listesi",
   "music.row.charts": "Listeler",
   "music.connect.shelfTitle": "Bu rafı doldurmak için {name} bağlayın",
-  "music.connect.shelfBody": "Harbor, gerçek veriyle destekleyemediği bir satırı tahmin etmez.",
+  "music.connect.shelfBody": "Frame, gerçek veriyle destekleyemediği bir satırı tahmin etmez.",
   "music.connect.title": "{name} bağla",
   "music.connect.connected": "{account} olarak bağlı",
   "music.connect.browserHandoff":
-    "Tarayıcıda Harbor'ı onaylayın, sonra bağlantıyı burada tamamlayın.",
+    "Tarayıcıda Frame'ı onaylayın, sonra bağlantıyı burada tamamlayın.",
   "music.connect.scanningFolder": "Klasör okunuyor. Büyük bir kitaplık zaman alır.",
   "music.connect.scanned": "{count} dosya tarandı",
   "music.connect.connecting": "Bağlanıyor",
   "music.connect.chooseFolder": "Klasör seç",
-  "music.connections.subtitle": "Harbor'ın müzik çalabildiği her şey",
+  "music.connections.subtitle": "Frame'ın müzik çalabildiği her şey",
   "music.connections.capability.search": "Ara",
   "music.connections.empty": "Bu sürüm hiçbir müzik kaynağı bildirmiyor.",
   "music.row.stationBadge": "Radyo",
@@ -520,7 +520,7 @@ const music: Record<string, string> = {
   "music.transport.repeatAll": "Tümünü tekrarla",
   "music.transport.repeat": "Tekrarla",
   "music.footer.connections": "Bağlantılar",
-  "music.footer.harbor": "Harbor",
+  "music.footer.harbor": "Frame",
   "music.footer.setup": "Kurulum",
   "music.hero.resumeAt": "{source} üzerinde {artist}, {time} konumunda duraklatıldı",
   "music.hero.pausedAt": "{time} konumunda duraklatıldı",
@@ -539,7 +539,7 @@ const music: Record<string, string> = {
     "Last.fm'i bağla, bu raf gerçekten dinlediğin etiketlerden oluşsun.",
   "music.connect.serverName": "bir medya sunucusu veya klasör",
   "music.connect.serverBody":
-    "Harbor'ı bir klasöre, Plex, Jellyfin, Navidrome ya da Subsonic'e yönlendir; bu raf zaten sahip olduğun albümlerle dolsun.",
+    "Frame'ı bir klasöre, Plex, Jellyfin, Navidrome ya da Subsonic'e yönlendir; bu raf zaten sahip olduğun albümlerle dolsun.",
   "music.row.recents": "Kaldığın yerden devam et",
   "music.row.fresh": "Dinlediğin sanatçılardan yeni çıkanlar",
   "music.row.freshSubtitle": "Dinleme geçmişindeki sanatçıların son çıkan eserleri",

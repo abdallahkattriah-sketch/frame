@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "심즈 2와 심즈 3 다운로드를 찾아보려면 Harbor를 업데이트하고 다시 시작하세요.",
+    "심즈 2와 심즈 3 다운로드를 찾아보려면 Frame를 업데이트하고 다시 시작하세요.",
   "games.sims.creatorNotesTitle": "제작자의 링크 · {count}",
   "games.sims.creatorNotesNote":
     "제작자의 설명에 있는 링크입니다. 페이지를 열어 안내를 확인하세요.",
@@ -101,7 +101,7 @@ export default {
   "games.sims.mtsCatMisc": "기타",
   "games.sims.mtsCatTools": "도구",
   "games.sims.mtsIntro":
-    "모드나 커스텀 콘텐츠를 Harbor로 가져오세요. The Sims 4 배포 페이지를 붙여넣고 원하는 파일을 선택하세요.",
+    "모드나 커스텀 콘텐츠를 Frame로 가져오세요. The Sims 4 배포 페이지를 붙여넣고 원하는 파일을 선택하세요.",
   "games.sims.mtsPage": "다운로드 페이지",
   "games.sims.mtsLoad": "파일 찾기",
   "games.sims.mtsBrowse": "Mod The Sims 둘러보기",
@@ -170,9 +170,9 @@ export default {
   "games.sims.creatorExisting": "기존 설치",
   "games.sims.creatorManage": "기존 파일 검토",
   "games.sims.creatorAdoptNote":
-    "먼저 이 파일을 Harbor에서 관리하세요. 그런 다음 제작자의 릴리스를 선택해 업데이트할 수 있습니다.",
+    "먼저 이 파일을 Frame에서 관리하세요. 그런 다음 제작자의 릴리스를 선택해 업데이트할 수 있습니다.",
   "games.sims.creatorLinkNote":
-    "이 그룹의 업데이트를 검토하세요. Harbor는 이전 파일과 설정을 보관합니다.",
+    "이 그룹의 업데이트를 검토하세요. Frame는 이전 파일과 설정을 보관합니다.",
   "games.sims.creatorTarget":
     "이 그룹에 선택한 릴리스에 없는 모드 파일이 있습니다. MCCC를 업데이트하기 전에 별도 그룹으로 분리하세요.",
   "games.sims.creatorExistingError":
@@ -203,7 +203,7 @@ export default {
   "games.sims.trayRemove": "라이브러리에서 제거",
   "games.sims.trayRestore": "라이브러리로 복원",
   "games.sims.trayNote":
-    "다운로드한 부지, 방, 가족을 가져옵니다. Harbor가 관련 파일을 Tray에 함께 보관합니다.",
+    "다운로드한 부지, 방, 가족을 가져옵니다. Frame가 관련 파일을 Tray에 함께 보관합니다.",
   "games.sims.trayReviewNote":
     "Tray 파일은 라이브러리 폴더에 직접 저장됩니다. 함께 포함된 사용자 지정 콘텐츠는 별도 모드 그룹으로 관리됩니다.",
   "games.sims.trayRemoveNote":
@@ -265,12 +265,12 @@ export default {
 
   "games.sims.adopt": "기존 모드 관리",
   "games.sims.adoptNote":
-    "The Sims 4를 종료하세요. 같은 폴더에서 모드 하나 또는 관련 CC와 설정 파일을 선택하세요. 목록의 파일은 하나의 Harbor 그룹으로 이동하며 다른 파일은 그대로 유지됩니다.",
+    "The Sims 4를 종료하세요. 같은 폴더에서 모드 하나 또는 관련 CC와 설정 파일을 선택하세요. 목록의 파일은 하나의 Frame 그룹으로 이동하며 다른 파일은 그대로 유지됩니다.",
   "games.sims.adoptFrom": "현재 폴더",
   "games.sims.adoptTo": "이동할 폴더",
   "games.sims.adoptFolder": "Mods 안의 한 폴더에서 관련 파일을 선택하세요.",
   "games.sims.adoptManaged":
-    "Harbor가 관리하는 폴더 밖의 파일을 선택하고 Resource.cfg는 그대로 두세요.",
+    "Frame가 관리하는 폴더 밖의 파일을 선택하고 Resource.cfg는 그대로 두세요.",
   "games.sims.adoptScan":
     "일부 모드 폴더를 검사할 수 없습니다. 문제를 해결한 후 이 파일을 관리하세요.",
 
@@ -300,7 +300,7 @@ export default {
   "games.sims.setScan": "일부 모드 폴더를 검사하지 못했습니다. 문제를 해결한 후 세트를 전환하세요.",
   "games.sims.savesLabelHint": "새 모드 설치 전",
   "games.sims.savesRunning":
-    "저장 데이터를 백업하거나 복원하기 전에 The Sims 4를 종료하세요. Harbor에서 게임 종료를 확인할 수 있어야 합니다.",
+    "저장 데이터를 백업하거나 복원하기 전에 The Sims 4를 종료하세요. Frame에서 게임 종료를 확인할 수 있어야 합니다.",
   "games.sims.savesIntro":
     "모드를 변경하기 전에 저장 데이터를 백업하세요. 먼저 The Sims 4를 종료하세요. 모드와 Tray 폴더의 가족은 포함되지 않습니다.",
   "games.sims.title": "모드와 사용자 지정 콘텐츠",
@@ -322,7 +322,7 @@ export default {
     "먼저 The Sims 4를 종료하세요. CC를 제거한 상태로 저장하면 가족이나 건물이 바뀔 수 있습니다. 제거한 파일은 백업에 남고 비활성화한 파일은 Mods 밖으로 이동합니다.",
   "games.sims.recovery": "이전 변경이 중단되었습니다. 다음 변경 전에 이전 구성을 복구하세요.",
   "games.sims.success": "모드 파일을 업데이트했습니다.",
-  "games.sims.applying": "변경 적용 중. Harbor를 열어 두세요…",
+  "games.sims.applying": "변경 적용 중. Frame를 열어 두세요…",
   "games.sims.checking": "파일 확인 중…",
   "games.sims.skipped": "건너뛴 문서와 이미지 · {count}",
   "games.sims.preview": "패키지에 포함된 미리 보기",
@@ -361,7 +361,7 @@ export default {
   "games.sims.emptyManaged": "다운로드한 모드를 가져와 여기서 관리하세요.",
   "games.sims.emptyBackups": "업데이트하거나 제거하면 이전 버전이 여기에 표시됩니다.",
   "games.sims.emptyFiles": "Mods에서 지원되는 파일을 찾지 못했습니다.",
-  "games.sims.desktop": "모드 관리에는 최신 Windows용 Harbor 데스크톱 앱이 필요합니다.",
+  "games.sims.desktop": "모드 관리에는 최신 Windows용 Frame 데스크톱 앱이 필요합니다.",
   "games.sims.folderError":
     "바로 가기나 연결 폴더가 아닌 실제 The Sims 4 데이터 폴더를 선택하세요. Mods, saves, GameVersion.txt, Options.ini가 있어야 합니다.",
   "games.sims.readError": "파일을 읽지 못했습니다. 폴더 접근 권한을 확인하고 다시 시도하세요.",
@@ -370,7 +370,7 @@ export default {
   "games.sims.layoutError":
     "압축 파일에 별도 모드 폴더나 중복 파일명이 있습니다. 관련 파일을 함께 유지하도록 각 모드를 따로 가져오세요.",
   "games.sims.running":
-    "모드 파일을 변경하기 전에 The Sims 4를 종료하세요. Harbor가 게임 종료를 확인할 수 있어야 합니다.",
+    "모드 파일을 변경하기 전에 The Sims 4를 종료하세요. Frame가 게임 종료를 확인할 수 있어야 합니다.",
   "games.sims.duplicate":
     "다른 Mods 폴더에 같은 파일명의 모드가 있습니다. 이 그룹을 가져오거나 켜기 전에 중복을 해결하세요.",
   "games.sims.recordError":

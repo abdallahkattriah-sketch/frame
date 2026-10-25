@@ -24,15 +24,15 @@ const gameHub: Record<string, string> = {
   "games.hub.communityMade": "Topluluk tarafından yapıldı",
   "games.hub.title": "ROM hackleri",
   "games.hub.note":
-    "Yeni maceralar, yeniden yorumlanan klasikler. Bir hack bul, kaydet ve yamalı kopyanı Harbor’da oyna.",
+    "Yeni maceralar, yeniden yorumlanan klasikler. Bir hack bul, kaydet ve yamalı kopyanı Frame’da oyna.",
   "games.hub.hacksFor": "{name} için hackler",
   "games.hub.baseNote": "Topluluğun bu oyundan neler ürettiğini keşfet.",
   "games.hub.how": "ROM hacki nasıl oynanır?",
   "games.hub.stepFind": "Proje sitesini ve gerekli orijinal oyunu bulmak için bir hack aç.",
   "games.hub.stepPatch":
-    "Orijinal ROM’unu ve BPS veya IPS yamasını seç. Harbor dosyaları denetler ve ayrı bir kopya kaydeder.",
+    "Orijinal ROM’unu ve BPS veya IPS yamasını seç. Frame dosyaları denetler ve ayrı bir kopya kaydeder.",
   "games.hub.stepPlay":
-    "Kopyayı kitaplığına ekle. Desteklenen sistemleri Harbor’da veya ayarladığın emülatörde oyna.",
+    "Kopyayı kitaplığına ekle. Desteklenen sistemleri Frame’da veya ayarladığın emülatörde oyna.",
   "games.hub.byOriginal": "Orijinal oyuna göre hackler",
   "games.hub.allHacks": "Tüm hacklere göz at",
   "games.hub.baseUnlisted": "Orijinal oyun belirtilmemiş",

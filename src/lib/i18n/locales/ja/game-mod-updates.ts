@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "インストール済み: {version}",
   "games.mods.current": "インストール済み",
   "games.mods.versionNote":
-    "互換性のあるバージョンを選んでください。Harborは変更を確認し、前のバージョンをローカルに保存します。適用前にMinecraftを終了してください。",
+    "互換性のあるバージョンを選んでください。Frameは変更を確認し、前のバージョンをローカルに保存します。適用前にMinecraftを終了してください。",
   "games.mods.applyChanges": "変更を適用",
   "games.mods.reviewChanges": "変更を確認",
   "games.mods.previousVersion": "前の版: {version}",

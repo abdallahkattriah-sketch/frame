@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Activity",
   "games.shortcuts.activity.title": "Shortcut activity",
   "games.shortcuts.activity.note":
-    "Recent scans and launches for this Harbor profile. Up to 300 entries.",
+    "Recent scans and launches for this Frame profile. Up to 300 entries.",
   "games.shortcuts.activity.remember": "Keep between sessions",
   "games.shortcuts.activity.detailed": "Include scan details",
   "games.shortcuts.activity.storageError":
@@ -55,7 +55,7 @@ export default {
   "games.shortcuts.storeError": "Could not save these settings.",
   "games.shortcuts.shortcut_location": "Choose the Steam folder or its userdata folder.",
   "games.shortcuts.shortcut_account":
-    "Open Steam with this shortcut’s account, then refresh. Harbor must use the same Steam installation.",
+    "Open Steam with this shortcut’s account, then refresh. Frame must use the same Steam installation.",
   "games.shortcuts.shortcut_missing": "This shortcut no longer exists. Refresh the library.",
   "games.shortcuts.shortcut_executable":
     "The shortcut’s executable is missing or is not a supported absolute file path.",

@@ -72,7 +72,7 @@ const gameRoms: Record<string, string> = {
   "games.roms.reset": "Đặt lại bộ lọc",
   "games.roms.empty": "Thử tên khác hoặc mở rộng bộ lọc cho hệ máy này.",
   "games.roms.source":
-    "Dữ liệu trò chơi và mối liên hệ giữa các trò chơi từ IGDB. Nhập tệp cục bộ của bạn để chơi các trò chơi được hỗ trợ trong Harbor.",
+    "Dữ liệu trò chơi và mối liên hệ giữa các trò chơi từ IGDB. Nhập tệp cục bộ của bạn để chơi các trò chơi được hỗ trợ trong Frame.",
   "games.roms.playerScore": "Điểm người chơi IGDB · {count} lượt đánh giá",
   "games.roms.combinedScore": "Điểm tổng hợp IGDB · {count} lượt đánh giá",
   "games.roms.sort.discussed": "Nhiều lượt đánh giá nhất",

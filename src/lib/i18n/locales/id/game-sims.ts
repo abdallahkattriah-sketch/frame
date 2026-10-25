@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Perbarui dan mulai ulang Harbor untuk menjelajahi unduhan Sims 2 dan Sims 3.",
+    "Perbarui dan mulai ulang Frame untuk menjelajahi unduhan Sims 2 dan Sims 3.",
   "games.sims.creatorNotesTitle": "Tautan kreator · {count}",
   "games.sims.creatorNotesNote":
     "Tautan dari catatan kreator. Buka halaman untuk membaca petunjuknya.",
@@ -104,7 +104,7 @@ export default {
   "games.sims.mtsCatMisc": "Lainnya",
   "games.sims.mtsCatTools": "Alat",
   "games.sims.mtsIntro":
-    "Impor mod atau konten kustom ke Harbor. Tempel halaman The Sims 4-nya, lalu pilih file yang diinginkan.",
+    "Impor mod atau konten kustom ke Frame. Tempel halaman The Sims 4-nya, lalu pilih file yang diinginkan.",
   "games.sims.mtsPage": "Halaman unduhan",
   "games.sims.mtsLoad": "Cari file",
   "games.sims.mtsBrowse": "Jelajahi Mod The Sims",
@@ -177,9 +177,9 @@ export default {
   "games.sims.creatorExisting": "Instalasi yang ada",
   "games.sims.creatorManage": "Tinjau berkas yang ada",
   "games.sims.creatorAdoptNote":
-    "Kelola berkas ini di Harbor terlebih dahulu. Lalu pilih rilis dari pembuat untuk memperbaruinya.",
+    "Kelola berkas ini di Frame terlebih dahulu. Lalu pilih rilis dari pembuat untuk memperbaruinya.",
   "games.sims.creatorLinkNote":
-    "Tinjau pembaruan grup ini. Harbor menyimpan berkas sebelumnya dan pengaturanmu.",
+    "Tinjau pembaruan grup ini. Frame menyimpan berkas sebelumnya dan pengaturanmu.",
   "games.sims.creatorTarget":
     "Grup ini berisi berkas mod di luar rilis yang dipilih. Pisahkan ke grup lain sebelum memperbarui MCCC.",
   "games.sims.creatorExistingError":
@@ -211,7 +211,7 @@ export default {
   "games.sims.trayRemove": "Hapus dari pustaka",
   "games.sims.trayRestore": "Pulihkan ke pustaka",
   "games.sims.trayNote":
-    "Impor lahan, kamar, atau keluarga yang diunduh. Harbor menyimpan file terkait bersama di Tray.",
+    "Impor lahan, kamar, atau keluarga yang diunduh. Frame menyimpan file terkait bersama di Tray.",
   "games.sims.trayReviewNote":
     "File Tray masuk langsung ke folder pustaka. Konten kustom yang disertakan menjadi grup mod terpisah.",
   "games.sims.trayRemoveNote":
@@ -272,12 +272,12 @@ export default {
 
   "games.sims.adopt": "Kelola mod yang sudah ada",
   "games.sims.adoptNote":
-    "Tutup The Sims 4. Pilih satu mod atau CC terkait beserta pengaturannya dari folder yang sama. File yang tercantum akan dipindahkan ke satu grup Harbor; file lainnya tetap di tempatnya.",
+    "Tutup The Sims 4. Pilih satu mod atau CC terkait beserta pengaturannya dari folder yang sama. File yang tercantum akan dipindahkan ke satu grup Frame; file lainnya tetap di tempatnya.",
   "games.sims.adoptFrom": "Folder saat ini",
   "games.sims.adoptTo": "Pindahkan ke",
   "games.sims.adoptFolder": "Pilih file terkait dari satu folder di dalam Mods.",
   "games.sims.adoptManaged":
-    "Pilih file di luar folder yang dikelola Harbor dan biarkan Resource.cfg tetap di tempatnya.",
+    "Pilih file di luar folder yang dikelola Frame dan biarkan Resource.cfg tetap di tempatnya.",
   "games.sims.adoptScan":
     "Beberapa folder mod tidak dapat dipindai. Atasi masalah ini sebelum mengelola file tersebut.",
 
@@ -310,7 +310,7 @@ export default {
     "Beberapa folder mod tidak dapat dipindai. Selesaikan masalahnya sebelum berganti set.",
   "games.sims.savesLabelHint": "Sebelum mod baru",
   "games.sims.savesRunning":
-    "Tutup The Sims 4 sebelum mencadangkan atau memulihkan simpanan. Harbor harus dapat memastikan game telah berhenti.",
+    "Tutup The Sims 4 sebelum mencadangkan atau memulihkan simpanan. Frame harus dapat memastikan game telah berhenti.",
   "games.sims.savesIntro":
     "Cadangkan simpanan sebelum mengubah mod. Tutup The Sims 4 terlebih dahulu. Mod dan keluarga di folder Tray tidak termasuk.",
   "games.sims.title": "Mod dan konten kustommu",
@@ -333,7 +333,7 @@ export default {
   "games.sims.recovery":
     "Perubahan sebelumnya terputus. Pulihkan pengaturan sebelumnya sebelum melakukan perubahan lain.",
   "games.sims.success": "File mod sudah diperbarui.",
-  "games.sims.applying": "Menerapkan perubahan. Biarkan Harbor terbuka…",
+  "games.sims.applying": "Menerapkan perubahan. Biarkan Frame terbuka…",
   "games.sims.checking": "Memeriksa file…",
   "games.sims.skipped": "Dokumen dan gambar dilewati · {count}",
   "games.sims.preview": "Pratinjau yang tertanam dalam paket",
@@ -372,7 +372,7 @@ export default {
   "games.sims.emptyManaged": "Impor mod yang diunduh untuk mengelolanya di sini.",
   "games.sims.emptyBackups": "Versi sebelumnya muncul setelah pembaruan atau penghapusan.",
   "games.sims.emptyFiles": "Tidak ada file yang didukung dalam Mods.",
-  "games.sims.desktop": "Pengelolaan mod memerlukan aplikasi desktop Harbor terbaru di Windows.",
+  "games.sims.desktop": "Pengelolaan mod memerlukan aplikasi desktop Frame terbaru di Windows.",
   "games.sims.folderError":
     "Pilih folder data The Sims 4 asli, bukan pintasan atau folder tertaut. Mods, saves, GameVersion.txt, dan Options.ini harus tersedia.",
   "games.sims.readError": "File tidak dapat dibaca. Periksa akses folder dan coba lagi.",
@@ -381,7 +381,7 @@ export default {
   "games.sims.layoutError":
     "Arsip berisi folder mod terpisah atau nama file ganda. Impor tiap mod secara terpisah agar file-nya tetap bersama.",
   "games.sims.running":
-    "Tutup The Sims 4 sebelum mengubah file mod. Harbor harus dapat memastikan game telah berhenti.",
+    "Tutup The Sims 4 sebelum mengubah file mod. Frame harus dapat memastikan game telah berhenti.",
   "games.sims.duplicate":
     "Mod dengan nama file yang sama sudah ada di folder Mods lain. Selesaikan duplikasi sebelum mengimpor atau mengaktifkan grup ini.",
   "games.sims.recordError":

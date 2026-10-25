@@ -38,7 +38,7 @@ export default {
   "games.valorant.metaScope":
     "Données classées OP.GG pour le patch sélectionné. Le taux de sélection représente la part des apparitions d’agents. Les résultats reflètent l’échantillon de la source, pas tous les joueurs.",
   "games.valorant.referenceScope":
-    "Illustrations et références via Valorant-API. Les mises à jour peuvent être décalées. Harbor n’est pas approuvé par Riot Games.",
+    "Illustrations et références via Valorant-API. Les mises à jour peuvent être décalées. Frame n’est pas approuvé par Riot Games.",
   "games.valorant.samples": "{count} apparitions",
   "games.valorant.smallSample": "Petit échantillon",
   "games.valorant.abilities": "Compétences",

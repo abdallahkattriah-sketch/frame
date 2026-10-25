@@ -3,7 +3,7 @@ export default {
     "Battle.net खाता बदल गया है। इस प्रोफ़ाइल के आयात बदलने के लिए दोबारा साइन इन करें।",
   "games.battlenet.connect": "साइन इन करें",
   "games.battlenet.intro":
-    "अपने गेम आयात करने के लिए Battle.net में साइन इन करें। यह कनेक्शन आपकी मौजूदा Harbor प्रोफ़ाइल से जुड़ा है।",
+    "अपने गेम आयात करने के लिए Battle.net में साइन इन करें। यह कनेक्शन आपकी मौजूदा Frame प्रोफ़ाइल से जुड़ा है।",
   "games.battlenet.installed": "इंस्टॉल किए गए गेम दिखाएँ",
   "games.battlenet.uninstalled": "खाते के वे गेम दिखाएँ जो इंस्टॉल नहीं हैं",
   "games.battlenet.partial":
@@ -13,7 +13,7 @@ export default {
     "आपका Battle.net सत्र समाप्त हो गया। दोबारा साइन इन करें; आपके आयात किए गए गेम सुरक्षित हैं।",
   "games.battlenet.timeout": "Battle.net ने समय पर जवाब नहीं दिया। फिर कोशिश करें।",
   "games.battlenet.busy": "Battle.net खाते की एक कार्रवाई पहले से चल रही है।",
-  "games.battlenet.update": "Battle.net जोड़ने के लिए अपडेट किया गया Harbor डेस्कटॉप ऐप फिर शुरू करें।",
+  "games.battlenet.update": "Battle.net जोड़ने के लिए अपडेट किया गया Frame डेस्कटॉप ऐप फिर शुरू करें।",
   "games.battlenet.error": "Battle.net अपडेट नहीं हो सका। आपकी पिछली आयात की गई लाइब्रेरी सुरक्षित है।",
   "games.battlenet.disconnect": "Battle.net डिस्कनेक्ट करें",
   "games.battlenet.removeNote":
@@ -25,7 +25,7 @@ export default {
   "games.launcherSession.unconfirmed": "गेम की स्थिति जाँची जा रही है",
   "games.launcherSession.notStarted": "गेम शुरू नहीं हुआ",
   "games.launcherSession.error":
-    "गेम की गतिविधि रिकॉर्ड नहीं हो सकी। फिर से कोशिश करने के लिए Harbor दोबारा खोलें।",
+    "गेम की गतिविधि रिकॉर्ड नहीं हो सकी। फिर से कोशिश करने के लिए Frame दोबारा खोलें।",
 
   "games.steamImport.importedTitle": "आयातित गेम",
   "games.steamImport.excluded": "आपकी आयात सेटिंग के अनुसार अनदेखा",
@@ -37,7 +37,7 @@ export default {
   "games.steamImport.ignoreSaved": "अनदेखी आईडी सहेजी गईं।",
   "games.steamImport.title": "Steam गेम आयात करें",
   "games.steamImport.note":
-    "इस Harbor प्रोफ़ाइल में गेम रिकॉर्ड रखें। स्वामित्व और इंस्टॉलेशन की जाँच अलग से होती है।",
+    "इस Frame प्रोफ़ाइल में गेम रिकॉर्ड रखें। स्वामित्व और इंस्टॉलेशन की जाँच अलग से होती है।",
   "games.steamImport.input": "Steam ऐप आईडी या स्टोर यूआरएल",
   "games.steamImport.profile": "Depressurizer प्रोफ़ाइल चुनें",
   "games.steamImport.count": "{selected} चुने गए · {total} प्रविष्टियाँ",
@@ -77,7 +77,7 @@ export default {
   "games.libraryStatus.onHold": "बाद के लिए रोका",
   "games.libraryStatus.stopped": "खेलना छोड़ दिया",
   "games.libraryStatus.note":
-    "इस प्रति के लिए आपकी पसंद इस Harbor प्रोफ़ाइल में सहेजी जाती है। खेलने का समय और उपलब्धियाँ इसे कभी नहीं बदलते।",
+    "इस प्रति के लिए आपकी पसंद इस Frame प्रोफ़ाइल में सहेजी जाती है। खेलने का समय और उपलब्धियाँ इसे कभी नहीं बदलते।",
 
   "games.unified.playtime": "खेलने का समय",
   "games.unified.playtime.all": "कोई भी खेलने का समय",
@@ -89,11 +89,11 @@ export default {
   "games.unified.playtime.most": "सबसे अधिक दर्ज समय",
   "games.unified.playtime.steam": "Steam पर {time}",
   "games.unified.playtime.zeroSteam": "Steam पर खेलने का समय दर्ज नहीं है",
-  "games.unified.playtime.zeroHarbor": "Harbor में खेलने का समय दर्ज नहीं है",
+  "games.unified.playtime.zeroHarbor": "Frame में खेलने का समय दर्ज नहीं है",
   "games.unified.playtime.unknownHint":
     "Steam खाते का खेलने का समय उपलब्ध नहीं है या यह स्रोत खेलने का समय नहीं बताता।",
   "games.unified.playtime.note":
-    "Steam का कुल समय और Harbor में दर्ज समय इस्तेमाल होता है, जिसमें आपके सुधार भी शामिल हैं। अनुपलब्ध समय अलग रखा जाता है।",
+    "Steam का कुल समय और Frame में दर्ज समय इस्तेमाल होता है, जिसमें आपके सुधार भी शामिल हैं। अनुपलब्ध समय अलग रखा जाता है।",
   "games.unified.note": "आपकी Steam लाइब्रेरी, PC गेम और इम्पोर्ट किए गए ROM एक ही जगह।",
   "games.unified.allSources": "सभी स्रोत",
   "games.unified.availability": "उपलब्धता",

@@ -8,13 +8,13 @@ export default {
   "games.download.relink.review": "Tinjau berkas",
   "games.download.relink.saved": "Tersimpan: {size}",
   "games.download.relink.note":
-    "Harbor akan mengunduh ulang bagian yang tersimpan untuk membandingkannya sebelum menambahkan data baru.",
+    "Frame akan mengunduh ulang bagian yang tersimpan untuk membandingkannya sebelum menambahkan data baru.",
   "games.download.relink.apply": "Perbarui tautan dan lanjutkan",
   "games.download.relink.working": "Memperbarui tautan…",
   "games.download.relink.checking": "Memeriksa data tersimpan",
   "games.download.relink.single": "Pilih satu berkas untuk mengganti tautan unduhan ini.",
   "games.download.relink.native":
-    "Mulai ulang Harbor dengan versi terbaru untuk memperbarui tautan ini.",
+    "Mulai ulang Frame dengan versi terbaru untuk memperbarui tautan ini.",
   "games.download.transfer_relink_mismatch":
     "Pilih berkas yang sama, dengan nama dan ukuran yang sama, untuk melanjutkan unduhan ini.",
   "games.download.center.content.patch": "Pembaruan game",

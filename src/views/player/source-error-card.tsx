@@ -20,9 +20,9 @@ function describe(error: SourceError): { title: string; detail: string; offline:
   const status = error.status;
   if (error.exhausted)
     return {
-      title: "Harbor couldn't start any source",
+      title: "Frame couldn't start any source",
       detail:
-        "Every source Harbor tried failed to start. Pick a different one, or try again in a moment.",
+        "Every source Frame tried failed to start. Pick a different one, or try again in a moment.",
       offline: false,
     };
   if (status === 0)
@@ -36,7 +36,7 @@ function describe(error: SourceError): { title: string; detail: string; offline:
     return {
       title: "This source is down",
       detail:
-        "The provider's server returned an error. Nothing on Harbor's side can fix this. Pick another source.",
+        "The provider's server returned an error. Nothing on Frame's side can fix this. Pick another source.",
       offline: false,
     };
   if (status >= 400)
@@ -47,7 +47,7 @@ function describe(error: SourceError): { title: string; detail: string; offline:
       offline: false,
     };
   return {
-    title: "Harbor couldn't play this source",
+    title: "Frame couldn't play this source",
     detail: "The source responded but the stream would not open. Try a different one.",
     offline: false,
   };

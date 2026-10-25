@@ -38,7 +38,7 @@ export default {
   "games.valorant.metaScope":
     "Dane rankingowe OP.GG dla wybranego patcha. Częstotliwość wyboru to udział występów agenta. Wyniki dotyczą próbki źródła, a nie wszystkich graczy.",
   "games.valorant.referenceScope":
-    "Grafiki i dane gry przez Valorant-API. Aktualizacje mogą pojawiać się z opóźnieniem. Harbor nie jest zatwierdzony przez Riot Games.",
+    "Grafiki i dane gry przez Valorant-API. Aktualizacje mogą pojawiać się z opóźnieniem. Frame nie jest zatwierdzony przez Riot Games.",
   "games.valorant.samples": "Występy: {count}",
   "games.valorant.smallSample": "Mała próbka",
   "games.valorant.abilities": "Umiejętności",

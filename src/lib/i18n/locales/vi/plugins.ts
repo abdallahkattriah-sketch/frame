@@ -3,11 +3,11 @@ const plugins: Record<string, string> = {
   Repositories: "Kho lưu trữ",
   "Installed plugins": "Plugin đã cài",
   "Plugin repositories": "Kho lưu trữ plugin",
-  "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.":
-    "Plugin chạy trong ứng dụng máy tính. Mở Harbor trên máy tính để thêm và quản lý.",
+  "Plugins run in the desktop app. Open Frame on your computer to add and manage them.":
+    "Plugin chạy trong ứng dụng máy tính. Mở Frame trên máy tính để thêm và quản lý.",
   "Use plugins": "Dùng plugin",
-  "Plugins are small scripts that look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "Plugin là những tập lệnh nhỏ tìm luồng phát trên các trang mà Harbor không biết. Mọi thứ ở đây đều do bạn tự cài từ các kho lưu trữ bạn đã chọn.",
+  "Plugins are small scripts that look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "Plugin là những tập lệnh nhỏ tìm luồng phát trên các trang mà Frame không biết. Mọi thứ ở đây đều do bạn tự cài từ các kho lưu trữ bạn đã chọn.",
   "Ask every enabled plugin for streams when you press Play. Turn this off to pause them all without removing anything.":
     "Hỏi mọi plugin đang bật để lấy luồng phát khi bạn nhấn Phát. Tắt để tạm dừng tất cả mà không gỡ gì cả.",
   "Group by repository": "Nhóm theo kho lưu trữ",
@@ -34,7 +34,7 @@ const plugins: Record<string, string> = {
   "v{version} available": "Có v{version}",
   "Paused after {n} failures. Turn it back on to try again.":
     "Tạm dừng sau {n} lần lỗi. Bật lại để thử lần nữa.",
-  "Needs Harbor {version} or newer.": "Cần Harbor {version} trở lên.",
+  "Needs Frame {version} or newer.": "Cần Frame {version} trở lên.",
   "This file is not a stream plugin.": "Tệp này không phải plugin luồng phát.",
   "Turned off by its repository.": "Bị kho lưu trữ tắt.",
   "Plugin files changed on disk. Reinstall it from its repository.":
@@ -75,15 +75,15 @@ const plugins: Record<string, string> = {
   "Removed {name}.": "Đã gỡ {name}.",
   "Updated {name} to v{version}.": "Đã cập nhật {name} lên v{version}.",
   "Reverted {name} to v{version}.": "Đã đưa {name} về v{version}.",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
-    "Dán liên kết manifest của một kho lưu trữ bạn tin tưởng. Harbor đọc nguyên trạng cả kho plugin của Harbor lẫn kho tập lệnh nhà cung cấp, và không cài gì cho đến khi bạn chọn.",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
+    "Dán liên kết manifest của một kho lưu trữ bạn tin tưởng. Frame đọc nguyên trạng cả kho plugin của Frame lẫn kho tập lệnh nhà cung cấp, và không cài gì cho đến khi bạn chọn.",
   "Repository link": "Liên kết kho lưu trữ",
-  "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.":
-    "Mọi liên kết GitHub đều dùng được, raw hay không. Harbor tự thêm /manifest.json nếu thiếu. Dán nhiều liên kết để thêm tất cả.",
+  "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.":
+    "Mọi liên kết GitHub đều dùng được, raw hay không. Frame tự thêm /manifest.json nếu thiếu. Dán nhiều liên kết để thêm tất cả.",
   "Only https links are accepted.": "Chỉ chấp nhận liên kết https.",
   "That link did not answer.": "Liên kết đó không phản hồi.",
-  "This does not look like a plugin repository. Harbor expects { name, plugins } or a provider-script manifest with scrapers.":
-    "Đây có vẻ không phải kho lưu trữ plugin. Harbor cần { name, plugins } hoặc một manifest tập lệnh nhà cung cấp có scrapers.",
+  "This does not look like a plugin repository. Frame expects { name, plugins } or a provider-script manifest with scrapers.":
+    "Đây có vẻ không phải kho lưu trữ plugin. Frame cần { name, plugins } hoặc một manifest tập lệnh nhà cung cấp có scrapers.",
   "This is a manga repository. Add it from the Manga page.":
     "Đây là kho lưu trữ manga. Hãy thêm từ trang Manga.",
   "Already added.": "Đã thêm rồi.",
@@ -108,8 +108,8 @@ const plugins: Record<string, string> = {
   "Checksum did not match the manifest.": "Tổng kiểm tra không khớp với manifest.",
   "Checking for updates": "Kiểm tra cập nhật",
   "Check repositories daily": "Kiểm tra kho lưu trữ hằng ngày",
-  "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.":
-    "Mỗi ngày một lần, tìm phiên bản mới hơn và hiện nút Cập nhật ở đây. Harbor không bao giờ tự cài bản cập nhật.",
+  "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.":
+    "Mỗi ngày một lần, tìm phiên bản mới hơn và hiện nút Cập nhật ở đây. Frame không bao giờ tự cài bản cập nhật.",
   "Settings this plugin asked for. Stored on this computer only.":
     "Cài đặt mà plugin này yêu cầu. Chỉ lưu trên máy tính này.",
   "This plugin's settings form failed to load: {error}":
@@ -117,8 +117,8 @@ const plugins: Record<string, string> = {
   "{n} of {m} answered, {k} failed": "{n}/{m} đã phản hồi, {k} thất bại",
   "Install all": "Cài tất cả",
   "Installing {done} of {total}": "Đang cài {done}/{total}",
-  "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.":
-    "Những tập lệnh nhỏ tìm luồng phát, manga và sách trên các trang mà Harbor không biết, cài từ các kho lưu trữ bạn chọn.",
+  "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.":
+    "Những tập lệnh nhỏ tìm luồng phát, manga và sách trên các trang mà Frame không biết, cài từ các kho lưu trữ bạn chọn.",
   "Remove all": "Gỡ tất cả",
 };
 

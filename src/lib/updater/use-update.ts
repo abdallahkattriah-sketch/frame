@@ -193,7 +193,7 @@ async function verifyExperimentalAction(
   if (access === "unavailable") {
     set({
       status: "error",
-      error: t("Couldn't verify your Harbor account access. Check your connection and try again."),
+      error: t("Couldn't verify your Frame account access. Check your connection and try again."),
     });
     return false;
   }
@@ -756,7 +756,7 @@ async function detectFailedHandoff(pending: {
     version: pending.version ?? null,
     experimentalVersion: pending.experimentalVersion ?? null,
     handoff: plan,
-    error: t("Harbor Setup did not finish updating Harbor. Check for updates to try again."),
+    error: t("Frame Setup did not finish updating Frame. Check for updates to try again."),
     channel: pending.channel ?? selectedUpdateChannel(),
     panelOpen: true,
   });
@@ -801,7 +801,7 @@ async function detectFailedUpdate(): Promise<boolean> {
     installFailed: true,
     version: pending.version,
     channel: pending.channel ?? selectedUpdateChannel(),
-    error: t("Harbor {version} downloaded but did not install on its own.", {
+    error: t("Frame {version} downloaded but did not install on its own.", {
       version: pending.version,
     }),
     panelOpen: true,

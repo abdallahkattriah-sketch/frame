@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Impressões digitais dos arquivos · SHA-256",
   "games.patch.localNote": "No seu dispositivo · BPS · IPS · UPS · Até 256 MB",
   "games.patch.desktop":
-    "Aplique patches no aplicativo Harbor para Windows, macOS ou Linux. Seus arquivos ficam no seu dispositivo e o jogo original é preservado.",
+    "Aplique patches no aplicativo Frame para Windows, macOS ou Linux. Seus arquivos ficam no seu dispositivo e o jogo original é preservado.",
   "games.patch.done": "Tudo pronto para uma nova aventura",
   "games.patch.preserved":
     "Sua cópia modificada foi salva. O jogo original e o patch não foram alterados.",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Um arquivo selecionado mudou após a verificação. Verifique o patch novamente antes de salvar.",
   "games.patch.patch_output_exists":
-    "Já existe um arquivo nesse local. Escolha outro nome; o Harbor não substitui arquivos existentes.",
+    "Já existe um arquivo nesse local. Escolha outro nome; o Frame não substitui arquivos existentes.",
   "games.patch.patch_read_failed":
     "Não foi possível ler um dos arquivos. Confira se ele ainda está disponível e selecione-o novamente.",
   "games.patch.patch_write_failed":
@@ -76,9 +76,9 @@ export default {
   "games.atlas.sort.newest": "Mais recentes",
   "games.atlas.sort.oldest": "Mais antigos",
   "games.hub.stepPatch":
-    "Escolha seu jogo original e um patch BPS, IPS ou UPS. O Harbor salva uma cópia separada.",
+    "Escolha seu jogo original e um patch BPS, IPS ou UPS. O Frame salva uma cópia separada.",
   "games.patch.description":
-    "Escolha seu jogo original e um patch BPS, IPS ou UPS. O Harbor salva uma cópia separada.",
+    "Escolha seu jogo original e um patch BPS, IPS ou UPS. O Frame salva uma cópia separada.",
   "games.patch.choosePatch": "Escolher patch (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Este arquivo não é um patch BPS, IPS ou UPS compatível.",
   "games.discovery.viewGame": "Ver jogo",

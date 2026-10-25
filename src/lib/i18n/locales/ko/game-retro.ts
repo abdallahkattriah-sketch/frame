@@ -18,7 +18,7 @@ export default {
   "games.retro.controls": "조작 설정",
   "games.retro.saveExit": "저장 후 종료",
   "games.retro.popout": "별도 창",
-  "games.retro.dock": "Harbor로 돌아가기",
+  "games.retro.dock": "Frame로 돌아가기",
   "games.retro.mute": "음소거",
   "games.retro.unmute": "음소거 해제",
   "games.retro.volume": "음량",
@@ -27,7 +27,7 @@ export default {
   "games.retro.smooth": "부드럽게",
   "games.retro.fullscreen": "전체 화면",
   "games.retro.exitFullscreen": "전체 화면 종료",
-  "games.retro.playInside": "Harbor에서 플레이",
+  "games.retro.playInside": "Frame에서 플레이",
   "games.retro.setup":
     "{system} 플레이어를 한 번 설치하고 여기서 플레이하세요. 게임은 이 기기에 보관됩니다.",
   "games.retro.install": "설치 후 플레이 · {size} MB",

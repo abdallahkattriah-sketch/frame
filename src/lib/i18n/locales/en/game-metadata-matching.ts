@@ -24,6 +24,6 @@ export default {
   "games.match.remove": "Remove match",
   "games.match.source": "Artwork & details from IGDB",
   "games.match.note":
-    "Choose the edition that matches your file. Harbor keeps the original file and filename.",
+    "Choose the edition that matches your file. Frame keeps the original file and filename.",
   "games.match.empty": "Try the game title without region or revision labels.",
 };

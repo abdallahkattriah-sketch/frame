@@ -150,7 +150,7 @@ export function StreamCacheSection() {
           label={t("Keep at most")}
           desc={t("Over the cap, the oldest files are deleted first.")}
           tip={t(
-            "Cap how much disk the cache can use. When it goes over, Harbor deletes the oldest files first. Enforced on launch and as streams close.",
+            "Cap how much disk the cache can use. When it goes over, Frame deletes the oldest files first. Enforced on launch and as streams close.",
           )}
         >
           <Dropdown
@@ -329,7 +329,7 @@ export function P2PPowerToolsSection() {
         <ToggleRow
           label={t("Disable P2P entirely")}
           sub={t(
-            "Harbor will not start the P2P engine, contact trackers, or run DHT. Use this if you only want debrid and direct links. Turn off to re-enable P2P streaming.",
+            "Frame will not start the P2P engine, contact trackers, or run DHT. Use this if you only want debrid and direct links. Turn off to re-enable P2P streaming.",
           )}
           leading={<Ban size={18} strokeWidth={2.2} />}
           value={settings.torrentsDisabled}
@@ -337,7 +337,7 @@ export function P2PPowerToolsSection() {
           note={torrentEnginePolicyPending ? t("Applying P2P setting…") : undefined}
           warn={
             torrentEnginePolicyError
-              ? t("Harbor could not apply the P2P setting. Reopen Harbor to try again.")
+              ? t("Frame could not apply the P2P setting. Reopen Frame to try again.")
               : settings.torrentsDisabled
                 ? t(
                     "P2P is disabled. Uncached streams will not play unless they come from a debrid service or a direct link. To use P2P, toggle this off.",
@@ -349,7 +349,7 @@ export function P2PPowerToolsSection() {
         <ToggleRow
           label={t("Local P2P streaming")}
           sub={t(
-            "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.",
+            "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.",
           )}
           leading={<Zap size={18} strokeWidth={2.2} />}
           value={settings.directTorrentStream}

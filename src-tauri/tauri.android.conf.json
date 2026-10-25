@@ -9,7 +9,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "Harbor",
+        "title": "Frame",
         "url": "index-tv.html",
         "backgroundColor": [8, 9, 10, 255]
       }

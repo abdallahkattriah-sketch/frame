@@ -23,7 +23,7 @@ export default {
   "games.patch.fingerprints": "फ़ाइल फ़िंगरप्रिंट · SHA-256",
   "games.patch.localNote": "आपके डिवाइस पर · BPS · IPS · UPS · अधिकतम 256 MB",
   "games.patch.desktop":
-    "Windows, macOS या Linux के Harbor डेस्कटॉप ऐप में पैच लगाएँ। फ़ाइलें आपके डिवाइस पर रहती हैं और मूल गेम सुरक्षित रहता है।",
+    "Windows, macOS या Linux के Frame डेस्कटॉप ऐप में पैच लगाएँ। फ़ाइलें आपके डिवाइस पर रहती हैं और मूल गेम सुरक्षित रहता है।",
   "games.patch.done": "नए रोमांच के लिए तैयार",
   "games.patch.preserved": "पैच वाली कॉपी सहेज दी गई है। मूल गेम और पैच में कोई बदलाव नहीं हुआ।",
   "games.patch.patch_source_mismatch":
@@ -36,7 +36,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "सत्यापन के बाद चुनी गई एक फ़ाइल बदल गई। सहेजने से पहले पैच फिर से जाँचें।",
   "games.patch.patch_output_exists":
-    "इस जगह पर फ़ाइल पहले से मौजूद है। दूसरा नाम चुनें; Harbor मौजूदा फ़ाइलों को नहीं बदलता।",
+    "इस जगह पर फ़ाइल पहले से मौजूद है। दूसरा नाम चुनें; Frame मौजूदा फ़ाइलों को नहीं बदलता।",
   "games.patch.patch_read_failed":
     "चुनी गई एक फ़ाइल पढ़ी नहीं जा सकी। जाँचें कि वह अभी उपलब्ध है, फिर उसे दोबारा चुनें।",
   "games.patch.patch_write_failed": "कॉपी सहेजी नहीं जा सकी। फ़ोल्डर और खाली जगह जाँचें या दूसरी जगह चुनें।",
@@ -68,8 +68,8 @@ export default {
   "games.atlas.sort.rated": "सर्वाधिक रेटिंग",
   "games.atlas.sort.newest": "सबसे नए",
   "games.atlas.sort.oldest": "सबसे पुराने",
-  "games.hub.stepPatch": "मूल गेम और BPS, IPS या UPS पैच चुनें। Harbor एक अलग कॉपी सहेजता है।",
-  "games.patch.description": "मूल गेम और BPS, IPS या UPS पैच चुनें। Harbor एक अलग कॉपी सहेजता है।",
+  "games.hub.stepPatch": "मूल गेम और BPS, IPS या UPS पैच चुनें। Frame एक अलग कॉपी सहेजता है।",
+  "games.patch.description": "मूल गेम और BPS, IPS या UPS पैच चुनें। Frame एक अलग कॉपी सहेजता है।",
   "games.patch.choosePatch": "पैच चुनें (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "यह फ़ाइल समर्थित BPS, IPS या UPS पैच नहीं है।",
   "games.discovery.viewGame": "गेम देखें",

@@ -545,7 +545,7 @@ export const COMMUNITY_PACKS: CommunityPack[] = [
     name: "BetterFormatter Colored",
     author: "9mousaa",
     description:
-      "Swaps Harbor's built-in badge art for BetterFormatter's colored set. No rules, pure art remap.",
+      "Swaps Frame's built-in badge art for BetterFormatter's colored set. No rules, pure art remap.",
     count: "21 remaps",
     previews: [`${BF}/colored-remux.png`, `${BF}/4k.png`, `${BF}/vision.png`],
     art: {

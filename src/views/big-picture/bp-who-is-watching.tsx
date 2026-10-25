@@ -230,9 +230,9 @@ export function BpWhoIsWatching({ onClose }: { onClose: () => void }) {
               blocked
                 ? t("Kids profiles are not available in Big Picture yet.")
                 : phase === "pending"
-                  ? t("Signing in to your Harbor account. Your profiles will appear in a moment.")
+                  ? t("Signing in to your Frame account. Your profiles will appear in a moment.")
                   : phase === "failed"
-                    ? t("Couldn't reach Harbor. Showing this device only.")
+                    ? t("Couldn't reach Frame. Showing this device only.")
                     : null
             }
             retry={phase === "failed" && canRetry ? runBpWhoRetry : null}

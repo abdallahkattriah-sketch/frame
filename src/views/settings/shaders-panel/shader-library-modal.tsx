@@ -115,7 +115,7 @@ export function ShaderLibraryModal({ open, onClose }: { open: boolean; onClose: 
       onClose={onClose}
       title={t("Shader library")}
       sub={t(
-        "Each shader is hosted by its author, not bundled with Harbor. Download the ones you want; Harbor chains them in the right order and applies them in the player.",
+        "Each shader is hosted by its author, not bundled with Frame. Download the ones you want; Frame chains them in the right order and applies them in the player.",
       )}
       actions={<ModalButton onClick={onClose}>{t("Done")}</ModalButton>}
     >

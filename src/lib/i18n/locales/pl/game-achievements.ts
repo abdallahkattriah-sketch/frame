@@ -39,12 +39,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam nie potwierdził wyniku. Odśwież przed wprowadzeniem kolejnych zmian.",
   "games.achievementManager.error.platform":
-    "Zarządzanie osiągnięciami jest obecnie dostępne w Harbor na Windows x64.",
+    "Zarządzanie osiągnięciami jest obecnie dostępne w Frame na Windows x64.",
   "games.achievementManager.error.invalid": "Wybierz maksymalnie 2000 zmian naraz.",
   "games.achievementManager.error.stale":
     "Te osiągnięcia zmieniły się w Steam. Odśwież przed edycją.",
   "games.achievementManager.error.protected":
-    "Gra zarządza tym osiągnięciem. Harbor nie może go edytować.",
+    "Gra zarządza tym osiągnięciem. Frame nie może go edytować.",
   "games.achievementManager.error.expired":
     "Ta weryfikacja wygasła. Odśwież przed zastosowaniem zmian.",
   "games.achievementManager.error.busy": "Inne żądanie dotyczące osiągnięć Steam jest w toku.",
@@ -62,12 +62,12 @@ export default {
   "games.achievementManager.consentBody":
     "Odblokuj lub ponownie zablokuj osiągnięcia zalogowanego konta Steam. Wybór pozostaje wersją roboczą do chwili zastosowania zmian.",
   "games.achievementManager.consentRules":
-    "Harbor korzysta z interfejsu osiągnięć Steam bez wstrzykiwania kodu do gier. Nadal obowiązują zasady i wymagania nagród danej gry.",
+    "Frame korzysta z interfejsu osiągnięć Steam bez wstrzykiwania kodu do gier. Nadal obowiązują zasady i wymagania nagród danej gry.",
   "games.achievementManager.consentSam": "Inspiracja: obsługa osiągnięć w SAM",
-  "games.achievementManager.consentOnce": "Wyświetlane raz dla tego profilu Harbor.",
+  "games.achievementManager.consentOnce": "Wyświetlane raz dla tego profilu Frame.",
   "games.achievementManager.consentAccept": "Rozumiem",
   "games.achievementManager.desktopOnly":
-    "Aby zmieniać osiągnięcia, użyj Harbor w Windows z uruchomionym Steam.",
+    "Aby zmieniać osiągnięcia, użyj Frame w Windows z uruchomionym Steam.",
   "games.achievementManager.all": "Wszystkie",
   "games.achievementManager.filter": "Filtr osiągnięć",
   "games.achievementManager.rewards": "Nagrody rzeczowe",
@@ -125,7 +125,7 @@ export default {
   "games.achievementManager.pickTitle": "Wybierz grę",
   "games.achievementManager.pickSearch": "Szukaj w swoich grach",
   "games.achievementManager.pickNote":
-    "Harbor może edytować osiągnięcia gry, gdy Steam zapisze je w pamięci podręcznej tego komputera.",
+    "Frame może edytować osiągnięcia gry, gdy Steam zapisze je w pamięci podręcznej tego komputera.",
   "games.achievementManager.pickInstalled": "Zainstalowana",
   "games.achievementManager.pickEmpty": "Brak gier pasujących do wyszukiwania.",
   "games.achievementManager.pickUnavailable":

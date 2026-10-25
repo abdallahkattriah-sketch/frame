@@ -4,13 +4,13 @@ export default {
   "games.sourceAlerts.on": "Alarm aktiviert",
   "games.sourceAlerts.found": "Veröffentlichung gefunden",
   "games.sourceAlerts.note":
-    "Prüft deine aktivierten Quellen alle 30 Minuten, solange Harbor geöffnet ist. Hinweise erscheinen unter Benachrichtigungen.",
+    "Prüft deine aktivierten Quellen alle 30 Minuten, solange Frame geöffnet ist. Hinweise erscheinen unter Benachrichtigungen.",
   "games.sourceAlerts.noSources":
     "Füge eine Quelle hinzu oder aktiviere sie. Dein Alarm bleibt gespeichert.",
   "games.sourceAlerts.foundNote":
     "Eine passende Veröffentlichung wurde gefunden. Prüfe Edition und Dateien unter Verfügbare Veröffentlichungen.",
   "games.sourceAlerts.retryNote":
-    "Einige Quellen konnten nicht geprüft werden. Harbor versucht es automatisch erneut.",
+    "Einige Quellen konnten nicht geprüft werden. Frame versucht es automatisch erneut.",
   "games.sourceAlerts.storage":
     "Dieser Alarm konnte nicht gespeichert oder gelesen werden. Prüfe den lokalen Speicher und versuche es erneut.",
   "games.sourceAlerts.limit":

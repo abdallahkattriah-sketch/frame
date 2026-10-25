@@ -47,7 +47,7 @@ export default {
     "Deine Einstellungen für Spielvorschläge konnten auf diesem Gerät nicht gespeichert werden. Versuche es erneut.",
   "games.recommend.influences": "Grundlage deiner Vorschläge",
   "games.recommend.influencesNote":
-    "Wähle, welche Spiele Harbor berücksichtigt. Deine Bibliothek bleibt unverändert.",
+    "Wähle, welche Spiele Frame berücksichtigt. Deine Bibliothek bleibt unverändert.",
   "games.recommend.exclude": "{name} nicht mehr berücksichtigen",
   "games.recommend.excluded": "Ausgeschlossene Grundlagen ({count})",
   "games.recommend.useAgain": "{name} wieder berücksichtigen",

@@ -175,7 +175,7 @@ const vi: Record<string, string> = {
   "games.download.storage.estimate":
     "Một số tệp hiện có chưa được kiểm tra. Dung lượng cần thiết có thể thấp hơn.",
   "games.download.storage.unknown": "Chưa rõ kích thước: {count} tệp",
-  "games.download.storage.other": "Đã dành {size} cho tác vụ Harbor khác",
+  "games.download.storage.other": "Đã dành {size} cho tác vụ Frame khác",
   "games.download.storage.shortfall": "Cần thêm {size} dung lượng",
   "games.download.state.retrying": "Đang thử kết nối lại",
   "games.download.queueOrder": "Thứ tự hàng đợi: {position}",
@@ -383,7 +383,7 @@ const vi: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "Chia sẻ torrent",
   "games.torrent.share.note":
-    "Chia sẻ tệp đã xác minh với các máy ngang hàng. Dừng khi đạt một giới hạn hoặc đóng Harbor. Dừng chia sẻ trước khi thay đổi tệp.",
+    "Chia sẻ tệp đã xác minh với các máy ngang hàng. Dừng khi đạt một giới hạn hoặc đóng Frame. Dừng chia sẻ trước khi thay đổi tệp.",
   "games.torrent.share.upload": "Giới hạn tải lên (KB/giây)",
   "games.torrent.share.ratio": "Tỷ lệ chia sẻ (1–10)",
   "games.torrent.share.minutes": "Giới hạn thời gian (phút)",

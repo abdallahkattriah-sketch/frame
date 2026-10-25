@@ -30,7 +30,7 @@ export function AnimePanel() {
       <Section
         title={t("Desktop only")}
         subtitle={t(
-          "Smooth motion runs on the bundled mpv engine in the Harbor desktop app. It has no effect in the browser.",
+          "Smooth motion runs on the bundled mpv engine in the Frame desktop app. It has no effect in the browser.",
         )}
       >
         <div className="flex items-start gap-2.5 rounded-[10px] bg-elevated px-4 py-3">
@@ -53,14 +53,14 @@ export function AnimePanel() {
             <ToggleRow
               label={t("Motion smoothing")}
               sub={t(
-                "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.",
+                "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.",
               )}
               value={settings.playerMotionInterp}
               onChange={(v) => update({ playerMotionInterp: v })}
               lockReason={
                 svpDriving
                   ? t(
-                      "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.",
+                      "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.",
                     )
                   : undefined
               }

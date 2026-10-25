@@ -20,7 +20,7 @@ export default {
   "games.warhammerUniverse.free": "Grátis no Warhammer TV",
   "games.warhammerUniverse.subscription": "Pode exigir assinatura Warhammer+",
   "games.warhammerUniverse.movieNote":
-    "A animação de 2010. Abra os detalhes no Harbor para elenco, trailers e fontes.",
+    "A animação de 2010. Abra os detalhes no Frame para elenco, trailers e fontes.",
   "games.warhammerUniverse.screenScope":
     "Seleção pública do Warhammer TV. Hammer and Bolter inclui vários cenários; a disponibilidade depende do provedor.",
   "games.warhammerUniverse.lore": "Por dentro da história",

@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "इंस्टॉल है: {version}",
   "games.mods.current": "इंस्टॉल है",
   "games.mods.versionNote":
-    "संगत संस्करण चुनें। Harbor बदलावों की जाँच करता है और पिछला संस्करण स्थानीय रूप से रखता है। बदलाव लागू करने से पहले Minecraft बंद करें।",
+    "संगत संस्करण चुनें। Frame बदलावों की जाँच करता है और पिछला संस्करण स्थानीय रूप से रखता है। बदलाव लागू करने से पहले Minecraft बंद करें।",
   "games.mods.applyChanges": "बदलाव लागू करें",
   "games.mods.reviewChanges": "बदलावों की समीक्षा",
   "games.mods.previousVersion": "पिछला: {version}",

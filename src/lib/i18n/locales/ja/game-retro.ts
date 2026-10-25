@@ -20,7 +20,7 @@ export default {
   "games.retro.controls": "操作設定",
   "games.retro.saveExit": "保存して終了",
   "games.retro.popout": "別ウィンドウ",
-  "games.retro.dock": "Harborに戻す",
+  "games.retro.dock": "Frameに戻す",
   "games.retro.mute": "ミュート",
   "games.retro.unmute": "ミュート解除",
   "games.retro.volume": "音量",
@@ -29,7 +29,7 @@ export default {
   "games.retro.smooth": "なめらか",
   "games.retro.fullscreen": "全画面",
   "games.retro.exitFullscreen": "全画面を終了",
-  "games.retro.playInside": "Harborでプレイ",
+  "games.retro.playInside": "Frameでプレイ",
   "games.retro.setup":
     "{system}プレイヤーを一度インストールすると、ここで遊べます。ゲームはこの端末に保存されます。",
   "games.retro.install": "インストールしてプレイ · {size} MB",

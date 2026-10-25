@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "البحث في CurseForge",
   "games.minecraft.discovery.downloads": "التنزيلات",
   "games.minecraft.discovery.curseForgeBlocked":
-    "لا يسمح CurseForge لـ Harbor بتحميل هذا الكتالوج حاليًا. حاول مجددًا أو افتح المصدر.",
+    "لا يسمح CurseForge لـ Frame بتحميل هذا الكتالوج حاليًا. حاول مجددًا أو افتح المصدر.",
   "games.minecraft.discovery.unavailable": "تعذّر تحميل الدليل. حاول مجددًا.",
   "games.minecraft.discovery.openSource": "فتح موقع المصدر",
   "games.minecraft.discovery.loadMore": "تحميل المزيد",
   "games.minecraft.discovery.servers": "الخوادم",
   "games.minecraft.discovery.serverNote":
-    "أدلة مستقلة. Harbor غير تابع لهذه المواقع أو الخوادم. الأعداد مقدمة من كل دليل.",
+    "أدلة مستقلة. Frame غير تابع لهذه المواقع أو الخوادم. الأعداد مقدمة من كل دليل.",
   "games.minecraft.discovery.searchServers": "البحث في الخوادم المحمّلة",
   "games.minecraft.discovery.directory": "الدليل",
   "games.minecraft.discovery.mode": "نمط اللعب",
@@ -42,7 +42,7 @@ export default {
   "games.minecraft.lifecycle.settings": "تضمين عناصر التحكم وقائمة الخوادم",
   "games.minecraft.lifecycle.exportNote": "أنشئ ملف .mrpack محمولًا بتعديلاتك وإعداداتك.",
   "games.minecraft.lifecycle.privateNote":
-    "تُستثنى بيانات حساب Harbor وملفات التشغيل والسجلات. راجع إعدادات التعديلات قبل المشاركة.",
+    "تُستثنى بيانات حساب Frame وملفات التشغيل والسجلات. راجع إعدادات التعديلات قبل المشاركة.",
   "games.minecraft.lifecycle.included": "الملفات المضمّنة",
   "games.minecraft.lifecycle.referenced": "روابط التنزيل",
   "games.minecraft.lifecycle.referenceNote":
@@ -96,7 +96,7 @@ export default {
   "games.minecraft.update.chooseFile": "اختيار ملف .mrpack",
   "games.minecraft.update.restoreVersion": "استعادة {version}",
   "games.minecraft.update.reviewNote":
-    "راجع كل تغيير قبل تطبيقه. يحتفظ Harbor بنسخة منفصلة من التثبيت السابق.",
+    "راجع كل تغيير قبل تطبيقه. يحتفظ Frame بنسخة منفصلة من التثبيت السابق.",
   "games.minecraft.update.changeVersion": "تغيير الإصدار",
   "games.minecraft.update.download": "التنزيل",
   "games.minecraft.update.recoveryCopy": "نسخة الاستعادة",
@@ -189,7 +189,7 @@ export default {
   "games.minecraft.launch.limitError": "أغلق مثيل Minecraft قيد التشغيل قبل بدء آخر.",
   "games.minecraft.java.title": "Java لهذا المثيل",
   "games.minecraft.java.note": "يتطلب إصدار Minecraft هذا Java {version}.",
-  "games.minecraft.java.managed": "التثبيت عبر Harbor",
+  "games.minecraft.java.managed": "التثبيت عبر Frame",
   "games.minecraft.java.installed": "استخدام Java المثبّتة",
   "games.minecraft.java.manage": "إدارة Java",
 
@@ -207,7 +207,7 @@ export default {
   "games.minecraft.java.versionError": "اختر Java {version} المتوافقة مع نظامك.",
   "games.minecraft.java.invalidError": "تعذّر التحقق من تثبيت Java هذا.",
   "games.minecraft.java.metadataError": "تعذّر التحقق من تنزيل Java متوافق. حاول مجددًا.",
-  "games.minecraft.java.managedNote": "يحتفظ Harbor بهذا الإصدار في مكتبة Minecraft الخاصة بك.",
+  "games.minecraft.java.managedNote": "يحتفظ Frame بهذا الإصدار في مكتبة Minecraft الخاصة بك.",
   "games.minecraft.runtime.setup": "إعداد اللعبة",
   "games.minecraft.runtime.note":
     "ثبّت ملفات اللعبة الرسمية لهذا المثيل. ستبقى عوالمك وتعديلاتك في مكانها.",
@@ -228,7 +228,7 @@ export default {
   "games.minecraft.runtime.verify": "التحقق من الملفات",
   "games.minecraft.runtime.metadataError": "تعذّر التحقق من ملفات اللعبة. حاول لاحقًا.",
   "games.minecraft.runtime.legacyError":
-    "يستخدم هذا الإصدار تنسيق إعداد أو تشغيل لا يدعمه Harbor بعد.",
+    "يستخدم هذا الإصدار تنسيق إعداد أو تشغيل لا يدعمه Frame بعد.",
   "games.minecraft.runtime.loaderError": "تنسيق إعداد هذا المحمّل غير مدعوم بعد.",
   "games.minecraft.runtime.platformError": "إعداد اللعبة غير مدعوم على هذا النظام بعد.",
   "games.minecraft.runtime.versionError": "لم يُعثر على إصدار Minecraft هذا في الكتالوج الرسمي.",
@@ -237,8 +237,7 @@ export default {
   "games.minecraft.instances.note": "عوالم وتعديلات وإعدادات منفصلة لكل تجربة.",
   "games.minecraft.instances.import": "استيراد حزمة",
   "games.minecraft.instances.create": "إنشاء نسخة",
-  "games.minecraft.instances.desktop":
-    "افتح تطبيق Harbor لسطح المكتب لإنشاء النسخ المحلية وإدارتها.",
+  "games.minecraft.instances.desktop": "افتح تطبيق Frame لسطح المكتب لإنشاء النسخ المحلية وإدارتها.",
   "games.minecraft.instances.search": "ابحث في نسخك",
   "games.minecraft.instances.storage": "مجلد التخزين",
   "games.minecraft.instances.chooseFolder": "اختر مجلد التخزين",
@@ -272,7 +271,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "جارٍ تحميل إصدارات Minecraft…",
   "games.minecraft.instances.added": "أُضيفت إلى نسخك",
   "games.minecraft.instances.storageNote":
-    "اختر مكان حفظ نسخ Minecraft. لكل ملف Harbor شخصي مجلده الخاص هنا.",
+    "اختر مكان حفظ نسخ Minecraft. لكل ملف Frame شخصي مجلده الخاص هنا.",
   "games.minecraft.instances.isolated": "يثبّت في نسخة جديدة مستقلة.",
   "games.minecraft.instances.cancelling": "جارٍ الإلغاء…",
   "games.minecraft.instances.install": "تثبيت ملفات الحزمة",
@@ -284,7 +283,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "جارٍ تطبيق إعدادات الحزمة…",
   "games.minecraft.instances.phase.done": "ثُبّتت الملفات",
   "games.minecraft.instances.folderError":
-    "اختر مجلدًا محليًا يمكن الوصول إليه لهذا الملف الشخصي في Harbor.",
+    "اختر مجلدًا محليًا يمكن الوصول إليه لهذا الملف الشخصي في Frame.",
   "games.minecraft.instances.writeError":
     "تعذّرت كتابة النسخة. تحقّق من أذونات المجلد والمساحة المتاحة.",
   "games.minecraft.instances.readError":
@@ -296,7 +295,7 @@ export default {
   "games.minecraft.instances.changedError": "تغيّرت الحزمة أو انتهت صلاحية مراجعتها. راجعها مجددًا.",
   "games.minecraft.instances.formatError": "هذا ليس أرشيف .mrpack صالحًا ومدعومًا.",
   "games.minecraft.instances.loaderError": "تستخدم هذه الحزمة محمّل لعبة غير معروف أو متعارضًا.",
-  "games.minecraft.instances.sourceError": "تحتاج هذه الحزمة إلى مصدر تنزيل لا يدعمه Harbor.",
+  "games.minecraft.instances.sourceError": "تحتاج هذه الحزمة إلى مصدر تنزيل لا يدعمه Frame.",
   "games.minecraft.instances.limitError": "تتجاوز هذه الحزمة أو المكتبة حد الحجم المدعوم.",
   "games.minecraft.instances.busyError": "لا تزال عملية حزمة أخرى جارية. انتظر انتهاءها أو ألغها.",
   "games.minecraft.instances.error": "تعذّر إكمال هذه العملية. أعد المحاولة.",
@@ -345,9 +344,9 @@ export default {
   "games.minecraft.account.signIn": "تسجيل الدخول",
   "games.minecraft.account.title": "حساب Minecraft الخاص بك",
   "games.minecraft.account.intro": "اربط Microsoft لعرض مظهرك وأرديتك في Minecraft وتطبيق تصاميمك.",
-  "games.minecraft.account.desktop": "افتح Harbor لسطح المكتب لربط حساب Minecraft.",
+  "games.minecraft.account.desktop": "افتح Frame لسطح المكتب لربط حساب Minecraft.",
   "games.minecraft.account.setup":
-    "تسجيل الدخول عبر Microsoft غير مهيأ لهذا الإصدار من Harbor بعد. يمكنك تعديل المظاهر محليًا.",
+    "تسجيل الدخول عبر Microsoft غير مهيأ لهذا الإصدار من Frame بعد. يمكنك تعديل المظاهر محليًا.",
   "games.minecraft.account.codeNote": "أدخل هذا الرمز في صفحة تسجيل الدخول إلى Microsoft.",
   "games.minecraft.account.copy": "نسخ الرمز",
   "games.minecraft.account.openMicrosoft": "المتابعة لدى Microsoft",
@@ -373,7 +372,7 @@ export default {
   "games.minecraft.account.restricted":
     "تمنع إعدادات Microsoft أو Xbox تسجيل الدخول. راجع إعدادات العمر أو العائلة أو المنطقة.",
   "games.minecraft.account.skinError": "تعذر تطبيق المظهر أو الرداء. حدّث الحساب وحاول مجددًا.",
-  "games.minecraft.account.storeError": "تعذر على Harbor حفظ الحساب بأمان على هذا الجهاز.",
+  "games.minecraft.account.storeError": "تعذر على Frame حفظ الحساب بأمان على هذا الجهاز.",
   "games.minecraft.account.error": "فشل طلب الحساب. حاول مجددًا.",
   "games.minecraft.studio": "استوديو المظاهر",
   "games.minecraft.skinTitle": "اجعله يعبر عنك.",
@@ -407,7 +406,7 @@ export default {
   "games.minecraft.editHint":
     "حرّك بين البكسلات بالأسهم. ارسم بمفتاح Enter. تراجع باستخدام Ctrl / ⌘ Z.",
   "games.minecraft.library": "مظاهرك",
-  "games.minecraft.localNote": "محفوظة على هذا الجهاز لملف Harbor الحالي.",
+  "games.minecraft.localNote": "محفوظة على هذا الجهاز لملف Frame الحالي.",
   "games.minecraft.new": "مظهر جديد",
   "games.minecraft.empty": "استورد مظهرًا أو ابدأ الرسم. تُحفظ تعديلاتك تلقائيًا هنا.",
   "games.minecraft.delete": "حذف {name}",

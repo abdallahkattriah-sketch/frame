@@ -7,7 +7,7 @@ export default {
     "An interrupted restore needs attention. Open Save backups to recover it.",
   "games.backups.save_recovery": "Finish recovery before backing up or restoring this save folder.",
   "games.backups.save_recovery_scope":
-    "Open this restore from the Harbor profile and game that created it.",
+    "Open this restore from the Frame profile and game that created it.",
   "games.backups.result.keptCurrent": "Your current saves are unchanged",
   "games.backups.resultNote.keptCurrent":
     "Recovery finished without replacing the saves currently in this folder.",
@@ -15,7 +15,7 @@ export default {
   "games.backups.intro":
     "Keep a moment you can return to. Choose this game's save folder and a separate folder for your backups. Close the game before backing up or restoring.",
   "games.backups.desktop":
-    "Save backups are available in the Harbor desktop app. They use folders you choose on your computer.",
+    "Save backups are available in the Frame desktop app. They use folders you choose on your computer.",
   "games.backups.folder.source": "Game saves",
   "games.backups.folder.vault": "Backup folder",
   "games.backups.choose.source": "Choose the game's save folder",
@@ -50,8 +50,8 @@ export default {
   "games.backups.identical": "The current save folder already matches this snapshot.",
   "games.backups.restore": "Restore snapshot",
   "games.backups.recoveryNote":
-    "Harbor keeps a recovery snapshot and the original folder before replacing any saves.",
-  "games.backups.localNote": "Stored in your chosen folder, separate for each Harbor profile.",
+    "Frame keeps a recovery snapshot and the original folder before replacing any saves.",
+  "games.backups.localNote": "Stored in your chosen folder, separate for each Frame profile.",
   "games.backups.openRecovery": "Show original folder",
   "games.backups.reviewUndo": "Review undo",
   "games.backups.result.restored": "Your snapshot is restored",
@@ -61,11 +61,11 @@ export default {
   "games.backups.resultNote.restored":
     "Your save folder now matches this snapshot. Recovery copies stay available in case you want to return to where you were.",
   "games.backups.resultNote.rolledBack":
-    "The restore couldn't finish, so Harbor put your original save folder back. The recovery snapshot is also available below.",
+    "The restore couldn't finish, so Frame put your original save folder back. The recovery snapshot is also available below.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor couldn't put the original folder back after the restore failed. Keep the game closed. Your original files are preserved in the folder below, and in the recovery snapshot.",
+    "Frame couldn't put the original folder back after the restore failed. Keep the game closed. Your original files are preserved in the folder below, and in the recovery snapshot.",
   "games.backups.resultNote.notRestored":
-    "Harbor couldn't place the snapshot in the selected folder. The backup is still available.",
+    "Frame couldn't place the snapshot in the selected folder. The backup is still available.",
   "games.backups.phase.scanning": "Reading your save files…",
   "games.backups.phase.copying": "Copying save files…",
   "games.backups.phase.verifying": "Checking the snapshot…",
@@ -79,9 +79,9 @@ export default {
   "games.backups.save_record":
     "A backup record couldn't be read safely. Its files have been kept. Check the selected backup folder.",
   "games.backups.save_read":
-    "Harbor couldn't read these saves. Check that the folder is available and the game is closed.",
+    "Frame couldn't read these saves. Check that the folder is available and the game is closed.",
   "games.backups.save_write":
-    "Harbor couldn't finish writing these saves. Check that the folder is writable and the game is closed.",
+    "Frame couldn't finish writing these saves. Check that the folder is writable and the game is closed.",
   "games.backups.save_name":
     "A filename couldn't be preserved. Use a folder with supported filenames.",
   "games.backups.save_changed":
@@ -102,9 +102,9 @@ export default {
   "games.backups.save_space":
     "There isn't enough free space to keep a complete copy. Choose another folder or free some space.",
   "games.backups.save_config":
-    "Harbor couldn't read your saved folder choices. Choose them again; existing backups are untouched.",
+    "Frame couldn't read your saved folder choices. Choose them again; existing backups are untouched.",
   "games.backups.save_config_write":
-    "Harbor couldn't remember these folders. Your existing choices and backups are unchanged.",
+    "Frame couldn't remember these folders. Your existing choices and backups are unchanged.",
   "games.backups.failed":
     "This save operation couldn't finish. Your backup files have been kept. Check the folders and try again.",
   "games.backups.compare.title": "File comparison",

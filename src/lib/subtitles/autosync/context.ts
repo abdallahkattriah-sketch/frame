@@ -260,7 +260,7 @@ export function defaultOsConfig(settings: Settings): OsConfig | null {
   if (settings.subProvidersEnabled?.opensubtitles === false) return null;
   const apiKey = settings.opensubtitlesApiKey || "";
   if (!apiKey) return null;
-  return { apiKey, userAgent: "Harbor autosync" };
+  return { apiKey, userAgent: "Frame autosync" };
 }
 
 function median(xs: number[]): number {

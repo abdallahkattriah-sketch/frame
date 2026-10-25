@@ -90,8 +90,8 @@ export function BpSearchField({
             }
             e.preventDefault();
           }}
-          placeholder={t("Search Harbor")}
-          aria-label={t("Search Harbor")}
+          placeholder={t("Search Frame")}
+          aria-label={t("Search Frame")}
           className="min-w-0 flex-1 bg-transparent text-[clamp(16px,2.4vh,30px)] font-semibold text-ink outline-none placeholder:text-ink-subtle"
         />
         <button

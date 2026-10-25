@@ -22,12 +22,12 @@ export default {
     "No se pudieron buscar partidas. Actualiza la lista o elige un archivo.",
   "games.pokemon.noDetectedSaves":
     "Aún no se encontró ninguna partida. Guarda dentro del juego o elige un archivo de tu emulador.",
-  "games.pokemon.saveOrigin.harbor": "Guardada en Harbor",
+  "games.pokemon.saveOrigin.harbor": "Guardada en Frame",
   "games.pokemon.saveOrigin.adjacent": "Junto a tu ROM",
   "games.pokemon.error.pokemon_hack_export":
     "La exportación al banco de este ROM hack aún no está lista: todavía no se pueden conservar sus datos Pokémon adicionales. Puedes seguir consultando y editando esta partida.",
   "games.pokemon.error.pokemon_save_running":
-    "Cierra este juego en Harbor antes de guardar los cambios. Tu vista previa se conserva.",
+    "Cierra este juego en Frame antes de guardar los cambios. Tu vista previa se conserva.",
   "games.pokemon.title": "Tu aventura Pokémon",
   "games.pokemon.intro": "Encuentra tu próxima ruta. Forma tu equipo. Lleva tus Pokémon contigo.",
   "games.pokemon.browse": "Explora este juego Pokémon",
@@ -94,8 +94,7 @@ export default {
     "Abre una partida, trabaja con tu equipo y revisa cada cambio antes de guardar.",
   "games.pokemon.openSave": "Abrir partida guardada",
   "games.pokemon.importPokemon": "Importar archivo Pokémon",
-  "games.pokemon.engineMissing":
-    "El motor Pokémon aún no está instalado en esta versión de Harbor.",
+  "games.pokemon.engineMissing": "El motor Pokémon aún no está instalado en esta versión de Frame.",
   "games.pokemon.bankError": "No se pudo completar la acción.",
   "games.pokemon.bankBrowse": "Explorar tus Pokémon",
   "games.pokemon.gameSave": "Partida guardada",
@@ -149,14 +148,14 @@ export default {
   "games.pokemon.training": "Valores individuales y puntos de esfuerzo",
   "games.pokemon.previewEdits": "Revisar cambios",
   "games.pokemon.error.pokemon_engine_missing":
-    "El motor Pokémon aún no está instalado en esta versión de Harbor.",
+    "El motor Pokémon aún no está instalado en esta versión de Frame.",
   "games.pokemon.error.pokemon_engine_start": "No se pudo iniciar el motor Pokémon.",
   "games.pokemon.error.pokemon_engine_timeout":
     "El motor tardó demasiado. Tu partida no ha cambiado.",
   "games.pokemon.error.pokemon_read": "No se pudo leer el archivo seleccionado.",
   "games.pokemon.error.pokemon_file": "Elige un archivo de partida o Pokémon compatible.",
   "games.pokemon.error.pokemon_save_changed":
-    "La partida cambió fuera de Harbor. Vuelve a abrirla antes de continuar.",
+    "La partida cambió fuera de Frame. Vuelve a abrirla antes de continuar.",
   "games.pokemon.error.pokemon_review_changed":
     "Esta revisión ya no está actualizada. Revisa los cambios de nuevo.",
   "games.pokemon.error.pokemon_write":

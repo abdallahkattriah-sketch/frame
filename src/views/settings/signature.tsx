@@ -10,7 +10,7 @@ export function Signature() {
       <p className="flex items-center gap-1.5 text-center text-[15.5px] leading-[22px] text-ink-subtle">
         {t("Made with")}
         <HeartGlyph label={t("love")} />
-        {t("by Harbor contributors")}
+        {t("by Frame contributors")}
       </p>
       <button
         onClick={() => setOpen((v) => !v)}
@@ -27,7 +27,7 @@ export function Signature() {
           <p>
             {t(
               "{app} is a completely free and open source project. {app} is under the {license} and you can repurpose and reuse it as you wish. By all means profit from this, shape it to your wishes and needs, whatever your heart desires. It is truly open source.",
-              { app: "Harbor", license: "MIT License" },
+              { app: "Frame", license: "MIT License" },
             )}
           </p>
           <p>

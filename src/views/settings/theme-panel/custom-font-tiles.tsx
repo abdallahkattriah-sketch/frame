@@ -66,7 +66,7 @@ export function CustomFontTiles({
                 className={`${previewSize} font-medium leading-none tracking-tight text-ink`}
                 style={{ fontFamily: family }}
               >
-                Harbor
+                Frame
               </span>
               {!compact && (
                 <span

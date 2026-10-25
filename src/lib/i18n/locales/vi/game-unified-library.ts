@@ -3,7 +3,7 @@ export default {
     "Tài khoản Battle.net đã thay đổi. Hãy đăng nhập lại để thay thế các mục đã nhập của hồ sơ này.",
   "games.battlenet.connect": "Đăng nhập",
   "games.battlenet.intro":
-    "Đăng nhập Battle.net để nhập trò chơi. Kết nối này thuộc hồ sơ Harbor hiện tại của bạn.",
+    "Đăng nhập Battle.net để nhập trò chơi. Kết nối này thuộc hồ sơ Frame hiện tại của bạn.",
   "games.battlenet.installed": "Hiển thị trò chơi đã cài đặt",
   "games.battlenet.uninstalled": "Hiển thị trò chơi trong tài khoản chưa được cài đặt",
   "games.battlenet.partial":
@@ -15,7 +15,7 @@ export default {
   "games.battlenet.timeout": "Battle.net không phản hồi kịp thời. Hãy thử lại.",
   "games.battlenet.busy": "Một thao tác tài khoản Battle.net đang được thực hiện.",
   "games.battlenet.update":
-    "Khởi động lại ứng dụng Harbor dành cho máy tính đã cập nhật để kết nối Battle.net.",
+    "Khởi động lại ứng dụng Frame dành cho máy tính đã cập nhật để kết nối Battle.net.",
   "games.battlenet.error":
     "Không thể cập nhật Battle.net. Thư viện được nhập gần nhất vẫn được giữ lại.",
   "games.battlenet.disconnect": "Ngắt kết nối Battle.net",
@@ -28,7 +28,7 @@ export default {
   "games.launcherSession.unconfirmed": "Đang kiểm tra trạng thái trò chơi",
   "games.launcherSession.notStarted": "Trò chơi không khởi động",
   "games.launcherSession.error":
-    "Không thể ghi lại hoạt động trò chơi. Hãy mở lại Harbor để thử lại.",
+    "Không thể ghi lại hoạt động trò chơi. Hãy mở lại Frame để thử lại.",
 
   "games.steamImport.importedTitle": "Trò chơi đã nhập",
   "games.steamImport.excluded": "Bị bỏ qua theo cài đặt nhập",
@@ -40,7 +40,7 @@ export default {
   "games.steamImport.ignoreSaved": "Đã lưu ID bị bỏ qua.",
   "games.steamImport.title": "Nhập trò chơi Steam",
   "games.steamImport.note":
-    "Lưu bản ghi trò chơi trong hồ sơ Harbor này. Quyền sở hữu và trạng thái cài đặt được kiểm tra riêng.",
+    "Lưu bản ghi trò chơi trong hồ sơ Frame này. Quyền sở hữu và trạng thái cài đặt được kiểm tra riêng.",
   "games.steamImport.input": "ID ứng dụng Steam hoặc URL cửa hàng",
   "games.steamImport.profile": "Chọn hồ sơ Depressurizer",
   "games.steamImport.count": "Đã chọn {selected} · {total} mục",
@@ -81,7 +81,7 @@ export default {
   "games.libraryStatus.onHold": "Tạm hoãn",
   "games.libraryStatus.stopped": "Đã ngừng chơi",
   "games.libraryStatus.note":
-    "Lựa chọn cho bản này được lưu trong hồ sơ Harbor hiện tại. Thời gian chơi và thành tích không tự thay đổi lựa chọn này.",
+    "Lựa chọn cho bản này được lưu trong hồ sơ Frame hiện tại. Thời gian chơi và thành tích không tự thay đổi lựa chọn này.",
 
   "games.unified.playtime": "Thời gian chơi",
   "games.unified.playtime.all": "Mọi thời gian chơi",
@@ -93,11 +93,11 @@ export default {
   "games.unified.playtime.most": "Thời gian ghi nhận nhiều nhất",
   "games.unified.playtime.steam": "{time} trên Steam",
   "games.unified.playtime.zeroSteam": "Chưa có thời gian chơi được ghi nhận trên Steam",
-  "games.unified.playtime.zeroHarbor": "Chưa có thời gian chơi được ghi nhận trong Harbor",
+  "games.unified.playtime.zeroHarbor": "Chưa có thời gian chơi được ghi nhận trong Frame",
   "games.unified.playtime.unknownHint":
     "Không có dữ liệu thời gian chơi của tài khoản Steam hoặc nguồn này không cung cấp thời gian chơi.",
   "games.unified.playtime.note":
-    "Dùng tổng thời gian trên Steam và thời gian ghi nhận trong Harbor, gồm các chỉnh sửa của bạn. Dữ liệu thời gian không có được phân biệt riêng.",
+    "Dùng tổng thời gian trên Steam và thời gian ghi nhận trong Frame, gồm các chỉnh sửa của bạn. Dữ liệu thời gian không có được phân biệt riêng.",
   "games.unified.note":
     "Thư viện Steam, trò chơi PC và ROM đã nhập của bạn trong cùng một chế độ xem.",
   "games.unified.allSources": "Tất cả nguồn",

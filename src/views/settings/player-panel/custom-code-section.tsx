@@ -47,7 +47,7 @@ export function CustomCodeCard() {
     <Section
       title={t("Custom code")}
       subtitle={t(
-        "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.",
+        "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.",
       )}
     >
       <SRow
@@ -80,7 +80,7 @@ export function CustomCodePanel() {
         <AlertTriangle size={18} strokeWidth={2.2} className="mt-[2px] shrink-0 text-danger" />
         <p className={`max-w-[66ch] ${ROW_DESC}`}>
           {t(
-            "You're modding your own client. Custom JS has full access to your Harbor session. Only paste code you wrote or fully trust.",
+            "You're modding your own client. Custom JS has full access to your Frame session. Only paste code you wrote or fully trust.",
           )}
         </p>
       </div>
@@ -123,7 +123,7 @@ export function CustomCodePanel() {
         sub={
           clearField === "customJs"
             ? t(
-                "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.",
+                "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.",
               )
             : t("The saved {name} will be removed and its changes will stop applying.", {
                 name: t(FIELDS.find((f) => f.id === clearField)?.label ?? "code"),

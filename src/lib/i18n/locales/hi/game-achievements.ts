@@ -36,11 +36,11 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam ने नतीजे की पुष्टि नहीं की है। और बदलाव करने से पहले रीफ़्रेश करके जाँचें।",
   "games.achievementManager.error.platform":
-    "उपलब्धियों का प्रबंधन अभी Windows x64 पर Harbor में उपलब्ध है।",
+    "उपलब्धियों का प्रबंधन अभी Windows x64 पर Frame में उपलब्ध है।",
   "games.achievementManager.error.invalid": "एक बार में अधिकतम 2,000 बदलाव चुनें।",
   "games.achievementManager.error.stale": "Steam में ये उपलब्धियाँ बदल गई हैं। संपादन से पहले रीफ़्रेश करें।",
   "games.achievementManager.error.protected":
-    "गेम इस उपलब्धि को प्रबंधित करता है। Harbor इसे बदल नहीं सकता।",
+    "गेम इस उपलब्धि को प्रबंधित करता है। Frame इसे बदल नहीं सकता।",
   "games.achievementManager.error.expired":
     "इस समीक्षा की अवधि समाप्त हो गई। बदलाव लागू करने से पहले रीफ़्रेश करें।",
   "games.achievementManager.error.busy": "Steam उपलब्धियों का एक और अनुरोध चल रहा है।",
@@ -57,12 +57,12 @@ export default {
   "games.achievementManager.consentBody":
     "साइन इन किए गए Steam खाते की उपलब्धियाँ अनलॉक करें या फिर लॉक करें। लागू करने तक आपके चयन ड्राफ्ट बने रहते हैं।",
   "games.achievementManager.consentRules":
-    "Harbor गेम में कोड डाले बिना Steam का उपलब्धि इंटरफ़ेस इस्तेमाल करता है। हर गेम के नियम और इनाम की शर्तें लागू रहती हैं।",
+    "Frame गेम में कोड डाले बिना Steam का उपलब्धि इंटरफ़ेस इस्तेमाल करता है। हर गेम के नियम और इनाम की शर्तें लागू रहती हैं।",
   "games.achievementManager.consentSam": "SAM के उपलब्धि प्रबंधन से प्रेरित",
-  "games.achievementManager.consentOnce": "इस Harbor प्रोफ़ाइल के लिए केवल एक बार दिखेगा।",
+  "games.achievementManager.consentOnce": "इस Frame प्रोफ़ाइल के लिए केवल एक बार दिखेगा।",
   "games.achievementManager.consentAccept": "समझ गया",
   "games.achievementManager.desktopOnly":
-    "उपलब्धियाँ बदलने के लिए Windows पर Harbor इस्तेमाल करें और Steam चालू रखें।",
+    "उपलब्धियाँ बदलने के लिए Windows पर Frame इस्तेमाल करें और Steam चालू रखें।",
   "games.achievementManager.all": "सभी",
   "games.achievementManager.filter": "उपलब्धि फ़िल्टर",
   "games.achievementManager.rewards": "आइटम इनाम",
@@ -118,7 +118,7 @@ export default {
   "games.achievementManager.pickTitle": "गेम चुनें",
   "games.achievementManager.pickSearch": "अपने गेम खोजें",
   "games.achievementManager.pickNote":
-    "इस कंप्यूटर पर Steam में गेम की उपलब्धियाँ कैश हो जाने के बाद Harbor उन्हें संपादित कर सकता है।",
+    "इस कंप्यूटर पर Steam में गेम की उपलब्धियाँ कैश हो जाने के बाद Frame उन्हें संपादित कर सकता है।",
   "games.achievementManager.pickInstalled": "इंस्टॉल किया गया",
   "games.achievementManager.pickEmpty": "आपकी खोज से कोई गेम मेल नहीं खाता।",
   "games.achievementManager.pickUnavailable":

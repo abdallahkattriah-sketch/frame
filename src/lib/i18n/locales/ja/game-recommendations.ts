@@ -47,7 +47,7 @@ export default {
     "このデバイスにおすすめ設定を保存できませんでした。もう一度お試しください。",
   "games.recommend.influences": "おすすめに使うゲーム",
   "games.recommend.influencesNote":
-    "Harborがおすすめの基準にするゲームを選べます。ライブラリは変更されません。",
+    "Frameがおすすめの基準にするゲームを選べます。ライブラリは変更されません。",
   "games.recommend.exclude": "{name}を基準から外す",
   "games.recommend.excluded": "基準から外したゲーム（{count}）",
   "games.recommend.useAgain": "{name}を再び基準にする",

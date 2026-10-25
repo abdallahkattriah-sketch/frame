@@ -56,8 +56,8 @@ const live: Record<string, string> = {
   "Recording · {pct}% · {remaining} · click to manage":
     "Запись · {pct}% · {remaining} · нажмите для управления",
   "Saved as .ts (works in mpv, VLC, ffmpeg)": "Сохраняется как .ts (работает в mpv, VLC, ffmpeg)",
-  "mpv is required for recording. Install mpv and restart Harbor.":
-    "Для записи требуется mpv. Установите mpv и перезапустите Harbor.",
+  "mpv is required for recording. Install mpv and restart Frame.":
+    "Для записи требуется mpv. Установите mpv и перезапустите Frame.",
   "Loading more channels ({n1} of {n2})": "Загрузка каналов ({n1} из {n2})",
   "Showing first {n1} of {n2} channels. Use search or a category to narrow down.":
     "Показаны первые {n1} из {n2} каналов. Используйте поиск или категорию, чтобы сузить список.",
@@ -116,8 +116,8 @@ const live: Record<string, string> = {
   "The URL is valid but the playlist is empty. The provider may be in maintenance, or the URL is misconfigured.":
     "URL верный, но плейлист пуст. Возможно, у провайдера идут работы или URL настроен неправильно.",
   "Playlist is too large": "Плейлист слишком большой",
-  "Harbor caps playlists at 80 MB to stay responsive. Most providers offer a filtered URL with fewer channels.":
-    "Harbor ограничивает плейлисты до 80 MB ради быстродействия. У большинства провайдеров есть отфильтрованный URL с меньшим числом каналов.",
+  "Frame caps playlists at 80 MB to stay responsive. Most providers offer a filtered URL with fewer channels.":
+    "Frame ограничивает плейлисты до 80 MB ради быстродействия. У большинства провайдеров есть отфильтрованный URL с меньшим числом каналов.",
   "Could not load this playlist": "Не удалось загрузить плейлист",
   "No channels match": "Нет подходящих каналов",
   "Reset filters": "Сбросить фильтры",

@@ -24,7 +24,7 @@ export default {
   "games.stardew.refresh": "Modを更新",
 
   "games.stardew.import": "MODのZIPを読み込む",
-  "games.stardew.manage": "Harborで管理",
+  "games.stardew.manage": "Frameで管理",
   "games.stardew.manageNote":
     "ダウンロードしたSMAPIのMODを読み込んで管理します。更新時は新しいZIPを読み込んでください。",
   "games.stardew.previous": "以前のバージョン",
@@ -42,7 +42,7 @@ export default {
   "games.stardew.dependentsError":
     "有効なMODがこのバージョンを必要としています。先にそのMODを無効にするか、互換性のあるバージョンを選んでください。",
   "games.stardew.unmanagedError":
-    "このMODはHarborの記録外にすでに存在します。既存のコピーを移動してから読み込んでください。",
+    "このMODはFrameの記録外にすでに存在します。既存のコピーを移動してから読み込んでください。",
   "games.stardew.archiveError":
     "使用可能なMODフォルダーを1つ含むZIPを選んでください。上限は32 MB（展開後128 MB）です。ソースコードはインストールできるMODではありません。",
   "games.stardew.moreFiles": "ほか{count}ファイル",

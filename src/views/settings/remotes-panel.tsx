@@ -60,10 +60,10 @@ export function RemotesPanel() {
 
   if (!isTauri) {
     return (
-      <Section title={t("Harbor on other devices")}>
+      <Section title={t("Frame on other devices")}>
         <p className={`max-w-[70ch] ${ROW_DESC}`}>
           {t(
-            "Remotes are served by the desktop app. Open these settings on your computer's Harbor to get the links.",
+            "Remotes are served by the desktop app. Open these settings on your computer's Frame to get the links.",
           )}
         </p>
       </Section>
@@ -77,7 +77,7 @@ export function RemotesPanel() {
   const cards: Array<{ kind: DeviceKind; title: string; blurb: string; path: string }> = [
     {
       kind: "web",
-      title: t("Harbor in a browser"),
+      title: t("Frame in a browser"),
       blurb: t(
         "This exact install, served as a web app. Open it on a phone, laptop or TV browser and it streams through this computer.",
       ),
@@ -100,13 +100,13 @@ export function RemotesPanel() {
   return (
     <>
       <Section
-        title={t("Harbor on other devices")}
+        title={t("Frame on other devices")}
         subtitle={t(
-          "One switch serves Harbor on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.",
+          "One switch serves Frame on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.",
         )}
       >
         <ToggleRow
-          label={t("Serve Harbor on your network")}
+          label={t("Serve Frame on your network")}
           sub={t(
             "Powers everything on this page: the web app, the phone remote, and the manga reader remote.",
           )}
@@ -122,7 +122,7 @@ export function RemotesPanel() {
             <AlertTriangle size={18} strokeWidth={2.2} className="mt-[2px] shrink-0 text-danger" />
             <p className="min-w-0 flex-1 text-[15.5px] font-normal leading-[22px] text-danger">
               {t(
-                "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.",
+                "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.",
                 { WEB_PORT: String(WEB_PORT) },
               )}
             </p>

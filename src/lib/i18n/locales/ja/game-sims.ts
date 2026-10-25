@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Sims 2 と Sims 3 のダウンロードを閲覧するには、Harbor を更新して再起動してください。",
+    "Sims 2 と Sims 3 のダウンロードを閲覧するには、Frame を更新して再起動してください。",
   "games.sims.creatorNotesTitle": "制作者のリンク · {count}",
   "games.sims.creatorNotesNote":
     "制作者の説明文に掲載されたリンクです。ページを開いて手順を確認してください。",
@@ -105,7 +105,7 @@ export default {
   "games.sims.mtsCatMisc": "その他",
   "games.sims.mtsCatTools": "ツール",
   "games.sims.mtsIntro":
-    "MODやカスタムコンテンツをHarborに取り込みます。The Sims 4の配布ページを貼り付け、ファイルを選んでください。",
+    "MODやカスタムコンテンツをFrameに取り込みます。The Sims 4の配布ページを貼り付け、ファイルを選んでください。",
   "games.sims.mtsPage": "ダウンロードページ",
   "games.sims.mtsLoad": "ファイルを検索",
   "games.sims.mtsBrowse": "Mod The Simsを見る",
@@ -177,9 +177,9 @@ export default {
   "games.sims.creatorExisting": "既存のインストール",
   "games.sims.creatorManage": "既存のファイルを確認",
   "games.sims.creatorAdoptNote":
-    "まずこれらのファイルをHarborの管理下に移してください。その後、作者のリリースを選んで更新できます。",
+    "まずこれらのファイルをFrameの管理下に移してください。その後、作者のリリースを選んで更新できます。",
   "games.sims.creatorLinkNote":
-    "このグループの更新内容を確認します。Harborは以前のファイルと設定を保持します。",
+    "このグループの更新内容を確認します。Frameは以前のファイルと設定を保持します。",
   "games.sims.creatorTarget":
     "このグループには選択したリリースに含まれないModファイルがあります。MCCCを更新する前に別のグループに分けてください。",
   "games.sims.creatorExistingError":
@@ -211,7 +211,7 @@ export default {
   "games.sims.trayRemove": "ライブラリから削除",
   "games.sims.trayRestore": "ライブラリに復元",
   "games.sims.trayNote":
-    "ダウンロードした区画、部屋、世帯をインポートします。Harborは関連ファイルをTray内にまとめて保存します。",
+    "ダウンロードした区画、部屋、世帯をインポートします。Frameは関連ファイルをTray内にまとめて保存します。",
   "games.sims.trayReviewNote":
     "Trayファイルはライブラリフォルダーに直接配置されます。同梱のカスタムコンテンツは別のMODグループとして管理されます。",
   "games.sims.trayRemoveNote":
@@ -274,12 +274,12 @@ export default {
 
   "games.sims.adopt": "既存のMODを管理",
   "games.sims.adoptNote":
-    "The Sims 4を終了してください。同じフォルダーから1つのMODまたは関連するCCを、設定ファイルと一緒に選択します。一覧のファイルを1つのHarborグループへ移動し、他のファイルはそのまま残します。",
+    "The Sims 4を終了してください。同じフォルダーから1つのMODまたは関連するCCを、設定ファイルと一緒に選択します。一覧のファイルを1つのFrameグループへ移動し、他のファイルはそのまま残します。",
   "games.sims.adoptFrom": "現在のフォルダー",
   "games.sims.adoptTo": "移動先",
   "games.sims.adoptFolder": "Mods内の同じフォルダーから関連するファイルを選んでください。",
   "games.sims.adoptManaged":
-    "Harborが管理するフォルダー以外から選択し、Resource.cfgはそのままにしてください。",
+    "Frameが管理するフォルダー以外から選択し、Resource.cfgはそのままにしてください。",
   "games.sims.adoptScan":
     "一部のMODフォルダーを確認できませんでした。問題を解消してからファイルを管理してください。",
 
@@ -312,7 +312,7 @@ export default {
     "一部のMODフォルダーを確認できませんでした。解決してからセットを切り替えてください。",
   "games.sims.savesLabelHint": "新しいMODを入れる前",
   "games.sims.savesRunning":
-    "セーブデータをバックアップまたは復元する前に、The Sims 4を終了してください。Harborがゲームの終了を確認できる必要があります。",
+    "セーブデータをバックアップまたは復元する前に、The Sims 4を終了してください。Frameがゲームの終了を確認できる必要があります。",
   "games.sims.savesIntro":
     "MODを変更する前にセーブデータをバックアップしましょう。先にThe Sims 4を終了してください。MODとTrayフォルダー内の世帯は含まれません。",
   "games.sims.title": "MODとカスタムコンテンツ",
@@ -335,7 +335,7 @@ export default {
   "games.sims.recovery":
     "前回の変更が中断されました。次の変更を行う前に、元の構成を復旧してください。",
   "games.sims.success": "MODファイルを更新しました。",
-  "games.sims.applying": "変更を適用中です。Harborを開いたままにしてください…",
+  "games.sims.applying": "変更を適用中です。Frameを開いたままにしてください…",
   "games.sims.checking": "ファイルを確認中…",
   "games.sims.skipped": "除外した文書と画像 · {count}",
   "games.sims.preview": "パッケージに埋め込まれたプレビュー",
@@ -374,7 +374,7 @@ export default {
   "games.sims.emptyManaged": "ダウンロードしたMODをインポートすると、ここで管理できます。",
   "games.sims.emptyBackups": "更新や削除を行うと、以前のバージョンがここに表示されます。",
   "games.sims.emptyFiles": "Mods内に対応ファイルがありません。",
-  "games.sims.desktop": "MOD管理にはWindows版Harborの最新版が必要です。",
+  "games.sims.desktop": "MOD管理にはWindows版Frameの最新版が必要です。",
   "games.sims.folderError":
     "ショートカットやリンクではなく、実際のThe Sims 4データフォルダーを選んでください。Mods、saves、GameVersion.txt、Options.iniが必要です。",
   "games.sims.readError":
@@ -384,7 +384,7 @@ export default {
   "games.sims.layoutError":
     "別々のMODフォルダーか重複するファイル名が含まれています。関連ファイルを一緒に保つため、MODごとにインポートしてください。",
   "games.sims.running":
-    "MODを変更する前にThe Sims 4を終了してください。Harborがゲームの終了を確認できる必要があります。",
+    "MODを変更する前にThe Sims 4を終了してください。Frameがゲームの終了を確認できる必要があります。",
   "games.sims.duplicate":
     "同じファイル名のMODが別のModsフォルダーにあります。このグループを読み込むか有効にする前に重複を解消してください。",
   "games.sims.recordError":

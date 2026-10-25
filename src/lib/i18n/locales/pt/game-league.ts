@@ -84,7 +84,7 @@ export default {
   "games.league.patchDifference":
     "Estatísticas da build: {patch}; dados de itens e habilidades: {assets}.",
   "games.league.attribution":
-    "Harbor is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "Frame is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
   "games.league.tierList": "Lista de tiers",
   "games.league.tierScope": "Ranqueada solo/duo · Esmeralda+ · Global",
   "games.league.patchFilter": "Escolher atualização",

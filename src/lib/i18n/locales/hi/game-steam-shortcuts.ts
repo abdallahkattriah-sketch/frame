@@ -6,7 +6,7 @@ export default {
 
   "games.shortcuts.activity.open": "गतिविधि",
   "games.shortcuts.activity.title": "शॉर्टकट गतिविधि",
-  "games.shortcuts.activity.note": "इस Harbor प्रोफ़ाइल के हाल के स्कैन और लॉन्च। अधिकतम 300 प्रविष्टियाँ।",
+  "games.shortcuts.activity.note": "इस Frame प्रोफ़ाइल के हाल के स्कैन और लॉन्च। अधिकतम 300 प्रविष्टियाँ।",
   "games.shortcuts.activity.remember": "सत्रों के बीच सहेजें",
   "games.shortcuts.activity.detailed": "स्कैन का विवरण शामिल करें",
   "games.shortcuts.activity.storageError":
@@ -53,7 +53,7 @@ export default {
   "games.shortcuts.storeError": "सेटिंग सहेजी नहीं जा सकीं।",
   "games.shortcuts.shortcut_location": "Steam फ़ोल्डर या उसके userdata फ़ोल्डर को चुनें।",
   "games.shortcuts.shortcut_account":
-    "इस शॉर्टकट के खाते से Steam खोलें, फिर रीफ़्रेश करें। Harbor को उसी Steam इंस्टॉलेशन का उपयोग करना होगा।",
+    "इस शॉर्टकट के खाते से Steam खोलें, फिर रीफ़्रेश करें। Frame को उसी Steam इंस्टॉलेशन का उपयोग करना होगा।",
   "games.shortcuts.shortcut_missing": "यह शॉर्टकट अब मौजूद नहीं है। लाइब्रेरी रीफ़्रेश करें।",
   "games.shortcuts.shortcut_executable":
     "शॉर्टकट का एक्ज़ीक्यूटेबल मौजूद नहीं है या उसका पूर्ण फ़ाइल पथ समर्थित नहीं है।",

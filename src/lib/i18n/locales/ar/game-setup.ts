@@ -1,5 +1,5 @@
 export default {
-  "games.setup.setup_review": "أُعيد تشغيل Harbor أثناء التثبيت. راجع ملفات اللعبة المثبتة للإنهاء.",
+  "games.setup.setup_review": "أُعيد تشغيل Frame أثناء التثبيت. راجع ملفات اللعبة المثبتة للإنهاء.",
   "games.setup.state.starting": "بدء برنامج التثبيت",
   "games.setup.state.waiting": "في انتظار برنامج التثبيت",
   "games.setup.startingNote": "جارٍ فتح برنامج التثبيت…",
@@ -34,7 +34,7 @@ export default {
   "games.setup.state.verificationUnknown": "مراجعة النتائج",
   "games.setup.viewProgress": "عرض التثبيت",
   "games.setup.showInstaller": "إظهار برنامج التثبيت",
-  "games.setup.setup_window": "نافذة برنامج التثبيت غير متاحة. لا يزال Harbor يتابع التثبيت.",
+  "games.setup.setup_window": "نافذة برنامج التثبيت غير متاحة. لا يزال Frame يتابع التثبيت.",
   "games.setup.elapsed": "الوقت المنقضي",
   "games.setup.io": "إدخال وإخراج المثبّت",
   "games.setup.ioNote":
@@ -69,7 +69,7 @@ export default {
   "games.setup.state.running": "برنامج التثبيت قيد التشغيل",
   "games.setup.state.finished": "أُغلق برنامج التثبيت — اختر ملف اللعبة",
   "games.setup.state.failed": "لم يكتمل برنامج التثبيت بنجاح",
-  "games.setup.state.interrupted": "تحقق من الإعداد — أُغلق Harbor أثناء تشغيل برنامج التثبيت",
+  "games.setup.state.interrupted": "تحقق من الإعداد — أُغلق Frame أثناء تشغيل برنامج التثبيت",
   "games.setup.state.external": "فُتح برنامج التثبيت في نافذة أخرى",
   "games.setup.exitCode": "رمز الخروج: {code}",
   "games.setup.unavailable":
@@ -93,9 +93,9 @@ export default {
   "games.setup.install": "تثبيت اللعبة",
   "games.setup.destination": "التثبيت في",
   "games.setup.chooseDestination": "اختيار مجلد التثبيت",
-  "games.setup.managedNote": "سيثبّت Harbor اللعبة هنا ويعثر على ملفها ويضيفها إلى مكتبتك.",
+  "games.setup.managedNote": "سيثبّت Frame اللعبة هنا ويعثر على ملفها ويضيفها إلى مكتبتك.",
   "games.setup.managedRunning":
-    "جارٍ تثبيت اللعبة. يمكنك إغلاق هذه النافذة؛ سيواصل Harbor متابعة التثبيت.",
+    "جارٍ تثبيت اللعبة. يمكنك إغلاق هذه النافذة؛ سيواصل Frame متابعة التثبيت.",
   "games.setup.detected": "تم العثور على ملف اللعبة تلقائيًا",
   "games.setup.chooseDetected": "اختر ملف اللعبة الذي تريد إضافته.",
   "games.setup.activity": "{size} في {count} ملفات",
@@ -110,7 +110,7 @@ export default {
   "games.setup.setup_engine":
     "يحتاج برنامج التثبيت هذا إلى نافذته الخاصة. اختر «تشغيل برنامج التثبيت» للمتابعة.",
   "games.setup.setup_candidates":
-    "اكتمل التثبيت، لكن تعذّر على Harbor قراءة الملفات المثبتة. افحص مجلد التثبيت مجددًا.",
+    "اكتمل التثبيت، لكن تعذّر على Frame قراءة الملفات المثبتة. افحص مجلد التثبيت مجددًا.",
   "games.setup.state.installing": "جارٍ التثبيت",
   "games.setup.externalAction": "تشغيل برنامج التثبيت",
   "games.setup.files": "الملفات المنزّلة",

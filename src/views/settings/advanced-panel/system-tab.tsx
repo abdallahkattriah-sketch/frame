@@ -33,7 +33,7 @@ export function SystemTab() {
       {isTauri && (
         <Section
           title={t("Window behavior")}
-          subtitle={t("Choose what happens when you close, minimize, or switch away from Harbor.")}
+          subtitle={t("Choose what happens when you close, minimize, or switch away from Frame.")}
         >
           <TrayRow />
         </Section>
@@ -42,7 +42,7 @@ export function SystemTab() {
         <Section
           title={t("Graphics")}
           subtitle={t(
-            "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.",
+            "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.",
           )}
         >
           <Segmented<GfxBackend>
@@ -56,7 +56,7 @@ export function SystemTab() {
             ]}
             onChange={(uiGraphicsBackend) => update({ uiGraphicsBackend })}
             label={t("Rendering backend")}
-            sub={t("Takes effect the next time Harbor starts.")}
+            sub={t("Takes effect the next time Frame starts.")}
           />
         </Section>
       )}

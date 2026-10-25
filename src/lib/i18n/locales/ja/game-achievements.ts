@@ -41,12 +41,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steamが結果を確認していません。さらに変更する前に更新して確認してください。",
   "games.achievementManager.error.platform":
-    "実績の管理は現在、Windows x64版のHarborで利用できます。",
+    "実績の管理は現在、Windows x64版のFrameで利用できます。",
   "games.achievementManager.error.invalid": "一度に選択できる変更は2,000件までです。",
   "games.achievementManager.error.stale":
     "これらの実績はSteamで変更されました。編集する前に更新してください。",
   "games.achievementManager.error.protected":
-    "この実績はゲーム側で管理されています。Harborでは編集できません。",
+    "この実績はゲーム側で管理されています。Frameでは編集できません。",
   "games.achievementManager.error.expired":
     "この確認の有効期限が切れました。変更を適用する前に更新してください。",
   "games.achievementManager.error.busy": "別のSteam実績リクエストを処理中です。",
@@ -63,12 +63,12 @@ export default {
   "games.achievementManager.consentBody":
     "ログイン中のSteamアカウントの実績を解除、または再ロックします。適用するまでは選択内容が下書きとして保持されます。",
   "games.achievementManager.consentRules":
-    "Harborはゲームへのコード注入を行わず、Steamの実績インターフェースを使用します。各ゲームの規則と報酬条件は引き続き適用されます。",
+    "Frameはゲームへのコード注入を行わず、Steamの実績インターフェースを使用します。各ゲームの規則と報酬条件は引き続き適用されます。",
   "games.achievementManager.consentSam": "SAMの実績管理フローを参考にしています",
-  "games.achievementManager.consentOnce": "このHarborプロフィールで一度だけ表示されます。",
+  "games.achievementManager.consentOnce": "このFrameプロフィールで一度だけ表示されます。",
   "games.achievementManager.consentAccept": "理解しました",
   "games.achievementManager.desktopOnly":
-    "実績を変更するには、Steamを起動した状態でWindows版Harborを使用してください。",
+    "実績を変更するには、Steamを起動した状態でWindows版Frameを使用してください。",
   "games.achievementManager.all": "すべて",
   "games.achievementManager.filter": "実績フィルター",
   "games.achievementManager.rewards": "アイテム報酬",
@@ -124,7 +124,7 @@ export default {
   "games.achievementManager.pickTitle": "ゲームを選択",
   "games.achievementManager.pickSearch": "自分のゲームを検索",
   "games.achievementManager.pickNote":
-    "Steamがこのコンピューターに実績をキャッシュすると、Harborでそのゲームの実績を編集できます。",
+    "Steamがこのコンピューターに実績をキャッシュすると、Frameでそのゲームの実績を編集できます。",
   "games.achievementManager.pickInstalled": "インストール済み",
   "games.achievementManager.pickEmpty": "検索に一致するゲームはありません。",
   "games.achievementManager.pickUnavailable":

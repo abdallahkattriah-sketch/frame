@@ -130,7 +130,7 @@ export function BpHome({ onSelect }: { onSelect: (m: Meta) => void }) {
         </h2>
         <p className="max-w-md text-[clamp(13px,1.85vh,21px)] text-ink-muted">
           {t(
-            "Harbor couldn't reach the catalog servers. Check the connection and reopen Big Picture.",
+            "Frame couldn't reach the catalog servers. Check the connection and reopen Big Picture.",
           )}
         </p>
       </div>

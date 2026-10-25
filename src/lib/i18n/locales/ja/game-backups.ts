@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "このフォルダーをバックアップまたは復元する前に、復旧を完了してください。",
   "games.backups.save_recovery_scope":
-    "復元を開始したHarborプロフィールとゲームから開いてください。",
+    "復元を開始したFrameプロフィールとゲームから開いてください。",
   "games.backups.result.keptCurrent": "現在のセーブデータは変更されていません",
   "games.backups.resultNote.keptCurrent":
     "このフォルダーの現在のセーブデータを置き換えずに復旧が完了しました。",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "戻れる時点を残しましょう。このゲームのセーブフォルダーと、バックアップ用の別のフォルダーを選んでください。バックアップや復元の前にゲームを終了してください。",
   "games.backups.desktop":
-    "セーブデータのバックアップはHarborのデスクトップアプリで利用できます。パソコン上で選択したフォルダーを使用します。",
+    "セーブデータのバックアップはFrameのデスクトップアプリで利用できます。パソコン上で選択したフォルダーを使用します。",
   "games.backups.folder.source": "ゲームのセーブデータ",
   "games.backups.folder.vault": "バックアップフォルダー",
   "games.backups.choose.source": "ゲームのセーブフォルダーを選択",
@@ -52,8 +52,8 @@ export default {
   "games.backups.identical": "現在のセーブフォルダーは、このスナップショットと一致しています。",
   "games.backups.restore": "スナップショットを復元",
   "games.backups.recoveryNote":
-    "Harborはセーブデータを置き換える前に、復旧用スナップショットと元のフォルダーを保存します。",
-  "games.backups.localNote": "選択したフォルダーに、Harborのプロフィールごとに分けて保存されます。",
+    "Frameはセーブデータを置き換える前に、復旧用スナップショットと元のフォルダーを保存します。",
+  "games.backups.localNote": "選択したフォルダーに、Frameのプロフィールごとに分けて保存されます。",
   "games.backups.openRecovery": "元のフォルダーを表示",
   "games.backups.reviewUndo": "取り消し内容を確認",
   "games.backups.result.restored": "スナップショットを復元しました",
@@ -63,11 +63,11 @@ export default {
   "games.backups.resultNote.restored":
     "セーブフォルダーがこのスナップショットと一致する状態になりました。以前の状態に戻せるよう、復旧用コピーは引き続き利用できます。",
   "games.backups.resultNote.rolledBack":
-    "復元を完了できなかったため、Harborは元のセーブフォルダーを戻しました。復旧用スナップショットも以下から利用できます。",
+    "復元を完了できなかったため、Frameは元のセーブフォルダーを戻しました。復旧用スナップショットも以下から利用できます。",
   "games.backups.resultNote.recoveryNeeded":
-    "復元の失敗後、Harborは元のフォルダーを戻せませんでした。ゲームを起動しないでください。元のファイルは以下のフォルダーと復旧用スナップショットに保存されています。",
+    "復元の失敗後、Frameは元のフォルダーを戻せませんでした。ゲームを起動しないでください。元のファイルは以下のフォルダーと復旧用スナップショットに保存されています。",
   "games.backups.resultNote.notRestored":
-    "Harborは選択したフォルダーにスナップショットを配置できませんでした。バックアップは引き続き利用できます。",
+    "Frameは選択したフォルダーにスナップショットを配置できませんでした。バックアップは引き続き利用できます。",
   "games.backups.phase.scanning": "セーブデータを読み込み中…",
   "games.backups.phase.copying": "セーブファイルをコピー中…",
   "games.backups.phase.verifying": "スナップショットを確認中…",
@@ -81,9 +81,9 @@ export default {
   "games.backups.save_record":
     "バックアップの記録を安全に読み込めませんでした。ファイルは保持されています。選択したバックアップフォルダーを確認してください。",
   "games.backups.save_read":
-    "Harborはこのセーブデータを読み込めませんでした。フォルダーが利用可能で、ゲームが終了していることを確認してください。",
+    "Frameはこのセーブデータを読み込めませんでした。フォルダーが利用可能で、ゲームが終了していることを確認してください。",
   "games.backups.save_write":
-    "Harborはこのセーブデータの書き込みを完了できませんでした。フォルダーが書き込み可能で、ゲームが終了していることを確認してください。",
+    "Frameはこのセーブデータの書き込みを完了できませんでした。フォルダーが書き込み可能で、ゲームが終了していることを確認してください。",
   "games.backups.save_name":
     "ファイル名を保持できませんでした。対応しているファイル名を含むフォルダーを使用してください。",
   "games.backups.save_changed":
@@ -103,9 +103,9 @@ export default {
   "games.backups.save_space":
     "完全なコピーを保持するための空き容量が足りません。別のフォルダーを選ぶか、空き容量を増やしてください。",
   "games.backups.save_config":
-    "Harborは保存されたフォルダー設定を読み込めませんでした。もう一度選択してください。既存のバックアップは変更されていません。",
+    "Frameは保存されたフォルダー設定を読み込めませんでした。もう一度選択してください。既存のバックアップは変更されていません。",
   "games.backups.save_config_write":
-    "Harborはこのフォルダー設定を保存できませんでした。以前の設定と既存のバックアップは変更されていません。",
+    "Frameはこのフォルダー設定を保存できませんでした。以前の設定と既存のバックアップは変更されていません。",
   "games.backups.failed":
     "このセーブデータ操作を完了できませんでした。バックアップファイルは保持されています。フォルダーを確認してやり直してください。",
   "games.backups.compare.title": "ファイルの比較",

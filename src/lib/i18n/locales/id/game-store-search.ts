@@ -1,10 +1,10 @@
 export default {
   "Search shortcuts": "Pintasan pencarian",
   "Steam search shortcut": "Pintasan pencarian Steam",
-  "Type “st ” or “st:” to search the Steam store. Turn off to use normal Harbor search for these queries.":
-    "Ketik “st ” atau “st:” untuk mencari di toko Steam. Nonaktifkan untuk menggunakan pencarian Harbor biasa untuk kueri ini.",
+  "Type “st ” or “st:” to search the Steam store. Turn off to use normal Frame search for these queries.":
+    "Ketik “st ” atau “st:” untuk mencari di toko Steam. Nonaktifkan untuk menggunakan pencarian Frame biasa untuk kueri ini.",
   "games.storeSearch.title": "Toko Steam",
-  "games.storeSearch.hint": "Gunakan “st ” dalam pencarian Harbor untuk mencari langsung di Steam.",
+  "games.storeSearch.hint": "Gunakan “st ” dalam pencarian Frame untuk mencari langsung di Steam.",
   "games.storeSearch.automatic": "Otomatis",
   "games.storeSearch.region": "Wilayah toko",
   "games.storeSearch.showLibrary": "Tandai game yang sudah ada di pustaka saya",

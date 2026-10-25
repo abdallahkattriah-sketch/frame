@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "Terpasang: {version}",
   "games.mods.current": "Terpasang",
   "games.mods.versionNote":
-    "Pilih versi yang kompatibel. Harbor memeriksa perubahan dan menyimpan versi sebelumnya secara lokal. Tutup Minecraft sebelum menerapkan perubahan.",
+    "Pilih versi yang kompatibel. Frame memeriksa perubahan dan menyimpan versi sebelumnya secara lokal. Tutup Minecraft sebelum menerapkan perubahan.",
   "games.mods.applyChanges": "Terapkan perubahan",
   "games.mods.reviewChanges": "Tinjau perubahan",
   "games.mods.previousVersion": "Sebelumnya: {version}",

@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Odciski plików · SHA-256",
   "games.patch.localNote": "Na Twoim urządzeniu · BPS · IPS · UPS · Do 256 MB",
   "games.patch.desktop":
-    "Stosuj łatki w aplikacji Harbor na Windows, macOS lub Linux. Pliki pozostają na Twoim urządzeniu, a oryginalna gra nie jest zmieniana.",
+    "Stosuj łatki w aplikacji Frame na Windows, macOS lub Linux. Pliki pozostają na Twoim urządzeniu, a oryginalna gra nie jest zmieniana.",
   "games.patch.done": "Wszystko gotowe na nową przygodę",
   "games.patch.preserved":
     "Kopia z łatką została zapisana. Oryginalna gra i łatka nie zostały zmienione.",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Wybrany plik zmienił się po weryfikacji. Sprawdź łatkę ponownie przed zapisem.",
   "games.patch.patch_output_exists":
-    "Plik o tej nazwie już istnieje. Wybierz inną nazwę; Harbor nie zastępuje istniejących plików.",
+    "Plik o tej nazwie już istnieje. Wybierz inną nazwę; Frame nie zastępuje istniejących plików.",
   "games.patch.patch_read_failed":
     "Nie udało się odczytać jednego z plików. Sprawdź, czy jest dostępny, i wybierz go ponownie.",
   "games.patch.patch_write_failed":
@@ -77,9 +77,9 @@ export default {
   "games.atlas.sort.newest": "Najnowsze",
   "games.atlas.sort.oldest": "Najstarsze",
   "games.hub.stepPatch":
-    "Wybierz oryginalną grę i łatkę BPS, IPS lub UPS. Harbor zapisze osobną kopię.",
+    "Wybierz oryginalną grę i łatkę BPS, IPS lub UPS. Frame zapisze osobną kopię.",
   "games.patch.description":
-    "Wybierz oryginalną grę i łatkę BPS, IPS lub UPS. Harbor zapisze osobną kopię.",
+    "Wybierz oryginalną grę i łatkę BPS, IPS lub UPS. Frame zapisze osobną kopię.",
   "games.patch.choosePatch": "Wybierz łatkę (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Ten plik nie jest obsługiwaną łatką BPS, IPS ani UPS.",
   "games.discovery.viewGame": "Zobacz grę",

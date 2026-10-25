@@ -34,7 +34,7 @@ export function XrayTab() {
           warn={
             settings.xrayLiveScan
               ? t(
-                  "Live face scanning loads on-device AI models and can significantly increase RAM, CPU, and GPU usage while playback is active. Turn it off if Harbor slows down or your device gets hot.",
+                  "Live face scanning loads on-device AI models and can significantly increase RAM, CPU, and GPU usage while playback is active. Turn it off if Frame slows down or your device gets hot.",
                 )
               : undefined
           }

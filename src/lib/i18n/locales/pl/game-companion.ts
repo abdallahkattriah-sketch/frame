@@ -277,7 +277,7 @@ export default {
   "games.gw2.guide": "Poradnik skarbca",
   "games.gw2.checked": "Sprawdzono: {date}",
   "games.gw2.scope":
-    "Zapisano w tym profilu Harbor. Każdy wybór oznacza jedną ofertę; saldo, limity zakupów i dostęp do dodatków nie są sprawdzane. Potwierdź dostępność i kup w grze.",
+    "Zapisano w tym profilu Frame. Każdy wybór oznacza jedną ofertę; saldo, limity zakupów i dostęp do dodatków nie są sprawdzane. Potwierdź dostępność i kup w grze.",
   "games.gw2.total": "Planowany koszt",
   "games.gw2.currency": "Astral Acclaim",
   "games.gw2.selected": "Wybrano {count} ofert",

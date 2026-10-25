@@ -149,7 +149,7 @@ const hi: Record<string, string> = {
   "games.download.storage.remaining": "अतिरिक्त जगह: {size}",
   "games.download.storage.estimate": "कुछ मौजूदा फ़ाइलें अभी जाँची नहीं गई हैं। ज़रूरी जगह कम हो सकती है।",
   "games.download.storage.unknown": "अज्ञात आकार: {count} फ़ाइलें",
-  "games.download.storage.other": "Harbor की अन्य प्रक्रियाओं के लिए {size} आरक्षित",
+  "games.download.storage.other": "Frame की अन्य प्रक्रियाओं के लिए {size} आरक्षित",
   "games.download.storage.shortfall": "{size} और जगह चाहिए",
   "games.download.state.retrying": "कनेक्शन दोबारा आज़माया जा रहा है",
   "games.download.queueOrder": "कतार में क्रम: {position}",
@@ -330,7 +330,7 @@ const hi: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "टोरेंट साझा करें",
   "games.torrent.share.note":
-    "सत्यापित फ़ाइलें अन्य पीयर से साझा करें। किसी सीमा पर पहुँचने या Harbor बंद होने पर रुकता है। फ़ाइलें बदलने से पहले साझाकरण रोकें।",
+    "सत्यापित फ़ाइलें अन्य पीयर से साझा करें। किसी सीमा पर पहुँचने या Frame बंद होने पर रुकता है। फ़ाइलें बदलने से पहले साझाकरण रोकें।",
   "games.torrent.share.upload": "अपलोड सीमा (KB/s)",
   "games.torrent.share.ratio": "साझाकरण अनुपात (1–10)",
   "games.torrent.share.minutes": "समय सीमा (मिनट)",

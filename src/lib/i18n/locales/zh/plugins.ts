@@ -3,11 +3,11 @@ const plugins: Record<string, string> = {
   Repositories: "仓库",
   "Installed plugins": "已安装的脚本插件",
   "Plugin repositories": "脚本插件仓库",
-  "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.":
-    "脚本插件在桌面应用中运行。请在电脑上打开 Harbor 添加和管理。",
+  "Plugins run in the desktop app. Open Frame on your computer to add and manage them.":
+    "脚本插件在桌面应用中运行。请在电脑上打开 Frame 添加和管理。",
   "Use plugins": "使用脚本插件",
-  "Plugins are small scripts that look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "脚本插件是一些小脚本，会在 Harbor 不了解的网站上查找播放源。这里的一切都是你从自己选择的仓库中亲自安装的。",
+  "Plugins are small scripts that look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "脚本插件是一些小脚本，会在 Frame 不了解的网站上查找播放源。这里的一切都是你从自己选择的仓库中亲自安装的。",
   "Ask every enabled plugin for streams when you press Play. Turn this off to pause them all without removing anything.":
     "按下播放时向每个已启用的脚本插件请求播放源。关闭后会暂停全部脚本插件，但不会移除任何内容。",
   "Group by repository": "按仓库分组",
@@ -34,7 +34,7 @@ const plugins: Record<string, string> = {
   "v{version} available": "v{version} 可用",
   "Paused after {n} failures. Turn it back on to try again.":
     "失败 {n} 次后已暂停。重新打开以再试一次。",
-  "Needs Harbor {version} or newer.": "需要 Harbor {version} 或更高版本。",
+  "Needs Frame {version} or newer.": "需要 Frame {version} 或更高版本。",
   "This file is not a stream plugin.": "此文件不是播放源脚本插件。",
   "Turned off by its repository.": "已被其仓库关闭。",
   "Plugin files changed on disk. Reinstall it from its repository.":
@@ -75,15 +75,15 @@ const plugins: Record<string, string> = {
   "Removed {name}.": "已移除 {name}。",
   "Updated {name} to v{version}.": "已将 {name} 更新到 v{version}。",
   "Reverted {name} to v{version}.": "已将 {name} 回退到 v{version}。",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
-    "粘贴你信任的仓库的清单链接。Harbor 会原样读取自己的脚本插件仓库和提供源脚本仓库，在你选择之前不会安装任何内容。",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
+    "粘贴你信任的仓库的清单链接。Frame 会原样读取自己的脚本插件仓库和提供源脚本仓库，在你选择之前不会安装任何内容。",
   "Repository link": "仓库链接",
-  "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.":
-    "任何 GitHub 链接都可以，不论是否为 raw 链接。缺少 /manifest.json 时 Harbor 会自动补上。粘贴多个链接可一次全部添加。",
+  "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.":
+    "任何 GitHub 链接都可以，不论是否为 raw 链接。缺少 /manifest.json 时 Frame 会自动补上。粘贴多个链接可一次全部添加。",
   "Only https links are accepted.": "只接受 https 链接。",
   "That link did not answer.": "该链接没有响应。",
-  "This does not look like a plugin repository. Harbor expects { name, plugins } or a provider-script manifest with scrapers.":
-    "这看起来不像脚本插件仓库。Harbor 需要 { name, plugins }，或者包含 scrapers 的提供源脚本清单。",
+  "This does not look like a plugin repository. Frame expects { name, plugins } or a provider-script manifest with scrapers.":
+    "这看起来不像脚本插件仓库。Frame 需要 { name, plugins }，或者包含 scrapers 的提供源脚本清单。",
   "This is a manga repository. Add it from the Manga page.": "这是漫画仓库。请在漫画页面添加。",
   "Already added.": "已经添加过了。",
   "Added {repo} with {count} providers.": "已添加 {repo}，包含 {count} 个提供源。",
@@ -107,16 +107,16 @@ const plugins: Record<string, string> = {
   "Checksum did not match the manifest.": "校验和与清单不匹配。",
   "Checking for updates": "检查更新",
   "Check repositories daily": "每天检查仓库",
-  "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.":
-    "每天一次查找更新版本并在此显示更新按钮。Harbor 绝不会自行安装更新。",
+  "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.":
+    "每天一次查找更新版本并在此显示更新按钮。Frame 绝不会自行安装更新。",
   "Settings this plugin asked for. Stored on this computer only.":
     "此脚本插件请求的设置。仅保存在这台电脑上。",
   "This plugin's settings form failed to load: {error}": "无法加载此脚本插件的设置表单：{error}",
   "{n} of {m} answered, {k} failed": "{m} 个中有 {n} 个已响应，{k} 个失败",
   "Install all": "全部安装",
   "Installing {done} of {total}": "正在安装 {done}/{total}",
-  "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.":
-    "在 Harbor 不了解的网站上查找播放源、漫画和书籍的小脚本，从你选择的仓库安装。",
+  "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.":
+    "在 Frame 不了解的网站上查找播放源、漫画和书籍的小脚本，从你选择的仓库安装。",
   "Remove all": "全部移除",
 };
 

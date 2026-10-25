@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "セットアップ中にHarborが再起動しました。完了するには、インストールされたゲームファイルを確認してください。",
+    "セットアップ中にFrameが再起動しました。完了するには、インストールされたゲームファイルを確認してください。",
   "games.setup.state.starting": "インストーラーを起動中",
   "games.setup.state.waiting": "インストーラーを待機中",
   "games.setup.startingNote": "インストーラーを開いています…",
@@ -40,7 +40,7 @@ export default {
   "games.setup.viewProgress": "インストール状況を表示",
   "games.setup.showInstaller": "インストーラーを表示",
   "games.setup.setup_window":
-    "インストーラーのウィンドウを表示できません。Harbor は引き続き状況を追跡しています。",
+    "インストーラーのウィンドウを表示できません。Frame は引き続き状況を追跡しています。",
   "games.setup.elapsed": "経過時間",
   "games.setup.io": "インストーラー I/O",
   "games.setup.ioNote":
@@ -76,8 +76,7 @@ export default {
   "games.setup.state.running": "インストーラーを実行中",
   "games.setup.state.finished": "インストーラーが閉じました — ゲームファイルを選択してください",
   "games.setup.state.failed": "インストーラーが正常に終了しませんでした",
-  "games.setup.state.interrupted":
-    "セットアップを確認してください — 実行中にHarborが閉じられました",
+  "games.setup.state.interrupted": "セットアップを確認してください — 実行中にFrameが閉じられました",
   "games.setup.state.external": "インストーラーを別のウィンドウで開きました",
   "games.setup.exitCode": "終了コード: {code}",
   "games.setup.unavailable":
@@ -110,9 +109,9 @@ export default {
   "games.setup.destination": "インストール先",
   "games.setup.chooseDestination": "インストール先フォルダーを選択",
   "games.setup.managedNote":
-    "Harbor がここにゲームをインストールし、ゲームファイルを見つけてライブラリに追加します。",
+    "Frame がここにゲームをインストールし、ゲームファイルを見つけてライブラリに追加します。",
   "games.setup.managedRunning":
-    "ゲームをインストールしています。このウィンドウを閉じても、Harbor が引き続き進行状況を確認します。",
+    "ゲームをインストールしています。このウィンドウを閉じても、Frame が引き続き進行状況を確認します。",
   "games.setup.detected": "ゲームファイルを自動検出しました",
   "games.setup.chooseDetected": "追加するゲームファイルを選択してください。",
   "games.setup.activity": "{count} ファイル、{size}",
@@ -128,7 +127,7 @@ export default {
   "games.setup.setup_engine":
     "このインストーラーは専用ウィンドウでの操作が必要です。「インストーラーを実行」を選択して続行してください。",
   "games.setup.setup_candidates":
-    "インストールは終了しましたが、Harbor がインストールされたファイルを読み取れませんでした。インストール先フォルダーをもう一度スキャンしてください。",
+    "インストールは終了しましたが、Frame がインストールされたファイルを読み取れませんでした。インストール先フォルダーをもう一度スキャンしてください。",
   "games.setup.state.installing": "インストール中",
   "games.setup.externalAction": "インストーラーを実行",
   "games.setup.files": "ダウンロード済みファイル",

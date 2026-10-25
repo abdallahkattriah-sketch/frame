@@ -8,8 +8,8 @@ const catalog14: Record<string, string> = {
   "To get a Charity badge, forward your donation receipt or invoice to":
     "Aby otrzymać odznakę za działalność charytatywną, prześlij potwierdzenie darowizny lub fakturę na adres",
   "To run a public relay, post the": "Aby uruchomić publiczny przekaźnik, opublikuj",
-  "To run a public relay, post the {code} URL on r/Stremio or wherever your community lives. Other Harbor users paste it into Settings, Harbor Relay, {kbd}.":
-    "Aby uruchomić publiczny przekaźnik, opublikuj adres URL {code} na r/Stremio lub w miejscu, w którym działa Twoja społeczność. Inni użytkownicy Harbor wklejają go w Ustawienia, Przekaźnik Harbor, {kbd}.",
+  "To run a public relay, post the {code} URL on r/Stremio or wherever your community lives. Other Frame users paste it into Settings, Frame Relay, {kbd}.":
+    "Aby uruchomić publiczny przekaźnik, opublikuj adres URL {code} na r/Stremio lub w miejscu, w którym działa Twoja społeczność. Inni użytkownicy Frame wklejają go w Ustawienia, Przekaźnik Frame, {kbd}.",
   "To the side": "Z boku",
   Today: "Dzisiaj",
   "Today's openers": "Na początek dnia",
@@ -144,8 +144,8 @@ const catalog14: Record<string, string> = {
   Tournaments: "Turnieje",
   "Towering Roles": "Monumentalne role",
   Track: "Ścieżka",
-  "Track everything you watch, see your watchlist, and get personalized recommendations on Harbor's home page. Free at trakt.tv.":
-    "Śledź wszystko, co oglądasz, przeglądaj listę do obejrzenia i otrzymuj spersonalizowane rekomendacje na stronie głównej Harbor. Bezpłatnie na trakt.tv.",
+  "Track everything you watch, see your watchlist, and get personalized recommendations on Frame's home page. Free at trakt.tv.":
+    "Śledź wszystko, co oglądasz, przeglądaj listę do obejrzenia i otrzymuj spersonalizowane rekomendacje na stronie głównej Frame. Bezpłatnie na trakt.tv.",
   "Track people": "Śledź osoby",
   "Track people ({n})": "Obserwuj osoby ({n})",
   "Track switching isn't supported on the current engine. The file's default audio is playing.":
@@ -216,8 +216,8 @@ const catalog14: Record<string, string> = {
   "Trending on AniList": "Popularne teraz w AniList",
   "Trending on {site}": "Popularne w {site}",
   "Trending shows": "Popularne seriale",
-  "Trending tracks star growth across your Harbor visits. Open the addons page again tomorrow and the top risers will appear here.":
-    "Trendy śledzą wzrost liczby gwiazdek między wizytami w Harbor. Otwórz stronę dodatków ponownie jutro, a pojawią się tutaj dodatki z największymi wzrostami.",
+  "Trending tracks star growth across your Frame visits. Open the addons page again tomorrow and the top risers will appear here.":
+    "Trendy śledzą wzrost liczby gwiazdek między wizytami w Frame. Otwórz stronę dodatków ponownie jutro, a pojawią się tutaj dodatki z największymi wzrostami.",
   "Trending · Cinemeta": "Na czasie · Cinemeta",
   "Trending, Popular, In Theaters, and the per service rails.":
     "Popularne teraz, Popularne, W kinach oraz sekcje poszczególnych serwisów.",
@@ -253,12 +253,12 @@ const catalog14: Record<string, string> = {
   "Try deploy again": "Spróbuj wdrożyć ponownie",
   "Try it": "Wypróbuj",
   "Try it for ${n}": "Wypróbuj za ${n}",
-  "Try signing in to Stremio so Harbor can use your addon collection. Older or foreign titles often need Torrentio + a debrid addon to find anything.":
-    "Zaloguj się do Stremio, aby Harbor mógł korzystać z Twojej kolekcji dodatków. Starsze lub zagraniczne tytuły często wymagają Torrentio i dodatku debrid, aby cokolwiek znaleźć.",
+  "Try signing in to Stremio so Frame can use your addon collection. Older or foreign titles often need Torrentio + a debrid addon to find anything.":
+    "Zaloguj się do Stremio, aby Frame mógł korzystać z Twojej kolekcji dodatków. Starsze lub zagraniczne tytuły często wymagają Torrentio i dodatku debrid, aby cokolwiek znaleźć.",
   "Trying source {n}": "Próba źródła {n}",
   Tubi: "Tubi",
-  "Tuck clean, native-looking window buttons into the top corner, with hover labels. On macOS they become traffic-light dots. Blends into Harbor while feeling like your system's own title bar.":
-    "Umieszcza schludne, natywnie wyglądające przyciski okna w górnym rogu, z etykietami po najechaniu. W systemie macOS przyjmują postać kolorowych kropek. Harmonijnie wtapiają się w Harbor, a jednocześnie przypominają systemowy pasek tytułu.",
+  "Tuck clean, native-looking window buttons into the top corner, with hover labels. On macOS they become traffic-light dots. Blends into Frame while feeling like your system's own title bar.":
+    "Umieszcza schludne, natywnie wyglądające przyciski okna w górnym rogu, z etykietami po najechaniu. W systemie macOS przyjmują postać kolorowych kropek. Harmonijnie wtapiają się w Frame, a jednocześnie przypominają systemowy pasek tytułu.",
   Tue: "wt.",
   Tune: "Dostosuj",
   "Tune picks": "Dostosuj propozycje",
@@ -273,8 +273,8 @@ const catalog14: Record<string, string> = {
   "Turn Anime4K upscaling on. Only active when shaders are available.":
     "Włącz skalowanie Anime4K. Funkcja działa tylko wtedy, gdy dostępne są shadery.",
   "Turn It Up": "Podkręć głośność",
-  "Turn anime back on in Harbor's content settings to browse it here.":
-    "Włącz ponownie anime w ustawieniach treści Harbor, aby przeglądać je tutaj.",
+  "Turn anime back on in Frame's content settings to browse it here.":
+    "Włącz ponownie anime w ustawieniach treści Frame, aby przeglądać je tutaj.",
   "Turn it on in Player layout": "Włącz go w sekcji Układ odtwarzacza",
   "Turn off": "Wyłącz",
   "Turn off Auto Sync before changing subtitle FPS.":
@@ -284,8 +284,8 @@ const catalog14: Record<string, string> = {
     "Wyłącz, aby uzyskać bardziej przejrzystą siatkę. Etykiety z ocenami są kontrolowane osobno poniżej.",
   "Turn off mobile data so your phone uses Wi-Fi.":
     "Wyłącz transmisję danych, aby telefon korzystał z Wi-Fi.",
-  "Turn off the native window title bar above to use Harbor's hybrid bar instead.":
-    "Wyłącz powyżej natywny pasek tytułu okna, aby zamiast niego używać hybrydowego paska Harbor.",
+  "Turn off the native window title bar above to use Frame's hybrid bar instead.":
+    "Wyłącz powyżej natywny pasek tytułu okna, aby zamiast niego używać hybrydowego paska Frame.",
   "Turn off to hide the sync badge during playback.":
     "Wyłącz tę opcję, aby ukryć odznakę synchronizacji podczas odtwarzania.",
   "Turn off what you do not have": "Wyłącz to, czego nie masz",
@@ -314,15 +314,15 @@ const catalog14: Record<string, string> = {
   Turnovers: "Straty",
   "Turns off the fancy scaling and effects so video just plays. The lightest on your machine. Pick this if anything ever stutters or your fan screams.":
     "Wyłącza zaawansowane skalowanie i efekty, aby film był po prostu odtwarzany. To ustawienie najmniej obciąża komputer. Wybierz je, jeśli obraz kiedykolwiek się zacina lub wentylator głośno pracuje.",
-  "Turns the season button into a full panel: order tabs (Aired, DVD, Absolute, and any the show has) plus a season table with air-date ranges and episode counts. On by default for anime through Harbor's TVDB service, no key needed. Add your own TVDB key to use it for regular shows too.":
-    "Zmienia przycisk sezonu w pełny panel: karty kolejności (Według emisji, DVD, Bezwzględna i wszystkie dostępne dla danego serialu) oraz tabelę sezonów z zakresami dat emisji i liczbą odcinków. Funkcja jest domyślnie włączona dla anime za pośrednictwem usługi TVDB Harbor i nie wymaga klucza. Dodaj własny klucz TVDB, aby używać jej także dla zwykłych seriali.",
+  "Turns the season button into a full panel: order tabs (Aired, DVD, Absolute, and any the show has) plus a season table with air-date ranges and episode counts. On by default for anime through Frame's TVDB service, no key needed. Add your own TVDB key to use it for regular shows too.":
+    "Zmienia przycisk sezonu w pełny panel: karty kolejności (Według emisji, DVD, Bezwzględna i wszystkie dostępne dla danego serialu) oraz tabelę sezonów z zakresami dat emisji i liczbą odcinków. Funkcja jest domyślnie włączona dla anime za pośrednictwem usługi TVDB Frame i nie wymaga klucza. Dodaj własny klucz TVDB, aby używać jej także dla zwykłych seriali.",
   "Turns your phone into a remote for this computer: play, pause, seek, volume, and casting, all from the couch. Open the Wi-Fi address on your phone's browser.":
     "Zmienia telefon w pilota do tego komputera: możesz z kanapy odtwarzać, wstrzymywać, przewijać, regulować głośność i przesyłać obraz. Otwórz adres Wi-Fi w przeglądarce telefonu.",
   "Twist Endings": "Zaskakujące zakończenia",
   "Two columns": "Dwie kolumny",
   "Two pages": "Dwie strony",
-  "Two paths: Harbor handles the deploy for you, or you do it yourself with wrangler.":
-    "Dostępne są dwie metody: Harbor wdroży usługę za Ciebie albo zrobisz to samodzielnie za pomocą wrangler.",
+  "Two paths: Frame handles the deploy for you, or you do it yourself with wrangler.":
+    "Dostępne są dwie metody: Frame wdroży usługę za Ciebie albo zrobisz to samodzielnie za pomocą wrangler.",
   "Two-factor authentication code": "Kod uwierzytelniania dwuskładnikowego",
   "Type a key on this TV": "Wpisz klucz na tym telewizorze",
   "Type a name to find their photo.": "Wpisz nazwę, aby znaleźć zdjęcie wykonawcy.",
@@ -332,7 +332,7 @@ const catalog14: Record<string, string> = {
   "Type on your keyboard or tap the digits above.":
     "Wpisz cyfry na klawiaturze lub dotknij ich powyżej.",
   "Type on your phone": "Pisz na telefonie",
-  "Type the code showing on that Harbor.": "Wpisz kod wyświetlany w tej aplikacji Harbor.",
+  "Type the code showing on that Frame.": "Wpisz kod wyświetlany w tej aplikacji Frame.",
   "Type the same 4-digit PIN again.": "Wprowadź ponownie ten sam 4-cyfrowy PIN.",
   "Type the same PIN one more time.": "Wpisz ponownie ten sam PIN.",
   "Type to search…": "Wpisz, aby wyszukać…",
@@ -351,8 +351,8 @@ const catalog14: Record<string, string> = {
   "UFOs & Disclosure": "UFO i ujawnione tajemnice",
   "URL + EPG saved": "Zapisano adres URL i EPG",
   "URL is saved and ready to share.": "Adres URL został zapisany i jest gotowy do udostępnienia.",
-  "URL on r/Stremio or wherever your community lives. Other Harbor users paste it into Settings, Harbor Relay,":
-    "adres URL na r/Stremio lub w miejscu, w którym działa Twoja społeczność. Inni użytkownicy Harbor wklejają go w sekcji Ustawienia, Przekaźnik Harbor,",
+  "URL on r/Stremio or wherever your community lives. Other Frame users paste it into Settings, Frame Relay,":
+    "adres URL na r/Stremio lub w miejscu, w którym działa Twoja społeczność. Inni użytkownicy Frame wklejają go w sekcji Ustawienia, Przekaźnik Frame,",
   "URL or path": "Adres URL lub ścieżka",
   "URL saved": "Zapisano adres URL",
   "URLs can carry debrid keys or tokens; reveal when you need to copy":
@@ -401,10 +401,10 @@ const catalog14: Record<string, string> = {
   Unreachable: "Nieosiągalne",
   "Unsaved changes to your layout, time format and volume style.":
     "Niezapisane zmiany układu, formatu czasu i stylu głośności.",
-  "Unsupported profile version ({version}). Update Harbor or use an older profile.":
-    "Nieobsługiwana wersja profilu ({version}). Zaktualizuj Harbor lub użyj starszego profilu.",
-  "Until you pair, that Harbor ignores anything this computer sends it.":
-    "Dopóki nie przeprowadzisz parowania, ta aplikacja Harbor ignoruje wszystko, co wysyła jej ten komputer.",
+  "Unsupported profile version ({version}). Update Frame or use an older profile.":
+    "Nieobsługiwana wersja profilu ({version}). Zaktualizuj Frame lub użyj starszego profilu.",
+  "Until you pair, that Frame ignores anything this computer sends it.":
+    "Dopóki nie przeprowadzisz parowania, ta aplikacja Frame ignoruje wszystko, co wysyła jej ten komputer.",
   "Until {time} · {dur}": "Do {time} · {dur}",
   Untitled: "Bez tytułu",
   "Untitled addon": "Dodatek bez nazwy",
@@ -458,8 +458,8 @@ const catalog14: Record<string, string> = {
   "Updates & backup": "Aktualizacje i kopia zapasowa",
   "Updates & rollback": "Aktualizacje i przywracanie poprzedniej wersji",
   Updating: "Aktualizowanie",
-  "Updating separated settings per profile, which may have reset your theme and keys. Harbor still has your old setup saved. Bring it back on this profile, then reload.":
-    "Trwa aktualizowanie ustawień rozdzielonych dla poszczególnych profili, co mogło zresetować motyw i klucze. Harbor nadal przechowuje poprzednią konfigurację. Przywróć ją w tym profilu, a następnie wczytaj ponownie.",
+  "Updating separated settings per profile, which may have reset your theme and keys. Frame still has your old setup saved. Bring it back on this profile, then reload.":
+    "Trwa aktualizowanie ustawień rozdzielonych dla poszczególnych profili, co mogło zresetować motyw i klucze. Frame nadal przechowuje poprzednią konfigurację. Przywróć ją w tym profilu, a następnie wczytaj ponownie.",
   "Updating {name}": "Aktualizowanie {name}",
   "Updating…": "Aktualizowanie…",
   "Upgrade subtitles when better ones load": "Zastępuj napisy, gdy wczytają się lepsze",
@@ -483,8 +483,8 @@ const catalog14: Record<string, string> = {
   "Use AniList avatar": "Użyj awatara AniList",
   "Use Cinemeta for title metadata": "Używaj Cinemeta do metadanych tytułów",
   "Use Cinemeta instead": "Zamiast tego użyj Cinemeta",
-  "Use Harbor's built-in engine (beta)": "Używaj wbudowanego silnika Harbor (beta)",
-  "Use Harbor's public relay": "Użyj publicznego przekaźnika Harbor",
+  "Use Frame's built-in engine (beta)": "Używaj wbudowanego silnika Frame (beta)",
+  "Use Frame's public relay": "Użyj publicznego przekaźnika Frame",
   "Use MyAnimeList avatar": "Użyj awatara MyAnimeList",
   "Use Simkl avatar": "Użyj awatara Simkl",
   "Use Trakt avatar": "Użyj awatara Trakt",
@@ -495,12 +495,12 @@ const catalog14: Record<string, string> = {
   "Use a different Stremio account": "Użyj innego konta Stremio",
   "Use a different URL": "Użyj innego adresu URL",
   "Use a different key": "Użyj innego klucza",
-  "Use a game controller to browse Harbor and control playback. Tune the sticks and see the button map.":
-    "Używaj kontrolera do gier, aby poruszać się po Harbor i sterować odtwarzaniem. Dostosuj drążki i zobacz mapowanie przycisków.",
-  "Use a game controller to browse Harbor and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.":
-    "Używaj kontrolera do gier, aby poruszać się po Harbor i sterować odtwarzaniem. Działa z kontrolerami Xbox, PlayStation oraz większością gamepadów USB i Bluetooth.",
-  "Use a gamepad or remote to move around Harbor":
-    "Poruszaj się po Harbor za pomocą gamepada lub pilota",
+  "Use a game controller to browse Frame and control playback. Tune the sticks and see the button map.":
+    "Używaj kontrolera do gier, aby poruszać się po Frame i sterować odtwarzaniem. Dostosuj drążki i zobacz mapowanie przycisków.",
+  "Use a game controller to browse Frame and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.":
+    "Używaj kontrolera do gier, aby poruszać się po Frame i sterować odtwarzaniem. Działa z kontrolerami Xbox, PlayStation oraz większością gamepadów USB i Bluetooth.",
+  "Use a gamepad or remote to move around Frame":
+    "Poruszaj się po Frame za pomocą gamepada lub pilota",
   "Use a separate Stremio account": "Użyj oddzielnego konta Stremio",
   "Use addon order": "Użyj kolejności dodatków",
   "Use an existing relay": "Użyj istniejącego przekaźnika",
@@ -516,26 +516,26 @@ const catalog14: Record<string, string> = {
   "Use in Nuvio": "Użyj w Nuvio",
   "Use it": "Użyj",
   "Use liquid glass": "Używaj płynnego szkła",
-  "Use liquid glass for the search pill and row scroll arrows. The appearance settings below are shared by glass surfaces across Harbor.":
-    "Używaj płynnego szkła w polu wyszukiwania i strzałkach przewijania rzędów. Poniższe ustawienia wyglądu są wspólne dla wszystkich szklanych powierzchni w Harbor.",
+  "Use liquid glass for the search pill and row scroll arrows. The appearance settings below are shared by glass surfaces across Frame.":
+    "Używaj płynnego szkła w polu wyszukiwania i strzałkach przewijania rzędów. Poniższe ustawienia wyglądu są wspólne dla wszystkich szklanych powierzchni w Frame.",
   "Use live web context": "Używaj aktualnego kontekstu z internetu",
   "Use live web context (Jina Reader)": "Używaj aktualnego kontekstu z internetu (Jina Reader)",
   "Use model": "Użyj modelu",
   "Use mpv engine": "Użyj silnika mpv",
-  "Use my AniList avatar as my Harbor avatar": "Użyj mojego awatara AniList jako awatara Harbor",
-  "Use my Simkl avatar as my Harbor avatar": "Użyj mojego awatara Simkl jako awatara Harbor",
-  "Use my Trakt avatar as my Harbor avatar": "Użyj mojego awatara Trakt jako awatara Harbor",
+  "Use my AniList avatar as my Frame avatar": "Użyj mojego awatara AniList jako awatara Frame",
+  "Use my Simkl avatar as my Frame avatar": "Użyj mojego awatara Simkl jako awatara Frame",
+  "Use my Trakt avatar as my Frame avatar": "Użyj mojego awatara Trakt jako awatara Frame",
   "Use my own server": "Użyj własnego serwera",
   "Use my photo": "Użyj mojego zdjęcia",
   "Use my style": "Użyj mojego stylu",
   'Use the "personal" key, not the project one.': "Użyj klucza „personal”, a nie klucza projektu.",
-  "Use the arrow keys and Enter to move focus through Harbor. Turn this off to keep arrow keys free and disable focus navigation everywhere.":
-    "Używaj klawiszy strzałek i Enter do przenoszenia fokusu w Harbor. Wyłącz tę opcję, aby zwolnić klawisze strzałek i wszędzie wyłączyć nawigację fokusem.",
+  "Use the arrow keys and Enter to move focus through Frame. Turn this off to keep arrow keys free and disable focus navigation everywhere.":
+    "Używaj klawiszy strzałek i Enter do przenoszenia fokusu w Frame. Wyłącz tę opcję, aby zwolnić klawisze strzałek i wszędzie wyłączyć nawigację fokusem.",
   "Use the button below. If you are not signed in yet TMDB says you do not have permission, which is normal. Click the link in that message to sign in.":
     "Użyj przycisku poniżej. Jeśli nie masz jeszcze aktywnej sesji, TMDB poinformuje, że nie masz uprawnień, co jest normalne. Kliknij łącze w tym komunikacie, aby się zalogować.",
   "Use the download arrow next to any chapter to save it for reading offline.":
     "Użyj strzałki pobierania obok dowolnego rozdziału, aby zapisać go do czytania offline.",
-  "Use the harbor bridge": "Użyj mostu Harbor",
+  "Use the harbor bridge": "Użyj mostu Frame",
   "Use the native window title bar": "Używaj systemowego paska tytułu okna",
   "Use the primary profile's Stremio library, watchlist, and addons.":
     "Korzystaj z biblioteki, listy do obejrzenia i dodatków Stremio z profilu głównego.",
@@ -546,21 +546,21 @@ const catalog14: Record<string, string> = {
   "Use this icon for all states": "Użyj tej ikony we wszystkich stanach",
   "Use your API key to Translate Chapters to Your Language. Get a key from the":
     "Użyj swojego klucza API, aby tłumaczyć rozdziały na swój język. Klucz możesz uzyskać w",
-  "Use your Harbor color": "Użyj swojego koloru Harbor",
-  "Use your operating system's native title bar and window buttons instead of Harbor's built-in ones. Handy if the in-app buttons ever feel out of reach, like during playback.":
-    "Używaj systemowego paska tytułu i przycisków okna zamiast wbudowanych elementów Harbor. Przydaje się, gdy przyciski w aplikacji są poza zasięgiem, na przykład podczas odtwarzania.",
+  "Use your Frame color": "Użyj swojego koloru Frame",
+  "Use your operating system's native title bar and window buttons instead of Frame's built-in ones. Handy if the in-app buttons ever feel out of reach, like during playback.":
+    "Używaj systemowego paska tytułu i przycisków okna zamiast wbudowanych elementów Frame. Przydaje się, gdy przyciski w aplikacji są poza zasięgiem, na przykład podczas odtwarzania.",
   "Use your own image as the app icon": "Użyj własnego obrazu jako ikony aplikacji",
   "Use {color} for the line tracker": "Użyj koloru {color} dla wskaźnika wiersza",
   "Use {color} ink": "Użyj koloru {color}",
   "Used at 55% / 25% alpha.": "Używane z kryciem 55% / 25%.",
   "Used for streaming availability and the Now Playing release window.":
     "Służy do sprawdzania dostępności strumieniowej i okresu premier w sekcji Teraz odtwarzane.",
-  "Used for streaming availability and the Now Playing release window. Pick a country and Harbor can match the interface, metadata, and subtitle languages to it.":
-    "Używany do określania dostępności transmisji i przedziału premier „Teraz w kinach”. Wybierz kraj, a Harbor może dopasować do niego języki interfejsu, metadanych i napisów.",
+  "Used for streaming availability and the Now Playing release window. Pick a country and Frame can match the interface, metadata, and subtitle languages to it.":
+    "Używany do określania dostępności transmisji i przedziału premier „Teraz w kinach”. Wybierz kraj, a Frame może dopasować do niego języki interfejsu, metadanych i napisów.",
   "Used for your cursor in Watch Together, your draw color, and your name pill in chat.":
     "Służy do określania koloru kursora podczas wspólnego oglądania, koloru rysowania i plakietki z imieniem na czacie.",
-  "Used to check cache and unrestrict links. Harbor never adds or removes anything on your account on its own.":
-    "Służy do sprawdzania pamięci podręcznej i odblokowywania linków. Harbor nigdy samodzielnie niczego nie dodaje ani nie usuwa z Twojego konta.",
+  "Used to check cache and unrestrict links. Frame never adds or removes anything on your account on its own.":
+    "Służy do sprawdzania pamięci podręcznej i odblokowywania linków. Frame nigdy samodzielnie niczego nie dodaje ani nie usuwa z Twojego konta.",
   "Used to lift Time's Up and to leave the kids space.":
     "Służy do wyłączenia blokady po upływie czasu i opuszczenia przestrzeni dziecięcej.",
   Usenet: "Usenet",
@@ -574,8 +574,8 @@ const catalog14: Record<string, string> = {
     "Korzysta z punktu końcowego directdl, który pomija kolejkowanie treści znajdujących się już w pamięci podręcznej.",
   "Uses up to 150 MB": "Zużywa do 150 MB",
   "Uses your theme's accent color.": "Używa koloru akcentu wybranego motywu.",
-  "Using AIOStreams or another aggregator addon? Its own sorting and filtering happen inside the addon before Harbor ever sees the results, then Harbor applies the stream filter and result order above on top. If results look thinner than expected, keep one side permissive: either relax the addon's internal filters or set Harbor's stream filter to Balanced or Off.":
-    "Korzystasz z AIOStreams lub innego dodatku agregującego? Sortowanie i filtrowanie tego dodatku odbywa się w nim samym, zanim Harbor zobaczy wyniki. Następnie Harbor dodatkowo stosuje powyższy filtr strumieni i ich kolejność. Jeśli wyników jest mniej, niż oczekujesz, pozostaw jedną stronę bez rygorystycznych ograniczeń: złagodź wewnętrzne filtry dodatku albo ustaw filtr strumieni Harbor na Zrównoważony lub Wyłączony.",
+  "Using AIOStreams or another aggregator addon? Its own sorting and filtering happen inside the addon before Frame ever sees the results, then Frame applies the stream filter and result order above on top. If results look thinner than expected, keep one side permissive: either relax the addon's internal filters or set Frame's stream filter to Balanced or Off.":
+    "Korzystasz z AIOStreams lub innego dodatku agregującego? Sortowanie i filtrowanie tego dodatku odbywa się w nim samym, zanim Frame zobaczy wyniki. Następnie Frame dodatkowo stosuje powyższy filtr strumieni i ich kolejność. Jeśli wyników jest mniej, niż oczekujesz, pozostaw jedną stronę bez rygorystycznych ograniczeń: złagodź wewnętrzne filtry dodatku albo ustaw filtr strumieni Frame na Zrównoważony lub Wyłączony.",
   VA: "Aktor głosowy",
   "VHS-era classics": "Klasyki z epoki VHS",
   VOLUME: "GŁOŚNOŚĆ",
@@ -586,7 +586,7 @@ const catalog14: Record<string, string> = {
   Venice: "Wenecja",
   Venue: "Obiekt",
   Verified: "Potwierdzono",
-  "Verified Harbor Staff": "Zweryfikowany pracownik Harbor",
+  "Verified Frame Staff": "Zweryfikowany pracownik Frame",
   "Verified status": "Status weryfikacji",
   Verify: "Zweryfikuj",
   "Verify & connect": "Zweryfikuj i połącz",
@@ -652,8 +652,8 @@ const catalog14: Record<string, string> = {
   "Wait before playing": "Oczekiwanie przed odtwarzaniem",
   "Wait for the upload to finish. The relay URL gets written to":
     "Poczekaj na zakończenie przesyłania. Adres URL przekaźnika zostanie zapisany w",
-  "Wait for the upload to finish. The relay URL gets written to {code} in Harbor settings.":
-    "Poczekaj na zakończenie przesyłania. Adres URL przekaźnika zostanie zapisany w polu {code} w ustawieniach Harbor.",
+  "Wait for the upload to finish. The relay URL gets written to {code} in Frame settings.":
+    "Poczekaj na zakończenie przesyłania. Adres URL przekaźnika zostanie zapisany w polu {code} w ustawieniach Frame.",
   "Wait {seconds}s": "Poczekaj {seconds} s",
   "Waiting for": "Oczekiwanie na",
   "Waiting for Trakt…": "Oczekiwanie na Trakt…",
@@ -664,8 +664,8 @@ const catalog14: Record<string, string> = {
   "Waiting for your TV to hand over what it needs. This takes a moment.":
     "Oczekiwanie, aż telewizor przekaże potrzebne dane. To chwilę potrwa.",
   Walks: "Bazy za darmo",
-  "Want a badge that moves? Drop in a GIF up to 8 MB. Harbor shrinks it down and converts it to a lightweight animated format so it stays crisp and loads fast. Keep it small and looping.":
-    "Chcesz ruchomą odznakę? Dodaj plik GIF o rozmiarze do 8 MB. Harbor zmniejszy go i przekonwertuje na lekki format animowany, aby zachował ostrość i szybko się wczytywał. Animacja powinna być krótka i zapętlona.",
+  "Want a badge that moves? Drop in a GIF up to 8 MB. Frame shrinks it down and converts it to a lightweight animated format so it stays crisp and loads fast. Keep it small and looping.":
+    "Chcesz ruchomą odznakę? Dodaj plik GIF o rozmiarze do 8 MB. Frame zmniejszy go i przekonwertuje na lekki format animowany, aby zachował ostrość i szybko się wczytywał. Animacja powinna być krótka i zapętlona.",
   "Want to change the ratio mid-playback? The live aspect button is hidden by default to keep the player tidy.":
     "Chcesz zmieniać proporcje podczas odtwarzania? Przycisk proporcji obrazu jest domyślnie ukryty, aby interfejs odtwarzacza pozostał uporządkowany.",
   "Want to fix it yourself?": "Chcesz naprawić to samodzielnie?",
@@ -683,8 +683,8 @@ const catalog14: Record<string, string> = {
   "Watch Together needs a relay.": "Wspólne oglądanie wymaga serwera pośredniczącego.",
   "Watch Together panel": "Panel Watch Together",
   "Watch Together relay": "Przekaźnik wspólnego oglądania",
-  "Watch Together rooms are routed through Harbor's hosted relay.":
-    "Pokoje wspólnego oglądania są obsługiwane przez hostowany przekaźnik Harbor.",
+  "Watch Together rooms are routed through Frame's hosted relay.":
+    "Pokoje wspólnego oglądania są obsługiwane przez hostowany przekaźnik Frame.",
   "Watch Together rooms drop after 6 hours": "Pokoje Watch Together są zamykane po 6 godzinach",
   "Watch again": "Obejrzyj ponownie",
   "Watch from the beginning": "Oglądaj od początku",
@@ -705,8 +705,8 @@ const catalog14: Record<string, string> = {
   "Watched {ago}": "Obejrzano {ago}",
   Watching: "Oglądam",
   "Watching 1 stream at once": "Oglądanie 1 strumienia jednocześnie",
-  "Watching for ad, analytics, and tracking requests. Harbor itself sends zero telemetry.":
-    "Wykrywa żądania reklamowe, analityczne i śledzące. Sam Harbor nie wysyła żadnych danych telemetrycznych.",
+  "Watching for ad, analytics, and tracking requests. Frame itself sends zero telemetry.":
+    "Wykrywa żądania reklamowe, analityczne i śledzące. Sam Frame nie wysyła żadnych danych telemetrycznych.",
   "Watching right now": "Oglądają teraz",
   "Watching {n} streams at once": "Oglądanie {n} strumieni jednocześnie",
 };

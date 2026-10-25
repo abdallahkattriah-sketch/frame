@@ -4,19 +4,18 @@ const musicSpotifyLibrary: Record<string, string> = {
   "music.spotifyLibrary.connect": "Połącz Spotify",
   "music.spotifyLibrary.liked": "Polubione utwory",
   "music.spotifyLibrary.playlists": "Playlisty Spotify",
-  "music.spotifyLibrary.harbor": "Playlisty Harbor",
+  "music.spotifyLibrary.harbor": "Playlisty Frame",
   "music.spotifyLibrary.back": "Wróć do biblioteki Spotify",
-  "music.spotifyLibrary.import": "Importuj do Harbor",
+  "music.spotifyLibrary.import": "Importuj do Frame",
   "music.spotifyLibrary.importBody":
-    "Zapisz kopię tej listy w Harbor. Utwory nadal będą odtwarzane ze swojego źródła muzyki.",
+    "Zapisz kopię tej listy w Frame. Utwory nadal będą odtwarzane ze swojego źródła muzyki.",
   "music.spotifyLibrary.importing": "Odczytywanie utworów: {count}…",
   "music.spotifyLibrary.imported": "Zaimportowano {count} utworów do {name}.",
-  "music.spotifyLibrary.skipped":
-    "Pominięto {count} pozycji, których Harbor nie może zaimportować.",
+  "music.spotifyLibrary.skipped": "Pominięto {count} pozycji, których Frame nie może zaimportować.",
   "music.spotifyLibrary.loaded": "{count} z {total}",
   "music.spotifyLibrary.empty": "Ta kolekcja Spotify jest jeszcze pusta.",
   "music.spotifyLibrary.noImportable":
-    "Ta kolekcja nie zawiera utworów, które Harbor może zaimportować.",
+    "Ta kolekcja nie zawiera utworów, które Frame może zaimportować.",
   "music.spotifyLibrary.error":
     "Spotify nie udało się zrealizować żądania. Sprawdź połączenie i spróbuj ponownie.",
   "music.spotifyLibrary.permission": "Połącz Spotify ponownie, aby zezwolić na zmiany playlist.",

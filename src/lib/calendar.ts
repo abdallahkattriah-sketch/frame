@@ -610,7 +610,7 @@ export async function fireWebhook(
     let attempted = 0;
     if (payload.items.length === 0) {
       attempted = 1;
-      if (await sendDesktopNotification("Harbor", payload.text, undefined, HARBOR_ICON_PATH)) {
+      if (await sendDesktopNotification("Frame", payload.text, undefined, HARBOR_ICON_PATH)) {
         delivered = 1;
       }
     } else {
@@ -630,7 +630,7 @@ export async function fireWebhook(
       }
       if (payload.items.length > DESKTOP_NOTIFY_CAP) {
         attempted++;
-        if (await sendDesktopNotification("Harbor", payload.text)) delivered++;
+        if (await sendDesktopNotification("Frame", payload.text)) delivered++;
       }
     }
     if (delivered === 0) {
@@ -666,7 +666,7 @@ export async function fireWebhook(
         ],
       }));
       const body: Record<string, unknown> = {
-        username: "Harbor",
+        username: "Frame",
         content: payload.text,
       };
       if (embeds.length > 0) body.embeds = embeds;

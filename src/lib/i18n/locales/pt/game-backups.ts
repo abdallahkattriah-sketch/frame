@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Conclua a recuperação antes de fazer backup ou restaurar esta pasta.",
   "games.backups.save_recovery_scope":
-    "Abra esta restauração pelo perfil do Harbor e pelo jogo que a criaram.",
+    "Abra esta restauração pelo perfil do Frame e pelo jogo que a criaram.",
   "games.backups.result.keptCurrent": "Seus jogos salvos atuais não mudaram",
   "games.backups.resultNote.keptCurrent":
     "A recuperação terminou sem substituir os jogos salvos nesta pasta.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Guarde um momento ao qual possa voltar. Escolha a pasta de partidas deste jogo e outra pasta separada para os backups. Feche o jogo antes de criar um backup ou restaurar.",
   "games.backups.desktop":
-    "Os backups de partidas estão disponíveis no aplicativo desktop do Harbor. Eles usam as pastas que você escolher no computador.",
+    "Os backups de partidas estão disponíveis no aplicativo desktop do Frame. Eles usam as pastas que você escolher no computador.",
   "games.backups.folder.source": "Partidas salvas",
   "games.backups.folder.vault": "Pasta de backups",
   "games.backups.choose.source": "Escolher a pasta de partidas do jogo",
@@ -51,9 +51,9 @@ export default {
   "games.backups.identical": "A pasta de partidas atual já corresponde a este backup.",
   "games.backups.restore": "Restaurar backup",
   "games.backups.recoveryNote":
-    "O Harbor guarda um backup de recuperação e a pasta original antes de substituir as partidas.",
+    "O Frame guarda um backup de recuperação e a pasta original antes de substituir as partidas.",
   "games.backups.localNote":
-    "Armazenados na pasta escolhida, separadamente para cada perfil do Harbor.",
+    "Armazenados na pasta escolhida, separadamente para cada perfil do Frame.",
   "games.backups.openRecovery": "Mostrar pasta original",
   "games.backups.reviewUndo": "Revisar desfazer",
   "games.backups.result.restored": "Seu backup foi restaurado",
@@ -63,11 +63,11 @@ export default {
   "games.backups.resultNote.restored":
     "Sua pasta de partidas agora corresponde a este backup. As cópias de recuperação continuam disponíveis caso queira voltar ao estado anterior.",
   "games.backups.resultNote.rolledBack":
-    "A restauração não pôde ser concluída, então o Harbor recolocou a pasta de partidas original. O backup de recuperação também está disponível abaixo.",
+    "A restauração não pôde ser concluída, então o Frame recolocou a pasta de partidas original. O backup de recuperação também está disponível abaixo.",
   "games.backups.resultNote.recoveryNeeded":
-    "O Harbor não conseguiu recolocar a pasta original após a falha na restauração. Mantenha o jogo fechado. Seus arquivos originais estão preservados na pasta abaixo e no backup de recuperação.",
+    "O Frame não conseguiu recolocar a pasta original após a falha na restauração. Mantenha o jogo fechado. Seus arquivos originais estão preservados na pasta abaixo e no backup de recuperação.",
   "games.backups.resultNote.notRestored":
-    "O Harbor não conseguiu colocar o backup na pasta escolhida. Ele continua disponível.",
+    "O Frame não conseguiu colocar o backup na pasta escolhida. Ele continua disponível.",
   "games.backups.phase.scanning": "Lendo suas partidas…",
   "games.backups.phase.copying": "Copiando arquivos de partidas…",
   "games.backups.phase.verifying": "Verificando o backup…",
@@ -81,9 +81,9 @@ export default {
   "games.backups.save_record":
     "Não foi possível ler um registro de backup com segurança. Os arquivos foram preservados. Verifique a pasta de backups escolhida.",
   "games.backups.save_read":
-    "O Harbor não conseguiu ler estas partidas. Verifique se a pasta está disponível e se o jogo está fechado.",
+    "O Frame não conseguiu ler estas partidas. Verifique se a pasta está disponível e se o jogo está fechado.",
   "games.backups.save_write":
-    "O Harbor não conseguiu terminar de gravar estas partidas. Verifique se é possível gravar na pasta e se o jogo está fechado.",
+    "O Frame não conseguiu terminar de gravar estas partidas. Verifique se é possível gravar na pasta e se o jogo está fechado.",
   "games.backups.save_name":
     "Não foi possível preservar um nome de arquivo. Use uma pasta com nomes de arquivo compatíveis.",
   "games.backups.save_changed":
@@ -104,9 +104,9 @@ export default {
   "games.backups.save_space":
     "Não há espaço livre suficiente para guardar uma cópia completa. Escolha outra pasta ou libere espaço.",
   "games.backups.save_config":
-    "O Harbor não conseguiu ler suas escolhas de pastas. Escolha novamente; os backups existentes continuam intactos.",
+    "O Frame não conseguiu ler suas escolhas de pastas. Escolha novamente; os backups existentes continuam intactos.",
   "games.backups.save_config_write":
-    "O Harbor não conseguiu memorizar estas pastas. Suas escolhas e backups existentes não foram alterados.",
+    "O Frame não conseguiu memorizar estas pastas. Suas escolhas e backups existentes não foram alterados.",
   "games.backups.failed":
     "Esta operação de partidas não pôde ser concluída. Seus arquivos de backup foram preservados. Verifique as pastas e tente novamente.",
   "games.backups.compare.title": "Comparação de arquivos",

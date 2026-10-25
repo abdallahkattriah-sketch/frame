@@ -227,7 +227,7 @@ export function BpDetail({
           loading
             ? ""
             : t(
-                "Harbor couldn't reach the catalog servers. Check the connection and reopen Big Picture.",
+                "Frame couldn't reach the catalog servers. Check the connection and reopen Big Picture.",
               )
         }
         action={t("Go back")}

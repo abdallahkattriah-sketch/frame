@@ -23,7 +23,7 @@ export default {
   "games.patch.fingerprints": "文件指纹列表 · SHA-256",
   "games.patch.localNote": "在本机处理 · BPS · IPS · UPS · 最大 256 MB",
   "games.patch.desktop":
-    "在 Windows、macOS 或 Linux 版 Harbor 桌面应用中应用补丁。文件保留在你的设备上，原版游戏不会被修改。",
+    "在 Windows、macOS 或 Linux 版 Frame 桌面应用中应用补丁。文件保留在你的设备上，原版游戏不会被修改。",
   "games.patch.done": "准备好开始新的冒险",
   "games.patch.preserved": "修改后的副本已保存。原版游戏和补丁均未更改。",
   "games.patch.patch_source_mismatch":
@@ -33,7 +33,7 @@ export default {
   "games.patch.patch_expired": "本次准备已过期。请重新检查补丁。",
   "games.patch.patch_inputs_changed": "某个已选文件在验证后发生了变化。请在保存前重新检查补丁。",
   "games.patch.patch_output_exists":
-    "此位置已有同名文件。请选择其他文件名，Harbor 不会覆盖现有文件。",
+    "此位置已有同名文件。请选择其他文件名，Frame 不会覆盖现有文件。",
   "games.patch.patch_read_failed": "无法读取所选文件。请确认文件仍然可用，然后重新选择。",
   "games.patch.patch_write_failed": "无法保存副本。请检查文件夹和可用空间，或选择其他位置。",
   "games.patch.patch_too_large": "原版游戏、补丁和最终副本的大小均不能超过 256 MB。",
@@ -63,8 +63,8 @@ export default {
   "games.atlas.sort.rated": "评分最高",
   "games.atlas.sort.newest": "最新",
   "games.atlas.sort.oldest": "最早",
-  "games.hub.stepPatch": "选择原版游戏和 BPS、IPS 或 UPS 补丁。Harbor 会另存一份副本。",
-  "games.patch.description": "选择原版游戏和 BPS、IPS 或 UPS 补丁。Harbor 会另存一份副本。",
+  "games.hub.stepPatch": "选择原版游戏和 BPS、IPS 或 UPS 补丁。Frame 会另存一份副本。",
+  "games.patch.description": "选择原版游戏和 BPS、IPS 或 UPS 补丁。Frame 会另存一份副本。",
   "games.patch.choosePatch": "选择补丁（BPS、IPS、UPS）",
   "games.patch.patch_unsupported": "此文件不是受支持的 BPS、IPS 或 UPS 补丁。",
   "games.discovery.viewGame": "查看游戏",

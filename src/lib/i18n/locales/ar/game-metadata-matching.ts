@@ -22,6 +22,6 @@ export default {
   "games.match.use": "استخدام هذه اللعبة",
   "games.match.remove": "إزالة المطابقة",
   "games.match.source": "الصور والتفاصيل من IGDB",
-  "games.match.note": "اختر الإصدار المطابق لملفك. يحتفظ Harbor بالملف الأصلي واسمه.",
+  "games.match.note": "اختر الإصدار المطابق لملفك. يحتفظ Frame بالملف الأصلي واسمه.",
   "games.match.empty": "جرّب عنوان اللعبة دون تسميات المنطقة أو المراجعة.",
 };

@@ -8,12 +8,12 @@ export default {
   "games.download.relink.review": "مراجعة الملف",
   "games.download.relink.saved": "المحفوظ: {size}",
   "games.download.relink.note":
-    "سينزّل Harbor الجزء المحفوظ مرة أخرى لمقارنته قبل إضافة بيانات جديدة.",
+    "سينزّل Frame الجزء المحفوظ مرة أخرى لمقارنته قبل إضافة بيانات جديدة.",
   "games.download.relink.apply": "تحديث الرابط والاستئناف",
   "games.download.relink.working": "جارٍ تحديث الرابط…",
   "games.download.relink.checking": "جارٍ فحص البيانات المحفوظة",
   "games.download.relink.single": "اختر ملفًا واحدًا لاستبدال رابط هذا التنزيل.",
-  "games.download.relink.native": "أعد تشغيل Harbor بأحدث إصدار لتحديث هذا الرابط.",
+  "games.download.relink.native": "أعد تشغيل Frame بأحدث إصدار لتحديث هذا الرابط.",
   "games.download.transfer_relink_mismatch":
     "اختر الملف نفسه بالاسم والحجم نفسيهما لمتابعة هذا التنزيل.",
   "games.download.center.content.patch": "تحديث اللعبة",

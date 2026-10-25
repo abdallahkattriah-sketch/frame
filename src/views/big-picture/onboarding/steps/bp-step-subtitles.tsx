@@ -80,7 +80,7 @@ export function BpStepSubtitles() {
         text={
           picked.length > 0
             ? t("In order: {list}", { list: picked.join(", ") })
-            : t("Nothing selected. Harbor will not load a subtitle on its own.")
+            : t("Nothing selected. Frame will not load a subtitle on its own.")
         }
       />
     </BpDecisionScroll>

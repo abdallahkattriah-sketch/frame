@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "파일 지문 목록 · SHA-256",
   "games.patch.localNote": "내 기기에서 처리 · BPS · IPS · UPS · 최대 256 MB",
   "games.patch.desktop":
-    "Windows, macOS 또는 Linux용 Harbor 데스크톱 앱에서 패치를 적용하세요. 파일은 기기에 보관되며 원본 게임은 유지됩니다.",
+    "Windows, macOS 또는 Linux용 Frame 데스크톱 앱에서 패치를 적용하세요. 파일은 기기에 보관되며 원본 게임은 유지됩니다.",
   "games.patch.done": "새로운 모험을 떠날 준비 완료",
   "games.patch.preserved":
     "패치가 적용된 복사본을 저장했습니다. 원본 게임과 패치는 변경되지 않았습니다.",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "확인 후 선택한 파일이 변경되었습니다. 저장하기 전에 패치를 다시 확인하세요.",
   "games.patch.patch_output_exists":
-    "해당 위치에 파일이 이미 있습니다. 다른 이름을 선택하세요. Harbor는 기존 파일을 덮어쓰지 않습니다.",
+    "해당 위치에 파일이 이미 있습니다. 다른 이름을 선택하세요. Frame는 기존 파일을 덮어쓰지 않습니다.",
   "games.patch.patch_read_failed":
     "선택한 파일을 읽을 수 없습니다. 파일이 아직 사용 가능한지 확인하고 다시 선택하세요.",
   "games.patch.patch_write_failed":
@@ -74,9 +74,9 @@ export default {
   "games.atlas.sort.newest": "최신순",
   "games.atlas.sort.oldest": "오래된순",
   "games.hub.stepPatch":
-    "원본 게임과 BPS, IPS 또는 UPS 패치를 선택하세요. Harbor가 별도 사본을 저장합니다.",
+    "원본 게임과 BPS, IPS 또는 UPS 패치를 선택하세요. Frame가 별도 사본을 저장합니다.",
   "games.patch.description":
-    "원본 게임과 BPS, IPS 또는 UPS 패치를 선택하세요. Harbor가 별도 사본을 저장합니다.",
+    "원본 게임과 BPS, IPS 또는 UPS 패치를 선택하세요. Frame가 별도 사본을 저장합니다.",
   "games.patch.choosePatch": "패치 선택 (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "지원되는 BPS, IPS 또는 UPS 패치 파일이 아닙니다.",
   "games.discovery.viewGame": "게임 보기",

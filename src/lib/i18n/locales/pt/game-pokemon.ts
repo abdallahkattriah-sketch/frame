@@ -11,12 +11,12 @@ export default {
     "Não foi possível buscar saves. Atualize a lista ou escolha um arquivo.",
   "games.pokemon.noDetectedSaves":
     "Nenhum save encontrado. Salve dentro do jogo ou escolha um arquivo do seu emulador.",
-  "games.pokemon.saveOrigin.harbor": "Salvo no Harbor",
+  "games.pokemon.saveOrigin.harbor": "Salvo no Frame",
   "games.pokemon.saveOrigin.adjacent": "Junto à sua ROM",
   "games.pokemon.error.pokemon_hack_export":
     "A exportação deste ROM hack para o banco ainda não está pronta: os dados extras dos Pokémon ainda não podem ser preservados. Você pode consultar e editar este arquivo salvo.",
   "games.pokemon.error.pokemon_save_running":
-    "Feche este jogo no Harbor antes de salvar as alterações. Sua prévia será mantida.",
+    "Feche este jogo no Frame antes de salvar as alterações. Sua prévia será mantida.",
   "games.pokemon.title": "Sua aventura Pokémon",
   "games.pokemon.intro": "Encontre sua próxima rota. Monte sua equipe. Leve seus Pokémon com você.",
   "games.pokemon.browse": "Explore este jogo Pokémon",
@@ -84,7 +84,7 @@ export default {
   "games.pokemon.openSave": "Abrir save do jogo",
   "games.pokemon.importPokemon": "Importar arquivo Pokémon",
   "games.pokemon.engineMissing":
-    "O mecanismo Pokémon ainda não está instalado nesta versão do Harbor.",
+    "O mecanismo Pokémon ainda não está instalado nesta versão do Frame.",
   "games.pokemon.bankError": "Não foi possível concluir a ação.",
   "games.pokemon.bankBrowse": "Explorar seus Pokémon",
   "games.pokemon.gameSave": "Save do jogo",
@@ -138,14 +138,14 @@ export default {
   "games.pokemon.training": "Valores individuais e pontos de esforço",
   "games.pokemon.previewEdits": "Conferir alterações",
   "games.pokemon.error.pokemon_engine_missing":
-    "O mecanismo Pokémon ainda não está instalado nesta versão do Harbor.",
+    "O mecanismo Pokémon ainda não está instalado nesta versão do Frame.",
   "games.pokemon.error.pokemon_engine_start": "Não foi possível iniciar o mecanismo Pokémon.",
   "games.pokemon.error.pokemon_engine_timeout":
     "O mecanismo demorou demais. Seu save não foi alterado.",
   "games.pokemon.error.pokemon_read": "Não foi possível ler o arquivo selecionado.",
   "games.pokemon.error.pokemon_file": "Escolha um arquivo de save ou Pokémon compatível.",
   "games.pokemon.error.pokemon_save_changed":
-    "O save mudou fora do Harbor. Abra-o novamente antes de continuar.",
+    "O save mudou fora do Frame. Abra-o novamente antes de continuar.",
   "games.pokemon.error.pokemon_review_changed":
     "Esta revisão está desatualizada. Confira as alterações novamente.",
   "games.pokemon.error.pokemon_write":

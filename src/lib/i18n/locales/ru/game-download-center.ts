@@ -8,13 +8,13 @@ export default {
   "games.download.relink.review": "Проверить файл",
   "games.download.relink.saved": "Сохранено: {size}",
   "games.download.relink.note":
-    "Harbor повторно загрузит сохранённую часть для сравнения, прежде чем добавлять новые данные.",
+    "Frame повторно загрузит сохранённую часть для сравнения, прежде чем добавлять новые данные.",
   "games.download.relink.apply": "Обновить ссылку и продолжить",
   "games.download.relink.working": "Обновление ссылки…",
   "games.download.relink.checking": "Проверка сохранённых данных",
   "games.download.relink.single": "Выберите один файл для замены ссылки этой загрузки.",
   "games.download.relink.native":
-    "Перезапустите Harbor с последней сборкой, чтобы обновить эту ссылку.",
+    "Перезапустите Frame с последней сборкой, чтобы обновить эту ссылку.",
   "games.download.transfer_relink_mismatch":
     "Выберите тот же файл с тем же именем и размером, чтобы продолжить загрузку.",
   "games.download.center.content.patch": "Обновление игры",

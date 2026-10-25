@@ -4,17 +4,17 @@ const musicSpotifyLibrary: Record<string, string> = {
   "music.spotifyLibrary.connect": "Spotify’ı bağla",
   "music.spotifyLibrary.liked": "Beğenilen şarkılar",
   "music.spotifyLibrary.playlists": "Spotify çalma listeleri",
-  "music.spotifyLibrary.harbor": "Harbor çalma listeleri",
+  "music.spotifyLibrary.harbor": "Frame çalma listeleri",
   "music.spotifyLibrary.back": "Spotify kitaplığına dön",
-  "music.spotifyLibrary.import": "Harbor’a aktar",
+  "music.spotifyLibrary.import": "Frame’a aktar",
   "music.spotifyLibrary.importBody":
-    "Bu listenin bir kopyasını Harbor’a kaydedin. Şarkılar kendi müzik kaynakları üzerinden çalmaya devam eder.",
+    "Bu listenin bir kopyasını Frame’a kaydedin. Şarkılar kendi müzik kaynakları üzerinden çalmaya devam eder.",
   "music.spotifyLibrary.importing": "{count} şarkı okunuyor…",
   "music.spotifyLibrary.imported": "{name} listesine {count} şarkı aktarıldı.",
-  "music.spotifyLibrary.skipped": "Harbor’ın aktaramadığı {count} öğe atlandı.",
+  "music.spotifyLibrary.skipped": "Frame’ın aktaramadığı {count} öğe atlandı.",
   "music.spotifyLibrary.loaded": "{total} öğeden {count}",
   "music.spotifyLibrary.empty": "Bu Spotify koleksiyonu henüz boş.",
-  "music.spotifyLibrary.noImportable": "Bu koleksiyonda Harbor’ın aktarabileceği parça yok.",
+  "music.spotifyLibrary.noImportable": "Bu koleksiyonda Frame’ın aktarabileceği parça yok.",
   "music.spotifyLibrary.error":
     "Spotify isteği tamamlayamadı. Bağlantınızı kontrol edip yeniden deneyin.",
   "music.spotifyLibrary.permission":

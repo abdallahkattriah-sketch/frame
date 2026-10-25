@@ -19,7 +19,7 @@ export default {
   "games.pokemon.guideSourceNote":
     "Lisez le guide original ou ouvrez-le ici lorsque la source est disponible.",
   "games.pokemon.readGuide": "Lire sur Bulbapedia",
-  "games.pokemon.readInside": "Lire dans Harbor",
+  "games.pokemon.readInside": "Lire dans Frame",
   "games.pokemon.closeReader": "Fermer le lecteur",
   "games.pokemon.downloadImage": "Télécharger l’image de {name}",
   "games.pokemon.imageSaved": "Image de {name} enregistrée",
@@ -31,7 +31,7 @@ export default {
   "games.pokemon.saveStep2":
     "Fermez le jeu, puis trouvez ou exportez sa sauvegarde de batterie (.sav, .srm ou .dsv).",
   "games.pokemon.saveStep3":
-    "Choisissez Ouvrir une sauvegarde ci-dessus pour la modifier dans Harbor.",
+    "Choisissez Ouvrir une sauvegarde ci-dessus pour la modifier dans Frame.",
   "games.pokemon.findSave": "Où est ma sauvegarde ?",
   "games.pokemon.saveLocations":
     "Cherchez à côté de votre ROM ou dans le dossier de sauvegardes de l’émulateur. Si vous avez seulement un état instantané, chargez-le dans l’émulateur puis sauvegardez depuis le menu du jeu.",

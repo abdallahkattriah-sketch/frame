@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Terminez la récupération avant de sauvegarder ou de restaurer ce dossier.",
   "games.backups.save_recovery_scope":
-    "Ouvrez cette restauration depuis le profil Harbor et le jeu qui l’ont créée.",
+    "Ouvrez cette restauration depuis le profil Frame et le jeu qui l’ont créée.",
   "games.backups.result.keptCurrent": "Vos sauvegardes actuelles sont inchangées",
   "games.backups.resultNote.keptCurrent":
     "La récupération est terminée sans remplacer les sauvegardes présentes dans ce dossier.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Gardez un point auquel revenir. Choisissez le dossier de sauvegarde de ce jeu et un dossier distinct pour les copies. Fermez le jeu avant de créer une copie ou de restaurer.",
   "games.backups.desktop":
-    "Les copies de sauvegarde sont disponibles dans l'application de bureau Harbor. Elles utilisent les dossiers que vous choisissez sur votre ordinateur.",
+    "Les copies de sauvegarde sont disponibles dans l'application de bureau Frame. Elles utilisent les dossiers que vous choisissez sur votre ordinateur.",
   "games.backups.folder.source": "Sauvegardes du jeu",
   "games.backups.folder.vault": "Dossier des copies",
   "games.backups.choose.source": "Choisir le dossier de sauvegarde du jeu",
@@ -52,9 +52,9 @@ export default {
   "games.backups.identical": "Le dossier de sauvegarde actuel correspond déjà à cet instantané.",
   "games.backups.restore": "Restaurer l'instantané",
   "games.backups.recoveryNote":
-    "Harbor conserve un instantané de récupération et le dossier d'origine avant de remplacer les sauvegardes.",
+    "Frame conserve un instantané de récupération et le dossier d'origine avant de remplacer les sauvegardes.",
   "games.backups.localNote":
-    "Conservés dans le dossier choisi, séparément pour chaque profil Harbor.",
+    "Conservés dans le dossier choisi, séparément pour chaque profil Frame.",
   "games.backups.openRecovery": "Afficher le dossier d'origine",
   "games.backups.reviewUndo": "Examiner l'annulation",
   "games.backups.result.restored": "Votre instantané est restauré",
@@ -64,11 +64,11 @@ export default {
   "games.backups.resultNote.restored":
     "Votre dossier de sauvegarde correspond maintenant à cet instantané. Les copies de récupération restent disponibles pour revenir à l'état précédent.",
   "games.backups.resultNote.rolledBack":
-    "La restauration n'a pas pu aboutir. Harbor a remis votre dossier de sauvegarde d'origine en place. L'instantané de récupération est également disponible ci-dessous.",
+    "La restauration n'a pas pu aboutir. Frame a remis votre dossier de sauvegarde d'origine en place. L'instantané de récupération est également disponible ci-dessous.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor n'a pas pu remettre le dossier d'origine en place après l'échec de la restauration. Gardez le jeu fermé. Vos fichiers d'origine sont conservés dans le dossier ci-dessous et dans l'instantané de récupération.",
+    "Frame n'a pas pu remettre le dossier d'origine en place après l'échec de la restauration. Gardez le jeu fermé. Vos fichiers d'origine sont conservés dans le dossier ci-dessous et dans l'instantané de récupération.",
   "games.backups.resultNote.notRestored":
-    "Harbor n'a pas pu placer l'instantané dans le dossier choisi. La copie reste disponible.",
+    "Frame n'a pas pu placer l'instantané dans le dossier choisi. La copie reste disponible.",
   "games.backups.phase.scanning": "Lecture de vos sauvegardes…",
   "games.backups.phase.copying": "Copie des fichiers de sauvegarde…",
   "games.backups.phase.verifying": "Vérification de l'instantané…",
@@ -82,9 +82,9 @@ export default {
   "games.backups.save_record":
     "Un enregistrement de copie n'a pas pu être lu en toute sécurité. Ses fichiers ont été conservés. Vérifiez le dossier de copies choisi.",
   "games.backups.save_read":
-    "Harbor n'a pas pu lire ces sauvegardes. Vérifiez que le dossier est disponible et que le jeu est fermé.",
+    "Frame n'a pas pu lire ces sauvegardes. Vérifiez que le dossier est disponible et que le jeu est fermé.",
   "games.backups.save_write":
-    "Harbor n'a pas pu terminer l'écriture de ces sauvegardes. Vérifiez que le dossier est accessible en écriture et que le jeu est fermé.",
+    "Frame n'a pas pu terminer l'écriture de ces sauvegardes. Vérifiez que le dossier est accessible en écriture et que le jeu est fermé.",
   "games.backups.save_name":
     "Un nom de fichier n'a pas pu être conservé. Utilisez un dossier dont les noms de fichiers sont pris en charge.",
   "games.backups.save_changed":
@@ -105,9 +105,9 @@ export default {
   "games.backups.save_space":
     "L'espace libre est insuffisant pour conserver une copie complète. Choisissez un autre dossier ou libérez de l'espace.",
   "games.backups.save_config":
-    "Harbor n'a pas pu lire vos choix de dossiers. Sélectionnez-les à nouveau ; les copies existantes restent intactes.",
+    "Frame n'a pas pu lire vos choix de dossiers. Sélectionnez-les à nouveau ; les copies existantes restent intactes.",
   "games.backups.save_config_write":
-    "Harbor n'a pas pu mémoriser ces dossiers. Vos choix et copies existants restent inchangés.",
+    "Frame n'a pas pu mémoriser ces dossiers. Vos choix et copies existants restent inchangés.",
   "games.backups.failed":
     "Cette opération de sauvegarde n'a pas pu aboutir. Vos copies ont été conservées. Vérifiez les dossiers et réessayez.",
   "games.backups.compare.title": "Comparaison des fichiers",

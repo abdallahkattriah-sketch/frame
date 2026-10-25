@@ -25,15 +25,15 @@ const gameHub: Record<string, string> = {
   "games.hub.communityMade": "Créé par la communauté",
   "games.hub.title": "ROM hacks",
   "games.hub.note":
-    "De nouvelles aventures, des classiques réinventés. Trouvez un hack, gardez-le et jouez à votre copie patchée dans Harbor.",
+    "De nouvelles aventures, des classiques réinventés. Trouvez un hack, gardez-le et jouez à votre copie patchée dans Frame.",
   "games.hub.hacksFor": "Hacks pour {name}",
   "games.hub.baseNote": "Découvrez ce que la communauté a créé à partir de ce jeu.",
   "games.hub.how": "Comment jouer à un ROM hack",
   "games.hub.stepFind": "Ouvrez un hack pour trouver son site et le jeu original requis.",
   "games.hub.stepPatch":
-    "Choisissez votre ROM originale et un patch BPS ou IPS. Harbor les vérifie et enregistre une copie séparée.",
+    "Choisissez votre ROM originale et un patch BPS ou IPS. Frame les vérifie et enregistre une copie séparée.",
   "games.hub.stepPlay":
-    "Ajoutez la copie à votre bibliothèque. Jouez aux systèmes pris en charge dans Harbor ou avec votre émulateur configuré.",
+    "Ajoutez la copie à votre bibliothèque. Jouez aux systèmes pris en charge dans Frame ou avec votre émulateur configuré.",
   "games.hub.byOriginal": "Hacks par jeu original",
   "games.hub.allHacks": "Voir tous les hacks",
   "games.hub.baseUnlisted": "Jeu original non indiqué",

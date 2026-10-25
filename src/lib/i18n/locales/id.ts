@@ -156,7 +156,7 @@ const id: Record<string, string> = {
   "games.download.storage.estimate":
     "Beberapa berkas yang ada belum diperiksa. Ruang yang diperlukan mungkin lebih sedikit.",
   "games.download.storage.unknown": "Ukuran tidak diketahui: {count} file",
-  "games.download.storage.other": "{size} dicadangkan untuk operasi Harbor lain",
+  "games.download.storage.other": "{size} dicadangkan untuk operasi Frame lain",
   "games.download.storage.shortfall": "Perlu ruang tambahan {size}",
   "games.download.state.retrying": "Mencoba menghubungkan kembali",
   "games.download.queueOrder": "Urutan antrean {position}",
@@ -346,7 +346,7 @@ const id: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "Bagikan torrent",
   "games.torrent.share.note":
-    "Bagikan berkas terverifikasi ke peer. Berhenti saat salah satu batas tercapai atau Harbor ditutup. Hentikan berbagi sebelum mengubah berkas.",
+    "Bagikan berkas terverifikasi ke peer. Berhenti saat salah satu batas tercapai atau Frame ditutup. Hentikan berbagi sebelum mengubah berkas.",
   "games.torrent.share.upload": "Batas unggah (KB/dtk)",
   "games.torrent.share.ratio": "Rasio berbagi (1–10)",
   "games.torrent.share.minutes": "Batas waktu (menit)",

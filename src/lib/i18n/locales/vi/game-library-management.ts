@@ -12,26 +12,26 @@ export default {
   "games.manage.restore": "Hiện trong thanh bên",
   "games.manage.uninstall": "Gỡ cài đặt…",
   "games.manage.uninstallOptions": "Tùy chọn gỡ cài đặt…",
-  "games.manage.remove": "Xóa khỏi Harbor…",
+  "games.manage.remove": "Xóa khỏi Frame…",
   "games.manage.manage": "Quản lý",
   "games.manage.failed":
     "Không thể hoàn tất. Kiểm tra trò chơi và trình khởi chạy còn khả dụng rồi thử lại.",
-  "games.manage.removed": "Đã xóa khỏi Harbor",
+  "games.manage.removed": "Đã xóa khỏi Frame",
   "games.manage.sent": "Tiếp tục trong {source}",
   "games.manage.removeTitle": "Xóa mục thư viện này?",
   "games.manage.uninstallTitle": "Gỡ cài đặt trò chơi này?",
   "games.manage.optionsTitle": "Gỡ bằng {source}",
   "games.manage.removedNote": "Đã xóa mục thư viện. Tệp trò chơi vẫn còn trên máy tính.",
   "games.manage.sentNote":
-    "Đã mở {source}. Hoàn tất ở đó; Harbor cập nhật trạng thái cài đặt khi bạn quay lại.",
+    "Đã mở {source}. Hoàn tất ở đó; Frame cập nhật trạng thái cài đặt khi bạn quay lại.",
   "games.manage.removeNote":
-    "Xóa {name} và lịch sử chơi trong Harbor khỏi hồ sơ này. Không gỡ trò chơi hoặc xóa tệp của trò chơi.",
+    "Xóa {name} và lịch sử chơi trong Frame khỏi hồ sơ này. Không gỡ trò chơi hoặc xóa tệp của trò chơi.",
   "games.manage.steamNote":
     "Steam sẽ gỡ {name}. Bạn có thể cần xác nhận lại trong Steam. Hãy sao lưu bản lưu cục bộ và mod muốn giữ trước.",
   "games.manage.launcherNote":
-    "Mở {source}, chọn {name}, rồi chọn Quản lý hoặc Gỡ cài đặt. Trình khởi chạy xử lý việc gỡ; Harbor không xóa thư mục trò chơi.",
+    "Mở {source}, chọn {name}, rồi chọn Quản lý hoặc Gỡ cài đặt. Trình khởi chạy xử lý việc gỡ; Frame không xóa thư mục trò chơi.",
   "games.manage.windowsNote":
-    "Tìm {name} trong Ứng dụng đã cài đặt của Windows rồi chọn Gỡ cài đặt. Với trò chơi di động, làm theo hướng dẫn riêng. Harbor không xóa thư mục.",
+    "Tìm {name} trong Ứng dụng đã cài đặt của Windows rồi chọn Gỡ cài đặt. Với trò chơi di động, làm theo hướng dẫn riêng. Frame không xóa thư mục.",
   "games.manage.opening": "Đang mở…",
   "games.manage.confirmUninstall": "Tiếp tục đến Steam",
   "games.manage.openSource": "Mở {source}",

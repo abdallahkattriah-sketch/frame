@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Update and restart Harbor to browse Sims 2 and Sims 3 downloads.",
+    "Update and restart Frame to browse Sims 2 and Sims 3 downloads.",
   "games.sims.creatorNotesTitle": "Creator links · {count}",
   "games.sims.creatorNotesNote":
     "Links from the creator’s notes. Open a page to check its instructions.",
@@ -103,7 +103,7 @@ export default {
   "games.sims.mtsCatMisc": "Miscellaneous",
   "games.sims.mtsCatTools": "Tools",
   "games.sims.mtsIntro":
-    "Bring a mod or custom-content download into Harbor. Paste its Sims 4 page, then choose the file you want.",
+    "Bring a mod or custom-content download into Frame. Paste its Sims 4 page, then choose the file you want.",
   "games.sims.mtsPage": "Download page",
   "games.sims.mtsLoad": "Find files",
   "games.sims.mtsBrowse": "Browse Mod The Sims",
@@ -174,9 +174,9 @@ export default {
   "games.sims.creatorExisting": "Existing installation",
   "games.sims.creatorManage": "Review existing files",
   "games.sims.creatorAdoptNote":
-    "Bring these files into Harbor first. Then choose a creator release to update them.",
+    "Bring these files into Frame first. Then choose a creator release to update them.",
   "games.sims.creatorLinkNote":
-    "Review an update for this group. Harbor keeps the previous files and your settings.",
+    "Review an update for this group. Frame keeps the previous files and your settings.",
   "games.sims.creatorTarget":
     "This group includes mod files outside the selected release. Keep them in a separate group before updating MCCC.",
   "games.sims.creatorExistingError":
@@ -206,7 +206,7 @@ export default {
   "games.sims.trayRemove": "Remove from library",
   "games.sims.trayRestore": "Restore to library",
   "games.sims.trayNote":
-    "Import downloaded lots, rooms or households. Harbor keeps their related files together in Tray.",
+    "Import downloaded lots, rooms or households. Frame keeps their related files together in Tray.",
   "games.sims.trayReviewNote":
     "Tray files go directly in your library folder. Bundled custom content becomes a separate managed mod group.",
   "games.sims.trayRemoveNote":
@@ -269,12 +269,12 @@ export default {
 
   "games.sims.adopt": "Manage existing mods",
   "games.sims.adoptNote":
-    "Close The Sims 4. Choose one mod or related CC, including its settings, from the same folder. The listed files move into one Harbor group; other files stay in place.",
+    "Close The Sims 4. Choose one mod or related CC, including its settings, from the same folder. The listed files move into one Frame group; other files stay in place.",
   "games.sims.adoptFrom": "Current folder",
   "games.sims.adoptTo": "Move to",
   "games.sims.adoptFolder": "Choose related files from one folder inside Mods.",
   "games.sims.adoptManaged":
-    "Choose files outside Harbor-managed folders and leave Resource.cfg in place.",
+    "Choose files outside Frame-managed folders and leave Resource.cfg in place.",
   "games.sims.adoptScan":
     "Some mod folders could not be scanned. Resolve that before managing these files.",
 
@@ -306,7 +306,7 @@ export default {
     "Some mod folders could not be scanned. Resolve that before switching sets.",
   "games.sims.savesLabelHint": "Before new mods",
   "games.sims.savesRunning":
-    "Close The Sims 4 before backing up or restoring saves. Harbor must be able to confirm the game has stopped.",
+    "Close The Sims 4 before backing up or restoring saves. Frame must be able to confirm the game has stopped.",
   "games.sims.savesIntro":
     "Back up your saves before changing mods. Close The Sims 4 first. Mods and households in Tray aren’t included.",
   "games.sims.title": "Your mods & custom content",
@@ -330,7 +330,7 @@ export default {
   "games.sims.recovery":
     "A previous change was interrupted. Recover the previous setup before making another change.",
   "games.sims.success": "Your mod files are updated.",
-  "games.sims.applying": "Applying changes. Keep Harbor open…",
+  "games.sims.applying": "Applying changes. Keep Frame open…",
   "games.sims.checking": "Checking files…",
   "games.sims.skipped": "Skipped documents and images · {count}",
   "games.sims.preview": "Preview embedded in this package",
@@ -369,7 +369,7 @@ export default {
   "games.sims.emptyManaged": "Import a downloaded mod to manage it here.",
   "games.sims.emptyBackups": "Previous versions appear here after an update or removal.",
   "games.sims.emptyFiles": "No supported files found in Mods.",
-  "games.sims.desktop": "Mod management needs the current Harbor desktop app on Windows.",
+  "games.sims.desktop": "Mod management needs the current Frame desktop app on Windows.",
   "games.sims.folderError":
     "Choose the actual Sims 4 user-data folder, without a shortcut or linked folder. Mods, saves, GameVersion.txt and Options.ini must be present.",
   "games.sims.readError": "These files couldn’t be read. Check folder access and try again.",
@@ -378,7 +378,7 @@ export default {
   "games.sims.layoutError":
     "This archive contains separate mod folders or duplicate filenames. Import each mod separately so its files stay together.",
   "games.sims.running":
-    "Close The Sims 4 before changing mod files. Harbor must be able to confirm the game has stopped.",
+    "Close The Sims 4 before changing mod files. Frame must be able to confirm the game has stopped.",
   "games.sims.duplicate":
     "A mod with the same filename is already in another Mods folder. Resolve that duplicate before importing or enabling this group.",
   "games.sims.recordError":

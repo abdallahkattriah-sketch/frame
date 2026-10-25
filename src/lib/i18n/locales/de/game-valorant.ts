@@ -39,7 +39,7 @@ export default {
   "games.valorant.metaScope":
     "OP.GG-Ranglistendaten für den ausgewählten Patch. Die Auswahlrate ist der Anteil an Agenteneinsätzen. Die Ergebnisse beziehen sich auf die Stichprobe der Quelle, nicht auf alle Spieler.",
   "games.valorant.referenceScope":
-    "Spielgrafiken und Referenzen über Valorant-API. Aktualisierungen können verzögert eintreffen. Harbor wird nicht von Riot Games unterstützt.",
+    "Spielgrafiken und Referenzen über Valorant-API. Aktualisierungen können verzögert eintreffen. Frame wird nicht von Riot Games unterstützt.",
   "games.valorant.samples": "{count} Einsätze",
   "games.valorant.smallSample": "Kleine Stichprobe",
   "games.valorant.abilities": "Fähigkeiten",

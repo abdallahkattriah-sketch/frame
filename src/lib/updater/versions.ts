@@ -1,9 +1,10 @@
 import { safeFetch } from "@/lib/safe-fetch";
 import { probeHandoff } from "./handoff";
 
-const RELEASES_API = "https://api.github.com/repos/crazyrabbit0/harbor/releases?per_page=30";
+const RELEASES_API =
+  "https://api.github.com/repos/abdallahkattriah-sketch/frame/releases?per_page=30";
 // The API allows 60 unauthenticated requests an hour per IP; the Atom feed has no such limit but lists only 10.
-const RELEASES_FEED = "https://github.com/crazyrabbit0/harbor/releases.atom";
+const RELEASES_FEED = "https://github.com/abdallahkattriah-sketch/frame/releases.atom";
 
 export type VersionEntry = {
   version: string;

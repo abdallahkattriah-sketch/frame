@@ -119,10 +119,10 @@ export function DisplayPickerRow({
         <MonitorCard
           icon={<Tv size={26} strokeWidth={1.8} />}
           name={t("Automatic")}
-          detail={t("Follow Harbor")}
+          detail={t("Follow Frame")}
           selected={selectedId === "auto"}
           onSelect={() => onChange(AUTO_DISPLAY)}
-          ariaLabel={t("Open on the same monitor as Harbor")}
+          ariaLabel={t("Open on the same monitor as Frame")}
         />
         {monitors.map((m) => (
           <MonitorCard

@@ -12,11 +12,11 @@ export default {
   "games.manage.restore": "Show in sidebar",
   "games.manage.uninstall": "Uninstall…",
   "games.manage.uninstallOptions": "Uninstall options…",
-  "games.manage.remove": "Remove from Harbor…",
+  "games.manage.remove": "Remove from Frame…",
   "games.manage.manage": "Manage",
   "games.manage.failed":
     "Couldn’t complete this action. Check that the game and launcher are still available, then try again.",
-  "games.manage.removed": "Removed from Harbor",
+  "games.manage.removed": "Removed from Frame",
   "games.manage.sent": "Continue in {source}",
   "games.manage.removeTitle": "Remove this library entry?",
   "games.manage.uninstallTitle": "Uninstall this game?",
@@ -24,15 +24,15 @@ export default {
   "games.manage.removedNote":
     "The library entry was removed. Your game files are still on this computer.",
   "games.manage.sentNote":
-    "{source} opened. Finish there; Harbor updates the installation status when you return.",
+    "{source} opened. Finish there; Frame updates the installation status when you return.",
   "games.manage.removeNote":
-    "Remove {name} and its Harbor play history from this profile. This does not uninstall the game or delete its files.",
+    "Remove {name} and its Frame play history from this profile. This does not uninstall the game or delete its files.",
   "games.manage.steamNote":
     "Steam will handle uninstalling {name}. You may need to confirm again in Steam. Back up any local saves or mods you want to keep first.",
   "games.manage.launcherNote":
-    "Open {source}, select {name}, then choose its Manage or Uninstall option. The launcher handles removal; Harbor does not delete the game folder.",
+    "Open {source}, select {name}, then choose its Manage or Uninstall option. The launcher handles removal; Frame does not delete the game folder.",
   "games.manage.windowsNote":
-    "Find {name} in Windows Installed apps and choose Uninstall. If it is a portable game, use its own removal instructions. Harbor will not delete its folder.",
+    "Find {name} in Windows Installed apps and choose Uninstall. If it is a portable game, use its own removal instructions. Frame will not delete its folder.",
   "games.manage.opening": "Opening…",
   "games.manage.confirmUninstall": "Continue to Steam",
   "games.manage.openSource": "Open {source}",

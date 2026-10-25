@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "CurseForgeを検索",
   "games.minecraft.discovery.downloads": "ダウンロード",
   "games.minecraft.discovery.curseForgeBlocked":
-    "現在、CurseForgeはHarborによるカタログの読み込みを許可していません。再試行するか、配信元を開いてください。",
+    "現在、CurseForgeはFrameによるカタログの読み込みを許可していません。再試行するか、配信元を開いてください。",
   "games.minecraft.discovery.unavailable": "一覧を読み込めませんでした。再試行してください。",
   "games.minecraft.discovery.openSource": "配信元サイトを開く",
   "games.minecraft.discovery.loadMore": "さらに読み込む",
   "games.minecraft.discovery.servers": "サーバー",
   "games.minecraft.discovery.serverNote":
-    "独立した一覧サイトです。Harborはこれらのサイトやサーバーと提携していません。人数は各サイトの報告値です。",
+    "独立した一覧サイトです。Frameはこれらのサイトやサーバーと提携していません。人数は各サイトの報告値です。",
   "games.minecraft.discovery.searchServers": "読み込み済みのサーバーを検索",
   "games.minecraft.discovery.directory": "一覧サイト",
   "games.minecraft.discovery.mode": "ゲームモード",
@@ -44,7 +44,7 @@ export default {
   "games.minecraft.lifecycle.exportNote":
     "MODと設定をまとめた持ち運び可能な .mrpack を作成します。",
   "games.minecraft.lifecycle.privateNote":
-    "Harborのアカウント情報、実行ファイル、ログは含まれません。共有前にMODの設定を確認してください。",
+    "Frameのアカウント情報、実行ファイル、ログは含まれません。共有前にMODの設定を確認してください。",
   "games.minecraft.lifecycle.included": "含まれるファイル",
   "games.minecraft.lifecycle.referenced": "ダウンロード参照",
   "games.minecraft.lifecycle.referenceNote":
@@ -101,7 +101,7 @@ export default {
   "games.minecraft.update.chooseFile": ".mrpack ファイルを選択",
   "games.minecraft.update.restoreVersion": "{version} を復元",
   "games.minecraft.update.reviewNote":
-    "適用前に各ファイルの変更を確認できます。Harbor は以前のインスタンスの独立したコピーを保存します。",
+    "適用前に各ファイルの変更を確認できます。Frame は以前のインスタンスの独立したコピーを保存します。",
   "games.minecraft.update.changeVersion": "バージョンを変更",
   "games.minecraft.update.download": "ダウンロード",
   "games.minecraft.update.recoveryCopy": "復元用コピー",
@@ -200,7 +200,7 @@ export default {
     "別のインスタンスを起動する前に、起動中の Minecraft を終了してください。",
   "games.minecraft.java.title": "このインスタンスの Java",
   "games.minecraft.java.note": "この Minecraft バージョンには Java {version} が必要です。",
-  "games.minecraft.java.managed": "Harbor でインストール",
+  "games.minecraft.java.managed": "Frame でインストール",
   "games.minecraft.java.installed": "インストール済みの Java を使う",
   "games.minecraft.java.manage": "Javaを管理",
 
@@ -219,8 +219,7 @@ export default {
   "games.minecraft.java.invalidError": "この Java のインストールを確認できませんでした。",
   "games.minecraft.java.metadataError":
     "対応する Java のダウンロードを検証できませんでした。もう一度お試しください。",
-  "games.minecraft.java.managedNote":
-    "Harbor はこのバージョンを Minecraft ライブラリに保存します。",
+  "games.minecraft.java.managedNote": "Frame はこのバージョンを Minecraft ライブラリに保存します。",
   "games.minecraft.runtime.setup": "ゲームのセットアップ",
   "games.minecraft.runtime.note":
     "このインスタンスに公式ゲームファイルをインストールします。ワールドとMODはそのまま残ります。",
@@ -242,7 +241,7 @@ export default {
   "games.minecraft.runtime.metadataError":
     "ゲームファイルを検証できませんでした。後でもう一度お試しください。",
   "games.minecraft.runtime.legacyError":
-    "このバージョンは、Harborがまだ対応していないセットアップ形式または起動形式を使用しています。",
+    "このバージョンは、Frameがまだ対応していないセットアップ形式または起動形式を使用しています。",
   "games.minecraft.runtime.loaderError": "このローダーのセットアップ形式にはまだ対応していません。",
   "games.minecraft.runtime.platformError":
     "このシステムでのゲームセットアップにはまだ対応していません。",
@@ -254,7 +253,7 @@ export default {
   "games.minecraft.instances.import": "パックをインポート",
   "games.minecraft.instances.create": "インスタンスを作成",
   "games.minecraft.instances.desktop":
-    "ローカルのインスタンスを作成・管理するには、デスクトップ版Harborを開いてください。",
+    "ローカルのインスタンスを作成・管理するには、デスクトップ版Frameを開いてください。",
   "games.minecraft.instances.search": "インスタンスを検索",
   "games.minecraft.instances.storage": "保存フォルダー",
   "games.minecraft.instances.chooseFolder": "保存フォルダーを選択",
@@ -291,7 +290,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Minecraftのバージョンを読み込み中…",
   "games.minecraft.instances.added": "インスタンスに追加しました",
   "games.minecraft.instances.storageNote":
-    "Minecraftのインスタンスを保存する場所を選びます。Harborのプロフィールごとに専用フォルダーが作られます。",
+    "Minecraftのインスタンスを保存する場所を選びます。Frameのプロフィールごとに専用フォルダーが作られます。",
   "games.minecraft.instances.isolated": "新しい独立したインスタンスにインストールします。",
   "games.minecraft.instances.cancelling": "キャンセル中…",
   "games.minecraft.instances.install": "パックのファイルをインストール",
@@ -304,7 +303,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "パックの設定を適用中…",
   "games.minecraft.instances.phase.done": "ファイルをインストールしました",
   "games.minecraft.instances.folderError":
-    "このHarborプロフィール用に、アクセス可能なローカルフォルダーを選んでください。",
+    "このFrameプロフィール用に、アクセス可能なローカルフォルダーを選んでください。",
   "games.minecraft.instances.writeError":
     "インスタンスを書き込めませんでした。フォルダーの権限と空き容量を確認してください。",
   "games.minecraft.instances.readError":
@@ -320,7 +319,7 @@ export default {
   "games.minecraft.instances.formatError": "有効な対応形式の.mrpackアーカイブではありません。",
   "games.minecraft.instances.loaderError":
     "このパックには未対応または競合するゲームローダーが指定されています。",
-  "games.minecraft.instances.sourceError": "このパックにはHarborが対応していない配信元が必要です。",
+  "games.minecraft.instances.sourceError": "このパックにはFrameが対応していない配信元が必要です。",
   "games.minecraft.instances.limitError":
     "パックまたはライブラリが対応するサイズ上限を超えています。",
   "games.minecraft.instances.busyError":
@@ -376,9 +375,9 @@ export default {
   "games.minecraft.account.intro":
     "Microsoftに接続してスキンやマントを確認し、自分の作品を適用しましょう。",
   "games.minecraft.account.desktop":
-    "Minecraftアカウントを接続するにはデスクトップ版Harborを開いてください。",
+    "Minecraftアカウントを接続するにはデスクトップ版Frameを開いてください。",
   "games.minecraft.account.setup":
-    "このHarborビルドではMicrosoftサインインがまだ設定されていません。スキンはローカルで編集できます。",
+    "このFrameビルドではMicrosoftサインインがまだ設定されていません。スキンはローカルで編集できます。",
   "games.minecraft.account.codeNote": "Microsoftのサインインページでこのコードを入力してください。",
   "games.minecraft.account.copy": "コードをコピー",
   "games.minecraft.account.openMicrosoft": "Microsoftで続行",
@@ -441,7 +440,7 @@ export default {
   "games.minecraft.previewHint": "ドラッグで回転 · スクロールで拡大縮小",
   "games.minecraft.editHint": "矢印キーでピクセル移動、Enterで描画、Ctrl / ⌘ Zで元に戻す。",
   "games.minecraft.library": "自分のスキン",
-  "games.minecraft.localNote": "このHarborプロフィール用に、この端末に保存されます。",
+  "games.minecraft.localNote": "このFrameプロフィール用に、この端末に保存されます。",
   "games.minecraft.new": "新しいスキン",
   "games.minecraft.empty": "スキンを読み込むか、描き始めましょう。変更は自動保存されます。",
   "games.minecraft.delete": "{name}を削除",

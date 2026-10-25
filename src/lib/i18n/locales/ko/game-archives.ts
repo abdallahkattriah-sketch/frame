@@ -11,9 +11,9 @@ export default {
     "압축 파일 보관 폴더가 휴지통에 있습니다. 필요하면 그곳에서 복원하세요.",
   "games.cleanup.restoredNote": "압축 파일 조각들이 원래 폴더로 돌아왔습니다.",
   "games.cleanup.uncertainNote":
-    "Harbor가 결과를 확인하지 못했습니다. 계속하기 전에 원래 폴더와 휴지통을 확인하세요.",
+    "Frame가 결과를 확인하지 못했습니다. 계속하기 전에 원래 폴더와 휴지통을 확인하세요.",
   "games.cleanup.recoveryNote":
-    "일부 조각이 Harbor 보관 폴더에 있을 수 있습니다. 정리를 계속하거나 기존 파일을 덮어쓰지 않고 복원하세요.",
+    "일부 조각이 Frame 보관 폴더에 있을 수 있습니다. 정리를 계속하거나 기존 파일을 덮어쓰지 않고 복원하세요.",
   "games.cleanup.working": "압축 파일 확인 중",
   "games.cleanup.restore": "보관된 파일 복원",
   "games.cleanup.resume": "정리 계속",
@@ -77,7 +77,7 @@ export default {
   "games.setupShortcuts.error": "바로 가기를 업데이트하지 못했습니다. 다시 시도하세요.",
 
   "games.archive.archive_decoder":
-    "Harbor의 제한 내에서 이 압축 파일을 해제할 수 없습니다. 다른 압축 해제 도구를 사용해 보세요.",
+    "Frame의 제한 내에서 이 압축 파일을 해제할 수 없습니다. 다른 압축 해제 도구를 사용해 보세요.",
   "games.archive.archive_password_or_checksum":
     "비밀번호가 틀렸거나 압축 파일이 손상되었을 수 있습니다. 비밀번호를 확인하거나 파일을 다시 다운로드하세요.",
   "games.archive.password": "압축 파일 비밀번호",
@@ -89,7 +89,7 @@ export default {
   "games.archive.eyebrow": "다운로드에서 내 라이브러리로",
   "games.archive.title": "게임 파일 압축 풀기",
   "games.archive.intro":
-    "ZIP / 7z / RAR / TAR / TAR.GZ / ISO 파일을 검토하고 파일을 저장할 위치를 선택하세요. Harbor가 새 폴더를 만들고 원본 압축 파일을 보관합니다.",
+    "ZIP / 7z / RAR / TAR / TAR.GZ / ISO 파일을 검토하고 파일을 저장할 위치를 선택하세요. Frame가 새 폴더를 만들고 원본 압축 파일을 보관합니다.",
   "games.archive.source": "압축 파일",
   "games.archive.chooseSource": "압축 파일 선택",
   "games.archive.chooseParent": "대상 폴더 선택",
@@ -119,23 +119,23 @@ export default {
   "games.archive.openFolder": "폴더 표시",
   "games.archive.localLibrary": "로컬 게임",
   "games.archive.archive_profile":
-    "이 Harbor 프로필을 식별할 수 없습니다. 게임을 다시 열고 시도하세요.",
+    "이 Frame 프로필을 식별할 수 없습니다. 게임을 다시 열고 시도하세요.",
   "games.archive.archive_busy": "다른 압축 파일 작업이 진행 중입니다. 먼저 완료하거나 취소하세요.",
   "games.archive.archive_canceled": "압축 해제가 취소되었습니다. 원본 압축 파일은 그대로 있습니다.",
   "games.archive.archive_read":
     "압축 파일을 읽지 못했습니다. 파일을 계속 사용할 수 있는지 확인하고 다시 시도하세요.",
   "games.archive.archive_links":
     "이 압축 파일에는 링크 또는 특수 파일이 포함되어 있습니다. 해당 프로젝트의 설치 지침을 따르세요.",
-  "games.archive.archive_limit": "이 압축 파일은 Harbor의 현재 압축 해제 한도를 초과합니다.",
+  "games.archive.archive_limit": "이 압축 파일은 Frame의 현재 압축 해제 한도를 초과합니다.",
   "games.archive.archive_changed":
     "검토 후 압축 파일이 변경되었습니다. 압축을 풀기 전에 다시 검토하세요.",
   "games.archive.archive_path":
-    "Harbor가 안전하게 압축을 풀 수 없는 경로가 포함되어 있습니다. 게임 파일은 교체되지 않았습니다.",
+    "Frame가 안전하게 압축을 풀 수 없는 경로가 포함되어 있습니다. 게임 파일은 교체되지 않았습니다.",
   "games.archive.archive_format":
     "지원되는 ZIP / 7z / RAR / TAR / TAR.GZ / ISO 파일이 아니거나 내부 디렉터리가 손상되었습니다.",
   "games.archive.archive_encrypted": "계속하려면 이 압축 파일의 비밀번호를 입력하세요.",
   "games.archive.archive_compression":
-    "이 ZIP / 7z / RAR / TAR / TAR.GZ / ISO은 Harbor가 아직 지원하지 않는 압축 방식을 사용합니다.",
+    "이 ZIP / 7z / RAR / TAR / TAR.GZ / ISO은 Frame가 아직 지원하지 않는 압축 방식을 사용합니다.",
   "games.archive.archive_collision":
     "압축 파일의 일부 항목이 서로 덮어쓰게 됩니다. 아무것도 압축 해제하지 않았습니다.",
   "games.archive.archive_destination": "사용 가능한 폴더와 올바른 새 폴더 이름을 선택하세요.",
@@ -153,11 +153,11 @@ export default {
   "games.archive.space.checking": "대상 저장 공간 확인 중…",
   "games.archive.space.free": "{size} 사용 가능",
   "games.archive.space.required": "압축 해제에 {size} 필요",
-  "games.archive.space.reserved": "다른 Harbor 작업이 {size} 예약 중",
+  "games.archive.space.reserved": "다른 Frame 작업이 {size} 예약 중",
   "games.archive.space.after": "압축 해제 후 {size} 사용 가능",
   "games.archive.space.shortfall": "{size}의 추가 공간 필요",
   "games.archive.space.unknown":
-    "여유 공간을 읽지 못했습니다. 압축 해제를 시작할 때 Harbor가 다시 확인합니다.",
+    "여유 공간을 읽지 못했습니다. 압축 해제를 시작할 때 Frame가 다시 확인합니다.",
   "games.archive.space.error": "대상 저장 공간을 확인하지 못했습니다.",
   "games.archive.space.refresh": "공간 다시 확인",
   "games.archive.space.note":
@@ -175,15 +175,15 @@ export default {
   "games.archive.retry": "검토 후 다시 시도",
   "games.archive.showPartial": "부분 파일 보기",
   "games.archive.partialNote":
-    "Harbor가 부분적으로 압축을 푼 폴더를 보관했습니다. 삭제하기 전에 확인하세요. 다시 시도하면 처음부터 새로 압축을 풉니다.",
+    "Frame가 부분적으로 압축을 푼 폴더를 보관했습니다. 삭제하기 전에 확인하세요. 다시 시도하면 처음부터 새로 압축을 풉니다.",
   "games.archive.progressFiles": "전체 {total}개 중 {count}개 파일",
   "games.archive.archive_store":
-    "Harbor가 압축 해제 진행 상황을 저장하지 못했습니다. 확인할 수 있도록 파일을 보관했습니다.",
+    "Frame가 압축 해제 진행 상황을 저장하지 못했습니다. 확인할 수 있도록 파일을 보관했습니다.",
   "games.archive.archive_start": "압축 해제를 시작하지 못했습니다. 다시 시도하세요.",
   "games.archive.archive_history":
     "압축 해제 기록이 가득 찼습니다. 계속하려면 이전 기록을 삭제하세요. 해당 파일은 유지됩니다.",
   "games.archive.archive_interrupted":
-    "압축 해제가 끝나기 전에 Harbor가 종료되었습니다. 저장된 위치를 확인하고 다시 시도하세요.",
+    "압축 해제가 끝나기 전에 Frame가 종료되었습니다. 저장된 위치를 확인하고 다시 시도하세요.",
   "games.archive.archive_parts":
     "이 파일들은 하나의 압축 파일을 구성하지 않습니다. 모두 같은 다운로드에 속하는지 확인하세요.",
   "games.archive.archive_tool": "이 빌드에서는 추가 압축 형식을 지원하지 않습니다.",
@@ -191,10 +191,9 @@ export default {
   "games.archive.continueSetup": "게임 설정",
   "games.archive.dismissRecord": "기록 삭제 · 파일 유지",
   "games.archive.archive_multipart":
-    "이 분할 압축 형식은 아직 지원되지 않습니다. 다른 압축 앱으로 푼 후 Harbor에서 해당 폴더를 여세요.",
+    "이 분할 압축 형식은 아직 지원되지 않습니다. 다른 압축 앱으로 푼 후 Frame에서 해당 폴더를 여세요.",
   "games.archive.partsCount": "압축 파일 {count}개",
-  "games.archive.partsNote":
-    "모든 분할 파일을 같은 폴더에 보관하세요. Harbor가 함께 압축을 풉니다.",
+  "games.archive.partsNote": "모든 분할 파일을 같은 폴더에 보관하세요. Frame가 함께 압축을 풉니다.",
   "games.archive.partsMore": "파일 더 보기",
   "games.archive.setHash": "분할 파일 전체 SHA-256",
   "games.archive.archive_missing_part":

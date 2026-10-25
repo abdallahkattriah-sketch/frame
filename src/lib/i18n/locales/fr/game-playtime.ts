@@ -1,7 +1,7 @@
 export default {
   "games.playtime.title": "Temps de jeu",
   "games.playtime.total": "Votre total",
-  "games.playtime.tracked": "Comptabilisé par Harbor",
+  "games.playtime.tracked": "Comptabilisé par Frame",
   "games.playtime.adjusted": "Ajusté par vous",
   "games.playtime.changed": "Ajusté le {date}",
   "games.playtime.edit": "Ajuster le temps de jeu",
@@ -10,9 +10,9 @@ export default {
   "games.playtime.duration": "{hours} h {minutes} min",
   "games.playtime.card": "Temps joué : {time}",
   "games.playtime.note":
-    "Ajoutez du temps joué ailleurs ou corrigez votre total. Harbor conserve les sessions enregistrées et ajoute les sessions futures à ce total.",
+    "Ajoutez du temps joué ailleurs ou corrigez votre total. Frame conserve les sessions enregistrées et ajoute les sessions futures à ce total.",
   "games.playtime.localNote":
-    "S’applique à cette copie locale dans votre profil Harbor. Steam et les autres comptes restent inchangés.",
+    "S’applique à cette copie locale dans votre profil Frame. Steam et les autres comptes restent inchangés.",
   "games.playtime.running": "Fermez ce jeu avant d’ajuster son temps de jeu.",
   "games.playtime.save": "Enregistrer le temps de jeu",
   "games.playtime.finishEdit":
@@ -21,7 +21,7 @@ export default {
   "games.playtime.invalid":
     "Saisissez un nombre entier d’heures de 0 à 999 999 et des minutes de 0 à 59.",
   "games.playtime.saved": "Temps de jeu enregistré.",
-  "games.playtime.resetDone": "Le temps comptabilisé par Harbor est utilisé.",
+  "games.playtime.resetDone": "Le temps comptabilisé par Frame est utilisé.",
   "games.custom.launch_playtime":
     "Ce temps de jeu n’a pas pu être enregistré. Vérifiez les heures et les minutes, puis réessayez.",
 } satisfies Record<string, string>;

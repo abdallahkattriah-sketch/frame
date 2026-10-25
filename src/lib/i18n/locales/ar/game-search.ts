@@ -4,12 +4,12 @@ export default {
   "games.searchUi.aiPlaceholder": "صف لعبة أو أجواءً أو ما تود لعبه…",
   "games.searchUi.guide": "ابحث بالعنوان ثم ضيّق النتائج باستخدام المرشحات.",
   "games.searchUi.aiGuide":
-    "صف ما تبحث عنه. يتحقق Harbor من اقتراحات الذكاء الاصطناعي في كتالوج Steam.",
+    "صف ما تبحث عنه. يتحقق Frame من اقتراحات الذكاء الاصطناعي في كتالوج Steam.",
   "games.searchUi.web": "سياق الويب",
   "games.searchUi.settings": "إعدادات الذكاء الاصطناعي",
   "games.searchUi.setup": "اربط مزوّد الذكاء الاصطناعي",
   "games.searchUi.setupNote":
-    "استخدم حساب OpenRouter أو Groq والنموذج نفسيهما اللذين تستخدمهما في Harbor.",
+    "استخدم حساب OpenRouter أو Groq والنموذج نفسيهما اللذين تستخدمهما في Frame.",
   "games.searchUi.aiHint":
     "اضغط Enter عندما تكون مستعدًا. تنطبق مرشحاتك أيضًا على نتائج الذكاء الاصطناعي.",
   "games.searchUi.thinking": "جارٍ العثور على ألعاب والتحقق من Steam…",

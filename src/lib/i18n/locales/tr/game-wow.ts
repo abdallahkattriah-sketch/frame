@@ -10,22 +10,22 @@ export default {
   "games.wow.manager.errorIdentity":
     "Kurulu klasörler yazarın eklenti paketiyle eşleşmiyor. Yeniden tarayıp kaynağı kontrol edin.",
   "games.wow.manager.importInstalled": "Kurulu eklentileri içe aktar",
-  "games.wow.manager.import": "Harbor ile yönet",
+  "games.wow.manager.import": "Frame ile yönet",
   "games.wow.manager.importScope":
     "WoWInterface kimliği olan kurulu eklentiler. Diğerleri kurulu listesinde kalır.",
   "games.wow.manager.importNote":
-    "Kurulu dosyalarınızı koruyun. Harbor yazarın paketini denetler ve gelecekteki güncelleme veya kaldırmalardan önce önceki sürümü saklar.",
+    "Kurulu dosyalarınızı koruyun. Frame yazarın paketini denetler ve gelecekteki güncelleme veya kaldırmalardan önce önceki sürümü saklar.",
   "games.wow.manager.keepVersion": "Kurulu {version} sürümünü koru",
   "games.wow.manager.keep": "Koru",
-  "games.wow.manager.importSuccess": "Bu eklenti artık Harbor tarafından yönetiliyor.",
+  "games.wow.manager.importSuccess": "Bu eklenti artık Frame tarafından yönetiliyor.",
 
   "games.wow.manager.browse": "Eklenti bul",
-  "games.wow.manager.managed": "Harbor yönetiminde",
+  "games.wow.manager.managed": "Frame yönetiminde",
   "games.wow.manager.backups": "Yedekler",
   "games.wow.manager.catalogNote":
     "WoWInterface kataloğunu keşfedin. Değişikliklerden önce kurulu WoW ile uyumluluk denetlenir.",
   "games.wow.manager.managedNote":
-    "Burada yalnızca Harbor ile kurulan eklentiler değiştirilebilir. Diğerleri kurulu eklentiler listesinde kalır.",
+    "Burada yalnızca Frame ile kurulan eklentiler değiştirilebilir. Diğerleri kurulu eklentiler listesinde kalır.",
   "games.wow.manager.category": "Kategori",
   "games.wow.manager.allCategories": "Tüm kategoriler",
   "games.wow.manager.popular": "Aylık indirmeler",
@@ -37,7 +37,7 @@ export default {
   "games.wow.manager.categoriesError":
     "Kategoriler kullanılamıyor. Tüm eklentilerde arama yapabilirsiniz.",
   "games.wow.manager.partial": "Bazı sağlayıcı kayıtları eksik. Sonuçlar tamamlanmamış olabilir.",
-  "games.wow.manager.emptyManaged": "Henüz Harbor tarafından yönetilen eklenti yok.",
+  "games.wow.manager.emptyManaged": "Henüz Frame tarafından yönetilen eklenti yok.",
   "games.wow.manager.emptyBackups": "Henüz önceki sürüm kaydedilmedi.",
   "games.wow.manager.reviewNote":
     "Önce paketi ve klasör değişikliklerini inceleyin. İncelemeden veya uygulamadan önce WoW’u kapatın.",
@@ -59,13 +59,13 @@ export default {
   "games.wow.manager.errorCompatibility":
     "Bu paket kurulu WoW sürümüyle veya edisyonuyla eşleşmiyor.",
   "games.wow.manager.errorUnmanaged":
-    "Bu klasörler Harbor dışında kurulmuş. Buradan üzerlerine yazılamaz.",
+    "Bu klasörler Frame dışında kurulmuş. Buradan üzerlerine yazılamaz.",
   "games.wow.manager.errorChanged": "Dosyalar değişmiş veya kontrol gerekiyor. Yeniden tarayın.",
   "games.wow.manager.errorDependency":
     "Gerekli bağımlılıklar eksik ya da başka bir eklenti bu dosyalara ihtiyaç duyuyor.",
   "games.wow.manager.errorExpired": "Bu incelemenin süresi doldu. Değişiklikleri tekrar inceleyin.",
   "games.wow.manager.errorDesktop":
-    "Eklenti yönetimi Windows için güncel Harbor masaüstü uygulamasını gerektirir.",
+    "Eklenti yönetimi Windows için güncel Frame masaüstü uygulamasını gerektirir.",
 
   "games.wow.addons.screenshots": "Geliştiricinin ekran görüntüleri",
   "games.wow.addons.screenshotsUnavailable": "Geliştiricinin ekran görüntüleri yüklenemedi.",

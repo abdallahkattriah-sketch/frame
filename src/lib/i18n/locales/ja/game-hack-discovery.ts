@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "ファイルの指紋一覧 · SHA-256",
   "games.patch.localNote": "端末内で処理 · BPS · IPS · UPS · 最大256 MB",
   "games.patch.desktop":
-    "Windows、macOS、LinuxのHarborデスクトップアプリでパッチを適用できます。ファイルは端末内に保持され、元のゲームも変更されません。",
+    "Windows、macOS、LinuxのFrameデスクトップアプリでパッチを適用できます。ファイルは端末内に保持され、元のゲームも変更されません。",
   "games.patch.done": "新たな冒険の準備完了",
   "games.patch.preserved":
     "パッチを適用したコピーを保存しました。元のゲームとパッチは変更されていません。",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "確認後に選択したファイルが変更されました。保存前にパッチを再確認してください。",
   "games.patch.patch_output_exists":
-    "その場所には既にファイルがあります。別の名前を指定してください。Harborは既存のファイルを上書きしません。",
+    "その場所には既にファイルがあります。別の名前を指定してください。Frameは既存のファイルを上書きしません。",
   "games.patch.patch_read_failed":
     "選択したファイルを読み込めませんでした。ファイルが利用可能か確認し、再選択してください。",
   "games.patch.patch_write_failed":
@@ -76,9 +76,9 @@ export default {
   "games.atlas.sort.newest": "新しい順",
   "games.atlas.sort.oldest": "古い順",
   "games.hub.stepPatch":
-    "原作ゲームとBPS・IPS・UPSパッチを選択してください。Harborが別のコピーを保存します。",
+    "原作ゲームとBPS・IPS・UPSパッチを選択してください。Frameが別のコピーを保存します。",
   "games.patch.description":
-    "原作ゲームとBPS・IPS・UPSパッチを選択してください。Harborが別のコピーを保存します。",
+    "原作ゲームとBPS・IPS・UPSパッチを選択してください。Frameが別のコピーを保存します。",
   "games.patch.choosePatch": "パッチを選択（BPS・IPS・UPS）",
   "games.patch.patch_unsupported": "対応しているBPS・IPS・UPSパッチではありません。",
   "games.discovery.viewGame": "ゲームを見る",

@@ -25,7 +25,7 @@ test("settings translations load without missing text or interpolation variables
         "App language",
         "Discovery languages",
         "Help & about",
-        "Upload a picture of your own, or pick one from the Harbor catalog.",
+        "Upload a picture of your own, or pick one from the Frame catalog.",
       ]) {
         assert.notEqual(t(key), key, code + ": " + key);
       }

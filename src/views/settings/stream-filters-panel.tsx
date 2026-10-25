@@ -132,7 +132,7 @@ export function StreamFiltersPanel() {
     <Section
       title={t("Saved stream filters")}
       subtitle={t(
-        "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.",
+        "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.",
       )}
     >
       <SettingRow
@@ -206,7 +206,7 @@ export function StreamFiltersPanel() {
             : t("Choose a name, then select the resolutions, sources, codecs and audio you prefer.")
         }
         tip={t(
-          "A filter applies everywhere Harbor picks a stream: the source picker, the instant pick, and Big Picture on TV.",
+          "A filter applies everywhere Frame picks a stream: the source picker, the instant pick, and Big Picture on TV.",
         )}
       >
         <button

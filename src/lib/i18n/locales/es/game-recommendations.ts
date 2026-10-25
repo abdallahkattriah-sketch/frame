@@ -46,7 +46,7 @@ export default {
   "games.recommend.saveError":
     "No se pudieron guardar tus preferencias de descubrimiento en este dispositivo. Inténtalo de nuevo.",
   "games.recommend.influences": "Qué influye en tus sugerencias",
-  "games.recommend.influencesNote": "Elige qué juegos usa Harbor. Tu biblioteca no cambia.",
+  "games.recommend.influencesNote": "Elige qué juegos usa Frame. Tu biblioteca no cambia.",
   "games.recommend.exclude": "Dejar de usar {name}",
   "games.recommend.excluded": "Influencias excluidas ({count})",
   "games.recommend.useAgain": "Volver a usar {name}",

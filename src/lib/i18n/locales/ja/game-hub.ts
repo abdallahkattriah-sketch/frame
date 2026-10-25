@@ -24,15 +24,15 @@ const gameHub: Record<string, string> = {
   "games.hub.communityMade": "コミュニティ制作",
   "games.hub.title": "ROMハック",
   "games.hub.note":
-    "新しい冒険、生まれ変わった名作。ハックを見つけて保存し、パッチを適用した自分のコピーをHarborで遊べます。",
+    "新しい冒険、生まれ変わった名作。ハックを見つけて保存し、パッチを適用した自分のコピーをFrameで遊べます。",
   "games.hub.hacksFor": "{name}のハック",
   "games.hub.baseNote": "このゲームから生まれたコミュニティ作品を見つけましょう。",
   "games.hub.how": "ROMハックの遊び方",
   "games.hub.stepFind": "ハックの詳細を開くと、プロジェクトのサイトと必要な原作を確認できます。",
   "games.hub.stepPatch":
-    "元のROMとBPSまたはIPSパッチを選びます。Harborが確認し、別のコピーとして保存します。",
+    "元のROMとBPSまたはIPSパッチを選びます。Frameが確認し、別のコピーとして保存します。",
   "games.hub.stepPlay":
-    "コピーをライブラリに追加します。対応機種はHarborで、それ以外は設定したエミュレーターで遊べます。",
+    "コピーをライブラリに追加します。対応機種はFrameで、それ以外は設定したエミュレーターで遊べます。",
   "games.hub.byOriginal": "元のゲームからハックを探す",
   "games.hub.allHacks": "すべてのハック",
   "games.hub.baseUnlisted": "原作の記載なし",

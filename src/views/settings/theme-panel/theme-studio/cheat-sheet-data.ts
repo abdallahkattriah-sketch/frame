@@ -166,7 +166,7 @@ export const WINDOW_HARBOR: HarborApi[] = [
   },
   {
     call: "window.harbor.openAccountMenu(el?)",
-    desc: "Open Harbor's real account dropdown (profiles, View my profile, Notifications, Manage profiles, sign in/out). Pass the clicked element and the menu anchors under it; omit it and the menu opens top-right.",
+    desc: "Open Frame's real account dropdown (profiles, View my profile, Notifications, Manage profiles, sign in/out). Pass the clicked element and the menu anchors under it; omit it and the menu opens top-right.",
   },
   {
     call: "window.harbor.unreadCount()",
@@ -231,7 +231,7 @@ export const ROOT_DATA_ATTRS: DataAttr[] = [
   {
     attr: "data-harbor-bridge",
     values: ["present", "absent"],
-    desc: "Present on <html> when this Harbor understands the data-harbor-notifications / data-harbor-account hooks. Gate those controls on it so your theme degrades cleanly on older versions.",
+    desc: "Present on <html> when this Frame understands the data-harbor-notifications / data-harbor-account hooks. Gate those controls on it so your theme degrades cleanly on older versions.",
     example: "html:not([data-harbor-bridge]) .my-bell { display: none; }",
   },
 ];
@@ -272,25 +272,25 @@ export const STABLE_SELECTORS: HookSelector[] = [
   {
     selector: "[data-harbor-account]",
     where:
-      "Put this attribute on your profile button and clicking it opens Harbor's real account dropdown, anchored under it.",
+      "Put this attribute on your profile button and clicking it opens Frame's real account dropdown, anchored under it.",
     tip: "You get profile switching, View my profile, Notifications, Manage profiles, and sign in/out for free, forever current.",
   },
   {
     selector: "[data-harbor-unread]",
     where:
-      "Harbor keeps this element's text set to the unread count (9+ capped) and sets data-empty when it is zero.",
+      "Frame keeps this element's text set to the unread count (9+ capped) and sets data-empty when it is zero.",
     tip: "Style [data-harbor-unread][data-empty] { display: none } to hide an empty badge. Builder chrome does this already.",
   },
   {
     selector: "[data-harbor-status]",
     where:
-      "A presence dot Harbor keeps painted with the user's live status (green online, gold away, red do-not-disturb, grey offline) and sets data-status on. Clicking it opens the real status picker.",
-    tip: "Give it a size, radius, and position; Harbor handles color, cursor, and the picker. Gate behind html[data-harbor-bridge].",
+      "A presence dot Frame keeps painted with the user's live status (green online, gold away, red do-not-disturb, grey offline) and sets data-status on. Clicking it opens the real status picker.",
+    tip: "Give it a size, radius, and position; Frame handles color, cursor, and the picker. Gate behind html[data-harbor-bridge].",
   },
   {
     selector: "[data-harbor-avatar]",
     where:
-      "Harbor keeps this filled with the signed-in user's real avatar. On an <img> it sets src and unhides it; on anything else it sets a cover background-image. data-empty is set when there is no avatar.",
+      "Frame keeps this filled with the signed-in user's real avatar. On an <img> it sets src and unhides it; on anything else it sets a cover background-image. data-empty is set when there is no avatar.",
     tip: "Perfect for a profile pill: pair with your own lettered fallback and hide it when the image is showing.",
   },
   {
@@ -300,8 +300,8 @@ export const STABLE_SELECTORS: HookSelector[] = [
   {
     selector: "[data-harbor-bigpicture]",
     where:
-      "Clicking any element with this attribute enters Big Picture, the couch-mode interface. Harbor floats its own Big Picture button on custom layouts so older themes are not stranded, and hides it the moment your chrome carries this hook.",
-    tip: "On a kid profile, or when the Big Picture button is turned off in settings, Harbor sets data-empty on your element and ignores the click. Style [data-harbor-bigpicture][data-empty] { display: none } so the control never sits there dead. Builder chrome does this already.",
+      "Clicking any element with this attribute enters Big Picture, the couch-mode interface. Frame floats its own Big Picture button on custom layouts so older themes are not stranded, and hides it the moment your chrome carries this hook.",
+    tip: "On a kid profile, or when the Big Picture button is turned off in settings, Frame sets data-empty on your element and ignores the click. Style [data-harbor-bigpicture][data-empty] { display: none } so the control never sits there dead. Builder chrome does this already.",
   },
   {
     selector: ".harbor-profile-dropdown",

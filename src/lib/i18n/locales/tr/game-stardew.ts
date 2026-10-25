@@ -21,7 +21,7 @@ export default {
   "games.stardew.refresh": "Modları yenile",
 
   "games.stardew.import": "Mod ZIP dosyası içe aktar",
-  "games.stardew.manage": "Harbor ile yönetilenler",
+  "games.stardew.manage": "Frame ile yönetilenler",
   "games.stardew.manageNote":
     "İndirdiğin SMAPI modunu burada yönetmek için içe aktar. Güncellemek için yeni ZIP dosyasını tekrar içe aktar.",
   "games.stardew.previous": "Önceki sürümler",
@@ -40,7 +40,7 @@ export default {
   "games.stardew.dependentsError":
     "Etkin bir mod bu sürümü gerektiriyor. Önce o modu devre dışı bırak veya uyumlu bir sürüm seç.",
   "games.stardew.unmanagedError":
-    "Bu mod Harbor kayıtlarının dışında zaten var. İçe aktarmadan önce mevcut kopyayı başka yere taşı.",
+    "Bu mod Frame kayıtlarının dışında zaten var. İçe aktarmadan önce mevcut kopyayı başka yere taşı.",
   "games.stardew.archiveError":
     "Kullanıma hazır tek bir mod klasörü içeren, en fazla 32 MB boyutunda ZIP seç (açılmış 128 MB). Kaynak kodu indirmeleri yüklenebilir mod değildir.",
   "games.stardew.moreFiles": "{count} dosya daha",

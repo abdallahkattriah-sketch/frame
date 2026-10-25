@@ -155,7 +155,7 @@ const tr: Record<string, string> = {
   "games.download.storage.estimate":
     "Mevcut dosyaların bazıları henüz kontrol edilmedi. Gereken alan daha az olabilir.",
   "games.download.storage.unknown": "Boyutu bilinmeyen: {count} dosya",
-  "games.download.storage.other": "Diğer Harbor işlemleri için {size} ayrıldı",
+  "games.download.storage.other": "Diğer Frame işlemleri için {size} ayrıldı",
   "games.download.storage.shortfall": "{size} daha fazla alan gerekli",
   "games.download.state.retrying": "Bağlantı yeniden deneniyor",
   "games.download.queueOrder": "Kuyruk sırası: {position}",
@@ -344,7 +344,7 @@ const tr: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "Torrenti paylaş",
   "games.torrent.share.note":
-    "Doğrulanmış dosyaları eşlerle paylaş. Sınırlardan birine ulaşılınca veya Harbor kapanınca durur. Dosyaları değiştirmeden önce paylaşımı durdur.",
+    "Doğrulanmış dosyaları eşlerle paylaş. Sınırlardan birine ulaşılınca veya Frame kapanınca durur. Dosyaları değiştirmeden önce paylaşımı durdur.",
   "games.torrent.share.upload": "Yükleme sınırı (KB/sn)",
   "games.torrent.share.ratio": "Paylaşım oranı (1–10)",
   "games.torrent.share.minutes": "Süre sınırı (dakika)",

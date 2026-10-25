@@ -38,12 +38,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam belum mengonfirmasi hasilnya. Muat ulang untuk memeriksa sebelum membuat perubahan lagi.",
   "games.achievementManager.error.platform":
-    "Pengelolaan pencapaian saat ini tersedia di Harbor untuk Windows x64.",
+    "Pengelolaan pencapaian saat ini tersedia di Frame untuk Windows x64.",
   "games.achievementManager.error.invalid": "Pilih hingga 2.000 perubahan sekaligus.",
   "games.achievementManager.error.stale":
     "Pencapaian ini telah berubah di Steam. Muat ulang sebelum mengedit.",
   "games.achievementManager.error.protected":
-    "Game mengelola pencapaian ini. Harbor tidak dapat mengeditnya.",
+    "Game mengelola pencapaian ini. Frame tidak dapat mengeditnya.",
   "games.achievementManager.error.expired":
     "Tinjauan ini telah kedaluwarsa. Muat ulang sebelum menerapkan perubahan.",
   "games.achievementManager.error.busy": "Permintaan pencapaian Steam lainnya sedang berlangsung.",
@@ -61,12 +61,12 @@ export default {
   "games.achievementManager.consentBody":
     "Buka atau kunci kembali pencapaian akun Steam yang sedang masuk. Pilihan tetap berupa draf hingga kamu menerapkan perubahan.",
   "games.achievementManager.consentRules":
-    "Harbor menggunakan antarmuka pencapaian Steam tanpa menyuntikkan kode ke game. Aturan dan syarat hadiah setiap game tetap berlaku.",
+    "Frame menggunakan antarmuka pencapaian Steam tanpa menyuntikkan kode ke game. Aturan dan syarat hadiah setiap game tetap berlaku.",
   "games.achievementManager.consentSam": "Terinspirasi alur pencapaian SAM",
-  "games.achievementManager.consentOnce": "Ditampilkan sekali untuk profil Harbor ini.",
+  "games.achievementManager.consentOnce": "Ditampilkan sekali untuk profil Frame ini.",
   "games.achievementManager.consentAccept": "Saya mengerti",
   "games.achievementManager.desktopOnly":
-    "Gunakan Harbor di Windows dengan Steam berjalan untuk mengubah pencapaian.",
+    "Gunakan Frame di Windows dengan Steam berjalan untuk mengubah pencapaian.",
   "games.achievementManager.all": "Semua",
   "games.achievementManager.filter": "Filter pencapaian",
   "games.achievementManager.rewards": "Hadiah item",
@@ -124,7 +124,7 @@ export default {
   "games.achievementManager.pickTitle": "Pilih game",
   "games.achievementManager.pickSearch": "Cari game Anda",
   "games.achievementManager.pickNote":
-    "Harbor dapat mengedit game setelah Steam menyimpan pencapaiannya di komputer ini.",
+    "Frame dapat mengedit game setelah Steam menyimpan pencapaiannya di komputer ini.",
   "games.achievementManager.pickInstalled": "Terpasang",
   "games.achievementManager.pickEmpty": "Tidak ada game yang cocok dengan pencarian Anda.",
   "games.achievementManager.pickUnavailable":

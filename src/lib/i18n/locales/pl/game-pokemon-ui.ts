@@ -30,7 +30,7 @@ export default {
   "games.pokemon.guideSourceNote":
     "Czytaj oryginalny poradnik lub otwórz go tutaj, gdy źródło jest dostępne.",
   "games.pokemon.readGuide": "Czytaj na Bulbapedii",
-  "games.pokemon.readInside": "Czytaj w Harbor",
+  "games.pokemon.readInside": "Czytaj w Frame",
   "games.pokemon.closeReader": "Zamknij czytnik",
   "games.pokemon.downloadImage": "Pobierz obraz: {name}",
   "games.pokemon.imageSaved": "Zapisano obraz: {name}",
@@ -40,7 +40,7 @@ export default {
   "games.pokemon.saveStep1": "Otwórz grę i wybierz Zapisz w jej menu.",
   "games.pokemon.saveStep2":
     "Zamknij grę, a następnie znajdź lub wyeksportuj zapis baterii (.sav, .srm lub .dsv).",
-  "games.pokemon.saveStep3": "Wybierz powyżej Otwórz zapis gry, aby edytować go w Harbor.",
+  "games.pokemon.saveStep3": "Wybierz powyżej Otwórz zapis gry, aby edytować go w Frame.",
   "games.pokemon.findSave": "Gdzie jest mój zapis?",
   "games.pokemon.saveLocations":
     "Sprawdź obok ROM-u lub w folderze zapisów emulatora. Jeśli masz tylko stan emulatora, wczytaj go, a następnie zapisz z menu gry.",

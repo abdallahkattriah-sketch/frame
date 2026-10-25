@@ -58,14 +58,14 @@ const coverage: Record<string, string> = {
   "Checking availability": "Verificando disponibilidade",
   Chime: "Sino",
   Choose: "Escolher",
-  "Choose one season package. Harbor will match and download every available episode from it.":
-    "Escolha um pacote de temporada. O Harbor vai encontrar e baixar todos os episódios disponíveis dele.",
+  "Choose one season package. Frame will match and download every available episode from it.":
+    "Escolha um pacote de temporada. O Frame vai encontrar e baixar todos os episódios disponíveis dele.",
   "Choose where subtitle timing feedback appears and how large it is.":
     "Escolha onde o aviso de sincronia das legendas aparece e o tamanho dele.",
   "Choose who can see the friends on your profile": "Escolha quem pode ver os amigos no seu perfil",
   Cinematography: "Fotografia",
-  "Claim one so people can find you across Harbor.":
-    "Reivindique um para que as pessoas te encontrem no Harbor.",
+  "Claim one so people can find you across Frame.":
+    "Reivindique um para que as pessoas te encontrem no Frame.",
   Collapse: "Recolher",
   "Community collections are coming soon": "As coleções da comunidade chegam em breve",
   Completed: "Concluído",
@@ -144,20 +144,20 @@ const coverage: Record<string, string> = {
   Guide: "Guia",
   HI: "HI",
   Handle: "Identificador",
-  "Harbor found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
-    "O Harbor achou fontes de episódios, mas nenhuma era um pacote baixável para {season}. Tente outro addon ou atualize as fontes.",
+  "Frame found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
+    "O Frame achou fontes de episódios, mas nenhuma era um pacote baixável para {season}. Tente outro addon ou atualize as fontes.",
   "Hide replies": "Ocultar respostas",
   Highlights: "Destaques",
   Horizontal: "Horizontal",
   Host: "Anfitrião",
-  "How people find you across Harbor.": "Como as pessoas te encontram no Harbor.",
+  "How people find you across Frame.": "Como as pessoas te encontram no Frame.",
   ID: "ID",
   Imported: "Importado",
   "In this collection": "Nesta coleção",
   Information: "Informações",
   Interrupted: "Interrompido",
   Invert: "Inverter",
-  "Join Harbor": "Entrar no Harbor",
+  "Join Frame": "Entrar no Frame",
   Keep: "Manter",
   Language: "Idioma",
   Latest: "Recentes",
@@ -208,10 +208,10 @@ const coverage: Record<string, string> = {
   Ongoing: "Em andamento",
   Online: "Online",
   "Only me": "Só eu",
-  "Open Harbor on desktop to verify ownership in your browser.":
-    "Abra o Harbor no desktop para verificar a propriedade no navegador.",
-  "Opens Stremio in your browser. Works with email, Facebook, and Apple. Harbor never sees your password.":
-    "Abre o Stremio no navegador. Funciona com e-mail, Facebook e Apple. O Harbor nunca vê sua senha.",
+  "Open Frame on desktop to verify ownership in your browser.":
+    "Abra o Frame no desktop para verificar a propriedade no navegador.",
+  "Opens Stremio in your browser. Works with email, Facebook, and Apple. Frame never sees your password.":
+    "Abre o Stremio no navegador. Funciona com e-mail, Facebook e Apple. O Frame nunca vê sua senha.",
   "Ownership verified": "Propriedade verificada",
   "Page background": "Fundo da página",
   Paid: "Pago",
@@ -239,8 +239,8 @@ const coverage: Record<string, string> = {
   Pulse: "Pulso",
   Queue: "Fila",
   Queued: "Na fila",
-  "Queued {queued} of {total} episodes. Harbor could not match every episode in this package.":
-    "{queued} de {total} episódios na fila. O Harbor não conseguiu corresponder todos os episódios deste pacote.",
+  "Queued {queued} of {total} episodes. Frame could not match every episode in this package.":
+    "{queued} de {total} episódios na fila. O Frame não conseguiu corresponder todos os episódios deste pacote.",
   Quiet: "Silencioso",
   REC: "REC",
   Ratings: "Avaliações",
@@ -291,8 +291,8 @@ const coverage: Record<string, string> = {
   Seasons: "Temporadas",
   Servers: "Servidores",
   Share: "Compartilhar",
-  "Shared collections from across Harbor will show up here soon.":
-    "Coleções compartilhadas de todo o Harbor vão aparecer aqui em breve.",
+  "Shared collections from across Frame will show up here soon.":
+    "Coleções compartilhadas de todo o Frame vão aparecer aqui em breve.",
   "Show 1 reply": "Mostrar 1 resposta",
   "Show More info button": "Mostrar o botão Mais informações",
   "Show a Minecraft card on your profile. Leave the username blank to hide it.":
@@ -309,11 +309,11 @@ const coverage: Record<string, string> = {
   Shown: "Visível",
   "Shown on the card and at the top of the page.": "Aparece no cartão e no topo da página.",
   Shows: "Séries",
-  "Sign in to Harbor to check availability.": "Entre no Harbor para verificar a disponibilidade.",
+  "Sign in to Frame to check availability.": "Entre no Frame para verificar a disponibilidade.",
   "Sign in to pick up where you left off.": "Entre para continuar de onde parou.",
   "Sign in to upload a custom image.": "Entre para enviar uma imagem personalizada.",
   "Signed in as {username}": "Conectado como {username}",
-  "Signed in to your Harbor account": "Conectado à sua conta Harbor",
+  "Signed in to your Frame account": "Conectado à sua conta Frame",
   Silent: "Silencioso",
   Size: "Tamanho",
   Socials: "Redes sociais",
@@ -461,14 +461,14 @@ const coverage: Record<string, string> = {
   "· {n} noms": "· {n} indicações",
   "Big Picture": "Modo Big Picture",
   "Leave Big Picture": "Sair do modo Big Picture",
-  "A full screen, couch friendly Harbor for TVs, handhelds and big monitors.":
-    "O Harbor em tela cheia, pensado para usar no sofá, em TVs, dispositivos portáteis e monitores grandes.",
+  "A full screen, couch friendly Frame for TVs, handhelds and big monitors.":
+    "O Frame em tela cheia, pensado para usar no sofá, em TVs, dispositivos portáteis e monitores grandes.",
   "Show the Big Picture button": "Mostrar o botão Big Picture",
-  "Adds a Big Picture button to Harbor's navigation. Turn this off to keep it out of the way.":
-    "Adiciona um botão Big Picture à navegação do Harbor. Desative para ocultá-lo.",
+  "Adds a Big Picture button to Frame's navigation. Turn this off to keep it out of the way.":
+    "Adiciona um botão Big Picture à navegação do Frame. Desative para ocultá-lo.",
   "Open in Big Picture": "Abrir no modo Big Picture",
-  "Launch straight into Big Picture when Harbor starts. Press Esc at any time to leave.":
-    "Abrir diretamente no modo Big Picture ao iniciar o Harbor. Pressione Esc a qualquer momento para sair.",
+  "Launch straight into Big Picture when Frame starts. Press Esc at any time to leave.":
+    "Abrir diretamente no modo Big Picture ao iniciar o Frame. Pressione Esc a qualquer momento para sair.",
   "Almost done": "Quase no fim",
   "Jump back in": "Continuar de onde parou",
   "Couldn't load this title.": "Não foi possível carregar este título.",
@@ -479,8 +479,8 @@ const coverage: Record<string, string> = {
   "Box office": "Bilheteria",
   Length: "Duração",
   "Couldn't load your catalogs": "Não foi possível carregar seus catálogos",
-  "Harbor couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
-    "O Harbor não conseguiu acessar os servidores de catálogo. Verifique a conexão e reabra o modo Big Picture.",
+  "Frame couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
+    "O Frame não conseguiu acessar os servidores de catálogo. Verifique a conexão e reabra o modo Big Picture.",
   Letters: "Letras",
   Symbols: "Símbolos",
   Space: "Espaço",
@@ -489,7 +489,7 @@ const coverage: Record<string, string> = {
   "Nothing saved yet. Add a title from any details page.":
     "Nada salvo ainda. Adicione um título em qualquer página de detalhes.",
   "Your watchlist is empty.": "Sua lista está vazia.",
-  "Search Harbor": "Pesquisar no Harbor",
+  "Search Frame": "Pesquisar no Frame",
   "{n} results": "{n} resultados",
   "Looking...": "Procurando...",
   "Start typing to search movies and series.": "Comece a digitar para pesquisar filmes e séries.",
@@ -501,10 +501,10 @@ const coverage: Record<string, string> = {
   "Drifting poster wall behind the interface. Turn off on low power devices.":
     "Mural de pôsteres em movimento atrás da interface. Desative em dispositivos menos potentes.",
   "Controller navigation": "Navegação por controle",
-  "Use a gamepad or remote to move around Harbor":
-    "Use um controle ou controle remoto para navegar pelo Harbor",
-  "Launch straight into Big Picture when Harbor starts":
-    "Abrir diretamente no modo Big Picture ao iniciar o Harbor",
+  "Use a gamepad or remote to move around Frame":
+    "Use um controle ou controle remoto para navegar pelo Frame",
+  "Launch straight into Big Picture when Frame starts":
+    "Abrir diretamente no modo Big Picture ao iniciar o Frame",
   "Quick panel": "Painel rápido",
   "No trailer available for {name}": "Nenhum trailer disponível para {name}",
   "Loading trailer...": "Carregando trailer...",
@@ -546,10 +546,10 @@ const coverage: Record<string, string> = {
   "Moved subtitles 0.25 seconds later.": "Legendas atrasadas em 0,25 segundos.",
   "Moved subtitles 0.25 seconds earlier.": "Legendas adiantadas em 0,25 segundos.",
   Synced: "Sincronizada",
-  "When a subtitle runs early or late, Harbor measures the speech and corrects the timing on its own.":
-    "Quando uma legenda fica adiantada ou atrasada, o Harbor mede a fala e corrige o tempo automaticamente.",
-  "Downloaded subtitles can arrive after playback starts. Harbor switches from a temporary track when a stronger release match becomes available.":
-    "As legendas baixadas podem chegar depois do início da reprodução. O Harbor troca a faixa temporária quando uma correspondência melhor com a versão fica disponível.",
+  "When a subtitle runs early or late, Frame measures the speech and corrects the timing on its own.":
+    "Quando uma legenda fica adiantada ou atrasada, o Frame mede a fala e corrige o tempo automaticamente.",
+  "Downloaded subtitles can arrive after playback starts. Frame switches from a temporary track when a stronger release match becomes available.":
+    "As legendas baixadas podem chegar depois do início da reprodução. O Frame troca a faixa temporária quando uma correspondência melhor com a versão fica disponível.",
   "Only embedded subtitles are available right now.":
     "Apenas legendas incorporadas estão disponíveis agora.",
   "Search all sources again": "Pesquisar todas as fontes novamente",
@@ -578,10 +578,10 @@ const coverage: Record<string, string> = {
     "Nenhuma fonte foi encontrada para nenhum destes episódios. Tente atualizar ou outro addon.",
   "Queued {queued} of {total} episodes.": "{queued} de {total} episódios na fila.",
   "Could not queue these episodes.": "Não foi possível colocar estes episódios na fila.",
-  "Harbor found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
-    "O Harbor encontrou fontes de episódios para {season}, mas nenhuma delas é um pacote único para baixar. Ele ainda pode buscar os episódios um de cada vez.",
-  "None of your addons returned a downloadable package for {season}. Harbor can still fetch the episodes one at a time, or you can refresh the sources.":
-    "Nenhum dos seus addons retornou um pacote para baixar de {season}. O Harbor ainda pode buscar os episódios um de cada vez, ou você pode atualizar as fontes.",
+  "Frame found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
+    "O Frame encontrou fontes de episódios para {season}, mas nenhuma delas é um pacote único para baixar. Ele ainda pode buscar os episódios um de cada vez.",
+  "None of your addons returned a downloadable package for {season}. Frame can still fetch the episodes one at a time, or you can refresh the sources.":
+    "Nenhum dos seus addons retornou um pacote para baixar de {season}. O Frame ainda pode buscar os episódios um de cada vez, ou você pode atualizar as fontes.",
   "Download episode by episode": "Baixar episódio por episódio",
   "Test mode: your controller only moves this diagram. Press Esc to stop.":
     "Modo de teste: seu controle move apenas este diagrama. Pressione Esc para parar.",
@@ -591,11 +591,11 @@ const coverage: Record<string, string> = {
   Pointer: "Ponteiro",
   Dot: "Ponto",
   "Controller cursor": "Cursor do controle",
-  "The pointer your right stick moves around Harbor. Pick a shape or use your own image.":
-    "O ponteiro que o seu analógico direito move pelo Harbor. Escolha um formato ou use sua própria imagem.",
+  "The pointer your right stick moves around Frame. Pick a shape or use your own image.":
+    "O ponteiro que o seu analógico direito move pelo Frame. Escolha um formato ou use sua própria imagem.",
   "Your own image": "Sua própria imagem",
-  "PNG, WEBP, SVG or GIF. Harbor shrinks it to 128px so it stays small on disk.":
-    "PNG, WEBP, SVG ou GIF. O Harbor reduz para 128px para ocupar pouco espaço em disco.",
+  "PNG, WEBP, SVG or GIF. Frame shrinks it to 128px so it stays small on disk.":
+    "PNG, WEBP, SVG ou GIF. O Frame reduz para 128px para ocupar pouco espaço em disco.",
   "Remove image": "Remover imagem",
   "That image could not be used. Try a smaller PNG or WEBP.":
     "Não foi possível usar essa imagem. Tente um PNG ou WEBP menor.",
@@ -604,28 +604,28 @@ const coverage: Record<string, string> = {
     "Deixe maior para uma TV do outro lado da sala, menor para um monitor de mesa.",
   "{n} px": "{n} px",
   "Actual size on screen": "Tamanho real na tela",
-  "Harbor's full video engine. Plays anything you throw at it.":
-    "O motor de vídeo completo do Harbor. Reproduz tudo o que você jogar nele.",
-  "libmpv did not load, so playback falls back to HTML5 and formats like MKV may refuse to play. On Linux, install your distribution's libmpv package, then restart Harbor.":
-    "A libmpv não carregou, então a reprodução volta para HTML5 e formatos como MKV podem se recusar a tocar. No Linux, instale o pacote libmpv da sua distribuição e reinicie o Harbor.",
+  "Frame's full video engine. Plays anything you throw at it.":
+    "O motor de vídeo completo do Frame. Reproduz tudo o que você jogar nele.",
+  "libmpv did not load, so playback falls back to HTML5 and formats like MKV may refuse to play. On Linux, install your distribution's libmpv package, then restart Frame.":
+    "A libmpv não carregou, então a reprodução volta para HTML5 e formatos como MKV podem se recusar a tocar. No Linux, instale o pacote libmpv da sua distribuição e reinicie o Frame.",
   "{n} hours": "{n} horas",
   "{n} GB": "{n} GB",
-  "Another program already holds this port, usually a Stremio server that is running on this machine. Harbor tried its spare ports too. Stop that server, or leave it running and point Harbor at it in Remote streaming server below.":
-    "Outro programa já está usando esta porta, geralmente um servidor Stremio rodando nesta máquina. O Harbor também tentou suas portas reservas. Pare esse servidor, ou deixe-o rodando e aponte o Harbor para ele em Servidor de streaming remoto abaixo.",
+  "Another program already holds this port, usually a Stremio server that is running on this machine. Frame tried its spare ports too. Stop that server, or leave it running and point Frame at it in Remote streaming server below.":
+    "Outro programa já está usando esta porta, geralmente um servidor Stremio rodando nesta máquina. O Frame também tentou suas portas reservas. Pare esse servidor, ou deixe-o rodando e aponte o Frame para ele em Servidor de streaming remoto abaixo.",
   "Open here": "Abrir aqui",
   "Scan with your phone camera, or type the address above.":
     "Leia com a câmera do celular, ou digite o endereço acima.",
   "No Wi-Fi address yet. Other devices cannot reach this computer.":
     "Ainda sem endereço de Wi-Fi. Outros dispositivos não conseguem alcançar este computador.",
-  "Harbor in a browser": "Harbor no navegador",
+  "Frame in a browser": "Frame no navegador",
   "This exact install, served as a web app. Open it on a phone, laptop or TV browser and it streams through this computer.":
     "Esta mesma instalação, servida como um app web. Abra no celular, notebook ou navegador da TV e ele transmite através deste computador.",
   "Play, pause, seek, volume and casting from the couch.":
     "Reproduzir, pausar, avançar, volume e transmissão direto do sofá.",
   "Turn pages, zoom and switch modes while you read on the big screen.":
     "Vire páginas, dê zoom e troque de modo enquanto lê na tela grande.",
-  "One switch serves Harbor on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.":
-    "Uma única chave serve o Harbor na sua rede. Leia um código abaixo com o celular, ou abra um endereço em qualquer dispositivo no mesmo Wi-Fi.",
+  "One switch serves Frame on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.":
+    "Uma única chave serve o Frame na sua rede. Leia um código abaixo com o celular, ou abra um endereço em qualquer dispositivo no mesmo Wi-Fi.",
   "Powers everything on this page: the web app, the phone remote, and the manga reader remote.":
     "Alimenta tudo nesta página: o app web, o controle no celular e o controle do leitor de mangá.",
   "Flip the switch above and the addresses and scan codes appear here.":
@@ -648,8 +648,8 @@ const coverage: Record<string, string> = {
   "Bestseller lists in the eBook section.": "Listas de best-sellers na seção de eBooks.",
   "New York Times · bestseller lists": "New York Times · listas de best-sellers",
   "NYT Books API key": "Chave da API NYT Books",
-  "Choose whether Harbor prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
-    "Escolha se o Harbor prefere fontes diretas e debrid, torrents ponto a ponto ou mostra ambos.",
+  "Choose whether Frame prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
+    "Escolha se o Frame prefere fontes diretas e debrid, torrents ponto a ponto ou mostra ambos.",
 };
 
 export default coverage;

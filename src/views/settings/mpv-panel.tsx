@@ -35,7 +35,7 @@ export function MpvPanel() {
       <Section
         title={t("Desktop only")}
         subtitle={t(
-          "These tune the bundled mpv engine, which runs in the Harbor desktop app. They have no effect in the browser.",
+          "These tune the bundled mpv engine, which runs in the Frame desktop app. They have no effect in the browser.",
         )}
       >
         <div className="flex items-start gap-2.5 rounded-[10px] bg-elevated px-4 py-3">

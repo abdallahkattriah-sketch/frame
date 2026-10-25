@@ -34,7 +34,7 @@ export function RollbackRow() {
 
         <p className={`max-w-[70ch] ${ROW_DESC}`}>
           {t(
-            "Harbor offers the newest build again on its next check. Dismiss that update to stay on the earlier one.",
+            "Frame offers the newest build again on its next check. Dismiss that update to stay on the earlier one.",
           )}
         </p>
       </div>

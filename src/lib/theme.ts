@@ -153,7 +153,7 @@ export const THEME_PRESETS: Record<ThemePresetId, ThemePreset> = {
   },
   "cool-grey": {
     id: "cool-grey",
-    name: "Harbor default",
+    name: "Frame default",
     blurb: "What ships out of the box.",
     previewImage: harborPreview,
     swatch: ["#2c2e36", "#3a3d47", "#dcdde4"],
@@ -1284,7 +1284,7 @@ function buildElegantFinJs(): string {
 }
 
 const feishinCss = `/* ===== FEISHIN THEME FOR HARBOR ===== */
-/* Retoken Harbor's @theme palette to Feishin's near-black ladder + electric blue */
+/* Retoken Frame's @theme palette to Feishin's near-black ladder + electric blue */
 :root {
   --color-canvas: #0C0C0C;
   --color-surface: #141414;
@@ -1444,7 +1444,7 @@ html[data-theme-layout="custom"]:not([data-chrome-hidden]) main {
 html:not([data-theme-layout="custom"]) .fsh-rail,
 html[data-chrome-hidden] .fsh-rail { display: none !important; }
 
-/* Hide Harbor's floating-back + retint window controls (rail carries nav) */
+/* Hide Frame's floating-back + retint window controls (rail carries nav) */
 html[data-theme-layout="custom"]:not([data-chrome-hidden]) .harbor-win-control,
 html[data-theme-layout="custom"]:not([data-chrome-hidden]) .harbor-win-close {
   background: #141414 !important;
@@ -1831,7 +1831,7 @@ export const FONT_PAIRS: Record<FontPairId, FontPair> = {
   "fraunces-inter": {
     id: "fraunces-inter",
     name: "Fraunces + Inter",
-    blurb: "Classic. Was Harbor's original pair.",
+    blurb: "Classic. Was Frame's original pair.",
     display: '"Fraunces", "Iowan Old Style", "Georgia", serif',
     sans: '"Inter", system-ui, sans-serif',
   },

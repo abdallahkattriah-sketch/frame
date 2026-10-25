@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Hoạt động",
   "games.shortcuts.activity.title": "Hoạt động lối tắt",
   "games.shortcuts.activity.note":
-    "Các lần quét và khởi chạy gần đây của hồ sơ Harbor này. Tối đa 300 mục.",
+    "Các lần quét và khởi chạy gần đây của hồ sơ Frame này. Tối đa 300 mục.",
   "games.shortcuts.activity.remember": "Giữ lại giữa các phiên",
   "games.shortcuts.activity.detailed": "Ghi chi tiết quét",
   "games.shortcuts.activity.storageError":
@@ -55,7 +55,7 @@ export default {
   "games.shortcuts.storeError": "Không lưu được cài đặt.",
   "games.shortcuts.shortcut_location": "Chọn thư mục Steam hoặc thư mục userdata bên trong.",
   "games.shortcuts.shortcut_account":
-    "Mở Steam bằng tài khoản của lối tắt này rồi làm mới. Harbor phải dùng cùng bản cài đặt Steam.",
+    "Mở Steam bằng tài khoản của lối tắt này rồi làm mới. Frame phải dùng cùng bản cài đặt Steam.",
   "games.shortcuts.shortcut_missing": "Lối tắt này không còn tồn tại. Hãy làm mới thư viện.",
   "games.shortcuts.shortcut_executable":
     "Thiếu tệp thực thi hoặc đường dẫn tuyệt đối không được hỗ trợ.",

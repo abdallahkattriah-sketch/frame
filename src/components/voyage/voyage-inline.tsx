@@ -19,7 +19,7 @@ export function VoyageInline({ active, onClose }: { active: Voyage | null; onClo
   return (
     <div ref={root} className="voyage-inline" data-tv-focus-scope>
       <header className="voyage-inline-header">
-        <span>{t("Harbor Voyages")}</span>
+        <span>{t("Frame Voyages")}</span>
         <button
           type="button"
           onClick={onClose}

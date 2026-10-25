@@ -38,8 +38,8 @@ export function AvatarBgControl({
             <button
               type="button"
               onClick={() => onChange(harborColor)}
-              aria-label={t("Use your Harbor color")}
-              title={t("Use your Harbor color")}
+              aria-label={t("Use your Frame color")}
+              title={t("Use your Frame color")}
               className={`flex h-[18px] w-[18px] items-center justify-center transition-transform duration-150 hover:scale-110 motion-reduce:hover:scale-100 ${
                 usingHarbor ? "text-accent" : "text-ink-subtle hover:text-ink"
               }`}

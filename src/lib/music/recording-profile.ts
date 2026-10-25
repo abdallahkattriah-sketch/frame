@@ -4,7 +4,7 @@ import type { MusicAlbumRef, MusicArtistRef, MusicTrack } from "./types";
 declare const __APP_VERSION__: string;
 export const MUSICBRAINZ_HEADERS = {
   Accept: "application/json",
-  "User-Agent": `Harbor/${typeof __APP_VERSION__ === "string" ? __APP_VERSION__ : "dev"} (https://github.com/crazyrabbit0/harbor)`,
+  "User-Agent": `Frame/${typeof __APP_VERSION__ === "string" ? __APP_VERSION__ : "dev"} (https://github.com/crazyrabbit0/harbor)`,
 };
 
 type Obj = Record<string, unknown>;

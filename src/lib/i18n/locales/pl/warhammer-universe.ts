@@ -21,7 +21,7 @@ export default {
   "games.warhammerUniverse.free": "Bezpłatnie w Warhammer TV",
   "games.warhammerUniverse.subscription": "Może wymagać subskrypcji Warhammer+",
   "games.warhammerUniverse.movieNote":
-    "Film animowany z 2010 roku. Otwórz szczegóły w Harbor, by zobaczyć obsadę, zwiastuny i źródła.",
+    "Film animowany z 2010 roku. Otwórz szczegóły w Frame, by zobaczyć obsadę, zwiastuny i źródła.",
   "games.warhammerUniverse.screenScope":
     "Publiczny wybór Warhammer TV. Hammer and Bolter obejmuje różne światy; dostępność zależy od dostawcy.",
   "games.warhammerUniverse.lore": "W świecie opowieści",

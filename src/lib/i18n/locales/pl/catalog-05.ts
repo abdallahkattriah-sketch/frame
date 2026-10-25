@@ -38,56 +38,56 @@ const catalog05: Record<string, string> = {
     "Wyrównuje ciche dialogi i głośne sceny akcji za pomocą dynamicznego normalizatora.",
   "Every 15 min": "Co 15 min",
   "Every 30 min": "Co 30 min",
-  "Every Harbor that announces itself on this network appears here as it answers, with the theme it is wearing.":
-    "Każda instancja Harbor, która ogłasza się w tej sieci, pojawia się tutaj po udzieleniu odpowiedzi wraz z używanym motywem.",
+  "Every Frame that announces itself on this network appears here as it answers, with the theme it is wearing.":
+    "Każda instancja Frame, która ogłasza się w tej sieci, pojawia się tutaj po udzieleniu odpowiedzi wraz z używanym motywem.",
   "Every addon": "Każdy dodatek",
   "Every collection": "Wszystkie kolekcje",
   "Every color token, stable selector, {api} call, live hook (bell, account menu, avatar, status dot, unread badge), and copy-paste recipe.":
     "Wszystkie tokeny kolorów, stabilne selektory, wywołania {api}, aktywne punkty integracji (dzwonek, menu konta, awatar, kropka stanu, plakietka nieprzeczytanych) i gotowe fragmenty do skopiowania.",
   "Every episode of the season uses that same release.":
     "Każdy odcinek sezonu korzysta z tego samego wydania.",
-  "Every format badge Harbor can show on streams. Click one to swap its art, hide it, or reset it. Changes apply everywhere badges appear.":
-    "Wszystkie plakietki formatów, które Harbor może wyświetlać przy strumieniach. Kliknij plakietkę, aby zmienić jej grafikę, ukryć ją lub zresetować. Zmiany obowiązują wszędzie, gdzie pojawiają się plakietki.",
+  "Every format badge Frame can show on streams. Click one to swap its art, hide it, or reset it. Changes apply everywhere badges appear.":
+    "Wszystkie plakietki formatów, które Frame może wyświetlać przy strumieniach. Kliknij plakietkę, aby zmienić jej grafikę, ukryć ją lub zresetować. Zmiany obowiązują wszędzie, gdzie pojawiają się plakietki.",
   "Every launch": "Przy każdym uruchomieniu",
   "Every row": "Każdy wiersz",
   "Every saga in one place. Search anything: if it exists, it's here.":
     "Wszystkie sagi w jednym miejscu. Wyszukaj cokolwiek: jeśli istnieje, jest tutaj.",
   "Every saga, in order": "Każda saga, po kolei",
-  "Every shortcut Harbor responds to. Click a binding to rebind it.":
-    "Wszystkie skróty obsługiwane przez Harbor. Kliknij przypisanie, aby je zmienić.",
+  "Every shortcut Frame responds to. Click a binding to rebind it.":
+    "Wszystkie skróty obsługiwane przez Frame. Kliknij przypisanie, aby je zmienić.",
   "Every slot name": "Wszystkie nazwy miejsc",
-  "Every source Harbor tried failed to start. Pick a different one, or try again in a moment.":
-    "Nie udało się uruchomić żadnego źródła wypróbowanego przez Harbor. Wybierz inne lub spróbuj ponownie za chwilę.",
-  "Every surface in Harbor maps to one of these 12 variables.":
-    "Każdy element interfejsu Harbor jest powiązany z jedną z tych 12 zmiennych.",
+  "Every source Frame tried failed to start. Pick a different one, or try again in a moment.":
+    "Nie udało się uruchomić żadnego źródła wypróbowanego przez Frame. Wybierz inne lub spróbuj ponownie za chwilę.",
+  "Every surface in Frame maps to one of these 12 variables.":
+    "Każdy element interfejsu Frame jest powiązany z jedną z tych 12 zmiennych.",
   "Every theme is sandboxed, scanned, and reviewed before it reaches the library, so you can try any look without a second thought.":
     "Każdy motyw działa w piaskownicy oraz jest skanowany i sprawdzany przed dodaniem do biblioteki, więc możesz bez obaw wypróbować dowolny styl.",
-  "Every theme you share gets a private owner token. On the device where you shared it, Harbor saved it automatically, so those themes show up right here to claim in one tap. To claim one from a different device, paste that token below. New shares now bind straight to your account, so you will not need this again.":
-    "Każdy udostępniony motyw otrzymuje prywatny token właściciela. Harbor automatycznie zapisał go na urządzeniu, z którego udostępniono motyw, dlatego takie motywy pojawiają się tutaj i można je przypisać jednym dotknięciem. Aby przypisać motyw z innego urządzenia, wklej jego token poniżej. Nowe udostępnienia są teraz przypisywane bezpośrednio do konta, więc nie będzie to już potrzebne.",
-  "Every variable, selector, hook, and recipe for building custom Harbor themes.":
-    "Wszystkie zmienne, selektory, punkty zaczepienia i instrukcje potrzebne do tworzenia własnych motywów Harbor.",
-  "Every winner Harbor ships, browsable offline by year and category.":
-    "Wszyscy nagrodzeni dostępni w Harbor, z możliwością przeglądania offline według roku i kategorii.",
+  "Every theme you share gets a private owner token. On the device where you shared it, Frame saved it automatically, so those themes show up right here to claim in one tap. To claim one from a different device, paste that token below. New shares now bind straight to your account, so you will not need this again.":
+    "Każdy udostępniony motyw otrzymuje prywatny token właściciela. Frame automatycznie zapisał go na urządzeniu, z którego udostępniono motyw, dlatego takie motywy pojawiają się tutaj i można je przypisać jednym dotknięciem. Aby przypisać motyw z innego urządzenia, wklej jego token poniżej. Nowe udostępnienia są teraz przypisywane bezpośrednio do konta, więc nie będzie to już potrzebne.",
+  "Every variable, selector, hook, and recipe for building custom Frame themes.":
+    "Wszystkie zmienne, selektory, punkty zaczepienia i instrukcje potrzebne do tworzenia własnych motywów Frame.",
+  "Every winner Frame ships, browsable offline by year and category.":
+    "Wszyscy nagrodzeni dostępni w Frame, z możliwością przeglądania offline według roku i kategorii.",
   Everyone: "Wszyscy",
   "Everyone else": "Wszyscy pozostali",
   "Everyone is loaded in. Press play to start watching.":
     "Wszyscy są gotowi. Naciśnij przycisk odtwarzania, aby rozpocząć oglądanie.",
   "Everyone loses access. This cannot be undone.":
     "Wszyscy utracą dostęp. Tej operacji nie można cofnąć.",
-  "Everyone on this Harbor": "Wszyscy w tej instancji Harbor",
-  "Everyone who uses this Harbor gets their own watch history, avatar, color, and optional PIN. Switch anytime.":
-    "Każda osoba korzystająca z tej instalacji Harbor ma własną historię oglądania, awatar, kolor i opcjonalny kod PIN. Profil można zmienić w dowolnym momencie.",
+  "Everyone on this Frame": "Wszyscy w tej instancji Frame",
+  "Everyone who uses this Frame gets their own watch history, avatar, color, and optional PIN. Switch anytime.":
+    "Każda osoba korzystająca z tej instalacji Frame ma własną historię oglądania, awatar, kolor i opcjonalny kod PIN. Profil można zmienić w dowolnym momencie.",
   Everything: "Wszystko",
-  "Everything Harbor saves lives on this computer. If space runs low, clear a cache below; Harbor rebuilds them as you browse.":
-    "Wszystko, co zapisuje Harbor, znajduje się na tym komputerze. Jeśli zaczyna brakować miejsca, wyczyść jedną z poniższych pamięci podręcznych. Harbor odbuduje je podczas przeglądania.",
+  "Everything Frame saves lives on this computer. If space runs low, clear a cache below; Frame rebuilds them as you browse.":
+    "Wszystko, co zapisuje Frame, znajduje się na tym komputerze. Jeśli zaczyna brakować miejsca, wyczyść jedną z poniższych pamięci podręcznych. Frame odbuduje je podczas przeglądania.",
   "Everything else, via your own server": "Wszystko inne przez własny serwer",
   "Everything from {year}, sorted across trending, top rated, and hidden gems.":
     "Wszystko z roku {year}, od popularnych i najwyżej ocenianych tytułów po ukryte perełki.",
   "Everything here is already in your account.": "Wszystko tutaj znajduje się już na Twoim koncie.",
   "Everything here took effect straight away, and it is saved on this device.":
     "Wszystkie zmiany zostały zastosowane od razu i zapisane na tym urządzeniu.",
-  "Everything on this page is written to your Harbor account. Your TV reads it on its next check-in, so you can set the whole thing up from here and never touch the remote.":
-    "Wszystkie ustawienia na tej stronie są zapisywane na koncie Harbor. Telewizor odczyta je przy następnym połączeniu, więc możesz skonfigurować wszystko tutaj bez używania pilota.",
+  "Everything on this page is written to your Frame account. Your TV reads it on its next check-in, so you can set the whole thing up from here and never touch the remote.":
+    "Wszystkie ustawienia na tej stronie są zapisywane na koncie Frame. Telewizor odczyta je przy następnym połączeniu, więc możesz skonfigurować wszystko tutaj bez używania pilota.",
   "Everything on this page of {genre} is hidden by your anime filter.":
     "Filtr anime ukrywa wszystkie tytuły z gatunku {genre} na tej stronie.",
   "Everything originally in {name}: movies and series across every genre, era, and hidden gems.":
@@ -95,8 +95,8 @@ const catalog05: Record<string, string> = {
   "Everything releasing in the current month from TMDB.":
     "Wszystkie premiery z bieżącego miesiąca w TMDB.",
   "Everything releasing this month from TMDB": "Wszystkie premiery tego miesiąca z TMDB",
-  "Everything you save here stays in this browser. Your Stremio login, API keys, watch progress, picker cache, dismissed tips. Harbor servers never see any of it. Clearing your browser data wipes it.":
-    "Wszystko, co tutaj zapisujesz, pozostaje w tej przeglądarce: dane logowania do Stremio, klucze API, postęp oglądania, pamięć podręczna wyboru i odrzucone wskazówki. Serwery Harbor nigdy nie otrzymują tych danych. Wyczyszczenie danych przeglądarki spowoduje ich usunięcie.",
+  "Everything you save here stays in this browser. Your Stremio login, API keys, watch progress, picker cache, dismissed tips. Frame servers never see any of it. Clearing your browser data wipes it.":
+    "Wszystko, co tutaj zapisujesz, pozostaje w tej przeglądarce: dane logowania do Stremio, klucze API, postęp oglądania, pamięć podręczna wyboru i odrzucone wskazówki. Serwery Frame nigdy nie otrzymują tych danych. Wyczyszczenie danych przeglądarki spowoduje ich usunięcie.",
   "Everything your addons offer, shown as posters. Scroll, search, or filter to what you want.":
     "Wszystko, co oferują Twoje dodatki, przedstawione w formie plakatów. Przewijaj, wyszukuj lub filtruj, aby znaleźć to, czego szukasz.",
   Excellence: "Doskonałość",
@@ -144,10 +144,10 @@ const catalog05: Record<string, string> = {
   "Export my setup": "Eksportuj moją konfigurację",
   "Export player log": "Eksportuj dziennik odtwarzacza",
   "Export to Trakt": "Eksportuj do Trakt",
-  "Export your entire Harbor setup to a single file, then restore it on a new computer or keep it as a backup.":
-    "Wyeksportuj całą konfigurację Harbor do jednego pliku, aby przywrócić ją na nowym komputerze lub zachować jako kopię zapasową.",
-  "Export your entire Harbor setup to a single file, then restore it on a new computer or keep it as a backup. Everything is included except your Stremio sign-in.":
-    "Wyeksportuj całą konfigurację Harbor do jednego pliku, a następnie odtwórz ją na nowym komputerze lub zachowaj jako kopię zapasową. Uwzględniane jest wszystko oprócz danych logowania do Stremio.",
+  "Export your entire Frame setup to a single file, then restore it on a new computer or keep it as a backup.":
+    "Wyeksportuj całą konfigurację Frame do jednego pliku, aby przywrócić ją na nowym komputerze lub zachować jako kopię zapasową.",
+  "Export your entire Frame setup to a single file, then restore it on a new computer or keep it as a backup. Everything is included except your Stremio sign-in.":
+    "Wyeksportuj całą konfigurację Frame do jednego pliku, a następnie odtwórz ją na nowym komputerze lub zachowaj jako kopię zapasową. Uwzględniane jest wszystko oprócz danych logowania do Stremio.",
   Exported: "Wyeksportowano",
   "Exported {n} titles": "Wyeksportowano {n} tytułów",
   "Exported {ok}, {fail} failed": "Wyeksportowano {ok}, nie udało się wyeksportować {fail}",
@@ -188,8 +188,8 @@ const catalog05: Record<string, string> = {
   "Familiar Stremio button order.": "Znany układ przycisków ze Stremio.",
   "Family Favorites": "Rodzinne hity",
   "Family Heart": "Rodzinne ciepło",
-  "Fan-made avatars for personal use. Harbor claims no rights to these characters; they belong to their creators and studios, shown here under fair use. Every one is optimized down to a tiny WebP.":
-    "Awatary stworzone przez fanów do użytku osobistego. Harbor nie rości sobie żadnych praw do tych postaci. Należą one do ich twórców i studiów, a tutaj są prezentowane w ramach dozwolonego użytku. Każdy awatar zoptymalizowano do niewielkiego pliku WebP.",
+  "Fan-made avatars for personal use. Frame claims no rights to these characters; they belong to their creators and studios, shown here under fair use. Every one is optimized down to a tiny WebP.":
+    "Awatary stworzone przez fanów do użytku osobistego. Frame nie rości sobie żadnych praw do tych postaci. Należą one do ich twórców i studiów, a tutaj są prezentowane w ramach dozwolonego użytku. Każdy awatar zoptymalizowano do niewielkiego pliku WebP.",
   "Fanart.tv": "Fanart.tv",
   "Fanart.tv · logos and backdrops": "Fanart.tv · logo i tła",
   "Fast Break Points": "Punkty z szybkiego ataku",
@@ -241,7 +241,7 @@ const catalog05: Record<string, string> = {
   "Field Reports": "Raporty z terenu",
   Fight: "Walka",
   "File another": "Zgłoś kolejny",
-  "File is not a Harbor layout profile.": "Plik nie jest profilem układu Harbor.",
+  "File is not a Frame layout profile.": "Plik nie jest profilem układu Frame.",
   Filename: "Nazwa pliku",
   "Filename hidden": "Nazwa pliku ukryta",
   "Filename shown": "Nazwa pliku widoczna",
@@ -318,10 +318,10 @@ const catalog05: Record<string, string> = {
   "Finish an episode and the card jumps to the next one instead of sitting at 0m left.":
     "Po ukończeniu odcinka karta przeskakuje do następnego, zamiast pozostawać przy 0 min do końca.",
   "Finish later": "Dokończ później",
-  "Finish setting up Harbor": "Dokończ konfigurację Harbor",
+  "Finish setting up Frame": "Dokończ konfigurację Frame",
   "Finish setup on your phone": "Dokończ konfigurację na telefonie",
-  "Finish the install above first. Flipping this on now won't do anything until Harbor can find SVP's engine.":
-    "Najpierw dokończ powyższą instalację. Włączenie tej opcji nie przyniesie efektu, dopóki Harbor nie znajdzie silnika SVP.",
+  "Finish the install above first. Flipping this on now won't do anything until Frame can find SVP's engine.":
+    "Najpierw dokończ powyższą instalację. Włączenie tej opcji nie przyniesie efektu, dopóki Frame nie znajdzie silnika SVP.",
   Finished: "Ukończone",
   "Finishing an anime episode updates your AniList progress. Forward only: it never lowers a count you already have.":
     "Ukończenie odcinka anime aktualizuje postęp w AniList. Tylko w przód: nigdy nie zmniejsza istniejącej liczby.",
@@ -371,11 +371,10 @@ const catalog05: Record<string, string> = {
   Folder: "Folder",
   "Folder picker is only available in the desktop app":
     "Wybór folderu jest dostępny tylko w aplikacji komputerowej",
-  "Folder selection is available in the Harbor app":
-    "Wybór folderu jest dostępny w aplikacji Harbor",
+  "Folder selection is available in the Frame app": "Wybór folderu jest dostępny w aplikacji Frame",
   Folders: "Foldery",
-  "Folders Harbor imported your movies and shows from. Rescan to pick up new files.":
-    "Foldery, z których Harbor zaimportował filmy i seriale. Skanuj ponownie, aby wykryć nowe pliki.",
+  "Folders Frame imported your movies and shows from. Rescan to pick up new files.":
+    "Foldery, z których Frame zaimportował filmy i seriale. Skanuj ponownie, aby wykryć nowe pliki.",
   "Follow them out?": "Wyjść razem z tą osobą?",
   "Following addon order": "Zgodnie z kolejnością dodatków",
   Font: "Czcionka",
@@ -393,14 +392,14 @@ const catalog05: Record<string, string> = {
   "For giving more than $100 to charity.": "Za przekazanie na cele charytatywne ponad $100.",
   "For laptop speakers and headphones. Movies mixed for 5.1 or 7.1 surround can sound hollow or have quiet dialogue on two speakers. This folds them down properly.":
     "Do głośników laptopa i słuchawek. Filmy zmiksowane z dźwiękiem przestrzennym 5.1 lub 7.1 mogą na dwóch głośnikach brzmieć pusto albo mieć zbyt ciche dialogi. Ta opcja prawidłowo miksuje je do dwóch kanałów.",
-  "For now, please open this site on a desktop, or build Harbor from source.":
-    "Na razie otwórz tę stronę na komputerze lub skompiluj Harbor z kodu źródłowego.",
+  "For now, please open this site on a desktop, or build Frame from source.":
+    "Na razie otwórz tę stronę na komputerze lub skompiluj Frame z kodu źródłowego.",
   "For reliable HDR on this display, switch to True HDR, separate window in Settings.":
     "Aby niezawodnie korzystać z HDR na tym ekranie, w Ustawieniach wybierz opcję True HDR, osobne okno.",
   "For series and anime, keep playing the rest of the season from the release you first picked. Applies whether Play is instant or manual.":
     "W przypadku seriali i anime odtwarzaj pozostałe odcinki sezonu z wydania wybranego na początku. Dotyczy to zarówno natychmiastowego, jak i ręcznego odtwarzania.",
-  "For the hardest files and the Try again button, Harbor transcribes a little speech on your device and lines the subtitle up to the actual words. Needs a build with the asr-whisper feature and downloads a small model the first time you use it.":
-    "W przypadku najtrudniejszych plików i po użyciu przycisku „Spróbuj ponownie” Harbor transkrybuje na urządzeniu krótki fragment mowy i dopasowuje napisy do rzeczywistych słów. Wymaga kompilacji z funkcją asr-whisper i przy pierwszym użyciu pobiera mały model.",
+  "For the hardest files and the Try again button, Frame transcribes a little speech on your device and lines the subtitle up to the actual words. Needs a build with the asr-whisper feature and downloads a small model the first time you use it.":
+    "W przypadku najtrudniejszych plików i po użyciu przycisku „Spróbuj ponownie” Frame transkrybuje na urządzeniu krótki fragment mowy i dopasowuje napisy do rzeczywistych słów. Wymaga kompilacji z funkcją asr-whisper i przy pierwszym użyciu pobiera mały model.",
   "For the manual path:": "W przypadku konfiguracji ręcznej:",
   "For the manual path: {code} 20+ and {code} CLI.":
     "Metoda ręczna wymaga {code} 20+ oraz interfejsu CLI {code}.",
@@ -484,7 +483,7 @@ const catalog05: Record<string, string> = {
   "Frequent Collaborators": "Najczęstsi współpracownicy",
   "Fresh from the community": "Nowości od społeczności",
   "Fresh from the studio": "Prosto ze studia",
-  "Fresh looks shared by the Harbor community": "Nowe motywy udostępnione przez społeczność Harbor",
+  "Fresh looks shared by the Frame community": "Nowe motywy udostępnione przez społeczność Frame",
   "Fresh on TV": "Nowości w telewizji",
   "Fresh tomato for 60%+, splat for under.":
     "Świeży pomidor przy 60% lub więcej, rozgnieciony poniżej tej wartości.",
@@ -519,8 +518,8 @@ const catalog05: Record<string, string> = {
   "Frontline Valor": "Waleczność na froncie",
   "Frost the top bar on scroll": "Efekt szronu na górnym pasku podczas przewijania",
   "Frosted glass": "Matowe szkło",
-  "Frosted, refractive surfaces on Harbor's floating controls.":
-    "Matowe, refrakcyjne powierzchnie pływających elementów sterujących Harbor.",
+  "Frosted, refractive surfaces on Frame's floating controls.":
+    "Matowe, refrakcyjne powierzchnie pływających elementów sterujących Frame.",
   Fubo: "Fubo",
   FuboTV: "FuboTV",
   Full: "Pełny",
@@ -530,8 +529,8 @@ const catalog05: Record<string, string> = {
   "Full details": "Pełne informacje",
   "Full hero banner": "Pełnowymiarowy baner główny",
   "Full list": "Pełna lista",
-  "Full mode signs in with your Letterboxd password to also unlock your diary, friends activity and your personal ratings. Your password is sent only to Stremboxd to obtain a token — Harbor never stores it.":
-    "Tryb pełny loguje się przy użyciu hasła Letterboxd, zapewniając również dostęp do dziennika, aktywności znajomych i osobistych ocen. Hasło jest wysyłane wyłącznie do Stremboxd w celu uzyskania tokena. Harbor nigdy go nie przechowuje.",
+  "Full mode signs in with your Letterboxd password to also unlock your diary, friends activity and your personal ratings. Your password is sent only to Stremboxd to obtain a token — Frame never stores it.":
+    "Tryb pełny loguje się przy użyciu hasła Letterboxd, zapewniając również dostęp do dziennika, aktywności znajomych i osobistych ocen. Hasło jest wysyłane wyłącznie do Stremboxd w celu uzyskania tokena. Frame nigdy go nie przechowuje.",
   "Full mode — diary, friends & ratings enabled": "Tryb pełny: dziennik, znajomi i oceny włączone",
   "Full quality frames": "Klatki w pełnej jakości",
   "Full quality hero image": "Obraz banera głównego w pełnej jakości",
@@ -545,8 +544,8 @@ const catalog05: Record<string, string> = {
   "GIF export failed": "Nie udało się wyeksportować pliku GIF",
   "GIF saved to {path}": "Plik GIF zapisano w {path}",
   GL: "GL",
-  "GPU shaders that sharpen lines and clean up gradients on anime as it plays. Pick a mode, Harbor handles the shaders.":
-    "Shadery GPU, które podczas odtwarzania anime wyostrzają linie i wygładzają gradienty. Wybierz tryb, a Harbor zajmie się shaderami.",
+  "GPU shaders that sharpen lines and clean up gradients on anime as it plays. Pick a mode, Frame handles the shaders.":
+    "Shadery GPU, które podczas odtwarzania anime wyostrzają linie i wygładzają gradienty. Wybierz tryb, a Frame zajmie się shaderami.",
   Gallery: "Galeria",
   "Game search needs an API key before it can run.": "Wyszukiwanie gier wymaga klucza API.",
   Games: "Gry",
@@ -560,8 +559,8 @@ const catalog05: Record<string, string> = {
   General: "Ogólne",
   "General Sans": "General Sans",
   "Generate a Cloudflare API token with": "Wygeneruj token API Cloudflare z",
-  "Generate a Cloudflare API token with {code1} and {code2} permissions at {code3}. Paste it into Harbor.":
-    "Wygeneruj token API Cloudflare z uprawnieniami {code1} i {code2} na stronie {code3}. Wklej go do Harbor.",
+  "Generate a Cloudflare API token with {code1} and {code2} permissions at {code3}. Paste it into Frame.":
+    "Wygeneruj token API Cloudflare z uprawnieniami {code1} i {code2} na stronie {code3}. Wklej go do Frame.",
   "Generates a frame on the fly as you scrub the seek bar. Works on debrid streams and local files.":
     "Generuje klatkę na bieżąco podczas przewijania paska postępu. Działa ze strumieniami debrid i plikami lokalnymi.",
   Genre: "Gatunek",
@@ -577,12 +576,12 @@ const catalog05: Record<string, string> = {
     "Delikatnie powiększaj pobliskie plakaty podczas poruszania się po rzędzie, jak w Docku. Domyślnie wyłączone.",
   "Gently magnify nearby posters as you move across a poster row.":
     "Delikatnie powiększaj pobliskie plakaty podczas poruszania się po rzędzie plakatów.",
-  "Genuine 48/60fps motion on anime, rendered right inside Harbor's player. SVP supplies the engine (VapourSynth + svpflow) and runs in your tray for licensing; Harbor's own player applies the interpolation, so it stays embedded and fully under your control. One-time install, then flip it on.":
-    "Prawdziwie płynny ruch 48/60 kl./s w anime, renderowany bezpośrednio w odtwarzaczu Harbor. SVP dostarcza silnik (VapourSynth + svpflow) i działa w zasobniku systemowym ze względu na licencjonowanie. Interpolację stosuje odtwarzacz Harbor, dzięki czemu pozostaje ona wbudowana i w pełni pod Twoją kontrolą. Wystarczy jednorazowa instalacja, a potem można ją włączyć.",
+  "Genuine 48/60fps motion on anime, rendered right inside Frame's player. SVP supplies the engine (VapourSynth + svpflow) and runs in your tray for licensing; Frame's own player applies the interpolation, so it stays embedded and fully under your control. One-time install, then flip it on.":
+    "Prawdziwie płynny ruch 48/60 kl./s w anime, renderowany bezpośrednio w odtwarzaczu Frame. SVP dostarcza silnik (VapourSynth + svpflow) i działa w zasobniku systemowym ze względu na licencjonowanie. Interpolację stosuje odtwarzacz Frame, dzięki czemu pozostaje ona wbudowana i w pełni pod Twoją kontrolą. Wystarczy jednorazowa instalacja, a potem można ją włączyć.",
   "German Films": "Filmy niemieckie",
   Germany: "Niemcy",
   Get: "Pobierz",
-  "Get Harbor for desktop": "Pobierz Harbor na komputer",
+  "Get Frame for desktop": "Pobierz Frame na komputer",
   "Get SVP (free)": "Pobierz SVP (bezpłatnie)",
   "Get Started": "Rozpocznij",
   "Get a free key at opensubtitles.com": "Uzyskaj bezpłatny klucz na opensubtitles.com",
@@ -725,16 +724,16 @@ const catalog05: Record<string, string> = {
     "Obsługuje odtwarzanie P2P i transkodowanie na tym urządzeniu.",
   "Hang tight, won't be a sec.": "Chwila, to potrwa tylko moment.",
   "Hangout Comedy": "Komedie o wspólnym spędzaniu czasu",
-  "Harbor Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
-    "Ranking Harbor ocenia całą karierę, a nie pojedynczy hit. Na pozycję w rankingu wpływają cztery czynniki: średnia jakość dorobku, część dorobku, która zdobyła szerokie uznanie, najważniejsze zdobyte nagrody oraz częstotliwość występowania danej osoby w roli głównej. Każdy filar ma przypisaną wagę, wyniki są sumowane, a następnie korygowane z uwzględnieniem rozległości i aktualności dorobku. Wszystkie wartości składające się na wynik są widoczne na karcie, dzięki czemu zawsze wiadomo, z czego wynika ocena.",
-  "Harbor Reader": "Harbor Reader",
-  "Harbor Relay": "Harbor Relay",
-  "Harbor Relay Documentation": "Dokumentacja Harbor Relay",
-  "Harbor Relay docs": "Dokumentacja Harbor Relay",
-  "Harbor Setup did not finish updating Harbor. Nothing was changed.":
-    "Harbor Setup nie ukończył aktualizacji Harbor. Nie wprowadzono żadnych zmian.",
-  "Harbor Staff": "Zespół Harbor",
-  "Harbor Voyages": "Harbor Voyages",
+  "Frame Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
+    "Ranking Frame ocenia całą karierę, a nie pojedynczy hit. Na pozycję w rankingu wpływają cztery czynniki: średnia jakość dorobku, część dorobku, która zdobyła szerokie uznanie, najważniejsze zdobyte nagrody oraz częstotliwość występowania danej osoby w roli głównej. Każdy filar ma przypisaną wagę, wyniki są sumowane, a następnie korygowane z uwzględnieniem rozległości i aktualności dorobku. Wszystkie wartości składające się na wynik są widoczne na karcie, dzięki czemu zawsze wiadomo, z czego wynika ocena.",
+  "Frame Reader": "Frame Reader",
+  "Frame Relay": "Frame Relay",
+  "Frame Relay Documentation": "Dokumentacja Frame Relay",
+  "Frame Relay docs": "Dokumentacja Frame Relay",
+  "Frame Setup did not finish updating Frame. Nothing was changed.":
+    "Frame Setup nie ukończył aktualizacji Frame. Nie wprowadzono żadnych zmian.",
+  "Frame Staff": "Zespół Frame",
+  "Frame Voyages": "Frame Voyages",
 };
 
 export default catalog05;

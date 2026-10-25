@@ -4,7 +4,7 @@ const sweep: Record<string, string> = {
   "1 day": "1 يوم",
   "1 hour": "1 ساعة",
   "1 hr": "1 س",
-  "1 other Harbor": "1 Harbor آخر",
+  "1 other Frame": "1 Frame آخر",
   "10 GB": "10 غيغابايت",
   "100 GB": "100 غيغابايت",
   "10k+": "+10 آلاف",
@@ -43,15 +43,15 @@ const sweep: Record<string, string> = {
   "8 seconds": "8 ثوانٍ",
   "8-0-4-1. Half the passes, kinder to weaker cards.":
     "8-0-4-1. نصف عدد التمريرات، وألطف مع البطاقات الضعيفة.",
-  "A Harbor account": "حساب Harbor",
+  "A Frame account": "حساب Frame",
   "A blend of the sources above by percentile. Degrades gracefully when one is missing.":
     "مزيج من المصادر أعلاه حسب الشريحة المئوية. يعمل بسلاسة عند غياب أحدها.",
   "A classic neural edge-directed luma doubler. Very high quality, heavy on the GPU. More neurons means sharper and slower.":
     "مضاعِف إضاءة عصبي كلاسيكي موجَّه بالحواف. جودة عالية جدًا وثقيل على GPU. عصبونات أكثر تعني حدة أعلى وسرعة أقل.",
   "A dead source is dropped and the next one starts.": "يُستبعد المصدر المعطّل ويبدأ التالي.",
   "A direct .m3u or .m3u8 address from your provider": "عنوان مباشر بصيغة .m3u أو .m3u8 من مزوّدك",
-  "A filter applies everywhere Harbor picks a stream: the source picker, the instant pick, and Big Picture on TV.":
-    "يسري المرشّح أينما اختار Harbor بثًا: منتقي المصادر، والاختيار الفوري، وBig Picture على التلفاز.",
+  "A filter applies everywhere Frame picks a stream: the source picker, the instant pick, and Big Picture on TV.":
+    "يسري المرشّح أينما اختار Frame بثًا: منتقي المصادر، والاختيار الفوري، وBig Picture على التلفاز.",
   "A hero up top, then Top 10, Trending, In Theaters and your service rows.":
     "لقطة رئيسية في الأعلى، ثم أفضل 10 والرائج ودور العرض وصفوف خدماتك.",
   "A high quality chroma upscaler. Fixes the color blur and bleeding of default chroma scaling, most visible on saturated edges and subtitles.":
@@ -122,8 +122,8 @@ const sweep: Record<string, string> = {
   "All times": "كل الأوقات",
   "All video": "كل الفيديو",
   "All-time bests": "الأفضل على الإطلاق",
-  "Linking your Discord account also joins you to Harbor's Discord server, so the bot can send your Backup keys privately.":
-    "Linking your Discord account also joins you to Harbor's Discord server, so the bot can send your Backup keys privately.",
+  "Linking your Discord account also joins you to Frame's Discord server, so the bot can send your Backup keys privately.":
+    "Linking your Discord account also joins you to Frame's Discord server, so the bot can send your Backup keys privately.",
   "Always re-encode when casting": "أعد الترميز دائمًا عند البث",
   "Always stream P2P": "البث عبر P2P دائمًا",
   Amber: "كهرماني",
@@ -161,7 +161,7 @@ const sweep: Record<string, string> = {
   "Artwork and rows": "الصور والصفوف",
   "Ask after": "اسأل بعد",
   "Ask if you are still watching": "اسأل إن كنت لا تزال تشاهد",
-  "Asking that Harbor to show a code": "جارٍ الطلب من ذاك Harbor عرض رمز",
+  "Asking that Frame to show a code": "جارٍ الطلب من ذاك Frame عرض رمز",
   "Asks first: carry on, or start over.": "يسأل أولًا: المتابعة أم البدء من جديد.",
   Aspect: "النسبة",
   "At least 6 characters.": "6 أحرف على الأقل.",
@@ -220,8 +220,8 @@ const sweep: Record<string, string> = {
   "Best VA Performance": "أفضل أداء صوتي",
   "Best {label}": "أفضل {label}",
   "Beyond Hollywood": "خارج هوليوود",
-  "Big Picture closes. Harbor keeps running behind it.":
-    "يُغلق Big Picture، ويستمر Harbor في العمل في الخلفية.",
+  "Big Picture closes. Frame keeps running behind it.":
+    "يُغلق Big Picture، ويستمر Frame في العمل في الخلفية.",
   "Bigger buffer for slow connections": "مخزن مؤقت أكبر للاتصالات البطيئة",
   "Bingeing on the TV": "مشاهدة متواصلة على التلفزيون",
   Black: "أسود",
@@ -252,7 +252,7 @@ const sweep: Record<string, string> = {
   "Browse community themes": "تصفح سمات المجتمع",
   "Built from IMDb's public datasets. Career ratings volume.":
     "مبني على مجموعات بيانات IMDb العامة. حجم التقييمات عبر المسيرة.",
-  "Built into Harbor": "مدمج في Harbor",
+  "Built into Frame": "مدمج في Frame",
   "Buttons & sticks": "الأزرار وعصي التحكم",
   "By year": "حسب السنة",
   CONTENT: "المحتوى",
@@ -278,9 +278,9 @@ const sweep: Record<string, string> = {
   "Change server": "تغيير الخادم",
   "Change source, current source {name}": "تغيير المصدر، المصدر الحالي {name}",
   "Change the look": "تغيير المظهر",
-  "Changes not saved to your Harbor account yet": "لم تُحفظ التغييرات في حساب Harbor بعد",
-  "Changes you make below will be saved on this computer, but they will not reach your TV. This is a fault in Harbor, not something you did.":
-    "ستُحفظ التغييرات أدناه على هذا الكمبيوتر، لكنها لن تصل إلى التلفزيون. هذا خلل في Harbor وليس خطأً منك.",
+  "Changes not saved to your Frame account yet": "لم تُحفظ التغييرات في حساب Frame بعد",
+  "Changes you make below will be saved on this computer, but they will not reach your TV. This is a fault in Frame, not something you did.":
+    "ستُحفظ التغييرات أدناه على هذا الكمبيوتر، لكنها لن تصل إلى التلفزيون. هذا خلل في Frame وليس خطأً منك.",
   Chapters: "الفصول",
   "Character of the Year": "شخصية العام",
   "Charities to give to instead": "جمعيات خيرية للتبرّع بدلاً من ذلك",
@@ -300,10 +300,10 @@ const sweep: Record<string, string> = {
   Circle: "دائرة",
   "Claim a handle": "احجز معرّفاً",
   "Classic Hollywood": "هوليوود الكلاسيكية",
-  "Clears the URL from Harbor. The Worker keeps running on Cloudflare.":
-    "يمسح عنوان URL من Harbor. يستمر Worker في العمل على Cloudflare.",
-  "Clears the saved URL so you can point Harbor at another relay.":
-    "يمسح عنوان URL المحفوظ لتوجيه Harbor إلى مُرحِّل آخر.",
+  "Clears the URL from Frame. The Worker keeps running on Cloudflare.":
+    "يمسح عنوان URL من Frame. يستمر Worker في العمل على Cloudflare.",
+  "Clears the saved URL so you can point Frame at another relay.":
+    "يمسح عنوان URL المحفوظ لتوجيه Frame إلى مُرحِّل آخر.",
   "Close editor": "إغلاق المحرر",
   Cloudflare: "Cloudflare",
   "Code expires in {left}": "تنتهي صلاحية الرمز خلال {left}",
@@ -317,10 +317,10 @@ const sweep: Record<string, string> = {
   "Compare before and after": "قارن قبل وبعد",
   "Comparison by {credit}": "مقارنة من {credit}",
   Configure: "تهيئة",
-  "Connect AniList in Harbor on your computer to see your lists here.":
-    "اربط AniList في Harbor على جهاز الكمبيوتر لرؤية قوائمك هنا.",
-  "Connect MyAnimeList in Harbor on your computer to see your lists here.":
-    "اربط MyAnimeList في Harbor على جهاز الكمبيوتر لرؤية قوائمك هنا.",
+  "Connect AniList in Frame on your computer to see your lists here.":
+    "اربط AniList في Frame على جهاز الكمبيوتر لرؤية قوائمك هنا.",
+  "Connect MyAnimeList in Frame on your computer to see your lists here.":
+    "اربط MyAnimeList في Frame على جهاز الكمبيوتر لرؤية قوائمك هنا.",
   "Connect TMDB": "ربط TMDB",
   "Connected to your TV": "متصل بتلفزيونك",
   Consensus: "الإجماع",
@@ -345,8 +345,8 @@ const sweep: Record<string, string> = {
   "Copy the settings you already tuned here onto the TV in one go. It overwrites the matching TV rows and leaves everything else alone.":
     "انسخ الإعدادات التي ضبطتها هنا إلى التلفزيون دفعة واحدة. يستبدل ذلك الصفوف المطابقة على التلفزيون ويترك الباقي كما هو.",
   'Copy the value labelled "API Key (v3 auth)".': 'انسخ القيمة المسمّاة "API Key (v3 auth)".',
-  "Could not reach Harbor. Check your phone's connection and try again.":
-    "تعذّر الوصول إلى Harbor. تحقق من اتصال هاتفك وحاول مجدداً.",
+  "Could not reach Frame. Check your phone's connection and try again.":
+    "تعذّر الوصول إلى Frame. تحقق من اتصال هاتفك وحاول مجدداً.",
   "Could not reach Stremio. Check your phone's connection and try again.":
     "تعذّر الوصول إلى Stremio. تحقق من اتصال هاتفك وحاول مجدداً.",
   "Could not reach TMDB from this TV. You can save the key without checking it.":
@@ -366,15 +366,15 @@ const sweep: Record<string, string> = {
   "Couldn't post right now, try again": "تعذّر النشر الآن، حاول مجددًا",
   "Couldn't reach AniList. Check the connection and reopen Big Picture.":
     "تعذّر الوصول إلى AniList. تحقّق من الاتصال وأعد فتح Big Picture.",
-  "Couldn't reach Harbor. Showing this device only.":
-    "تعذّر الوصول إلى Harbor. يتم عرض هذا الجهاز فقط.",
+  "Couldn't reach Frame. Showing this device only.":
+    "تعذّر الوصول إلى Frame. يتم عرض هذا الجهاز فقط.",
   "Couldn't reach MyAnimeList. Check the connection and reopen Big Picture.":
     "تعذّر الوصول إلى MyAnimeList. تحقّق من الاتصال وأعد فتح Big Picture.",
   "Couldn't reach TMDB for {genre} titles.": "تعذّر جلب عناوين {genre} من TMDB.",
   "Couldn't reach {name}. Try refreshing.": "تعذّر الوصول إلى {name}. حاول التحديث.",
   "Couldn't save the playlist. Free up storage space in Settings and try again.":
     "تعذّر حفظ قائمة التشغيل. حرّر مساحة تخزين في الإعدادات وحاول مجددًا.",
-  "Create a Harbor account": "إنشاء حساب Harbor",
+  "Create a Frame account": "إنشاء حساب Frame",
   "Create your account": "أنشئ حسابك",
   Creators: "المبدعون",
   "Critics + audiences": "النقاد + الجمهور",
@@ -453,16 +453,16 @@ const sweep: Record<string, string> = {
   "Drag a dial and watch the still update. Each dial resets on its own.":
     "اسحب أحد المقابض وشاهد تحديث اللقطة. يُعاد ضبط كل مقبض على حدة.",
   Dreamlogic: "Dreamlogic",
-  "Drift through cinematic backdrops while Harbor sits idle.":
-    "تنقّل بين خلفيات سينمائية أثناء خمول Harbor.",
+  "Drift through cinematic backdrops while Frame sits idle.":
+    "تنقّل بين خلفيات سينمائية أثناء خمول Frame.",
   Dropped: "متروك",
   "Drops anything already finished out of the browse rows.": "يزيل ما انتهيت منه من صفوف التصفح.",
   "DualSense connected": "تم توصيل DualSense",
   ED: "ED",
   "Each curve shows how much of the bright range it keeps before rolling off.":
     "يوضّح كل منحنى مقدار ما يحتفظ به من نطاق السطوع قبل أن ينحدر.",
-  "Each shader is hosted by its author, not bundled with Harbor. Download the ones you want; Harbor chains them in the right order and applies them in the player.":
-    "كل شادر مستضاف لدى مؤلفه وليس مضمّنًا في Harbor. نزّل ما تريد، ويرتّبها Harbor بالتسلسل الصحيح ويطبّقها في المشغّل.",
+  "Each shader is hosted by its author, not bundled with Frame. Download the ones you want; Frame chains them in the right order and applies them in the player.":
+    "كل شادر مستضاف لدى مؤلفه وليس مضمّنًا في Frame. نزّل ما تريد، ويرتّبها Frame بالتسلسل الصحيح ويطبّقها في المشغّل.",
   "Each style keeps its own arrangement, icons and profiles, so switching back and forth never loses work.":
     "يحتفظ كل نمط بترتيبه وأيقوناته وملفاته الشخصية، فلا يضيع أي عمل عند التبديل بينها.",
   "Edge colour": "لون الحافة",
@@ -499,23 +499,23 @@ const sweep: Record<string, string> = {
   Esportes: "رياضة",
   "Every 15 min": "كل 15 دقيقة",
   "Every 30 min": "كل 30 دقيقة",
-  "Every Harbor that announces itself on this network appears here as it answers, with the theme it is wearing.":
-    "يظهر هنا كل Harbor يُعلن عن نفسه في هذه الشبكة فور استجابته، مع السمة التي يرتديها.",
+  "Every Frame that announces itself on this network appears here as it answers, with the theme it is wearing.":
+    "يظهر هنا كل Frame يُعلن عن نفسه في هذه الشبكة فور استجابته، مع السمة التي يرتديها.",
   "Every addon": "كل الإضافات",
   "Every episode of the season uses that same release.": "تستخدم كل حلقات الموسم النسخة نفسها.",
   "Every launch": "عند كل تشغيل",
   "Every saga, in order": "كل السلاسل بالترتيب",
-  "Every source Harbor tried failed to start. Pick a different one, or try again in a moment.":
-    "فشل تشغيل كل مصدر جرّبه Harbor. اختر مصدرًا آخر أو أعد المحاولة بعد قليل.",
-  "Every winner Harbor ships, browsable offline by year and category.":
-    "كل الفائزين المضمّنين في Harbor، للتصفّح دون اتصال حسب السنة والفئة.",
+  "Every source Frame tried failed to start. Pick a different one, or try again in a moment.":
+    "فشل تشغيل كل مصدر جرّبه Frame. اختر مصدرًا آخر أو أعد المحاولة بعد قليل.",
+  "Every winner Frame ships, browsable offline by year and category.":
+    "كل الفائزين المضمّنين في Frame، للتصفّح دون اتصال حسب السنة والفئة.",
   "Everyone else": "الآخرون جميعًا",
-  "Everyone on this Harbor": "كل من في Harbor هذا",
+  "Everyone on this Frame": "كل من في Frame هذا",
   Everything: "كل شيء",
   "Everything here took effect straight away, and it is saved on this device.":
     "طُبِّق كل شيء هنا فورًا، وهو محفوظ على هذا الجهاز.",
-  "Everything on this page is written to your Harbor account. Your TV reads it on its next check-in, so you can set the whole thing up from here and never touch the remote.":
-    "يُحفظ كل ما في هذه الصفحة في حساب Harbor الخاص بك. ويقرأه التلفاز عند تحققه التالي، فتضبط كل شيء من هنا دون لمس جهاز التحكم.",
+  "Everything on this page is written to your Frame account. Your TV reads it on its next check-in, so you can set the whole thing up from here and never touch the remote.":
+    "يُحفظ كل ما في هذه الصفحة في حساب Frame الخاص بك. ويقرأه التلفاز عند تحققه التالي، فتضبط كل شيء من هنا دون لمس جهاز التحكم.",
   "Everything on this page of {genre} is hidden by your anime filter.":
     "كل ما في صفحة {genre} هذه مخفي بسبب مرشّح الأنمي لديك.",
   "Everything you pick is saved into one file. Restoring it later only touches what is in the file. Your Stremio sign-in is always left out.":
@@ -586,7 +586,7 @@ const sweep: Record<string, string> = {
     "مجاني، دقيقتان. يفتح «الرائج» و«في السينما» و«الأعلى تقييمًا» وصفوف كل الخدمات.",
   "French cinema": "السينما الفرنسية",
   "Fresh from the studio": "جديد من الاستوديو",
-  "Fresh looks shared by the Harbor community": "مظاهر جديدة يشاركها مجتمع Harbor",
+  "Fresh looks shared by the Frame community": "مظاهر جديدة يشاركها مجتمع Frame",
   "From Japan": "من اليابان",
   "From Korea": "من كوريا",
   "From a hosted link, your own images, or a .zip.": "من رابط مستضاف، أو صورك الخاصة، أو ملف .zip.",
@@ -594,8 +594,8 @@ const sweep: Record<string, string> = {
   "From your addons": "من إضافاتك",
   "From your own files": "من ملفاتك الخاصة",
   "Frosted glass": "زجاج مصنفر",
-  "Frosted, refractive surfaces on Harbor's floating controls.":
-    "أسطح مصنفرة كاسرة للضوء على عناصر التحكم العائمة في Harbor.",
+  "Frosted, refractive surfaces on Frame's floating controls.":
+    "أسطح مصنفرة كاسرة للضوء على عناصر التحكم العائمة في Frame.",
   Fubo: "Fubo",
   FuboTV: "FuboTV",
   "Full control of the group": "تحكّم كامل في المجموعة",
@@ -627,52 +627,52 @@ const sweep: Record<string, string> = {
   "Hall of Fame": "قاعة المشاهير",
   "Handles P2P playback and transcoding for this machine.":
     "يتولّى تشغيل P2P وإعادة الترميز على هذا الجهاز.",
-  "Harbor Rank": "تصنيف Harbor",
-  "Harbor accepted that but returned no session. Try again.":
-    "قَبِل Harbor ذلك لكنه لم يُعِد جلسة. حاول مرة أخرى.",
-  "Harbor account linked as {name}": "تم ربط حساب Harbor باسم {name}",
-  "Harbor account signed in": "تم تسجيل الدخول إلى حساب Harbor",
-  "Harbor asks your addons for titles and descriptions in this language. The TV menus stay in English.":
-    "يطلب Harbor من إضافاتك العناوين والأوصاف بهذه اللغة. تبقى قوائم التلفزيون بالإنجليزية.",
-  "Harbor cannot find this TV's network address, so the phone hand-off is unavailable here.":
-    "لا يستطيع Harbor إيجاد عنوان الشبكة لهذا التلفزيون، لذا لا تتوفر هنا المتابعة على الهاتف.",
-  "Harbor could not open its web server. Try again, or set this up on the TV.":
-    "تعذّر على Harbor فتح خادم الويب. حاول مرة أخرى، أو أعدّ ذلك على التلفزيون.",
-  "Harbor couldn't play this source": "تعذّر على Harbor تشغيل هذا المصدر",
-  "Harbor couldn't reach MyAnimeList or AniList. Check the connection and reopen Big Picture.":
-    "تعذّر على Harbor الوصول إلى MyAnimeList أو AniList. تحقّق من الاتصال وأعد فتح Big Picture.",
-  "Harbor couldn't reach the catalog servers.": "تعذّر على Harbor الوصول إلى خوادم الكتالوج.",
-  "Harbor couldn't start any source": "تعذّر على Harbor بدء أي مصدر",
-  "Harbor creates a Cloudflare Worker on your own free account and saves the URL.":
-    "ينشئ Harbor خدمة Cloudflare Worker في حسابك المجاني الخاص ويحفظ الـ URL.",
-  "Harbor default": "الافتراضي في Harbor",
-  "Harbor identity (avatar / color)": "هوية Harbor (الصورة الرمزية / اللون)",
-  "Harbor is an independent client. It is not affiliated with or endorsed by Stremio.":
-    "‏Harbor عميل مستقل. وهو غير تابع لـ Stremio ولا معتمد منه.",
-  "Harbor leads with one big title. Classic leads with rows.":
-    "يبدأ Harbor بعنوان كبير واحد. ويبدأ Classic بالصفوف.",
-  "Harbor needs at least one streaming source before it can play {title}. Install a stream addon or add a debrid key in settings.":
-    "يحتاج Harbor إلى مصدر بث واحد على الأقل لتشغيل {title}. ثبّت إضافة بث أو أضف مفتاح debrid في الإعدادات.",
-  "Harbor needs to be serving on your network before a phone can reach it.":
-    "يجب أن يكون Harbor نشطًا على شبكتك حتى يتمكن الهاتف من الوصول إليه.",
-  "Harbor on other devices (web app)": "‏Harbor على أجهزة أخرى (تطبيق الويب)",
-  "Harbor pick": "اختيار Harbor",
-  "Harbor reads the speech in the audio, then slides the subtitle track until the two line up.":
-    "يقرأ Harbor الكلام في الصوت ثم يزيح مسار الترجمة حتى يتطابق الاثنان.",
-  "Harbor signed you up but returned no session. Try signing in instead.":
-    "أنشأ Harbor حسابك لكنه لم يُرجع جلسة. جرّب تسجيل الدخول بدلًا من ذلك.",
-  "Harbor speaks this everywhere. You can change it later in Settings.":
-    "سيستخدم Harbor هذه اللغة في كل مكان. يمكنك تغييرها لاحقًا من الإعدادات.",
-  "Harbor tried {n} sources for {title} and none of them played. Usually that means a debrid key has expired, no stream addon is installed yet, or nothing has this title cached.":
-    "جرّب Harbor {n} من المصادر لـ {title} ولم يعمل أي منها. عادةً يعني ذلك أن مفتاح debrid قد انتهت صلاحيته، أو لم تُثبّت أي إضافة بث بعد، أو لا يوجد تخزين مؤقت لهذا العنوان في أي مكان.",
-  "Harbor was built in English. Multi-language support is partial, so your addons usually catch what Harbor's own filters miss. If you speak another language and want to help, the source is open.":
-    "بُني Harbor بالإنجليزية. دعم اللغات المتعددة جزئي، لذا تلتقط إضافاتك عادةً ما تفوته مرشحات Harbor نفسها. إذا كنت تتحدث لغة أخرى وتريد المساعدة، فالمصدر مفتوح.",
-  "Harbor's built-in HDR to SDR conversion is on. Turn it off in Video tuning to use this instead. Running both double-processes the picture.":
-    "تحويل HDR إلى SDR المدمج في Harbor مُفعّل. عطّله من ضبط الفيديو لاستخدام هذا بدلًا منه. تشغيل الاثنين معًا يعالج الصورة مرتين.",
-  "Harbor's own bar": "شريط Harbor الخاص",
-  "Harbor's own community server": "خادم مجتمع Harbor الخاص",
-  "Harbor's public relay": "مُرحّل Harbor العام",
-  "Harbors on your network": "أجهزة Harbor على شبكتك",
+  "Frame Rank": "تصنيف Frame",
+  "Frame accepted that but returned no session. Try again.":
+    "قَبِل Frame ذلك لكنه لم يُعِد جلسة. حاول مرة أخرى.",
+  "Frame account linked as {name}": "تم ربط حساب Frame باسم {name}",
+  "Frame account signed in": "تم تسجيل الدخول إلى حساب Frame",
+  "Frame asks your addons for titles and descriptions in this language. The TV menus stay in English.":
+    "يطلب Frame من إضافاتك العناوين والأوصاف بهذه اللغة. تبقى قوائم التلفزيون بالإنجليزية.",
+  "Frame cannot find this TV's network address, so the phone hand-off is unavailable here.":
+    "لا يستطيع Frame إيجاد عنوان الشبكة لهذا التلفزيون، لذا لا تتوفر هنا المتابعة على الهاتف.",
+  "Frame could not open its web server. Try again, or set this up on the TV.":
+    "تعذّر على Frame فتح خادم الويب. حاول مرة أخرى، أو أعدّ ذلك على التلفزيون.",
+  "Frame couldn't play this source": "تعذّر على Frame تشغيل هذا المصدر",
+  "Frame couldn't reach MyAnimeList or AniList. Check the connection and reopen Big Picture.":
+    "تعذّر على Frame الوصول إلى MyAnimeList أو AniList. تحقّق من الاتصال وأعد فتح Big Picture.",
+  "Frame couldn't reach the catalog servers.": "تعذّر على Frame الوصول إلى خوادم الكتالوج.",
+  "Frame couldn't start any source": "تعذّر على Frame بدء أي مصدر",
+  "Frame creates a Cloudflare Worker on your own free account and saves the URL.":
+    "ينشئ Frame خدمة Cloudflare Worker في حسابك المجاني الخاص ويحفظ الـ URL.",
+  "Frame default": "الافتراضي في Frame",
+  "Frame identity (avatar / color)": "هوية Frame (الصورة الرمزية / اللون)",
+  "Frame is an independent client. It is not affiliated with or endorsed by Stremio.":
+    "‏Frame عميل مستقل. وهو غير تابع لـ Stremio ولا معتمد منه.",
+  "Frame leads with one big title. Classic leads with rows.":
+    "يبدأ Frame بعنوان كبير واحد. ويبدأ Classic بالصفوف.",
+  "Frame needs at least one streaming source before it can play {title}. Install a stream addon or add a debrid key in settings.":
+    "يحتاج Frame إلى مصدر بث واحد على الأقل لتشغيل {title}. ثبّت إضافة بث أو أضف مفتاح debrid في الإعدادات.",
+  "Frame needs to be serving on your network before a phone can reach it.":
+    "يجب أن يكون Frame نشطًا على شبكتك حتى يتمكن الهاتف من الوصول إليه.",
+  "Frame on other devices (web app)": "‏Frame على أجهزة أخرى (تطبيق الويب)",
+  "Frame pick": "اختيار Frame",
+  "Frame reads the speech in the audio, then slides the subtitle track until the two line up.":
+    "يقرأ Frame الكلام في الصوت ثم يزيح مسار الترجمة حتى يتطابق الاثنان.",
+  "Frame signed you up but returned no session. Try signing in instead.":
+    "أنشأ Frame حسابك لكنه لم يُرجع جلسة. جرّب تسجيل الدخول بدلًا من ذلك.",
+  "Frame speaks this everywhere. You can change it later in Settings.":
+    "سيستخدم Frame هذه اللغة في كل مكان. يمكنك تغييرها لاحقًا من الإعدادات.",
+  "Frame tried {n} sources for {title} and none of them played. Usually that means a debrid key has expired, no stream addon is installed yet, or nothing has this title cached.":
+    "جرّب Frame {n} من المصادر لـ {title} ولم يعمل أي منها. عادةً يعني ذلك أن مفتاح debrid قد انتهت صلاحيته، أو لم تُثبّت أي إضافة بث بعد، أو لا يوجد تخزين مؤقت لهذا العنوان في أي مكان.",
+  "Frame was built in English. Multi-language support is partial, so your addons usually catch what Frame's own filters miss. If you speak another language and want to help, the source is open.":
+    "بُني Frame بالإنجليزية. دعم اللغات المتعددة جزئي، لذا تلتقط إضافاتك عادةً ما تفوته مرشحات Frame نفسها. إذا كنت تتحدث لغة أخرى وتريد المساعدة، فالمصدر مفتوح.",
+  "Frame's built-in HDR to SDR conversion is on. Turn it off in Video tuning to use this instead. Running both double-processes the picture.":
+    "تحويل HDR إلى SDR المدمج في Frame مُفعّل. عطّله من ضبط الفيديو لاستخدام هذا بدلًا منه. تشغيل الاثنين معًا يعالج الصورة مرتين.",
+  "Frame's own bar": "شريط Frame الخاص",
+  "Frame's own community server": "خادم مجتمع Frame الخاص",
+  "Frame's public relay": "مُرحّل Frame العام",
+  "Frames on your network": "أجهزة Frame على شبكتك",
   "Hard outline": "حدّ حاد",
   "Hardware acceleration (hwdec)": "تسريع عتادي (hwdec)",
   Head: "رأس",
@@ -681,7 +681,7 @@ const sweep: Record<string, string> = {
   Heartstrings: "مؤثّر",
   Heavy: "ثقيل",
   "Help & support": "المساعدة والدعم",
-  "Help translate Harbor": "ساعد في ترجمة Harbor",
+  "Help translate Frame": "ساعد في ترجمة Frame",
   "Hero trailer preview": "معاينة المقطع الدعائي للبانر",
   "Hero trailers": "المقاطع الدعائية للبانر",
   "Hidden gems": "جواهر مخفية",
@@ -708,7 +708,7 @@ const sweep: Record<string, string> = {
   "How Watch Together and the window buttons are drawn.": "كيف يُرسم «المشاهدة معًا» وأزرار النافذة.",
   "How large a backdrop image the TV fetches. It does not change video quality. Balanced is the safe choice on older hardware.":
     "حجم صورة الخلفية التي يجلبها التلفزيون. لا يغيّر جودة الفيديو. «متوازن» هو الخيار الآمن على الأجهزة القديمة.",
-  "How long Harbor waits before drifting off.": "المدة التي ينتظرها Harbor قبل أن يغفو.",
+  "How long Frame waits before drifting off.": "المدة التي ينتظرها Frame قبل أن يغفو.",
   "How long a saved frame sticks around before the oldest roll off.":
     "المدة التي يبقى فيها الإطار المحفوظ قبل أن تُزال الأقدم.",
   "How long files stay": "مدة بقاء الملفات",
@@ -805,8 +805,8 @@ const sweep: Record<string, string> = {
   "Leave Big Picture and open settings": "مغادرة Big Picture وفتح الإعدادات",
   "Leave setup": "مغادرة الإعداد",
   "Leave setup?": "مغادرة الإعداد؟",
-  "Leave this blank to use Harbor's own community server, or enter the address of a server you run yourself.":
-    "اتركه فارغًا لاستخدام خادم مجتمع Harbor، أو أدخل عنوان خادم تشغّله بنفسك.",
+  "Leave this blank to use Frame's own community server, or enter the address of a server you run yourself.":
+    "اتركه فارغًا لاستخدام خادم مجتمع Frame، أو أدخل عنوان خادم تشغّله بنفسك.",
   "Let the TV keep its own theme": "ترك التلفزيون بسمته الخاصة",
   Letterboxd: "Letterboxd",
   "Letterboxd connection": "الاتصال بـ Letterboxd",
@@ -820,14 +820,14 @@ const sweep: Record<string, string> = {
   "Link Discord": "ربط Discord",
   "Link a title": "ربط عنوان",
   "Linked as {username}": "مرتبط باسم {username}",
-  "Linked to your Harbor account.": "مرتبط بحسابك في Harbor.",
-  "Listening for Harbors": "البحث عن أجهزة Harbor",
+  "Linked to your Frame account.": "مرتبط بحسابك في Frame.",
+  "Listening for Frames": "البحث عن أجهزة Frame",
   Lists: "القوائم",
   "Live TV source": "مصدر البث المباشر",
   "Live TV sources": "مصادر البث المباشر",
   "Live action": "تمثيل حي",
-  "Live state of Harbor's own P2P engine on this machine.":
-    "الحالة الآنية لمحرك P2P الخاص بـ Harbor على هذا الجهاز.",
+  "Live state of Frame's own P2P engine on this machine.":
+    "الحالة الآنية لمحرك P2P الخاص بـ Frame على هذا الجهاز.",
   "Loading more collections...": "جارٍ تحميل مزيد من المجموعات...",
   "Loads a backup file and restores exactly what it contains, without touching the rest of your setup. Your Stremio sign-in on this device stays as is.":
     "يحمّل ملف نسخة احتياطية ويستعيد ما يحتويه بالضبط، دون المساس ببقية إعداداتك. يبقى تسجيل دخولك إلى Stremio على هذا الجهاز كما هو.",
@@ -856,8 +856,8 @@ const sweep: Record<string, string> = {
   MUBI: "MUBI",
   "Main subtitle line": "سطر الترجمة الرئيسي",
   Maintenance: "الصيانة",
-  "Make Harbor's interface larger.": "تكبير واجهة Harbor.",
-  "Make Harbor's interface smaller.": "تصغير واجهة Harbor.",
+  "Make Frame's interface larger.": "تكبير واجهة Frame.",
+  "Make Frame's interface smaller.": "تصغير واجهة Frame.",
   "Make an award pack": "إنشاء حزمة جوائز",
   "Make everything bigger and easier to read: sidebar, menus, popups, every page.":
     "يجعل كل شيء أكبر وأسهل قراءة: الشريط الجانبي والقوائم والنوافذ المنبثقة وكل صفحة.",
@@ -866,7 +866,7 @@ const sweep: Record<string, string> = {
   Managers: "المديرون",
   Marquee: "اللافتة",
   "Match this computer": "مطابقة هذا الكمبيوتر",
-  "Matching titles to Harbor": "مطابقة العناوين مع Harbor",
+  "Matching titles to Frame": "مطابقة العناوين مع Frame",
   Max: "الأقصى",
   "Max badges per card": "أقصى عدد للشارات في البطاقة",
   "Max {n} GB": "بحد أقصى {n} GB",
@@ -910,8 +910,8 @@ const sweep: Record<string, string> = {
     "NVIDIA Image Scaling. أداة خفيفة لرفع الدقة مكانيًا وزيادة الحدة، بديل لـ FSR يعمل جيدًا على أي GPU.",
   "NVIDIA NIS": "NVIDIA NIS",
   "NVIDIA NIS upscaler": "مُحسِّن الدقة NVIDIA NIS",
-  "Name each file after its award ID. Harbor resizes them and skips anything it cannot match.":
-    "سمِّ كل ملف باسم معرف الجائزة. يغيّر Harbor أحجامها ويتجاهل ما لا يستطيع مطابقته.",
+  "Name each file after its award ID. Frame resizes them and skips anything it cannot match.":
+    "سمِّ كل ملف باسم معرف الجائزة. يغيّر Frame أحجامها ويتجاهل ما لا يستطيع مطابقته.",
   "Name it, tick the resolutions, sources, codecs and audio you want, and leave the rest blank.":
     "أعطِه اسمًا، وحدّد الدقات والمصادر والترميزات والصوت التي تريدها، واترك الباقي فارغًا.",
   "Needs an API key": "يتطلب مفتاح API",
@@ -932,7 +932,7 @@ const sweep: Record<string, string> = {
   News: "الأخبار",
   Next: "التالي",
   "Next episode prompt & auto-play": "تنبيه الحلقة التالية والتشغيل التلقائي",
-  "No Harbor account yet": "لا يوجد حساب Harbor بعد",
+  "No Frame account yet": "لا يوجد حساب Frame بعد",
   "No Label": "بدون تسمية",
   "No channels here": "لا توجد قنوات هنا",
   "No entries on your AniList lists yet.": "لا توجد عناصر في قوائم AniList لديك بعد.",
@@ -945,9 +945,9 @@ const sweep: Record<string, string> = {
   "No language matches that search.": "لا توجد لغة تطابق هذا البحث.",
   "No movies to show yet": "لا توجد أفلام لعرضها بعد",
   "No network address": "لا يوجد عنوان شبكة",
-  "No other Harbor answered": "لم يستجب أي Harbor آخر",
-  "No other Harbor answered on this network. One shows up here a moment after it starts.":
-    "لم يستجب أي Harbor آخر على هذه الشبكة. سيظهر هنا بعد لحظات من تشغيله.",
+  "No other Frame answered": "لم يستجب أي Frame آخر",
+  "No other Frame answered on this network. One shows up here a moment after it starts.":
+    "لم يستجب أي Frame آخر على هذه الشبكة. سيظهر هنا بعد لحظات من تشغيله.",
   "No quality label": "بدون تسمية الجودة",
   "No series to show yet": "لا توجد مسلسلات لعرضها بعد",
   "No sources match your filter. Showing all sources.":
@@ -963,8 +963,8 @@ const sweep: Record<string, string> = {
   "Not set": "غير محدد",
   "Not signed in to Stremio. Your library stays local.":
     "لم تسجّل الدخول إلى Stremio. تبقى مكتبتك محلية.",
-  "Nothing else answered. A Harbor shows up here a moment after it starts on this network.":
-    "لم يستجب شيء آخر. يظهر Harbor هنا بعد لحظات من تشغيله على هذه الشبكة.",
+  "Nothing else answered. A Frame shows up here a moment after it starts on this network.":
+    "لم يستجب شيء آخر. يظهر Frame هنا بعد لحظات من تشغيله على هذه الشبكة.",
   "Nothing has connected yet. Your phone may be on a guest network, or this TV may be on a different network from your phone.":
     "لم يتصل أي شيء بعد. قد يكون هاتفك على شبكة ضيوف، أو قد يكون هذا التلفزيون على شبكة مختلفة عن شبكة هاتفك.",
   "Nothing here yet.": "لا يوجد شيء هنا بعد.",
@@ -972,17 +972,17 @@ const sweep: Record<string, string> = {
   "Nothing left to confirm while P2P is disabled.": "لا شيء لتأكيده أثناء تعطيل P2P.",
   "Nothing on your TV changes until you confirm you have saved this.":
     "لن يتغير شيء على تلفزيونك حتى تؤكد أنك حفظت هذا.",
-  "Nothing selected. Harbor will not load a subtitle on its own.":
-    "لم يتم تحديد شيء. لن يحمّل Harbor أي ترجمة من تلقاء نفسه.",
+  "Nothing selected. Frame will not load a subtitle on its own.":
+    "لم يتم تحديد شيء. لن يحمّل Frame أي ترجمة من تلقاء نفسه.",
   "Nothing sent yet. Change something and it goes up on its own.":
     "لم يُرسل شيء بعد. غيّر شيئًا وسيُرفع تلقائيًا.",
   "Nothing to set up": "لا شيء لإعداده",
   "Nothing to show here yet.": "لا يوجد شيء لعرضه هنا بعد.",
   "Nothing watched yet. Press play on something.": "لم تشاهد شيئًا بعد. شغّل شيئًا ما.",
-  "Nothing you have already set is lost. Harbor picks this back up where you left it.":
-    "لن يُفقد أي شيء ضبطته بالفعل. يتابع Harbor من حيث توقفت.",
+  "Nothing you have already set is lost. Frame picks this back up where you left it.":
+    "لن يُفقد أي شيء ضبطته بالفعل. يتابع Frame من حيث توقفت.",
   "Now Playing card": "بطاقة قيد التشغيل",
-  "Now on Harbor": "الآن على Harbor",
+  "Now on Frame": "الآن على Frame",
   "Nudge the daily Home rows toward your region and languages so local releases surface instead of the same worldwide list. Turn it off to see the unweighted picks.":
     "يوجّه صفوف الشاشة الرئيسية اليومية نحو منطقتك ولغاتك لتظهر الإصدارات المحلية بدل القائمة العالمية نفسها. عطّله لرؤية الاختيارات بدون هذا الترجيح.",
   OMDb: "OMDb",
@@ -998,8 +998,8 @@ const sweep: Record<string, string> = {
   "On the taskbar": "في شريط المهام",
   "On themoviedb.org, open Settings.": "في themoviedb.org، افتح الإعدادات.",
   "Onboarding & hints": "البدء والتلميحات",
-  "One @name that finds you across Harbor.": "اسم @ واحد يجدك في كل أنحاء Harbor.",
-  "One Harbor, every screen.": "Harbor واحد على كل شاشة.",
+  "One @name that finds you across Frame.": "اسم @ واحد يجدك في كل أنحاء Frame.",
+  "One Frame, every screen.": "Frame واحد على كل شاشة.",
   "One release": "إصدار واحد",
   "One-tap looks": "مظاهر بلمسة واحدة",
   Oneshot: "ون شوت",
@@ -1009,7 +1009,7 @@ const sweep: Record<string, string> = {
   "Only when I press play": "فقط عند الضغط على تشغيل",
   "Open Account": "فتح الحساب",
   "Open AniList profile": "فتح ملف AniList",
-  "Open Harbor on desktop to link Discord.": "افتح Harbor على الكمبيوتر لربط Discord.",
+  "Open Frame on desktop to link Discord.": "افتح Frame على الكمبيوتر لربط Discord.",
   "Open MAL profile": "فتح ملف MAL",
   "Open Setup": "فتح الإعداد",
   "Open Trakt profile": "فتح ملف Trakt",
@@ -1036,16 +1036,16 @@ const sweep: Record<string, string> = {
   "P2P only": "P2P فقط",
   PBS: "PBS",
   Packs: "الحزم",
-  "Packs stay hosted by their maker. Harbor keeps the link, not the artwork.":
-    "تبقى الحزم مستضافة لدى صانعها. يحتفظ Harbor بالرابط لا بالصور.",
+  "Packs stay hosted by their maker. Frame keeps the link, not the artwork.":
+    "تبقى الحزم مستضافة لدى صانعها. يحتفظ Frame بالرابط لا بالصور.",
   Page: "الصفحة",
   "Page base.": "أساس الصفحة.",
   "Paid. Bakes scores into the poster image itself.":
     "مدفوع. يدمج التقييمات داخل صورة الملصق نفسها.",
   Pair: "إقران",
-  "Pair once from here and this Harbor will take commands.":
-    "أقرن مرة واحدة من هنا وسيقبل هذا Harbor الأوامر.",
-  "Pair with this Harbor": "الإقران بهذا Harbor",
+  "Pair once from here and this Frame will take commands.":
+    "أقرن مرة واحدة من هنا وسيقبل هذا Frame الأوامر.",
+  "Pair with this Frame": "الإقران بهذا Frame",
   Paired: "تم الإقران",
   "Paired with {name}": "مقترن بـ {name}",
   "Panel and play": "اللوحة والتشغيل",
@@ -1083,8 +1083,8 @@ const sweep: Record<string, string> = {
   "Pick the palette Big Picture wears on the television. A theme this computer knows but the TV does not is sent whole, colors and all.":
     "اختر لوحة الألوان التي يستخدمها Big Picture على التلفزيون. أي سمة يعرفها هذا الحاسوب ولا يعرفها التلفزيون تُرسل كاملة بألوانها.",
   "Pick up exactly where you left off.": "تابع تمامًا من حيث توقفت.",
-  "Pick up to five. It shapes what Harbor surfaces first.":
-    "اختر حتى خمسة. هذا يحدد ما يعرضه Harbor أولًا.",
+  "Pick up to five. It shapes what Frame surfaces first.":
+    "اختر حتى خمسة. هذا يحدد ما يعرضه Frame أولًا.",
   "Pick what to save, then everything you choose lands in one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.":
     "اختر ما تريد حفظه، وسيوضع كل ما تختاره في ملف واحد: السمة، وتخطيط الصفحة الرئيسية، والإعدادات، والإضافات، والملفات الشخصية، وقائمة المشاهدة، وتخطيطات المشغل، وتقدّم المشاهدة، والمزيد. يُستثنى تسجيل دخولك إلى Stremio عمدًا.",
   "Picked for you": "مختار لك",
@@ -1128,8 +1128,8 @@ const sweep: Record<string, string> = {
   "Prepares up to two provider-confirmed cached debrid sources while the picker is open, so Play can start sooner. This may create or update transfers on your debrid account before you click Play. It never touches P2P or uncached sources, is rate-limited, and keeps prepared links in memory for two minutes only. Off by default.":
     "يجهّز ما يصل إلى مصدرين debrid مخزّنين مؤكّدين من المزوّد أثناء فتح قائمة المصادر، ليبدأ التشغيل أسرع. قد يؤدي ذلك إلى إنشاء أو تحديث عمليات نقل في حساب debrid لديك قبل الضغط على تشغيل. لا يمس مصادر P2P أو غير المخزّنة إطلاقًا، وهو محدود المعدل، ويحتفظ بالروابط المجهّزة في الذاكرة لدقيقتين فقط. معطّل افتراضيًا.",
   Presets: "الإعدادات الجاهزة",
-  "Press Play and Harbor picks the source itself instead of opening the list.":
-    "اضغط تشغيل ويختار Harbor المصدر بنفسه بدلًا من فتح القائمة.",
+  "Press Play and Frame picks the source itself instead of opening the list.":
+    "اضغط تشغيل ويختار Frame المصدر بنفسه بدلًا من فتح القائمة.",
   "Press the star on any channel to keep it at the top of the guide.":
     "اضغط النجمة على أي قناة لإبقائها في أعلى الدليل.",
   "Preview style": "نمط المعاينة",
@@ -1197,12 +1197,12 @@ const sweep: Record<string, string> = {
   Released: "صدر",
   "Remap stream badges": "إعادة تعيين شارات البث",
   "Remember your place on show pages": "تذكّر موضعك في صفحات المسلسلات",
-  "Remote control is off on that Harbor, so it cannot be driven from here.":
-    "التحكم عن بُعد معطّل في نسخة Harbor تلك، لذا لا يمكن التحكم بها من هنا.",
-  "Remote control is off, so other Harbors can see this one but cannot drive it.":
-    "التحكم عن بُعد معطّل، لذا يمكن لنسخ Harbor الأخرى رؤية هذه النسخة دون التحكم بها.",
-  "Remote control is on, so other Harbors on this network can drive this one.":
-    "التحكم عن بُعد مفعّل، لذا يمكن لنسخ Harbor الأخرى على هذه الشبكة التحكم بهذه النسخة.",
+  "Remote control is off on that Frame, so it cannot be driven from here.":
+    "التحكم عن بُعد معطّل في نسخة Frame تلك، لذا لا يمكن التحكم بها من هنا.",
+  "Remote control is off, so other Frames can see this one but cannot drive it.":
+    "التحكم عن بُعد معطّل، لذا يمكن لنسخ Frame الأخرى رؤية هذه النسخة دون التحكم بها.",
+  "Remote control is on, so other Frames on this network can drive this one.":
+    "التحكم عن بُعد مفعّل، لذا يمكن لنسخ Frame الأخرى على هذه الشبكة التحكم بهذه النسخة.",
   "Remote off": "التحكم عن بُعد معطّل",
   Remotes: "أجهزة التحكم",
   "Reopening a title within this window resumes instead of re-downloading.":
@@ -1215,7 +1215,7 @@ const sweep: Record<string, string> = {
   "Reset subtitle style to defaults": "إعادة نمط الترجمة إلى الوضع الافتراضي",
   "Restore + upscale. The best all-rounder for most anime.":
     "استعادة + تحسين الدقة. الخيار الأفضل شمولًا لمعظم الأنمي.",
-  "Restore Harbor's interface scale to 100%.": "إعادة حجم واجهة Harbor إلى 100%.",
+  "Restore Frame's interface scale to 100%.": "إعادة حجم واجهة Frame إلى 100%.",
   "Result order (ranking / addon order)": "ترتيب النتائج (التصنيف / ترتيب الإضافات)",
   Revert: "تراجع",
   Rewatching: "إعادة مشاهدة",
@@ -1265,24 +1265,24 @@ const sweep: Record<string, string> = {
   "Saved on that device. You can close this page, or use this phone as a remote.":
     "تم الحفظ على ذلك الجهاز. يمكنك إغلاق هذه الصفحة أو استخدام الهاتف كجهاز تحكّم.",
   "Saved on this device": "محفوظ على هذا الجهاز",
-  "Saved on this device. Another Harbor install starts fresh.":
-    "محفوظ على هذا الجهاز. أي تثبيت آخر لـ Harbor يبدأ من جديد.",
-  "Saved {when} from Harbor {app}. Your Stremio sign-in stays as is.":
-    "محفوظ {when} من Harbor {app}. يبقى تسجيل دخولك إلى Stremio كما هو.",
+  "Saved on this device. Another Frame install starts fresh.":
+    "محفوظ على هذا الجهاز. أي تثبيت آخر لـ Frame يبدأ من جديد.",
+  "Saved {when} from Frame {app}. Your Stremio sign-in stays as is.":
+    "محفوظ {when} من Frame {app}. يبقى تسجيل دخولك إلى Stremio كما هو.",
   "Saves the relay URL and your Cloudflare token to a file.":
     "يحفظ عنوان URL الخاص بالمُرحِّل ورمز Cloudflare في ملف.",
   Saving: "جارٍ الحفظ",
   "Saving to your profile": "جارٍ الحفظ في ملفك الشخصي",
   "Scales the whole interface live as you drag.": "يغيّر حجم الواجهة كاملةً مباشرةً أثناء السحب.",
-  "Scan this with your phone camera to open the Harbor remote, then type straight into the search box.":
-    "امسح هذا بكاميرا هاتفك لفتح جهاز تحكّم Harbor، ثم اكتب مباشرةً في مربّع البحث.",
+  "Scan this with your phone camera to open the Frame remote, then type straight into the search box.":
+    "امسح هذا بكاميرا هاتفك لفتح جهاز تحكّم Frame، ثم اكتب مباشرةً في مربّع البحث.",
   "Sci-fi, fantasy & horror": "خيال علمي وفانتازيا ورعب",
   "Search every source again": "البحث في كل المصادر مجددًا",
   "Search languages (Tamil, Telugu, ...)": "لغات البحث (التاميلية، التيلوغوية، ...)",
   "Search title": "البحث عن عنوان",
   "Search your library": "ابحث في مكتبتك",
-  "Searching works without a key. A key lets Harbor line subtitles up with the audio automatically.":
-    "يعمل البحث بدون مفتاح. المفتاح يتيح لـ Harbor مزامنة الترجمة مع الصوت تلقائيًا.",
+  "Searching works without a key. A key lets Frame line subtitles up with the audio automatically.":
+    "يعمل البحث بدون مفتاح. المفتاح يتيح لـ Frame مزامنة الترجمة مع الصوت تلقائيًا.",
   "Second line": "السطر الثاني",
   "Secondary copy.": "نص ثانوي.",
   "See every TVDB list": "عرض كل قوائم TVDB",
@@ -1297,7 +1297,7 @@ const sweep: Record<string, string> = {
   "Send to TV": "إرسال إلى التلفاز",
   "Send to TV now": "إرسال إلى التلفاز الآن",
   Sending: "جارٍ الإرسال",
-  "Sending to that Harbor": "جارٍ الإرسال إلى ذلك Harbor",
+  "Sending to that Frame": "جارٍ الإرسال إلى ذلك Frame",
   "Sending to your TV": "جارٍ الإرسال إلى تلفازك",
   Sent: "تم الإرسال",
   "Sentient + Switzer": "Sentient + Switzer",
@@ -1307,7 +1307,7 @@ const sweep: Record<string, string> = {
   "Services you have": "خدماتك",
   "Session ID or v4 access token": "معرّف الجلسة أو رمز وصول v4",
   "Set up Anime4K": "إعداد Anime4K",
-  "Set up Harbor": "إعداد Harbor",
+  "Set up Frame": "إعداد Frame",
   "Set up my TV from this computer": "إعداد تلفزيوني من هذا الكمبيوتر",
   "Set up your own Cloudflare Worker rather than borrowing this one.":
     "أعدّ Cloudflare Worker خاصًا بك بدلًا من استعارة هذا.",
@@ -1365,8 +1365,8 @@ const sweep: Record<string, string> = {
   "Sign in with Discord": "تسجيل الدخول عبر Discord",
   "Sign in with a server, username and password": "تسجيل الدخول بخادم واسم مستخدم وكلمة مرور",
   "Signed in. Your library is on the TV.": "تم تسجيل الدخول. مكتبتك على التلفزيون.",
-  "Signing in to your Harbor account. Your profiles will appear in a moment.":
-    "جارٍ تسجيل الدخول إلى حساب Harbor. ستظهر ملفاتك الشخصية بعد لحظات.",
+  "Signing in to your Frame account. Your profiles will appear in a moment.":
+    "جارٍ تسجيل الدخول إلى حساب Frame. ستظهر ملفاتك الشخصية بعد لحظات.",
   "Signing the TV in to Stremio, Trakt, AniList and the metadata keys. Scan the code with your phone from the TV itself.":
     "جارٍ تسجيل دخول التلفزيون إلى Stremio وTrakt وAniList ومفاتيح البيانات الوصفية. امسح الرمز بهاتفك من التلفزيون نفسه.",
   "Silence notifications": "كتم الإشعارات",
@@ -1379,10 +1379,10 @@ const sweep: Record<string, string> = {
   "Skip injected ad": "تخطّي الإعلان المُدرَج",
   "Skip intros and credits": "تخطّي المقدمات والتترات",
   "Skip these tracks": "تخطّي هذه المسارات",
-  "Skip this and Harbor runs on Cinemeta. You just see fewer rows.":
-    "تخطَّ هذا وسيعمل Harbor عبر Cinemeta. سترى صفوفًا أقل فقط.",
-  "Skip this and Harbor still works. Your library just stays local.":
-    "تخطَّ هذا وسيظل Harbor يعمل. لكن مكتبتك ستبقى محلية فقط.",
+  "Skip this and Frame runs on Cinemeta. You just see fewer rows.":
+    "تخطَّ هذا وسيعمل Frame عبر Cinemeta. سترى صفوفًا أقل فقط.",
+  "Skip this and Frame still works. Your library just stays local.":
+    "تخطَّ هذا وسيظل Frame يعمل. لكن مكتبتك ستبقى محلية فقط.",
   "Skip, I can do this later": "تخطّي، يمكنني فعل هذا لاحقًا",
   "Slightly lighter than background.": "أفتح قليلًا من الخلفية.",
   "Slowly fade between a show's backdrop images while you read the page, instead of holding one still. Only runs when the show has more than one backdrop, and never when you have pinned one or asked for reduced motion.":
@@ -1469,8 +1469,8 @@ const sweep: Record<string, string> = {
     "استخدم Better Posters أو PostersPlus أو قالب URL خاصًا بك.",
   "Switch to sharing? This profile will use {name}'s library, watchlist and addons. Its own data is kept but hidden until you switch back.":
     "التبديل إلى المشاركة؟ سيستخدم هذا الملف الشخصي مكتبة {name} وقائمة مشاهدته وإضافاته. تبقى بياناته محفوظة لكن مخفية حتى تعود.",
-  "Sync and track movies, shows, and anime across everything you use. Harbor marks what you finish as watched on Simkl and keeps your plan-to-watch list in step. Free at simkl.com.":
-    "زامن وتابع الأفلام والمسلسلات والأنمي عبر كل ما تستخدمه. يضع Harbor علامة مشاهَد على Simkl لما تنهيه ويبقي قائمة ما تنوي مشاهدته محدّثة. مجانًا على simkl.com.",
+  "Sync and track movies, shows, and anime across everything you use. Frame marks what you finish as watched on Simkl and keeps your plan-to-watch list in step. Free at simkl.com.":
+    "زامن وتابع الأفلام والمسلسلات والأنمي عبر كل ما تستخدمه. يضع Frame علامة مشاهَد على Simkl لما تنهيه ويبقي قائمة ما تنوي مشاهدته محدّثة. مجانًا على simkl.com.",
   "Sync your profile, themes, lists and friends. You can do this any time.":
     "زامن ملفك الشخصي والسمات والقوائم والأصدقاء. يمكنك فعل ذلك في أي وقت.",
   "Syncs your profile, themes, lists and friends. Optional, and you can do it later.":
@@ -1489,8 +1489,8 @@ const sweep: Record<string, string> = {
   "TMDB is connected. Your TV has it.": "تم توصيل TMDB. تلفزيونك يملكه أيضًا.",
   "TV Settings": "إعدادات التلفزيون",
   "TV only": "التلفزيون فقط",
-  "TV only. Older sets crop the outer edge of the picture. Nudge Harbor inward until nothing is cut off.":
-    "للتلفزيون فقط. الأجهزة القديمة تقتطع حواف الصورة. حرّك Harbor إلى الداخل حتى لا يُقتطع شيء.",
+  "TV only. Older sets crop the outer edge of the picture. Nudge Frame inward until nothing is cut off.":
+    "للتلفزيون فقط. الأجهزة القديمة تقتطع حواف الصورة. حرّك Frame إلى الداخل حتى لا يُقتطع شيء.",
   "TVDB list": "قائمة TVDB",
   "TVDB lists are unavailable right now.": "قوائم TVDB غير متاحة حاليًا.",
   Taiwanese: "التايوانية",
@@ -1506,8 +1506,8 @@ const sweep: Record<string, string> = {
   Text: "نص",
   "Text colour": "لون النص",
   "Text opacity": "عتامة النص",
-  "That Harbor is on the network but is not answering, so it cannot be driven.":
-    "هذا Harbor موجود على الشبكة لكنه لا يستجيب، لذا لا يمكن التحكم به.",
+  "That Frame is on the network but is not answering, so it cannot be driven.":
+    "هذا Frame موجود على الشبكة لكنه لا يستجيب، لذا لا يمكن التحكم به.",
   "That code has expired": "انتهت صلاحية هذا الرمز",
   "That code is no longer valid. Look at your TV for a new one.":
     "لم يعد هذا الرمز صالحًا. انظر إلى التلفزيون للحصول على رمز جديد.",
@@ -1515,8 +1515,8 @@ const sweep: Record<string, string> = {
   "That does not look like a Spotify link.": "لا يبدو هذا رابط Spotify.",
   "That does not look like a YouTube link.": "لا يبدو هذا رابط YouTube.",
   "That is five. Deselect one to swap it out.": "هذه خمسة. ألغِ تحديد أحدها للاستبدال.",
-  'That looks like the v4 Read Access Token. Harbor needs the shorter "API Key (v3 auth)" from the same page.':
-    'يبدو أن هذا هو Read Access Token v4. يحتاج Harbor إلى "API Key (v3 auth)" الأقصر من الصفحة نفسها.',
+  'That looks like the v4 Read Access Token. Frame needs the shorter "API Key (v3 auth)" from the same page.':
+    'يبدو أن هذا هو Read Access Token v4. يحتاج Frame إلى "API Key (v3 auth)" الأقصر من الصفحة نفسها.',
   "That's all of your collections.": "هذه كل مجموعاتك.",
   "That's every TVDB list we could find.": "هذه كل قوائم TVDB التي وجدناها.",
   "That's every TVDB list we could reach. Some are unavailable right now.":
@@ -1554,8 +1554,8 @@ const sweep: Record<string, string> = {
     "رفض المزوّد الطلب. غالبًا انتهت صلاحية الرابط أو أنه محجوب إقليميًا أو نفدت الحصة.",
   "The provider's server could not be reached. It may be offline, or you have no connection.":
     "تعذّر الوصول إلى خادم المزوّد. قد يكون متوقفًا أو ليس لديك اتصال.",
-  "The provider's server returned an error. Nothing on Harbor's side can fix this. Pick another source.":
-    "أعاد خادم المزوّد خطأ. لا شيء من جانب Harbor يمكنه إصلاح ذلك. اختر مصدرًا آخر.",
+  "The provider's server returned an error. Nothing on Frame's side can fix this. Pick another source.":
+    "أعاد خادم المزوّد خطأ. لا شيء من جانب Frame يمكنه إصلاح ذلك. اختر مصدرًا آخر.",
   "The same camera pan on each setting. The lit lane is what you get right now.":
     "حركة الكاميرا نفسها عند كل إعداد. المسار المضاء هو ما لديك الآن.",
   "The shape of the whole Home page. Everything below tunes the rows inside it.":
@@ -1583,8 +1583,8 @@ const sweep: Record<string, string> = {
     "تنتمي هذه الإعدادات إلى ملف تعريف، وهذا الحاسوب ليس ضمن أي ملف. اختر ملفًا وسيتبعه التلفزيون.",
   "They said the harbour would be quiet tonight.": "قالوا إن المرفأ سيكون هادئًا الليلة.",
   "Things you still do on the TV itself": "أشياء تبقى على التلفزيون نفسه",
-  "This Harbor takes commands from this computer. Forget it to take that back.":
-    "يتلقى هذا Harbor أوامر من هذا الحاسوب. انسَ الجهاز لإلغاء ذلك.",
+  "This Frame takes commands from this computer. Forget it to take that back.":
+    "يتلقى هذا Frame أوامر من هذا الحاسوب. انسَ الجهاز لإلغاء ذلك.",
   "This browser blocked the copy. Long-press the code above, or write it down.":
     "منع هذا المتصفح النسخ. اضغط مطوّلًا على الرمز أعلاه أو دوّنه.",
   "This build cannot carry TV settings to the account yet. Everything on this page saves on this computer and will go up the moment the sync section names are enabled.":
@@ -1598,8 +1598,8 @@ const sweep: Record<string, string> = {
   "This is how your subtitles will look.": "هكذا ستبدو ترجماتك.",
   "This is the only way back into your account if you forget your password. It is shown once.":
     "هذه هي الطريقة الوحيدة لاستعادة حسابك إذا نسيت كلمة المرور. تُعرض مرة واحدة فقط.",
-  "This opens Harbor to devices on your Wi-Fi. You can turn it off again in Settings.":
-    "هذا يفتح Harbor للأجهزة على شبكة Wi-Fi لديك. يمكنك إيقافه مجددًا من الإعدادات.",
+  "This opens Frame to devices on your Wi-Fi. You can turn it off again in Settings.":
+    "هذا يفتح Frame للأجهزة على شبكة Wi-Fi لديك. يمكنك إيقافه مجددًا من الإعدادات.",
   "This page cannot reach your TV": "لا تستطيع هذه الصفحة الوصول إلى تلفزيونك",
   "This page works while your TV is showing its setup screen. Go back to that screen on the TV, then try again.":
     "تعمل هذه الصفحة أثناء عرض التلفزيون لشاشة الإعداد. عُد إلى تلك الشاشة على التلفزيون ثم حاول مجددًا.",
@@ -1612,8 +1612,8 @@ const sweep: Record<string, string> = {
     "لا يمكن لهذه الجلسة تحديث رمزها المميز. سجّل الخروج ثم الدخول، وإلا لن يرى التلفزيون هذه التغييرات.",
   "This source didn't respond": "لم يستجب هذا المصدر",
   "This source is down": "هذا المصدر متوقف",
-  "This source isn't cached on your debrid, so Harbor would pull it directly from peers. It can take a moment to start and may buffer on low-seed torrents.":
-    "هذا المصدر غير مخزَّن مؤقتًا على debrid لديك، لذا سيسحبه Harbor مباشرة من الأقران. قد يستغرق البدء لحظة وقد يحدث تخزين مؤقت في التورنتات قليلة البذور.",
+  "This source isn't cached on your debrid, so Frame would pull it directly from peers. It can take a moment to start and may buffer on low-seed torrents.":
+    "هذا المصدر غير مخزَّن مؤقتًا على debrid لديك، لذا سيسحبه Frame مباشرة من الأقران. قد يستغرق البدء لحظة وقد يحدث تخزين مؤقت في التورنتات قليلة البذور.",
   "This source rejected the stream": "رفض هذا المصدر البث",
   "This source stays quiet until you add a key.": "يظل هذا المصدر صامتًا حتى تضيف مفتاحًا.",
   "Time well spent": "وقت في محله",
@@ -1656,8 +1656,8 @@ const sweep: Record<string, string> = {
     "تشغيل تحسين الدقة عبر Anime4K (تلقائي) أو إيقافه. يعمل فقط عند توفر الـ shaders.",
   "Turn Anime4K upscaling on. Only active when shaders are available.":
     "تشغيل تحسين الدقة عبر Anime4K. يعمل فقط عند توفر الـ shaders.",
-  "Turn anime back on in Harbor's content settings to browse it here.":
-    "أعد تفعيل الأنمي في إعدادات المحتوى في Harbor لتصفحه هنا.",
+  "Turn anime back on in Frame's content settings to browse it here.":
+    "أعد تفعيل الأنمي في إعدادات المحتوى في Frame لتصفحه هنا.",
   "Turn off mobile data so your phone uses Wi-Fi.": "أوقف بيانات الجوال ليستخدم هاتفك Wi-Fi.",
   "Turn off what you do not have": "أوقف ما لا تملكه",
   "Turn on SVP above to choose where interpolation applies.":
@@ -1665,7 +1665,7 @@ const sweep: Record<string, string> = {
   "Turn on network serving": "تشغيل الإتاحة عبر الشبكة",
   "Turn this on to arm the four rules below.": "فعّل هذا لتنشيط القواعد الأربع أدناه.",
   "Turning them on": "كيفية تشغيلها",
-  "Type the code showing on that Harbor.": "أدخل الرمز الظاهر على Harbor الآخر.",
+  "Type the code showing on that Frame.": "أدخل الرمز الظاهر على Frame الآخر.",
   Typeface: "نوع الخط",
   "Typography & custom fonts": "التنسيق الطباعي والخطوط المخصصة",
   "UFC / MMA": "UFC / MMA",
@@ -1679,8 +1679,8 @@ const sweep: Record<string, string> = {
   Unreachable: "تعذّر الوصول",
   "Unsaved changes to your layout, time format and volume style.":
     "تغييرات غير محفوظة في التخطيط وتنسيق الوقت ونمط مستوى الصوت.",
-  "Until you pair, that Harbor ignores anything this computer sends it.":
-    "إلى أن تُجري الاقتران، يتجاهل Harbor الآخر كل ما يرسله هذا الكمبيوتر.",
+  "Until you pair, that Frame ignores anything this computer sends it.":
+    "إلى أن تُجري الاقتران، يتجاهل Frame الآخر كل ما يرسله هذا الكمبيوتر.",
   Untitled: "بلا عنوان",
   Unverified: "غير موثّق",
   "Upcoming episodes and movies from your Simkl watching and plan-to-watch lists":
@@ -1737,15 +1737,15 @@ const sweep: Record<string, string> = {
   "What your catalogs are showing right now.": "ما تعرضه كتالوجاتك الآن.",
   "What's hot right now": "الرائج الآن",
   "What's new on the network": "الجديد على الشبكة",
-  "When playback starts, Harbor finds and loads a subtitle in one of these languages. The first available match wins, so put your main language first.":
-    "عند بدء التشغيل، يبحث Harbor عن ترجمة بإحدى هذه اللغات ويحمّلها. تُعتمد أول لغة متوفرة، لذا ضع لغتك الأساسية أولًا.",
+  "When playback starts, Frame finds and loads a subtitle in one of these languages. The first available match wins, so put your main language first.":
+    "عند بدء التشغيل، يبحث Frame عن ترجمة بإحدى هذه اللغات ويحمّلها. تُعتمد أول لغة متوفرة، لذا ضع لغتك الأساسية أولًا.",
   "When you open a profile": "عند فتح ملف شخصي",
   "When you press Play": "عند الضغط على «تشغيل»",
   "Where files live": "أين تُخزَّن الملفات",
   "Where the bookmark sits on the poster.": "أين تقع الإشارة المرجعية على الملصق.",
   "Where to find the key": "أين تجد المفتاح",
-  "Whether Harbor reports playback to Simkl while you watch.":
-    "ما إذا كان Harbor يُبلغ Simkl بالتشغيل أثناء مشاهدتك.",
+  "Whether Frame reports playback to Simkl while you watch.":
+    "ما إذا كان Frame يُبلغ Simkl بالتشغيل أثناء مشاهدتك.",
   "Whether finishing an episode updates your AniList progress.":
     "ما إذا كان إنهاء حلقة يُحدّث تقدّمك في AniList.",
   "Whether subtitles are showing the moment a video starts.":
@@ -1760,8 +1760,8 @@ const sweep: Record<string, string> = {
   "Which line sits where while both are on screen.": "موضع كل سطر بينما يظهر الاثنان على الشاشة.",
   "Which service names the track when you tap Identify song in the player.":
     "أي خدمة تحدّد اسم المقطع عند الضغط على «تحديد الأغنية» في المشغّل.",
-  "Which subtitle Harbor lands on when more than one is available.":
-    "أي ترجمة يختارها Harbor عند توفر أكثر من واحدة.",
+  "Which subtitle Frame lands on when more than one is available.":
+    "أي ترجمة يختارها Frame عند توفر أكثر من واحدة.",
   "Which subtitle languages, in order?": "ما لغات الترجمة، وبأي ترتيب؟",
   "While auto-sync is on": "أثناء تشغيل المزامنة التلقائية",
   White: "أبيض",
@@ -1787,8 +1787,8 @@ const sweep: Record<string, string> = {
   Yesterday: "أمس",
   "You are aboard.": "أنت على متن السفينة.",
   "You are done.": "انتهيت.",
-  "You are not signed in to a Harbor account, so nothing here can reach the TV.":
-    "لم تسجّل الدخول إلى حساب Harbor، لذا لا يمكن لأي شيء هنا الوصول إلى التلفزيون.",
+  "You are not signed in to a Frame account, so nothing here can reach the TV.":
+    "لم تسجّل الدخول إلى حساب Frame، لذا لا يمكن لأي شيء هنا الوصول إلى التلفزيون.",
   "You are set up": "اكتمل الإعداد",
   "You have no lists yet.": "ليس لديك أي قوائم بعد.",
   "You have not made a collection yet.": "لم تنشئ مجموعة بعد.",
@@ -1797,9 +1797,8 @@ const sweep: Record<string, string> = {
     "قائمة متابعة المشاهدة وقائمة المشاهدة والإضافات الخاصة بك، على هذا التلفزيون.",
   "Your Continue Watching, your watchlist and your addons.":
     "قائمة متابعة المشاهدة وقائمة المشاهدة والإضافات الخاصة بك.",
-  "Your Harbor account": "حسابك في Harbor",
-  "Your Harbor account is signed in on the TV.":
-    "تم تسجيل الدخول إلى حسابك في Harbor على التلفزيون.",
+  "Your Frame account": "حسابك في Frame",
+  "Your Frame account is signed in on the TV.": "تم تسجيل الدخول إلى حسابك في Frame على التلفزيون.",
   "Your Simkl plan-to-watch list has no episodes airing this month. Switch to All upcoming to browse everything.":
     "لا تحتوي قائمة «أخطط لمشاهدته» في Simkl على حلقات تُعرض هذا الشهر. بدّل إلى «كل القادم» لتصفح كل شيء.",
   "Your Stremio password": "كلمة مرور Stremio الخاصة بك",
@@ -1868,7 +1867,7 @@ const sweep: Record<string, string> = {
   "{n} of {total} chosen": "{n} من {total} محدد",
   "{n} of {total} connected": "{n} من {total} متصل",
   "{n} on": "{n} مفعّل",
-  "{n} other Harbors": "{n} أجهزة Harbor أخرى",
+  "{n} other Frames": "{n} أجهزة Frame أخرى",
   "{n} picks, refreshed daily": "{n} اختيارات، تُحدَّث يوميًا",
   "{n} recorded winners": "{n} فائزًا مسجلًا",
   "{n} seeders": "{n} موزّعًا",

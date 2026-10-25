@@ -47,8 +47,8 @@ const finalResidual: Record<string, string> = {
   'Designing "{name}"': '"{name}" tasarlanıyor',
   "Designing a theme": "Tema tasarlanıyor",
   Destination: "Hedef",
-  "Direct torrent play needs the Harbor desktop app.":
-    "Torrentleri doğrudan oynatmak için Harbor masaüstü uygulaması gerekir.",
+  "Direct torrent play needs the Frame desktop app.":
+    "Torrentleri doğrudan oynatmak için Frame masaüstü uygulaması gerekir.",
   "Disc Source": "Disk Kaynağı",
   "Double-click to unlink rows": "Satırların bağlantısını kaldırmak için çift tıklayın",
   "Drag or use arrow keys to resize columns":
@@ -66,21 +66,21 @@ const finalResidual: Record<string, string> = {
   "Great job!": "Harika iş çıkardın!",
   H: "Sa",
   "HTTP {status}: {body}": "HTTP {status}: {body}",
-  "Harbor Relay Documentation": "Harbor Relay Belgeleri",
-  "Harbor Relay docs": "Harbor Relay belgeleri",
-  "Harbor blocks suspicious files and mismatched releases by default. For older shows and unusual titles this is sometimes too tight.":
-    "Harbor, şüpheli dosyaları ve eşleşmeyen sürümleri varsayılan olarak engeller. Eski diziler ve sıra dışı yapımlar için bu bazen fazla katı olabilir.",
-  "Harbor can open only HTTP or HTTPS destinations.":
-    "Harbor yalnızca HTTP veya HTTPS hedeflerini açabilir.",
-  "Harbor cannot open links that include embedded credentials.":
-    "Harbor, gömülü kimlik bilgileri içeren bağlantıları açamaz.",
-  "Harbor could not verify this destination.": "Harbor bu hedefi doğrulayamadı.",
-  "Harbor queried 1 addon and got nothing back": "Harbor 1 eklentiyi sorguladı ancak sonuç alamadı",
-  "Harbor queried {n} addons and got nothing back":
-    "Harbor {n} eklentiyi sorguladı ancak sonuç alamadı",
-  "Harbor test message ({service}). If you can read this, your webhook is wired up.":
-    "Harbor test mesajı ({service}). Bunu okuyabiliyorsanız webhook bağlantınız kurulmuştur.",
-  "Harbor's temporary viewer requires HTTPS.": "Harbor'ın geçici görüntüleyicisi HTTPS gerektirir.",
+  "Frame Relay Documentation": "Frame Relay Belgeleri",
+  "Frame Relay docs": "Frame Relay belgeleri",
+  "Frame blocks suspicious files and mismatched releases by default. For older shows and unusual titles this is sometimes too tight.":
+    "Frame, şüpheli dosyaları ve eşleşmeyen sürümleri varsayılan olarak engeller. Eski diziler ve sıra dışı yapımlar için bu bazen fazla katı olabilir.",
+  "Frame can open only HTTP or HTTPS destinations.":
+    "Frame yalnızca HTTP veya HTTPS hedeflerini açabilir.",
+  "Frame cannot open links that include embedded credentials.":
+    "Frame, gömülü kimlik bilgileri içeren bağlantıları açamaz.",
+  "Frame could not verify this destination.": "Frame bu hedefi doğrulayamadı.",
+  "Frame queried 1 addon and got nothing back": "Frame 1 eklentiyi sorguladı ancak sonuç alamadı",
+  "Frame queried {n} addons and got nothing back":
+    "Frame {n} eklentiyi sorguladı ancak sonuç alamadı",
+  "Frame test message ({service}). If you can read this, your webhook is wired up.":
+    "Frame test mesajı ({service}). Bunu okuyabiliyorsanız webhook bağlantınız kurulmuştur.",
+  "Frame's temporary viewer requires HTTPS.": "Frame'ın geçici görüntüleyicisi HTTPS gerektirir.",
   "Hidden Gems from the {decade}": "{decade} Döneminden Gizli Cevherler",
   "Hide all sources": "Tüm kaynakları gizle",
   "Hide controls": "Kontrolleri gizle",
@@ -113,8 +113,8 @@ const finalResidual: Record<string, string> = {
   "New {genre} Series": "Yeni {genre} Dizileri",
   "Nice try!": "İyi denemeydi!",
   "No PiP session. Closing.": "PiP oturumu yok. Kapatılıyor.",
-  "No clean release has surfaced yet. This may be too new. Harbor's filters dropped everything that came back as wrong-movie noise.":
-    "Henüz temiz bir sürüm bulunamadı. Bu yapım çok yeni olabilir. Harbor'ın filtreleri, yanlış filmle ilgili gelen tüm sonuçları eledi.",
+  "No clean release has surfaced yet. This may be too new. Frame's filters dropped everything that came back as wrong-movie noise.":
+    "Henüz temiz bir sürüm bulunamadı. Bu yapım çok yeni olabilir. Frame'ın filtreleri, yanlış filmle ilgili gelen tüm sonuçları eledi.",
   "No playable video file was found in this torrent.":
     "Bu torrentte oynatılabilir video dosyası bulunamadı.",
   "Not cached": "Önbelleğe alınmamış",
@@ -182,10 +182,10 @@ const finalResidual: Record<string, string> = {
   "Theatrical Capture": "Sinema Çekimi",
   "Theme Studio": "Tema Stüdyosu",
   "Theme is missing a name.": "Temanın adı eksik.",
-  "This file isn't a Harbor theme.": "Bu dosya bir Harbor teması değil.",
+  "This file isn't a Frame theme.": "Bu dosya bir Frame teması değil.",
   "This file isn't a readable theme.": "Bu dosya okunabilir bir tema değil.",
-  "This link goes to an external site that Harbor does not control or vouch for. Triple-check the address before you continue, and never enter your Harbor password anywhere but Harbor.":
-    "Bu bağlantı, Harbor'ın denetlemediği veya güvenilirliğini garanti etmediği harici bir siteye yönlendiriyor. Devam etmeden önce adresi üç kez kontrol edin ve Harbor parolanızı Harbor dışında hiçbir yere girmeyin.",
+  "This link goes to an external site that Frame does not control or vouch for. Triple-check the address before you continue, and never enter your Frame password anywhere but Frame.":
+    "Bu bağlantı, Frame'ın denetlemediği veya güvenilirliğini garanti etmediği harici bir siteye yönlendiriyor. Devam etmeden önce adresi üç kez kontrol edin ve Frame parolanızı Frame dışında hiçbir yere girmeyin.",
   "This theme file is missing a name.": "Bu tema dosyasının adı eksik.",
   "This theme file is missing its colors.": "Bu tema dosyasının renkleri eksik.",
   "This theme is missing a color ({color}).": "Bu temada bir renk eksik ({color}).",
@@ -209,7 +209,7 @@ const finalResidual: Record<string, string> = {
   Won: "Kazandı",
   Y: "Y",
   "You got {score} of {total} right!": "{total} sorudan {score} tanesini doğru bildin!",
-  "You're leaving Harbor": "Harbor'dan ayrılıyorsunuz",
+  "You're leaving Frame": "Frame'dan ayrılıyorsunuz",
   "Your changes to this theme aren't saved yet. They'll be lost if you leave now.":
     "Bu temadaki değişiklikleriniz henüz kaydedilmedi. Şimdi çıkarsanız değişiklikler kaybolacak.",
   "Your remote streaming server is not reachable. Check its address in Settings.":

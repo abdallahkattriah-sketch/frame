@@ -12,11 +12,11 @@ export default {
   "games.manage.restore": "Mostrar na barra lateral",
   "games.manage.uninstall": "Desinstalar…",
   "games.manage.uninstallOptions": "Opções de desinstalação…",
-  "games.manage.remove": "Remover do Harbor…",
+  "games.manage.remove": "Remover do Frame…",
   "games.manage.manage": "Gerenciar",
   "games.manage.failed":
     "Não foi possível concluir. Verifique se o jogo e o inicializador estão disponíveis e tente novamente.",
-  "games.manage.removed": "Removido do Harbor",
+  "games.manage.removed": "Removido do Frame",
   "games.manage.sent": "Continuar em {source}",
   "games.manage.removeTitle": "Remover esta entrada?",
   "games.manage.uninstallTitle": "Desinstalar este jogo?",
@@ -24,15 +24,15 @@ export default {
   "games.manage.removedNote":
     "A entrada foi removida. Os arquivos do jogo continuam neste computador.",
   "games.manage.sentNote":
-    "{source} foi aberto. Conclua por lá; o Harbor atualizará a instalação quando você voltar.",
+    "{source} foi aberto. Conclua por lá; o Frame atualizará a instalação quando você voltar.",
   "games.manage.removeNote":
-    "Remove {name} e seu histórico de jogo no Harbor deste perfil. Isso não desinstala o jogo nem exclui seus arquivos.",
+    "Remove {name} e seu histórico de jogo no Frame deste perfil. Isso não desinstala o jogo nem exclui seus arquivos.",
   "games.manage.steamNote":
     "O Steam cuidará da desinstalação de {name}. Talvez seja necessário confirmar novamente no Steam. Antes, faça backup dos saves locais e mods que deseja manter.",
   "games.manage.launcherNote":
-    "Abra {source}, selecione {name} e escolha Gerenciar ou Desinstalar. O inicializador cuida da remoção; o Harbor não exclui a pasta.",
+    "Abra {source}, selecione {name} e escolha Gerenciar ou Desinstalar. O inicializador cuida da remoção; o Frame não exclui a pasta.",
   "games.manage.windowsNote":
-    "Encontre {name} em Aplicativos instalados do Windows e escolha Desinstalar. Para jogos portáteis, siga as instruções próprias. O Harbor não excluirá a pasta.",
+    "Encontre {name} em Aplicativos instalados do Windows e escolha Desinstalar. Para jogos portáteis, siga as instruções próprias. O Frame não excluirá a pasta.",
   "games.manage.opening": "Abrindo…",
   "games.manage.confirmUninstall": "Continuar para o Steam",
   "games.manage.openSource": "Abrir {source}",

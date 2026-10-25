@@ -24,7 +24,7 @@ const controllerSource = readFileSync(
 );
 const appSource = readFileSync(new URL("../src/App.tsx", import.meta.url), "utf8");
 
-test("viewer uses Harbor identity and the fixed remote-content boundary", () => {
+test("viewer uses Frame identity and the fixed remote-content boundary", () => {
   assert.match(source, /<HarborLoader/);
   assert.match(source, /caption=\{t\("Loading \{hostname\}"/);
   assert.match(source, /sandbox={EXTERNAL_LINK_FRAME_SANDBOX}/);
@@ -41,7 +41,7 @@ test("viewer uses Harbor identity and the fixed remote-content boundary", () => 
 
 test("viewer uses truthful slow-loading copy", () => {
   assert.match(source, /Still loading\?/);
-  assert.match(source, /may not support Harbor(?:'|&apos;)s temporary viewer/);
+  assert.match(source, /may not support Frame(?:'|&apos;)s temporary viewer/);
   assert.doesNotMatch(source, /definitely|X-Frame-Options|blocks embedding/);
 });
 
@@ -60,7 +60,7 @@ test("warning uses a direct main action and an alternate-only menu", () => {
   assert.match(splitSource, /role="menuitem"/);
   assert.match(splitSource, /<HarborMark/);
   assert.match(splitSource, /Continue in browser/);
-  assert.match(splitSource, /Continue in Harbor/);
+  assert.match(splitSource, /Continue in Frame/);
   assert.match(splitSource, /window\.addEventListener\("pointerdown"/);
   assert.match(interstitialSource, /handleExternalLinkBack\(menuOpenRef\.current/);
   assert.match(splitSource, /dismissExternalLinkMenu\("outside"/);

@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Impronte dei file · SHA-256",
   "games.patch.localNote": "Sul tuo dispositivo · BPS · IPS · UPS · Fino a 256 MB",
   "games.patch.desktop":
-    "Applica le patch nell’app desktop Harbor per Windows, macOS o Linux. I file restano sul tuo dispositivo e il gioco originale viene conservato.",
+    "Applica le patch nell’app desktop Frame per Windows, macOS o Linux. I file restano sul tuo dispositivo e il gioco originale viene conservato.",
   "games.patch.done": "Pronto per una nuova avventura",
   "games.patch.preserved":
     "La copia modificata è stata salvata. Il gioco originale e la patch restano invariati.",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Un file selezionato è cambiato dopo la verifica. Verifica di nuovo la patch prima di salvare.",
   "games.patch.patch_output_exists":
-    "Esiste già un file in questa posizione. Scegli un altro nome; Harbor non sostituisce i file esistenti.",
+    "Esiste già un file in questa posizione. Scegli un altro nome; Frame non sostituisce i file esistenti.",
   "games.patch.patch_read_failed":
     "Impossibile leggere uno dei file. Verifica che sia ancora disponibile e selezionalo di nuovo.",
   "games.patch.patch_write_failed":
@@ -77,9 +77,9 @@ export default {
   "games.atlas.sort.newest": "Più recenti",
   "games.atlas.sort.oldest": "Meno recenti",
   "games.hub.stepPatch":
-    "Scegli il gioco originale e una patch BPS, IPS o UPS. Harbor salva una copia separata.",
+    "Scegli il gioco originale e una patch BPS, IPS o UPS. Frame salva una copia separata.",
   "games.patch.description":
-    "Scegli il gioco originale e una patch BPS, IPS o UPS. Harbor salva una copia separata.",
+    "Scegli il gioco originale e una patch BPS, IPS o UPS. Frame salva una copia separata.",
   "games.patch.choosePatch": "Scegli una patch (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Questo file non è una patch BPS, IPS o UPS supportata.",
   "games.discovery.viewGame": "Vedi il gioco",

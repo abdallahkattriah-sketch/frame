@@ -38,7 +38,7 @@ export default {
   "games.valorant.metaScope":
     "Datos competitivos de OP.GG para el parche seleccionado. La tasa de selección es la proporción de apariciones de agentes. Los resultados representan la muestra de la fuente, no a todos los jugadores.",
   "games.valorant.referenceScope":
-    "Imágenes y referencias del juego mediante Valorant-API. Las actualizaciones pueden retrasarse. Harbor no está respaldado por Riot Games.",
+    "Imágenes y referencias del juego mediante Valorant-API. Las actualizaciones pueden retrasarse. Frame no está respaldado por Riot Games.",
   "games.valorant.samples": "{count} apariciones",
   "games.valorant.smallSample": "Muestra pequeña",
   "games.valorant.abilities": "Habilidades",

@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Aktivität",
   "games.shortcuts.activity.title": "Verknüpfungsaktivität",
   "games.shortcuts.activity.note":
-    "Letzte Suchläufe und Starts für dieses Harbor-Profil. Bis zu 300 Einträge.",
+    "Letzte Suchläufe und Starts für dieses Frame-Profil. Bis zu 300 Einträge.",
   "games.shortcuts.activity.remember": "Zwischen Sitzungen speichern",
   "games.shortcuts.activity.detailed": "Suchlaufdetails erfassen",
   "games.shortcuts.activity.storageError":
@@ -59,7 +59,7 @@ export default {
   "games.shortcuts.storeError": "Die Einstellungen konnten nicht gespeichert werden.",
   "games.shortcuts.shortcut_location": "Wähle den Steam-Ordner oder seinen userdata-Ordner.",
   "games.shortcuts.shortcut_account":
-    "Öffne Steam mit dem Konto dieser Verknüpfung und aktualisiere. Harbor muss dieselbe Steam-Installation verwenden.",
+    "Öffne Steam mit dem Konto dieser Verknüpfung und aktualisiere. Frame muss dieselbe Steam-Installation verwenden.",
   "games.shortcuts.shortcut_missing":
     "Diese Verknüpfung existiert nicht mehr. Aktualisiere die Bibliothek.",
   "games.shortcuts.shortcut_executable":

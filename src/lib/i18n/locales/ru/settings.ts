@@ -2,17 +2,17 @@ const settings: Record<string, string> = {
   "Smooth scrolling": "Плавная прокрутка",
   "Eases mouse-wheel scrolling instead of jumping line by line. Turn off if you prefer an instant response or notice any lag.":
     "Плавная прокрутка колёсиком мыши вместо рывков по строкам. Отключите, если предпочитаете мгновенный отклик или заметили задержки.",
-  "Sign in to Harbor": "Вход в Harbor",
-  "Create Harbor account": "Создать аккаунт Harbor",
+  "Sign in to Frame": "Вход в Frame",
+  "Create Frame account": "Создать аккаунт Frame",
   "Claim your handle": "Занять свой ник",
   "Reset password (recovery key)": "Сброс пароля (ключ восстановления)",
-  "Sign out of Harbor account": "Выйти из аккаунта Harbor",
+  "Sign out of Frame account": "Выйти из аккаунта Frame",
   "Verified status": "Статус верификации",
   "Settings for this profile (shared or independent)":
     "Настройки этого профиля (общие или отдельные)",
   "PIN-locked profiles": "Профили с PIN-кодом",
-  "Home style (Harbor curated / Classic Stremio)":
-    "Стиль главной (Подборка Harbor / Классический Stremio)",
+  "Home style (Frame curated / Classic Stremio)":
+    "Стиль главной (Подборка Frame / Классический Stremio)",
   "When the latest episode ends (Hide / Timer)":
     "Когда заканчивается последняя серия (Скрыть / Таймер)",
   "Remove shows once you're caught up": "Убирать сериалы, когда всё просмотрено",
@@ -104,8 +104,8 @@ const settings: Record<string, string> = {
     "Через пару секунд на слайде трейлер выбранного названия начинает беззвучно играть на фоне. Расходует больше трафика.",
   "After the current show's episodes, Next flows into your queue. Off keeps Next/Previous within the current show only.":
     "После серий текущего сериала «Далее» переходит к вашей очереди. Если выключено, «Далее»/«Предыдущее» работают только внутри текущего сериала.",
-  "After you pick a source, show a subtitle picker so you can set the exact track and language before the video starts. Off by default, Harbor keeps picking one for you automatically.":
-    "После выбора источника показывать выбор субтитров, чтобы задать точную дорожку и язык до начала видео. По умолчанию выключено, Harbor подбирает их автоматически.",
+  "After you pick a source, show a subtitle picker so you can set the exact track and language before the video starts. Off by default, Frame keeps picking one for you automatically.":
+    "После выбора источника показывать выбор субтитров, чтобы задать точную дорожку и язык до начала видео. По умолчанию выключено, Frame подбирает их автоматически.",
   Aired: "По эфиру",
   "All badges back to default": "Все значки возвращены к стандартным",
   "All custom rules removed": "Все пользовательские правила удалены",
@@ -164,8 +164,8 @@ const settings: Record<string, string> = {
   "Episode 2": "Серия 2",
   "Episode 3": "Серия 3",
   "Episode 4": "Серия 4",
-  "Every format badge Harbor can show on streams. Click one to swap its art, hide it, or reset it. Changes apply everywhere badges appear.":
-    "Все значки форматов, которые Harbor может показывать на потоках. Нажмите на любой, чтобы заменить изображение, скрыть или сбросить его. Изменения действуют везде, где есть значки.",
+  "Every format badge Frame can show on streams. Click one to swap its art, hide it, or reset it. Changes apply everywhere badges appear.":
+    "Все значки форматов, которые Frame может показывать на потоках. Нажмите на любой, чтобы заменить изображение, скрыть или сбросить его. Изменения действуют везде, где есть значки.",
   "Export artwork": "Экспорт изображений",
   "Export my setup": "Экспортировать мои настройки",
   "Extra large": "Очень большой",
@@ -189,8 +189,8 @@ const settings: Record<string, string> = {
   "Groq API key (gsk-...)": "API-ключ Groq (gsk-...)",
   "Group Refresh on the left beside Back instead of the far right of the header.":
     "Разместить «Обновить» слева рядом с «Назад», а не у правого края шапки.",
-  "Harbor will not start the P2P engine, contact trackers, or run DHT. Use this if you only want debrid and direct links. Turn off to re-enable P2P streaming.":
-    "Harbor не будет запускать P2P-движок, обращаться к трекерам и использовать DHT. Включите, если нужны только debrid и прямые ссылки. Отключите, чтобы вернуть P2P-потоки.",
+  "Frame will not start the P2P engine, contact trackers, or run DHT. Use this if you only want debrid and direct links. Turn off to re-enable P2P streaming.":
+    "Frame не будет запускать P2P-движок, обращаться к трекерам и использовать DHT. Включите, если нужны только debrid и прямые ссылки. Отключите, чтобы вернуть P2P-потоки.",
   "Hide badge": "Скрыть значок",
   "Hide manga": "Скрыть мангу",
   "Hide pack instructions": "Скрыть инструкции по пакетам",
@@ -217,8 +217,8 @@ const settings: Record<string, string> = {
   Logo: "Логотип",
   "Logo & app icon": "Логотип и значок приложения",
   MB: "MB",
-  "Make Harbor yours: swap the sidebar logo and the window/taskbar icon.":
-    "Сделайте Harbor своим: замените логотип на боковой панели и значок окна и панели задач.",
+  "Make Frame yours: swap the sidebar logo and the window/taskbar icon.":
+    "Сделайте Frame своим: замените логотип на боковой панели и значок окна и панели задач.",
   "Make your own": "Создать свой",
   "Max scores per card": "Макс. оценок на карточке",
   "Minimum file size": "Минимальный размер файла",
@@ -228,8 +228,8 @@ const settings: Record<string, string> = {
     "Перемещение фокуса с клавиатуры, как пультом от телевизора.",
   NEW: "НОВОЕ",
   "Name (e.g. REMUX)": "Название (например, REMUX)",
-  "Native to Harbor. No RPDB or ratings addon needed.":
-    "Встроено в Harbor. RPDB или дополнение с рейтингами не требуется.",
+  "Native to Frame. No RPDB or ratings addon needed.":
+    "Встроено в Frame. RPDB или дополнение с рейтингами не требуется.",
   "No badges match this title.": "Нет значков, подходящих под это название.",
   "No custom rules yet. Add one below, or install a pack to bring some in.":
     "Своих правил пока нет. Добавьте правило ниже или установите пакет.",
@@ -237,16 +237,16 @@ const settings: Record<string, string> = {
     "Проблем не найдено. Библиотека аниме в порядке.",
   "No rules match your search.": "По запросу правил не найдено.",
   "Nothing usable in that file": "В этом файле нет ничего подходящего",
-  "One-click community packs. Rulesets bring full badge sets with their own matching; art remaps only swap the pictures on Harbor's built-in badges. Anything shared as a badges.json link on the Nuvio Discord or Reddit imports here too.":
-    "Пакеты сообщества в один клик. Наборы правил добавляют полные комплекты значков со своими условиями; переназначение картинок только меняет изображения встроенных значков Harbor. Всё, чем делятся ссылкой на badges.json в Nuvio Discord или на Reddit, тоже импортируется здесь.",
+  "One-click community packs. Rulesets bring full badge sets with their own matching; art remaps only swap the pictures on Frame's built-in badges. Anything shared as a badges.json link on the Nuvio Discord or Reddit imports here too.":
+    "Пакеты сообщества в один клик. Наборы правил добавляют полные комплекты значков со своими условиями; переназначение картинок только меняет изображения встроенных значков Frame. Всё, чем делятся ссылкой на badges.json в Nuvio Discord или на Reddit, тоже импортируется здесь.",
   "Optional overlays that appear over the video.":
     "Дополнительные элементы, которые появляются поверх видео.",
   "Or just zip up images": "Или просто упакуйте изображения в zip",
   "Or try one of ours": "Или попробуйте наши",
   "Packs & import": "Пакеты и импорт",
   "Paste an image URL (png, webp, svg)": "Вставьте URL изображения (png, webp, svg)",
-  "Pick a source once and Harbor keeps playing the rest of that season from the same release, no re-picking. Works best with a debrid season pack. For anime it locks the whole series to that release.":
-    "Выберите источник один раз, и Harbor продолжит воспроизводить остальной сезон из того же релиза без повторного выбора. Лучше всего работает с сезонным пакетом debrid. Для аниме привязывает к этому релизу весь сериал.",
+  "Pick a source once and Frame keeps playing the rest of that season from the same release, no re-picking. Works best with a debrid season pack. For anime it locks the whole series to that release.":
+    "Выберите источник один раз, и Frame продолжит воспроизводить остальной сезон из того же релиза без повторного выбора. Лучше всего работает с сезонным пакетом debrid. Для аниме привязывает к этому релизу весь сериал.",
   "Play a short sound when changing the player volume. Off by default.":
     "Короткий звук при изменении громкости плеера. По умолчанию выключено.",
   "Play trailers in the hero": "Воспроизводить трейлеры в баннере",
@@ -277,8 +277,8 @@ const settings: Record<string, string> = {
   "Score badges on cards": "Значки оценок на карточках",
   "Score position": "Положение оценки",
   "Search rules by name or pattern…": "Поиск правил по названию или шаблону…",
-  "Serves this exact install of Harbor as a web app on your network. Open it on a phone, laptop, or TV browser, sign in there, and it streams through this computer. You can also use the phone remote to control playback and cast to another device on this machine.":
-    "Открывает эту копию Harbor как веб-приложение в вашей сети. Откройте её в браузере на телефоне, ноутбуке или телевизоре, войдите там, и поток пойдёт через этот компьютер. Также можно управлять воспроизведением с телефона и транслировать на другое устройство с этой машины.",
+  "Serves this exact install of Frame as a web app on your network. Open it on a phone, laptop, or TV browser, sign in there, and it streams through this computer. You can also use the phone remote to control playback and cast to another device on this machine.":
+    "Открывает эту копию Frame как веб-приложение в вашей сети. Откройте её в браузере на телефоне, ноутбуке или телевизоре, войдите там, и поток пойдёт через этот компьютер. Также можно управлять воспроизведением с телефона и транслировать на другое устройство с этой машины.",
   "Set active": "Сделать активным",
   "Settings for this profile": "Настройки этого профиля",
   "Setup copied to clipboard as JSON": "Конфигурация скопирована в буфер обмена как JSON",
@@ -328,8 +328,8 @@ const settings: Record<string, string> = {
     "Небольшая плашка с оценкой на карточках постеров в рядах и сетках.",
   "The ratings row on a title's detail page, next to runtime and genre.":
     "Строка рейтингов на странице названия, рядом с длительностью и жанром.",
-  "The resolution Harbor downloads for each image when you export a title's metadata next to the file on disk.":
-    "Разрешение, в котором Harbor скачивает каждое изображение при экспорте метаданных названия рядом с файлом на диске.",
+  "The resolution Frame downloads for each image when you export a title's metadata next to the file on disk.":
+    "Разрешение, в котором Frame скачивает каждое изображение при экспорте метаданных названия рядом с файлом на диске.",
   "The window and taskbar icon updates right away. The installed shortcut refreshes on the next update.":
     "Значок окна и панели задач обновляется сразу. Установленный ярлык обновится при следующем обновлении.",
   "These badges are drawn on posters as you browse. RPDB, in the keys above, is a separate option that bakes scores into the poster image itself.":
@@ -344,8 +344,8 @@ const settings: Record<string, string> = {
     "Выключите, чтобы скрыть значок синхронизации во время воспроизведения.",
   "Type what you want in plain language and let a model find it. Bring your own API key.":
     "Опишите обычными словами, что вы ищете, и модель это найдёт. Нужен свой API-ключ.",
-  "Updating separated settings per profile, which may have reset your theme and keys. Harbor still has your old setup saved. Bring it back on this profile, then reload.":
-    "Обновление разделило настройки по профилям, поэтому тема и ключи могли сброситься. Harbor сохранил прежнюю конфигурацию. Восстановите её в этом профиле и перезагрузите.",
+  "Updating separated settings per profile, which may have reset your theme and keys. Frame still has your old setup saved. Bring it back on this profile, then reload.":
+    "Обновление разделило настройки по профилям, поэтому тема и ключи могли сброситься. Frame сохранил прежнюю конфигурацию. Восстановите её в этом профиле и перезагрузите.",
   Upload: "Загрузить",
   "Upload image": "Загрузить изображение",
   "Upload multiple images": "Загрузить несколько изображений",
@@ -353,8 +353,8 @@ const settings: Record<string, string> = {
     "Стрелки и Select/Пробел перемещают фокус между элементами управления плеером. Выключите, чтобы стрелки отвечали за перемотку, а Пробел за паузу и воспроизведение.",
   "Use in Nuvio": "Использовать в Nuvio",
   "Use live web context": "Использовать актуальные данные из веба",
-  "Use the arrow keys and Enter to move focus through Harbor. Turn this off to keep arrow keys free and disable focus navigation everywhere.":
-    "Перемещайте фокус по Harbor стрелками и Enter. Выключите, чтобы освободить стрелки и отключить навигацию по фокусу везде.",
+  "Use the arrow keys and Enter to move focus through Frame. Turn this off to keep arrow keys free and disable focus navigation everywhere.":
+    "Перемещайте фокус по Frame стрелками и Enter. Выключите, чтобы освободить стрелки и отключить навигацию по фокусу везде.",
   "Use your own image as the app icon": "Использовать своё изображение как значок приложения",
   "Watchlist bookmark": "Закладка списка к просмотру",
   "When off, a P2P transfer stops the moment you close or switch the stream, so nothing keeps downloading in the background. Turn on to let it keep going after you leave; manage or pause those from the Downloads tab.":
@@ -376,7 +376,7 @@ const settings: Record<string, string> = {
   "jina_...": "jina_...",
   skipped: "пропущено",
   "{a} badges remapped, {b} rules added": "Переназначено значков: {a}, добавлено правил: {b}",
-  "{n} Harbor icons": "Значков Harbor: {n}",
+  "{n} Frame icons": "Значков Frame: {n}",
   "{n} badges customized": "Изменено значков: {n}",
   "{n} enabled": "Включено: {n}",
   "{n} rules · {m} on": "Правил: {n} · включено: {m}",
@@ -397,7 +397,7 @@ const settings: Record<string, string> = {
   "Region & language": "Регион и язык",
   "English (default)": "English (по умолчанию)",
   "Apply {language}": "Применить {language}",
-  "Switch Harbor to {language}?": "Переключить Harbor на {language}?",
+  "Switch Frame to {language}?": "Переключить Frame на {language}?",
   "Just change region": "Изменить только регион",
   "Translate titles": "Переводить названия",
   "If disabled, titles remain in their original language.":
@@ -412,18 +412,18 @@ const settings: Record<string, string> = {
     "Перевод постеров отключён: активен свой сервис постеров.",
   "Metadata providers": "Провайдеры метаданных",
   "Content filters": "Фильтры контента",
-  "Sets the language of Harbor's own interface: menus, buttons, and labels. Arabic switches the layout to right to left. This is separate from subtitle and metadata languages below.":
-    "Задаёт язык самого интерфейса Harbor: меню, кнопки и подписи. Арабский разворачивает интерфейс справа налево. Это не связано с языками субтитров и метаданных ниже.",
+  "Sets the language of Frame's own interface: menus, buttons, and labels. Arabic switches the layout to right to left. This is separate from subtitle and metadata languages below.":
+    "Задаёт язык самого интерфейса Frame: меню, кнопки и подписи. Арабский разворачивает интерфейс справа налево. Это не связано с языками субтитров и метаданных ниже.",
   "Switch the menus and buttons to your language. Arabic flips the layout to right to left.":
     "Переключить меню и кнопки на ваш язык. Арабский разворачивает интерфейс справа налево.",
   "This sets the interface, metadata, subtitle, and audio languages to match.":
     "Языки интерфейса, метаданных, субтитров и звука будут установлены соответственно.",
   "Titles, overviews, and taglines from TMDB display in this language when a translation exists. Needs a TMDB key.":
     "Названия, описания и слоганы из TMDB отображаются на этом языке, если перевод существует. Нужен ключ TMDB.",
-  "Used for streaming availability and the Now Playing release window. Pick a country and Harbor can match the interface, metadata, and subtitle languages to it.":
-    "Используется для доступности на стриминговых сервисах и окна премьер «Сейчас в прокате». Выберите страну, и Harbor подберёт под неё языки интерфейса, метаданных и субтитров.",
-  "A free TMDB key is highly recommended. It unlocks the full Harbor experience. The rest are optional, and Cinemeta works out of the box without any.":
-    "Бесплатный ключ TMDB настоятельно рекомендуется: он раскрывает все возможности Harbor. Остальные необязательны, а Cinemeta работает сразу и без ключей.",
+  "Used for streaming availability and the Now Playing release window. Pick a country and Frame can match the interface, metadata, and subtitle languages to it.":
+    "Используется для доступности на стриминговых сервисах и окна премьер «Сейчас в прокате». Выберите страну, и Frame подберёт под неё языки интерфейса, метаданных и субтитров.",
+  "A free TMDB key is highly recommended. It unlocks the full Frame experience. The rest are optional, and Cinemeta works out of the box without any.":
+    "Бесплатный ключ TMDB настоятельно рекомендуется: он раскрывает все возможности Frame. Остальные необязательны, а Cinemeta работает сразу и без ключей.",
   "TMDB asks for an app URL when you create the key. Put any URL at all, like https://harbor.app. The only thing you need back is the API key.":
     "При создании ключа TMDB запросит URL приложения. Укажите любой URL, например https://harbor.app. Вам нужен только сам API-ключ.",
   "RPDB already paints scores onto the poster. Toggle to override.":
@@ -474,8 +474,8 @@ const settings: Record<string, string> = {
     "Скрывает аниме из ряда «Продолжить просмотр» на Главной. Оно остаётся в разделе «Продолжить просмотр» на вкладке «Аниме».",
   "Keep anime in the Anime room only": "Оставлять аниме только в разделе «Аниме»",
   "Start with subtitles off": "Запускать с выключенными субтитрами",
-  "Harbor still finds and loads subtitles so they're one click away in the player, it just won't turn them on automatically.":
-    "Harbor всё равно найдёт и загрузит субтитры, чтобы они были в одном клике в плеере, просто не включит их автоматически.",
+  "Frame still finds and loads subtitles so they're one click away in the player, it just won't turn them on automatically.":
+    "Frame всё равно найдёт и загрузит субтитры, чтобы они были в одном клике в плеере, просто не включит их автоматически.",
   "Prefer embedded subtitles": "Предпочитать встроенные субтитры",
   "When the file ships its own subtitle track, keep it selected instead of switching to a downloaded one. Embedded tracks are usually the best synced.":
     "Если в файле есть своя дорожка субтитров, оставлять её вместо загруженной. Встроенные дорожки обычно синхронизированы лучше всего.",
@@ -490,24 +490,24 @@ const settings: Record<string, string> = {
     "Скрывает потоки, в которых не найден предпочитаемый язык. Релизы с несколькими дорожками считаются подходящими.",
   "Streams in these languages rank first. Toggle below to drop everything else.":
     "Потоки на этих языках идут первыми. Переключатель ниже убирает все остальные.",
-  "When playback starts, Harbor automatically finds and loads a subtitle in one of these languages, so you never have to search by hand. The first available match wins, so put your main language first.":
-    "При запуске воспроизведения Harbor сам находит и загружает субтитры на одном из этих языков, чтобы не искать вручную. Побеждает первое доступное совпадение, поэтому поставьте основной язык первым.",
+  "When playback starts, Frame automatically finds and loads a subtitle in one of these languages, so you never have to search by hand. The first available match wins, so put your main language first.":
+    "При запуске воспроизведения Frame сам находит и загружает субтитры на одном из этих языков, чтобы не искать вручную. Побеждает первое доступное совпадение, поэтому поставьте основной язык первым.",
   "Never auto-select tracks containing": "Никогда не выбирать автоматически дорожки со словами",
   "commentary, descriptive": "комментарии, описание",
   "Comma-separated words. Audio or subtitle tracks whose name matches any of these are skipped during automatic selection. You can still pick them by hand in the player.":
     "Слова через запятую. Дорожки звука или субтитров, чьи названия совпадают с любым из них, пропускаются при автовыборе. Вручную их всё равно можно выбрать в плеере.",
-  "When a release ships multiple audio tracks, Harbor selects the first match from this list.":
-    "Если в релизе несколько звуковых дорожек, Harbor выбирает первое совпадение из этого списка.",
+  "When a release ships multiple audio tracks, Frame selects the first match from this list.":
+    "Если в релизе несколько звуковых дорожек, Frame выбирает первое совпадение из этого списка.",
   "By default, addon rails that duplicate the built-in ones (Trending, Popular, Top Rated, etc.) are merged so you don't see the same row twice. Turn this on to show every one, duplicates and all.":
     "По умолчанию ряды дополнений, дублирующие встроенные («В тренде», «Популярное», «Лучшие» и т. д.), объединяются, чтобы один и тот же ряд не показывался дважды. Включите, чтобы показывать все ряды, включая дубликаты.",
-  "When you back out of a title, Harbor saves a frame so the Continue Watching card looks like the spot you left. Tune how long they stick around, or wipe them all.":
-    "Когда вы выходите из просмотра, Harbor сохраняет кадр, чтобы карточка «Продолжить просмотр» показывала место остановки. Настройте срок их хранения или удалите все.",
+  "When you back out of a title, Frame saves a frame so the Continue Watching card looks like the spot you left. Tune how long they stick around, or wipe them all.":
+    "Когда вы выходите из просмотра, Frame сохраняет кадр, чтобы карточка «Продолжить просмотр» показывала место остановки. Настройте срок их хранения или удалите все.",
   "When you finish an episode, the Home Continue Watching card moves on to the next episode instead of sitting at 0 minutes left.":
     "Когда вы досматриваете серию, карточка «Продолжить просмотр» на Главной переходит к следующей серии, а не остаётся на «осталось 0 минут».",
   "Keep the Library Watchlist tab limited to titles you added in Stremio. Turn this off to also include anything Stremio auto-added when you pressed play.":
     "Оставлять во вкладке «Список к просмотру» в Библиотеке только то, что вы добавили в Stremio. Выключите, чтобы включить и то, что Stremio добавил сам при запуске воспроизведения.",
-  "Heads up: Harbor was built in English. Multi-language support is partial, so your addons usually catch what Harbor's own filters miss. If you speak another language and want to help fill the gaps, the source is open.":
-    "Обратите внимание: Harbor создавался на английском. Поддержка других языков неполная, поэтому ваши дополнения обычно ловят то, что упускают собственные фильтры Harbor. Если вы говорите на другом языке и хотите помочь заполнить пробелы, исходный код открыт.",
+  "Heads up: Frame was built in English. Multi-language support is partial, so your addons usually catch what Frame's own filters miss. If you speak another language and want to help fill the gaps, the source is open.":
+    "Обратите внимание: Frame создавался на английском. Поддержка других языков неполная, поэтому ваши дополнения обычно ловят то, что упускают собственные фильтры Frame. Если вы говорите на другом языке и хотите помочь заполнить пробелы, исходный код открыт.",
   "Contribute on GitHub": "Внести вклад на GitHub",
   Settings: "Настройки",
   "Stremio account": "Аккаунт Stremio",
@@ -527,27 +527,27 @@ const settings: Record<string, string> = {
   Simkl: "Simkl",
   "Connect your Simkl account to mark what you finish as watched and sync your plan-to-watch list across apps.":
     "Подключите аккаунт Simkl, чтобы отмечать досмотренное как просмотренное и синхронизировать список «буду смотреть» между приложениями.",
-  "Harbor Relay": "Harbor Relay",
+  "Frame Relay": "Frame Relay",
   "A Cloudflare Worker on your own account that hosts your Watch Together rooms.":
     "Cloudflare Worker в вашем аккаунте, на котором работают комнаты «Смотреть вместе».",
   "Streaming sources": "Источники потоков",
-  "How Harbor finds and resolves playable streams. Debrid keys and addon installs live here.":
-    "Как Harbor находит и открывает воспроизводимые потоки. Здесь же ключи debrid-сервисов и установка дополнений.",
+  "How Frame finds and resolves playable streams. Debrid keys and addon installs live here.":
+    "Как Frame находит и открывает воспроизводимые потоки. Здесь же ключи debrid-сервисов и установка дополнений.",
   Languages: "Языки",
   "Which audio and subtitle languages rank first in stream lists.":
     "Какие языки звука и субтитров идут первыми в списках потоков.",
   Hotkeys: "Горячие клавиши",
-  "Every shortcut Harbor responds to. Click a binding to rebind it.":
-    "Все сочетания клавиш, на которые реагирует Harbor. Нажмите на сочетание, чтобы переназначить его.",
+  "Every shortcut Frame responds to. Click a binding to rebind it.":
+    "Все сочетания клавиш, на которые реагирует Frame. Нажмите на сочетание, чтобы переназначить его.",
   "Theme & appearance": "Тема и оформление",
-  "Color presets, custom backgrounds, and the font pair Harbor renders in.":
-    "Цветовые пресеты, свои фоны и пара шрифтов, которыми отрисовывается Harbor.",
+  "Color presets, custom backgrounds, and the font pair Frame renders in.":
+    "Цветовые пресеты, свои фоны и пара шрифтов, которыми отрисовывается Frame.",
   Webhooks: "Вебхуки",
   "Push upcoming releases to Discord or Telegram. Pick which calendars feed the notifications.":
     "Отправляйте ближайшие релизы в Discord или Telegram. Выберите, из каких календарей брать уведомления.",
   "Report a bug": "Сообщить об ошибке",
-  "Send a bug report straight to the Harbor team. Screenshots and screen recordings welcome.":
-    "Отправьте отчёт об ошибке прямо команде Harbor. Скриншоты и записи экрана приветствуются.",
+  "Send a bug report straight to the Frame team. Screenshots and screen recordings welcome.":
+    "Отправьте отчёт об ошибке прямо команде Frame. Скриншоты и записи экрана приветствуются.",
   "Show Rotten Tomatoes score on cards": "Показывать оценку Rotten Tomatoes на карточках",
   "Fresh tomatoes for 60% and up, splat for anything under.":
     "Свежий помидор при 60% и выше, клякса для всего, что ниже.",
@@ -573,15 +573,15 @@ const settings: Record<string, string> = {
     "Сохранено кадров: {count}. После очистки они создадутся заново при следующем просмотре.",
   "Diagnostics, manual overrides, things most users never need.":
     "Диагностика, ручные переопределения и то, что большинству никогда не понадобится.",
-  "Watch Together rooms are routed through Harbor's hosted relay.":
-    "Комнаты «Смотреть вместе» работают через ретранслятор Harbor.",
+  "Watch Together rooms are routed through Frame's hosted relay.":
+    "Комнаты «Смотреть вместе» работают через ретранслятор Frame.",
   Streaming: "Стриминг",
   Playback: "Воспроизведение",
   Appearance: "Оформление",
   Notifications: "Уведомления",
   Help: "Помощь",
-  "When you back out of a title, Harbor saves a frame so the Continue Watching card looks like the spot you left.":
-    "Когда вы выходите из просмотра, Harbor сохраняет кадр, чтобы карточка «Продолжить просмотр» показывала место остановки.",
+  "When you back out of a title, Frame saves a frame so the Continue Watching card looks like the spot you left.":
+    "Когда вы выходите из просмотра, Frame сохраняет кадр, чтобы карточка «Продолжить просмотр» показывала место остановки.",
   "Used for streaming availability and the Now Playing release window.":
     "Используется для доступности на стриминговых сервисах и окна премьер «Сейчас в прокате».",
   "MyAnimeList scores for anime titles.": "Оценки MyAnimeList для аниме.",
@@ -591,8 +591,8 @@ const settings: Record<string, string> = {
   "Harbor checks harbor.site for new versions and installs them in place.":
     "Harbor проверяет новые версии на harbor.site и устанавливает их на месте.",
   "Backup & restore": "Резервная копия и восстановление",
-  "Export your entire Harbor setup to a single file, then restore it on a new computer or keep it as a backup.":
-    "Экспортируйте все настройки Harbor в один файл, чтобы восстановить их на новом компьютере или сохранить как резервную копию.",
+  "Export your entire Frame setup to a single file, then restore it on a new computer or keep it as a backup.":
+    "Экспортируйте все настройки Frame в один файл, чтобы восстановить их на новом компьютере или сохранить как резервную копию.",
   Privacy: "Конфиденциальность",
   "System tray": "Системный трей",
   "Stremio install links": "Ссылки установки Stremio",
@@ -616,7 +616,7 @@ const settings: Record<string, string> = {
   "Reveal the show or movie artwork.": "Показывать обложку сериала или фильма.",
   Legal: "Правовая информация",
   "Made with": "Сделано с",
-  "by Harbor contributors": "участниками Harbor",
+  "by Frame contributors": "участниками Frame",
   "Know more": "Подробнее",
   "A special thank you to the team at Stremio-Addons. Please consider supporting them.":
     "Отдельная благодарность команде Stremio-Addons. Поддержите их, если можете.",
@@ -636,8 +636,8 @@ const settings: Record<string, string> = {
   "The little 4K · HDR · codec · audio chips that ride along each stream in the play picker.":
     "Небольшие метки 4K · HDR · кодек · звук рядом с каждым потоком в окне выбора.",
   "Synced addons": "Синхронизированные дополнения",
-  "How aggressively Harbor rejects shady or mismatched streams before showing them in the picker.":
-    "Насколько строго Harbor отсеивает подозрительные и несовпадающие потоки перед показом в окне выбора.",
+  "How aggressively Frame rejects shady or mismatched streams before showing them in the picker.":
+    "Насколько строго Frame отсеивает подозрительные и несовпадающие потоки перед показом в окне выбора.",
   Strict: "Строгий",
   "Default. Rejects size outliers, suspicious extensions, year/episode mismatches, season packs (for episode requests), trailers, and likely cams.":
     "По умолчанию. Отсеивает аномальные размеры, подозрительные расширения, несовпадения года и серии, сезонные раздачи (при запросе серии), трейлеры и вероятные экранки.",
@@ -647,13 +647,13 @@ const settings: Record<string, string> = {
   "No filtering. Every stream every addon returns shows up, including obvious junk. You'll be on your own.":
     "Без фильтрации. Показываются все потоки от всех дополнений, включая явный мусор. Разбираться придётся самостоятельно.",
   Condensed: "Компактно",
-  "Default. Top pick at the top, quality tiles, and an All-Sources drawer. Harbor scores and ranks results.":
-    "По умолчанию. Лучший вариант сверху, плитки качества и панель «Все источники». Harbor оценивает и ранжирует результаты.",
+  "Default. Top pick at the top, quality tiles, and an All-Sources drawer. Frame scores and ranks results.":
+    "По умолчанию. Лучший вариант сверху, плитки качества и панель «Все источники». Frame оценивает и ранжирует результаты.",
   "Flat list of sources grouped by addon, with a filter dropdown. No re-ranking. Closest match to the Stremio app's stream picker.":
     "Плоский список источников по дополнениям с фильтром. Без переранжирования. Ближе всего к окну выбора потоков в Stremio.",
-  "Harbor ranking": "Ранжирование Harbor",
-  "Default. Harbor parses and scores every source and surfaces the best quality first.":
-    "По умолчанию. Harbor разбирает и оценивает каждый источник и ставит лучшее качество первым.",
+  "Frame ranking": "Ранжирование Frame",
+  "Default. Frame parses and scores every source and surfaces the best quality first.":
+    "По умолчанию. Frame разбирает и оценивает каждый источник и ставит лучшее качество первым.",
   "Addon order": "Порядок дополнений",
   "Show each addon's results in the order it returned them, grouped by your addon list. Matches the Stremio and Vidi apps.":
     "Показывать результаты каждого дополнения в исходном порядке, по вашему списку дополнений. Как в Stremio и Vidi.",
@@ -667,8 +667,8 @@ const settings: Record<string, string> = {
   "Searches and streams directly off Easynews. No debrid needed. Just your Easynews login.":
     "Ищет и транслирует напрямую с Easynews. Debrid не нужен, только ваш вход в Easynews.",
   Expired: "Истёк",
-  "Harbor pulls your addon collection from Stremio. Manage individual addons in Streaming sources.":
-    "Harbor загружает коллекцию дополнений из Stremio. Отдельные дополнения настраиваются в разделе «Источники потоков».",
+  "Frame pulls your addon collection from Stremio. Manage individual addons in Streaming sources.":
+    "Frame загружает коллекцию дополнений из Stremio. Отдельные дополнения настраиваются в разделе «Источники потоков».",
   "A specific summary lands faster than a long paragraph. Steps to reproduce help most of all.":
     "Короткое конкретное описание полезнее длинного абзаца. Больше всего помогают шаги воспроизведения.",
   Summary: "Краткое описание",
@@ -684,7 +684,7 @@ const settings: Record<string, string> = {
   Theme: "Тема",
   "Theme Library": "Библиотека тем",
   "Your themes": "Ваши темы",
-  "Ships with Harbor. Always available.": "Входит в состав Harbor. Доступна всегда.",
+  "Ships with Frame. Always available.": "Входит в состав Frame. Доступна всегда.",
   "Themes you imported or built.": "Темы, которые вы импортировали или создали.",
   "Build a new theme": "Создать тему",
   "Copy theme": "Копировать тему",
@@ -695,7 +695,7 @@ const settings: Record<string, string> = {
   "The quick brown fox jumps over the lazy dog":
     "Съешь же ещё этих мягких французских булок да выпей чаю",
   "Default. Humanist serif, warm sans.": "По умолчанию. Гуманистическая антиква и тёплый гротеск.",
-  "Classic. Was Harbor's original pair.": "Классика. Первая пара шрифтов Harbor.",
+  "Classic. Was Frame's original pair.": "Классика. Первая пара шрифтов Frame.",
   "Clean modern. Sans across the board.": "Чистый модерн. Только гротеск.",
   "Editorial. Headline-strong display.": "Издательский. Выразительные заголовки.",
   "Technical. IBM's open family.": "Технический. Открытая гарнитура IBM.",
@@ -742,8 +742,8 @@ const settings: Record<string, string> = {
   "Pick a layout, set colors and fonts, save it to your library. No code needed.":
     "Выберите макет, задайте цвета и шрифты, сохраните в библиотеку. Код не нужен.",
   "Open studio": "Открыть студию",
-  "Every variable, selector, hook, and recipe for building custom Harbor themes.":
-    "Все переменные, селекторы, хуки и рецепты для создания своих тем Harbor.",
+  "Every variable, selector, hook, and recipe for building custom Frame themes.":
+    "Все переменные, селекторы, хуки и рецепты для создания своих тем Frame.",
   "Make your own in the Theme Studio, or import one a friend shared.":
     "Создайте свою в Студии тем или импортируйте тему от друга.",
   "Open library": "Открыть библиотеку",
@@ -754,13 +754,13 @@ const settings: Record<string, string> = {
   "Got a theme a friend shared? Drop it in.": "Друг поделился темой? Перетащите её сюда.",
   "Choose file": "Выбрать файл",
   "Window title bar": "Заголовок окна",
-  "Use your operating system's native title bar and window buttons instead of Harbor's built-in ones. Handy if the in-app buttons ever feel out of reach, like during playback.":
-    "Использовать системный заголовок окна и кнопки вместо встроенных в Harbor. Удобно, если до кнопок приложения трудно дотянуться, например во время воспроизведения.",
+  "Use your operating system's native title bar and window buttons instead of Frame's built-in ones. Handy if the in-app buttons ever feel out of reach, like during playback.":
+    "Использовать системный заголовок окна и кнопки вместо встроенных в Frame. Удобно, если до кнопок приложения трудно дотянуться, например во время воспроизведения.",
   "{name} imported to your library": "{name} импортирована в вашу библиотеку",
   "Click any binding to rebind it. Press Esc while capturing to cancel. Letters ignore Shift (so K and Shift+K trigger the same action).":
     "Нажмите на сочетание, чтобы переназначить его. Esc во время записи отменяет. Буквы игнорируют Shift (K и Shift+K вызывают одно действие).",
   Global: "Глобальные",
-  "Anywhere in Harbor.": "В любом месте Harbor.",
+  "Anywhere in Frame.": "В любом месте Frame.",
   NAVIGATION: "НАВИГАЦИЯ",
   PLAYBACK: "ВОСПРОИЗВЕДЕНИЕ",
   VOLUME: "ГРОМКОСТЬ",
@@ -771,13 +771,13 @@ const settings: Record<string, string> = {
   "Press a key…": "Нажмите клавишу…",
   "Focus search": "Перейти к поиску",
   "Jump to the top-bar search from anywhere.": "Переход к поиску в верхней панели из любого места.",
-  "Open Harbor's settings outside playback.":
-    "Открывайте настройки Harbor вне режима воспроизведения.",
+  "Open Frame's settings outside playback.":
+    "Открывайте настройки Frame вне режима воспроизведения.",
   "Your face in Watch Together rooms, sessions, and chat. Sits on top of your Stremio account.":
     "Ваше лицо в комнатах Watch Together, сессиях и чате. Поверх вашего аккаунта Stremio.",
-  "Use my AniList avatar as my Harbor avatar": "Использовать аватар AniList как аватар Harbor",
-  "Use my Trakt avatar as my Harbor avatar": "Использовать аватар Trakt как аватар Harbor",
-  "Use my Simkl avatar as my Harbor avatar": "Использовать аватар Simkl как аватар Harbor",
+  "Use my AniList avatar as my Frame avatar": "Использовать аватар AniList как аватар Frame",
+  "Use my Trakt avatar as my Frame avatar": "Использовать аватар Trakt как аватар Frame",
+  "Use my Simkl avatar as my Frame avatar": "Использовать аватар Simkl как аватар Frame",
   "Not signed in": "Вход не выполнен",
   "addon synced": "дополнение синхронизировано",
   "addons synced": "дополнений синхронизировано",
@@ -803,8 +803,8 @@ const settings: Record<string, string> = {
   "URL is saved and ready to share.": "URL сохранён и готов к отправке.",
   "Your relay URL": "Ваш URL релея",
   "Copied. Paste it to your friend.": "Скопировано. Отправьте другу.",
-  "Send this to anyone you want to watch with. They paste it in their Settings → Harbor Relay. After that, share a 6-character room code from the people icon up top.":
-    "Отправьте это тем, с кем хотите смотреть вместе. Они вставят его в Настройки → Harbor Relay. После этого поделитесь кодом комнаты из 6 символов через значок с людьми сверху.",
+  "Send this to anyone you want to watch with. They paste it in their Settings → Frame Relay. After that, share a 6-character room code from the people icon up top.":
+    "Отправьте это тем, с кем хотите смотреть вместе. Они вставят его в Настройки → Frame Relay. После этого поделитесь кодом комнаты из 6 символов через значок с людьми сверху.",
   "One last thing on Cloudflare's side": "Последний шаг на стороне Cloudflare",
   "Click the button below to open Cloudflare's Workers page.":
     "Нажмите кнопку ниже, чтобы открыть страницу Cloudflare Workers.",
@@ -818,12 +818,12 @@ const settings: Record<string, string> = {
   "Connect your Trakt account": "Подключите аккаунт Trakt",
   "Connect Trakt": "Подключить Trakt",
   "About Trakt": "О Trakt",
-  "Harbor will scrobble your playback to Trakt and sync your watchlist.":
-    "Harbor будет отправлять просмотры в Trakt и синхронизировать список к просмотру.",
+  "Frame will scrobble your playback to Trakt and sync your watchlist.":
+    "Frame будет отправлять просмотры в Trakt и синхронизировать список к просмотру.",
   Authorized: "Авторизовано",
   "Open profile": "Открыть профиль",
-  "Wear your Trakt profile picture across Harbor instead of the default.":
-    "Использовать фото профиля Trakt в Harbor вместо стандартного.",
+  "Wear your Trakt profile picture across Frame instead of the default.":
+    "Использовать фото профиля Trakt в Frame вместо стандартного.",
   "Disconnect from Trakt": "Отключить Trakt",
   "Disconnect Trakt? Scrobbles and syncs will stop until you reconnect.":
     "Отключить Trakt? Отправка просмотров и синхронизация прекратятся до повторного подключения.",
@@ -840,24 +840,24 @@ const settings: Record<string, string> = {
   "Connect your Simkl account": "Подключите аккаунт Simkl",
   "Connect Simkl": "Подключить Simkl",
   "About Simkl": "О Simkl",
-  "Harbor will mark what you finish as watched on Simkl and sync your plan-to-watch list.":
-    "Harbor будет отмечать просмотренное в Simkl и синхронизировать список к просмотру.",
+  "Frame will mark what you finish as watched on Simkl and sync your plan-to-watch list.":
+    "Frame будет отмечать просмотренное в Simkl и синхронизировать список к просмотру.",
   "Authorized on this device": "Авторизовано на этом устройстве",
-  "Wear your Simkl profile picture across Harbor instead of the default.":
-    "Использовать фото профиля Simkl в Harbor вместо стандартного.",
+  "Wear your Simkl profile picture across Frame instead of the default.":
+    "Использовать фото профиля Simkl в Frame вместо стандартного.",
   "Disconnect from Simkl": "Отключить Simkl",
   "Disconnect Simkl? Syncing will stop until you reconnect.":
     "Отключить Simkl? Синхронизация прекратится до повторного подключения.",
   "Connect your AniList account": "Подключите аккаунт AniList",
   "Connect AniList": "Подключить AniList",
   "About AniList": "Об AniList",
-  "Harbor shows your AniList lists on the Anime page and keeps your progress in sync.":
-    "Harbor показывает ваши списки AniList на странице Аниме и синхронизирует прогресс.",
+  "Frame shows your AniList lists on the Anime page and keeps your progress in sync.":
+    "Frame показывает ваши списки AniList на странице Аниме и синхронизирует прогресс.",
   "Sync watch progress": "Синхронизировать прогресс просмотра",
   "Finishing an anime episode updates your AniList progress. Forward only: it never lowers a count you already have.":
     "Завершение серии аниме обновляет прогресс в AniList. Только вперёд: счётчик никогда не уменьшается.",
-  "Show your AniList profile picture as your Harbor avatar.":
-    "Показывать фото профиля AniList как аватар в Harbor.",
+  "Show your AniList profile picture as your Frame avatar.":
+    "Показывать фото профиля AniList как аватар в Frame.",
   "Disconnect from AniList": "Отключить AniList",
   "Discord webhook URL": "URL вебхука Discord",
   Sources: "Источники",
@@ -888,8 +888,8 @@ const settings: Record<string, string> = {
     "Добавьте URL Discord или Telegram выше, прежде чем создавать правила.",
   "No automations yet. Hit New rule to wire one up.":
     "Автоматизаций пока нет. Нажмите «Новое правило», чтобы добавить.",
-  "Discord posts a message to a channel whenever Harbor pings it. Takes about a minute to set up.":
-    "Discord публикует сообщение в канале, когда Harbor его вызывает. Настройка занимает около минуты.",
+  "Discord posts a message to a channel whenever Frame pings it. Takes about a minute to set up.":
+    "Discord публикует сообщение в канале, когда Frame его вызывает. Настройка занимает около минуты.",
   "Open the Discord server where you want notifications to land.":
     "Откройте сервер Discord, куда должны приходить уведомления.",
   "Edit Channel": "Изменить канал",
@@ -913,8 +913,8 @@ const settings: Record<string, string> = {
   "Open Settings": "Открыть настройки",
   "Open Library settings": "Открыть настройки Библиотеки",
   "add one in settings": "добавьте его в настройках",
-  "Using AIOStreams or another aggregator addon? Its own sorting and filtering happen inside the addon before Harbor ever sees the results, then Harbor applies the stream filter and result order above on top. If results look thinner than expected, keep one side permissive: either relax the addon's internal filters or set Harbor's stream filter to Balanced or Off.":
-    "Используете AIOStreams или другое дополнение-агрегатор? Его сортировка и фильтры работают внутри дополнения ещё до того, как Harbor увидит результаты, а затем Harbor применяет сверху фильтр потоков и порядок результатов, заданные выше. Если результатов меньше, чем ожидалось, оставьте одну сторону мягкой: ослабьте внутренние фильтры дополнения или переключите фильтр потоков Harbor на «Сбалансированный» или «Выкл.».",
+  "Using AIOStreams or another aggregator addon? Its own sorting and filtering happen inside the addon before Frame ever sees the results, then Frame applies the stream filter and result order above on top. If results look thinner than expected, keep one side permissive: either relax the addon's internal filters or set Frame's stream filter to Balanced or Off.":
+    "Используете AIOStreams или другое дополнение-агрегатор? Его сортировка и фильтры работают внутри дополнения ещё до того, как Frame увидит результаты, а затем Frame применяет сверху фильтр потоков и порядок результатов, заданные выше. Если результатов меньше, чем ожидалось, оставьте одну сторону мягкой: ослабьте внутренние фильтры дополнения или переключите фильтр потоков Frame на «Сбалансированный» или «Выкл.».",
   "Easynews+": "Easynews+",
   "{n} services need attention": "{n} сервисов требуют внимания",
   "Health for {n} services below": "Состояние {n} сервисов ниже",
@@ -932,7 +932,7 @@ const settings: Record<string, string> = {
   "Add profile": "Добавить профиль",
   "Profile not found.": "Профиль не найден.",
   Back: "Назад",
-  "Harbor identity": "Аккаунт Harbor",
+  "Frame identity": "Аккаунт Frame",
   "Edit {name}": "Изменить {name}",
   "New profile": "Новый профиль",
   "Display name": "Отображаемое имя",
@@ -1023,8 +1023,8 @@ const settings: Record<string, string> = {
   "Night mode gently compresses loud moments for late-night watching. Profiles take effect when the next track loads and stack with the normalizer.":
     "Ночной режим мягко сглаживает громкие моменты для просмотра поздно вечером. Профили применяются при загрузке следующей дорожки и работают вместе с нормализатором.",
   "Skip intros": "Пропуск заставок",
-  "Harbor finds intro and credits timing from AniSkip, TheIntroDB, and the file's own chapters, then shows a Skip button at the right moment.":
-    "Harbor определяет тайминги заставки и титров по AniSkip, TheIntroDB и главам самого файла, а затем показывает кнопку «Пропустить» в нужный момент.",
+  "Frame finds intro and credits timing from AniSkip, TheIntroDB, and the file's own chapters, then shows a Skip button at the right moment.":
+    "Frame определяет тайминги заставки и титров по AniSkip, TheIntroDB и главам самого файла, а затем показывает кнопку «Пропустить» в нужный момент.",
   "Auto-skip intros": "Автопропуск заставок",
   "Jump past openings automatically the moment one starts. The Skip button still shows either way, and seeking back into an intro replays it without skipping again.":
     "Автоматически перематывает заставку, как только она начинается. Кнопка «Пропустить» показывается в любом случае, а при перемотке назад заставка проигрывается снова без пропуска.",
@@ -1043,15 +1043,15 @@ const settings: Record<string, string> = {
   "1.5 min": "1,5 мин",
   "2 min": "2 мин",
   Downloads: "Загрузки",
-  "Where Harbor saves videos when you hit Download in the player. Pick any folder, including one on a different drive.":
-    "Куда Harbor сохраняет видео при нажатии «Скачать» в плеере. Можно выбрать любую папку, в том числе на другом диске.",
+  "Where Frame saves videos when you hit Download in the player. Pick any folder, including one on a different drive.":
+    "Куда Frame сохраняет видео при нажатии «Скачать» в плеере. Можно выбрать любую папку, в том числе на другом диске.",
   HTML5: "HTML5",
   mpv: "mpv",
   "Anime4K upscaling": "Апскейлинг Anime4K",
   Flat_Style: "Flat_Style",
   Background: "Фон",
-  "{name} will be removed from Harbor. Anything you've set to use it will fall back to Inter.":
-    "{name} будет удалён из Harbor. Везде, где он выбран, вернётся Inter.",
+  "{name} will be removed from Frame. Anything you've set to use it will fall back to Inter.":
+    "{name} будет удалён из Frame. Везде, где он выбран, вернётся Inter.",
   "Player & quality": "Плеер и качество",
   "Pick the playback engine and which quality chips show up on cards.":
     "Выбор движка воспроизведения и меток качества на карточках.",
@@ -1062,13 +1062,13 @@ const settings: Record<string, string> = {
   Restart: "Перезапустить",
   "Start server": "Запустить сервер",
   "Your streaming server address": "Адрес вашего потокового сервера",
-  "Harbor runs a small streaming server right on this computer. This is where it lives. To stream from this machine on another device, copy the Wi-Fi address and paste it into Remote streaming server in Harbor over there.":
-    "Harbor запускает небольшой потоковый сервер прямо на этом компьютере. Вот его адрес. Чтобы смотреть с этого компьютера на другом устройстве, скопируйте адрес для Wi-Fi и вставьте его в поле «Удалённый потоковый сервер» в Harbor на том устройстве.",
+  "Frame runs a small streaming server right on this computer. This is where it lives. To stream from this machine on another device, copy the Wi-Fi address and paste it into Remote streaming server in Frame over there.":
+    "Frame запускает небольшой потоковый сервер прямо на этом компьютере. Вот его адрес. Чтобы смотреть с этого компьютера на другом устройстве, скопируйте адрес для Wi-Fi и вставьте его в поле «Удалённый потоковый сервер» в Frame на том устройстве.",
   "On this computer": "На этом компьютере",
   "From other devices on your Wi-Fi": "С других устройств в вашей сети Wi-Fi",
-  "Harbor in your browser": "Harbor в браузере",
-  "Serves this exact install of Harbor as a web app on your network. Open it on a phone, laptop, or TV browser, sign in there, and it streams through this computer.":
-    "Открывает доступ к этой копии Harbor как к веб-приложению в вашей сети. Откройте её в браузере телефона, ноутбука или телевизора, войдите там, и поток пойдёт через этот компьютер.",
+  "Frame in your browser": "Frame в браузере",
+  "Serves this exact install of Frame as a web app on your network. Open it on a phone, laptop, or TV browser, sign in there, and it streams through this computer.":
+    "Открывает доступ к этой копии Frame как к веб-приложению в вашей сети. Откройте её в браузере телефона, ноутбука или телевизора, войдите там, и поток пойдёт через этот компьютер.",
   "From any browser on your Wi-Fi": "Из любого браузера в вашей сети Wi-Fi",
   "Couldn't start on port {WEB_PORT}. Another app may be using it; toggle off and on to retry.":
     "Не удалось запустить на порту {WEB_PORT}. Возможно, его занимает другое приложение; выключите и включите снова, чтобы повторить.",
@@ -1083,10 +1083,10 @@ const settings: Record<string, string> = {
   "Injected into a fixed-position layer above the app (pointer-events disabled by default). Wrap in a div with pointer-events:auto to make it interactive.":
     "Внедряется в фиксированный слой поверх приложения (pointer-events по умолчанию отключены). Оберните код в div с pointer-events:auto, чтобы сделать его интерактивным.",
   "Custom code": "Свой код",
-  "Power-user knob. Inject your own CSS, JS, and HTML into Harbor. Lives in your local settings; nothing leaves your machine.":
-    "Настройка для продвинутых. Внедряйте свои CSS, JS и HTML в Harbor. Хранится в локальных настройках; ничего не покидает ваш компьютер.",
-  "You're modding your own client. Custom JS has full access to your Harbor session. Only paste code you wrote or fully trust.":
-    "Вы модифицируете свой клиент. Свой JS получает полный доступ к вашей сессии Harbor. Вставляйте только тот код, который написали сами или которому полностью доверяете.",
+  "Power-user knob. Inject your own CSS, JS, and HTML into Frame. Lives in your local settings; nothing leaves your machine.":
+    "Настройка для продвинутых. Внедряйте свои CSS, JS и HTML в Frame. Хранится в локальных настройках; ничего не покидает ваш компьютер.",
+  "You're modding your own client. Custom JS has full access to your Frame session. Only paste code you wrote or fully trust.":
+    "Вы модифицируете свой клиент. Свой JS получает полный доступ к вашей сессии Frame. Вставляйте только тот код, который написали сами или которому полностью доверяете.",
   "{n} chars": "{n} симв.",
   "Player layout": "Раскладка плеера",
   "Pick a theme, then rearrange every button in the player chrome. Hide what you never use, promote what you do.":
@@ -1098,7 +1098,7 @@ const settings: Record<string, string> = {
   hidden: "скрытых",
   "on the {themeName} theme.": "в теме {themeName}.",
   "Edit player layout": "Изменить раскладку плеера",
-  "Harbor's native player chrome.": "Стандартная панель плеера Harbor.",
+  "Frame's native player chrome.": "Стандартная панель плеера Frame.",
   Stremio: "Stremio",
   "Familiar Stremio button order.": "Привычный порядок кнопок как в Stremio.",
   "Confirm full reset": "Подтвердите полный сброс",
@@ -1140,12 +1140,12 @@ const settings: Record<string, string> = {
   "Back to relay": "Назад к релею",
   Documentation: "Документация",
   "Self-host": "Свой хостинг",
-  "Run your own Harbor Relay": "Запустите свой Harbor Relay",
-  "Two paths: Harbor handles the deploy for you, or you do it yourself with wrangler.":
-    "Два пути: Harbor разворачивает всё за вас или вы делаете это сами через wrangler.",
+  "Run your own Frame Relay": "Запустите свой Frame Relay",
+  "Two paths: Frame handles the deploy for you, or you do it yourself with wrangler.":
+    "Два пути: Frame разворачивает всё за вас или вы делаете это сами через wrangler.",
   Overview: "Описание",
-  "The Harbor relay is a Cloudflare Worker that hosts WebSocket rooms for Watch Together. Each user runs their own. There is no central Harbor server.":
-    "Релей Harbor работает как Cloudflare Worker и содержит WebSocket-комнаты для совместного просмотра. Каждый пользователь запускает свой. Центрального сервера Harbor нет.",
+  "The Frame relay is a Cloudflare Worker that hosts WebSocket rooms for Watch Together. Each user runs their own. There is no central Frame server.":
+    "Релей Frame работает как Cloudflare Worker и содержит WebSocket-комнаты для совместного просмотра. Каждый пользователь запускает свой. Центрального сервера Frame нет.",
   "Source: {code}. About 200 lines of JavaScript, no dependencies. Read it before deploying if you want to know what runs.":
     "Исходник: {code}. Около 200 строк JavaScript, без зависимостей. Прочитайте его перед развёртыванием, если хотите знать, что запускается.",
   Requirements: "Требования",
@@ -1154,30 +1154,30 @@ const settings: Record<string, string> = {
     "Около двух минут для автоматического развёртывания.",
   "For the manual path: {code} 20+ and {code} CLI.":
     "Для ручного способа: {code} 20+ и {code} CLI.",
-  "Auto-deploy from Harbor": "Автоматическое развёртывание из Harbor",
-  "Easiest path. Harbor uploads the worker, creates the Durable Object namespace, and stores the resulting URL.":
-    "Самый простой способ. Harbor загружает воркер, создаёт пространство имён Durable Object и сохраняет полученный URL.",
-  "Open Settings, then Harbor Relay.": "Откройте «Настройки», затем Harbor Relay.",
+  "Auto-deploy from Frame": "Автоматическое развёртывание из Frame",
+  "Easiest path. Frame uploads the worker, creates the Durable Object namespace, and stores the resulting URL.":
+    "Самый простой способ. Frame загружает воркер, создаёт пространство имён Durable Object и сохраняет полученный URL.",
+  "Open Settings, then Frame Relay.": "Откройте «Настройки», затем Frame Relay.",
   "Click {kbd}.": "Нажмите {kbd}.",
-  "Generate a Cloudflare API token with {code1} and {code2} permissions at {code3}. Paste it into Harbor.":
-    "Создайте API-токен Cloudflare с правами {code1} и {code2} на {code3}. Вставьте его в Harbor.",
+  "Generate a Cloudflare API token with {code1} and {code2} permissions at {code3}. Paste it into Frame.":
+    "Создайте API-токен Cloudflare с правами {code1} и {code2} на {code3}. Вставьте его в Frame.",
   "Pick the Cloudflare account to deploy under.": "Выберите аккаунт Cloudflare для развёртывания.",
-  "Wait for the upload to finish. The relay URL gets written to {code} in Harbor settings.":
-    "Дождитесь окончания загрузки. URL релея записывается в {code} в настройках Harbor.",
+  "Wait for the upload to finish. The relay URL gets written to {code} in Frame settings.":
+    "Дождитесь окончания загрузки. URL релея записывается в {code} в настройках Frame.",
   "Manual deploy with wrangler": "Ручное развёртывание через wrangler",
   "For users who want to deploy themselves or already have a wrangler workflow.":
     "Для тех, кто хочет развернуть всё сам или уже работает с wrangler.",
   "Install wrangler and authenticate:": "Установите wrangler и войдите:",
-  "Save the worker source. Copy {code1} from the Harbor repo into a new directory as {code2}.":
-    "Сохраните исходник воркера. Скопируйте {code1} из репозитория Harbor в новую папку под именем {code2}.",
+  "Save the worker source. Copy {code1} from the Frame repo into a new directory as {code2}.":
+    "Сохраните исходник воркера. Скопируйте {code1} из репозитория Frame в новую папку под именем {code2}.",
   "Save this {code} next to it:": "Сохраните рядом этот {code}:",
   "Deploy:": "Разверните:",
   "Note the URL Cloudflare returns. It looks like {code}.":
     "Запомните URL, который вернёт Cloudflare. Он выглядит так: {code}.",
-  "In Harbor: Settings, Harbor Relay, then {kbd}. Paste the URL with {code1} as the scheme instead of {code2}.":
-    "В Harbor: «Настройки», Harbor Relay, затем {kbd}. Вставьте URL со схемой {code1} вместо {code2}.",
+  "In Frame: Settings, Frame Relay, then {kbd}. Paste the URL with {code1} as the scheme instead of {code2}.":
+    "В Frame: «Настройки», Frame Relay, затем {kbd}. Вставьте URL со схемой {code1} вместо {code2}.",
   "Verify it works": "Проверьте, что всё работает",
-  "Settings, Harbor Relay, then {kbd}.": "«Настройки», Harbor Relay, затем {kbd}.",
+  "Settings, Frame Relay, then {kbd}.": "«Настройки», Frame Relay, затем {kbd}.",
   "The test calls {code} and confirms the worker is reachable and running a current version. A passing test means Watch Together rooms will connect.":
     "Тест вызывает {code} и проверяет, что воркер доступен и работает на актуальной версии. Успешный тест означает, что комнаты совместного просмотра подключатся.",
   "If the Watch Together popover shows an outdated-relay banner, redeploying with the steps above is the fix. The banner clears automatically the next time you connect once the relay reports the current version.":
@@ -1185,8 +1185,8 @@ const settings: Record<string, string> = {
   "Sharing your relay": "Как поделиться релеем",
   "A relay URL is shareable. Anyone with the URL can join Watch Together rooms hosted on your relay. The unique {code} subdomain acts as the access token. There is no login.":
     "URL релея можно передавать другим. Любой, у кого есть этот URL, сможет входить в комнаты совместного просмотра на вашем релее. Уникальный поддомен {code} служит токеном доступа. Входа в аккаунт нет.",
-  "To run a public relay, post the {code} URL on r/Stremio or wherever your community lives. Other Harbor users paste it into Settings, Harbor Relay, {kbd}.":
-    "Чтобы сделать релей публичным, опубликуйте URL {code} на r/Stremio или там, где живёт ваше сообщество. Другие пользователи Harbor вставят его в «Настройки», Harbor Relay, {kbd}.",
+  "To run a public relay, post the {code} URL on r/Stremio or wherever your community lives. Other Frame users paste it into Settings, Frame Relay, {kbd}.":
+    "Чтобы сделать релей публичным, опубликуйте URL {code} на r/Stremio или там, где живёт ваше сообщество. Другие пользователи Frame вставят его в «Настройки», Frame Relay, {kbd}.",
   Costs: "Стоимость",
   "Cloudflare Workers free tier:": "Бесплатный тариф Cloudflare Workers:",
   "100,000 requests per day.": "100 000 запросов в день.",
@@ -1230,8 +1230,8 @@ const settings: Record<string, string> = {
   "Create Token": "Создать токен",
   "Create Custom Token": "Создать пользовательский токен",
   "Get started": "Начать",
-  "Cloudflare token form filled with name 'Harbor Relay' and one permission row set to Account / Workers Scripts / Edit":
-    "Форма токена Cloudflare с именем «Harbor Relay» и одной строкой разрешений: Account / Workers Scripts / Edit",
+  "Cloudflare token form filled with name 'Frame Relay' and one permission row set to Account / Workers Scripts / Edit":
+    "Форма токена Cloudflare с именем «Frame Relay» и одной строкой разрешений: Account / Workers Scripts / Edit",
   "Token name can be anything. The permission row must be exactly {b1} + {b2} + {b3}.":
     "Имя токена может быть любым. Строка разрешений должна быть ровно {b1} + {b2} + {b3}.",
   "Workers Scripts": "Workers Scripts",
@@ -1329,13 +1329,13 @@ const settings: Record<string, string> = {
   "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
     "Удерживайте этот модификатор и нажмите 1-9, чтобы открыть этот раздел боковой панели. Чтобы изменить, нажмите любую цифру с нужным модификатором или Delete, чтобы отключить. Не работает в плеере.",
   "Toggle window fullscreen": "Полноэкранный режим окна",
-  "Make Harbor's window fill the screen, or restore it.":
-    "Растягивает окно Harbor на весь экран или возвращает его.",
+  "Make Frame's window fill the screen, or restore it.":
+    "Растягивает окно Frame на весь экран или возвращает его.",
   "Toggle memory monitor": "Монитор памяти",
   "Show or hide the memory and cache monitor.": "Показывает или скрывает монитор памяти и кэша.",
   "Show test error page": "Тестовая страница ошибки",
-  "Open Harbor's error page with a sample error, to check how it looks.":
-    "Открывает страницу ошибки Harbor с примером ошибки, чтобы проверить её вид.",
+  "Open Frame's error page with a sample error, to check how it looks.":
+    "Открывает страницу ошибки Frame с примером ошибки, чтобы проверить её вид.",
   "Jump through video 0-9": "Переход по видео 0-9",
   "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
     "Нажмите 0-9, чтобы перейти к этой десятой части видео (0 — начало, 5 — середина). Чтобы изменить, нажмите любую цифру с нужным модификатором или Delete, чтобы отключить.",
@@ -1407,8 +1407,8 @@ const settings: Record<string, string> = {
   "Credit me in the release notes if this report leads to a fix.":
     "Упомянуть меня в примечаниях к выпуску, если по этому отчёту будет исправление.",
   "Want to fix it yourself?": "Хотите исправить сами?",
-  "Harbor is open source. PRs that reference a bug get reviewed within 48h and ship with credit in the release notes.":
-    "Harbor с открытым исходным кодом. PR со ссылкой на баг рассматриваются в течение 48 часов, а автор упоминается в примечаниях к выпуску.",
+  "Frame is open source. PRs that reference a bug get reviewed within 48h and ship with credit in the release notes.":
+    "Frame с открытым исходным кодом. PR со ссылкой на баг рассматриваются в течение 48 часов, а автор упоминается в примечаниях к выпуску.",
   "Open repo on GitHub": "Открыть репозиторий на GitHub",
   "Browse pull requests": "Просмотреть pull requests",
   "What gets sent": "Что отправляется",
@@ -1424,10 +1424,10 @@ const settings: Record<string, string> = {
   "Loading environment details…": "Загрузка сведений об окружении…",
   "Auto-included. No keys, no library, no URLs. Just structural flags so reproductions go faster.":
     "Добавляется автоматически. Без ключей, библиотеки и URL. Только структурные флаги, чтобы быстрее воспроизвести проблему.",
-  "Harbor test message (Discord). If you can read this, your webhook is wired up.":
-    "Тестовое сообщение Harbor (Discord). Если вы это читаете, webhook настроен.",
-  "Harbor test message (Telegram). If you can read this, your webhook is wired up.":
-    "Тестовое сообщение Harbor (Telegram). Если вы это читаете, webhook настроен.",
+  "Frame test message (Discord). If you can read this, your webhook is wired up.":
+    "Тестовое сообщение Frame (Discord). Если вы это читаете, webhook настроен.",
+  "Frame test message (Telegram). If you can read this, your webhook is wired up.":
+    "Тестовое сообщение Frame (Telegram). Если вы это читаете, webhook настроен.",
   Failed: "Ошибка",
   Types: "Типы",
   Movies: "Фильмы",
@@ -1436,12 +1436,12 @@ const settings: Record<string, string> = {
   "Right-click a text channel, pick": "Нажмите правой кнопкой на текстовый канал и выберите",
   Click: "Нажмите",
   "on the left, then": "слева, затем",
-  "name it Harbor, hit": "назовите его Harbor и нажмите",
+  "name it Frame, hit": "назовите его Frame и нажмите",
   "Telegram sends through a bot you create. You need two things: a":
     "Telegram отправляет через бота, которого вы создаёте. Нужны две вещи:",
   "and your": "и ваш",
-  "Both go in the boxes above. Harbor builds the URL for you.":
-    "Оба вставьте в поля выше. Harbor сам соберёт URL.",
+  "Both go in the boxes above. Frame builds the URL for you.":
+    "Оба вставьте в поля выше. Frame сам соберёт URL.",
   Tap: "Нажмите",
   "below. In Telegram, send him": "ниже. В Telegram отправьте ему",
   "Pick any name. Pick a username ending in":
@@ -1491,8 +1491,8 @@ const settings: Record<string, string> = {
   Countries: "Страны",
   "Only my favorited channels": "Только избранные каналы",
   "Heads up": "Обратите внимание",
-  "Harbor scans your IPTV playlists' EPG every 30 min for programs about to start.":
-    "Harbor каждые 30 мин сканирует EPG ваших IPTV-плейлистов и находит программы, которые скоро начнутся.",
+  "Frame scans your IPTV playlists' EPG every 30 min for programs about to start.":
+    "Frame каждые 30 мин сканирует EPG ваших IPTV-плейлистов и находит программы, которые скоро начнутся.",
   "Add people in the Custom calendar manager first, then come back here.":
     "Сначала добавьте людей в менеджере Своего календаря, затем вернитесь сюда.",
   "People (empty = all tracked)": "Люди (пусто = все отслеживаемые)",
@@ -1503,24 +1503,24 @@ const settings: Record<string, string> = {
   "Custom calendar": "Свой календарь",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor проверяет harbor.site на наличие новых версий и устанавливает их на месте. Ничего не устанавливается без вашего согласия, а отклонённое обновление больше не напоминает о себе.",
-  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
-    "Harbor проверяет GitHub на наличие новых версий и устанавливает их на месте. Ничего не устанавливается без вашего согласия, а отклонённое обновление больше не напоминает о себе.",
+  "Frame checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Frame проверяет GitHub на наличие новых версий и устанавливает их на месте. Ничего не устанавливается без вашего согласия, а отклонённое обновление больше не напоминает о себе.",
   "Library, watch progress, and addon collection sync from this account.":
     "Библиотека, прогресс просмотра и набор Дополнений синхронизируются с этим аккаунтом.",
-  "Export your entire Harbor setup to a single file, then restore it on a new computer or keep it as a backup. Everything is included except your Stremio sign-in.":
-    "Экспортируйте всю настройку Harbor в один файл, чтобы восстановить её на новом компьютере или хранить как резервную копию. Включено всё, кроме входа в Stremio.",
-  "Harbor sends no telemetry. This also drops outbound ad, analytics, and tracker requests that addons or metadata providers try to make, before they leave your machine.":
-    "Harbor не отправляет телеметрию. Также блокируются исходящие рекламные, аналитические и трекерные запросы Дополнений и провайдеров метаданных ещё до выхода с вашего устройства.",
-  "Keep Harbor a click away. Close it to the system tray instead of quitting, and control it from the tray menu. These also mirror into the tray menu live.":
-    "Harbor всегда под рукой: при закрытии сворачивается в системный трей вместо выхода, а управлять им можно из меню трея. Эти пункты сразу отражаются в меню трея.",
+  "Export your entire Frame setup to a single file, then restore it on a new computer or keep it as a backup. Everything is included except your Stremio sign-in.":
+    "Экспортируйте всю настройку Frame в один файл, чтобы восстановить её на новом компьютере или хранить как резервную копию. Включено всё, кроме входа в Stremio.",
+  "Frame sends no telemetry. This also drops outbound ad, analytics, and tracker requests that addons or metadata providers try to make, before they leave your machine.":
+    "Frame не отправляет телеметрию. Также блокируются исходящие рекламные, аналитические и трекерные запросы Дополнений и провайдеров метаданных ещё до выхода с вашего устройства.",
+  "Keep Frame a click away. Close it to the system tray instead of quitting, and control it from the tray menu. These also mirror into the tray menu live.":
+    "Frame всегда под рукой: при закрытии сворачивается в системный трей вместо выхода, а управлять им можно из меню трея. Эти пункты сразу отражаются в меню трея.",
   "Your color": "Ваш цвет",
   "Used for your cursor in Watch Together, your draw color, and your name pill in chat.":
     "Используется для вашего курсора в Совместном просмотре, цвета рисования и плашки с именем в чате.",
   "Harbor catches stremio:// install links so the configure-and-install flow stays inside the app. Every install also syncs to your Stremio account, so the official app remains the canonical home for your library.":
     "Harbor перехватывает ссылки stremio://, чтобы настройка и установка происходили внутри приложения. Каждая установка также синхронизируется с аккаунтом Stremio, поэтому официальное приложение остаётся основным местом хранения библиотеки.",
-  "Let your Discord friends see what you are watching, with the show poster and a live progress bar. Desktop only, and only your own Discord client is involved (nothing touches a Harbor server).":
-    "Друзья в Discord видят, что вы смотрите, вместе с постером и живой шкалой прогресса. Только на десктопе и только через ваш собственный клиент Discord (серверы Harbor не задействованы).",
-  "Saved {d} from Harbor {a}.": "Сохранено {d} из Harbor {a}.",
+  "Let your Discord friends see what you are watching, with the show poster and a live progress bar. Desktop only, and only your own Discord client is involved (nothing touches a Frame server).":
+    "Друзья в Discord видят, что вы смотрите, вместе с постером и живой шкалой прогресса. Только на десктопе и только через ваш собственный клиент Discord (серверы Frame не задействованы).",
+  "Saved {d} from Frame {a}.": "Сохранено {d} из Frame {a}.",
   "MPV (native, recommended)": "MPV (нативный, рекомендуется)",
   "HTML5 (browser-based)": "HTML5 (в браузере)",
   "Player shell": "Оболочка плеера",
@@ -1605,8 +1605,8 @@ const settings: Record<string, string> = {
   "Sign out": "Выйти",
   "Reset to default": "Сбросить по умолчанию",
   "Manual picker": "Ручной выбор",
-  "Hitting Play jumps straight into playback with the best stream Harbor finds.":
-    "Нажатие «Воспроизвести» сразу запускает лучший поток, найденный Harbor.",
+  "Hitting Play jumps straight into playback with the best stream Frame finds.":
+    "Нажатие «Воспроизвести» сразу запускает лучший поток, найденный Frame.",
   "Hitting Play opens the source list so you can choose quality, debrid, and audio yourself.":
     "Нажатие «Воспроизвести» открывает список источников, чтобы вы сами выбрали качество, debrid и звук.",
   "Remember last stream": "Запоминать последний поток",
@@ -1619,11 +1619,11 @@ const settings: Record<string, string> = {
     "mpv в десктопном приложении, HTML5 в браузере. Нужный движок без лишних раздумий.",
   "Native webview playback. Smooth and integrated, but limited codec coverage.":
     "Воспроизведение средствами webview. Плавно и интегрировано, но поддержка кодеков ограничена.",
-  "Bundled with Harbor. Plays anything you throw at it.":
-    "Поставляется вместе с Harbor. Воспроизводит всё подряд.",
-  "Embed mpv inside Harbor window": "Встроить mpv в окно Harbor",
-  "Renders mpv inline so playback lives in Harbor itself. Disable to open it in a separate window instead.":
-    "Отрисовывает mpv внутри Harbor, чтобы воспроизведение шло прямо в приложении. Отключите, чтобы открывать его в отдельном окне.",
+  "Bundled with Frame. Plays anything you throw at it.":
+    "Поставляется вместе с Frame. Воспроизводит всё подряд.",
+  "Embed mpv inside Frame window": "Встроить mpv в окно Frame",
+  "Renders mpv inline so playback lives in Frame itself. Disable to open it in a separate window instead.":
+    "Отрисовывает mpv внутри Frame, чтобы воспроизведение шло прямо в приложении. Отключите, чтобы открывать его в отдельном окне.",
   "HDR-to-SDR tonemapping": "Тонмаппинг HDR в SDR",
   "Maps HDR sources to SDR using bt.2446a. Recommended on SDR displays.":
     "Преобразует HDR-источники в SDR по bt.2446a. Рекомендуется для SDR-дисплеев.",
@@ -1631,8 +1631,8 @@ const settings: Record<string, string> = {
   "Plays HDR content in its own window so Windows treats it as true HDR (the SDR brightness slider stops dimming it). Turn off HDR-to-SDR tonemapping above to use this on an HDR display.":
     "Воспроизводит HDR в собственном окне, чтобы Windows считала его настоящим HDR (ползунок яркости SDR перестаёт его приглушать). Для HDR-дисплея отключите тонмаппинг HDR в SDR выше.",
   "HDR display mode": "Режим отображения HDR",
-  "Keeps Harbor embedded but lifts the HDR video onto its own opaque plane with the controls floating above, so Windows shows true HDR without the brightness slider dimming it. Needs HDR-to-SDR tonemapping off.":
-    "Оставляет Harbor встроенным, но выносит HDR-видео на отдельный непрозрачный слой, а элементы управления остаются поверх, поэтому Windows показывает настоящий HDR без приглушения ползунком яркости. Требуется отключить тонмаппинг HDR в SDR.",
+  "Keeps Frame embedded but lifts the HDR video onto its own opaque plane with the controls floating above, so Windows shows true HDR without the brightness slider dimming it. Needs HDR-to-SDR tonemapping off.":
+    "Оставляет Frame встроенным, но выносит HDR-видео на отдельный непрозрачный слой, а элементы управления остаются поверх, поэтому Windows показывает настоящий HDR без приглушения ползунком яркости. Требуется отключить тонмаппинг HDR в SDR.",
   "Line-free video mode": "Режим видео без полосы",
   "Forces a compatibility present mode that removes a thin bright line some monitors show at the screen edge. Side effects: 4K playback can drop to a slideshow and HDR content looks dimmer (this mode bypasses the HDR display path). Leave OFF unless you see that line. Restart playback to apply.":
     "Включает совместимый режим вывода кадров, убирающий тонкую светлую полосу, которую некоторые мониторы показывают у края экрана. Побочные эффекты: воспроизведение 4K может превратиться в слайд-шоу, а HDR выглядит тусклее (режим обходит путь вывода HDR). Оставьте ВЫКЛ, если полосы нет. Перезапустите воспроизведение для применения.",
@@ -1642,9 +1642,9 @@ const settings: Record<string, string> = {
   "Direct P2P streaming": "Прямой P2P-стриминг",
   "When you have no debrid set up, or a torrent isn't cached, stream it straight from the bundled engine on localhost:11470. This connects to peers over your own connection, the same way Stremio's built-in streaming does.":
     "Если debrid не настроен или торрент не закэширован, поток идёт напрямую со встроенного движка на localhost:11470. Подключение к пирам идёт через ваше соединение, как и во встроенном стриминге Stremio.",
-  "Use Harbor's built-in engine (beta)": "Использовать встроенный движок Harbor (бета)",
-  "Stream torrents through Harbor's own Rust peer-to-peer engine instead of the bundled Stremio Server. Falls back automatically if it can't connect. Status and a self-test live in the Local engine card below.":
-    "Стримить торренты через собственный peer-to-peer движок Harbor на Rust вместо встроенного Stremio Server. При сбое подключения автоматически используется запасной вариант. Состояние и самопроверка – в карточке «Локальный движок» ниже.",
+  "Use Frame's built-in engine (beta)": "Использовать встроенный движок Frame (бета)",
+  "Stream torrents through Frame's own Rust peer-to-peer engine instead of the bundled Stremio Server. Falls back automatically if it can't connect. Status and a self-test live in the Local engine card below.":
+    "Стримить торренты через собственный peer-to-peer движок Frame на Rust вместо встроенного Stremio Server. При сбое подключения автоматически используется запасной вариант. Состояние и самопроверка – в карточке «Локальный движок» ниже.",
   "Always re-encode when casting (recommended)":
     "Всегда перекодировать при трансляции (рекомендуется)",
   "On by default. Pipes every cast through ffmpeg as H.264 + AAC + MPEG-TS so Samsung, LG, Sony, and other DLNA TVs accept the stream regardless of source codec. Turn off only if you have a beefy receiver that handles raw HEVC/DTS and want max quality. Requires ffmpeg in PATH.":
@@ -1694,8 +1694,8 @@ const settings: Record<string, string> = {
   "Remove {name}": "Удалить {name}",
   "Upload font": "Загрузить шрифт",
   "Delete this font?": "Удалить этот шрифт?",
-  "will be removed from Harbor. Anything you've set to use it will fall back to Inter.":
-    "будет удалён из Harbor. Везде, где он был выбран, вернётся Inter.",
+  "will be removed from Frame. Anything you've set to use it will fall back to Inter.":
+    "будет удалён из Frame. Везде, где он был выбран, вернётся Inter.",
   "Show thumbnail preview on hover": "Показывать миниатюру при наведении",
   "Generates a frame on the fly as you scrub the seek bar. Works on debrid streams and local files.":
     "Кадр создаётся на лету при перемотке по полосе. Работает с debrid-потоками и локальными файлами.",
@@ -1741,8 +1741,8 @@ const settings: Record<string, string> = {
     "Самопроверка отключена при строгом режиме удалённого стриминга: она скачивает небольшой тестовый файл по peer-to-peer на этом компьютере.",
   "Self-test": "Самопроверка",
   "Remote streaming server": "Удалённый стриминг-сервер",
-  "Point Harbor at a streaming server on another machine, like the Stremio service on a home server. P2P streams download and play from that machine instead of this one.":
-    "Укажите Harbor стриминг-сервер на другой машине, например службу Stremio на домашнем сервере. P2P-потоки будут скачиваться и воспроизводиться с неё, а не с этого компьютера.",
+  "Point Frame at a streaming server on another machine, like the Stremio service on a home server. P2P streams download and play from that machine instead of this one.":
+    "Укажите Frame стриминг-сервер на другой машине, например службу Stremio на домашнем сервере. P2P-потоки будут скачиваться и воспроизводиться с неё, а не с этого компьютера.",
   "Use exclusively (never fall back to local)":
     "Использовать только его (не переключаться на локальный)",
   "If the server is unreachable, playback fails instead of streaming locally. Use this when your VPN runs on the server machine and torrent traffic must never leave this one.":
@@ -1754,8 +1754,8 @@ const settings: Record<string, string> = {
   "Test failed": "Проверка не пройдена",
   "The server answered with status {status}. Is that a streaming server?":
     "Сервер ответил со статусом {status}. Это точно стриминг-сервер?",
-  "Server reachable in {ms}ms. Harbor will use it for torrent streaming.":
-    "Сервер отвечает за {ms}ms. Harbor будет использовать его для торрент-стриминга.",
+  "Server reachable in {ms}ms. Frame will use it for torrent streaming.":
+    "Сервер отвечает за {ms}ms. Frame будет использовать его для торрент-стриминга.",
   "Could not reach the server within 1.5 seconds. Check the address and that the server machine is online.":
     "Сервер не ответил за 1,5 секунды. Проверьте адрес и что сервер включён.",
   "No limit": "Без ограничений",
@@ -1767,7 +1767,7 @@ const settings: Record<string, string> = {
     "Потоки выше {cap} Mbps опускаются в списке, даже если закэшированы.",
   "Home layout": "Макет главной",
   "How the Home page assembles its rails.": "Как главная страница собирает свои ряды.",
-  "Harbor curated": "Подборка Harbor",
+  "Frame curated": "Подборка Frame",
   "Hero carousel, Top 10, Trending, In Theaters, per-service rails. Addon catalogs append underneath, deduped.":
     "Карусель-герой, Топ-10, В тренде, В кино, ряды по сервисам. Каталоги дополнений добавляются ниже, без повторов.",
   "Classic Stremio": "Классический Stremio",
@@ -1817,28 +1817,28 @@ const settings: Record<string, string> = {
   "Lead with the show name instead of the episode title at the top of the player.":
     "Вверху плеера показывать название сериала вместо названия серии.",
   "Block ads & trackers": "Блокировать рекламу и трекеры",
-  "{n} tracker request blocked this session. Harbor itself sends zero telemetry.":
-    "За сессию заблокирован {n} запрос трекеров. Сам Harbor не отправляет телеметрию.",
-  "{n} tracker requests blocked this session. Harbor itself sends zero telemetry.":
-    "За сессию заблокировано запросов трекеров: {n}. Сам Harbor не отправляет телеметрию.",
-  "Watching for ad, analytics, and tracking requests. Harbor itself sends zero telemetry.":
-    "Отслеживаются рекламные, аналитические и трекинговые запросы. Сам Harbor не отправляет телеметрию.",
+  "{n} tracker request blocked this session. Frame itself sends zero telemetry.":
+    "За сессию заблокирован {n} запрос трекеров. Сам Frame не отправляет телеметрию.",
+  "{n} tracker requests blocked this session. Frame itself sends zero telemetry.":
+    "За сессию заблокировано запросов трекеров: {n}. Сам Frame не отправляет телеметрию.",
+  "Watching for ad, analytics, and tracking requests. Frame itself sends zero telemetry.":
+    "Отслеживаются рекламные, аналитические и трекинговые запросы. Сам Frame не отправляет телеметрию.",
   "Ad, analytics, and tracking requests pass through untouched.":
     "Рекламные, аналитические и трекинговые запросы проходят без ограничений.",
   "Close to the system tray": "Закрывать в системный трей",
-  "Closing the window tucks Harbor into the tray instead of quitting, so it reopens instantly. Right-click the tray icon for quick controls, or pick Quit to exit fully.":
-    "При закрытии окна Harbor сворачивается в трей, а не завершается, и открывается мгновенно. Правый клик по значку в трее откроет быстрые команды, «Выход» закроет приложение полностью.",
+  "Closing the window tucks Frame into the tray instead of quitting, so it reopens instantly. Right-click the tray icon for quick controls, or pick Quit to exit fully.":
+    "При закрытии окна Frame сворачивается в трей, а не завершается, и открывается мгновенно. Правый клик по значку в трее откроет быстрые команды, «Выход» закроет приложение полностью.",
   "Always on top": "Поверх других окон",
-  "Keep the Harbor window above other windows.": "Держать окно Harbor поверх остальных окон.",
+  "Keep the Frame window above other windows.": "Держать окно Frame поверх остальных окон.",
   "Pause when minimized": "Пауза при сворачивании",
-  "Stop playback when you minimize Harbor or send it to the tray.":
-    "Останавливать воспроизведение при сворачивании Harbor или уходе в трей.",
+  "Stop playback when you minimize Frame or send it to the tray.":
+    "Останавливать воспроизведение при сворачивании Frame или уходе в трей.",
   "Pause when unfocused": "Пауза при потере фокуса",
   "Stop playback whenever another window takes focus.":
     "Останавливать воспроизведение, когда фокус переходит к другому окну.",
   "Export everything": "Экспортировать всё",
-  "Saves your whole Harbor setup to one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.":
-    "Сохраняет всю конфигурацию Harbor в один файл: тема, макет главной, настройки, дополнения, профили, список к просмотру, раскладки плеера, прогресс просмотра и другое. Вход в Stremio намеренно не включается.",
+  "Saves your whole Frame setup to one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.":
+    "Сохраняет всю конфигурацию Frame в один файл: тема, макет главной, настройки, дополнения, профили, список к просмотру, раскладки плеера, прогресс просмотра и другое. Вход в Stremio намеренно не включается.",
   "Restore from a backup": "Восстановить из резервной копии",
   "Loads a backup file and replaces your current setup with it. Perfect for a new computer. Your Stremio sign-in on this device stays as is.":
     "Загружает файл резервной копии и заменяет ею текущую конфигурацию. Удобно при переезде на новый компьютер. Вход в Stremio на этом устройстве останется прежним.",
@@ -1846,9 +1846,9 @@ const settings: Record<string, string> = {
   "Could not read that file.": "Не удалось прочитать этот файл.",
   "an unknown date": "дата неизвестна",
   "Restore this backup?": "Восстановить эту резервную копию?",
-  "This replaces your current Harbor setup (theme, home layout, settings, addons, profiles, and more) with the {n} saved entries in this file. Your Stremio sign-in stays as is. Harbor reloads when it finishes.":
-    "Текущая конфигурация Harbor (тема, макет главной, настройки, дополнения, профили и другое) будет заменена данными из этого файла (записей: {n}). Вход в Stremio останется прежним. По завершении Harbor перезагрузится.",
-  "Saved {when} from Harbor {app}.": "Сохранено: {when}. Harbor {app}.",
+  "This replaces your current Frame setup (theme, home layout, settings, addons, profiles, and more) with the {n} saved entries in this file. Your Stremio sign-in stays as is. Frame reloads when it finishes.":
+    "Текущая конфигурация Frame (тема, макет главной, настройки, дополнения, профили и другое) будет заменена данными из этого файла (записей: {n}). Вход в Stremio останется прежним. По завершении Frame перезагрузится.",
+  "Saved {when} from Frame {app}.": "Сохранено: {when}. Frame {app}.",
   "Restoring...": "Восстановление...",
   "Restore and reload": "Восстановить и перезагрузить",
   "Xtream credentials were left out of this backup.":
@@ -1867,20 +1867,20 @@ const settings: Record<string, string> = {
   "Checking GitHub for a newer build.": "Проверка GitHub на наличие новой сборки.",
   "Downloading {pct}%": "Загрузка {pct}%",
   "Downloaded. Ready to install and restart.": "Загружено. Готово к установке и перезапуску.",
-  "Installing. Harbor will restart.": "Установка. Harbor перезапустится.",
+  "Installing. Frame will restart.": "Установка. Frame перезапустится.",
   "A new version is ready to download.": "Новая версия готова к загрузке.",
   "You're on the latest version.": "У вас последняя версия.",
   "Couldn't reach the update server. Try again in a moment.":
     "Не удалось связаться с сервером обновлений. Повторите попытку позже.",
-  "Harbor checks automatically every few hours.":
-    "Harbor проверяет обновления автоматически каждые несколько часов.",
-  "Harbor {version} available": "Доступна версия Harbor {version}",
+  "Frame checks automatically every few hours.":
+    "Frame проверяет обновления автоматически каждые несколько часов.",
+  "Frame {version} available": "Доступна версия Frame {version}",
   "Update now": "Обновить сейчас",
   "Check for updates": "Проверить обновления",
   "Show on Discord": "Показывать в Discord",
   "Show what you are listening to": "Показывать, что вы слушаете",
-  "Share the track, artist and album art while music plays, with a Listen in Harbor button.":
-    "Показывает трек, исполнителя и обложку альбома во время прослушивания, вместе с кнопкой «Listen in Harbor».",
+  "Share the track, artist and album art while music plays, with a Listen in Frame button.":
+    "Показывает трек, исполнителя и обложку альбома во время прослушивания, вместе с кнопкой «Listen in Frame».",
   "Display what you are watching on your Discord profile, with the show poster and a live progress bar. Requires the Discord desktop app to be running.":
     "Показывать в профиле Discord, что вы смотрите, с постером и живым индикатором прогресса. Требуется запущенное приложение Discord.",
   "Hide the title": "Скрывать название",
@@ -1890,8 +1890,8 @@ const settings: Record<string, string> = {
   "Keep the presence visible when playback is paused.":
     "Оставлять статус видимым, когда воспроизведение на паузе.",
   "Show while browsing": "Показывать при навигации",
-  "Display 'Browsing Harbor' when nothing is playing.":
-    "Показывать «Просматривает Harbor», когда ничего не воспроизводится.",
+  "Display 'Browsing Frame' when nothing is playing.":
+    "Показывать «Просматривает Frame», когда ничего не воспроизводится.",
   "Show poster": "Показывать постер",
   "Reveal the show or movie artwork. Off keeps the title but hides the poster.":
     "Показывать обложку сериала или фильма. Если выключено, название остаётся, а постер скрыт.",
@@ -1926,8 +1926,8 @@ const settings: Record<string, string> = {
   "Library is empty. Nothing to repair.": "Библиотека пуста. Восстанавливать нечего.",
   "{repaired} fixed, {clean} already clean": "{repaired} исправлено, {clean} уже в порядке",
   ", {n} unrepairable": ", {n} не удалось исправить",
-  "Rewrites every library item to match Stremio's exact schema. Run once if your Stremio app started crashing after Harbor synced playback.":
-    "Перезаписывает все элементы библиотеки по точной схеме Stremio. Запустите один раз, если приложение Stremio стало падать после синхронизации воспроизведения из Harbor.",
+  "Rewrites every library item to match Stremio's exact schema. Run once if your Stremio app started crashing after Frame synced playback.":
+    "Перезаписывает все элементы библиотеки по точной схеме Stremio. Запустите один раз, если приложение Stremio стало падать после синхронизации воспроизведения из Frame.",
   "Fetching {n} items…": "Загрузка {n} элементов…",
   "Fetching library index…": "Загрузка индекса библиотеки…",
   "{n} items need repair.": "Элементов для восстановления: {n}.",
@@ -1939,11 +1939,11 @@ const settings: Record<string, string> = {
   "Repair now": "Восстановить",
   "Web build": "Веб-версия",
   "Where your data lives": "Где хранятся ваши данные",
-  "Everything you save here stays in this browser. Your Stremio login, API keys, watch progress, picker cache, dismissed tips. Harbor servers never see any of it. Clearing your browser data wipes it.":
-    "Всё, что вы сохраняете здесь, остаётся в этом браузере: вход в Stremio, ключи API, прогресс просмотра, кэш подбора потоков, скрытые подсказки. Серверы Harbor не видят ничего из этого. Очистка данных браузера всё удалит.",
+  "Everything you save here stays in this browser. Your Stremio login, API keys, watch progress, picker cache, dismissed tips. Frame servers never see any of it. Clearing your browser data wipes it.":
+    "Всё, что вы сохраняете здесь, остаётся в этом браузере: вход в Stremio, ключи API, прогресс просмотра, кэш подбора потоков, скрытые подсказки. Серверы Frame не видят ничего из этого. Очистка данных браузера всё удалит.",
   "The web build can't run mpv, the trickplay generator, the local bandwidth probe, or your own Cloudflare relay. If you want HDR passthrough, TrueHD or DTS-HD audio, and smoother seeking, grab the desktop app.":
     "Веб-версия не может запускать mpv, генератор миниатюр перемотки, локальный замер скорости и ваш собственный ретранслятор Cloudflare. Если нужны прямая передача HDR, звук TrueHD или DTS-HD и более плавная перемотка, установите настольное приложение.",
-  "Get Harbor for desktop": "Скачать Harbor для компьютера",
+  "Get Frame for desktop": "Скачать Frame для компьютера",
   "Source code": "Исходный код",
   "Your relay is live": "Ваш ретранслятор работает",
   "Connected to relay": "Подключено к ретранслятору",
@@ -1957,16 +1957,16 @@ const settings: Record<string, string> = {
   "Relay version {version}. Update available.":
     "Версия ретранслятора {version}. Доступно обновление.",
   "Relay is current (v{version}).": "Ретранслятор актуален (v{version}).",
-  "Harbor's public relay updates automatically; nothing to do.":
-    "Публичный ретранслятор Harbor обновляется автоматически, ничего делать не нужно.",
+  "Frame's public relay updates automatically; nothing to do.":
+    "Публичный ретранслятор Frame обновляется автоматически, ничего делать не нужно.",
   "Redeploy to pick up the latest Watch Together fixes. The in-app banner clears once the new version is live.":
     "Разверните заново, чтобы получить свежие исправления совместного просмотра. Баннер в приложении исчезнет, когда новая версия заработает.",
   "Running the latest Watch Together protocol.":
     "Используется актуальный протокол совместного просмотра.",
   "Redeploy instructions": "Инструкции по повторному развёртыванию",
   "Backup credentials": "Резервная копия учётных данных",
-  "Cloudflare shows API tokens only once. Save a copy now or you'll lose the ability to stop or redeploy this relay from Harbor.":
-    "Cloudflare показывает токены API только один раз. Сохраните копию сейчас, иначе вы не сможете остановить или переразвернуть этот ретранслятор из Harbor.",
+  "Cloudflare shows API tokens only once. Save a copy now or you'll lose the ability to stop or redeploy this relay from Frame.":
+    "Cloudflare показывает токены API только один раз. Сохраните копию сейчас, иначе вы не сможете остановить или переразвернуть этот ретранслятор из Frame.",
   "Relay verified end-to-end": "Ретранслятор проверен полностью",
   "Relay test failed": "Проверка ретранслятора не удалась",
   "Redeploy relay": "Переразвернуть ретранслятор",
@@ -1982,9 +1982,9 @@ const settings: Record<string, string> = {
   "Enter an existing relay URL:": "Введите URL существующего ретранслятора:",
   "Only enter URLs for relays you operate or trust. A relay only carries Watch Together sync messages (play, pause, seek). Nothing else passes through it.":
     "Указывайте URL только тех ретрансляторов, которыми вы управляете или которым доверяете. Через ретранслятор идут только сообщения синхронизации совместного просмотра (воспроизведение, пауза, перемотка). Больше ничего.",
-  "Hit your daily quota? Use Harbor's public relay, or host your own.":
-    "Исчерпали дневную квоту? Используйте публичный ретранслятор Harbor или разместите свой.",
-  "Use Harbor's public relay": "Использовать публичный ретранслятор Harbor",
+  "Hit your daily quota? Use Frame's public relay, or host your own.":
+    "Исчерпали дневную квоту? Используйте публичный ретранслятор Frame или разместите свой.",
+  "Use Frame's public relay": "Использовать публичный ретранслятор Frame",
   "Documentation: run your own relay": "Документация: свой ретранслятор",
   "Install failed": "Не удалось установить",
   "Installed via {label}": "Установлено через {label}",
@@ -1996,8 +1996,8 @@ const settings: Record<string, string> = {
     "Вставьте URL манифеста со страницы настройки",
   "View all": "Показать все",
   "Where alerts go": "Куда приходят уведомления",
-  "Connect Discord or Telegram and Harbor posts a message when something you follow is about to drop. Hit Test to send yourself a sample first.":
-    "Подключите Discord или Telegram, и Harbor пришлёт сообщение, когда выйдет что-то из отслеживаемого. Нажмите «Тест», чтобы сначала отправить себе пример.",
+  "Connect Discord or Telegram and Frame posts a message when something you follow is about to drop. Hit Test to send yourself a sample first.":
+    "Подключите Discord или Telegram, и Frame пришлёт сообщение, когда выйдет что-то из отслеживаемого. Нажмите «Тест», чтобы сначала отправить себе пример.",
   "What to send": "Что отправлять",
   "Pick which calendars feed your alerts. Items are deduped across sources before sending.":
     "Выберите календари для уведомлений. Дубликаты из разных источников удаляются перед отправкой.",
@@ -2008,8 +2008,8 @@ const settings: Record<string, string> = {
   "Anime tweaks": "Улучшения для аниме",
   "Anime4K real-time upscaling, smooth motion, and where SVP fits in. All the anime-specific picture enhancements in one place.":
     "Апскейл Anime4K в реальном времени, плавное движение и роль SVP. Все улучшения изображения для аниме в одном месте.",
-  "Real-time GPU upscaling that sharpens lines and cleans up gradients on anime, built right into Harbor's player. The one-tap setup below grabs the shaders; nothing else to install.":
-    "Апскейл на видеокарте в реальном времени: чёткие линии и чистые градиенты в аниме, прямо в плеере Harbor. Установка в одно нажатие ниже загрузит шейдеры, больше ничего ставить не нужно.",
+  "Real-time GPU upscaling that sharpens lines and cleans up gradients on anime, built right into Frame's player. The one-tap setup below grabs the shaders; nothing else to install.":
+    "Апскейл на видеокарте в реальном времени: чёткие линии и чистые градиенты в аниме, прямо в плеере Frame. Установка в одно нажатие ниже загрузит шейдеры, больше ничего ставить не нужно.",
   "Enable Anime4K": "Включить Anime4K",
   "Sharper lines and cleaner gradients on anime, in real time. Heaviest on the graphics card of everything here.":
     "Более чёткие линии и чистые градиенты в аниме, в реальном времени. Самая большая нагрузка на видеокарту из всего здесь.",
@@ -2019,29 +2019,29 @@ const settings: Record<string, string> = {
   "Smooth motion": "Плавное движение",
   "Anime is drawn on twos and threes, so fast pans can judder. Smoothing fills in the gaps so motion glides.":
     "Аниме рисуют через два-три кадра, поэтому быстрые панорамы дёргаются. Сглаживание достраивает промежуточные кадры, и движение становится плавным.",
-  "Harbor's built-in frame interpolation. Smooths panning, best on anime. Needs a display refresh rate above the video's frame rate, and can stutter on weak GPUs. Lighter than SVP.":
-    "Встроенная интерполяция кадров Harbor. Сглаживает панорамы, лучше всего на аниме. Нужна частота обновления экрана выше частоты кадров видео, на слабых видеокартах возможны рывки. Легче, чем SVP.",
+  "Frame's built-in frame interpolation. Smooths panning, best on anime. Needs a display refresh rate above the video's frame rate, and can stutter on weak GPUs. Lighter than SVP.":
+    "Встроенная интерполяция кадров Frame. Сглаживает панорамы, лучше всего на аниме. Нужна частота обновления экрана выше частоты кадров видео, на слабых видеокартах возможны рывки. Легче, чем SVP.",
   "SVP frame interpolation": "Интерполяция кадров SVP",
-  "Genuine 48/60fps motion on anime, rendered right inside Harbor's player. SVP supplies the engine (VapourSynth + svpflow) and runs in your tray for licensing; Harbor's own player applies the interpolation, so it stays embedded and fully under your control. One-time install, then flip it on.":
-    "Настоящее движение 48/60fps в аниме прямо в плеере Harbor. SVP даёт движок (VapourSynth + svpflow) и работает в трее для лицензирования, а интерполяцию применяет сам плеер Harbor, поэтому она остаётся встроенной и полностью под вашим контролем. Установите один раз и включите.",
+  "Genuine 48/60fps motion on anime, rendered right inside Frame's player. SVP supplies the engine (VapourSynth + svpflow) and runs in your tray for licensing; Frame's own player applies the interpolation, so it stays embedded and fully under your control. One-time install, then flip it on.":
+    "Настоящее движение 48/60fps в аниме прямо в плеере Frame. SVP даёт движок (VapourSynth + svpflow) и работает в трее для лицензирования, а интерполяцию применяет сам плеер Frame, поэтому она остаётся встроенной и полностью под вашим контролем. Установите один раз и включите.",
   "SVP (free)": "SVP (бесплатно)",
-  "Install SVP once (the free tier is enough). It bundles VapourSynth + svpflow; Harbor reuses them, no extra setup.":
-    "Установите SVP один раз, хватит бесплатной версии. В комплекте идут VapourSynth + svpflow, Harbor использует их, дополнительная настройка не нужна.",
-  "Installed and detected. Harbor found its interpolation engine and will drive it directly.":
-    "Установлено и обнаружено. Harbor нашёл движок интерполяции и будет управлять им напрямую.",
-  "SVP is installed but Harbor couldn't find its engine files (svpflow + VapourSynth). Try repairing the SVP install, or reopen SVP once.":
-    "SVP установлен, но Harbor не нашёл файлы движка (svpflow + VapourSynth). Попробуйте восстановить установку SVP или запустить SVP ещё раз.",
+  "Install SVP once (the free tier is enough). It bundles VapourSynth + svpflow; Frame reuses them, no extra setup.":
+    "Установите SVP один раз, хватит бесплатной версии. В комплекте идут VapourSynth + svpflow, Frame использует их, дополнительная настройка не нужна.",
+  "Installed and detected. Frame found its interpolation engine and will drive it directly.":
+    "Установлено и обнаружено. Frame нашёл движок интерполяции и будет управлять им напрямую.",
+  "SVP is installed but Frame couldn't find its engine files (svpflow + VapourSynth). Try repairing the SVP install, or reopen SVP once.":
+    "SVP установлен, но Frame не нашёл файлы движка (svpflow + VapourSynth). Попробуйте восстановить установку SVP или запустить SVP ещё раз.",
   "Get SVP (free)": "Скачать SVP (бесплатно)",
   "Open SVP": "Открыть SVP",
   "Enable SVP": "Включить SVP",
-  "Harbor's player applies the interpolation itself, embedded like normal playback, and starts SVP Manager in the tray for licensing. Restart playback to apply. If video goes black or won't start, turn this off.":
-    "Плеер Harbor применяет интерполяцию сам, встроенно, как при обычном воспроизведении, и запускает SVP Manager в трее для лицензирования. Перезапустите воспроизведение, чтобы применить. Если видео чёрное или не запускается, выключите это.",
-  "Finish the install above first. Flipping this on now won't do anything until Harbor can find SVP's engine.":
-    "Сначала завершите установку выше. Пока Harbor не найдёт движок SVP, включение ничего не даст.",
+  "Frame's player applies the interpolation itself, embedded like normal playback, and starts SVP Manager in the tray for licensing. Restart playback to apply. If video goes black or won't start, turn this off.":
+    "Плеер Frame применяет интерполяцию сам, встроенно, как при обычном воспроизведении, и запускает SVP Manager в трее для лицензирования. Перезапустите воспроизведение, чтобы применить. Если видео чёрное или не запускается, выключите это.",
+  "Finish the install above first. Flipping this on now won't do anything until Frame can find SVP's engine.":
+    "Сначала завершите установку выше. Пока Frame не найдёт движок SVP, включение ничего не даст.",
   "Couldn't start SVP Manager: {err}": "Не удалось запустить SVP Manager: {err}",
   "Couldn't set up SVP: {err}": "Не удалось настроить SVP: {err}",
-  "Anime4K and smooth-motion run on the bundled mpv engine in the Harbor desktop app. They have no effect in the browser.":
-    "Anime4K и плавное движение работают на встроенном движке mpv в настольном приложении Harbor. В браузере они не действуют.",
+  "Anime4K and smooth-motion run on the bundled mpv engine in the Frame desktop app. They have no effect in the browser.":
+    "Anime4K и плавное движение работают на встроенном движке mpv в настольном приложении Frame. В браузере они не действуют.",
   "Download the desktop app to use anime enhancements.":
     "Скачайте настольное приложение, чтобы использовать улучшения для аниме.",
   "Match the picture quality to your computer, smooth out weak connections, and fine-tune the mpv engine with plain-language controls.":
@@ -2070,8 +2070,8 @@ const settings: Record<string, string> = {
     "Всё декодирует CPU. Максимальная совместимость, но сильный нагрев и возможные рывки на 4K. Включайте, только если с аппаратным декодированием картинка глючит.",
   "Forces the graphics card on. Smoothest and coolest, but a few old or unusual files may refuse to play. Switch back to Auto if something won't start.":
     "Принудительно включает видеокарту. Самый плавный и холодный вариант, но некоторые старые или необычные файлы могут не запуститься. Вернитесь к «Авто», если что-то не запускается.",
-  "Harbor uses the graphics card when it's safe and falls back to the CPU when it isn't. The right call for almost everyone.":
-    "Harbor использует видеокарту, когда это безопасно, и переключается на CPU, когда нет. Подходит почти всем.",
+  "Frame uses the graphics card when it's safe and falls back to the CPU when it isn't. The right call for almost everyone.":
+    "Frame использует видеокарту, когда это безопасно, и переключается на CPU, когда нет. Подходит почти всем.",
   "Picture adjustments": "Настройка изображения",
   "Nudge the image to taste. Start with a one-tap look below, then fine-tune with the dials. Everything resets cleanly, so you can't break anything.":
     "Подстройте картинку под себя. Начните с готового варианта ниже, затем доведите регуляторами. Всё сбрасывается начисто, сломать ничего нельзя.",
@@ -2093,8 +2093,8 @@ const settings: Record<string, string> = {
   Sharpen: "Резкость",
   "Reset picture": "Сбросить изображение",
   "Color & HDR": "Цвет и HDR",
-  "How Harbor squeezes HDR movies onto a normal screen. Auto is right for almost everyone; the curves below just change the look (punchy vs soft). Only matters on HDR sources.":
-    "Как Harbor умещает HDR-фильмы на обычный экран. «Авто» подходит почти всем, кривые ниже меняют только вид (сочно или мягко). Важно только для HDR-источников.",
+  "How Frame squeezes HDR movies onto a normal screen. Auto is right for almost everyone; the curves below just change the look (punchy vs soft). Only matters on HDR sources.":
+    "Как Frame умещает HDR-фильмы на обычный экран. «Авто» подходит почти всем, кривые ниже меняют только вид (сочно или мягко). Важно только для HDR-источников.",
   "Tone-mapping curve": "Кривая тональной компрессии",
   "Auto (recommended)": "Авто (рекомендуется)",
   "Reference (bt.2390)": "Эталонная (bt.2390)",
@@ -2106,8 +2106,8 @@ const settings: Record<string, string> = {
   "On an HDR display, stretches normal (non-HDR) movies to use the extra brightness range. Leave off on a regular screen; it can look washed out.":
     "На HDR-дисплее растягивает обычные (не HDR) фильмы на расширенный диапазон яркости. На обычном экране оставьте выключенным; картинка может выглядеть блёклой.",
   "Slow or unstable connection": "Медленное или нестабильное соединение",
-  "If video keeps pausing to buffer, or you're on spotty Wi-Fi or a far-away server, this gives Harbor a bigger head start so playback rides through the rough patches.":
-    "Если видео постоянно встаёт на буферизацию, у вас нестабильный Wi-Fi или далёкий сервер, Harbor заранее наберёт больший запас, чтобы воспроизведение переживало провалы.",
+  "If video keeps pausing to buffer, or you're on spotty Wi-Fi or a far-away server, this gives Frame a bigger head start so playback rides through the rough patches.":
+    "Если видео постоянно встаёт на буферизацию, у вас нестабильный Wi-Fi или далёкий сервер, Frame заранее наберёт больший запас, чтобы воспроизведение переживало провалы.",
   "Build a bigger buffer": "Увеличить буфер",
   "Loads more of the video ahead of time before playing. Smoother on weak connections, uses a little more memory and takes a moment longer to start.":
     "Загружает больше видео заранее, до начала воспроизведения. Плавнее на слабом соединении, но требует чуть больше памяти и дольше стартует.",
@@ -2120,8 +2120,8 @@ const settings: Record<string, string> = {
   "Wait before playing": "Ожидание перед запуском",
   "Holds up to {size} in memory while a video plays.":
     "Во время воспроизведения держит в памяти до {size}.",
-  "Harbor sizes the head start for each title and grows it once playback settles. Right for almost everyone.":
-    "Harbor сам подбирает запас для каждого названия и увеличивает его, когда воспроизведение стабилизируется. Подходит почти всем.",
+  "Frame sizes the head start for each title and grows it once playback settles. Right for almost everyone.":
+    "Frame сам подбирает запас для каждого названия и увеличивает его, когда воспроизведение стабилизируется. Подходит почти всем.",
   "The quickest start and the least memory used. Good on a fast, steady connection, or on a machine that is short on memory.":
     "Самый быстрый старт и минимум памяти. Хорошо при быстром стабильном соединении или на машине, где мало памяти.",
   "A couple of minutes of head start. Rides out a brief hiccup without much of a wait before playback begins.":
@@ -2136,8 +2136,8 @@ const settings: Record<string, string> = {
   "Turn on if you watch on a laptop or headphones and dialogue feels too quiet next to the effects. Leave off if you have a real surround setup or a soundbar.":
     "Включите, если смотрите на ноутбуке или в наушниках и диалоги кажутся слишком тихими на фоне эффектов. Оставьте выключенным, если у вас настоящая система объёмного звука или саундбар.",
   "Advanced (mpv.conf)": "Расширенные (mpv.conf)",
-  "The escape hatch for power users. One mpv option per line as key=value, exactly like mpv.conf. These apply last, so they override every dial above. Anything Harbor can't read is skipped, so a typo won't break playback. Restart playback to apply.":
-    "Лазейка для продвинутых пользователей. По одной опции mpv в строке в виде key=value, ровно как в mpv.conf. Они применяются последними и переопределяют все настройки выше. Всё, что Harbor не сможет прочитать, пропускается, поэтому опечатка не сломает воспроизведение. Перезапустите воспроизведение, чтобы применить.",
+  "The escape hatch for power users. One mpv option per line as key=value, exactly like mpv.conf. These apply last, so they override every dial above. Anything Frame can't read is skipped, so a typo won't break playback. Restart playback to apply.":
+    "Лазейка для продвинутых пользователей. По одной опции mpv в строке в виде key=value, ровно как в mpv.conf. Они применяются последними и переопределяют все настройки выше. Всё, что Frame не сможет прочитать, пропускается, поэтому опечатка не сломает воспроизведение. Перезапустите воспроизведение, чтобы применить.",
   "1 option active": "Активна 1 опция",
   "{n} options active": "Активно опций: {n}",
   "1 line skipped (not valid)": "Пропущена 1 строка (некорректная)",
@@ -2148,8 +2148,8 @@ const settings: Record<string, string> = {
     "Внимание: {keys} могут загружать сторонние скрипты или открывать плеер в сеть. Оставляйте их, только если точно понимаете, что они делают.",
   "See the mpv.conf your dials above generate":
     "Посмотреть mpv.conf, который создают настройки выше",
-  "These tune the bundled mpv engine, which runs in the Harbor desktop app. They have no effect in the browser.":
-    "Эти параметры настраивают встроенный движок mpv в десктопном приложении Harbor. В браузере они не действуют.",
+  "These tune the bundled mpv engine, which runs in the Frame desktop app. They have no effect in the browser.":
+    "Эти параметры настраивают встроенный движок mpv в десктопном приложении Frame. В браузере они не действуют.",
   "Download the desktop app to use video tuning.":
     "Скачайте десктопное приложение, чтобы настраивать видео.",
   "Ask to resume or start over": "Спрашивать: продолжить или начать сначала",
@@ -2183,20 +2183,20 @@ const settings: Record<string, string> = {
   "Generate a Cloudflare API token with": "Создайте токен Cloudflare API с правами",
   and: "и",
   "permissions at": "на",
-  "Paste it into Harbor.": "Вставьте его в Harbor.",
+  "Paste it into Frame.": "Вставьте его в Frame.",
   "Wait for the upload to finish. The relay URL gets written to":
     "Дождитесь окончания выгрузки. URL релея записывается в",
-  "in Harbor settings.": "в настройках Harbor.",
+  "in Frame settings.": "в настройках Frame.",
   "Save the worker source. Copy": "Сохраните исходник воркера. Скопируйте",
-  "from the Harbor repo into a new directory as": "из репозитория Harbor в новый каталог как",
+  "from the Frame repo into a new directory as": "из репозитория Frame в новый каталог как",
   "Save this": "Сохраните этот",
   "next to it:": "рядом с ним:",
   "Note the URL Cloudflare returns. It looks like":
     "Запишите URL, который вернёт Cloudflare. Он выглядит как",
-  "In Harbor: Settings, Harbor Relay, then": "В Harbor: Настройки, Harbor Relay, затем",
+  "In Frame: Settings, Frame Relay, then": "В Frame: Настройки, Frame Relay, затем",
   "Paste the URL with": "Вставьте URL со схемой",
   "as the scheme instead of": "вместо",
-  "Settings, Harbor Relay, then": "Настройки, Harbor Relay, затем",
+  "Settings, Frame Relay, then": "Настройки, Frame Relay, затем",
   "The test calls": "Тест вызывает",
   "and confirms the worker is reachable and running a current version. A passing test means Watch Together rooms will connect.":
     "и проверяет, что воркер доступен и работает на актуальной версии. Успешный тест означает, что комнаты совместного просмотра будут подключаться.",
@@ -2205,8 +2205,8 @@ const settings: Record<string, string> = {
   "subdomain acts as the access token. There is no login.":
     "поддомен работает как токен доступа. Входа в аккаунт нет.",
   "To run a public relay, post the": "Чтобы сделать релей публичным, опубликуйте",
-  "URL on r/Stremio or wherever your community lives. Other Harbor users paste it into Settings, Harbor Relay,":
-    "URL на r/Stremio или там, где живёт ваше сообщество. Другие пользователи Harbor вставляют его в Настройки, Harbor Relay,",
+  "URL on r/Stremio or wherever your community lives. Other Frame users paste it into Settings, Frame Relay,":
+    "URL на r/Stremio или там, где живёт ваше сообщество. Другие пользователи Frame вставляют его в Настройки, Frame Relay,",
   "returns JSON with the worker version. Used by the test button.":
     "возвращает JSON с версией воркера. Используется кнопкой проверки.",
   "with a WebSocket upgrade: opens a Watch Together room. State is held in a Durable Object, no persistence beyond the active session.":
@@ -2225,16 +2225,16 @@ const settings: Record<string, string> = {
   "Focus GIF URL": "URL GIF при фокусе",
   "Addon not installed": "Дополнение не установлено",
   "This section depends on the addon": "Этот раздел зависит от дополнения",
-  "You must install this addon in your Stremio account first so Harbor can fetch its works.":
-    "Сначала установите это дополнение в аккаунте Stremio, чтобы Harbor мог получать его материалы.",
+  "You must install this addon in your Stremio account first so Frame can fetch its works.":
+    "Сначала установите это дополнение в аккаунте Stremio, чтобы Frame мог получать его материалы.",
   "Missing TMDB Key": "Нет ключа TMDB",
   "This section relies on TMDB discovery features.": "Этот раздел использует функции обзора TMDB.",
   "Please add your TMDB API key in the Library & Metadata settings to view this folder.":
     "Добавьте ключ TMDB API в настройках «Библиотека и метаданные», чтобы открыть эту папку.",
   OK: "ОК",
   "Loading...": "Загрузка...",
-  "Bring your Letterboxd watchlist, diary, liked films and lists into Harbor via the Stremboxd bridge.":
-    "Перенесите свой список к просмотру, дневник, понравившиеся фильмы и списки Letterboxd в Harbor через мост Stremboxd.",
+  "Bring your Letterboxd watchlist, diary, liked films and lists into Frame via the Stremboxd bridge.":
+    "Перенесите свой список к просмотру, дневник, понравившиеся фильмы и списки Letterboxd в Frame через мост Stremboxd.",
   "Enable Letterboxd integration": "Включить интеграцию с Letterboxd",
   "Shows your Letterboxd catalogs on the home page and a Letterboxd panel on film pages.":
     "Показывает ваши каталоги Letterboxd на главной и панель Letterboxd на страницах фильмов.",
@@ -2243,8 +2243,8 @@ const settings: Record<string, string> = {
   Full: "Полный",
   "Public mode uses just your username: watchlist, liked films, popular and Top 250. No password needed.":
     "Публичный режим использует только имя пользователя: список к просмотру, понравившиеся фильмы, популярное и Топ-250. Пароль не нужен.",
-  "Full mode signs in with your Letterboxd password to also unlock your diary, friends activity and your personal ratings. Your password is sent only to Stremboxd to obtain a token — Harbor never stores it.":
-    "Полный режим выполняет вход с паролем Letterboxd и дополнительно открывает дневник, активность друзей и ваши оценки. Пароль отправляется только в Stremboxd для получения токена – Harbor его не хранит.",
+  "Full mode signs in with your Letterboxd password to also unlock your diary, friends activity and your personal ratings. Your password is sent only to Stremboxd to obtain a token — Frame never stores it.":
+    "Полный режим выполняет вход с паролем Letterboxd и дополнительно открывает дневник, активность друзей и ваши оценки. Пароль отправляется только в Stremboxd для получения токена – Frame его не хранит.",
   "Letterboxd username": "Имя пользователя Letterboxd",
   "Letterboxd password": "Пароль Letterboxd",
   "Your Letterboxd password": "Ваш пароль Letterboxd",
@@ -2278,8 +2278,8 @@ const settings: Record<string, string> = {
   "Choose an avatar": "Выберите аватар",
   "{n} avatars across film, TV, and anime.": "{n} аватаров из фильмов, сериалов и аниме.",
   "Rights and usage": "Права и использование",
-  "Fan-made avatars for personal use. Harbor claims no rights to these characters; they belong to their creators and studios, shown here under fair use. Every one is optimized down to a tiny WebP.":
-    "Фанатские аватары для личного использования. Harbor не претендует на права на этих персонажей; они принадлежат своим авторам и студиям и показаны здесь на условиях добросовестного использования. Каждый оптимизирован до крошечного WebP.",
+  "Fan-made avatars for personal use. Frame claims no rights to these characters; they belong to their creators and studios, shown here under fair use. Every one is optimized down to a tiny WebP.":
+    "Фанатские аватары для личного использования. Frame не претендует на права на этих персонажей; они принадлежат своим авторам и студиям и показаны здесь на условиях добросовестного использования. Каждый оптимизирован до крошечного WebP.",
   "or use one of our avatars": "или выберите один из наших аватаров",
   "Random avatar": "Случайный аватар",
   "More soon": "Скоро ещё",
@@ -2363,8 +2363,8 @@ const settings: Record<string, string> = {
   "Re-open the stream you are watching and pick it back up where you left off.":
     "Заново открыть текущий поток и продолжить с того места, где вы остановились.",
   "Restart streaming server": "Перезапустить стриминг-сервер",
-  "Restart Harbor's own streaming server, then reload the stream once it is back. Desktop only.":
-    "Перезапустить собственный стриминг-сервер Harbor, а когда он снова заработает, перезагрузить поток. Только в десктопном приложении.",
+  "Restart Frame's own streaming server, then reload the stream once it is back. Desktop only.":
+    "Перезапустить собственный стриминг-сервер Frame, а когда он снова заработает, перезагрузить поток. Только в десктопном приложении.",
   "Cached source resolution and direct download links.":
     "Разрешение кэшированных источников и прямые ссылки на скачивание.",
   "Cached source resolution and cloud library access.":

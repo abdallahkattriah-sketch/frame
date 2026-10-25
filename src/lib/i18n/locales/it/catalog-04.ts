@@ -85,209 +85,208 @@ const catalog04: Record<string, string> = {
     "Gestisce la riproduzione P2P e la transcodifica su questo dispositivo.",
   "Hang tight, won't be a sec.": "Un attimo, ci siamo quasi.",
   "Hangout Comedy": "Commedie da compagnia",
-  Harbor: "Harbor",
-  "Harbor Rank": "Harbor Rank",
-  "Harbor Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
-    "Harbor Rank valuta un'intera carriera, non un singolo successo. Il rango dipende da quattro fattori: la qualità media delle opere, quante hanno ottenuto ampi consensi, i premi più importanti vinti e la frequenza con cui la persona ha avuto un ruolo da protagonista. Ogni criterio viene ponderato e sommato agli altri, poi il risultato viene corretto in base all'ampiezza e all'attualità della carriera. Tutti i valori usati per il punteggio sono visibili sulla scheda, così puoi sempre capirne il motivo.",
-  "Harbor Reader": "Harbor Reader",
-  "Harbor Relay": "Harbor Relay",
-  "Harbor Setup did not finish updating Harbor. Nothing was changed.":
-    "La Configurazione di Harbor non ha completato l'aggiornamento di Harbor. Non è stato modificato nulla.",
-  "Harbor Staff": "Staff di Harbor",
-  "Harbor Voyages": "Viaggi di Harbor",
-  "Harbor accepted that but returned no session. Try again.":
-    "Harbor ha accettato la richiesta, ma non ha restituito alcuna sessione. Riprova.",
-  "Harbor account": "Account Harbor",
-  "Harbor account linked as {name}": "Account Harbor collegato come {name}",
-  "Harbor account signed in": "Accesso all'account Harbor effettuato",
-  "Harbor asks your addons for titles and descriptions in this language. The TV menus stay in English.":
-    "Harbor richiede agli Add-on titoli e descrizioni in questa lingua. I menu TV restano in inglese.",
-  "Harbor cannot find this TV's network address, so the phone hand-off is unavailable here.":
-    "Harbor non riesce a trovare l'indirizzo di rete di questa TV, quindi qui non è disponibile il passaggio dal telefono.",
-  "Harbor caps playlists at 80 MB to stay responsive. Most providers offer a filtered URL with fewer channels.":
-    "Per restare reattivo, Harbor limita le playlist a 80 MB. La maggior parte dei provider offre un URL filtrato con meno canali.",
+  Frame: "Frame",
+  "Frame Rank": "Frame Rank",
+  "Frame Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
+    "Frame Rank valuta un'intera carriera, non un singolo successo. Il rango dipende da quattro fattori: la qualità media delle opere, quante hanno ottenuto ampi consensi, i premi più importanti vinti e la frequenza con cui la persona ha avuto un ruolo da protagonista. Ogni criterio viene ponderato e sommato agli altri, poi il risultato viene corretto in base all'ampiezza e all'attualità della carriera. Tutti i valori usati per il punteggio sono visibili sulla scheda, così puoi sempre capirne il motivo.",
+  "Frame Reader": "Frame Reader",
+  "Frame Relay": "Frame Relay",
+  "Frame Setup did not finish updating Frame. Nothing was changed.":
+    "La Configurazione di Frame non ha completato l'aggiornamento di Frame. Non è stato modificato nulla.",
+  "Frame Staff": "Staff di Frame",
+  "Frame Voyages": "Viaggi di Frame",
+  "Frame accepted that but returned no session. Try again.":
+    "Frame ha accettato la richiesta, ma non ha restituito alcuna sessione. Riprova.",
+  "Frame account": "Account Frame",
+  "Frame account linked as {name}": "Account Frame collegato come {name}",
+  "Frame account signed in": "Accesso all'account Frame effettuato",
+  "Frame asks your addons for titles and descriptions in this language. The TV menus stay in English.":
+    "Frame richiede agli Add-on titoli e descrizioni in questa lingua. I menu TV restano in inglese.",
+  "Frame cannot find this TV's network address, so the phone hand-off is unavailable here.":
+    "Frame non riesce a trovare l'indirizzo di rete di questa TV, quindi qui non è disponibile il passaggio dal telefono.",
+  "Frame caps playlists at 80 MB to stay responsive. Most providers offer a filtered URL with fewer channels.":
+    "Per restare reattivo, Frame limita le playlist a 80 MB. La maggior parte dei provider offre un URL filtrato con meno canali.",
   "Harbor catches stremio:// install links so the configure-and-install flow stays inside the app.":
     "Harbor intercetta i link di installazione stremio://, così la configurazione e l'installazione restano all'interno dell'app.",
   "Harbor catches stremio:// install links so the configure-and-install flow stays inside the app. Every install also syncs to your Stremio account, so the official app remains the canonical home for your library.":
     "Harbor intercetta i link di installazione stremio://, così la configurazione e l'installazione restano all'interno dell'app. Ogni installazione viene sincronizzata anche con il tuo account Stremio, quindi l'app ufficiale resta il riferimento principale per la tua libreria.",
-  "Harbor checks a few times a day while it's open and lets you know here.":
-    "Quando è aperto, Harbor controlla alcune volte al giorno e ti avvisa qui.",
-  "Harbor checks automatically every few hours.":
-    "Harbor controlla automaticamente ogni poche ore.",
+  "Frame checks a few times a day while it's open and lets you know here.":
+    "Quando è aperto, Frame controlla alcune volte al giorno e ti avvisa qui.",
+  "Frame checks automatically every few hours.": "Frame controlla automaticamente ogni poche ore.",
   "Harbor checks harbor.site for new versions and installs them in place.":
     "Harbor cerca nuove versioni su harbor.site e le installa direttamente.",
   "Harbor checks harbor.site for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
     "Harbor cerca nuove versioni su harbor.site e le installa direttamente. Non viene installato nulla finché non decidi tu e un aggiornamento ignorato non ti verrà più proposto.",
-  "Harbor checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
-    "Harbor cerca nuove versioni su GitHub e le installa direttamente. Non viene installato nulla finché non decidi tu e un aggiornamento ignorato non ti verrà più proposto.",
-  "Harbor could not find these": "Harbor non ha trovato questi elementi",
-  "Harbor could not open its web server. Try again, or set this up on the TV.":
-    "Harbor non è riuscito ad aprire il proprio server web. Riprova oppure esegui la configurazione sulla TV.",
-  "Harbor couldn't analyze the audio for this source. Try again or adjust it manually.":
-    "Harbor non è riuscito ad analizzare l'audio di questa sorgente. Riprova o regolalo manualmente.",
-  "Harbor couldn't find a reliable timing correction for this subtitle.":
-    "Harbor non è riuscito a trovare una correzione affidabile della sincronizzazione per questi sottotitoli.",
-  "Harbor couldn't play this source": "Harbor non è riuscito a riprodurre questa sorgente",
-  "Harbor couldn't reach MyAnimeList or AniList. Check the connection and reopen Big Picture.":
-    "Harbor non è riuscito a contattare MyAnimeList o AniList. Controlla la connessione e riapri Big Picture.",
-  "Harbor couldn't reach the catalog servers.":
-    "Harbor non è riuscito a contattare i server dei cataloghi.",
-  "Harbor couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
-    "Harbor non è riuscito a contattare i server dei cataloghi. Controlla la connessione e riapri Big Picture.",
-  "Harbor couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.":
-    "Harbor non è riuscito a trovare un ID valido per questo titolo. Aggiungi una chiave TMDB nelle impostazioni della Libreria o accedi a Stremio per ampliare la copertura.",
-  "Harbor couldn't start any source": "Harbor non è riuscito ad avviare nessuna sorgente",
-  "Harbor creates a Cloudflare Worker on your own free account and saves the URL.":
-    "Harbor crea un Cloudflare Worker sul tuo account gratuito e salva l'URL.",
-  "Harbor curated": "Selezionato da Harbor",
-  "Harbor default": "Predefinito di Harbor",
-  "Harbor does not host any manga or any sources. Connect a self-hosted server you run, install a source plugin from a repository you trust, or open a folder you already have.":
-    "Harbor non ospita manga né sorgenti. Collega un server self-hosted gestito da te, installa un plugin sorgente da un repository affidabile oppure apri una cartella che possiedi già.",
-  "Harbor does not host any manga or any sources. Connect your own server or open a folder you already have, and mix as many as you like.":
-    "Harbor non ospita manga né sorgenti. Collega il tuo server oppure apri una cartella che hai già e combina tutte le sorgenti che vuoi.",
-  "Harbor does not host any manga. Add a source plugin from a repository you trust, connect your own server, or open a local folder. You can turn this off anytime in Settings.":
-    "Harbor non ospita manga. Aggiungi un plugin sorgente da un repository affidabile, collega il tuo server oppure apri una cartella locale. Puoi disattivare questa funzione in qualsiasi momento nelle Impostazioni.",
-  "Harbor double-checks with Stremio after saving, so a half-written order can't slip through.":
-    "Dopo il salvataggio, Harbor verifica di nuovo con Stremio, così non può essere applicato un ordinamento scritto solo in parte.",
-  "Harbor eBook": "eBook Harbor",
-  "Harbor finds intro and credits timing from AniSkip, TheIntroDB, and the file's own chapters, then shows a Skip button at the right moment.":
-    "Harbor ricava i tempi della sigla iniziale e dei titoli di coda da AniSkip, TheIntroDB e dai capitoli del file, poi mostra il pulsante Salta al momento giusto.",
-  "Harbor found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
-    "Harbor ha trovato sorgenti per gli episodi di {season}, ma nessuna è un unico pacchetto scaricabile. Può comunque scaricare gli episodi uno alla volta.",
-  "Harbor found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
-    "Harbor ha trovato sorgenti per gli episodi, ma nessuna offriva un pacchetto scaricabile per {season}. Prova un altro Add-on o aggiorna le sorgenti.",
-  "Harbor found something at this address that looked like a Roku, but it didn't respond like one. The device may be offline or another product picked up the same broadcast.":
-    "Harbor ha trovato a questo indirizzo qualcosa che sembrava un Roku, ma non ha risposto come tale. Il dispositivo potrebbe essere offline oppure un altro prodotto potrebbe aver rilevato la stessa trasmissione.",
-  "Harbor identity": "Identità Harbor",
-  "Harbor identity (avatar / color)": "Identità Harbor (avatar / colore)",
-  "Harbor in a browser": "Harbor in un browser",
-  "Harbor in your browser": "Harbor nel tuo browser",
-  "Harbor is an independent client. It is not affiliated with or endorsed by Stremio.":
-    "Harbor è un client indipendente. Non è affiliato a Stremio né approvato da Stremio.",
-  "Harbor is closing. Harbor Setup will finish and reopen it.":
-    "Harbor si sta chiudendo. Il programma di installazione completerà l'operazione e riaprirà Harbor.",
-  "Harbor is having trouble, try again in a moment":
-    "Harbor ha riscontrato un problema, riprova tra poco",
-  "Harbor is open source. PRs that reference a bug get reviewed within 48h and ship with credit in the release notes.":
-    "Harbor è open source. Le PR che fanno riferimento a un bug vengono esaminate entro 48 ore e pubblicate con i dovuti crediti nelle note di rilascio.",
-  "Harbor keeps your MyAnimeList watch progress in sync.":
-    "Harbor mantiene sincronizzati i tuoi progressi di visione su MyAnimeList.",
-  "Harbor leads with one big title. Classic leads with rows.":
-    "Harbor mette in primo piano un unico titolo grande. Classico mette in primo piano le righe.",
-  "Harbor list": "Lista Harbor",
-  "Harbor loads it automatically when a track in that language exists. You can also set or clear the second track for one video from the subtitle menu in the player.":
-    "Harbor la carica automaticamente quando esiste una traccia in quella lingua. Puoi anche impostare o rimuovere la seconda traccia per un singolo video dal menu Sottotitoli del player.",
-  "Harbor loads the native svpflow filter through VapourSynth and starts SVP Manager when available. Restart playback to apply.":
-    "Harbor carica il filtro nativo svpflow tramite VapourSynth e avvia SVP Manager quando disponibile. Riavvia la riproduzione per applicarlo.",
-  "Harbor logs into nothing and bypasses no password, paywall, or access control, and must not be used to attempt it. Point it only at content you are legally allowed to read, and never at official or licensed publisher sites. You alone are responsible for what you connect and for following copyright and each site's terms. Harbor bundles and endorses no sites.":
-    "Harbor non accede ad alcun servizio e non aggira password, paywall o controlli di accesso, né deve essere usato per tentare di farlo. Usalo solo con contenuti che sei legalmente autorizzato a leggere e mai con siti ufficiali o di editori autorizzati. Sei l'unico responsabile di ciò che colleghi, del rispetto del diritto d'autore e delle condizioni di ciascun sito. Harbor non include né promuove alcun sito.",
-  "Harbor needs a TMDB key for artwork, rows and collections. It is free.":
-    "Harbor richiede una chiave TMDB per immagini, righe e raccolte. È gratuita.",
-  "Harbor needs at least one streaming source before it can play {title}. Install a stream addon or add a debrid key in settings.":
-    "Harbor richiede almeno una sorgente streaming prima di poter riprodurre {title}. Installa un Add-on di streaming o aggiungi una chiave debrid nelle Impostazioni.",
-  "Harbor needs to be serving on your network before a phone can reach it.":
-    "Harbor deve essere attivo sulla rete prima che un telefono possa raggiungerlo.",
-  "Harbor never hosts your books or source files.":
-    "Harbor non ospita mai i tuoi libri né i file sorgente.",
-  "Harbor never hosts your books.": "Harbor non ospita mai i tuoi libri.",
-  "Harbor normally starts its P2P engine at launch so the first P2P stream connects faster. That keeps a DHT node running and talking to the network even when you are not watching anything. Turn this on if you are on a metered or limited connection: the engine then starts the first time you actually play a P2P stream. Takes effect next launch.":
-    "Di norma Harbor avvia il motore P2P all'apertura, così il primo stream P2P si connette più rapidamente. In questo modo, un nodo DHT resta attivo e comunica con la rete anche quando non stai guardando nulla. Attiva questa opzione se usi una connessione a consumo o limitata: il motore si avvierà la prima volta che riprodurrai effettivamente uno stream P2P. La modifica sarà applicata al prossimo avvio.",
-  "Harbor on other devices": "Harbor su altri dispositivi",
-  "Harbor on other devices (web app)": "Harbor su altri dispositivi (app web)",
-  "Harbor pick": "Scelta di Harbor",
-  "Harbor plays IPTV from your own provider. Add a playlist and the guide fills in.":
-    "Harbor riproduce l'IPTV del tuo provider. Aggiungi una playlist e la guida si compilerà automaticamente.",
-  "Harbor pulls the most popular titles each service has right now. Toggle off anything you don't subscribe to.":
-    "Harbor recupera i titoli più popolari del momento su ogni servizio. Disattiva quelli a cui non sei abbonato.",
-  "Harbor pulls your addon collection from Stremio. Manage individual addons in Streaming sources.":
-    "Harbor recupera da Stremio la tua raccolta di Add-on. Gestisci i singoli Add-on in Sorgenti streaming.",
-  "Harbor ranking": "Classifica Harbor",
-  "Harbor ranking puts the best-scoring sources first. Addon order follows your addon priority (organize it in Addons, Installed tab, Reorder) and keeps each addon's results in the order it returned them, like the Stremio and Vidi apps.":
-    "La classifica Harbor mostra prima le sorgenti con il punteggio migliore. L'ordine degli Add-on segue la loro priorità (puoi modificarla in Add-on, scheda Installati, Riordina) e mantiene i risultati di ciascun Add-on nell'ordine in cui sono stati restituiti, come nelle app Stremio e Vidi.",
-  "Harbor ranking puts the best-scoring sources first. Addon order keeps each addon's results in the order it returned them, like the Stremio and Vidi apps. Stream priority below decides which addon leads, in both modes.":
-    "La classifica Harbor mostra prima le sorgenti con il punteggio migliore. L'ordine degli Add-on mantiene i risultati di ciascun Add-on nell'ordine in cui sono stati restituiti, come nelle app Stremio e Vidi. La priorità degli stream qui sotto stabilisce quale Add-on viene mostrato per primo in entrambe le modalità.",
-  "Harbor reading room": "Sala di lettura Harbor",
-  "Harbor reads the speech in the audio, then slides the subtitle track until the two line up.":
-    "Harbor analizza il parlato nell'audio, poi sposta la traccia dei Sottotitoli finché i due non sono sincronizzati.",
-  "Harbor runs a small streaming server right on this computer. This is where it lives. To stream from this machine on another device, copy the Wi-Fi address and paste it into Remote streaming server in Harbor over there.":
-    "Harbor esegue un piccolo server di streaming direttamente su questo computer. Questo è il suo indirizzo. Per trasmettere da questo computer a un altro dispositivo, copia l'indirizzo Wi-Fi e incollalo in Server di streaming remoto nell'installazione di Harbor su quel dispositivo.",
-  "Harbor scans your IPTV playlists' EPG every 30 min for programs about to start.":
-    "Harbor controlla ogni 30 min l'EPG delle tue playlist IPTV per individuare i programmi che stanno per iniziare.",
-  "Harbor searches every source you enable at the same time, then merges and de-duplicates the results into one clean list. Turn a source off to stop pulling from it.":
-    "Harbor cerca contemporaneamente in tutte le sorgenti abilitate, poi unisce i risultati, rimuove i duplicati e crea un'unica Lista ordinata. Disattiva una sorgente per non recuperare più risultati da lì.",
-  "Harbor sends no telemetry. This also drops outbound ad, analytics, and tracker requests that addons or metadata providers try to make, before they leave your machine.":
-    "Harbor non invia dati di telemetria. Inoltre blocca le richieste in uscita di annunci, analisi e tracker effettuate da Add-on o provider di metadati, prima che lascino il dispositivo.",
-  "Harbor ships a neutral trophy for every award. Install an icon pack or upload your own image per award to make them yours. Packs are hosted by whoever makes them, so the artwork is theirs, not bundled with Harbor.":
-    "Harbor include un trofeo neutro per ogni premio. Installa un pacchetto di icone o carica un'immagine per ciascun premio per personalizzarli. I pacchetti sono ospitati dai rispettivi autori, quindi le immagini appartengono a loro e non sono incluse in Harbor.",
-  "Harbor ships no manga sources and hosts nothing. Extensions come from repositories other people maintain. Paste a repository URL below to browse its plugins, then install the ones you want. Every plugin runs sandboxed in an isolated worker with no access to your files, accounts, or the rest of the app.":
-    "Harbor non include sorgenti manga e non ospita contenuti. Le estensioni provengono da repository gestiti da terzi. Incolla qui sotto l'URL di un repository per sfogliarne i plugin, poi installa quelli che vuoi. Ogni plugin viene eseguito in una sandbox, in un worker isolato senza accesso ai tuoi file, account o al resto dell'app.",
-  "Harbor ships the engine, not the sites. You write a short JSON config that describes a site with CSS selectors, and Harbor reads the site with them. Nothing is bundled: point it only at sites you have the right to read.":
-    "Harbor include il motore, non i siti. Scrivi una breve configurazione JSON che descriva un sito tramite selettori CSS e Harbor la userà per leggerlo. Non è incluso alcun sito: usalo solo con siti che hai il diritto di consultare.",
-  "Harbor shows your AniList lists on the Anime page and keeps your progress in sync.":
-    "Harbor mostra le tue liste AniList nella pagina Anime e mantiene sincronizzati i tuoi progressi.",
-  "Harbor signed you up but returned no session. Try signing in instead.":
-    "Harbor ha creato il tuo account, ma non ha restituito alcuna sessione. Prova ad accedere.",
-  "Harbor snippet": "Snippet Harbor",
-  "Harbor speaks Stremio's addon protocol, and the whole ecosystem of addons grows out of their work. Stremio is funded by its community, and supporters who chip in get early access to experimental features. If you have it to spare, send some their way too.":
-    "Harbor usa il protocollo degli Add-on di Stremio e l'intero ecosistema di Add-on nasce dal suo lavoro. Stremio è finanziato dalla sua community e chi contribuisce ottiene l'accesso anticipato alle funzionalità sperimentali. Se puoi permettertelo, sostieni anche Stremio.",
-  "Harbor speaks this everywhere. You can change it later in Settings.":
-    "Harbor userà questa lingua ovunque. Potrai cambiarla in seguito nelle Impostazioni.",
-  "Harbor still finds and loads subtitles so they're one click away in the player, it just won't turn them on automatically.":
-    "Harbor continuerà a trovare e caricare i Sottotitoli, così saranno disponibili nel player con un clic, ma non li attiverà automaticamente.",
-  "Harbor test message (Discord). If you can read this, your webhook is wired up.":
-    "Messaggio di prova di Harbor (Discord). Se riesci a leggerlo, il webhook è configurato correttamente.",
-  "Harbor test message (Telegram). If you can read this, your webhook is wired up.":
-    "Messaggio di prova di Harbor (Telegram). Se riesci a leggerlo, il webhook è configurato correttamente.",
-  "Harbor theme": "Tema Harbor",
-  "Harbor times out-of-sync subtitles to the audio for you, on any external subtitle. It works on the mpv player and leaves embedded tracks alone, since those are already in sync.":
-    "Harbor sincronizza automaticamente con l'audio i Sottotitoli fuori tempo, per qualsiasi sottotitolo esterno. Funziona con il player mpv e non modifica le tracce integrate, perché sono già sincronizzate.",
-  "Harbor tried {n} sources for {title} and none of them played. Usually that means a debrid key has expired, no stream addon is installed yet, or nothing has this title cached.":
-    "Harbor ha provato {n} sorgenti per {title}, ma nessuna ha funzionato. Di solito significa che una chiave debrid è scaduta, non è ancora installato alcun Add-on di streaming oppure il titolo non è disponibile nella cache.",
-  "Harbor uses ffmpeg to convert streams into formats TVs can play. It's a one-time install and Harbor will pick it up automatically.":
-    "Harbor usa ffmpeg per convertire gli stream in formati riproducibili dai TV. L'installazione va eseguita una sola volta e Harbor lo rileverà automaticamente.",
-  "Harbor uses the graphics card when it's safe and falls back to the CPU when it isn't. The right call for almost everyone.":
-    "Harbor usa la scheda grafica quando è sicuro farlo e passa alla CPU in caso contrario. È la scelta giusta per quasi tutti.",
-  "Harbor was built in English. Multi-language support is partial, so your addons usually catch what Harbor's own filters miss. If you speak another language and want to help, the source is open.":
-    "Harbor è stato sviluppato in inglese. Il supporto multilingue è parziale, quindi di solito gli Add-on trovano ciò che sfugge ai filtri interni di Harbor. Se parli un'altra lingua e vuoi contribuire, il codice sorgente è aperto.",
-  "Harbor will mark what you finish as watched on Simkl and sync your plan-to-watch list.":
-    "Harbor segnerà su Simkl come visti i contenuti che completi e sincronizzerà la tua Lista Da guardare.",
-  "Harbor will not start the P2P engine, contact trackers, or run DHT. Use this if you only want debrid and direct links. Turn off to re-enable P2P streaming.":
-    "Harbor non avvierà il motore P2P, non contatterà i tracker e non eseguirà DHT. Usa questa opzione se vuoi solo link debrid e diretti. Disattivala per riabilitare lo streaming P2P.",
-  "Harbor will scrobble your playback to Trakt and sync your watchlist.":
-    "Harbor invierà a Trakt i dati sulla riproduzione tramite scrobbling e sincronizzerà la tua Lista.",
-  "Harbor would not be possible without Stremio. It is the foundation everything here is built on.":
-    "Harbor non sarebbe possibile senza Stremio. È la base su cui è costruito tutto ciò che trovi qui.",
-  "Harbor {version} available": "Harbor {version} disponibile",
-  "Harbor {version} downloaded but did not install on its own.":
-    "Harbor {version} è stato scaricato, ma non si è installato automaticamente.",
-  "Harbor's backend runs on ElfHosted. They run our servers at no cost to the community.":
-    "Il backend di Harbor è eseguito su ElfHosted, che gestisce gratuitamente i nostri server per la community.",
-  "Harbor's backend runs on ElfHosted. They took it on without being asked, and Harbor has never charged for anything.":
-    "Il backend di Harbor è eseguito su ElfHosted. Se ne sono fatti carico senza che nessuno lo chiedesse e Harbor non ha mai fatto pagare nulla.",
-  "Harbor's built-in HDR to SDR conversion is on. Turn it off in Video tuning to use this instead. Running both double-processes the picture.":
-    "La conversione integrata da HDR a SDR di Harbor è attiva. Disattivala in Regolazione video per usare questa opzione. Attivarle entrambe comporta una doppia elaborazione dell'immagine.",
-  "Harbor's built-in OpenSubtitles search, on by default. If you install an OpenSubtitles addon, this steps aside automatically so your results are never duplicated.":
-    "La ricerca OpenSubtitles integrata di Harbor è attiva per impostazione predefinita. Se installi un Add-on OpenSubtitles, si disattiverà automaticamente per evitare risultati duplicati.",
-  "Harbor's built-in frame interpolation. Smooths panning, best on anime. Needs a display refresh rate above the video's frame rate, and can stutter on weak GPUs. Lighter than SVP.":
-    "Interpolazione dei fotogrammi integrata di Harbor. Rende più fluide le panoramiche ed è particolarmente adatta agli anime. Richiede una frequenza di aggiornamento dello schermo superiore alla frequenza dei fotogrammi del video e può scattare sulle GPU meno potenti. Più leggera di SVP.",
-  "Harbor's full video engine. Plays anything you throw at it.":
-    "Il motore video completo di Harbor. Riproduce qualsiasi contenuto.",
+  "Frame checks its GitHub releases for new versions and installs them in place. Nothing installs until you choose to, and a dismissed update never nags you again.":
+    "Frame cerca nuove versioni su GitHub e le installa direttamente. Non viene installato nulla finché non decidi tu e un aggiornamento ignorato non ti verrà più proposto.",
+  "Frame could not find these": "Frame non ha trovato questi elementi",
+  "Frame could not open its web server. Try again, or set this up on the TV.":
+    "Frame non è riuscito ad aprire il proprio server web. Riprova oppure esegui la configurazione sulla TV.",
+  "Frame couldn't analyze the audio for this source. Try again or adjust it manually.":
+    "Frame non è riuscito ad analizzare l'audio di questa sorgente. Riprova o regolalo manualmente.",
+  "Frame couldn't find a reliable timing correction for this subtitle.":
+    "Frame non è riuscito a trovare una correzione affidabile della sincronizzazione per questi sottotitoli.",
+  "Frame couldn't play this source": "Frame non è riuscito a riprodurre questa sorgente",
+  "Frame couldn't reach MyAnimeList or AniList. Check the connection and reopen Big Picture.":
+    "Frame non è riuscito a contattare MyAnimeList o AniList. Controlla la connessione e riapri Big Picture.",
+  "Frame couldn't reach the catalog servers.":
+    "Frame non è riuscito a contattare i server dei cataloghi.",
+  "Frame couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
+    "Frame non è riuscito a contattare i server dei cataloghi. Controlla la connessione e riapri Big Picture.",
+  "Frame couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.":
+    "Frame non è riuscito a trovare un ID valido per questo titolo. Aggiungi una chiave TMDB nelle impostazioni della Libreria o accedi a Stremio per ampliare la copertura.",
+  "Frame couldn't start any source": "Frame non è riuscito ad avviare nessuna sorgente",
+  "Frame creates a Cloudflare Worker on your own free account and saves the URL.":
+    "Frame crea un Cloudflare Worker sul tuo account gratuito e salva l'URL.",
+  "Frame curated": "Selezionato da Frame",
+  "Frame default": "Predefinito di Frame",
+  "Frame does not host any manga or any sources. Connect a self-hosted server you run, install a source plugin from a repository you trust, or open a folder you already have.":
+    "Frame non ospita manga né sorgenti. Collega un server self-hosted gestito da te, installa un plugin sorgente da un repository affidabile oppure apri una cartella che possiedi già.",
+  "Frame does not host any manga or any sources. Connect your own server or open a folder you already have, and mix as many as you like.":
+    "Frame non ospita manga né sorgenti. Collega il tuo server oppure apri una cartella che hai già e combina tutte le sorgenti che vuoi.",
+  "Frame does not host any manga. Add a source plugin from a repository you trust, connect your own server, or open a local folder. You can turn this off anytime in Settings.":
+    "Frame non ospita manga. Aggiungi un plugin sorgente da un repository affidabile, collega il tuo server oppure apri una cartella locale. Puoi disattivare questa funzione in qualsiasi momento nelle Impostazioni.",
+  "Frame double-checks with Stremio after saving, so a half-written order can't slip through.":
+    "Dopo il salvataggio, Frame verifica di nuovo con Stremio, così non può essere applicato un ordinamento scritto solo in parte.",
+  "Frame eBook": "eBook Frame",
+  "Frame finds intro and credits timing from AniSkip, TheIntroDB, and the file's own chapters, then shows a Skip button at the right moment.":
+    "Frame ricava i tempi della sigla iniziale e dei titoli di coda da AniSkip, TheIntroDB e dai capitoli del file, poi mostra il pulsante Salta al momento giusto.",
+  "Frame found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
+    "Frame ha trovato sorgenti per gli episodi di {season}, ma nessuna è un unico pacchetto scaricabile. Può comunque scaricare gli episodi uno alla volta.",
+  "Frame found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
+    "Frame ha trovato sorgenti per gli episodi, ma nessuna offriva un pacchetto scaricabile per {season}. Prova un altro Add-on o aggiorna le sorgenti.",
+  "Frame found something at this address that looked like a Roku, but it didn't respond like one. The device may be offline or another product picked up the same broadcast.":
+    "Frame ha trovato a questo indirizzo qualcosa che sembrava un Roku, ma non ha risposto come tale. Il dispositivo potrebbe essere offline oppure un altro prodotto potrebbe aver rilevato la stessa trasmissione.",
+  "Frame identity": "Identità Frame",
+  "Frame identity (avatar / color)": "Identità Frame (avatar / colore)",
+  "Frame in a browser": "Frame in un browser",
+  "Frame in your browser": "Frame nel tuo browser",
+  "Frame is an independent client. It is not affiliated with or endorsed by Stremio.":
+    "Frame è un client indipendente. Non è affiliato a Stremio né approvato da Stremio.",
+  "Frame is closing. Frame Setup will finish and reopen it.":
+    "Frame si sta chiudendo. Il programma di installazione completerà l'operazione e riaprirà Frame.",
+  "Frame is having trouble, try again in a moment":
+    "Frame ha riscontrato un problema, riprova tra poco",
+  "Frame is open source. PRs that reference a bug get reviewed within 48h and ship with credit in the release notes.":
+    "Frame è open source. Le PR che fanno riferimento a un bug vengono esaminate entro 48 ore e pubblicate con i dovuti crediti nelle note di rilascio.",
+  "Frame keeps your MyAnimeList watch progress in sync.":
+    "Frame mantiene sincronizzati i tuoi progressi di visione su MyAnimeList.",
+  "Frame leads with one big title. Classic leads with rows.":
+    "Frame mette in primo piano un unico titolo grande. Classico mette in primo piano le righe.",
+  "Frame list": "Lista Frame",
+  "Frame loads it automatically when a track in that language exists. You can also set or clear the second track for one video from the subtitle menu in the player.":
+    "Frame la carica automaticamente quando esiste una traccia in quella lingua. Puoi anche impostare o rimuovere la seconda traccia per un singolo video dal menu Sottotitoli del player.",
+  "Frame loads the native svpflow filter through VapourSynth and starts SVP Manager when available. Restart playback to apply.":
+    "Frame carica il filtro nativo svpflow tramite VapourSynth e avvia SVP Manager quando disponibile. Riavvia la riproduzione per applicarlo.",
+  "Frame logs into nothing and bypasses no password, paywall, or access control, and must not be used to attempt it. Point it only at content you are legally allowed to read, and never at official or licensed publisher sites. You alone are responsible for what you connect and for following copyright and each site's terms. Frame bundles and endorses no sites.":
+    "Frame non accede ad alcun servizio e non aggira password, paywall o controlli di accesso, né deve essere usato per tentare di farlo. Usalo solo con contenuti che sei legalmente autorizzato a leggere e mai con siti ufficiali o di editori autorizzati. Sei l'unico responsabile di ciò che colleghi, del rispetto del diritto d'autore e delle condizioni di ciascun sito. Frame non include né promuove alcun sito.",
+  "Frame needs a TMDB key for artwork, rows and collections. It is free.":
+    "Frame richiede una chiave TMDB per immagini, righe e raccolte. È gratuita.",
+  "Frame needs at least one streaming source before it can play {title}. Install a stream addon or add a debrid key in settings.":
+    "Frame richiede almeno una sorgente streaming prima di poter riprodurre {title}. Installa un Add-on di streaming o aggiungi una chiave debrid nelle Impostazioni.",
+  "Frame needs to be serving on your network before a phone can reach it.":
+    "Frame deve essere attivo sulla rete prima che un telefono possa raggiungerlo.",
+  "Frame never hosts your books or source files.":
+    "Frame non ospita mai i tuoi libri né i file sorgente.",
+  "Frame never hosts your books.": "Frame non ospita mai i tuoi libri.",
+  "Frame normally starts its P2P engine at launch so the first P2P stream connects faster. That keeps a DHT node running and talking to the network even when you are not watching anything. Turn this on if you are on a metered or limited connection: the engine then starts the first time you actually play a P2P stream. Takes effect next launch.":
+    "Di norma Frame avvia il motore P2P all'apertura, così il primo stream P2P si connette più rapidamente. In questo modo, un nodo DHT resta attivo e comunica con la rete anche quando non stai guardando nulla. Attiva questa opzione se usi una connessione a consumo o limitata: il motore si avvierà la prima volta che riprodurrai effettivamente uno stream P2P. La modifica sarà applicata al prossimo avvio.",
+  "Frame on other devices": "Frame su altri dispositivi",
+  "Frame on other devices (web app)": "Frame su altri dispositivi (app web)",
+  "Frame pick": "Scelta di Frame",
+  "Frame plays IPTV from your own provider. Add a playlist and the guide fills in.":
+    "Frame riproduce l'IPTV del tuo provider. Aggiungi una playlist e la guida si compilerà automaticamente.",
+  "Frame pulls the most popular titles each service has right now. Toggle off anything you don't subscribe to.":
+    "Frame recupera i titoli più popolari del momento su ogni servizio. Disattiva quelli a cui non sei abbonato.",
+  "Frame pulls your addon collection from Stremio. Manage individual addons in Streaming sources.":
+    "Frame recupera da Stremio la tua raccolta di Add-on. Gestisci i singoli Add-on in Sorgenti streaming.",
+  "Frame ranking": "Classifica Frame",
+  "Frame ranking puts the best-scoring sources first. Addon order follows your addon priority (organize it in Addons, Installed tab, Reorder) and keeps each addon's results in the order it returned them, like the Stremio and Vidi apps.":
+    "La classifica Frame mostra prima le sorgenti con il punteggio migliore. L'ordine degli Add-on segue la loro priorità (puoi modificarla in Add-on, scheda Installati, Riordina) e mantiene i risultati di ciascun Add-on nell'ordine in cui sono stati restituiti, come nelle app Stremio e Vidi.",
+  "Frame ranking puts the best-scoring sources first. Addon order keeps each addon's results in the order it returned them, like the Stremio and Vidi apps. Stream priority below decides which addon leads, in both modes.":
+    "La classifica Frame mostra prima le sorgenti con il punteggio migliore. L'ordine degli Add-on mantiene i risultati di ciascun Add-on nell'ordine in cui sono stati restituiti, come nelle app Stremio e Vidi. La priorità degli stream qui sotto stabilisce quale Add-on viene mostrato per primo in entrambe le modalità.",
+  "Frame reading room": "Sala di lettura Frame",
+  "Frame reads the speech in the audio, then slides the subtitle track until the two line up.":
+    "Frame analizza il parlato nell'audio, poi sposta la traccia dei Sottotitoli finché i due non sono sincronizzati.",
+  "Frame runs a small streaming server right on this computer. This is where it lives. To stream from this machine on another device, copy the Wi-Fi address and paste it into Remote streaming server in Frame over there.":
+    "Frame esegue un piccolo server di streaming direttamente su questo computer. Questo è il suo indirizzo. Per trasmettere da questo computer a un altro dispositivo, copia l'indirizzo Wi-Fi e incollalo in Server di streaming remoto nell'installazione di Frame su quel dispositivo.",
+  "Frame scans your IPTV playlists' EPG every 30 min for programs about to start.":
+    "Frame controlla ogni 30 min l'EPG delle tue playlist IPTV per individuare i programmi che stanno per iniziare.",
+  "Frame searches every source you enable at the same time, then merges and de-duplicates the results into one clean list. Turn a source off to stop pulling from it.":
+    "Frame cerca contemporaneamente in tutte le sorgenti abilitate, poi unisce i risultati, rimuove i duplicati e crea un'unica Lista ordinata. Disattiva una sorgente per non recuperare più risultati da lì.",
+  "Frame sends no telemetry. This also drops outbound ad, analytics, and tracker requests that addons or metadata providers try to make, before they leave your machine.":
+    "Frame non invia dati di telemetria. Inoltre blocca le richieste in uscita di annunci, analisi e tracker effettuate da Add-on o provider di metadati, prima che lascino il dispositivo.",
+  "Frame ships a neutral trophy for every award. Install an icon pack or upload your own image per award to make them yours. Packs are hosted by whoever makes them, so the artwork is theirs, not bundled with Frame.":
+    "Frame include un trofeo neutro per ogni premio. Installa un pacchetto di icone o carica un'immagine per ciascun premio per personalizzarli. I pacchetti sono ospitati dai rispettivi autori, quindi le immagini appartengono a loro e non sono incluse in Frame.",
+  "Frame ships no manga sources and hosts nothing. Extensions come from repositories other people maintain. Paste a repository URL below to browse its plugins, then install the ones you want. Every plugin runs sandboxed in an isolated worker with no access to your files, accounts, or the rest of the app.":
+    "Frame non include sorgenti manga e non ospita contenuti. Le estensioni provengono da repository gestiti da terzi. Incolla qui sotto l'URL di un repository per sfogliarne i plugin, poi installa quelli che vuoi. Ogni plugin viene eseguito in una sandbox, in un worker isolato senza accesso ai tuoi file, account o al resto dell'app.",
+  "Frame ships the engine, not the sites. You write a short JSON config that describes a site with CSS selectors, and Frame reads the site with them. Nothing is bundled: point it only at sites you have the right to read.":
+    "Frame include il motore, non i siti. Scrivi una breve configurazione JSON che descriva un sito tramite selettori CSS e Frame la userà per leggerlo. Non è incluso alcun sito: usalo solo con siti che hai il diritto di consultare.",
+  "Frame shows your AniList lists on the Anime page and keeps your progress in sync.":
+    "Frame mostra le tue liste AniList nella pagina Anime e mantiene sincronizzati i tuoi progressi.",
+  "Frame signed you up but returned no session. Try signing in instead.":
+    "Frame ha creato il tuo account, ma non ha restituito alcuna sessione. Prova ad accedere.",
+  "Frame snippet": "Snippet Frame",
+  "Frame speaks Stremio's addon protocol, and the whole ecosystem of addons grows out of their work. Stremio is funded by its community, and supporters who chip in get early access to experimental features. If you have it to spare, send some their way too.":
+    "Frame usa il protocollo degli Add-on di Stremio e l'intero ecosistema di Add-on nasce dal suo lavoro. Stremio è finanziato dalla sua community e chi contribuisce ottiene l'accesso anticipato alle funzionalità sperimentali. Se puoi permettertelo, sostieni anche Stremio.",
+  "Frame speaks this everywhere. You can change it later in Settings.":
+    "Frame userà questa lingua ovunque. Potrai cambiarla in seguito nelle Impostazioni.",
+  "Frame still finds and loads subtitles so they're one click away in the player, it just won't turn them on automatically.":
+    "Frame continuerà a trovare e caricare i Sottotitoli, così saranno disponibili nel player con un clic, ma non li attiverà automaticamente.",
+  "Frame test message (Discord). If you can read this, your webhook is wired up.":
+    "Messaggio di prova di Frame (Discord). Se riesci a leggerlo, il webhook è configurato correttamente.",
+  "Frame test message (Telegram). If you can read this, your webhook is wired up.":
+    "Messaggio di prova di Frame (Telegram). Se riesci a leggerlo, il webhook è configurato correttamente.",
+  "Frame theme": "Tema Frame",
+  "Frame times out-of-sync subtitles to the audio for you, on any external subtitle. It works on the mpv player and leaves embedded tracks alone, since those are already in sync.":
+    "Frame sincronizza automaticamente con l'audio i Sottotitoli fuori tempo, per qualsiasi sottotitolo esterno. Funziona con il player mpv e non modifica le tracce integrate, perché sono già sincronizzate.",
+  "Frame tried {n} sources for {title} and none of them played. Usually that means a debrid key has expired, no stream addon is installed yet, or nothing has this title cached.":
+    "Frame ha provato {n} sorgenti per {title}, ma nessuna ha funzionato. Di solito significa che una chiave debrid è scaduta, non è ancora installato alcun Add-on di streaming oppure il titolo non è disponibile nella cache.",
+  "Frame uses ffmpeg to convert streams into formats TVs can play. It's a one-time install and Frame will pick it up automatically.":
+    "Frame usa ffmpeg per convertire gli stream in formati riproducibili dai TV. L'installazione va eseguita una sola volta e Frame lo rileverà automaticamente.",
+  "Frame uses the graphics card when it's safe and falls back to the CPU when it isn't. The right call for almost everyone.":
+    "Frame usa la scheda grafica quando è sicuro farlo e passa alla CPU in caso contrario. È la scelta giusta per quasi tutti.",
+  "Frame was built in English. Multi-language support is partial, so your addons usually catch what Frame's own filters miss. If you speak another language and want to help, the source is open.":
+    "Frame è stato sviluppato in inglese. Il supporto multilingue è parziale, quindi di solito gli Add-on trovano ciò che sfugge ai filtri interni di Frame. Se parli un'altra lingua e vuoi contribuire, il codice sorgente è aperto.",
+  "Frame will mark what you finish as watched on Simkl and sync your plan-to-watch list.":
+    "Frame segnerà su Simkl come visti i contenuti che completi e sincronizzerà la tua Lista Da guardare.",
+  "Frame will not start the P2P engine, contact trackers, or run DHT. Use this if you only want debrid and direct links. Turn off to re-enable P2P streaming.":
+    "Frame non avvierà il motore P2P, non contatterà i tracker e non eseguirà DHT. Usa questa opzione se vuoi solo link debrid e diretti. Disattivala per riabilitare lo streaming P2P.",
+  "Frame will scrobble your playback to Trakt and sync your watchlist.":
+    "Frame invierà a Trakt i dati sulla riproduzione tramite scrobbling e sincronizzerà la tua Lista.",
+  "Frame would not be possible without Stremio. It is the foundation everything here is built on.":
+    "Frame non sarebbe possibile senza Stremio. È la base su cui è costruito tutto ciò che trovi qui.",
+  "Frame {version} available": "Frame {version} disponibile",
+  "Frame {version} downloaded but did not install on its own.":
+    "Frame {version} è stato scaricato, ma non si è installato automaticamente.",
+  "Frame's backend runs on ElfHosted. They run our servers at no cost to the community.":
+    "Il backend di Frame è eseguito su ElfHosted, che gestisce gratuitamente i nostri server per la community.",
+  "Frame's backend runs on ElfHosted. They took it on without being asked, and Frame has never charged for anything.":
+    "Il backend di Frame è eseguito su ElfHosted. Se ne sono fatti carico senza che nessuno lo chiedesse e Frame non ha mai fatto pagare nulla.",
+  "Frame's built-in HDR to SDR conversion is on. Turn it off in Video tuning to use this instead. Running both double-processes the picture.":
+    "La conversione integrata da HDR a SDR di Frame è attiva. Disattivala in Regolazione video per usare questa opzione. Attivarle entrambe comporta una doppia elaborazione dell'immagine.",
+  "Frame's built-in OpenSubtitles search, on by default. If you install an OpenSubtitles addon, this steps aside automatically so your results are never duplicated.":
+    "La ricerca OpenSubtitles integrata di Frame è attiva per impostazione predefinita. Se installi un Add-on OpenSubtitles, si disattiverà automaticamente per evitare risultati duplicati.",
+  "Frame's built-in frame interpolation. Smooths panning, best on anime. Needs a display refresh rate above the video's frame rate, and can stutter on weak GPUs. Lighter than SVP.":
+    "Interpolazione dei fotogrammi integrata di Frame. Rende più fluide le panoramiche ed è particolarmente adatta agli anime. Richiede una frequenza di aggiornamento dello schermo superiore alla frequenza dei fotogrammi del video e può scattare sulle GPU meno potenti. Più leggera di SVP.",
+  "Frame's full video engine. Plays anything you throw at it.":
+    "Il motore video completo di Frame. Riproduce qualsiasi contenuto.",
   "Harbor's in-app installer animates the manifest install and keeps you in context. Anything Harbor installs is also synced to your Stremio account, so the official app stays the canonical library. Turn this off and Stremio becomes the only handler for stremio:// links; Harbor still installs anything you trigger from inside the app (Configure & install, paste, drag-and-drop).":
     "Il programma di installazione interno di Harbor anima l'installazione del manifest senza farti perdere il contesto. Tutto ciò che Harbor installa viene anche sincronizzato con il tuo account Stremio, così l'app ufficiale resta la raccolta di riferimento. Disattiva questa opzione per rendere Stremio l'unico gestore dei link stremio://; Harbor continuerà comunque a installare ciò che avvii dall'app (Configura e installa, incolla, trascina).",
-  "Harbor's native player chrome.": "I controlli nativi del player di Harbor.",
-  "Harbor's own bar": "La barra di Harbor",
-  "Harbor's own community server": "Il server della community di Harbor",
-  "Harbor's own menus and labels. Subtitle languages come later, and you can change both in Settings.":
-    "Menu ed etichette di Harbor. Le lingue dei Sottotitoli vengono impostate dopo e puoi modificare entrambe le opzioni nelle Impostazioni.",
-  "Harbor's player applies the interpolation itself, embedded like normal playback, and starts SVP Manager in the tray for licensing. Restart playback to apply. If video goes black or won't start, turn this off.":
-    "Il player di Harbor applica direttamente l'interpolazione, integrandola nella normale riproduzione, e avvia SVP Manager nell'area di notifica per la licenza. Riavvia la riproduzione per applicarla. Se lo schermo diventa nero o il video non si avvia, disattiva questa opzione.",
-  "Harbor's public relay": "Il relay pubblico di Harbor",
-  "Harbor's public relay has not rolled out the latest protocol yet.":
-    "Il relay pubblico di Harbor non supporta ancora il protocollo più recente.",
-  "Harbor's public relay updates automatically; nothing to do.":
-    "Il relay pubblico di Harbor si aggiorna automaticamente; non devi fare nulla.",
-  "Harbor, from a public domain frame": "Harbor, da un fotogramma di pubblico dominio",
-  "Harbors on your network": "Installazioni di Harbor sulla tua rete",
+  "Frame's native player chrome.": "I controlli nativi del player di Frame.",
+  "Frame's own bar": "La barra di Frame",
+  "Frame's own community server": "Il server della community di Frame",
+  "Frame's own menus and labels. Subtitle languages come later, and you can change both in Settings.":
+    "Menu ed etichette di Frame. Le lingue dei Sottotitoli vengono impostate dopo e puoi modificare entrambe le opzioni nelle Impostazioni.",
+  "Frame's player applies the interpolation itself, embedded like normal playback, and starts SVP Manager in the tray for licensing. Restart playback to apply. If video goes black or won't start, turn this off.":
+    "Il player di Frame applica direttamente l'interpolazione, integrandola nella normale riproduzione, e avvia SVP Manager nell'area di notifica per la licenza. Riavvia la riproduzione per applicarla. Se lo schermo diventa nero o il video non si avvia, disattiva questa opzione.",
+  "Frame's public relay": "Il relay pubblico di Frame",
+  "Frame's public relay has not rolled out the latest protocol yet.":
+    "Il relay pubblico di Frame non supporta ancora il protocollo più recente.",
+  "Frame's public relay updates automatically; nothing to do.":
+    "Il relay pubblico di Frame si aggiorna automaticamente; non devi fare nulla.",
+  "Frame, from a public domain frame": "Frame, da un fotogramma di pubblico dominio",
+  "Frames on your network": "Installazioni di Frame sulla tua rete",
   "Hard Boiled": "Hard Boiled",
   "Hard outline": "Contorno netto",
   "Hard stroke around each letter. High contrast.":
@@ -303,8 +302,8 @@ const catalog04: Record<string, string> = {
   "Headings above every row on Home.": "Titoli sopra ogni riga della Home.",
   "Headphone series": "Serie di cuffie",
   "Heads up": "Attenzione",
-  "Heads up: Harbor was built in English. Multi-language support is partial, so your addons usually catch what Harbor's own filters miss. If you speak another language and want to help fill the gaps, the source is open.":
-    "Attenzione: Harbor è stato sviluppato in inglese. Il supporto multilingue è parziale, quindi di solito gli Add-on trovano ciò che sfugge ai filtri interni di Harbor. Se parli un'altra lingua e vuoi aiutarci a colmare le lacune, il codice sorgente è aperto.",
+  "Heads up: Frame was built in English. Multi-language support is partial, so your addons usually catch what Frame's own filters miss. If you speak another language and want to help fill the gaps, the source is open.":
+    "Attenzione: Frame è stato sviluppato in inglese. Il supporto multilingue è parziale, quindi di solito gli Add-on trovano ciò che sfugge ai filtri interni di Frame. Se parli un'altra lingua e vuoi aiutarci a colmare le lacune, il codice sorgente è aperto.",
   "Heads up: if Stremio is also installed, Windows may ask which app to use the first time a stremio:// link fires. Pick Harbor to make it stick.":
     "Attenzione: se è installato anche Stremio, al primo utilizzo di un link stremio:// Windows potrebbe chiederti quale app usare. Scegli Harbor per rendere permanente la scelta.",
   "Heads up: most IPTV providers cap how many streams an account can run at the same time. If other devices or players are using these credentials, close them and try again.":
@@ -338,7 +337,7 @@ const catalog04: Record<string, string> = {
   Help: "Aiuto",
   "Help & feedback": "Aiuto e feedback",
   "Help & support": "Aiuto e assistenza",
-  "Help translate Harbor": "Aiuta a tradurre Harbor",
+  "Help translate Frame": "Aiuta a tradurre Frame",
   "Here for the late-night sci-fi": "Qui per la fantascienza a tarda notte",
   Hero: "Hero",
   "Hero carousel, Top 10, Trending, In Theaters, per-service rails.":
@@ -455,15 +454,15 @@ const catalog04: Record<string, string> = {
   History: "Storia",
   "History Buff": "Appassionato di storia",
   Hit: "Successo",
-  "Hit your daily quota? Use Harbor's public relay, or host your own.":
-    "Hai raggiunto la quota giornaliera? Usa il relay pubblico di Harbor oppure ospitane uno tuo.",
+  "Hit your daily quota? Use Frame's public relay, or host your own.":
+    "Hai raggiunto la quota giornaliera? Usa il relay pubblico di Frame oppure ospitane uno tuo.",
   Hits: "Successi",
-  "Hitting Play jumps straight into playback with the best stream Harbor finds.":
-    "Premendo Riproduci, la riproduzione parte subito con il miglior stream trovato da Harbor.",
+  "Hitting Play jumps straight into playback with the best stream Frame finds.":
+    "Premendo Riproduci, la riproduzione parte subito con il miglior stream trovato da Frame.",
   "Hitting Play opens the source list so you can choose quality, debrid, and audio yourself.":
     "Premendo Riproduci, si apre la Lista delle sorgenti, così puoi scegliere personalmente qualità, debrid e audio.",
-  "Hold Ctrl or Cmd and scroll to resize Harbor's interface smoothly.":
-    "Tieni premuto Ctrl o Cmd e scorri per ridimensionare in modo fluido l'interfaccia di Harbor.",
+  "Hold Ctrl or Cmd and scroll to resize Frame's interface smoothly.":
+    "Tieni premuto Ctrl o Cmd e scorri per ridimensionare in modo fluido l'interfaccia di Frame.",
   "Hold for more options": "Tieni premuto per altre opzioni",
   "Hold or right-click for models": "Tieni premuto o fai clic destro per i modelli",
   "Hold to continue": "Tieni premuto per continuare",
@@ -487,8 +486,8 @@ const catalog04: Record<string, string> = {
   "Home layout on the TV": "Layout della Home sulla TV",
   "Home rail categories (Movies, TV, Anime)": "Categorie delle sezioni Home (Film, TV, Anime)",
   "Home style": "Stile della Home",
-  "Home style (Harbor curated / Classic Stremio)":
-    "Stile della Home (selezione Harbor / Stremio classico)",
+  "Home style (Frame curated / Classic Stremio)":
+    "Stile della Home (selezione Frame / Stremio classico)",
   "Home · Continue Watching": "Home · Continua a guardare",
   "Honored writers": "Sceneggiatori premiati",
   Hoopla: "Hoopla",
@@ -511,18 +510,18 @@ const catalog04: Record<string, string> = {
   "Hover the speaker to reveal a horizontal slider.":
     "Passa sull'altoparlante per mostrare un cursore orizzontale.",
   "Hover to peek": "Passa sopra per dare un'occhiata",
-  "How Harbor Rank works": "Come funziona Harbor Rank",
-  "How Harbor finds and resolves playable streams. Debrid keys and addon installs live here.":
-    "Come Harbor trova e rende riproducibili i flussi. Le chiavi debrid e le installazioni degli Add-on si trovano qui.",
-  "How Harbor squeezes HDR movies onto a normal screen. Auto is right for almost everyone; the curves below just change the look (punchy vs soft). Only matters on HDR sources.":
-    "Come Harbor adatta i film HDR a uno schermo normale. Auto va bene per quasi tutti; le curve qui sotto cambiano solo la resa, più incisiva o più morbida. Conta solo con fonti HDR.",
+  "How Frame Rank works": "Come funziona Frame Rank",
+  "How Frame finds and resolves playable streams. Debrid keys and addon installs live here.":
+    "Come Frame trova e rende riproducibili i flussi. Le chiavi debrid e le installazioni degli Add-on si trovano qui.",
+  "How Frame squeezes HDR movies onto a normal screen. Auto is right for almost everyone; the curves below just change the look (punchy vs soft). Only matters on HDR sources.":
+    "Come Frame adatta i film HDR a uno schermo normale. Auto va bene per quasi tutti; le curve qui sotto cambiano solo la resa, più incisiva o più morbida. Conta solo con fonti HDR.",
   "How Play works": "Come funziona Riproduci",
   "How Watch Together and the window buttons are drawn.":
     "Come vengono visualizzati Guarda insieme e i pulsanti della finestra.",
   "How a show or movie detail page behaves when you open it.":
     "Come si comporta la pagina dei dettagli di una serie o di un film quando la apri.",
-  "How aggressively Harbor rejects shady or mismatched streams before showing them in the picker.":
-    "Con quale rigore Harbor scarta i flussi sospetti o non corrispondenti prima di mostrarli nel selettore.",
+  "How aggressively Frame rejects shady or mismatched streams before showing them in the picker.":
+    "Con quale rigore Frame scarta i flussi sospetti o non corrispondenti prima di mostrarli nel selettore.",
   "How award packs work": "Come funzionano i pacchetti di premi",
   "How badge packs work": "Come funzionano i pacchetti di badge",
   "How big episode cards are in the strip and grid layouts. Bigger cards show larger artwork.":
@@ -535,8 +534,8 @@ const catalog04: Record<string, string> = {
     "Come vengono raggruppati gli episodi di serie e anime. TVDB è l'opzione predefinita: offre gli ordinamenti per arco narrativo, DVD e assoluto che gli appassionati di anime si aspettano, senza richiedere chiavi. TMDB mantiene il semplice ordine di trasmissione. In entrambi i casi, ogni episodio viene riprodotto e segnato come visto allo stesso modo.",
   "How far you can boost past 100 percent on the volume bar. Higher settings can get very loud.":
     "Quanto puoi superare il 100 percento sulla barra del volume. Le impostazioni più alte possono produrre un volume molto elevato.",
-  "How far you push the stick before Harbor reacts. Raise it if the focus drifts on its own.":
-    "Quanto devi inclinare la levetta prima che Harbor reagisca. Aumenta il valore se la selezione si sposta da sola.",
+  "How far you push the stick before Frame reacts. Raise it if the focus drifts on its own.":
+    "Quanto devi inclinare la levetta prima che Frame reagisca. Aumenta il valore se la selezione si sposta da sola.",
   "How fast a held direction keeps moving the focus.":
     "La velocità con cui la selezione continua a spostarsi tenendo premuta una direzione.",
   "How is this build treating you?": "Come ti trovi con questa build?",
@@ -545,10 +544,10 @@ const catalog04: Record<string, string> = {
   "How keys behave during playback.": "Come si comportano i tasti durante la riproduzione.",
   "How large a backdrop image the TV fetches. It does not change video quality. Balanced is the safe choice on older hardware.":
     "Le dimensioni dell'immagine di sfondo scaricata dalla TV. Non cambia la qualità video. Bilanciata è la scelta più sicura sui dispositivi meno recenti.",
-  "How long Harbor waits before drifting off.":
-    "Quanto attende Harbor prima di entrare in inattività.",
-  "How long Harbor waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
-    "Quanto attende Harbor che ogni Add-on restituisca i flussi. Gli aggregatori che cercano in molte fonti possono richiedere 45 s o più. I risultati compaiono man mano che ogni Add-on risponde, quindi un'attesa più lunga non rallenta mai quelli veloci.",
+  "How long Frame waits before drifting off.":
+    "Quanto attende Frame prima di entrare in inattività.",
+  "How long Frame waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
+    "Quanto attende Frame che ogni Add-on restituisca i flussi. Gli aggregatori che cercano in molte fonti possono richiedere 45 s o più. I risultati compaiono man mano che ogni Add-on risponde, quindi un'attesa più lunga non rallenta mai quelli veloci.",
   "How long a saved frame sticks around before the oldest roll off.":
     "Per quanto tempo resta disponibile un fotogramma salvato prima che i più vecchi vengano rimossi.",
   "How long files stay": "Per quanto tempo restano i file",
@@ -566,11 +565,11 @@ const catalog04: Record<string, string> = {
   "How often the profile screen appears when you have more than one profile.":
     "Con quale frequenza appare la schermata dei profili quando ne hai più di uno.",
   "How packs work": "Come funzionano i pacchetti",
-  "How people find you across Harbor.": "Come possono trovarti gli altri su Harbor.",
+  "How people find you across Frame.": "Come possono trovarti gli altri su Frame.",
   "How posters appear as they load. Blur up looks smoothest; Fade is lighter on older or low-power devices; Instant turns it off.":
     "Come appaiono i poster durante il caricamento. Sfocatura progressiva offre la resa più fluida; Dissolvenza è più leggera sui dispositivi meno recenti o poco potenti; Immediato disattiva l'effetto.",
-  "How quickly the Harbor cursor moves with the right stick.":
-    "La velocità con cui il cursore di Harbor si muove con la levetta destra.",
+  "How quickly the Frame cursor moves with the right stick.":
+    "La velocità con cui il cursore di Frame si muove con la levetta destra.",
   "How sharp the trailer is when you hit the preview button. Auto picks from your connection speed. 1080p and Best merge separate video and audio with the bundled ffmpeg, so they take a beat longer to start.":
     "La nitidezza del trailer quando premi il pulsante di anteprima. Auto sceglie in base alla velocità della connessione. 1080p e Migliore uniscono video e audio separati con ffmpeg incluso, quindi impiegano un po' più di tempo ad avviarsi.",
   "How sharp trailers play, and when they start on their own.":
@@ -660,14 +659,14 @@ const catalog04: Record<string, string> = {
     "Se il server non è raggiungibile, la riproduzione non riesce invece di usare lo streaming locale. Usa questa opzione quando la VPN è in esecuzione sul server e il traffico torrent non deve mai passare da questo dispositivo.",
   "If this account has Discord linked, we'll DM you a code to reset your password without the recovery key.":
     "Se questo account è collegato a Discord, ti invieremo tramite DM un codice per reimpostare la password senza la chiave di recupero.",
-  "If video keeps pausing to buffer, or you're on spotty Wi-Fi or a far-away server, this gives Harbor a bigger head start so playback rides through the rough patches.":
-    "Se il video continua a fermarsi per il buffering, oppure usi una rete Wi-Fi instabile o un server lontano, questa opzione offre a Harbor un margine maggiore per superare le interruzioni durante la riproduzione.",
+  "If video keeps pausing to buffer, or you're on spotty Wi-Fi or a far-away server, this gives Frame a bigger head start so playback rides through the rough patches.":
+    "Se il video continua a fermarsi per il buffering, oppure usi una rete Wi-Fi instabile o un server lontano, questa opzione offre a Frame un margine maggiore per superare le interruzioni durante la riproduzione.",
   "If you already rated a title, the imported score replaces it.":
     "Se hai già valutato un titolo, il punteggio importato lo sostituisce.",
   "If you exceed free tier, the Workers Paid plan is $5 per month and bumps the request allowance to 10 million per day.":
     "Se superi il piano gratuito, Workers Paid costa 5 $ al mese e porta il limite a 10 milioni di richieste al giorno.",
-  "If you want to put money somewhere and you use Harbor, an ElfHosted subscription is the most useful place for it. You get a managed instance, and the servers Harbor depends on stay paid for.":
-    "Se vuoi spendere soldi per qualcosa e usi Harbor, un abbonamento ElfHosted è il modo più utile per farlo. Ottieni un'istanza gestita e contribuisci a pagare i server da cui dipende Harbor.",
+  "If you want to put money somewhere and you use Frame, an ElfHosted subscription is the most useful place for it. You get a managed instance, and the servers Frame depends on stay paid for.":
+    "Se vuoi spendere soldi per qualcosa e usi Frame, un abbonamento ElfHosted è il modo più utile per farlo. Ottieni un'istanza gestita e contribuisci a pagare i server da cui dipende Frame.",
   "If you were going to send something, send it to ElfHosted above so the servers stay paid for, or to one of the charities below. Both do more good with it.":
     "Se avevi intenzione di inviare qualcosa, mandalo a ElfHosted qui sopra per contribuire a pagare i server, oppure a una delle associazioni benefiche qui sotto. Entrambi ne faranno un uso migliore.",
   "If you were going to send something, send it to ElfHosted or Stremio above, or to one of the charities below. They all do more good with it.":
@@ -724,9 +723,9 @@ const catalog04: Record<string, string> = {
   "Importing {done} / {total}": "Importazione: {done} / {total}",
   "Importing {done} of {total}": "Importazione di {done} su {total}",
   "In Cinema": "Al cinema",
-  "In Harbor: Settings, Harbor Relay, then": "In Harbor: Impostazioni, Harbor Relay, poi",
-  "In Harbor: Settings, Harbor Relay, then {kbd}. Paste the URL with {code1} as the scheme instead of {code2}.":
-    "In Harbor: Impostazioni, Harbor Relay, poi {kbd}. Incolla l'URL usando {code1} come schema anziché {code2}.",
+  "In Frame: Settings, Frame Relay, then": "In Frame: Impostazioni, Frame Relay, poi",
+  "In Frame: Settings, Frame Relay, then {kbd}. Paste the URL with {code1} as the scheme instead of {code2}.":
+    "In Frame: Impostazioni, Frame Relay, poi {kbd}. Incolla l'URL usando {code1} come schema anziché {code2}.",
   "In Theaters": "Al cinema",
   "In Theaters Now": "Ora al cinema",
   "In Watchlist": "Nella Lista",
@@ -782,8 +781,8 @@ const catalog04: Record<string, string> = {
   Inspector: "Ispettore",
   Install: "Installa",
   "Install Media Assistant": "Installa Media Assistant",
-  "Install SVP once (the free tier is enough). It bundles VapourSynth + svpflow; Harbor reuses them, no extra setup.":
-    "Installa SVP una sola volta (basta il piano gratuito). Include VapourSynth + svpflow; Harbor li riutilizza senza configurazione aggiuntiva.",
+  "Install SVP once (the free tier is enough). It bundles VapourSynth + svpflow; Frame reuses them, no extra setup.":
+    "Installa SVP una sola volta (basta il piano gratuito). Include VapourSynth + svpflow; Frame li riutilizza senza configurazione aggiuntiva.",
   "Install a Stremio addon and its catalogs show up here as poster rails, ready to browse.":
     "Installa un Add-on Stremio e i suoi cataloghi appariranno qui come caroselli di poster pronti da sfogliare.",
   "Install a pack": "Installa un pacchetto",
@@ -807,10 +806,10 @@ const catalog04: Record<string, string> = {
   "Install wrangler and authenticate:": "Installa wrangler ed esegui l'autenticazione:",
   Installed: "Installato",
   "Installed addons": "Add-on installati",
-  "Installed and detected. Harbor found its interpolation engine and will drive it directly.":
-    "Installato e rilevato. Harbor ha trovato il relativo motore di interpolazione e lo controllerà direttamente.",
-  "Installed and detected. Harbor found the native svpflow plugins and VapourSynth script library.":
-    "Installato e rilevato. Harbor ha trovato i plugin nativi svpflow e la libreria di script VapourSynth.",
+  "Installed and detected. Frame found its interpolation engine and will drive it directly.":
+    "Installato e rilevato. Frame ha trovato il relativo motore di interpolazione e lo controllerà direttamente.",
+  "Installed and detected. Frame found the native svpflow plugins and VapourSynth script library.":
+    "Installato e rilevato. Frame ha trovato i plugin nativi svpflow e la libreria di script VapourSynth.",
   "Installed locally": "Installato localmente",
   "Installed packs": "Pacchetti installati",
   "Installed shaders": "Shader installati",
@@ -823,7 +822,7 @@ const catalog04: Record<string, string> = {
     "Installa e ordina gli Add-on sulla TV. Gli elenchi degli Add-on sono già sincronizzati con il tuo account: installali qui e la TV li rileverà.",
   "Installing {name}": "Installazione di {name}",
   "Installing {title}": "Installazione di {title}",
-  "Installing. Harbor will restart.": "Installazione in corso. Harbor si riavvierà.",
+  "Installing. Frame will restart.": "Installazione in corso. Frame si riavvierà.",
   "Installing...": "Installazione in corso...",
   "Installing…": "Installazione in corso…",
   Instant: "Immediato",
@@ -914,7 +913,7 @@ const catalog04: Record<string, string> = {
   "Jina API key (optional)": "Chiave API Jina (facoltativa)",
   "Jina Reader": "Jina Reader",
   Join: "Partecipa",
-  "Join Harbor": "Unisciti a Harbor",
+  "Join Frame": "Unisciti a Frame",
   "Join group": "Unisciti al gruppo",
   "Join the same network your TV is on, not the guest one.":
     "Connettiti alla stessa rete della TV, non alla rete ospiti.",
@@ -959,14 +958,14 @@ const catalog04: Record<string, string> = {
   "Keep Continue Watching private to each profile":
     "Mantieni privato per ogni profilo «Continua a guardare»",
   "Keep Dolby Vision, HDR10, HLG. Drop SDR.": "Mantieni Dolby Vision, HDR10 e HLG. Escludi SDR.",
-  "Keep Harbor a click away. Close it to the system tray instead of quitting, and control it from the tray menu. These also mirror into the tray menu live.":
-    "Tieni Harbor a portata di clic. Quando lo chiudi, riducilo nell'area di notifica invece di uscire e controllalo dal relativo menu. Anche queste impostazioni vengono aggiornate in tempo reale nel menu dell'area di notifica.",
+  "Keep Frame a click away. Close it to the system tray instead of quitting, and control it from the tray menu. These also mirror into the tray menu live.":
+    "Tieni Frame a portata di clic. Quando lo chiudi, riducilo nell'area di notifica invece di uscire e controllalo dal relativo menu. Anche queste impostazioni vengono aggiornate in tempo reale nel menu dell'area di notifica.",
   "Keep Watching": "Continua a guardare",
   "Keep anime in the Anime room only": "Mantieni gli anime solo nella sezione Anime",
   "Keep anyway": "Mantieni comunque",
   "Keep at most": "Conserva al massimo",
   "Keep cached files for": "Conserva i file nella cache per",
-  "Keep controlling Harbor in the background": "Continua a controllare Harbor in background",
+  "Keep controlling Frame in the background": "Continua a controllare Frame in background",
   "Keep downloading after you leave": "Continua a scaricare anche dopo l'uscita",
   "Keep frames for": "Mantieni i fotogrammi per",
   "Keep going": "Continua",
@@ -979,7 +978,7 @@ const catalog04: Record<string, string> = {
   "Keep picking": "Continua a scegliere",
   "Keep same source on next episode": "Mantieni la stessa sorgente per l'episodio successivo",
   "Keep setting up": "Continua la configurazione",
-  "Keep the Harbor window above other windows.": "Mantieni la finestra di Harbor sopra le altre.",
+  "Keep the Frame window above other windows.": "Mantieni la finestra di Frame sopra le altre.",
   "Keep the Library Watchlist tab limited to titles you added in Stremio. Turn this off to also include anything Stremio auto-added when you pressed play.":
     "Limita la scheda Lista della Libreria ai titoli che hai aggiunto in Stremio. Disattiva questa opzione per includere anche i titoli aggiunti automaticamente da Stremio quando hai premuto Riproduci.",
   "Keep the clock on screen when the player is not fullscreen.":
@@ -997,18 +996,18 @@ const catalog04: Record<string, string> = {
   "Keep watching": "Continua a guardare",
   "Keep your local time visible during fullscreen playback and choose how it looks.":
     "Mantieni visibile l'ora locale durante la riproduzione a schermo intero e scegli come visualizzarla.",
-  "Keeping Harbor's backend online costs real money, and ElfHosted covers it so the community does not have to. Becoming a subscriber is the best way to keep that going, and it is not a donation. You get proper infrastructure for your own setup, and Harbor stays funded at the same time.":
-    "Mantenere online il backend di Harbor costa davvero, ed ElfHosted copre i costi al posto della community. Abbonarsi è il modo migliore per continuare a sostenerlo e non è una donazione. Ottieni un'infrastruttura adeguata per la tua configurazione e, allo stesso tempo, Harbor continua a essere finanziato.",
-  "Keeps HDR inside Harbor with the controls floating above the video. Subtitles render on the video. If the control bar does not appear, press Esc or use separate window.":
-    "Mantiene l'HDR all'interno di Harbor con i controlli sovrapposti al video. I Sottotitoli vengono visualizzati sul video. Se la barra dei controlli non appare, premi Esc o usa una finestra separata.",
-  "Keeps Harbor embedded but lifts the HDR video onto its own opaque plane with the controls floating above, so Windows shows true HDR without the brightness slider dimming it. Needs HDR-to-SDR tonemapping off.":
-    "Mantiene Harbor integrato, ma sposta il video HDR su un piano opaco separato con i controlli sovrapposti, così Windows mostra un HDR reale senza che il cursore della luminosità lo scurisca. Richiede la disattivazione della conversione tonale da HDR a SDR.",
+  "Keeping Frame's backend online costs real money, and ElfHosted covers it so the community does not have to. Becoming a subscriber is the best way to keep that going, and it is not a donation. You get proper infrastructure for your own setup, and Frame stays funded at the same time.":
+    "Mantenere online il backend di Frame costa davvero, ed ElfHosted copre i costi al posto della community. Abbonarsi è il modo migliore per continuare a sostenerlo e non è una donazione. Ottieni un'infrastruttura adeguata per la tua configurazione e, allo stesso tempo, Frame continua a essere finanziato.",
+  "Keeps HDR inside Frame with the controls floating above the video. Subtitles render on the video. If the control bar does not appear, press Esc or use separate window.":
+    "Mantiene l'HDR all'interno di Frame con i controlli sovrapposti al video. I Sottotitoli vengono visualizzati sul video. Se la barra dei controlli non appare, premi Esc o usa una finestra separata.",
+  "Keeps Frame embedded but lifts the HDR video onto its own opaque plane with the controls floating above, so Windows shows true HDR without the brightness slider dimming it. Needs HDR-to-SDR tonemapping off.":
+    "Mantiene Frame integrato, ma sposta il video HDR su un piano opaco separato con i controlli sovrapposti, così Windows mostra un HDR reale senza che il cursore della luminosità lo scurisca. Richiede la disattivazione della conversione tonale da HDR a SDR.",
   "Keeps fetching the full torrent in the background, even when paused, so you can pre-buffer big remuxes and scrub a finished file with no re-downloading. Uses more bandwidth and disk; cleaned up when you switch or close like normal.":
     "Continua a scaricare l'intero torrent in background, anche in pausa, così puoi precaricare remux di grandi dimensioni e scorrere un file completo senza scaricarlo di nuovo. Usa più banda e spazio su disco; i dati vengono rimossi come di consueto quando cambi contenuto o chiudi.",
   "Keeps the malware/year/episode-mismatch checks but allows season packs and oversized files. Same as hitting Search wider in the picker.":
     "Mantiene i controlli relativi a malware, anno ed Episodio non corrispondente, ma consente pacchetti di Stagioni e file sovradimensionati. Equivale a premere Estendi ricerca nel selettore.",
-  "Keeps the web's memory alive. Harbor would be poorer without it.":
-    "Mantiene viva la memoria del web. Harbor sarebbe più povero senza di essa.",
+  "Keeps the web's memory alive. Frame would be poorer without it.":
+    "Mantiene viva la memoria del web. Frame sarebbe più povero senza di essa.",
   "Keeps watching through playback and gently re-nudges the timing if the subtitle slips out of sync partway through.":
     "Continua a monitorare la riproduzione e corregge delicatamente la sincronizzazione se i Sottotitoli vanno fuori sincrono a un certo punto.",
   "Kept. Your TV gets your account when you continue.":
@@ -1079,10 +1078,10 @@ const catalog04: Record<string, string> = {
   "Latest chapter": "Ultimo capitolo",
   "Latest chapters": "Capitoli più recenti",
   "Laugh Out Loud": "Risate a crepapelle",
-  "Launch straight into Big Picture when Harbor starts":
-    "Avvia direttamente Big Picture all'avvio di Harbor",
-  "Launch straight into Big Picture when Harbor starts. Press Esc at any time to leave.":
-    "Avvia direttamente Big Picture all'avvio di Harbor. Premi Esc in qualsiasi momento per uscire.",
+  "Launch straight into Big Picture when Frame starts":
+    "Avvia direttamente Big Picture all'avvio di Frame",
+  "Launch straight into Big Picture when Frame starts. Press Esc at any time to leave.":
+    "Avvia direttamente Big Picture all'avvio di Frame. Premi Esc in qualsiasi momento per uscire.",
   Layout: "Layout",
   "Layout editor": "Editor del layout",
   "Layout name": "Nome del layout",
@@ -1101,8 +1100,8 @@ const catalog04: Record<string, string> = {
   "Leave Big Picture": "Esci da Big Picture",
   "Leave Big Picture and open settings": "Esci da Big Picture e apri le Impostazioni",
   "Leave a comment. No links.": "Lascia un commento. Niente link.",
-  "Leave blank to use Harbor's own community server. Enter a URL to point at your own server instead. Private mode below stops all contact either way.":
-    "Lascia vuoto per usare il server della community di Harbor. In alternativa, inserisci un URL per usare il tuo server. La modalità privata qui sotto impedisce ogni contatto in entrambi i casi.",
+  "Leave blank to use Frame's own community server. Enter a URL to point at your own server instead. Private mode below stops all contact either way.":
+    "Lascia vuoto per usare il server della community di Frame. In alternativa, inserisci un URL per usare il tuo server. La modalità privata qui sotto impedisce ogni contatto in entrambi i casi.",
   "Leave everything below it alone. Scroll down, click {b1}, then {b2}. Copy the long string it shows you (you only see it once) and bring it back here.":
     "Lascia invariato tutto ciò che trovi sotto. Scorri verso il basso, fai clic su {b1}, poi su {b2}. Copia la lunga stringa visualizzata, che vedrai una sola volta, e riportala qui.",
   "Leave group": "Abbandona il gruppo",
@@ -1113,14 +1112,14 @@ const catalog04: Record<string, string> = {
     "Lascia ben visibile l'episodio a cui sei arrivato e sfoca solo quelli successivi.",
   "Leave the show?": "Abbandonare la serie?",
   "Leave the video": "Esci dal video",
-  "Leave this blank to use Harbor's own community server, or enter the address of a server you run yourself.":
-    "Lascia vuoto per usare il server della community di Harbor oppure inserisci l'indirizzo di un server gestito da te.",
+  "Leave this blank to use Frame's own community server, or enter the address of a server you run yourself.":
+    "Lascia vuoto per usare il server della community di Frame oppure inserisci l'indirizzo di un server gestito da te.",
   "Leave what you're watching?": "Vuoi interrompere la visione?",
   Left: "Sinistra",
   "Left edge": "Bordo sinistro",
   "Left to right": "Da sinistra a destra",
-  "Leftover installers from past updates, cached trailers, and casting scratch files. Harbor clears old ones on launch, keeping only the most recent installer.":
-    "Installer residui di vecchi aggiornamenti, trailer nella cache e file temporanei per il casting. Harbor elimina quelli vecchi all'avvio, conservando solo l'installer più recente.",
+  "Leftover installers from past updates, cached trailers, and casting scratch files. Frame clears old ones on launch, keeping only the most recent installer.":
+    "Installer residui di vecchi aggiornamenti, trailer nella cache e file temporanei per il casting. Frame elimina quelli vecchi all'avvio, conservando solo l'installer più recente.",
   Legal: "Note legali",
   "Legally enforce it": "Lo rende giuridicamente vincolante",
   Length: "Durata",
@@ -1131,8 +1130,8 @@ const catalog04: Record<string, string> = {
   "Let the TV keep its own theme": "Lascia che la TV mantenga il proprio tema",
   "Let your Discord friends see what you are watching, with the show poster and a live progress bar.":
     "Consenti ai tuoi amici su Discord di vedere cosa stai guardando, con la locandina della serie e una barra di avanzamento in tempo reale.",
-  "Let your Discord friends see what you are watching, with the show poster and a live progress bar. Desktop only, and only your own Discord client is involved (nothing touches a Harbor server).":
-    "Consenti ai tuoi amici su Discord di vedere cosa stai guardando, con la locandina della serie e una barra di avanzamento in tempo reale. Solo su desktop; viene coinvolto esclusivamente il tuo client Discord e nulla passa da un server Harbor.",
+  "Let your Discord friends see what you are watching, with the show poster and a live progress bar. Desktop only, and only your own Discord client is involved (nothing touches a Frame server).":
+    "Consenti ai tuoi amici su Discord di vedere cosa stai guardando, con la locandina della serie e una barra di avanzamento in tempo reale. Solo su desktop; viene coinvolto esclusivamente il tuo client Discord e nulla passa da un server Frame.",
   "Let your full page background show without the top cover.":
     "Mostra lo sfondo dell'intera pagina senza la copertina superiore.",
   "Let your graphics card do the heavy lifting of decoding video. It saves battery and keeps the CPU cool. Auto is right for almost everyone; only switch if playback looks wrong or won't start.":
@@ -1190,7 +1189,7 @@ const catalog04: Record<string, string> = {
   "Link copied": "Link copiato",
   "Linked as {username}": "Collegato come {username}",
   "Linked to a real Stremio account.": "Collegato a un vero account Stremio.",
-  "Linked to your Harbor account.": "Collegato al tuo account Harbor.",
+  "Linked to your Frame account.": "Collegato al tuo account Frame.",
   "Links are not allowed in comments": "I link non sono consentiti nei commenti",
   "Links open in a new tab automatically.": "I link si aprono automaticamente in una nuova scheda.",
   "Liquid Glass": "Liquid Glass",
@@ -1206,7 +1205,7 @@ const catalog04: Record<string, string> = {
   "Listed collections will appear in community browse when that rolls out.":
     "Le raccolte elencate appariranno nella sezione Esplora della community quando sarà disponibile.",
   Listen: "Ascolta",
-  "Listening for Harbors": "Ricerca di istanze Harbor in corso",
+  "Listening for Frames": "Ricerca di istanze Frame in corso",
   Lists: "Liste",
   Literary: "Letterario",
   Live: "In diretta",
@@ -1224,14 +1223,14 @@ const catalog04: Record<string, string> = {
   "Live action": "Live action",
   "Live channel": "Canale in diretta",
   "Live controller preview": "Anteprima del controller in tempo reale",
-  "Live face scanning loads on-device AI models and can significantly increase RAM, CPU, and GPU usage while playback is active. Turn it off if Harbor slows down or your device gets hot.":
-    "La scansione dei volti in tempo reale carica modelli di IA sul dispositivo e può aumentare notevolmente l'uso di RAM, CPU e GPU durante la riproduzione. Disattivala se Harbor rallenta o il dispositivo si surriscalda.",
+  "Live face scanning loads on-device AI models and can significantly increase RAM, CPU, and GPU usage while playback is active. Turn it off if Frame slows down or your device gets hot.":
+    "La scansione dei volti in tempo reale carica modelli di IA sul dispositivo e può aumentare notevolmente l'uso di RAM, CPU e GPU durante la riproduzione. Disattivala se Frame rallenta o il dispositivo si surriscalda.",
   "Live for everyone": "Disponibile per tutti",
   "Live preview": "Anteprima in tempo reale",
   "Live preview is on. Done and Save both keep what you've picked as your Custom theme. Reset reverts the editor to the saved palette.":
     "L'anteprima in tempo reale è attiva. Sia Fine sia Salva mantengono le scelte come tema personalizzato. Ripristina riporta l'editor alla palette salvata.",
-  "Live state of Harbor's own P2P engine on this machine.":
-    "Stato in tempo reale del motore P2P di Harbor su questo dispositivo.",
+  "Live state of Frame's own P2P engine on this machine.":
+    "Stato in tempo reale del motore P2P di Frame su questo dispositivo.",
   "Live streams that actually work.": "Streaming in diretta che funzionano davvero.",
   "Live sync": "Sincronizzazione in tempo reale",
   "Live web": "Web in tempo reale",

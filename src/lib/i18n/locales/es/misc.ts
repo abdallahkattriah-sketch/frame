@@ -11,8 +11,8 @@ const misc: Record<string, string> = {
     "· Aún no hay ningún complemento de fuentes instalado (Torrentio, MediaFusion, Comet).",
   "· This title is too new and no source has it cached yet.":
     "· Este título es demasiado reciente y ninguna fuente lo tiene aún en caché.",
-  "'s setup page in Harbor's built-in browser. Pick your options. When you click Install on their page, Harbor catches the link automatically and updates the addon.":
-    " abre su página de configuración en el navegador integrado de Harbor. Elige tus opciones. Cuando hagas clic en Instalar en su página, Harbor detectará el enlace automáticamente y actualizará el complemento.",
+  "'s setup page in Frame's built-in browser. Pick your options. When you click Install on their page, Frame catches the link automatically and updates the addon.":
+    " abre su página de configuración en el navegador integrado de Frame. Elige tus opciones. Cuando hagas clic en Instalar en su página, Frame detectará el enlace automáticamente y actualizará el complemento.",
   "'s setup page. Pick your options, then copy the install link it gives you and paste it below to update the addon.":
     " abre su página de configuración. Elige tus opciones, luego copia el enlace de instalación que te proporciona y pégalo abajo para actualizar el complemento.",
   "{count} picks ready": "{count} selecciones listas",
@@ -27,7 +27,7 @@ const misc: Record<string, string> = {
   Actions: "Acciones",
   Active: "Activo",
   "Add a tag": "Agregar una etiqueta",
-  "Add a TMDB key for the full Harbor": "Agrega una clave de TMDB para acceder a todo Harbor",
+  "Add a TMDB key for the full Frame": "Agrega una clave de TMDB para acceder a todo Frame",
   "Add a TMDB key in settings first": "Primero agrega una clave de TMDB en la configuración",
   "Add a TMDB key in Settings to load Arabic content.":
     "Agrega una clave de TMDB en Configuración para cargar contenido en árabe.",
@@ -48,8 +48,8 @@ const misc: Record<string, string> = {
   "AniList Comments": "Comentarios de AniList",
   "Anime sources are usually richer through Torrentio's anime config or AIOStreams. Make sure one is installed in Stremio.":
     "Las fuentes de anime suelen ser más abundantes con la configuración para anime de Torrentio o con AIOStreams. Asegúrate de tener uno instalado en Stremio.",
-  "Anyone with the link can open this collection once your Harbor server is live.":
-    "Cualquiera que tenga el enlace podrá abrir esta colección cuando tu servidor de Harbor esté activo.",
+  "Anyone with the link can open this collection once your Frame server is live.":
+    "Cualquiera que tenga el enlace podrá abrir esta colección cuando tu servidor de Frame esté activo.",
   Arabic: "Árabe",
   Australia: "Australia",
   Auto: "Automático",
@@ -98,11 +98,11 @@ const misc: Record<string, string> = {
   "Collapse sidebar": "Contraer barra lateral",
   "Comments are hidden": "Los comentarios están ocultos",
   "Hosted elsewhere": "Alojado por terceros",
-  "A third party runs these plans. Harbor is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
-    "Estos planes los gestiona un tercero. Harbor no está afiliado y no recibe nada por una suscripción. Los precios y condiciones actuales están en su sitio.",
+  "A third party runs these plans. Frame is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
+    "Estos planes los gestiona un tercero. Frame no está afiliado y no recibe nada por una suscripción. Los precios y condiciones actuales están en su sitio.",
   "{name} can run on a hosted instance": "{name} puede ejecutarse en una instancia alojada",
-  "A third party operates this. Harbor is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
-    "Lo opera un tercero. Harbor no está afiliado, no lo revende y no recibe nada si te suscribes. El precio y lo que incluye están en su sitio.",
+  "A third party operates this. Frame is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
+    "Lo opera un tercero. Frame no está afiliado, no lo revende y no recibe nada si te suscribes. El precio y lo que incluye están en su sitio.",
   "Show comments": "Mostrar comentarios",
   "Hide comments": "Ocultar comentarios",
   "Comments may take a moment to appear on Trakt":
@@ -114,8 +114,8 @@ const misc: Record<string, string> = {
     "Conecta tu cuenta de AniList para ver hilos y comentarios del foro.",
   "Contains spoiler": "Contiene spoiler",
   Continue: "Continuar",
-  "Continue Watching, then your addon catalogs in install order. No hero, no Harbor rails.":
-    "Seguir viendo y luego los catálogos de tus complementos, en orden de instalación. Sin sección destacada ni filas de Harbor.",
+  "Continue Watching, then your addon catalogs in install order. No hero, no Frame rails.":
+    "Seguir viendo y luego los catálogos de tus complementos, en orden de instalación. Sin sección destacada ni filas de Frame.",
   copied: "copiado",
   Copy: "Copiar",
   Corner: "Esquina",
@@ -137,8 +137,8 @@ const misc: Record<string, string> = {
   Discover: "Descubrir",
   Documentary: "Documental",
   Documentation: "Documentación",
-  "Does Harbor {version} feel better or worse than the version you had before?":
-    "¿Harbor {version} se siente mejor o peor que la versión que tenías antes?",
+  "Does Frame {version} feel better or worse than the version you had before?":
+    "¿Frame {version} se siente mejor o peor que la versión que tenías antes?",
   "Don't have an account?": "¿No tienes una cuenta?",
   "Don't have an account? Create one →": "¿No tienes una cuenta? Crea una →",
   Done: "Listo",
@@ -152,7 +152,7 @@ const misc: Record<string, string> = {
   "Empty — click to add filters": "Vacío: haz clic para agregar filtros",
   Enabled: "Activado",
   English: "Inglés",
-  "Enter Harbor": "Entrar a Harbor",
+  "Enter Frame": "Entrar a Frame",
   "Enter your PIN": "Ingresa tu PIN",
   Episode: "Episodio",
   Episodes: "Episodios",
@@ -174,8 +174,8 @@ const misc: Record<string, string> = {
   Fix: "Corregir",
   "Focus PIN entry": "Enfocar el ingreso del PIN",
   Font: "Fuente",
-  "For now, please open this site on a desktop, or build Harbor from source.":
-    "Por ahora, abre este sitio en una computadora o compila Harbor desde el código fuente.",
+  "For now, please open this site on a desktop, or build Frame from source.":
+    "Por ahora, abre este sitio en una computadora o compila Frame desde el código fuente.",
   "Built for Adventure!": "¡Hecho para la aventura!",
   "found by": "encontrado por",
   France: "Francia",
@@ -194,10 +194,10 @@ const misc: Record<string, string> = {
   "Golden Globes": "Globos de Oro",
   "Golden Lion": "León de Oro",
   "Grid view": "Vista de cuadrícula",
-  "Harbor couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.":
-    "Harbor no pudo obtener un ID válido para este título. Agrega una clave de TMDB en la configuración de la Biblioteca o inicia sesión en Stremio para ampliar la cobertura.",
-  "Harbor pulls the most popular titles each service has right now. Toggle off anything you don't subscribe to.":
-    "Harbor obtiene los títulos más populares de cada servicio en este momento. Desactiva los servicios a los que no estés suscrito.",
+  "Frame couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.":
+    "Frame no pudo obtener un ID válido para este título. Agrega una clave de TMDB en la configuración de la Biblioteca o inicia sesión en Stremio para ampliar la cobertura.",
+  "Frame pulls the most popular titles each service has right now. Toggle off anything you don't subscribe to.":
+    "Frame obtiene los títulos más populares de cada servicio en este momento. Desactiva los servicios a los que no estés suscrito.",
   Hebrew: "Hebreo",
   "Hero, Top 10, Trending, In Theaters, per-service rails. Your addons append underneath.":
     "Destacado, Top 10, Tendencias, En cines y filas por servicio. Tus complementos se agregan debajo.",
@@ -286,8 +286,8 @@ const misc: Record<string, string> = {
   "Nothing here yet": "Aún no hay nada aquí",
   Official: "Oficial",
   Oldest: "Más antiguos",
-  "On the web, Harbor can only reach addons that allow browser access (Torrentio, TorBox, Cinemeta). For unreleased titles, no source typically exists yet.":
-    "En la web, Harbor solo puede acceder a complementos que permitan el acceso desde el navegador (Torrentio, TorBox, Cinemeta). Para títulos aún no estrenados, normalmente todavía no hay fuentes.",
+  "On the web, Frame can only reach addons that allow browser access (Torrentio, TorBox, Cinemeta). For unreleased titles, no source typically exists yet.":
+    "En la web, Frame solo puede acceder a complementos que permitan el acceso desde el navegador (Torrentio, TorBox, Cinemeta). Para títulos aún no estrenados, normalmente todavía no hay fuentes.",
   "Only 1 source after filtering": "Solo queda 1 fuente después de filtrar",
   "Only 2 sources after filtering": "Solo quedan 2 fuentes después de filtrar",
   Opacity: "Opacidad",
@@ -306,8 +306,8 @@ const misc: Record<string, string> = {
   "Palme d'Or": "Palme d'Or",
   "Parental controls are on. Enter your PIN to access settings.":
     "Los controles parentales están activados. Ingresa tu PIN para acceder a la configuración.",
-  "Paste this code into Harbor to open the collection.":
-    "Pega este código en Harbor para abrir la colección.",
+  "Paste this code into Frame to open the collection.":
+    "Pega este código en Frame para abrir la colección.",
   Paused: "En pausa",
   Resumed: "Reanudado",
   "Paused on Simkl": "En pausa en Simkl",
@@ -387,8 +387,8 @@ const misc: Record<string, string> = {
   Showtime: "Horario",
   Side: "Lado",
   "Sign in to get a shareable link.": "Inicia sesión para obtener un enlace que puedas compartir.",
-  "Sign in to mirror your Continue Watching, watchlist, and any addons you've already curated. Optional; Harbor works fully signed-out.":
-    "Inicia sesión para sincronizar tu Seguir viendo, lista de seguimiento y cualquier complemento que ya hayas seleccionado. Es opcional; Harbor funciona por completo sin iniciar sesión.",
+  "Sign in to mirror your Continue Watching, watchlist, and any addons you've already curated. Optional; Frame works fully signed-out.":
+    "Inicia sesión para sincronizar tu Seguir viendo, lista de seguimiento y cualquier complemento que ya hayas seleccionado. Es opcional; Frame funciona por completo sin iniciar sesión.",
   "Sign in to Stremio": "Iniciar sesión en Stremio",
   "Sign in with": "Iniciar sesión con",
   "Sign-in failed": "Error al iniciar sesión",
@@ -396,8 +396,8 @@ const misc: Record<string, string> = {
   "Signing in…": "Iniciando sesión…",
   Skip: "Omitir",
   "Skip for now": "Omitir por ahora",
-  "Skip if you'd rather just use Cinemeta. Harbor still works, you'll just see fewer rails.":
-    "Omite este paso si prefieres usar solo Cinemeta. Harbor seguirá funcionando; solo verás menos filas.",
+  "Skip if you'd rather just use Cinemeta. Frame still works, you'll just see fewer rails.":
+    "Omite este paso si prefieres usar solo Cinemeta. Frame seguirá funcionando; solo verás menos filas.",
   "Skip setup": "Omitir configuración",
   "Slide {n}": "Diapositiva {n}",
   Slot: "Espacio",
@@ -447,8 +447,8 @@ const misc: Record<string, string> = {
   "These rails activate once a TMDB key is set. You can come back to this anytime in Settings.":
     "Estas filas se activan cuando se configura una clave de TMDB. Puedes volver a esto cuando quieras desde Configuración.",
   "This collection is no longer here.": "Esta colección ya no está disponible.",
-  "This instance of Harbor is made for desktop. Our standalone iOS and Android apps are coming soon, each with a bespoke, mobile-first experience built for its native platform.":
-    "Esta versión de Harbor está diseñada para computadoras. Nuestras apps independientes para iOS y Android llegarán pronto, cada una con una experiencia personalizada y centrada en dispositivos móviles, creada para su plataforma nativa.",
+  "This instance of Frame is made for desktop. Our standalone iOS and Android apps are coming soon, each with a bespoke, mobile-first experience built for its native platform.":
+    "Esta versión de Frame está diseñada para computadoras. Nuestras apps independientes para iOS y Android llegarán pronto, cada una con una experiencia personalizada y centrada en dispositivos móviles, creada para su plataforma nativa.",
   "This source": "Esta fuente",
   "This thread is locked.": "Este hilo está bloqueado.",
   "this title": "este título",
@@ -489,8 +489,8 @@ const misc: Record<string, string> = {
   "Trending, in theaters, what's on every streamer.":
     "Tendencias, en cines y qué hay en cada servicio de streaming.",
   Troubleshooting: "Solución de problemas",
-  "Try signing in to Stremio so Harbor can use your addon collection. Older or foreign titles often need Torrentio + a debrid addon to find anything.":
-    "Intenta iniciar sesión en Stremio para que Harbor pueda usar tu colección de complementos. Los títulos antiguos o extranjeros suelen necesitar Torrentio y un complemento de debrid para encontrar alguna fuente.",
+  "Try signing in to Stremio so Frame can use your addon collection. Older or foreign titles often need Torrentio + a debrid addon to find anything.":
+    "Intenta iniciar sesión en Stremio para que Frame pueda usar tu colección de complementos. Los títulos antiguos o extranjeros suelen necesitar Torrentio y un complemento de debrid para encontrar alguna fuente.",
   "Tune picks": "Ajustar selecciones",
   "Tune your picks": "Ajustar tus selecciones",
   "Tune your Top Picks": "Ajustar tus mejores selecciones",
@@ -515,14 +515,14 @@ const misc: Record<string, string> = {
   "update.errorServer": "Hubo un error al conectarse al servidor de actualizaciones.",
   "update.failed": "Error al actualizar",
   "update.fetching": "Obteniendo la versión más reciente",
-  "update.harborVersion": "Harbor {version}",
+  "update.harborVersion": "Frame {version}",
   "update.installing": "Instalando actualización",
   "update.installRestart": "Instalar y reiniciar",
-  "update.keepUsing": "Sigue usando Harbor mientras se descarga",
+  "update.keepUsing": "Sigue usando Frame mientras se descarga",
   "update.later": "Más tarde",
   "update.of": "{downloaded} de {total}",
   "update.ready": "Actualización lista para instalar",
-  "update.restartAuto": "Harbor se reiniciará automáticamente.",
+  "update.restartAuto": "Frame se reiniciará automáticamente.",
   "update.tryAgain": "Intentar de nuevo",
   Updated: "Actualizado",
   Updating: "Actualizando",
@@ -541,8 +541,8 @@ const misc: Record<string, string> = {
     "Necesitamos verificar tu edad antes de que sigas navegando. Son tres preguntas rápidas que cualquier adulto funcional respondería hasta dormido. Si aciertas todas, se abrirá la sección para adultos.",
   "Welcome aboard": "Te damos la bienvenida a bordo",
   Western: "Wéstern",
-  "When playback starts, Harbor finds and loads a subtitle in one of these languages automatically. The first available match wins, so put your main language first.":
-    "Cuando comienza la reproducción, Harbor busca y carga automáticamente un subtítulo en uno de estos idiomas. Se usa la primera coincidencia disponible, así que coloca primero tu idioma principal.",
+  "When playback starts, Frame finds and loads a subtitle in one of these languages automatically. The first available match wins, so put your main language first.":
+    "Cuando comienza la reproducción, Frame busca y carga automáticamente un subtítulo en uno de estos idiomas. Se usa la primera coincidencia disponible, así que coloca primero tu idioma principal.",
   "Wide search · still empty": "Búsqueda amplia · aún sin resultados",
   Windowed: "En ventana",
   "Write a comment...": "Escribe un comentario...",

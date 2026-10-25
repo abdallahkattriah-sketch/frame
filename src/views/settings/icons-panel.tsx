@@ -100,7 +100,7 @@ const NAMES: Record<string, string> = {
   "addons-boat-dark": "Addons boat (dark)",
   "addons-boat-white": "Addons boat (light)",
   "install-boat-white": "Install boat",
-  "harbor-loader": "Harbor loader",
+  "harbor-loader": "Frame loader",
   "flame-streak": "Flame streak",
   "voyage-boat": "Voyage boat",
   "mark-unwatched": "Mark unwatched",
@@ -476,10 +476,8 @@ export function IconsPanel() {
       </Section>
 
       <Section
-        title={t("Harbor and the installer")}
-        subtitle={t(
-          "The Big Picture opener and the boat that builds itself while Harbor installs.",
-        )}
+        title={t("Frame and the installer")}
+        subtitle={t("The Big Picture opener and the boat that builds itself while Frame installs.")}
       >
         <AnimationSet glob={LOTTIE_APP} download={download} />
       </Section>

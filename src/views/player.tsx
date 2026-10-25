@@ -1043,7 +1043,7 @@ function NativePlayerView({ src }: { src: PlayerSrc }) {
   const restartStreamServer = useCallback(() => {
     if (serverRestartBusyRef.current) return;
     if (isWeb()) {
-      showSyncToast("error", t("Harbor's streaming server only runs in the desktop app."));
+      showSyncToast("error", t("Frame's streaming server only runs in the desktop app."));
       return;
     }
     serverRestartBusyRef.current = true;

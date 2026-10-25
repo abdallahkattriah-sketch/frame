@@ -24,6 +24,6 @@ export default {
   "games.match.remove": "Rimuovi associazione",
   "games.match.source": "Immagini e dettagli da IGDB",
   "games.match.note":
-    "Scegli l'edizione corrispondente al file. Harbor conserva il file e il suo nome originale.",
+    "Scegli l'edizione corrispondente al file. Frame conserva il file e il suo nome originale.",
   "games.match.empty": "Prova il titolo senza indicazioni di regione o revisione.",
 };

@@ -71,7 +71,7 @@ const gameRoms: Record<string, string> = {
   "games.roms.reset": "Reimposta filtri",
   "games.roms.empty": "Prova un altro titolo o amplia i filtri per questa console.",
   "games.roms.source":
-    "Metadati e collegamenti tra giochi da IGDB. Importa i tuoi file locali per giocare ai titoli supportati in Harbor.",
+    "Metadati e collegamenti tra giochi da IGDB. Importa i tuoi file locali per giocare ai titoli supportati in Frame.",
   "games.roms.playerScore": "Valutazione dei giocatori IGDB · {count} valutazioni",
   "games.roms.combinedScore": "Valutazione combinata IGDB · {count} valutazioni",
   "games.roms.sort.discussed": "Più valutazioni",

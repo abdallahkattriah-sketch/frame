@@ -15,7 +15,7 @@ export default {
   "games.sources.batch.failedFile": "Không thể chuẩn bị {file}.",
 
   "games.sources.batch.restart":
-    "Khởi động lại Harbor sau khi cập nhật để tải các tệp đã chọn cùng nhau.",
+    "Khởi động lại Frame sau khi cập nhật để tải các tệp đã chọn cùng nhau.",
 
   "games.torrent.start": "Tải các tệp xuống",
 
@@ -24,7 +24,7 @@ export default {
   "games.sources.verification.action": "Xác minh nguồn",
 
   "games.sources.verification.waiting":
-    "Hoàn tất xác minh trong cửa sổ nguồn. Sau đó Harbor sẽ kiểm tra danh mục.",
+    "Hoàn tất xác minh trong cửa sổ nguồn. Sau đó Frame sẽ kiểm tra danh mục.",
 
   "games.sources.source_verify_busy":
     "Một nguồn khác đang được xác minh. Hãy hoàn tất hoặc đóng cửa sổ đó trước.",
@@ -35,36 +35,36 @@ export default {
   "games.sources.source_verify_timeout": "Đã hết thời gian xác minh. Hãy thử lại khi bạn sẵn sàng.",
 
   "games.sources.source_verify_unavailable":
-    "Cập nhật và khởi động lại Harbor để xác minh nguồn này.",
+    "Cập nhật và khởi động lại Frame để xác minh nguồn này.",
 
   "games.sources.browser.direct": "Tải trực tiếp",
 
   "games.sources.site.title": "Mở một trang",
   "games.sources.site.note":
-    "Dán trang tải xuống từ bất kỳ trang nào. Harbor mở nó trong cửa sổ riêng, bạn chọn tệp ở đó, và nó tải về Harbor.",
+    "Dán trang tải xuống từ bất kỳ trang nào. Frame mở nó trong cửa sổ riêng, bạn chọn tệp ở đó, và nó tải về Frame.",
   "games.sources.site.url": "Liên kết trang",
   "games.sources.site.open": "Mở trang",
   "games.sources.site.invalid": "Cần là một liên kết https công khai.",
   "games.sources.browser.intro":
-    "Không cần tài khoản debrid. Chọn tệp trên {host}, rồi chọn nơi lưu trong Harbor.",
+    "Không cần tài khoản debrid. Chọn tệp trên {host}, rồi chọn nơi lưu trong Frame.",
   "games.sources.browser.fallback":
-    "Nếu quá trình tải không tự bắt đầu, hãy dùng liên kết dự phòng mà {host} hiển thị trên trang. Harbor vẫn nhận được tệp.",
+    "Nếu quá trình tải không tự bắt đầu, hãy dùng liên kết dự phòng mà {host} hiển thị trên trang. Frame vẫn nhận được tệp.",
 
   "games.sources.browser.choose": "Chọn tệp trên {host}",
 
-  "games.sources.browser.waiting": "Chọn tệp trong cửa sổ {host}. Harbor sẽ hỏi nơi lưu tệp.",
+  "games.sources.browser.waiting": "Chọn tệp trong cửa sổ {host}. Frame sẽ hỏi nơi lưu tệp.",
 
-  "games.sources.browser.selected": "Sẵn sàng tải trong Harbor",
+  "games.sources.browser.selected": "Sẵn sàng tải trong Frame",
 
   "games.sources.browser.another": "Chọn tệp khác",
 
   "games.sources.browser.failed":
-    "{host} không thể chuyển tệp này sang Harbor. Thử lại hoặc mở trên {host}.",
+    "{host} không thể chuyển tệp này sang Frame. Thử lại hoặc mở trên {host}.",
 
   "games.sources.browser.timeout": "Hết thời gian chọn tệp. Mở lại {host} để chọn tệp.",
 
   "games.sources.browser.restart":
-    "Khởi động lại Harbor sau khi cập nhật để tải trực tiếp từ {host}.",
+    "Khởi động lại Frame sau khi cập nhật để tải trực tiếp từ {host}.",
 
   "games.sources.retrySavedCatalog": "Thử lại danh mục đã lưu",
 
@@ -117,15 +117,14 @@ export default {
   "games.sources.platform.other": "Bản {platform} · không chạy trực tiếp trên {host}",
 
   "games.sources.platform.otherNote":
-    "Chọn bản dành cho hệ điều hành của bạn. Harbor không thể cài hoặc chạy trực tiếp gói này trên thiết bị này.",
+    "Chọn bản dành cho hệ điều hành của bạn. Frame không thể cài hoặc chạy trực tiếp gói này trên thiết bị này.",
 
   "games.sources.platform.unknown": "Chưa nêu nền tảng",
 
   "games.sources.platform.unknownNote":
     "Nguồn chưa nêu hệ điều hành của gói. Kiểm tra thông tin nhà phát hành trước khi tải.",
 
-  "games.sources.platform.browseNote":
-    "Dùng Harbor máy tính để tải và quản lý tệp trò chơi cục bộ.",
+  "games.sources.platform.browseNote": "Dùng Frame máy tính để tải và quản lý tệp trò chơi cục bộ.",
 
   "games.sources.platform.browse": "Bản {platform}",
 
@@ -135,9 +134,9 @@ export default {
 
   "games.sources.art.torrent": "Tải torrent",
 
-  "games.sources.art.engine": "Bộ máy torrent của Harbor",
+  "games.sources.art.engine": "Bộ máy torrent của Frame",
 
-  "games.sources.art.reviewTorrent": "Tải trong Harbor",
+  "games.sources.art.reviewTorrent": "Tải trong Frame",
 
   "games.sources.ad.note": "Chuẩn bị tệp này bằng AllDebrid, rồi chọn nơi lưu.",
 
@@ -187,7 +186,7 @@ export default {
 
   "games.sources.discovery.change": "Đổi liên kết",
 
-  "games.sources.discovery.harbor": "Danh mục Harbor",
+  "games.sources.discovery.harbor": "Danh mục Frame",
 
   "games.sources.discovery.community": "Danh mục tương thích với Hydra",
 
@@ -197,7 +196,7 @@ export default {
     "Chỉ các mục trong danh mục được lưu. Tệp chỉ được tải xuống khi bạn chọn.",
 
   "games.sources.source_no_catalog":
-    "Trang web này không công bố liên kết danh mục mà Harbor có thể đọc. Hãy dán liên kết danh mục JSON của trang.",
+    "Trang web này không công bố liên kết danh mục mà Frame có thể đọc. Hãy dán liên kết danh mục JSON của trang.",
 
   "games.sources.source_url":
     "Nhập địa chỉ trang web, URL danh mục HTTP(S) hoặc liên kết cài đặt Hydra.",
@@ -254,7 +253,7 @@ export default {
 
   "games.sources.links.account": "Dịch vụ từ chối kết nối. Kiểm tra khóa trong cài đặt nguồn.",
 
-  "games.sources.links.rate": "Dịch vụ yêu cầu Harbor chờ. Hãy thử lại sau ít phút.",
+  "games.sources.links.rate": "Dịch vụ yêu cầu Frame chờ. Hãy thử lại sau ít phút.",
 
   "games.sources.links.limit": "Dịch vụ trả về quá nhiều tệp để xem cùng lúc.",
 
@@ -267,7 +266,7 @@ export default {
 
   "games.sources.links.destination": "Chọn nơi lưu",
 
-  "games.sources.links.desktop": "Mở Harbor trên máy tính để tải tệp xuống.",
+  "games.sources.links.desktop": "Mở Frame trên máy tính để tải tệp xuống.",
 
   "games.sources.web.web": "Tải xuống từ web",
 
@@ -297,7 +296,7 @@ export default {
   "games.sources.web.again": "Bắt đầu tác vụ khác",
 
   "games.sources.web.storage":
-    "Harbor không lưu được tác vụ này. Tác vụ sẽ không tự động được gửi lại.",
+    "Frame không lưu được tác vụ này. Tác vụ sẽ không tự động được gửi lại.",
 
   "games.sources.web.preparing": "Đang chuẩn bị trong TorBox",
 
@@ -388,7 +387,7 @@ export default {
   "games.sources.pm.select": "Dùng lượt truyền này",
 
   "games.sources.pm.review":
-    "Chọn lượt truyền bạn đã gửi. Harbor không thể tự động khớp nguồn của nó.",
+    "Chọn lượt truyền bạn đã gửi. Frame không thể tự động khớp nguồn của nó.",
 
   "games.sources.pm.retry": "Thử truyền lại",
 

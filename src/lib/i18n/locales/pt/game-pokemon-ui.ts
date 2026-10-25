@@ -30,7 +30,7 @@ export default {
   "games.pokemon.guideSourceNote":
     "Leia o guia original ou abra aqui quando a fonte estiver disponível.",
   "games.pokemon.readGuide": "Ler na Bulbapedia",
-  "games.pokemon.readInside": "Ler no Harbor",
+  "games.pokemon.readInside": "Ler no Frame",
   "games.pokemon.closeReader": "Fechar leitor",
   "games.pokemon.downloadImage": "Baixar imagem de {name}",
   "games.pokemon.imageSaved": "Imagem de {name} salva",
@@ -41,7 +41,7 @@ export default {
   "games.pokemon.saveStep1": "Abra o jogo e use Salvar no menu dele.",
   "games.pokemon.saveStep2":
     "Feche o jogo e encontre ou exporte o save de bateria (.sav, .srm ou .dsv).",
-  "games.pokemon.saveStep3": "Escolha Abrir save acima para editá-lo no Harbor.",
+  "games.pokemon.saveStep3": "Escolha Abrir save acima para editá-lo no Frame.",
   "games.pokemon.findSave": "Onde está meu save?",
   "games.pokemon.saveLocations":
     "Procure ao lado da ROM ou na pasta de saves do emulador. Se tiver apenas um save state, carregue-o no emulador e depois salve pelo menu do jogo.",

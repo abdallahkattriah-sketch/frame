@@ -4,12 +4,12 @@ export default {
   "games.searchUi.aiPlaceholder": "Describe a game, a mood, or what you want to play…",
   "games.searchUi.guide": "Search by title, then narrow your results with filters.",
   "games.searchUi.aiGuide":
-    "Describe what you want. Harbor checks AI suggestions against the Steam catalog.",
+    "Describe what you want. Frame checks AI suggestions against the Steam catalog.",
   "games.searchUi.web": "Web context",
   "games.searchUi.settings": "AI settings",
   "games.searchUi.setup": "Connect your AI provider",
   "games.searchUi.setupNote":
-    "Use the same OpenRouter or Groq account and model you use elsewhere in Harbor.",
+    "Use the same OpenRouter or Groq account and model you use elsewhere in Frame.",
   "games.searchUi.aiHint":
     "Press Enter when you’re ready. Your selected filters also apply to AI matches.",
   "games.searchUi.thinking": "Finding games and checking Steam…",

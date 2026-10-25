@@ -6,7 +6,7 @@ export default {
 
   "games.shortcuts.activity.open": "アクティビティ",
   "games.shortcuts.activity.title": "ショートカットのアクティビティ",
-  "games.shortcuts.activity.note": "この Harbor プロフィールでの最近のスキャンと起動。最大300件。",
+  "games.shortcuts.activity.note": "この Frame プロフィールでの最近のスキャンと起動。最大300件。",
   "games.shortcuts.activity.remember": "セッション間で保持",
   "games.shortcuts.activity.detailed": "スキャンの詳細を記録",
   "games.shortcuts.activity.storageError":
@@ -57,7 +57,7 @@ export default {
   "games.shortcuts.shortcut_location":
     "Steam フォルダーまたはその userdata フォルダーを選択してください。",
   "games.shortcuts.shortcut_account":
-    "このショートカットのアカウントで Steam を開いて更新してください。Harbor は同じ Steam インストールを使用する必要があります。",
+    "このショートカットのアカウントで Steam を開いて更新してください。Frame は同じ Steam インストールを使用する必要があります。",
   "games.shortcuts.shortcut_missing":
     "このショートカットは存在しません。ライブラリを更新してください。",
   "games.shortcuts.shortcut_executable":

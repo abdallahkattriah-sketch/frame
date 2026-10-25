@@ -78,7 +78,7 @@ export function TvStatusHeader() {
     : status.phase === "off" || status.phase === "signed-out" || status.phase === "no-refresh"
       ? {
           tone: "off",
-          line: "Harbor accounts are no longer available, so these settings stay on this computer and don't reach your TV.",
+          line: "Frame accounts are no longer available, so these settings stay on this computer and don't reach your TV.",
           fix: "account",
         }
       : !scoped

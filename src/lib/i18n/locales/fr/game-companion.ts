@@ -287,7 +287,7 @@ export default {
   "games.gw2.guide": "Guide de la chambre forte",
   "games.gw2.checked": "Vérifié le {date}",
   "games.gw2.scope":
-    "Enregistré dans ce profil Harbor. Chaque sélection compte une offre ; votre solde, les limites d’achat et l’accès aux extensions ne sont pas vérifiés. Confirmez la disponibilité et achetez en jeu.",
+    "Enregistré dans ce profil Frame. Chaque sélection compte une offre ; votre solde, les limites d’achat et l’accès aux extensions ne sont pas vérifiés. Confirmez la disponibilité et achetez en jeu.",
   "games.gw2.total": "Total prévu",
   "games.gw2.currency": "Acclamations astrales",
   "games.gw2.selected": "{count} offres sélectionnées",

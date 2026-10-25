@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "활동",
   "games.shortcuts.activity.title": "바로가기 활동",
   "games.shortcuts.activity.note":
-    "이 Harbor 프로필의 최근 검색 및 실행 기록입니다. 최대 300개 항목입니다.",
+    "이 Frame 프로필의 최근 검색 및 실행 기록입니다. 최대 300개 항목입니다.",
   "games.shortcuts.activity.remember": "세션 간 기록 유지",
   "games.shortcuts.activity.detailed": "검색 세부 정보 포함",
   "games.shortcuts.activity.storageError":
@@ -53,7 +53,7 @@ export default {
   "games.shortcuts.storeError": "설정을 저장하지 못했습니다.",
   "games.shortcuts.shortcut_location": "Steam 폴더나 그 안의 userdata 폴더를 선택하세요.",
   "games.shortcuts.shortcut_account":
-    "이 바로가기의 계정으로 Steam을 연 후 새로고침하세요. Harbor는 같은 Steam 설치를 사용해야 합니다.",
+    "이 바로가기의 계정으로 Steam을 연 후 새로고침하세요. Frame는 같은 Steam 설치를 사용해야 합니다.",
   "games.shortcuts.shortcut_missing":
     "이 바로가기는 더 이상 없습니다. 라이브러리를 새로고침하세요.",
   "games.shortcuts.shortcut_executable": "실행 파일이 없거나 절대 경로가 지원되지 않습니다.",

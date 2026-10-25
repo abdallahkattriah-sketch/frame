@@ -11,9 +11,9 @@ export default {
     "アーカイブの保管フォルダーはごみ箱にあります。必要ならそこから復元してください。",
   "games.cleanup.restoredNote": "アーカイブ分割ファイルを元のフォルダーに戻しました。",
   "games.cleanup.uncertainNote":
-    "Harborは結果を確認できませんでした。続行する前に元のフォルダーとごみ箱を確認してください。",
+    "Frameは結果を確認できませんでした。続行する前に元のフォルダーとごみ箱を確認してください。",
   "games.cleanup.recoveryNote":
-    "一部のファイルがHarborの保管フォルダーにある可能性があります。クリーンアップを続けるか、既存ファイルを上書きせずに復元できます。",
+    "一部のファイルがFrameの保管フォルダーにある可能性があります。クリーンアップを続けるか、既存ファイルを上書きせずに復元できます。",
   "games.cleanup.working": "アーカイブファイルを確認中",
   "games.cleanup.restore": "保管ファイルを復元",
   "games.cleanup.resume": "クリーンアップを続行",
@@ -79,7 +79,7 @@ export default {
   "games.setupShortcuts.error": "ショートカットを更新できませんでした。再試行してください。",
 
   "games.archive.archive_decoder":
-    "Harbor の制限内でこのアーカイブを展開できませんでした。別の展開ツールをお試しください。",
+    "Frame の制限内でこのアーカイブを展開できませんでした。別の展開ツールをお試しください。",
   "games.archive.archive_password_or_checksum":
     "パスワードが正しくないか、アーカイブが破損している可能性があります。パスワードを確認するか、アーカイブを再ダウンロードしてください。",
   "games.archive.password": "アーカイブのパスワード",
@@ -91,7 +91,7 @@ export default {
   "games.archive.eyebrow": "ダウンロードからライブラリへ",
   "games.archive.title": "ゲームファイルを展開",
   "games.archive.intro":
-    "ZIP / 7z / RAR / TAR / TAR.GZ / ISOアーカイブを確認し、ファイルの展開先を選びます。Harborは新しいフォルダーを作成し、元のアーカイブを保持します。",
+    "ZIP / 7z / RAR / TAR / TAR.GZ / ISOアーカイブを確認し、ファイルの展開先を選びます。Frameは新しいフォルダーを作成し、元のアーカイブを保持します。",
   "games.archive.source": "アーカイブ",
   "games.archive.chooseSource": "アーカイブを選択",
   "games.archive.chooseParent": "展開先フォルダーを選択",
@@ -121,7 +121,7 @@ export default {
   "games.archive.openFolder": "フォルダーを表示",
   "games.archive.localLibrary": "ローカルゲーム",
   "games.archive.archive_profile":
-    "このHarborプロフィールを識別できませんでした。「ゲーム」を開き直してやり直してください。",
+    "このFrameプロフィールを識別できませんでした。「ゲーム」を開き直してやり直してください。",
   "games.archive.archive_busy":
     "別のアーカイブ操作が進行中です。先に完了するかキャンセルしてください。",
   "games.archive.archive_canceled": "展開をキャンセルしました。元のアーカイブは残っています。",
@@ -129,7 +129,7 @@ export default {
     "アーカイブを読み込めませんでした。ファイルが利用可能か確認してやり直してください。",
   "games.archive.archive_links":
     "このアーカイブにはリンクや特殊なファイルが含まれています。プロジェクトのインストール手順に従ってください。",
-  "games.archive.archive_limit": "このアーカイブはHarborの現在の展開上限を超えています。",
+  "games.archive.archive_limit": "このアーカイブはFrameの現在の展開上限を超えています。",
   "games.archive.archive_changed":
     "確認後にアーカイブが変更されました。展開前にもう一度確認してください。",
   "games.archive.archive_path":
@@ -138,7 +138,7 @@ export default {
     "対応していないZIP / 7z / RAR / TAR / TAR.GZ / ISOアーカイブか、内部のディレクトリが破損しています。",
   "games.archive.archive_encrypted": "続行するには、このアーカイブのパスワードを入力してください。",
   "games.archive.archive_compression":
-    "このZIP / 7z / RAR / TAR / TAR.GZ / ISOはHarborがまだ対応していない圧縮方式を使用しています。",
+    "このZIP / 7z / RAR / TAR / TAR.GZ / ISOはFrameがまだ対応していない圧縮方式を使用しています。",
   "games.archive.archive_collision":
     "アーカイブ内の項目が互いに上書きされるため、何も展開されませんでした。",
   "games.archive.archive_destination":
@@ -158,11 +158,11 @@ export default {
   "games.archive.space.checking": "展開先の空き容量を確認中…",
   "games.archive.space.free": "{size}利用可能",
   "games.archive.space.required": "展開に{size}必要",
-  "games.archive.space.reserved": "他のHarborの処理用に{size}を確保",
+  "games.archive.space.reserved": "他のFrameの処理用に{size}を確保",
   "games.archive.space.after": "展開後に{size}利用可能",
   "games.archive.space.shortfall": "あと{size}の容量が必要",
   "games.archive.space.unknown":
-    "空き容量を取得できませんでした。展開開始時にHarborが再確認します。",
+    "空き容量を取得できませんでした。展開開始時にFrameが再確認します。",
   "games.archive.space.error": "展開先の空き容量を確認できませんでした。",
   "games.archive.space.refresh": "空き容量を再確認",
   "games.archive.space.note":
@@ -181,15 +181,15 @@ export default {
   "games.archive.retry": "確認して再試行",
   "games.archive.showPartial": "展開途中のファイルを表示",
   "games.archive.partialNote":
-    "Harbor は展開途中のフォルダーを保持しています。削除する前に内容を確認してください。再試行すると、新しく展開を開始します。",
+    "Frame は展開途中のフォルダーを保持しています。削除する前に内容を確認してください。再試行すると、新しく展開を開始します。",
   "games.archive.progressFiles": "{total} ファイル中 {count} ファイル",
   "games.archive.archive_store":
-    "Harbor は展開の進行状況を保存できませんでした。確認できるよう、ファイルは保持されています。",
+    "Frame は展開の進行状況を保存できませんでした。確認できるよう、ファイルは保持されています。",
   "games.archive.archive_start": "展開を開始できませんでした。もう一度お試しください。",
   "games.archive.archive_history":
     "展開履歴がいっぱいです。古い記録を削除して続行してください。ファイルは保持されます。",
   "games.archive.archive_interrupted":
-    "展開が完了する前に Harbor が終了しました。保存先を確認して再試行してください。",
+    "展開が完了する前に Frame が終了しました。保存先を確認して再試行してください。",
   "games.archive.archive_parts":
     "これらのファイルは同じアーカイブの一部ではありません。同じダウンロードのファイルか確認してください。",
   "games.archive.archive_tool": "このビルドでは追加のアーカイブ形式を利用できません。",
@@ -198,10 +198,10 @@ export default {
   "games.archive.continueSetup": "ゲームをセットアップ",
   "games.archive.dismissRecord": "記録を削除 · ファイルは保持",
   "games.archive.archive_multipart":
-    "この分割アーカイブ形式にはまだ対応していません。別の解凍アプリで展開し、展開先のフォルダーを Harbor で開いてください。",
+    "この分割アーカイブ形式にはまだ対応していません。別の解凍アプリで展開し、展開先のフォルダーを Frame で開いてください。",
   "games.archive.partsCount": "{count} 個の分割ファイル",
   "games.archive.partsNote":
-    "すべての分割ファイルを同じフォルダーに保存してください。Harbor がまとめて展開します。",
+    "すべての分割ファイルを同じフォルダーに保存してください。Frame がまとめて展開します。",
   "games.archive.partsMore": "さらに表示",
   "games.archive.setHash": "分割ファイル一式の SHA-256",
   "games.archive.archive_missing_part":

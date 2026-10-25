@@ -48,12 +48,10 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
             {t("Self-host")}
           </p>
           <h2 className="font-display text-[32px] font-medium leading-tight tracking-tight text-ink">
-            {t("Run your own Harbor Relay")}
+            {t("Run your own Frame Relay")}
           </h2>
           <p className="max-w-[66ch] text-[15.5px] leading-[22px] text-ink-muted">
-            {t(
-              "Two paths: Harbor handles the deploy for you, or you do it yourself with wrangler.",
-            )}
+            {t("Two paths: Frame handles the deploy for you, or you do it yourself with wrangler.")}
           </p>
         </header>
 
@@ -61,7 +59,7 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
           <DocsH2>{t("Overview")}</DocsH2>
           <DocsP>
             {t(
-              "The Harbor relay is a Cloudflare Worker that hosts WebSocket rooms for Watch Together. Each user runs their own. There is no central Harbor server.",
+              "The Frame relay is a Cloudflare Worker that hosts WebSocket rooms for Watch Together. Each user runs their own. There is no central Frame server.",
             )}
           </DocsP>
           <DocsP>
@@ -85,14 +83,14 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
         </DocsBlock>
 
         <DocsBlock>
-          <DocsH2>{t("Auto-deploy from Harbor")}</DocsH2>
+          <DocsH2>{t("Auto-deploy from Frame")}</DocsH2>
           <DocsP>
             {t(
-              "Easiest path. Harbor uploads the worker, creates the Durable Object namespace, and stores the resulting URL.",
+              "Easiest path. Frame uploads the worker, creates the Durable Object namespace, and stores the resulting URL.",
             )}
           </DocsP>
           <DocsOl>
-            <li>{t("Open Settings, then Harbor Relay.")}</li>
+            <li>{t("Open Settings, then Frame Relay.")}</li>
             <li>
               {t("Click")} <DocsKbd>{t("Deploy a relay")}</DocsKbd>.
             </li>
@@ -100,12 +98,12 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
               {t("Generate a Cloudflare API token with")} <DocsCode>Workers Scripts: Edit</DocsCode>{" "}
               {t("and")} <DocsCode>Account: Read</DocsCode> {t("permissions at")}{" "}
               <DocsCode>dash.cloudflare.com/profile/api-tokens</DocsCode>.{" "}
-              {t("Paste it into Harbor.")}
+              {t("Paste it into Frame.")}
             </li>
             <li>{t("Pick the Cloudflare account to deploy under.")}</li>
             <li>
               {t("Wait for the upload to finish. The relay URL gets written to")}{" "}
-              <DocsCode>togetherRelayUrl</DocsCode> {t("in Harbor settings.")}
+              <DocsCode>togetherRelayUrl</DocsCode> {t("in Frame settings.")}
             </li>
           </DocsOl>
         </DocsBlock>
@@ -122,7 +120,7 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
             </li>
             <li>
               {t("Save the worker source. Copy")} <DocsCode>src-tauri/relay/worker.js</DocsCode>{" "}
-              {t("from the Harbor repo into a new directory as")} <DocsCode>worker.js</DocsCode>.
+              {t("from the Frame repo into a new directory as")} <DocsCode>worker.js</DocsCode>.
             </li>
             <li>
               {t("Save this")} <DocsCode>wrangler.toml</DocsCode> {t("next to it:")}
@@ -137,7 +135,7 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
               <DocsCode>https://harbor-together-relay.&lt;subdomain&gt;.workers.dev</DocsCode>.
             </li>
             <li>
-              {t("In Harbor: Settings, Harbor Relay, then")}{" "}
+              {t("In Frame: Settings, Frame Relay, then")}{" "}
               <DocsKbd>{t("Use a different URL")}</DocsKbd>. {t("Paste the URL with")}{" "}
               <DocsCode>wss://</DocsCode> {t("as the scheme instead of")}{" "}
               <DocsCode>https://</DocsCode>.
@@ -148,7 +146,7 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
         <DocsBlock>
           <DocsH2>{t("Verify it works")}</DocsH2>
           <DocsP>
-            {t("Settings, Harbor Relay, then")} <DocsKbd>{t("Run test")}</DocsKbd>.
+            {t("Settings, Frame Relay, then")} <DocsKbd>{t("Run test")}</DocsKbd>.
           </DocsP>
           <DocsP>
             {t("The test calls")} <DocsCode>/health</DocsCode>{" "}
@@ -175,7 +173,7 @@ export function RelayDocs({ onBack }: { onBack: () => void }) {
           <DocsP>
             {t("To run a public relay, post the")} <DocsCode>wss://</DocsCode>{" "}
             {t(
-              "URL on r/Stremio or wherever your community lives. Other Harbor users paste it into Settings, Harbor Relay,",
+              "URL on r/Stremio or wherever your community lives. Other Frame users paste it into Settings, Frame Relay,",
             )}{" "}
             <DocsKbd>{t("Use a different URL")}</DocsKbd>.
           </DocsP>

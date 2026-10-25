@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "Rechercher sur CurseForge",
   "games.minecraft.discovery.downloads": "Téléchargements",
   "games.minecraft.discovery.curseForgeBlocked":
-    "CurseForge ne permet pas à Harbor de charger ce catalogue pour le moment. Réessayez ou ouvrez la source.",
+    "CurseForge ne permet pas à Frame de charger ce catalogue pour le moment. Réessayez ou ouvrez la source.",
   "games.minecraft.discovery.unavailable": "Impossible de charger cet annuaire. Réessayez.",
   "games.minecraft.discovery.openSource": "Ouvrir le site source",
   "games.minecraft.discovery.loadMore": "Charger plus",
   "games.minecraft.discovery.servers": "Serveurs",
   "games.minecraft.discovery.serverNote":
-    "Annuaires indépendants. Harbor n’est affilié ni à ces sites ni à ces serveurs. Les chiffres proviennent de chaque annuaire.",
+    "Annuaires indépendants. Frame n’est affilié ni à ces sites ni à ces serveurs. Les chiffres proviennent de chaque annuaire.",
   "games.minecraft.discovery.searchServers": "Rechercher parmi les serveurs chargés",
   "games.minecraft.discovery.directory": "Annuaire",
   "games.minecraft.discovery.mode": "Mode de jeu",
@@ -44,7 +44,7 @@ export default {
   "games.minecraft.lifecycle.exportNote":
     "Crée un fichier .mrpack portable avec tes mods et leur configuration.",
   "games.minecraft.lifecycle.privateNote":
-    "Les données du compte Harbor, les fichiers d’exécution et les journaux sont exclus. Vérifie la configuration des mods avant de partager.",
+    "Les données du compte Frame, les fichiers d’exécution et les journaux sont exclus. Vérifie la configuration des mods avant de partager.",
   "games.minecraft.lifecycle.included": "Fichiers inclus",
   "games.minecraft.lifecycle.referenced": "Références de téléchargement",
   "games.minecraft.lifecycle.referenceNote":
@@ -101,7 +101,7 @@ export default {
   "games.minecraft.update.chooseFile": "Choisir un fichier .mrpack",
   "games.minecraft.update.restoreVersion": "Restaurer {version}",
   "games.minecraft.update.reviewNote":
-    "Examinez chaque modification avant de l’appliquer. Harbor conserve une copie indépendante de l’instance précédente.",
+    "Examinez chaque modification avant de l’appliquer. Frame conserve une copie indépendante de l’instance précédente.",
   "games.minecraft.update.changeVersion": "Changer de version",
   "games.minecraft.update.download": "Téléchargement",
   "games.minecraft.update.recoveryCopy": "Copie de récupération",
@@ -202,7 +202,7 @@ export default {
     "Fermez une instance de Minecraft en cours avant d’en lancer une autre.",
   "games.minecraft.java.title": "Java pour cette instance",
   "games.minecraft.java.note": "Cette version de Minecraft nécessite Java {version}.",
-  "games.minecraft.java.managed": "Installer avec Harbor",
+  "games.minecraft.java.managed": "Installer avec Frame",
   "games.minecraft.java.installed": "Utiliser Java installé",
   "games.minecraft.java.manage": "Gérer Java",
 
@@ -222,7 +222,7 @@ export default {
   "games.minecraft.java.metadataError":
     "Impossible de vérifier un téléchargement Java compatible. Réessayez.",
   "games.minecraft.java.managedNote":
-    "Harbor conserve cette version dans votre bibliothèque Minecraft.",
+    "Frame conserve cette version dans votre bibliothèque Minecraft.",
   "games.minecraft.runtime.setup": "Préparer le jeu",
   "games.minecraft.runtime.note":
     "Installez les fichiers officiels du jeu pour cette instance. Vos mondes et mods sont conservés.",
@@ -245,7 +245,7 @@ export default {
   "games.minecraft.runtime.metadataError":
     "Ces fichiers n’ont pas pu être vérifiés. Réessayez plus tard.",
   "games.minecraft.runtime.legacyError":
-    "Cette version utilise un format d’installation ou de lancement que Harbor ne prend pas encore en charge.",
+    "Cette version utilise un format d’installation ou de lancement que Frame ne prend pas encore en charge.",
   "games.minecraft.runtime.loaderError":
     "Le format d’installation de ce chargeur n’est pas encore pris en charge.",
   "games.minecraft.runtime.platformError":
@@ -259,7 +259,7 @@ export default {
   "games.minecraft.instances.import": "Importer un pack",
   "games.minecraft.instances.create": "Créer une instance",
   "games.minecraft.instances.desktop":
-    "Ouvrez Harbor sur ordinateur pour créer et gérer les instances locales.",
+    "Ouvrez Frame sur ordinateur pour créer et gérer les instances locales.",
   "games.minecraft.instances.search": "Rechercher vos instances",
   "games.minecraft.instances.storage": "Dossier de stockage",
   "games.minecraft.instances.chooseFolder": "Choisir le dossier",
@@ -298,7 +298,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Chargement des versions de Minecraft…",
   "games.minecraft.instances.added": "Ajouté à vos instances",
   "games.minecraft.instances.storageNote":
-    "Choisissez où conserver les instances Minecraft. Chaque profil Harbor y possède son propre dossier.",
+    "Choisissez où conserver les instances Minecraft. Chaque profil Frame y possède son propre dossier.",
   "games.minecraft.instances.isolated": "Installation dans une nouvelle instance distincte.",
   "games.minecraft.instances.cancelling": "Annulation…",
   "games.minecraft.instances.install": "Installer les fichiers du pack",
@@ -311,7 +311,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "Application de la configuration…",
   "games.minecraft.instances.phase.done": "Fichiers installés",
   "games.minecraft.instances.folderError":
-    "Choisissez un dossier local accessible pour ce profil Harbor.",
+    "Choisissez un dossier local accessible pour ce profil Frame.",
   "games.minecraft.instances.writeError":
     "Impossible d’écrire l’instance. Vérifiez les autorisations du dossier et l’espace disponible.",
   "games.minecraft.instances.readError":
@@ -329,7 +329,7 @@ export default {
   "games.minecraft.instances.loaderError":
     "Ce pack utilise un chargeur inconnu ou des chargeurs incompatibles.",
   "games.minecraft.instances.sourceError":
-    "Ce pack nécessite une source de téléchargement non prise en charge par Harbor.",
+    "Ce pack nécessite une source de téléchargement non prise en charge par Frame.",
   "games.minecraft.instances.limitError":
     "Ce pack ou cette bibliothèque dépasse la taille maximale prise en charge.",
   "games.minecraft.instances.busyError":
@@ -385,9 +385,9 @@ export default {
   "games.minecraft.account.intro":
     "Connectez Microsoft pour voir votre skin et vos capes Minecraft et appliquer vos créations.",
   "games.minecraft.account.desktop":
-    "Ouvrez Harbor pour ordinateur afin de connecter votre compte Minecraft.",
+    "Ouvrez Frame pour ordinateur afin de connecter votre compte Minecraft.",
   "games.minecraft.account.setup":
-    "La connexion Microsoft n’est pas encore configurée pour cette version de Harbor. Vous pouvez modifier les skins localement.",
+    "La connexion Microsoft n’est pas encore configurée pour cette version de Frame. Vous pouvez modifier les skins localement.",
   "games.minecraft.account.codeNote": "Saisissez ce code sur la page de connexion Microsoft.",
   "games.minecraft.account.copy": "Copier le code",
   "games.minecraft.account.openMicrosoft": "Continuer chez Microsoft",
@@ -418,7 +418,7 @@ export default {
   "games.minecraft.account.skinError":
     "Impossible d’appliquer ce skin ou cette cape. Actualisez le compte et réessayez.",
   "games.minecraft.account.storeError":
-    "Harbor n’a pas pu enregistrer le compte de façon sécurisée sur cet appareil.",
+    "Frame n’a pas pu enregistrer le compte de façon sécurisée sur cet appareil.",
   "games.minecraft.account.error": "La demande de compte a échoué. Veuillez réessayer.",
   "games.minecraft.studio": "Atelier de skins",
   "games.minecraft.skinTitle": "À votre image.",
@@ -451,7 +451,7 @@ export default {
   "games.minecraft.previewHint": "Glissez pour tourner · Faites défiler pour zoomer",
   "games.minecraft.editHint": "Les flèches déplacent le curseur. Entrée peint. Ctrl / ⌘ Z annule.",
   "games.minecraft.library": "Vos skins",
-  "games.minecraft.localNote": "Enregistrés sur cet appareil pour ce profil Harbor.",
+  "games.minecraft.localNote": "Enregistrés sur cet appareil pour ce profil Frame.",
   "games.minecraft.new": "Nouveau skin",
   "games.minecraft.empty":
     "Importez un skin ou commencez à peindre. Les modifications sont enregistrées automatiquement.",

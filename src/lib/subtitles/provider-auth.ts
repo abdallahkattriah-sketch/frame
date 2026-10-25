@@ -21,7 +21,7 @@ type CredentialBinding = {
 
 const CREDENTIAL_TTL_MS = 24 * 60 * 60 * 1000;
 const MAX_CREDENTIAL_BINDINGS = 512;
-const INTERNAL_CREDENTIAL_HEADER = "X-Harbor-Subtitle-Credential";
+const INTERNAL_CREDENTIAL_HEADER = "X-Frame-Subtitle-Credential";
 const credentialBindings = new Map<string, CredentialBinding>();
 
 function isNativeRuntime(): boolean {

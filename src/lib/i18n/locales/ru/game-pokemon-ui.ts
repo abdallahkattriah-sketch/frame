@@ -30,7 +30,7 @@ export default {
   "games.pokemon.guideSourceNote":
     "Читайте оригинальное руководство или откройте его здесь, если источник доступен.",
   "games.pokemon.readGuide": "Читать на Bulbapedia",
-  "games.pokemon.readInside": "Читать в Harbor",
+  "games.pokemon.readInside": "Читать в Frame",
   "games.pokemon.closeReader": "Закрыть просмотр",
   "games.pokemon.downloadImage": "Скачать изображение {name}",
   "games.pokemon.imageSaved": "Изображение {name} сохранено",
@@ -41,7 +41,7 @@ export default {
   "games.pokemon.saveStep1": "Откройте игру и выберите сохранение в её меню.",
   "games.pokemon.saveStep2":
     "Закройте игру, затем найдите или экспортируйте батарейное сохранение (.sav, .srm или .dsv).",
-  "games.pokemon.saveStep3": "Нажмите «Открыть сохранение» выше для редактирования в Harbor.",
+  "games.pokemon.saveStep3": "Нажмите «Открыть сохранение» выше для редактирования в Frame.",
   "games.pokemon.findSave": "Где моё сохранение?",
   "games.pokemon.saveLocations":
     "Поищите рядом с ROM или в папке сохранений эмулятора. Если есть только снимок состояния, загрузите его в эмуляторе, затем сохранитесь через меню игры.",

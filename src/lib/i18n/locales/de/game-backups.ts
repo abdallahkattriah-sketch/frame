@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Schließe die Wiederherstellung ab, bevor du diesen Spielstandordner sicherst oder wiederherstellst.",
   "games.backups.save_recovery_scope":
-    "Öffne diese Wiederherstellung mit dem Harbor-Profil und dem Spiel, mit denen sie begonnen wurde.",
+    "Öffne diese Wiederherstellung mit dem Frame-Profil und dem Spiel, mit denen sie begonnen wurde.",
   "games.backups.result.keptCurrent": "Deine aktuellen Spielstände sind unverändert",
   "games.backups.resultNote.keptCurrent":
     "Die Wiederherstellung wurde abgeschlossen, ohne die aktuellen Spielstände in diesem Ordner zu ersetzen.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Halte einen Moment fest, zu dem du zurückkehren kannst. Wähle den Spielstandordner dieses Spiels und einen separaten Sicherungsordner. Schließe das Spiel vor dem Sichern oder Wiederherstellen.",
   "games.backups.desktop":
-    "Spielstand-Sicherungen sind in der Harbor-Desktop-App verfügbar. Sie verwenden Ordner, die du auf deinem Computer auswählst.",
+    "Spielstand-Sicherungen sind in der Frame-Desktop-App verfügbar. Sie verwenden Ordner, die du auf deinem Computer auswählst.",
   "games.backups.folder.source": "Spielstände",
   "games.backups.folder.vault": "Sicherungsordner",
   "games.backups.choose.source": "Spielstandordner auswählen",
@@ -52,8 +52,8 @@ export default {
   "games.backups.identical": "Der aktuelle Spielstandordner entspricht bereits dieser Sicherung.",
   "games.backups.restore": "Sicherung wiederherstellen",
   "games.backups.recoveryNote":
-    "Harbor bewahrt eine Wiederherstellungskopie und den Originalordner auf, bevor Spielstände ersetzt werden.",
-  "games.backups.localNote": "Im gewählten Ordner gespeichert, getrennt für jedes Harbor-Profil.",
+    "Frame bewahrt eine Wiederherstellungskopie und den Originalordner auf, bevor Spielstände ersetzt werden.",
+  "games.backups.localNote": "Im gewählten Ordner gespeichert, getrennt für jedes Frame-Profil.",
   "games.backups.openRecovery": "Originalordner anzeigen",
   "games.backups.reviewUndo": "Rückgängig machen prüfen",
   "games.backups.result.restored": "Deine Sicherung wurde wiederhergestellt",
@@ -64,11 +64,11 @@ export default {
   "games.backups.resultNote.restored":
     "Dein Spielstandordner entspricht jetzt dieser Sicherung. Wiederherstellungskopien bleiben verfügbar, falls du zum vorherigen Stand zurückkehren möchtest.",
   "games.backups.resultNote.rolledBack":
-    "Die Wiederherstellung konnte nicht abgeschlossen werden. Harbor hat deinen ursprünglichen Spielstandordner zurückgesetzt. Die Wiederherstellungskopie ist ebenfalls unten verfügbar.",
+    "Die Wiederherstellung konnte nicht abgeschlossen werden. Frame hat deinen ursprünglichen Spielstandordner zurückgesetzt. Die Wiederherstellungskopie ist ebenfalls unten verfügbar.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor konnte den Originalordner nach der fehlgeschlagenen Wiederherstellung nicht zurücksetzen. Lass das Spiel geschlossen. Deine ursprünglichen Dateien bleiben im unten angegebenen Ordner und in der Wiederherstellungskopie erhalten.",
+    "Frame konnte den Originalordner nach der fehlgeschlagenen Wiederherstellung nicht zurücksetzen. Lass das Spiel geschlossen. Deine ursprünglichen Dateien bleiben im unten angegebenen Ordner und in der Wiederherstellungskopie erhalten.",
   "games.backups.resultNote.notRestored":
-    "Harbor konnte die Sicherung nicht im ausgewählten Ordner ablegen. Sie ist weiterhin verfügbar.",
+    "Frame konnte die Sicherung nicht im ausgewählten Ordner ablegen. Sie ist weiterhin verfügbar.",
   "games.backups.phase.scanning": "Spielstände werden gelesen…",
   "games.backups.phase.copying": "Spielstände werden kopiert…",
   "games.backups.phase.verifying": "Sicherung wird geprüft…",
@@ -82,9 +82,9 @@ export default {
   "games.backups.save_record":
     "Ein Sicherungsdatensatz konnte nicht sicher gelesen werden. Seine Dateien wurden aufbewahrt. Prüfe den ausgewählten Sicherungsordner.",
   "games.backups.save_read":
-    "Harbor konnte diese Spielstände nicht lesen. Prüfe, ob der Ordner verfügbar und das Spiel geschlossen ist.",
+    "Frame konnte diese Spielstände nicht lesen. Prüfe, ob der Ordner verfügbar und das Spiel geschlossen ist.",
   "games.backups.save_write":
-    "Harbor konnte diese Spielstände nicht vollständig schreiben. Prüfe, ob der Ordner beschreibbar und das Spiel geschlossen ist.",
+    "Frame konnte diese Spielstände nicht vollständig schreiben. Prüfe, ob der Ordner beschreibbar und das Spiel geschlossen ist.",
   "games.backups.save_name":
     "Ein Dateiname konnte nicht beibehalten werden. Verwende einen Ordner mit unterstützten Dateinamen.",
   "games.backups.save_changed":
@@ -105,9 +105,9 @@ export default {
   "games.backups.save_space":
     "Es ist nicht genug freier Speicherplatz für eine vollständige Kopie vorhanden. Wähle einen anderen Ordner oder gib Speicherplatz frei.",
   "games.backups.save_config":
-    "Harbor konnte deine gespeicherte Ordnerauswahl nicht lesen. Wähle die Ordner erneut aus; vorhandene Sicherungen bleiben unverändert.",
+    "Frame konnte deine gespeicherte Ordnerauswahl nicht lesen. Wähle die Ordner erneut aus; vorhandene Sicherungen bleiben unverändert.",
   "games.backups.save_config_write":
-    "Harbor konnte diese Ordner nicht speichern. Deine bisherige Auswahl und Sicherungen sind unverändert.",
+    "Frame konnte diese Ordner nicht speichern. Deine bisherige Auswahl und Sicherungen sind unverändert.",
   "games.backups.failed":
     "Dieser Spielstandvorgang konnte nicht abgeschlossen werden. Deine Sicherungsdateien wurden aufbewahrt. Prüfe die Ordner und versuche es erneut.",
   "games.backups.compare.title": "Dateivergleich",

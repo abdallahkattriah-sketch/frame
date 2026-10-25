@@ -80,10 +80,10 @@ function BpConnectBody({ onBack }: { onBack?: () => void }) {
       <div className="grid flex-1 grid-cols-[minmax(0,1fr)_auto] items-start gap-[clamp(20px,2.4vw,52px)]">
         <div className="flex min-w-0 flex-col gap-[clamp(14px,2vh,26px)]">
           <div className="flex flex-col gap-[clamp(4px,0.7vh,9px)]">
-            <h2 className={TITLE}>{t("Finish setting up Harbor")}</h2>
+            <h2 className={TITLE}>{t("Finish setting up Frame")}</h2>
             {!hasKey && (
               <p className={`${BODY} max-w-[54ch] text-ink-subtle`}>
-                {t("Harbor needs a TMDB key for artwork, rows and collections. It is free.")}
+                {t("Frame needs a TMDB key for artwork, rows and collections. It is free.")}
               </p>
             )}
           </div>

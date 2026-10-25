@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "Установлена: {version}",
   "games.mods.current": "Установлена",
   "games.mods.versionNote":
-    "Выберите совместимую версию. Harbor проверит изменения и сохранит предыдущую версию локально. Закройте Minecraft перед применением.",
+    "Выберите совместимую версию. Frame проверит изменения и сохранит предыдущую версию локально. Закройте Minecraft перед применением.",
   "games.mods.applyChanges": "Применить изменения",
   "games.mods.reviewChanges": "Проверить изменения",
   "games.mods.previousVersion": "Предыдущая: {version}",

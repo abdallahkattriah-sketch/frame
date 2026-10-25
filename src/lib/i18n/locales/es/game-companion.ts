@@ -287,7 +287,7 @@ export default {
   "games.gw2.guide": "Guía de la cámara",
   "games.gw2.checked": "Comprobado: {date}",
   "games.gw2.scope":
-    "Guardado en este perfil de Harbor. Cada selección cuenta una oferta; no se comprueban tu saldo, los límites de compra ni el acceso a expansiones. Confirma la disponibilidad y compra en el juego.",
+    "Guardado en este perfil de Frame. Cada selección cuenta una oferta; no se comprueban tu saldo, los límites de compra ni el acceso a expansiones. Confirma la disponibilidad y compra en el juego.",
   "games.gw2.total": "Total planificado",
   "games.gw2.currency": "Reconocimiento astral",
   "games.gw2.selected": "{count} ofertas seleccionadas",

@@ -36,7 +36,7 @@ export const SECTION_TABS: Partial<Record<SectionId, TabEntry[]>> = {
     { id: "svp", label: "SVP", icon: "Film" },
   ],
   language: [
-    { id: "app", label: "Harbor", icon: "AppLanguage" },
+    { id: "app", label: "Frame", icon: "AppLanguage" },
     { id: "audio", label: "Audio", icon: "AudioLines" },
     { id: "discovery", label: "What you see", icon: "Eye" },
   ],

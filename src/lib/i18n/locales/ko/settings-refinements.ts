@@ -17,8 +17,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "성인 애드온 활동은 Discord에 표시되지 않습니다.",
   "Ad skipping": "광고 건너뛰기",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "TMDB를 추가하면 더 많은 카탈로그와 아트워크를 이용할 수 있습니다. 다른 제공업체는 아래 기능을 추가합니다. 키를 추가하지 않아도 Cinemeta로 Harbor를 사용할 수 있습니다.",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "TMDB를 추가하면 더 많은 카탈로그와 아트워크를 이용할 수 있습니다. 다른 제공업체는 아래 기능을 추가합니다. 키를 추가하지 않아도 Cinemeta로 Frame를 사용할 수 있습니다.",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "다운로드 옆에 타이머를 추가합니다. 설정한 시간이나 에피소드 수가 지나면 재생을 일시 정지합니다.",
   "Add an API key to use this source.": "이 소스를 사용하려면 API 키를 추가하세요.",
@@ -75,14 +75,14 @@ const settingsRefinements: Record<string, string> = {
     "화질과 성능의 균형을 조정합니다. 변경 사항은 다음에 재생하는 동영상에 적용됩니다.",
   "Between episodes": "에피소드 사이",
   "Between episodes on the TV": "TV에서 에피소드 사이",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "애니메이션 목록을 Harbor로 가져오고 시청하면서 시청한 화수를 업데이트합니다. 기존 진행 상황은 유지됩니다.",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "애니메이션 목록을 Frame로 가져오고 시청하면서 시청한 화수를 업데이트합니다. 기존 진행 상황은 유지됩니다.",
   "Bringing your Stremio library?": "Stremio 라이브러리를 가져오시나요?",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "One Piece 등 지원되는 작품을 스토리 편별로 탐색합니다. TMDB 키가 필요합니다.",
   "Browse pages": "페이지 탐색",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "Harbor에서 애니메이션 목록을 탐색하고 시청하면서 에피소드 진행 상황을 업데이트합니다. 연결하려면 AniList에 로그인하세요.",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "Frame에서 애니메이션 목록을 탐색하고 시청하면서 에피소드 진행 상황을 업데이트합니다. 연결하려면 AniList에 로그인하세요.",
   "Browser details": "브라우저 세부 정보",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "이름을 지정한 필터를 한 번 만들고 소스 선택기에 적용하여 복잡한 스트림 목록을 원하는 결과로 좁히세요.",
@@ -104,8 +104,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "이 기기에서 저장된 서버 주소에 연결할 수 있는지 확인합니다.",
   "Checking SVP installation…": "SVP 설치 확인 중…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "Harbor 백업을 선택하고 복원 전에 내용을 검토하세요. Stremio 로그인 정보는 이 기기에 남습니다.",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "Frame 백업을 선택하고 복원 전에 내용을 검토하세요. Stremio 로그인 정보는 이 기기에 남습니다.",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "화면 스타일을 선택하거나 각 설정을 조정하세요. 화면 초기화는 원래 값으로 되돌립니다.",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -127,14 +127,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "TV에서 탐색할 때 표시할 서비스를 선택하세요.",
   "Choose the streams you prefer.": "선호하는 스트림을 선택하세요.",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "Harbor를 닫거나 최소화하거나 다른 앱으로 전환할 때의 동작을 선택하세요.",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "Harbor에서 프로필 선택을 요청할 시점을 정하세요. 시간 설정에 따른 요청은 Harbor로 돌아올 때 표시됩니다.",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "다음 에피소드가 시작되는 시점과 Harbor가 계속 시청 중인지 확인하는 시점을 선택하세요.",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "Harbor가 자막을 검색할 소스를 선택하세요. 활성화된 소스의 결과는 중복을 제거한 뒤 함께 표시됩니다.",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "Frame를 닫거나 최소화하거나 다른 앱으로 전환할 때의 동작을 선택하세요.",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "Frame에서 프로필 선택을 요청할 시점을 정하세요. 시간 설정에 따른 요청은 Frame로 돌아올 때 표시됩니다.",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "다음 에피소드가 시작되는 시점과 Frame가 계속 시청 중인지 확인하는 시점을 선택하세요.",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "Frame가 자막을 검색할 소스를 선택하세요. 활성화된 소스의 결과는 중복을 제거한 뒤 함께 표시됩니다.",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "동영상과 전자책의 저장 위치 및 폴더 정리 방식을 선택하세요.",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -171,8 +171,8 @@ const settingsRefinements: Record<string, string> = {
     "MyAnimeList 계정을 연결해 시청 진행 상황을 동기화하고 목록을 둘러보세요.",
   "Connect {service}": "{service} 연결",
   "Contact & credit": "연락처 및 이름 표시",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "Harbor를 사용하는 동안 Discord 프로필에 표시할 내용을 설정하세요.",
+  "Control what appears on your Discord profile while you use Frame.":
+    "Frame를 사용하는 동안 Discord 프로필에 표시할 내용을 설정하세요.",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "디스플레이에 맞게 밝은 부분을 줄이는 방식을 설정합니다. 도표에서 각 곡선을 확인할 수 있습니다.",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -196,27 +196,27 @@ const settingsRefinements: Record<string, string> = {
     "{name}을(를) 저장할 수 없습니다. 쓰기 가능한 폴더를 선택하고 다시 시도하세요.",
   "Couldn't copy the address. Select it above and copy it manually.":
     "주소를 복사하지 못했습니다. 위에서 주소를 선택해 직접 복사하세요.",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "Harbor에 연결할 수 없습니다. 연결 상태를 확인한 후 다시 시도하세요.",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "Frame에 연결할 수 없습니다. 연결 상태를 확인한 후 다시 시도하세요.",
   "Covers everything. The taskbar is hidden.": "화면 전체를 채우고 작업 표시줄을 숨깁니다.",
   "Create a stream filter": "스트림 필터 만들기",
-  "Create a theme or share one you've made with the Harbor community.":
-    "테마를 만들거나 직접 만든 테마를 Harbor 커뮤니티와 공유하세요.",
+  "Create a theme or share one you've made with the Frame community.":
+    "테마를 만들거나 직접 만든 테마를 Frame 커뮤니티와 공유하세요.",
   "Create my account": "내 계정 만들기",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "Harbor를 사용하는 사람마다 프로필을 만드세요. 각자 별도의 모양, 설정, PIN을 사용할 수 있습니다.",
-  "Create your Harbor account": "Harbor 계정 만들기",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "Frame를 사용하는 사람마다 프로필을 만드세요. 각자 별도의 모양, 설정, PIN을 사용할 수 있습니다.",
+  "Create your Frame account": "Frame 계정 만들기",
   "Create your first filter with the stream quality you prefer.":
     "선호하는 스트림 화질로 첫 필터를 만드세요.",
   "Custom color": "사용자 지정 색상",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "나만의 CSS, JavaScript, HTML로 Harbor를 꾸미세요. 입력하는 즉시 변경 사항이 적용됩니다.",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "나만의 CSS, JavaScript, HTML로 Frame를 꾸미세요. 입력하는 즉시 변경 사항이 적용됩니다.",
   "Default Downloads folder": "기본 다운로드 폴더",
   "Delete this rule?": "이 규칙을 삭제할까요?",
   "Describe the problem in one sentence.": "문제를 한 문장으로 설명하세요.",
   "Describe the result you were after.": "기대했던 결과를 설명하세요.",
-  "Describe what Harbor did instead, including any message on screen.":
-    "화면에 표시된 메시지를 포함해 Harbor에서 실제로 일어난 일을 설명하세요.",
+  "Describe what Frame did instead, including any message on screen.":
+    "화면에 표시된 메시지를 포함해 Frame에서 실제로 일어난 일을 설명하세요.",
   "Device compatibility": "기기 호환성",
   "Discovery languages": "콘텐츠 탐색 언어",
   "Down the river": "강을 따라",
@@ -239,8 +239,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "이 PIN을 저장하려면 네 자리 숫자를 모두 입력하세요.",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "brightness=5처럼 한 줄에 mpv 옵션 하나를 입력하세요. 다른 페이지의 동영상 설정보다 우선 적용됩니다. 잘못된 옵션은 재생에 영향을 줄 수 있습니다. 변경 사항을 적용하려면 재생을 다시 시작하세요.",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "Harbor를 위해 그린 모든 아이콘과 애니메이션, 제작자, 저장 방법을 살펴보세요.",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "Frame를 위해 그린 모든 아이콘과 애니메이션, 제작자, 저장 방법을 살펴보세요.",
   "Example scores with your settings.": "현재 설정이 적용된 평점 예시입니다.",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "시더 수가 적거나 시더 수 정보가 없는 스트림을 제외합니다. 제한하지 않으려면 비워 두거나 0을 입력하세요.",
@@ -260,8 +260,8 @@ const settingsRefinements: Record<string, string> = {
     "사용하려면 먼저 위에서 SVP 엔진 설정을 완료하세요.",
   "Forget remote streaming server": "저장된 원격 스트리밍 서버 삭제",
   "Forgot password?": "비밀번호를 잊으셨나요?",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "재생 중 화면을 처리하는 GPU 셰이더입니다. Anime4K 업스케일링, HDR 톤 매핑, 신경망 업스케일러, 선명화 등을 원하는 대로 다운로드하면 Harbor가 mpv 엔진에 적용합니다.",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "재생 중 화면을 처리하는 GPU 셰이더입니다. Anime4K 업스케일링, HDR 톤 매핑, 신경망 업스케일러, 선명화 등을 원하는 대로 다운로드하면 Frame가 mpv 엔진에 적용합니다.",
   "Get SVP": "SVP 받기",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "Discord나 Telegram에서 공개 알림을 받으세요. 수신 대상을 연결한 다음 알림 소스와 규칙을 선택하세요.",
@@ -276,28 +276,28 @@ const settingsRefinements: Record<string, string> = {
   "Handles cannot start or end with a hyphen.": "핸들의 처음이나 끝에 하이픈을 사용할 수 없습니다.",
   "Handles need at least 3 characters.": "핸들은 3자 이상이어야 합니다.",
   "Handles need at least one letter.": "핸들에는 영문자가 하나 이상 있어야 합니다.",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "Steamboat Willie와 The General을 표시하는 Harbor 탐색 화면",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "Harbor는 수신 기기를 확인하고 스트림 변환이 필요할 때 ffmpeg를 사용합니다.",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "Harbor가 P2P 설정을 적용하지 못했습니다. Harbor를 다시 열어 시도하세요.",
-  "Harbor couldn't check the SVP installation. Try again.":
-    "Harbor가 SVP 설치를 확인하지 못했습니다. 다시 시도하세요.",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "Harbor는 이 순서로 자막을 찾습니다. 선호하는 언어를 맨 위에 두세요.",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "다른 기기에서 사용하는 Harbor: 웹 앱, 휴대폰 리모컨, 만화 리더 리모컨.",
-  "Harbor profile showing watch statistics": "시청 통계가 표시된 Harbor 프로필",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harbor는 자체 커뮤니티 서버를 사용합니다. 직접 운영하는 서버를 사용하도록 설정할 수도 있습니다.",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "Harbor의 내장 P2P 엔진, 자체 검사, 연결할 스트리밍 서버를 설정합니다.",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "Harbor의 라이선스, 기반 프로젝트, 이를 가능하게 하는 사람과 서비스를 소개합니다.",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "Harbor 원격 서버가 {WEB_PORT} 포트에서 응답하지 않습니다. 데스크톱 서버가 실행 중인지 확인하거나 이 설정을 껐다 켜서 다시 시작하세요.",
-  "Harbor, with a few classics.": "몇 편의 고전과 함께하는 Harbor.",
+  "Frame Discover showing Steamboat Willie and The General":
+    "Steamboat Willie와 The General을 표시하는 Frame 탐색 화면",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "Frame는 수신 기기를 확인하고 스트림 변환이 필요할 때 ffmpeg를 사용합니다.",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "Frame가 P2P 설정을 적용하지 못했습니다. Frame를 다시 열어 시도하세요.",
+  "Frame couldn't check the SVP installation. Try again.":
+    "Frame가 SVP 설치를 확인하지 못했습니다. 다시 시도하세요.",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "Frame는 이 순서로 자막을 찾습니다. 선호하는 언어를 맨 위에 두세요.",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "다른 기기에서 사용하는 Frame: 웹 앱, 휴대폰 리모컨, 만화 리더 리모컨.",
+  "Frame profile showing watch statistics": "시청 통계가 표시된 Frame 프로필",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frame는 자체 커뮤니티 서버를 사용합니다. 직접 운영하는 서버를 사용하도록 설정할 수도 있습니다.",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "Frame의 내장 P2P 엔진, 자체 검사, 연결할 스트리밍 서버를 설정합니다.",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "Frame의 라이선스, 기반 프로젝트, 이를 가능하게 하는 사람과 서비스를 소개합니다.",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "Frame 원격 서버가 {WEB_PORT} 포트에서 응답하지 않습니다. 데스크톱 서버가 실행 중인지 확인하거나 이 설정을 껐다 켜서 다시 시작하세요.",
+  "Frame, with a few classics.": "몇 편의 고전과 함께하는 Frame.",
   "Help & about": "도움말 및 정보",
   "Hex color": "16진수 색상",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -305,9 +305,9 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "탐색에서 {name} 숨기기",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "높음은 더 선명한 이미지를 불러옵니다. 탐색이 느리면 균형을 선택하세요. 동영상 화질에는 영향을 주지 않습니다.",
-  "How long Harbor waits for each addon to return results.":
-    "Harbor가 각 애드온의 결과를 기다리는 시간입니다.",
-  "How much does this affect your use of Harbor?": "Harbor 사용에 어느 정도 영향을 주나요?",
+  "How long Frame waits for each addon to return results.":
+    "Frame가 각 애드온의 결과를 기다리는 시간입니다.",
+  "How much does this affect your use of Frame?": "Frame 사용에 어느 정도 영향을 주나요?",
   "How to connect Discord": "Discord 연결 방법",
   "How to connect Telegram": "Telegram 연결 방법",
   "How video plays, how it looks, and what happens between episodes.":
@@ -327,18 +327,18 @@ const settingsRefinements: Record<string, string> = {
   "Included with your report: app and device details, enabled-service counts, the player check, and recent error messages.":
     "보고서에는 앱 및 기기 정보, 활성화된 서비스 수, 플레이어 검사 결과, 최근 오류 메시지가 포함됩니다.",
   "Install SVP and check again before enabling it.": "사용하려면 SVP를 설치하고 다시 확인하세요.",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "SVP와 VapourSynth 구성 요소를 설치한 후 Harbor가 찾을 수 있도록 다시 확인하세요.",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "아이콘 팩을 설치하거나 각 상에 사용할 이미지를 직접 업로드하세요. 팩은 제작자가 호스팅하며 Harbor에 포함되지 않습니다.",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "SVP와 VapourSynth 구성 요소를 설치한 후 Frame가 찾을 수 있도록 다시 확인하세요.",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "아이콘 팩을 설치하거나 각 상에 사용할 이미지를 직접 업로드하세요. 팩은 제작자가 호스팅하며 Frame에 포함되지 않습니다.",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "업데이트를 설치하고 베타 빌드를 사용해 보며 설정 사본을 보관하세요.",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "즉시 재생은 순위가 가장 높은 스트림을 바로 시작합니다. 소스 선택은 매번 스트림 목록을 열어 릴리스, 화질, 제공업체를 직접 고르게 합니다.",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "오프닝이 시작되면 즉시 자동으로 건너뜁니다. 오프닝으로 되돌리면 다시 건너뛰지 않고 재생합니다. 건너뛰기 버튼은 위 설정을 따릅니다.",
-  "Keep Harbor fullscreen when you close the player.":
-    "플레이어를 닫아도 Harbor를 전체 화면으로 유지합니다.",
+  "Keep Frame fullscreen when you close the player.":
+    "플레이어를 닫아도 Frame를 전체 화면으로 유지합니다.",
   "Keep code": "코드 유지",
   "Keep my shortcuts": "내 단축키 유지",
   "Keep rule": "규칙 유지",
@@ -359,15 +359,15 @@ const settingsRefinements: Record<string, string> = {
   "Kids avatar {number}": "어린이 아바타 {number}",
   "Language preference order": "언어 우선순위",
   "Larger artwork with the song title below it.": "큰 이미지 아래에 곡 제목을 표시합니다.",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "Harbor 인터페이스가 깜박이거나 끊기지 않는다면 자동으로 두세요. 동영상 재생이 아닌 앱 창에 적용되는 설정입니다.",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
-    "debrid 링크를 사용할 수 없을 때 Harbor가 이 기기에서 P2P로 재생하도록 허용합니다. 끄면 로컬 P2P 재생을 막습니다. 설정한 원격 서버에서는 계속 재생할 수 있습니다.",
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "Frame 인터페이스가 깜박이거나 끊기지 않는다면 자동으로 두세요. 동영상 재생이 아닌 앱 창에 적용되는 설정입니다.",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+    "debrid 링크를 사용할 수 없을 때 Frame가 이 기기에서 P2P로 재생하도록 허용합니다. 끄면 로컬 P2P 재생을 막습니다. 설정한 원격 서버에서는 계속 재생할 수 있습니다.",
   Licence: "라이선스",
   "Licenses & attribution": "라이선스 및 저작자 표시",
   "Lightens or darkens the whole picture.": "전체 화면을 밝게 하거나 어둡게 합니다.",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "Harbor를 여는 시점부터 문제가 발생하기까지의 단계를 적어 주세요.",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "Frame를 여는 시점부터 문제가 발생하기까지의 단계를 적어 주세요.",
   "Load failed. Retry": "불러오기 실패. 다시 시도",
   "Loading {name}…": "{name} 불러오는 중…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -392,8 +392,8 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "{language} 우선순위 높이기",
   "Move {name} down": "{name} 아래로 이동",
   "Move {name} up": "{name} 위로 이동",
-  "No custom options. Harbor uses your video settings.":
-    "사용자 지정 옵션이 없습니다. Harbor가 동영상 설정을 사용합니다.",
+  "No custom options. Frame uses your video settings.":
+    "사용자 지정 옵션이 없습니다. Frame가 동영상 설정을 사용합니다.",
   "No default profile": "기본 프로필 없음",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "선택한 환경설정이 없습니다. 이 필터를 편집해 선호하는 스트림을 선택하세요.",
@@ -408,7 +408,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "알림 소스",
   "On your local network": "내 로컬 네트워크에서",
   "On-screen controls": "화면 컨트롤",
-  "Open Harbor account": "Harbor 계정 열기",
+  "Open Frame account": "Frame 계정 열기",
   "Open Stremio settings": "Stremio 설정 열기",
   "Open on YouTube": "YouTube에서 열기",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -416,8 +416,8 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "시작할 때 이 프로필을 엽니다. 이후에도 시간에 따른 확인 메시지가 표시될 수 있습니다. PIN이 있는 프로필은 기본으로 설정할 수 없습니다.",
   "Open {label} address": "{label} 주소 열기",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
-    "제작자로부터 다운로드하는 선택적 동영상 효과입니다. Harbor는 활성화된 셰이더를 아래 순서대로 적용합니다.",
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
+    "제작자로부터 다운로드하는 선택적 동영상 효과입니다. Frame는 활성화된 셰이더를 아래 순서대로 적용합니다.",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "선택 사항입니다. 후속 연락을 받아도 된다면 연락처를 남기고 이름을 공개할지 선택하세요.",
   "Optional. Used to allow more watch time. Without a PIN, switch profiles when time is up.":
@@ -484,13 +484,13 @@ const settingsRefinements: Record<string, string> = {
   "Right in the middle of the picture, hard to miss.": "눈에 잘 띄도록 화면 한가운데에 표시합니다.",
   "Rule name": "규칙 이름",
   "SVP interpolation": "SVP 보간",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "SVP가 모션 스무딩을 처리하고 있습니다. Harbor의 스무딩을 사용하려면 SVP 페이지에서 끄세요.",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "SVP가 모션 스무딩을 처리하고 있습니다. Frame의 스무딩을 사용하려면 SVP 페이지에서 끄세요.",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "같은 영역을 채우면서 창 모드를 유지해 alt-tab으로 즉시 전환할 수 있습니다.",
   "Saturation {s}%, brightness {v}%": "채도 {s}%, 밝기 {v}%",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
-    "선호하는 스트림 화질을 저장하세요. 설정한 모든 항목이 일치해야 합니다. 제한하지 않을 항목은 비워 두세요. 일치하는 스트림이 없으면 Harbor가 다음으로 좋은 소스를 사용합니다.",
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
+    "선호하는 스트림 화질을 저장하세요. 설정한 모든 항목이 일치해야 합니다. 제한하지 않을 항목은 비워 두세요. 일치하는 스트림이 없으면 Frame가 다음으로 좋은 소스를 사용합니다.",
   "Save {name} as JSON": "{name}을(를) JSON으로 저장",
   "Save {name} as SVG": "{name}을(를) SVG로 저장",
   "Saved {name}.": "{name}을(를) 저장했습니다.",
@@ -503,8 +503,8 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "보조 텍스트가 표시됩니다",
   "See the resolution, HDR format and audio while you watch.":
     "시청 중 해상도, HDR 형식, 오디오를 확인하세요.",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
-    "Harbor가 이 컴퓨터에 저장한 내용을 확인하고 공간이 필요할 때 캐시를 지우세요.",
+  "See what Frame stores on this computer and clear caches when you want the space back.":
+    "Frame가 이 컴퓨터에 저장한 내용을 확인하고 공간이 필요할 때 캐시를 지우세요.",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "특정 스피커, 헤드폰 또는 리시버로 오디오를 출력합니다. 시스템 기본값은 시스템 오디오 출력을 따릅니다.",
   "Services that record what you watch. Connect the ones you use and tune what each one sends.":
@@ -514,8 +514,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "수신 대상 설정",
   "Set up rating providers": "평점 제공업체 설정",
   "Set up song identification": "노래 식별 설정",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "여기에서 TV를 설정하세요. 이 페이지의 모든 설정은 Harbor 계정에 저장되어 TV의 Big Picture에 적용되므로 리모컨으로 입력할 필요가 없습니다.",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "여기에서 TV를 설정하세요. 이 페이지의 모든 설정은 Frame 계정에 저장되어 TV의 Big Picture에 적용되므로 리모컨으로 입력할 필요가 없습니다.",
   "Sets the age level for the kids space.": "어린이 공간의 연령 수준을 설정합니다.",
   "Setting up SVP…": "SVP 설정 중…",
   "Share your style": "나만의 스타일 공유",
@@ -557,8 +557,8 @@ const settingsRefinements: Record<string, string> = {
     "테두리가 있는 작은 둥근 라벨이 제목 아래로 미끄러져 나타납니다.",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "모션 스무딩과 SVP 관련 설정입니다. 애니메이션 프레임 보간은 여기서 설정하며 영상 셰이더는 별도 탭으로 이동했습니다.",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "Harbor 플레이어로 카메라 움직임을 부드럽게 합니다. 화면 주사율이 동영상 프레임 레이트보다 높을 때 가장 효과적입니다.",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "Frame 플레이어로 카메라 움직임을 부드럽게 합니다. 화면 주사율이 동영상 프레임 레이트보다 높을 때 가장 효과적입니다.",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "SVP로 움직임을 부드럽게 합니다. 적용하려면 재생을 다시 시작하세요. 동영상이 재생되지 않으면 끄세요.",
   "Soften the artwork behind the stream picker.": "스트림 선택기 뒤의 이미지를 부드럽게 만듭니다.",
@@ -566,8 +566,8 @@ const settingsRefinements: Record<string, string> = {
     "이 빌드에서는 일부 TV 설정을 동기화할 수 없습니다. 변경 사항은 이 컴퓨터에 저장됩니다.",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "누군가 최근에 이 핸들을 해제했습니다. 해제한 날로부터 14일 후 사용할 수 있습니다.",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "예상과 다르게 동작하지만 Harbor를 계속 사용할 수 있습니다.",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "예상과 다르게 동작하지만 Frame를 계속 사용할 수 있습니다.",
   "Something looks wrong, but the feature still works.": "모양에 문제가 있지만 기능은 작동합니다.",
   "Something went wrong. Try again.": "문제가 발생했습니다. 다시 시도하세요.",
   "Source picker": "소스 선택기",
@@ -602,8 +602,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "원격 스트리밍 서버 테스트 중",
   "Text is enlarged in this preview so you can judge the style.":
     "스타일을 확인하기 쉽도록 이 미리보기에서는 텍스트를 크게 표시합니다.",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "이 Stremio 계정은 다른 Harbor 계정에 연결되어 있습니다. 먼저 해당 계정에서 연결을 해제하세요.",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "이 Stremio 계정은 다른 Frame 계정에 연결되어 있습니다. 먼저 해당 계정에서 연결을 해제하세요.",
   "That Stremio sign-in did not go through. Try again.":
     "Stremio 로그인에 실패했습니다. 다시 시도하세요.",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
@@ -637,12 +637,12 @@ const settingsRefinements: Record<string, string> = {
     "대부분의 사용자가 한 번만 설정하는 몇 가지 항목입니다.",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "대부분의 사용자가 한 번만 설정하는 항목입니다. 로그인하고 재생 방식과 모양을 선택하세요.",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "Harbor 메뉴, 버튼, 라벨의 언어입니다. 오디오, 자막, 작품 정보에는 각각 별도의 언어 설정이 있습니다.",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "Frame 메뉴, 버튼, 라벨의 언어입니다. 오디오, 자막, 작품 정보에는 각각 별도의 언어 설정이 있습니다.",
   "The same slow camera pan, with motion smoothing off and on.":
     "움직임을 부드럽게 처리하는 기능을 끈 상태와 켠 상태의 동일한 느린 카메라 패닝입니다.",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "저장된 JavaScript가 제거됩니다. 이미 실행된 스크립트의 효과를 지우려면 Harbor를 다시 시작하세요.",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "저장된 JavaScript가 제거됩니다. 이미 실행된 스크립트의 효과를 지우려면 Frame를 다시 시작하세요.",
   "The saved {name} will be removed and its changes will stop applying.":
     "저장된 {name}이(가) 제거되고 해당 변경 사항이 더 이상 적용되지 않습니다.",
   "The server responded in {ms} ms.": "서버가 {ms}밀리초 만에 응답했습니다.",
@@ -650,7 +650,7 @@ const settingsRefinements: Record<string, string> = {
     "환경설정과 조회 데이터를 포함하여 용량이 가장 큰 로컬 설정 항목 6개입니다.",
   "{count} entries": "{count}개 항목",
   "The volume pop-up is hidden.": "음량 팝업이 숨겨져 있습니다.",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
     "테마, 플레이어 레이아웃, 이미지, 카드에 표시할 내용입니다.",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "이 계정은 이용이 정지되었습니다. 잘못된 조치라고 생각하면 지원팀에 문의하세요.",
@@ -658,7 +658,7 @@ const settingsRefinements: Record<string, string> = {
   "This backup has no data in it.": "이 백업에 데이터가 없습니다.",
   "This is how your subtitles": "TV에서 자막이",
   "This is how your subtitles will look.": "자막은 이렇게 표시됩니다.",
-  "This is not a Harbor backup file.": "Harbor 백업 파일이 아닙니다.",
+  "This is not a Frame backup file.": "Frame 백업 파일이 아닙니다.",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "이 컴퓨터의 스트림을 다른 기기에서 재생하려면 로컬 네트워크 주소를 복사해 해당 기기의 원격 스트리밍 서버 설정에 입력하세요.",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -684,8 +684,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "번역되지 않은 텍스트는 영어로 표시됩니다. 언어를 선택한 다음 적용 및 새로고침을 선택하세요.",
   "Unwatched episodes": "미시청 에피소드",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "내 사진을 업로드하거나 Harbor 카탈로그에서 선택하세요.",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "내 사진을 업로드하거나 Frame 카탈로그에서 선택하세요.",
   "Use letters, numbers, and single hyphens only.":
     "영문자, 숫자, 연속하지 않는 하이픈만 사용하세요.",
   "Use no saved stream filter": "저장된 스트림 필터 사용 안 함",
@@ -694,8 +694,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "{name} 사용",
   "Used only if we need one more detail to reproduce the bug.":
     "문제를 재현하기 위해 추가 정보가 필요할 때만 사용합니다.",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "SVP로 Harbor 플레이어의 움직임을 부드럽게 합니다. SVP를 한 번 설치하면 Harbor가 엔진을 사용하고 필요할 때 SVP Manager를 엽니다.",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "SVP로 Frame 플레이어의 움직임을 부드럽게 합니다. SVP를 한 번 설치하면 Frame가 엔진을 사용하고 필요할 때 SVP Manager를 엽니다.",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "VapourSynth를 통해 SVP 모션 엔진을 사용합니다. 적용하려면 재생을 다시 시작하세요.",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -706,16 +706,16 @@ const settingsRefinements: Record<string, string> = {
     "최신 렌더러에서 문제가 있는 그래픽 카드를 위해 이전 GPU 렌더러를 사용합니다.",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "프로세서로 동영상을 디코딩합니다. 하드웨어 디코딩으로 영상 문제가 생기면 시도하세요.",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "Linux에 설치된 SVP와 VapourSynth로 Harbor 플레이어의 움직임을 부드럽게 합니다.",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "Linux에 설치된 SVP와 VapourSynth로 Frame 플레이어의 움직임을 부드럽게 합니다.",
   "Video quality": "동영상 화질",
   "View generated mpv options": "생성된 mpv 옵션 보기",
   "Volume pop-up": "음량 팝업",
   "We tag this account on the issue so you see the fix land.":
     "수정 완료를 확인할 수 있도록 이슈에 이 계정을 태그합니다.",
-  "What language Harbor speaks, and how subtitles behave.": "Harbor의 표시 언어와 자막 동작입니다.",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "Harbor의 표시 언어와 우선 선택할 오디오 트랙입니다.",
+  "What language Frame speaks, and how subtitles behave.": "Frame의 표시 언어와 자막 동작입니다.",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "Frame의 표시 언어와 우선 선택할 오디오 트랙입니다.",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "스트림의 출처, 필터링 방식, 관련 메타데이터입니다.",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -728,7 +728,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "창 동작",
   "You can also turn off Rule is active to pause it without deleting it.":
     "규칙 활성화를 꺼서 삭제하지 않고 일시 중지할 수도 있습니다.",
-  "You cannot use Harbor.": "Harbor를 사용할 수 없습니다.",
+  "You cannot use Frame.": "Frame를 사용할 수 없습니다.",
   "You changed your handle recently. You can change it again after the cooldown.":
     "최근에 핸들을 변경했습니다. 대기 기간이 끝나면 다시 변경할 수 있습니다.",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

@@ -61,7 +61,7 @@ export function RepositoriesTab() {
       <Section
         title={t("Add a repository")}
         subtitle={t(
-          "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories, provider-script repositories and Android extension repositories as they are, and installs nothing until you choose to.",
+          "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories, provider-script repositories and Android extension repositories as they are, and installs nothing until you choose to.",
         )}
       >
         <SettingRow
@@ -71,7 +71,7 @@ export function RepositoriesTab() {
           desc={
             added ??
             t(
-              "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.",
+              "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.",
             )
           }
           warn={error ?? undefined}
@@ -133,7 +133,7 @@ export function RepositoriesTab() {
         <ToggleRow
           label={t("Check repositories daily")}
           sub={t(
-            "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.",
+            "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.",
           )}
           value={settings.pluginsAutoCheck}
           onChange={(v) => update({ pluginsAutoCheck: v })}

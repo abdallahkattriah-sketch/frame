@@ -158,7 +158,7 @@ export function openErrorReportIssue(args: {
   const body = [
     `**Error:** \`${args.code}\` ${args.title}`,
     `**Message:** ${args.message}`,
-    `**Harbor:** ${appVersion()}`,
+    `**Frame:** ${appVersion()}`,
     `**User agent:** ${ua}`,
     path ? `**Screen:** \`${path}\`` : "",
     args.detail ? `\n**Technical detail**\n\n\`\`\`\n${args.detail}\n\`\`\`` : "",
@@ -193,7 +193,7 @@ export function openBugReportIssue(input: BugReportInput, diag: Diagnostics): st
       : "",
     reporter ? `### Reporter\n\n${reporter}\n` : "",
     "### Diagnostics\n",
-    `- **Harbor:** ${diag.appVersion}`,
+    `- **Frame:** ${diag.appVersion}`,
     `- **OS:** ${diag.os} ${diag.osVersion}`.trimEnd(),
     `- **Viewport:** ${diag.viewport}`,
     `- **Locale:** ${diag.locale}`,

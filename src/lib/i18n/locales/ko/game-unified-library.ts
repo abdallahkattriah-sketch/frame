@@ -3,7 +3,7 @@ export default {
     "Battle.net 계정이 변경되었습니다. 이 프로필의 가져온 항목을 교체하려면 다시 로그인하세요.",
   "games.battlenet.connect": "로그인",
   "games.battlenet.intro":
-    "게임을 가져오려면 Battle.net에 로그인하세요. 이 연결은 현재 Harbor 프로필에 저장됩니다.",
+    "게임을 가져오려면 Battle.net에 로그인하세요. 이 연결은 현재 Frame 프로필에 저장됩니다.",
   "games.battlenet.installed": "설치된 게임 표시",
   "games.battlenet.uninstalled": "계정의 미설치 게임 표시",
   "games.battlenet.partial":
@@ -14,7 +14,7 @@ export default {
   "games.battlenet.timeout": "Battle.net의 응답 시간이 초과되었습니다. 다시 시도하세요.",
   "games.battlenet.busy": "Battle.net 계정 작업이 이미 진행 중입니다.",
   "games.battlenet.update":
-    "Battle.net에 연결하려면 업데이트된 Harbor 데스크톱 앱을 다시 시작하세요.",
+    "Battle.net에 연결하려면 업데이트된 Frame 데스크톱 앱을 다시 시작하세요.",
   "games.battlenet.error":
     "Battle.net을 업데이트할 수 없습니다. 마지막으로 가져온 라이브러리는 보관됩니다.",
   "games.battlenet.disconnect": "Battle.net 연결 해제",
@@ -26,7 +26,7 @@ export default {
   "games.launcherSession.waiting": "게임 시작 대기 중",
   "games.launcherSession.unconfirmed": "게임 상태 확인 중",
   "games.launcherSession.notStarted": "게임이 시작되지 않았습니다",
-  "games.launcherSession.error": "게임 활동을 기록할 수 없습니다. Harbor를 다시 열어 재시도하세요.",
+  "games.launcherSession.error": "게임 활동을 기록할 수 없습니다. Frame를 다시 열어 재시도하세요.",
 
   "games.steamImport.importedTitle": "가져온 게임",
   "games.steamImport.excluded": "가져오기 설정에 따라 제외됨",
@@ -38,7 +38,7 @@ export default {
   "games.steamImport.ignoreSaved": "제외할 ID를 저장했습니다.",
   "games.steamImport.title": "Steam 게임 가져오기",
   "games.steamImport.note":
-    "이 Harbor 프로필에 게임 기록을 보관합니다. 소유권과 설치 상태는 별도로 확인합니다.",
+    "이 Frame 프로필에 게임 기록을 보관합니다. 소유권과 설치 상태는 별도로 확인합니다.",
   "games.steamImport.input": "Steam 앱 ID 또는 상점 URL",
   "games.steamImport.profile": "Depressurizer 프로필 선택",
   "games.steamImport.count": "{selected}개 선택 · 전체 {total}개",
@@ -79,7 +79,7 @@ export default {
   "games.libraryStatus.onHold": "보류",
   "games.libraryStatus.stopped": "플레이 중단",
   "games.libraryStatus.note":
-    "이 사본에 대한 선택은 현재 Harbor 프로필에 저장됩니다. 플레이 시간이나 도전 과제로 자동 변경되지 않습니다.",
+    "이 사본에 대한 선택은 현재 Frame 프로필에 저장됩니다. 플레이 시간이나 도전 과제로 자동 변경되지 않습니다.",
 
   "games.unified.playtime": "플레이 시간",
   "games.unified.playtime.all": "모든 플레이 시간",
@@ -91,11 +91,11 @@ export default {
   "games.unified.playtime.most": "기록 시간 많은 순",
   "games.unified.playtime.steam": "Steam에서 {time}",
   "games.unified.playtime.zeroSteam": "Steam에 기록된 플레이 시간 없음",
-  "games.unified.playtime.zeroHarbor": "Harbor에 기록된 플레이 시간 없음",
+  "games.unified.playtime.zeroHarbor": "Frame에 기록된 플레이 시간 없음",
   "games.unified.playtime.unknownHint":
     "Steam 계정의 플레이 시간을 확인할 수 없거나 이 출처가 플레이 시간을 제공하지 않습니다.",
   "games.unified.playtime.note":
-    "Steam 총 시간과 사용자의 수정 사항을 포함한 Harbor 기록 시간을 사용합니다. 확인할 수 없는 시간은 별도로 구분합니다.",
+    "Steam 총 시간과 사용자의 수정 사항을 포함한 Frame 기록 시간을 사용합니다. 확인할 수 없는 시간은 별도로 구분합니다.",
   "games.unified.note": "Steam 라이브러리, PC 게임, 가져온 ROM을 한곳에서 확인하세요.",
   "games.unified.allSources": "모든 출처",
   "games.unified.availability": "이용 가능 상태",

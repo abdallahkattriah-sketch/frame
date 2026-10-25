@@ -78,13 +78,13 @@ const used: Record<string, string> = {
     "يكبّر الملصقات المجاورة بلطف أثناء تنقّلك عبر صف الملصقات.",
   "German Cinema": "السينما الألمانية",
   "German Films": "أفلام ألمانية",
-  "Harbor Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
-    "يقيّم ترتيب Harbor مسيرة كاملة، لا عملًا ناجحًا واحدًا. أربعة عوامل تحرّك الترتيب: مستوى جودة الأعمال في المتوسط، ومقدار ما نال منها إشادة واسعة، والجوائز الكبرى التي فازت بها، وعدد المرات التي حمل فيها الشخص العمل كبطل. تُرجَّح كل ركيزة وتُجمع، ثم تُعدَّل حسب اتساع مجمل الأعمال وحداثتها. يظهر على البطاقة كل رقم يغذّي النتيجة، لتعرف السبب دائمًا.",
-  "Harbor could not find these": "لم يعثر Harbor على هذه",
-  "Harbor loads the native svpflow filter through VapourSynth and starts SVP Manager when available. Restart playback to apply.":
-    "يحمّل Harbor مرشّح svpflow الأصلي عبر VapourSynth ويشغّل SVP Manager عند توفره. أعد التشغيل للتطبيق.",
-  "Harbor's own menus and labels. Subtitle languages come later, and you can change both in Settings.":
-    "قوائم Harbor وتسمياته. لغات الترجمة تأتي لاحقًا، ويمكنك تغيير كليهما من الإعدادات.",
+  "Frame Rank scores a whole career, not a single hit. Four things move a rank: how good the work is on average, how much of it earned wide acclaim, the major awards it won, and how often the person carried the work as a lead. Each pillar is weighted, added up, then adjusted for the breadth and recency of the body of work. Every number that feeds a score is shown on the card, so you can always see why.":
+    "يقيّم ترتيب Frame مسيرة كاملة، لا عملًا ناجحًا واحدًا. أربعة عوامل تحرّك الترتيب: مستوى جودة الأعمال في المتوسط، ومقدار ما نال منها إشادة واسعة، والجوائز الكبرى التي فازت بها، وعدد المرات التي حمل فيها الشخص العمل كبطل. تُرجَّح كل ركيزة وتُجمع، ثم تُعدَّل حسب اتساع مجمل الأعمال وحداثتها. يظهر على البطاقة كل رقم يغذّي النتيجة، لتعرف السبب دائمًا.",
+  "Frame could not find these": "لم يعثر Frame على هذه",
+  "Frame loads the native svpflow filter through VapourSynth and starts SVP Manager when available. Restart playback to apply.":
+    "يحمّل Frame مرشّح svpflow الأصلي عبر VapourSynth ويشغّل SVP Manager عند توفره. أعد التشغيل للتطبيق.",
+  "Frame's own menus and labels. Subtitle languages come later, and you can change both in Settings.":
+    "قوائم Frame وتسمياته. لغات الترجمة تأتي لاحقًا، ويمكنك تغيير كليهما من الإعدادات.",
   "Hide breakdown": "إخفاء التفصيل",
   "Hide card": "إخفاء البطاقة",
   "Hide curated packs": "إخفاء الحزم المنتقاة",
@@ -93,11 +93,11 @@ const used: Record<string, string> = {
   "High is sized to your screen and looks identical to full res on far less memory. Balanced saves the most. Maximum keeps original resolution.":
     "الجودة العالية مضبوطة على مقاس شاشتك وتبدو مطابقة للدقة الكاملة بذاكرة أقل بكثير. المتوازنة توفّر الأكثر. القصوى تحافظ على الدقة الأصلية.",
   "Hover a band to inspect a pillar": "مرّر المؤشر فوق شريط لمعاينة ركيزة",
-  "How Harbor Rank works": "كيف يعمل ترتيب Harbor",
+  "How Frame Rank works": "كيف يعمل ترتيب Frame",
   "How cards look across Home, Discover, and your library. The preview updates live.":
     "شكل البطاقات في الرئيسية واكتشف ومكتبتك. تتحدّث المعاينة مباشرةً.",
-  "How long Harbor waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
-    "مدة انتظار Harbor لكل إضافة كي تُعيد البثوث. قد تحتاج المُجمِّعات التي تبحث في مصادر كثيرة إلى 45 ثانية أو أكثر. تظهر النتائج فور استجابة كل إضافة، لذا لا يؤخّر الانتظار الأطول الإضافات السريعة أبدًا.",
+  "How long Frame waits for each addon to return streams. Aggregators that search many sources can need 45s or more. Results appear as each addon answers, so a longer wait never delays the fast ones.":
+    "مدة انتظار Frame لكل إضافة كي تُعيد البثوث. قد تحتاج المُجمِّعات التي تبحث في مصادر كثيرة إلى 45 ثانية أو أكثر. تظهر النتائج فور استجابة كل إضافة، لذا لا يؤخّر الانتظار الأطول الإضافات السريعة أبدًا.",
   "How the four pillars are weighted": "كيف تُرجَّح الركائز الأربع",
   "How this is ranked": "كيف حُسب هذا الترتيب",
   "If you already rated a title, the imported score replaces it.":
@@ -113,8 +113,8 @@ const used: Record<string, string> = {
   Insert: "إدراج",
   "Install more shaders in Settings, Shaders to switch between them here.":
     "ثبّت مزيدًا من المظللات من الإعدادات، قسم المظللات، للتبديل بينها هنا.",
-  "Installed and detected. Harbor found the native svpflow plugins and VapourSynth script library.":
-    "مثبّت ومكتشَف. عثر Harbor على إضافات svpflow الأصلية ومكتبة نصوص VapourSynth.",
+  "Installed and detected. Frame found the native svpflow plugins and VapourSynth script library.":
+    "مثبّت ومكتشَف. عثر Frame على إضافات svpflow الأصلية ومكتبة نصوص VapourSynth.",
   "Installed packs": "الحزم المثبّتة",
   "Installed shaders": "المظللات المثبّتة",
   "Invited by {name}": "دعوة من {name}",
@@ -124,18 +124,18 @@ const used: Record<string, string> = {
   "Japanese Films": "أفلام يابانية",
   "Korean Films": "أفلام كورية",
   "Last source tried": "آخر مصدر جُرّب",
-  "Leftover installers from past updates, cached trailers, and casting scratch files. Harbor clears old ones on launch, keeping only the most recent installer.":
-    "مثبّتات متبقية من تحديثات سابقة، ومقاطع دعائية مخزّنة مؤقتًا، وملفات عمل مؤقتة للبثّ. يمسح Harbor القديم منها عند الإقلاع، ويُبقي على أحدث مثبّت فقط.",
+  "Leftover installers from past updates, cached trailers, and casting scratch files. Frame clears old ones on launch, keeping only the most recent installer.":
+    "مثبّتات متبقية من تحديثات سابقة، ومقاطع دعائية مخزّنة مؤقتًا، وملفات عمل مؤقتة للبثّ. يمسح Frame القديم منها عند الإقلاع، ويُبقي على أحدث مثبّت فقط.",
   "Local storage is full, these ratings live on your account only.":
     "التخزين المحلي ممتلئ، هذه التقييمات موجودة على حسابك فقط.",
-  "Manga cannot be matched to a Harbor title yet, so {n} were left out.":
-    "لا يمكن مطابقة المانغا بعناوين Harbor بعد، لذا استُبعد منها {n}.",
+  "Manga cannot be matched to a Frame title yet, so {n} were left out.":
+    "لا يمكن مطابقة المانغا بعناوين Frame بعد، لذا استُبعد منها {n}.",
   "Mark all read": "تعليم الكل كمقروء",
   Minecraft: "Minecraft",
   "Modern Russian Series": "مسلسلات روسية حديثة",
   "Mute all profile songs": "كتم جميع أغاني الملفات الشخصية",
-  "Native 48/60fps motion through your Linux SVP and VapourSynth installation, rendered inside Harbor's embedded player.":
-    "حركة أصلية بمعدل 48/60fps عبر تثبيت SVP وVapourSynth على Linux لديك، تُصيَّر داخل مشغّل Harbor المدمج.",
+  "Native 48/60fps motion through your Linux SVP and VapourSynth installation, rendered inside Frame's embedded player.":
+    "حركة أصلية بمعدل 48/60fps عبر تثبيت SVP وVapourSynth على Linux لديك، تُصيَّر داخل مشغّل Frame المدمج.",
   "New Year Classics": "كلاسيكيات رأس السنة",
   "New this week": "جديد هذا الأسبوع",
   "New to the chart": "جديد في القائمة",
@@ -187,15 +187,15 @@ const used: Record<string, string> = {
   "Russian Films": "أفلام من روسيا",
   "Russian Movies": "أفلام روسية",
   SCORE: "النتيجة",
-  "SVP is not supported by this Harbor package.": "حزمة Harbor هذه لا تدعم SVP.",
+  "SVP is not supported by this Frame package.": "حزمة Frame هذه لا تدعم SVP.",
   "Search movies, shows, anime, manga": "ابحث عن أفلام ومسلسلات وأنمي ومانغا",
   Shaders: "المظللات",
   "Show card": "إظهار البطاقة",
   "Showing last synced ranking": "عرض آخر ترتيب متزامن",
   "Shows a small green dot on the player's subtitle button while a subtitle track is active. Turn it off if you would rather keep the controls clean.":
     "يعرض نقطة خضراء صغيرة على زر الترجمة في المشغّل أثناء تفعيل مسار ترجمة. عطّله إذا كنت تفضّل إبقاء عناصر التحكّم نظيفة.",
-  "Sign in to your Harbor account first. Imported ratings are saved to your profile.":
-    "سجّل الدخول إلى حسابك في Harbor أولًا. تُحفظ التقييمات المستوردة في ملفك الشخصي.",
+  "Sign in to your Frame account first. Imported ratings are saved to your profile.":
+    "سجّل الدخول إلى حسابك في Frame أولًا. تُحفظ التقييمات المستوردة في ملفك الشخصي.",
   "Skip ad": "تخطي الإعلان",
   "Skipped, not rated or not supported": "تم التخطي، غير مقيَّم أو غير مدعوم",
   "Something went wrong reaching the ranking feed.": "حدث خطأ أثناء الوصول إلى موجز الترتيب.",
@@ -246,7 +246,7 @@ const used: Record<string, string> = {
   "You were mentioned": "تمت الإشارة إليك",
   "Your Lists": "قوائمك",
   "Your MAL Lists": "قوائمك في MAL",
-  "Your handle across Harbor.": "معرّفك عبر Harbor.",
+  "Your handle across Frame.": "معرّفك عبر Frame.",
   "acclaimed titles": "عنوان نال إشادة",
   "and {count} more": "و{count} آخرين",
   "and {n} more": "و{n} أخرى",

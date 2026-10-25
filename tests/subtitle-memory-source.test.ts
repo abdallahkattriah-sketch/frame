@@ -89,12 +89,12 @@ test("manual subtitle memory keeps provider identity and non-secret download aut
 });
 
 test("saved Live Sync subtitles restore as trusted local files, including legacy memories", () => {
-  const source = "C:\\Users\\viewer\\AppData\\Roaming\\Harbor\\synced.srt";
+  const source = "C:\\Users\\viewer\\AppData\\Roaming\\Frame\\synced.srt";
   const remembered = rememberedFromChoice({
     source,
     external: true,
     imported: true,
-    provider: "Harbor Live Sync",
+    provider: "Frame Live Sync",
     providerDerived: false,
   });
   const legacyRemembered = { ...remembered, providerDerived: undefined, updatedAt: 1 };

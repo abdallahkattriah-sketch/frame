@@ -37,7 +37,7 @@ export default {
   "games.valorant.metaScope":
     "Dữ liệu xếp hạng OP.GG cho bản cập nhật đã chọn. Tỷ lệ chọn là tỷ trọng lượt xuất hiện của đặc vụ. Kết quả phản ánh mẫu dữ liệu của nguồn, không phải toàn bộ người chơi.",
   "games.valorant.referenceScope":
-    "Hình ảnh và thông tin trò chơi qua Valorant-API. Dữ liệu có thể cập nhật chậm hơn trò chơi. Harbor không được Riot Games bảo trợ.",
+    "Hình ảnh và thông tin trò chơi qua Valorant-API. Dữ liệu có thể cập nhật chậm hơn trò chơi. Frame không được Riot Games bảo trợ.",
   "games.valorant.samples": "{count} lượt xuất hiện",
   "games.valorant.smallSample": "Mẫu nhỏ",
   "games.valorant.abilities": "Kỹ năng",

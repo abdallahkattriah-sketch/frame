@@ -3,13 +3,13 @@ export default {
   "games.minecraft.discovery.searchCurseForge": "CurseForge’da ara",
   "games.minecraft.discovery.downloads": "İndirmeler",
   "games.minecraft.discovery.curseForgeBlocked":
-    "CurseForge şu anda Harbor’ın bu kataloğu yüklemesine izin vermiyor. Yeniden deneyin veya kaynağı açın.",
+    "CurseForge şu anda Frame’ın bu kataloğu yüklemesine izin vermiyor. Yeniden deneyin veya kaynağı açın.",
   "games.minecraft.discovery.unavailable": "Bu dizin yüklenemedi. Yeniden deneyin.",
   "games.minecraft.discovery.openSource": "Kaynak sitesini aç",
   "games.minecraft.discovery.loadMore": "Daha fazla yükle",
   "games.minecraft.discovery.servers": "Sunucular",
   "games.minecraft.discovery.serverNote":
-    "Bağımsız dizinler. Harbor’ın bu siteler veya sunucularla bağlantısı yoktur. Sayılar ilgili dizinler tarafından bildirilir.",
+    "Bağımsız dizinler. Frame’ın bu siteler veya sunucularla bağlantısı yoktur. Sayılar ilgili dizinler tarafından bildirilir.",
   "games.minecraft.discovery.searchServers": "Yüklenen sunucularda ara",
   "games.minecraft.discovery.directory": "Dizin",
   "games.minecraft.discovery.mode": "Oyun modu",
@@ -43,7 +43,7 @@ export default {
   "games.minecraft.lifecycle.exportNote":
     "Modların ve yapılandırmanla taşınabilir bir .mrpack dosyası oluştur.",
   "games.minecraft.lifecycle.privateNote":
-    "Harbor hesap verileri, çalışma dosyaları ve günlükler dahil edilmez. Paylaşmadan önce mod yapılandırmasını kontrol et.",
+    "Frame hesap verileri, çalışma dosyaları ve günlükler dahil edilmez. Paylaşmadan önce mod yapılandırmasını kontrol et.",
   "games.minecraft.lifecycle.included": "Dahil edilen dosyalar",
   "games.minecraft.lifecycle.referenced": "İndirme bağlantıları",
   "games.minecraft.lifecycle.referenceNote":
@@ -98,7 +98,7 @@ export default {
   "games.minecraft.update.chooseFile": ".mrpack dosyası seç",
   "games.minecraft.update.restoreVersion": "{version} sürümünü geri yükle",
   "games.minecraft.update.reviewNote":
-    "Uygulamadan önce her dosya değişikliğini incele. Harbor, önceki örneğin ayrı bir kopyasını saklar.",
+    "Uygulamadan önce her dosya değişikliğini incele. Frame, önceki örneğin ayrı bir kopyasını saklar.",
   "games.minecraft.update.changeVersion": "Sürümü değiştir",
   "games.minecraft.update.download": "İndirme",
   "games.minecraft.update.recoveryCopy": "Kurtarma kopyası",
@@ -199,7 +199,7 @@ export default {
     "Başka bir örnek başlatmadan önce çalışan Minecraft örneğini kapatın.",
   "games.minecraft.java.title": "Bu örnek için Java",
   "games.minecraft.java.note": "Bu Minecraft sürümü Java {version} gerektirir.",
-  "games.minecraft.java.managed": "Harbor ile yükle",
+  "games.minecraft.java.managed": "Frame ile yükle",
   "games.minecraft.java.installed": "Yüklü Java’yı kullan",
   "games.minecraft.java.manage": "Java’yı yönet",
 
@@ -217,7 +217,7 @@ export default {
   "games.minecraft.java.versionError": "Sisteminize uygun Java {version} seçin.",
   "games.minecraft.java.invalidError": "Bu Java kurulumu doğrulanamadı.",
   "games.minecraft.java.metadataError": "Uyumlu bir Java indirmesi doğrulanamadı. Yeniden deneyin.",
-  "games.minecraft.java.managedNote": "Harbor bu sürümü Minecraft kitaplığınızda saklar.",
+  "games.minecraft.java.managedNote": "Frame bu sürümü Minecraft kitaplığınızda saklar.",
   "games.minecraft.runtime.setup": "Oyun kurulumu",
   "games.minecraft.runtime.note":
     "Bu örnek için resmi oyun dosyalarını yükleyin. Dünyalarınız ve modlarınız korunur.",
@@ -239,7 +239,7 @@ export default {
   "games.minecraft.runtime.metadataError":
     "Oyun dosyaları doğrulanamadı. Daha sonra yeniden deneyin.",
   "games.minecraft.runtime.legacyError":
-    "Bu sürüm, Harbor’ın henüz desteklemediği bir kurulum veya başlatma biçimi kullanıyor.",
+    "Bu sürüm, Frame’ın henüz desteklemediği bir kurulum veya başlatma biçimi kullanıyor.",
   "games.minecraft.runtime.loaderError": "Bu yükleyicinin kurulum biçimi henüz desteklenmiyor.",
   "games.minecraft.runtime.platformError": "Bu sistemde oyun kurulumu henüz desteklenmiyor.",
   "games.minecraft.runtime.versionError": "Bu Minecraft sürümü resmi katalogda bulunamadı.",
@@ -249,7 +249,7 @@ export default {
   "games.minecraft.instances.import": "Paket içe aktar",
   "games.minecraft.instances.create": "Kurulum oluştur",
   "games.minecraft.instances.desktop":
-    "Yerel kurulumlar oluşturmak ve yönetmek için Harbor masaüstünü açın.",
+    "Yerel kurulumlar oluşturmak ve yönetmek için Frame masaüstünü açın.",
   "games.minecraft.instances.search": "Kurulumlarınızda ara",
   "games.minecraft.instances.storage": "Depolama klasörü",
   "games.minecraft.instances.chooseFolder": "Depolama klasörü seç",
@@ -285,7 +285,7 @@ export default {
   "games.minecraft.instances.loadingVersions": "Minecraft sürümleri yükleniyor…",
   "games.minecraft.instances.added": "Kurulumlarınıza eklendi",
   "games.minecraft.instances.storageNote":
-    "Minecraft kurulumlarının saklanacağı yeri seçin. Her Harbor profilinin burada ayrı klasörü olur.",
+    "Minecraft kurulumlarının saklanacağı yeri seçin. Her Frame profilinin burada ayrı klasörü olur.",
   "games.minecraft.instances.isolated": "Yeni ve ayrı bir kuruluma yüklenir.",
   "games.minecraft.instances.cancelling": "İptal ediliyor…",
   "games.minecraft.instances.install": "Paket dosyalarını yükle",
@@ -298,7 +298,7 @@ export default {
   "games.minecraft.instances.phase.overrides": "Paket yapılandırması uygulanıyor…",
   "games.minecraft.instances.phase.done": "Dosyalar yüklendi",
   "games.minecraft.instances.folderError":
-    "Bu Harbor profili için erişilebilir bir yerel klasör seçin.",
+    "Bu Frame profili için erişilebilir bir yerel klasör seçin.",
   "games.minecraft.instances.writeError":
     "Kurulum yazılamadı. Klasör izinlerini ve boş alanı kontrol edin.",
   "games.minecraft.instances.readError":
@@ -314,7 +314,7 @@ export default {
   "games.minecraft.instances.loaderError":
     "Bu paket tanınmayan veya çakışan bir oyun yükleyicisi kullanıyor.",
   "games.minecraft.instances.sourceError":
-    "Bu paket Harbor’ın desteklemediği bir indirme kaynağı gerektiriyor.",
+    "Bu paket Frame’ın desteklemediği bir indirme kaynağı gerektiriyor.",
   "games.minecraft.instances.limitError":
     "Bu paket veya kitaplık desteklenen boyut sınırını aşıyor.",
   "games.minecraft.instances.busyError":
@@ -369,9 +369,9 @@ export default {
   "games.minecraft.account.title": "Minecraft hesabın",
   "games.minecraft.account.intro":
     "Minecraft kostümünü ve pelerinlerini görmek, tasarımlarını uygulamak için Microsoft’u bağla.",
-  "games.minecraft.account.desktop": "Minecraft hesabını bağlamak için Harbor masaüstünü aç.",
+  "games.minecraft.account.desktop": "Minecraft hesabını bağlamak için Frame masaüstünü aç.",
   "games.minecraft.account.setup":
-    "Microsoft oturum açma bu Harbor sürümünde henüz yapılandırılmadı. Kostümleri yerel olarak düzenleyebilirsin.",
+    "Microsoft oturum açma bu Frame sürümünde henüz yapılandırılmadı. Kostümleri yerel olarak düzenleyebilirsin.",
   "games.minecraft.account.codeNote": "Bu kodu Microsoft oturum açma sayfasına gir.",
   "games.minecraft.account.copy": "Kodu kopyala",
   "games.minecraft.account.openMicrosoft": "Microsoft’ta devam et",
@@ -400,7 +400,7 @@ export default {
     "Microsoft veya Xbox ayarları oturum açmayı engelliyor. Hesabın yaş, aile veya bölge ayarlarını kontrol et.",
   "games.minecraft.account.skinError":
     "Kostüm veya pelerin uygulanamadı. Hesabı yenileyip tekrar dene.",
-  "games.minecraft.account.storeError": "Harbor hesabı bu cihazda güvenli şekilde kaydedemedi.",
+  "games.minecraft.account.storeError": "Frame hesabı bu cihazda güvenli şekilde kaydedemedi.",
   "games.minecraft.account.error": "Hesap isteği başarısız oldu. Tekrar dene.",
   "games.minecraft.studio": "Kostüm stüdyosu",
   "games.minecraft.skinTitle": "Tarzını yansıt.",
@@ -434,7 +434,7 @@ export default {
   "games.minecraft.editHint":
     "Ok tuşları pikseller arasında hareket eder. Enter boyar. Ctrl / ⌘ Z geri alır.",
   "games.minecraft.library": "Kostümlerin",
-  "games.minecraft.localNote": "Bu Harbor profili için bu cihazda kaydedilir.",
+  "games.minecraft.localNote": "Bu Frame profili için bu cihazda kaydedilir.",
   "games.minecraft.new": "Yeni kostüm",
   "games.minecraft.empty":
     "Bir kostüm aktar veya boyamaya başla. Değişiklikler otomatik kaydedilir.",

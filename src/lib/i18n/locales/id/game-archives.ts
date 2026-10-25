@@ -12,9 +12,9 @@ export default {
     "Folder berisi arsip ada di tempat sampah. Pulihkan dari sana jika diperlukan.",
   "games.cleanup.restoredNote": "Bagian arsip sudah kembali ke folder asal.",
   "games.cleanup.uncertainNote":
-    "Harbor tidak dapat memastikan hasilnya. Periksa folder asal dan tempat sampah sebelum melanjutkan.",
+    "Frame tidak dapat memastikan hasilnya. Periksa folder asal dan tempat sampah sebelum melanjutkan.",
   "games.cleanup.recoveryNote":
-    "Sebagian arsip mungkin berada di folder sementara Harbor. Lanjutkan pembersihan atau pulihkan tanpa menimpa file yang ada.",
+    "Sebagian arsip mungkin berada di folder sementara Frame. Lanjutkan pembersihan atau pulihkan tanpa menimpa file yang ada.",
   "games.cleanup.working": "Memeriksa file arsip",
   "games.cleanup.restore": "Pulihkan file tersimpan",
   "games.cleanup.resume": "Lanjutkan pembersihan",
@@ -77,7 +77,7 @@ export default {
   "games.setupShortcuts.error": "Pintasan tidak dapat diperbarui. Coba lagi.",
 
   "games.archive.archive_decoder":
-    "Harbor tidak dapat mendekode arsip ini dalam batasnya. Coba alat ekstraksi lain.",
+    "Frame tidak dapat mendekode arsip ini dalam batasnya. Coba alat ekstraksi lain.",
   "games.archive.archive_password_or_checksum":
     "Kata sandi mungkin salah atau arsip rusak. Periksa kata sandi atau unduh ulang arsip.",
   "games.archive.password": "Kata sandi arsip",
@@ -89,7 +89,7 @@ export default {
   "games.archive.eyebrow": "Dari unduhan ke pustakamu",
   "games.archive.title": "Ekstrak file game",
   "games.archive.intro":
-    "Tinjau arsip ZIP / 7z / RAR / TAR / TAR.GZ / ISO dan pilih lokasi untuk file-nya. Harbor membuat folder baru dan menyimpan arsip asli.",
+    "Tinjau arsip ZIP / 7z / RAR / TAR / TAR.GZ / ISO dan pilih lokasi untuk file-nya. Frame membuat folder baru dan menyimpan arsip asli.",
   "games.archive.source": "Arsip",
   "games.archive.chooseSource": "Pilih arsip",
   "games.archive.chooseParent": "Pilih folder tujuan",
@@ -119,7 +119,7 @@ export default {
   "games.archive.openFolder": "Tampilkan folder",
   "games.archive.localLibrary": "Game lokal",
   "games.archive.archive_profile":
-    "Profil Harbor ini tidak dapat dikenali. Buka ulang Game dan coba lagi.",
+    "Profil Frame ini tidak dapat dikenali. Buka ulang Game dan coba lagi.",
   "games.archive.archive_busy":
     "Operasi arsip lain sedang berjalan. Selesaikan atau batalkan dahulu.",
   "games.archive.archive_canceled": "Ekstraksi dibatalkan. Arsip asli tetap tersedia.",
@@ -127,16 +127,16 @@ export default {
     "Arsip tidak dapat dibaca. Pastikan file masih tersedia lalu coba lagi.",
   "games.archive.archive_links":
     "Arsip ini berisi tautan atau file khusus. Ikuti petunjuk instalasi dari proyeknya.",
-  "games.archive.archive_limit": "Arsip ini melampaui batas ekstraksi Harbor saat ini.",
+  "games.archive.archive_limit": "Arsip ini melampaui batas ekstraksi Frame saat ini.",
   "games.archive.archive_changed":
     "Arsip berubah setelah ditinjau. Tinjau lagi sebelum mengekstrak.",
   "games.archive.archive_path":
-    "Arsip berisi jalur yang tidak dapat diekstrak Harbor dengan aman. Tidak ada file game yang diganti.",
+    "Arsip berisi jalur yang tidak dapat diekstrak Frame dengan aman. Tidak ada file game yang diganti.",
   "games.archive.archive_format":
     "Ini bukan arsip ZIP / 7z / RAR / TAR / TAR.GZ / ISO yang didukung, atau direktorinya rusak.",
   "games.archive.archive_encrypted": "Masukkan kata sandi arsip ini untuk melanjutkan.",
   "games.archive.archive_compression":
-    "ZIP / 7z / RAR / TAR / TAR.GZ / ISO ini memakai metode kompresi yang belum didukung Harbor.",
+    "ZIP / 7z / RAR / TAR / TAR.GZ / ISO ini memakai metode kompresi yang belum didukung Frame.",
   "games.archive.archive_collision":
     "Beberapa entri arsip akan saling menimpa. Tidak ada yang diekstrak.",
   "games.archive.archive_destination":
@@ -155,11 +155,11 @@ export default {
   "games.archive.space.checking": "Memeriksa ruang di tujuan…",
   "games.archive.space.free": "{size} tersedia",
   "games.archive.space.required": "{size} untuk diekstrak",
-  "games.archive.space.reserved": "{size} dicadangkan untuk operasi Harbor lain",
+  "games.archive.space.reserved": "{size} dicadangkan untuk operasi Frame lain",
   "games.archive.space.after": "{size} tersedia setelah ekstraksi",
   "games.archive.space.shortfall": "Perlu tambahan ruang {size}",
   "games.archive.space.unknown":
-    "Ruang kosong tidak dapat dibaca. Harbor akan memeriksa lagi saat ekstraksi dimulai.",
+    "Ruang kosong tidak dapat dibaca. Frame akan memeriksa lagi saat ekstraksi dimulai.",
   "games.archive.space.error": "Tidak dapat memeriksa ruang di tujuan.",
   "games.archive.space.refresh": "Periksa ruang lagi",
   "games.archive.space.note":
@@ -177,15 +177,15 @@ export default {
   "games.archive.retry": "Tinjau dan coba lagi",
   "games.archive.showPartial": "Tampilkan berkas parsial",
   "games.archive.partialNote":
-    "Harbor menyimpan folder yang belum lengkap. Tinjau sebelum menghapusnya; mencoba lagi akan memulai ekstraksi baru.",
+    "Frame menyimpan folder yang belum lengkap. Tinjau sebelum menghapusnya; mencoba lagi akan memulai ekstraksi baru.",
   "games.archive.progressFiles": "{count} dari {total} berkas",
   "games.archive.archive_store":
-    "Harbor tidak dapat menyimpan kemajuan ekstraksi. Berkas Anda disimpan untuk ditinjau.",
+    "Frame tidak dapat menyimpan kemajuan ekstraksi. Berkas Anda disimpan untuk ditinjau.",
   "games.archive.archive_start": "Ekstraksi tidak dapat dimulai. Coba lagi.",
   "games.archive.archive_history":
     "Riwayat ekstraksi penuh. Hapus catatan lama untuk melanjutkan; berkasnya akan tetap disimpan.",
   "games.archive.archive_interrupted":
-    "Harbor ditutup sebelum ekstraksi selesai. Periksa lokasi yang tersimpan dan coba lagi.",
+    "Frame ditutup sebelum ekstraksi selesai. Periksa lokasi yang tersimpan dan coba lagi.",
   "games.archive.archive_parts":
     "Bagian-bagian ini tidak membentuk satu arsip. Pastikan semuanya berasal dari unduhan yang sama.",
   "games.archive.archive_tool": "Dukungan format arsip tambahan tidak tersedia dalam versi ini.",
@@ -193,10 +193,10 @@ export default {
   "games.archive.continueSetup": "Siapkan game",
   "games.archive.dismissRecord": "Hapus catatan · simpan berkas",
   "games.archive.archive_multipart":
-    "Format arsip terbagi ini belum didukung. Ekstrak dengan aplikasi arsip, lalu buka folder hasilnya di Harbor.",
+    "Format arsip terbagi ini belum didukung. Ekstrak dengan aplikasi arsip, lalu buka folder hasilnya di Frame.",
   "games.archive.partsCount": "{count} bagian arsip",
   "games.archive.partsNote":
-    "Simpan semua bagian di folder yang sama. Harbor mengekstraknya bersama.",
+    "Simpan semua bagian di folder yang sama. Frame mengekstraknya bersama.",
   "games.archive.partsMore": "Tampilkan bagian lainnya",
   "games.archive.setHash": "SHA-256 kumpulan arsip",
   "games.archive.archive_missing_part":

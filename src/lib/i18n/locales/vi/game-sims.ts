@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Cập nhật và khởi động lại Harbor để duyệt nội dung tải xuống của Sims 2 và Sims 3.",
+    "Cập nhật và khởi động lại Frame để duyệt nội dung tải xuống của Sims 2 và Sims 3.",
   "games.sims.creatorNotesTitle": "Liên kết của người tạo · {count}",
   "games.sims.creatorNotesNote": "Liên kết trong ghi chú của người tạo. Mở trang để đọc hướng dẫn.",
   "games.sims.ccBuildTitle": "Nội dung dùng trong công trình này",
@@ -104,7 +104,7 @@ export default {
   "games.sims.mtsCatMisc": "Khác",
   "games.sims.mtsCatTools": "Công cụ",
   "games.sims.mtsIntro":
-    "Nhập bản mod hoặc nội dung tùy chỉnh vào Harbor. Dán trang The Sims 4 của nội dung đó, rồi chọn tệp bạn muốn.",
+    "Nhập bản mod hoặc nội dung tùy chỉnh vào Frame. Dán trang The Sims 4 của nội dung đó, rồi chọn tệp bạn muốn.",
   "games.sims.mtsPage": "Trang tải xuống",
   "games.sims.mtsLoad": "Tìm tệp",
   "games.sims.mtsBrowse": "Khám phá Mod The Sims",
@@ -175,9 +175,9 @@ export default {
   "games.sims.creatorExisting": "Bản cài đặt hiện có",
   "games.sims.creatorManage": "Xem lại tệp hiện có",
   "games.sims.creatorAdoptNote":
-    "Trước tiên, đưa các tệp này vào Harbor để quản lý. Sau đó chọn bản phát hành của tác giả để cập nhật.",
+    "Trước tiên, đưa các tệp này vào Frame để quản lý. Sau đó chọn bản phát hành của tác giả để cập nhật.",
   "games.sims.creatorLinkNote":
-    "Xem lại bản cập nhật cho nhóm này. Harbor giữ các tệp trước đó và thiết lập của bạn.",
+    "Xem lại bản cập nhật cho nhóm này. Frame giữ các tệp trước đó và thiết lập của bạn.",
   "games.sims.creatorTarget":
     "Nhóm này chứa tệp mod không thuộc bản phát hành đã chọn. Hãy tách chúng sang nhóm khác trước khi cập nhật MCCC.",
   "games.sims.creatorExistingError":
@@ -209,7 +209,7 @@ export default {
   "games.sims.trayRemove": "Xóa khỏi thư viện",
   "games.sims.trayRestore": "Khôi phục vào thư viện",
   "games.sims.trayNote":
-    "Nhập lô đất, phòng hoặc hộ gia đình đã tải. Harbor giữ các tệp liên quan cùng nhau trong Tray.",
+    "Nhập lô đất, phòng hoặc hộ gia đình đã tải. Frame giữ các tệp liên quan cùng nhau trong Tray.",
   "games.sims.trayReviewNote":
     "Tệp Tray được đặt trực tiếp vào thư mục thư viện. Nội dung tùy chỉnh đi kèm thành một nhóm mod riêng.",
   "games.sims.trayRemoveNote":
@@ -271,12 +271,12 @@ export default {
 
   "games.sims.adopt": "Quản lý mod hiện có",
   "games.sims.adoptNote":
-    "Đóng The Sims 4. Chọn một mod hoặc CC liên quan cùng thiết lập của chúng từ cùng một thư mục. Các tệp được liệt kê sẽ chuyển vào một nhóm Harbor; các tệp khác giữ nguyên vị trí.",
+    "Đóng The Sims 4. Chọn một mod hoặc CC liên quan cùng thiết lập của chúng từ cùng một thư mục. Các tệp được liệt kê sẽ chuyển vào một nhóm Frame; các tệp khác giữ nguyên vị trí.",
   "games.sims.adoptFrom": "Thư mục hiện tại",
   "games.sims.adoptTo": "Chuyển đến",
   "games.sims.adoptFolder": "Chọn các tệp liên quan từ một thư mục bên trong Mods.",
   "games.sims.adoptManaged":
-    "Chọn tệp ngoài các thư mục do Harbor quản lý và giữ Resource.cfg tại chỗ.",
+    "Chọn tệp ngoài các thư mục do Frame quản lý và giữ Resource.cfg tại chỗ.",
   "games.sims.adoptScan":
     "Không thể quét một số thư mục mod. Hãy khắc phục trước khi quản lý các tệp này.",
 
@@ -306,7 +306,7 @@ export default {
   "games.sims.setScan": "Không thể quét một số thư mục mod. Hãy xử lý trước khi chuyển bộ.",
   "games.sims.savesLabelHint": "Trước khi thêm mod mới",
   "games.sims.savesRunning":
-    "Đóng The Sims 4 trước khi sao lưu hoặc khôi phục dữ liệu lưu. Harbor cần xác nhận rằng trò chơi đã đóng.",
+    "Đóng The Sims 4 trước khi sao lưu hoặc khôi phục dữ liệu lưu. Frame cần xác nhận rằng trò chơi đã đóng.",
   "games.sims.savesIntro":
     "Sao lưu dữ liệu lưu trước khi thay đổi mod. Hãy đóng The Sims 4 trước. Bản sao lưu không bao gồm mod và hộ gia đình trong thư mục Tray.",
   "games.sims.title": "Mod và nội dung tùy chỉnh của bạn",
@@ -329,7 +329,7 @@ export default {
   "games.sims.recovery":
     "Thay đổi trước đã bị gián đoạn. Khôi phục thiết lập cũ trước khi thay đổi tiếp.",
   "games.sims.success": "Các tệp mod đã được cập nhật.",
-  "games.sims.applying": "Đang áp dụng. Hãy giữ Harbor mở…",
+  "games.sims.applying": "Đang áp dụng. Hãy giữ Frame mở…",
   "games.sims.checking": "Đang kiểm tra tệp…",
   "games.sims.skipped": "Tài liệu và hình ảnh đã bỏ qua · {count}",
   "games.sims.preview": "Ảnh xem trước có trong gói",
@@ -368,7 +368,7 @@ export default {
   "games.sims.emptyManaged": "Nhập mod đã tải để quản lý tại đây.",
   "games.sims.emptyBackups": "Phiên bản cũ xuất hiện sau khi cập nhật hoặc gỡ mod.",
   "games.sims.emptyFiles": "Không tìm thấy tệp được hỗ trợ trong Mods.",
-  "games.sims.desktop": "Quản lý mod cần ứng dụng Harbor mới nhất trên Windows.",
+  "games.sims.desktop": "Quản lý mod cần ứng dụng Frame mới nhất trên Windows.",
   "games.sims.folderError":
     "Chọn thư mục dữ liệu The Sims 4 thật, không dùng lối tắt hay thư mục liên kết. Cần có Mods, saves, GameVersion.txt và Options.ini.",
   "games.sims.readError": "Không đọc được tệp. Kiểm tra quyền truy cập và thử lại.",
@@ -377,7 +377,7 @@ export default {
   "games.sims.layoutError":
     "Tệp nén có các thư mục mod riêng hoặc tên tệp trùng. Nhập từng mod riêng để giữ các tệp của mod cùng nhau.",
   "games.sims.running":
-    "Đóng The Sims 4 trước khi thay đổi mod. Harbor phải xác nhận được game đã dừng.",
+    "Đóng The Sims 4 trước khi thay đổi mod. Frame phải xác nhận được game đã dừng.",
   "games.sims.duplicate":
     "Tệp mod cùng tên đã có ở thư mục Mods khác. Xử lý trùng lặp trước khi nhập hoặc bật nhóm này.",
   "games.sims.recordError":

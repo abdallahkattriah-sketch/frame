@@ -3,7 +3,7 @@ export default {
   "games.links.sort": "Urutkan tautan",
   "games.links.note": "Urutkan berdasarkan URL, A–Z. Nama dan tujuan tetap sama.",
   "games.links.available":
-    "Menggunakan tautan yang sudah tersedia di Harbor. Tautan baru muncul setelah urutan tersimpan.",
+    "Menggunakan tautan yang sudah tersedia di Frame. Tautan baru muncul setelah urutan tersimpan.",
   "games.links.original": "Pulihkan urutan asli",
   "games.links.applied": "Tautan untuk {count} game diperbarui.",
   "games.links.changes": "{count} game akan berubah.",

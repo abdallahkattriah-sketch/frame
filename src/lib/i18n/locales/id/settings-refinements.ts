@@ -17,8 +17,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "Aktivitas dari addon dewasa tidak pernah ditampilkan di Discord.",
   "Ad skipping": "Lewati iklan",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "Tambahkan TMDB untuk lebih banyak katalog dan gambar. Penyedia lain menambahkan fitur yang tercantum di bawah. Harbor dapat digunakan dengan Cinemeta tanpa menambahkan kunci.",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "Tambahkan TMDB untuk lebih banyak katalog dan gambar. Penyedia lain menambahkan fitur yang tercantum di bawah. Frame dapat digunakan dengan Cinemeta tanpa menambahkan kunci.",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "Tambahkan pengatur waktu di samping Unduhan. Jeda pemutaran setelah waktu atau jumlah episode tertentu.",
   "Add an API key to use this source.": "Tambahkan kunci API untuk menggunakan sumber ini.",
@@ -76,14 +76,14 @@ const settingsRefinements: Record<string, string> = {
     "Seimbangkan kualitas gambar dan kinerja. Perubahan berlaku pada video berikutnya yang Anda putar.",
   "Between episodes": "Antar episode",
   "Between episodes on the TV": "Antar episode di TV",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "Tampilkan daftar anime Anda di Harbor dan perbarui jumlah episode saat menonton. Progres yang sudah ada tetap tersimpan.",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "Tampilkan daftar anime Anda di Frame dan perbarui jumlah episode saat menonton. Progres yang sudah ada tetap tersimpan.",
   "Bringing your Stremio library?": "Ingin membawa pustaka Stremio Anda?",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "Jelajahi berdasarkan alur cerita pada acara yang didukung, seperti One Piece. Memerlukan kunci TMDB.",
   "Browse pages": "Jelajahi halaman",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "Jelajahi daftar anime di Harbor dan perbarui progres episode sambil menonton. Masuk ke AniList untuk menghubungkan.",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "Jelajahi daftar anime di Frame dan perbarui progres episode sambil menonton. Masuk ke AniList untuk menghubungkan.",
   "Browser details": "Detail browser",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "Buat filter bernama sekali, lalu terapkan di pemilih sumber untuk menyaring daftar stream yang ramai sesuai keinginan Anda.",
@@ -105,8 +105,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "Periksa apakah perangkat ini dapat menjangkau alamat server yang disimpan.",
   "Checking SVP installation…": "Memeriksa instalasi SVP…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "Pilih cadangan Harbor dan tinjau isinya sebelum memulihkan. Sesi masuk Stremio Anda tetap ada di perangkat ini.",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "Pilih cadangan Frame dan tinjau isinya sebelum memulihkan. Sesi masuk Stremio Anda tetap ada di perangkat ini.",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "Pilih tampilan atau sesuaikan tiap pengaturan. Atur ulang gambar mengembalikan nilai semula.",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -128,14 +128,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "Pilih layanan yang ingin ditampilkan saat menjelajah di TV.",
   "Choose the streams you prefer.": "Pilih stream yang Anda sukai.",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "Pilih apa yang terjadi saat Harbor ditutup, diminimalkan, atau saat Anda beralih ke aplikasi lain.",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "Pilih kapan Harbor meminta Anda memilih profil. Pengingat berkala muncul saat Anda kembali ke Harbor.",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "Pilih kapan episode berikutnya dimulai dan kapan Harbor memastikan Anda masih menonton.",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "Pilih tempat Harbor mencari subtitle. Hasil dari sumber aktif ditampilkan bersama tanpa duplikat.",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "Pilih apa yang terjadi saat Frame ditutup, diminimalkan, atau saat Anda beralih ke aplikasi lain.",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "Pilih kapan Frame meminta Anda memilih profil. Pengingat berkala muncul saat Anda kembali ke Frame.",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "Pilih kapan episode berikutnya dimulai dan kapan Frame memastikan Anda masih menonton.",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "Pilih tempat Frame mencari subtitle. Hasil dari sumber aktif ditampilkan bersama tanpa duplikat.",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "Pilih lokasi penyimpanan video dan eBook, serta susunan foldernya.",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -173,8 +173,8 @@ const settingsRefinements: Record<string, string> = {
     "Hubungkan akun MyAnimeList untuk menyinkronkan progres tontonan dan menjelajahi daftar Anda.",
   "Connect {service}": "Hubungkan {service}",
   "Contact & credit": "Kontak & kredit",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "Atur apa yang muncul di profil Discord selama Anda menggunakan Harbor.",
+  "Control what appears on your Discord profile while you use Frame.":
+    "Atur apa yang muncul di profil Discord selama Anda menggunakan Frame.",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "Mengatur pengurangan sorotan terang agar sesuai dengan layar Anda. Diagram menunjukkan tiap kurva.",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -199,27 +199,27 @@ const settingsRefinements: Record<string, string> = {
     "{name} tidak dapat disimpan. Coba lagi dan pilih folder yang dapat ditulisi.",
   "Couldn't copy the address. Select it above and copy it manually.":
     "Alamat tidak dapat disalin. Pilih alamat di atas dan salin secara manual.",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "Tidak dapat menghubungi Harbor. Periksa koneksi Anda lalu coba lagi.",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "Tidak dapat menghubungi Frame. Periksa koneksi Anda lalu coba lagi.",
   "Covers everything. The taskbar is hidden.": "Memenuhi seluruh layar. Bilah tugas disembunyikan.",
   "Create a stream filter": "Buat filter stream",
-  "Create a theme or share one you've made with the Harbor community.":
-    "Buat tema atau bagikan tema buatan Anda kepada komunitas Harbor.",
+  "Create a theme or share one you've made with the Frame community.":
+    "Buat tema atau bagikan tema buatan Anda kepada komunitas Frame.",
   "Create my account": "Buat akun saya",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "Buat profil untuk orang yang menggunakan Harbor. Masing-masing dapat memiliki tampilan, pengaturan, dan PIN sendiri.",
-  "Create your Harbor account": "Buat akun Harbor Anda",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "Buat profil untuk orang yang menggunakan Frame. Masing-masing dapat memiliki tampilan, pengaturan, dan PIN sendiri.",
+  "Create your Frame account": "Buat akun Frame Anda",
   "Create your first filter with the stream quality you prefer.":
     "Buat filter pertama dengan kualitas stream pilihan Anda.",
   "Custom color": "Warna kustom",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "Sesuaikan Harbor dengan CSS, JavaScript, dan HTML Anda sendiri. Perubahan diterapkan saat Anda mengetik.",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "Sesuaikan Frame dengan CSS, JavaScript, dan HTML Anda sendiri. Perubahan diterapkan saat Anda mengetik.",
   "Default Downloads folder": "Folder Unduhan bawaan",
   "Delete this rule?": "Hapus aturan ini?",
   "Describe the problem in one sentence.": "Jelaskan masalah dalam satu kalimat.",
   "Describe the result you were after.": "Jelaskan hasil yang Anda harapkan.",
-  "Describe what Harbor did instead, including any message on screen.":
-    "Jelaskan apa yang justru dilakukan Harbor, termasuk pesan yang muncul di layar.",
+  "Describe what Frame did instead, including any message on screen.":
+    "Jelaskan apa yang justru dilakukan Frame, termasuk pesan yang muncul di layar.",
   "Device compatibility": "Kompatibilitas perangkat",
   "Discovery languages": "Bahasa penemuan",
   "Down the river": "Menyusuri sungai",
@@ -242,8 +242,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "Masukkan keempat digit untuk menyimpan PIN ini.",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "Masukkan satu opsi mpv per baris, misalnya brightness=5. Opsi ini menggantikan pengaturan video di halaman lain. Opsi yang salah dapat memengaruhi pemutaran. Mulai ulang pemutaran untuk menerapkan perubahan.",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "Semua ikon dan animasi yang dibuat untuk Harbor, pembuatnya, dan cara mengunduhnya.",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "Semua ikon dan animasi yang dibuat untuk Frame, pembuatnya, dan cara mengunduhnya.",
   "Example scores with your settings.": "Contoh penilaian dengan pengaturan Anda.",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "Mengecualikan stream dengan seeder lebih sedikit atau tanpa jumlah seeder. Biarkan kosong atau isi 0 untuk menerima semua.",
@@ -263,8 +263,8 @@ const settingsRefinements: Record<string, string> = {
     "Selesaikan penyiapan mesin SVP di atas sebelum mengaktifkannya.",
   "Forget remote streaming server": "Lupakan server streaming jarak jauh",
   "Forgot password?": "Lupa kata sandi?",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "Shader GPU mengolah gambar saat diputar: peningkatan resolusi Anime4K, pemetaan nada HDR, peningkatan resolusi neural, dan penajaman. Unduh yang Anda inginkan dan Harbor akan menerapkannya dalam mesin mpv.",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "Shader GPU mengolah gambar saat diputar: peningkatan resolusi Anime4K, pemetaan nada HDR, peningkatan resolusi neural, dan penajaman. Unduh yang Anda inginkan dan Frame akan menerapkannya dalam mesin mpv.",
   "Get SVP": "Dapatkan SVP",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "Terima notifikasi rilis di Discord atau Telegram. Hubungkan tujuan, lalu pilih sumber dan aturan notifikasi.",
@@ -281,28 +281,28 @@ const settingsRefinements: Record<string, string> = {
     "Handle tidak boleh diawali atau diakhiri dengan tanda hubung.",
   "Handles need at least 3 characters.": "Handle harus memiliki setidaknya 3 karakter.",
   "Handles need at least one letter.": "Handle harus mengandung setidaknya satu huruf.",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "Halaman Temukan Harbor menampilkan Steamboat Willie dan The General",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "Harbor memeriksa perangkat penerima dan menggunakan ffmpeg jika stream perlu dikonversi.",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "Harbor tidak dapat menerapkan pengaturan P2P. Buka ulang Harbor untuk mencoba lagi.",
-  "Harbor couldn't check the SVP installation. Try again.":
-    "Harbor tidak dapat memeriksa instalasi SVP. Coba lagi.",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "Harbor mencari subtitle dalam urutan ini. Tempatkan bahasa pilihan Anda di urutan pertama.",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "Harbor di perangkat lain: aplikasi web, remote ponsel, dan remote pembaca manga.",
-  "Harbor profile showing watch statistics": "Profil Harbor yang menampilkan statistik tontonan",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harbor menggunakan server komunitasnya sendiri. Anda dapat mengarahkannya ke server yang Anda kelola sendiri.",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "Mesin peer-to-peer bawaan Harbor, uji mandirinya, dan server streaming yang Anda gunakan.",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "Lisensi Harbor, proyek yang menjadi fondasinya, serta orang dan layanan yang mendukungnya.",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "Server jarak jauh Harbor tidak merespons pada port {WEB_PORT}. Pastikan server desktop berjalan, atau nonaktifkan lalu aktifkan pengaturan ini untuk memulainya ulang.",
-  "Harbor, with a few classics.": "Harbor, dengan beberapa film klasik.",
+  "Frame Discover showing Steamboat Willie and The General":
+    "Halaman Temukan Frame menampilkan Steamboat Willie dan The General",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "Frame memeriksa perangkat penerima dan menggunakan ffmpeg jika stream perlu dikonversi.",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "Frame tidak dapat menerapkan pengaturan P2P. Buka ulang Frame untuk mencoba lagi.",
+  "Frame couldn't check the SVP installation. Try again.":
+    "Frame tidak dapat memeriksa instalasi SVP. Coba lagi.",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "Frame mencari subtitle dalam urutan ini. Tempatkan bahasa pilihan Anda di urutan pertama.",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "Frame di perangkat lain: aplikasi web, remote ponsel, dan remote pembaca manga.",
+  "Frame profile showing watch statistics": "Profil Frame yang menampilkan statistik tontonan",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frame menggunakan server komunitasnya sendiri. Anda dapat mengarahkannya ke server yang Anda kelola sendiri.",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "Mesin peer-to-peer bawaan Frame, uji mandirinya, dan server streaming yang Anda gunakan.",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "Lisensi Frame, proyek yang menjadi fondasinya, serta orang dan layanan yang mendukungnya.",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "Server jarak jauh Frame tidak merespons pada port {WEB_PORT}. Pastikan server desktop berjalan, atau nonaktifkan lalu aktifkan pengaturan ini untuk memulainya ulang.",
+  "Frame, with a few classics.": "Frame, dengan beberapa film klasik.",
   "Help & about": "Bantuan & tentang",
   "Hex color": "Warna heksadesimal",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -310,10 +310,10 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "Sembunyikan {name} dari navigasi",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "Tinggi memuat gambar yang lebih tajam. Pilih Seimbang jika penjelajahan terasa lambat. Ini tidak memengaruhi kualitas video.",
-  "How long Harbor waits for each addon to return results.":
-    "Lama waktu Harbor menunggu hasil dari setiap addon.",
-  "How much does this affect your use of Harbor?":
-    "Seberapa besar pengaruhnya terhadap penggunaan Harbor Anda?",
+  "How long Frame waits for each addon to return results.":
+    "Lama waktu Frame menunggu hasil dari setiap addon.",
+  "How much does this affect your use of Frame?":
+    "Seberapa besar pengaruhnya terhadap penggunaan Frame Anda?",
   "How to connect Discord": "Cara menghubungkan Discord",
   "How to connect Telegram": "Cara menghubungkan Telegram",
   "How video plays, how it looks, and what happens between episodes.":
@@ -334,18 +334,18 @@ const settingsRefinements: Record<string, string> = {
     "Disertakan dalam laporan: detail aplikasi dan perangkat, jumlah layanan aktif, pemeriksaan pemutar, dan pesan kesalahan terbaru.",
   "Install SVP and check again before enabling it.":
     "Pasang SVP dan periksa lagi sebelum mengaktifkannya.",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "Pasang SVP beserta komponen VapourSynth, lalu periksa lagi agar Harbor dapat menemukannya.",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "Pasang paket ikon atau unggah gambar Anda sendiri untuk setiap penghargaan. Paket dihosting oleh pembuatnya dan tidak disertakan dengan Harbor.",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "Pasang SVP beserta komponen VapourSynth, lalu periksa lagi agar Frame dapat menemukannya.",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "Pasang paket ikon atau unggah gambar Anda sendiri untuk setiap penghargaan. Paket dihosting oleh pembuatnya dan tidak disertakan dengan Frame.",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "Pasang pembaruan, coba versi beta, dan simpan salinan pengaturan Anda.",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "Instan langsung memutar stream dengan peringkat terbaik. Pilih sumber membuka daftar stream setiap kali, sehingga Anda dapat memilih sendiri rilis, kualitas, dan penyedianya.",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "Lewati pembuka secara otomatis begitu dimulai. Kembali ke bagian pembuka akan memutarnya tanpa melewati lagi. Tombol Lewati mengikuti pengaturan di atas.",
-  "Keep Harbor fullscreen when you close the player.":
-    "Pertahankan Harbor dalam layar penuh saat Anda menutup pemutar.",
+  "Keep Frame fullscreen when you close the player.":
+    "Pertahankan Frame dalam layar penuh saat Anda menutup pemutar.",
   "Keep code": "Pertahankan kode",
   "Keep my shortcuts": "Pertahankan pintasan saya",
   "Keep rule": "Pertahankan aturan",
@@ -367,15 +367,15 @@ const settingsRefinements: Record<string, string> = {
   "Language preference order": "Urutan bahasa pilihan",
   "Larger artwork with the song title below it.":
     "Gambar lebih besar dengan judul lagu di bawahnya.",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "Biarkan pada Otomatis kecuali antarmuka Harbor berkedip atau tersendat. Ini mengatur jendela aplikasi, bukan pemutaran video.",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
-    "Izinkan Harbor melakukan streaming melalui P2P dari perangkat ini jika tautan debrid tidak tersedia. Nonaktifkan untuk mencegah pemutaran P2P lokal. Server jarak jauh yang dikonfigurasi tetap dapat melakukan streaming.",
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "Biarkan pada Otomatis kecuali antarmuka Frame berkedip atau tersendat. Ini mengatur jendela aplikasi, bukan pemutaran video.",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+    "Izinkan Frame melakukan streaming melalui P2P dari perangkat ini jika tautan debrid tidak tersedia. Nonaktifkan untuk mencegah pemutaran P2P lokal. Server jarak jauh yang dikonfigurasi tetap dapat melakukan streaming.",
   Licence: "Lisensi",
   "Licenses & attribution": "Lisensi & atribusi",
   "Lightens or darkens the whole picture.": "Mencerahkan atau menggelapkan seluruh gambar.",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "Tuliskan langkah-langkah yang memicu masalah, mulai dari saat Anda membuka Harbor.",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "Tuliskan langkah-langkah yang memicu masalah, mulai dari saat Anda membuka Frame.",
   "Load failed. Retry": "Gagal memuat. Coba lagi",
   "Loading {name}…": "Memuat {name}…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -400,8 +400,8 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "Prioritaskan {language}",
   "Move {name} down": "Pindahkan {name} ke bawah",
   "Move {name} up": "Pindahkan {name} ke atas",
-  "No custom options. Harbor uses your video settings.":
-    "Tidak ada opsi khusus. Harbor menggunakan pengaturan video Anda.",
+  "No custom options. Frame uses your video settings.":
+    "Tidak ada opsi khusus. Frame menggunakan pengaturan video Anda.",
   "No default profile": "Tidak ada profil default",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "Belum ada preferensi dipilih. Edit filter ini untuk memilih stream yang Anda inginkan.",
@@ -416,7 +416,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "Sumber notifikasi",
   "On your local network": "Di jaringan lokal Anda",
   "On-screen controls": "Kontrol di layar",
-  "Open Harbor account": "Buka akun Harbor",
+  "Open Frame account": "Buka akun Frame",
   "Open Stremio settings": "Buka pengaturan Stremio",
   "Open on YouTube": "Buka di YouTube",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -424,8 +424,8 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "Buka profil ini saat aplikasi dimulai. Permintaan terjadwal tetap dapat muncul nanti. Profil dengan PIN tidak dapat dijadikan default.",
   "Open {label} address": "Buka alamat {label}",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
-    "Efek video opsional yang diunduh dari pembuatnya. Harbor menerapkan shader yang diaktifkan sesuai urutan di bawah.",
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
+    "Efek video opsional yang diunduh dari pembuatnya. Frame menerapkan shader yang diaktifkan sesuai urutan di bawah.",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "Opsional. Tinggalkan informasi kontak jika Anda bersedia dihubungi, lalu pilih apakah nama Anda boleh dicantumkan secara publik.",
   "Optional. Used to allow more watch time. Without a PIN, switch profiles when time is up.":
@@ -493,13 +493,13 @@ const settingsRefinements: Record<string, string> = {
   "Right in the middle of the picture, hard to miss.": "Tepat di tengah gambar, mudah terlihat.",
   "Rule name": "Nama aturan",
   "SVP interpolation": "Interpolasi SVP",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "SVP sedang menangani penghalusan gerakan. Nonaktifkan di halaman SVP untuk menggunakan penghalusan Harbor.",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "SVP sedang menangani penghalusan gerakan. Nonaktifkan di halaman SVP untuk menggunakan penghalusan Frame.",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "Memenuhi area yang sama, tetapi tetap berupa jendela sehingga alt-tab tetap langsung merespons.",
   "Saturation {s}%, brightness {v}%": "Saturasi {s}%, kecerahan {v}%",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
-    "Simpan kualitas stream pilihan Anda. Stream harus cocok dengan setiap kategori yang Anda atur; kosongkan kategori untuk menerima nilai apa pun. Jika tidak ada yang cocok, Harbor menggunakan sumber terbaik berikutnya yang tersedia.",
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
+    "Simpan kualitas stream pilihan Anda. Stream harus cocok dengan setiap kategori yang Anda atur; kosongkan kategori untuk menerima nilai apa pun. Jika tidak ada yang cocok, Frame menggunakan sumber terbaik berikutnya yang tersedia.",
   "Save {name} as JSON": "Simpan {name} sebagai JSON",
   "Save {name} as SVG": "Simpan {name} sebagai SVG",
   "Saved {name}.": "{name} disimpan.",
@@ -512,8 +512,8 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "Teks pendukung ada di sini",
   "See the resolution, HDR format and audio while you watch.":
     "Lihat resolusi, format HDR, dan audio saat menonton.",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
-    "Lihat data yang disimpan Harbor di komputer ini dan hapus cache saat Anda ingin mengosongkan ruang.",
+  "See what Frame stores on this computer and clear caches when you want the space back.":
+    "Lihat data yang disimpan Frame di komputer ini dan hapus cache saat Anda ingin mengosongkan ruang.",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "Kirim audio ke speaker, headphone, atau receiver tertentu. Default sistem mengikuti keluaran audio sistem Anda.",
   "Services that record what you watch. Connect the ones you use and tune what each one sends.":
@@ -523,8 +523,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "Siapkan tujuan",
   "Set up rating providers": "Siapkan penyedia rating",
   "Set up song identification": "Siapkan identifikasi lagu",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "Atur televisi Anda dari sini. Semua pengaturan di halaman ini disimpan ke akun Harbor dan diterapkan oleh Big Picture di TV, sehingga Anda tidak perlu mengetik dengan remote.",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "Atur televisi Anda dari sini. Semua pengaturan di halaman ini disimpan ke akun Frame dan diterapkan oleh Big Picture di TV, sehingga Anda tidak perlu mengetik dengan remote.",
   "Sets the age level for the kids space.": "Mengatur batas usia untuk ruang anak.",
   "Setting up SVP…": "Menyiapkan SVP…",
   "Share your style": "Bagikan gaya Anda",
@@ -566,8 +566,8 @@ const settingsRefinements: Record<string, string> = {
     "Label kecil membulat dengan garis tepi yang meluncur masuk di bawah judul.",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "Pengaturan gerakan halus dan SVP. Interpolasi bingkai untuk anime ada di sini; shader gambar dipindahkan ke tab tersendiri.",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "Menghaluskan gerakan kamera menggunakan pemutar Harbor. Hasil terbaik saat laju penyegaran layar lebih tinggi dari laju bingkai video.",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "Menghaluskan gerakan kamera menggunakan pemutar Frame. Hasil terbaik saat laju penyegaran layar lebih tinggi dari laju bingkai video.",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "Menghaluskan gerakan menggunakan SVP. Mulai ulang pemutaran untuk menerapkan; nonaktifkan jika video tidak dapat diputar.",
   "Soften the artwork behind the stream picker.": "Lembutkan gambar di belakang pemilih stream.",
@@ -575,8 +575,8 @@ const settingsRefinements: Record<string, string> = {
     "Beberapa pengaturan TV tidak dapat disinkronkan dalam versi ini. Perubahan Anda tetap tersimpan di komputer ini.",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "Seseorang baru saja melepaskan handle itu. Handle akan tersedia 14 hari setelah dilepas.",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "Ada perilaku yang tidak semestinya, tetapi Anda masih dapat menggunakan Harbor.",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "Ada perilaku yang tidak semestinya, tetapi Anda masih dapat menggunakan Frame.",
   "Something looks wrong, but the feature still works.":
     "Ada tampilan yang keliru, tetapi fiturnya masih berfungsi.",
   "Something went wrong. Try again.": "Terjadi kesalahan. Coba lagi.",
@@ -612,8 +612,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "Menguji server streaming jarak jauh",
   "Text is enlarged in this preview so you can judge the style.":
     "Teks diperbesar dalam pratinjau ini agar Anda dapat menilai gayanya.",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "Akun Stremio itu sudah ditautkan ke akun Harbor lain. Putuskan tautannya di akun tersebut terlebih dahulu.",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "Akun Stremio itu sudah ditautkan ke akun Frame lain. Putuskan tautannya di akun tersebut terlebih dahulu.",
   "That Stremio sign-in did not go through. Try again.":
     "Proses masuk ke Stremio tidak berhasil. Coba lagi.",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
@@ -647,12 +647,12 @@ const settingsRefinements: Record<string, string> = {
     "Beberapa pengaturan yang biasanya cukup diatur sekali.",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "Beberapa pengaturan yang biasanya cukup diatur sekali. Masuk, pilih cara kerja Putar, dan tentukan tampilan Anda.",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "Bahasa untuk menu, tombol, dan label Harbor. Audio, subtitle, dan informasi judul memiliki pengaturan bahasa masing-masing.",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "Bahasa untuk menu, tombol, dan label Frame. Audio, subtitle, dan informasi judul memiliki pengaturan bahasa masing-masing.",
   "The same slow camera pan, with motion smoothing off and on.":
     "Gerakan kamera menyamping yang sama dan perlahan, dengan penghalusan gerakan nonaktif dan aktif.",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "JavaScript yang tersimpan akan dihapus. Mulai ulang Harbor untuk menghapus efek dari skrip yang sudah dijalankan.",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "JavaScript yang tersimpan akan dihapus. Mulai ulang Frame untuk menghapus efek dari skrip yang sudah dijalankan.",
   "The saved {name} will be removed and its changes will stop applying.":
     "{name} yang tersimpan akan dihapus dan perubahannya tidak lagi diterapkan.",
   "The server responded in {ms} ms.": "Server merespons dalam {ms} ms.",
@@ -660,8 +660,8 @@ const settingsRefinements: Record<string, string> = {
     "Enam entri pengaturan lokal terbesar, termasuk preferensi dan data pencarian.",
   "{count} entries": "{count} entri",
   "The volume pop-up is hidden.": "Pop-up volume disembunyikan.",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
-    "Tema, tata letak pemutar, gambar, dan informasi yang ditampilkan Harbor pada kartu.",
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
+    "Tema, tata letak pemutar, gambar, dan informasi yang ditampilkan Frame pada kartu.",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "Akun ini telah ditangguhkan. Hubungi dukungan jika menurut Anda ini keliru.",
   "This backup contained nothing restorable.":
@@ -669,7 +669,7 @@ const settingsRefinements: Record<string, string> = {
   "This backup has no data in it.": "Cadangan ini tidak berisi data.",
   "This is how your subtitles": "Beginilah subtitle Anda",
   "This is how your subtitles will look.": "Beginilah tampilan subtitle Anda.",
-  "This is not a Harbor backup file.": "Ini bukan file cadangan Harbor.",
+  "This is not a Frame backup file.": "Ini bukan file cadangan Frame.",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "Untuk streaming dari komputer ini ke perangkat lain, salin alamat jaringan lokalnya dan masukkan ke Server streaming jarak jauh di perangkat tersebut.",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -695,8 +695,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "Teks yang belum diterjemahkan tetap dalam bahasa Inggris. Pilih bahasa, lalu pilih Terapkan dan muat ulang.",
   "Unwatched episodes": "Episode belum ditonton",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "Unggah gambar Anda sendiri atau pilih dari katalog Harbor.",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "Unggah gambar Anda sendiri atau pilih dari katalog Frame.",
   "Use letters, numbers, and single hyphens only.":
     "Gunakan hanya huruf, angka, dan tanda hubung tunggal.",
   "Use no saved stream filter": "Jangan gunakan filter stream tersimpan",
@@ -705,8 +705,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "Gunakan {name}",
   "Used only if we need one more detail to reproduce the bug.":
     "Hanya digunakan jika kami membutuhkan detail tambahan untuk mereproduksi bug.",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "Menggunakan SVP untuk menghaluskan gerakan dalam pemutar Harbor. Cukup pasang SVP sekali; Harbor menggunakan mesinnya dan membuka SVP Manager bila diperlukan.",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "Menggunakan SVP untuk menghaluskan gerakan dalam pemutar Frame. Cukup pasang SVP sekali; Frame menggunakan mesinnya dan membuka SVP Manager bila diperlukan.",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "Menggunakan mesin gerakan SVP melalui VapourSynth. Mulai ulang pemutaran untuk menerapkan.",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -717,17 +717,17 @@ const settingsRefinements: Record<string, string> = {
     "Menggunakan perender GPU lama untuk kartu grafis yang bermasalah dengan perender modern.",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "Menggunakan prosesor untuk mendekode video. Coba jika dekode perangkat keras menyebabkan masalah gambar.",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "Menggunakan instalasi SVP dan VapourSynth di Linux untuk menghaluskan gerakan dalam pemutar Harbor.",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "Menggunakan instalasi SVP dan VapourSynth di Linux untuk menghaluskan gerakan dalam pemutar Frame.",
   "Video quality": "Kualitas video",
   "View generated mpv options": "Lihat opsi mpv yang dihasilkan",
   "Volume pop-up": "Pop-up volume",
   "We tag this account on the issue so you see the fix land.":
     "Kami menandai akun ini pada laporan agar Anda tahu saat perbaikannya tersedia.",
-  "What language Harbor speaks, and how subtitles behave.":
-    "Bahasa antarmuka Harbor dan perilaku subtitle.",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "Bahasa antarmuka Harbor dan trek audio yang diprioritaskan.",
+  "What language Frame speaks, and how subtitles behave.":
+    "Bahasa antarmuka Frame dan perilaku subtitle.",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "Bahasa antarmuka Frame dan trek audio yang diprioritaskan.",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "Asal stream, cara memfilternya, dan metadata pendukungnya.",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -739,7 +739,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "Perilaku jendela",
   "You can also turn off Rule is active to pause it without deleting it.":
     "Anda juga dapat menonaktifkan Aturan aktif untuk menjedanya tanpa menghapus.",
-  "You cannot use Harbor.": "Anda tidak dapat menggunakan Harbor.",
+  "You cannot use Frame.": "Anda tidak dapat menggunakan Frame.",
   "You changed your handle recently. You can change it again after the cooldown.":
     "Anda baru saja mengubah handle. Anda dapat mengubahnya lagi setelah masa tunggu berakhir.",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

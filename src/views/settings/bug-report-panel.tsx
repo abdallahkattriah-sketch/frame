@@ -206,7 +206,7 @@ export function BugReportPanel() {
           <SettingRow
             wide
             label={t("Severity")}
-            desc={t("How much does this affect your use of Harbor?")}
+            desc={t("How much does this affect your use of Frame?")}
           >
             <SeverityPicker value={severity} onChange={setSeverity} />
           </SettingRow>
@@ -214,7 +214,7 @@ export function BugReportPanel() {
           <SettingRow
             wide
             label={<label htmlFor="bug-report-steps">{t("Steps to reproduce")}</label>}
-            desc={t("List the steps that lead to the problem, starting from when you open Harbor.")}
+            desc={t("List the steps that lead to the problem, starting from when you open Frame.")}
           >
             <textarea
               id="bug-report-steps"
@@ -247,7 +247,7 @@ export function BugReportPanel() {
             <SettingRow
               wide
               label={<label htmlFor="bug-report-actual">{t("What actually happened")}</label>}
-              desc={t("Describe what Harbor did instead, including any message on screen.")}
+              desc={t("Describe what Frame did instead, including any message on screen.")}
             >
               <textarea
                 id="bug-report-actual"

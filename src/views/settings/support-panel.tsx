@@ -43,7 +43,7 @@ const CHARITIES = [
     name: "Internet Archive",
     url: "https://archive.org/donate",
     icon: internetArchiveIcon,
-    blurb: "Keeps the web's memory alive. Harbor would be poorer without it.",
+    blurb: "Keeps the web's memory alive. Frame would be poorer without it.",
   },
   {
     name: "Doctors Without Borders",
@@ -92,12 +92,12 @@ export function SupportPanel() {
       <Section
         title={t("Built on Stremio")}
         subtitle={t(
-          "Harbor would not be possible without Stremio. It is the foundation everything here is built on.",
+          "Frame would not be possible without Stremio. It is the foundation everything here is built on.",
         )}
       >
         <Prose>
           {t(
-            "Harbor speaks Stremio's addon protocol, and the whole ecosystem of addons grows out of their work. Stremio is funded by its community, and supporters who chip in get early access to experimental features. If you have it to spare, send some their way too.",
+            "Frame speaks Stremio's addon protocol, and the whole ecosystem of addons grows out of their work. Stremio is funded by its community, and supporters who chip in get early access to experimental features. If you have it to spare, send some their way too.",
           )}
         </Prose>
         <SettingRow
@@ -110,8 +110,8 @@ export function SupportPanel() {
       </Section>
 
       <Section
-        title={t("Donating to Harbor")}
-        subtitle={t("Short version: don't. Harbor takes no donations.")}
+        title={t("Donating to Frame")}
+        subtitle={t("Short version: don't. Frame takes no donations.")}
       >
         <Prose>
           {t(
@@ -123,7 +123,7 @@ export function SupportPanel() {
       <Section
         title={t("If you would rather give it away")}
         subtitle={t(
-          "No affiliation, no referral links, and Harbor gets nothing from these. They are just places where money goes further than it does here.",
+          "No affiliation, no referral links, and Frame gets nothing from these. They are just places where money goes further than it does here.",
         )}
       >
         {CHARITIES.map((c) => (

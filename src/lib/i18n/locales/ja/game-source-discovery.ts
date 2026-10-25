@@ -15,7 +15,7 @@ export default {
   "games.sources.batch.failedFile": "{file} を準備できませんでした。",
 
   "games.sources.batch.restart":
-    "選択したファイルをまとめてダウンロードするには、更新後にHarborを再起動してください。",
+    "選択したファイルをまとめてダウンロードするには、更新後にFrameを再起動してください。",
 
   "games.torrent.start": "ファイルをダウンロード",
 
@@ -24,7 +24,7 @@ export default {
   "games.sources.verification.action": "ソースを確認",
 
   "games.sources.verification.waiting":
-    "ソースのウィンドウで認証を完了してください。その後、Harbor がカタログを確認します。",
+    "ソースのウィンドウで認証を完了してください。その後、Frame がカタログを確認します。",
 
   "games.sources.source_verify_busy":
     "別のソースを確認中です。先にその認証を完了するか、ウィンドウを閉じてください。",
@@ -36,38 +36,38 @@ export default {
     "認証がタイムアウトしました。準備ができたら再試行してください。",
 
   "games.sources.source_verify_unavailable":
-    "このソースを確認するには、Harbor を更新して再起動してください。",
+    "このソースを確認するには、Frame を更新して再起動してください。",
 
   "games.sources.browser.direct": "直接ダウンロード",
 
   "games.sources.site.title": "サイトを開く",
   "games.sources.site.note":
-    "任意のサイトのダウンロードページを貼り付けてください。Harbor が専用ウィンドウで開き、そこでファイルを選ぶと Harbor に取り込まれます。",
+    "任意のサイトのダウンロードページを貼り付けてください。Frame が専用ウィンドウで開き、そこでファイルを選ぶと Frame に取り込まれます。",
   "games.sources.site.url": "ページのリンク",
   "games.sources.site.open": "サイトを開く",
   "games.sources.site.invalid": "公開された https のリンクが必要です。",
   "games.sources.browser.intro":
-    "Debridアカウントは不要です。{host}でファイルを選び、Harborで保存先を指定してください。",
+    "Debridアカウントは不要です。{host}でファイルを選び、Frameで保存先を指定してください。",
   "games.sources.browser.fallback":
-    "ダウンロードが自動で始まらない場合は、{host} がページに表示する代替リンクを使ってください。Harbor はそれでもファイルを受け取ります。",
+    "ダウンロードが自動で始まらない場合は、{host} がページに表示する代替リンクを使ってください。Frame はそれでもファイルを受け取ります。",
 
   "games.sources.browser.choose": "{host}でファイルを選択",
 
   "games.sources.browser.waiting":
-    "{host}のウィンドウでファイルを選択してください。Harborで保存先を指定できます。",
+    "{host}のウィンドウでファイルを選択してください。Frameで保存先を指定できます。",
 
-  "games.sources.browser.selected": "Harborでダウンロードできます",
+  "games.sources.browser.selected": "Frameでダウンロードできます",
 
   "games.sources.browser.another": "別のファイルを選択",
 
   "games.sources.browser.failed":
-    "{host}からHarborにファイルを渡せませんでした。再試行するか、{host}で開いてください。",
+    "{host}からFrameにファイルを渡せませんでした。再試行するか、{host}で開いてください。",
 
   "games.sources.browser.timeout":
     "ファイル選択がタイムアウトしました。{host}を開き直してください。",
 
   "games.sources.browser.restart":
-    "{host}から直接ダウンロードするには、更新後にHarborを再起動してください。",
+    "{host}から直接ダウンロードするには、更新後にFrameを再起動してください。",
 
   "games.sources.retrySavedCatalog": "保存済みカタログを再読み込み",
 
@@ -122,7 +122,7 @@ export default {
   "games.sources.platform.other": "{platform}版 · {host}ではネイティブ動作しません",
 
   "games.sources.platform.otherNote":
-    "お使いのOS向けの版を選んでください。Harborはこの端末でこのパッケージをネイティブにインストール・実行できません。",
+    "お使いのOS向けの版を選んでください。Frameはこの端末でこのパッケージをネイティブにインストール・実行できません。",
 
   "games.sources.platform.unknown": "プラットフォーム未指定",
 
@@ -130,7 +130,7 @@ export default {
     "提供元はパッケージのOSを指定していません。ダウンロード前に配信元の情報を確認してください。",
 
   "games.sources.platform.browseNote":
-    "ローカルゲームのダウンロードとファイル管理にはデスクトップ版Harborを使ってください。",
+    "ローカルゲームのダウンロードとファイル管理にはデスクトップ版Frameを使ってください。",
 
   "games.sources.platform.browse": "{platform}版",
 
@@ -140,9 +140,9 @@ export default {
 
   "games.sources.art.torrent": "トレントのダウンロード",
 
-  "games.sources.art.engine": "Harborのトレントエンジン",
+  "games.sources.art.engine": "Frameのトレントエンジン",
 
-  "games.sources.art.reviewTorrent": "Harborでダウンロード",
+  "games.sources.art.reviewTorrent": "Frameでダウンロード",
 
   "games.sources.ad.note": "AllDebridでファイルを準備してから、保存先を選びます。",
 
@@ -194,7 +194,7 @@ export default {
 
   "games.sources.discovery.change": "リンクを変更",
 
-  "games.sources.discovery.harbor": "Harborカタログ",
+  "games.sources.discovery.harbor": "Frameカタログ",
 
   "games.sources.discovery.community": "Hydra互換カタログ",
 
@@ -204,7 +204,7 @@ export default {
     "カタログの項目だけが保存されます。ファイルは選択したときにダウンロードされます。",
 
   "games.sources.source_no_catalog":
-    "このサイトにはHarborが読み取れるカタログリンクがありません。JSONカタログのリンクを貼り付けてください。",
+    "このサイトにはFrameが読み取れるカタログリンクがありません。JSONカタログのリンクを貼り付けてください。",
 
   "games.sources.source_url":
     "ウェブサイトのアドレス、HTTP(S)カタログURL、またはHydraのインストールリンクを入力してください。",
@@ -276,7 +276,7 @@ export default {
   "games.sources.links.destination": "保存先を選択",
 
   "games.sources.links.desktop":
-    "ファイルをダウンロードするにはHarborデスクトップを開いてください。",
+    "ファイルをダウンロードするにはFrameデスクトップを開いてください。",
 
   "games.sources.web.web": "ウェブダウンロード",
 
@@ -307,7 +307,7 @@ export default {
   "games.sources.web.again": "別のジョブを開始",
 
   "games.sources.web.storage":
-    "Harborはこのジョブを保存できませんでした。自動的には再送信されません。",
+    "Frameはこのジョブを保存できませんでした。自動的には再送信されません。",
 
   "games.sources.web.preparing": "TorBoxで準備中",
 
@@ -397,7 +397,7 @@ export default {
 
   "games.sources.pm.select": "この転送を使用",
 
-  "games.sources.pm.review": "送信した転送を選択してください。Harborは転送元を自動照合できません。",
+  "games.sources.pm.review": "送信した転送を選択してください。Frameは転送元を自動照合できません。",
 
   "games.sources.pm.retry": "転送を再試行",
 

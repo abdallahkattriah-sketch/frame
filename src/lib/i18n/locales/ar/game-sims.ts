@@ -1,5 +1,5 @@
 export default {
-  "games.sims.catalogUpdateRequired": "حدّث Harbor وأعد تشغيله لتصفح تنزيلات Sims 2 وSims 3.",
+  "games.sims.catalogUpdateRequired": "حدّث Frame وأعد تشغيله لتصفح تنزيلات Sims 2 وSims 3.",
   "games.sims.creatorNotesTitle": "روابط المنشئ · {count}",
   "games.sims.creatorNotesNote": "روابط من ملاحظات المنشئ. افتح الصفحة للاطلاع على تعليماتها.",
   "games.sims.ccBuildTitle": "المحتوى الذي يستخدمه هذا البناء",
@@ -92,7 +92,7 @@ export default {
   "games.sims.mtsCatMisc": "متنوعات",
   "games.sims.mtsCatTools": "الأدوات",
   "games.sims.mtsIntro":
-    "استورد تعديلًا أو محتوى مخصصًا إلى Harbor. الصق رابط صفحته الخاصة بـ The Sims 4، ثم اختر الملف الذي تريده.",
+    "استورد تعديلًا أو محتوى مخصصًا إلى Frame. الصق رابط صفحته الخاصة بـ The Sims 4، ثم اختر الملف الذي تريده.",
   "games.sims.mtsPage": "صفحة التنزيل",
   "games.sims.mtsLoad": "العثور على الملفات",
   "games.sims.mtsBrowse": "تصفح Mod The Sims",
@@ -159,8 +159,8 @@ export default {
   "games.sims.creatorExisting": "التثبيت الحالي",
   "games.sims.creatorManage": "مراجعة الملفات الحالية",
   "games.sims.creatorAdoptNote":
-    "أضف هذه الملفات إلى إدارة Harbor أولاً، ثم اختر إصداراً من صانع التعديل لتحديثها.",
-  "games.sims.creatorLinkNote": "راجع تحديث هذه المجموعة. يحتفظ Harbor بالملفات السابقة وإعداداتك.",
+    "أضف هذه الملفات إلى إدارة Frame أولاً، ثم اختر إصداراً من صانع التعديل لتحديثها.",
+  "games.sims.creatorLinkNote": "راجع تحديث هذه المجموعة. يحتفظ Frame بالملفات السابقة وإعداداتك.",
   "games.sims.creatorTarget":
     "تحتوي هذه المجموعة على ملفات تعديلات خارج الإصدار المحدد. ضعها في مجموعة منفصلة قبل تحديث MCCC.",
   "games.sims.creatorExistingError":
@@ -190,7 +190,7 @@ export default {
   "games.sims.trayRemove": "إزالة من المكتبة",
   "games.sims.trayRestore": "استعادة إلى المكتبة",
   "games.sims.trayNote":
-    "استورد الأراضي أو الغرف أو العائلات التي نزّلتها. يحتفظ Harbor بملفاتها المرتبطة معًا في Tray.",
+    "استورد الأراضي أو الغرف أو العائلات التي نزّلتها. يحتفظ Frame بملفاتها المرتبطة معًا في Tray.",
   "games.sims.trayReviewNote":
     "توضع ملفات Tray مباشرة في مجلد المكتبة. يصبح المحتوى المخصص المرفق مجموعة تعديلات منفصلة.",
   "games.sims.trayRemoveNote":
@@ -248,12 +248,12 @@ export default {
 
   "games.sims.adopt": "إدارة التعديلات الموجودة",
   "games.sims.adoptNote":
-    "أغلق The Sims 4. اختر تعديلاً واحداً أو محتوى مخصصاً مرتبطاً به، مع إعداداته، من المجلد نفسه. ستُنقل الملفات المدرجة إلى مجموعة Harbor واحدة؛ وتبقى الملفات الأخرى في مكانها.",
+    "أغلق The Sims 4. اختر تعديلاً واحداً أو محتوى مخصصاً مرتبطاً به، مع إعداداته، من المجلد نفسه. ستُنقل الملفات المدرجة إلى مجموعة Frame واحدة؛ وتبقى الملفات الأخرى في مكانها.",
   "games.sims.adoptFrom": "المجلد الحالي",
   "games.sims.adoptTo": "نقل إلى",
   "games.sims.adoptFolder": "اختر ملفات مرتبطة من مجلد واحد داخل Mods.",
   "games.sims.adoptManaged":
-    "اختر ملفات من خارج المجلدات التي يديرها Harbor واترك Resource.cfg في مكانه.",
+    "اختر ملفات من خارج المجلدات التي يديرها Frame واترك Resource.cfg في مكانه.",
   "games.sims.adoptScan": "تعذّر فحص بعض مجلدات التعديلات. عالج ذلك قبل إدارة هذه الملفات.",
 
   "games.sims.sets": "مجموعات التعديلات",
@@ -281,7 +281,7 @@ export default {
   "games.sims.setScan": "تعذّر فحص بعض مجلدات التعديلات. عالج ذلك قبل تبديل المجموعات.",
   "games.sims.savesLabelHint": "قبل إضافة تعديلات جديدة",
   "games.sims.savesRunning":
-    "أغلق The Sims 4 قبل نسخ ملفات الحفظ أو استعادتها. يجب أن يتمكن Harbor من التأكد من توقف اللعبة.",
+    "أغلق The Sims 4 قبل نسخ ملفات الحفظ أو استعادتها. يجب أن يتمكن Frame من التأكد من توقف اللعبة.",
   "games.sims.savesIntro":
     "احتفظ بنسخة من ملفات الحفظ قبل تغيير التعديلات. أغلق The Sims 4 أولًا. لا تتضمن النسخة التعديلات أو العائلات الموجودة في مجلد Tray.",
   "games.sims.title": "تعديلاتك والمحتوى المخصص",
@@ -303,7 +303,7 @@ export default {
     "أغلق The Sims 4 أولاً. الحفظ بعد إزالة المحتوى المخصص قد يغيّر العائلات أو المباني. تبقى الملفات المحذوفة في النسخ الاحتياطية، وتُنقل الملفات المعطلة خارج Mods.",
   "games.sims.recovery": "توقف تغيير سابق قبل اكتماله. استعد الإعداد السابق قبل إجراء تغيير آخر.",
   "games.sims.success": "تم تحديث ملفات التعديلات.",
-  "games.sims.applying": "جارٍ تطبيق التغييرات. أبقِ Harbor مفتوحاً…",
+  "games.sims.applying": "جارٍ تطبيق التغييرات. أبقِ Frame مفتوحاً…",
   "games.sims.checking": "جارٍ فحص الملفات…",
   "games.sims.skipped": "مستندات وصور تم تجاوزها · {count}",
   "games.sims.preview": "معاينة مضمنة في الحزمة",
@@ -340,7 +340,7 @@ export default {
   "games.sims.emptyManaged": "استورد تعديلاً نزّلته لإدارته هنا.",
   "games.sims.emptyBackups": "تظهر الإصدارات السابقة هنا بعد التحديث أو الإزالة.",
   "games.sims.emptyFiles": "لم نجد ملفات مدعومة في Mods.",
-  "games.sims.desktop": "تتطلب إدارة التعديلات أحدث تطبيق Harbor لسطح المكتب على Windows.",
+  "games.sims.desktop": "تتطلب إدارة التعديلات أحدث تطبيق Frame لسطح المكتب على Windows.",
   "games.sims.folderError":
     "اختر مجلد بيانات The Sims 4 الفعلي، دون اختصار أو رابط. يجب أن يحتوي على Mods وsaves وGameVersion.txt وOptions.ini.",
   "games.sims.readError": "تعذرت قراءة الملفات. تحقق من صلاحية الوصول وحاول مجدداً.",
@@ -349,7 +349,7 @@ export default {
   "games.sims.layoutError":
     "يحتوي الأرشيف على مجلدات تعديلات منفصلة أو أسماء ملفات مكررة. استورد كل تعديل على حدة للحفاظ على ملفاته معاً.",
   "games.sims.running":
-    "أغلق The Sims 4 قبل تغيير ملفات التعديلات. يجب أن يتمكن Harbor من التأكد من توقف اللعبة.",
+    "أغلق The Sims 4 قبل تغيير ملفات التعديلات. يجب أن يتمكن Frame من التأكد من توقف اللعبة.",
   "games.sims.duplicate":
     "يوجد ملف تعديل بالاسم نفسه في مجلد Mods آخر. عالج التكرار قبل استيراد هذه المجموعة أو تفعيلها.",
   "games.sims.recordError":

@@ -30,7 +30,7 @@ export default {
   "games.pokemon.guideSourceNote":
     "Özgün rehberi oku veya kaynak erişilebilir olduğunda burada aç.",
   "games.pokemon.readGuide": "Bulbapedia’da oku",
-  "games.pokemon.readInside": "Harbor’da oku",
+  "games.pokemon.readInside": "Frame’da oku",
   "games.pokemon.closeReader": "Okuyucuyu kapat",
   "games.pokemon.downloadImage": "{name} görselini indir",
   "games.pokemon.imageSaved": "{name} görseli kaydedildi",
@@ -42,7 +42,7 @@ export default {
   "games.pokemon.saveStep2":
     "Oyunu kapat, ardından pil kaydını (.sav, .srm veya .dsv) bul veya dışa aktar.",
   "games.pokemon.saveStep3":
-    "Harbor’da düzenlemek için yukarıdaki Oyun kaydını aç seçeneğini kullan.",
+    "Frame’da düzenlemek için yukarıdaki Oyun kaydını aç seçeneğini kullan.",
   "games.pokemon.findSave": "Kaydım nerede?",
   "games.pokemon.saveLocations":
     "ROM’un yanında veya emülatörün kayıt klasöründe ara. Yalnızca durum kaydın varsa emülatörde yükle, ardından oyun menüsünden kaydet.",

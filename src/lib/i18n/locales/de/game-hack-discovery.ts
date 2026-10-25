@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Dateiprüfsummen · SHA-256",
   "games.patch.localNote": "Auf deinem Gerät · BPS · IPS · UPS · Bis zu 256 MB",
   "games.patch.desktop":
-    "Wende Patches in der Harbor-Desktop-App unter Windows, macOS oder Linux an. Deine Dateien bleiben auf deinem Gerät, das Originalspiel bleibt erhalten.",
+    "Wende Patches in der Frame-Desktop-App unter Windows, macOS oder Linux an. Deine Dateien bleiben auf deinem Gerät, das Originalspiel bleibt erhalten.",
   "games.patch.done": "Bereit für ein neues Abenteuer",
   "games.patch.preserved":
     "Deine gepatchte Kopie wurde gespeichert. Originalspiel und Patch bleiben unverändert.",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Eine ausgewählte Datei wurde nach der Prüfung geändert. Prüfe den Patch vor dem Speichern erneut.",
   "games.patch.patch_output_exists":
-    "Hier existiert bereits eine Datei. Wähle einen anderen Dateinamen. Harbor überschreibt keine vorhandenen Dateien.",
+    "Hier existiert bereits eine Datei. Wähle einen anderen Dateinamen. Frame überschreibt keine vorhandenen Dateien.",
   "games.patch.patch_read_failed":
     "Eine ausgewählte Datei konnte nicht gelesen werden. Prüfe, ob sie noch verfügbar ist, und wähle sie erneut.",
   "games.patch.patch_write_failed":
@@ -76,9 +76,9 @@ export default {
   "games.atlas.sort.newest": "Neueste",
   "games.atlas.sort.oldest": "Älteste",
   "games.hub.stepPatch":
-    "Wähle dein Originalspiel und einen BPS-, IPS- oder UPS-Patch. Harbor speichert eine separate Kopie.",
+    "Wähle dein Originalspiel und einen BPS-, IPS- oder UPS-Patch. Frame speichert eine separate Kopie.",
   "games.patch.description":
-    "Wähle dein Originalspiel und einen BPS-, IPS- oder UPS-Patch. Harbor speichert eine separate Kopie.",
+    "Wähle dein Originalspiel und einen BPS-, IPS- oder UPS-Patch. Frame speichert eine separate Kopie.",
   "games.patch.choosePatch": "Patch auswählen (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Diese Datei ist kein unterstützter BPS-, IPS- oder UPS-Patch.",
   "games.discovery.viewGame": "Spiel ansehen",

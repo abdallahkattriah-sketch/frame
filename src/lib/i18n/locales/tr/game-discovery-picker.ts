@@ -50,7 +50,7 @@ export default {
   "games.pick.noHistory": "Henüz etkinlik yok. Favori seç veya Oyunlar ayarlarından Steam'i bağla.",
   "games.pick.manualOnly": "Bu önerileri yalnızca favorilerin ve seçtiğin filtreler belirleyecek.",
   "games.pick.addedNote":
-    "“Yeni eklenen”, ilk içe aktarmadan sonra Harbor'da ilk görüldüğü zamandır; satın alma tarihi değildir.",
+    "“Yeni eklenen”, ilk içe aktarmadan sonra Frame'da ilk görüldüğü zamandır; satın alma tarihi değildir.",
   "games.pick.because": "{name} oyununu sevdiğin için",
   "games.pick.matches": "Seçimlerine uyuyor",
   "games.pick.steamCatalog": "Steam kataloğu",

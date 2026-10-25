@@ -29,7 +29,7 @@ export default {
     "Buka save emulator untuk mengedit tim, atau impor Pokémon satu per satu ke koleksi.",
   "games.pokemon.guideSourceNote": "Baca panduan aslinya, atau buka di sini saat sumber tersedia.",
   "games.pokemon.readGuide": "Baca di Bulbapedia",
-  "games.pokemon.readInside": "Baca di Harbor",
+  "games.pokemon.readInside": "Baca di Frame",
   "games.pokemon.closeReader": "Tutup pembaca",
   "games.pokemon.downloadImage": "Unduh gambar {name}",
   "games.pokemon.imageSaved": "Gambar {name} disimpan",
@@ -40,7 +40,7 @@ export default {
   "games.pokemon.saveStep1": "Buka game dan pilih Simpan di menu game.",
   "games.pokemon.saveStep2":
     "Tutup game, lalu cari atau ekspor battery save (.sav, .srm, atau .dsv).",
-  "games.pokemon.saveStep3": "Pilih Buka save game di atas untuk mengeditnya di Harbor.",
+  "games.pokemon.saveStep3": "Pilih Buka save game di atas untuk mengeditnya di Frame.",
   "games.pokemon.findSave": "Di mana save saya?",
   "games.pokemon.saveLocations":
     "Cari di samping ROM atau folder save emulator. Jika hanya punya save state, muat di emulator lalu simpan melalui menu game.",

@@ -7,7 +7,7 @@ const surfaces4: Record<string, string> = {
   "Select renderer": "Выберите устройство воспроизведения",
   "Scanning...": "Поиск...",
   "This PC": "Этот компьютер",
-  "Harbor on the server display": "Harbor на экране сервера",
+  "Frame on the server display": "Frame на экране сервера",
   "Scanning your network...": "Поиск в вашей сети...",
   "No Chromecast, DLNA, or Roku devices found. Make sure your TV is on, awake, and on the same Wi-Fi.":
     "Устройства Chromecast, DLNA или Roku не найдены. Убедитесь, что телевизор включён, не находится в спящем режиме и подключён к той же сети Wi-Fi.",
@@ -111,8 +111,8 @@ const surfaces4: Record<string, string> = {
   "Update submitted": "Обновление отправлено",
   "Your new version is in for a quick review. The live listing keeps working until this one is approved.":
     "Новая версия отправлена на быструю проверку. Текущая публикация останется доступной до её одобрения.",
-  "Every theme you share gets a private owner token. On the device where you shared it, Harbor saved it automatically, so those themes show up right here to claim in one tap. To claim one from a different device, paste that token below. New shares now bind straight to your account, so you will not need this again.":
-    "Каждая тема, которой вы делитесь, получает закрытый токен владельца. Harbor автоматически сохраняет его на устройстве, с которого вы поделились темой, поэтому такие темы появляются здесь и их можно привязать одним нажатием. Чтобы привязать тему с другого устройства, вставьте токен ниже. Теперь новые публикации сразу привязываются к вашему аккаунту, поэтому повторять это больше не потребуется.",
+  "Every theme you share gets a private owner token. On the device where you shared it, Frame saved it automatically, so those themes show up right here to claim in one tap. To claim one from a different device, paste that token below. New shares now bind straight to your account, so you will not need this again.":
+    "Каждая тема, которой вы делитесь, получает закрытый токен владельца. Frame автоматически сохраняет его на устройстве, с которого вы поделились темой, поэтому такие темы появляются здесь и их можно привязать одним нажатием. Чтобы привязать тему с другого устройства, вставьте токен ниже. Теперь новые публикации сразу привязываются к вашему аккаунту, поэтому повторять это больше не потребуется.",
   "Claim a theme": "Привязать тему",
   "Attach a theme you shared before creating this account.":
     "Привяжите тему, которой вы поделились до создания этого аккаунта.",
@@ -131,8 +131,8 @@ const surfaces4: Record<string, string> = {
   "No previous versions yet. Your next update starts the history.":
     "Предыдущих версий пока нет. История начнётся со следующего обновления.",
   "Get yours at": "Получить можно на",
-  "Used to check cache and unrestrict links. Harbor never adds or removes anything on your account on its own.":
-    "Используется для проверки кеша и снятия ограничений со ссылок. Harbor никогда ничего не добавляет в ваш аккаунт и не удаляет из него самостоятельно.",
+  "Used to check cache and unrestrict links. Frame never adds or removes anything on your account on its own.":
+    "Используется для проверки кеша и снятия ограничений со ссылок. Frame никогда ничего не добавляет в ваш аккаунт и не удаляет из него самостоятельно.",
   "Same read-only usage as Real-Debrid. Also lets you queue uncached sources from the play picker.":
     "Такой же доступ только для чтения, как у Real-Debrid. Также позволяет ставить некешированные источники в очередь из меню выбора источника воспроизведения.",
   "AllDebrid deprecated their cache-check endpoint, so streams may show as unknown until you actually hit Play.":
@@ -148,7 +148,7 @@ const surfaces4: Record<string, string> = {
   "Applies when you play something. Only visibly changes the picture when the video is being scaled.":
     "Применяется при воспроизведении. Заметно меняет изображение, только когда видео масштабируется.",
   "How this is measured": "Как это измеряется",
-  "Harbor opens 4 parallel requests to": "Harbor отправляет 4 параллельных запроса к",
+  "Frame opens 4 parallel requests to": "Frame отправляет 4 параллельных запроса к",
   ", discards the first 1.2s so TCP slow-start doesn't tank the result, then measures until it has 150 MB or 8 seconds of steady-state transfer.":
     ", отбрасывает первые 1,2 с, чтобы медленный старт TCP не ухудшал результат, а затем измеряет скорость, пока не будет передано 150 МБ или не пройдёт 8 секунд стабильной передачи.",
   "The number is bytes divided by the time they actually took to arrive. Cloudflare is a single origin, so on a very fast line this can read lower than a multi-server test like speedtest.net.":
@@ -160,8 +160,8 @@ const surfaces4: Record<string, string> = {
   "Re-test": "Проверить снова",
   "Slot is getting crowded ({count}/{limit}). May overflow on narrow screens.":
     "В области становится тесно ({count}/{limit}). На узких экранах содержимое может выйти за её пределы.",
-  "Highly recommended. This is what gives you the full Harbor experience: Popular, Trending, In Theaters, and per-service rails. Free at":
-    "Настоятельно рекомендуется. Обеспечивает все возможности Harbor: «Популярное», «В тренде», «В кинотеатрах» и подборки по сервисам. Бесплатно на",
+  "Highly recommended. This is what gives you the full Frame experience: Popular, Trending, In Theaters, and per-service rails. Free at":
+    "Настоятельно рекомендуется. Обеспечивает все возможности Frame: «Популярное», «В тренде», «В кинотеатрах» и подборки по сервисам. Бесплатно на",
   "Use the v3 key, not the read access token.":
     "Используйте ключ v3, а не токен доступа для чтения.",
   "Free at": "Бесплатно на",
@@ -227,7 +227,7 @@ const surfaces4: Record<string, string> = {
   "Couldn't load shows": "Не удалось загрузить сериалы",
   "Typing on your computer": "Ввод с компьютера",
   "Type to search…": "Введите запрос…",
-  "This Harbor": "Этот Harbor",
+  "This Frame": "Этот Frame",
   "Cast to": "Транслировать на",
   "No cast devices found on your network.": "В вашей сети не найдены устройства для трансляции.",
   "Voice search": "Голосовой поиск",
@@ -286,19 +286,19 @@ const surfaces4: Record<string, string> = {
     "Во время отрисовки произошёл сбой. Перезагрузите страницу для восстановления или отправьте нам технические сведения.",
   "We couldn't find what you were looking for. The wire got snipped: either the page moved, the addon's offline, or something glitched on our end.":
     "Не удалось найти то, что вы искали. Связь оборвалась: возможно, страница перемещена, дополнение не в сети или на нашей стороне произошёл сбой.",
-  "Sorry, Harbor crashed the last time it was running. You can review the details and choose whether to send a report.":
-    "К сожалению, при прошлом запуске Harbor произошёл сбой. Вы можете просмотреть сведения и решить, отправлять ли отчёт.",
+  "Sorry, Frame crashed the last time it was running. You can review the details and choose whether to send a report.":
+    "К сожалению, при прошлом запуске Frame произошёл сбой. Вы можете просмотреть сведения и решить, отправлять ли отчёт.",
   "Oops..": "Ой..",
   "Take me back": "Вернуться",
   "Report sent": "Отчёт отправлен",
   "Thanks. Tracked as {id}.": "Спасибо. Номер обращения: {id}.",
   "Could not send: {message}": "Не удалось отправить: {message}",
-  "Sends the context above straight to the Harbor team. No keys or library data.":
-    "Отправляет указанные выше сведения напрямую команде Harbor. Ключи и данные медиатеки не передаются.",
+  "Sends the context above straight to the Frame team. No keys or library data.":
+    "Отправляет указанные выше сведения напрямую команде Frame. Ключи и данные медиатеки не передаются.",
   "Technical detail": "Технические сведения",
   "Copy to clipboard": "Копировать в буфер обмена",
   "Choose where to open this link": "Выберите, где открыть эту ссылку",
-  "Continue in Harbor": "Продолжить в Harbor",
+  "Continue in Frame": "Продолжить в Frame",
   "Continue in browser": "Продолжить в браузере",
   "Choose another destination": "Выбрать другое место",
   "Alternate link destination": "Другое место открытия ссылки",
@@ -314,9 +314,9 @@ const surfaces4: Record<string, string> = {
   "Remove preset": "Удалить предустановку",
   "Add preset": "Добавить предустановку",
   "Resolving manifest": "Обработка манифеста",
-  "Added to Harbor": "Добавлено в Harbor",
+  "Added to Frame": "Добавлено в Frame",
   "Saved to your library.": "Сохранено в вашей медиатеке.",
-  "Verified Harbor Staff": "Подтверждённый сотрудник Harbor",
+  "Verified Frame Staff": "Подтверждённый сотрудник Frame",
   "Diagnostics request": "Запрос диагностических данных",
   "Sharing your diagnostics for issue #{ticket}. Your session tokens, API keys, and passwords are removed before anything leaves your device.":
     "Вы отправляете диагностические данные по проблеме #{ticket}. Токены сеанса, API-ключи и пароли удаляются до отправки данных с вашего устройства.",
@@ -335,10 +335,10 @@ const surfaces4: Record<string, string> = {
   "A favorite title or one of your themes will appear here":
     "Здесь появится избранный фильм, сериал или одна из ваших тем",
   "This user hasn't set a showcase": "Этот пользователь не настроил витрину",
-  "Harbor dropped {n} suspicious or mismatched result.":
-    "Harbor исключил {n} подозрительный или несоответствующий результат.",
-  "Harbor dropped {n} suspicious or mismatched results.":
-    "Harbor исключил {n} подозрительных или несоответствующих результатов.",
+  "Frame dropped {n} suspicious or mismatched result.":
+    "Frame исключил {n} подозрительный или несоответствующий результат.",
+  "Frame dropped {n} suspicious or mismatched results.":
+    "Frame исключил {n} подозрительных или несоответствующих результатов.",
   "plays via": "воспроизводится через",
   "{n} cached": "В кэше: {n}",
   "{total} found across 1 source": "Найдено {total} в 1 источнике",
@@ -375,16 +375,16 @@ const surfaces4: Record<string, string> = {
   "In My List": "В списке к просмотру",
   "Add to My List": "Добавить в список к просмотру",
   "Slide {number}": "Слайд {number}",
-  "Harbor couldn't reach MyAnimeList or AniList. Check your connection and try again.":
-    "Harbor не удалось подключиться к MyAnimeList или AniList. Проверьте подключение и повторите попытку.",
+  "Frame couldn't reach MyAnimeList or AniList. Check your connection and try again.":
+    "Frame не удалось подключиться к MyAnimeList или AniList. Проверьте подключение и повторите попытку.",
   "{name} · since {year}": "{name} · с {year} года",
   Winners: "Лауреаты",
   "Add a TMDB key in Settings to unlock award winners.":
     "Добавьте ключ TMDB в настройках, чтобы открыть список лауреатов.",
   "View {title}": "Открыть {title}",
   "Couldn't load this catalog": "Не удалось загрузить этот каталог",
-  "Harbor couldn't reach the catalog servers. Check your connection and try again.":
-    "Harbor не удалось подключиться к серверам каталога. Проверьте подключение и повторите попытку.",
+  "Frame couldn't reach the catalog servers. Check your connection and try again.":
+    "Frame не удалось подключиться к серверам каталога. Проверьте подключение и повторите попытку.",
   "Ep {episode}": "Серия {episode}",
   "{hours}h {minutes}m left": "Осталось {hours} ч {minutes} мин",
   "Couldn't load Discover": "Не удалось загрузить раздел «Обзор»",
@@ -395,8 +395,8 @@ const surfaces4: Record<string, string> = {
   "Couldn't load your home": "Не удалось загрузить главную страницу",
   "Top 10 Today": "Топ-10 сегодня",
   "Not connected to a computer": "Нет подключения к компьютеру",
-  "Your library lives on Harbor. Connect to your computer and it shows up here.":
-    "Ваша медиатека хранится в Harbor. Подключитесь к компьютеру, и она появится здесь.",
+  "Your library lives on Frame. Connect to your computer and it shows up here.":
+    "Ваша медиатека хранится в Frame. Подключитесь к компьютеру, и она появится здесь.",
   "The most-watched movies and series on {service} right now.":
     "Самые просматриваемые фильмы и сериалы на {service} прямо сейчас.",
 };

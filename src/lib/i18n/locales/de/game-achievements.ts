@@ -42,12 +42,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam hat das Ergebnis noch nicht bestätigt. Aktualisiere vor weiteren Änderungen.",
   "games.achievementManager.error.platform":
-    "Die Verwaltung von Errungenschaften ist derzeit in Harbor unter Windows x64 verfügbar.",
+    "Die Verwaltung von Errungenschaften ist derzeit in Frame unter Windows x64 verfügbar.",
   "games.achievementManager.error.invalid": "Wähle höchstens 2.000 Änderungen auf einmal aus.",
   "games.achievementManager.error.stale":
     "Diese Errungenschaften haben sich in Steam geändert. Aktualisiere vor dem Bearbeiten.",
   "games.achievementManager.error.protected":
-    "Diese Errungenschaft wird vom Spiel verwaltet. Harbor kann sie nicht bearbeiten.",
+    "Diese Errungenschaft wird vom Spiel verwaltet. Frame kann sie nicht bearbeiten.",
   "games.achievementManager.error.expired":
     "Diese Prüfung ist abgelaufen. Aktualisiere vor dem Anwenden.",
   "games.achievementManager.error.busy":
@@ -65,12 +65,12 @@ export default {
   "games.achievementManager.consentBody":
     "Schalte Errungenschaften im angemeldeten Steam-Konto frei oder sperre sie erneut. Deine Auswahl bleibt ein Entwurf, bis du die Änderungen anwendest.",
   "games.achievementManager.consentRules":
-    "Harbor nutzt Steams Schnittstelle für Errungenschaften ohne Eingriffe in Spiele. Die Regeln und Belohnungsvoraussetzungen des jeweiligen Spiels gelten weiterhin.",
+    "Frame nutzt Steams Schnittstelle für Errungenschaften ohne Eingriffe in Spiele. Die Regeln und Belohnungsvoraussetzungen des jeweiligen Spiels gelten weiterhin.",
   "games.achievementManager.consentSam": "Inspiriert vom Errungenschaftsablauf in SAM",
-  "games.achievementManager.consentOnce": "Einmaliger Hinweis für dieses Harbor-Profil.",
+  "games.achievementManager.consentOnce": "Einmaliger Hinweis für dieses Frame-Profil.",
   "games.achievementManager.consentAccept": "Verstanden",
   "games.achievementManager.desktopOnly":
-    "Nutze Harbor unter Windows mit laufendem Steam, um Errungenschaften zu ändern.",
+    "Nutze Frame unter Windows mit laufendem Steam, um Errungenschaften zu ändern.",
   "games.achievementManager.all": "Alle",
   "games.achievementManager.filter": "Errungenschaften filtern",
   "games.achievementManager.rewards": "Gegenstandsbelohnungen",
@@ -129,7 +129,7 @@ export default {
   "games.achievementManager.pickTitle": "Spiel wählen",
   "games.achievementManager.pickSearch": "Deine Spiele durchsuchen",
   "games.achievementManager.pickNote":
-    "Harbor kann Errungenschaften bearbeiten, sobald Steam sie auf diesem Computer zwischengespeichert hat.",
+    "Frame kann Errungenschaften bearbeiten, sobald Steam sie auf diesem Computer zwischengespeichert hat.",
   "games.achievementManager.pickInstalled": "Installiert",
   "games.achievementManager.pickEmpty": "Keine Spiele entsprechen deiner Suche.",
   "games.achievementManager.pickUnavailable":

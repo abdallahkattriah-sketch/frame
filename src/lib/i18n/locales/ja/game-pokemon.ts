@@ -11,12 +11,12 @@ export default {
     "セーブデータを検索できませんでした。再検索するか、ファイルを選んでください。",
   "games.pokemon.noDetectedSaves":
     "セーブデータが見つかりません。ゲーム内でセーブするか、エミュレーターのセーブファイルを選んでください。",
-  "games.pokemon.saveOrigin.harbor": "Harborのセーブデータ",
+  "games.pokemon.saveOrigin.harbor": "Frameのセーブデータ",
   "games.pokemon.saveOrigin.adjacent": "ROMと同じフォルダー",
   "games.pokemon.error.pokemon_hack_export":
     "このROMハックの追加ポケモンデータをまだ保持できないため、バンクへの書き出しは準備中です。セーブデータの確認と編集は利用できます。",
   "games.pokemon.error.pokemon_save_running":
-    "編集を保存する前に、Harborでこのゲームを終了してください。プレビューはそのまま残ります。",
+    "編集を保存する前に、Frameでこのゲームを終了してください。プレビューはそのまま残ります。",
   "games.pokemon.title": "あなたのポケモンの冒険",
   "games.pokemon.intro": "次の道を見つけよう。仲間を育てよう。ポケモンと、どこまでも。",
   "games.pokemon.browse": "このポケモンのゲームを調べる",
@@ -82,7 +82,7 @@ export default {
   "games.pokemon.openSave": "セーブデータを開く",
   "games.pokemon.importPokemon": "ポケモンファイルを読み込む",
   "games.pokemon.engineMissing":
-    "このHarborには、ポケモン用エンジンがまだインストールされていません。",
+    "このFrameには、ポケモン用エンジンがまだインストールされていません。",
   "games.pokemon.bankError": "操作を完了できませんでした。",
   "games.pokemon.bankBrowse": "ポケモンを表示",
   "games.pokemon.gameSave": "セーブデータ",
@@ -136,7 +136,7 @@ export default {
   "games.pokemon.training": "個体値・努力値",
   "games.pokemon.previewEdits": "変更を確認",
   "games.pokemon.error.pokemon_engine_missing":
-    "このHarborには、ポケモン用エンジンがまだインストールされていません。",
+    "このFrameには、ポケモン用エンジンがまだインストールされていません。",
   "games.pokemon.error.pokemon_engine_start": "ポケモン用エンジンを起動できませんでした。",
   "games.pokemon.error.pokemon_engine_timeout":
     "エンジンの処理がタイムアウトしました。セーブデータは変更されていません。",
@@ -144,7 +144,7 @@ export default {
   "games.pokemon.error.pokemon_file":
     "対応するセーブデータまたはポケモンファイルを選択してください。",
   "games.pokemon.error.pokemon_save_changed":
-    "Harborの外でセーブデータが変更されました。開き直してから続けてください。",
+    "Frameの外でセーブデータが変更されました。開き直してから続けてください。",
   "games.pokemon.error.pokemon_review_changed":
     "確認内容が古くなっています。変更をもう一度確認してください。",
   "games.pokemon.error.pokemon_write":

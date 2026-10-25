@@ -175,7 +175,7 @@ function preset(
 export const SUB_PRESETS: SubPreset[] = [
   preset(
     "default",
-    "Harbor default",
+    "Frame default",
     "White text, soft shadow. The safe one.",
     100,
     "White",

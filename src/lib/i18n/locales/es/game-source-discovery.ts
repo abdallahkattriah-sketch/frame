@@ -15,7 +15,7 @@ export default {
   "games.sources.batch.failedFile": "No se pudo preparar {file}.",
 
   "games.sources.batch.restart":
-    "Reinicia Harbor después de actualizar para descargar juntos los archivos seleccionados.",
+    "Reinicia Frame después de actualizar para descargar juntos los archivos seleccionados.",
 
   "games.torrent.start": "Descargar archivos",
 
@@ -24,7 +24,7 @@ export default {
   "games.sources.verification.action": "Verificar fuente",
 
   "games.sources.verification.waiting":
-    "Completa la verificación en la ventana de la fuente. Harbor comprobará su catálogo después.",
+    "Completa la verificación en la ventana de la fuente. Frame comprobará su catálogo después.",
 
   "games.sources.source_verify_busy":
     "Se está verificando otra fuente. Termina o cierra esa ventana primero.",
@@ -36,38 +36,38 @@ export default {
     "La verificación agotó el tiempo de espera. Inténtalo de nuevo cuando estés listo.",
 
   "games.sources.source_verify_unavailable":
-    "Actualiza y reinicia Harbor para verificar esta fuente.",
+    "Actualiza y reinicia Frame para verificar esta fuente.",
 
   "games.sources.browser.direct": "Descarga directa",
 
   "games.sources.site.title": "Abrir un sitio",
   "games.sources.site.note":
-    "Pega una página de descarga de cualquier sitio. Harbor la abre en su propia ventana, eliges el archivo allí y se descarga en Harbor.",
+    "Pega una página de descarga de cualquier sitio. Frame la abre en su propia ventana, eliges el archivo allí y se descarga en Frame.",
   "games.sources.site.url": "Enlace de la página",
   "games.sources.site.open": "Abrir sitio",
   "games.sources.site.invalid": "Tiene que ser un enlace https público.",
   "games.sources.browser.intro":
-    "No necesitas una cuenta de debrid. Elige un archivo en {host} y después dónde guardarlo en Harbor.",
+    "No necesitas una cuenta de debrid. Elige un archivo en {host} y después dónde guardarlo en Frame.",
   "games.sources.browser.fallback":
-    "Si la descarga no empieza sola, usa el enlace alternativo que {host} muestra en la página. Harbor recoge el archivo igualmente.",
+    "Si la descarga no empieza sola, usa el enlace alternativo que {host} muestra en la página. Frame recoge el archivo igualmente.",
 
   "games.sources.browser.choose": "Elegir archivo en {host}",
 
   "games.sources.browser.waiting":
-    "Elige el archivo en la ventana de {host}. Harbor te pedirá dónde guardarlo.",
+    "Elige el archivo en la ventana de {host}. Frame te pedirá dónde guardarlo.",
 
-  "games.sources.browser.selected": "Listo para descargar en Harbor",
+  "games.sources.browser.selected": "Listo para descargar en Frame",
 
   "games.sources.browser.another": "Elegir otro archivo",
 
   "games.sources.browser.failed":
-    "{host} no pudo enviar el archivo a Harbor. Reinténtalo o ábrelo en {host}.",
+    "{host} no pudo enviar el archivo a Frame. Reinténtalo o ábrelo en {host}.",
 
   "games.sources.browser.timeout":
     "La selección de archivos agotó el tiempo de espera. Abre {host} de nuevo.",
 
   "games.sources.browser.restart":
-    "Reinicia Harbor después de actualizar para descargar directamente desde {host}.",
+    "Reinicia Frame después de actualizar para descargar directamente desde {host}.",
 
   "games.sources.retrySavedCatalog": "Reintentar el catálogo guardado",
 
@@ -125,7 +125,7 @@ export default {
   "games.sources.platform.other": "Versión de {platform} · no nativa en {host}",
 
   "games.sources.platform.otherNote":
-    "Elige una versión para tu sistema operativo. Harbor no puede instalar ni ejecutar este paquete de forma nativa en este dispositivo.",
+    "Elige una versión para tu sistema operativo. Frame no puede instalar ni ejecutar este paquete de forma nativa en este dispositivo.",
 
   "games.sources.platform.unknown": "Plataforma sin especificar",
 
@@ -133,7 +133,7 @@ export default {
     "La fuente no indica el sistema operativo del paquete. Consulta al distribuidor antes de descargar.",
 
   "games.sources.platform.browseNote":
-    "Usa Harbor para escritorio para descargar y gestionar archivos de juegos locales.",
+    "Usa Frame para escritorio para descargar y gestionar archivos de juegos locales.",
 
   "games.sources.platform.browse": "Versión para {platform}",
 
@@ -143,9 +143,9 @@ export default {
 
   "games.sources.art.torrent": "Descarga torrent",
 
-  "games.sources.art.engine": "Motor torrent de Harbor",
+  "games.sources.art.engine": "Motor torrent de Frame",
 
-  "games.sources.art.reviewTorrent": "Descargar en Harbor",
+  "games.sources.art.reviewTorrent": "Descargar en Frame",
 
   "games.sources.ad.note": "Prepara este archivo con AllDebrid y después elige dónde guardarlo.",
 
@@ -199,7 +199,7 @@ export default {
 
   "games.sources.discovery.change": "Cambiar enlace",
 
-  "games.sources.discovery.harbor": "Catálogo de Harbor",
+  "games.sources.discovery.harbor": "Catálogo de Frame",
 
   "games.sources.discovery.community": "Catálogo compatible con Hydra",
 
@@ -209,7 +209,7 @@ export default {
     "Solo se guardan las entradas del catálogo. Los archivos se descargan cuando los eliges.",
 
   "games.sources.source_no_catalog":
-    "Este sitio no publica un enlace de catálogo que Harbor pueda leer. Pega el enlace de su catálogo JSON.",
+    "Este sitio no publica un enlace de catálogo que Frame pueda leer. Pega el enlace de su catálogo JSON.",
 
   "games.sources.source_url":
     "Introduce una dirección web, una URL HTTP(S) de catálogo o un enlace de instalación de Hydra.",
@@ -267,7 +267,7 @@ export default {
   "games.sources.links.account":
     "El servicio rechazó la conexión. Revisa su clave en los ajustes de fuentes.",
 
-  "games.sources.links.rate": "El servicio pidió a Harbor que espere. Inténtalo en unos momentos.",
+  "games.sources.links.rate": "El servicio pidió a Frame que espere. Inténtalo en unos momentos.",
 
   "games.sources.links.limit": "El servicio devolvió demasiados archivos para revisarlos a la vez.",
 
@@ -281,7 +281,7 @@ export default {
 
   "games.sources.links.destination": "Elegir destino",
 
-  "games.sources.links.desktop": "Abre Harbor para escritorio para descargar archivos.",
+  "games.sources.links.desktop": "Abre Frame para escritorio para descargar archivos.",
 
   "games.sources.web.web": "Descargas web",
 
@@ -311,7 +311,7 @@ export default {
   "games.sources.web.again": "Iniciar otra tarea",
 
   "games.sources.web.storage":
-    "Harbor no pudo guardar esta tarea. No se enviará de nuevo automáticamente.",
+    "Frame no pudo guardar esta tarea. No se enviará de nuevo automáticamente.",
 
   "games.sources.web.preparing": "Preparando en TorBox",
 
@@ -404,7 +404,7 @@ export default {
   "games.sources.pm.select": "Usar esta transferencia",
 
   "games.sources.pm.review":
-    "Elige la transferencia que enviaste. Harbor no puede identificar su origen automáticamente.",
+    "Elige la transferencia que enviaste. Frame no puede identificar su origen automáticamente.",
 
   "games.sources.pm.retry": "Reintentar transferencia",
 

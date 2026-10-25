@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Completa la recuperación antes de copiar o restaurar esta carpeta de partidas.",
   "games.backups.save_recovery_scope":
-    "Abre esta restauración desde el perfil de Harbor y el juego que la crearon.",
+    "Abre esta restauración desde el perfil de Frame y el juego que la crearon.",
   "games.backups.result.keptCurrent": "Tus partidas actuales no han cambiado",
   "games.backups.resultNote.keptCurrent":
     "La recuperación terminó sin reemplazar las partidas que hay en esta carpeta.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Guarda un momento al que volver. Elige la carpeta de partidas de este juego y otra distinta para las copias. Cierra el juego antes de crear una copia o restaurar.",
   "games.backups.desktop":
-    "Las copias de partidas están disponibles en la aplicación de escritorio de Harbor. Usan las carpetas que elijas en tu ordenador.",
+    "Las copias de partidas están disponibles en la aplicación de escritorio de Frame. Usan las carpetas que elijas en tu ordenador.",
   "games.backups.folder.source": "Partidas guardadas",
   "games.backups.folder.vault": "Carpeta de copias",
   "games.backups.choose.source": "Elegir la carpeta de partidas del juego",
@@ -52,9 +52,9 @@ export default {
   "games.backups.identical": "La carpeta de partidas actual ya coincide con esta instantánea.",
   "games.backups.restore": "Restaurar instantánea",
   "games.backups.recoveryNote":
-    "Harbor conserva una instantánea de recuperación y la carpeta original antes de reemplazar las partidas.",
+    "Frame conserva una instantánea de recuperación y la carpeta original antes de reemplazar las partidas.",
   "games.backups.localNote":
-    "Se guardan en la carpeta elegida, por separado para cada perfil de Harbor.",
+    "Se guardan en la carpeta elegida, por separado para cada perfil de Frame.",
   "games.backups.openRecovery": "Mostrar carpeta original",
   "games.backups.reviewUndo": "Revisar deshacer",
   "games.backups.result.restored": "Tu instantánea se ha restaurado",
@@ -64,11 +64,11 @@ export default {
   "games.backups.resultNote.restored":
     "Tu carpeta de partidas ahora coincide con esta instantánea. Las copias de recuperación siguen disponibles por si quieres volver al estado anterior.",
   "games.backups.resultNote.rolledBack":
-    "La restauración no pudo finalizar, así que Harbor volvió a colocar la carpeta de partidas original. La instantánea de recuperación también está disponible abajo.",
+    "La restauración no pudo finalizar, así que Frame volvió a colocar la carpeta de partidas original. La instantánea de recuperación también está disponible abajo.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor no pudo volver a colocar la carpeta original tras fallar la restauración. Mantén el juego cerrado. Tus archivos originales se conservan en la carpeta indicada abajo y en la instantánea de recuperación.",
+    "Frame no pudo volver a colocar la carpeta original tras fallar la restauración. Mantén el juego cerrado. Tus archivos originales se conservan en la carpeta indicada abajo y en la instantánea de recuperación.",
   "games.backups.resultNote.notRestored":
-    "Harbor no pudo colocar la instantánea en la carpeta elegida. La copia sigue disponible.",
+    "Frame no pudo colocar la instantánea en la carpeta elegida. La copia sigue disponible.",
   "games.backups.phase.scanning": "Leyendo tus partidas…",
   "games.backups.phase.copying": "Copiando archivos de partidas…",
   "games.backups.phase.verifying": "Comprobando la instantánea…",
@@ -82,9 +82,9 @@ export default {
   "games.backups.save_record":
     "No se pudo leer de forma segura un registro de copia. Sus archivos se han conservado. Comprueba la carpeta de copias elegida.",
   "games.backups.save_read":
-    "Harbor no pudo leer estas partidas. Comprueba que la carpeta esté disponible y el juego cerrado.",
+    "Frame no pudo leer estas partidas. Comprueba que la carpeta esté disponible y el juego cerrado.",
   "games.backups.save_write":
-    "Harbor no pudo terminar de escribir estas partidas. Comprueba que se pueda escribir en la carpeta y que el juego esté cerrado.",
+    "Frame no pudo terminar de escribir estas partidas. Comprueba que se pueda escribir en la carpeta y que el juego esté cerrado.",
   "games.backups.save_name":
     "No se pudo conservar un nombre de archivo. Usa una carpeta con nombres de archivo compatibles.",
   "games.backups.save_changed":
@@ -105,9 +105,9 @@ export default {
   "games.backups.save_space":
     "No hay espacio libre suficiente para conservar una copia completa. Elige otra carpeta o libera espacio.",
   "games.backups.save_config":
-    "Harbor no pudo leer las carpetas que habías elegido. Elígelas de nuevo; las copias existentes siguen intactas.",
+    "Frame no pudo leer las carpetas que habías elegido. Elígelas de nuevo; las copias existentes siguen intactas.",
   "games.backups.save_config_write":
-    "Harbor no pudo recordar estas carpetas. Tus elecciones y copias existentes no han cambiado.",
+    "Frame no pudo recordar estas carpetas. Tus elecciones y copias existentes no han cambiado.",
   "games.backups.failed":
     "Esta operación de partidas no pudo finalizar. Los archivos de copia se han conservado. Comprueba las carpetas y vuelve a intentarlo.",
   "games.backups.compare.title": "Comparación de archivos",

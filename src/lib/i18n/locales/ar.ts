@@ -177,7 +177,7 @@ const ar: Record<string, string> = {
   "games.download.storage.estimate":
     "لم تُفحص بعض الملفات الموجودة بعد. قد تكون المساحة المطلوبة أقل.",
   "games.download.storage.unknown": "الحجم غير معروف: {count} ملفات",
-  "games.download.storage.other": "المحجوز لعمليات Harbor الأخرى: {size}",
+  "games.download.storage.other": "المحجوز لعمليات Frame الأخرى: {size}",
   "games.download.storage.shortfall": "تحتاج إلى مساحة إضافية قدرها {size}",
   "games.download.state.retrying": "جارٍ إعادة الاتصال",
   "games.download.queueOrder": "الترتيب في القائمة: {position}",
@@ -382,7 +382,7 @@ const ar: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "مشاركة التورنت",
   "games.torrent.share.note":
-    "شارك الملفات المتحقق منها مع الأقران. تتوقف المشاركة عند بلوغ أي حد أو إغلاق Harbor. أوقفها قبل تغيير الملفات.",
+    "شارك الملفات المتحقق منها مع الأقران. تتوقف المشاركة عند بلوغ أي حد أو إغلاق Frame. أوقفها قبل تغيير الملفات.",
   "games.torrent.share.upload": "حد الرفع (كيلوبايت/ث)",
   "games.torrent.share.ratio": "نسبة المشاركة (1–10)",
   "games.torrent.share.minutes": "الحد الزمني (دقائق)",

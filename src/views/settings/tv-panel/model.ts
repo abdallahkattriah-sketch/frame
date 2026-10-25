@@ -96,7 +96,7 @@ export const TV_GROUPS: TvGroup[] = [
         label: "Home layout",
         def: "harbor",
         options: [
-          { value: "harbor", label: "Harbor" },
+          { value: "harbor", label: "Frame" },
           { value: "classic", label: "Classic" },
         ],
       },
@@ -118,7 +118,7 @@ export const TV_GROUPS: TvGroup[] = [
         kind: "choice",
         key: "uiLanguage",
         label: "Language for titles",
-        sub: "Harbor asks your addons for titles and descriptions in this language. The TV menus stay in English.",
+        sub: "Frame asks your addons for titles and descriptions in this language. The TV menus stay in English.",
         def: "en",
         options: TV_UI_LANGUAGES,
       },
@@ -134,7 +134,7 @@ export const TV_GROUPS: TvGroup[] = [
         kind: "toggle",
         key: "instantPlay",
         label: "Instant play",
-        sub: "Press Play and Harbor picks the source itself instead of opening the list.",
+        sub: "Press Play and Frame picks the source itself instead of opening the list.",
         def: true,
       },
       {
@@ -150,7 +150,7 @@ export const TV_GROUPS: TvGroup[] = [
     id: "bingeing",
     title: "Between episodes",
     subtitle:
-      "Choose when the next episode starts and when Harbor checks that you are still watching.",
+      "Choose when the next episode starts and when Frame checks that you are still watching.",
     wire: "settings",
     rows: [
       { kind: "toggle", key: "autoNext", label: "Auto-play next episode", def: true },

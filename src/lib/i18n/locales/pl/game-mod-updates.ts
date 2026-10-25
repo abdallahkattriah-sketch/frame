@@ -16,7 +16,7 @@ export default {
   "games.mods.currentVersion": "Zainstalowana: {version}",
   "games.mods.current": "Zainstalowana",
   "games.mods.versionNote":
-    "Wybierz zgodną wersję. Harbor sprawdzi zmiany i zachowa poprzednią wersję lokalnie. Zamknij Minecraft przed zastosowaniem zmian.",
+    "Wybierz zgodną wersję. Frame sprawdzi zmiany i zachowa poprzednią wersję lokalnie. Zamknij Minecraft przed zastosowaniem zmian.",
   "games.mods.applyChanges": "Zastosuj zmiany",
   "games.mods.reviewChanges": "Sprawdź zmiany",
   "games.mods.previousVersion": "Poprzednia: {version}",

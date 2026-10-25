@@ -1,17 +1,17 @@
 // Polish uses singular (#one), paucal (#few), and the bare many form.
 const plurals: Record<string, string> = {
-  "Add {n} titles from your Harbor watchlist to Trakt? Trakt skips any it already has.":
-    "Dodać {n} tytułów z listy do obejrzenia Harbor do Trakt? Trakt pominie tytuły, które już ma.",
-  "Add {n} titles from your Harbor watchlist to Trakt? Trakt skips any it already has.#one":
-    "Dodać {n} tytuł z listy do obejrzenia Harbor do Trakt? Trakt pominie tytuł, który już ma.",
-  "Add {n} titles from your Harbor watchlist to Trakt? Trakt skips any it already has.#few":
-    "Dodać {n} tytuły z listy do obejrzenia Harbor do Trakt? Trakt pominie tytuły, które już ma.",
-  "Add {n} titles from your Trakt watchlist to Harbor?":
-    "Dodać {n} tytułów z listy do obejrzenia Trakt do Harbor?",
-  "Add {n} titles from your Trakt watchlist to Harbor?#one":
-    "Dodać {n} tytuł z listy do obejrzenia Trakt do Harbor?",
-  "Add {n} titles from your Trakt watchlist to Harbor?#few":
-    "Dodać {n} tytuły z listy do obejrzenia Trakt do Harbor?",
+  "Add {n} titles from your Frame watchlist to Trakt? Trakt skips any it already has.":
+    "Dodać {n} tytułów z listy do obejrzenia Frame do Trakt? Trakt pominie tytuły, które już ma.",
+  "Add {n} titles from your Frame watchlist to Trakt? Trakt skips any it already has.#one":
+    "Dodać {n} tytuł z listy do obejrzenia Frame do Trakt? Trakt pominie tytuł, który już ma.",
+  "Add {n} titles from your Frame watchlist to Trakt? Trakt skips any it already has.#few":
+    "Dodać {n} tytuły z listy do obejrzenia Frame do Trakt? Trakt pominie tytuły, które już ma.",
+  "Add {n} titles from your Trakt watchlist to Frame?":
+    "Dodać {n} tytułów z listy do obejrzenia Trakt do Frame?",
+  "Add {n} titles from your Trakt watchlist to Frame?#one":
+    "Dodać {n} tytuł z listy do obejrzenia Trakt do Frame?",
+  "Add {n} titles from your Trakt watchlist to Frame?#few":
+    "Dodać {n} tytuły z listy do obejrzenia Trakt do Frame?",
   "After {n} episodes": "Po {n} odcinkach",
   "After {n} episodes#one": "Gdy minie {n} odcinek",
   "After {n} episodes#few": "Po {n} odcinkach",
@@ -296,12 +296,12 @@ const plurals: Record<string, string> = {
     "{n} tytuły wymagają przeglądu - pomóż nam je zidentyfikować.",
   "{n} titles together#one": "Łącznie {n} tytuł",
   "{n} titles together#few": "Łącznie {n} tytuły",
-  "{n} tracker request blocked this session. Harbor itself sends zero telemetry.":
-    "W tej sesji zablokowano {n} żądań modułu śledzącego. Sam Harbor nie wysyła żadnych danych telemetrycznych.",
-  "{n} tracker request blocked this session. Harbor itself sends zero telemetry.#one":
-    "W tej sesji zablokowano {n} żądanie modułu śledzącego. Sam Harbor nie wysyła żadnych danych telemetrycznych.",
-  "{n} tracker request blocked this session. Harbor itself sends zero telemetry.#few":
-    "W tej sesji zablokowano {n} żądania modułu śledzącego. Sam Harbor nie wysyła żadnych danych telemetrycznych.",
+  "{n} tracker request blocked this session. Frame itself sends zero telemetry.":
+    "W tej sesji zablokowano {n} żądań modułu śledzącego. Sam Frame nie wysyła żadnych danych telemetrycznych.",
+  "{n} tracker request blocked this session. Frame itself sends zero telemetry.#one":
+    "W tej sesji zablokowano {n} żądanie modułu śledzącego. Sam Frame nie wysyła żadnych danych telemetrycznych.",
+  "{n} tracker request blocked this session. Frame itself sends zero telemetry.#few":
+    "W tej sesji zablokowano {n} żądania modułu śledzącego. Sam Frame nie wysyła żadnych danych telemetrycznych.",
   "{n} votes": "{n} głosów",
   "{n} votes#one": "{n} głos",
   "{n} votes#few": "{n} głosy",

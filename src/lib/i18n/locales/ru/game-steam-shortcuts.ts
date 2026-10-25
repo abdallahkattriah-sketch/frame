@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Активность",
   "games.shortcuts.activity.title": "Активность ярлыков",
   "games.shortcuts.activity.note":
-    "Недавние сканирования и запуски в этом профиле Harbor. До 300 записей.",
+    "Недавние сканирования и запуски в этом профиле Frame. До 300 записей.",
   "games.shortcuts.activity.remember": "Сохранять между сеансами",
   "games.shortcuts.activity.detailed": "Включать подробности сканирования",
   "games.shortcuts.activity.storageError":
@@ -56,7 +56,7 @@ export default {
   "games.shortcuts.storeError": "Не удалось сохранить настройки.",
   "games.shortcuts.shortcut_location": "Выберите папку Steam или её папку userdata.",
   "games.shortcuts.shortcut_account":
-    "Откройте Steam с аккаунтом этого ярлыка и обновите. Harbor должен использовать ту же установку Steam.",
+    "Откройте Steam с аккаунтом этого ярлыка и обновите. Frame должен использовать ту же установку Steam.",
   "games.shortcuts.shortcut_missing": "Этот ярлык больше не существует. Обновите библиотеку.",
   "games.shortcuts.shortcut_executable":
     "Исполняемый файл отсутствует или его абсолютный путь не поддерживается.",

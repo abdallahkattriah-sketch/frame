@@ -17,9 +17,9 @@ const catalog04: Record<string, string> = {
   Crash: "Awaria",
   Create: "Utwórz",
   "Create Custom Token": "Utwórz token niestandardowy",
-  "Create Harbor account": "Utwórz konto Harbor",
+  "Create Frame account": "Utwórz konto Frame",
   "Create Token": "Utwórz token",
-  "Create a Harbor account": "Utwórz konto Harbor",
+  "Create a Frame account": "Utwórz konto Frame",
   "Create a custom filter": "Utwórz filtr niestandardowy",
   "Create a folder by movie or series name": "Utwórz folder o nazwie filmu lub serialu",
   "Create a free account to publish. No email required.":
@@ -152,14 +152,14 @@ const catalog04: Record<string, string> = {
   "Hold this modifier and press 1-9 to open that sidebar room. When changing it, press any digit with the modifier you want, or Delete to turn it off. Off while the player is open.":
     "Przytrzymaj ten modyfikator i naciśnij 1-9, aby otworzyć tę sekcję paska bocznego. Aby zmienić, naciśnij dowolną cyfrę z wybranym modyfikatorem lub Delete, aby wyłączyć. Wyłączone, gdy otwarty jest odtwarzacz.",
   "Toggle window fullscreen": "Przełącz pełny ekran okna",
-  "Make Harbor's window fill the screen, or restore it.":
-    "Rozciąga okno Harbor na cały ekran lub je przywraca.",
+  "Make Frame's window fill the screen, or restore it.":
+    "Rozciąga okno Frame na cały ekran lub je przywraca.",
   "Toggle memory monitor": "Przełącz monitor pamięci",
   "Show or hide the memory and cache monitor.":
     "Pokazuje lub ukrywa monitor pamięci i pamięci podręcznej.",
   "Show test error page": "Pokaż testową stronę błędu",
-  "Open Harbor's error page with a sample error, to check how it looks.":
-    "Otwiera stronę błędu Harbor z przykładowym błędem, aby sprawdzić jej wygląd.",
+  "Open Frame's error page with a sample error, to check how it looks.":
+    "Otwiera stronę błędu Frame z przykładowym błędem, aby sprawdzić jej wygląd.",
   "Jump through video 0-9": "Skok w filmie 0-9",
   "Press 0-9 to jump to that tenth of the video (0 is the start, 5 the middle). When changing it, press any digit with the modifier you want, or Delete to turn it off.":
     "Naciśnij 0-9, aby przejść do tej dziesiątej części filmu (0 to początek, 5 środek). Aby zmienić, naciśnij dowolną cyfrę z wybranym modyfikatorem lub Delete, aby wyłączyć.",
@@ -245,14 +245,14 @@ const catalog04: Record<string, string> = {
   "Default picture shape on the mpv engine. Fit keeps the source as-is with any black bars; the rest stretch or crop to fill, handy for old 4:3 shows on a widescreen TV.":
     "Domyślny kształt obrazu w silniku mpv. Opcja Dopasuj zachowuje oryginalne proporcje materiału wraz z ewentualnymi czarnymi pasami, a pozostałe opcje rozciągają lub przycinają obraz, aby wypełnić ekran. Jest to przydatne w przypadku starych programów 4:3 oglądanych na telewizorze panoramicznym.",
   "Default speed": "Domyślna prędkość",
-  "Default. Harbor parses and scores every source and surfaces the best quality first.":
-    "Domyślne. Harbor analizuje i ocenia każde źródło, a następnie wyświetla najpierw te o najlepszej jakości.",
+  "Default. Frame parses and scores every source and surfaces the best quality first.":
+    "Domyślne. Frame analizuje i ocenia każde źródło, a następnie wyświetla najpierw te o najlepszej jakości.",
   "Default. Humanist serif, warm sans.":
     "Domyślny. Humanistyczny krój szeryfowy, ciepły bezszeryfowy.",
   "Default. Rejects size outliers, suspicious extensions, year/episode mismatches, season packs (for episode requests), trailers, and likely cams.":
     "Domyślne. Odrzuca pliki o nietypowym rozmiarze, podejrzanych rozszerzeniach, niezgodnym roku lub odcinku, pakiety sezonów (przy wyszukiwaniu odcinka), zwiastuny i prawdopodobne nagrania kinowe.",
-  "Default. Top pick at the top, quality tiles, and an All-Sources drawer. Harbor scores and ranks results.":
-    "Domyślne. Najlepszy wybór na górze, kafelki jakości i panel „Wszystkie źródła”. Harbor ocenia i szereguje wyniki.",
+  "Default. Top pick at the top, quality tiles, and an All-Sources drawer. Frame scores and ranks results.":
+    "Domyślne. Najlepszy wybór na górze, kafelki jakości i panel „Wszystkie źródła”. Frame ocenia i szereguje wyniki.",
   "Defending champion": "Obrońca tytułu",
   "Defends privacy, free expression, and the open internet, in the courts and in the code.":
     "Broni prywatności, wolności słowa i otwartego internetu, zarówno w sądach, jak i w kodzie.",
@@ -351,8 +351,8 @@ const catalog04: Record<string, string> = {
     "Bezpośredni adres URL pliku .m3u lub get.php z osadzonymi danymi logowania.",
   "Direct link": "Link bezpośredni",
   "Direct stream": "Strumień bezpośredni",
-  "Direct torrent play needs the Harbor desktop app.":
-    "Bezpośrednie odtwarzanie torrentów wymaga aplikacji Harbor na komputer.",
+  "Direct torrent play needs the Frame desktop app.":
+    "Bezpośrednie odtwarzanie torrentów wymaga aplikacji Frame na komputer.",
   "Direct P2P streaming": "Bezpośrednie strumieniowanie P2P",
   "Directed by": "Reżyseria",
   Directing: "Reżyseria",
@@ -384,8 +384,8 @@ const catalog04: Record<string, string> = {
   "Disconnect from Simkl": "Odłącz od Simkl",
   "Disconnect from Trakt": "Odłącz od Trakt",
   "Discord Rich Presence": "Discord Rich Presence",
-  "Discord posts a message to a channel whenever Harbor pings it. Takes about a minute to set up.":
-    "Discord publikuje wiadomość na kanale za każdym razem, gdy Harbor wysyła powiadomienie. Konfiguracja zajmuje około minuty.",
+  "Discord posts a message to a channel whenever Frame pings it. Takes about a minute to set up.":
+    "Discord publikuje wiadomość na kanale za każdym razem, gdy Frame wysyła powiadomienie. Konfiguracja zajmuje około minuty.",
   "Discord webhook URL": "Adres URL webhooka Discorda",
   "Discover more": "Odkryj więcej",
   "Discovery Queue": "Kolejka odkrywania",
@@ -394,10 +394,10 @@ const catalog04: Record<string, string> = {
   "Dismiss notification": "Odrzuć powiadomienie",
   "Disney+": "Disney+",
   "Disney+ Originals": "Oryginalne produkcje Disney+",
-  "Dispatched on window. Listen from your theme JS to react to Harbor's lifecycle.":
-    "Wysyłane w obiekcie window. Nasłuchuj ich w kodzie JS motywu, aby reagować na cykl życia Harbor.",
-  "Display 'Browsing Harbor' when nothing is playing.":
-    "Wyświetlaj „Przegląda Harbor”, gdy nic nie jest odtwarzane.",
+  "Dispatched on window. Listen from your theme JS to react to Frame's lifecycle.":
+    "Wysyłane w obiekcie window. Nasłuchuj ich w kodzie JS motywu, aby reagować na cykl życia Frame.",
+  "Display 'Browsing Frame' when nothing is playing.":
+    "Wyświetlaj „Przegląda Frame”, gdy nic nie jest odtwarzane.",
   "Display SIMKL Community Ratings": "Wyświetlaj oceny społeczności SIMKL",
   "Display SIMKL community score badge on details pages.":
     "Wyświetlaj plakietkę z oceną społeczności SIMKL na stronach szczegółów.",
@@ -438,15 +438,15 @@ const catalog04: Record<string, string> = {
   "Documentary Spotlight": "Dokument w centrum uwagi",
   Documentation: "Dokumentacja",
   "Documentation: run your own relay": "Dokumentacja: uruchom własny przekaźnik",
-  "Does Harbor {version} feel better or worse than the version you had before?":
-    "Czy Harbor {version} działa lepiej, czy gorzej niż poprzednia używana przez Ciebie wersja?",
+  "Does Frame {version} feel better or worse than the version you had before?":
+    "Czy Frame {version} działa lepiej, czy gorzej niż poprzednia używana przez Ciebie wersja?",
   "Does this stream look right?": "Czy ten strumień wygląda prawidłowo?",
   "Dolby Vision unsupported": "Dolby Vision nie jest obsługiwany",
   "Don't ask again": "Nie pytaj ponownie",
   "Don't ask me again": "Nie pytaj ponownie",
   "Don't have an account?": "Nie masz konta?",
   "Don't have an account? Create one →": "Nie masz konta? Utwórz je →",
-  "Donating to Harbor": "Darowizny dla Harbor",
+  "Donating to Frame": "Darowizny dla Frame",
   "Done editing": "Zakończ edycję",
   "Done.": "Gotowe.",
   Dot: "Kropka",
@@ -501,8 +501,8 @@ const catalog04: Record<string, string> = {
     "Pobrane pliki ze strumieni peer-to-peer są przechowywane na dysku, więc ponowne otwarcie tytułu natychmiast wznawia odtwarzanie zamiast zaczynać od początku. Określ, jak długo mają być przechowywane i gdzie.",
   "Downloaded subtitles can arrive a moment after playback starts. Leave this off to keep whatever subtitle is already showing; turn it on to switch to the best language match as soon as it loads.":
     "Pobrane napisy mogą pojawić się chwilę po rozpoczęciu odtwarzania. Pozostaw tę opcję wyłączoną, aby zachować aktualnie wyświetlane napisy. Włącz ją, aby przełączyć się na najlepiej dopasowany język natychmiast po ich wczytaniu.",
-  "Downloaded subtitles can arrive after playback starts. Harbor switches from a temporary track when a stronger release match becomes available.":
-    "Pobrane napisy mogą pojawić się już po rozpoczęciu odtwarzania. Harbor zastępuje tymczasową ścieżkę, gdy dostępne stają się napisy lepiej dopasowane do wydania.",
+  "Downloaded subtitles can arrive after playback starts. Frame switches from a temporary track when a stronger release match becomes available.":
+    "Pobrane napisy mogą pojawić się już po rozpoczęciu odtwarzania. Frame zastępuje tymczasową ścieżkę, gdy dostępne stają się napisy lepiej dopasowane do wydania.",
   "Downloaded themes are managed in Theme & appearance. Video and manga downloads are managed on the Downloads page.":
     "Pobranymi motywami można zarządzać w sekcji Motyw i wygląd. Pobranymi filmami i mangami można zarządzać na stronie Pobrane.",
   "Downloaded. Ready to install and restart.": "Pobrano. Można zainstalować i uruchomić ponownie.",
@@ -551,8 +551,8 @@ const catalog04: Record<string, string> = {
     "Korekcja przesunięcia jest włączona (2 punkty). Dostosuj ją przyciskami lub popraw pojedynczą sekcję.",
   "Drift fixed": "Skorygowano rozbieżność",
   "Drift monitor": "Monitor rozjazdu",
-  "Drift through cinematic backdrops while Harbor sits idle.":
-    "Wyświetlaj kinowe tła, gdy Harbor jest bezczynny.",
+  "Drift through cinematic backdrops while Frame sits idle.":
+    "Wyświetlaj kinowe tła, gdy Frame jest bezczynny.",
   "Drifting poster wall behind the interface. Turn off on low power devices.":
     "Przesuwająca się ściana plakatów w tle interfejsu. Wyłącz ją na urządzeniach o niskiej wydajności.",
   "Drop a clip of the bug if you can. A 5-second screen recording usually says more than five paragraphs.":
@@ -563,8 +563,8 @@ const catalog04: Record<string, string> = {
     "Umieść tapetę w tle aplikacji. Suwak przyciemnienia pomaga zachować czytelność tekstu.",
   "Drop a {extension}": "Upuść plik {extension}",
   "Drop images to add them": "Upuść obrazy, aby je dodać",
-  "Drop in art at any resolution. Harbor resizes and compresses anything oversized for you, so nothing gets skipped for being too big. Square PNGs with a transparent background look best.":
-    "Dodaj grafikę w dowolnej rozdzielczości. Harbor zmieni rozmiar i skompresuje wszystko, co jest zbyt duże, więc nic nie zostanie pominięte ze względu na rozmiar. Najlepiej wyglądają kwadratowe pliki PNG z przezroczystym tłem.",
+  "Drop in art at any resolution. Frame resizes and compresses anything oversized for you, so nothing gets skipped for being too big. Square PNGs with a transparent background look best.":
+    "Dodaj grafikę w dowolnej rozdzielczości. Frame zmieni rozmiar i skompresuje wszystko, co jest zbyt duże, więc nic nie zostanie pominięte ze względu na rozmiar. Najlepiej wyglądają kwadratowe pliki PNG z przezroczystym tłem.",
   "Drop many images, GIFs, or a .zip at once. Name each file after its slot ({example}) and we match them. Any size is fine, we resize big images and keep animated GIFs light.":
     "Dodaj jednocześnie wiele obrazów, plików GIF lub plik .zip. Nazwij każdy plik zgodnie z jego miejscem ({example}), a my je dopasujemy. Rozmiar nie ma znaczenia, zmniejszymy duże obrazy i zoptymalizujemy animowane pliki GIF.",
   "Drop screenshots or screen recordings, or click to browse":
@@ -607,8 +607,8 @@ const catalog04: Record<string, string> = {
     "Każdy klucz powyżej jest identyfikatorem nagrody. Każdy pominięty klucz zostanie zastąpiony domyślnym trofeum (lub pakietem o niższym priorytecie). Pełna lista identyfikatorów obejmuje wszystkie nagrody widoczne w siatce powyżej.",
   "Each rule fires independently. Define what triggers a ping and where it goes.":
     "Każda reguła działa niezależnie. Określ, co wyzwala powiadomienie i dokąd jest ono wysyłane.",
-  "Each shader is hosted by its author, not bundled with Harbor. Download the ones you want; Harbor chains them in the right order and applies them in the player.":
-    "Każdy shader jest udostępniany przez jego autora i nie jest dołączony do Harbor. Pobierz wybrane shadery, a Harbor połączy je w odpowiedniej kolejności i zastosuje w odtwarzaczu.",
+  "Each shader is hosted by its author, not bundled with Frame. Download the ones you want; Frame chains them in the right order and applies them in the player.":
+    "Każdy shader jest udostępniany przez jego autora i nie jest dołączony do Frame. Pobierz wybrane shadery, a Frame połączy je w odpowiedniej kolejności i zastosuje w odtwarzaczu.",
   "Each style keeps its own arrangement, icons and profiles, so switching back and forth never loses work.":
     "Każdy styl zachowuje własny układ, ikony i profile, więc przełączanie między nimi nie powoduje utraty pracy.",
   Earlier: "Wcześniej",
@@ -616,8 +616,8 @@ const catalog04: Record<string, string> = {
     "Zdobywaj odznaki, a pojawią się tutaj i będzie można je wyróżnić",
   "Eases mouse-wheel scrolling instead of jumping line by line. Turn off if you prefer an instant response or notice any lag.":
     "Płynnie przewija zawartość kółkiem myszy zamiast przeskakiwać wiersz po wierszu. Wyłącz, jeśli wolisz natychmiastową reakcję lub zauważysz opóźnienia.",
-  "Easiest path. Harbor uploads the worker, creates the Durable Object namespace, and stores the resulting URL.":
-    "Najprostsza metoda. Harbor przesyła skrypt Worker, tworzy przestrzeń nazw Durable Object i zapisuje uzyskany adres URL.",
+  "Easiest path. Frame uploads the worker, creates the Durable Object namespace, and stores the resulting URL.":
+    "Najprostsza metoda. Frame przesyła skrypt Worker, tworzy przestrzeń nazw Durable Object i zapisuje uzyskany adres URL.",
   "Easing into series": "Łagodny początek z serią",
   "Easing tokens": "Tokeny wygładzania",
   Easy: "Łatwe",
@@ -671,7 +671,7 @@ const catalog04: Record<string, string> = {
   Embed: "Osadź",
   "Embed a YouTube video": "Osadź film z YouTube",
   "Embed from Spotify": "Osadź ze Spotify",
-  "Embed mpv inside Harbor window": "Osadź mpv w oknie Harbor",
+  "Embed mpv inside Frame window": "Osadź mpv w oknie Frame",
   Embedded: "Osadzono",
   "Embedded subtitles changing size between titles, or showing empty boxes? Switch to Use my style for a consistent size. For boxes, also choose Arabic under Font.":
     "Osadzone napisy zmieniają rozmiar między tytułami lub wyświetlają puste prostokąty? Wybierz Użyj mojego stylu, aby zachować spójny rozmiar. Jeśli pojawiają się prostokąty, wybierz też Arabski w sekcji Czcionka.",
@@ -725,7 +725,7 @@ const catalog04: Record<string, string> = {
   English: "Angielski",
   "English (default)": "Angielski (domyślny)",
   "Enhanced liquid glass": "Ulepszone płynne szkło",
-  "Enter Harbor": "Wejdź do Harbor",
+  "Enter Frame": "Wejdź do Frame",
   "Enter URL": "Wprowadź URL",
   "Enter a URL or path.": "Wpisz URL lub ścieżkę.",
   "Enter a name and a valid https:// URL.": "Wpisz nazwę i prawidłowy adres URL https://.",

@@ -47,7 +47,7 @@ export default {
   "games.pick.noHistory": "لا يوجد نشاط بعد. اختر مفضلات أو اربط Steam من إعدادات الألعاب.",
   "games.pick.manualOnly": "ستعتمد الاقتراحات على مفضلاتك وفلاترك المحددة فقط.",
   "games.pick.addedNote":
-    "«أُضيفت مؤخرًا» تعني أول ظهور في Harbor بعد الاستيراد الأول، وليس تاريخ الشراء.",
+    "«أُضيفت مؤخرًا» تعني أول ظهور في Frame بعد الاستيراد الأول، وليس تاريخ الشراء.",
   "games.pick.because": "لأنك تحب {name}",
   "games.pick.matches": "تطابق اختياراتك",
   "games.pick.steamCatalog": "كتالوج Steam",

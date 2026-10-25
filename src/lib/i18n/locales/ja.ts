@@ -176,7 +176,7 @@ const ja: Record<string, string> = {
   "games.download.storage.estimate":
     "まだ確認していない既存ファイルがあります。実際に必要な空き容量は少ない場合があります。",
   "games.download.storage.unknown": "サイズ不明：{count}ファイル",
-  "games.download.storage.other": "他のHarborの処理用に{size}を確保",
+  "games.download.storage.other": "他のFrameの処理用に{size}を確保",
   "games.download.storage.shortfall": "あと{size}の空き容量が必要",
   "games.download.state.retrying": "接続を再試行中",
   "games.download.queueOrder": "キューの順番：{position}",
@@ -383,7 +383,7 @@ const ja: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "トレントを共有",
   "games.torrent.share.note":
-    "検証済みファイルをピアと共有します。いずれかの上限に達するかHarborを閉じると停止します。ファイルを変更する前に共有を停止してください。",
+    "検証済みファイルをピアと共有します。いずれかの上限に達するかFrameを閉じると停止します。ファイルを変更する前に共有を停止してください。",
   "games.torrent.share.upload": "アップロード上限（KB/秒）",
   "games.torrent.share.ratio": "共有比率（1～10）",
   "games.torrent.share.minutes": "制限時間（分）",

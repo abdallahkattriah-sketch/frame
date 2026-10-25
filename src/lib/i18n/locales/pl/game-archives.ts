@@ -10,9 +10,9 @@ export default {
     "Folder z archiwami znajduje się w koszu. W razie potrzeby przywróć go stamtąd.",
   "games.cleanup.restoredNote": "Części archiwum wróciły do pierwotnego folderu.",
   "games.cleanup.uncertainNote":
-    "Harbor nie potwierdził wyniku. Przed kontynuowaniem sprawdź pierwotny folder i kosz.",
+    "Frame nie potwierdził wyniku. Przed kontynuowaniem sprawdź pierwotny folder i kosz.",
   "games.cleanup.recoveryNote":
-    "Niektóre części mogą być w folderze tymczasowym Harbor. Kontynuuj porządkowanie lub przywróć je bez zastępowania istniejących plików.",
+    "Niektóre części mogą być w folderze tymczasowym Frame. Kontynuuj porządkowanie lub przywróć je bez zastępowania istniejących plików.",
   "games.cleanup.working": "Sprawdzanie plików archiwum",
   "games.cleanup.restore": "Przywróć zachowane pliki",
   "games.cleanup.resume": "Kontynuuj porządkowanie",
@@ -76,7 +76,7 @@ export default {
   "games.setupShortcuts.error": "Nie udało się zaktualizować skrótów. Spróbuj ponownie.",
 
   "games.archive.archive_decoder":
-    "Harbor nie mógł rozpakować tego archiwum w ramach swoich limitów. Spróbuj innego narzędzia.",
+    "Frame nie mógł rozpakować tego archiwum w ramach swoich limitów. Spróbuj innego narzędzia.",
   "games.archive.archive_password_or_checksum":
     "Hasło może być nieprawidłowe lub archiwum uszkodzone. Sprawdź hasło albo pobierz archiwum ponownie.",
   "games.archive.password": "Hasło archiwum",
@@ -89,7 +89,7 @@ export default {
   "games.archive.eyebrow": "Od pobrania do biblioteki",
   "games.archive.title": "Rozpakuj pliki gry",
   "games.archive.intro":
-    "Sprawdź archiwum ZIP / 7z / RAR / TAR / TAR.GZ / ISO i wybierz miejsce dla jego plików. Harbor utworzy nowy folder i zachowa oryginalne archiwum.",
+    "Sprawdź archiwum ZIP / 7z / RAR / TAR / TAR.GZ / ISO i wybierz miejsce dla jego plików. Frame utworzy nowy folder i zachowa oryginalne archiwum.",
   "games.archive.source": "Archiwum",
   "games.archive.chooseSource": "Wybierz archiwum",
   "games.archive.chooseParent": "Wybierz folder docelowy",
@@ -119,7 +119,7 @@ export default {
   "games.archive.openFolder": "Pokaż folder",
   "games.archive.localLibrary": "Gry lokalne",
   "games.archive.archive_profile":
-    "Nie udało się rozpoznać tego profilu Harbor. Otwórz ponownie Gry i spróbuj jeszcze raz.",
+    "Nie udało się rozpoznać tego profilu Frame. Otwórz ponownie Gry i spróbuj jeszcze raz.",
   "games.archive.archive_busy": "Trwa inna operacja na archiwum. Najpierw ją zakończ lub anuluj.",
   "games.archive.archive_canceled":
     "Rozpakowywanie anulowane. Oryginalne archiwum nadal jest dostępne.",
@@ -127,16 +127,16 @@ export default {
     "Nie udało się odczytać archiwum. Sprawdź, czy plik jest nadal dostępny, i spróbuj ponownie.",
   "games.archive.archive_links":
     "To archiwum zawiera dowiązania lub pliki specjalne. Skorzystaj z instrukcji instalacji projektu.",
-  "games.archive.archive_limit": "To archiwum przekracza obecne limity rozpakowywania Harbor.",
+  "games.archive.archive_limit": "To archiwum przekracza obecne limity rozpakowywania Frame.",
   "games.archive.archive_changed":
     "Archiwum zmieniło się po sprawdzeniu. Sprawdź je ponownie przed rozpakowaniem.",
   "games.archive.archive_path":
-    "Archiwum zawiera ścieżkę, której Harbor nie może bezpiecznie rozpakować. Żadne pliki gry nie zostały zastąpione.",
+    "Archiwum zawiera ścieżkę, której Frame nie może bezpiecznie rozpakować. Żadne pliki gry nie zostały zastąpione.",
   "games.archive.archive_format":
     "To nie jest obsługiwane archiwum ZIP / 7z / RAR / TAR / TAR.GZ / ISO lub jego katalog jest uszkodzony.",
   "games.archive.archive_encrypted": "Wpisz hasło tego archiwum, aby kontynuować.",
   "games.archive.archive_compression":
-    "Ten ZIP / 7z / RAR / TAR / TAR.GZ / ISO używa metody kompresji, której Harbor jeszcze nie obsługuje.",
+    "Ten ZIP / 7z / RAR / TAR / TAR.GZ / ISO używa metody kompresji, której Frame jeszcze nie obsługuje.",
   "games.archive.archive_collision":
     "Niektóre wpisy archiwum nadpisałyby się wzajemnie. Nic nie zostało rozpakowane.",
   "games.archive.archive_destination": "Wybierz dostępny folder i poprawną nazwę nowego folderu.",
@@ -155,11 +155,11 @@ export default {
   "games.archive.space.checking": "Sprawdzanie miejsca docelowego…",
   "games.archive.space.free": "Dostępne: {size}",
   "games.archive.space.required": "Do rozpakowania: {size}",
-  "games.archive.space.reserved": "Zarezerwowane przez inne operacje Harbor: {size}",
+  "games.archive.space.reserved": "Zarezerwowane przez inne operacje Frame: {size}",
   "games.archive.space.after": "Dostępne po rozpakowaniu: {size}",
   "games.archive.space.shortfall": "Brakuje {size} miejsca",
   "games.archive.space.unknown":
-    "Nie udało się odczytać wolnego miejsca. Harbor sprawdzi je ponownie przy rozpoczęciu rozpakowywania.",
+    "Nie udało się odczytać wolnego miejsca. Frame sprawdzi je ponownie przy rozpoczęciu rozpakowywania.",
   "games.archive.space.error": "Nie udało się sprawdzić miejsca docelowego.",
   "games.archive.space.refresh": "Sprawdź miejsce ponownie",
   "games.archive.space.note":
@@ -178,15 +178,15 @@ export default {
   "games.archive.retry": "Sprawdź i spróbuj ponownie",
   "games.archive.showPartial": "Pokaż częściowe pliki",
   "games.archive.partialNote":
-    "Harbor zachował niepełny folder. Sprawdź go przed usunięciem; ponowna próba rozpocznie nowe rozpakowywanie.",
+    "Frame zachował niepełny folder. Sprawdź go przed usunięciem; ponowna próba rozpocznie nowe rozpakowywanie.",
   "games.archive.progressFiles": "Pliki: {count} z {total}",
   "games.archive.archive_store":
-    "Harbor nie mógł zapisać postępu rozpakowywania. Twoje pliki zostały zachowane do sprawdzenia.",
+    "Frame nie mógł zapisać postępu rozpakowywania. Twoje pliki zostały zachowane do sprawdzenia.",
   "games.archive.archive_start": "Nie udało się rozpocząć rozpakowywania. Spróbuj ponownie.",
   "games.archive.archive_history":
     "Historia rozpakowywania jest pełna. Usuń stary wpis, aby kontynuować; jego pliki zostaną zachowane.",
   "games.archive.archive_interrupted":
-    "Harbor został zamknięty przed końcem rozpakowywania. Sprawdź zapisaną lokalizację i spróbuj ponownie.",
+    "Frame został zamknięty przed końcem rozpakowywania. Sprawdź zapisaną lokalizację i spróbuj ponownie.",
   "games.archive.archive_parts":
     "Te części nie tworzą jednego archiwum. Sprawdź, czy wszystkie należą do tego samego pobierania.",
   "games.archive.archive_tool": "Ta wersja nie obsługuje dodatkowych formatów archiwów.",
@@ -194,10 +194,10 @@ export default {
   "games.archive.continueSetup": "Przygotuj grę",
   "games.archive.dismissRecord": "Usuń wpis · zachowaj pliki",
   "games.archive.archive_multipart":
-    "Ten format podzielonego archiwum nie jest jeszcze obsługiwany. Rozpakuj je programem do archiwów, a następnie otwórz rozpakowany folder w Harbor.",
+    "Ten format podzielonego archiwum nie jest jeszcze obsługiwany. Rozpakuj je programem do archiwów, a następnie otwórz rozpakowany folder w Frame.",
   "games.archive.partsCount": "Części archiwum: {count}",
   "games.archive.partsNote":
-    "Zachowaj wszystkie części w jednym folderze. Harbor rozpakuje je razem.",
+    "Zachowaj wszystkie części w jednym folderze. Frame rozpakuje je razem.",
   "games.archive.partsMore": "Pokaż więcej części",
   "games.archive.setHash": "SHA-256 zestawu",
   "games.archive.archive_missing_part":

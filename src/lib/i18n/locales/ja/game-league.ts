@@ -84,7 +84,7 @@ export default {
   "games.league.patchDifference":
     "ビルド統計は{patch}、アイテムとスキルの資料は{assets}のデータです。",
   "games.league.attribution":
-    "Harbor is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "Frame is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
   "games.league.tierList": "ティアリスト",
   "games.league.tierScope": "ランク ソロ/デュオ · エメラルド以上 · 全地域",
   "games.league.patchFilter": "パッチを選択",

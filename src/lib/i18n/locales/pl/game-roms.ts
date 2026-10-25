@@ -71,7 +71,7 @@ const gameRoms: Record<string, string> = {
   "games.roms.reset": "Resetuj filtry",
   "games.roms.empty": "Spróbuj innego tytułu lub poszerz filtry dla tej konsoli.",
   "games.roms.source":
-    "Metadane gier i powiązania pochodzą z IGDB. Importuj lokalne pliki, aby grać w obsługiwane gry w Harbor.",
+    "Metadane gier i powiązania pochodzą z IGDB. Importuj lokalne pliki, aby grać w obsługiwane gry w Frame.",
   "games.roms.playerScore": "Ocena graczy IGDB · liczba ocen: {count}",
   "games.roms.combinedScore": "Łączna ocena IGDB · liczba ocen: {count}",
   "games.roms.sort.discussed": "Najwięcej ocen",

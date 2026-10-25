@@ -8,12 +8,12 @@ export default {
   "games.download.relink.review": "ファイルを確認",
   "games.download.relink.saved": "保存済み：{size}",
   "games.download.relink.note":
-    "Harborは保存済みの部分を再ダウンロードして比較し、一致を確認してから新しいデータを追加します。",
+    "Frameは保存済みの部分を再ダウンロードして比較し、一致を確認してから新しいデータを追加します。",
   "games.download.relink.apply": "リンクを更新して再開",
   "games.download.relink.working": "リンクを更新中…",
   "games.download.relink.checking": "保存済みデータを確認中",
   "games.download.relink.single": "このダウンロードリンクを置き換えるファイルを1つ選んでください。",
-  "games.download.relink.native": "このリンクを更新するには、最新版のHarborを再起動してください。",
+  "games.download.relink.native": "このリンクを更新するには、最新版のFrameを再起動してください。",
   "games.download.transfer_relink_mismatch":
     "このダウンロードを続けるには、名前とサイズが同じ元のファイルを選んでください。",
   "games.download.center.content.patch": "ゲームの更新",

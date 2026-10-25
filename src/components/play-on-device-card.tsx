@@ -253,9 +253,9 @@ export function HarborDeviceCard({
   };
 
   const reason: Partial<Record<HarborDeviceState, string>> = {
-    pairable: t("Pair once from here and this Harbor will take commands."),
-    "remote-off": t("Remote control is off on that Harbor, so it cannot be driven from here."),
-    unreachable: t("That Harbor is on the network but is not answering, so it cannot be driven."),
+    pairable: t("Pair once from here and this Frame will take commands."),
+    "remote-off": t("Remote control is off on that Frame, so it cannot be driven from here."),
+    unreachable: t("That Frame is on the network but is not answering, so it cannot be driven."),
   };
 
   const blocked = state === "remote-off" || state === "unreachable";

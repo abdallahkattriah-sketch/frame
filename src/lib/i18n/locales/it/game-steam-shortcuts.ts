@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Attività",
   "games.shortcuts.activity.title": "Attività dei collegamenti",
   "games.shortcuts.activity.note":
-    "Scansioni e avvii recenti per questo profilo Harbor. Fino a 300 voci.",
+    "Scansioni e avvii recenti per questo profilo Frame. Fino a 300 voci.",
   "games.shortcuts.activity.remember": "Conserva tra le sessioni",
   "games.shortcuts.activity.detailed": "Includi dettagli della scansione",
   "games.shortcuts.activity.storageError":
@@ -58,7 +58,7 @@ export default {
   "games.shortcuts.storeError": "Impossibile salvare queste impostazioni.",
   "games.shortcuts.shortcut_location": "Scegli la cartella Steam o la sua cartella userdata.",
   "games.shortcuts.shortcut_account":
-    "Apri Steam con l’account di questo collegamento, poi aggiorna. Harbor deve usare la stessa installazione di Steam.",
+    "Apri Steam con l’account di questo collegamento, poi aggiorna. Frame deve usare la stessa installazione di Steam.",
   "games.shortcuts.shortcut_missing": "Questo collegamento non esiste più. Aggiorna la libreria.",
   "games.shortcuts.shortcut_executable":
     "L’eseguibile manca o il suo percorso assoluto non è supportato.",

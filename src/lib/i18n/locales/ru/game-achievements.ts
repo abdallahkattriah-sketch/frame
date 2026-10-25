@@ -39,12 +39,12 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam ещё не подтвердил результат. Обновите данные перед следующими изменениями.",
   "games.achievementManager.error.platform":
-    "Управление достижениями сейчас доступно в Harbor для Windows x64.",
+    "Управление достижениями сейчас доступно в Frame для Windows x64.",
   "games.achievementManager.error.invalid": "Выберите не более 2000 изменений за раз.",
   "games.achievementManager.error.stale":
     "Эти достижения изменились в Steam. Обновите данные перед редактированием.",
   "games.achievementManager.error.protected":
-    "Это достижение управляется игрой. Harbor не может его изменить.",
+    "Это достижение управляется игрой. Frame не может его изменить.",
   "games.achievementManager.error.expired":
     "Срок действия этой проверки истёк. Обновите данные перед применением.",
   "games.achievementManager.error.busy": "Другой запрос достижений Steam уже выполняется.",
@@ -61,12 +61,12 @@ export default {
   "games.achievementManager.consentBody":
     "Открывайте или закрывайте достижения активного аккаунта Steam. Выбор остаётся черновиком, пока вы не примените изменения.",
   "games.achievementManager.consentRules":
-    "Harbor использует интерфейс достижений Steam без внедрения в игры. Правила игр и условия получения наград продолжают действовать.",
+    "Frame использует интерфейс достижений Steam без внедрения в игры. Правила игр и условия получения наград продолжают действовать.",
   "games.achievementManager.consentSam": "На основе подхода SAM к управлению достижениями",
-  "games.achievementManager.consentOnce": "Показывается один раз для этого профиля Harbor.",
+  "games.achievementManager.consentOnce": "Показывается один раз для этого профиля Frame.",
   "games.achievementManager.consentAccept": "Понятно",
   "games.achievementManager.desktopOnly":
-    "Для изменения достижений используйте Harbor в Windows с запущенным Steam.",
+    "Для изменения достижений используйте Frame в Windows с запущенным Steam.",
   "games.achievementManager.all": "Все",
   "games.achievementManager.filter": "Фильтр достижений",
   "games.achievementManager.rewards": "Наградные предметы",
@@ -124,7 +124,7 @@ export default {
   "games.achievementManager.pickTitle": "Выбрать игру",
   "games.achievementManager.pickSearch": "Поиск по своим играм",
   "games.achievementManager.pickNote":
-    "Harbor может редактировать достижения игры, когда Steam сохранит их в кэше на этом компьютере.",
+    "Frame может редактировать достижения игры, когда Steam сохранит их в кэше на этом компьютере.",
   "games.achievementManager.pickInstalled": "Установлена",
   "games.achievementManager.pickEmpty": "Нет игр, соответствующих запросу.",
   "games.achievementManager.pickUnavailable":

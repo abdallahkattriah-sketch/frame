@@ -10,9 +10,9 @@ export default {
     "The archive holding folder is in your system bin. Restore it there if needed.",
   "games.cleanup.restoredNote": "The archive parts are back in their original folder.",
   "games.cleanup.uncertainNote":
-    "Harbor could not confirm the final result. Check the original folder and system bin before taking further action.",
+    "Frame could not confirm the final result. Check the original folder and system bin before taking further action.",
   "games.cleanup.recoveryNote":
-    "Some parts may be in Harbor’s holding folder. Continue cleanup or restore the held files without replacing existing files.",
+    "Some parts may be in Frame’s holding folder. Continue cleanup or restore the held files without replacing existing files.",
   "games.cleanup.working": "Checking archive files",
   "games.cleanup.restore": "Restore held files",
   "games.cleanup.resume": "Continue cleanup",
@@ -74,7 +74,7 @@ export default {
   "games.setupShortcuts.error": "Couldn’t update shortcuts. Try again.",
 
   "games.archive.archive_decoder":
-    "Harbor couldn't decode this archive within its limits. Try another extraction tool.",
+    "Frame couldn't decode this archive within its limits. Try another extraction tool.",
   "games.archive.archive_password_or_checksum":
     "The password may be incorrect, or the archive may be damaged. Check the password or download the archive again.",
   "games.archive.password": "Archive password",
@@ -87,7 +87,7 @@ export default {
   "games.archive.eyebrow": "From download to your library",
   "games.archive.title": "Extract game files",
   "games.archive.intro":
-    "Review a ZIP / 7z / RAR / TAR / TAR.GZ / ISO archive and choose where its files should go. Harbor creates a new folder and keeps the original archive.",
+    "Review a ZIP / 7z / RAR / TAR / TAR.GZ / ISO archive and choose where its files should go. Frame creates a new folder and keeps the original archive.",
   "games.archive.source": "Archive",
   "games.archive.chooseSource": "Choose an archive",
   "games.archive.chooseParent": "Choose a destination folder",
@@ -117,7 +117,7 @@ export default {
   "games.archive.openFolder": "Show folder",
   "games.archive.localLibrary": "Local games",
   "games.archive.archive_profile":
-    "This Harbor profile couldn't be identified. Reopen Games and try again.",
+    "This Frame profile couldn't be identified. Reopen Games and try again.",
   "games.archive.archive_busy":
     "Another archive operation is already running. Finish or cancel it first.",
   "games.archive.archive_canceled": "Extraction canceled. The original archive is still here.",
@@ -125,16 +125,16 @@ export default {
     "The archive couldn't be read. Check that the file is still available and try again.",
   "games.archive.archive_links":
     "This archive contains links or special files. Use its project's installation instructions instead.",
-  "games.archive.archive_limit": "This archive exceeds Harbor's current extraction limits.",
+  "games.archive.archive_limit": "This archive exceeds Frame's current extraction limits.",
   "games.archive.archive_changed":
     "The archive changed after your review. Review it again before extracting.",
   "games.archive.archive_path":
-    "The archive contains a path Harbor can't extract safely. No game files were replaced.",
+    "The archive contains a path Frame can't extract safely. No game files were replaced.",
   "games.archive.archive_format":
     "This isn't a supported ZIP / 7z / RAR / TAR / TAR.GZ / ISO archive, or its directory is damaged.",
   "games.archive.archive_encrypted": "Enter this archive’s password to continue.",
   "games.archive.archive_compression":
-    "This archive uses a compression method Harbor doesn't support yet.",
+    "This archive uses a compression method Frame doesn't support yet.",
   "games.archive.archive_collision":
     "Some archive entries would overwrite one another. Nothing was extracted.",
   "games.archive.archive_destination": "Choose an available folder and a valid new folder name.",
@@ -152,11 +152,11 @@ export default {
   "games.archive.space.checking": "Checking destination space…",
   "games.archive.space.free": "{size} available",
   "games.archive.space.required": "{size} to extract",
-  "games.archive.space.reserved": "{size} reserved by other Harbor work",
+  "games.archive.space.reserved": "{size} reserved by other Frame work",
   "games.archive.space.after": "{size} available after extraction",
   "games.archive.space.shortfall": "Needs {size} more space",
   "games.archive.space.unknown":
-    "Free space could not be read. Harbor will check again when extraction starts.",
+    "Free space could not be read. Frame will check again when extraction starts.",
   "games.archive.space.error": "Couldn’t check destination space.",
   "games.archive.space.refresh": "Check space again",
   "games.archive.space.note":
@@ -175,15 +175,15 @@ export default {
   "games.archive.retry": "Review and retry",
   "games.archive.showPartial": "Show partial files",
   "games.archive.partialNote":
-    "Harbor kept the partial folder. Review it before removing it; retrying starts a fresh extraction.",
+    "Frame kept the partial folder. Review it before removing it; retrying starts a fresh extraction.",
   "games.archive.progressFiles": "{count} of {total} files",
   "games.archive.archive_store":
-    "Harbor could not save extraction progress. Your files have been kept for review.",
+    "Frame could not save extraction progress. Your files have been kept for review.",
   "games.archive.archive_start": "Extraction could not start. Try again.",
   "games.archive.archive_history":
     "Extraction history is full. Remove an old record to continue; its files will stay.",
   "games.archive.archive_interrupted":
-    "Harbor closed before extraction finished. Review the saved location and retry.",
+    "Frame closed before extraction finished. Review the saved location and retry.",
   "games.archive.archive_parts":
     "These parts do not form one archive. Check that all parts belong to the same download.",
   "games.archive.archive_tool": "Additional archive support is unavailable in this build.",
@@ -191,9 +191,9 @@ export default {
   "games.archive.continueSetup": "Set up game",
   "games.archive.dismissRecord": "Remove record · keep files",
   "games.archive.archive_multipart":
-    "This split archive format is not supported yet. Extract it with an archive app, then open the extracted folder in Harbor.",
+    "This split archive format is not supported yet. Extract it with an archive app, then open the extracted folder in Frame.",
   "games.archive.partsCount": "{count} archive parts",
-  "games.archive.partsNote": "Keep all parts in the same folder. Harbor extracts them together.",
+  "games.archive.partsNote": "Keep all parts in the same folder. Frame extracts them together.",
   "games.archive.partsMore": "Show more parts",
   "games.archive.setHash": "Archive set SHA-256",
   "games.archive.archive_missing_part":

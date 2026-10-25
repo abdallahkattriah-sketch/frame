@@ -51,8 +51,8 @@ const wired: Record<string, string> = {
   "Add a custom award type": "إضافة نوع جائزة مخصص",
   "Add a display name first. It is the name shown on your profile.":
     "أضف اسم عرض أولًا. وهو الاسم الظاهر في ملفك الشخصي.",
-  "Add a series above and Harbor will grab each new episode as it airs, on your terms.":
-    "أضف مسلسلًا أعلاه، وسينزّل Harbor كل حلقة جديدة عند عرضها وفق شروطك.",
+  "Add a series above and Frame will grab each new episode as it airs, on your terms.":
+    "أضف مسلسلًا أعلاه، وسينزّل Frame كل حلقة جديدة عند عرضها وفق شروطك.",
   "Add a series to auto-download": "أضف مسلسلًا للتنزيل التلقائي",
   "Add an M3U or Xtream playlist in Settings → Live TV to use the guide.":
     "أضف قائمة تشغيل M3U أو Xtream في الإعدادات ← البث التلفزيوني المباشر لاستخدام الدليل.",
@@ -67,11 +67,11 @@ const wired: Record<string, string> = {
   "Add to Shelf": "إضافة إلى الرف",
   "Add to tile {n}": "إضافة إلى المربع {n}",
   "Add to your watchlist": "إضافة إلى قائمة مشاهدتك",
-  "Add trusted eBook sources from a Harbor-compatible repository.":
-    "أضف مصادر كتب إلكترونية موثوقة من مستودع متوافق مع Harbor.",
+  "Add trusted eBook sources from a Frame-compatible repository.":
+    "أضف مصادر كتب إلكترونية موثوقة من مستودع متوافق مع Frame.",
   "Add up to 6 screenshots so people can see your theme in action. Optional, but they sell it.":
     "أضف ما يصل إلى 6 لقطات شاشة ليرى الآخرون سِمتك أثناء الاستخدام. هذا اختياري، لكنه يجعلها أكثر جاذبية.",
-  "Added to Harbor": "تمت الإضافة إلى Harbor",
+  "Added to Frame": "تمت الإضافة إلى Frame",
   "Added to Shelf": "تمت الإضافة إلى الرف",
   "Added to downloads": "تمت الإضافة إلى التنزيلات",
   "Added to library": "تمت الإضافة إلى المكتبة",
@@ -166,8 +166,8 @@ const wired: Record<string, string> = {
     "أضف مكتبة معروضة من الخادم باستخدام إعداد المصدر الخاص بك.",
   "Bring friends here": "ادعُ الأصدقاء إلى هنا",
   "Bring friends to {label}": "ادعُ الأصدقاء إلى {label}",
-  "Bring trusted source packages aboard through Harbor’s isolated extension worker.":
-    "أضف حزم المصادر الموثوقة عبر مشغّل إضافات Harbor المعزول.",
+  "Bring trusted source packages aboard through Frame’s isolated extension worker.":
+    "أضف حزم المصادر الموثوقة عبر مشغّل إضافات Frame المعزول.",
   "British Independent Film Awards": "جوائز الأفلام المستقلة البريطانية",
   "Browse 1 theme. Apply in one click.": "تصفّح سمة واحدة وطبّقها بنقرة واحدة.",
   "Browse all": "تصفّح الكل",
@@ -192,8 +192,8 @@ const wired: Record<string, string> = {
     "طبقات CSS وHTML وJS فوق التطبيق بأكمله. اختيارية للتخطيطات المضمّنة، ومطلوبة لواجهة مخصصة.",
   "Cache on {provider}": "خزّن مؤقتًا على {provider}",
   "Cached on {providers}": "مخزّن مؤقتًا على {providers}",
-  "Call these from onclick handlers or your theme JS. They are stable and safe: each one drives the real Harbor feature, so your chrome never goes stale when Harbor adds menu items.":
-    "استدعِ هذه من معالجات onclick أو من JS الخاص بسمتك. إنها ثابتة وآمنة: كل منها يشغّل ميزة Harbor الفعلية، لذا لا تصبح واجهتك قديمة عندما يضيف Harbor عناصر إلى القوائم.",
+  "Call these from onclick handlers or your theme JS. They are stable and safe: each one drives the real Frame feature, so your chrome never goes stale when Frame adds menu items.":
+    "استدعِ هذه من معالجات onclick أو من JS الخاص بسمتك. إنها ثابتة وآمنة: كل منها يشغّل ميزة Frame الفعلية، لذا لا تصبح واجهتك قديمة عندما يضيف Frame عناصر إلى القوائم.",
   "Cancel Edge TTS generation": "إلغاء إنشاء الصوت عبر Edge TTS",
   "Cancel audio generation": "إلغاء إنشاء الصوت",
   Cancelled: "أُلغي",
@@ -243,7 +243,7 @@ const wired: Record<string, string> = {
     "أغلق قائمة البث وأعد فتحها لإعادة فحص الشبكة.",
   "Close zoom controls": "إغلاق عناصر التحكم في التكبير",
   "Colors, layout, and fonts. No code.": "ألوان وتخطيط وخطوط، بلا برمجة.",
-  "Come back to Harbor and try casting again.": "عُد إلى Harbor وحاول البث مجددًا.",
+  "Come back to Frame and try casting again.": "عُد إلى Frame وحاول البث مجددًا.",
   "Community index": "فهرس المجتمع",
   "Complete book": "الكتاب كامل",
   "Complete-chapter generation progress": "تقدم إنشاء الفصل الكامل",
@@ -254,15 +254,15 @@ const wired: Record<string, string> = {
   "Configuring {title}": "جارٍ ضبط {title}",
   "Congrats! Tap to view your badges.": "تهانينا! اضغط لعرض شاراتك.",
   "Connect a source": "ربط مصدر",
-  "Connect books you own, trusted reading sources, and metadata services. Harbor keeps the shelf coherent while every source stays under your control.":
-    "اربط كتبك ومصادر القراءة الموثوقة وخدمات البيانات الوصفية. يحافظ Harbor على تنظيم الرف مع بقاء كل مصدر تحت سيطرتك.",
+  "Connect books you own, trusted reading sources, and metadata services. Frame keeps the shelf coherent while every source stays under your control.":
+    "اربط كتبك ومصادر القراءة الموثوقة وخدمات البيانات الوصفية. يحافظ Frame على تنظيم الرف مع بقاء كل مصدر تحت سيطرتك.",
   "Connect to your computer to manage your library.": "اتصل بجهاز الكمبيوتر لإدارة مكتبتك.",
   "Connect to your computer to switch": "اتصل بحاسوبك للتبديل",
   "Connecting to": "جارٍ الاتصال بـ",
   "Connecting...": "جارٍ الاتصال...",
   Contents: "المحتويات",
   "Continue Reading": "متابعة القراءة",
-  "Continue in Harbor": "المتابعة في Harbor",
+  "Continue in Frame": "المتابعة في Frame",
   "Continue in browser": "المتابعة في المتصفح",
   "Continue your bookmarks": "متابعة إشاراتك المرجعية",
   "Copied!": "تم النسخ!",
@@ -345,12 +345,12 @@ const wired: Record<string, string> = {
   "Didn't catch that": "لم أفهم ذلك",
   "Direct link": "رابط مباشر",
   "Direct stream": "بث مباشر",
-  "Direct torrent play needs the Harbor desktop app.":
-    "يتطلب تشغيل التورنت مباشرةً تطبيق Harbor لسطح المكتب.",
+  "Direct torrent play needs the Frame desktop app.":
+    "يتطلب تشغيل التورنت مباشرةً تطبيق Frame لسطح المكتب.",
   "Disc Source": "مصدر القرص",
   Discard: "تجاهل",
-  "Dispatched on window. Listen from your theme JS to react to Harbor's lifecycle.":
-    "يُرسل على window. استمع إليه من JS الخاص بقالبك للتفاعل مع دورة حياة Harbor.",
+  "Dispatched on window. Listen from your theme JS to react to Frame's lifecycle.":
+    "يُرسل على window. استمع إليه من JS الخاص بقالبك للتفاعل مع دورة حياة Frame.",
   "Display the artist and album under the title on the card.":
     "اعرض الفنان والألبوم أسفل العنوان على البطاقة.",
   "Distinguished fiction honored by the Pulitzer Prize": "أعمال روائية متميزة حازت جائزة Pulitzer",
@@ -369,8 +369,8 @@ const wired: Record<string, string> = {
     "اسحب لتغيير حجم اللوحات الأربع · انقر نقرًا مزدوجًا لمحاذاة الصفوف",
   "Drop a theme file here or click to browse.": "أفلت ملف قالب هنا أو انقر للاستعراض.",
   "Drop a {extension}": "أفلت ملف {extension}",
-  "Drop in art at any resolution. Harbor resizes and compresses anything oversized for you, so nothing gets skipped for being too big. Square PNGs with a transparent background look best.":
-    "أفلت صورة بأي دقة. يغيّر Harbor حجم الملفات الكبيرة ويضغطها تلقائيًا، لذا لن يُتخطى أي ملف لكبر حجمه. تبدو صور PNG المربعة ذات الخلفية الشفافة أفضل.",
+  "Drop in art at any resolution. Frame resizes and compresses anything oversized for you, so nothing gets skipped for being too big. Square PNGs with a transparent background look best.":
+    "أفلت صورة بأي دقة. يغيّر Frame حجم الملفات الكبيرة ويضغطها تلقائيًا، لذا لن يُتخطى أي ملف لكبر حجمه. تبدو صور PNG المربعة ذات الخلفية الشفافة أفضل.",
   "Drop many images, GIFs, or a .zip at once. Name each file after its slot ({example}) and we match them. Any size is fine, we resize big images and keep animated GIFs light.":
     "أفلت عدة صور أو ملفات GIF أو ملف .zip دفعة واحدة. سمِّ كل ملف باسم خانته ({example}) وسنطابقها. أي حجم مناسب، فنحن نصغّر الصور الكبيرة ونحافظ على خفة ملفات GIF المتحركة.",
   "Drop the About and Custom labels so an embed fills the card cleanly.":
@@ -400,12 +400,12 @@ const wired: Record<string, string> = {
   "Every color token, stable selector, {api} call, live hook (bell, account menu, avatar, status dot, unread badge), and copy-paste recipe.":
     "كل رمز لون ومحدِّد ثابت واستدعاء {api} وخطاف مباشر (الجرس، قائمة الحساب، الصورة الرمزية، نقطة الحالة، شارة غير المقروء) ووصفة جاهزة للنسخ واللصق.",
   "Every slot name": "اسم كل خانة",
-  "Every surface in Harbor maps to one of these 12 variables.":
-    "كل سطح في Harbor مرتبط بأحد هذه المتغيرات الـ12.",
+  "Every surface in Frame maps to one of these 12 variables.":
+    "كل سطح في Frame مرتبط بأحد هذه المتغيرات الـ12.",
   "Every theme is sandboxed, scanned, and reviewed before it reaches the library, so you can try any look without a second thought.":
     "يُعزل كل قالب ويُفحص ويُراجع قبل وصوله إلى المكتبة، لذا يمكنك تجربة أي مظهر بكل اطمئنان.",
-  "Every theme you share gets a private owner token. On the device where you shared it, Harbor saved it automatically, so those themes show up right here to claim in one tap. To claim one from a different device, paste that token below. New shares now bind straight to your account, so you will not need this again.":
-    "يحصل كل قالب تشاركه على رمز مالك خاص. يحفظه Harbor تلقائيًا على الجهاز الذي شاركته منه، فتظهر هذه القوالب هنا مباشرة لتطالب بملكيتها بنقرة واحدة. للمطالبة بقالب من جهاز آخر، ألصق رمزه أدناه. ترتبط المشاركات الجديدة الآن بحسابك مباشرة، لذا لن تحتاج إلى ذلك مجددًا.",
+  "Every theme you share gets a private owner token. On the device where you shared it, Frame saved it automatically, so those themes show up right here to claim in one tap. To claim one from a different device, paste that token below. New shares now bind straight to your account, so you will not need this again.":
+    "يحصل كل قالب تشاركه على رمز مالك خاص. يحفظه Frame تلقائيًا على الجهاز الذي شاركته منه، فتظهر هذه القوالب هنا مباشرة لتطالب بملكيتها بنقرة واحدة. للمطالبة بقالب من جهاز آخر، ألصق رمزه أدناه. ترتبط المشاركات الجديدة الآن بحسابك مباشرة، لذا لن تحتاج إلى ذلك مجددًا.",
   "Exit full screen": "الخروج من ملء الشاشة",
   "Experimental 1:1 ports of other apps. Rough edges expected.":
     "نُسخ تجريبية مطابقة 1:1 من تطبيقات أخرى. توقّع بعض العيوب.",
@@ -423,14 +423,14 @@ const wired: Record<string, string> = {
   "Featured theme": "قالب مميز",
   Fiction: "أدب روائي",
   "File another": "قدّم بلاغًا آخر",
-  "File is not a Harbor layout profile.": "الملف ليس ملف تعريف لتخطيط Harbor.",
+  "File is not a Frame layout profile.": "الملف ليس ملف تعريف لتخطيط Frame.",
   "Fills in where TMDB comes up empty (anime, older catalog). Free at":
     "يملأ النقص في بيانات TMDB (الأنمي والفهرس القديم). مجاني على",
   "Filter eBooks": "تصفية الكتب الإلكترونية",
   "Find a word or passage": "ابحث عن كلمة أو مقطع",
   "Floating orbs over the canvas.": "كرات عائمة فوق اللوحة.",
   Folder: "مجلد",
-  "Folder selection is available in the Harbor app": "اختيار المجلد متاح في تطبيق Harbor",
+  "Folder selection is available in the Frame app": "اختيار المجلد متاح في تطبيق Frame",
   "Follow them out?": "هل تريد الانتقال إلى موقعهم؟",
   "Font tokens": "رموز الخطوط",
   "Frame grab failed": "تعذر التقاط الإطار",
@@ -445,8 +445,8 @@ const wired: Record<string, string> = {
   "Fullscreen split view": "عرض مقسّم بملء الشاشة",
   "GIF export failed": "فشل تصدير GIF",
   "GIF saved to {path}": "تم حفظ GIF في {path}",
-  "GPU shaders that sharpen lines and clean up gradients on anime as it plays. Pick a mode, Harbor handles the shaders.":
-    "مظللات GPU تزيد حدة الخطوط وتحسّن التدرجات أثناء تشغيل الأنمي. اختر وضعًا وسيتولى Harbor معالجة المظللات.",
+  "GPU shaders that sharpen lines and clean up gradients on anime as it plays. Pick a mode, Frame handles the shaders.":
+    "مظللات GPU تزيد حدة الخطوط وتحسّن التدرجات أثناء تشغيل الأنمي. اختر وضعًا وسيتولى Frame معالجة المظللات.",
   "Games, coloring and ocean wonders": "ألعاب وتلوين وعجائب المحيط",
   "Get theme": "الحصول على السمة",
   "Get your free TheTVDB key": "احصل على مفتاح TheTVDB المجاني",
@@ -470,44 +470,42 @@ const wired: Record<string, string> = {
   "HTML and CSS are each capped at 16,384 characters.":
     "الحد الأقصى لكل من HTML وCSS هو 16,384 حرفًا.",
   "HTTP {status}: {body}": "HTTP {status}: {body}",
-  "Harbor Reader": "قارئ Harbor",
-  "Harbor Relay Documentation": "وثائق Harbor Relay",
-  "Harbor Relay docs": "وثائق Harbor Relay",
-  "Harbor Staff": "فريق Harbor",
-  "Harbor blocks suspicious files and mismatched releases by default. For older shows and unusual titles this is sometimes too tight.":
-    "يحظر Harbor افتراضيًا الملفات المشبوهة والإصدارات غير المطابقة. وقد تكون هذه القيود صارمة أحيانًا مع الأعمال القديمة والعناوين غير المألوفة.",
-  "Harbor can open only HTTP or HTTPS destinations.":
-    "لا يستطيع Harbor فتح سوى وجهات HTTP أو HTTPS.",
-  "Harbor cannot open links that include embedded credentials.":
-    "لا يستطيع Harbor فتح الروابط التي تتضمن بيانات اعتماد مضمّنة.",
-  "Harbor could not verify this destination.": "تعذّر على Harbor التحقق من هذه الوجهة.",
-  "Harbor couldn't reach MyAnimeList or AniList. Check your connection and try again.":
-    "تعذّر على Harbor الوصول إلى MyAnimeList أو AniList. تحقق من اتصالك وحاول مجددًا.",
-  "Harbor couldn't reach the catalog servers. Check your connection and try again.":
-    "تعذّر على Harbor الوصول إلى خوادم الفهرس. تحقق من اتصالك وحاول مجددًا.",
-  "Harbor dropped {n} suspicious or mismatched result.":
-    "استبعد Harbor عددًا قدره {n} من النتائج المشبوهة أو غير المتطابقة.",
-  "Harbor dropped {n} suspicious or mismatched results.":
-    "استبعد Harbor عددًا قدره {n} من النتائج المشبوهة أو غير المتطابقة.",
-  "Harbor eBook": "كتاب Harbor الإلكتروني",
-  "Harbor found something at this address that looked like a Roku, but it didn't respond like one. The device may be offline or another product picked up the same broadcast.":
-    "عثر Harbor في هذا العنوان على جهاز بدا كأنه Roku، لكنه لم يستجب مثله. قد يكون الجهاز غير متصل أو أن منتجًا آخر التقط البث نفسه.",
-  "Harbor never hosts your books or source files.":
-    "لا يستضيف Harbor كتبك أو ملفاتك المصدرية مطلقًا.",
-  "Harbor never hosts your books.": "لا يستضيف Harbor كتبك مطلقًا.",
-  "Harbor on the server display": "Harbor على شاشة الخادم",
-  "Harbor opens 4 parallel requests to": "يفتح Harbor 4 طلبات متوازية إلى",
-  "Harbor queried 1 addon and got nothing back": "استعلم Harbor من إضافة واحدة ولم يتلقَّ أي نتيجة",
-  "Harbor queried {n} addons and got nothing back": "استعلم Harbor من {n} إضافات ولم يتلقَّ أي نتيجة",
-  "Harbor reading room": "غرفة القراءة في Harbor",
-  "Harbor snippet": "مقتطف Harbor",
-  "Harbor test message ({service}). If you can read this, your webhook is wired up.":
-    "رسالة اختبار من Harbor‏ ({service}). إذا كنت تستطيع قراءتها، فقد تم توصيل webhook بنجاح.",
-  "Harbor theme": "سمة Harbor",
-  "Harbor uses ffmpeg to convert streams into formats TVs can play. It's a one-time install and Harbor will pick it up automatically.":
-    "يستخدم Harbor أداة ffmpeg لتحويل البث إلى تنسيقات يمكن لأجهزة التلفزيون تشغيلها. لا يلزم تثبيتها إلا مرة واحدة، وسيكتشفها Harbor تلقائيًا.",
-  "Harbor's temporary viewer requires HTTPS.": "يتطلب عارض Harbor المؤقت HTTPS.",
-  "Harbor, from a public domain frame": "Harbor، من إطار ضمن الملكية العامة",
+  "Frame Reader": "قارئ Frame",
+  "Frame Relay Documentation": "وثائق Frame Relay",
+  "Frame Relay docs": "وثائق Frame Relay",
+  "Frame Staff": "فريق Frame",
+  "Frame blocks suspicious files and mismatched releases by default. For older shows and unusual titles this is sometimes too tight.":
+    "يحظر Frame افتراضيًا الملفات المشبوهة والإصدارات غير المطابقة. وقد تكون هذه القيود صارمة أحيانًا مع الأعمال القديمة والعناوين غير المألوفة.",
+  "Frame can open only HTTP or HTTPS destinations.": "لا يستطيع Frame فتح سوى وجهات HTTP أو HTTPS.",
+  "Frame cannot open links that include embedded credentials.":
+    "لا يستطيع Frame فتح الروابط التي تتضمن بيانات اعتماد مضمّنة.",
+  "Frame could not verify this destination.": "تعذّر على Frame التحقق من هذه الوجهة.",
+  "Frame couldn't reach MyAnimeList or AniList. Check your connection and try again.":
+    "تعذّر على Frame الوصول إلى MyAnimeList أو AniList. تحقق من اتصالك وحاول مجددًا.",
+  "Frame couldn't reach the catalog servers. Check your connection and try again.":
+    "تعذّر على Frame الوصول إلى خوادم الفهرس. تحقق من اتصالك وحاول مجددًا.",
+  "Frame dropped {n} suspicious or mismatched result.":
+    "استبعد Frame عددًا قدره {n} من النتائج المشبوهة أو غير المتطابقة.",
+  "Frame dropped {n} suspicious or mismatched results.":
+    "استبعد Frame عددًا قدره {n} من النتائج المشبوهة أو غير المتطابقة.",
+  "Frame eBook": "كتاب Frame الإلكتروني",
+  "Frame found something at this address that looked like a Roku, but it didn't respond like one. The device may be offline or another product picked up the same broadcast.":
+    "عثر Frame في هذا العنوان على جهاز بدا كأنه Roku، لكنه لم يستجب مثله. قد يكون الجهاز غير متصل أو أن منتجًا آخر التقط البث نفسه.",
+  "Frame never hosts your books or source files.": "لا يستضيف Frame كتبك أو ملفاتك المصدرية مطلقًا.",
+  "Frame never hosts your books.": "لا يستضيف Frame كتبك مطلقًا.",
+  "Frame on the server display": "Frame على شاشة الخادم",
+  "Frame opens 4 parallel requests to": "يفتح Frame 4 طلبات متوازية إلى",
+  "Frame queried 1 addon and got nothing back": "استعلم Frame من إضافة واحدة ولم يتلقَّ أي نتيجة",
+  "Frame queried {n} addons and got nothing back": "استعلم Frame من {n} إضافات ولم يتلقَّ أي نتيجة",
+  "Frame reading room": "غرفة القراءة في Frame",
+  "Frame snippet": "مقتطف Frame",
+  "Frame test message ({service}). If you can read this, your webhook is wired up.":
+    "رسالة اختبار من Frame‏ ({service}). إذا كنت تستطيع قراءتها، فقد تم توصيل webhook بنجاح.",
+  "Frame theme": "سمة Frame",
+  "Frame uses ffmpeg to convert streams into formats TVs can play. It's a one-time install and Frame will pick it up automatically.":
+    "يستخدم Frame أداة ffmpeg لتحويل البث إلى تنسيقات يمكن لأجهزة التلفزيون تشغيلها. لا يلزم تثبيتها إلا مرة واحدة، وسيكتشفها Frame تلقائيًا.",
+  "Frame's temporary viewer requires HTTPS.": "يتطلب عارض Frame المؤقت HTTPS.",
+  "Frame, from a public domain frame": "Frame، من إطار ضمن الملكية العامة",
   "Have a file?": "لديك ملف؟",
   "Have a token from another device?": "لديك رمز مميز من جهاز آخر؟",
   "Help & feedback": "المساعدة والملاحظات",
@@ -529,8 +527,8 @@ const wired: Record<string, string> = {
   "Highlight {color}": "تمييز باللون {color}",
   "Highlighted passage": "مقطع مميز",
   "Highly rated by the community": "يحظى بتقييم مرتفع من المجتمع",
-  "Highly recommended. This is what gives you the full Harbor experience: Popular, Trending, In Theaters, and per-service rails. Free at":
-    "موصى به بشدة. يمنحك هذا تجربة Harbor الكاملة: الرائج، والأكثر تداولًا، ويُعرض في السينما، وصفوفًا لكل خدمة. مجاني على",
+  "Highly recommended. This is what gives you the full Frame experience: Popular, Trending, In Theaters, and per-service rails. Free at":
+    "موصى به بشدة. يمنحك هذا تجربة Frame الكاملة: الرائج، والأكثر تداولًا، ويُعرض في السينما، وصفوفًا لكل خدمة. مجاني على",
   "How award packs work": "كيف تعمل حزم الجوائز",
   "How badge packs work": "كيف تعمل حزم الشارات",
   "How it'll look": "كيف سيبدو",
@@ -657,8 +655,8 @@ const wired: Record<string, string> = {
   "Make sure the Roku is powered on and on the same Wi-Fi as your computer.":
     "تأكد من تشغيل Roku واتصاله بشبكة Wi-Fi نفسها المتصل بها حاسوبك.",
   "Manage eBook sources": "إدارة مصادر الكتب الإلكترونية",
-  "Manage every place Harbor can read from, whether it lives on disk or across the web.":
-    "أدِر كل مصدر يمكن لـ Harbor القراءة منه، سواء كان على القرص أو عبر الويب.",
+  "Manage every place Frame can read from, whether it lives on disk or across the web.":
+    "أدِر كل مصدر يمكن لـ Frame القراءة منه، سواء كان على القرص أو عبر الويب.",
   "Manga adaptation": "اقتباس مانغا",
   "Mark all watched": "تحديد الكل كمُشاهَد",
   "Mark as Read": "تحديد كمقروء",
@@ -721,8 +719,8 @@ const wired: Record<string, string> = {
   "No channels": "لا توجد قنوات",
   "No channels match. Try another group or paste a URL.":
     "لا توجد قنوات مطابقة. جرّب مجموعة أخرى أو الصق عنوان URL.",
-  "No clean release has surfaced yet. This may be too new. Harbor's filters dropped everything that came back as wrong-movie noise.":
-    "لم يظهر إصدار سليم بعد. قد يكون هذا العمل جديدًا جدًا. استبعدت فلاتر Harbor جميع النتائج غير المطابقة للفيلم.",
+  "No clean release has surfaced yet. This may be too new. Frame's filters dropped everything that came back as wrong-movie noise.":
+    "لم يظهر إصدار سليم بعد. قد يكون هذا العمل جديدًا جدًا. استبعدت فلاتر Frame جميع النتائج غير المطابقة للفيلم.",
   "No collections were found in the installed source catalog.":
     "لم يتم العثور على مجموعات في كتالوج المصدر المثبّت.",
   "No collections yet. Add a collections addon to browse curated sets.":
@@ -808,8 +806,8 @@ const wired: Record<string, string> = {
     "بعد الحفظ، سيُعاد إنشاء كل ملصق مع إضافة تقييمات IMDb وRotten Tomatoes وMetacritic إليه.",
   "One line for the picker (optional)": "سطر واحد لأداة الاختيار (اختياري)",
   "One line shown under the name.": "سطر واحد يظهر أسفل الاسم.",
-  "One-time setup downloads the shader pack (about 1 MB) into Harbor. No files to hunt down.":
-    "يُنزّل الإعداد لمرة واحدة حزمة التظليل (نحو 1 MB) إلى Harbor. لا حاجة للبحث عن أي ملفات.",
+  "One-time setup downloads the shader pack (about 1 MB) into Frame. No files to hunt down.":
+    "يُنزّل الإعداد لمرة واحدة حزمة التظليل (نحو 1 MB) إلى Frame. لا حاجة للبحث عن أي ملفات.",
   "Only addon/debrid sources, never peer-to-peer":
     "مصادر الإضافات وdebrid فقط، دون نظير إلى نظير مطلقًا",
   "Only continue if you fully trust this link": "لا تتابع إلا إذا كنت تثق تمامًا بهذا الرابط",
@@ -821,8 +819,8 @@ const wired: Record<string, string> = {
     "افتح Settings، ثم System، ثم Advanced system settings.",
   "Open TheTVDB": "فتح TheTVDB",
   "Open a folder": "فتح مجلد",
-  "Open a manga on Harbor to control the reader from here.":
-    "افتح مانغا على Harbor للتحكم في القارئ من هنا.",
+  "Open a manga on Frame to control the reader from here.":
+    "افتح مانغا على Frame للتحكم في القارئ من هنا.",
   "Open a terminal and run: brew install ffmpeg": "افتح الطرفية وشغّل: brew install ffmpeg",
   "Open a terminal and run: winget install Gyan.FFmpeg":
     "افتح الطرفية وشغّل: winget install Gyan.FFmpeg",
@@ -955,7 +953,7 @@ const wired: Record<string, string> = {
   "Rate this pack": "قيّم هذه الحزمة",
   "Rate this theme": "قيّم هذا المظهر",
   "Rate {count} stars": "قيّم بـ {count} نجوم",
-  "Re-sync from your Harbor profile picture": "أعِد المزامنة من صورة ملفك الشخصي في Harbor",
+  "Re-sync from your Frame profile picture": "أعِد المزامنة من صورة ملفك الشخصي في Frame",
   "Re-test": "أعِد الاختبار",
   "Reach HTTP sources with harbor.http(url, opts), binary gRPC sources with harbor.grpc(url, protobufBytes, opts), and parse HTML with harbor.parseHtml(html). There is no fetch, DOM, or storage in the sandbox.":
     "صِل إلى مصادر HTTP باستخدام harbor.http(url, opts)، ومصادر gRPC الثنائية باستخدام harbor.grpc(url, protobufBytes, opts)، وحلّل HTML باستخدام harbor.parseHtml(html). لا تتوفر fetch أو DOM أو مساحة تخزين في البيئة المعزولة.",
@@ -1031,12 +1029,12 @@ const wired: Record<string, string> = {
     "تم تغيير حجم {count} صورة لتلائم المساحة. لم يتم تخطي أي شيء بسبب الحجم.",
   "Resized {count} images to fit. Nothing was skipped for size.":
     "تم تغيير حجم {count} صور لتلائم المساحة. لم يتم تخطي أي شيء بسبب الحجم.",
-  "Reskin the award trophies shown across Harbor. Click any award to add a PNG or animated GIF, add your own custom award types, or import a whole set at once.":
-    "غيّر مظهر جوائز التكريم المعروضة في Harbor. انقر على أي جائزة لإضافة صورة PNG أو GIF متحركة، أو أضف أنواع جوائز مخصصة، أو استورد مجموعة كاملة دفعة واحدة.",
+  "Reskin the award trophies shown across Frame. Click any award to add a PNG or animated GIF, add your own custom award types, or import a whole set at once.":
+    "غيّر مظهر جوائز التكريم المعروضة في Frame. انقر على أي جائزة لإضافة صورة PNG أو GIF متحركة، أو أضف أنواع جوائز مخصصة، أو استورد مجموعة كاملة دفعة واحدة.",
   "Reskin the quality chips (4K, HDR, Dolby Vision, Atmos and more) that ride each stream in the play picker. Click any slot to drop in your own PNG or animated GIF, or import a whole set at once. You do not have to fill every slot.":
     "غيّر مظهر شارات الجودة (4K وHDR وDolby Vision وAtmos وغيرها) المصاحبة لكل بث في منتقي التشغيل. انقر على أي خانة لإضافة ملف PNG أو GIF متحرك خاص بك، أو استورد مجموعة كاملة دفعة واحدة. لست مضطرًا إلى ملء كل الخانات.",
   "Resolving manifest": "جارٍ تحليل ملف البيان",
-  "Restart Harbor after the install completes.": "أعد تشغيل Harbor بعد اكتمال التثبيت.",
+  "Restart Frame after the install completes.": "أعد تشغيل Frame بعد اكتمال التثبيت.",
   "Restart game": "إعادة تشغيل اللعبة",
   "Resume S{season} E{episode}": "متابعة م{season} ح{episode}",
   "Resume download": "استئناف التنزيل",
@@ -1100,29 +1098,29 @@ const wired: Record<string, string> = {
     "اختر مقطعًا لإضافة تمييز أو ملاحظة أو مرجع.",
   "Select a volume to see its chapters.": "اختر مجلدًا لعرض فصوله.",
   "Select renderer": "اختر العارض",
-  "Send this title to your Harbor app": "أرسل هذا العنوان إلى تطبيق Harbor",
+  "Send this title to your Frame app": "أرسل هذا العنوان إلى تطبيق Frame",
   "Sending to {provider}": "جارٍ الإرسال إلى {provider}",
   "Sends only the chapter you open to DeepSeek. Volumes, chapters, and metadata stay unchanged.":
     "يرسل إلى DeepSeek الفصل الذي تفتحه فقط. تظل المجلدات والفصول والبيانات الوصفية دون تغيير.",
-  "Sends the context above straight to the Harbor team. No keys or library data.":
-    "يرسل السياق أعلاه مباشرةً إلى فريق Harbor. لا تُرسل أي مفاتيح أو بيانات للمكتبة.",
+  "Sends the context above straight to the Frame team. No keys or library data.":
+    "يرسل السياق أعلاه مباشرةً إلى فريق Frame. لا تُرسل أي مفاتيح أو بيانات للمكتبة.",
   "Sent. Thanks for the help!": "تم الإرسال. شكرًا لمساعدتك!",
-  "Set a Harbor profile picture first": "عيّن صورة ملف شخصي في Harbor أولًا",
+  "Set a Frame profile picture first": "عيّن صورة ملف شخصي في Frame أولًا",
   "Set as a backdrop": "تعيين كخلفية",
   "Set on <html>. Use them to scope styles to a specific layout/card/button choice.":
     "عيّنها على <html>. استخدمها لحصر الأنماط في اختيار محدد للتخطيط أو البطاقة أو الزر.",
   "Set on the root. Override any to swap typography.":
     "عيّنها على الجذر. تجاوز أيًا منها لتبديل أسلوب الطباعة.",
-  "Set up at least one readable eBook source to begin. Metadata can describe a book, but a folder, extension, or custom source is what lets Harbor open it.":
-    "أعِدّ مصدرًا واحدًا على الأقل لكتب إلكترونية قابلة للقراءة للبدء. يمكن للبيانات الوصفية وصف كتاب، لكن المجلد أو الامتداد أو المصدر المخصص هو ما يتيح لـHarbor فتحه.",
+  "Set up at least one readable eBook source to begin. Metadata can describe a book, but a folder, extension, or custom source is what lets Frame open it.":
+    "أعِدّ مصدرًا واحدًا على الأقل لكتب إلكترونية قابلة للقراءة للبدء. يمكن للبيانات الوصفية وصف كتاب، لكن المجلد أو الامتداد أو المصدر المخصص هو ما يتيح لـFrame فتحه.",
   "Set up eBooks": "إعداد الكتب الإلكترونية",
   "Set your status": "تعيين حالتك",
   "Setting up Multiview": "جارٍ إعداد Multiview",
   "Setting up an addon": "جارٍ إعداد إضافة",
   "Setup · {title}": "الإعداد · {title}",
   "Shaders installed": "تم تثبيت Shaders",
-  "Shape the metadata and reading language Harbor uses without changing your original files.":
-    "خصّص البيانات الوصفية ولغة القراءة التي يستخدمها Harbor دون تغيير ملفاتك الأصلية.",
+  "Shape the metadata and reading language Frame uses without changing your original files.":
+    "خصّص البيانات الوصفية ولغة القراءة التي يستخدمها Frame دون تغيير ملفاتك الأصلية.",
   "Share a pack": "مشاركة حزمة",
   "Share a theme": "مشاركة سمة",
   "Share an icon pack": "مشاركة حزمة أيقونات",
@@ -1153,8 +1151,8 @@ const wired: Record<string, string> = {
   "Show them anyway": "إظهارها على أي حال",
   "Show translation": "إظهار الترجمة",
   "Show up to 6 of your lists on your profile": "إظهار ما يصل إلى 6 من قوائمك في ملفك الشخصي",
-  "Show your Harbor profile picture on the community":
-    "إظهار صورة ملفك الشخصي في Harbor داخل المجتمع",
+  "Show your Frame profile picture on the community":
+    "إظهار صورة ملفك الشخصي في Frame داخل المجتمع",
   "Show {name}": "إظهار {name}",
   "Showing {shown} of {total}. Refine the search to see more.":
     "يُعرض {shown} من {total}. حسّن البحث لرؤية المزيد.",
@@ -1177,8 +1175,8 @@ const wired: Record<string, string> = {
     "حدث خطأ أثناء العرض. أعد التحميل للاستعادة، أو أرسل إلينا التفاصيل التقنية.",
   "Song identification failed": "فشل التعرّف على الأغنية",
   Soon: "قريبًا",
-  "Sorry, Harbor crashed the last time it was running. You can review the details and choose whether to send a report.":
-    "عذرًا، تعطّل Harbor في آخر مرة كان يعمل فيها. يمكنك مراجعة التفاصيل واختيار ما إذا كنت تريد إرسال تقرير.",
+  "Sorry, Frame crashed the last time it was running. You can review the details and choose whether to send a report.":
+    "عذرًا، تعطّل Frame في آخر مرة كان يعمل فيها. يمكنك مراجعة التفاصيل واختيار ما إذا كنت تريد إرسال تقرير.",
   "Sort by": "الترتيب حسب",
   "Sorted newest first, tap for oldest": "الأحدث أولًا، اضغط لعرض الأقدم",
   "Sorted oldest first, tap for newest": "الأقدم أولًا، اضغط لعرض الأحدث",
@@ -1198,8 +1196,8 @@ const wired: Record<string, string> = {
   "Stop auto-downloading {title}": "إيقاف التنزيل التلقائي لـ {title}",
   "Stop sample": "إيقاف العينة",
   "Stop {voice} sample": "إيقاف عينة {voice}",
-  "Storage is full. Clear Harbor cache storage, then try saving again.":
-    "مساحة التخزين ممتلئة. امسح ذاكرة التخزين المؤقت لـ Harbor، ثم حاول الحفظ مجددًا.",
+  "Storage is full. Clear Frame cache storage, then try saving again.":
+    "مساحة التخزين ممتلئة. امسح ذاكرة التخزين المؤقت لـ Frame، ثم حاول الحفظ مجددًا.",
   "Store each title in its own folder with its EPUB or PDF":
     "تخزين كل عنوان في مجلد مستقل مع ملف EPUB أو PDF الخاص به",
   "Stories you love": "قصص تحبها",
@@ -1287,7 +1285,7 @@ const wired: Record<string, string> = {
   "Theme studio": "استوديو القوالب",
   "They email an activation link the first time. Click it, then come back and save.":
     "سيرسلون رابط تفعيل بالبريد الإلكتروني في المرة الأولى. اضغط عليه، ثم عُد واحفظ.",
-  "This Harbor": "Harbor هذا",
+  "This Frame": "Frame هذا",
   "This PC": "هذا الكمبيوتر",
   "This chapter could not be loaded.": "تعذّر تحميل هذا الفصل.",
   "This collection has no titles to show yet.": "لا تضم هذه المجموعة أي عناوين لعرضها بعد.",
@@ -1295,7 +1293,7 @@ const wired: Record<string, string> = {
   "This eBook could not be exported": "تعذّر تصدير هذا الكتاب الإلكتروني",
   "This eBook is not connected to an installed source.":
     "هذا الكتاب الإلكتروني غير مرتبط بمصدر مثبّت.",
-  "This file isn't a Harbor theme.": "هذا الملف ليس قالب Harbor.",
+  "This file isn't a Frame theme.": "هذا الملف ليس قالب Frame.",
   "This file isn't a readable theme.": "هذا الملف ليس قالبًا قابلًا للقراءة.",
   "This game couldn't load right now.": "تعذّر تحميل هذه اللعبة حاليًا.",
   "This is the only time you'll see it. If you ever forget your password, this code is the only way back into your account. Store it somewhere safe.":
@@ -1304,13 +1302,13 @@ const wired: Record<string, string> = {
     "يعرض هذا التخطيط الأيقونات فقط، لذا لا تظهر التسميات.",
   "This layout shows icons only, so renaming is off here. Reorder and hide still apply.":
     "يعرض هذا التخطيط الأيقونات فقط، لذا لا تتوفر إعادة التسمية هنا. يظل بإمكانك إعادة الترتيب والإخفاء.",
-  "This link goes to an external site that Harbor does not control or vouch for. Triple-check the address before you continue, and never enter your Harbor password anywhere but Harbor.":
-    "ينقلك هذا الرابط إلى موقع خارجي لا يتحكم فيه Harbor ولا يضمنه. تحقّق من العنوان بعناية قبل المتابعة، ولا تُدخل كلمة مرور Harbor في أي مكان سوى Harbor.",
+  "This link goes to an external site that Frame does not control or vouch for. Triple-check the address before you continue, and never enter your Frame password anywhere but Frame.":
+    "ينقلك هذا الرابط إلى موقع خارجي لا يتحكم فيه Frame ولا يضمنه. تحقّق من العنوان بعناية قبل المتابعة، ولا تُدخل كلمة مرور Frame في أي مكان سوى Frame.",
   "This playlist hasn't been loaded yet, or it has no channels.":
     "لم تُحمّل قائمة التشغيل هذه بعد، أو لا تحتوي على قنوات.",
   "This repository lists no eBook extensions.": "لا يتضمن هذا المستودع أي إضافات للكتب الإلكترونية.",
-  "This site may not support Harbor's temporary viewer. Retry the original link or open it in your browser.":
-    "قد لا يدعم هذا الموقع عارض Harbor المؤقت. أعد محاولة فتح الرابط الأصلي أو افتحه في متصفحك.",
+  "This site may not support Frame's temporary viewer. Retry the original link or open it in your browser.":
+    "قد لا يدعم هذا الموقع عارض Frame المؤقت. أعد محاولة فتح الرابط الأصلي أو افتحه في متصفحك.",
   "This source did not provide any chapters.": "لم يوفّر هذا المصدر أي فصول.",
   "This source returned no chapters for this title.": "لم يعرض هذا المصدر أي فصول لهذا العنوان.",
   "This theme file is missing a name.": "ملف القالب بلا اسم.",
@@ -1358,8 +1356,8 @@ const wired: Record<string, string> = {
   "Unlock controls": "إلغاء قفل عناصر التحكم",
   "Unlock player controls ({binding})": "إلغاء قفل عناصر تحكم المشغّل ({binding})",
   "Unmute this cell": "إلغاء كتم هذه الخلية",
-  "Unsupported profile version ({version}). Update Harbor or use an older profile.":
-    "إصدار الملف الشخصي غير مدعوم ({version}). حدّث Harbor أو استخدم ملفًا شخصيًا أقدم.",
+  "Unsupported profile version ({version}). Update Frame or use an older profile.":
+    "إصدار الملف الشخصي غير مدعوم ({version}). حدّث Frame أو استخدم ملفًا شخصيًا أقدم.",
   "Untitled theme": "سمة بلا عنوان",
   "Update a theme": "تحديث سمة",
   "Update in review": "التحديث قيد المراجعة",
@@ -1384,14 +1382,14 @@ const wired: Record<string, string> = {
     "استخدم مفتاح API لترجمة الفصول إلى لغتك. احصل على مفتاح من",
   "Use {color} for the line tracker": "استخدم {color} لمؤشر تتبّع السطر",
   "Use {color} ink": "استخدم حبرًا باللون {color}",
-  "Used to check cache and unrestrict links. Harbor never adds or removes anything on your account on its own.":
-    "يُستخدم للتحقق من ذاكرة التخزين المؤقت وإلغاء قيود الروابط. لا يضيف Harbor أي شيء إلى حسابك أو يزيله من تلقاء نفسه مطلقًا.",
+  "Used to check cache and unrestrict links. Frame never adds or removes anything on your account on its own.":
+    "يُستخدم للتحقق من ذاكرة التخزين المؤقت وإلغاء قيود الروابط. لا يضيف Frame أي شيء إلى حسابك أو يزيله من تلقاء نفسه مطلقًا.",
   "Uses the directdl endpoint, which skips queueing for anything already cached.":
     "يستخدم نقطة النهاية directdl، التي تتجاوز قائمة الانتظار لأي محتوى مخزّن مؤقتًا بالفعل.",
   "Uses up to 150 MB": "يستخدم ما يصل إلى 150 MB",
   VS: "ضد",
   "Venice Film Festival": "مهرجان البندقية السينمائي",
-  "Verified Harbor Staff": "موظفو Harbor الموثّقون",
+  "Verified Frame Staff": "موظفو Frame الموثّقون",
   Versions: "الإصدارات",
   "Versions ({count})": "الإصدارات ({count})",
   Video: "فيديو",
@@ -1408,8 +1406,8 @@ const wired: Record<string, string> = {
   "Volumes not reported": "المجلدات غير مذكورة",
   "Wait {seconds}s": "انتظر {seconds} ث",
   "Waiting for": "في انتظار",
-  "Want a badge that moves? Drop in a GIF up to 8 MB. Harbor shrinks it down and converts it to a lightweight animated format so it stays crisp and loads fast. Keep it small and looping.":
-    "تريد شارة متحركة؟ أضف ملف GIF بحجم يصل إلى 8 MB. سيصغّره Harbor ويحوّله إلى تنسيق متحرك خفيف ليظل واضحًا وسريع التحميل. اجعله صغيرًا ومتكررًا.",
+  "Want a badge that moves? Drop in a GIF up to 8 MB. Frame shrinks it down and converts it to a lightweight animated format so it stays crisp and loads fast. Keep it small and looping.":
+    "تريد شارة متحركة؟ أضف ملف GIF بحجم يصل إلى 8 MB. سيصغّره Frame ويحوّله إلى تنسيق متحرك خفيف ليظل واضحًا وسريع التحميل. اجعله صغيرًا ومتكررًا.",
   "Warmer accent, fixed the sidebar contrast, new cover":
     "لون تمييز أدفأ، وتحسين تباين الشريط الجانبي، وغلاف جديد",
   "Watch Live TV?": "مشاهدة البث التلفزيوني المباشر؟",
@@ -1457,12 +1455,12 @@ const wired: Record<string, string> = {
     "ستبقى في الغرفة في كلتا الحالتين. واصل المشاهدة مع الآخرين، أو اخرج من المشغّل.",
   "You're editing the chrome by hand, so the visual builder stays out of your way.":
     "أنت تعدّل واجهة التطبيق يدويًا، لذا لن يعترض المنشئ المرئي طريقك.",
-  "You're leaving Harbor": "أنت تغادر Harbor",
+  "You're leaving Frame": "أنت تغادر Frame",
   "YouTube, SoundCloud or Spotify link": "رابط YouTube أو SoundCloud أو Spotify",
-  "Your HTML and CSS render inside a sandboxed frame, fully isolated from the rest of Harbor. Write it like a tiny self-contained page. Font and page background are separate controls above, applied to the whole profile.":
-    "يُعرض HTML وCSS داخل إطار معزول تمامًا عن بقية Harbor. اكتبهما كصفحة صغيرة مستقلة بذاتها. الخط وخلفية الصفحة عنصران منفصلان للتحكم أعلاه، ويُطبّقان على الملف الشخصي بالكامل.",
-  "Your Roku is set to block control requests from apps on your network, so Harbor can't reach it. This is a one-time setting on the Roku.":
-    "جهاز Roku مضبوط على حظر طلبات التحكم من التطبيقات على شبكتك، لذا لا يستطيع Harbor الوصول إليه. ما عليك سوى تغيير هذا الإعداد مرة واحدة على Roku.",
+  "Your HTML and CSS render inside a sandboxed frame, fully isolated from the rest of Frame. Write it like a tiny self-contained page. Font and page background are separate controls above, applied to the whole profile.":
+    "يُعرض HTML وCSS داخل إطار معزول تمامًا عن بقية Frame. اكتبهما كصفحة صغيرة مستقلة بذاتها. الخط وخلفية الصفحة عنصران منفصلان للتحكم أعلاه، ويُطبّقان على الملف الشخصي بالكامل.",
+  "Your Roku is set to block control requests from apps on your network, so Frame can't reach it. This is a one-time setting on the Roku.":
+    "جهاز Roku مضبوط على حظر طلبات التحكم من التطبيقات على شبكتك، لذا لا يستطيع Frame الوصول إليه. ما عليك سوى تغيير هذا الإعداد مرة واحدة على Roku.",
   "Your award pack": "حزمة جوائزك",
   "Your badge pack": "حزمة شاراتك",
   "Your browser's storage is full. Remove custom icons or delete profiles to free up space, then try again.":
@@ -1472,8 +1470,8 @@ const wired: Record<string, string> = {
   "Your computer": "حاسوبك",
   "Your favorites": "مفضلاتك",
   "Your icons, in everyone's library": "أيقوناتك في مكتبة الجميع",
-  "Your library lives on Harbor. Connect to your computer and it shows up here.":
-    "مكتبتك موجودة على Harbor. اتصل بحاسوبك لتظهر هنا.",
+  "Your library lives on Frame. Connect to your computer and it shows up here.":
+    "مكتبتك موجودة على Frame. اتصل بحاسوبك لتظهر هنا.",
   "Your navigation": "شريط التنقل لديك",
   "Your new version is in for a quick review. The live listing keeps working until this one is approved.":
     "نسختك الجديدة قيد مراجعة سريعة. ستظل النسخة المنشورة تعمل حتى الموافقة على هذه النسخة.",
@@ -1511,8 +1509,8 @@ const wired: Record<string, string> = {
   "download error": "خطأ في التنزيل",
   "drag to position": "اسحب لتحديد الموضع",
   "eBook actions": "إجراءات الكتب الإلكترونية",
-  "eBook extensions use Harbor’s isolated worker, HTTP bridge, and HTML parser—the same sandbox used by Manga extensions. Only add repositories you trust.":
-    "تستخدم إضافات الكتب الإلكترونية عامل Harbor المعزول وجسر HTTP ومحلل HTML، وهي بيئة العزل نفسها التي تستخدمها إضافات Manga. لا تضف سوى المستودعات التي تثق بها.",
+  "eBook extensions use Frame’s isolated worker, HTTP bridge, and HTML parser—the same sandbox used by Manga extensions. Only add repositories you trust.":
+    "تستخدم إضافات الكتب الإلكترونية عامل Frame المعزول وجسر HTTP ومحلل HTML، وهي بيئة العزل نفسها التي تستخدمها إضافات Manga. لا تضف سوى المستودعات التي تثق بها.",
   "eBook source settings": "إعدادات مصدر الكتب الإلكترونية",
   eBooks: "كتب إلكترونية",
   episodes: "حلقات",
@@ -1647,17 +1645,17 @@ const wired: Record<string, string> = {
   "{count}w": "{count} أ",
   "{count}w ago": "قبل {count} أ",
   "{count}y ago": "قبل {count} سنة",
-  "{deviceLabel} can't decode this stream natively ({reasons}). Harbor uses ffmpeg to convert it into a format your TV understands.":
-    "يتعذر على {deviceLabel} فك ترميز هذا البث مباشرةً ({reasons}). يستخدم Harbor ‏ffmpeg لتحويله إلى تنسيق يفهمه تلفازك.",
+  "{deviceLabel} can't decode this stream natively ({reasons}). Frame uses ffmpeg to convert it into a format your TV understands.":
+    "يتعذر على {deviceLabel} فك ترميز هذا البث مباشرةً ({reasons}). يستخدم Frame ‏ffmpeg لتحويله إلى تنسيق يفهمه تلفازك.",
   "{deviceLabel} can't play this stream ({reasons}) and none of the {count} available alternatives match its capabilities.":
     "يتعذر على {deviceLabel} تشغيل هذا البث ({reasons})، ولا يتوافق أي من البدائل المتاحة وعددها {count} مع إمكاناته.",
   '{deviceLabel} can\'t play this stream ({reasons}). Click "Pick another" first to load alternatives, then try casting again.':
     'يتعذر على {deviceLabel} تشغيل هذا البث ({reasons}). انقر أولًا على "اختيار بديل" لتحميل البدائل، ثم حاول البث مجددًا.',
-  "{deviceName} is an audio-only device. Harbor can't transcode video to audio yet, so this device can only stream audio files. Pick a TV, Chromecast, or display-equipped device to stream video.":
-    "{deviceName} جهاز صوتي فقط. لا يستطيع Harbor بعد تحويل ترميز الفيديو إلى صوت، لذا لا يمكن لهذا الجهاز سوى بث الملفات الصوتية. اختر تلفازًا أو Chromecast أو جهازًا مزودًا بشاشة لبث الفيديو.",
+  "{deviceName} is an audio-only device. Frame can't transcode video to audio yet, so this device can only stream audio files. Pick a TV, Chromecast, or display-equipped device to stream video.":
+    "{deviceName} جهاز صوتي فقط. لا يستطيع Frame بعد تحويل ترميز الفيديو إلى صوت، لذا لا يمكن لهذا الجهاز سوى بث الملفات الصوتية. اختر تلفازًا أو Chromecast أو جهازًا مزودًا بشاشة لبث الفيديو.",
   "{facet} filter: {value}": "عامل تصفية {facet}: {value}",
-  "{file} is empty. Start typing to restyle Harbor.":
-    "الملف {file} فارغ. ابدأ الكتابة لتغيير مظهر Harbor.",
+  "{file} is empty. Start typing to restyle Frame.":
+    "الملف {file} فارغ. ابدأ الكتابة لتغيير مظهر Frame.",
   "{first} and {second}": "{first} و{second}",
   "{format} added to Downloads": "تمت إضافة {format} إلى التنزيلات",
   "{genreA} + {genreB}": "{genreA} + {genreB}",
@@ -1708,7 +1706,7 @@ const wired: Record<string, string> = {
   "{title} internal cover": "الغلاف الداخلي لـ {title}",
   "{title} poster": "ملصق {title}",
   "{title} trailer": "إعلان {title}",
-  "{title} won't load inside Harbor.": "لن يتم تحميل {title} داخل Harbor.",
+  "{title} won't load inside Frame.": "لن يتم تحميل {title} داخل Frame.",
   "{title} · Episode {episode}": "{title} · الحلقة {episode}",
   "{total} found across 1 source": "عُثر على {total} في مصدر واحد",
   "{total} found across {n} sources": "عُثر على {total} في {n} مصادر",

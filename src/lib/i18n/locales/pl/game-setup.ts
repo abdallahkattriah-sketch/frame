@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "Harbor uruchomił się ponownie podczas instalacji. Sprawdź zainstalowane pliki gry, aby zakończyć.",
+    "Frame uruchomił się ponownie podczas instalacji. Sprawdź zainstalowane pliki gry, aby zakończyć.",
   "games.setup.state.starting": "Uruchamianie instalatora",
   "games.setup.state.waiting": "Oczekiwanie na instalator",
   "games.setup.startingNote": "Otwieranie instalatora…",
@@ -36,7 +36,7 @@ export default {
   "games.setup.state.verificationUnknown": "Sprawdź wyniki",
   "games.setup.viewProgress": "Zobacz instalację",
   "games.setup.showInstaller": "Pokaż instalator",
-  "games.setup.setup_window": "Okno instalatora jest niedostępne. Harbor nadal śledzi instalację.",
+  "games.setup.setup_window": "Okno instalatora jest niedostępne. Frame nadal śledzi instalację.",
   "games.setup.elapsed": "Upłynęło",
   "games.setup.io": "We/wy instalatora",
   "games.setup.ioNote":
@@ -73,7 +73,7 @@ export default {
   "games.setup.state.finished": "Instalator zamknięty — wybierz plik gry",
   "games.setup.state.failed": "Instalator nie zakończył pracy pomyślnie",
   "games.setup.state.interrupted":
-    "Sprawdź instalację — Harbor został zamknięty podczas jej trwania",
+    "Sprawdź instalację — Frame został zamknięty podczas jej trwania",
   "games.setup.state.external": "Instalator otwarty w innym oknie",
   "games.setup.exitCode": "Kod zakończenia: {code}",
   "games.setup.unavailable":
@@ -104,9 +104,9 @@ export default {
   "games.setup.destination": "Zainstaluj w",
   "games.setup.chooseDestination": "Wybierz folder instalacji",
   "games.setup.managedNote":
-    "Harbor zainstaluje grę tutaj, znajdzie jej plik i doda go do biblioteki.",
+    "Frame zainstaluje grę tutaj, znajdzie jej plik i doda go do biblioteki.",
   "games.setup.managedRunning":
-    "Instalowanie gry. Możesz zamknąć to okno; Harbor będzie nadal śledzić postęp.",
+    "Instalowanie gry. Możesz zamknąć to okno; Frame będzie nadal śledzić postęp.",
   "games.setup.detected": "Automatycznie znaleziono plik gry",
   "games.setup.chooseDetected": "Wybierz plik gry, który chcesz dodać.",
   "games.setup.activity": "{size}, liczba plików: {count}",
@@ -122,7 +122,7 @@ export default {
   "games.setup.setup_engine":
     "Ten instalator wymaga osobnego okna. Wybierz „Uruchom instalator”, aby kontynuować.",
   "games.setup.setup_candidates":
-    "Instalacja zakończona, ale Harbor nie może odczytać zainstalowanych plików. Przeskanuj ponownie folder instalacji.",
+    "Instalacja zakończona, ale Frame nie może odczytać zainstalowanych plików. Przeskanuj ponownie folder instalacji.",
   "games.setup.state.installing": "Instalowanie",
   "games.setup.externalAction": "Uruchom instalator",
   "games.setup.files": "Pobrane pliki",

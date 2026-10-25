@@ -7,7 +7,7 @@ export default {
   "games.shortcuts.activity.open": "Activité",
   "games.shortcuts.activity.title": "Activité des raccourcis",
   "games.shortcuts.activity.note":
-    "Analyses et lancements récents pour ce profil Harbor. Jusqu’à 300 entrées.",
+    "Analyses et lancements récents pour ce profil Frame. Jusqu’à 300 entrées.",
   "games.shortcuts.activity.remember": "Conserver entre les sessions",
   "games.shortcuts.activity.detailed": "Inclure les détails d’analyse",
   "games.shortcuts.activity.storageError":
@@ -57,7 +57,7 @@ export default {
   "games.shortcuts.storeError": "Impossible d’enregistrer ces paramètres.",
   "games.shortcuts.shortcut_location": "Choisissez le dossier Steam ou son dossier userdata.",
   "games.shortcuts.shortcut_account":
-    "Ouvrez Steam avec le compte de ce raccourci, puis actualisez. Harbor doit utiliser la même installation Steam.",
+    "Ouvrez Steam avec le compte de ce raccourci, puis actualisez. Frame doit utiliser la même installation Steam.",
   "games.shortcuts.shortcut_missing": "Ce raccourci n’existe plus. Actualisez la bibliothèque.",
   "games.shortcuts.shortcut_executable":
     "L’exécutable est introuvable ou son chemin absolu n’est pas pris en charge.",

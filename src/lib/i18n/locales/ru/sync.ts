@@ -27,14 +27,14 @@ const sync: Record<string, string> = {
   "Guests pick their own source": "Гости выбирают источник сами",
   "Prompts guests to choose instead of auto-matching":
     "Гостям предлагается выбрать вручную вместо автоподбора",
-  "Harbor's public relay has not rolled out the latest protocol yet.":
-    "Публичный релей Harbor ещё не обновлён до последней версии протокола.",
+  "Frame's public relay has not rolled out the latest protocol yet.":
+    "Публичный релей Frame ещё не обновлён до последней версии протокола.",
   "It updates automatically; nothing to do.":
     "Он обновляется автоматически; делать ничего не нужно.",
   "Relay outdated. Your self-hosted relay is running an older version.":
     "Релей устарел. На вашем релее работает более старая версия.",
-  "Redeploy it to get the latest Watch Together fixes. Harbor's public relay updates on its own.":
-    "Разверните его заново, чтобы получить свежие исправления совместного просмотра. Публичный релей Harbor обновляется сам.",
+  "Redeploy it to get the latest Watch Together fixes. Frame's public relay updates on its own.":
+    "Разверните его заново, чтобы получить свежие исправления совместного просмотра. Публичный релей Frame обновляется сам.",
   "Open relay settings": "Открыть настройки релея",
   Dismiss: "Скрыть",
   "Start a room first.": "Сначала создайте комнату.",
@@ -134,21 +134,21 @@ const sync: Record<string, string> = {
   "to bring in your library.": "чтобы перенести свою библиотеку.",
   "Bring your lists with you": "Перенесите свои списки",
   "Connect your AniList account": "Подключите аккаунт AniList",
-  "Show your AniList lists as rails on the Anime page, keep your watch progress in sync as you finish episodes, and use your AniList avatar as your Harbor photo. Free at anilist.co.":
-    "Показывайте свои списки AniList рядами на странице «Аниме», синхронизируйте прогресс по мере просмотра эпизодов и используйте аватар AniList как фото в Harbor. Бесплатно на anilist.co.",
+  "Show your AniList lists as rails on the Anime page, keep your watch progress in sync as you finish episodes, and use your AniList avatar as your Frame photo. Free at anilist.co.":
+    "Показывайте свои списки AniList рядами на странице «Аниме», синхронизируйте прогресс по мере просмотра эпизодов и используйте аватар AniList как фото в Frame. Бесплатно на anilist.co.",
   "Connect AniList": "Подключить AniList",
   "About AniList": "Об AniList",
   Connected: "Подключено",
-  "Harbor shows your AniList lists on the Anime page and keeps your progress in sync.":
-    "Harbor показывает ваши списки AniList на странице «Аниме» и синхронизирует прогресс.",
+  "Frame shows your AniList lists on the Anime page and keeps your progress in sync.":
+    "Frame показывает ваши списки AniList на странице «Аниме» и синхронизирует прогресс.",
   Authorized: "Авторизовано",
   "Open profile": "Открыть профиль",
   "Sync watch progress": "Синхронизировать прогресс просмотра",
   "Finishing an anime episode updates your AniList progress. Forward only: it never lowers a count you already have.":
     "Досмотренный эпизод аниме обновляет прогресс в AniList. Только вперёд: уже засчитанное количество никогда не уменьшается.",
-  "Use my AniList avatar as my Harbor avatar": "Использовать аватар AniList в Harbor",
-  "Show your AniList profile picture as your Harbor avatar.":
-    "Показывать фото профиля AniList как аватар в Harbor.",
+  "Use my AniList avatar as my Frame avatar": "Использовать аватар AniList в Frame",
+  "Show your AniList profile picture as your Frame avatar.":
+    "Показывать фото профиля AniList как аватар в Frame.",
   "Disconnect from AniList": "Отключить AniList",
   "Disconnect AniList? Your lists will stop showing on the Anime page until you reconnect.":
     "Отключить AniList? Ваши списки исчезнут со страницы «Аниме» до повторного подключения.",
@@ -160,16 +160,16 @@ const sync: Record<string, string> = {
   "1 month ago": "1 месяц назад",
   "{count} months ago": "{count} мес. назад",
   "Connect your Simkl account": "Подключите аккаунт Simkl",
-  "Sync and track movies, shows, and anime across everything you use. Harbor marks what you finish as watched on Simkl and keeps your plan-to-watch list in step. Free at simkl.com.":
-    "Синхронизируйте и отслеживайте фильмы, сериалы и аниме во всех сервисах, которыми пользуетесь. Harbor отмечает досмотренное как просмотренное в Simkl и поддерживает список «Запланировано» в актуальном состоянии. Бесплатно на simkl.com.",
+  "Sync and track movies, shows, and anime across everything you use. Frame marks what you finish as watched on Simkl and keeps your plan-to-watch list in step. Free at simkl.com.":
+    "Синхронизируйте и отслеживайте фильмы, сериалы и аниме во всех сервисах, которыми пользуетесь. Frame отмечает досмотренное как просмотренное в Simkl и поддерживает список «Запланировано» в актуальном состоянии. Бесплатно на simkl.com.",
   "Connect Simkl": "Подключить Simkl",
   "About Simkl": "О Simkl",
-  "Harbor will mark what you finish as watched on Simkl and sync your plan-to-watch list.":
-    "Harbor будет отмечать досмотренное как просмотренное в Simkl и синхронизировать список «Запланировано».",
+  "Frame will mark what you finish as watched on Simkl and sync your plan-to-watch list.":
+    "Frame будет отмечать досмотренное как просмотренное в Simkl и синхронизировать список «Запланировано».",
   "Authorized on this device": "Авторизовано на этом устройстве",
-  "Use my Simkl avatar as my Harbor avatar": "Использовать аватар Simkl в Harbor",
-  "Wear your Simkl profile picture across Harbor instead of the default.":
-    "Показывать фото профиля Simkl по всему Harbor вместо стандартного.",
+  "Use my Simkl avatar as my Frame avatar": "Использовать аватар Simkl в Frame",
+  "Wear your Simkl profile picture across Frame instead of the default.":
+    "Показывать фото профиля Simkl по всему Frame вместо стандартного.",
   "Disconnect from Simkl": "Отключить Simkl",
   "Disconnect Simkl? Syncing will stop until you reconnect.":
     "Отключить Simkl? Синхронизация остановится до повторного подключения.",

@@ -112,7 +112,7 @@ export function useRemoteClient(initialHost?: string) {
 
       ws.onerror = () => {
         if (ignoreClose.current.has(ws) || parkedRef.current) return;
-        setError("Could not reach Harbor remote WebSocket.");
+        setError("Could not reach Frame remote WebSocket.");
         setStatus("error");
       };
 

@@ -37,7 +37,7 @@ export default {
   "games.valorant.metaScope":
     "OP.GG competitive data for the selected patch. Pick rate is the share of agent appearances. These results describe the source sample, not every player.",
   "games.valorant.referenceScope":
-    "Game artwork and references via Valorant-API. Updates may lag the game. Harbor is not endorsed by Riot Games.",
+    "Game artwork and references via Valorant-API. Updates may lag the game. Frame is not endorsed by Riot Games.",
   "games.valorant.samples": "{count} appearances",
   "games.valorant.smallSample": "Small sample",
   "games.valorant.abilities": "Abilities",

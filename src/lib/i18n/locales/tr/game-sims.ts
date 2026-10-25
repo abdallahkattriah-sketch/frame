@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "The Sims 2 ve The Sims 3 indirmelerine göz atmak için Harbor’ı güncelleyip yeniden başlatın.",
+    "The Sims 2 ve The Sims 3 indirmelerine göz atmak için Frame’ı güncelleyip yeniden başlatın.",
   "games.sims.creatorNotesTitle": "Üreticinin bağlantıları · {count}",
   "games.sims.creatorNotesNote":
     "Üreticinin notlarındaki bağlantılar. Talimatları okumak için sayfayı açın.",
@@ -103,7 +103,7 @@ export default {
   "games.sims.mtsCatMisc": "Diğer",
   "games.sims.mtsCatTools": "Araçlar",
   "games.sims.mtsIntro":
-    "Harbor’a bir mod veya özel içerik aktarın. The Sims 4 sayfasını yapıştırıp istediğiniz dosyayı seçin.",
+    "Frame’a bir mod veya özel içerik aktarın. The Sims 4 sayfasını yapıştırıp istediğiniz dosyayı seçin.",
   "games.sims.mtsPage": "İndirme sayfası",
   "games.sims.mtsLoad": "Dosyaları bul",
   "games.sims.mtsBrowse": "Mod The Sims’e göz at",
@@ -175,9 +175,9 @@ export default {
   "games.sims.creatorExisting": "Mevcut kurulum",
   "games.sims.creatorManage": "Mevcut dosyaları incele",
   "games.sims.creatorAdoptNote":
-    "Önce bu dosyaları Harbor yönetimine alın. Ardından güncellemek için geliştiricinin bir sürümünü seçin.",
+    "Önce bu dosyaları Frame yönetimine alın. Ardından güncellemek için geliştiricinin bir sürümünü seçin.",
   "games.sims.creatorLinkNote":
-    "Bu grubun güncellemesini inceleyin. Harbor önceki dosyaları ve ayarlarınızı saklar.",
+    "Bu grubun güncellemesini inceleyin. Frame önceki dosyaları ve ayarlarınızı saklar.",
   "games.sims.creatorTarget":
     "Bu grupta seçilen sürüme ait olmayan mod dosyaları var. MCCC’yi güncellemeden önce bunları ayrı bir gruba taşıyın.",
   "games.sims.creatorExistingError":
@@ -207,7 +207,7 @@ export default {
   "games.sims.trayRemove": "Kitaplıktan kaldır",
   "games.sims.trayRestore": "Kitaplığa geri yükle",
   "games.sims.trayNote":
-    "İndirdiğin arsaları, odaları veya aileleri içe aktar. Harbor ilgili dosyaları Tray klasöründe bir arada tutar.",
+    "İndirdiğin arsaları, odaları veya aileleri içe aktar. Frame ilgili dosyaları Tray klasöründe bir arada tutar.",
   "games.sims.trayReviewNote":
     "Tray dosyaları doğrudan kitaplık klasörüne gider. Paketteki özel içerikler ayrı bir mod grubu olarak yönetilir.",
   "games.sims.trayRemoveNote":
@@ -269,12 +269,12 @@ export default {
 
   "games.sims.adopt": "Mevcut modları yönet",
   "games.sims.adoptNote":
-    "The Sims 4’ü kapatın. Aynı klasörden bir modu veya ilgili CC dosyalarını ayarlarıyla birlikte seçin. Listelenen dosyalar bir Harbor grubuna taşınır; diğer dosyalar yerinde kalır.",
+    "The Sims 4’ü kapatın. Aynı klasörden bir modu veya ilgili CC dosyalarını ayarlarıyla birlikte seçin. Listelenen dosyalar bir Frame grubuna taşınır; diğer dosyalar yerinde kalır.",
   "games.sims.adoptFrom": "Mevcut klasör",
   "games.sims.adoptTo": "Taşınacağı klasör",
   "games.sims.adoptFolder": "Mods içindeki tek bir klasörden ilgili dosyaları seçin.",
   "games.sims.adoptManaged":
-    "Harbor tarafından yönetilen klasörlerin dışından dosya seçin ve Resource.cfg dosyasını yerinde bırakın.",
+    "Frame tarafından yönetilen klasörlerin dışından dosya seçin ve Resource.cfg dosyasını yerinde bırakın.",
   "games.sims.adoptScan":
     "Bazı mod klasörleri taranamadı. Bu dosyaları yönetmeden önce sorunu giderin.",
 
@@ -304,7 +304,7 @@ export default {
   "games.sims.setScan": "Bazı mod klasörleri taranamadı. Set değiştirmeden önce bunu çöz.",
   "games.sims.savesLabelHint": "Yeni modlardan önce",
   "games.sims.savesRunning":
-    "Kayıtları yedeklemeden veya geri yüklemeden önce The Sims 4’ü kapat. Harbor oyunun kapandığını doğrulayabilmelidir.",
+    "Kayıtları yedeklemeden veya geri yüklemeden önce The Sims 4’ü kapat. Frame oyunun kapandığını doğrulayabilmelidir.",
   "games.sims.savesIntro":
     "Modları değiştirmeden önce kayıtlarını yedekle. Önce The Sims 4’ü kapat. Modlar ve Tray klasöründeki haneler dahil değildir.",
   "games.sims.title": "Modların ve özel içeriklerin",
@@ -327,7 +327,7 @@ export default {
   "games.sims.recovery":
     "Önceki değişiklik yarım kaldı. Yeni değişiklikten önce önceki kurulumu kurtar.",
   "games.sims.success": "Mod dosyaların güncellendi.",
-  "games.sims.applying": "Değişiklikler uygulanıyor. Harbor’ı açık tut…",
+  "games.sims.applying": "Değişiklikler uygulanıyor. Frame’ı açık tut…",
   "games.sims.checking": "Dosyalar kontrol ediliyor…",
   "games.sims.skipped": "Atlanan belgeler ve görseller · {count}",
   "games.sims.preview": "Pakete gömülü önizleme",
@@ -365,7 +365,7 @@ export default {
   "games.sims.emptyManaged": "Buradan yönetmek için indirdiğin bir modu içe aktar.",
   "games.sims.emptyBackups": "Önceki sürümler güncelleme veya kaldırma sonrasında burada görünür.",
   "games.sims.emptyFiles": "Mods içinde desteklenen dosya bulunamadı.",
-  "games.sims.desktop": "Mod yönetimi için Windows’ta güncel Harbor masaüstü uygulaması gerekir.",
+  "games.sims.desktop": "Mod yönetimi için Windows’ta güncel Frame masaüstü uygulaması gerekir.",
   "games.sims.folderError":
     "Kısayol veya bağlantı olmayan gerçek The Sims 4 kullanıcı verisi klasörünü seç. Mods, saves, GameVersion.txt ve Options.ini bulunmalıdır.",
   "games.sims.readError": "Dosyalar okunamadı. Klasör erişimini kontrol edip tekrar dene.",
@@ -374,7 +374,7 @@ export default {
   "games.sims.layoutError":
     "Arşiv ayrı mod klasörleri veya yinelenen dosya adları içeriyor. Dosyaları birlikte tutmak için her modu ayrı aktar.",
   "games.sims.running":
-    "Mod dosyalarını değiştirmeden önce The Sims 4’ü kapat. Harbor oyunun kapandığını doğrulayabilmelidir.",
+    "Mod dosyalarını değiştirmeden önce The Sims 4’ü kapat. Frame oyunun kapandığını doğrulayabilmelidir.",
   "games.sims.duplicate":
     "Aynı dosya adına sahip mod başka bir Mods klasöründe mevcut. Grubu aktarmadan veya etkinleştirmeden önce bu çakışmayı çöz.",
   "games.sims.recordError":

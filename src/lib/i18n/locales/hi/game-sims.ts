@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Sims 2 और Sims 3 के डाउनलोड देखने के लिए Harbor अपडेट करके फिर से शुरू करें।",
+    "Sims 2 और Sims 3 के डाउनलोड देखने के लिए Frame अपडेट करके फिर से शुरू करें।",
   "games.sims.creatorNotesTitle": "निर्माता के लिंक · {count}",
   "games.sims.creatorNotesNote": "निर्माता के नोट्स में दिए गए लिंक। निर्देश पढ़ने के लिए पेज खोलें।",
   "games.sims.ccBuildTitle": "इस निर्माण में इस्तेमाल हुआ कंटेंट",
@@ -93,7 +93,7 @@ export default {
   "games.sims.mtsCatMisc": "अन्य",
   "games.sims.mtsCatTools": "टूल",
   "games.sims.mtsIntro":
-    "Harbor में मॉड या कस्टम सामग्री आयात करें। उसका The Sims 4 पेज पेस्ट करें, फिर मनचाही फ़ाइल चुनें।",
+    "Frame में मॉड या कस्टम सामग्री आयात करें। उसका The Sims 4 पेज पेस्ट करें, फिर मनचाही फ़ाइल चुनें।",
   "games.sims.mtsPage": "डाउनलोड पेज",
   "games.sims.mtsLoad": "फ़ाइलें खोजें",
   "games.sims.mtsBrowse": "Mod The Sims देखें",
@@ -160,9 +160,9 @@ export default {
   "games.sims.creatorExisting": "मौजूदा इंस्टॉलेशन",
   "games.sims.creatorManage": "मौजूदा फ़ाइलों की समीक्षा करें",
   "games.sims.creatorAdoptNote":
-    "पहले इन फ़ाइलों को Harbor के प्रबंधन में लाएँ। फिर अपडेट के लिए निर्माता का कोई संस्करण चुनें।",
+    "पहले इन फ़ाइलों को Frame के प्रबंधन में लाएँ। फिर अपडेट के लिए निर्माता का कोई संस्करण चुनें।",
   "games.sims.creatorLinkNote":
-    "इस समूह के अपडेट की समीक्षा करें। Harbor पिछली फ़ाइलें और आपकी सेटिंग सुरक्षित रखता है।",
+    "इस समूह के अपडेट की समीक्षा करें। Frame पिछली फ़ाइलें और आपकी सेटिंग सुरक्षित रखता है।",
   "games.sims.creatorTarget":
     "इस समूह में चुने गए संस्करण से बाहर की मॉड फ़ाइलें हैं। MCCC अपडेट करने से पहले उन्हें अलग समूह में रखें।",
   "games.sims.creatorExistingError":
@@ -191,7 +191,7 @@ export default {
   "games.sims.trayRemove": "लाइब्रेरी से हटाएँ",
   "games.sims.trayRestore": "लाइब्रेरी में बहाल करें",
   "games.sims.trayNote":
-    "डाउनलोड किए गए प्लॉट, कमरे या परिवार आयात करें। Harbor उनकी संबंधित फ़ाइलें Tray में एक साथ रखता है।",
+    "डाउनलोड किए गए प्लॉट, कमरे या परिवार आयात करें। Frame उनकी संबंधित फ़ाइलें Tray में एक साथ रखता है।",
   "games.sims.trayReviewNote":
     "Tray फ़ाइलें सीधे लाइब्रेरी फ़ोल्डर में जाती हैं। साथ आया कस्टम कॉन्टेंट अलग मॉड समूह के रूप में प्रबंधित होता है।",
   "games.sims.trayRemoveNote":
@@ -248,12 +248,12 @@ export default {
 
   "games.sims.adopt": "मौजूदा मॉड प्रबंधित करें",
   "games.sims.adoptNote":
-    "The Sims 4 बंद करें। एक ही फ़ोल्डर से एक मॉड या संबंधित CC और उसकी सेटिंग्स चुनें। सूची में दिए गए फ़ाइलों को एक Harbor समूह में ले जाया जाएगा; अन्य फ़ाइलें वहीं रहेंगी।",
+    "The Sims 4 बंद करें। एक ही फ़ोल्डर से एक मॉड या संबंधित CC और उसकी सेटिंग्स चुनें। सूची में दिए गए फ़ाइलों को एक Frame समूह में ले जाया जाएगा; अन्य फ़ाइलें वहीं रहेंगी।",
   "games.sims.adoptFrom": "मौजूदा फ़ोल्डर",
   "games.sims.adoptTo": "यहाँ ले जाएँ",
   "games.sims.adoptFolder": "Mods के अंदर एक ही फ़ोल्डर से संबंधित फ़ाइलें चुनें।",
   "games.sims.adoptManaged":
-    "Harbor द्वारा प्रबंधित फ़ोल्डरों के बाहर की फ़ाइलें चुनें और Resource.cfg को वहीं रहने दें।",
+    "Frame द्वारा प्रबंधित फ़ोल्डरों के बाहर की फ़ाइलें चुनें और Resource.cfg को वहीं रहने दें।",
   "games.sims.adoptScan":
     "कुछ मॉड फ़ोल्डरों को स्कैन नहीं किया जा सका। इन फ़ाइलों को प्रबंधित करने से पहले इसे ठीक करें।",
 
@@ -282,7 +282,7 @@ export default {
   "games.sims.setScan": "कुछ मॉड फ़ोल्डर स्कैन नहीं हो सके। सेट बदलने से पहले इसे ठीक करें।",
   "games.sims.savesLabelHint": "नए मॉड लगाने से पहले",
   "games.sims.savesRunning":
-    "सेव का बैकअप लेने या बहाल करने से पहले The Sims 4 बंद करें। Harbor को पुष्टि करनी होगी कि गेम बंद हो गया है।",
+    "सेव का बैकअप लेने या बहाल करने से पहले The Sims 4 बंद करें। Frame को पुष्टि करनी होगी कि गेम बंद हो गया है।",
   "games.sims.savesIntro":
     "मॉड बदलने से पहले अपने सेव का बैकअप लें। पहले The Sims 4 बंद करें। इसमें मॉड और Tray फ़ोल्डर के परिवार शामिल नहीं हैं।",
   "games.sims.title": "आपके मॉड और कस्टम कंटेंट",
@@ -304,7 +304,7 @@ export default {
     "पहले The Sims 4 बंद करें। CC हटाकर गेम सेव करने से परिवार या इमारतें बदल सकती हैं। हटाई फ़ाइलें बैकअप में रहती हैं; बंद की गई फ़ाइलें Mods से बाहर जाती हैं।",
   "games.sims.recovery": "पिछला बदलाव बीच में रुक गया था। नया बदलाव करने से पहले पुराना सेटअप बहाल करें।",
   "games.sims.success": "आपकी मॉड फ़ाइलें अपडेट हो गई हैं।",
-  "games.sims.applying": "बदलाव लागू हो रहे हैं। Harbor खुला रखें…",
+  "games.sims.applying": "बदलाव लागू हो रहे हैं। Frame खुला रखें…",
   "games.sims.checking": "फ़ाइलों की जाँच हो रही है…",
   "games.sims.skipped": "छोड़े गए दस्तावेज़ और चित्र · {count}",
   "games.sims.preview": "पैकेज में मौजूद पूर्वावलोकन",
@@ -340,7 +340,7 @@ export default {
   "games.sims.emptyManaged": "डाउनलोड किया मॉड आयात करके यहाँ प्रबंधित करें।",
   "games.sims.emptyBackups": "अपडेट या हटाने के बाद पिछले संस्करण यहाँ दिखेंगे।",
   "games.sims.emptyFiles": "Mods में समर्थित फ़ाइलें नहीं मिलीं।",
-  "games.sims.desktop": "मॉड प्रबंधन के लिए Windows पर नवीनतम Harbor डेस्कटॉप ऐप चाहिए।",
+  "games.sims.desktop": "मॉड प्रबंधन के लिए Windows पर नवीनतम Frame डेस्कटॉप ऐप चाहिए।",
   "games.sims.folderError":
     "The Sims 4 का वास्तविक डेटा फ़ोल्डर चुनें, शॉर्टकट या लिंक किया फ़ोल्डर नहीं। Mods, saves, GameVersion.txt और Options.ini मौजूद होने चाहिए।",
   "games.sims.readError": "फ़ाइलें पढ़ी नहीं जा सकीं। फ़ोल्डर की अनुमति जाँचकर फिर कोशिश करें।",
@@ -349,7 +349,7 @@ export default {
   "games.sims.layoutError":
     "आर्काइव में अलग मॉड फ़ोल्डर या एक ही नाम की फ़ाइलें हैं। हर मॉड अलग आयात करें ताकि उसकी फ़ाइलें साथ रहें।",
   "games.sims.running":
-    "मॉड फ़ाइलें बदलने से पहले The Sims 4 बंद करें। Harbor को गेम बंद होने की पुष्टि कर पाना आवश्यक है।",
+    "मॉड फ़ाइलें बदलने से पहले The Sims 4 बंद करें। Frame को गेम बंद होने की पुष्टि कर पाना आवश्यक है।",
   "games.sims.duplicate":
     "उसी नाम की मॉड फ़ाइल किसी और Mods फ़ोल्डर में है। यह समूह आयात या चालू करने से पहले दोहराव ठीक करें।",
   "games.sims.recordError":

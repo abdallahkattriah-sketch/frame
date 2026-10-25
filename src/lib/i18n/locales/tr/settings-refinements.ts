@@ -17,8 +17,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "Yetişkin eklentilerindeki etkinlikler Discord'da hiçbir zaman gösterilmez.",
   "Ad skipping": "Reklam atlama",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "Daha fazla katalog ve görsel için TMDB ekleyin. Diğer sağlayıcılar aşağıdaki özellikleri ekler. Anahtar eklemeden Harbor'ı Cinemeta ile kullanabilirsiniz.",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "Daha fazla katalog ve görsel için TMDB ekleyin. Diğer sağlayıcılar aşağıdaki özellikleri ekler. Anahtar eklemeden Frame'ı Cinemeta ile kullanabilirsiniz.",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "İndirilenler'in yanına zamanlayıcı ekleyin. Belirlenen süre veya bölüm sayısından sonra oynatmayı duraklatın.",
   "Add an API key to use this source.": "Bu kaynağı kullanmak için bir API anahtarı ekleyin.",
@@ -75,14 +75,14 @@ const settingsRefinements: Record<string, string> = {
     "Görüntü kalitesi ile performansı dengeleyin. Değişiklikler bir sonraki oynattığınız videoda geçerli olur.",
   "Between episodes": "Bölümler arasında",
   "Between episodes on the TV": "TV'de bölümler arasında",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "Anime listenizi Harbor'a getirin ve izlerken bölüm sayınızı güncelleyin. Mevcut ilerlemeniz korunur.",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "Anime listenizi Frame'a getirin ve izlerken bölüm sayınızı güncelleyin. Mevcut ilerlemeniz korunur.",
   "Bringing your Stremio library?": "Stremio kitaplığınızı mı getiriyorsunuz?",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "One Piece gibi desteklenen dizilerde hikâye arklarına göre gezinin. TMDB anahtarı gerekir.",
   "Browse pages": "Sayfalara göz at",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "Anime listelerinize Harbor'da göz atın ve izlerken bölüm ilerlemenizi güncelleyin. Bağlanmak için AniList'te oturum açın.",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "Anime listelerinize Frame'da göz atın ve izlerken bölüm ilerlemenizi güncelleyin. Bağlanmak için AniList'te oturum açın.",
   "Browser details": "Tarayıcı ayrıntıları",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "Bir kez adlandırılmış filtre oluşturun, ardından kalabalık yayın listesini tam istediğiniz hâle getirmek için kaynak seçicide uygulayın.",
@@ -105,8 +105,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "Bu cihazın kayıtlı sunucu adresine ulaşıp ulaşamadığını denetleyin.",
   "Checking SVP installation…": "SVP kurulumu denetleniyor…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "Bir Harbor yedeği seçin ve geri yüklemeden önce içeriğini inceleyin. Stremio oturumunuz bu cihazda kalır.",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "Bir Frame yedeği seçin ve geri yüklemeden önce içeriğini inceleyin. Stremio oturumunuz bu cihazda kalır.",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "Bir görünüm seçin veya her ayarı düzenleyin. Görüntüyü sıfırla, özgün değerleri geri getirir.",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -128,14 +128,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "TV'nizde gezinirken görmek istediğiniz hizmetleri seçin.",
   "Choose the streams you prefer.": "Tercih ettiğiniz yayınları seçin.",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "Harbor'ı kapattığınızda, simge durumuna küçülttüğünüzde veya başka bir uygulamaya geçtiğinizde ne olacağını seçin.",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "Harbor'ın ne zaman profil seçmenizi isteyeceğini belirleyin. Zamanlanmış istemler Harbor'a döndüğünüzde görünür.",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "Sonraki bölümün ne zaman başlayacağını ve Harbor'ın hâlâ izleyip izlemediğinizi ne zaman soracağını seçin.",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "Harbor'ın altyazıları nerede arayacağını seçin. Etkin kaynakların sonuçları, yinelenenler kaldırılarak birlikte gösterilir.",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "Frame'ı kapattığınızda, simge durumuna küçülttüğünüzde veya başka bir uygulamaya geçtiğinizde ne olacağını seçin.",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "Frame'ın ne zaman profil seçmenizi isteyeceğini belirleyin. Zamanlanmış istemler Frame'a döndüğünüzde görünür.",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "Sonraki bölümün ne zaman başlayacağını ve Frame'ın hâlâ izleyip izlemediğinizi ne zaman soracağını seçin.",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "Frame'ın altyazıları nerede arayacağını seçin. Etkin kaynakların sonuçları, yinelenenler kaldırılarak birlikte gösterilir.",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "Videoların ve e-kitapların nereye kaydedileceğini ve klasörlerinin nasıl düzenleneceğini seçin.",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -173,8 +173,8 @@ const settingsRefinements: Record<string, string> = {
     "İzleme ilerlemenizi eşitlemek ve listenize göz atmak için MyAnimeList hesabınızı bağlayın.",
   "Connect {service}": "{service} bağla",
   "Contact & credit": "İletişim ve katkı adı",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "Harbor'ı kullanırken Discord profilinizde ne görüneceğini belirleyin.",
+  "Control what appears on your Discord profile while you use Frame.":
+    "Frame'ı kullanırken Discord profilinizde ne görüneceğini belirleyin.",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "Parlak vurguların ekranınıza uygun şekilde nasıl azaltılacağını belirler. Şemalar her eğriyi gösterir.",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -199,27 +199,27 @@ const settingsRefinements: Record<string, string> = {
     "{name} kaydedilemedi. Yeniden deneyin ve yazılabilir bir klasör seçin.",
   "Couldn't copy the address. Select it above and copy it manually.":
     "Adres kopyalanamadı. Yukarıdan seçip elle kopyalayın.",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "Harbor'a ulaşılamadı. Bağlantınızı kontrol edip tekrar deneyin.",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "Frame'a ulaşılamadı. Bağlantınızı kontrol edip tekrar deneyin.",
   "Covers everything. The taskbar is hidden.": "Ekranın tamamını kaplar. Görev çubuğu gizlenir.",
   "Create a stream filter": "Yayın filtresi oluştur",
-  "Create a theme or share one you've made with the Harbor community.":
-    "Bir tema oluştur veya yaptığın bir temayı Harbor topluluğuyla paylaş.",
+  "Create a theme or share one you've made with the Frame community.":
+    "Bir tema oluştur veya yaptığın bir temayı Frame topluluğuyla paylaş.",
   "Create my account": "Hesabımı oluştur",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "Harbor'ı kullanan kişiler için profiller oluşturun. Her birinin kendi görünümü, ayarları ve PIN'i olabilir.",
-  "Create your Harbor account": "Harbor hesabınızı oluşturun",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "Frame'ı kullanan kişiler için profiller oluşturun. Her birinin kendi görünümü, ayarları ve PIN'i olabilir.",
+  "Create your Frame account": "Frame hesabınızı oluşturun",
   "Create your first filter with the stream quality you prefer.":
     "Tercih ettiğiniz yayın kalitesiyle ilk filtrenizi oluşturun.",
   "Custom color": "Özel renk",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "Harbor'ı kendi CSS, JavaScript ve HTML kodunuzla özelleştirin. Değişiklikler yazdıkça uygulanır.",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "Frame'ı kendi CSS, JavaScript ve HTML kodunuzla özelleştirin. Değişiklikler yazdıkça uygulanır.",
   "Default Downloads folder": "Varsayılan İndirilenler klasörü",
   "Delete this rule?": "Bu kural silinsin mi?",
   "Describe the problem in one sentence.": "Sorunu tek cümleyle açıklayın.",
   "Describe the result you were after.": "Beklediğiniz sonucu açıklayın.",
-  "Describe what Harbor did instead, including any message on screen.":
-    "Harbor'ın bunun yerine ne yaptığını, ekrandaki mesajlarla birlikte açıklayın.",
+  "Describe what Frame did instead, including any message on screen.":
+    "Frame'ın bunun yerine ne yaptığını, ekrandaki mesajlarla birlikte açıklayın.",
   "Device compatibility": "Cihaz uyumluluğu",
   "Discovery languages": "Keşif dilleri",
   "Down the river": "Nehir boyunca",
@@ -242,8 +242,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "Bu PIN'i kaydetmek için 4 hanenin tümünü girin.",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "Her satıra brightness=5 gibi bir mpv seçeneği girin. Bunlar diğer sayfalardaki video ayarlarını geçersiz kılar. Yanlış seçenekler oynatmayı etkileyebilir. Değişiklikleri uygulamak için oynatmayı yeniden başlatın.",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "Harbor için çizilen tüm simgeler ve animasyonlar, onları çizenler ve nasıl indirebileceğiniz.",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "Frame için çizilen tüm simgeler ve animasyonlar, onları çizenler ve nasıl indirebileceğiniz.",
   "Example scores with your settings.": "Ayarlarınıza göre örnek puanlar.",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "Daha az eşe sahip olan veya eş sayısı belirtilmeyen yayınları dışlar. Tümü için boş bırakın veya 0 girin.",
@@ -263,8 +263,8 @@ const settingsRefinements: Record<string, string> = {
     "Etkinleştirmeden önce yukarıdaki SVP motorunun kurulumunu tamamlayın.",
   "Forget remote streaming server": "Uzak yayın sunucusunu unut",
   "Forgot password?": "Parolanızı mı unuttunuz?",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "Oynatma sırasında görüntüyü işleyen GPU gölgelendiricileri: Anime4K yükseltme, HDR ton eşleme, sinir ağıyla yükseltme ve keskinleştirme. İstediklerinizi indirin; Harbor bunları mpv motorunda uygular.",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "Oynatma sırasında görüntüyü işleyen GPU gölgelendiricileri: Anime4K yükseltme, HDR ton eşleme, sinir ağıyla yükseltme ve keskinleştirme. İstediklerinizi indirin; Frame bunları mpv motorunda uygular.",
   "Get SVP": "SVP'yi edin",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "Discord veya Telegram'da yeni içerik bildirimleri alın. Bir hedef bağlayın, ardından bildirim kaynaklarını ve kurallarını seçin.",
@@ -280,28 +280,28 @@ const settingsRefinements: Record<string, string> = {
     "Kullanıcı adları kısa çizgiyle başlayamaz veya bitemez.",
   "Handles need at least 3 characters.": "Kullanıcı adları en az 3 karakter olmalıdır.",
   "Handles need at least one letter.": "Kullanıcı adlarında en az bir harf bulunmalıdır.",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "Steamboat Willie ve The General gösterilen Harbor Keşfet sayfası",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "Harbor alıcı cihazı denetler ve yayının dönüştürülmesi gerektiğinde ffmpeg kullanır.",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "Harbor P2P ayarını uygulayamadı. Yeniden denemek için Harbor'ı tekrar açın.",
-  "Harbor couldn't check the SVP installation. Try again.":
-    "Harbor SVP kurulumunu denetleyemedi. Yeniden deneyin.",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "Harbor altyazıları bu sırayla arar. Tercih ettiğiniz dili ilk sıraya koyun.",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "Diğer cihazlarınızdaki Harbor: web uygulaması, telefon kumandası ve manga okuyucu kumandası.",
-  "Harbor profile showing watch statistics": "İzleme istatistiklerini gösteren Harbor profili",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harbor kendi topluluk sunucusunu kullanır. Bunun yerine kendin yönettiğin bir sunucuyu kullanacak şekilde ayarlayabilirsin.",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "Harbor'ın yerleşik eşler arası motoru, öz sınaması ve yönlendirdiğiniz yayın sunucuları.",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "Harbor'ın lisansı, temel aldığı projeler ve onu mümkün kılan kişiler ile hizmetler.",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "Harbor'ın uzak sunucusu {WEB_PORT} bağlantı noktasında yanıt vermiyor. Masaüstü sunucusunun çalıştığını kontrol edin veya yeniden başlatmak için bu ayarı kapatıp açın.",
-  "Harbor, with a few classics.": "Birkaç klasikle Harbor.",
+  "Frame Discover showing Steamboat Willie and The General":
+    "Steamboat Willie ve The General gösterilen Frame Keşfet sayfası",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "Frame alıcı cihazı denetler ve yayının dönüştürülmesi gerektiğinde ffmpeg kullanır.",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "Frame P2P ayarını uygulayamadı. Yeniden denemek için Frame'ı tekrar açın.",
+  "Frame couldn't check the SVP installation. Try again.":
+    "Frame SVP kurulumunu denetleyemedi. Yeniden deneyin.",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "Frame altyazıları bu sırayla arar. Tercih ettiğiniz dili ilk sıraya koyun.",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "Diğer cihazlarınızdaki Frame: web uygulaması, telefon kumandası ve manga okuyucu kumandası.",
+  "Frame profile showing watch statistics": "İzleme istatistiklerini gösteren Frame profili",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frame kendi topluluk sunucusunu kullanır. Bunun yerine kendin yönettiğin bir sunucuyu kullanacak şekilde ayarlayabilirsin.",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "Frame'ın yerleşik eşler arası motoru, öz sınaması ve yönlendirdiğiniz yayın sunucuları.",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "Frame'ın lisansı, temel aldığı projeler ve onu mümkün kılan kişiler ile hizmetler.",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "Frame'ın uzak sunucusu {WEB_PORT} bağlantı noktasında yanıt vermiyor. Masaüstü sunucusunun çalıştığını kontrol edin veya yeniden başlatmak için bu ayarı kapatıp açın.",
+  "Frame, with a few classics.": "Birkaç klasikle Frame.",
   "Help & about": "Yardım ve hakkında",
   "Hex color": "Onaltılık renk",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -309,9 +309,9 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "{name} öğesini gezinmeden gizle",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "Yüksek, daha keskin görseller yükler. Gezinme yavaşsa Dengeli'yi seçin. Bu, video kalitesini etkilemez.",
-  "How long Harbor waits for each addon to return results.":
-    "Harbor'ın her eklentinin sonuçlarını ne kadar bekleyeceği.",
-  "How much does this affect your use of Harbor?": "Bu, Harbor kullanımınızı ne kadar etkiliyor?",
+  "How long Frame waits for each addon to return results.":
+    "Frame'ın her eklentinin sonuçlarını ne kadar bekleyeceği.",
+  "How much does this affect your use of Frame?": "Bu, Frame kullanımınızı ne kadar etkiliyor?",
   "How to connect Discord": "Discord nasıl bağlanır",
   "How to connect Telegram": "Telegram nasıl bağlanır",
   "How video plays, how it looks, and what happens between episodes.":
@@ -332,18 +332,18 @@ const settingsRefinements: Record<string, string> = {
     "Raporunuza dahil edilenler: uygulama ve cihaz ayrıntıları, etkin hizmet sayıları, oynatıcı denetimi ve son hata mesajları.",
   "Install SVP and check again before enabling it.":
     "Etkinleştirmeden önce SVP'yi yükleyip yeniden denetleyin.",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "SVP'yi VapourSynth bileşenleriyle yükleyin, ardından Harbor'ın bunları bulabilmesi için yeniden denetleyin.",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "Simge paketleri yükleyin veya her ödül için kendi görselinizi yükleyin. Paketler Harbor ile birlikte sunulmaz; oluşturucuları tarafından barındırılır.",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "SVP'yi VapourSynth bileşenleriyle yükleyin, ardından Frame'ın bunları bulabilmesi için yeniden denetleyin.",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "Simge paketleri yükleyin veya her ödül için kendi görselinizi yükleyin. Paketler Frame ile birlikte sunulmaz; oluşturucuları tarafından barındırılır.",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "Güncellemeleri yükleyin, beta sürümlerini deneyin ve kurulumunuzun bir kopyasını saklayın.",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "Anında, en üst sıradaki yayını hemen başlatır. Kaynak seç, her seferinde yayın listesini açarak sürümü, kaliteyi ve sağlayıcıyı kendiniz seçmenizi sağlar.",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "Açılış başlar başlamaz otomatik olarak atlayın. Açılışa geri sararsanız yeniden atlanmadan oynatılır. Atla düğmesi yukarıdaki ayara uyar.",
-  "Keep Harbor fullscreen when you close the player.":
-    "Oynatıcıyı kapattığınızda Harbor'ı tam ekranda tutun.",
+  "Keep Frame fullscreen when you close the player.":
+    "Oynatıcıyı kapattığınızda Frame'ı tam ekranda tutun.",
   "Keep code": "Kodu tut",
   "Keep my shortcuts": "Kısayollarımı koru",
   "Keep rule": "Kuralı tut",
@@ -365,15 +365,15 @@ const settingsRefinements: Record<string, string> = {
   "Language preference order": "Dil tercih sırası",
   "Larger artwork with the song title below it.":
     "Altında şarkı adı bulunan daha büyük bir görsel.",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "Harbor arayüzü titremiyor veya takılmıyorsa Otomatik olarak bırakın. Bu ayar video oynatmayı değil, uygulama penceresini etkiler.",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
-    "Debrid bağlantısı yoksa Harbor'ın bu cihazdan P2P yayını yapmasına izin verin. Yerel P2P oynatmayı engellemek için kapatın. Yapılandırılmış bir uzak sunucu yine de yayınlayabilir.",
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "Frame arayüzü titremiyor veya takılmıyorsa Otomatik olarak bırakın. Bu ayar video oynatmayı değil, uygulama penceresini etkiler.",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+    "Debrid bağlantısı yoksa Frame'ın bu cihazdan P2P yayını yapmasına izin verin. Yerel P2P oynatmayı engellemek için kapatın. Yapılandırılmış bir uzak sunucu yine de yayınlayabilir.",
   Licence: "Lisans",
   "Licenses & attribution": "Lisanslar ve atıflar",
   "Lightens or darkens the whole picture.": "Tüm görüntüyü aydınlatır veya karartır.",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "Harbor'ı açtığınız andan başlayarak soruna yol açan adımları yazın.",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "Frame'ı açtığınız andan başlayarak soruna yol açan adımları yazın.",
   "Load failed. Retry": "Yüklenemedi. Yeniden dene",
   "Loading {name}…": "{name} yükleniyor…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -400,8 +400,8 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "{language} dilini öne taşı",
   "Move {name} down": "{name} öğesini aşağı taşı",
   "Move {name} up": "{name} öğesini yukarı taşı",
-  "No custom options. Harbor uses your video settings.":
-    "Özel seçenek yok. Harbor video ayarlarınızı kullanır.",
+  "No custom options. Frame uses your video settings.":
+    "Özel seçenek yok. Frame video ayarlarınızı kullanır.",
   "No default profile": "Varsayılan profil yok",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "Tercih seçilmedi. İstediğiniz yayınları seçmek için bu filtreyi düzenleyin.",
@@ -416,7 +416,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "Bildirim kaynakları",
   "On your local network": "Yerel ağınızda",
   "On-screen controls": "Ekran kontrolleri",
-  "Open Harbor account": "Harbor hesabını aç",
+  "Open Frame account": "Frame hesabını aç",
   "Open Stremio settings": "Stremio ayarlarını aç",
   "Open on YouTube": "YouTube'da aç",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -424,8 +424,8 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "Başlangıçta bu profili açın. Süreli profil istemleri daha sonra yine görünebilir. PIN korumalı profiller varsayılan yapılamaz.",
   "Open {label} address": "{label} adresini aç",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
-    "Yazarlarından indirilen isteğe bağlı video efektleri. Harbor, etkin gölgelendiricileri aşağıdaki sırayla uygular.",
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
+    "Yazarlarından indirilen isteğe bağlı video efektleri. Frame, etkin gölgelendiricileri aşağıdaki sırayla uygular.",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "İsteğe bağlı. Sizinle iletişime geçmemize izin veriyorsanız iletişim bilgilerinizi bırakın ve adınızın herkese açık olarak belirtilmesini isteyip istemediğinizi seçin.",
   "Optional. Used to allow more watch time. Without a PIN, switch profiles when time is up.":
@@ -495,13 +495,13 @@ const settingsRefinements: Record<string, string> = {
     "Görüntünün tam ortasında, gözden kaçırması zor.",
   "Rule name": "Kural adı",
   "SVP interpolation": "SVP ara değerleme",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "Hareket yumuşatmayı SVP yönetiyor. Harbor'ın yumuşatmasını kullanmak için SVP sayfasından kapatın.",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "Hareket yumuşatmayı SVP yönetiyor. Frame'ın yumuşatmasını kullanmak için SVP sayfasından kapatın.",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "Aynı alanı kaplar ama pencere olarak kalır; alt-tab anında çalışır.",
   "Saturation {s}%, brightness {v}%": "Doygunluk %{s}, parlaklık %{v}",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
-    "Tercih ettiğiniz yayın kalitesini kaydedin. Yayınlar belirlediğiniz her kategoriyle eşleşmelidir; herhangi bir değeri kabul etmek için kategoriyi boş bırakın. Eşleşme yoksa Harbor mevcut en iyi alternatif kaynağı kullanır.",
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
+    "Tercih ettiğiniz yayın kalitesini kaydedin. Yayınlar belirlediğiniz her kategoriyle eşleşmelidir; herhangi bir değeri kabul etmek için kategoriyi boş bırakın. Eşleşme yoksa Frame mevcut en iyi alternatif kaynağı kullanır.",
   "Save {name} as JSON": "{name} öğesini JSON olarak kaydet",
   "Save {name} as SVG": "{name} öğesini SVG olarak kaydet",
   "Saved {name}.": "{name} kaydedildi.",
@@ -514,8 +514,8 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "Yardımcı metin burada yer alır",
   "See the resolution, HDR format and audio while you watch.":
     "İzlerken çözünürlüğü, HDR biçimini ve sesi görün.",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
-    "Harbor'ın bu bilgisayarda neler sakladığını görün ve alan açmak istediğinizde önbellekleri temizleyin.",
+  "See what Frame stores on this computer and clear caches when you want the space back.":
+    "Frame'ın bu bilgisayarda neler sakladığını görün ve alan açmak istediğinizde önbellekleri temizleyin.",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "Sesi belirli hoparlörlere, kulaklığa veya alıcıya gönderin. Sistem varsayılanı, sisteminizin ses çıkışını kullanır.",
   "Services that record what you watch. Connect the ones you use and tune what each one sends.":
@@ -525,8 +525,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "Hedef ayarla",
   "Set up rating providers": "Puan sağlayıcılarını ayarla",
   "Set up song identification": "Şarkı tanımayı ayarla",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "Televizyonunuzu buradan ayarlayın. Bu sayfadaki her şey Harbor hesabınıza kaydedilir ve TV'deki Big Picture tarafından alınır; böylece uzaktan kumandayla yazmanız gerekmez.",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "Televizyonunuzu buradan ayarlayın. Bu sayfadaki her şey Frame hesabınıza kaydedilir ve TV'deki Big Picture tarafından alınır; böylece uzaktan kumandayla yazmanız gerekmez.",
   "Sets the age level for the kids space.": "Çocuk alanının yaş düzeyini belirler.",
   "Setting up SVP…": "SVP ayarlanıyor…",
   "Share your style": "Tarzını paylaş",
@@ -568,8 +568,8 @@ const settingsRefinements: Record<string, string> = {
     "Başlığın altına kayarak gelen küçük, yuvarlatılmış çerçeveli etiketler.",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "Akıcı hareket ve SVP'nin rolü. Anime için kare ara değerleme burada; görüntü gölgelendiricileri ayrı bir sekmeye taşındı.",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "Harbor oynatıcısıyla kamera hareketlerini yumuşatır. Ekran yenileme hızı videonun kare hızından yüksek olduğunda en iyi sonucu verir.",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "Frame oynatıcısıyla kamera hareketlerini yumuşatır. Ekran yenileme hızı videonun kare hızından yüksek olduğunda en iyi sonucu verir.",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "SVP ile hareketleri yumuşatır. Uygulamak için oynatmayı yeniden başlatın; video oynatılamıyorsa kapatın.",
   "Soften the artwork behind the stream picker.": "Yayın seçicinin arkasındaki görseli yumuşatın.",
@@ -577,8 +577,8 @@ const settingsRefinements: Record<string, string> = {
     "Bu derlemede bazı TV ayarları eşitlenemiyor. Değişiklikleriniz bu bilgisayarda kayıtlı kalır.",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "Birisi bu kullanıcı adını yakın zamanda bıraktı. Bırakıldıktan 14 gün sonra kullanılabilir hâle gelir.",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "Bir şey beklenmedik şekilde davranıyor, ancak Harbor'ı kullanmaya devam edebiliyorsunuz.",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "Bir şey beklenmedik şekilde davranıyor, ancak Frame'ı kullanmaya devam edebiliyorsunuz.",
   "Something looks wrong, but the feature still works.":
     "Bir şey yanlış görünüyor, ancak özellik hâlâ çalışıyor.",
   "Something went wrong. Try again.": "Bir sorun oluştu. Tekrar deneyin.",
@@ -614,8 +614,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "Uzak yayın sunucusu sınanıyor",
   "Text is enlarged in this preview so you can judge the style.":
     "Stili değerlendirebilmeniz için bu önizlemede metin büyütülmüştür.",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "Bu Stremio hesabı zaten başka bir Harbor hesabına bağlı. Önce o hesaptaki bağlantıyı kaldırın.",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "Bu Stremio hesabı zaten başka bir Frame hesabına bağlı. Önce o hesaptaki bağlantıyı kaldırın.",
   "That Stremio sign-in did not go through. Try again.":
     "Stremio oturumu açılamadı. Tekrar deneyin.",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
@@ -650,12 +650,12 @@ const settingsRefinements: Record<string, string> = {
     "Çoğu kişinin bir kez ayarladığı birkaç seçenek.",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "Çoğu kişinin bir kez ayarladığı birkaç seçenek. Oturum açın, Oynat'ın davranışını belirleyin ve görünümünüzü seçin.",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "Harbor'ın menü, düğme ve etiketlerinin dili. Ses, altyazı ve yapım bilgileri için ayrı dil ayarları vardır.",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "Frame'ın menü, düğme ve etiketlerinin dili. Ses, altyazı ve yapım bilgileri için ayrı dil ayarları vardır.",
   "The same slow camera pan, with motion smoothing off and on.":
     "Hareket yumuşatma kapalı ve açıkken aynı yavaş kamera kaydırması.",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "Kaydedilen JavaScript kaldırılacak. Daha önce çalıştırılan betiklerin etkilerini temizlemek için Harbor'ı yeniden başlatın.",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "Kaydedilen JavaScript kaldırılacak. Daha önce çalıştırılan betiklerin etkilerini temizlemek için Frame'ı yeniden başlatın.",
   "The saved {name} will be removed and its changes will stop applying.":
     "Kaydedilen {name} kaldırılacak ve değişiklikleri artık uygulanmayacak.",
   "The server responded in {ms} ms.": "Sunucu {ms} ms içinde yanıt verdi.",
@@ -663,15 +663,15 @@ const settingsRefinements: Record<string, string> = {
     "Tercihler ve arama verileri dahil en büyük altı yerel ayar kaydı.",
   "{count} entries": "{count} kayıt",
   "The volume pop-up is hidden.": "Ses düzeyi açılır göstergesi gizli.",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
-    "Tema, oynatıcının düzeni, görseller ve Harbor'ın kartlarda gösterdikleri.",
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
+    "Tema, oynatıcının düzeni, görseller ve Frame'ın kartlarda gösterdikleri.",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "Bu hesap askıya alınmış. Bunun bir hata olduğunu düşünüyorsanız destek ekibiyle iletişime geçin.",
   "This backup contained nothing restorable.": "Bu yedekte geri yüklenebilecek bir şey yoktu.",
   "This backup has no data in it.": "Bu yedekte veri yok.",
   "This is how your subtitles": "Altyazılarınız TV'nizde",
   "This is how your subtitles will look.": "Altyazılarınız böyle görünecek.",
-  "This is not a Harbor backup file.": "Bu bir Harbor yedek dosyası değil.",
+  "This is not a Frame backup file.": "Bu bir Frame yedek dosyası değil.",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "Bu bilgisayardan başka bir cihaza yayın yapmak için yerel ağ adresini kopyalayıp o cihazdaki Uzak yayın sunucusu alanına girin.",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -697,8 +697,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "Çevrilmemiş metinler İngilizce kalır. Bir dil seçin, ardından Uygula ve yeniden yükle'yi seçin.",
   "Unwatched episodes": "İzlenmemiş bölümler",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "Kendi resminizi yükleyin veya Harbor kataloğundan bir tane seçin.",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "Kendi resminizi yükleyin veya Frame kataloğundan bir tane seçin.",
   "Use letters, numbers, and single hyphens only.":
     "Yalnızca harf, rakam ve tekli kısa çizgi kullanın.",
   "Use no saved stream filter": "Kayıtlı yayın filtresi kullanma",
@@ -707,8 +707,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "{name} kullan",
   "Used only if we need one more detail to reproduce the bug.":
     "Yalnızca hatayı yeniden oluşturmak için ek bir ayrıntıya ihtiyaç duyarsak kullanılır.",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "Harbor oynatıcısında hareketleri yumuşatmak için SVP kullanır. SVP'yi bir kez yükleyin; Harbor motorunu kullanır ve gerektiğinde SVP Manager'ı açar.",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "Frame oynatıcısında hareketleri yumuşatmak için SVP kullanır. SVP'yi bir kez yükleyin; Frame motorunu kullanır ve gerektiğinde SVP Manager'ı açar.",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "VapourSynth üzerinden SVP'nin hareket motorunu kullanır. Uygulamak için oynatmayı yeniden başlatın.",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -719,17 +719,17 @@ const settingsRefinements: Record<string, string> = {
     "Modern işleyiciyle sorun yaşayan ekran kartları için eski GPU işleyicisini kullanır.",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "Videoyu çözmek için işlemciyi kullanır. Donanım çözme görüntü sorunlarına yol açıyorsa bunu deneyin.",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "Harbor oynatıcısında hareketleri yumuşatmak için Linux'taki SVP ve VapourSynth kurulumunuzu kullanır.",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "Frame oynatıcısında hareketleri yumuşatmak için Linux'taki SVP ve VapourSynth kurulumunuzu kullanır.",
   "Video quality": "Video kalitesi",
   "View generated mpv options": "Oluşturulan mpv seçeneklerini görüntüle",
   "Volume pop-up": "Ses düzeyi açılır göstergesi",
   "We tag this account on the issue so you see the fix land.":
     "Düzeltmenin geldiğini görmeniz için sorun kaydında bu hesabı etiketleriz.",
-  "What language Harbor speaks, and how subtitles behave.":
-    "Harbor'ın dili ve altyazıların davranışı.",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "Harbor'ın dili ve öncelik verdiği ses izleri.",
+  "What language Frame speaks, and how subtitles behave.":
+    "Frame'ın dili ve altyazıların davranışı.",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "Frame'ın dili ve öncelik verdiği ses izleri.",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "Yayınların kaynakları, nasıl filtrelendikleri ve arkasındaki meta veriler.",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -742,7 +742,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "Pencere davranışı",
   "You can also turn off Rule is active to pause it without deleting it.":
     "Silmeden duraklatmak için Kural etkin seçeneğini de kapatabilirsiniz.",
-  "You cannot use Harbor.": "Harbor'ı kullanamıyorsunuz.",
+  "You cannot use Frame.": "Frame'ı kullanamıyorsunuz.",
   "You changed your handle recently. You can change it again after the cooldown.":
     "Kullanıcı adınızı yakın zamanda değiştirdiniz. Bekleme süresi bittikten sonra tekrar değiştirebilirsiniz.",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

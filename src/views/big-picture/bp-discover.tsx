@@ -198,7 +198,7 @@ export function BpDiscover({ onSelect }: { onSelect: (m: Meta) => void }) {
             wins: awards.wins.toLocaleString(),
             span: awards.span,
           })
-        : t("Every winner Harbor ships, browsable offline by year and category."),
+        : t("Every winner Frame ships, browsable offline by year and category."),
     node: (
       <BpAwardsBand
         onTint={(colour) => setTint({ band: "awards", colour })}

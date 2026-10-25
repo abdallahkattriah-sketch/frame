@@ -29,7 +29,7 @@ import {
 import { Section } from "../shared";
 import { SButton } from "../ui";
 
-export const TV_DEVICES_TITLE = "Harbors on your network";
+export const TV_DEVICES_TITLE = "Frames on your network";
 
 export function TvDevicesSection() {
   const t = useT();
@@ -93,25 +93,25 @@ export function TvDevicesSection() {
 
   const selfName = me?.name?.trim() || t("This computer");
   const selfDetail = me
-    ? [platformLabel(me.platform), `Harbor ${me.version}`, themeLabel(themeId)]
+    ? [platformLabel(me.platform), `Frame ${me.version}`, themeLabel(themeId)]
         .filter(Boolean)
         .join(" / ")
     : t("Reading this device");
 
   const count = peers.length;
   const tally = scanning
-    ? t("Listening for Harbors")
+    ? t("Listening for Frames")
     : count === 0
-      ? t("No other Harbor answered")
+      ? t("No other Frame answered")
       : count === 1
-        ? t("1 other Harbor")
-        : t("{n} other Harbors", { n: count });
+        ? t("1 other Frame")
+        : t("{n} other Frames", { n: count });
 
   return (
     <Section
       title={TV_DEVICES_TITLE}
       subtitle={t(
-        "Every Harbor that announces itself on this network appears here as it answers, with the theme it is wearing.",
+        "Every Frame that announces itself on this network appears here as it answers, with the theme it is wearing.",
       )}
     >
       <div className="flex flex-col gap-2.5">
@@ -123,14 +123,14 @@ export function TvDevicesSection() {
           state="self"
           note={
             commandable
-              ? t("Remote control is on, so other Harbors on this network can drive this one.")
-              : t("Remote control is off, so other Harbors can see this one but cannot drive it.")
+              ? t("Remote control is on, so other Frames on this network can drive this one.")
+              : t("Remote control is off, so other Frames can see this one but cannot drive it.")
           }
         />
 
         {roster.map((entry) => {
           const peer = entry.instance;
-          const label = peer.name?.trim() || t("Harbor");
+          const label = peer.name?.trim() || t("Frame");
           const paired = pairedIds.has(peer.id);
           const state = deviceStateOf(
             peer,
@@ -148,7 +148,7 @@ export function TvDevicesSection() {
               state={state}
               note={
                 paired
-                  ? t("This Harbor takes commands from this computer. Forget it to take that back.")
+                  ? t("This Frame takes commands from this computer. Forget it to take that back.")
                   : undefined
               }
               stagger={entry.stagger}
@@ -170,7 +170,7 @@ export function TvDevicesSection() {
         {isTauri && settled && count === 0 ? (
           <p className="max-w-[70ch] px-1 py-1 text-[15.5px] font-normal leading-[22px] text-ink-subtle">
             {t(
-              "Nothing else answered. A Harbor shows up here a moment after it starts on this network.",
+              "Nothing else answered. A Frame shows up here a moment after it starts on this network.",
             )}
           </p>
         ) : null}

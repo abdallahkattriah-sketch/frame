@@ -21,7 +21,7 @@ export default {
   "games.warhammerUniverse.free": "Бесплатно на Warhammer TV",
   "games.warhammerUniverse.subscription": "Может потребоваться подписка Warhammer+",
   "games.warhammerUniverse.movieNote":
-    "Анимационный фильм 2010 года. Откройте карточку Harbor: актёры, трейлеры и источники.",
+    "Анимационный фильм 2010 года. Откройте карточку Frame: актёры, трейлеры и источники.",
   "games.warhammerUniverse.screenScope":
     "Публичная подборка Warhammer TV. Hammer and Bolter охватывает несколько миров; доступность зависит от сервиса.",
   "games.warhammerUniverse.lore": "Погружение в историю",

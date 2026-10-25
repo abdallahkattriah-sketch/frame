@@ -108,7 +108,7 @@ function steps(t: (s: string) => string): Step[] {
     {
       title: t("Copy your API Key"),
       body: t(
-        "Back on the API page, scroll to the bottom. Copy the value under API Key and paste it into Harbor. Harbor saves it on its own.",
+        "Back on the API page, scroll to the bottom. Copy the value under API Key and paste it into Frame. Frame saves it on its own.",
       ),
       shot: shotDone,
       note: t(

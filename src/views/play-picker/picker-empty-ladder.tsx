@@ -74,7 +74,7 @@ export function PickerEmptyLadder({
       {addonsSettled && (!streamIds || streamIds.length === 0) && (
         <EmptyState
           message={t(
-            "Harbor couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.",
+            "Frame couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.",
           )}
           action={{ label: t("Open Library settings"), onClick: onOpenLibrarySettings }}
         />
@@ -147,10 +147,10 @@ export function PickerEmptyLadder({
                 <>
                   {" "}
                   {rawCount - allCount === 1
-                    ? t("Harbor dropped {n} suspicious or mismatched result.", {
+                    ? t("Frame dropped {n} suspicious or mismatched result.", {
                         n: rawCount - allCount,
                       })
-                    : t("Harbor dropped {n} suspicious or mismatched results.", {
+                    : t("Frame dropped {n} suspicious or mismatched results.", {
                         n: rawCount - allCount,
                       })}
                 </>

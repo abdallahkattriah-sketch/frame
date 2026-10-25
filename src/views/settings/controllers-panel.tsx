@@ -56,22 +56,22 @@ export function ControllersPanel() {
           <Section
             title={t("Controller support")}
             subtitle={t(
-              "Use a game controller to browse Harbor and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.",
+              "Use a game controller to browse Frame and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.",
             )}
           >
             <ToggleRow
               label={t("Enable controller")}
               sub={t(
-                "When on, a connected controller moves focus around Harbor and drives the player. Turn it off to ignore all controllers.",
+                "When on, a connected controller moves focus around Frame and drives the player. Turn it off to ignore all controllers.",
               )}
               value={enabled}
               onChange={(v) => update({ controllerSupportEnabled: v })}
             />
             {enabled && (
               <ToggleRow
-                label={t("Keep controlling Harbor in the background")}
+                label={t("Keep controlling Frame in the background")}
                 sub={t(
-                  "Off by default, so your controller only drives Harbor while it is the focused window. Leave it off if you play games with the same controller.",
+                  "Off by default, so your controller only drives Frame while it is the focused window. Leave it off if you play games with the same controller.",
                 )}
                 value={settings.controllerBackgroundInput}
                 onChange={(v) => update({ controllerBackgroundInput: v })}
@@ -86,7 +86,7 @@ export function ControllersPanel() {
           <Section
             title={t("Connected controllers")}
             subtitle={t(
-              "Controllers Harbor can see right now. Connect one over USB or Bluetooth and it shows up here.",
+              "Controllers Frame can see right now. Connect one over USB or Bluetooth and it shows up here.",
             )}
           >
             {gamepads.length === 0 ? (
@@ -138,7 +138,7 @@ export function ControllersPanel() {
             <SliderRow
               label={t("Deadzone")}
               sub={t(
-                "How far you push the stick before Harbor reacts. Raise it if the focus drifts on its own.",
+                "How far you push the stick before Frame reacts. Raise it if the focus drifts on its own.",
               )}
               min={0.05}
               max={0.6}

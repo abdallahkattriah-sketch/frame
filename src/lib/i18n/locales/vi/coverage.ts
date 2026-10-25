@@ -58,15 +58,15 @@ const coverage: Record<string, string> = {
   "Checking availability": "Đang kiểm tra tính khả dụng",
   Chime: "Chuông báo",
   Choose: "Chọn",
-  "Choose one season package. Harbor will match and download every available episode from it.":
-    "Chọn một gói mùa. Harbor sẽ đối chiếu và tải xuống mọi tập có sẵn trong gói.",
+  "Choose one season package. Frame will match and download every available episode from it.":
+    "Chọn một gói mùa. Frame sẽ đối chiếu và tải xuống mọi tập có sẵn trong gói.",
   "Choose where subtitle timing feedback appears and how large it is.":
     "Chọn vị trí hiển thị phản hồi về thời gian phụ đề và kích thước của phản hồi.",
   "Choose who can see the friends on your profile":
     "Chọn ai có thể xem danh sách bạn bè trên hồ sơ của bạn",
   Cinematography: "Quay phim",
-  "Claim one so people can find you across Harbor.":
-    "Đăng ký một tên để mọi người có thể tìm thấy bạn trên Harbor.",
+  "Claim one so people can find you across Frame.":
+    "Đăng ký một tên để mọi người có thể tìm thấy bạn trên Frame.",
   Collapse: "Thu gọn",
   "Community collections are coming soon": "Bộ sưu tập cộng đồng sắp ra mắt",
   Completed: "Đã hoàn thành",
@@ -145,20 +145,20 @@ const coverage: Record<string, string> = {
   Guide: "Hướng dẫn",
   HI: "HI",
   Handle: "Tên người dùng",
-  "Harbor found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
-    "Harbor đã tìm thấy nguồn tập, nhưng không có gói nào có thể tải xuống cho {season}. Hãy thử tiện ích bổ sung khác hoặc làm mới nguồn.",
+  "Frame found episode sources, but none was a downloadable package for {season}. Try another addon or refresh the sources.":
+    "Frame đã tìm thấy nguồn tập, nhưng không có gói nào có thể tải xuống cho {season}. Hãy thử tiện ích bổ sung khác hoặc làm mới nguồn.",
   "Hide replies": "Ẩn phản hồi",
   Highlights: "Nổi bật",
   Horizontal: "Ngang",
   Host: "Máy chủ",
-  "How people find you across Harbor.": "Cách mọi người tìm thấy bạn trên Harbor.",
+  "How people find you across Frame.": "Cách mọi người tìm thấy bạn trên Frame.",
   ID: "ID",
   Imported: "Đã nhập",
   "In this collection": "Trong bộ sưu tập này",
   Information: "Thông tin",
   Interrupted: "Bị gián đoạn",
   Invert: "Đảo ngược",
-  "Join Harbor": "Tham gia Harbor",
+  "Join Frame": "Tham gia Frame",
   Keep: "Giữ lại",
   Language: "Ngôn ngữ",
   Latest: "Mới nhất",
@@ -209,10 +209,10 @@ const coverage: Record<string, string> = {
   Ongoing: "Đang phát hành",
   Online: "Trực tuyến",
   "Only me": "Chỉ mình tôi",
-  "Open Harbor on desktop to verify ownership in your browser.":
-    "Mở Harbor trên máy tính để xác minh quyền sở hữu trong trình duyệt.",
-  "Opens Stremio in your browser. Works with email, Facebook, and Apple. Harbor never sees your password.":
-    "Mở Stremio trong trình duyệt. Hỗ trợ email, Facebook và Apple. Harbor không bao giờ thấy mật khẩu của bạn.",
+  "Open Frame on desktop to verify ownership in your browser.":
+    "Mở Frame trên máy tính để xác minh quyền sở hữu trong trình duyệt.",
+  "Opens Stremio in your browser. Works with email, Facebook, and Apple. Frame never sees your password.":
+    "Mở Stremio trong trình duyệt. Hỗ trợ email, Facebook và Apple. Frame không bao giờ thấy mật khẩu của bạn.",
   "Ownership verified": "Đã xác minh quyền sở hữu",
   "Page background": "Nền trang",
   Paid: "Trả phí",
@@ -240,8 +240,8 @@ const coverage: Record<string, string> = {
   Pulse: "Nhịp",
   Queue: "Hàng đợi",
   Queued: "Đã xếp hàng",
-  "Queued {queued} of {total} episodes. Harbor could not match every episode in this package.":
-    "Đã xếp hàng {queued}/{total} tập. Harbor không thể đối chiếu mọi tập trong gói này.",
+  "Queued {queued} of {total} episodes. Frame could not match every episode in this package.":
+    "Đã xếp hàng {queued}/{total} tập. Frame không thể đối chiếu mọi tập trong gói này.",
   Quiet: "Yên lặng",
   REC: "REC",
   Ratings: "Xếp hạng",
@@ -292,8 +292,8 @@ const coverage: Record<string, string> = {
   Seasons: "Các mùa",
   Servers: "Máy chủ",
   Share: "Chia sẻ",
-  "Shared collections from across Harbor will show up here soon.":
-    "Các bộ sưu tập được chia sẻ trên Harbor sẽ sớm xuất hiện tại đây.",
+  "Shared collections from across Frame will show up here soon.":
+    "Các bộ sưu tập được chia sẻ trên Frame sẽ sớm xuất hiện tại đây.",
   "Show 1 reply": "Hiện 1 câu trả lời",
   "Show More info button": "Hiện nút Thông tin thêm",
   "Show a Minecraft card on your profile. Leave the username blank to hide it.":
@@ -309,11 +309,11 @@ const coverage: Record<string, string> = {
   Shown: "Đã hiển thị",
   "Shown on the card and at the top of the page.": "Hiển thị trên thẻ và ở đầu trang.",
   Shows: "Phim bộ",
-  "Sign in to Harbor to check availability.": "Đăng nhập Harbor để kiểm tra tính khả dụng.",
+  "Sign in to Frame to check availability.": "Đăng nhập Frame để kiểm tra tính khả dụng.",
   "Sign in to pick up where you left off.": "Đăng nhập để xem tiếp từ chỗ bạn đã dừng.",
   "Sign in to upload a custom image.": "Đăng nhập để tải ảnh tùy chỉnh lên.",
   "Signed in as {username}": "Đã đăng nhập với tên {username}",
-  "Signed in to your Harbor account": "Đã đăng nhập vào tài khoản Harbor",
+  "Signed in to your Frame account": "Đã đăng nhập vào tài khoản Frame",
   Silent: "Im lặng",
   Size: "Kích thước",
   Socials: "Mạng xã hội",
@@ -461,14 +461,14 @@ const coverage: Record<string, string> = {
   "· {n} noms": "· {n} đề cử",
   "Big Picture": "Big Picture",
   "Leave Big Picture": "Thoát chế độ màn hình lớn",
-  "A full screen, couch friendly Harbor for TVs, handhelds and big monitors.":
-    "Harbor toàn màn hình, thuận tiện khi dùng trên TV, thiết bị cầm tay và màn hình lớn.",
+  "A full screen, couch friendly Frame for TVs, handhelds and big monitors.":
+    "Frame toàn màn hình, thuận tiện khi dùng trên TV, thiết bị cầm tay và màn hình lớn.",
   "Show the Big Picture button": "Hiện nút Chế độ màn hình lớn",
-  "Adds a Big Picture button to Harbor's navigation. Turn this off to keep it out of the way.":
-    "Thêm nút Chế độ màn hình lớn vào thanh điều hướng của Harbor. Tắt tùy chọn này để ẩn nút.",
+  "Adds a Big Picture button to Frame's navigation. Turn this off to keep it out of the way.":
+    "Thêm nút Chế độ màn hình lớn vào thanh điều hướng của Frame. Tắt tùy chọn này để ẩn nút.",
   "Open in Big Picture": "Mở ở chế độ màn hình lớn",
-  "Launch straight into Big Picture when Harbor starts. Press Esc at any time to leave.":
-    "Vào thẳng chế độ màn hình lớn khi khởi động Harbor. Nhấn Esc bất cứ lúc nào để thoát.",
+  "Launch straight into Big Picture when Frame starts. Press Esc at any time to leave.":
+    "Vào thẳng chế độ màn hình lớn khi khởi động Frame. Nhấn Esc bất cứ lúc nào để thoát.",
   "Almost done": "Sắp xong",
   "Jump back in": "Xem tiếp",
   "Couldn't load this title.": "Không thể tải tựa phim này.",
@@ -479,8 +479,8 @@ const coverage: Record<string, string> = {
   "Box office": "Doanh thu phòng vé",
   Length: "Thời lượng",
   "Couldn't load your catalogs": "Không thể tải các danh mục của bạn",
-  "Harbor couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
-    "Harbor không thể kết nối với máy chủ danh mục. Hãy kiểm tra kết nối rồi mở lại chế độ màn hình lớn.",
+  "Frame couldn't reach the catalog servers. Check the connection and reopen Big Picture.":
+    "Frame không thể kết nối với máy chủ danh mục. Hãy kiểm tra kết nối rồi mở lại chế độ màn hình lớn.",
   Letters: "Chữ cái",
   Symbols: "Ký hiệu",
   Space: "Space",
@@ -489,7 +489,7 @@ const coverage: Record<string, string> = {
   "Nothing saved yet. Add a title from any details page.":
     "Chưa lưu nội dung nào. Thêm một tựa phim từ trang chi tiết bất kỳ.",
   "Your watchlist is empty.": "Danh sách xem đang trống.",
-  "Search Harbor": "Tìm kiếm trên Harbor",
+  "Search Frame": "Tìm kiếm trên Frame",
   "{n} results": "{n} kết quả",
   "Looking...": "Đang tìm...",
   "Start typing to search movies and series.": "Bắt đầu nhập để tìm phim và phim bộ.",
@@ -501,10 +501,10 @@ const coverage: Record<string, string> = {
   "Drifting poster wall behind the interface. Turn off on low power devices.":
     "Tường áp phích chuyển động phía sau giao diện. Hãy tắt trên thiết bị có công suất thấp.",
   "Controller navigation": "Điều hướng bằng tay cầm",
-  "Use a gamepad or remote to move around Harbor":
-    "Dùng tay cầm chơi game hoặc điều khiển từ xa để điều hướng Harbor",
-  "Launch straight into Big Picture when Harbor starts":
-    "Mở thẳng chế độ Big Picture khi Harbor khởi động",
+  "Use a gamepad or remote to move around Frame":
+    "Dùng tay cầm chơi game hoặc điều khiển từ xa để điều hướng Frame",
+  "Launch straight into Big Picture when Frame starts":
+    "Mở thẳng chế độ Big Picture khi Frame khởi động",
   "Quick panel": "Bảng điều khiển nhanh",
   "No trailer available for {name}": "Không có trailer cho {name}",
   "Loading trailer...": "Đang tải trailer...",
@@ -546,10 +546,10 @@ const coverage: Record<string, string> = {
   "Moved subtitles 0.25 seconds later.": "Đã dời phụ đề muộn hơn 0.25 giây.",
   "Moved subtitles 0.25 seconds earlier.": "Đã dời phụ đề sớm hơn 0.25 giây.",
   Synced: "Đã đồng bộ",
-  "When a subtitle runs early or late, Harbor measures the speech and corrects the timing on its own.":
-    "Khi phụ đề chạy sớm hoặc muộn, Harbor sẽ đo lời thoại và tự động chỉnh thời gian.",
-  "Downloaded subtitles can arrive after playback starts. Harbor switches from a temporary track when a stronger release match becomes available.":
-    "Phụ đề tải xuống có thể xuất hiện sau khi bắt đầu phát. Harbor sẽ chuyển từ phụ đề tạm thời khi có bản khớp với bản phát hành chính xác hơn.",
+  "When a subtitle runs early or late, Frame measures the speech and corrects the timing on its own.":
+    "Khi phụ đề chạy sớm hoặc muộn, Frame sẽ đo lời thoại và tự động chỉnh thời gian.",
+  "Downloaded subtitles can arrive after playback starts. Frame switches from a temporary track when a stronger release match becomes available.":
+    "Phụ đề tải xuống có thể xuất hiện sau khi bắt đầu phát. Frame sẽ chuyển từ phụ đề tạm thời khi có bản khớp với bản phát hành chính xác hơn.",
   "Only embedded subtitles are available right now.": "Hiện chỉ có phụ đề nhúng.",
   "Search all sources again": "Tìm lại trên tất cả nguồn",
   "Aligned here": "Đã căn tại đây",
@@ -577,10 +577,10 @@ const coverage: Record<string, string> = {
     "Không tìm thấy nguồn cho tập nào trong số này. Hãy thử làm mới hoặc dùng tiện ích bổ sung khác.",
   "Queued {queued} of {total} episodes.": "Đã xếp hàng {queued}/{total} tập.",
   "Could not queue these episodes.": "Không thể xếp các tập này vào hàng chờ.",
-  "Harbor found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
-    "Harbor đã tìm thấy nguồn tập cho {season}, nhưng không có nguồn nào là một gói tải xuống duy nhất. Harbor vẫn có thể tải từng tập.",
-  "None of your addons returned a downloadable package for {season}. Harbor can still fetch the episodes one at a time, or you can refresh the sources.":
-    "Không tiện ích bổ sung nào trả về gói tải xuống cho {season}. Harbor vẫn có thể tải từng tập hoặc bạn có thể làm mới nguồn.",
+  "Frame found episode sources for {season}, but none of them is a single downloadable package. It can still fetch the episodes one at a time.":
+    "Frame đã tìm thấy nguồn tập cho {season}, nhưng không có nguồn nào là một gói tải xuống duy nhất. Frame vẫn có thể tải từng tập.",
+  "None of your addons returned a downloadable package for {season}. Frame can still fetch the episodes one at a time, or you can refresh the sources.":
+    "Không tiện ích bổ sung nào trả về gói tải xuống cho {season}. Frame vẫn có thể tải từng tập hoặc bạn có thể làm mới nguồn.",
   "Download episode by episode": "Tải xuống từng tập",
   "Test mode: your controller only moves this diagram. Press Esc to stop.":
     "Chế độ kiểm tra: tay cầm chỉ di chuyển sơ đồ này. Nhấn Esc để dừng.",
@@ -590,11 +590,11 @@ const coverage: Record<string, string> = {
   Pointer: "Con trỏ",
   Dot: "Chấm",
   "Controller cursor": "Con trỏ tay cầm",
-  "The pointer your right stick moves around Harbor. Pick a shape or use your own image.":
-    "Con trỏ được cần analog phải di chuyển trong Harbor. Chọn một hình dạng hoặc dùng ảnh riêng.",
+  "The pointer your right stick moves around Frame. Pick a shape or use your own image.":
+    "Con trỏ được cần analog phải di chuyển trong Frame. Chọn một hình dạng hoặc dùng ảnh riêng.",
   "Your own image": "Ảnh riêng",
-  "PNG, WEBP, SVG or GIF. Harbor shrinks it to 128px so it stays small on disk.":
-    "PNG, WEBP, SVG hoặc GIF. Harbor thu nhỏ ảnh xuống 128px để tiết kiệm dung lượng ổ đĩa.",
+  "PNG, WEBP, SVG or GIF. Frame shrinks it to 128px so it stays small on disk.":
+    "PNG, WEBP, SVG hoặc GIF. Frame thu nhỏ ảnh xuống 128px để tiết kiệm dung lượng ổ đĩa.",
   "Remove image": "Xóa ảnh",
   "That image could not be used. Try a smaller PNG or WEBP.":
     "Không thể sử dụng ảnh đó. Hãy thử PNG hoặc WEBP nhỏ hơn.",
@@ -603,28 +603,28 @@ const coverage: Record<string, string> = {
     "Tăng kích thước khi xem TV từ xa, giảm kích thước khi dùng màn hình trên bàn.",
   "{n} px": "{n} px",
   "Actual size on screen": "Kích thước thực trên màn hình",
-  "Harbor's full video engine. Plays anything you throw at it.":
-    "Công cụ phát video đầy đủ của Harbor. Phát được mọi nội dung.",
-  "libmpv did not load, so playback falls back to HTML5 and formats like MKV may refuse to play. On Linux, install your distribution's libmpv package, then restart Harbor.":
-    "Không tải được libmpv nên hệ thống chuyển sang phát bằng HTML5 và các định dạng như MKV có thể không phát được. Trên Linux, hãy cài đặt gói libmpv của bản phân phối rồi khởi động lại Harbor.",
+  "Frame's full video engine. Plays anything you throw at it.":
+    "Công cụ phát video đầy đủ của Frame. Phát được mọi nội dung.",
+  "libmpv did not load, so playback falls back to HTML5 and formats like MKV may refuse to play. On Linux, install your distribution's libmpv package, then restart Frame.":
+    "Không tải được libmpv nên hệ thống chuyển sang phát bằng HTML5 và các định dạng như MKV có thể không phát được. Trên Linux, hãy cài đặt gói libmpv của bản phân phối rồi khởi động lại Frame.",
   "{n} hours": "{n} giờ",
   "{n} GB": "{n} GB",
-  "Another program already holds this port, usually a Stremio server that is running on this machine. Harbor tried its spare ports too. Stop that server, or leave it running and point Harbor at it in Remote streaming server below.":
-    "Một chương trình khác đang chiếm cổng này, thường là máy chủ Stremio đang chạy trên máy này. Harbor cũng đã thử các cổng dự phòng. Hãy dừng máy chủ đó hoặc để máy chủ tiếp tục chạy và trỏ Harbor đến máy chủ đó trong mục Máy chủ phát trực tuyến từ xa bên dưới.",
+  "Another program already holds this port, usually a Stremio server that is running on this machine. Frame tried its spare ports too. Stop that server, or leave it running and point Frame at it in Remote streaming server below.":
+    "Một chương trình khác đang chiếm cổng này, thường là máy chủ Stremio đang chạy trên máy này. Frame cũng đã thử các cổng dự phòng. Hãy dừng máy chủ đó hoặc để máy chủ tiếp tục chạy và trỏ Frame đến máy chủ đó trong mục Máy chủ phát trực tuyến từ xa bên dưới.",
   "Open here": "Mở tại đây",
   "Scan with your phone camera, or type the address above.":
     "Quét bằng camera điện thoại hoặc nhập địa chỉ ở trên.",
   "No Wi-Fi address yet. Other devices cannot reach this computer.":
     "Chưa có địa chỉ Wi-Fi. Các thiết bị khác không thể truy cập máy tính này.",
-  "Harbor in a browser": "Harbor trên trình duyệt",
+  "Frame in a browser": "Frame trên trình duyệt",
   "This exact install, served as a web app. Open it on a phone, laptop or TV browser and it streams through this computer.":
     "Chính bản cài đặt này được cung cấp dưới dạng ứng dụng web. Mở trên trình duyệt điện thoại, máy tính xách tay hoặc TV để phát trực tuyến qua máy tính này.",
   "Play, pause, seek, volume and casting from the couch.":
     "Phát, tạm dừng, tua, chỉnh âm lượng và truyền nội dung ngay từ ghế sofa.",
   "Turn pages, zoom and switch modes while you read on the big screen.":
     "Lật trang, thu phóng và chuyển chế độ khi đọc trên màn hình lớn.",
-  "One switch serves Harbor on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.":
-    "Chỉ cần một nút bật để cung cấp Harbor trên mạng của bạn. Quét mã bên dưới bằng điện thoại hoặc mở địa chỉ trên bất kỳ thiết bị nào dùng chung Wi-Fi.",
+  "One switch serves Frame on your network. Scan a code below with your phone, or open an address on any device on the same Wi-Fi.":
+    "Chỉ cần một nút bật để cung cấp Frame trên mạng của bạn. Quét mã bên dưới bằng điện thoại hoặc mở địa chỉ trên bất kỳ thiết bị nào dùng chung Wi-Fi.",
   "Powers everything on this page: the web app, the phone remote, and the manga reader remote.":
     "Cung cấp mọi chức năng trên trang này: ứng dụng web, điều khiển từ xa bằng điện thoại và điều khiển từ xa cho trình đọc manga.",
   "Flip the switch above and the addresses and scan codes appear here.":
@@ -650,14 +650,14 @@ const coverage: Record<string, string> = {
   "Machine-translated": "Dịch bằng máy",
   "Direct/debrid only": "Chỉ trực tiếp/debrid",
   "Match subtitles across languages (experimental)": "Khớp phụ đề giữa các ngôn ngữ (thử nghiệm)",
-  "When the audio and subtitle use different languages, Harbor compares a release-matched subtitle in the audio language. It only offers a fix unless every safety check is measured.":
-    "Khi âm thanh và phụ đề dùng ngôn ngữ khác nhau, Harbor so sánh với phụ đề cùng bản phát hành bằng ngôn ngữ âm thanh. Harbor chỉ đề xuất bản sửa trừ khi mọi kiểm tra an toàn đều đã được đo.",
+  "When the audio and subtitle use different languages, Frame compares a release-matched subtitle in the audio language. It only offers a fix unless every safety check is measured.":
+    "Khi âm thanh và phụ đề dùng ngôn ngữ khác nhau, Frame so sánh với phụ đề cùng bản phát hành bằng ngôn ngữ âm thanh. Frame chỉ đề xuất bản sửa trừ khi mọi kiểm tra an toàn đều đã được đo.",
   "New York Times": "New York Times",
   "Bestseller lists in the eBook section.": "Danh sách sách bán chạy trong mục eBook.",
   "New York Times · bestseller lists": "New York Times · danh sách bán chạy",
   "NYT Books API key": "Khóa API NYT Books",
-  "Choose whether Harbor prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
-    "Chọn Harbor ưu tiên nguồn trực tiếp và debrid, torrent ngang hàng hay hiển thị cả hai.",
+  "Choose whether Frame prefers direct and debrid sources, peer-to-peer torrents, or shows both.":
+    "Chọn Frame ưu tiên nguồn trực tiếp và debrid, torrent ngang hàng hay hiển thị cả hai.",
 };
 
 export default coverage;

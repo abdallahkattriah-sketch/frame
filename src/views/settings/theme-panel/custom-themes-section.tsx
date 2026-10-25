@@ -62,8 +62,8 @@ export function CustomThemesSection({
     switch (message) {
       case "This file isn't a readable theme.":
         return t("This file isn't a readable theme.");
-      case "This file isn't a Harbor theme.":
-        return t("This file isn't a Harbor theme.");
+      case "This file isn't a Frame theme.":
+        return t("This file isn't a Frame theme.");
       case "Theme is missing a name.":
         return t("Theme is missing a name.");
       case "This theme's preview colors look invalid.":

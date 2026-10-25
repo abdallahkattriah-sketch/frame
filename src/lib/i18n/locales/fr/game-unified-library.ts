@@ -3,7 +3,7 @@ export default {
     "Le compte Battle.net a changé. Reconnectez-vous pour remplacer les imports de ce profil.",
   "games.battlenet.connect": "Se connecter",
   "games.battlenet.intro":
-    "Connectez-vous à Battle.net pour importer vos jeux. Cette connexion appartient à votre profil Harbor actuel.",
+    "Connectez-vous à Battle.net pour importer vos jeux. Cette connexion appartient à votre profil Frame actuel.",
   "games.battlenet.installed": "Afficher les jeux installés",
   "games.battlenet.uninstalled": "Afficher les jeux du compte non installés",
   "games.battlenet.partial":
@@ -15,7 +15,7 @@ export default {
   "games.battlenet.timeout": "Battle.net n’a pas répondu à temps. Réessayez.",
   "games.battlenet.busy": "Une action du compte Battle.net est déjà en cours.",
   "games.battlenet.update":
-    "Redémarrez l’application de bureau Harbor mise à jour pour connecter Battle.net.",
+    "Redémarrez l’application de bureau Frame mise à jour pour connecter Battle.net.",
   "games.battlenet.error":
     "Impossible d’actualiser Battle.net. Votre dernière bibliothèque importée est conservée.",
   "games.battlenet.disconnect": "Déconnecter Battle.net",
@@ -28,7 +28,7 @@ export default {
   "games.launcherSession.unconfirmed": "Vérification de l’état du jeu",
   "games.launcherSession.notStarted": "Le jeu n’a pas démarré",
   "games.launcherSession.error":
-    "L’activité du jeu n’a pas pu être enregistrée. Rouvrez Harbor pour réessayer.",
+    "L’activité du jeu n’a pas pu être enregistrée. Rouvrez Frame pour réessayer.",
 
   "games.steamImport.importedTitle": "Jeux importés",
   "games.steamImport.excluded": "Ignoré par vos paramètres d’importation",
@@ -40,7 +40,7 @@ export default {
   "games.steamImport.ignoreSaved": "Identifiants ignorés enregistrés.",
   "games.steamImport.title": "Importer des jeux Steam",
   "games.steamImport.note":
-    "Conservez les fiches de jeux dans ce profil Harbor. La possession et l’installation sont vérifiées séparément.",
+    "Conservez les fiches de jeux dans ce profil Frame. La possession et l’installation sont vérifiées séparément.",
   "games.steamImport.input": "Identifiants d’applications Steam ou URL du magasin",
   "games.steamImport.profile": "Choisir un profil Depressurizer",
   "games.steamImport.count": "{selected} sélectionnés · {total} entrées",
@@ -82,7 +82,7 @@ export default {
   "games.libraryStatus.onHold": "En pause",
   "games.libraryStatus.stopped": "Abandonné",
   "games.libraryStatus.note":
-    "Votre choix pour cet exemplaire est enregistré dans ce profil Harbor. Le temps de jeu et les succès ne le modifient jamais.",
+    "Votre choix pour cet exemplaire est enregistré dans ce profil Frame. Le temps de jeu et les succès ne le modifient jamais.",
 
   "games.unified.playtime": "Temps de jeu",
   "games.unified.playtime.all": "Tous les temps de jeu",
@@ -94,11 +94,11 @@ export default {
   "games.unified.playtime.most": "Temps enregistré le plus long",
   "games.unified.playtime.steam": "{time} sur Steam",
   "games.unified.playtime.zeroSteam": "Aucun temps de jeu enregistré sur Steam",
-  "games.unified.playtime.zeroHarbor": "Aucun temps de jeu enregistré dans Harbor",
+  "games.unified.playtime.zeroHarbor": "Aucun temps de jeu enregistré dans Frame",
   "games.unified.playtime.unknownHint":
     "Le temps de jeu du compte Steam est indisponible, ou cette source ne le fournit pas.",
   "games.unified.playtime.note":
-    "Utilise les totaux Steam et le temps enregistré dans Harbor, corrections comprises. Les temps indisponibles restent séparés.",
+    "Utilise les totaux Steam et le temps enregistré dans Frame, corrections comprises. Les temps indisponibles restent séparés.",
   "games.unified.note":
     "Votre bibliothèque Steam, vos jeux PC et vos ROMs importées dans une seule vue.",
   "games.unified.allSources": "Toutes les sources",

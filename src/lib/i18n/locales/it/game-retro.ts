@@ -19,7 +19,7 @@ export default {
   "games.retro.controls": "Comandi",
   "games.retro.saveExit": "Salva ed esci",
   "games.retro.popout": "Finestra separata",
-  "games.retro.dock": "Torna a Harbor",
+  "games.retro.dock": "Torna a Frame",
   "games.retro.mute": "Disattiva audio",
   "games.retro.unmute": "Attiva audio",
   "games.retro.volume": "Volume",
@@ -28,7 +28,7 @@ export default {
   "games.retro.smooth": "Smussata",
   "games.retro.fullscreen": "Schermo intero",
   "games.retro.exitFullscreen": "Esci da schermo intero",
-  "games.retro.playInside": "Gioca in Harbor",
+  "games.retro.playInside": "Gioca in Frame",
   "games.retro.setup":
     "Installa una volta il lettore {system} e gioca qui. Il gioco resta su questo dispositivo.",
   "games.retro.install": "Installa e gioca · {size} MB",

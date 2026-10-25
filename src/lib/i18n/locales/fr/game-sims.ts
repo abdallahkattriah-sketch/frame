@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Mettez à jour et redémarrez Harbor pour parcourir les téléchargements des Sims 2 et des Sims 3.",
+    "Mettez à jour et redémarrez Frame pour parcourir les téléchargements des Sims 2 et des Sims 3.",
   "games.sims.creatorNotesTitle": "Liens du créateur · {count}",
   "games.sims.creatorNotesNote":
     "Liens tirés des notes du créateur. Ouvrez une page pour consulter ses instructions.",
@@ -108,7 +108,7 @@ export default {
   "games.sims.mtsCatMisc": "Divers",
   "games.sims.mtsCatTools": "Outils",
   "games.sims.mtsIntro":
-    "Importez un mod ou du contenu personnalisé dans Harbor. Collez sa page Les Sims 4, puis choisissez le fichier voulu.",
+    "Importez un mod ou du contenu personnalisé dans Frame. Collez sa page Les Sims 4, puis choisissez le fichier voulu.",
   "games.sims.mtsPage": "Page de téléchargement",
   "games.sims.mtsLoad": "Trouver les fichiers",
   "games.sims.mtsBrowse": "Parcourir Mod The Sims",
@@ -181,9 +181,9 @@ export default {
   "games.sims.creatorExisting": "Installation existante",
   "games.sims.creatorManage": "Vérifier les fichiers existants",
   "games.sims.creatorAdoptNote":
-    "Confiez ces fichiers à Harbor, puis choisissez une version du créateur pour les mettre à jour.",
+    "Confiez ces fichiers à Frame, puis choisissez une version du créateur pour les mettre à jour.",
   "games.sims.creatorLinkNote":
-    "Vérifiez la mise à jour de ce groupe. Harbor conserve les anciens fichiers et vos réglages.",
+    "Vérifiez la mise à jour de ce groupe. Frame conserve les anciens fichiers et vos réglages.",
   "games.sims.creatorTarget":
     "Ce groupe contient des fichiers de mods absents de la version choisie. Placez-les dans un autre groupe avant de mettre MCCC à jour.",
   "games.sims.creatorExistingError":
@@ -215,7 +215,7 @@ export default {
   "games.sims.trayRemove": "Retirer de la bibliothèque",
   "games.sims.trayRestore": "Restaurer dans la bibliothèque",
   "games.sims.trayNote":
-    "Importez des terrains, pièces ou foyers téléchargés. Harbor conserve leurs fichiers associés ensemble dans Tray.",
+    "Importez des terrains, pièces ou foyers téléchargés. Frame conserve leurs fichiers associés ensemble dans Tray.",
   "games.sims.trayReviewNote":
     "Les fichiers Tray vont directement dans votre dossier de bibliothèque. Le contenu personnalisé inclus forme un groupe de mods distinct.",
   "games.sims.trayRemoveNote":
@@ -279,13 +279,13 @@ export default {
 
   "games.sims.adopt": "Gérer des mods existants",
   "games.sims.adoptNote":
-    "Fermez Les Sims 4. Choisissez un mod ou du contenu associé, avec ses réglages, dans un même dossier. Les fichiers indiqués seront déplacés dans un groupe Harbor ; les autres resteront en place.",
+    "Fermez Les Sims 4. Choisissez un mod ou du contenu associé, avec ses réglages, dans un même dossier. Les fichiers indiqués seront déplacés dans un groupe Frame ; les autres resteront en place.",
   "games.sims.adoptFrom": "Dossier actuel",
   "games.sims.adoptTo": "Déplacer vers",
   "games.sims.adoptFolder":
     "Choisissez des fichiers associés dans un seul dossier à l’intérieur de Mods.",
   "games.sims.adoptManaged":
-    "Choisissez des fichiers hors des dossiers gérés par Harbor et laissez Resource.cfg en place.",
+    "Choisissez des fichiers hors des dossiers gérés par Frame et laissez Resource.cfg en place.",
   "games.sims.adoptScan":
     "Certains dossiers de mods n’ont pas pu être analysés. Corrigez cela avant de gérer ces fichiers.",
 
@@ -319,7 +319,7 @@ export default {
     "Certains dossiers de mods n’ont pas pu être analysés. Corrigez cela avant de changer d’ensemble.",
   "games.sims.savesLabelHint": "Avant les nouveaux mods",
   "games.sims.savesRunning":
-    "Fermez Les Sims 4 avant de sauvegarder ou de restaurer vos parties. Harbor doit pouvoir confirmer que le jeu est arrêté.",
+    "Fermez Les Sims 4 avant de sauvegarder ou de restaurer vos parties. Frame doit pouvoir confirmer que le jeu est arrêté.",
   "games.sims.savesIntro":
     "Sauvegardez vos parties avant de modifier vos mods. Fermez d’abord Les Sims 4. Les mods et les foyers du dossier Tray ne sont pas inclus.",
   "games.sims.title": "Vos mods et contenus personnalisés",
@@ -343,7 +343,7 @@ export default {
   "games.sims.recovery":
     "Une modification a été interrompue. Récupérez la configuration précédente avant de continuer.",
   "games.sims.success": "Vos fichiers de mods sont à jour.",
-  "games.sims.applying": "Application des modifications. Gardez Harbor ouvert…",
+  "games.sims.applying": "Application des modifications. Gardez Frame ouvert…",
   "games.sims.checking": "Vérification des fichiers…",
   "games.sims.skipped": "Documents et images ignorés · {count}",
   "games.sims.preview": "Aperçu intégré au package",
@@ -383,7 +383,7 @@ export default {
   "games.sims.emptyBackups":
     "Les versions précédentes apparaîtront ici après une mise à jour ou un retrait.",
   "games.sims.emptyFiles": "Aucun fichier pris en charge dans Mods.",
-  "games.sims.desktop": "La gestion des mods nécessite la version actuelle de Harbor pour Windows.",
+  "games.sims.desktop": "La gestion des mods nécessite la version actuelle de Frame pour Windows.",
   "games.sims.folderError":
     "Choisissez le vrai dossier de données des Sims 4, sans raccourci ni lien. Mods, saves, GameVersion.txt et Options.ini doivent être présents.",
   "games.sims.readError": "Lecture impossible. Vérifiez l’accès au dossier et réessayez.",
@@ -392,7 +392,7 @@ export default {
   "games.sims.layoutError":
     "L’archive contient plusieurs dossiers de mods ou des noms en double. Importez chaque mod séparément pour garder ses fichiers groupés.",
   "games.sims.running":
-    "Fermez Les Sims 4 avant de modifier les mods. Harbor doit pouvoir confirmer que le jeu est arrêté.",
+    "Fermez Les Sims 4 avant de modifier les mods. Frame doit pouvoir confirmer que le jeu est arrêté.",
   "games.sims.duplicate":
     "Un fichier de mod du même nom existe dans un autre dossier Mods. Résolvez ce doublon avant d’importer ou d’activer ce groupe.",
   "games.sims.recordError":

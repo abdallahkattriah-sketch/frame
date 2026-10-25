@@ -3,11 +3,11 @@ const plugins: Record<string, string> = {
   Repositories: "रिपॉज़िटरी",
   "Installed plugins": "इंस्टॉल किए गए प्लगइन",
   "Plugin repositories": "प्लगइन रिपॉज़िटरी",
-  "Plugins run in the desktop app. Open Harbor on your computer to add and manage them.":
-    "प्लगइन डेस्कटॉप ऐप में चलते हैं। इन्हें जोड़ने और प्रबंधित करने के लिए अपने कंप्यूटर पर Harbor खोलें।",
+  "Plugins run in the desktop app. Open Frame on your computer to add and manage them.":
+    "प्लगइन डेस्कटॉप ऐप में चलते हैं। इन्हें जोड़ने और प्रबंधित करने के लिए अपने कंप्यूटर पर Frame खोलें।",
   "Use plugins": "प्लगइन इस्तेमाल करें",
-  "Plugins are small scripts that look for streams on sites Harbor does not know about. Everything here was installed by you, from repositories you chose.":
-    "प्लगइन छोटी स्क्रिप्ट हैं जो उन साइटों पर स्ट्रीम खोजती हैं जिन्हें Harbor नहीं जानता। यहाँ जो कुछ है, वह आपने अपनी चुनी हुई रिपॉज़िटरी से खुद इंस्टॉल किया है।",
+  "Plugins are small scripts that look for streams on sites Frame does not know about. Everything here was installed by you, from repositories you chose.":
+    "प्लगइन छोटी स्क्रिप्ट हैं जो उन साइटों पर स्ट्रीम खोजती हैं जिन्हें Frame नहीं जानता। यहाँ जो कुछ है, वह आपने अपनी चुनी हुई रिपॉज़िटरी से खुद इंस्टॉल किया है।",
   "Ask every enabled plugin for streams when you press Play. Turn this off to pause them all without removing anything.":
     "चलाएँ दबाने पर हर सक्षम प्लगइन से स्ट्रीम माँगें। इसे बंद करने पर सभी प्लगइन बिना कुछ हटाए रुक जाते हैं।",
   "Group by repository": "रिपॉज़िटरी के अनुसार समूह बनाएँ",
@@ -36,7 +36,7 @@ const plugins: Record<string, string> = {
     "{n} विफलताओं के बाद रोका गया। फिर से कोशिश करने के लिए इसे दोबारा चालू करें।",
   "Paused after {n} failures. Turn it back on to try again.#one":
     "{n} विफलता के बाद रोका गया। फिर से कोशिश करने के लिए इसे दोबारा चालू करें।",
-  "Needs Harbor {version} or newer.": "Harbor {version} या नया चाहिए।",
+  "Needs Frame {version} or newer.": "Frame {version} या नया चाहिए।",
   "This file is not a stream plugin.": "यह फ़ाइल स्ट्रीम प्लगइन नहीं है।",
   "Turned off by its repository.": "इसकी रिपॉज़िटरी ने इसे बंद किया है।",
   "Plugin files changed on disk. Reinstall it from its repository.":
@@ -78,15 +78,15 @@ const plugins: Record<string, string> = {
   "Removed {name}.": "{name} हटाया गया।",
   "Updated {name} to v{version}.": "{name} को v{version} पर अपडेट किया गया।",
   "Reverted {name} to v{version}.": "{name} को v{version} पर वापस लाया गया।",
-  "Paste the manifest link of a repository you trust. Harbor reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
-    "जिस रिपॉज़िटरी पर आप भरोसा करते हैं, उसका मैनिफ़ेस्ट लिंक पेस्ट करें। Harbor अपनी प्लगइन रिपॉज़िटरी और प्रोवाइडर-स्क्रिप्ट रिपॉज़िटरी को जैसे हैं वैसे पढ़ता है, और जब तक आप न चुनें, कुछ इंस्टॉल नहीं करता।",
+  "Paste the manifest link of a repository you trust. Frame reads its own plugin repositories and provider-script repositories as they are, and installs nothing until you choose to.":
+    "जिस रिपॉज़िटरी पर आप भरोसा करते हैं, उसका मैनिफ़ेस्ट लिंक पेस्ट करें। Frame अपनी प्लगइन रिपॉज़िटरी और प्रोवाइडर-स्क्रिप्ट रिपॉज़िटरी को जैसे हैं वैसे पढ़ता है, और जब तक आप न चुनें, कुछ इंस्टॉल नहीं करता।",
   "Repository link": "रिपॉज़िटरी लिंक",
-  "Any GitHub link works, raw or not. Harbor adds /manifest.json when it is missing. Paste several to add them all.":
-    "कोई भी GitHub लिंक चलेगा, raw हो या न हो। /manifest.json न होने पर Harbor उसे जोड़ देता है। सबको जोड़ने के लिए कई लिंक पेस्ट करें।",
+  "Any GitHub link works, raw or not. Frame adds /manifest.json when it is missing. Paste several to add them all.":
+    "कोई भी GitHub लिंक चलेगा, raw हो या न हो। /manifest.json न होने पर Frame उसे जोड़ देता है। सबको जोड़ने के लिए कई लिंक पेस्ट करें।",
   "Only https links are accepted.": "सिर्फ़ https लिंक स्वीकार किए जाते हैं।",
   "That link did not answer.": "उस लिंक ने जवाब नहीं दिया।",
-  "This does not look like a plugin repository. Harbor expects { name, plugins } or a provider-script manifest with scrapers.":
-    "यह प्लगइन रिपॉज़िटरी जैसा नहीं लगता। Harbor को { name, plugins } या scrapers वाला प्रोवाइडर-स्क्रिप्ट मैनिफ़ेस्ट चाहिए।",
+  "This does not look like a plugin repository. Frame expects { name, plugins } or a provider-script manifest with scrapers.":
+    "यह प्लगइन रिपॉज़िटरी जैसा नहीं लगता। Frame को { name, plugins } या scrapers वाला प्रोवाइडर-स्क्रिप्ट मैनिफ़ेस्ट चाहिए।",
   "This is a manga repository. Add it from the Manga page.":
     "यह मांगा रिपॉज़िटरी है। इसे मांगा पेज से जोड़ें।",
   "Already added.": "पहले से जोड़ा गया है।",
@@ -111,8 +111,8 @@ const plugins: Record<string, string> = {
   "Checksum did not match the manifest.": "चेकसम मैनिफ़ेस्ट से मेल नहीं खाया।",
   "Checking for updates": "अपडेट की जाँच",
   "Check repositories daily": "रिपॉज़िटरी रोज़ जाँचें",
-  "Once a day, look for newer versions and show an Update button here. Harbor never installs an update by itself.":
-    "दिन में एक बार नए संस्करण खोजें और यहाँ अपडेट बटन दिखाएँ। Harbor कभी अपने आप अपडेट इंस्टॉल नहीं करता।",
+  "Once a day, look for newer versions and show an Update button here. Frame never installs an update by itself.":
+    "दिन में एक बार नए संस्करण खोजें और यहाँ अपडेट बटन दिखाएँ। Frame कभी अपने आप अपडेट इंस्टॉल नहीं करता।",
   "Settings this plugin asked for. Stored on this computer only.":
     "इस प्लगइन द्वारा माँगी गई सेटिंग्स। सिर्फ़ इसी कंप्यूटर पर संग्रहीत।",
   "This plugin's settings form failed to load: {error}":
@@ -120,8 +120,8 @@ const plugins: Record<string, string> = {
   "{n} of {m} answered, {k} failed": "{m} में से {n} ने जवाब दिया, {k} विफल",
   "Install all": "सभी इंस्टॉल करें",
   "Installing {done} of {total}": "{total} में से {done} इंस्टॉल हो रहे हैं",
-  "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.":
-    "छोटी स्क्रिप्ट जो उन साइटों पर स्ट्रीम, मांगा और किताबें ढूँढती हैं जिन्हें Harbor नहीं जानता, आपकी चुनी हुई रिपॉज़िटरी से इंस्टॉल की गईं।",
+  "Small scripts that find streams, manga and books on sites Frame does not know about, installed from repositories you choose.":
+    "छोटी स्क्रिप्ट जो उन साइटों पर स्ट्रीम, मांगा और किताबें ढूँढती हैं जिन्हें Frame नहीं जानता, आपकी चुनी हुई रिपॉज़िटरी से इंस्टॉल की गईं।",
   "Remove all": "सभी हटाएँ",
 };
 

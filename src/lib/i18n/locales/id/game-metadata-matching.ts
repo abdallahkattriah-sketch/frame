@@ -23,6 +23,6 @@ export default {
   "games.match.remove": "Hapus kecocokan",
   "games.match.source": "Gambar dan detail dari IGDB",
   "games.match.note":
-    "Pilih edisi yang sesuai dengan file Anda. Harbor mempertahankan file dan nama file asli.",
+    "Pilih edisi yang sesuai dengan file Anda. Frame mempertahankan file dan nama file asli.",
   "games.match.empty": "Coba judul game tanpa label wilayah atau revisi.",
 };

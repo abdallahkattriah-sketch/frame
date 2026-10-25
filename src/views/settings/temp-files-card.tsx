@@ -45,7 +45,7 @@ export function TempFilesCard() {
     <Section
       title={t("Temporary files")}
       subtitle={t(
-        "Leftover installers from past updates, cached trailers, and casting scratch files. Harbor clears old ones on launch, keeping only the most recent installer.",
+        "Leftover installers from past updates, cached trailers, and casting scratch files. Frame clears old ones on launch, keeping only the most recent installer.",
       )}
     >
       <SettingGroup>

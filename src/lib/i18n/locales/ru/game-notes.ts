@@ -30,6 +30,6 @@ export default {
   "games.notes.import": "Импорт JSON",
   "games.notes.export": "Экспорт копии",
   "games.notes.unsaved": "Несохранённые изменения",
-  "games.notes.local": "Хранится в этом профиле Harbor",
+  "games.notes.local": "Хранится в этом профиле Frame",
   "games.notes.importGuide": "Копировать в мои заметки",
 };

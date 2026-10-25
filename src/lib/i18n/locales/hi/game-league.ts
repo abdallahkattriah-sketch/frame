@@ -80,7 +80,7 @@ export default {
     "हर बिल्ड का नमूना अलग है। पूरे बिल्ड में वे मैच अधिक होते हैं जो आइटम खरीदने तक चले; उनकी जीत दर चैंपियन की कुल जीत दर नहीं है। मुकाबले के नमूने छोटे हो सकते हैं। टीम और प्रतिद्वंद्वी के अनुसार बदलाव करें। वीडियो पुराने पैच के हो सकते हैं।",
   "games.league.patchDifference": "बिल्ड आँकड़े {patch} के हैं; आइटम और क्षमता डेटा {assets} का है।",
   "games.league.attribution":
-    "Harbor is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "Frame is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
   "games.league.tierList": "टियर सूची",
   "games.league.tierScope": "रैंक्ड सोलो/डुओ · एमराल्ड+ · वैश्विक",
   "games.league.patchFilter": "पैच चुनें",

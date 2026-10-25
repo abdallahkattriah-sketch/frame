@@ -112,7 +112,7 @@ export function BuildFeedback() {
         </span>
       }
       label={t(TITLE)}
-      desc={t("Does Harbor {version} feel better or worse than the version you had before?", {
+      desc={t("Does Frame {version} feel better or worse than the version you had before?", {
         version: APP_VERSION,
       })}
     >

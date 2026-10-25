@@ -8,7 +8,7 @@ export default {
   "games.backups.save_recovery":
     "Dokończ odzyskiwanie przed utworzeniem lub przywróceniem kopii tego folderu.",
   "games.backups.save_recovery_scope":
-    "Otwórz to przywracanie z profilu Harbor i gry, w których je rozpoczęto.",
+    "Otwórz to przywracanie z profilu Frame i gry, w których je rozpoczęto.",
   "games.backups.result.keptCurrent": "Bieżące zapisy nie zostały zmienione",
   "games.backups.resultNote.keptCurrent":
     "Odzyskiwanie zakończono bez zastępowania bieżących zapisów w tym folderze.",
@@ -16,7 +16,7 @@ export default {
   "games.backups.intro":
     "Zachowaj moment, do którego możesz wrócić. Wybierz folder zapisów tej gry i osobny folder kopii. Zamknij grę przed tworzeniem kopii lub przywracaniem.",
   "games.backups.desktop":
-    "Kopie zapisów są dostępne w aplikacji komputerowej Harbor. Korzystają z folderów wybranych na komputerze.",
+    "Kopie zapisów są dostępne w aplikacji komputerowej Frame. Korzystają z folderów wybranych na komputerze.",
   "games.backups.folder.source": "Zapisy gry",
   "games.backups.folder.vault": "Folder kopii",
   "games.backups.choose.source": "Wybierz folder zapisów gry",
@@ -51,9 +51,8 @@ export default {
   "games.backups.identical": "Obecny folder zapisów już odpowiada tej migawce.",
   "games.backups.restore": "Przywróć migawkę",
   "games.backups.recoveryNote":
-    "Harbor zachowuje migawkę odzyskiwania i oryginalny folder przed zastąpieniem zapisów.",
-  "games.backups.localNote":
-    "Przechowywane w wybranym folderze, osobno dla każdego profilu Harbor.",
+    "Frame zachowuje migawkę odzyskiwania i oryginalny folder przed zastąpieniem zapisów.",
+  "games.backups.localNote": "Przechowywane w wybranym folderze, osobno dla każdego profilu Frame.",
   "games.backups.openRecovery": "Pokaż oryginalny folder",
   "games.backups.reviewUndo": "Sprawdź cofnięcie",
   "games.backups.result.restored": "Migawka została przywrócona",
@@ -63,11 +62,11 @@ export default {
   "games.backups.resultNote.restored":
     "Folder zapisów odpowiada teraz tej migawce. Kopie odzyskiwania pozostają dostępne, jeśli zechcesz wrócić do poprzedniego stanu.",
   "games.backups.resultNote.rolledBack":
-    "Przywracanie nie powiodło się, więc Harbor odtworzył oryginalny folder zapisów. Migawka odzyskiwania jest również dostępna poniżej.",
+    "Przywracanie nie powiodło się, więc Frame odtworzył oryginalny folder zapisów. Migawka odzyskiwania jest również dostępna poniżej.",
   "games.backups.resultNote.recoveryNeeded":
-    "Harbor nie zdołał odtworzyć oryginalnego folderu po nieudanym przywracaniu. Nie uruchamiaj gry. Oryginalne pliki są zachowane w poniższym folderze i migawce odzyskiwania.",
+    "Frame nie zdołał odtworzyć oryginalnego folderu po nieudanym przywracaniu. Nie uruchamiaj gry. Oryginalne pliki są zachowane w poniższym folderze i migawce odzyskiwania.",
   "games.backups.resultNote.notRestored":
-    "Harbor nie zdołał umieścić migawki w wybranym folderze. Kopia jest nadal dostępna.",
+    "Frame nie zdołał umieścić migawki w wybranym folderze. Kopia jest nadal dostępna.",
   "games.backups.phase.scanning": "Odczytywanie zapisów…",
   "games.backups.phase.copying": "Kopiowanie plików zapisów…",
   "games.backups.phase.verifying": "Sprawdzanie migawki…",
@@ -81,9 +80,9 @@ export default {
   "games.backups.save_record":
     "Nie udało się bezpiecznie odczytać rekordu kopii. Jej pliki zostały zachowane. Sprawdź wybrany folder kopii.",
   "games.backups.save_read":
-    "Harbor nie zdołał odczytać tych zapisów. Sprawdź, czy folder jest dostępny, a gra zamknięta.",
+    "Frame nie zdołał odczytać tych zapisów. Sprawdź, czy folder jest dostępny, a gra zamknięta.",
   "games.backups.save_write":
-    "Harbor nie zdołał zakończyć zapisywania tych plików. Sprawdź, czy folder pozwala na zapis, a gra jest zamknięta.",
+    "Frame nie zdołał zakończyć zapisywania tych plików. Sprawdź, czy folder pozwala na zapis, a gra jest zamknięta.",
   "games.backups.save_name":
     "Nie udało się zachować nazwy pliku. Użyj folderu z obsługiwanymi nazwami plików.",
   "games.backups.save_changed":
@@ -104,9 +103,9 @@ export default {
   "games.backups.save_space":
     "Za mało wolnego miejsca na pełną kopię. Wybierz inny folder lub zwolnij miejsce.",
   "games.backups.save_config":
-    "Harbor nie zdołał odczytać zapamiętanych folderów. Wybierz je ponownie; istniejące kopie pozostały nienaruszone.",
+    "Frame nie zdołał odczytać zapamiętanych folderów. Wybierz je ponownie; istniejące kopie pozostały nienaruszone.",
   "games.backups.save_config_write":
-    "Harbor nie zdołał zapamiętać tych folderów. Poprzedni wybór i istniejące kopie pozostały bez zmian.",
+    "Frame nie zdołał zapamiętać tych folderów. Poprzedni wybór i istniejące kopie pozostały bez zmian.",
   "games.backups.failed":
     "Ta operacja na zapisach nie została ukończona. Pliki kopii zostały zachowane. Sprawdź foldery i spróbuj ponownie.",
   "games.backups.compare.title": "Porównanie plików",

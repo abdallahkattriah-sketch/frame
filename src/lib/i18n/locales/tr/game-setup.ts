@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "Kurulum sırasında Harbor yeniden başlatıldı. Tamamlamak için yüklü oyun dosyalarını inceleyin.",
+    "Kurulum sırasında Frame yeniden başlatıldı. Tamamlamak için yüklü oyun dosyalarını inceleyin.",
   "games.setup.state.starting": "Yükleyici başlatılıyor",
   "games.setup.state.waiting": "Yükleyici bekleniyor",
   "games.setup.startingNote": "Yükleyici açılıyor…",
@@ -37,7 +37,7 @@ export default {
   "games.setup.viewProgress": "Kurulumu görüntüle",
   "games.setup.showInstaller": "Yükleyiciyi göster",
   "games.setup.setup_window":
-    "Yükleyici penceresi kullanılamıyor. Harbor kurulumu izlemeye devam ediyor.",
+    "Yükleyici penceresi kullanılamıyor. Frame kurulumu izlemeye devam ediyor.",
   "games.setup.elapsed": "Geçen süre",
   "games.setup.io": "Yükleyici G/Ç",
   "games.setup.ioNote":
@@ -73,7 +73,7 @@ export default {
   "games.setup.state.running": "Yükleyici çalışıyor",
   "games.setup.state.finished": "Yükleyici kapandı — oyun dosyanı seç",
   "games.setup.state.failed": "Yükleyici başarıyla tamamlanmadı",
-  "games.setup.state.interrupted": "Kurulumu kontrol et — çalışırken Harbor kapandı",
+  "games.setup.state.interrupted": "Kurulumu kontrol et — çalışırken Frame kapandı",
   "games.setup.state.external": "Yükleyici başka bir pencerede açıldı",
   "games.setup.exitCode": "Çıkış kodu: {code}",
   "games.setup.unavailable":
@@ -99,9 +99,9 @@ export default {
   "games.setup.destination": "Yükleme konumu",
   "games.setup.chooseDestination": "Yükleme klasörünü seç",
   "games.setup.managedNote":
-    "Harbor oyunu buraya yükleyecek, oyun dosyasını bulacak ve kütüphanenize ekleyecek.",
+    "Frame oyunu buraya yükleyecek, oyun dosyasını bulacak ve kütüphanenize ekleyecek.",
   "games.setup.managedRunning":
-    "Oyununuz yükleniyor. Bu pencereyi kapatabilirsiniz; Harbor ilerlemeyi takip etmeye devam edecek.",
+    "Oyununuz yükleniyor. Bu pencereyi kapatabilirsiniz; Frame ilerlemeyi takip etmeye devam edecek.",
   "games.setup.detected": "Oyun dosyası otomatik olarak bulundu",
   "games.setup.chooseDetected": "Eklenecek oyun dosyasını seçin.",
   "games.setup.activity": "{count} dosyada {size}",
@@ -117,7 +117,7 @@ export default {
   "games.setup.setup_engine":
     "Bu yükleyicinin kendi penceresinde çalışması gerekiyor. Devam etmek için Yükleyiciyi çalıştır'ı seçin.",
   "games.setup.setup_candidates":
-    "Yükleme tamamlandı, ancak Harbor yüklenen dosyaları okuyamadı. Yükleme klasörünü yeniden tarayın.",
+    "Yükleme tamamlandı, ancak Frame yüklenen dosyaları okuyamadı. Yükleme klasörünü yeniden tarayın.",
   "games.setup.state.installing": "Yükleniyor",
   "games.setup.externalAction": "Yükleyiciyi çalıştır",
   "games.setup.files": "İndirilen dosyalar",

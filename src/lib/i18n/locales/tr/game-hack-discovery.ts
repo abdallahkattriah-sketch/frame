@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Dosya parmak izleri · SHA-256",
   "games.patch.localNote": "Cihazında işlenir · BPS · IPS · UPS · En fazla 256 MB",
   "games.patch.desktop":
-    "Windows, macOS veya Linux için Harbor masaüstü uygulamasında yama uygula. Dosyaların cihazında kalır ve orijinal oyun korunur.",
+    "Windows, macOS veya Linux için Frame masaüstü uygulamasında yama uygula. Dosyaların cihazında kalır ve orijinal oyun korunur.",
   "games.patch.done": "Yeni bir maceraya hazır",
   "games.patch.preserved": "Yamalı kopyan kaydedildi. Orijinal oyun ve yama değiştirilmedi.",
   "games.patch.patch_source_mismatch":
@@ -38,7 +38,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Seçilen bir dosya doğrulamadan sonra değişti. Kaydetmeden önce yamayı yeniden kontrol et.",
   "games.patch.patch_output_exists":
-    "Bu konumda zaten bir dosya var. Başka bir ad seç; Harbor mevcut dosyaların üzerine yazmaz.",
+    "Bu konumda zaten bir dosya var. Başka bir ad seç; Frame mevcut dosyaların üzerine yazmaz.",
   "games.patch.patch_read_failed":
     "Seçilen dosyalardan biri okunamadı. Hâlâ erişilebilir olduğunu kontrol edip yeniden seç.",
   "games.patch.patch_write_failed":
@@ -75,9 +75,9 @@ export default {
   "games.atlas.sort.newest": "En yeni",
   "games.atlas.sort.oldest": "En eski",
   "games.hub.stepPatch":
-    "Orijinal oyununu ve BPS, IPS veya UPS yamasını seç. Harbor ayrı bir kopya kaydeder.",
+    "Orijinal oyununu ve BPS, IPS veya UPS yamasını seç. Frame ayrı bir kopya kaydeder.",
   "games.patch.description":
-    "Orijinal oyununu ve BPS, IPS veya UPS yamasını seç. Harbor ayrı bir kopya kaydeder.",
+    "Orijinal oyununu ve BPS, IPS veya UPS yamasını seç. Frame ayrı bir kopya kaydeder.",
   "games.patch.choosePatch": "Yama seç (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Bu dosya desteklenen bir BPS, IPS veya UPS yaması değil.",
   "games.discovery.viewGame": "Oyunu görüntüle",

@@ -46,7 +46,7 @@ export function AvatarPackHelp({ onClose }: { onClose: () => void }) {
       icon: ShieldCheck,
       title: t("You own the content"),
       body: t(
-        "Nothing is uploaded and nothing ships with Harbor. Everything stays on this device and you are responsible for the images you add.",
+        "Nothing is uploaded and nothing ships with Frame. Everything stays on this device and you are responsible for the images you add.",
       ),
     },
   ];
@@ -94,7 +94,7 @@ export function AvatarPackHelp({ onClose }: { onClose: () => void }) {
         </div>
         <div className="border-t border-edge-soft px-6 py-3">
           <p className="text-[11.5px] leading-relaxed text-ink-subtle">
-            {t("Full pack format reference: docs/avatar-packs.md in the Harbor repository.")}
+            {t("Full pack format reference: docs/avatar-packs.md in the Frame repository.")}
           </p>
         </div>
       </div>

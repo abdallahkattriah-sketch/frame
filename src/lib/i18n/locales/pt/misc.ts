@@ -35,37 +35,36 @@ const misc: Record<string, string> = {
   "Injected into a fixed-position layer above the app (pointer-events disabled by default). Wrap in a div with pointer-events:auto to make it interactive.":
     "Injetado em uma camada de posição fixa acima do app (pointer-events desativado por padrão). Envolva em uma div com pointer-events:auto para torná-lo interativo.",
   "Custom code": "Código personalizado",
-  "Power-user knob. Inject your own CSS, JS, and HTML into Harbor. Lives in your local settings; nothing leaves your machine.":
-    "Ajuste avançado. Injete seu próprio CSS, JS e HTML no Harbor. Fica nas suas configurações locais; nada sai da sua máquina.",
-  "You're modding your own client. Custom JS has full access to your Harbor session. Only paste code you wrote or fully trust.":
-    "Você está modificando seu próprio cliente. O JS personalizado tem acesso total à sua sessão do Harbor. Cole apenas código que você mesmo escreveu ou em que confia totalmente.",
+  "Power-user knob. Inject your own CSS, JS, and HTML into Frame. Lives in your local settings; nothing leaves your machine.":
+    "Ajuste avançado. Injete seu próprio CSS, JS e HTML no Frame. Fica nas suas configurações locais; nada sai da sua máquina.",
+  "You're modding your own client. Custom JS has full access to your Frame session. Only paste code you wrote or fully trust.":
+    "Você está modificando seu próprio cliente. O JS personalizado tem acesso total à sua sessão do Frame. Cole apenas código que você mesmo escreveu ou em que confia totalmente.",
   "Close to the system tray": "Fechar para a bandeja do sistema",
-  "Closing the window tucks Harbor into the tray instead of quitting, so it reopens instantly. Right-click the tray icon for quick controls, or pick Quit to exit fully.":
-    "Fechar a janela envia o Harbor para a bandeja em vez de sair, para que reabra instantaneamente. Clique com o botão direito no ícone da bandeja para controles rápidos, ou escolha Sair para encerrar completamente.",
+  "Closing the window tucks Frame into the tray instead of quitting, so it reopens instantly. Right-click the tray icon for quick controls, or pick Quit to exit fully.":
+    "Fechar a janela envia o Frame para a bandeja em vez de sair, para que reabra instantaneamente. Clique com o botão direito no ícone da bandeja para controles rápidos, ou escolha Sair para encerrar completamente.",
   "Always on top": "Sempre no topo",
-  "Keep the Harbor window above other windows.":
-    "Manter a janela do Harbor acima de outras janelas.",
+  "Keep the Frame window above other windows.": "Manter a janela do Frame acima de outras janelas.",
   "Pause when minimized": "Pausar ao minimizar",
-  "Stop playback when you minimize Harbor or send it to the tray.":
-    "Parar a reprodução ao minimizar o Harbor ou enviá-lo para a bandeja.",
+  "Stop playback when you minimize Frame or send it to the tray.":
+    "Parar a reprodução ao minimizar o Frame ou enviá-lo para a bandeja.",
   "Pause when unfocused": "Pausar quando perder o foco",
   "Stop playback whenever another window takes focus.":
     "Parar a reprodução sempre que outra janela ganhar foco.",
   "Block ads & trackers": "Bloquear anúncios e rastreadores",
-  "Watching for ad, analytics, and tracking requests. Harbor itself sends zero telemetry.":
-    "Monitorando requisições de anúncios, análise e rastreamento. O próprio Harbor não envia nenhuma telemetria.",
+  "Watching for ad, analytics, and tracking requests. Frame itself sends zero telemetry.":
+    "Monitorando requisições de anúncios, análise e rastreamento. O próprio Frame não envia nenhuma telemetria.",
   "Export everything": "Exportar tudo",
-  "Saves your whole Harbor setup to one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.":
-    "Salva toda a sua configuração do Harbor em um único arquivo: tema, layout da tela inicial, configurações, addons, perfis, lista de interesse, layouts do player, progresso de reprodução e mais. Seu login do Stremio é deixado de fora propositalmente.",
+  "Saves your whole Frame setup to one file: theme, home layout, settings, addons, profiles, watchlist, player layouts, watch progress, and more. Your Stremio sign-in is left out on purpose.":
+    "Salva toda a sua configuração do Frame em um único arquivo: tema, layout da tela inicial, configurações, addons, perfis, lista de interesse, layouts do player, progresso de reprodução e mais. Seu login do Stremio é deixado de fora propositalmente.",
   Export: "Exportar",
   "Restore from a backup": "Restaurar de um backup",
   "Loads a backup file and replaces your current setup with it. Perfect for a new computer. Your Stremio sign-in on this device stays as is.":
     "Carrega um arquivo de backup e substitui sua configuração atual por ele. Perfeito para um computador novo. Seu login do Stremio neste dispositivo permanece como está.",
   "Restore this backup?": "Restaurar este backup?",
-  "This replaces your current Harbor setup (theme, home layout, settings, addons, profiles, and more) with the {n} saved entries in this file. Your Stremio sign-in stays as is. Harbor reloads when it finishes.":
-    "Isso substitui sua configuração atual do Harbor (tema, layout da home, configurações, addons, perfis e mais) pelas {n} entradas salvas neste arquivo. Seu login do Stremio permanece o mesmo. O Harbor recarrega ao terminar.",
+  "This replaces your current Frame setup (theme, home layout, settings, addons, profiles, and more) with the {n} saved entries in this file. Your Stremio sign-in stays as is. Frame reloads when it finishes.":
+    "Isso substitui sua configuração atual do Frame (tema, layout da home, configurações, addons, perfis e mais) pelas {n} entradas salvas neste arquivo. Seu login do Stremio permanece o mesmo. O Frame recarrega ao terminar.",
   "an unknown date": "uma data desconhecida",
-  "Saved {when} from Harbor {app}.": "Salvo {when} pelo Harbor {app}.",
+  "Saved {when} from Frame {app}.": "Salvo {when} pelo Frame {app}.",
   "Restoring...": "Restaurando...",
   "Restore and reload": "Restaurar e recarregar",
   "Hide watched titles in catalogs": "Ocultar títulos assistidos nos catálogos",
@@ -75,8 +74,8 @@ const misc: Record<string, string> = {
   "Grid view": "Visualização em grade",
   "List view": "Visualização em lista",
   "How is this build treating you?": "Como esta versão está se saindo para você?",
-  "Does Harbor {version} feel better or worse than the version you had before?":
-    "O Harbor {version} parece melhor ou pior do que a versão que você tinha antes?",
+  "Does Frame {version} feel better or worse than the version you had before?":
+    "O Frame {version} parece melhor ou pior do que a versão que você tinha antes?",
   "Much worse": "Muito pior",
   "About the same": "Mais ou menos igual",
   "Much better": "Muito melhor",
@@ -173,11 +172,11 @@ const misc: Record<string, string> = {
   "Reveal comments": "Mostrar comentários",
   "Comments are hidden": "Os comentários estão ocultos",
   "Hosted elsewhere": "Hospedado por terceiros",
-  "A third party runs these plans. Harbor is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
-    "Esses planos são de um terceiro. O Harbor não tem afiliação e não recebe nada por uma assinatura. Preços e termos atuais estão no site deles.",
+  "A third party runs these plans. Frame is not affiliated with them and receives nothing from a signup. Current pricing and terms are on their site.":
+    "Esses planos são de um terceiro. O Frame não tem afiliação e não recebe nada por uma assinatura. Preços e termos atuais estão no site deles.",
   "{name} can run on a hosted instance": "{name} pode rodar em uma instância hospedada",
-  "A third party operates this. Harbor is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
-    "Um terceiro opera isso. O Harbor não tem afiliação, não revende e não recebe nada se você assinar. Preço e o que inclui estão no site deles.",
+  "A third party operates this. Frame is not affiliated with them, does not resell it, and receives nothing if you sign up. Whatever it costs and whatever it includes is on their site.":
+    "Um terceiro opera isso. O Frame não tem afiliação, não revende e não recebe nada se você assinar. Preço e o que inclui estão no site deles.",
   "Show comments": "Mostrar comentários",
   "Hide comments": "Ocultar comentários",
   "You haven't commented yet": "Você ainda não comentou",
@@ -334,8 +333,8 @@ const misc: Record<string, string> = {
     "Escolha uma fonte para salvar offline. Você pode acompanhar o progresso na página de Downloads.",
   "Last source wasn't actually cached on your debrid yet. Pick another from the list.":
     "A última fonte ainda não estava realmente em cache no seu debrid. Escolha outra na lista.",
-  "Harbor couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.":
-    "O Harbor não conseguiu resolver um ID utilizável para este título. Adicione uma chave TMDB nas configurações da Biblioteca ou entre no Stremio para ampliar a cobertura.",
+  "Frame couldn't resolve a usable ID for this title. Add a TMDB key in Library settings or sign in to Stremio to broaden coverage.":
+    "O Frame não conseguiu resolver um ID utilizável para este título. Adicione uma chave TMDB nas configurações da Biblioteca ou entre no Stremio para ampliar a cobertura.",
   "No playable streams turned up, and no debrid is configured. Real-Debrid, TorBox, AllDebrid, Premiumize, or Debrid-Link will unlock raw torrent results. Some addons bake debrid in (Sootio, Comet/ElfHosted, MediaFusion/ElfHosted) and play without your own keys.":
     "Nenhum stream reproduzível apareceu, e nenhum debrid está configurado. Real-Debrid, TorBox, AllDebrid, Premiumize ou Debrid-Link desbloqueiam os resultados brutos de torrent. Alguns addons já vêm com debrid embutido (Sootio, Comet/ElfHosted, MediaFusion/ElfHosted) e funcionam sem suas próprias chaves.",
   "Set up a debrid": "Configurar um debrid",
@@ -349,10 +348,10 @@ const misc: Record<string, string> = {
   "No source returned a stream": "Nenhuma fonte retornou um stream",
   "Anime sources are usually richer through Torrentio's anime config or AIOStreams. Make sure one is installed in Stremio.":
     "Fontes de anime costumam ser mais ricas pela configuração de anime do Torrentio ou pelo AIOStreams. Certifique-se de que um deles esteja instalado no Stremio.",
-  "On the web, Harbor can only reach addons that allow browser access (Torrentio, TorBox, Cinemeta). For unreleased titles, no source typically exists yet.":
-    "Na web, o Harbor só consegue acessar addons que permitem acesso pelo navegador (Torrentio, TorBox, Cinemeta). Para títulos ainda não lançados, geralmente nenhuma fonte existe ainda.",
-  "Try signing in to Stremio so Harbor can use your addon collection. Older or foreign titles often need Torrentio + a debrid addon to find anything.":
-    "Tente entrar no Stremio para que o Harbor possa usar sua coleção de addons. Títulos antigos ou estrangeiros geralmente precisam do Torrentio + um addon debrid para encontrar algo.",
+  "On the web, Frame can only reach addons that allow browser access (Torrentio, TorBox, Cinemeta). For unreleased titles, no source typically exists yet.":
+    "Na web, o Frame só consegue acessar addons que permitem acesso pelo navegador (Torrentio, TorBox, Cinemeta). Para títulos ainda não lançados, geralmente nenhuma fonte existe ainda.",
+  "Try signing in to Stremio so Frame can use your addon collection. Older or foreign titles often need Torrentio + a debrid addon to find anything.":
+    "Tente entrar no Stremio para que o Frame possa usar sua coleção de addons. Títulos antigos ou estrangeiros geralmente precisam do Torrentio + um addon debrid para encontrar algo.",
   "Strict filters dropped everything": "Filtros rígidos eliminaram tudo",
   "Search wider": "Ampliar busca",
   "Wide search · still empty": "Busca ampla · ainda vazia",
@@ -418,15 +417,15 @@ const misc: Record<string, string> = {
   "Back to relay": "Voltar ao relay",
   Documentation: "Documentação",
   "Self-host": "Auto-hospedar",
-  "Run your own Harbor Relay": "Execute seu próprio Harbor Relay",
-  "Two paths: Harbor handles the deploy for you, or you do it yourself with wrangler.":
-    "Dois caminhos: o Harbor cuida do deploy para você, ou você faz sozinho com o wrangler.",
+  "Run your own Frame Relay": "Execute seu próprio Frame Relay",
+  "Two paths: Frame handles the deploy for you, or you do it yourself with wrangler.":
+    "Dois caminhos: o Frame cuida do deploy para você, ou você faz sozinho com o wrangler.",
   Requirements: "Requisitos",
   "A free Cloudflare account.": "Uma conta gratuita do Cloudflare.",
   "About two minutes for the auto-deploy path.":
     "Cerca de dois minutos pelo caminho de implantação automática.",
-  "Auto-deploy from Harbor": "Implantar automaticamente pelo Harbor",
-  "Open Settings, then Harbor Relay.": "Abra Configurações e depois Harbor Relay.",
+  "Auto-deploy from Frame": "Implantar automaticamente pelo Frame",
+  "Open Settings, then Frame Relay.": "Abra Configurações e depois Frame Relay.",
   "Pick the Cloudflare account to deploy under.":
     "Escolha a conta do Cloudflare para fazer o deploy.",
   "Manual deploy with wrangler": "Deploy manual com wrangler",
@@ -551,16 +550,16 @@ const misc: Record<string, string> = {
   "update.downloading": "Baixando atualização",
   "update.failed": "Falha na atualização",
   "update.available": "Atualização disponível",
-  "update.harborVersion": "Harbor {version}",
+  "update.harborVersion": "Frame {version}",
   "update.downloadComplete": "Download concluído",
   "update.fetching": "Buscando a versão mais recente",
   "update.errorServer": "Ocorreu um erro ao conectar ao servidor de atualização.",
   "update.later": "Depois",
   "update.download": "Baixar",
   "update.installRestart": "Instalar e reiniciar",
-  "update.restartAuto": "O Harbor será reiniciado automaticamente.",
+  "update.restartAuto": "O Frame será reiniciado automaticamente.",
   "update.tryAgain": "Tentar novamente",
-  "update.keepUsing": "Continue usando o Harbor durante o download",
+  "update.keepUsing": "Continue usando o Frame durante o download",
   "update.of": "{downloaded} de {total}",
   "Hide password": "Ocultar senha",
   "Show password": "Mostrar senha",
@@ -738,8 +737,8 @@ const misc: Record<string, string> = {
     "Selecionados por popularidade e confiabilidade. Sem posicionamentos pagos. Instale qualquer outro por URL na aba Explorar.",
   "Sign in to sync your addons across devices":
     "Entre para sincronizar seus addons entre dispositivos",
-  "Anything you install in Harbor pushes back to your Stremio account so it shows up on mobile too. Sign in via the avatar in the bottom-left of the sidebar.":
-    "Tudo que você instala no Harbor é enviado de volta para sua conta Stremio, para aparecer no celular também. Entre pelo avatar no canto inferior esquerdo da barra lateral.",
+  "Anything you install in Frame pushes back to your Stremio account so it shows up on mobile too. Sign in via the avatar in the bottom-left of the sidebar.":
+    "Tudo que você instala no Frame é enviado de volta para sua conta Stremio, para aparecer no celular também. Entre pelo avatar no canto inferior esquerdo da barra lateral.",
   Starters: "Iniciais",
   "Common picks for a fresh setup.": "Escolhas comuns para uma configuração nova.",
   Streaming: "Streaming",
@@ -755,8 +754,8 @@ const misc: Record<string, string> = {
   "OTA channels + IPTV": "Canais OTA + IPTV",
   New: "Novo",
   "You've reached the end · {n} addons": "Você chegou ao fim · {n} addons",
-  "Trending tracks star growth across your Harbor visits. Open the addons page again tomorrow and the top risers will appear here.":
-    "O Em Alta acompanha o crescimento de popularidade nas suas visitas ao Harbor. Abra a página de addons novamente amanhã e os que mais subiram aparecerão aqui.",
+  "Trending tracks star growth across your Frame visits. Open the addons page again tomorrow and the top risers will appear here.":
+    "O Em Alta acompanha o crescimento de popularidade nas suas visitas ao Frame. Abra a página de addons novamente amanhã e os que mais subiram aparecerão aqui.",
   "Head to Discover. Cinemeta and OpenSubtitles cover the basics; Torrentio + a debrid key cover almost everything else.":
     "Vá até Descobrir. Cinemeta e OpenSubtitles cobrem o básico; Torrentio + uma chave debrid cobrem quase todo o resto.",
   "No installed addon matches that.": "Nenhum addon instalado corresponde a isso.",
@@ -805,8 +804,8 @@ const misc: Record<string, string> = {
   Cancel: "Cancelar",
   "'s setup page. Pick your options, then copy the install link it gives you and paste it below to update the addon.":
     "a página de configuração deles. Escolha suas opções, depois copie o link de instalação fornecido e cole abaixo para atualizar o addon.",
-  "'s setup page in Harbor's built-in browser. Pick your options. When you click Install on their page, Harbor catches the link automatically and updates the addon.":
-    "a página de configuração deles no navegador integrado do Harbor. Escolha suas opções. Quando você clicar em Install na página deles, o Harbor captura o link automaticamente e atualiza o addon.",
+  "'s setup page in Frame's built-in browser. Pick your options. When you click Install on their page, Frame catches the link automatically and updates the addon.":
+    "a página de configuração deles no navegador integrado do Frame. Escolha suas opções. Quando você clicar em Install na página deles, o Frame captura o link automaticamente e atualiza o addon.",
   "Saving to library": "Salvando na biblioteca",
   "Syncing to Stremio": "Sincronizando com o Stremio",
   Done: "Concluído",
@@ -815,14 +814,14 @@ const misc: Record<string, string> = {
   "Top 10": "Top 10",
   "Add a TMDB key in Settings to load Arabic content.":
     "Adicione uma chave do TMDB em Configurações para carregar conteúdo em árabe.",
-  "Add a TMDB key for the full Harbor": "Adicione uma chave do TMDB para o Harbor completo",
+  "Add a TMDB key for the full Frame": "Adicione uma chave do TMDB para o Frame completo",
   "Free key unlocks Trending, In Theaters, and per-service catalogs. 60 seconds.":
     "A chave gratuita desbloqueia Em Alta, Nos Cinemas e catálogos por serviço. 60 segundos.",
   "Built for desktop resolutions": "Feito para resoluções de desktop",
-  "This instance of Harbor is made for desktop. Our standalone iOS and Android apps are coming soon, each with a bespoke, mobile-first experience built for its native platform.":
-    "Esta instância do Harbor foi feita para desktop. Nossos aplicativos independentes para iOS e Android estão chegando em breve, cada um com uma experiência sob medida, pensada primeiro para dispositivos móveis e construída para sua plataforma nativa.",
-  "For now, please open this site on a desktop, or build Harbor from source.":
-    "Por enquanto, abra este site em um computador ou compile o Harbor a partir do código-fonte.",
+  "This instance of Frame is made for desktop. Our standalone iOS and Android apps are coming soon, each with a bespoke, mobile-first experience built for its native platform.":
+    "Esta instância do Frame foi feita para desktop. Nossos aplicativos independentes para iOS e Android estão chegando em breve, cada um com uma experiência sob medida, pensada primeiro para dispositivos móveis e construída para sua plataforma nativa.",
+  "For now, please open this site on a desktop, or build Frame from source.":
+    "Por enquanto, abra este site em um computador ou compile o Frame a partir do código-fonte.",
   "Build from source": "Compilar a partir do código-fonte",
   "Wrong PIN": "PIN incorreto",
   "PINs didn't match. Start over.": "Os PINs não coincidem. Comece de novo.",
@@ -857,7 +856,7 @@ const misc: Record<string, string> = {
   "Skip setup": "Pular configuração",
   "Skip for now": "Pular por enquanto",
   "Get Started": "Começar",
-  "Enter Harbor": "Entrar no Harbor",
+  "Enter Frame": "Entrar no Frame",
   "A client for the Stremio protocol. Two minutes to set up; most of it optional. You stay in control of every key.":
     "Um cliente para o protocolo Stremio. Dois minutos para configurar; a maior parte é opcional. Você mantém o controle total de cada chave.",
   "Trending, in theaters, what's on every streamer.":
@@ -867,12 +866,12 @@ const misc: Record<string, string> = {
   "No telemetry, no servers, no bundled keys.":
     "Sem telemetria, sem servidores, sem chaves embutidas.",
   "Built for Adventure!": "Feito para a aventura!",
-  "Harbor curated": "Curadoria do Harbor",
+  "Frame curated": "Curadoria do Frame",
   "Hero, Top 10, Trending, In Theaters, per-service rails. Your addons append underneath.":
     "Destaque, Top 10, Em alta, Nos cinemas, faixas por serviço. Seus addons aparecem abaixo.",
   "Classic Stremio": "Stremio clássico",
-  "Continue Watching, then your addon catalogs in install order. No hero, no Harbor rails.":
-    "Continuar Assistindo, depois os catálogos dos seus addons na ordem de instalação. Sem destaque, sem faixas do Harbor.",
+  "Continue Watching, then your addon catalogs in install order. No hero, no Frame rails.":
+    "Continuar Assistindo, depois os catálogos dos seus addons na ordem de instalação. Sem destaque, sem faixas do Frame.",
   "Pick a home layout": "Escolha um layout para a tela inicial",
   "You can switch later in Settings under Library & metadata.":
     "Você pode mudar isso depois em Configurações, em Biblioteca e metadados.",
@@ -881,8 +880,8 @@ const misc: Record<string, string> = {
     "Cadastro gratuito de dois minutos. Libera Em Alta, Nos Cinemas Agora, Mais Bem Avaliados e catálogos por serviço de streaming (Netflix, Disney+, Hulu, …). Sua chave fica somente nesta máquina.",
   "Get a free key at themoviedb.org": "Obtenha uma chave gratuita em themoviedb.org",
   "v3 API key": "chave de API v3",
-  "Skip if you'd rather just use Cinemeta. Harbor still works, you'll just see fewer rails.":
-    "Pule se preferir usar só o Cinemeta. O Harbor continua funcionando, você só verá menos categorias.",
+  "Skip if you'd rather just use Cinemeta. Frame still works, you'll just see fewer rails.":
+    "Pule se preferir usar só o Cinemeta. O Frame continua funcionando, você só verá menos categorias.",
   "Sign-in failed": "Falha ao entrar",
   "Step 2 · Stremio": "Etapa 2 · Stremio",
   "You're in": "Você está dentro",
@@ -893,20 +892,20 @@ const misc: Record<string, string> = {
   "Don't have an account?": "Não tem uma conta?",
   "Create one": "Criar um",
   "Bring in your library": "Traga sua biblioteca",
-  "Sign in to mirror your Continue Watching, watchlist, and any addons you've already curated. Optional; Harbor works fully signed-out.":
-    "Entre para espelhar seu Continuar Assistindo, sua watchlist e quaisquer addons que você já tenha organizado. Opcional; o Harbor funciona totalmente sem login.",
+  "Sign in to mirror your Continue Watching, watchlist, and any addons you've already curated. Optional; Frame works fully signed-out.":
+    "Entre para espelhar seu Continuar Assistindo, sua watchlist e quaisquer addons que você já tenha organizado. Opcional; o Frame funciona totalmente sem login.",
   "Sign in with": "Entrar com",
   "Don't have an account? Create one →": "Não tem uma conta? Crie uma →",
   "Step 3 · Streaming": "Etapa 3 · Streaming",
   "Pick what you actually use": "Escolha o que você realmente usa",
-  "Harbor pulls the most popular titles each service has right now. Toggle off anything you don't subscribe to.":
-    "O Harbor busca os títulos mais populares que cada serviço tem no momento. Desative qualquer serviço ao qual você não seja assinante.",
+  "Frame pulls the most popular titles each service has right now. Toggle off anything you don't subscribe to.":
+    "O Frame busca os títulos mais populares que cada serviço tem no momento. Desative qualquer serviço ao qual você não seja assinante.",
   "These rails activate once a TMDB key is set. You can come back to this anytime in Settings.":
     "Essas fileiras são ativadas assim que uma chave do TMDB é definida. Você pode voltar aqui quando quiser em Configurações.",
   "Step 4 · Subtitles": "Etapa 4 · Legendas",
   "Pick your subtitle languages": "Escolha seus idiomas de legenda",
-  "When playback starts, Harbor finds and loads a subtitle in one of these languages automatically. The first available match wins, so put your main language first.":
-    "Quando a reprodução começa, o Harbor encontra e carrega automaticamente uma legenda em um desses idiomas. A primeira correspondência disponível vence, então coloque seu idioma principal primeiro.",
+  "When playback starts, Frame finds and loads a subtitle in one of these languages automatically. The first available match wins, so put your main language first.":
+    "Quando a reprodução começa, o Frame encontra e carrega automaticamente uma legenda em um desses idiomas. A primeira correspondência disponível vence, então coloque seu idioma principal primeiro.",
   "You're set.": "Tudo pronto.",
   "TMDB connected. {n} streaming {services} on. Welcome aboard.":
     "TMDB conectado. {n} {services} de streaming ativados. Bem-vindo a bordo.",
@@ -949,10 +948,10 @@ const misc: Record<string, string> = {
   Animation: "Animação",
   Music: "Música",
   "Share collection": "Compartilhar coleção",
-  "Anyone with the link can open this collection once your Harbor server is live.":
-    "Qualquer pessoa com o link pode abrir esta coleção assim que o seu servidor Harbor estiver ativo.",
-  "Paste this code into Harbor to open the collection.":
-    "Cole este código no Harbor para abrir a coleção.",
+  "Anyone with the link can open this collection once your Frame server is live.":
+    "Qualquer pessoa com o link pode abrir esta coleção assim que o seu servidor Frame estiver ativo.",
+  "Paste this code into Frame to open the collection.":
+    "Cole este código no Frame para abrir a coleção.",
   "Shared to the community": "Compartilhada com a comunidade",
   "Share to the community": "Compartilhar com a comunidade",
   "Listed collections will appear in community browse when that rolls out.":

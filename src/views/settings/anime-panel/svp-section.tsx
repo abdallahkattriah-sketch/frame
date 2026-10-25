@@ -105,7 +105,7 @@ export function SvpSection() {
     ? {
         pill: t("Check failed"),
         tone: "bad",
-        desc: t("Harbor couldn't check the SVP installation. Try again."),
+        desc: t("Frame couldn't check the SVP installation. Try again."),
       }
     : checking
       ? {
@@ -117,7 +117,7 @@ export function SvpSection() {
         ? {
             pill: t("Unavailable"),
             tone: "bad",
-            desc: t(status?.reason ?? "SVP is not supported by this Harbor package."),
+            desc: t(status?.reason ?? "SVP is not supported by this Frame package."),
           }
         : loadFailed
           ? {
@@ -131,10 +131,10 @@ export function SvpSection() {
                 tone: "ok",
                 desc: linux
                   ? t(
-                      "Installed and detected. Harbor found the native svpflow plugins and VapourSynth script library.",
+                      "Installed and detected. Frame found the native svpflow plugins and VapourSynth script library.",
                     )
                   : t(
-                      "Installed and detected. Harbor found its interpolation engine and will drive it directly.",
+                      "Installed and detected. Frame found its interpolation engine and will drive it directly.",
                     ),
               }
             : installed
@@ -142,14 +142,14 @@ export function SvpSection() {
                   pill: t("Not detected"),
                   tone: "bad",
                   desc: t(
-                    "SVP is installed but Harbor couldn't find its engine files (svpflow + VapourSynth). Try repairing the SVP install, or reopen SVP once.",
+                    "SVP is installed but Frame couldn't find its engine files (svpflow + VapourSynth). Try repairing the SVP install, or reopen SVP once.",
                   ),
                 }
               : {
                   pill: t("Not installed"),
                   tone: "neutral",
                   desc: t(
-                    "Install SVP with its VapourSynth components, then check again so Harbor can find them.",
+                    "Install SVP with its VapourSynth components, then check again so Frame can find them.",
                   ),
                 };
 
@@ -159,10 +159,10 @@ export function SvpSection() {
       subtitle={
         linux
           ? t(
-              "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.",
+              "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.",
             )
           : t(
-              "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.",
+              "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.",
             )
       }
     >
@@ -235,7 +235,7 @@ export function SvpSection() {
                   : statusFailed
                     ? t("Check the SVP installation above before enabling it.")
                     : !supported
-                      ? (status?.reason ?? t("SVP is not supported by this Harbor package."))
+                      ? (status?.reason ?? t("SVP is not supported by this Frame package."))
                       : !ready || loadFailed
                         ? t("Finish setting up the SVP engine above before enabling it.")
                         : undefined
@@ -321,7 +321,7 @@ export function SvpSection() {
       >
         <p className={`max-w-[70ch] ${ROW_DESC}`}>
           {t(
-            "SVP's files are here but its VapourSynth engine won't load ({err}). This usually means a stale VapourSynth entry or a missing Microsoft VC++ runtime. Reinstall SVP, or install the latest \"Visual C++ Redistributable (x64)\" from Microsoft, then reopen Harbor.",
+            "SVP's files are here but its VapourSynth engine won't load ({err}). This usually means a stale VapourSynth entry or a missing Microsoft VC++ runtime. Reinstall SVP, or install the latest \"Visual C++ Redistributable (x64)\" from Microsoft, then reopen Frame.",
             { err: status?.load_error ?? "load error" },
           )}
         </p>

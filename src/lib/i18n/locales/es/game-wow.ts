@@ -10,22 +10,22 @@ export default {
   "games.wow.manager.errorIdentity":
     "Las carpetas instaladas no coinciden con el paquete del autor. Vuelve a escanear y comprueba su origen.",
   "games.wow.manager.importInstalled": "Importar addons instalados",
-  "games.wow.manager.import": "Gestionar con Harbor",
+  "games.wow.manager.import": "Gestionar con Frame",
   "games.wow.manager.importScope":
     "Addons instalados con identidad de WoWInterface. Los demás siguen en la lista de instalados.",
   "games.wow.manager.importNote":
-    "Conserva tus archivos instalados. Harbor comprueba el paquete del autor y guarda la versión anterior antes de futuras actualizaciones o eliminaciones.",
+    "Conserva tus archivos instalados. Frame comprueba el paquete del autor y guarda la versión anterior antes de futuras actualizaciones o eliminaciones.",
   "games.wow.manager.keepVersion": "Conservar la versión instalada {version}",
   "games.wow.manager.keep": "Conservar",
-  "games.wow.manager.importSuccess": "Harbor ahora gestiona este addon.",
+  "games.wow.manager.importSuccess": "Frame ahora gestiona este addon.",
 
   "games.wow.manager.browse": "Buscar addons",
-  "games.wow.manager.managed": "Gestionados por Harbor",
+  "games.wow.manager.managed": "Gestionados por Frame",
   "games.wow.manager.backups": "Copias de seguridad",
   "games.wow.manager.catalogNote":
     "Explora WoWInterface. La compatibilidad con tu WoW instalado se comprueba antes de aplicar cambios.",
   "games.wow.manager.managedNote":
-    "Aquí solo puedes cambiar addons instalados mediante Harbor. Los demás siguen en la lista de instalados.",
+    "Aquí solo puedes cambiar addons instalados mediante Frame. Los demás siguen en la lista de instalados.",
   "games.wow.manager.category": "Categoría",
   "games.wow.manager.allCategories": "Todas las categorías",
   "games.wow.manager.popular": "Descargas mensuales",
@@ -39,7 +39,7 @@ export default {
     "Las categorías no están disponibles. Puedes buscar en todos los addons.",
   "games.wow.manager.partial":
     "Faltan algunos datos del proveedor. Los resultados pueden estar incompletos.",
-  "games.wow.manager.emptyManaged": "Aún no hay addons gestionados por Harbor.",
+  "games.wow.manager.emptyManaged": "Aún no hay addons gestionados por Frame.",
   "games.wow.manager.emptyBackups": "Aún no se han guardado versiones anteriores.",
   "games.wow.manager.reviewNote":
     "Revisa primero el paquete y los cambios de carpetas. Cierra WoW antes de revisar o aplicar cambios.",
@@ -61,14 +61,14 @@ export default {
   "games.wow.manager.errorCompatibility":
     "Este paquete no coincide con tu edición o versión instalada de WoW.",
   "games.wow.manager.errorUnmanaged":
-    "Estas carpetas se instalaron fuera de Harbor y no se pueden sobrescribir aquí.",
+    "Estas carpetas se instalaron fuera de Frame y no se pueden sobrescribir aquí.",
   "games.wow.manager.errorChanged":
     "Los archivos cambiaron o requieren atención. Vuelve a escanear.",
   "games.wow.manager.errorDependency":
     "Faltan dependencias necesarias u otro addon necesita estos archivos.",
   "games.wow.manager.errorExpired": "La revisión ha caducado. Revisa los cambios de nuevo.",
   "games.wow.manager.errorDesktop":
-    "La gestión de addons requiere la aplicación de escritorio actual de Harbor para Windows.",
+    "La gestión de addons requiere la aplicación de escritorio actual de Frame para Windows.",
 
   "games.wow.addons.screenshots": "Capturas del autor",
   "games.wow.addons.screenshotsUnavailable": "No se pudieron cargar las capturas del autor.",

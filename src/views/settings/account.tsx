@@ -54,7 +54,7 @@ function StremioTab() {
       <Section
         title={t("Synced addons")}
         subtitle={t(
-          "Harbor pulls your addon collection from Stremio. Manage individual addons in Streaming sources.",
+          "Frame pulls your addon collection from Stremio. Manage individual addons in Streaming sources.",
         )}
       >
         <SyncedAddonsCard />

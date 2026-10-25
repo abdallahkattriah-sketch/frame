@@ -2,16 +2,16 @@ const controllers: Record<string, string> = {
   Controllers: "Контроллеры",
   "Controllers / gamepad": "Контроллеры / геймпад",
   "Controller support": "Поддержка контроллеров",
-  "Use a game controller to browse Harbor and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.":
-    "Управляйте Harbor и воспроизведением с игрового контроллера. Работает с Xbox, PlayStation и большинством USB- и Bluetooth-геймпадов.",
-  "Use a game controller to browse Harbor and control playback. Tune the sticks and see the button map.":
-    "Управляйте Harbor и воспроизведением с игрового контроллера. Настройте стики и посмотрите раскладку кнопок.",
+  "Use a game controller to browse Frame and control playback. Works with Xbox, PlayStation, and most USB or Bluetooth gamepads.":
+    "Управляйте Frame и воспроизведением с игрового контроллера. Работает с Xbox, PlayStation и большинством USB- и Bluetooth-геймпадов.",
+  "Use a game controller to browse Frame and control playback. Tune the sticks and see the button map.":
+    "Управляйте Frame и воспроизведением с игрового контроллера. Настройте стики и посмотрите раскладку кнопок.",
   "Enable controller": "Включить контроллер",
-  "When on, a connected controller moves focus around Harbor and drives the player. Turn it off to ignore all controllers.":
-    "Если включено, подключённый контроллер перемещает фокус в Harbor и управляет плеером. Выключите, чтобы игнорировать все контроллеры.",
+  "When on, a connected controller moves focus around Frame and drives the player. Turn it off to ignore all controllers.":
+    "Если включено, подключённый контроллер перемещает фокус в Frame и управляет плеером. Выключите, чтобы игнорировать все контроллеры.",
   "Connected controllers": "Подключённые контроллеры",
-  "Controllers Harbor can see right now. Connect one over USB or Bluetooth and it shows up here.":
-    "Контроллеры, которые Harbor видит сейчас. Подключите контроллер по USB или Bluetooth, и он появится здесь.",
+  "Controllers Frame can see right now. Connect one over USB or Bluetooth and it shows up here.":
+    "Контроллеры, которые Frame видит сейчас. Подключите контроллер по USB или Bluetooth, и он появится здесь.",
   "No controllers detected. Connect one over USB or Bluetooth.":
     "Контроллеры не обнаружены. Подключите контроллер по USB или Bluetooth.",
   Connected: "Подключено",
@@ -42,8 +42,8 @@ const controllers: Record<string, string> = {
   "Fine-tune how far you push the stick before it registers and how quickly held directions repeat.":
     "Точная настройка того, насколько нужно отклонить стик для срабатывания и как быстро повторяется удержанное направление.",
   Deadzone: "Мёртвая зона",
-  "How far you push the stick before Harbor reacts. Raise it if the focus drifts on its own.":
-    "Насколько нужно отклонить стик, чтобы Harbor среагировал. Увеличьте, если фокус смещается сам.",
+  "How far you push the stick before Frame reacts. Raise it if the focus drifts on its own.":
+    "Насколько нужно отклонить стик, чтобы Frame среагировал. Увеличьте, если фокус смещается сам.",
   "Repeat speed": "Скорость повтора",
   "How fast a held direction keeps moving the focus.":
     "Как быстро удержанное направление продолжает перемещать фокус.",

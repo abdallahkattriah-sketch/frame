@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Aktualisiere Harbor und starte es neu, um Downloads für Sims 2 und Sims 3 zu durchsuchen.",
+    "Aktualisiere Frame und starte es neu, um Downloads für Sims 2 und Sims 3 zu durchsuchen.",
   "games.sims.creatorNotesTitle": "Links des Erstellers · {count}",
   "games.sims.creatorNotesNote":
     "Links aus den Hinweisen des Erstellers. Öffne eine Seite, um ihre Anleitung zu lesen.",
@@ -108,7 +108,7 @@ export default {
   "games.sims.mtsCatMisc": "Verschiedenes",
   "games.sims.mtsCatTools": "Werkzeuge",
   "games.sims.mtsIntro":
-    "Importiere Mods oder benutzerdefinierte Inhalte in Harbor. Füge die Sims-4-Downloadseite ein und wähle die gewünschte Datei.",
+    "Importiere Mods oder benutzerdefinierte Inhalte in Frame. Füge die Sims-4-Downloadseite ein und wähle die gewünschte Datei.",
   "games.sims.mtsPage": "Downloadseite",
   "games.sims.mtsLoad": "Dateien suchen",
   "games.sims.mtsBrowse": "Mod The Sims durchsuchen",
@@ -181,9 +181,9 @@ export default {
   "games.sims.creatorExisting": "Vorhandene Installation",
   "games.sims.creatorManage": "Vorhandene Dateien prüfen",
   "games.sims.creatorAdoptNote":
-    "Übernimm diese Dateien zuerst in Harbor. Wähle danach eine Version des Erstellers zum Aktualisieren.",
+    "Übernimm diese Dateien zuerst in Frame. Wähle danach eine Version des Erstellers zum Aktualisieren.",
   "games.sims.creatorLinkNote":
-    "Prüfe ein Update für diese Gruppe. Harbor bewahrt die bisherigen Dateien und deine Einstellungen auf.",
+    "Prüfe ein Update für diese Gruppe. Frame bewahrt die bisherigen Dateien und deine Einstellungen auf.",
   "games.sims.creatorTarget":
     "Diese Gruppe enthält Moddateien, die nicht zur gewählten Version gehören. Verschiebe sie vor dem MCCC-Update in eine eigene Gruppe.",
   "games.sims.creatorExistingError":
@@ -216,7 +216,7 @@ export default {
   "games.sims.trayRemove": "Aus Bibliothek entfernen",
   "games.sims.trayRestore": "In Bibliothek wiederherstellen",
   "games.sims.trayNote":
-    "Importiere heruntergeladene Grundstücke, Räume oder Haushalte. Harbor hält ihre Dateien im Tray-Ordner zusammen.",
+    "Importiere heruntergeladene Grundstücke, Räume oder Haushalte. Frame hält ihre Dateien im Tray-Ordner zusammen.",
   "games.sims.trayReviewNote":
     "Tray-Dateien kommen direkt in deinen Bibliotheksordner. Enthaltene benutzerdefinierte Inhalte werden als eigene Mod-Gruppe verwaltet.",
   "games.sims.trayRemoveNote":
@@ -280,12 +280,12 @@ export default {
 
   "games.sims.adopt": "Vorhandene Mods verwalten",
   "games.sims.adoptNote":
-    "Schließe Die Sims 4. Wähle einen Mod oder zusammengehörige CC samt Einstellungen aus demselben Ordner. Die aufgeführten Dateien werden in eine Harbor-Gruppe verschoben; andere Dateien bleiben unverändert.",
+    "Schließe Die Sims 4. Wähle einen Mod oder zusammengehörige CC samt Einstellungen aus demselben Ordner. Die aufgeführten Dateien werden in eine Frame-Gruppe verschoben; andere Dateien bleiben unverändert.",
   "games.sims.adoptFrom": "Aktueller Ordner",
   "games.sims.adoptTo": "Verschieben nach",
   "games.sims.adoptFolder": "Wähle zusammengehörige Dateien aus einem Ordner innerhalb von Mods.",
   "games.sims.adoptManaged":
-    "Wähle Dateien außerhalb der von Harbor verwalteten Ordner. Lass Resource.cfg an seinem Platz.",
+    "Wähle Dateien außerhalb der von Frame verwalteten Ordner. Lass Resource.cfg an seinem Platz.",
   "games.sims.adoptScan":
     "Einige Mod-Ordner konnten nicht gelesen werden. Behebe das, bevor du diese Dateien verwaltest.",
 
@@ -318,7 +318,7 @@ export default {
     "Einige Mod-Ordner konnten nicht geprüft werden. Behebe dies vor dem Wechsel.",
   "games.sims.savesLabelHint": "Vor neuen Mods",
   "games.sims.savesRunning":
-    "Schließe Die Sims 4, bevor du Spielstände sicherst oder wiederherstellst. Harbor muss bestätigen können, dass das Spiel beendet ist.",
+    "Schließe Die Sims 4, bevor du Spielstände sicherst oder wiederherstellst. Frame muss bestätigen können, dass das Spiel beendet ist.",
   "games.sims.savesIntro":
     "Sichere deine Spielstände, bevor du Mods änderst. Schließe zuerst Die Sims 4. Mods und Haushalte im Tray-Ordner sind nicht enthalten.",
   "games.sims.title": "Deine Mods & benutzerdefinierten Inhalte",
@@ -342,7 +342,7 @@ export default {
   "games.sims.recovery":
     "Eine Änderung wurde unterbrochen. Stelle zuerst die vorherige Konfiguration wieder her.",
   "games.sims.success": "Deine Mod-Dateien wurden aktualisiert.",
-  "games.sims.applying": "Änderungen werden angewendet. Lass Harbor geöffnet…",
+  "games.sims.applying": "Änderungen werden angewendet. Lass Frame geöffnet…",
   "games.sims.checking": "Dateien werden geprüft…",
   "games.sims.skipped": "Übersprungene Dokumente und Bilder · {count}",
   "games.sims.preview": "Im Paket enthaltene Vorschau",
@@ -382,8 +382,7 @@ export default {
   "games.sims.emptyBackups":
     "Nach einer Aktualisierung oder Entfernung erscheinen hier vorherige Versionen.",
   "games.sims.emptyFiles": "Keine unterstützten Dateien in Mods gefunden.",
-  "games.sims.desktop":
-    "Die Mod-Verwaltung benötigt die aktuelle Harbor-Desktop-App unter Windows.",
+  "games.sims.desktop": "Die Mod-Verwaltung benötigt die aktuelle Frame-Desktop-App unter Windows.",
   "games.sims.folderError":
     "Wähle den echten Sims-4-Benutzerdatenordner ohne Verknüpfung. Mods, saves, GameVersion.txt und Options.ini müssen vorhanden sein.",
   "games.sims.readError":
@@ -393,7 +392,7 @@ export default {
   "games.sims.layoutError":
     "Das Archiv enthält getrennte Mod-Ordner oder doppelte Dateinamen. Importiere jeden Mod einzeln, damit seine Dateien zusammenbleiben.",
   "games.sims.running":
-    "Schließe Die Sims 4, bevor du Mod-Dateien änderst. Harbor muss bestätigen können, dass das Spiel beendet ist.",
+    "Schließe Die Sims 4, bevor du Mod-Dateien änderst. Frame muss bestätigen können, dass das Spiel beendet ist.",
   "games.sims.duplicate":
     "Eine Mod-Datei mit demselben Namen liegt bereits in einem anderen Mods-Ordner. Löse den Namenskonflikt vor dem Importieren oder Aktivieren.",
   "games.sims.recordError":

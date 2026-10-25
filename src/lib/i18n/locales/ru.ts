@@ -182,7 +182,7 @@ const ru: Record<string, string> = {
   "games.download.storage.estimate":
     "Некоторые существующие файлы ещё не проверены. Необходимый объём места может быть меньше.",
   "games.download.storage.unknown": "Размер неизвестен: {count} файлов",
-  "games.download.storage.other": "Зарезервировано другими операциями Harbor: {size}",
+  "games.download.storage.other": "Зарезервировано другими операциями Frame: {size}",
   "games.download.storage.shortfall": "Нужно ещё {size} места",
   "games.download.state.retrying": "Повторное подключение",
   "games.download.queueOrder": "Место в очереди: {position}",
@@ -395,7 +395,7 @@ const ru: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "Раздавать торрент",
   "games.torrent.share.note":
-    "Раздавайте проверенные файлы другим участникам. Остановка при достижении любого лимита или закрытии Harbor. Остановите раздачу перед изменением файлов.",
+    "Раздавайте проверенные файлы другим участникам. Остановка при достижении любого лимита или закрытии Frame. Остановите раздачу перед изменением файлов.",
   "games.torrent.share.upload": "Лимит отдачи (КБ/с)",
   "games.torrent.share.ratio": "Коэффициент отдачи (1–10)",
   "games.torrent.share.minutes": "Лимит времени (минуты)",

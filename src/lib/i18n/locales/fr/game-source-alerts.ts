@@ -4,13 +4,13 @@ export default {
   "games.sourceAlerts.on": "Alerte activée",
   "games.sourceAlerts.found": "Version trouvée",
   "games.sourceAlerts.note":
-    "Vérifie vos sources activées toutes les 30 minutes lorsque Harbor est ouvert. Les alertes apparaissent dans Notifications.",
+    "Vérifie vos sources activées toutes les 30 minutes lorsque Frame est ouvert. Les alertes apparaissent dans Notifications.",
   "games.sourceAlerts.noSources":
     "Ajoutez ou activez une source pour commencer. Votre alerte reste enregistrée.",
   "games.sourceAlerts.foundNote":
     "Une version correspondante a été trouvée. Vérifiez son édition et ses fichiers dans Versions disponibles.",
   "games.sourceAlerts.retryNote":
-    "Certaines sources n’ont pas pu être vérifiées. Harbor réessaiera automatiquement.",
+    "Certaines sources n’ont pas pu être vérifiées. Frame réessaiera automatiquement.",
   "games.sourceAlerts.storage":
     "Impossible d’enregistrer ou de lire cette alerte. Vérifiez le stockage local et réessayez.",
   "games.sourceAlerts.limit":

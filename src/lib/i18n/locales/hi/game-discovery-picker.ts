@@ -49,7 +49,7 @@ export default {
   "games.pick.noHistory": "अभी गतिविधि नहीं है। पसंदीदा चुनें या गेम सेटिंग में Steam जोड़ें।",
   "games.pick.manualOnly": "सिर्फ़ आपके पसंदीदा और चुने फ़िल्टर सुझाव तय करेंगे।",
   "games.pick.addedNote":
-    "“हाल में जोड़ा” का मतलब पहले आयात के बाद Harbor में पहली बार दिखना है, खरीद की तारीख नहीं।",
+    "“हाल में जोड़ा” का मतलब पहले आयात के बाद Frame में पहली बार दिखना है, खरीद की तारीख नहीं।",
   "games.pick.because": "क्योंकि आपको {name} पसंद है",
   "games.pick.matches": "आपके चुनाव से मेल",
   "games.pick.steamCatalog": "Steam कैटलॉग",

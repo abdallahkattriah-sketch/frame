@@ -1,6 +1,6 @@
 export default {
   "games.sims.catalogUpdateRequired":
-    "Atualize e reinicie o Harbor para explorar downloads do The Sims 2 e do The Sims 3.",
+    "Atualize e reinicie o Frame para explorar downloads do The Sims 2 e do The Sims 3.",
   "games.sims.creatorNotesTitle": "Links do criador · {count}",
   "games.sims.creatorNotesNote":
     "Links das notas do criador. Abra uma página para consultar as instruções.",
@@ -108,7 +108,7 @@ export default {
   "games.sims.mtsCatMisc": "Diversos",
   "games.sims.mtsCatTools": "Ferramentas",
   "games.sims.mtsIntro":
-    "Importe um mod ou conteúdo personalizado para o Harbor. Cole a página do The Sims 4 e escolha o arquivo.",
+    "Importe um mod ou conteúdo personalizado para o Frame. Cole a página do The Sims 4 e escolha o arquivo.",
   "games.sims.mtsPage": "Página de download",
   "games.sims.mtsLoad": "Encontrar arquivos",
   "games.sims.mtsBrowse": "Explorar Mod The Sims",
@@ -181,9 +181,9 @@ export default {
   "games.sims.creatorExisting": "Instalação existente",
   "games.sims.creatorManage": "Rever ficheiros existentes",
   "games.sims.creatorAdoptNote":
-    "Primeiro, passe a gerir estes ficheiros no Harbor. Depois escolha uma versão do criador para os atualizar.",
+    "Primeiro, passe a gerir estes ficheiros no Frame. Depois escolha uma versão do criador para os atualizar.",
   "games.sims.creatorLinkNote":
-    "Reveja a atualização deste grupo. O Harbor conserva os ficheiros anteriores e as suas definições.",
+    "Reveja a atualização deste grupo. O Frame conserva os ficheiros anteriores e as suas definições.",
   "games.sims.creatorTarget":
     "Este grupo contém ficheiros de mods que não fazem parte da versão escolhida. Separe-os noutro grupo antes de atualizar o MCCC.",
   "games.sims.creatorExistingError":
@@ -215,7 +215,7 @@ export default {
   "games.sims.trayRemove": "Remover da biblioteca",
   "games.sims.trayRestore": "Restaurar na biblioteca",
   "games.sims.trayNote":
-    "Importe lotes, cômodos ou famílias baixados. O Harbor mantém os arquivos relacionados juntos em Tray.",
+    "Importe lotes, cômodos ou famílias baixados. O Frame mantém os arquivos relacionados juntos em Tray.",
   "games.sims.trayReviewNote":
     "Os arquivos Tray vão diretamente para a pasta da biblioteca. O conteúdo personalizado incluído vira um grupo de mods separado.",
   "games.sims.trayRemoveNote":
@@ -279,12 +279,12 @@ export default {
 
   "games.sims.adopt": "Gerir mods existentes",
   "games.sims.adoptNote":
-    "Fecha Os Sims 4. Escolhe um mod ou conteúdo personalizado relacionado, incluindo as definições, da mesma pasta. Os ficheiros indicados serão movidos para um grupo Harbor; os restantes ficam onde estão.",
+    "Fecha Os Sims 4. Escolhe um mod ou conteúdo personalizado relacionado, incluindo as definições, da mesma pasta. Os ficheiros indicados serão movidos para um grupo Frame; os restantes ficam onde estão.",
   "games.sims.adoptFrom": "Pasta atual",
   "games.sims.adoptTo": "Mover para",
   "games.sims.adoptFolder": "Escolhe ficheiros relacionados de uma única pasta dentro de Mods.",
   "games.sims.adoptManaged":
-    "Escolhe ficheiros fora das pastas geridas pelo Harbor e deixa Resource.cfg onde está.",
+    "Escolhe ficheiros fora das pastas geridas pelo Frame e deixa Resource.cfg onde está.",
   "games.sims.adoptScan":
     "Não foi possível analisar algumas pastas de mods. Resolve isso antes de gerir estes ficheiros.",
 
@@ -316,7 +316,7 @@ export default {
     "Não foi possível verificar algumas pastas de mods. Resolva isso antes de trocar conjuntos.",
   "games.sims.savesLabelHint": "Antes de novos mods",
   "games.sims.savesRunning":
-    "Feche The Sims 4 antes de fazer ou restaurar backups. O Harbor precisa confirmar que o jogo foi fechado.",
+    "Feche The Sims 4 antes de fazer ou restaurar backups. O Frame precisa confirmar que o jogo foi fechado.",
   "games.sims.savesIntro":
     "Faça uma cópia dos seus jogos salvos antes de alterar mods. Feche The Sims 4 primeiro. Mods e famílias na pasta Tray não estão incluídos.",
   "games.sims.title": "Seus mods e conteúdo personalizado",
@@ -339,7 +339,7 @@ export default {
   "games.sims.recovery":
     "Uma alteração foi interrompida. Recupere a configuração anterior antes de continuar.",
   "games.sims.success": "Seus arquivos de mods foram atualizados.",
-  "games.sims.applying": "Aplicando alterações. Mantenha o Harbor aberto…",
+  "games.sims.applying": "Aplicando alterações. Mantenha o Frame aberto…",
   "games.sims.checking": "Verificando arquivos…",
   "games.sims.skipped": "Documentos e imagens ignorados · {count}",
   "games.sims.preview": "Prévia incluída no pacote",
@@ -378,7 +378,7 @@ export default {
   "games.sims.emptyManaged": "Importe um mod baixado para gerenciá-lo aqui.",
   "games.sims.emptyBackups": "Versões anteriores aparecerão aqui após uma atualização ou remoção.",
   "games.sims.emptyFiles": "Nenhum arquivo compatível encontrado em Mods.",
-  "games.sims.desktop": "O gerenciamento de mods exige a versão atual do Harbor para Windows.",
+  "games.sims.desktop": "O gerenciamento de mods exige a versão atual do Frame para Windows.",
   "games.sims.folderError":
     "Escolha a pasta real de dados do The Sims 4, sem atalhos ou vínculos. Mods, saves, GameVersion.txt e Options.ini precisam estar presentes.",
   "games.sims.readError":
@@ -388,7 +388,7 @@ export default {
   "games.sims.layoutError":
     "O arquivo contém pastas de mods separadas ou nomes duplicados. Importe cada mod separadamente para manter seus arquivos juntos.",
   "games.sims.running":
-    "Feche o The Sims 4 antes de alterar mods. O Harbor precisa confirmar que o jogo foi encerrado.",
+    "Feche o The Sims 4 antes de alterar mods. O Frame precisa confirmar que o jogo foi encerrado.",
   "games.sims.duplicate":
     "Já existe um mod com o mesmo nome de arquivo em outra pasta Mods. Resolva a duplicação antes de importar ou ativar este grupo.",
   "games.sims.recordError":

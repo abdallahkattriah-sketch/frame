@@ -25,7 +25,7 @@ export default {
   "games.patch.fingerprints": "Empreintes des fichiers · SHA-256",
   "games.patch.localNote": "Sur votre appareil · BPS · IPS · UPS · Jusqu’à 256 Mo",
   "games.patch.desktop":
-    "Appliquez les patchs dans l’application de bureau Harbor sous Windows, macOS ou Linux. Vos fichiers restent sur votre appareil et le jeu d’origine est préservé.",
+    "Appliquez les patchs dans l’application de bureau Frame sous Windows, macOS ou Linux. Vos fichiers restent sur votre appareil et le jeu d’origine est préservé.",
   "games.patch.done": "Prêt pour une nouvelle aventure",
   "games.patch.preserved":
     "Votre copie modifiée est enregistrée. Le jeu d’origine et le patch sont inchangés.",
@@ -39,7 +39,7 @@ export default {
   "games.patch.patch_inputs_changed":
     "Un fichier sélectionné a changé depuis la vérification. Vérifiez à nouveau le patch avant d’enregistrer.",
   "games.patch.patch_output_exists":
-    "Un fichier existe déjà à cet emplacement. Choisissez un autre nom ; Harbor ne remplace pas les fichiers existants.",
+    "Un fichier existe déjà à cet emplacement. Choisissez un autre nom ; Frame ne remplace pas les fichiers existants.",
   "games.patch.patch_read_failed":
     "Impossible de lire un fichier sélectionné. Vérifiez qu’il est toujours disponible et sélectionnez-le à nouveau.",
   "games.patch.patch_write_failed":
@@ -78,9 +78,9 @@ export default {
   "games.atlas.sort.newest": "Plus récents",
   "games.atlas.sort.oldest": "Plus anciens",
   "games.hub.stepPatch":
-    "Choisissez votre jeu original et un patch BPS, IPS ou UPS. Harbor enregistre une copie séparée.",
+    "Choisissez votre jeu original et un patch BPS, IPS ou UPS. Frame enregistre une copie séparée.",
   "games.patch.description":
-    "Choisissez votre jeu original et un patch BPS, IPS ou UPS. Harbor enregistre une copie séparée.",
+    "Choisissez votre jeu original et un patch BPS, IPS ou UPS. Frame enregistre une copie séparée.",
   "games.patch.choosePatch": "Choisir un patch (BPS, IPS, UPS)",
   "games.patch.patch_unsupported": "Ce fichier n’est pas un patch BPS, IPS ou UPS compatible.",
   "games.discovery.viewGame": "Voir le jeu",

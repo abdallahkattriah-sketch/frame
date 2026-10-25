@@ -427,8 +427,8 @@ const player: Record<string, string> = {
   default: "افتراضي",
   "loading more…": "جارٍ تحميل المزيد…",
   min: "دقيقة",
-  "mpv is required for recording. Install mpv and restart Harbor.":
-    "محرك mpv مطلوب للتسجيل. ثبّت mpv وأعد تشغيل Harbor.",
+  "mpv is required for recording. Install mpv and restart Frame.":
+    "محرك mpv مطلوب للتسجيل. ثبّت mpv وأعد تشغيل Frame.",
   "to close": "للإغلاق",
   "unsaved changes": "تغييرات غير محفوظة",
   "{count} dl": "{count} تنزيل",
@@ -516,8 +516,8 @@ const player: Record<string, string> = {
   "Reloading the stream…": "جارٍ إعادة تحميل البث…",
   "Couldn't reload the stream. Try picking another source.":
     "تعذّر إعادة تحميل البث. جرّب اختيار مصدر آخر.",
-  "Harbor's streaming server only runs in the desktop app.":
-    "لا يعمل خادم البث الخاص بـ Harbor إلا في تطبيق الكمبيوتر.",
+  "Frame's streaming server only runs in the desktop app.":
+    "لا يعمل خادم البث الخاص بـ Frame إلا في تطبيق الكمبيوتر.",
   "Restarting the streaming server…": "جارٍ إعادة تشغيل خادم البث…",
   "Couldn't restart the streaming server.": "تعذّر إعادة تشغيل خادم البث.",
   "The streaming server didn't come back up.": "لم يعد خادم البث إلى العمل.",

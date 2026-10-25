@@ -175,7 +175,7 @@ const fr: Record<string, string> = {
   "games.download.storage.estimate":
     "Certains fichiers existants n’ont pas encore été vérifiés. L’espace nécessaire peut être inférieur.",
   "games.download.storage.unknown": "Taille inconnue : {count} fichiers",
-  "games.download.storage.other": "{size} réservés par d'autres opérations Harbor",
+  "games.download.storage.other": "{size} réservés par d'autres opérations Frame",
   "games.download.storage.shortfall": "{size} d’espace supplémentaire nécessaire",
   "games.download.state.retrying": "Nouvelle tentative de connexion",
   "games.download.queueOrder": "Position {position} dans la file",
@@ -382,7 +382,7 @@ const fr: Record<string, string> = {
   ...gameLaunchHealth,
   "games.torrent.share.title": "Partager le torrent",
   "games.torrent.share.note":
-    "Partagez les fichiers vérifiés avec les pairs. Arrêt dès qu’une limite est atteinte ou que Harbor se ferme. Arrêtez le partage avant de modifier les fichiers.",
+    "Partagez les fichiers vérifiés avec les pairs. Arrêt dès qu’une limite est atteinte ou que Frame se ferme. Arrêtez le partage avant de modifier les fichiers.",
   "games.torrent.share.upload": "Limite d’envoi (Ko/s)",
   "games.torrent.share.ratio": "Ratio de partage (1–10)",
   "games.torrent.share.minutes": "Durée limite (minutes)",

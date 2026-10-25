@@ -38,11 +38,11 @@ export default {
   "games.achievementManager.error.uncertain":
     "Steam sonucu henüz onaylamadı. Yeni değişikliklerden önce yenileyerek kontrol et.",
   "games.achievementManager.error.platform":
-    "Başarım yönetimi şu anda Windows x64 için Harbor’da kullanılabilir.",
+    "Başarım yönetimi şu anda Windows x64 için Frame’da kullanılabilir.",
   "games.achievementManager.error.invalid": "Tek seferde en fazla 2.000 değişiklik seç.",
   "games.achievementManager.error.stale":
     "Bu başarımlar Steam’de değişti. Düzenlemeden önce yenile.",
-  "games.achievementManager.error.protected": "Bu başarımı oyun yönetiyor. Harbor düzenleyemez.",
+  "games.achievementManager.error.protected": "Bu başarımı oyun yönetiyor. Frame düzenleyemez.",
   "games.achievementManager.error.expired":
     "Bu incelemenin süresi doldu. Değişiklikleri uygulamadan önce yenile.",
   "games.achievementManager.error.busy": "Başka bir Steam başarım isteği devam ediyor.",
@@ -59,12 +59,12 @@ export default {
   "games.achievementManager.consentBody":
     "Oturum açtığın Steam hesabındaki başarımları aç veya yeniden kilitle. Değişiklikleri uygulayana kadar seçimlerin taslak olarak kalır.",
   "games.achievementManager.consentRules":
-    "Harbor, oyunlara kod enjekte etmeden Steam’in başarım arayüzünü kullanır. Her oyunun kuralları ve ödül koşulları geçerlidir.",
+    "Frame, oyunlara kod enjekte etmeden Steam’in başarım arayüzünü kullanır. Her oyunun kuralları ve ödül koşulları geçerlidir.",
   "games.achievementManager.consentSam": "SAM’in başarım iş akışından esinlenildi",
-  "games.achievementManager.consentOnce": "Bu Harbor profili için bir kez gösterilir.",
+  "games.achievementManager.consentOnce": "Bu Frame profili için bir kez gösterilir.",
   "games.achievementManager.consentAccept": "Anladım",
   "games.achievementManager.desktopOnly":
-    "Başarımları değiştirmek için Windows’ta Harbor’ı Steam açıkken kullan.",
+    "Başarımları değiştirmek için Windows’ta Frame’ı Steam açıkken kullan.",
   "games.achievementManager.all": "Tümü",
   "games.achievementManager.filter": "Başarım filtresi",
   "games.achievementManager.rewards": "Eşya ödülleri",
@@ -122,7 +122,7 @@ export default {
   "games.achievementManager.pickTitle": "Oyun seç",
   "games.achievementManager.pickSearch": "Oyunlarınızda ara",
   "games.achievementManager.pickNote":
-    "Steam, oyunun başarımlarını bu bilgisayarda önbelleğe aldıktan sonra Harbor bunları düzenleyebilir.",
+    "Steam, oyunun başarımlarını bu bilgisayarda önbelleğe aldıktan sonra Frame bunları düzenleyebilir.",
   "games.achievementManager.pickInstalled": "Yüklü",
   "games.achievementManager.pickEmpty": "Aramanızla eşleşen oyun yok.",
   "games.achievementManager.pickUnavailable":

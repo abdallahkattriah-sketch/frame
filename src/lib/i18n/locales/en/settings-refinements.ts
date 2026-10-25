@@ -18,8 +18,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "Activity from adult addons is never shown on Discord.",
   "Ad skipping": "Ad skipping",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "Add a timer beside Downloads. Pause playback after a set time or number of episodes.",
   "Add an API key to use this source.": "Add an API key to use this source.",
@@ -77,14 +77,14 @@ const settingsRefinements: Record<string, string> = {
     "Balance picture quality and performance. Changes apply to the next video you play.",
   "Between episodes": "Between episodes",
   "Between episodes on the TV": "Between episodes on the TV",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.",
   "Bringing your Stremio library?": "Bringing your Stremio library?",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.",
   "Browse pages": "Browse pages",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.",
   "Browser details": "Browser details",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.",
@@ -106,8 +106,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "Check whether this device can reach the saved server address.",
   "Checking SVP installation…": "Checking SVP installation…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "Choose a look or adjust each setting. Reset picture restores the original values.",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -129,14 +129,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "Choose the services you want to see while browsing on your TV.",
   "Choose the streams you prefer.": "Choose the streams you prefer.",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "Choose what happens when you close, minimize, or switch away from Harbor.",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "Choose when the next episode starts and when Harbor checks that you are still watching.",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "Choose what happens when you close, minimize, or switch away from Frame.",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "Choose when the next episode starts and when Frame checks that you are still watching.",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "Choose where videos and eBooks are saved, and how their folders are organized.",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -173,8 +173,8 @@ const settingsRefinements: Record<string, string> = {
     "Connect your MyAnimeList account to sync your watch progress and browse your list.",
   "Connect {service}": "Connect {service}",
   "Contact & credit": "Contact & credit",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "Control what appears on your Discord profile while you use Harbor.",
+  "Control what appears on your Discord profile while you use Frame.":
+    "Control what appears on your Discord profile while you use Frame.",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -199,27 +199,27 @@ const settingsRefinements: Record<string, string> = {
     "Could not save {name}. Try again and choose a writable folder.",
   "Couldn't copy the address. Select it above and copy it manually.":
     "Couldn't copy the address. Select it above and copy it manually.",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "Couldn't reach Harbor. Check your connection and try again.",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "Couldn't reach Frame. Check your connection and try again.",
   "Covers everything. The taskbar is hidden.": "Covers everything. The taskbar is hidden.",
   "Create a stream filter": "Create a stream filter",
-  "Create a theme or share one you've made with the Harbor community.":
-    "Create a theme or share one you've made with the Harbor community.",
+  "Create a theme or share one you've made with the Frame community.":
+    "Create a theme or share one you've made with the Frame community.",
   "Create my account": "Create my account",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.",
-  "Create your Harbor account": "Create your Harbor account",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.",
+  "Create your Frame account": "Create your Frame account",
   "Create your first filter with the stream quality you prefer.":
     "Create your first filter with the stream quality you prefer.",
   "Custom color": "Custom color",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.",
   "Default Downloads folder": "Default Downloads folder",
   "Delete this rule?": "Delete this rule?",
   "Describe the problem in one sentence.": "Describe the problem in one sentence.",
   "Describe the result you were after.": "Describe the result you were after.",
-  "Describe what Harbor did instead, including any message on screen.":
-    "Describe what Harbor did instead, including any message on screen.",
+  "Describe what Frame did instead, including any message on screen.":
+    "Describe what Frame did instead, including any message on screen.",
   "Device compatibility": "Device compatibility",
   "Discovery languages": "Discovery languages",
   "Down the river": "Down the river",
@@ -242,8 +242,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "Enter all 4 digits to save this PIN.",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "Every icon and animation drawn for Frame, who drew them, and how to take one with you.",
   "Example scores with your settings.": "Example scores with your settings.",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.",
@@ -263,8 +263,8 @@ const settingsRefinements: Record<string, string> = {
     "Finish setting up the SVP engine above before enabling it.",
   "Forget remote streaming server": "Forget remote streaming server",
   "Forgot password?": "Forgot password?",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.",
   "Get SVP": "Get SVP",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.",
@@ -278,28 +278,28 @@ const settingsRefinements: Record<string, string> = {
   "Handles cannot start or end with a hyphen.": "Handles cannot start or end with a hyphen.",
   "Handles need at least 3 characters.": "Handles need at least 3 characters.",
   "Handles need at least one letter.": "Handles need at least one letter.",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "Harbor Discover showing Steamboat Willie and The General",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "Harbor could not apply the P2P setting. Reopen Harbor to try again.",
-  "Harbor couldn't check the SVP installation. Try again.":
-    "Harbor couldn't check the SVP installation. Try again.",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "Harbor looks for subtitles in this order. Put your preferred language first.",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.",
-  "Harbor profile showing watch statistics": "Harbor profile showing watch statistics",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harbor uses its own community server. You can point it at a server you run yourself.",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "Harbor's licence, the projects it is built on, and the people and services that make it possible.",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.",
-  "Harbor, with a few classics.": "Harbor, with a few classics.",
+  "Frame Discover showing Steamboat Willie and The General":
+    "Frame Discover showing Steamboat Willie and The General",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "Frame could not apply the P2P setting. Reopen Frame to try again.",
+  "Frame couldn't check the SVP installation. Try again.":
+    "Frame couldn't check the SVP installation. Try again.",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "Frame looks for subtitles in this order. Put your preferred language first.",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "Frame on your other devices: the web app, the phone remote, and the manga reader remote.",
+  "Frame profile showing watch statistics": "Frame profile showing watch statistics",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frame uses its own community server. You can point it at a server you run yourself.",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "Frame's licence, the projects it is built on, and the people and services that make it possible.",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.",
+  "Frame, with a few classics.": "Frame, with a few classics.",
   "Help & about": "Help & about",
   "Hex color": "Hex color",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -307,9 +307,9 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "Hide {name} from navigation",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.",
-  "How long Harbor waits for each addon to return results.":
-    "How long Harbor waits for each addon to return results.",
-  "How much does this affect your use of Harbor?": "How much does this affect your use of Harbor?",
+  "How long Frame waits for each addon to return results.":
+    "How long Frame waits for each addon to return results.",
+  "How much does this affect your use of Frame?": "How much does this affect your use of Frame?",
   "How to connect Discord": "How to connect Discord",
   "How to connect Telegram": "How to connect Telegram",
   "How video plays, how it looks, and what happens between episodes.":
@@ -330,18 +330,18 @@ const settingsRefinements: Record<string, string> = {
     "Included with your report: app and device details, enabled-service counts, the player check, and recent error messages.",
   "Install SVP and check again before enabling it.":
     "Install SVP and check again before enabling it.",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "Install SVP with its VapourSynth components, then check again so Harbor can find them.",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "Install SVP with its VapourSynth components, then check again so Frame can find them.",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "Install updates, try beta builds, and keep a copy of your setup.",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.",
-  "Keep Harbor fullscreen when you close the player.":
-    "Keep Harbor fullscreen when you close the player.",
+  "Keep Frame fullscreen when you close the player.":
+    "Keep Frame fullscreen when you close the player.",
   "Keep code": "Keep code",
   "Keep my shortcuts": "Keep my shortcuts",
   "Keep rule": "Keep rule",
@@ -362,15 +362,15 @@ const settingsRefinements: Record<string, string> = {
   "Kids avatar {number}": "Kids avatar {number}",
   "Language preference order": "Language preference order",
   "Larger artwork with the song title below it.": "Larger artwork with the song title below it.",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
-    "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.",
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+    "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.",
   Licence: "Licence",
   "Licenses & attribution": "Licenses & attribution",
   "Lightens or darkens the whole picture.": "Lightens or darkens the whole picture.",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "List the steps that lead to the problem, starting from when you open Harbor.",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "List the steps that lead to the problem, starting from when you open Frame.",
   "Load failed. Retry": "Load failed. Retry",
   "Loading {name}…": "Loading {name}…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -395,8 +395,8 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "Move {language} earlier",
   "Move {name} down": "Move {name} down",
   "Move {name} up": "Move {name} up",
-  "No custom options. Harbor uses your video settings.":
-    "No custom options. Harbor uses your video settings.",
+  "No custom options. Frame uses your video settings.":
+    "No custom options. Frame uses your video settings.",
   "No default profile": "No default profile",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "No preferences selected. Edit this filter to choose the streams you prefer.",
@@ -411,7 +411,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "Notification sources",
   "On your local network": "On your local network",
   "On-screen controls": "On-screen controls",
-  "Open Harbor account": "Open Harbor account",
+  "Open Frame account": "Open Frame account",
   "Open Stremio settings": "Open Stremio settings",
   "Open on YouTube": "Open on YouTube",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -419,8 +419,8 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.",
   "Open {label} address": "Open {label} address",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
-    "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.",
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
+    "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.",
   "Optional. Used to allow more watch time. Without a PIN, switch profiles when time is up.":
@@ -490,13 +490,13 @@ const settingsRefinements: Record<string, string> = {
     "Right in the middle of the picture, hard to miss.",
   "Rule name": "Rule name",
   "SVP interpolation": "SVP interpolation",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "Same coverage, but still a window, so alt-tab stays instant.",
   "Saturation {s}%, brightness {v}%": "Saturation {s}%, brightness {v}%",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
-    "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.",
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
+    "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.",
   "Save {name} as JSON": "Save {name} as JSON",
   "Save {name} as SVG": "Save {name} as SVG",
   "Saved {name}.": "Saved {name}.",
@@ -509,8 +509,8 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "Secondary copy sits here",
   "See the resolution, HDR format and audio while you watch.":
     "See the resolution, HDR format and audio while you watch.",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
-    "See what Harbor stores on this computer and clear caches when you want the space back.",
+  "See what Frame stores on this computer and clear caches when you want the space back.":
+    "See what Frame stores on this computer and clear caches when you want the space back.",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.",
   "Services that record what you watch. Connect the ones you use and tune what each one sends.":
@@ -520,8 +520,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "Set up a destination",
   "Set up rating providers": "Set up rating providers",
   "Set up song identification": "Set up song identification",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.",
   "Sets the age level for the kids space.": "Sets the age level for the kids space.",
   "Setting up SVP…": "Setting up SVP…",
   "Share your style": "Share your style",
@@ -563,8 +563,8 @@ const settingsRefinements: Record<string, string> = {
     "Small outlined pills that slide in under the title.",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.",
   "Soften the artwork behind the stream picker.": "Soften the artwork behind the stream picker.",
@@ -572,8 +572,8 @@ const settingsRefinements: Record<string, string> = {
     "Some TV settings cannot sync in this build. Your changes remain saved on this computer.",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "Someone released that handle recently. It frees up 14 days after they dropped it.",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "Something behaves unexpectedly, but you can keep using Harbor.",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "Something behaves unexpectedly, but you can keep using Frame.",
   "Something looks wrong, but the feature still works.":
     "Something looks wrong, but the feature still works.",
   "Something went wrong. Try again.": "Something went wrong. Try again.",
@@ -609,8 +609,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "Testing remote streaming server",
   "Text is enlarged in this preview so you can judge the style.":
     "Text is enlarged in this preview so you can judge the style.",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "That Stremio account is already linked to a different Harbor account. Unlink it there first.",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "That Stremio account is already linked to a different Frame account. Unlink it there first.",
   "That Stremio sign-in did not go through. Try again.":
     "That Stremio sign-in did not go through. Try again.",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
@@ -643,12 +643,12 @@ const settingsRefinements: Record<string, string> = {
   "The handful of settings most people set once.": "The handful of settings most people set once.",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.",
   "The same slow camera pan, with motion smoothing off and on.":
     "The same slow camera pan, with motion smoothing off and on.",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.",
   "The saved {name} will be removed and its changes will stop applying.":
     "The saved {name} will be removed and its changes will stop applying.",
   "The server responded in {ms} ms.": "The server responded in {ms} ms.",
@@ -656,15 +656,15 @@ const settingsRefinements: Record<string, string> = {
     "The six largest local settings entries, including preferences and lookup data.",
   "{count} entries": "{count} entries",
   "The volume pop-up is hidden.": "The volume pop-up is hidden.",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
-    "Theme, the player's own layout, artwork, and what Harbor shows on a card.",
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
+    "Theme, the player's own layout, artwork, and what Frame shows on a card.",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "This account has been suspended. Reach out to support if you think that's wrong.",
   "This backup contained nothing restorable.": "This backup contained nothing restorable.",
   "This backup has no data in it.": "This backup has no data in it.",
   "This is how your subtitles": "This is how your subtitles",
   "This is how your subtitles will look.": "This is how your subtitles will look.",
-  "This is not a Harbor backup file.": "This is not a Harbor backup file.",
+  "This is not a Frame backup file.": "This is not a Frame backup file.",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -690,8 +690,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "Untranslated text stays in English. Choose a language, then select Apply and reload.",
   "Unwatched episodes": "Unwatched episodes",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "Upload a picture of your own, or pick one from the Harbor catalog.",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "Upload a picture of your own, or pick one from the Frame catalog.",
   "Use letters, numbers, and single hyphens only.":
     "Use letters, numbers, and single hyphens only.",
   "Use no saved stream filter": "Use no saved stream filter",
@@ -700,8 +700,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "Use {name}",
   "Used only if we need one more detail to reproduce the bug.":
     "Used only if we need one more detail to reproduce the bug.",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "Uses SVP's motion engine through VapourSynth. Restart playback to apply.",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -712,17 +712,17 @@ const settingsRefinements: Record<string, string> = {
     "Uses the older GPU renderer for graphics cards that have trouble with the modern renderer.",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "Uses the processor to decode video. Try this if hardware decoding causes picture problems.",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.",
   "Video quality": "Video quality",
   "View generated mpv options": "View generated mpv options",
   "Volume pop-up": "Volume pop-up",
   "We tag this account on the issue so you see the fix land.":
     "We tag this account on the issue so you see the fix land.",
-  "What language Harbor speaks, and how subtitles behave.":
-    "What language Harbor speaks, and how subtitles behave.",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "What language Harbor speaks, and which audio tracks it reaches for first.",
+  "What language Frame speaks, and how subtitles behave.":
+    "What language Frame speaks, and how subtitles behave.",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "What language Frame speaks, and which audio tracks it reaches for first.",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "Where streams come from, how they are filtered, and the metadata behind them.",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -735,7 +735,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "Window behavior",
   "You can also turn off Rule is active to pause it without deleting it.":
     "You can also turn off Rule is active to pause it without deleting it.",
-  "You cannot use Harbor.": "You cannot use Harbor.",
+  "You cannot use Frame.": "You cannot use Frame.",
   "You changed your handle recently. You can change it again after the cooldown.":
     "You changed your handle recently. You can change it again after the cooldown.",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

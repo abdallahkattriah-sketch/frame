@@ -16,8 +16,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "成人扩展的活动永远不会显示在 Discord 上。",
   "Ad skipping": "跳过广告",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "添加 TMDB 可获取更多片库和图片。其他提供方可添加下列功能。不添加密钥也可以通过 Cinemeta 使用 Harbor。",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "添加 TMDB 可获取更多片库和图片。其他提供方可添加下列功能。不添加密钥也可以通过 Cinemeta 使用 Frame。",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "在下载按钮旁添加计时器。在指定时间或集数后暂停播放。",
   "Add an API key to use this source.": "添加 API 密钥以使用此来源。",
@@ -72,14 +72,14 @@ const settingsRefinements: Record<string, string> = {
     "平衡画质与性能。更改会应用于下一次播放的视频。",
   "Between episodes": "剧集之间",
   "Between episodes on the TV": "电视上的剧集衔接",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "将动画列表导入 Harbor，并在观看时更新已看集数。现有进度会保留。",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "将动画列表导入 Frame，并在观看时更新已看集数。现有进度会保留。",
   "Bringing your Stremio library?": "想导入 Stremio 媒体库？",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "在《海贼王》等受支持的剧集中按剧情篇章浏览。需要 TMDB 密钥。",
   "Browse pages": "浏览页面",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "在 Harbor 中浏览动画列表，并在观看时更新剧集进度。登录 AniList 以连接。",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "在 Frame 中浏览动画列表，并在观看时更新剧集进度。登录 AniList 以连接。",
   "Browser details": "浏览器详情",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "创建并命名筛选器，然后在来源选择器中应用，将繁杂的播放列表缩减为你想要的结果。",
@@ -99,8 +99,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "检查此设备能否连接已保存的服务器地址。",
   "Checking SVP installation…": "正在检查 SVP 安装…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "选择 Harbor 备份，恢复前可先查看内容。Stremio 登录信息会保留在此设备上。",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "选择 Frame 备份，恢复前可先查看内容。Stremio 登录信息会保留在此设备上。",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "选择外观或逐项调整。“重置画面”会恢复原始值。",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -121,14 +121,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "选择在电视上浏览时希望看到的服务。",
   "Choose the streams you prefer.": "选择偏好的播放源。",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "选择关闭、最小化或切离 Harbor 时的行为。",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "选择 Harbor 何时要求选择个人资料。定时提示会在你返回 Harbor 时出现。",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "选择下一集何时开始，以及 Harbor 何时确认你是否仍在观看。",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "选择 Harbor 搜索字幕的来源。已启用来源的结果会合并显示，并去除重复项。",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "选择关闭、最小化或切离 Frame 时的行为。",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "选择 Frame 何时要求选择个人资料。定时提示会在你返回 Frame 时出现。",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "选择下一集何时开始，以及 Frame 何时确认你是否仍在观看。",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "选择 Frame 搜索字幕的来源。已启用来源的结果会合并显示，并去除重复项。",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "选择视频和电子书的保存位置，以及文件夹的组织方式。",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -162,8 +162,8 @@ const settingsRefinements: Record<string, string> = {
     "连接 MyAnimeList 账户，同步观看进度并浏览你的列表。",
   "Connect {service}": "连接 {service}",
   "Contact & credit": "联系方式与署名",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "设置使用 Harbor 时在 Discord 个人资料上显示的内容。",
+  "Control what appears on your Discord profile while you use Frame.":
+    "设置使用 Frame 时在 Discord 个人资料上显示的内容。",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "控制如何降低高光亮度以适应显示器。图示展示了各条曲线。",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -186,27 +186,27 @@ const settingsRefinements: Record<string, string> = {
     "无法保存{name}。请重试并选择可写入的文件夹。",
   "Couldn't copy the address. Select it above and copy it manually.":
     "无法复制地址。请在上方选中地址并手动复制。",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "无法连接 Harbor。请检查网络连接后重试。",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "无法连接 Frame。请检查网络连接后重试。",
   "Covers everything. The taskbar is hidden.": "覆盖整个屏幕，并隐藏任务栏。",
   "Create a stream filter": "创建播放源筛选器",
-  "Create a theme or share one you've made with the Harbor community.":
-    "创建主题，或与 Harbor 社区分享你制作的主题。",
+  "Create a theme or share one you've made with the Frame community.":
+    "创建主题，或与 Frame 社区分享你制作的主题。",
   "Create my account": "创建我的账号",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "为使用 Harbor 的人创建个人资料。每份资料都可拥有独立的外观、设置和 PIN。",
-  "Create your Harbor account": "创建 Harbor 账户",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "为使用 Frame 的人创建个人资料。每份资料都可拥有独立的外观、设置和 PIN。",
+  "Create your Frame account": "创建 Frame 账户",
   "Create your first filter with the stream quality you prefer.":
     "按偏好的播放源画质创建首个筛选器。",
   "Custom color": "自定义颜色",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "使用自己的 CSS、JavaScript 和 HTML 自定义 Harbor。输入时即应用更改。",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "使用自己的 CSS、JavaScript 和 HTML 自定义 Frame。输入时即应用更改。",
   "Default Downloads folder": "默认下载文件夹",
   "Delete this rule?": "删除此规则？",
   "Describe the problem in one sentence.": "用一句话描述问题。",
   "Describe the result you were after.": "描述你期望的结果。",
-  "Describe what Harbor did instead, including any message on screen.":
-    "描述 Harbor 实际做了什么，包括屏幕上的消息。",
+  "Describe what Frame did instead, including any message on screen.":
+    "描述 Frame 实际做了什么，包括屏幕上的消息。",
   "Device compatibility": "设备兼容性",
   "Discovery languages": "发现内容的语言",
   "Down the river": "顺流而下",
@@ -229,8 +229,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "输入全部 4 位数字以保存此 PIN。",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "每行输入一个 mpv 选项，例如 brightness=5。这些选项会覆盖其他页面的视频设置。错误选项可能影响播放。重新开始播放后应用更改。",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "查看为 Harbor 绘制的每个图标和动画、创作者，以及如何保存一份。",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "查看为 Frame 绘制的每个图标和动画、创作者，以及如何保存一份。",
   "Example scores with your settings.": "使用当前设置的评分示例。",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "排除做种人数不足或没有做种人数信息的播放源。留空或输入 0 表示不限。",
@@ -249,8 +249,8 @@ const settingsRefinements: Record<string, string> = {
     "请先完成上方 SVP 引擎的设置，再启用。",
   "Forget remote streaming server": "移除已保存的远程播放服务器",
   "Forgot password?": "忘记密码？",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "播放时处理画面的 GPU 着色器：Anime4K 放大、HDR 色调映射、神经网络放大和锐化。下载所需着色器后，Harbor 会在 mpv 引擎中应用。",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "播放时处理画面的 GPU 着色器：Anime4K 放大、HDR 色调映射、神经网络放大和锐化。下载所需着色器后，Frame 会在 mpv 引擎中应用。",
   "Get SVP": "获取 SVP",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "在 Discord 或 Telegram 接收新发行提醒。先连接接收目标，再选择提醒来源和规则。",
@@ -264,27 +264,27 @@ const settingsRefinements: Record<string, string> = {
   "Handles cannot start or end with a hyphen.": "用户名不能以连字符开头或结尾。",
   "Handles need at least 3 characters.": "用户名至少需要 3 个字符。",
   "Handles need at least one letter.": "用户名至少需要包含一个字母。",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "Harbor 发现页展示 Steamboat Willie 和 The General",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "Harbor 会检查接收设备，并在播放源需要转换时使用 ffmpeg。",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "Harbor 无法应用 P2P 设置。请重新打开 Harbor 后重试。",
-  "Harbor couldn't check the SVP installation. Try again.": "Harbor 无法检查 SVP 安装。请重试。",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "Harbor 按此顺序查找字幕。请将首选语言放在最前面。",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "在其他设备上使用 Harbor：网页版、手机遥控器和漫画阅读器遥控器。",
-  "Harbor profile showing watch statistics": "显示观看统计的 Harbor 个人资料",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harbor 使用自己的社区服务器。你也可以将其设置为使用自行运行的服务器。",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "Harbor 内置的点对点引擎、自检以及你配置的播放服务器。",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "Harbor 的许可证、所基于的项目，以及支持它的人员和服务。",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "Harbor 的远程服务器在端口 {WEB_PORT} 上没有响应。请确认桌面服务器正在运行，或关闭后重新开启此设置以重启服务器。",
-  "Harbor, with a few classics.": "Harbor，配上几部经典佳作。",
+  "Frame Discover showing Steamboat Willie and The General":
+    "Frame 发现页展示 Steamboat Willie 和 The General",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "Frame 会检查接收设备，并在播放源需要转换时使用 ffmpeg。",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "Frame 无法应用 P2P 设置。请重新打开 Frame 后重试。",
+  "Frame couldn't check the SVP installation. Try again.": "Frame 无法检查 SVP 安装。请重试。",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "Frame 按此顺序查找字幕。请将首选语言放在最前面。",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "在其他设备上使用 Frame：网页版、手机遥控器和漫画阅读器遥控器。",
+  "Frame profile showing watch statistics": "显示观看统计的 Frame 个人资料",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frame 使用自己的社区服务器。你也可以将其设置为使用自行运行的服务器。",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "Frame 内置的点对点引擎、自检以及你配置的播放服务器。",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "Frame 的许可证、所基于的项目，以及支持它的人员和服务。",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "Frame 的远程服务器在端口 {WEB_PORT} 上没有响应。请确认桌面服务器正在运行，或关闭后重新开启此设置以重启服务器。",
+  "Frame, with a few classics.": "Frame，配上几部经典佳作。",
   "Help & about": "帮助与关于",
   "Hex color": "十六进制颜色",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -292,8 +292,8 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "在导航中隐藏{name}",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "高画质会加载更清晰的图片。如果浏览缓慢，请选择均衡。这不会影响视频画质。",
-  "How long Harbor waits for each addon to return results.": "Harbor 等待各插件返回结果的时间。",
-  "How much does this affect your use of Harbor?": "这在多大程度上影响你使用 Harbor？",
+  "How long Frame waits for each addon to return results.": "Frame 等待各插件返回结果的时间。",
+  "How much does this affect your use of Frame?": "这在多大程度上影响你使用 Frame？",
   "How to connect Discord": "如何连接 Discord",
   "How to connect Telegram": "如何连接 Telegram",
   "How video plays, how it looks, and what happens between episodes.":
@@ -312,17 +312,17 @@ const settingsRefinements: Record<string, string> = {
   "Included with your report: app and device details, enabled-service counts, the player check, and recent error messages.":
     "报告包含：应用和设备信息、已启用服务的数量、播放器检查结果及近期错误消息。",
   "Install SVP and check again before enabling it.": "请安装 SVP 并再次检查，然后再启用。",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "安装 SVP 及其 VapourSynth 组件，然后再次检查，让 Harbor 能找到它们。",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "安装图标包，或为每个奖项上传自己的图片。图标包由制作者托管，不随 Harbor 附带。",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "安装 SVP 及其 VapourSynth 组件，然后再次检查，让 Frame 能找到它们。",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "安装图标包，或为每个奖项上传自己的图片。图标包由制作者托管，不随 Frame 附带。",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "安装更新、试用测试版，并备份你的设置。",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "即时播放会立即启动排名最高的播放源。选择播放源则每次都打开列表，让你自行选择版本、画质和服务商。",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "片头一开始就自动跳过。回退到片头会重新播放，不会再次跳过。跳过按钮遵循上方设置。",
-  "Keep Harbor fullscreen when you close the player.": "关闭播放器时让 Harbor 保持全屏。",
+  "Keep Frame fullscreen when you close the player.": "关闭播放器时让 Frame 保持全屏。",
   "Keep code": "保留代码",
   "Keep my shortcuts": "保留我的快捷键",
   "Keep rule": "保留规则",
@@ -342,15 +342,15 @@ const settingsRefinements: Record<string, string> = {
   "Kids avatar {number}": "儿童头像 {number}",
   "Language preference order": "语言优先顺序",
   "Larger artwork with the song title below it.": "较大的封面图，歌曲名显示在下方。",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "除非 Harbor 界面闪烁或卡顿，否则保持自动。此项控制应用窗口，不影响视频播放。",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
-    "debrid 链接不可用时，允许 Harbor 从此设备通过 P2P 播放。关闭可阻止本地 P2P 播放。已配置的远程服务器仍可播放。",
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "除非 Frame 界面闪烁或卡顿，否则保持自动。此项控制应用窗口，不影响视频播放。",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+    "debrid 链接不可用时，允许 Frame 从此设备通过 P2P 播放。关闭可阻止本地 P2P 播放。已配置的远程服务器仍可播放。",
   Licence: "许可证",
   "Licenses & attribution": "许可证与署名",
   "Lightens or darkens the whole picture.": "使整个画面变亮或变暗。",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "从打开 Harbor 开始，列出导致问题的步骤。",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "从打开 Frame 开始，列出导致问题的步骤。",
   "Load failed. Retry": "加载失败。重试",
   "Loading {name}…": "正在加载{name}…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -375,8 +375,7 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "提高{language}的优先级",
   "Move {name} down": "下移{name}",
   "Move {name} up": "上移{name}",
-  "No custom options. Harbor uses your video settings.":
-    "没有自定义选项。Harbor 使用你的视频设置。",
+  "No custom options. Frame uses your video settings.": "没有自定义选项。Frame 使用你的视频设置。",
   "No default profile": "无默认个人资料",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "未选择偏好。编辑此筛选器以选择偏好的播放源。",
@@ -391,7 +390,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "通知来源",
   "On your local network": "在你的本地网络上",
   "On-screen controls": "屏幕控件",
-  "Open Harbor account": "打开 Harbor 账户",
+  "Open Frame account": "打开 Frame 账户",
   "Open Stremio settings": "打开 Stremio 设置",
   "Open on YouTube": "在 YouTube 上打开",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -399,8 +398,8 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "启动时打开此个人资料。之后仍可能显示定时提示。设置了 PIN 的资料不能设为默认。",
   "Open {label} address": "打开{label}地址",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
-    "从作者处下载的可选视频效果。Harbor 按下方顺序应用已启用的着色器。",
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
+    "从作者处下载的可选视频效果。Frame 按下方顺序应用已启用的着色器。",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "可选。如允许我们后续联系，请留下联系方式，并选择是否公开署名。",
   "Optional. Used to allow more watch time. Without a PIN, switch profiles when time is up.":
@@ -463,13 +462,13 @@ const settingsRefinements: Record<string, string> = {
   "Right in the middle of the picture, hard to miss.": "显示在画面正中央，醒目易见。",
   "Rule name": "规则名称",
   "SVP interpolation": "SVP 补帧",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "SVP 正在处理运动平滑。如需使用 Harbor 的平滑功能，请在 SVP 页面将其关闭。",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "SVP 正在处理运动平滑。如需使用 Frame 的平滑功能，请在 SVP 页面将其关闭。",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "覆盖相同区域，但仍以窗口运行，因此 alt-tab 仍可即时切换。",
   "Saturation {s}%, brightness {v}%": "饱和度 {s}%，亮度 {v}%",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
-    "保存偏好的播放源画质。播放源必须匹配你设置的每个类别；类别留空表示不限。如果没有匹配项，Harbor 会使用次优的可用播放源。",
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
+    "保存偏好的播放源画质。播放源必须匹配你设置的每个类别；类别留空表示不限。如果没有匹配项，Frame 会使用次优的可用播放源。",
   "Save {name} as JSON": "将{name}保存为 JSON",
   "Save {name} as SVG": "将{name}保存为 SVG",
   "Saved {name}.": "已保存{name}。",
@@ -482,8 +481,8 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "这里显示次要文字",
   "See the resolution, HDR format and audio while you watch.":
     "观看时查看分辨率、HDR 格式和音频信息。",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
-    "查看 Harbor 在此电脑上存储的内容，需要释放空间时可清除缓存。",
+  "See what Frame stores on this computer and clear caches when you want the space back.":
+    "查看 Frame 在此电脑上存储的内容，需要释放空间时可清除缓存。",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "将音频发送到指定扬声器、耳机或接收器。系统默认会跟随系统的音频输出。",
   "Services that record what you watch. Connect the ones you use and tune what each one sends.":
@@ -493,8 +492,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "设置接收目标",
   "Set up rating providers": "设置评分提供商",
   "Set up song identification": "设置歌曲识别",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "在这里设置电视。此页的所有设置都会写入 Harbor 账户，并由电视上的 Big Picture 读取，无需使用遥控器输入。",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "在这里设置电视。此页的所有设置都会写入 Frame 账户，并由电视上的 Big Picture 读取，无需使用遥控器输入。",
   "Sets the age level for the kids space.": "设置儿童空间的适用年龄级别。",
   "Setting up SVP…": "正在设置 SVP…",
   "Share your style": "分享你的风格",
@@ -533,8 +532,8 @@ const settingsRefinements: Record<string, string> = {
   "Small outlined pills that slide in under the title.": "带描边的小圆角标签滑入标题下方。",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "运动平滑与 SVP 的相关设置。动画补帧在这里；画面着色器已移至单独的页面。",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "使用 Harbor 播放器平滑镜头移动。屏幕刷新率高于视频帧率时效果最佳。",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "使用 Frame 播放器平滑镜头移动。屏幕刷新率高于视频帧率时效果最佳。",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "使用 SVP 平滑运动。重新开始播放后生效；如果视频无法播放，请关闭此项。",
   "Soften the artwork behind the stream picker.": "柔化播放源选择器后面的图片。",
@@ -542,8 +541,8 @@ const settingsRefinements: Record<string, string> = {
     "此版本无法同步部分电视设置。更改仍保存在此电脑上。",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "有人最近放弃了该用户名。放弃后 14 天即可重新使用。",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "有些行为不符合预期，但仍可继续使用 Harbor。",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "有些行为不符合预期，但仍可继续使用 Frame。",
   "Something looks wrong, but the feature still works.": "外观有问题，但功能仍可正常使用。",
   "Something went wrong. Try again.": "出现了问题，请重试。",
   "Source picker": "播放源选择器",
@@ -577,8 +576,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "正在测试远程播放服务器",
   "Text is enlarged in this preview so you can judge the style.":
     "此预览放大了文字，便于判断样式。",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "该 Stremio 账号已关联其他 Harbor 账号。请先在那个账号中解除关联。",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "该 Stremio 账号已关联其他 Frame 账号。请先在那个账号中解除关联。",
   "That Stremio sign-in did not go through. Try again.": "Stremio 登录未成功，请重试。",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
     "无法将该文件读取为图片。请使用 PNG、JPG 或 WEBP。",
@@ -603,12 +602,12 @@ const settingsRefinements: Record<string, string> = {
   "The handful of settings most people set once.": "大多数人只需设置一次的几个选项。",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "大多数人只需设置一次的几个选项。登录、选择播放方式，并选定外观。",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "Harbor 菜单、按钮和标签的语言。音频、字幕和作品信息各有独立的语言设置。",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "Frame 菜单、按钮和标签的语言。音频、字幕和作品信息各有独立的语言设置。",
   "The same slow camera pan, with motion smoothing off and on.":
     "同一段缓慢的镜头平移，分别关闭和开启动作平滑处理。",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "已保存的 JavaScript 将被移除。重启 Harbor 可清除已运行脚本留下的效果。",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "已保存的 JavaScript 将被移除。重启 Frame 可清除已运行脚本留下的效果。",
   "The saved {name} will be removed and its changes will stop applying.":
     "已保存的{name}将被移除，其更改将不再生效。",
   "The server responded in {ms} ms.": "服务器在 {ms} 毫秒内响应。",
@@ -616,7 +615,7 @@ const settingsRefinements: Record<string, string> = {
     "六项占用空间最大的本地设置条目，包括偏好和查询数据。",
   "{count} entries": "{count} 条",
   "The volume pop-up is hidden.": "音量弹出框已隐藏。",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
     "主题、播放器布局、图片，以及卡片上显示的内容。",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "此账号已被暂停使用。如果你认为有误，请联系支持团队。",
@@ -624,7 +623,7 @@ const settingsRefinements: Record<string, string> = {
   "This backup has no data in it.": "此备份不包含任何数据。",
   "This is how your subtitles": "你的字幕",
   "This is how your subtitles will look.": "字幕将显示为这样。",
-  "This is not a Harbor backup file.": "这不是 Harbor 备份文件。",
+  "This is not a Frame backup file.": "这不是 Frame 备份文件。",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "要在其他设备上播放此电脑提供的内容，请复制其本地网络地址，并输入到该设备的远程播放服务器设置中。",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -649,8 +648,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "未翻译的文字保持英文。选择语言后，点击应用并重新加载。",
   "Unwatched episodes": "未看剧集",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "上传自己的图片，或从 Harbor 图库中选择。",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "上传自己的图片，或从 Frame 图库中选择。",
   "Use letters, numbers, and single hyphens only.": "只能使用字母、数字和不连续的连字符。",
   "Use no saved stream filter": "不使用已保存的播放源筛选器",
   "Use sharper artwork for large cards. Uses more data and may load more slowly.":
@@ -658,8 +657,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "使用{name}",
   "Used only if we need one more detail to reproduce the bug.":
     "仅在需要更多信息来复现问题时使用。",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "使用 SVP 在 Harbor 播放器内平滑运动。只需安装一次 SVP；Harbor 会使用其引擎，并在需要时打开 SVP Manager。",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "使用 SVP 在 Frame 播放器内平滑运动。只需安装一次 SVP；Frame 会使用其引擎，并在需要时打开 SVP Manager。",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "通过 VapourSynth 使用 SVP 运动引擎。重新开始播放后生效。",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -670,16 +669,16 @@ const settingsRefinements: Record<string, string> = {
     "对新版渲染器有兼容性问题的显卡使用旧版 GPU 渲染器。",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "使用处理器解码视频。硬件解码导致画面问题时可尝试此项。",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "使用 Linux 上安装的 SVP 和 VapourSynth，在 Harbor 播放器中平滑运动。",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "使用 Linux 上安装的 SVP 和 VapourSynth，在 Frame 播放器中平滑运动。",
   "Video quality": "视频画质",
   "View generated mpv options": "查看生成的 mpv 选项",
   "Volume pop-up": "音量弹出框",
   "We tag this account on the issue so you see the fix land.":
     "我们会在问题中标记此账户，让你知道修复何时完成。",
-  "What language Harbor speaks, and how subtitles behave.": "Harbor 的显示语言与字幕行为。",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "Harbor 的显示语言，以及优先选择的音轨。",
+  "What language Frame speaks, and how subtitles behave.": "Frame 的显示语言与字幕行为。",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "Frame 的显示语言，以及优先选择的音轨。",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "播放源的来源、筛选方式及相关元数据。",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -691,7 +690,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "窗口行为",
   "You can also turn off Rule is active to pause it without deleting it.":
     "也可关闭“规则已启用”，暂停规则而不删除。",
-  "You cannot use Harbor.": "无法使用 Harbor。",
+  "You cannot use Frame.": "无法使用 Frame。",
   "You changed your handle recently. You can change it again after the cooldown.":
     "你最近更改过用户名。等待期结束后可再次更改。",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

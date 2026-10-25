@@ -316,8 +316,8 @@ const player: Record<string, string> = {
     "Kiểu của bạn đang ghi đè kiểu riêng của phụ đề nhúng",
   "Zoom {pct}%": "Thu phóng {pct}%",
   "click to cancel": "nhấp để hủy",
-  "mpv is required for recording. Install mpv and restart Harbor.":
-    "Cần mpv để ghi hình. Hãy cài đặt mpv rồi khởi động lại Harbor.",
+  "mpv is required for recording. Install mpv and restart Frame.":
+    "Cần mpv để ghi hình. Hãy cài đặt mpv rồi khởi động lại Frame.",
   "to close": "để đóng",
   "unsaved changes": "thay đổi chưa lưu",
   "{langs} only · {n} hidden": "chỉ {langs} · ẩn {n}",
@@ -389,8 +389,8 @@ const player: Record<string, string> = {
   "Reloading the stream…": "Đang tải lại luồng phát…",
   "Couldn't reload the stream. Try picking another source.":
     "Không thể tải lại luồng phát. Hãy thử chọn nguồn khác.",
-  "Harbor's streaming server only runs in the desktop app.":
-    "Máy chủ phát trực tuyến của Harbor chỉ chạy trong ứng dụng máy tính.",
+  "Frame's streaming server only runs in the desktop app.":
+    "Máy chủ phát trực tuyến của Frame chỉ chạy trong ứng dụng máy tính.",
   "Restarting the streaming server…": "Đang khởi động lại máy chủ phát trực tuyến…",
   "Couldn't restart the streaming server.": "Không thể khởi động lại máy chủ phát trực tuyến.",
   "The streaming server didn't come back up.": "Máy chủ phát trực tuyến không hoạt động trở lại.",

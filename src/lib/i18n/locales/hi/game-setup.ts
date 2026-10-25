@@ -1,6 +1,6 @@
 export default {
   "games.setup.setup_review":
-    "सेटअप के दौरान Harbor फिर से शुरू हुआ था। पूरा करने के लिए इंस्टॉल की गई गेम फ़ाइलें जाँचें।",
+    "सेटअप के दौरान Frame फिर से शुरू हुआ था। पूरा करने के लिए इंस्टॉल की गई गेम फ़ाइलें जाँचें।",
   "games.setup.state.starting": "इंस्टॉलर शुरू हो रहा है",
   "games.setup.state.waiting": "इंस्टॉलर की प्रतीक्षा में",
   "games.setup.startingNote": "इंस्टॉलर खोला जा रहा है…",
@@ -34,7 +34,7 @@ export default {
   "games.setup.state.verificationUnknown": "नतीजे देखें",
   "games.setup.viewProgress": "इंस्टॉलेशन देखें",
   "games.setup.showInstaller": "इंस्टॉलर दिखाएँ",
-  "games.setup.setup_window": "इंस्टॉलर विंडो उपलब्ध नहीं है। Harbor अभी भी सेटअप पर नज़र रख रहा है।",
+  "games.setup.setup_window": "इंस्टॉलर विंडो उपलब्ध नहीं है। Frame अभी भी सेटअप पर नज़र रख रहा है।",
   "games.setup.elapsed": "बीता समय",
   "games.setup.io": "इंस्टॉलर I/O",
   "games.setup.ioNote":
@@ -69,7 +69,7 @@ export default {
   "games.setup.state.running": "इंस्टॉलर चल रहा है",
   "games.setup.state.finished": "इंस्टॉलर बंद हो गया — गेम की फ़ाइल चुनें",
   "games.setup.state.failed": "इंस्टॉलर सफलतापूर्वक पूरा नहीं हुआ",
-  "games.setup.state.interrupted": "सेटअप जाँचें — इसके चलते समय Harbor बंद हो गया था",
+  "games.setup.state.interrupted": "सेटअप जाँचें — इसके चलते समय Frame बंद हो गया था",
   "games.setup.state.external": "इंस्टॉलर दूसरी विंडो में खुला है",
   "games.setup.exitCode": "एग्ज़िट कोड: {code}",
   "games.setup.unavailable":
@@ -93,9 +93,9 @@ export default {
   "games.setup.destination": "यहाँ इंस्टॉल करें",
   "games.setup.chooseDestination": "इंस्टॉल फ़ोल्डर चुनें",
   "games.setup.managedNote":
-    "Harbor यहाँ गेम इंस्टॉल करेगा, गेम की फ़ाइल ढूँढेगा और उसे आपकी लाइब्रेरी में जोड़ देगा।",
+    "Frame यहाँ गेम इंस्टॉल करेगा, गेम की फ़ाइल ढूँढेगा और उसे आपकी लाइब्रेरी में जोड़ देगा।",
   "games.setup.managedRunning":
-    "आपका गेम इंस्टॉल हो रहा है। आप यह विंडो बंद कर सकते हैं; Harbor प्रगति पर नज़र रखेगा।",
+    "आपका गेम इंस्टॉल हो रहा है। आप यह विंडो बंद कर सकते हैं; Frame प्रगति पर नज़र रखेगा।",
   "games.setup.detected": "गेम की फ़ाइल अपने आप मिल गई",
   "games.setup.chooseDetected": "चुनें कि गेम की कौन-सी फ़ाइल जोड़नी है।",
   "games.setup.activity": "{count} फ़ाइलों में {size}",
@@ -108,7 +108,7 @@ export default {
   "games.setup.setup_destination": "डाउनलोड फ़ोल्डर के बाहर एक नया, खाली इंस्टॉल फ़ोल्डर चुनें।",
   "games.setup.setup_engine": "इस इंस्टॉलर को अपनी अलग विंडो चाहिए। आगे बढ़ने के लिए «इंस्टॉलर चलाएँ» चुनें।",
   "games.setup.setup_candidates":
-    "इंस्टॉलेशन पूरा हो गया, लेकिन Harbor इंस्टॉल की गई फ़ाइलें नहीं पढ़ सका। इंस्टॉल फ़ोल्डर फिर से स्कैन करें।",
+    "इंस्टॉलेशन पूरा हो गया, लेकिन Frame इंस्टॉल की गई फ़ाइलें नहीं पढ़ सका। इंस्टॉल फ़ोल्डर फिर से स्कैन करें।",
   "games.setup.state.installing": "इंस्टॉल हो रहा है",
   "games.setup.externalAction": "इंस्टॉलर चलाएँ",
   "games.setup.files": "डाउनलोड की गई फ़ाइलें",

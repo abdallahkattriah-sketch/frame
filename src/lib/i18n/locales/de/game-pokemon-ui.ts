@@ -19,7 +19,7 @@ export default {
   "games.pokemon.guideSourceNote":
     "Lies die Originalanleitung oder öffne sie hier, wenn die Quelle erreichbar ist.",
   "games.pokemon.readGuide": "Auf Bulbapedia lesen",
-  "games.pokemon.readInside": "In Harbor lesen",
+  "games.pokemon.readInside": "In Frame lesen",
   "games.pokemon.closeReader": "Leser schließen",
   "games.pokemon.downloadImage": "Bild von {name} herunterladen",
   "games.pokemon.imageSaved": "Bild von {name} gespeichert",
@@ -30,7 +30,7 @@ export default {
   "games.pokemon.saveStep1": "Öffne dein Spiel und wähle Speichern im Spielmenü.",
   "games.pokemon.saveStep2":
     "Schließe das Spiel und suche oder exportiere den Spielstand (.sav, .srm oder .dsv).",
-  "games.pokemon.saveStep3": "Wähle oben Spielstand öffnen, um ihn in Harbor zu bearbeiten.",
+  "games.pokemon.saveStep3": "Wähle oben Spielstand öffnen, um ihn in Frame zu bearbeiten.",
   "games.pokemon.findSave": "Wo ist mein Spielstand?",
   "games.pokemon.saveLocations":
     "Suche neben deiner ROM oder im Speicherordner des Emulators. Hast du nur einen Speicherzustand, lade ihn im Emulator und speichere anschließend im Spielmenü.",

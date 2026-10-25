@@ -93,7 +93,7 @@ export const HOTKEYS: HotkeyDef[] = [
     scope: "Global",
     group: "Navigation",
     label: "Open settings",
-    description: "Open Harbor's settings outside playback.",
+    description: "Open Frame's settings outside playback.",
     defaultBinding: "ctrl+s",
   },
   {
@@ -134,7 +134,7 @@ export const HOTKEYS: HotkeyDef[] = [
     scope: "Global",
     group: "Interface",
     label: "Toggle window fullscreen",
-    description: "Make Harbor's window fill the screen, or restore it.",
+    description: "Make Frame's window fill the screen, or restore it.",
     defaultBinding: "F11",
   },
   {
@@ -150,7 +150,7 @@ export const HOTKEYS: HotkeyDef[] = [
     scope: "Global",
     group: "Developer",
     label: "Show test error page",
-    description: "Open Harbor's error page with a sample error, to check how it looks.",
+    description: "Open Frame's error page with a sample error, to check how it looks.",
     defaultBinding: "ctrl+shift+e",
   },
   {
@@ -158,7 +158,7 @@ export const HOTKEYS: HotkeyDef[] = [
     scope: "Global",
     group: "Interface",
     label: "Increase interface scale",
-    description: "Make Harbor's interface larger.",
+    description: "Make Frame's interface larger.",
     defaultBinding: "ctrl+=",
   },
   {
@@ -166,7 +166,7 @@ export const HOTKEYS: HotkeyDef[] = [
     scope: "Global",
     group: "Interface",
     label: "Decrease interface scale",
-    description: "Make Harbor's interface smaller.",
+    description: "Make Frame's interface smaller.",
     defaultBinding: "ctrl+-",
   },
   {
@@ -174,7 +174,7 @@ export const HOTKEYS: HotkeyDef[] = [
     scope: "Global",
     group: "Interface",
     label: "Reset interface scale",
-    description: "Restore Harbor's interface scale to 100%.",
+    description: "Restore Frame's interface scale to 100%.",
     defaultBinding: "ctrl+0",
   },
 
@@ -620,7 +620,7 @@ export const HOTKEYS: HotkeyDef[] = [
     group: "Recovery",
     label: "Restart streaming server",
     description:
-      "Restart Harbor's own streaming server, then reload the stream once it is back. Desktop only.",
+      "Restart Frame's own streaming server, then reload the stream once it is back. Desktop only.",
     defaultBinding: "ctrl+alt+s",
   },
 

@@ -28,6 +28,6 @@ export default {
   "games.notes.import": "JSONをインポート",
   "games.notes.export": "バックアップを書き出す",
   "games.notes.unsaved": "未保存の変更",
-  "games.notes.local": "このHarborプロフィールに保存",
+  "games.notes.local": "このFrameプロフィールに保存",
   "games.notes.importGuide": "マイノートにコピー",
 };

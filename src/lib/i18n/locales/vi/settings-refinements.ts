@@ -16,8 +16,8 @@ const settingsRefinements: Record<string, string> = {
   "Activity from adult addons is never shown on Discord.":
     "Hoạt động từ tiện ích người lớn không bao giờ được hiển thị trên Discord.",
   "Ad skipping": "Bỏ qua quảng cáo",
-  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Harbor with Cinemeta without adding a key.":
-    "Thêm TMDB để có thêm danh mục và hình ảnh. Các nhà cung cấp khác bổ sung những tính năng bên dưới. Bạn có thể dùng Harbor với Cinemeta mà không cần thêm khóa.",
+  "Add TMDB for more catalogs and artwork. Other providers add the features listed below. You can use Frame with Cinemeta without adding a key.":
+    "Thêm TMDB để có thêm danh mục và hình ảnh. Các nhà cung cấp khác bổ sung những tính năng bên dưới. Bạn có thể dùng Frame với Cinemeta mà không cần thêm khóa.",
   "Add a timer beside Downloads. Pause playback after a set time or number of episodes.":
     "Thêm bộ hẹn giờ cạnh Tải xuống. Tạm dừng phát sau thời gian hoặc số tập đã đặt.",
   "Add an API key to use this source.": "Thêm khóa API để sử dụng nguồn này.",
@@ -75,14 +75,14 @@ const settingsRefinements: Record<string, string> = {
     "Cân bằng chất lượng hình ảnh và hiệu năng. Thay đổi áp dụng cho video tiếp theo bạn phát.",
   "Between episodes": "Giữa các tập",
   "Between episodes on the TV": "Giữa các tập trên TV",
-  "Bring your anime list into Harbor and update your episode count as you watch. Your existing progress is kept.":
-    "Đưa danh sách anime vào Harbor và cập nhật số tập khi xem. Tiến độ hiện có được giữ nguyên.",
+  "Bring your anime list into Frame and update your episode count as you watch. Your existing progress is kept.":
+    "Đưa danh sách anime vào Frame và cập nhật số tập khi xem. Tiến độ hiện có được giữ nguyên.",
   "Bringing your Stremio library?": "Muốn mang thư viện Stremio sang?",
   "Browse by story arc on supported shows, such as One Piece. Requires a TMDB key.":
     "Duyệt theo phần cốt truyện của các bộ phim được hỗ trợ, như One Piece. Cần khóa TMDB.",
   "Browse pages": "Duyệt các trang",
-  "Browse your anime lists in Harbor and update your episode progress as you watch. Sign in to AniList to connect.":
-    "Duyệt danh sách anime trong Harbor và cập nhật tiến độ tập khi xem. Đăng nhập AniList để kết nối.",
+  "Browse your anime lists in Frame and update your episode progress as you watch. Sign in to AniList to connect.":
+    "Duyệt danh sách anime trong Frame và cập nhật tiến độ tập khi xem. Đăng nhập AniList để kết nối.",
   "Browser details": "Thông tin trình duyệt",
   "Build a named filter once, then apply it in the source picker to trim a noisy stream list down to exactly what you want.":
     "Tạo bộ lọc có tên một lần, rồi áp dụng trong bộ chọn nguồn để thu gọn danh sách luồng dài về đúng những gì bạn muốn.",
@@ -104,8 +104,8 @@ const settingsRefinements: Record<string, string> = {
   "Check whether this device can reach the saved server address.":
     "Kiểm tra xem thiết bị này có truy cập được địa chỉ máy chủ đã lưu không.",
   "Checking SVP installation…": "Đang kiểm tra bản cài đặt SVP…",
-  "Choose a Harbor backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
-    "Chọn bản sao lưu Harbor và xem nội dung trước khi khôi phục. Phiên đăng nhập Stremio vẫn được giữ trên thiết bị này.",
+  "Choose a Frame backup and review what it contains before restoring. Your Stremio sign-in stays on this device.":
+    "Chọn bản sao lưu Frame và xem nội dung trước khi khôi phục. Phiên đăng nhập Stremio vẫn được giữ trên thiết bị này.",
   "Choose a look or adjust each setting. Reset picture restores the original values.":
     "Chọn một kiểu hoặc điều chỉnh từng cài đặt. Đặt lại hình ảnh sẽ khôi phục các giá trị ban đầu.",
   "Choose a name, then select the resolutions, sources, codecs and audio you prefer.":
@@ -127,14 +127,14 @@ const settingsRefinements: Record<string, string> = {
   "Choose the services you want to see while browsing on your TV.":
     "Chọn các dịch vụ muốn thấy khi duyệt trên TV.",
   "Choose the streams you prefer.": "Chọn các luồng bạn ưu tiên.",
-  "Choose what happens when you close, minimize, or switch away from Harbor.":
-    "Chọn điều xảy ra khi đóng, thu nhỏ hoặc chuyển khỏi Harbor.",
-  "Choose when Harbor asks you to pick a profile. Timed prompts appear when you return to Harbor.":
-    "Chọn khi nào Harbor yêu cầu chọn hồ sơ. Lời nhắc theo thời gian xuất hiện khi bạn quay lại Harbor.",
-  "Choose when the next episode starts and when Harbor checks that you are still watching.":
-    "Chọn khi nào tập tiếp theo bắt đầu và khi nào Harbor kiểm tra bạn còn đang xem không.",
-  "Choose where Harbor searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
-    "Chọn nơi Harbor tìm phụ đề. Kết quả từ các nguồn đã bật được gộp lại và loại bỏ trùng lặp.",
+  "Choose what happens when you close, minimize, or switch away from Frame.":
+    "Chọn điều xảy ra khi đóng, thu nhỏ hoặc chuyển khỏi Frame.",
+  "Choose when Frame asks you to pick a profile. Timed prompts appear when you return to Frame.":
+    "Chọn khi nào Frame yêu cầu chọn hồ sơ. Lời nhắc theo thời gian xuất hiện khi bạn quay lại Frame.",
+  "Choose when the next episode starts and when Frame checks that you are still watching.":
+    "Chọn khi nào tập tiếp theo bắt đầu và khi nào Frame kiểm tra bạn còn đang xem không.",
+  "Choose where Frame searches for subtitles. Results from enabled sources appear together, with duplicates removed.":
+    "Chọn nơi Frame tìm phụ đề. Kết quả từ các nguồn đã bật được gộp lại và loại bỏ trùng lặp.",
   "Choose where videos and eBooks are saved, and how their folders are organized.":
     "Chọn nơi lưu video và sách điện tử, cùng cách sắp xếp thư mục.",
   "Choose whether to block requests to known advertising, analytics, and tracking services.":
@@ -171,8 +171,8 @@ const settingsRefinements: Record<string, string> = {
     "Kết nối tài khoản MyAnimeList để đồng bộ tiến độ xem và duyệt danh sách của bạn.",
   "Connect {service}": "Kết nối {service}",
   "Contact & credit": "Liên hệ và ghi nhận",
-  "Control what appears on your Discord profile while you use Harbor.":
-    "Kiểm soát nội dung xuất hiện trên hồ sơ Discord khi dùng Harbor.",
+  "Control what appears on your Discord profile while you use Frame.":
+    "Kiểm soát nội dung xuất hiện trên hồ sơ Discord khi dùng Frame.",
   "Controls how bright highlights are reduced to fit your display. The diagrams illustrate each curve.":
     "Điều khiển cách giảm vùng sáng để phù hợp với màn hình. Các sơ đồ minh họa từng đường cong.",
   "Converts video to 8-bit color for compatibility with older graphics cards. This disables HDR.":
@@ -196,27 +196,27 @@ const settingsRefinements: Record<string, string> = {
     "Không thể lưu {name}. Thử lại và chọn thư mục có quyền ghi.",
   "Couldn't copy the address. Select it above and copy it manually.":
     "Không thể sao chép địa chỉ. Chọn địa chỉ ở trên và sao chép thủ công.",
-  "Couldn't reach Harbor. Check your connection and try again.":
-    "Không thể kết nối với Harbor. Hãy kiểm tra kết nối rồi thử lại.",
+  "Couldn't reach Frame. Check your connection and try again.":
+    "Không thể kết nối với Frame. Hãy kiểm tra kết nối rồi thử lại.",
   "Covers everything. The taskbar is hidden.": "Phủ toàn màn hình. Thanh tác vụ được ẩn.",
   "Create a stream filter": "Tạo bộ lọc luồng",
-  "Create a theme or share one you've made with the Harbor community.":
-    "Tạo chủ đề hoặc chia sẻ chủ đề bạn đã làm với cộng đồng Harbor.",
+  "Create a theme or share one you've made with the Frame community.":
+    "Tạo chủ đề hoặc chia sẻ chủ đề bạn đã làm với cộng đồng Frame.",
   "Create my account": "Tạo tài khoản của tôi",
-  "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.":
-    "Tạo hồ sơ cho những người dùng Harbor. Mỗi hồ sơ có thể có giao diện, cài đặt và mã PIN riêng.",
-  "Create your Harbor account": "Tạo tài khoản Harbor",
+  "Create profiles for the people who use Frame. Each can have its own appearance, settings, and PIN.":
+    "Tạo hồ sơ cho những người dùng Frame. Mỗi hồ sơ có thể có giao diện, cài đặt và mã PIN riêng.",
+  "Create your Frame account": "Tạo tài khoản Frame",
   "Create your first filter with the stream quality you prefer.":
     "Tạo bộ lọc đầu tiên với chất lượng luồng bạn muốn.",
   "Custom color": "Màu tùy chỉnh",
-  "Customize Harbor with your own CSS, JavaScript, and HTML. Changes apply as you type.":
-    "Tùy chỉnh Harbor bằng CSS, JavaScript và HTML của bạn. Thay đổi được áp dụng khi bạn nhập.",
+  "Customize Frame with your own CSS, JavaScript, and HTML. Changes apply as you type.":
+    "Tùy chỉnh Frame bằng CSS, JavaScript và HTML của bạn. Thay đổi được áp dụng khi bạn nhập.",
   "Default Downloads folder": "Thư mục Tải xuống mặc định",
   "Delete this rule?": "Xóa quy tắc này?",
   "Describe the problem in one sentence.": "Mô tả vấn đề trong một câu.",
   "Describe the result you were after.": "Mô tả kết quả bạn mong muốn.",
-  "Describe what Harbor did instead, including any message on screen.":
-    "Mô tả điều Harbor thực sự đã làm, kể cả thông báo trên màn hình.",
+  "Describe what Frame did instead, including any message on screen.":
+    "Mô tả điều Frame thực sự đã làm, kể cả thông báo trên màn hình.",
   "Device compatibility": "Khả năng tương thích thiết bị",
   "Discovery languages": "Ngôn ngữ khám phá",
   "Down the river": "Xuôi dòng sông",
@@ -239,8 +239,8 @@ const settingsRefinements: Record<string, string> = {
   "Enter all 4 digits to save this PIN.": "Nhập đủ 4 chữ số để lưu mã PIN này.",
   "Enter one mpv option per line, such as brightness=5. These override the video settings on other pages. Incorrect options can affect playback. Restart playback to apply changes.":
     "Nhập mỗi tùy chọn mpv trên một dòng, ví dụ brightness=5. Chúng ghi đè cài đặt video ở các trang khác. Tùy chọn sai có thể ảnh hưởng đến phát video. Phát lại để áp dụng thay đổi.",
-  "Every icon and animation drawn for Harbor, who drew them, and how to take one with you.":
-    "Mọi biểu tượng và hoạt ảnh được vẽ cho Harbor, người tạo ra chúng và cách tải về.",
+  "Every icon and animation drawn for Frame, who drew them, and how to take one with you.":
+    "Mọi biểu tượng và hoạt ảnh được vẽ cho Frame, người tạo ra chúng và cách tải về.",
   "Example scores with your settings.": "Ví dụ điểm đánh giá theo cài đặt của bạn.",
   "Excludes streams with fewer seeders or no seeder count. Leave blank or enter 0 for any.":
     "Loại các luồng có ít người chia sẻ hơn hoặc không có số người chia sẻ. Để trống hoặc nhập 0 để chấp nhận tất cả.",
@@ -260,8 +260,8 @@ const settingsRefinements: Record<string, string> = {
     "Hoàn tất thiết lập bộ máy SVP ở trên trước khi bật.",
   "Forget remote streaming server": "Quên máy chủ phát trực tuyến từ xa",
   "Forgot password?": "Quên mật khẩu?",
-  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Harbor applies them in the mpv engine.":
-    "Bộ đổ bóng GPU xử lý hình ảnh khi phát: nâng độ phân giải Anime4K, ánh xạ tông HDR, nâng độ phân giải bằng mạng nơ-ron và làm sắc nét. Tải những bộ bạn muốn; Harbor sẽ áp dụng trong bộ máy mpv.",
+  "GPU shaders that reshape the picture as it plays: Anime4K upscaling, HDR tone-mapping, neural upscalers, and sharpeners. Download the ones you want and Frame applies them in the mpv engine.":
+    "Bộ đổ bóng GPU xử lý hình ảnh khi phát: nâng độ phân giải Anime4K, ánh xạ tông HDR, nâng độ phân giải bằng mạng nơ-ron và làm sắc nét. Tải những bộ bạn muốn; Frame sẽ áp dụng trong bộ máy mpv.",
   "Get SVP": "Tải SVP",
   "Get release alerts in Discord or Telegram. Connect a destination, then choose the sources and rules for your alerts.":
     "Nhận thông báo phát hành qua Discord hoặc Telegram. Kết nối nơi nhận, rồi chọn nguồn và quy tắc thông báo.",
@@ -277,28 +277,28 @@ const settingsRefinements: Record<string, string> = {
     "Tên định danh không được bắt đầu hoặc kết thúc bằng dấu gạch nối.",
   "Handles need at least 3 characters.": "Tên định danh cần có ít nhất 3 ký tự.",
   "Handles need at least one letter.": "Tên định danh cần có ít nhất một chữ cái.",
-  "Harbor Discover showing Steamboat Willie and The General":
-    "Trang Khám phá Harbor hiển thị Steamboat Willie và The General",
-  "Harbor checks the receiving device and uses ffmpeg when the stream needs conversion.":
-    "Harbor kiểm tra thiết bị nhận và dùng ffmpeg khi luồng cần chuyển đổi.",
-  "Harbor could not apply the P2P setting. Reopen Harbor to try again.":
-    "Harbor không thể áp dụng cài đặt P2P. Mở lại Harbor để thử lại.",
-  "Harbor couldn't check the SVP installation. Try again.":
-    "Harbor không thể kiểm tra bản cài đặt SVP. Hãy thử lại.",
-  "Harbor looks for subtitles in this order. Put your preferred language first.":
-    "Harbor tìm phụ đề theo thứ tự này. Đặt ngôn ngữ bạn muốn ở đầu.",
-  "Harbor on your other devices: the web app, the phone remote, and the manga reader remote.":
-    "Harbor trên các thiết bị khác: ứng dụng web, điều khiển bằng điện thoại và điều khiển trình đọc manga.",
-  "Harbor profile showing watch statistics": "Hồ sơ Harbor hiển thị thống kê xem",
-  "Harbor uses its own community server. You can point it at a server you run yourself.":
-    "Harbor dùng máy chủ cộng đồng riêng. Bạn có thể đổi sang máy chủ do chính mình vận hành.",
-  "Harbor's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
-    "Bộ máy ngang hàng tích hợp của Harbor, tính năng tự kiểm tra và máy chủ phát trực tuyến bạn chỉ định.",
-  "Harbor's licence, the projects it is built on, and the people and services that make it possible.":
-    "Giấy phép Harbor, các dự án nền tảng cùng những người và dịch vụ giúp tạo nên ứng dụng.",
-  "Harbor's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
-    "Máy chủ từ xa của Harbor không phản hồi ở cổng {WEB_PORT}. Kiểm tra máy chủ trên máy tính có đang chạy không, hoặc tắt rồi bật lại cài đặt này để khởi động lại.",
-  "Harbor, with a few classics.": "Harbor cùng một vài tác phẩm kinh điển.",
+  "Frame Discover showing Steamboat Willie and The General":
+    "Trang Khám phá Frame hiển thị Steamboat Willie và The General",
+  "Frame checks the receiving device and uses ffmpeg when the stream needs conversion.":
+    "Frame kiểm tra thiết bị nhận và dùng ffmpeg khi luồng cần chuyển đổi.",
+  "Frame could not apply the P2P setting. Reopen Frame to try again.":
+    "Frame không thể áp dụng cài đặt P2P. Mở lại Frame để thử lại.",
+  "Frame couldn't check the SVP installation. Try again.":
+    "Frame không thể kiểm tra bản cài đặt SVP. Hãy thử lại.",
+  "Frame looks for subtitles in this order. Put your preferred language first.":
+    "Frame tìm phụ đề theo thứ tự này. Đặt ngôn ngữ bạn muốn ở đầu.",
+  "Frame on your other devices: the web app, the phone remote, and the manga reader remote.":
+    "Frame trên các thiết bị khác: ứng dụng web, điều khiển bằng điện thoại và điều khiển trình đọc manga.",
+  "Frame profile showing watch statistics": "Hồ sơ Frame hiển thị thống kê xem",
+  "Frame uses its own community server. You can point it at a server you run yourself.":
+    "Frame dùng máy chủ cộng đồng riêng. Bạn có thể đổi sang máy chủ do chính mình vận hành.",
+  "Frame's built-in peer-to-peer engine, its self-test, and any streaming server you point it at.":
+    "Bộ máy ngang hàng tích hợp của Frame, tính năng tự kiểm tra và máy chủ phát trực tuyến bạn chỉ định.",
+  "Frame's licence, the projects it is built on, and the people and services that make it possible.":
+    "Giấy phép Frame, các dự án nền tảng cùng những người và dịch vụ giúp tạo nên ứng dụng.",
+  "Frame's remote server isn't responding on port {WEB_PORT}. Check that the desktop server is running, or turn this setting off and on to restart it.":
+    "Máy chủ từ xa của Frame không phản hồi ở cổng {WEB_PORT}. Kiểm tra máy chủ trên máy tính có đang chạy không, hoặc tắt rồi bật lại cài đặt này để khởi động lại.",
+  "Frame, with a few classics.": "Frame cùng một vài tác phẩm kinh điển.",
   "Help & about": "Trợ giúp và giới thiệu",
   "Hex color": "Màu thập lục phân",
   "Hide suspicious files, mismatched releases, likely camera recordings and trailers. Also check file sizes and season packs.":
@@ -306,10 +306,10 @@ const settingsRefinements: Record<string, string> = {
   "Hide {name} from navigation": "Ẩn {name} khỏi thanh điều hướng",
   "High loads sharper artwork. Choose Balanced if browsing feels slow. This does not affect video quality.":
     "Cao tải hình ảnh sắc nét hơn. Chọn Cân bằng nếu duyệt bị chậm. Tùy chọn này không ảnh hưởng đến chất lượng video.",
-  "How long Harbor waits for each addon to return results.":
-    "Thời gian Harbor chờ từng tiện ích trả kết quả.",
-  "How much does this affect your use of Harbor?":
-    "Vấn đề này ảnh hưởng đến việc dùng Harbor của bạn ở mức nào?",
+  "How long Frame waits for each addon to return results.":
+    "Thời gian Frame chờ từng tiện ích trả kết quả.",
+  "How much does this affect your use of Frame?":
+    "Vấn đề này ảnh hưởng đến việc dùng Frame của bạn ở mức nào?",
   "How to connect Discord": "Cách kết nối Discord",
   "How to connect Telegram": "Cách kết nối Telegram",
   "How video plays, how it looks, and what happens between episodes.":
@@ -329,18 +329,18 @@ const settingsRefinements: Record<string, string> = {
   "Included with your report: app and device details, enabled-service counts, the player check, and recent error messages.":
     "Kèm theo báo cáo: thông tin ứng dụng và thiết bị, số dịch vụ đã bật, kết quả kiểm tra trình phát và thông báo lỗi gần đây.",
   "Install SVP and check again before enabling it.": "Cài SVP và kiểm tra lại trước khi bật.",
-  "Install SVP with its VapourSynth components, then check again so Harbor can find them.":
-    "Cài SVP cùng các thành phần VapourSynth, rồi kiểm tra lại để Harbor tìm thấy chúng.",
-  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Harbor.":
-    "Cài bộ biểu tượng hoặc tải lên ảnh riêng cho từng giải thưởng. Các bộ biểu tượng do tác giả lưu trữ, không được đóng gói cùng Harbor.",
+  "Install SVP with its VapourSynth components, then check again so Frame can find them.":
+    "Cài SVP cùng các thành phần VapourSynth, rồi kiểm tra lại để Frame tìm thấy chúng.",
+  "Install icon packs or upload your own image for every award. Packs are hosted by their makers, not bundled with Frame.":
+    "Cài bộ biểu tượng hoặc tải lên ảnh riêng cho từng giải thưởng. Các bộ biểu tượng do tác giả lưu trữ, không được đóng gói cùng Frame.",
   "Install updates, try beta builds, and keep a copy of your setup.":
     "Cài bản cập nhật, thử bản beta và lưu bản sao cấu hình của bạn.",
   "Instant starts the best-ranked stream straight away. Pick a source opens the stream list every time, so you choose the release, quality and provider yourself.":
     "Phát ngay bắt đầu luồng được xếp hạng cao nhất. Chọn nguồn mở danh sách luồng mỗi lần để bạn tự chọn bản phát hành, chất lượng và nhà cung cấp.",
   "Jump past openings automatically the moment one starts. Seeking back into an intro replays it without skipping again. The Skip button follows the setting above.":
     "Tự động bỏ qua phần mở đầu ngay khi bắt đầu. Tua lại vào phần mở đầu sẽ phát phần đó mà không bỏ qua lần nữa. Nút Bỏ qua tuân theo cài đặt ở trên.",
-  "Keep Harbor fullscreen when you close the player.":
-    "Giữ Harbor ở chế độ toàn màn hình khi bạn đóng trình phát.",
+  "Keep Frame fullscreen when you close the player.":
+    "Giữ Frame ở chế độ toàn màn hình khi bạn đóng trình phát.",
   "Keep code": "Giữ mã",
   "Keep my shortcuts": "Giữ phím tắt của tôi",
   "Keep rule": "Giữ quy tắc",
@@ -361,15 +361,15 @@ const settingsRefinements: Record<string, string> = {
   "Kids avatar {number}": "Ảnh đại diện trẻ em {number}",
   "Language preference order": "Thứ tự ưu tiên ngôn ngữ",
   "Larger artwork with the song title below it.": "Ảnh lớn hơn với tên bài hát bên dưới.",
-  "Leave this on Automatic unless Harbor's interface flickers or stutters. This controls the app window, not video playback.":
-    "Giữ ở Tự động trừ khi giao diện Harbor nhấp nháy hoặc giật. Cài đặt này điều khiển cửa sổ ứng dụng, không ảnh hưởng đến phát video.",
-  "Let Harbor stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
-    "Cho phép Harbor phát qua P2P từ thiết bị này khi không có liên kết debrid. Tắt để ngăn phát P2P cục bộ. Máy chủ từ xa đã cấu hình vẫn có thể phát chúng.",
+  "Leave this on Automatic unless Frame's interface flickers or stutters. This controls the app window, not video playback.":
+    "Giữ ở Tự động trừ khi giao diện Frame nhấp nháy hoặc giật. Cài đặt này điều khiển cửa sổ ứng dụng, không ảnh hưởng đến phát video.",
+  "Let Frame stream over P2P from this device when a debrid link is unavailable. Turn off to prevent local P2P playback. A configured remote server can still stream them.":
+    "Cho phép Frame phát qua P2P từ thiết bị này khi không có liên kết debrid. Tắt để ngăn phát P2P cục bộ. Máy chủ từ xa đã cấu hình vẫn có thể phát chúng.",
   Licence: "Giấy phép",
   "Licenses & attribution": "Giấy phép và ghi công",
   "Lightens or darkens the whole picture.": "Làm sáng hoặc tối toàn bộ hình ảnh.",
-  "List the steps that lead to the problem, starting from when you open Harbor.":
-    "Liệt kê các bước dẫn đến sự cố, bắt đầu từ lúc bạn mở Harbor.",
+  "List the steps that lead to the problem, starting from when you open Frame.":
+    "Liệt kê các bước dẫn đến sự cố, bắt đầu từ lúc bạn mở Frame.",
   "Load failed. Retry": "Tải không thành công. Thử lại",
   "Loading {name}…": "Đang tải {name}…",
   "Local address for this computer. Connect to a local network to get an address for your other devices.":
@@ -394,8 +394,8 @@ const settingsRefinements: Record<string, string> = {
   "Move {language} earlier": "Tăng ưu tiên cho {language}",
   "Move {name} down": "Chuyển {name} xuống",
   "Move {name} up": "Chuyển {name} lên",
-  "No custom options. Harbor uses your video settings.":
-    "Không có tùy chọn riêng. Harbor dùng cài đặt video của bạn.",
+  "No custom options. Frame uses your video settings.":
+    "Không có tùy chọn riêng. Frame dùng cài đặt video của bạn.",
   "No default profile": "Không có hồ sơ mặc định",
   "No preferences selected. Edit this filter to choose the streams you prefer.":
     "Chưa chọn tùy chọn ưu tiên. Chỉnh sửa bộ lọc này để chọn luồng bạn muốn.",
@@ -410,7 +410,7 @@ const settingsRefinements: Record<string, string> = {
   "Notification sources": "Nguồn thông báo",
   "On your local network": "Trên mạng cục bộ của bạn",
   "On-screen controls": "Nút điều khiển trên màn hình",
-  "Open Harbor account": "Mở tài khoản Harbor",
+  "Open Frame account": "Mở tài khoản Frame",
   "Open Stremio settings": "Mở cài đặt Stremio",
   "Open on YouTube": "Mở trên YouTube",
   "Open the cast while you watch and tap anyone for their bio and other titles. You can also enable on-device face matching to show who is on screen. Off by default.":
@@ -418,8 +418,8 @@ const settingsRefinements: Record<string, string> = {
   "Open this profile at launch. Timed prompts can still appear later. Profiles with a PIN cannot be a default.":
     "Mở hồ sơ này khi khởi động. Lời nhắc theo thời gian vẫn có thể xuất hiện sau đó. Không thể đặt hồ sơ có mã PIN làm mặc định.",
   "Open {label} address": "Mở địa chỉ {label}",
-  "Optional video effects downloaded from their authors. Harbor applies enabled shaders in the order shown below.":
-    "Hiệu ứng video tùy chọn được tải từ tác giả. Harbor áp dụng các shader đã bật theo thứ tự bên dưới.",
+  "Optional video effects downloaded from their authors. Frame applies enabled shaders in the order shown below.":
+    "Hiệu ứng video tùy chọn được tải từ tác giả. Frame áp dụng các shader đã bật theo thứ tự bên dưới.",
   "Optional. Leave your contact details if we may follow up, and choose whether you want public credit.":
     "Không bắt buộc. Để lại thông tin liên hệ nếu bạn đồng ý để chúng tôi trao đổi thêm, và chọn có muốn được ghi công công khai hay không.",
   "Optional. Used to allow more watch time. Without a PIN, switch profiles when time is up.":
@@ -487,13 +487,13 @@ const settingsRefinements: Record<string, string> = {
   "Right in the middle of the picture, hard to miss.": "Ngay giữa hình ảnh, dễ nhìn thấy.",
   "Rule name": "Tên quy tắc",
   "SVP interpolation": "Nội suy SVP",
-  "SVP is handling motion smoothing. Turn it off on the SVP page to use Harbor's smoothing instead.":
-    "SVP đang xử lý làm mượt chuyển động. Tắt trên trang SVP để dùng tính năng làm mượt của Harbor.",
+  "SVP is handling motion smoothing. Turn it off on the SVP page to use Frame's smoothing instead.":
+    "SVP đang xử lý làm mượt chuyển động. Tắt trên trang SVP để dùng tính năng làm mượt của Frame.",
   "Same coverage, but still a window, so alt-tab stays instant.":
     "Phủ cùng diện tích nhưng vẫn là cửa sổ, nên alt-tab vẫn chuyển ngay lập tức.",
   "Saturation {s}%, brightness {v}%": "Độ bão hòa {s}%, độ sáng {v}%",
-  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Harbor uses the next best available source.":
-    "Lưu chất lượng luồng bạn ưu tiên. Luồng phải khớp mọi danh mục bạn đặt; để trống danh mục để chấp nhận mọi giá trị. Nếu không có kết quả khớp, Harbor dùng nguồn tốt nhất tiếp theo hiện có.",
+  "Save the stream quality you prefer. Streams must match every category you set; leave a category blank to accept any value. If nothing matches, Frame uses the next best available source.":
+    "Lưu chất lượng luồng bạn ưu tiên. Luồng phải khớp mọi danh mục bạn đặt; để trống danh mục để chấp nhận mọi giá trị. Nếu không có kết quả khớp, Frame dùng nguồn tốt nhất tiếp theo hiện có.",
   "Save {name} as JSON": "Lưu {name} dưới dạng JSON",
   "Save {name} as SVG": "Lưu {name} dưới dạng SVG",
   "Saved {name}.": "Đã lưu {name}.",
@@ -506,8 +506,8 @@ const settingsRefinements: Record<string, string> = {
   "Secondary copy sits here": "Nội dung phụ hiển thị ở đây",
   "See the resolution, HDR format and audio while you watch.":
     "Xem độ phân giải, định dạng HDR và âm thanh trong khi xem.",
-  "See what Harbor stores on this computer and clear caches when you want the space back.":
-    "Xem Harbor lưu gì trên máy tính này và xóa bộ nhớ đệm khi bạn cần lấy lại dung lượng.",
+  "See what Frame stores on this computer and clear caches when you want the space back.":
+    "Xem Frame lưu gì trên máy tính này và xóa bộ nhớ đệm khi bạn cần lấy lại dung lượng.",
   "Send audio to specific speakers, headphones or a receiver. System default follows your system's audio output.":
     "Gửi âm thanh tới loa, tai nghe hoặc bộ thu cụ thể. Mặc định hệ thống dùng đầu ra âm thanh của hệ thống.",
   "Services that record what you watch. Connect the ones you use and tune what each one sends.":
@@ -517,8 +517,8 @@ const settingsRefinements: Record<string, string> = {
   "Set up a destination": "Thiết lập nơi nhận",
   "Set up rating providers": "Thiết lập nguồn điểm đánh giá",
   "Set up song identification": "Thiết lập nhận diện bài hát",
-  "Set up your television from here. Everything on this page is written to your Harbor account and picked up by Big Picture on the TV, so you never have to type on a remote.":
-    "Thiết lập TV ngay tại đây. Mọi cài đặt trên trang này được lưu vào tài khoản Harbor và đồng bộ với Big Picture trên TV, nên bạn không cần nhập bằng điều khiển từ xa.",
+  "Set up your television from here. Everything on this page is written to your Frame account and picked up by Big Picture on the TV, so you never have to type on a remote.":
+    "Thiết lập TV ngay tại đây. Mọi cài đặt trên trang này được lưu vào tài khoản Frame và đồng bộ với Big Picture trên TV, nên bạn không cần nhập bằng điều khiển từ xa.",
   "Sets the age level for the kids space.": "Đặt độ tuổi cho không gian trẻ em.",
   "Setting up SVP…": "Đang thiết lập SVP…",
   "Share your style": "Chia sẻ phong cách của bạn",
@@ -560,8 +560,8 @@ const settingsRefinements: Record<string, string> = {
     "Các nhãn nhỏ bo tròn có viền trượt vào bên dưới tiêu đề.",
   "Smooth motion and where SVP fits in. Frame interpolation for anime lives here; picture shaders moved to their own tab.":
     "Chuyển động mượt và cách dùng SVP. Nội suy khung hình cho anime nằm ở đây; shader hình ảnh đã chuyển sang thẻ riêng.",
-  "Smooths camera movement using Harbor's player. Works best when your screen refreshes faster than the video's frame rate.":
-    "Làm mượt chuyển động máy quay bằng trình phát Harbor. Hiệu quả nhất khi tần số quét màn hình cao hơn tốc độ khung hình của video.",
+  "Smooths camera movement using Frame's player. Works best when your screen refreshes faster than the video's frame rate.":
+    "Làm mượt chuyển động máy quay bằng trình phát Frame. Hiệu quả nhất khi tần số quét màn hình cao hơn tốc độ khung hình của video.",
   "Smooths motion using SVP. Restart playback to apply; turn this off if video will not play.":
     "Làm mượt chuyển động bằng SVP. Khởi động lại phát để áp dụng; tắt nếu video không phát được.",
   "Soften the artwork behind the stream picker.": "Làm dịu ảnh nền phía sau bộ chọn luồng.",
@@ -569,8 +569,8 @@ const settingsRefinements: Record<string, string> = {
     "Một số cài đặt TV không thể đồng bộ trong bản này. Thay đổi vẫn được lưu trên máy tính này.",
   "Someone released that handle recently. It frees up 14 days after they dropped it.":
     "Gần đây có người đã bỏ tên định danh đó. Tên sẽ có thể sử dụng sau 14 ngày kể từ khi được bỏ.",
-  "Something behaves unexpectedly, but you can keep using Harbor.":
-    "Có điều gì đó hoạt động bất thường nhưng bạn vẫn dùng được Harbor.",
+  "Something behaves unexpectedly, but you can keep using Frame.":
+    "Có điều gì đó hoạt động bất thường nhưng bạn vẫn dùng được Frame.",
   "Something looks wrong, but the feature still works.":
     "Có gì đó hiển thị sai nhưng tính năng vẫn hoạt động.",
   "Something went wrong. Try again.": "Đã xảy ra lỗi. Hãy thử lại.",
@@ -606,8 +606,8 @@ const settingsRefinements: Record<string, string> = {
   "Testing remote streaming server": "Đang kiểm tra máy chủ phát từ xa",
   "Text is enlarged in this preview so you can judge the style.":
     "Chữ được phóng to trong phần xem trước để bạn đánh giá kiểu hiển thị.",
-  "That Stremio account is already linked to a different Harbor account. Unlink it there first.":
-    "Tài khoản Stremio đó đã liên kết với một tài khoản Harbor khác. Hãy hủy liên kết ở tài khoản đó trước.",
+  "That Stremio account is already linked to a different Frame account. Unlink it there first.":
+    "Tài khoản Stremio đó đã liên kết với một tài khoản Frame khác. Hãy hủy liên kết ở tài khoản đó trước.",
   "That Stremio sign-in did not go through. Try again.":
     "Đăng nhập Stremio không thành công. Hãy thử lại.",
   "That file could not be read as an image. Try a PNG, JPG, or WEBP.":
@@ -641,12 +641,12 @@ const settingsRefinements: Record<string, string> = {
     "Một vài cài đặt mà hầu hết mọi người chỉ cần thiết lập một lần.",
   "The handful of settings most people set once. Sign in, choose how Play behaves, and pick your look.":
     "Một vài cài đặt mà hầu hết mọi người chỉ cần thiết lập một lần. Đăng nhập, chọn cách nút Phát hoạt động và chọn giao diện.",
-  "The language of Harbor's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
-    "Ngôn ngữ menu, nút và nhãn của Harbor. Âm thanh, phụ đề và thông tin phim có cài đặt ngôn ngữ riêng.",
+  "The language of Frame's menus, buttons, and labels. Audio, subtitles, and title information have their own language settings.":
+    "Ngôn ngữ menu, nút và nhãn của Frame. Âm thanh, phụ đề và thông tin phim có cài đặt ngôn ngữ riêng.",
   "The same slow camera pan, with motion smoothing off and on.":
     "Cùng một cảnh lia máy chậm, khi tắt và bật làm mượt chuyển động.",
-  "The saved JavaScript will be removed. Restart Harbor to clear any effects from scripts that already ran.":
-    "JavaScript đã lưu sẽ bị xóa. Khởi động lại Harbor để xóa tác động của các tập lệnh đã chạy.",
+  "The saved JavaScript will be removed. Restart Frame to clear any effects from scripts that already ran.":
+    "JavaScript đã lưu sẽ bị xóa. Khởi động lại Frame để xóa tác động của các tập lệnh đã chạy.",
   "The saved {name} will be removed and its changes will stop applying.":
     "{name} đã lưu sẽ bị xóa và các thay đổi của nó sẽ ngừng áp dụng.",
   "The server responded in {ms} ms.": "Máy chủ đã phản hồi sau {ms} mili giây.",
@@ -654,8 +654,8 @@ const settingsRefinements: Record<string, string> = {
     "Sáu mục cài đặt cục bộ lớn nhất, gồm tùy chọn và dữ liệu tra cứu.",
   "{count} entries": "{count} mục",
   "The volume pop-up is hidden.": "Bảng âm lượng đang ẩn.",
-  "Theme, the player's own layout, artwork, and what Harbor shows on a card.":
-    "Chủ đề, bố cục trình phát, hình ảnh và nội dung Harbor hiển thị trên thẻ.",
+  "Theme, the player's own layout, artwork, and what Frame shows on a card.":
+    "Chủ đề, bố cục trình phát, hình ảnh và nội dung Frame hiển thị trên thẻ.",
   "This account has been suspended. Reach out to support if you think that's wrong.":
     "Tài khoản này đã bị đình chỉ. Hãy liên hệ bộ phận hỗ trợ nếu bạn cho rằng có nhầm lẫn.",
   "This backup contained nothing restorable.":
@@ -663,7 +663,7 @@ const settingsRefinements: Record<string, string> = {
   "This backup has no data in it.": "Bản sao lưu này không có dữ liệu.",
   "This is how your subtitles": "Phụ đề của bạn sẽ",
   "This is how your subtitles will look.": "Phụ đề của bạn sẽ hiển thị như thế này.",
-  "This is not a Harbor backup file.": "Đây không phải tệp sao lưu Harbor.",
+  "This is not a Frame backup file.": "Đây không phải tệp sao lưu Frame.",
   "To stream from this computer on another device, copy its local network address and enter it in Remote streaming server on that device.":
     "Để phát từ máy tính này trên thiết bị khác, sao chép địa chỉ mạng cục bộ và nhập vào Máy chủ phát từ xa trên thiết bị đó.",
   "Too many attempts in a row. Wait a minute, then try again.":
@@ -688,8 +688,8 @@ const settingsRefinements: Record<string, string> = {
   "Untranslated text stays in English. Choose a language, then select Apply and reload.":
     "Nội dung chưa dịch vẫn hiển thị bằng tiếng Anh. Chọn ngôn ngữ, rồi chọn Áp dụng và tải lại.",
   "Unwatched episodes": "Tập chưa xem",
-  "Upload a picture of your own, or pick one from the Harbor catalog.":
-    "Tải lên ảnh của bạn hoặc chọn một ảnh từ danh mục Harbor.",
+  "Upload a picture of your own, or pick one from the Frame catalog.":
+    "Tải lên ảnh của bạn hoặc chọn một ảnh từ danh mục Frame.",
   "Use letters, numbers, and single hyphens only.": "Chỉ dùng chữ cái, chữ số và dấu gạch nối đơn.",
   "Use no saved stream filter": "Không dùng bộ lọc luồng đã lưu",
   "Use sharper artwork for large cards. Uses more data and may load more slowly.":
@@ -697,8 +697,8 @@ const settingsRefinements: Record<string, string> = {
   "Use {name}": "Dùng {name}",
   "Used only if we need one more detail to reproduce the bug.":
     "Chỉ dùng nếu chúng tôi cần thêm thông tin để tái hiện lỗi.",
-  "Uses SVP to smooth motion inside Harbor's player. Install SVP once; Harbor uses its engine and opens SVP Manager when needed.":
-    "Dùng SVP để làm mượt chuyển động trong trình phát Harbor. Chỉ cần cài SVP một lần; Harbor dùng bộ máy của SVP và mở SVP Manager khi cần.",
+  "Uses SVP to smooth motion inside Frame's player. Install SVP once; Frame uses its engine and opens SVP Manager when needed.":
+    "Dùng SVP để làm mượt chuyển động trong trình phát Frame. Chỉ cần cài SVP một lần; Frame dùng bộ máy của SVP và mở SVP Manager khi cần.",
   "Uses SVP's motion engine through VapourSynth. Restart playback to apply.":
     "Dùng bộ máy chuyển động của SVP thông qua VapourSynth. Khởi động lại phát để áp dụng.",
   "Uses the graphics card when supported, with a processor fallback. Recommended for most computers.":
@@ -709,17 +709,17 @@ const settingsRefinements: Record<string, string> = {
     "Dùng bộ dựng hình GPU cũ cho card đồ họa gặp vấn đề với bộ dựng hình hiện đại.",
   "Uses the processor to decode video. Try this if hardware decoding causes picture problems.":
     "Dùng bộ xử lý để giải mã video. Thử nếu giải mã phần cứng gây lỗi hình ảnh.",
-  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Harbor's player.":
-    "Dùng SVP và VapourSynth đã cài trên Linux để làm mượt chuyển động trong trình phát Harbor.",
+  "Uses your Linux SVP and VapourSynth installation to smooth motion inside Frame's player.":
+    "Dùng SVP và VapourSynth đã cài trên Linux để làm mượt chuyển động trong trình phát Frame.",
   "Video quality": "Chất lượng video",
   "View generated mpv options": "Xem tùy chọn mpv đã tạo",
   "Volume pop-up": "Bảng âm lượng",
   "We tag this account on the issue so you see the fix land.":
     "Chúng tôi gắn thẻ tài khoản này trong báo cáo để bạn biết khi có bản sửa lỗi.",
-  "What language Harbor speaks, and how subtitles behave.":
-    "Ngôn ngữ Harbor sử dụng và cách phụ đề hoạt động.",
-  "What language Harbor speaks, and which audio tracks it reaches for first.":
-    "Ngôn ngữ Harbor sử dụng và bản âm thanh được ưu tiên.",
+  "What language Frame speaks, and how subtitles behave.":
+    "Ngôn ngữ Frame sử dụng và cách phụ đề hoạt động.",
+  "What language Frame speaks, and which audio tracks it reaches for first.":
+    "Ngôn ngữ Frame sử dụng và bản âm thanh được ưu tiên.",
   "Where streams come from, how they are filtered, and the metadata behind them.":
     "Nguồn luồng, cách lọc và siêu dữ liệu đi kèm.",
   "Where the laurel tab sits relative to the score chips on the poster.":
@@ -732,7 +732,7 @@ const settingsRefinements: Record<string, string> = {
   "Window behavior": "Cách hoạt động của cửa sổ",
   "You can also turn off Rule is active to pause it without deleting it.":
     "Bạn cũng có thể tắt Quy tắc đang hoạt động để tạm dừng mà không xóa.",
-  "You cannot use Harbor.": "Bạn không thể dùng Harbor.",
+  "You cannot use Frame.": "Bạn không thể dùng Frame.",
   "You changed your handle recently. You can change it again after the cooldown.":
     "Bạn mới đổi tên định danh gần đây. Bạn có thể đổi lại sau khi hết thời gian chờ.",
   "You have unsaved changes that will be lost when switching player styles. Continue?":

@@ -9,7 +9,7 @@ const HARBOR_LOGO = `${HARBOR_DATA_BASE}/discord/harbordiscord.png`;
 // Discord strips buttons that link to its own invites: discord.gg makes it
 // reject the whole activity (presence vanishes), discord.com/invite is dropped
 // silently. A community-invite button needs a redirect on a domain we own.
-const STATIC_BUTTONS = [{ label: "Get Harbor", url: "https://github.com/crazyrabbit0/harbor" }];
+const STATIC_BUTTONS = [{ label: "Get Frame", url: "https://github.com/crazyrabbit0/harbor" }];
 
 type DiscordConfig = {
   enabled: boolean;
@@ -195,13 +195,13 @@ function computeBase(): Base {
   if (browse && config.showWhenBrowsing) {
     if (config.hideTitle)
       return {
-        payload: { details: "Browsing Harbor", posterUrl: HARBOR_LOGO },
+        payload: { details: "Browsing Frame", posterUrl: HARBOR_LOGO },
         key: "browse:hide",
       };
     const isManga = browse.kind === "manga";
     const details = isManga
-      ? stripColorTag(browse.details ?? "Browsing Harbor")
-      : (browse.details ?? "Browsing Harbor");
+      ? stripColorTag(browse.details ?? "Browsing Frame")
+      : (browse.details ?? "Browsing Frame");
     const largeText = isManga
       ? stripColorTag(browse.largeText ?? browse.details ?? "")
       : (browse.largeText ?? browse.details);
@@ -233,7 +233,7 @@ function compute(): Computed {
     const headcount = Math.max(1, party.size);
     const payload: Record<string, unknown> = base ? { ...base.payload } : {};
     let context = base && !config.hideTitle ? (payload.details as string | undefined) : undefined;
-    if (context && context.startsWith("Browsing Harbor")) context = undefined;
+    if (context && context.startsWith("Browsing Frame")) context = undefined;
     if (context && playback && !config.hideTitle) {
       const sub = payload.state as string | undefined;
       if (sub) context = `${context} · ${sub}`;

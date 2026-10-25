@@ -23,7 +23,7 @@ export default {
   "games.stardew.refresh": "Odśwież mody",
 
   "games.stardew.import": "Importuj ZIP moda",
-  "games.stardew.manage": "Zarządzane przez Harbor",
+  "games.stardew.manage": "Zarządzane przez Frame",
   "games.stardew.manageNote":
     "Zaimportuj pobrany mod SMAPI, aby nim zarządzać. Aby go zaktualizować, zaimportuj nowszy ZIP.",
   "games.stardew.previous": "Poprzednie wersje",
@@ -42,7 +42,7 @@ export default {
   "games.stardew.dependentsError":
     "Włączony mod wymaga tej wersji. Najpierw go wyłącz lub wybierz zgodną wersję.",
   "games.stardew.unmanagedError":
-    "Ten mod już istnieje poza rejestrem Harbor. Przenieś istniejącą kopię przed importem.",
+    "Ten mod już istnieje poza rejestrem Frame. Przenieś istniejącą kopię przed importem.",
   "games.stardew.archiveError":
     "Wybierz ZIP z jednym gotowym folderem moda, do 32 MB (128 MB po rozpakowaniu). Kod źródłowy nie jest modem gotowym do instalacji.",
   "games.stardew.moreFiles": "Jeszcze {count} plików",
