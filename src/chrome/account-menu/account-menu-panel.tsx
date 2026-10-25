@@ -1,23 +1,10 @@
-import {
-  Bell,
-  ChevronDown,
-  Lock,
-  LogIn,
-  LogOut,
-  Pencil,
-  Plus,
-  Settings as SettingsIcon,
-  UserRound,
-  Users,
-} from "lucide-react";
+import { Bell, Lock, LogIn, LogOut, Settings as SettingsIcon, UserRound } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { ProfileAvatar } from "./account-menu-parts";
 import type { AccountMenuController } from "./use-account-menu";
 
 const ITEM =
   "flex items-center gap-2.5 px-4 py-2.5 text-start text-[13.5px] text-ink-muted transition-colors duration-150 ease-[var(--ease-out)] hover:bg-raised hover:text-ink active:scale-[0.98]";
-const SUB_ITEM =
-  "flex items-center gap-2.5 py-2 ps-11 pe-4 text-start text-[13px] text-ink-subtle transition-colors duration-150 ease-[var(--ease-out)] hover:bg-raised hover:text-ink";
 
 export function AccountMenuPanel({
   ctrl,
@@ -41,16 +28,14 @@ export function AccountMenuPanel({
     profiles,
     activeProfile,
     author,
-    openPicker,
     requestSwitch,
     viewMyProfile,
     openNotifications,
-    manageOpen,
-    setManageOpen,
     setMenuOpen,
     setAuthOpen,
   } = ctrl;
-  const otherProfiles = profiles.filter((p) => p.id !== activeProfile?.id);
+  // Frame has one profile, so the menu offers nothing to switch to.
+  const otherProfiles: typeof profiles = [];
   const kid = !!activeProfile?.kid;
   const name =
     activeProfile?.name ?? user?.fullname ?? user?.email?.split("@")[0] ?? t("profile.fallback");
@@ -116,56 +101,6 @@ export function AccountMenuPanel({
               <Bell size={14} strokeWidth={2.2} />
               {t("Notifications")}
             </button>
-          )}
-          <button
-            onClick={() => setManageOpen((o) => !o)}
-            className={`${ITEM} ${author ? "border-t border-edge-soft" : ""}`}
-          >
-            <Users size={14} strokeWidth={2.2} />
-            {t("Manage profiles")}
-            <ChevronDown
-              size={14}
-              strokeWidth={2.2}
-              className={`ms-auto transition-transform duration-200 ${manageOpen ? "rotate-180" : ""}`}
-            />
-          </button>
-          {manageOpen && (
-            <div className="flex flex-col bg-canvas/50">
-              <button
-                onClick={() => {
-                  openPicker({ kind: "list" });
-                  setMenuOpen(false);
-                }}
-                className={SUB_ITEM}
-              >
-                <Users size={13} strokeWidth={2.2} />
-                {t("profile.whoWatching")}
-              </button>
-              {activeProfile && (
-                <button
-                  onClick={() => {
-                    openPicker({ kind: "edit", profileId: activeProfile.id });
-                    setMenuOpen(false);
-                  }}
-                  className={SUB_ITEM}
-                >
-                  <Pencil size={13} strokeWidth={2.2} />
-                  {t("profile.editThis")}
-                </button>
-              )}
-              {activeProfile?.isPrimary && (
-                <button
-                  onClick={() => {
-                    openPicker({ kind: "create" });
-                    setMenuOpen(false);
-                  }}
-                  className={SUB_ITEM}
-                >
-                  <Plus size={13} strokeWidth={2.2} />
-                  {t("profile.new")}
-                </button>
-              )}
-            </div>
           )}
           {showSettings && onOpenSettings && (
             <button

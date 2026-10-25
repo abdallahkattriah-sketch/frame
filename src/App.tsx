@@ -76,7 +76,6 @@ import { HarborAvatarSync } from "@/components/harbor-avatar-sync";
 import { HarborNameSync } from "@/components/harbor-name-sync";
 import { SettingsProfileBridge } from "@/lib/settings-profile-bridge";
 import { TrackerProfileBridge } from "@/lib/tracker-profile-bridge";
-import { ProfilePickerModal } from "@/components/profile-picker/picker-modal";
 import { WatchlistSync } from "@/lib/watchlist-sync";
 import { ContextMenuProvider } from "@/lib/context-menu";
 import { TopRankModalProvider } from "@/lib/top-rank-modal";
@@ -395,7 +394,6 @@ export function App({ onReady }: { onReady?: () => void }) {
                                                     <HoverPreview />
                                                     <CustomHoverCssMount />
                                                     <TopRankModal />
-                                                    <ProfilePickerModal />
                                                     <CurfewGuard />
                                                     <SearchOverlay />
                                                     <SearchHotkey />

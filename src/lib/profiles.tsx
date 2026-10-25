@@ -157,7 +157,7 @@ export type Profile = {
   createdAt: number;
 };
 
-type ProfilesState = {
+export type ProfilesState = {
   profiles: Profile[];
   activeId: string | null;
 };
@@ -267,25 +267,6 @@ function readSettingsIdentity(): { color: string | null; avatar: string | null }
   }
 }
 
-type ProfilePromptInterval = "launch" | "15m" | "30m" | "never";
-function readProfilePromptInterval(): ProfilePromptInterval {
-  try {
-    const raw = readLaunchSettingsRaw();
-    if (!raw) return "launch";
-    const parsed = JSON.parse(raw) as {
-      profilePromptInterval?: unknown;
-      skipProfileScreen?: unknown;
-    };
-    const v = parsed.profilePromptInterval;
-    if (v === "launch" || v === "15m" || v === "30m" || v === "never") return v;
-    return parsed.skipProfileScreen === true ? "never" : "launch";
-  } catch {
-    return "launch";
-  }
-}
-function intervalMinutes(i: ProfilePromptInterval): number {
-  return i === "15m" ? 15 : i === "30m" ? 30 : 0;
-}
 function readDefaultProfileId(): string {
   try {
     const raw = readLaunchSettingsRaw();
@@ -296,6 +277,18 @@ function readDefaultProfileId(): string {
     return "";
   }
 }
+/**
+ * Frame runs on one profile. Whoever was last active stays active, unless that
+ * was a kid profile: Kids mode is gone, so the primary profile takes over. The
+ * other profiles and their data stay stored, but nothing switches to them.
+ */
+export function frameProfileId(state: ProfilesState): string | null {
+  const active = state.profiles.find((p) => p.id === state.activeId);
+  if (active && !active.kid) return active.id;
+  const primary = state.profiles.find((p) => p.isPrimary && !p.kid);
+  return (primary ?? state.profiles.find((p) => !p.kid) ?? state.profiles[0])?.id ?? null;
+}
+
 function launchDefault(profiles: Profile[]): Profile | null {
   const id = readDefaultProfileId();
   if (!id) return null;
@@ -303,13 +296,6 @@ function launchDefault(profiles: Profile[]): Profile | null {
   return p && !p.passwordHash ? p : null;
 }
 const LAST_SELECT_KEY = "harbor.profile.lastSelectAt";
-function readLastProfileSelectAt(): number {
-  try {
-    return Number(localStorage.getItem(LAST_SELECT_KEY)) || 0;
-  } catch {
-    return 0;
-  }
-}
 function markProfileSelectedNow(): void {
   try {
     localStorage.setItem(LAST_SELECT_KEY, String(Date.now()));
@@ -317,9 +303,6 @@ function markProfileSelectedNow(): void {
     /* ignore */
   }
 }
-
-// Module-level on purpose: sessionStorage can survive across app launches in the webview, which suppressed this prompt.
-let pickerPromptShownThisRun = false;
 
 export function readActiveProfileIdentity(): {
   id: string;
@@ -524,21 +507,11 @@ export function ProfilesProvider({ children }: { children: ReactNode }) {
     }
     migrateLegacyStremioAuth(loaded.profiles);
     const def = launchDefault(loaded.profiles);
-    return def ? { ...loaded, activeId: def.id } : loaded;
+    const launched = def ? { ...loaded, activeId: def.id } : loaded;
+    return { ...launched, activeId: frameProfileId(launched) };
   });
-  const [pickerOpen, setPickerOpen] = useState<boolean>(() => {
-    if (state.activeId == null) return true;
-    if (state.profiles.length <= 1) return false;
-    if (launchDefault(state.profiles)) return false;
-    const interval = readProfilePromptInterval();
-    if (interval === "never") return false;
-    if (interval === "launch") {
-      const wasShown = pickerPromptShownThisRun;
-      pickerPromptShownThisRun = true;
-      return !wasShown;
-    }
-    return Date.now() - readLastProfileSelectAt() >= intervalMinutes(interval) * 60000;
-  });
+  // Frame has one profile, so the "Who's watching?" picker never opens.
+  const [pickerOpen, setPickerOpen] = useState<boolean>(false);
   const [pickerView, setPickerViewState] = useState<PickerView>({ kind: "list" });
 
   useEffect(() => {
@@ -558,6 +531,8 @@ export function ProfilesProvider({ children }: { children: ReactNode }) {
   profilesRef.current = state.profiles;
   const unlockedRef = useRef(sessionUnlockedIds);
   unlockedRef.current = sessionUnlockedIds;
+  const activeIdRef = useRef(state.activeId);
+  activeIdRef.current = state.activeId;
 
   const selectProfile = useCallback((id: string, opts?: { unlocked?: boolean }) => {
     // THE GATE LIVES HERE, not in the UI. It used to be duplicated in picker-modal and
@@ -566,6 +541,8 @@ export function ProfilesProvider({ children }: { children: ReactNode }) {
     // every profile PIN including a kid profile's parent PIN. Gated callers already
     // pass { unlocked: true } after verifying, so they are unaffected and the remote
     // now fails closed.
+    // Switching profiles went with Multiple Profiles: only the active one is selectable.
+    if (id !== activeIdRef.current) return false;
     const target = profilesRef.current.find((p) => p.id === id) ?? null;
     if (refuseProfileSelect(target, unlockedRef.current, opts)) return false;
     if (opts?.unlocked) {
@@ -587,24 +564,7 @@ export function ProfilesProvider({ children }: { children: ReactNode }) {
     return true;
   }, []);
 
-  useEffect(() => {
-    const onFocus = () => {
-      if (pickerOpen) return;
-      const mins = intervalMinutes(readProfilePromptInterval());
-      if (mins <= 0 || state.activeId == null || state.profiles.length <= 1) return;
-      if (Date.now() - readLastProfileSelectAt() >= mins * 60000) {
-        setPickerViewState({ kind: "list" });
-        setPickerOpen(true);
-      }
-    };
-    window.addEventListener("focus", onFocus);
-    return () => window.removeEventListener("focus", onFocus);
-  }, [state.activeId, state.profiles.length, pickerOpen]);
-
-  const openPicker = useCallback((view: PickerView = { kind: "list" }) => {
-    setPickerViewState(view);
-    setPickerOpen(true);
-  }, []);
+  const openPicker = useCallback((_view?: PickerView) => {}, []);
   const setPickerView = useCallback((view: PickerView) => setPickerViewState(view), []);
   const closePicker = useCallback(() => {
     setPickerOpen(false);
