@@ -20,7 +20,7 @@ export const TOP_GROUPS: TopGroup[] = [
     id: "account",
     section: "SETUP",
     label: "Account & sync",
-    sub: "Your sign-in, the services that track what you watch, and your relay.",
+    sub: "Your Stremio sign-in, Letterboxd, and your relay.",
     children: ["account", "trackers", "relay"],
   },
   {
@@ -70,7 +70,7 @@ export const TOP_GROUPS: TopGroup[] = [
     section: "SYSTEM",
     label: "System",
     sub: "Storage, automation, and the settings most people never need.",
-    children: ["storage", "webhooks", "advanced"],
+    children: ["storage", "advanced"],
   },
   {
     id: "help",

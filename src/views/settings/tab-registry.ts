@@ -1,7 +1,3 @@
-import anilistLogo from "@/assets/anilist.png";
-import malLogo from "@/assets/mal.png";
-import simklLogo from "@/assets/simkl.png";
-import traktLogo from "@/assets/trakt.svg";
 import letterboxdLogo from "@/assets/addon-logos/letterboxd.png";
 import stremioLogo from "@/assets/stremio.png";
 import type { SectionId } from "./shared";
@@ -11,7 +7,6 @@ export type TabEntry = { id: string; label: string; icon: string; img?: string }
 export const SECTION_TABS: Partial<Record<SectionId, TabEntry[]>> = {
   account: [
     { id: "you", label: "Your profile", icon: "UserRound" },
-    { id: "profiles", label: "Profiles", icon: "Users" },
     { id: "stremio", label: "Stremio", icon: "Play", img: stremioLogo },
   ],
   player: [
@@ -53,7 +48,6 @@ export const SECTION_TABS: Partial<Record<SectionId, TabEntry[]>> = {
   ],
   streaming: [
     { id: "services", label: "Services", icon: "Tv" },
-    { id: "home-servers", label: "Home servers", icon: "Server" },
     { id: "filters", label: "Filters", icon: "SourcePreferences" },
     { id: "sorting", label: "Sorting", icon: "ArrowDownUp" },
     { id: "picker", label: "Picker", icon: "MousePointerClick" },
@@ -78,7 +72,6 @@ export const SECTION_TABS: Partial<Record<SectionId, TabEntry[]>> = {
     { id: "theme", label: "Theme", icon: "ThemeSwatches" },
     { id: "library", label: "Your themes", icon: "Brush" },
     { id: "mylibrary", label: "My library", icon: "ThemeLibrary" },
-    { id: "logo", label: "Logo & icon", icon: "LogoIdentity" },
     { id: "type", label: "Typography", icon: "Type" },
     { id: "interface", label: "Interface", icon: "AppInterface" },
     { id: "ambience", label: "Ambience", icon: "Sun" },
@@ -108,22 +101,11 @@ export const SECTION_TABS: Partial<Record<SectionId, TabEntry[]>> = {
     { id: "video", label: "Video files", icon: "FileVideo" },
     { id: "caches", label: "Caches", icon: "Trash2" },
   ],
-  webhooks: [
-    { id: "destinations", label: "Destinations", icon: "Send" },
-    { id: "what", label: "Sources", icon: "Rss" },
-    { id: "rules", label: "Rules", icon: "NotificationRules" },
-  ],
   relay: [
     { id: "status", label: "Status", icon: "Relay" },
     { id: "manage", label: "Manage", icon: "RelaySettings" },
   ],
-  trackers: [
-    { id: "trakt", label: "Trakt", icon: "CircleUser", img: traktLogo },
-    { id: "simkl", label: "Simkl", icon: "RefreshCw", img: simklLogo },
-    { id: "anilist", label: "AniList", icon: "ListVideo", img: anilistLogo },
-    { id: "mal", label: "MyAnimeList", icon: "BookMarked", img: malLogo },
-    { id: "letterboxd", label: "Letterboxd", icon: "Clapperboard", img: letterboxdLogo },
-  ],
+  trackers: [{ id: "letterboxd", label: "Letterboxd", icon: "Clapperboard", img: letterboxdLogo }],
   advanced: [
     { id: "system", label: "System", icon: "MonitorCog" },
     { id: "privacy", label: "Privacy", icon: "Lock" },

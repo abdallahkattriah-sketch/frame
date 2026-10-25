@@ -26,21 +26,12 @@ import { MarketCta } from "./theme-panel/custom-themes-section/community-store/m
 import type { IconThumb } from "./theme-panel/custom-themes-section/community-store/market/icon-fan";
 import { AmbienceSection, DisplaySection } from "./theme-panel/display-section";
 import { FontGrid } from "./theme-panel/font-grid";
-import { LogoPicker } from "./theme-panel/logo-picker";
 import { StartupArtworkSettings } from "./theme-panel/startup-artwork";
 import { HybridBarArt, TitleBarArt, WindowControlArt } from "./theme-panel/window-control-art";
 
 const isTauri = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
 
-type Tab =
-  | "theme"
-  | "library"
-  | "mylibrary"
-  | "logo"
-  | "type"
-  | "interface"
-  | "ambience"
-  | "window";
+type Tab = "theme" | "library" | "mylibrary" | "type" | "interface" | "ambience" | "window";
 
 export function ThemePanel() {
   const t = useT();
@@ -64,7 +55,6 @@ export function ThemePanel() {
     { id: "theme" as const, label: t("Theme") },
     { id: "library" as const, label: t("Your themes"), count: themeCount },
     { id: "mylibrary" as const, label: t("My library") },
-    { id: "logo" as const, label: t("Logo & icon") },
     { id: "type" as const, label: t("Typography") },
     { id: "interface" as const, label: t("Interface") },
     { id: "ambience" as const, label: t("Ambience") },
@@ -87,9 +77,13 @@ export function ThemePanel() {
         {active === "theme" && <ThemeTab />}
         {active === "library" && <LibraryTab />}
         {active === "mylibrary" && <LibraryTab startOpenTab="library" />}
-        {active === "logo" && <LogoTab />}
         {active === "type" && <TypographyTab />}
-        {active === "interface" && <DisplaySection />}
+        {active === "interface" && (
+          <>
+            <DisplaySection />
+            <StartupArtworkSettings />
+          </>
+        )}
         {active === "ambience" && <AmbienceSection />}
         {active === "window" && <WindowTab />}
       </div>
@@ -149,18 +143,6 @@ function ThemeTab() {
           onDimChange={(d) => setTheme({ backgroundDim: d })}
         />
       </Section>
-    </>
-  );
-}
-
-function LogoTab() {
-  const t = useT();
-  return (
-    <>
-      <Section title={t("Logo & app icon")} bare>
-        <LogoPicker />
-      </Section>
-      <StartupArtworkSettings />
     </>
   );
 }

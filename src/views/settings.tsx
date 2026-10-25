@@ -12,7 +12,6 @@ import type { RelayMode } from "./settings/relay-section";
 import type { DebridKey } from "./settings/streaming-sources-panel";
 import { SettingsTools } from "./settings/nav";
 import { groupForSection, TOP_GROUPS } from "./settings/groups";
-import { requestTracker } from "./settings/tracker-request";
 import { SubTabsProvider, type SubTabReg } from "./settings/sub-tabs";
 import { SettingsSidebar } from "./settings/settings-sidebar";
 import { tabsFor } from "./settings/tab-registry";
@@ -95,9 +94,6 @@ const StreamBadgesPanel = lazy(() =>
 const AwardIconsPanel = lazy(() =>
   import("./settings/award-icons-panel").then((m) => ({ default: m.AwardIconsPanel })),
 );
-const WebhooksPanel = lazy(() =>
-  import("./settings/webhooks-panel").then((m) => ({ default: m.WebhooksPanel })),
-);
 const BugReportPanel = lazy(() =>
   import("./settings/bug-report-panel").then((m) => ({ default: m.BugReportPanel })),
 );
@@ -145,7 +141,6 @@ const SECTION_PRELOAD: Partial<Record<SectionId, () => Promise<unknown>>> = {
   theme: () => import("./settings/theme-panel"),
   badges: () => import("./settings/stream-badges-panel"),
   awardIcons: () => import("./settings/award-icons-panel"),
-  webhooks: () => import("./settings/webhooks-panel"),
   bug: () => import("./settings/bug-report-panel"),
   support: () => import("./settings/support-panel"),
   licenses: () => import("./settings/licenses-panel"),
@@ -361,10 +356,9 @@ export function Settings({ visible = true }: { visible?: boolean }) {
   const TRACKER_IDS = ["trakt", "anilist", "mal", "simkl", "letterboxd"];
   const resolveSection = (id: SectionId | null | undefined): SectionId => {
     if (!id) return "account";
-    if (TRACKER_IDS.includes(id)) {
-      requestTracker(id);
-      return "trackers";
-    }
+    // Webhooks went with the Calendar; old links to it land on Account.
+    if (id === "webhooks") return "account";
+    if (TRACKER_IDS.includes(id)) return "trackers";
     return id;
   };
   const [landing, setLanding] = useState<string | null>(null);
@@ -734,8 +728,6 @@ export function Settings({ visible = true }: { visible?: boolean }) {
 
                       {active === "badges" && <StreamBadgesPanel />}
                       {active === "awardIcons" && <AwardIconsPanel />}
-
-                      {active === "webhooks" && <WebhooksPanel />}
 
                       {active === "bug" && <BugReportPanel />}
                       {active === "support" && <SupportPanel />}

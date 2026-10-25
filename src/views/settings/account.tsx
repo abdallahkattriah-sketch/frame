@@ -6,22 +6,18 @@ import { useT } from "@/lib/i18n";
 import { ROW_DESC, Section, ToggleRow } from "./shared";
 import { useSubTabs } from "./sub-tabs";
 import { IdentityTab } from "./account/identity-tab";
-import { ProfilesStrip } from "./account/profiles-strip";
-import { StartupDefaults } from "./account/startup-defaults";
-import { SettingsScopeCard } from "./account/settings-scope-card";
 import { StremioCard } from "./account/stremio-card";
 import { SyncedAddonsCard } from "./account/synced-addons-card";
 
 const isTauri = typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
 
-type Tab = "you" | "profiles" | "stremio";
+type Tab = "you" | "stremio";
 
 export function AccountStub() {
   const t = useT();
   const [tab, setTab] = useState<Tab>("you");
   const tabs = [
     { id: "you" as const, label: t("Your profile") },
-    { id: "profiles" as const, label: t("Profiles") },
     { id: "stremio" as const, label: t("Stremio") },
   ];
 
@@ -29,30 +25,8 @@ export function AccountStub() {
   return (
     <div key={tab} className="harbor-cascade flex flex-col gap-10">
       {tab === "you" && <IdentityTab />}
-      {tab === "profiles" && <ProfilesTab />}
       {tab === "stremio" && <StremioTab />}
     </div>
-  );
-}
-
-function ProfilesTab() {
-  const t = useT();
-  return (
-    <Section
-      title={t("Profiles")}
-      subtitle={t(
-        "Create profiles for the people who use Harbor. Each can have its own appearance, settings, and PIN.",
-      )}
-    >
-      <SettingGroup label={t("Everyone on this Harbor")}>
-        <p className={`max-w-[70ch] ${ROW_DESC}`}>
-          {t("Choose a profile to switch. Use the pencil to edit its details and access settings.")}
-        </p>
-        <ProfilesStrip />
-      </SettingGroup>
-      <StartupDefaults />
-      <SettingsScopeCard />
-    </Section>
   );
 }
 

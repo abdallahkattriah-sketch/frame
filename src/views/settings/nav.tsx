@@ -375,65 +375,6 @@ function IconTheme(p: IconProps) {
   );
 }
 
-function IconWebhooks(p: IconProps) {
-  return (
-    <IconBase {...p}>
-      <circle cx="6" cy="17.5" r="2.4" />
-      <circle cx="18" cy="17.5" r="2.4" />
-      <circle cx="12" cy="6.5" r="2.4" />
-      <path d="M10.4 8.4 7.2 15.4" />
-      <path d="M13.6 8.4 16.8 15.4" />
-      <path d="M8.4 17.5h7.2" />
-    </IconBase>
-  );
-}
-
-function IconTrakt(p: IconProps) {
-  return (
-    <IconBase {...p}>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M6 13.5l4-4 6 6" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M6 9.5l4-4 8 8" strokeLinecap="round" strokeLinejoin="round" />
-    </IconBase>
-  );
-}
-
-function IconAnilist(p: IconProps) {
-  return (
-    <IconBase {...p}>
-      <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" />
-      <path d="M8 16.5l3-9 3 9" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M9 13.5h4" strokeLinecap="round" />
-      <path d="M15.5 7.5v9h2" strokeLinecap="round" strokeLinejoin="round" />
-    </IconBase>
-  );
-}
-
-function IconMal(p: IconProps) {
-  return (
-    <IconBase {...p}>
-      <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" />
-      <path d="M6 15V9l2.5 3 2.5-3v6" strokeLinejoin="round" />
-      <path d="M11.5 15 13.25 9 15 15" strokeLinejoin="round" />
-      <path d="M12.2 12.5h2.1" />
-      <path d="M15.5 9v6h3.8" strokeLinejoin="round" />
-    </IconBase>
-  );
-}
-
-function IconSimkl(p: IconProps) {
-  return (
-    <IconBase {...p}>
-      <rect x="3.5" y="3.5" width="17" height="17" rx="4" />
-      <path
-        d="M15 9c-2.4-1.3-4.8-.4-4.8 1.5 0 2.4 4.6 1.8 4.6 4 0 1.8-2.6 2.4-5 1"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </IconBase>
-  );
-}
-
 function IconLetterboxd(p: IconProps) {
   return (
     <IconBase {...p}>
@@ -485,17 +426,13 @@ const NAV_GROUPS: Array<{ heading: string | null; items: NavItem[] }> = [
       },
       {
         id: "trackers",
-        label: "Trackers",
-        Icon: IconTrakt,
+        label: "Letterboxd",
+        Icon: IconLetterboxd,
         keywords: [
-          "trakt",
-          "simkl",
-          "anilist",
-          "mal",
-          "myanimelist",
           "letterboxd",
-          "scrobble",
-          "sync",
+          "tracker",
+          "watchlist",
+          "diary",
           "watch history",
           "connect service",
         ],
@@ -515,30 +452,6 @@ const NAV_GROUPS: Array<{ heading: string | null; items: NavItem[] }> = [
           "ratings",
           "posters",
         ],
-      },
-      {
-        id: "trakt",
-        label: "Trakt",
-        Icon: IconTrakt,
-        keywords: ["scrobble", "history", "sync", "watchlist"],
-      },
-      {
-        id: "anilist",
-        label: "AniList",
-        Icon: IconAnilist,
-        keywords: ["anime", "lists", "watching", "kitsu"],
-      },
-      {
-        id: "mal",
-        label: "MyAnimeList",
-        Icon: IconMal,
-        keywords: ["mal", "myanimelist", "anime", "lists", "watching", "jikan"],
-      },
-      {
-        id: "simkl",
-        label: "Simkl",
-        Icon: IconSimkl,
-        keywords: ["scrobble", "sync", "watched", "history", "watchlist", "anime"],
       },
       {
         id: "letterboxd",
@@ -985,17 +898,6 @@ const NAV_GROUPS: Array<{ heading: string | null; items: NavItem[] }> = [
     ],
   },
   {
-    heading: "Notifications",
-    items: [
-      {
-        id: "webhooks",
-        label: "Webhooks",
-        Icon: IconWebhooks,
-        keywords: ["discord", "telegram", "calendar", "alerts", "notifications", "rules"],
-      },
-    ],
-  },
-  {
     heading: "Help",
     items: [
       {
@@ -1124,23 +1026,6 @@ export type SettingsOption = {
 const NAV_ITEM_BY_ID = new Map(NAV_GROUPS.flatMap((g) => g.items).map((i) => [i.id, i] as const));
 
 const SETTINGS_OPTIONS: SettingsOption[] = [
-  {
-    label: "Who's watching background",
-    section: "account",
-    tab: "stremio",
-    anchorTitle: "Who's watching background",
-    keywords: [
-      "profile picker background",
-      "whos watching wallpaper",
-      "custom background profiles",
-      "upload background",
-      "picker wallpaper",
-      "profile screen image",
-      "background image",
-      "change the profile screen",
-      "dim the background",
-    ],
-  },
   {
     label: "Player controls in Big Picture",
     section: "hotkeys",
@@ -3319,44 +3204,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   },
 
   {
-    label: "Trakt connection",
-    section: "trackers",
-    tab: "trakt",
-    keywords: [
-      "trakt",
-      "scrobble",
-      "sync",
-      "watchlist",
-      "connect",
-      "disconnect",
-      "avatar",
-      "history",
-    ],
-  },
-  {
-    label: "AniList connection",
-    section: "trackers",
-    tab: "mal",
-    keywords: [
-      "anilist",
-      "anime",
-      "lists",
-      "sync",
-      "connect",
-      "disconnect",
-      "avatar",
-      "watch progress",
-      "mal",
-      "kitsu",
-    ],
-  },
-  {
-    label: "Simkl connection",
-    section: "trackers",
-    tab: "simkl",
-    keywords: ["simkl", "sync", "watched", "watchlist", "connect", "disconnect", "avatar", "anime"],
-  },
-  {
     label: "Letterboxd connection",
     section: "trackers",
     tab: "letterboxd",
@@ -3372,20 +3219,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
       "disconnect",
       "top 250",
       "popular",
-    ],
-  },
-  {
-    label: "Webhooks (Discord / Telegram)",
-    section: "webhooks",
-    keywords: [
-      "webhooks",
-      "discord",
-      "telegram",
-      "notifications",
-      "alerts",
-      "calendar sources",
-      "rules",
-      "upcoming",
     ],
   },
   {
@@ -4282,246 +4115,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     tab: "library",
     anchorTitle: "Content filters",
     keywords: ["adult filter", "nsfw", "xxx", "safe mode", "adult catalogs"],
-  },
-  {
-    label: "Connect your Trakt account",
-    section: "trackers",
-    tab: "trakt",
-    anchorTitle: "Connect your Trakt account",
-    keywords: ["trakt", "connect", "tracking", "scrobble", "watchlist", "recommendations"],
-  },
-  {
-    label: "Connect Trakt",
-    section: "trackers",
-    tab: "trakt",
-    keywords: ["trakt login", "device code", "authorize", "link trakt"],
-  },
-  {
-    label: "Your Trakt app",
-    section: "trackers",
-    tab: "trakt",
-    anchorTitle: "Your Trakt app",
-    keywords: ["client id", "client secret", "api app", "register app", "api key"],
-  },
-  {
-    label: "About Trakt",
-    section: "trackers",
-    tab: "trakt",
-    keywords: ["trakt.tv", "what is trakt", "info", "website"],
-  },
-  {
-    label: "Open Trakt profile",
-    section: "trackers",
-    tab: "trakt",
-    keywords: ["open profile", "trakt profile", "view profile", "my trakt", "profile page"],
-  },
-  {
-    label: "Use my Trakt avatar as my Harbor avatar",
-    section: "trackers",
-    tab: "trakt",
-    anchorTitle: "Your Trakt account",
-    keywords: ["trakt avatar", "profile picture", "avatar sync", "wear avatar"],
-  },
-  {
-    label: "Disconnect from Trakt",
-    section: "trackers",
-    tab: "trakt",
-    anchorTitle: "Your Trakt account",
-    keywords: ["disconnect", "unlink", "remove trakt", "stop scrobbling", "sign out"],
-  },
-  {
-    label: "Export to Trakt",
-    section: "trackers",
-    tab: "trakt",
-    anchorTitle: "Move your watchlist",
-    keywords: ["export watchlist", "copy watchlist", "send to trakt", "upload", "move watchlist"],
-  },
-  {
-    label: "Import from Trakt",
-    section: "trackers",
-    tab: "trakt",
-    anchorTitle: "Move your watchlist",
-    keywords: [
-      "import watchlist",
-      "pull watchlist",
-      "trakt to harbor",
-      "download",
-      "move watchlist",
-    ],
-  },
-  {
-    label: "Show comments on detail pages",
-    section: "trackers",
-    tab: "trakt",
-    anchorTitle: "Comments",
-    keywords: ["trakt comments", "community comments", "reviews", "discussion", "episodes"],
-  },
-  {
-    label: "Blur Trakt comments by default",
-    section: "trackers",
-    tab: "trakt",
-    keywords: [
-      "blur comments by default",
-      "blur comments",
-      "spoiler comments",
-      "hide reviews",
-      "reveal",
-    ],
-  },
-  {
-    label: "Connect your AniList account",
-    section: "trackers",
-    tab: "anilist",
-    anchorTitle: "Connect your AniList account",
-    keywords: ["anilist", "connect", "anime lists", "link account", "anime tracking", "rails"],
-  },
-  {
-    label: "Connect AniList",
-    section: "trackers",
-    tab: "anilist",
-    keywords: ["anilist login", "authorize", "oauth", "link"],
-  },
-  {
-    label: "About AniList",
-    section: "trackers",
-    tab: "anilist",
-    keywords: ["anilist.co", "info", "website", "what is anilist"],
-  },
-  {
-    label: "Open AniList profile",
-    section: "trackers",
-    tab: "anilist",
-    keywords: ["open profile", "anilist profile", "view profile", "profile page", "my anilist"],
-  },
-  {
-    label: "Sync watch progress",
-    section: "trackers",
-    tab: "anilist",
-    anchorTitle: "Tracking what you watch",
-    keywords: ["anilist sync", "episode progress", "auto update", "forward only", "tracking"],
-  },
-  {
-    label: "Use my AniList avatar as my Harbor avatar",
-    section: "trackers",
-    tab: "anilist",
-    anchorTitle: "Tracking what you watch",
-    keywords: ["anilist avatar", "profile picture", "avatar", "wear avatar"],
-  },
-  {
-    label: "Show AniList comments",
-    section: "trackers",
-    tab: "anilist",
-    anchorTitle: "Comments",
-    keywords: ["anilist comments", "forum threads", "anime discussion", "detail pages"],
-  },
-  {
-    label: "Blur AniList comments by default",
-    section: "trackers",
-    tab: "anilist",
-    keywords: [
-      "blur comments by default",
-      "blur comments",
-      "spoilers",
-      "hide comments",
-      "reveal",
-      "anime pages",
-    ],
-  },
-  {
-    label: "Disconnect from AniList",
-    section: "trackers",
-    tab: "anilist",
-    anchorTitle: "Your AniList account",
-    keywords: ["disconnect", "unlink", "remove anilist", "stop sync"],
-  },
-  {
-    label: "Connect your MyAnimeList account",
-    section: "trackers",
-    tab: "mal",
-    keywords: [
-      "mal",
-      "myanimelist",
-      "connect",
-      "anime lists",
-      "link account",
-      "anime tracking",
-      "oauth",
-    ],
-  },
-  {
-    label: "MAL Client ID",
-    section: "trackers",
-    tab: "mal",
-    anchorTitle: "Your MyAnimeList app",
-    keywords: ["mal client id", "api key", "myanimelist api", "client id", "register app"],
-  },
-  {
-    label: "Connect MyAnimeList",
-    section: "trackers",
-    tab: "mal",
-    keywords: ["mal login", "authorize", "oauth", "pin code", "link"],
-  },
-  {
-    label: "About MyAnimeList",
-    section: "trackers",
-    tab: "mal",
-    keywords: ["myanimelist.net", "info", "website", "what is mal"],
-  },
-  {
-    label: "Open MAL profile",
-    section: "trackers",
-    tab: "mal",
-    keywords: [
-      "open profile",
-      "mal profile",
-      "view profile",
-      "profile page",
-      "myanimelist profile",
-    ],
-  },
-  {
-    label: "Disconnect from MyAnimeList",
-    section: "trackers",
-    tab: "mal",
-    anchorTitle: "Connected",
-    keywords: ["disconnect", "unlink", "remove mal", "stop sync"],
-  },
-  {
-    label: "Connect your Simkl account",
-    section: "trackers",
-    tab: "simkl",
-    keywords: ["simkl", "connect", "tracking", "plan to watch", "mark watched", "sync"],
-  },
-  {
-    label: "Connect Simkl",
-    section: "trackers",
-    tab: "simkl",
-    keywords: ["simkl login", "device code", "authorize", "link"],
-  },
-  {
-    label: "About Simkl",
-    section: "trackers",
-    tab: "simkl",
-    keywords: ["simkl.com", "info", "website", "what is simkl"],
-  },
-  {
-    label: "Open Simkl profile",
-    section: "trackers",
-    tab: "simkl",
-    keywords: ["open profile", "simkl profile", "view profile", "profile page", "my simkl"],
-  },
-  {
-    label: "Use my Simkl avatar as my Harbor avatar",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Connected",
-    keywords: ["simkl avatar", "profile picture", "avatar", "wear avatar"],
-  },
-  {
-    label: "Disconnect from Simkl",
-    section: "trackers",
-    tab: "simkl",
-    keywords: ["disconnect", "unlink", "remove simkl", "stop sync"],
   },
   {
     label: "Enable Letterboxd integration",
@@ -7387,163 +6980,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     keywords: ["glass", "minimal", "solid", "accent", "clock design"],
   },
   {
-    label: "Where alerts go",
-    section: "webhooks",
-    tab: "destinations",
-    anchorTitle: "Where alerts go",
-    keywords: ["discord telegram", "notifications destination", "alerts channel", "webhook setup"],
-  },
-  {
-    label: "Discord webhook URL",
-    section: "webhooks",
-    tab: "destinations",
-    anchorTitle: "Where alerts go",
-    keywords: [
-      "discord webhook",
-      "discord alerts",
-      "channel ping",
-      "webhook url",
-      "send test",
-      "discord notifications",
-    ],
-  },
-  {
-    label: "Telegram bot",
-    section: "webhooks",
-    tab: "destinations",
-    anchorTitle: "Where alerts go",
-    keywords: [
-      "telegram alerts",
-      "telegram webhook",
-      "botfather",
-      "send test",
-      "telegram notifications",
-    ],
-  },
-  {
-    label: "Bot token",
-    section: "webhooks",
-    tab: "destinations",
-    anchorTitle: "Where alerts go",
-    keywords: ["telegram bot token", "botfather token", "api token", "bot key"],
-  },
-  {
-    label: "Chat ID",
-    section: "webhooks",
-    tab: "destinations",
-    anchorTitle: "Where alerts go",
-    keywords: ["telegram chat id", "group id", "channel id", "chat number"],
-  },
-  {
-    label: "What to send",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "What to send",
-    keywords: ["alert sources", "calendars", "feeds", "which alerts", "dedupe sources"],
-  },
-  {
-    label: "My library",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "What to send",
-    keywords: [
-      "library alerts",
-      "saved shows notifications",
-      "stremio library releases",
-      "my shows",
-    ],
-  },
-  {
-    label: "All upcoming",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "What to send",
-    keywords: ["everything releasing", "monthly releases", "tmdb upcoming", "all new"],
-  },
-  {
-    label: "My Trakt",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "What to send",
-    keywords: [
-      "trakt watchlist alerts",
-      "trakt upcoming",
-      "trakt notifications",
-      "watchlist pings",
-    ],
-  },
-  {
-    label: "Anticipated",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "What to send",
-    keywords: ["trakt anticipated", "most hyped", "anticipated releases", "no login source"],
-  },
-  {
-    label: "Custom calendar",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "What to send",
-    keywords: [
-      "tracked people",
-      "genres providers countries",
-      "custom calendar alerts",
-      "my calendar",
-    ],
-  },
-  {
-    label: "Media types",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "Media types",
-    keywords: ["filter type", "movies tv anime filter", "type filter", "media filter"],
-  },
-  {
-    label: "Movies",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "Media types",
-    keywords: ["movie alerts", "films only", "movie filter", "notify movies"],
-  },
-  {
-    label: "TV",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "Media types",
-    keywords: ["tv alerts", "series only", "shows", "notify tv"],
-  },
-  {
-    label: "Anime",
-    section: "webhooks",
-    tab: "what",
-    anchorTitle: "Media types",
-    keywords: ["anime alerts", "anime only", "notify anime", "anime filter"],
-  },
-  {
-    label: "Automations",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: ["rules", "automations", "custom alert rules", "triggers", "ping rules", "rule list"],
-  },
-  {
-    label: "New rule",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "create rule",
-      "new automation",
-      "when then",
-      "tracked person trigger",
-      "genre trigger",
-      "streamer trigger",
-      "country trigger",
-      "live tv reminder",
-      "lead minutes",
-    ],
-  },
-  {
     label: "What broke?",
     section: "bug",
     anchorTitle: "What broke?",
@@ -8024,36 +7460,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "Settings for this profile (shared or independent)",
-    section: "account",
-    tab: "profiles",
-    anchorTitle: "Profiles",
-    keywords: [
-      "profile settings",
-      "shared settings",
-      "independent settings",
-      "per profile",
-      "separate preferences",
-      "settings scope",
-      "linked settings",
-    ],
-  },
-  {
-    label: "PIN-locked profiles",
-    section: "account",
-    tab: "profiles",
-    anchorTitle: "Profiles",
-    keywords: [
-      "pin",
-      "lock profile",
-      "locked profile",
-      "unlock",
-      "password protect",
-      "profile privacy",
-      "kids lock",
-    ],
-  },
-  {
     label: "Home style (Harbor curated / Classic Stremio)",
     section: "library",
     tab: "home",
@@ -8425,178 +7831,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
       "kodi export",
       "image resolution",
       "metadata export",
-    ],
-  },
-  {
-    label: "Show sync indicator",
-    section: "trackers",
-    tab: "anilist",
-    anchorTitle: "Sync indicator",
-    keywords: [
-      "sync indicator",
-      "sync badge",
-      "tracker badge",
-      "episode synced",
-      "playback overlay",
-      "hide badge",
-      "show indicator",
-      "sync toast",
-    ],
-  },
-  {
-    label: "Sync indicator position",
-    section: "trackers",
-    tab: "anilist",
-    anchorTitle: "Sync indicator",
-    keywords: [
-      "position",
-      "corner",
-      "top left",
-      "top right",
-      "bottom center",
-      "placement",
-      "badge location",
-      "where",
-    ],
-  },
-  {
-    label: "Use MyAnimeList avatar",
-    section: "trackers",
-    tab: "mal",
-    anchorTitle: "Connected",
-    keywords: [
-      "mal avatar",
-      "myanimelist avatar",
-      "profile picture",
-      "avatar",
-      "harbor avatar",
-      "profile photo",
-      "use avatar",
-    ],
-  },
-  {
-    label: "Show Simkl rails on Home",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Home Rail Settings",
-    keywords: [
-      "simkl rails",
-      "home rows",
-      "home screen",
-      "watching",
-      "plan to watch",
-      "up next",
-      "trending",
-      "rails on home",
-    ],
-  },
-  {
-    label: "Show Up Next on Simkl rail",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Home Rail Settings",
-    keywords: [
-      "up next",
-      "upcoming episodes",
-      "next episode",
-      "simkl rail",
-      "watching",
-      "plan to watch",
-      "home rail",
-    ],
-  },
-  {
-    label: "Show Simkl Trending Today rail",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Home Rail Settings",
-    keywords: [
-      "trending",
-      "trending today",
-      "popular",
-      "simkl trending",
-      "hot",
-      "movies",
-      "tv",
-      "anime",
-    ],
-  },
-  {
-    label: "Scrobble to Simkl",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Connected",
-    keywords: [
-      "scrobble",
-      "auto track",
-      "watch progress",
-      "real-time",
-      "now playing",
-      "track playback",
-      "resume",
-      "sync",
-    ],
-  },
-  {
-    label: "Display Simkl Community Ratings",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Connected",
-    keywords: [
-      "community ratings",
-      "simkl score",
-      "rating badge",
-      "details page",
-      "community score",
-      "ratings",
-    ],
-  },
-  {
-    label: "Enable User Ratings",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Connected",
-    keywords: [
-      "user ratings",
-      "star rating",
-      "rate",
-      "star picker",
-      "my rating",
-      "score",
-      "rate anime",
-    ],
-  },
-  {
-    label: "Anime Title Language",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Connected",
-    keywords: [
-      "anime title",
-      "title language",
-      "english",
-      "romaji",
-      "native",
-      "japanese",
-      "poster title",
-      "language",
-    ],
-  },
-  {
-    label: "Home rail categories (Movies, TV, Anime)",
-    section: "trackers",
-    tab: "simkl",
-    anchorTitle: "Home Rail Settings",
-    keywords: [
-      "home rail settings",
-      "categories",
-      "plan to watch",
-      "watching",
-      "movies",
-      "tv shows",
-      "anime",
-      "rail filters",
-      "which rails",
     ],
   },
   {
@@ -9623,24 +8857,9 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     ],
   },
   {
-    label: "App logo",
-    section: "theme",
-    tab: "logo",
-    anchorTitle: "Logo & app icon",
-    keywords: [
-      "app logo",
-      "sidebar logo",
-      "custom logo",
-      "brand mark",
-      "replace logo",
-      "logo mark",
-      "upload logo",
-    ],
-  },
-  {
     label: "artwork.loading",
     section: "theme",
-    tab: "logo",
+    tab: "interface",
     anchorTitle: "artwork.title",
     keywords: [
       "loading animation",
@@ -9655,55 +8874,9 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   {
     label: "artwork.launch",
     section: "theme",
-    tab: "logo",
+    tab: "interface",
     anchorTitle: "artwork.title",
     keywords: ["launch logo", "startup", "splash", "boot", "big picture", "custom logo"],
-  },
-  {
-    label: "Wordmark",
-    section: "theme",
-    tab: "logo",
-    anchorTitle: "Logo & app icon",
-    keywords: [
-      "wordmark",
-      "wide logo",
-      "text logo",
-      "sidebar wordmark",
-      "brand name",
-      "custom wordmark",
-    ],
-  },
-  {
-    label: "Use the album art as the app icon while music plays",
-    section: "theme",
-    tab: "logo",
-    anchorTitle: "Logo & app icon",
-    keywords: [
-      "album art icon",
-      "now playing icon",
-      "cover art taskbar",
-      "song artwork icon",
-      "spotify style icon",
-    ],
-  },
-  {
-    label: "App icon",
-    section: "theme",
-    tab: "logo",
-    anchorTitle: "Logo & app icon",
-    keywords: [
-      "change the app icon",
-      "custom icon",
-      "dock icon",
-      "taskbar icon",
-      "app icon",
-      "window icon",
-      "taskbar icon",
-      "custom icon",
-      "harbor icons",
-      "icon presets",
-      "dock icon",
-    ],
   },
   {
     label: "Export badge setup",
@@ -9759,107 +8932,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
       "sample stream name",
       "badge preview",
       "test rule",
-    ],
-  },
-  {
-    label: "Tracked person release rule",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "tracked person alert",
-      "person trigger",
-      "someone i track",
-      "follow actor release",
-      "director new release",
-      "cast release ping",
-      "watched people automation",
-    ],
-  },
-  {
-    label: "Genre release rule",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "genre alert",
-      "genre trigger",
-      "specific genre releases",
-      "genre automation",
-      "movies series genre",
-      "genre ping",
-    ],
-  },
-  {
-    label: "Streamer release rule",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "streamer alert",
-      "provider trigger",
-      "netflix disney max release",
-      "crunchyroll release",
-      "streaming service automation",
-      "streamer ping",
-    ],
-  },
-  {
-    label: "Country release rule",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "country alert",
-      "country trigger",
-      "region release",
-      "japan korea us release",
-      "country automation",
-      "country ping",
-    ],
-  },
-  {
-    label: "Live TV reminder",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "live tv alert",
-      "iptv reminder",
-      "program about to start",
-      "epg reminder",
-      "lead time minutes",
-      "favorited channels",
-      "heads up notification",
-      "live tv rule",
-    ],
-  },
-  {
-    label: "Enable or disable rule",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "turn off rule",
-      "pause automation",
-      "disable rule",
-      "enable rule",
-      "rule toggle",
-      "mute automation",
-    ],
-  },
-  {
-    label: "Rule notify channels",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "notify on discord",
-      "notify on telegram",
-      "rule channel",
-      "route rule",
-      "then notify",
-      "per rule destination",
     ],
   },
   {
@@ -10107,13 +9179,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
     tab: "setup",
     anchorTitle: "Controller support",
     keywords: ["background controller", "controller when unfocused", "gamepad background"],
-  },
-  {
-    label: "Start as",
-    section: "account",
-    tab: "stremio",
-    anchorTitle: "Startup & default",
-    keywords: ["default profile", "start as", "skip whos watching", "auto select profile"],
   },
   {
     label: "Subtitle indicator dot",
@@ -10428,102 +9493,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
       "ebook",
       "books api",
       "reading list",
-    ],
-  },
-  {
-    label: "Home servers (Jellyfin, Emby, Plex)",
-    section: "streaming",
-    tab: "home-servers",
-    anchorTitle: "Home servers",
-    keywords: [
-      "jellyfin",
-      "jellifin",
-      "plex",
-      "emby",
-      "home server",
-      "media server",
-      "my own server",
-      "nas",
-      "local library",
-      "personal library",
-      "plex library",
-      "connect my server",
-    ],
-  },
-  {
-    label: "Connect a home server",
-    section: "streaming",
-    tab: "home-servers",
-    anchorTitle: "Home servers",
-    keywords: [
-      "add plex",
-      "add jellyfin",
-      "add emby",
-      "server address",
-      "server url",
-      "ip address",
-      "port number",
-      "server username",
-      "server password",
-      "new server",
-      "pair server",
-      "log in to my server",
-    ],
-  },
-  {
-    label: "Sign in with Plex",
-    section: "streaming",
-    tab: "home-servers",
-    anchorTitle: "Home servers",
-    keywords: [
-      "plex",
-      "plex login",
-      "plex token",
-      "x-plex-token",
-      "access token",
-      "plex account",
-      "plex pin",
-      "find my plex token",
-      "plex.tv",
-      "sign in with plex",
-    ],
-  },
-  {
-    label: "Refresh a home server library",
-    section: "streaming",
-    tab: "home-servers",
-    anchorTitle: "Home servers",
-    keywords: [
-      "sync now",
-      "resync",
-      "refresh library",
-      "rescan",
-      "scan library",
-      "new movies missing",
-      "library out of date",
-      "refresh interval",
-      "every launch",
-      "manual refresh",
-      "plex not updating",
-      "jellyfin not updating",
-    ],
-  },
-  {
-    label: "Home server streaming quality",
-    section: "streaming",
-    tab: "home-servers",
-    anchorTitle: "Home servers",
-    keywords: [
-      "transcode",
-      "transcoding",
-      "direct play",
-      "original quality",
-      "bitrate cap",
-      "mbps",
-      "plex buffering",
-      "jellyfin buffering",
-      "lower the quality",
-      "remote playback quality",
     ],
   },
   {
@@ -10901,46 +9870,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
       "stop accidental clicks",
       "freeze controls",
       "toddler",
-    ],
-  },
-  {
-    label: "Rule name",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "rename rule",
-      "rule name",
-      "name my automation",
-      "rename automation",
-      "change rule name",
-      "what is this rule called",
-      "rule title",
-      "label the rule",
-      "untitled rule",
-      "automation name",
-      "give the rule a name",
-      "my rules all look the same",
-    ],
-  },
-  {
-    label: "Delete rule",
-    section: "webhooks",
-    tab: "rules",
-    anchorTitle: "Automations",
-    keywords: [
-      "delete rule",
-      "remove rule",
-      "delete automation",
-      "remove automation",
-      "get rid of a rule",
-      "erase rule",
-      "trash a rule",
-      "cancel automation",
-      "stop this alert",
-      "too many notifications",
-      "unwanted pings",
-      "stop discord messages",
     ],
   },
   {

@@ -36,26 +36,13 @@ function trackerOptions(): Array<{ label: string; tab: string | null }> {
   return out;
 }
 
-test("every tracker search result names the tracker it opens", () => {
+test("tracker search results only point at Letterboxd", () => {
   const options = trackerOptions();
-  assert.ok(options.length > 50, `expected the full tracker index, saw ${options.length}`);
-  const untabbed = options.filter((option) => option.tab == null).map((option) => option.label);
-  assert.deepEqual(
-    untabbed,
-    [],
-    "an option with no tab lands on whatever tracker the panel opens by default, which is Trakt",
-  );
+  assert.ok(options.length > 5, `expected the Letterboxd index, saw ${options.length}`);
   const wrong = options
-    .filter((option) => !TRACKERS.includes(option.tab as string))
+    .filter((option) => option.tab !== "letterboxd")
     .map((option) => `${option.label} -> ${option.tab}`);
-  assert.deepEqual(wrong, [], "every tab must be a real tracker id");
-});
-
-test("the Simkl results open Simkl rather than Trakt", () => {
-  const simkl = trackerOptions().filter((option) => /simkl/i.test(option.label));
-  assert.ok(simkl.length >= 6, `expected the Simkl block, saw ${simkl.length}`);
-  for (const option of simkl)
-    assert.equal(option.tab, "simkl", `"${option.label}" must open the Simkl tab`);
+  assert.deepEqual(wrong, [], "Letterboxd is the only tracker with a settings page");
 });
 
 test("a jump to a tracker id opens the Trackers panel on that tab", () => {
