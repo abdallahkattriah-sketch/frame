@@ -18,25 +18,6 @@ const appSource = ts.createSourceFile(
   ts.ScriptKind.TSX,
 );
 
-function variableInitializer(name: string): string {
-  let initializer: string | undefined;
-  const visit = (node: ts.Node): void => {
-    if (
-      ts.isVariableDeclaration(node) &&
-      ts.isIdentifier(node.name) &&
-      node.name.text === name &&
-      node.initializer
-    ) {
-      initializer = node.initializer.getText(appSource);
-      return;
-    }
-    ts.forEachChild(node, visit);
-  };
-  visit(appSource);
-  assert.ok(initializer, name + " initializer");
-  return initializer;
-}
-
 function propertyInitializer(name: string): string {
   let initializer: string | undefined;
   const visit = (node: ts.Node): void => {
@@ -51,127 +32,18 @@ function propertyInitializer(name: string): string {
   return initializer;
 }
 
-function harborExposesShorthandProperty(name: string): boolean {
-  let exposed = false;
-  const visit = (node: ts.Node): void => {
-    if (
-      ts.isBinaryExpression(node) &&
-      node.operatorToken.kind === ts.SyntaxKind.EqualsToken &&
-      node.left.getText(appSource) === "w.harbor" &&
-      ts.isObjectLiteralExpression(node.right)
-    ) {
-      exposed = node.right.properties.some(
-        (property) => ts.isShorthandPropertyAssignment(property) && property.name.text === name,
-      );
-      return;
-    }
-    ts.forEachChild(node, visit);
-  };
-  visit(appSource);
-  return exposed;
-}
-
-type CurrentAuthor = () => { handle?: string | null } | null;
-
-function buildTryViewMyProfile(currentAuthor: CurrentAuthor): () => boolean {
+function bridgeHelper(name: string): () => unknown {
   return new Function(
-    "currentAuthor",
-    "requestOpenProfile",
-    '"use strict"; return (' + variableInitializer("tryViewMyProfile") + ");",
-  )(currentAuthor, requestOpenProfile) as () => boolean;
+    '"use strict"; return (' + propertyInitializer(name) + ");",
+  )() as () => unknown;
 }
 
-function buildViewMyProfile(
-  tryViewMyProfile: () => boolean,
-  fetchMe: () => Promise<unknown>,
-): () => Promise<void> {
-  return new Function(
-    "tryViewMyProfile",
-    "fetchMe",
-    '"use strict"; return (' + propertyInitializer("viewMyProfile") + ");",
-  )(tryViewMyProfile, fetchMe) as () => Promise<void>;
-}
-
-test("tryViewMyProfile returns false without a usable handle", () => {
-  const opened: string[] = [];
-  const unsubscribe = subscribeOpenProfile((handle) => opened.push(handle));
-  try {
-    for (const author of [null, { handle: null }, { handle: "" }, { handle: "   " }]) {
-      assert.equal(buildTryViewMyProfile(() => author)(), false);
-    }
-    assert.deepEqual(opened, []);
-  } finally {
-    unsubscribe();
-  }
-});
-
-test("tryViewMyProfile requests the normalized current handle once", () => {
-  const opened: string[] = [];
-  const unsubscribe = subscribeOpenProfile((handle) => opened.push(handle));
-  try {
-    assert.equal(buildTryViewMyProfile(() => ({ handle: "  Alice  " }))(), true);
-    assert.deepEqual(opened, ["alice"]);
-  } finally {
-    unsubscribe();
-  }
-});
-
-test("Harbor bridge exposes the immediate profile helper", () => {
-  assert.equal(harborExposesShorthandProperty("tryViewMyProfile"), true);
-});
-
-test("viewMyProfile skips fetch when immediate navigation succeeds", async () => {
-  let attempts = 0;
-  let fetches = 0;
-  const viewMyProfile = buildViewMyProfile(
-    () => {
-      attempts += 1;
-      return true;
-    },
-    async () => {
-      fetches += 1;
-    },
-  );
-
-  await viewMyProfile();
-  assert.equal(attempts, 1);
-  assert.equal(fetches, 0);
-});
-
-test("viewMyProfile fetches once and retries the immediate helper", async () => {
-  let ready = false;
-  let attempts = 0;
-  let fetches = 0;
-  const viewMyProfile = buildViewMyProfile(
-    () => {
-      attempts += 1;
-      return ready;
-    },
-    async () => {
-      fetches += 1;
-      ready = true;
-    },
-  );
-
-  await viewMyProfile();
-  assert.equal(attempts, 2);
-  assert.equal(fetches, 1);
-});
-
-test("viewMyProfile preserves the swallowed fetch-failure contract", async () => {
-  let attempts = 0;
-  const viewMyProfile = buildViewMyProfile(
-    () => {
-      attempts += 1;
-      return false;
-    },
-    async () => {
-      throw new Error("offline");
-    },
-  );
-
-  await assert.doesNotReject(viewMyProfile());
-  assert.equal(attempts, 2);
+// Frame has no accounts, so the bridge keeps the profile helpers as inert
+// no-ops: custom theme code that calls them falls back to its drawer.
+test("Harbor bridge keeps the profile helpers as no-ops", async () => {
+  assert.equal(bridgeHelper("tryViewMyProfile")(), false);
+  await assert.doesNotReject(bridgeHelper("viewMyProfile")() as Promise<void>);
+  assert.equal(bridgeHelper("unreadCount")(), 0);
 });
 
 test("Theme Studio does not document the account-only profile helpers", () => {
