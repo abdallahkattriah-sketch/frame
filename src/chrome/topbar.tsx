@@ -8,7 +8,6 @@ import { BackChrome } from "@/chrome/back-chrome";
 import { HarborMark } from "@/components/icons/harbor-mark";
 import { TogetherPopover, TogetherModalShell } from "@/components/together-modal";
 import { DownloadsButton } from "@/components/downloads-popover";
-import { BookmarksButton } from "@/components/bookmarks-popover";
 import { ThreeLiquidGlassSurface } from "@/components/ThreeLiquidGlassSurface";
 import { SleepTimerButton } from "@/chrome/sleep-timer-button";
 import {
@@ -187,7 +186,6 @@ export function Topbar({ connecting = false }: { connecting?: boolean } = {}) {
             <div className="hidden items-center gap-2 min-[900px]:flex">
               {settings.navbarSleepTimer && <SleepTimerButton />}
               <DownloadsButton />
-              {!kid && <BookmarksButton />}
               {!onLiveRoot && !kid && <TogetherButton />}
             </div>
           )}

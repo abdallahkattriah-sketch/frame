@@ -171,7 +171,6 @@ import { AnimeTitlesBlock } from "./detail/anime-titles-block";
 import { AnimeAiringBanner } from "./detail/anime-airing-banner";
 import { AnimeStatsDonut } from "./detail/anime-stats-donut";
 import { AnimeRelatedRail } from "./detail/anime-related-rail";
-import { MangaAwardCorner } from "./manga/collection-badge";
 import { CharacterCard } from "./detail/character-card";
 import { useAnimeAnilistDetails } from "./detail/use-anime-anilist-details";
 import { useAnimeCharacters } from "./detail/use-anime-characters";
@@ -322,15 +321,8 @@ export function DetailView({
   );
   const scrollRef = useRef<HTMLElement>(null);
 
-  const {
-    setNavStack,
-    openPicker,
-    openPlayer,
-    openFilter,
-    promoteMetaToRoot,
-    openMeta,
-    openManga,
-  } = useView();
+  const { setNavStack, openPicker, openPlayer, openFilter, promoteMetaToRoot, openMeta } =
+    useView();
   useTvdbCastFallback(meta, detail, detectedKitsu, setDetail);
   const { snapshot: roomSnapshot, claimHost } = useTogether();
   const { isConnected: traktConnected } = useTrakt();
@@ -1180,13 +1172,6 @@ export function DetailView({
   const heroAccolades = (
     <AccoladeBadges imdbId={detail?.imdbId ?? (meta.id.startsWith("tt") ? meta.id : null)} />
   );
-  const mangaAdaptationPoster = anilistExtra?.adaptations?.find(
-    (n) => n.mediaType === "manga" && n.poster,
-  )?.poster;
-  const mangaAwardCorner =
-    isAnime && !awardsInDescription ? (
-      <MangaAwardCorner title={title || meta.name} fallbackPoster={mangaAdaptationPoster} />
-    ) : null;
   const isSeries =
     detail?.kind != null
       ? detail.kind === "tv"
@@ -1784,14 +1769,13 @@ export function DetailView({
                 <div className="relative mt-6">
                   <div
                     className={`flex flex-wrap items-center gap-3 text-[13px] font-medium text-ink-muted ${
-                      heroAwardsCorner || mangaAwardCorner ? "pe-[240px]" : "max-w-3xl"
+                      heroAwardsCorner ? "pe-[240px]" : "max-w-3xl"
                     }`}
                   >
                     {heroPills}
                   </div>
-                  {(heroAwardsCorner || mangaAwardCorner) && (
+                  {heroAwardsCorner && (
                     <div className="absolute end-0 bottom-0 flex translate-y-4 flex-col items-end gap-1.5">
-                      {mangaAwardCorner}
                       {heroAwardsCorner}
                     </div>
                   )}
@@ -2315,25 +2299,6 @@ export function DetailView({
                       poster: node.poster,
                     })
                   }
-                />
-              ),
-            });
-          }
-          if (isAnime && anilistExtra && anilistExtra.adaptations.length > 0) {
-            railSections.push({
-              key: "animeAdaptations",
-              label: t("Adaptations"),
-              minHeight: 240,
-              node: (
-                <AnimeRelatedRail
-                  title={t("Adaptations")}
-                  nodes={anilistExtra.adaptations}
-                  badgeCollections
-                  onOpen={async (node) => {
-                    const { searchManga } = await import("@/lib/manga/api");
-                    const found = (await searchManga(node.title, 0))[0];
-                    openManga(found?.id);
-                  }}
                 />
               ),
             });

@@ -3295,17 +3295,6 @@ html[data-theme-layout="minui"] .harbor-together-pill {
   animation: harbor-rise-in 200ms var(--ease-out) backwards;
 }
 
-@keyframes harbor-check-ring {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes harbor-check-draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @keyframes harbor-detail-fade {
   from {
     opacity: 0;

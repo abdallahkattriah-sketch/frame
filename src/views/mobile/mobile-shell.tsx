@@ -1,6 +1,5 @@
 import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { Pause, Play } from "lucide-react";
-import { isMangaReaderRoute } from "@/lib/platform";
 import { isSetupRoute } from "@/lib/platform";
 import { hasSetupToken } from "./onboard/setup-wire";
 import { HarborLoader } from "@/components/harbor-loader";
@@ -14,15 +13,8 @@ import { MobileRemoteProvider, useMobileRemote } from "./mobile-remote";
 import { SheetLockProvider, useSheetLock } from "./mobile-sheet-lock";
 import { useMobileRemoteStyle } from "./remote-style";
 import { ScrollToTop } from "./scroll-to-top";
-import { MangaNowBar } from "./manga-remote/manga-now-bar";
 
 const RemoteApp = lazy(() => import("@/views/remote-app").then((m) => ({ default: m.RemoteApp })));
-const MangaRemote = lazy(() =>
-  import("./manga-remote/manga-remote").then((m) => ({ default: m.MangaRemote })),
-);
-const MangaLocalReader = lazy(() =>
-  import("./manga-read/manga-local-reader").then((m) => ({ default: m.MangaLocalReader })),
-);
 const MobileOnboard = lazy(() => import("./onboard").then((m) => ({ default: m.MobileOnboard })));
 
 export function MobileShell() {
@@ -40,28 +32,11 @@ export function MobileShell() {
           <Suspense fallback={<HarborLoader />}>
             <MobileOnboard onExit={() => setSetup(false)} />
           </Suspense>
-        ) : isMangaReaderRoute() ? (
-          <MangaReaderShell />
         ) : (
           <ShellBody />
         )}
       </SheetLockProvider>
     </MobileRemoteProvider>
-  );
-}
-
-function MangaReaderShell() {
-  const [local, setLocal] = useState(false);
-  return (
-    <div className="absolute inset-0 z-30 flex flex-col bg-canvas">
-      <Suspense fallback={<FullLoader />}>
-        {local ? (
-          <MangaLocalReader onExit={() => setLocal(false)} />
-        ) : (
-          <MangaRemote standalone onReadHere={() => setLocal(true)} />
-        )}
-      </Suspense>
-    </div>
   );
 }
 
@@ -242,11 +217,6 @@ function NowPlayingBar({ onExpand }: { onExpand: () => void }) {
     return () => window.clearTimeout(timer);
   }, [active]);
 
-  const manga = snapshot.manga;
-  if (connected && manga?.open) {
-    return <MangaNowBar m={manga} hidden={sheetOpen} onExpand={onExpand} />;
-  }
-
   if (!render) return null;
   const snap = active ? snapshot : lastActive.current;
   const ep = snap.episode ? `S${snap.episode.season} · E${snap.episode.episode}` : null;
@@ -292,19 +262,15 @@ function NowPlayingBar({ onExpand }: { onExpand: () => void }) {
 }
 
 function RemoteSurface() {
-  const { snapshot } = useMobileRemote();
   const style = useMobileRemoteStyle();
-  const content = snapshot.manga?.open ? (
-    <Suspense fallback={<FullLoader />}>
-      <MangaRemote />
-    </Suspense>
-  ) : style === "dpad" ? (
-    <DpadRemote />
-  ) : (
-    <Suspense fallback={<FullLoader />}>
-      <RemoteApp />
-    </Suspense>
-  );
+  const content =
+    style === "dpad" ? (
+      <DpadRemote />
+    ) : (
+      <Suspense fallback={<FullLoader />}>
+        <RemoteApp />
+      </Suspense>
+    );
   return <div className="min-h-0 flex-1 overflow-hidden overscroll-none">{content}</div>;
 }
 
