@@ -152,6 +152,8 @@ const en: Record<string, string> = {
   "nav.movies": "Movies",
   "nav.shows": "Shows",
   "nav.people": "Top People",
+  "nav.radar": "Radar",
+  "nav.following": "Following",
   "nav.kids": "Watch",
   "nav.anime": "Anime",
   "nav.manga": "Manga",

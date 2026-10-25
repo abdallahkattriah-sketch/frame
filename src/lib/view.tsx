@@ -56,7 +56,9 @@ export type View =
   | "wrapped"
   | "manga"
   | "ebook"
-  | "people";
+  | "people"
+  | "radar"
+  | "following";
 
 export type PlayEpisode = {
   season: number;
@@ -194,6 +196,8 @@ export type Frame =
   | { kind: "downloads" }
   | { kind: "manga"; mangaId?: string }
   | { kind: "ebook"; ebookId?: string }
+  | { kind: "radar" }
+  | { kind: "following" }
   | { kind: "people"; source?: RankSource; dept?: PeopleDept; focusSource?: boolean; nonce: number }
   | { kind: "service"; service: StreamingService }
   | {
@@ -450,6 +454,10 @@ function frameKey(f: Frame): string {
       return f.ebookId ? `ebook:${f.ebookId}` : "ebook";
     case "people":
       return "people";
+    case "radar":
+      return "radar";
+    case "following":
+      return "following";
     case "service":
       return `service:${f.service}`;
     case "meta":
@@ -602,6 +610,8 @@ export function ViewProvider({ children }: { children: ReactNode }) {
       if (f.kind === "manga") return "manga";
       if (f.kind === "ebook") return "ebook";
       if (f.kind === "people") return "people";
+      if (f.kind === "radar") return "radar";
+      if (f.kind === "following") return "following";
       if (f.kind === "home") return "home";
     }
     return "home";
@@ -922,6 +932,11 @@ export function ViewProvider({ children }: { children: ReactNode }) {
           scrollMem.current.clear();
           rowScrollMem.current.clear();
           return [{ kind: "people", nonce: Date.now() }];
+        }
+        if (v === "radar" || v === "following") {
+          scrollMem.current.clear();
+          rowScrollMem.current.clear();
+          return [{ kind: v }];
         }
         if (t.kind === "settings") return s;
         return pushFrame(s, { kind: "settings" });

@@ -2151,6 +2151,44 @@ const uiFallback: Record<string, string> = {
     "For Application URL anything works, for example https://github.com. TMDB never visits it.",
   "These settings stay on this computer.": "These settings stay on this computer.",
   "Changes not synced yet": "Changes not synced yet",
+  Theatrical: "Theatrical",
+  "Show more": "Show more",
+  "Release date listed on TMDB for {region}": "Release date listed on TMDB for {region}",
+  "TMDB didn't answer.": "TMDB didn't answer.",
+  "Try again": "Try again",
+  "TMDB lists nothing here for {region} yet.": "TMDB lists nothing here for {region} yet.",
+  Radar: "Radar",
+  "Following {n} people.": "Following {n} people.",
+  "Follow actors and directors to see their films first.":
+    "Follow actors and directors to see their films first.",
+  "Manage Following": "Manage Following",
+  "Release region": "Release region",
+  "Radar reads release dates from TMDB. Add your TMDB key to use it.":
+    "Radar reads release dates from TMDB. Add your TMDB key to use it.",
+  "Add TMDB key": "Add TMDB key",
+  "Search actors, directors…": "Search actors, directors…",
+  "Add a TMDB key in settings first": "Add a TMDB key in settings first",
+  Following: "Following",
+  "What to follow": "What to follow",
+  Unfollow: "Unfollow",
+  "Their upcoming films show first in Radar.": "Their upcoming films show first in Radar.",
+  "Open Radar": "Open Radar",
+  "You aren't following anyone yet. Search above, or use Follow on a person's page.":
+    "You aren't following anyone yet. Search above, or use Follow on a person's page.",
+  Follow: "Follow",
+  "Coming Soon": "Coming Soon",
+  "Digital Release": "Digital Release",
+  "Newly Released": "Newly Released",
+  "Popular & Discovery": "Popular & Discovery",
+  "Upcoming theatrical releases. People you follow come first.":
+    "Upcoming theatrical releases. People you follow come first.",
+  "Films with a recent or upcoming digital release date.":
+    "Films with a recent or upcoming digital release date.",
+  "Recently released in theaters.": "Recently released in theaters.",
+  "What people are watching right now.": "What people are watching right now.",
+  Everything: "Everything",
+  Acting: "Acting",
+  Directing: "Directing",
 };
 
 export default uiFallback;

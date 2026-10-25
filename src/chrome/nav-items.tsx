@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { useSportsEnabled } from "@/lib/sports/enabled";
 import { usePluginCataloguesAvailable } from "@/lib/streams/plugins/available";
 import { SportsNavIcon } from "@/components/icons/sports-nav-icon";
-import { Popcorn, Puzzle } from "lucide-react";
+import { Popcorn, Puzzle, Radar, UserCheck } from "lucide-react";
 import { NavGlyph } from "@/components/icons/nav-glyph";
 import { NavLottie } from "@/components/icons/nav-lottie";
 import lotHome from "@/assets/lottie/nav/home.json";
@@ -60,6 +60,8 @@ export type NavItemId =
   | "plugins"
   | "movies"
   | "shows"
+  | "radar"
+  | "following"
   | "music"
   | "games"
   | "kids"
@@ -142,6 +144,22 @@ const NAV_ITEMS_ALL: NavItem[] = [
     ),
     view: "shows",
     parentalKey: "shows",
+  },
+  {
+    id: "radar",
+    label: "nav.radar",
+    render: (active) => (
+      <Radar size={26} strokeWidth={2.2} className={active ? "" : "opacity-70"} />
+    ),
+    view: "radar",
+  },
+  {
+    id: "following",
+    label: "nav.following",
+    render: (active) => (
+      <UserCheck size={26} strokeWidth={2.2} className={active ? "" : "opacity-70"} />
+    ),
+    view: "following",
   },
   {
     id: "kids",

@@ -27,6 +27,7 @@ export const DEFAULT: Settings = {
   pmKey: "",
   dlKey: "",
   region: "US",
+  radarRegion: "EG",
   preferredLanguages: ["English"],
   requirePreferredLanguage: false,
   showImdbBadge: true,

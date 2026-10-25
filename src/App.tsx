@@ -197,6 +197,8 @@ const importBrands = () => import("@/views/brands");
 const importGrid = () => import("@/views/grid");
 const importPerson = () => import("@/views/person");
 const importPeople = () => import("@/views/people");
+const importRadar = () => import("@/views/radar");
+const importFollowing = () => import("@/views/following");
 const importCollection = () => import("@/views/collection");
 const importEpisodeDetail = () => import("@/views/episode-detail");
 const importPlayPicker = () => import("@/views/play-picker");
@@ -236,6 +238,8 @@ const BrandsView = lazy(() => importBrands().then((m) => ({ default: m.BrandsVie
 const GridView = lazy(() => importGrid().then((m) => ({ default: m.GridView })));
 const PersonView = lazy(() => importPerson().then((m) => ({ default: m.PersonView })));
 const PeopleView = lazy(() => importPeople().then((m) => ({ default: m.PeopleView })));
+const RadarView = lazy(() => importRadar().then((m) => ({ default: m.RadarView })));
+const FollowingView = lazy(() => importFollowing().then((m) => ({ default: m.FollowingView })));
 const ProfileView = lazy(() =>
   import("@/views/profile/profile").then((m) => ({ default: m.ProfileView })),
 );
@@ -311,6 +315,7 @@ function useViewPreloader(tmdbKey: string) {
       void importDiscover();
       void importPerson();
       void importPeople();
+      void importRadar();
       void importFilter();
       void importCalendar();
       void importMovies();
@@ -1422,6 +1427,8 @@ function Shell({ onReady }: { onReady?: () => void }) {
   const mangaTop = topKind === "manga";
   const ebookTop = topKind === "ebook";
   const peopleTop = topKind === "people";
+  const radarTop = topKind === "radar";
+  const followingTop = topKind === "following";
 
   const [immersive, setImmersive] = useState(false);
   useEffect(() => {
@@ -1528,6 +1535,8 @@ function Shell({ onReady }: { onReady?: () => void }) {
   const mangaAlive = useIdleEvict(mangaTop);
   const ebookAlive = useIdleEvict(ebookTop);
   const peopleAlive = useIdleEvict(peopleTop);
+  const radarAlive = useIdleEvict(radarTop);
+  const followingAlive = useIdleEvict(followingTop);
 
   const gameDockVisible =
     !kid && !kidsTop && !playerActive && !pickerTop && !bigPicture && !immersive && !chromeHidden;
@@ -1836,6 +1845,20 @@ function Shell({ onReady }: { onReady?: () => void }) {
               <div {...layerProps(peopleTop)}>
                 <Suspense fallback={null}>
                   <PeopleView init={peopleInit} />
+                </Suspense>
+              </div>
+            )}
+            {radarAlive && (
+              <div {...layerProps(radarTop)}>
+                <Suspense fallback={null}>
+                  <RadarView active={radarTop} />
+                </Suspense>
+              </div>
+            )}
+            {followingAlive && (
+              <div {...layerProps(followingTop)}>
+                <Suspense fallback={null}>
+                  <FollowingView active={followingTop} />
                 </Suspense>
               </div>
             )}

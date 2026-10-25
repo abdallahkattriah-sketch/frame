@@ -17,6 +17,7 @@ import { useSettings } from "@/lib/settings";
 import { useTopRankModal, type TopRankDept } from "@/lib/top-rank-modal";
 import { useScrollMemory, useView } from "@/lib/view";
 import { useT } from "@/lib/i18n";
+import { useFollows } from "@/lib/follows";
 import { AwardLaurelStrip } from "./person/award-laurel-strip";
 import { Bio } from "./person/bio";
 import { CollaboratorRail } from "./person/collaborator-rail";
@@ -75,6 +76,7 @@ export function PersonView({ personId }: { personId: number }) {
     [openAward, awardEntries],
   );
   useScrollMemory(`person:${personId}`, scrollRef);
+  const follows = useFollows();
 
   useEffect(() => {
     let cancelled = false;
@@ -194,6 +196,25 @@ export function PersonView({ personId }: { personId: number }) {
                   title={t("Open Top 100 {dept}", { dept: departmentLabel ?? t("Actors") })}
                 >
                   {t("Top {n}", { n: personRank })}
+                </button>
+              )}
+              {person && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    follows.isFollowing(personId)
+                      ? follows.unfollow(personId)
+                      : follows.follow({
+                          id: personId,
+                          name: person.name,
+                          profile: person.profilePath ?? null,
+                          role: person.knownForDepartment === "Directing" ? "directing" : "any",
+                        })
+                  }
+                  aria-pressed={follows.isFollowing(personId)}
+                  className="rounded-md border border-edge px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-muted transition-colors hover:border-accent/60 hover:text-ink aria-pressed:border-accent/40 aria-pressed:bg-accent/10 aria-pressed:text-accent"
+                >
+                  {follows.isFollowing(personId) ? t("Following") : t("Follow")}
                 </button>
               )}
             </div>
