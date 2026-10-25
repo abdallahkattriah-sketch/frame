@@ -198,12 +198,8 @@ export function renderCustomIconControl(
       );
     }
     case "cast": {
-      if (ctx.tight) return null;
-      return (
-        <BigButton onClick={ctx.onCast} ariaLabel={t("Cast")} tooltip={t("Cast")}>
-          <CustomIcon url={iconUrl} size={22} />
-        </BigButton>
-      );
+      // Frame has no casting. A saved layout that still lists the button shows nothing.
+      return null;
     }
     case "fullscreen": {
       return (
@@ -301,13 +297,8 @@ export function renderCustomIconControlStremio(
         </Tooltip>
       );
     case "cast":
-      return (
-        <Tooltip label={t("Cast")}>
-          <StremioBtn onClick={ctx.onCast} ariaLabel={t("Cast")}>
-            <CustomIcon url={iconUrl} size={26} />
-          </StremioBtn>
-        </Tooltip>
-      );
+      // Frame has no casting. A saved layout that still lists the button shows nothing.
+      return null;
     case "draw-toggle":
       if (!ctx.showDraw) return null;
       return (

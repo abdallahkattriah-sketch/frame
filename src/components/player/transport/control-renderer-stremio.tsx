@@ -43,7 +43,6 @@ import { RtxHdrToggleStremioBtn } from "./rtx-hdr-toggle-btn";
 import { RtxVsrToggleStremioBtn } from "./rtx-vsr-toggle-btn";
 import type { Anime4kChoice } from "@/views/player/hooks/use-anime4k";
 import { DrawToggle } from "./draw-toggle";
-import { CastButton } from "./cast-button";
 import { TimeStart } from "./time-display";
 import { StremioBtn } from "./stremio-btn";
 import { StremioVolume } from "./stremio-volume";
@@ -415,7 +414,8 @@ export function RenderedStremioControl({
       if (ctx.engine === "html5") return null;
       return <RtxVsrToggleStremioBtn meta={ctx.meta} />;
     case "cast":
-      return <CastButton onClick={ctx.onCast} capabilities={ctx.capabilities} />;
+      // Frame has no casting. A saved layout that still lists the button shows nothing.
+      return null;
     case "subtitle-menu":
       if (ctx.isLiveChannel && ctx.snap.subtitleTracks.length === 0) return null;
       return (

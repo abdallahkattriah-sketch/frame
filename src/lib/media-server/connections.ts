@@ -1,4 +1,5 @@
 import { activeProfileId } from "@/lib/active-profile-id";
+import { MEDIA_SERVERS_REMOVED } from "@/lib/removed-trackers";
 import { getSecret, setSecret } from "@/lib/secret-store";
 import type { MediaServerConnection } from "./types";
 import { normalizeServerOrigin } from "./transport";
@@ -25,6 +26,7 @@ function write(value: MediaServerConnection[]) {
   listeners.forEach((fn) => fn());
 }
 export function mediaServerConnections(profileId = activeProfileId()) {
+  if (MEDIA_SERVERS_REMOVED) return [];
   return all().filter((c) => c.profileId === profileId);
 }
 export function saveMediaServerConnection(connection: MediaServerConnection, token?: string) {

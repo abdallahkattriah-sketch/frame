@@ -6,7 +6,6 @@ import { STALL_WAIT_OPTIONS, stallWaitSec } from "@/lib/player/stall-wait";
 import { SettingGroup, SettingRow } from "../kit";
 import { RowDesc, RowTitle, Segmented, ToggleRow, useRegisterRowTitle } from "../shared";
 import { Dropdown } from "@/components/dropdown";
-import { mediaServerConnections } from "@/lib/media-server/connections";
 import { Anchored, Nested } from "./choice";
 import { PressPlayPreview } from "./press-play-preview";
 import { PlaybackCacheFolder } from "./playback-cache-folder";
@@ -89,32 +88,9 @@ export function PlayModePanel() {
               { value: "ask", label: t("Ask every time") },
               { value: "online", label: t("Prefer online streams") },
               { value: "local", label: t("Prefer this device") },
-              { value: "home-server", label: t("Prefer a home server") },
             ]}
           />
         </SettingRow>
-        {settings.playbackSourcePreference === "home-server" && (
-          <SettingRow
-            wide
-            label={t("Preferred home server")}
-            desc={t(
-              "Ask when more than one server has a copy, or always prefer a specific server.",
-            )}
-          >
-            <div className="w-full max-w-[420px]">
-              <Dropdown
-                value={settings.preferredMediaServerId ?? ""}
-                onChange={(value) => update({ preferredMediaServerId: value || null })}
-                options={[
-                  { value: "", label: t("Ask which server") },
-                  ...mediaServerConnections()
-                    .filter((connection) => connection.enabled)
-                    .map((connection) => ({ value: connection.id, label: connection.name })),
-                ]}
-              />
-            </div>
-          </SettingRow>
-        )}
         <PlayModeChoice />
         <ToggleRow
           label={t("Stay on one source for a season")}

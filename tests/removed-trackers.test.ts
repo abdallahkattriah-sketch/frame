@@ -59,3 +59,19 @@ test("the Trakt, Simkl and MAL clients refuse before any request", () => {
     assert.match(firstLine, /^\s+if \(TRACKERS_REMOVED\) (throw|return Promise\.reject\()/, file);
   }
 });
+
+test("saved home server connections are kept but never reported", async () => {
+  const stored = JSON.stringify([
+    {
+      id: "plex-1",
+      profileId: "default",
+      provider: "plex",
+      name: "Den",
+      origin: "http://plex.lan",
+    },
+  ]);
+  localStorage.setItem("harbor.media-server.connections.v1", stored);
+  const { mediaServerConnections } = await import("../src/lib/media-server/connections.ts");
+  assert.deepEqual(mediaServerConnections("default"), []);
+  assert.equal(localStorage.getItem("harbor.media-server.connections.v1"), stored);
+});
