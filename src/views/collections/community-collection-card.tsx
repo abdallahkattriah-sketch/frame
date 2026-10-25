@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useT } from "@/lib/i18n";
 import { posterPlate } from "@/components/poster";
 import type { Collection } from "@/lib/collections";
-import { CommunityShareButton } from "./community-share-button";
 
 function coverFor(collection: Collection): string | undefined {
   return collection.coverImage || collection.items.find((it) => it.poster)?.poster;
@@ -67,7 +66,6 @@ export function CommunityCollectionCard({
         >
           <Pencil size={14} strokeWidth={2} />
         </button>
-        <CommunityShareButton collectionId={collection.id} variant="icon" />
         <button
           type="button"
           onClick={(e) => {

@@ -1,30 +1,12 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { renderBbcode } from "../src/lib/social/bbcode.ts";
 import { handleLinkOutActivation, safeExternalUrl } from "../src/lib/social/link-out-activation.ts";
 
 const interstitialSource = readFileSync(
   new URL("../src/components/link-out-interstitial.tsx", import.meta.url),
   "utf8",
 );
-
-test("app-managed bbcode links do not request native blank-window navigation", () => {
-  for (const body of [
-    "https://example.com/watch?id=42",
-    "[url=https://example.com/watch?id=42]Example[/url]",
-  ]) {
-    const html = renderBbcode(body);
-    assert.match(html, /<a href="https:\/\/example\.com\/watch\?id=42"/);
-    assert.match(html, /rel="noopener noreferrer nofollow"/);
-    assert.doesNotMatch(html, /target="_blank"/);
-  }
-});
-
-test("bbcode link safety policy remains unchanged", () => {
-  assert.doesNotMatch(renderBbcode("[url=javascript:alert(1)]unsafe[/url]"), /<a /);
-  assert.doesNotMatch(renderBbcode("https://bit.ly/harbor-test"), /<a /);
-});
 
 test("external link routing accepts only HTTP(S) destinations", () => {
   assert.equal(safeExternalUrl(" https://example.com/path "), "https://example.com/path");

@@ -8,13 +8,7 @@ import { useView } from "@/lib/view";
 import { MangaMatchPicker } from "./manga-match-picker";
 import { useCollection, type CollectionItem, type CollectionItemType } from "@/lib/collections";
 import type { MetaType } from "@/lib/cinemeta";
-import { CommunityShareButton } from "./community-share-button";
 import { AddToPageMenu } from "./add-to-page-menu";
-import { Avatar } from "@/components/together-modal/avatar";
-import { useSelfAvatar } from "@/views/profile/use-self-avatar";
-import { currentAuthor } from "@/lib/theme-auth";
-import { UserHoverCard } from "@/views/profile/user-hover-card";
-import { requestOpenProfile } from "@/lib/social/open-profile";
 
 const TYPE_DOT: Record<CollectionItemType, string> = {
   movie: "bg-sky-400",
@@ -38,7 +32,6 @@ export function CommunityCollectionPage({
   const t = useT();
   const collection = useCollection(id);
   const { openMeta, openManga } = useView();
-  const self = useSelfAvatar();
   const scrollRef = useRef<HTMLElement>(null);
   const pageBtnRef = useRef<HTMLButtonElement>(null);
   const [pageMenu, setPageMenu] = useState(false);
@@ -86,8 +79,6 @@ export function CommunityCollectionPage({
   const backdropSharp = !!collection.bgImage;
   const count = collection.items.length;
   const numbered = !!collection.numbered;
-  const authorHandle = self.handle;
-  const authorName = currentAuthor()?.username ?? authorHandle ?? "";
   const typeLabel = (ty: CollectionItemType) =>
     ty === "movie" ? t("Movie") : ty === "series" ? t("Series") : t("Manga");
   const typeFilters: { id: "all" | CollectionItemType; label: string; count: number }[] = [
@@ -161,7 +152,6 @@ export function CommunityCollectionPage({
               <Pencil size={15} strokeWidth={2} />
               {t("Edit")}
             </button>
-            <CommunityShareButton collectionId={id} variant="pill" />
           </div>
           <AddToPageMenu
             collectionId={id}
@@ -179,19 +169,6 @@ export function CommunityCollectionPage({
             {collection.name}
           </h1>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-            {authorHandle && (
-              <UserHoverCard handle={authorHandle}>
-                <button
-                  type="button"
-                  onClick={() => requestOpenProfile(authorHandle)}
-                  aria-label={t("Open {alias} profile", { alias: authorName })}
-                  className="inline-flex items-center gap-2 rounded-full border border-edge-soft bg-elevated/60 py-1 ps-1 pe-3 backdrop-blur-md transition-colors hover:bg-raised"
-                >
-                  <Avatar name={authorName} src={self.avatar} size={24} />
-                  <span className="text-[13px] font-semibold text-ink">@{authorHandle}</span>
-                </button>
-              </UserHoverCard>
-            )}
             <span className="text-[13px] tabular-nums text-ink-subtle">
               {count === 1 ? t("{n} title", { n: count }) : t("{n} titles", { n: count })}
             </span>

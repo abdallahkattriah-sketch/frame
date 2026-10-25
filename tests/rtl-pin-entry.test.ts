@@ -11,10 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const at = (p: string) => new URL(`../${p}`, import.meta.url);
 const read = (p: string) => readFileSync(at(p), "utf8");
-const KEYPADS = [
-  "src/components/parental-pin-modal.tsx",
-  "src/components/profile-picker/pin-entry.tsx",
-];
+const KEYPADS = ["src/components/parental-pin-modal.tsx"];
 
 const BP_KEYPADS = ["src/views/big-picture/bp-who-is-watching-pin.tsx"];
 

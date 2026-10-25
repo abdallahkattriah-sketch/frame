@@ -101,7 +101,8 @@ function harness(bigPicture: boolean, sources: any, privateProfile = false) {
   };
 }
 
-for (const bigPicture of [false, true]) {
+// Big Picture's own anime Continue Watching row is gone with the anime pages.
+for (const bigPicture of [false]) {
   test(`${bigPicture ? "Big Picture anime" : "shared CW"}: library fallback follows the library toggle`, () => {
     const h = harness(bigPicture, { library: true, local: false, simkl: false, trakt: false });
     assert.deepEqual(h.ids(), ["kitsu:300"]);

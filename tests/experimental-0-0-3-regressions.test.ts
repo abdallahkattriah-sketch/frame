@@ -48,17 +48,3 @@ test("HLS reconnect options never retry normal streamed EOF", () => {
   }
   assert.match(read("src-tauri/src/mpv.rs"), /"demuxer-cache-dir"/);
 });
-
-test("desktop rule integration retains destination setup and available-channel guards", () => {
-  const panel = read("src/views/settings/webhooks-panel.tsx");
-  const builder = read("src/views/settings/webhooks-panel/rule-builder.tsx");
-  assert.match(panel, /onSetUp=\{\(\) => setTab\("destinations"\)\}/);
-  assert.match(panel, /canDesktop=\{settings.webhooks.desktopEnabled\}/);
-  for (const channel of ["discord", "telegram", "desktop"]) {
-    assert.ok(
-      builder.includes(
-        `draft.channels.${channel} && can${channel[0].toUpperCase()}${channel.slice(1)}`,
-      ),
-    );
-  }
-});

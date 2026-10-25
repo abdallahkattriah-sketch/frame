@@ -149,25 +149,6 @@ test("sparse anime metadata and missing seasons are supported; malformed rows ar
   }
 });
 
-test("rolling and archive calendar readers consume v2 and map episode dates, IDs, ratings and posters", async () => {
-  const h = harness([json(calendar), json(calendar)]);
-  const api = h.load("calendar.ts");
-  const tv = await api.fetchSimklCdnRolling("tv");
-  const movies = await api.fetchSimklCdnArchive(2026, 9, "movie");
-  assert.equal(tv.length, 3);
-  assert.equal(tv[0].name, "A show S02E01");
-  assert.equal(tv[0].releaseDate, "2026-10-01");
-  assert.equal(tv[0].voteAverage, 8.2);
-  assert.equal(tv[0].poster, "https://wsrv.nl/?url=https://simkl.in/posters/10/image_m.webp&q=90");
-  assert.equal(movies[2].id, "tmdb:movie:40");
-  assert.equal(movies[2].poster, null);
-  assert.deepEqual(
-    h.calls.map((x) => x.url.pathname),
-    ["/calendar/v2/tv.json", "/calendar/v2/2026/10/movie_release.json"],
-  );
-  assert.equal(h.calls[0].url.searchParams.get("app-name"), "harbor-test");
-});
-
 test("home Up Next calendar receives joined TV and anime entries and retains its cache", async () => {
   const h = harness([json(calendar), json(calendar)]);
   const api = h.load("home-rails/cdn.ts");

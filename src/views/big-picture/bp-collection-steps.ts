@@ -15,13 +15,9 @@ import {
 
 export type BpCollectionSource = "all" | "mine" | "community" | "tvdb" | "tmdb";
 
-export const BP_COLLECTION_SOURCES: BpCollectionSource[] = [
-  "all",
-  "mine",
-  "community",
-  "tmdb",
-  "tvdb",
-];
+// "community" stays in the type so a saved choice still parses, but Harbor's
+// shared collections server is gone, so it is not offered and fetches nothing.
+export const BP_COLLECTION_SOURCES: BpCollectionSource[] = ["all", "mine", "tmdb", "tvdb"];
 
 export type BpCollectionOpen =
   | { kind: "tmdb"; collectionId: number; name: string; image: string | null }
@@ -60,9 +56,9 @@ type Phase = "community" | "curated" | "tvdb" | "feed";
 // The open ended TMDB search runs last so the finite sources are all reachable
 // by scrolling rather than buried behind 500 pages of it.
 const PHASES: Record<BpCollectionSource, Phase[]> = {
-  all: ["community", "curated", "tvdb", "feed"],
+  all: ["curated", "tvdb", "feed"],
   mine: [],
-  community: ["community"],
+  community: [],
   tvdb: ["tvdb"],
   tmdb: ["curated", "feed"],
 };

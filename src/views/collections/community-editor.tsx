@@ -18,11 +18,6 @@ import { useSettings } from "@/lib/settings";
 import { ResultPoster } from "@/components/search/result-poster";
 import { BackToTop } from "@/components/back-to-top";
 import { searchAll } from "@/lib/search";
-import { searchManga } from "@/lib/manga/api";
-import { searchAnilistMangaEntries } from "@/lib/manga/tracking-anilist";
-import { searchMalMangaEntries } from "@/lib/manga/tracking-mal";
-import type { MangaCandidate } from "@/lib/manga/sync";
-import type { MangaSummary } from "@/lib/manga/model";
 import {
   MAX_COLLECTION_DESCRIPTION,
   MAX_COLLECTION_ITEMS,
@@ -32,7 +27,6 @@ import {
   addCollectionTag,
   clearCollectionItems,
   normalizeTag,
-  readCollections,
   removeCollectionTag,
   removeFromCollection,
   renameCollection,
@@ -45,15 +39,7 @@ import {
   useCollection,
   type CollectionItemType,
 } from "@/lib/collections";
-import {
-  fileToCollectionBackground,
-  fileToCollectionCover,
-  publishCollections,
-  removeCollectionBackground,
-  removeCollectionCover,
-  uploadCollectionBackground,
-  uploadCollectionCover,
-} from "@/lib/social/collections-sync";
+import { fileToCollectionBackground, fileToCollectionCover } from "@/lib/social/collections-sync";
 
 type Hit = { id: string; type: CollectionItemType; name: string; poster?: string };
 
@@ -62,10 +48,6 @@ const TYPE_DOT: Record<CollectionItemType, string> = {
   series: "bg-emerald-400",
   manga: "bg-violet-400",
 };
-
-function syncSoon() {
-  void publishCollections(readCollections()).catch(() => {});
-}
 
 export function CommunityCollectionEditor({
   id,
@@ -111,16 +93,7 @@ export function CommunityCollectionEditor({
     let alive = true;
     setSearching(true);
     const timer = window.setTimeout(async () => {
-      // Source-backed manga search needs a configured Suwayomi/Mangayomi/local/plugin
-      // source; the tracker searches below are source-free metadata databases, so
-      // manga hits appear either way. AniList is primary (richer synonyms + malId
-      // cross-ref), MAL fills gaps, deduped by malId then title.
-      const [av, manga, aniList, mal] = await Promise.all([
-        searchAll(settings.tmdbKey, q).catch(() => null),
-        Promise.resolve(searchManga(q)).catch(() => [] as MangaSummary[]),
-        searchAnilistMangaEntries(q).catch(() => [] as MangaCandidate[]),
-        searchMalMangaEntries(q).catch(() => [] as MangaCandidate[]),
-      ]);
+      const av = await searchAll(settings.tmdbKey, q).catch(() => null);
       if (!alive) return;
       const out: Hit[] = [];
       if (av) {
@@ -129,31 +102,6 @@ export function CommunityCollectionEditor({
         for (const s of av.series)
           out.push({ id: s.id, type: "series", name: s.name, poster: s.poster });
       }
-      const mangaHits: Hit[] = [];
-      const seenMangaTitle = new Set<string>();
-      for (const mg of (manga ?? []).slice(0, 8)) {
-        mangaHits.push({ id: mg.id, type: "manga", name: mg.title, poster: mg.cover });
-        seenMangaTitle.add(mg.title.trim().toLowerCase());
-      }
-      const seenMalId = new Set<number>();
-      for (const c of aniList) if (c.malId != null) seenMalId.add(c.malId);
-      const meta: Hit[] = [];
-      for (const c of aniList) {
-        meta.push({ id: `anilist:${c.id}`, type: "manga", name: c.title, poster: c.cover });
-      }
-      for (const c of mal) {
-        const malId = Number(c.id);
-        if (Number.isFinite(malId) && seenMalId.has(malId)) continue;
-        meta.push({ id: `mal:${c.id}`, type: "manga", name: c.title, poster: c.cover });
-      }
-      for (const h of meta) {
-        if (mangaHits.length >= 8) break;
-        const key = h.name.trim().toLowerCase();
-        if (seenMangaTitle.has(key)) continue;
-        seenMangaTitle.add(key);
-        mangaHits.push(h);
-      }
-      out.push(...mangaHits);
       const seen = new Set<string>();
       const dedup: Hit[] = [];
       for (const h of out) {
@@ -224,11 +172,9 @@ export function CommunityCollectionEditor({
     ty === "movie" ? t("Movie") : ty === "series" ? t("Series") : t("Manga");
 
   const back = () => {
-    syncSoon();
     onBack();
   };
   const viewPage = () => {
-    syncSoon();
     onViewPage(id);
   };
 
@@ -243,7 +189,6 @@ export function CommunityCollectionEditor({
       clearTimerRef.current = null;
       setConfirmClear(false);
       clearCollectionItems(collection.id);
-      syncSoon();
       return;
     }
     setConfirmClear(true);
@@ -254,13 +199,11 @@ export function CommunityCollectionEditor({
   const addTag = () => {
     if (!normalizeTag(tagInput)) return;
     addCollectionTag(collection.id, tagInput);
-    syncSoon();
     setTagInput("");
   };
 
   const removeTag = (tag: string) => {
     removeCollectionTag(collection.id, tag);
-    syncSoon();
   };
 
   // Pointer-based sortable. The Tauri webview does not reliably fire native HTML5
@@ -362,7 +305,6 @@ export function CommunityCollectionEditor({
       }
       if (changed) {
         reorderCollectionItems(id, curOrder);
-        syncSoon();
       }
     }
 
@@ -374,7 +316,6 @@ export function CommunityCollectionEditor({
 
   const toggleNumbered = () => {
     setCollectionNumbered(id, !collection.numbered);
-    syncSoon();
   };
 
   return (
@@ -426,25 +367,10 @@ export function CommunityCollectionEditor({
             url={collection.coverImage}
             canUpload
             onUpload={async (file) => {
-              const local = await fileToCollectionCover(file);
-              setCollectionCover(id, local);
-              await publishCollections(readCollections()).catch(() => {});
-              try {
-                const { url } = await uploadCollectionCover(id, file);
-                if (url) setCollectionCover(id, url);
-              } catch {
-                throw new Error(
-                  t(
-                    "Saved on your device, but it couldn't be uploaded for others to see. Try again.",
-                  ),
-                );
-              }
-              syncSoon();
+              setCollectionCover(id, await fileToCollectionCover(file));
             }}
             onRemove={async () => {
-              await removeCollectionCover(id).catch(() => {});
               setCollectionCover(id, null);
-              syncSoon();
             }}
           />
           <ImageField
@@ -453,25 +379,10 @@ export function CommunityCollectionEditor({
             url={collection.bgImage}
             canUpload
             onUpload={async (file) => {
-              const local = await fileToCollectionBackground(file);
-              setCollectionBackground(id, local);
-              await publishCollections(readCollections()).catch(() => {});
-              try {
-                const { url } = await uploadCollectionBackground(id, file);
-                if (url) setCollectionBackground(id, url);
-              } catch {
-                throw new Error(
-                  t(
-                    "Saved on your device, but it couldn't be uploaded for others to see. Try again.",
-                  ),
-                );
-              }
-              syncSoon();
+              setCollectionBackground(id, await fileToCollectionBackground(file));
             }}
             onRemove={async () => {
-              await removeCollectionBackground(id).catch(() => {});
               setCollectionBackground(id, null);
-              syncSoon();
             }}
           />
         </section>
