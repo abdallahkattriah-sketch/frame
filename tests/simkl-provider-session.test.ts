@@ -109,6 +109,8 @@ test("a session read before secrets.json loads is re-read once the store is read
       },
     },
     "./pending-sync": { clearPendingWatches: () => {} },
+    // The session logic is still exercised with the Frame gate opened.
+    "@/lib/removed-trackers": { TRACKERS_REMOVED: false },
   };
   const code = ts.transpileModule(readFileSync("src/lib/simkl/session.ts", "utf8"), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },

@@ -35,6 +35,8 @@ function harness(responses = []) {
       },
     },
     "@/lib/active-profile-id": { activeProfileId: () => state.profile },
+    // The client logic is still exercised with the Frame gate opened.
+    "@/lib/removed-trackers": { TRACKERS_REMOVED: false, TrackerRemovedError: Error },
     [path.join(root, "session.ts")]: {
       getSession: () => state.session,
       setSession: (value) => {

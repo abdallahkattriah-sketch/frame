@@ -9,6 +9,7 @@ import {
 } from "./config";
 import { getSession, setSession } from "./session";
 import { simklRetryPolicy } from "./retry-policy";
+import { TRACKERS_REMOVED, TrackerRemovedError } from "@/lib/removed-trackers";
 
 export type SimklRequestOptions = {
   method?: "GET" | "POST" | "PUT" | "DELETE";
@@ -156,6 +157,7 @@ async function acquireSlot(method: string): Promise<void> {
 }
 
 export function simklRequest<T>(path: string, opts: SimklRequestOptions = {}): Promise<T> {
+  if (TRACKERS_REMOVED) return Promise.reject(new TrackerRemovedError("Simkl"));
   const profile = activeProfileId();
   const usesSession = !opts.token && opts.authed !== false;
   const session = usesSession ? getSession() : null;

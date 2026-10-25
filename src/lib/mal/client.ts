@@ -1,6 +1,7 @@
 import { MAL_API_BASE } from "./config";
 import { getSession } from "./session";
 import { resolveMalRequestUrl } from "./url";
+import { TRACKERS_REMOVED, TrackerRemovedError } from "@/lib/removed-trackers";
 
 export class MalApiError extends Error {
   constructor(
@@ -23,6 +24,7 @@ export async function malRequest<T>(
   path: string,
   options: { method?: string; body?: URLSearchParams; accessToken?: string } = {},
 ): Promise<T> {
+  if (TRACKERS_REMOVED) throw new TrackerRemovedError("MyAnimeList");
   const token = options.accessToken ?? getSession()?.accessToken ?? null;
   const headers: Record<string, string> = {
     Accept: "application/json",

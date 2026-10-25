@@ -3,6 +3,7 @@ import { getSecret, setSecret, subscribeSecretsReady } from "@/lib/secret-store"
 import { clearPendingStops } from "./pending-sync";
 import { REFRESH_THRESHOLD_SEC } from "./config";
 import type { TraktSession } from "./types";
+import { TRACKERS_REMOVED } from "@/lib/removed-trackers";
 
 const BASE_KEY = "harbor.trakt.session.v1";
 
@@ -88,6 +89,7 @@ export function resetForProfile(): void {
 }
 
 export function getSession(): TraktSession | null {
+  if (TRACKERS_REMOVED) return null;
   ensureLoaded();
   return cached;
 }

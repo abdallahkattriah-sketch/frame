@@ -1,6 +1,7 @@
 import { activeProfileId, activeProfileIsPrimary } from "@/lib/active-profile-id";
 import { getSecret, setSecret } from "@/lib/secret-store";
 import type { AnilistSession } from "./types";
+import { TRACKERS_REMOVED } from "@/lib/removed-trackers";
 
 const BASE_KEY = "harbor.anilist.session.v1";
 
@@ -63,6 +64,7 @@ export function resetForProfile(): void {
 }
 
 export function getSession(): AnilistSession | null {
+  if (TRACKERS_REMOVED) return null;
   ensureLoaded();
   return cached;
 }

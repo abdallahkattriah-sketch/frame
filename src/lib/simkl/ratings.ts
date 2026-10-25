@@ -5,6 +5,7 @@ import type { SimklIds, SimklTarget } from "./types";
 import { updateCachedRatingByTarget, getCachedRatingByTarget } from "./activities";
 import { SIMKL_API_BASE, SIMKL_APP_NAME, SIMKL_APP_VERSION, SIMKL_CLIENT_ID } from "./config";
 import { parseSimklRating, simklRatingsUrl } from "./ratings-url";
+import { TRACKERS_REMOVED } from "@/lib/removed-trackers";
 
 export { getCachedRatingByTarget };
 
@@ -57,6 +58,7 @@ function scheduleFlush(): void {
 }
 
 function resolveRatingBySpec(rawSpec: string): Promise<number | null> {
+  if (TRACKERS_REMOVED) return Promise.resolve(null);
   const spec = rawSpec.toLowerCase();
   if (ratingCache.has(spec)) return Promise.resolve(ratingCache.get(spec) ?? null);
   return new Promise((resolve) => {

@@ -2,6 +2,7 @@ import { activeProfileId, activeProfileIsPrimary } from "@/lib/active-profile-id
 import { getSecret, setSecret, subscribeSecretsReady } from "@/lib/secret-store";
 import { clearPendingWatches } from "./pending-sync";
 import type { SimklSession } from "./types";
+import { TRACKERS_REMOVED } from "@/lib/removed-trackers";
 
 const BASE_KEY = "harbor.simkl.session.v1";
 
@@ -56,6 +57,7 @@ export function resetForProfile(): void {
 }
 
 export function getSession(): SimklSession | null {
+  if (TRACKERS_REMOVED) return null;
   ensureLoaded();
   return cached;
 }

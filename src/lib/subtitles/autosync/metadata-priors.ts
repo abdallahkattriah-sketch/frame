@@ -2,6 +2,7 @@ import type { Bounds } from "./fp-gate";
 import { DEFAULT_PRIOR, type SignalEvidence } from "./confidence";
 import type { MediaMeta } from "./pipeline";
 import { safeFetch } from "@/lib/safe-fetch";
+import { TRACKERS_REMOVED } from "@/lib/removed-trackers";
 
 export type RuntimeScope = "episode" | "series";
 export type RuntimeSource = "tvdb" | "tmdb" | "anilist" | "kitsu" | "simkl";
@@ -429,6 +430,7 @@ async function tmdbFacts(ref: EpisodeRef, key: string): Promise<RuntimeFact[]> {
   return out;
 }
 async function anilistFacts(ref: EpisodeRef): Promise<RuntimeFact[]> {
+  if (TRACKERS_REMOVED) return [];
   if (!ref.anilistId && !ref.malId) return [];
   const query = "query($id:Int,$mal:Int){Media(id:$id,idMal:$mal,type:ANIME){duration format}}";
   const body = JSON.stringify({

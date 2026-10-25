@@ -3,6 +3,7 @@ import { TRAKT_API_BASE, TRAKT_API_VERSION, TRAKT_REDIRECT_URI } from "./config"
 import { sessionClientId, traktApiKey, traktClientSecretFor } from "./credentials";
 import { getSession, setSession } from "./session";
 import type { TraktSession } from "./types";
+import { TRACKERS_REMOVED, TrackerRemovedError } from "@/lib/removed-trackers";
 
 export type TraktRequestOptions = {
   method?: "GET" | "POST" | "PUT" | "DELETE";
@@ -93,6 +94,7 @@ async function doFetch(path: string, opts: TraktRequestOptions): Promise<Respons
 }
 
 export async function traktRequest<T>(path: string, opts: TraktRequestOptions = {}): Promise<T> {
+  if (TRACKERS_REMOVED) throw new TrackerRemovedError("Trakt");
   let res = await doFetch(path, opts);
 
   if (res.status === 401 && opts.authed !== false) {
