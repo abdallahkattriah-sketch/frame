@@ -6,7 +6,6 @@ import { HarborMark } from "@/components/icons/harbor-mark";
 import { AccountMenu } from "@/chrome/account-menu/account-menu";
 import { CollapseToggle } from "@/chrome/sidebar/collapse-toggle";
 import { SidebarBigPictureEntry } from "@/chrome/sidebar/big-picture-entry";
-import { RecordingPill } from "@/chrome/recording-pill";
 import { TogetherButton } from "@/chrome/topbar";
 import {
   useAvailableNavItems,
@@ -196,7 +195,6 @@ export function SideRail() {
             >
               <Search size={15} strokeWidth={1.8} />
             </button>
-            {!collapsed && <RecordingPill />}
             {!collapsed && view !== "live" && (
               <TogetherButton variant="ghost" popoverPlacement="above-left" />
             )}

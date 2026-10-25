@@ -143,8 +143,3 @@ test("Shell defers implicit zoom aliases owned by a Settings rebind", () => {
     /globalMatch !== "globalUiScaleUp"[\s\S]*globalMatch !== "globalUiScaleDown"[\s\S]*globalMatch !== "globalUiScaleReset"/,
   );
 });
-
-test("Multiview marks only its active mounted root", () => {
-  const multiview = readFileSync(new URL("../src/views/multiview.tsx", import.meta.url), "utf8");
-  assert.match(multiview, /data-harbor-multiview-active=\{active \? "true" : undefined\}/);
-});

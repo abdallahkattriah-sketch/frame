@@ -292,15 +292,6 @@ export function HomeTab() {
 
         <SettingGroup label={t("Navigation")}>
           <ToggleRow
-            label={t("Show Playlists tab")}
-            sub={t(
-              "Adds a Playlists item to the navigation for browsing movies and shows from your M3U or Xtream playlists (the same ones you add for Live TV). Off by default to keep the nav tidy.",
-            )}
-            value={settings.showPlaylistsTab}
-            onChange={(v) => update({ showPlaylistsTab: v })}
-            preview={<HomeRowPreview kind="playlists-tab" />}
-          />
-          <ToggleRow
             label={t("Smooth scrolling")}
             sub={t(
               "Eases mouse-wheel scrolling instead of jumping line by line. Turn off if you prefer an instant response or notice any lag.",

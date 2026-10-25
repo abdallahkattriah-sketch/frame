@@ -6,7 +6,6 @@ import { NavHiddenTray, NavEditableItem, NavEditClose, useNavDrag } from "@/chro
 import { useNavEditMode } from "@/chrome/nav-edit-mode";
 import { Search } from "@/components/icons/search-icon";
 import { HarborMark } from "@/components/icons/harbor-mark";
-import { RecordingPill } from "@/chrome/recording-pill";
 import { TogetherButton } from "@/chrome/topbar";
 import { useT } from "@/lib/i18n";
 import { useSearch } from "@/lib/search-context";
@@ -121,7 +120,6 @@ export function CinematicOverlay() {
           />
 
           <div className="ms-2 flex shrink-0 items-center gap-1">
-            <RecordingPill />
             {view !== "live" && <TogetherButton variant="ghost" connectStyle="tab" />}
             {bigPicture.offer && (
               <IconBtn onClick={bigPicture.open} label={bigPicture.label} active={false}>

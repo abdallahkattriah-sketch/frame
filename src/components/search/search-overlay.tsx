@@ -11,7 +11,6 @@ import { useSearch } from "@/lib/search-context";
 import { useView } from "@/lib/view";
 import { MOVIE_GENRES, TV_GENRES } from "@/lib/feed/tags";
 import { EmptyState } from "./empty-state";
-import { GuideModal } from "./guide-modal";
 import { TopMatch } from "./top-match";
 import { CollectionHitsRow } from "./collection-pane";
 import { ExplorePane, type ExploreFrame } from "./explore-pane";
@@ -53,7 +52,6 @@ export function SearchOverlay() {
   const { openFilter, openMeta, openPerson } = useView();
   const [explore, setExplore] = useState<ExploreFrame[]>([]);
   const t = useT();
-  const [guideOpen, setGuideOpen] = useState(false);
   const [aiActive, setAiActive] = useState(false);
   const [aiMode, setAiMode] = useState(false);
   const [aiRunSignal, setAiRunSignal] = useState(0);
@@ -415,7 +413,7 @@ export function SearchOverlay() {
               />
             ) : (
               <>
-                {!trimmed && <EmptyState onClose={close} onOpenGuide={() => setGuideOpen(true)} />}
+                {!trimmed && <EmptyState onClose={close} />}
 
                 {magnetInput && (
                   <div className="harbor-search-section mb-5">
@@ -589,7 +587,6 @@ export function SearchOverlay() {
           </div>
         </div>
       </div>
-      {guideOpen && <GuideModal onClose={() => setGuideOpen(false)} />}
     </div>,
     document.body,
   );

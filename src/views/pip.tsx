@@ -4,8 +4,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { SkipBackIcon, SkipIcon } from "@/components/icons/harbor-glyphs";
 import { useT } from "@/lib/i18n";
 import { matchPlayerKey, storedHotkeyOverrides, type HotkeyId } from "@/lib/hotkeys";
-import { broadcastFromPipSession } from "@/lib/sports/broadcast-pip";
-import { EmbeddedBroadcastPip } from "./sports/embedded-broadcast-player";
 
 type PipSubtitle = {
   url: string;
@@ -286,17 +284,6 @@ export function PipApp() {
   };
 
   const progressPct = duration > 0 ? Math.min(100, (position / duration) * 100) : 0;
-  const broadcast = session && broadcastFromPipSession(session, window.location.hostname);
-
-  if (broadcast)
-    return (
-      <EmbeddedBroadcastPip
-        key={broadcast.url}
-        stream={broadcast}
-        onClose={() => void closeWithState()}
-      />
-    );
-
   return (
     <main
       className="fixed inset-0 flex h-screen w-screen flex-col bg-black text-white"

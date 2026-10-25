@@ -3250,25 +3250,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
   },
 
   {
-    label: "Show Sports",
-    section: "basics",
-    anchorTitle: "Sports",
-    keywords: ["sports", "scores", "football", "soccer", "nba", "nfl", "show sports", "sports tab"],
-  },
-  {
-    label: "Show Sports without a TV provider",
-    section: "basics",
-    anchorTitle: "Sports",
-    keywords: [
-      "sports without provider",
-      "sports no provider",
-      "sports without live tv",
-      "scores only",
-      "sports no iptv",
-      "enable sports",
-    ],
-  },
-  {
     label: "Sign in to Stremio",
     section: "basics",
     keywords: ["sign in", "login", "stremio account", "sync", "manage account", "email", "log in"],
@@ -3486,13 +3467,6 @@ const SETTINGS_OPTIONS: SettingsOption[] = [
       "auto added",
       "stremio saves",
     ],
-  },
-  {
-    label: "Show Playlists tab",
-    section: "library",
-    tab: "home",
-    anchorTitle: "Home layout",
-    keywords: ["playlists", "m3u", "xtream", "iptv", "nav tab", "sidebar"],
   },
   {
     label: "Keep anime in the Anime room only",

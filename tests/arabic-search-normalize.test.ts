@@ -1,8 +1,6 @@
 // @ts-expect-error Node test types are intentionally outside the browser-only tsconfig.
 import assert from "node:assert/strict";
 // @ts-expect-error Node test types are intentionally outside the browser-only tsconfig.
-import { readFileSync } from "node:fs";
-// @ts-expect-error Node test types are intentionally outside the browser-only tsconfig.
 import test from "node:test";
 import { arabicAwareMatch, normalizeArabic } from "../src/lib/iptv/rtl.ts";
 
@@ -40,15 +38,4 @@ test("arabic-indic digits fold to ascii so year searches work", () => {
 
 test("live tv channel search shares the same normalizer", () => {
   assert.ok(arabicAwareMatch("قناة‏  الجزيرة", normalizeArabic("الجزيره")));
-});
-
-test("the vod library search normalizes instead of raw lowercase", () => {
-  const src = readFileSync(new URL("../src/views/playlist-vod.tsx", import.meta.url), "utf8");
-  assert.match(src, /normalizeArabic\(deferredQuery\)/, "the query must be normalized");
-  assert.doesNotMatch(
-    src,
-    /m\.title\.toLowerCase\(\)\.includes/,
-    "raw lowercase substring match cannot find arabic titles",
-  );
-  assert.match(src, /movieIndex = useMemo/, "titles are normalized once, not per keystroke");
 });

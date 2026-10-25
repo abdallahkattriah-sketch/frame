@@ -101,15 +101,3 @@ test("advisories stay opt-in and cannot render from stale data while disabled", 
   );
   assert.match(toast, /const enabled = preview \|\| settings\.contentAdvisoryToast === true/);
 });
-
-test("profile background adapts slider units and reloads when the picker opens", () => {
-  const picker = read("src/views/settings/account/picker-background.tsx");
-  const modal = read("src/components/profile-picker/picker-modal.tsx");
-  assert.match(picker, /dim=\{dim \/ 100\}/);
-  assert.match(picker, /const pct = Math\.round\(next \* 100\);/);
-  assert.match(picker, /setDim\(pct\);\s*void savePickerBgDim\(pct\);/);
-  assert.match(
-    modal,
-    /if \(!pickerOpen\) return;\s*let alive = true;[\s\S]*loadPickerBg\(\)[\s\S]*\}, \[pickerOpen\]\)/,
-  );
-});

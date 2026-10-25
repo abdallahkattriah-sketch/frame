@@ -3,7 +3,6 @@ import { useContextMenu } from "@/lib/context-menu";
 import { Search } from "@/components/icons/search-icon";
 import { HarborMark } from "@/components/icons/harbor-mark";
 import { AccountMenu } from "@/chrome/account-menu/account-menu";
-import { RecordingPill } from "@/chrome/recording-pill";
 import { TogetherButton } from "@/chrome/topbar";
 import { useBigPictureEntry } from "@/chrome/use-big-picture-entry";
 import { useT } from "@/lib/i18n";
@@ -65,7 +64,6 @@ export function FloatingTop() {
       )}
       <div className="flex flex-1" data-tauri-drag-region onContextMenu={openEmptyMenu} />
       <div className="pointer-events-auto flex shrink-0 items-center gap-1.5">
-        <RecordingPill />
         {!liveActive && <TogetherButton variant="ghost" popoverPlacement="below-right" />}
         {bigPicture.offer && (
           <PillBtn label={bigPicture.label} onClick={bigPicture.open}>

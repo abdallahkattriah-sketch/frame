@@ -13,7 +13,6 @@ import { getThemeById } from "@/lib/theme";
 import { ROW_ACTION } from "./kit";
 import { Section, useSettingsActiveContext } from "./shared";
 import { SRow } from "./ui";
-import { SportsAccessRow } from "./sports-access-row";
 
 const ENGINE_LABEL: Record<string, string> = {
   auto: "Auto",
@@ -177,8 +176,6 @@ export function BasicsPanel() {
           trailing={<Picked on={!settings.instantPlay} />}
         />
       </Section>
-
-      <SportsAccessRow />
 
       <Section title={t("Make it yours")} subtitle={t("Colors, posters, fonts and wallpaper.")}>
         <SRow

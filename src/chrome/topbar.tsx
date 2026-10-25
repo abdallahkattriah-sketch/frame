@@ -10,7 +10,6 @@ import { TogetherPopover, TogetherModalShell } from "@/components/together-modal
 import { DownloadsButton } from "@/components/downloads-popover";
 import { BookmarksButton } from "@/components/bookmarks-popover";
 import { ThreeLiquidGlassSurface } from "@/components/ThreeLiquidGlassSurface";
-import { RecordingPill } from "@/chrome/recording-pill";
 import { SleepTimerButton } from "@/chrome/sleep-timer-button";
 import {
   effectiveBinding,
@@ -186,7 +185,6 @@ export function Topbar({ connecting = false }: { connecting?: boolean } = {}) {
         >
           {!inSettings && (
             <div className="hidden items-center gap-2 min-[900px]:flex">
-              <RecordingPill />
               {settings.navbarSleepTimer && <SleepTimerButton />}
               <DownloadsButton />
               {!kid && <BookmarksButton />}

@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { useSportsEnabled } from "@/lib/sports/enabled";
 import { usePluginCataloguesAvailable } from "@/lib/streams/plugins/available";
 import { Puzzle, Radar, UserCheck } from "lucide-react";
 import { NavGlyph } from "@/components/icons/nav-glyph";
@@ -190,13 +189,9 @@ export const NAV_ITEMS: NavItem[] = NAV_ITEMS_ALL;
 export const GAMES_IN_NAV = false;
 
 export function useAvailableNavItems(): NavItem[] {
-  const sportsEnabled = useSportsEnabled();
   const pluginCatalogs = usePluginCataloguesAvailable();
   return NAV_ITEMS.filter(
-    (item) =>
-      (item.id !== "sports" || sportsEnabled) &&
-      (item.id !== "plugins" || pluginCatalogs) &&
-      (item.id !== "games" || GAMES_IN_NAV),
+    (item) => (item.id !== "plugins" || pluginCatalogs) && (item.id !== "games" || GAMES_IN_NAV),
   );
 }
 

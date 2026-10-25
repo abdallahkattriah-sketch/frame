@@ -32,14 +32,8 @@ export function BpRouteFallback() {
  * time anyone presses a direction the module is already resolved and lazy
  * settles without ever showing a fallback.
  */
-export const BpAnime = lazy(() => import("./bp-anime").then((m) => ({ default: m.BpAnime })));
 export const BpShows = lazy(() => import("./bp-shows").then((m) => ({ default: m.BpShows })));
 export const BpMovies = lazy(() => import("./bp-movies").then((m) => ({ default: m.BpMovies })));
-export const BpLive = lazy(() => import("./bp-live").then((m) => ({ default: m.BpLive })));
-export const BpSports = lazy(() => import("./bp-sports").then((m) => ({ default: m.BpSports })));
-export const BpSportsEvent = lazy(() =>
-  import("./sports/bp-sports-event").then((m) => ({ default: m.BpSportsEvent })),
-);
 export const BpDiscover = lazy(() =>
   import("./bp-discover").then((m) => ({ default: m.BpDiscover })),
 );
@@ -74,12 +68,9 @@ const WARM: Array<() => Promise<unknown>> = [
   () => import("./bp-search"),
   () => import("./bp-shows"),
   () => import("./bp-movies"),
-  () => import("./bp-anime"),
   () => import("./bp-library"),
   () => import("./bp-streams"),
   () => import("./bp-discover"),
-  () => import("./bp-live"),
-  () => import("./bp-sports"),
   () => import("./bp-collections"),
   () => import("./bp-person"),
   () => import("./bp-settings"),

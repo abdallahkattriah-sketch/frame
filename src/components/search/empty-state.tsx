@@ -1,15 +1,11 @@
-import { ArrowLeft, Loader2, Shuffle, X } from "lucide-react";
+import { ArrowLeft, Loader2, Radar, Shuffle, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AddonsIcon } from "@/components/icons/addons-icon";
-import { AnimeIcon } from "@/components/icons/anime-icon";
-import { CalendarIcon } from "@/components/icons/calendar-icon";
 import { DiscoverIcon } from "@/components/icons/discover-icon";
 import { HomeIcon } from "@/components/icons/home-icon";
 import { LibraryIcon } from "@/components/icons/library-icon";
-import { LiveTvIcon } from "@/components/icons/live-tv-icon";
 import { MoviesIcon } from "@/components/icons/movies-icon";
 import { TvIcon } from "@/components/icons/tv-icon";
-import { NavGlyph } from "@/components/icons/nav-glyph";
 import { MOVIE_GENRES } from "@/lib/feed/tags";
 
 const TV_GENRE_FOR_MOVIE: Record<string, number> = {
@@ -51,41 +47,16 @@ const JUMP_TARGETS: Jump[] = [
   { view: "discover", label: "Discover", parentalKey: "discover", icon: <DiscoverIcon /> },
   { view: "movies", label: "Movies", parentalKey: "movies", icon: <MoviesIcon /> },
   { view: "shows", label: "Shows", parentalKey: "shows", icon: <TvIcon /> },
-  { view: "anime", label: "Anime", parentalKey: "anime", icon: <AnimeIcon /> },
-  { view: "live", label: "Live TV", parentalKey: "liveTv", icon: <LiveTvIcon /> },
-  { view: "calendar", label: "Calendar", parentalKey: "calendar", icon: <CalendarIcon /> },
+  { view: "radar", label: "nav.radar", icon: <Radar size={20} strokeWidth={2.2} /> },
   { view: "library", label: "My Library", parentalKey: "library", icon: <LibraryIcon /> },
   { view: "addons", label: "Addons", parentalKey: "addons", icon: <AddonsIcon /> },
-  {
-    view: "music",
-    label: "Music",
-    icon: <NavGlyph name="music" className="h-[26px] w-[26px] p-[2px]" />,
-  },
-  {
-    view: "manga",
-    label: "Manga",
-    parentalKey: "anime",
-    icon: <NavGlyph name="manga" className="h-[26px] w-[26px] p-[2px]" />,
-  },
-  {
-    view: "ebook",
-    label: "eBook",
-    parentalKey: "anime",
-    icon: <NavGlyph name="ebook" className="h-[26px] w-[26px] p-[2px]" />,
-  },
 ];
 
 type FilterTab = "all" | "movies" | "shows" | StreamingService;
 
 const MAX_PAGES = 25;
 
-export function EmptyState({
-  onClose,
-  onOpenGuide,
-}: {
-  onClose: () => void;
-  onOpenGuide: () => void;
-}) {
+export function EmptyState({ onClose }: { onClose: () => void }) {
   const { recent, removeRecent, clearRecent, setQuery } = useSearch();
   const { setView, openMeta } = useView();
   const { hiddenTabs } = useParental();
@@ -435,17 +406,6 @@ export function EmptyState({
               {t(j.label)}
             </button>
           ))}
-          {!hiddenTabs.liveTv && (
-            <button
-              onClick={() => onOpenGuide()}
-              className="group flex h-12 items-center gap-2.5 rounded-full border border-edge-soft bg-elevated/50 px-5 text-[14.5px] font-semibold text-ink transition-all hover:border-edge hover:bg-elevated active:scale-[0.97]"
-            >
-              <span className="flex h-5 w-5 items-center justify-center text-ink-muted transition-colors group-hover:text-accent">
-                <NavGlyph name="guide" className="h-[22px] w-[22px]" />
-              </span>
-              {t("TV Guide")}
-            </button>
-          )}
         </div>
       </section>
 
