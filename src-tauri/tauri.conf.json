@@ -58,8 +58,7 @@
       "fonts/*": "fonts/",
       "THIRD-PARTY-NOTICES.txt": "notices/",
       "resources/harbor-stream-blocker/": "resources/harbor-stream-blocker/",
-      "resources/capstan/": "resources/capstan/",
-      "resources/pokemon-engine/": "resources/pokemon-engine/"
+      "resources/capstan/": "resources/capstan/"
     },
     "licenseFile": "installer/eula.txt",
     "icon": [
